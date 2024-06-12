@@ -11,27 +11,27 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
-                             const Uint8 * mask,
-                             int w, int h, int hot_x,
-                             int hot_y);
-
+                         const Uint8 * mask,
+                         int w, int h, int hot_x,
+                         int hot_y);
 ```
 
 ## Function Parameters
 
-|               |                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------ |
-| **data**      | the color value for each pixel of the cursor                                                     |
-| **mask**      | the mask value for each pixel of the cursor                                                      |
-| **w**         | the width of the cursor                                                                          |
-| **h**         | the height of the cursor                                                                         |
-| **hot_x**     | the X-axis location of the upper left corner of the cursor relative to the actual mouse position |
-| **hot_y**     | the Y-axis location of the upper left corner of the cursor relative to the actual mouse position |
+|               |           |                                                                                                  |
+| ------------- | --------- | ------------------------------------------------------------------------------------------------ |
+| const Uint8 * | **data**  | the color value for each pixel of the cursor                                                     |
+| const Uint8 * | **mask**  | the mask value for each pixel of the cursor                                                      |
+| int           | **w**     | the width of the cursor                                                                          |
+| int           | **h**     | the height of the cursor                                                                         |
+| int           | **hot_x** | the X-axis location of the upper left corner of the cursor relative to the actual mouse position |
+| int           | **hot_y** | the Y-axis location of the upper left corner of the cursor relative to the actual mouse position |
 
 ## Return Value
 
-Returns a new cursor with the specified parameters on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Cursor](SDL_Cursor) *) Returns a new cursor with the specified
+parameters on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

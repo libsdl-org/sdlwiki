@@ -11,19 +11,18 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                   |
-| ---------------- | ------------------------------------------------- |
-| **scancode**     | the desired [SDL_Scancode](SDL_Scancode) to query |
+|                              |              |                                                   |
+| ---------------------------- | ------------ | ------------------------------------------------- |
+| [SDL_Scancode](SDL_Scancode) | **scancode** | the desired [SDL_Scancode](SDL_Scancode) to query |
 
 ## Return Value
 
-Returns the [SDL_Keycode](SDL_Keycode) that corresponds to the given
-[SDL_Scancode](SDL_Scancode).
+([SDL_Keycode](SDL_Keycode)) Returns the [SDL_Keycode](SDL_Keycode) that
+corresponds to the given [SDL_Scancode](SDL_Scancode).
 
 ## Remarks
 

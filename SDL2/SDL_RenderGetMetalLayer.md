@@ -11,19 +11,18 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void* SDL_RenderGetMetalLayer(SDL_Renderer * renderer);
-
 ```
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | The renderer to query |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer to query |
 
 ## Return Value
 
-Returns a `CAMetalLayer *` on success, or NULL if the renderer isn't a
-Metal renderer
+(void *) Returns a `CAMetalLayer *` on success, or NULL if the renderer
+isn't a Metal renderer
 
 ## Remarks
 

@@ -11,19 +11,18 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint8 SDL_EventState(Uint32 type, int state);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                   |
-| ------------- | ----------------------------------------------------------------- |
-| **type**      | the type of event; see [SDL_EventType](SDL_EventType) for details |
-| **state**     | how to process the event                                          |
+|        |           |                                                                   |
+| ------ | --------- | ----------------------------------------------------------------- |
+| Uint32 | **type**  | the type of event; see [SDL_EventType](SDL_EventType) for details |
+| int    | **state** | how to process the event                                          |
 
 ## Return Value
 
-Returns [`SDL_DISABLE`](SDL_DISABLE) or [`SDL_ENABLE`](SDL_ENABLE),
+(Uint8) Returns [`SDL_DISABLE`](SDL_DISABLE) or [`SDL_ENABLE`](SDL_ENABLE),
 representing the processing state of the event before this function makes
 any changes to it.
 

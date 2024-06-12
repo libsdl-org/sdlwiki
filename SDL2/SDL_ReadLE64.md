@@ -11,18 +11,17 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint64 SDL_ReadLE64(SDL_RWops * src);
-
 ```
 
 ## Function Parameters
 
-|             |                                    |
-| ----------- | ---------------------------------- |
-| **src**     | the stream from which to read data |
+|                          |         |                                    |
+| ------------------------ | ------- | ---------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src** | the stream from which to read data |
 
 ## Return Value
 
-Returns 64 bits of data in the native byte order of the platform.
+(Uint64) Returns 64 bits of data in the native byte order of the platform.
 
 ## Remarks
 

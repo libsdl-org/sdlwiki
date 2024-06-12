@@ -11,21 +11,21 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticGetEffectStatus(SDL_Haptic * haptic,
-                              int effect);
-
+                          int effect);
 ```
 
 ## Function Parameters
 
-|                |                                                                       |
-| -------------- | --------------------------------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query for the effect status on |
-| **effect**     | the ID of the haptic effect to query its status                       |
+|                            |            |                                                                       |
+| -------------------------- | ---------- | --------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query for the effect status on |
+| int                        | **effect** | the ID of the haptic effect to query its status                       |
 
 ## Return Value
 
-Returns 0 if it isn't playing, 1 if it is playing, or a negative error code
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if it isn't playing, 1 if it is playing, or a negative
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

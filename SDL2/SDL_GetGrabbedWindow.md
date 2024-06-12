@@ -11,12 +11,12 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Window * SDL_GetGrabbedWindow(void);
-
 ```
 
 ## Return Value
 
-Returns the window if input is grabbed or NULL otherwise.
+([SDL_Window](SDL_Window) *) Returns the window if input is grabbed or NULL
+otherwise.
 
 ## Version
 

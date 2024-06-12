@@ -11,12 +11,12 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_TLSID SDL_TLSCreate(void);
-
 ```
 
 ## Return Value
 
-Returns the newly created thread local storage identifier or 0 on error.
+([SDL_TLSID](SDL_TLSID)) Returns the newly created thread local storage
+identifier or 0 on error.
 
 ## Remarks
 

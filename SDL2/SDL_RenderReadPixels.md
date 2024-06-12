@@ -11,25 +11,24 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderReadPixels(SDL_Renderer * renderer,
-                         const SDL_Rect * rect,
-                         Uint32 format,
-                         void *pixels, int pitch);
-
+                     const SDL_Rect * rect,
+                     Uint32 format,
+                     void *pixels, int pitch);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                                                                                       |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure representing the area to read, or NULL for the entire render target                                       |
-| **format**       | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the desired format of the pixel data, or 0 to use the format of the rendering target |
-| **pixels**       | a pointer to the pixel data to copy into                                                                                                    |
-| **pitch**        | the pitch of the `pixels` parameter                                                                                                         |
+|                                |              |                                                                                                                                             |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                       |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the area to read, or NULL for the entire render target                                       |
+| Uint32                         | **format**   | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the desired format of the pixel data, or 0 to use the format of the rendering target |
+| void *                         | **pixels**   | a pointer to the pixel data to copy into                                                                                                    |
+| int                            | **pitch**    | the pitch of the `pixels` parameter                                                                                                         |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

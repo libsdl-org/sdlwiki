@@ -11,24 +11,23 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetWindowGammaRamp(SDL_Window * window,
-                           Uint16 * red,
-                           Uint16 * green,
-                           Uint16 * blue);
-
+                       Uint16 * red,
+                       Uint16 * green,
+                       Uint16 * blue);
 ```
 
 ## Function Parameters
 
-|                |                                                                                                              |
-| -------------- | ------------------------------------------------------------------------------------------------------------ |
-| **window**     | the window used to select the display whose gamma ramp will be queried                                       |
-| **red**        | a 256 element array of 16-bit quantities filled in with the translation table for the red channel, or NULL   |
-| **green**      | a 256 element array of 16-bit quantities filled in with the translation table for the green channel, or NULL |
-| **blue**       | a 256 element array of 16-bit quantities filled in with the translation table for the blue channel, or NULL  |
+|                            |            |                                                                                                              |
+| -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose gamma ramp will be queried                                       |
+| Uint16 *                   | **red**    | a 256 element array of 16-bit quantities filled in with the translation table for the red channel, or NULL   |
+| Uint16 *                   | **green**  | a 256 element array of 16-bit quantities filled in with the translation table for the green channel, or NULL |
+| Uint16 *                   | **blue**   | a 256 element array of 16-bit quantities filled in with the translation table for the blue channel, or NULL  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

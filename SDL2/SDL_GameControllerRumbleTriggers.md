@@ -11,21 +11,20 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerRumbleTriggers(SDL_GameController *gamecontroller, Uint16 left_rumble, Uint16 right_rumble, Uint32 duration_ms);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                   |
-| ---------------------- | ----------------------------------------------------------------- |
-| **gamecontroller**     | The controller to vibrate                                         |
-| **left_rumble**        | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
-| **right_rumble**       | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
-| **duration_ms**        | The duration of the rumble effect, in milliseconds                |
+|                                            |                    |                                                                   |
+| ------------------------------------------ | ------------------ | ----------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to vibrate                                         |
+| Uint16                                     | **left_rumble**    | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
+| Uint16                                     | **right_rumble**   | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
+| Uint32                                     | **duration_ms**    | The duration of the rumble effect, in milliseconds                |
 
 ## Return Value
 
-Returns 0, or -1 if trigger rumble isn't supported on this controller
+(int) Returns 0, or -1 if trigger rumble isn't supported on this controller
 
 ## Remarks
 

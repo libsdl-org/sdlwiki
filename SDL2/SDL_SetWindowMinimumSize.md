@@ -11,17 +11,16 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowMinimumSize(SDL_Window * window,
-                              int min_w, int min_h);
-
+                          int min_w, int min_h);
 ```
 
 ## Function Parameters
 
-|                |                                            |
-| -------------- | ------------------------------------------ |
-| **window**     | the window to change                       |
-| **min_w**      | the minimum width of the window in pixels  |
-| **min_h**      | the minimum height of the window in pixels |
+|                            |            |                                            |
+| -------------------------- | ---------- | ------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window to change                       |
+| int                        | **min_w**  | the minimum width of the window in pixels  |
+| int                        | **min_h**  | the minimum height of the window in pixels |
 
 ## Version
 

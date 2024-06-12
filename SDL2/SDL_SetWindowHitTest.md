@@ -11,22 +11,21 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowHitTest(SDL_Window * window,
-                         SDL_HitTest callback,
-                         void *callback_data);
-
+                     SDL_HitTest callback,
+                     void *callback_data);
 ```
 
 ## Function Parameters
 
-|                       |                                                    |
-| --------------------- | -------------------------------------------------- |
-| **window**            | the window to set hit-testing on                   |
-| **callback**          | the function to call when doing a hit-test         |
-| **callback_data**     | an app-defined void pointer passed to **callback** |
+|                            |                   |                                                    |
+| -------------------------- | ----------------- | -------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**        | the window to set hit-testing on                   |
+| [SDL_HitTest](SDL_HitTest) | **callback**      | the function to call when doing a hit-test         |
+| void *                     | **callback_data** | an app-defined void pointer passed to **callback** |
 
 ## Return Value
 
-Returns 0 on success or -1 on error (including unsupported); call
+(int) Returns 0 on success or -1 on error (including unsupported); call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

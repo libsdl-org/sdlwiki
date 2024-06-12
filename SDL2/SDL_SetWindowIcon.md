@@ -11,16 +11,15 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowIcon(SDL_Window * window,
-                       SDL_Surface * icon);
-
+                   SDL_Surface * icon);
 ```
 
 ## Function Parameters
 
-|                |                                                                            |
-| -------------- | -------------------------------------------------------------------------- |
-| **window**     | the window to change                                                       |
-| **icon**       | an [SDL_Surface](SDL_Surface) structure containing the icon for the window |
+|                              |            |                                                                            |
+| ---------------------------- | ---------- | -------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *   | **window** | the window to change                                                       |
+| [SDL_Surface](SDL_Surface) * | **icon**   | an [SDL_Surface](SDL_Surface) structure containing the icon for the window |
 
 ## Version
 

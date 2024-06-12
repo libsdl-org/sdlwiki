@@ -11,21 +11,20 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerGetSensorData(SDL_GameController *gamecontroller, SDL_SensorType type, float *data, int num_values);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                |
-| ---------------------- | ---------------------------------------------- |
-| **gamecontroller**     | The controller to query                        |
-| **type**               | The type of sensor to query                    |
-| **data**               | A pointer filled with the current sensor state |
-| **num_values**         | The number of values to write to data          |
+|                                            |                    |                                                |
+| ------------------------------------------ | ------------------ | ---------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query                        |
+| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to query                    |
+| float *                                    | **data**           | A pointer filled with the current sensor state |
+| int                                        | **num_values**     | The number of values to write to data          |
 
 ## Return Value
 
-Return 0 or -1 if an error occurred.
+(int) Return 0 or -1 if an error occurred.
 
 ## Remarks
 

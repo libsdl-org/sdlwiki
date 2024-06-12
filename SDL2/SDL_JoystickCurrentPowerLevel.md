@@ -11,20 +11,20 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_JoystickPowerLevel SDL_JoystickCurrentPowerLevel(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                           |
-| ---------------- | ----------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) to query |
+|                                |              |                                           |
+| ------------------------------ | ------------ | ----------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to query |
 
 ## Return Value
 
-Returns the current battery level as
-[SDL_JoystickPowerLevel](SDL_JoystickPowerLevel) on success or
-[`SDL_JOYSTICK_POWER_UNKNOWN`](SDL_JOYSTICK_POWER_UNKNOWN) if it is unknown
+([SDL_JoystickPowerLevel](SDL_JoystickPowerLevel)) Returns the current
+battery level as [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel) on
+success or [`SDL_JOYSTICK_POWER_UNKNOWN`](SDL_JOYSTICK_POWER_UNKNOWN) if it
+is unknown
 
 ## Version
 

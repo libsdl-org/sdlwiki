@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void* SDL_GL_GetProcAddress(const char *proc);
-
 ```
 
 ## Function Parameters
 
-|              |                                |
-| ------------ | ------------------------------ |
-| **proc**     | the name of an OpenGL function |
+|              |          |                                |
+| ------------ | -------- | ------------------------------ |
+| const char * | **proc** | the name of an OpenGL function |
 
 ## Return Value
 
-Returns a pointer to the named OpenGL function. The returned pointer should
-be cast to the appropriate function signature.
+(void *) Returns a pointer to the named OpenGL function. The returned
+pointer should be cast to the appropriate function signature.
 
 ## Remarks
 

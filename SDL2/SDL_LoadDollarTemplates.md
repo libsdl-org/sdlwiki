@@ -11,20 +11,19 @@ Defined in [SDL_gesture.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_LoadDollarTemplates(SDL_TouchID touchId, SDL_RWops *src);
-
 ```
 
 ## Function Parameters
 
-|                 |                                       |
-| --------------- | ------------------------------------- |
-| **touchId**     | a touch id                            |
-| **src**         | a [SDL_RWops](SDL_RWops) to load from |
+|                            |             |                                       |
+| -------------------------- | ----------- | ------------------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchId** | a touch id                            |
+| [SDL_RWops](SDL_RWops) *   | **src**     | a [SDL_RWops](SDL_RWops) to load from |
 
 ## Return Value
 
-Returns the number of loaded templates on success or a negative error code
-(or 0) on failure; call [SDL_GetError](SDL_GetError)() for more
+(int) Returns the number of loaded templates on success or a negative error
+code (or 0) on failure; call [SDL_GetError](SDL_GetError)() for more
 information.
 
 ## Version

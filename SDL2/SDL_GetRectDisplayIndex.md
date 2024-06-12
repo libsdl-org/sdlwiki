@@ -11,20 +11,19 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetRectDisplayIndex(const SDL_Rect * rect);
-
 ```
 
 ## Function Parameters
 
-|              |                   |
-| ------------ | ----------------- |
-| **rect**     | the rect to query |
+|                              |          |                   |
+| ---------------------------- | -------- | ----------------- |
+| const [SDL_Rect](SDL_Rect) * | **rect** | the rect to query |
 
 ## Return Value
 
-Returns the index of the display entirely containing the rect or closest to
-the center of the rect on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the index of the display entirely containing the rect or
+closest to the center of the rect on success or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

@@ -11,16 +11,15 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
-                          int pause_on);
-
+                      int pause_on);
 ```
 
 ## Function Parameters
 
-|                  |                                                                 |
-| ---------------- | --------------------------------------------------------------- |
-| **dev**          | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
-| **pause_on**     | non-zero to pause, 0 to unpause                                 |
+|                                        |              |                                                                 |
+| -------------------------------------- | ------------ | --------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev**      | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| int                                    | **pause_on** | non-zero to pause, 0 to unpause                                 |
 
 ## Remarks
 

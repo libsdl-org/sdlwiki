@@ -11,18 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_GameController* SDL_GameControllerOpen(int joystick_index);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                            |
-| ---------------------- | -------------------------------------------------------------------------- |
-| **joystick_index**     | the device_index of a device, up to [SDL_NumJoysticks](SDL_NumJoysticks)() |
+|     |                    |                                                                            |
+| --- | ------------------ | -------------------------------------------------------------------------- |
+| int | **joystick_index** | the device_index of a device, up to [SDL_NumJoysticks](SDL_NumJoysticks)() |
 
 ## Return Value
 
-Returns a gamecontroller identifier or NULL if an error occurred; call
+([SDL_GameController](SDL_GameController) *) Returns a gamecontroller
+identifier or NULL if an error occurred; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

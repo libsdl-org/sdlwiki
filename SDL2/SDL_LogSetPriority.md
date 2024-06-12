@@ -11,16 +11,15 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 void SDL_LogSetPriority(int category,
-                        SDL_LogPriority priority);
-
+                    SDL_LogPriority priority);
 ```
 
 ## Function Parameters
 
-|                  |                                                  |
-| ---------------- | ------------------------------------------------ |
-| **category**     | the category to assign a priority to             |
-| **priority**     | the [SDL_LogPriority](SDL_LogPriority) to assign |
+|                                    |              |                                                  |
+| ---------------------------------- | ------------ | ------------------------------------------------ |
+| int                                | **category** | the category to assign a priority to             |
+| [SDL_LogPriority](SDL_LogPriority) | **priority** | the [SDL_LogPriority](SDL_LogPriority) to assign |
 
 ## Version
 

@@ -11,28 +11,28 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioDeviceID SDL_OpenAudioDevice(
-                          const char *device,
-                          int iscapture,
-                          const SDL_AudioSpec *desired,
-                          SDL_AudioSpec *obtained,
-                          int allowed_changes);
-
+                      const char *device,
+                      int iscapture,
+                      const SDL_AudioSpec *desired,
+                      SDL_AudioSpec *obtained,
+                      int allowed_changes);
 ```
 
 ## Function Parameters
 
-|                         |                                                                                                                                                                           |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **device**              | a UTF-8 string reported by [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)() or a driver-specific name as appropriate. NULL requests the most reasonable default device. |
-| **iscapture**           | non-zero to specify a device should be opened for recording, not playback                                                                                                 |
-| **desired**             | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                             |
-| **obtained**            | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                            |
-| **allowed_changes**     | 0, or one or more flags OR'd together                                                                                                                                     |
+|                                        |                     |                                                                                                                                                                           |
+| -------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const char *                           | **device**          | a UTF-8 string reported by [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)() or a driver-specific name as appropriate. NULL requests the most reasonable default device. |
+| int                                    | **iscapture**       | non-zero to specify a device should be opened for recording, not playback                                                                                                 |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **desired**         | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                             |
+| [SDL_AudioSpec](SDL_AudioSpec) *       | **obtained**        | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                            |
+| int                                    | **allowed_changes** | 0, or one or more flags OR'd together                                                                                                                                     |
 
 ## Return Value
 
-Returns a valid device ID that is > 0 on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns a valid device ID that is
+> 0 on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 For compatibility with SDL 1.2, this will never return 1, since SDL
 reserves that ID for the legacy [SDL_OpenAudio](SDL_OpenAudio)() function.

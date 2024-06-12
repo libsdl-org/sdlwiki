@@ -11,19 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_JoystickIsVirtual(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                          |
-| -------------------- | ------------------------ |
-| **device_index**     | a joystick device index. |
+|     |                  |                          |
+| --- | ---------------- | ------------------------ |
+| int | **device_index** | a joystick device index. |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the joystick is virtual,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the joystick is
+virtual, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

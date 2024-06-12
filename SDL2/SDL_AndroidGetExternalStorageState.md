@@ -11,13 +11,12 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_AndroidGetExternalStorageState(void);
-
 ```
 
 ## Return Value
 
-Returns the current state of external storage on success or 0 on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the current state of external storage on success or 0 on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

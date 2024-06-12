@@ -11,19 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 char * SDL_GameControllerMapping(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                             |
-| ---------------------- | ----------------------------------------------------------- |
-| **gamecontroller**     | the game controller you want to get the current mapping for |
+|                                            |                    |                                                             |
+| ------------------------------------------ | ------------------ | ----------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller you want to get the current mapping for |
 
 ## Return Value
 
-Returns a string that has the controller's mapping or NULL if no mapping is
-available; call [SDL_GetError](SDL_GetError)() for more information.
+(char *) Returns a string that has the controller's mapping or NULL if no
+mapping is available; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

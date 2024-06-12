@@ -11,14 +11,13 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char * SDL_AndroidGetExternalStoragePath(void);
-
 ```
 
 ## Return Value
 
-Returns the path used for external storage for this application on success
-or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+(const char *) Returns the path used for external storage for this
+application on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

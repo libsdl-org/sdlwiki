@@ -11,16 +11,15 @@ Defined in [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 void SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                        |
-| --------------- | ------------------------------------------------------ |
-| **guid**        | the [SDL_GUID](SDL_GUID) you wish to convert to string |
-| **pszGUID**     | buffer in which to write the ASCII string              |
-| **cbGUID**      | the size of pszGUID                                    |
+|                      |             |                                                        |
+| -------------------- | ----------- | ------------------------------------------------------ |
+| [SDL_GUID](SDL_GUID) | **guid**    | the [SDL_GUID](SDL_GUID) you wish to convert to string |
+| char *               | **pszGUID** | buffer in which to write the ASCII string              |
+| int                  | **cbGUID**  | the size of pszGUID                                    |
 
 ## Remarks
 

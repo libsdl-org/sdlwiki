@@ -11,20 +11,19 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char* SDL_GetPixelFormatName(Uint32 format);
-
 ```
 
 ## Function Parameters
 
-|                |                           |
-| -------------- | ------------------------- |
-| **format**     | the pixel format to query |
+|        |            |                           |
+| ------ | ---------- | ------------------------- |
+| Uint32 | **format** | the pixel format to query |
 
 ## Return Value
 
-Returns the human readable name of the specified pixel format or
-[`SDL_PIXELFORMAT_UNKNOWN`](SDL_PIXELFORMAT_UNKNOWN) if the format isn't
-recognized.
+(const char *) Returns the human readable name of the specified pixel
+format or [`SDL_PIXELFORMAT_UNKNOWN`](SDL_PIXELFORMAT_UNKNOWN) if the
+format isn't recognized.
 
 ## Version
 

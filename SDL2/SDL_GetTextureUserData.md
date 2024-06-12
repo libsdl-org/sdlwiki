@@ -11,19 +11,18 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void * SDL_GetTextureUserData(SDL_Texture * texture);
-
 ```
 
 ## Function Parameters
 
-|                 |                       |
-| --------------- | --------------------- |
-| **texture**     | the texture to query. |
+|                              |             |                       |
+| ---------------------------- | ----------- | --------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query. |
 
 ## Return Value
 
-Return the pointer associated with the texture, or NULL if the texture is
-not valid.
+(void *) Return the pointer associated with the texture, or NULL if the
+texture is not valid.
 
 ## Version
 

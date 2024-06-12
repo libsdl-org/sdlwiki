@@ -11,7 +11,6 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_IsTextInputShown(void);
-
 ```
 
 ## Version

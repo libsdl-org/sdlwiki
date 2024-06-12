@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderSetIntegerScale(SDL_Renderer * renderer,
-                              SDL_bool enable);
-
+                          SDL_bool enable);
 ```
 
 ## Function Parameters
 
-|                  |                                                      |
-| ---------------- | ---------------------------------------------------- |
-| **renderer**     | the renderer for which integer scaling should be set |
-| **enable**       | enable or disable the integer scaling for rendering  |
+|                                |              |                                                      |
+| ------------------------------ | ------------ | ---------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer for which integer scaling should be set |
+| [SDL_bool](SDL_bool)           | **enable**   | enable or disable the integer scaling for rendering  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

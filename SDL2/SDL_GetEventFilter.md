@@ -11,21 +11,20 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_GetEventFilter(SDL_EventFilter * filter,
-                            void **userdata);
-
+                        void **userdata);
 ```
 
 ## Function Parameters
 
-|                  |                                                                            |
-| ---------------- | -------------------------------------------------------------------------- |
-| **filter**       | the current callback function will be stored here                          |
-| **userdata**     | the pointer that is passed to the current event filter will be stored here |
+|                                      |              |                                                                            |
+| ------------------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_EventFilter](SDL_EventFilter) * | **filter**   | the current callback function will be stored here                          |
+| void **                              | **userdata** | the pointer that is passed to the current event filter will be stored here |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) if there
-is no event filter set.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) if there is no event filter set.
 
 ## Remarks
 

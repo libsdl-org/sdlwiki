@@ -11,13 +11,13 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_NumJoysticks(void);
-
 ```
 
 ## Return Value
 
-Returns the number of attached joysticks on success or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of attached joysticks on success or a negative
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

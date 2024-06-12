@@ -11,13 +11,12 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GetNumRenderDrivers(void);
-
 ```
 
 ## Return Value
 
-Returns a number >= 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns a number >= 0 on success or a negative error code on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

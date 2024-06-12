@@ -11,19 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SensorGetDeviceNonPortableType(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                     |
-| -------------------- | ------------------- |
-| **device_index**     | The sensor to check |
+|     |                  |                     |
+| --- | ---------------- | ------------------- |
+| int | **device_index** | The sensor to check |
 
 ## Return Value
 
-Returns the sensor platform dependent type, or -1 if `device_index` is out
-of range.
+(int) Returns the sensor platform dependent type, or -1 if `device_index`
+is out of range.
 
 ## Version
 

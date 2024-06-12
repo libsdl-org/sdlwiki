@@ -11,22 +11,21 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetAudioDeviceSpec(int index,
-                           int iscapture,
-                           SDL_AudioSpec *spec);
-
+                       int iscapture,
+                       SDL_AudioSpec *spec);
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
-| **iscapture**     | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
-| **spec**          | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                             |
+|                                  |               |                                                                                                                    |
+| -------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
+| int                              | **index**     | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
+| int                              | **iscapture** | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                             |
 
 ## Return Value
 
-Returns 0 on success, nonzero on error
+(int) Returns 0 on success, nonzero on error
 
 ## Remarks
 

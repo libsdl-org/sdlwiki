@@ -11,13 +11,12 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_IsScreenSaverEnabled(void);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the screensaver is enabled,
-[SDL_FALSE](SDL_FALSE) if it is disabled.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the screensaver is
+enabled, [SDL_FALSE](SDL_FALSE) if it is disabled.
 
 ## Remarks
 

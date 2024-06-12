@@ -11,12 +11,11 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_MouseIsHaptic(void);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the mouse is haptic or
+(int) Returns [SDL_TRUE](SDL_TRUE) if the mouse is haptic or
 [SDL_FALSE](SDL_FALSE) if it isn't.
 
 ## Version

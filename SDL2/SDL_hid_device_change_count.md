@@ -11,13 +11,12 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint32 SDL_hid_device_change_count(void);
-
 ```
 
 ## Return Value
 
-Returns a change counter that is incremented with each potential device
-change, or 0 if device change detection isn't available.
+(Uint32) Returns a change counter that is incremented with each potential
+device change, or 0 if device change detection isn't available.
 
 ## Remarks
 

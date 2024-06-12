@@ -11,21 +11,21 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SemWaitTimeout(SDL_sem *sem, Uint32 timeout);
-
 ```
 
 ## Function Parameters
 
-|                 |                                            |
-| --------------- | ------------------------------------------ |
-| **sem**         | the semaphore to wait on                   |
-| **timeout**     | the length of the timeout, in milliseconds |
+|                      |             |                                            |
+| -------------------- | ----------- | ------------------------------------------ |
+| [SDL_sem](SDL_sem) * | **sem**     | the semaphore to wait on                   |
+| Uint32               | **timeout** | the length of the timeout, in milliseconds |
 
 ## Return Value
 
-Returns 0 if the wait succeeds, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
-if the wait does not succeed in the allotted time, or a negative error code
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the wait succeeds,
+[`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the wait does not succeed in
+the allotted time, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

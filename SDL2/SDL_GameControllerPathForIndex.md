@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 const char* SDL_GameControllerPathForIndex(int joystick_index);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
+|     |                    |                                                                                     |
+| --- | ------------------ | ----------------------------------------------------------------------------------- |
+| int | **joystick_index** | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
 
 ## Return Value
 
-Returns the implementation-dependent path for the game controller, or NULL
-if there is no path or the index is invalid.
+(const char *) Returns the implementation-dependent path for the game
+controller, or NULL if there is no path or the index is invalid.
 
 ## Remarks
 

@@ -11,19 +11,18 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_threadID SDL_GetThreadID(SDL_Thread * thread);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **thread**     | the thread to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Thread](SDL_Thread) * | **thread** | the thread to query |
 
 ## Return Value
 
-Returns the ID of the specified thread, or the ID of the current thread if
-`thread` is NULL.
+([SDL_threadID](SDL_threadID)) Returns the ID of the specified thread, or
+the ID of the current thread if `thread` is NULL.
 
 ## Remarks
 

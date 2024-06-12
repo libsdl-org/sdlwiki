@@ -16,12 +16,11 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetRevisionNumber(void);
-
 ```
 
 ## Return Value
 
-Returns zero, always, in modern SDL releases.
+(int) Returns zero, always, in modern SDL releases.
 
 ## Remarks
 

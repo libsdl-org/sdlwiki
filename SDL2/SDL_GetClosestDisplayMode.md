@@ -11,21 +11,21 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_DisplayMode * SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayMode * mode, SDL_DisplayMode * closest);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                                                                 |
-| -------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **displayIndex**     | the index of the display to query                                                                               |
-| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode) structure containing the desired display mode                             |
-| **closest**          | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the closest match of the available display modes |
+|                                            |                  |                                                                                                                 |
+| ------------------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------------------- |
+| int                                        | **displayIndex** | the index of the display to query                                                                               |
+| const [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure containing the desired display mode                             |
+| [SDL_DisplayMode](SDL_DisplayMode) *       | **closest**      | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the closest match of the available display modes |
 
 ## Return Value
 
-Returns the passed in value `closest` or NULL if no matching video mode was
-available; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_DisplayMode](SDL_DisplayMode) *) Returns the passed in value
+`closest` or NULL if no matching video mode was available; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

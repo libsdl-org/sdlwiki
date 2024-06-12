@@ -11,18 +11,17 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerGetPlayerIndex(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                      |
-| ---------------------- | ------------------------------------ |
-| **gamecontroller**     | the game controller object to query. |
+|                                            |                    |                                      |
+| ------------------------------------------ | ------------------ | ------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to query. |
 
 ## Return Value
 
-Returns the player index for controller, or -1 if it's not available.
+(int) Returns the player index for controller, or -1 if it's not available.
 
 ## Remarks
 

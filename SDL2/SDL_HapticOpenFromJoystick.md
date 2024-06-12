@@ -11,20 +11,20 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick *
-                                       joystick);
-
+                                   joystick);
 ```
 
 ## Function Parameters
 
-|                  |                                                                 |
-| ---------------- | --------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) to create a haptic device from |
+|                                |              |                                                                 |
+| ------------------------------ | ------------ | --------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to create a haptic device from |
 
 ## Return Value
 
-Returns a valid haptic device identifier on success or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Haptic](SDL_Haptic) *) Returns a valid haptic device identifier on
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderSetClipRect(SDL_Renderer * renderer,
-                          const SDL_Rect * rect);
-
+                      const SDL_Rect * rect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                     |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context for which clip rectangle should be set                                                        |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
+|                                |              |                                                                                                                     |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context for which clip rectangle should be set                                                        |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

@@ -11,19 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_JoystickGUID SDL_JoystickGetDeviceGUID(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                     |
-| -------------------- | ------------------------------------------------------------------- |
-| **device_index**     | the index of the joystick to query (the N'th joystick on the system |
+|     |                  |                                                                     |
+| --- | ---------------- | ------------------------------------------------------------------- |
+| int | **device_index** | the index of the joystick to query (the N'th joystick on the system |
 
 ## Return Value
 
-Returns the GUID of the selected joystick. If called on an invalid index,
-this function returns a zero GUID
+([SDL_JoystickGUID](SDL_JoystickGUID)) Returns the GUID of the selected
+joystick. If called on an invalid index, this function returns a zero GUID
 
 ## Remarks
 

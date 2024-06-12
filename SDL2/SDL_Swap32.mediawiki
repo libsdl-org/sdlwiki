@@ -15,13 +15,14 @@ SDL_FORCE_INLINE Uint32 SDL_Swap32(Uint32 x);</syntaxhighlight>
 == Function Parameters ==
 
 {|
+|Uint32
 |'''x'''
 |the value to be swapped
 |}
 
 == Return Value ==
 
-Returns the swapped value.
+(Uint32) Returns the swapped value.
 
 == See Also ==
 

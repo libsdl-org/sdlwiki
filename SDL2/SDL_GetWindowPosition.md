@@ -11,17 +11,16 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_GetWindowPosition(SDL_Window * window,
-                           int *x, int *y);
-
+                       int *x, int *y);
 ```
 
 ## Function Parameters
 
-|                |                                                                                           |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| **window**     | the window to query                                                                       |
-| **x**          | a pointer filled in with the x position of the window, in screen coordinates, may be NULL |
-| **y**          | a pointer filled in with the y position of the window, in screen coordinates, may be NULL |
+|                            |            |                                                                                           |
+| -------------------------- | ---------- | ----------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query                                                                       |
+| int *                      | **x**      | a pointer filled in with the x position of the window, in screen coordinates, may be NULL |
+| int *                      | **y**      | a pointer filled in with the y position of the window, in screen coordinates, may be NULL |
 
 ## Remarks
 

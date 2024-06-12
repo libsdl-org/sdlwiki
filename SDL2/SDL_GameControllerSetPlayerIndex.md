@@ -11,15 +11,14 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int player_index);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                                      |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- |
-| **gamecontroller**     | the game controller object to adjust.                                                                |
-| **player_index**       | Player index to assign to this controller, or -1 to clear the player index and turn off player LEDs. |
+|                                            |                    |                                                                                                      |
+| ------------------------------------------ | ------------------ | ---------------------------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to adjust.                                                                |
+| int                                        | **player_index**   | Player index to assign to this controller, or -1 to clear the player index and turn off player LEDs. |
 
 ## Version
 

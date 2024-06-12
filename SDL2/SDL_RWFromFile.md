@@ -11,22 +11,21 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_RWFromFile(const char *file,
-                          const char *mode);
-
+                      const char *mode);
 ```
 
 ## Function Parameters
 
-|              |                                                                        |
-| ------------ | ---------------------------------------------------------------------- |
-| **file**     | a UTF-8 string representing the filename to open                       |
-| **mode**     | an ASCII string representing the mode to be used for opening the file. |
+|              |          |                                                                        |
+| ------------ | -------- | ---------------------------------------------------------------------- |
+| const char * | **file** | a UTF-8 string representing the filename to open                       |
+| const char * | **mode** | an ASCII string representing the mode to be used for opening the file. |
 
 ## Return Value
 
-Returns a pointer to the [SDL_RWops](SDL_RWops) structure that is created,
-or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_RWops](SDL_RWops) *) Returns a pointer to the [SDL_RWops](SDL_RWops)
+structure that is created, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

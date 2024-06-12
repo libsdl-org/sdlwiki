@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetCurrentDisplayMode(int displayIndex, SDL_DisplayMode * mode);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                                         |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| **displayIndex**     | the index of the display to query                                                       |
-| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the current display mode |
+|                                      |                  |                                                                                         |
+| ------------------------------------ | ---------------- | --------------------------------------------------------------------------------------- |
+| int                                  | **displayIndex** | the index of the display to query                                                       |
+| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the current display mode |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

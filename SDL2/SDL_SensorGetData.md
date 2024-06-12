@@ -11,20 +11,19 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SensorGetData(SDL_Sensor *sensor, float *data, int num_values);
-
 ```
 
 ## Function Parameters
 
-|                    |                                                |
-| ------------------ | ---------------------------------------------- |
-| **sensor**         | The [SDL_Sensor](SDL_Sensor) object to query   |
-| **data**           | A pointer filled with the current sensor state |
-| **num_values**     | The number of values to write to data          |
+|                            |                |                                                |
+| -------------------------- | -------------- | ---------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor**     | The [SDL_Sensor](SDL_Sensor) object to query   |
+| float *                    | **data**       | A pointer filled with the current sensor state |
+| int                        | **num_values** | The number of values to write to data          |
 
 ## Return Value
 
-Returns 0 or -1 if an error occurred.
+(int) Returns 0 or -1 if an error occurred.
 
 ## Remarks
 

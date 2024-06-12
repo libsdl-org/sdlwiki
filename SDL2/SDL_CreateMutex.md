@@ -11,13 +11,12 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_mutex* SDL_CreateMutex(void);
-
 ```
 
 ## Return Value
 
-Returns the initialized and unlocked mutex or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_mutex](SDL_mutex) *) Returns the initialized and unlocked mutex or
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -11,17 +11,16 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_GL_GetDrawableSize(SDL_Window * window, int *w,
-                            int *h);
-
+                        int *h);
 ```
 
 ## Function Parameters
 
-|                |                                                                     |
-| -------------- | ------------------------------------------------------------------- |
-| **window**     | the window from which the drawable size should be queried           |
-| **w**          | a pointer to variable for storing the width in pixels, may be NULL  |
-| **h**          | a pointer to variable for storing the height in pixels, may be NULL |
+|                            |            |                                                                     |
+| -------------------------- | ---------- | ------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window from which the drawable size should be queried           |
+| int *                      | **w**      | a pointer to variable for storing the width in pixels, may be NULL  |
+| int *                      | **h**      | a pointer to variable for storing the height in pixels, may be NULL |
 
 ## Remarks
 

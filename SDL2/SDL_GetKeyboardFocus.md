@@ -11,12 +11,11 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_Window * SDL_GetKeyboardFocus(void);
-
 ```
 
 ## Return Value
 
-Returns the window with keyboard focus.
+([SDL_Window](SDL_Window) *) Returns the window with keyboard focus.
 
 ## Version
 

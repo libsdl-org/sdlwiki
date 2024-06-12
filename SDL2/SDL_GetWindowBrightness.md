@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 float SDL_GetWindowBrightness(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                        |
-| -------------- | ---------------------------------------------------------------------- |
-| **window**     | the window used to select the display whose brightness will be queried |
+|                            |            |                                                                        |
+| -------------------------- | ---------- | ---------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose brightness will be queried |
 
 ## Return Value
 
-Returns the brightness for the display where 0.0 is completely dark and 1.0
-is normal brightness.
+(float) Returns the brightness for the display where 0.0 is completely dark
+and 1.0 is normal brightness.
 
 ## Remarks
 

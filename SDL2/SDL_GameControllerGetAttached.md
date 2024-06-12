@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                                        |
-| ---------------------- | ------------------------------------------------------------------------------------------------------ |
-| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
+|                                            |                    |                                                                                                        |
+| ------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the controller has been opened and is
-currently connected, or [SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the controller has
+been opened and is currently connected, or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Version
 

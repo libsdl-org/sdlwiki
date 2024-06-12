@@ -11,13 +11,12 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_GetTicks(void);
-
 ```
 
 ## Return Value
 
-Returns an unsigned 32-bit value representing the number of milliseconds
-since the SDL library initialized.
+(Uint32) Returns an unsigned 32-bit value representing the number of
+milliseconds since the SDL library initialized.
 
 ## Remarks
 

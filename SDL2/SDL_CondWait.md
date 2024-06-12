@@ -11,20 +11,19 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_CondWait(SDL_cond * cond, SDL_mutex * mutex);
-
 ```
 
 ## Function Parameters
 
-|               |                                            |
-| ------------- | ------------------------------------------ |
-| **cond**      | the condition variable to wait on          |
-| **mutex**     | the mutex used to coordinate thread access |
+|                          |           |                                            |
+| ------------------------ | --------- | ------------------------------------------ |
+| [SDL_cond](SDL_cond) *   | **cond**  | the condition variable to wait on          |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex used to coordinate thread access |
 
 ## Return Value
 
-Returns 0 when it is signaled or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 when it is signaled or a negative error code on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

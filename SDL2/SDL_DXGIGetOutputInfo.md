@@ -11,21 +11,21 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_DXGIGetOutputInfo( int displayIndex, int *adapterIndex, int *outputIndex );
-
 ```
 
 ## Function Parameters
 
-|                      |                                                  |
-| -------------------- | ------------------------------------------------ |
-| **displayIndex**     | the display index for which to get both indices  |
-| **adapterIndex**     | a pointer to be filled in with the adapter index |
-| **outputIndex**      | a pointer to be filled in with the output index  |
+|       |                  |                                                  |
+| ----- | ---------------- | ------------------------------------------------ |
+| int   | **displayIndex** | the display index for which to get both indices  |
+| int * | **adapterIndex** | a pointer to be filled in with the adapter index |
+| int * | **outputIndex**  | a pointer to be filled in with the output index  |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

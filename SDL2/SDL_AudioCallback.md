@@ -15,11 +15,11 @@ typedef void (SDLCALL * SDL_AudioCallback) (void *userdata, Uint8 * stream, int 
 
 ## Function Parameters
 
-|                  |                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------- |
-| **userdata**     | An application-specific parameter saved in the [SDL_AudioSpec](SDL_AudioSpec) structure |
-| **stream**       | A pointer to the audio data buffer.                                                     |
-| **len**          | Length of **stream** in bytes.                                                          |
+|              |                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------- |
+| **userdata** | An application-specific parameter saved in the [SDL_AudioSpec](SDL_AudioSpec) structure |
+| **stream**   | A pointer to the audio data buffer.                                                     |
+| **len**      | Length of **stream** in bytes.                                                          |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)

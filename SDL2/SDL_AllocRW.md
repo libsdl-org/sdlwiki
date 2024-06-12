@@ -11,13 +11,13 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_AllocRW(void);
-
 ```
 
 ## Return Value
 
-Returns a pointer to the allocated memory on success, or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_RWops](SDL_RWops) *) Returns a pointer to the allocated memory on
+success, or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

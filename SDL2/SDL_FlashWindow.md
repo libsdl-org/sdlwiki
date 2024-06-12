@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_FlashWindow(SDL_Window * window, SDL_FlashOperation operation);
-
 ```
 
 ## Function Parameters
 
-|                   |                          |
-| ----------------- | ------------------------ |
-| **window**        | the window to be flashed |
-| **operation**     | the flash operation      |
+|                                          |               |                          |
+| ---------------------------------------- | ------------- | ------------------------ |
+| [SDL_Window](SDL_Window) *               | **window**    | the window to be flashed |
+| [SDL_FlashOperation](SDL_FlashOperation) | **operation** | the flash operation      |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

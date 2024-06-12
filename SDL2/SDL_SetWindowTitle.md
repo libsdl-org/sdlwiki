@@ -11,16 +11,15 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowTitle(SDL_Window * window,
-                        const char *title);
-
+                    const char *title);
 ```
 
 ## Function Parameters
 
-|                |                                          |
-| -------------- | ---------------------------------------- |
-| **window**     | the window to change                     |
-| **title**      | the desired window title in UTF-8 format |
+|                            |            |                                          |
+| -------------------------- | ---------- | ---------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change                     |
+| const char *               | **title**  | the desired window title in UTF-8 format |
 
 ## Remarks
 

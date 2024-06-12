@@ -11,17 +11,16 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
-                               int *h);
-
+                           int *h);
 ```
 
 ## Function Parameters
 
-|                |                                                                         |
-| -------------- | ----------------------------------------------------------------------- |
-| **window**     | [SDL_Window](SDL_Window) from which the drawable size should be queried |
-| **w**          | Pointer to variable for storing the width in pixels, may be NULL        |
-| **h**          | Pointer to variable for storing the height in pixels, may be NULL       |
+|                            |            |                                                                         |
+| -------------------------- | ---------- | ----------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | [SDL_Window](SDL_Window) from which the drawable size should be queried |
+| int *                      | **w**      | Pointer to variable for storing the width in pixels, may be NULL        |
+| int *                      | **h**      | Pointer to variable for storing the height in pixels, may be NULL       |
 
 ## Version
 

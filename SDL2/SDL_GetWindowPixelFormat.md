@@ -11,18 +11,17 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_GetWindowPixelFormat(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the pixel format of the window on success or
+(Uint32) Returns the pixel format of the window on success or
 [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 

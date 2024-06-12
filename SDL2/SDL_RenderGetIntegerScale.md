@@ -11,19 +11,18 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_RenderGetIntegerScale(SDL_Renderer * renderer);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                           |
-| ---------------- | --------------------------------------------------------- |
-| **renderer**     | the renderer from which integer scaling should be queried |
+|                                |              |                                                           |
+| ------------------------------ | ------------ | --------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which integer scaling should be queried |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if integer scales are forced or
-[SDL_FALSE](SDL_FALSE) if not and on failure; call
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if integer scales are
+forced or [SDL_FALSE](SDL_FALSE) if not and on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

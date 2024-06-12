@@ -11,21 +11,20 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_AtomicCAS(SDL_atomic_t *a, int oldval, int newval);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                      |
-| -------------- | -------------------------------------------------------------------- |
-| **a**          | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
-| **oldval**     | the old value                                                        |
-| **newval**     | the new value                                                        |
+|                                |            |                                                                      |
+| ------------------------------ | ---------- | -------------------------------------------------------------------- |
+| [SDL_atomic_t](SDL_atomic_t) * | **a**      | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
+| int                            | **oldval** | the old value                                                        |
+| int                            | **newval** | the new value                                                        |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the atomic variable was set,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the atomic variable
+was set, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

@@ -11,19 +11,18 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticSetGain(SDL_Haptic * haptic, int gain);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                 |
-| -------------- | --------------------------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to set the gain on          |
-| **gain**       | value to set the gain to, should be between 0 and 100 (0 - 100) |
+|                            |            |                                                                 |
+| -------------------------- | ---------- | --------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to set the gain on          |
+| int                        | **gain**   | value to set the gain to, should be between 0 and 100 (0 - 100) |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

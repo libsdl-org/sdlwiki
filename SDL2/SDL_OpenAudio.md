@@ -11,21 +11,20 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_OpenAudio(SDL_AudioSpec * desired,
-                  SDL_AudioSpec * obtained);
-
+              SDL_AudioSpec * obtained);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                                                                                                                |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **desired**      | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format. Please refer to the [SDL_OpenAudioDevice](SDL_OpenAudioDevice) documentation for details on how to prepare this structure. |
-| **obtained**     | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual parameters, or NULL.                                                                                                                     |
+|                                  |              |                                                                                                                                                                                                                |
+| -------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **desired**  | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format. Please refer to the [SDL_OpenAudioDevice](SDL_OpenAudioDevice) documentation for details on how to prepare this structure. |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **obtained** | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual parameters, or NULL.                                                                                                                     |
 
 ## Return Value
 
-Returns 0 if successful, placing the actual hardware parameters in the
-structure pointed to by `obtained`.
+(int) Returns 0 if successful, placing the actual hardware parameters in
+the structure pointed to by `obtained`.
 
 If `obtained` is NULL, the audio data passed to the callback function will
 be guaranteed to be in the requested format, and will be automatically

@@ -11,14 +11,13 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 void SDL_SIMDFree(void *ptr);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                                                                        |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **ptr**     | The pointer, returned from [SDL_SIMDAlloc](SDL_SIMDAlloc) or [SDL_SIMDRealloc](SDL_SIMDRealloc), to deallocate. NULL is a legal no-op. |
+|        |         |                                                                                                                                        |
+| ------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| void * | **ptr** | The pointer, returned from [SDL_SIMDAlloc](SDL_SIMDAlloc) or [SDL_SIMDRealloc](SDL_SIMDRealloc), to deallocate. NULL is a legal no-op. |
 
 ## Remarks
 

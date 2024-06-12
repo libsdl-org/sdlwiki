@@ -11,19 +11,19 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetPointDisplayIndex(const SDL_Point * point);
-
 ```
 
 ## Function Parameters
 
-|               |                    |
-| ------------- | ------------------ |
-| **point**     | the point to query |
+|                                |           |                    |
+| ------------------------------ | --------- | ------------------ |
+| const [SDL_Point](SDL_Point) * | **point** | the point to query |
 
 ## Return Value
 
-Returns the index of the display containing the point or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the index of the display containing the point or a negative
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

@@ -11,17 +11,16 @@ Defined in [SDL_error.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetError(void);
-
 ```
 
 ## Return Value
 
-Returns a message with information about the specific error that occurred,
-or an empty string if there hasn't been an error message set since the last
-call to [SDL_ClearError](SDL_ClearError)(). The message is only applicable
-when an SDL function has signaled an error. You must check the return
-values of SDL function calls to determine when to appropriately call
-[SDL_GetError](SDL_GetError)().
+(const char *) Returns a message with information about the specific error
+that occurred, or an empty string if there hasn't been an error message set
+since the last call to [SDL_ClearError](SDL_ClearError)(). The message is
+only applicable when an SDL function has signaled an error. You must check
+the return values of SDL function calls to determine when to appropriately
+call [SDL_GetError](SDL_GetError)().
 
 ## Remarks
 

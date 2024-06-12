@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect * rect);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                      |
-| -------------------- | -------------------------------------------------------------------- |
-| **displayIndex**     | the index of the display to query the usable bounds from             |
-| **rect**             | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+|                        |                  |                                                                      |
+| ---------------------- | ---------------- | -------------------------------------------------------------------- |
+| int                    | **displayIndex** | the index of the display to query the usable bounds from             |
+| [SDL_Rect](SDL_Rect) * | **rect**         | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

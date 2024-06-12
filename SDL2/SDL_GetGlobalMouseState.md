@@ -11,20 +11,19 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_GetGlobalMouseState(int *x, int *y);
-
 ```
 
 ## Function Parameters
 
-|           |                                                                         |
-| --------- | ----------------------------------------------------------------------- |
-| **x**     | filled in with the current X coord relative to the desktop; can be NULL |
-| **y**     | filled in with the current Y coord relative to the desktop; can be NULL |
+|       |       |                                                                         |
+| ----- | ----- | ----------------------------------------------------------------------- |
+| int * | **x** | filled in with the current X coord relative to the desktop; can be NULL |
+| int * | **y** | filled in with the current Y coord relative to the desktop; can be NULL |
 
 ## Return Value
 
-Returns the current button state as a bitmask which can be tested using the
-[SDL_BUTTON](SDL_BUTTON)(X) macros.
+(Uint32) Returns the current button state as a bitmask which can be tested
+using the [SDL_BUTTON](SDL_BUTTON)(X) macros.
 
 ## Remarks
 

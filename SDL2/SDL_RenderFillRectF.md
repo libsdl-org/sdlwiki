@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderFillRectF(SDL_Renderer * renderer,
-                        const SDL_FRect * rect);
-
+                    const SDL_FRect * rect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                  |
-| ---------------- | -------------------------------------------------------------------------------- |
-| **renderer**     | The renderer which should fill a rectangle.                                      |
-| **rect**         | A pointer to the destination rectangle, or NULL for the entire rendering target. |
+|                                |              |                                                                                  |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should fill a rectangle.                                      |
+| const [SDL_FRect](SDL_FRect) * | **rect**     | A pointer to the destination rectangle, or NULL for the entire rendering target. |
 
 ## Return Value
 
-Return 0 on success, or -1 on error
+(int) Return 0 on success, or -1 on error
 
 ## Version
 

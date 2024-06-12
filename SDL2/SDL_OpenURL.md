@@ -11,19 +11,18 @@ Defined in [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 int SDL_OpenURL(const char *url);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                         |
-| ----------- | --------------------------------------------------------------------------------------- |
-| **url**     | A valid URL/URI to open. Use `file:///full/path/to/file` for local files, if supported. |
+|              |         |                                                                                         |
+| ------------ | ------- | --------------------------------------------------------------------------------------- |
+| const char * | **url** | A valid URL/URI to open. Use `file:///full/path/to/file` for local files, if supported. |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error; call [SDL_GetError](SDL_GetError)()
-for more information.
+(int) Returns 0 on success, or -1 on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

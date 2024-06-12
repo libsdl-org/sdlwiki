@@ -11,26 +11,25 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_IntersectFRectAndLine(const SDL_FRect *
-                                   rect, float *X1,
-                                   float *Y1, float *X2,
-                                   float *Y2);
-
+                               rect, float *X1,
+                               float *Y1, float *X2,
+                               float *Y2);
 ```
 
 ## Function Parameters
 
-|              |                                                                             |
-| ------------ | --------------------------------------------------------------------------- |
-| **rect**     | an [SDL_FRect](SDL_FRect) structure representing the rectangle to intersect |
-| **X1**       | a pointer to the starting X-coordinate of the line                          |
-| **Y1**       | a pointer to the starting Y-coordinate of the line                          |
-| **X2**       | a pointer to the ending X-coordinate of the line                            |
-| **Y2**       | a pointer to the ending Y-coordinate of the line                            |
+|                                |          |                                                                             |
+| ------------------------------ | -------- | --------------------------------------------------------------------------- |
+| const [SDL_FRect](SDL_FRect) * | **rect** | an [SDL_FRect](SDL_FRect) structure representing the rectangle to intersect |
+| float *                        | **X1**   | a pointer to the starting X-coordinate of the line                          |
+| float *                        | **Y1**   | a pointer to the starting Y-coordinate of the line                          |
+| float *                        | **X2**   | a pointer to the ending X-coordinate of the line                            |
+| float *                        | **Y2**   | a pointer to the ending Y-coordinate of the line                            |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is an
+intersection, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

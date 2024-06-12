@@ -11,18 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char *pchGUID);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                     |
-| --------------- | --------------------------------------------------- |
-| **pchGUID**     | string containing an ASCII representation of a GUID |
+|              |             |                                                     |
+| ------------ | ----------- | --------------------------------------------------- |
+| const char * | **pchGUID** | string containing an ASCII representation of a GUID |
 
 ## Return Value
 
-Returns a [SDL_JoystickGUID](SDL_JoystickGUID) structure.
+([SDL_JoystickGUID](SDL_JoystickGUID)) Returns a
+[SDL_JoystickGUID](SDL_JoystickGUID) structure.
 
 ## Remarks
 

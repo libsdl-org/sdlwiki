@@ -11,19 +11,18 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char* SDL_GetThreadName(SDL_Thread *thread);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **thread**     | the thread to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Thread](SDL_Thread) * | **thread** | the thread to query |
 
 ## Return Value
 
-Returns a pointer to a UTF-8 string that names the specified thread, or
-NULL if it doesn't have a name.
+(const char *) Returns a pointer to a UTF-8 string that names the specified
+thread, or NULL if it doesn't have a name.
 
 ## Remarks
 

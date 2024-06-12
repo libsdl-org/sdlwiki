@@ -11,14 +11,13 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_ClearQueuedAudio(SDL_AudioDeviceID dev);
-
 ```
 
 ## Function Parameters
 
-|             |                                                 |
-| ----------- | ----------------------------------------------- |
-| **dev**     | the device ID of which to clear the audio queue |
+|                                        |         |                                                 |
+| -------------------------------------- | ------- | ----------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the device ID of which to clear the audio queue |
 
 ## Remarks
 

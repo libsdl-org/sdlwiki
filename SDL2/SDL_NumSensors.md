@@ -11,12 +11,11 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_NumSensors(void);
-
 ```
 
 ## Return Value
 
-Returns the number of sensors detected.
+(int) Returns the number of sensors detected.
 
 ## Version
 

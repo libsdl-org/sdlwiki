@@ -10,20 +10,20 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ## Syntax
 
 ```c
-int SDL_LockMutex(SDL_mutex * mutex) SDL_ACQUIRE(mutex);
+int SDL_LockMutex(SDL_mutex * mutex);
 
 #define SDL_mutexP(m)   SDL_LockMutex(m)
 ```
 
 ## Function Parameters
 
-|               |                   |
-| ------------- | ----------------- |
-| **mutex**     | the mutex to lock |
+|                          |           |                   |
+| ------------------------ | --------- | ----------------- |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to lock |
 
 ## Return Value
 
-Return 0, or -1 on error.
+(int) Return 0, or -1 on error.
 
 ## Remarks
 

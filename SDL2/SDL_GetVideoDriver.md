@@ -11,18 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetVideoDriver(int index);
-
 ```
 
 ## Function Parameters
 
-|               |                             |
-| ------------- | --------------------------- |
-| **index**     | the index of a video driver |
+|     |           |                             |
+| --- | --------- | --------------------------- |
+| int | **index** | the index of a video driver |
 
 ## Return Value
 
-Returns the name of the video driver with the given **index**.
+(const char *) Returns the name of the video driver with the given
+**index**.
 
 ## Remarks
 

@@ -11,13 +11,12 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_GetRelativeMouseMode(void);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if relative mode is enabled or
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if relative mode is
+enabled or [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

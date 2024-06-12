@@ -11,18 +11,17 @@ Defined in [SDL.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL.h)
 
 ```c
 int SDL_InitSubSystem(Uint32 flags);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                        |
-| ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+|        |           |                                                                                        |
+| ------ | --------- | -------------------------------------------------------------------------------------- |
+| Uint32 | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,20 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_bool SDL_GameControllerHasSensor(SDL_GameController *gamecontroller, SDL_SensorType type);
-
 ```
 
 ## Function Parameters
 
-|                        |                             |
-| ---------------------- | --------------------------- |
-| **gamecontroller**     | The controller to query     |
-| **type**               | The type of sensor to query |
+|                                            |                    |                             |
+| ------------------------------------------ | ------------------ | --------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query     |
+| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the sensor exists, [SDL_FALSE](SDL_FALSE)
-otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the sensor exists,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

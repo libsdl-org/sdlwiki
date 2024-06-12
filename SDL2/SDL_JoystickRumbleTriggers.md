@@ -11,21 +11,20 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickRumbleTriggers(SDL_Joystick *joystick, Uint16 left_rumble, Uint16 right_rumble, Uint32 duration_ms);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                   |
-| -------------------- | ----------------------------------------------------------------- |
-| **joystick**         | The joystick to vibrate                                           |
-| **left_rumble**      | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
-| **right_rumble**     | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
-| **duration_ms**      | The duration of the rumble effect, in milliseconds                |
+|                                |                  |                                                                   |
+| ------------------------------ | ---------------- | ----------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick**     | The joystick to vibrate                                           |
+| Uint16                         | **left_rumble**  | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
+| Uint16                         | **right_rumble** | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
+| Uint32                         | **duration_ms**  | The duration of the rumble effect, in milliseconds                |
 
 ## Return Value
 
-Returns 0, or -1 if trigger rumble isn't supported on this joystick
+(int) Returns 0, or -1 if trigger rumble isn't supported on this joystick
 
 ## Remarks
 

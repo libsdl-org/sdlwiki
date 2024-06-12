@@ -11,15 +11,14 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 void SDL_LogSetOutputFunction(SDL_LogOutputFunction callback, void *userdata);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                  |
-| ---------------- | -------------------------------------------------------------------------------- |
-| **callback**     | an [SDL_LogOutputFunction](SDL_LogOutputFunction) to call instead of the default |
-| **userdata**     | a pointer that is passed to `callback`                                           |
+|                                                |              |                                                                                  |
+| ---------------------------------------------- | ------------ | -------------------------------------------------------------------------------- |
+| [SDL_LogOutputFunction](SDL_LogOutputFunction) | **callback** | an [SDL_LogOutputFunction](SDL_LogOutputFunction) to call instead of the default |
+| void *                                         | **userdata** | a pointer that is passed to `callback`                                           |
 
 ## Version
 

@@ -11,14 +11,13 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_FreeFormat(SDL_PixelFormat *format);
-
 ```
 
 ## Function Parameters
 
-|                |                                                          |
-| -------------- | -------------------------------------------------------- |
-| **format**     | the [SDL_PixelFormat](SDL_PixelFormat) structure to free |
+|                                      |            |                                                          |
+| ------------------------------------ | ---------- | -------------------------------------------------------- |
+| [SDL_PixelFormat](SDL_PixelFormat) * | **format** | the [SDL_PixelFormat](SDL_PixelFormat) structure to free |
 
 ## Version
 

@@ -11,22 +11,22 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
-                                  VkInstance instance,
-                                  VkSurfaceKHR* surface);
-
+                              VkInstance instance,
+                              VkSurfaceKHR* surface);
 ```
 
 ## Function Parameters
 
-|                  |                                                                        |
-| ---------------- | ---------------------------------------------------------------------- |
-| **window**       | The window to which to attach the Vulkan surface                       |
-| **instance**     | The Vulkan instance handle                                             |
-| **surface**      | A pointer to a VkSurfaceKHR handle to output the newly created surface |
+|                            |              |                                                                        |
+| -------------------------- | ------------ | ---------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**   | The window to which to attach the Vulkan surface                       |
+| VkInstance                 | **instance** | The Vulkan instance handle                                             |
+| VkSurfaceKHR *             | **surface**  | A pointer to a VkSurfaceKHR handle to output the newly created surface |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success,
+[SDL_FALSE](SDL_FALSE) on error.
 
 ## Remarks
 

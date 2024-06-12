@@ -11,18 +11,17 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_CaptureMouse(SDL_bool enabled);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                              |
-| --------------- | ---------------------------------------------------------------------------- |
-| **enabled**     | [SDL_TRUE](SDL_TRUE) to enable capturing, [SDL_FALSE](SDL_FALSE) to disable. |
+|                      |             |                                                                              |
+| -------------------- | ----------- | ---------------------------------------------------------------------------- |
+| [SDL_bool](SDL_bool) | **enabled** | [SDL_TRUE](SDL_TRUE) to enable capturing, [SDL_FALSE](SDL_FALSE) to disable. |
 
 ## Return Value
 
-Returns 0 on success or -1 if not supported; call
+(int) Returns 0 on success or -1 if not supported; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

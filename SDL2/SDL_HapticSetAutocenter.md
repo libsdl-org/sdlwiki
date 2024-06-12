@@ -11,20 +11,19 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticSetAutocenter(SDL_Haptic * haptic,
-                            int autocenter);
-
+                        int autocenter);
 ```
 
 ## Function Parameters
 
-|                    |                                                             |
-| ------------------ | ----------------------------------------------------------- |
-| **haptic**         | the [SDL_Haptic](SDL_Haptic) device to set autocentering on |
-| **autocenter**     | value to set autocenter to (0-100)                          |
+|                            |                |                                                             |
+| -------------------------- | -------------- | ----------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic**     | the [SDL_Haptic](SDL_Haptic) device to set autocentering on |
+| int                        | **autocenter** | value to set autocenter to (0-100)                          |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

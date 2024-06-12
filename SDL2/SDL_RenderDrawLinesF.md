@@ -11,22 +11,21 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawLinesF(SDL_Renderer * renderer,
-                         const SDL_FPoint * points,
-                         int count);
-
+                     const SDL_FPoint * points,
+                     int count);
 ```
 
 ## Function Parameters
 
-|                  |                                                |
-| ---------------- | ---------------------------------------------- |
-| **renderer**     | The renderer which should draw multiple lines. |
-| **points**       | The points along the lines                     |
-| **count**        | The number of points, drawing count-1 lines    |
+|                                  |              |                                                |
+| -------------------------------- | ------------ | ---------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer** | The renderer which should draw multiple lines. |
+| const [SDL_FPoint](SDL_FPoint) * | **points**   | The points along the lines                     |
+| int                              | **count**    | The number of points, drawing count-1 lines    |
 
 ## Return Value
 
-Return 0 on success, or -1 on error
+(int) Return 0 on success, or -1 on error
 
 ## Version
 

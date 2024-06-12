@@ -11,14 +11,13 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_DestroySemaphore(SDL_sem * sem);
-
 ```
 
 ## Function Parameters
 
-|             |                          |
-| ----------- | ------------------------ |
-| **sem**     | the semaphore to destroy |
+|                      |         |                          |
+| -------------------- | ------- | ------------------------ |
+| [SDL_sem](SDL_sem) * | **sem** | the semaphore to destroy |
 
 ## Remarks
 

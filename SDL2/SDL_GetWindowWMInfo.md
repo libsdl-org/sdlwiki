@@ -11,22 +11,21 @@ Defined in [SDL_syswm.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_GetWindowWMInfo(SDL_Window * window,
-                             SDL_SysWMinfo * info);
-
+                         SDL_SysWMinfo * info);
 ```
 
 ## Function Parameters
 
-|                |                                                                               |
-| -------------- | ----------------------------------------------------------------------------- |
-| **window**     | the window about which information is being requested                         |
-| **info**       | an [SDL_SysWMinfo](SDL_SysWMinfo) structure filled in with window information |
+|                                  |            |                                                                               |
+| -------------------------------- | ---------- | ----------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *       | **window** | the window about which information is being requested                         |
+| [SDL_SysWMinfo](SDL_SysWMinfo) * | **info**   | an [SDL_SysWMinfo](SDL_SysWMinfo) structure filled in with window information |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the function is implemented and the
-`version` member of the `info` struct is valid, or [SDL_FALSE](SDL_FALSE)
-if the information could not be retrieved; call
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the function is
+implemented and the `version` member of the `info` struct is valid, or
+[SDL_FALSE](SDL_FALSE) if the information could not be retrieved; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

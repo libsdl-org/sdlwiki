@@ -11,12 +11,12 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Cursor* SDL_GetDefaultCursor(void);
-
 ```
 
 ## Return Value
 
-Returns the default cursor on success or NULL on failure.
+([SDL_Cursor](SDL_Cursor) *) Returns the default cursor on success or NULL
+on failure.
 
 ## Remarks
 

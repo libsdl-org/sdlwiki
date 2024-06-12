@@ -11,7 +11,6 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 void SDL_LogResetPriorities(void);
-
 ```
 
 ## Remarks

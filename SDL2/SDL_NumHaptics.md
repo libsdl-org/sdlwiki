@@ -11,14 +11,13 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_NumHaptics(void);
-
 ```
 
 ## Return Value
 
-Returns the number of haptic devices detected on the system or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+(int) Returns the number of haptic devices detected on the system or a
+negative error code on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

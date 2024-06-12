@@ -11,19 +11,18 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_GetMouseState(int *x, int *y);
-
 ```
 
 ## Function Parameters
 
-|           |                                                                            |
-| --------- | -------------------------------------------------------------------------- |
-| **x**     | the x coordinate of the mouse cursor position relative to the focus window |
-| **y**     | the y coordinate of the mouse cursor position relative to the focus window |
+|       |       |                                                                            |
+| ----- | ----- | -------------------------------------------------------------------------- |
+| int * | **x** | the x coordinate of the mouse cursor position relative to the focus window |
+| int * | **y** | the y coordinate of the mouse cursor position relative to the focus window |
 
 ## Return Value
 
-Returns a 32-bit button bitmask of the current button state.
+(Uint32) Returns a 32-bit button bitmask of the current button state.
 
 ## Remarks
 

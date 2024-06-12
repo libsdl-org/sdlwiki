@@ -11,20 +11,19 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowDisplayMode(SDL_Window * window,
-                             const SDL_DisplayMode * mode);
-
+                         const SDL_DisplayMode * mode);
 ```
 
 ## Function Parameters
 
-|                |                                                                                                                                                                 |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **window**     | the window to affect                                                                                                                                            |
-| **mode**       | the [SDL_DisplayMode](SDL_DisplayMode) structure representing the mode to use, or NULL to use the window's dimensions and the desktop's format and refresh rate |
+|                                            |            |                                                                                                                                                                 |
+| ------------------------------------------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *                 | **window** | the window to affect                                                                                                                                            |
+| const [SDL_DisplayMode](SDL_DisplayMode) * | **mode**   | the [SDL_DisplayMode](SDL_DisplayMode) structure representing the mode to use, or NULL to use the window's dimensions and the desktop's format and refresh rate |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,19 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 Uint16 SDL_JoystickGetDeviceProduct(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                     |
-| -------------------- | ------------------------------------------------------------------- |
-| **device_index**     | the index of the joystick to query (the N'th joystick on the system |
+|     |                  |                                                                     |
+| --- | ---------------- | ------------------------------------------------------------------- |
+| int | **device_index** | the index of the joystick to query (the N'th joystick on the system |
 
 ## Return Value
 
-Returns the USB product ID of the selected joystick. If called on an
-invalid index, this function returns zero
+(Uint16) Returns the USB product ID of the selected joystick. If called on
+an invalid index, this function returns zero
 
 ## Remarks
 

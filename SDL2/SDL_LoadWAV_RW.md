@@ -11,30 +11,29 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops * src,
-                              int freesrc,
-                              SDL_AudioSpec * spec,
-                              Uint8 ** audio_buf,
-                              Uint32 * audio_len);
-
+                          int freesrc,
+                          SDL_AudioSpec * spec,
+                          Uint8 ** audio_buf,
+                          Uint32 * audio_len);
 ```
 
 ## Function Parameters
 
-|                   |                                                                                              |
-| ----------------- | -------------------------------------------------------------------------------------------- |
-| **src**           | The data source for the WAVE data                                                            |
-| **freesrc**       | If non-zero, SDL will _always_ free the data source                                          |
-| **spec**          | An [SDL_AudioSpec](SDL_AudioSpec) that will be filled in with the wave file's format details |
-| **audio_buf**     | A pointer filled with the audio data, allocated by the function.                             |
-| **audio_len**     | A pointer filled with the length of the audio data buffer in bytes                           |
+|                                  |               |                                                                                              |
+| -------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) *         | **src**       | The data source for the WAVE data                                                            |
+| int                              | **freesrc**   | If non-zero, SDL will _always_ free the data source                                          |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | An [SDL_AudioSpec](SDL_AudioSpec) that will be filled in with the wave file's format details |
+| Uint8 **                         | **audio_buf** | A pointer filled with the audio data, allocated by the function.                             |
+| Uint32 *                         | **audio_len** | A pointer filled with the length of the audio data buffer in bytes                           |
 
 ## Return Value
 
-Returns This function, if successfully called, returns `spec`, which will
-be filled with the audio data format of the wave source data. `audio_buf`
-will be filled with a pointer to an allocated buffer containing the audio
-data, and `audio_len` is filled with the length of that audio buffer in
-bytes.
+([SDL_AudioSpec](SDL_AudioSpec) *) Returns This function, if successfully
+called, returns `spec`, which will be filled with the audio data format of
+the wave source data. `audio_buf` will be filled with a pointer to an
+allocated buffer containing the audio data, and `audio_len` is filled with
+the length of that audio buffer in bytes.
 
 This function returns NULL if the .WAV file cannot be opened, uses an
 unknown data format, or is corrupt; call [SDL_GetError](SDL_GetError)() for

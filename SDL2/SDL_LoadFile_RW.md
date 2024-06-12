@@ -11,22 +11,21 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void* SDL_LoadFile_RW(SDL_RWops *src,
-                      size_t *datasize,
-                      int freesrc);
-
+                  size_t *datasize,
+                  int freesrc);
 ```
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **src**          | the [SDL_RWops](SDL_RWops) to read all available data from                |
-| **datasize**     | if not NULL, will store the number of bytes read                          |
-| **freesrc**      | if non-zero, calls [SDL_RWclose](SDL_RWclose)() on `src` before returning |
+|                          |              |                                                                           |
+| ------------------------ | ------------ | ------------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src**      | the [SDL_RWops](SDL_RWops) to read all available data from                |
+| size_t *                 | **datasize** | if not NULL, will store the number of bytes read                          |
+| int                      | **freesrc**  | if non-zero, calls [SDL_RWclose](SDL_RWclose)() on `src` before returning |
 
 ## Return Value
 
-Returns the data, or NULL if there was an error.
+(void *) Returns the data, or NULL if there was an error.
 
 ## Remarks
 

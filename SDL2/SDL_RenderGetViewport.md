@@ -11,16 +11,15 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderGetViewport(SDL_Renderer * renderer,
-                           SDL_Rect * rect);
-
+                       SDL_Rect * rect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                     |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure filled in with the current drawing area |
+|                                |              |                                                                           |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                     |
+| [SDL_Rect](SDL_Rect) *         | **rect**     | an [SDL_Rect](SDL_Rect) structure filled in with the current drawing area |
 
 ## Version
 

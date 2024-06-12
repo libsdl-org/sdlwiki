@@ -11,15 +11,14 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickAttachVirtual(SDL_JoystickType type,
-                              int naxes,
-                              int nbuttons,
-                              int nhats);
-
+                          int naxes,
+                          int nbuttons,
+                          int nhats);
 ```
 
 ## Return Value
 
-Returns the joystick's device index, or -1 if an error occurred.
+(int) Returns the joystick's device index, or -1 if an error occurred.
 
 ## Version
 

@@ -11,22 +11,21 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawRects(SDL_Renderer * renderer,
-                        const SDL_Rect * rects,
-                        int count);
-
+                    const SDL_Rect * rects,
+                    int count);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                     |
-| ---------------- | ----------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                               |
-| **rects**        | an array of [SDL_Rect](SDL_Rect) structures representing the rectangles to be drawn |
-| **count**        | the number of rectangles                                                            |
+|                                |              |                                                                                     |
+| ------------------------------ | ------------ | ----------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                               |
+| const [SDL_Rect](SDL_Rect) *   | **rects**    | an array of [SDL_Rect](SDL_Rect) structures representing the rectangles to be drawn |
+| int                            | **count**    | the number of rectangles                                                            |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

@@ -11,20 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerSetSensorEnabled(SDL_GameController *gamecontroller, SDL_SensorType type, SDL_bool enabled);
-
 ```
 
 ## Function Parameters
 
-|                        |                                          |
-| ---------------------- | ---------------------------------------- |
-| **gamecontroller**     | The controller to update                 |
-| **type**               | The type of sensor to enable/disable     |
-| **enabled**            | Whether data reporting should be enabled |
+|                                            |                    |                                          |
+| ------------------------------------------ | ------------------ | ---------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to update                 |
+| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to enable/disable     |
+| [SDL_bool](SDL_bool)                       | **enabled**        | Whether data reporting should be enabled |
 
 ## Return Value
 
-Returns 0 or -1 if an error occurred.
+(int) Returns 0 or -1 if an error occurred.
 
 ## Version
 

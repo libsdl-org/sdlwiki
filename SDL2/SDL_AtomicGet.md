@@ -11,18 +11,17 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_AtomicGet(SDL_atomic_t *a);
-
 ```
 
 ## Function Parameters
 
-|           |                                                       |
-| --------- | ----------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable |
+|                                |       |                                                       |
+| ------------------------------ | ----- | ----------------------------------------------------- |
+| [SDL_atomic_t](SDL_atomic_t) * | **a** | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable |
 
 ## Return Value
 
-Returns the current value of an atomic variable.
+(int) Returns the current value of an atomic variable.
 
 ## Remarks
 

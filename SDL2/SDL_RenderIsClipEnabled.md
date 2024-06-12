@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_RenderIsClipEnabled(SDL_Renderer * renderer);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                      |
-| ---------------- | ---------------------------------------------------- |
-| **renderer**     | the renderer from which clip state should be queried |
+|                                |              |                                                      |
+| ------------------------------ | ------------ | ---------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which clip state should be queried |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if clipping is enabled or
-[SDL_FALSE](SDL_FALSE) if not; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if clipping is enabled
+or [SDL_FALSE](SDL_FALSE) if not; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

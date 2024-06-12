@@ -11,21 +11,20 @@ Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 int SDL_RegisterApp(const char *name, Uint32 style, void *hInst);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                                                                                      |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**      | the window class name, in UTF-8 encoding. If NULL, SDL currently uses "[SDL_app](SDL_app)" but this isn't guaranteed.                                |
-| **style**     | the value to use in WNDCLASSEX::style. If `name` is NULL, SDL currently uses `(CS_BYTEALIGNCLIENT | CS_OWNDC)` regardless of what is specified here. |
-| **hInst**     | the HINSTANCE to use in WNDCLASSEX::hInstance. If zero, SDL will use `GetModuleHandle(NULL)` instead.                                                |
+|              |           |                                                                                                                                                      |
+| ------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const char * | **name**  | the window class name, in UTF-8 encoding. If NULL, SDL currently uses "[SDL_app](SDL_app)" but this isn't guaranteed.                                |
+| Uint32       | **style** | the value to use in WNDCLASSEX::style. If `name` is NULL, SDL currently uses `(CS_BYTEALIGNCLIENT | CS_OWNDC)` regardless of what is specified here. |
+| void *       | **hInst** | the HINSTANCE to use in WNDCLASSEX::hInstance. If zero, SDL will use `GetModuleHandle(NULL)` instead.                                                |
 
 ## Return Value
 
-Returns 0 on success, -1 on error. [SDL_GetError](SDL_GetError)() may have
-details.
+(int) Returns 0 on success, -1 on error. [SDL_GetError](SDL_GetError)() may
+have details.
 
 ## Remarks
 

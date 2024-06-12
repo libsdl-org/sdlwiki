@@ -11,21 +11,20 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetAudioDeviceName(int index,
-                                   int iscapture);
-
+                               int iscapture);
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
-| **iscapture**     | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
+|     |               |                                                                                                                    |
+| --- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
+| int | **index**     | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
+| int | **iscapture** | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
 
 ## Return Value
 
-Returns the name of the audio device at the requested index, or NULL on
-error.
+(const char *) Returns the name of the audio device at the requested index,
+or NULL on error.
 
 ## Remarks
 

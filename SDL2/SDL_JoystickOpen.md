@@ -11,19 +11,19 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_Joystick* SDL_JoystickOpen(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                    |
-| -------------------- | ---------------------------------- |
-| **device_index**     | the index of the joystick to query |
+|     |                  |                                    |
+| --- | ---------------- | ---------------------------------- |
+| int | **device_index** | the index of the joystick to query |
 
 ## Return Value
 
-Returns a joystick identifier or NULL if an error occurred; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Joystick](SDL_Joystick) *) Returns a joystick identifier or NULL if
+an error occurred; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

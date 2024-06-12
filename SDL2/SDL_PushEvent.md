@@ -11,20 +11,19 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_PushEvent(SDL_Event * event);
-
 ```
 
 ## Function Parameters
 
-|               |                                                     |
-| ------------- | --------------------------------------------------- |
-| **event**     | the [SDL_Event](SDL_Event) to be added to the queue |
+|                          |           |                                                     |
+| ------------------------ | --------- | --------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) to be added to the queue |
 
 ## Return Value
 
-Returns 1 on success, 0 if the event was filtered, or a negative error code
-on failure; call [SDL_GetError](SDL_GetError)() for more information. A
-common reason for error is the event queue being full.
+(int) Returns 1 on success, 0 if the event was filtered, or a negative
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information. A common reason for error is the event queue being full.
 
 ## Remarks
 

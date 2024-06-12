@@ -11,19 +11,18 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_RemoveTimer(SDL_TimerID id);
-
 ```
 
 ## Function Parameters
 
-|            |                               |
-| ---------- | ----------------------------- |
-| **id**     | the ID of the timer to remove |
+|                            |        |                               |
+| -------------------------- | ------ | ----------------------------- |
+| [SDL_TimerID](SDL_TimerID) | **id** | the ID of the timer to remove |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the timer is removed or
-[SDL_FALSE](SDL_FALSE) if the timer wasn't found.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the timer is removed
+or [SDL_FALSE](SDL_FALSE) if the timer wasn't found.
 
 ## Version
 

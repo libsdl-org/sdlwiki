@@ -11,20 +11,19 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_QueueAudio(SDL_AudioDeviceID dev, const void *data, Uint32 len);
-
 ```
 
 ## Function Parameters
 
-|              |                                                           |
-| ------------ | --------------------------------------------------------- |
-| **dev**      | the device ID to which we will queue audio                |
-| **data**     | the data to queue to the device for later playback        |
-| **len**      | the number of bytes (not samples!) to which `data` points |
+|                                        |          |                                                           |
+| -------------------------------------- | -------- | --------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev**  | the device ID to which we will queue audio                |
+| const void *                           | **data** | the data to queue to the device for later playback        |
+| Uint32                                 | **len**  | the number of bytes (not samples!) to which `data` points |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

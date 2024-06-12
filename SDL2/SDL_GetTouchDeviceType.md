@@ -11,7 +11,6 @@ Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_TouchDeviceType SDL_GetTouchDeviceType(SDL_TouchID touchID);
-
 ```
 
 ## Version

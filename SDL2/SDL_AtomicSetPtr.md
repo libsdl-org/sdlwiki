@@ -11,19 +11,18 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void* SDL_AtomicSetPtr(void **a, void* v);
-
 ```
 
 ## Function Parameters
 
-|           |                           |
-| --------- | ------------------------- |
-| **a**     | a pointer to a pointer    |
-| **v**     | the desired pointer value |
+|         |       |                           |
+| ------- | ----- | ------------------------- |
+| void ** | **a** | a pointer to a pointer    |
+| void *  | **v** | the desired pointer value |
 
 ## Return Value
 
-Returns the previous value of the pointer.
+(void *) Returns the previous value of the pointer.
 
 ## Remarks
 

@@ -11,19 +11,18 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
-
 ```
 
 ## Function Parameters
 
-|              |                              |
-| ------------ | ---------------------------- |
-| **lock**     | a pointer to a lock variable |
+|                                |          |                              |
+| ------------------------------ | -------- | ---------------------------- |
+| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the lock succeeded, [SDL_FALSE](SDL_FALSE)
-if the lock is already held.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the lock succeeded,
+[SDL_FALSE](SDL_FALSE) if the lock is already held.
 
 ## Remarks
 

@@ -11,20 +11,19 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 const char* SDL_JoystickNameForIndex(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                      |
-| -------------------- | -------------------------------------------------------------------- |
-| **device_index**     | the index of the joystick to query (the N'th joystick on the system) |
+|     |                  |                                                                      |
+| --- | ---------------- | -------------------------------------------------------------------- |
+| int | **device_index** | the index of the joystick to query (the N'th joystick on the system) |
 
 ## Return Value
 
-Returns the name of the selected joystick. If no name can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
-information.
+(const char *) Returns the name of the selected joystick. If no name can be
+found, this function returns NULL; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

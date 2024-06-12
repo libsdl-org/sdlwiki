@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GL_SetSwapInterval(int interval);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                      |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| **interval**     | 0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for adaptive vsync |
+|     |              |                                                                                                      |
+| --- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| int | **interval** | 0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for adaptive vsync |
 
 ## Return Value
 
-Returns 0 on success or -1 if setting the swap interval is not supported;
-call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 on success or -1 if setting the swap interval is not
+supported; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

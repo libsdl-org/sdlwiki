@@ -11,18 +11,17 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_Vulkan_LoadLibrary(const char *path);
-
 ```
 
 ## Function Parameters
 
-|              |                                                           |
-| ------------ | --------------------------------------------------------- |
-| **path**     | The platform dependent Vulkan loader library name or NULL |
+|              |          |                                                           |
+| ------------ | -------- | --------------------------------------------------------- |
+| const char * | **path** | The platform dependent Vulkan loader library name or NULL |
 
 ## Return Value
 
-Returns 0 on success or -1 if the library couldn't be loaded; call
+(int) Returns 0 on success or -1 if the library couldn't be loaded; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

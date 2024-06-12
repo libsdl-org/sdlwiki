@@ -11,22 +11,21 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_JoystickGetAxisInitialState(SDL_Joystick *joystick,
-                           int axis, Sint16 *state);
-
+                       int axis, Sint16 *state);
 ```
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
-| **axis**         | the axis to query; the axis indices start at index 0                      |
-| **state**        | Upon return, the initial value is supplied here.                          |
+|                                |              |                                                                           |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| int                            | **axis**     | the axis to query; the axis indices start at index 0                      |
+| Sint16 *                       | **state**    | Upon return, the initial value is supplied here.                          |
 
 ## Return Value
 
-Return [SDL_TRUE](SDL_TRUE) if this axis has any initial value, or
-[SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Return [SDL_TRUE](SDL_TRUE) if this axis has any
+initial value, or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Remarks
 

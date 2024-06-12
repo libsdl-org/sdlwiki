@@ -11,19 +11,18 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_LinuxSetThreadPriority(Sint64 threadID, int priority);
-
 ```
 
 ## Function Parameters
 
-|                  |                                           |
-| ---------------- | ----------------------------------------- |
-| **threadID**     | the Unix thread ID to change priority of. |
-| **priority**     | The new, Unix-specific, priority value.   |
+|        |              |                                           |
+| ------ | ------------ | ----------------------------------------- |
+| Sint64 | **threadID** | the Unix thread ID to change priority of. |
+| int    | **priority** | The new, Unix-specific, priority value.   |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+(int) Returns 0 on success, or -1 on error.
 
 ## Remarks
 

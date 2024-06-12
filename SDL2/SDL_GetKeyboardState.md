@@ -11,18 +11,17 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 const Uint8* SDL_GetKeyboardState(int *numkeys);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                        |
-| --------------- | ------------------------------------------------------ |
-| **numkeys**     | if non-NULL, receives the length of the returned array |
+|       |             |                                                        |
+| ----- | ----------- | ------------------------------------------------------ |
+| int * | **numkeys** | if non-NULL, receives the length of the returned array |
 
 ## Return Value
 
-Returns a pointer to an array of key states.
+(const Uint8 *) Returns a pointer to an array of key states.
 
 ## Remarks
 

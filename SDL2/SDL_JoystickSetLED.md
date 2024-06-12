@@ -11,21 +11,21 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickSetLED(SDL_Joystick *joystick, Uint8 red, Uint8 green, Uint8 blue);
-
 ```
 
 ## Function Parameters
 
-|                  |                                |
-| ---------------- | ------------------------------ |
-| **joystick**     | The joystick to update         |
-| **red**          | The intensity of the red LED   |
-| **green**        | The intensity of the green LED |
-| **blue**         | The intensity of the blue LED  |
+|                                |              |                                |
+| ------------------------------ | ------------ | ------------------------------ |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to update         |
+| Uint8                          | **red**      | The intensity of the red LED   |
+| Uint8                          | **green**    | The intensity of the green LED |
+| Uint8                          | **blue**     | The intensity of the blue LED  |
 
 ## Return Value
 
-Returns 0 on success, -1 if this joystick does not have a modifiable LED
+(int) Returns 0 on success, -1 if this joystick does not have a modifiable
+LED
 
 ## Remarks
 

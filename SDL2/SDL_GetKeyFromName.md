@@ -11,19 +11,19 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_Keycode SDL_GetKeyFromName(const char *name);
-
 ```
 
 ## Function Parameters
 
-|              |                             |
-| ------------ | --------------------------- |
-| **name**     | the human-readable key name |
+|              |          |                             |
+| ------------ | -------- | --------------------------- |
+| const char * | **name** | the human-readable key name |
 
 ## Return Value
 
-Returns key code, or [`SDLK_UNKNOWN`](SDLK_UNKNOWN) if the name wasn't
-recognized; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Keycode](SDL_Keycode)) Returns key code, or
+[`SDLK_UNKNOWN`](SDLK_UNKNOWN) if the name wasn't recognized; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

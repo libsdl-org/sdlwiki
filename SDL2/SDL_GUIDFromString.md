@@ -11,18 +11,17 @@ Defined in [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_GUID SDL_GUIDFromString(const char *pchGUID);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                     |
-| --------------- | --------------------------------------------------- |
-| **pchGUID**     | string containing an ASCII representation of a GUID |
+|              |             |                                                     |
+| ------------ | ----------- | --------------------------------------------------- |
+| const char * | **pchGUID** | string containing an ASCII representation of a GUID |
 
 ## Return Value
 
-Returns a [SDL_GUID](SDL_GUID) structure.
+([SDL_GUID](SDL_GUID)) Returns a [SDL_GUID](SDL_GUID) structure.
 
 ## Remarks
 

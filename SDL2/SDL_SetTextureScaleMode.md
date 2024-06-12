@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetTextureScaleMode(SDL_Texture * texture,
-                            SDL_ScaleMode scaleMode);
-
+                        SDL_ScaleMode scaleMode);
 ```
 
 ## Function Parameters
 
-|                   |                                                                |
-| ----------------- | -------------------------------------------------------------- |
-| **texture**       | The texture to update.                                         |
-| **scaleMode**     | the [SDL_ScaleMode](SDL_ScaleMode) to use for texture scaling. |
+|                                |               |                                                                |
+| ------------------------------ | ------------- | -------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) *   | **texture**   | The texture to update.                                         |
+| [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode** | the [SDL_ScaleMode](SDL_ScaleMode) to use for texture scaling. |
 
 ## Return Value
 
-Returns 0 on success, or -1 if the texture is not valid.
+(int) Returns 0 on success, or -1 if the texture is not valid.
 
 ## Remarks
 

@@ -11,14 +11,13 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_UnlockTexture(SDL_Texture * texture);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                          |
-| --------------- | -------------------------------------------------------- |
-| **texture**     | a texture locked by [SDL_LockTexture](SDL_LockTexture)() |
+|                              |             |                                                          |
+| ---------------------------- | ----------- | -------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | a texture locked by [SDL_LockTexture](SDL_LockTexture)() |
 
 ## Remarks
 

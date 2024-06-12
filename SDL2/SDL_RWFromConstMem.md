@@ -11,21 +11,21 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_RWFromConstMem(const void *mem,
-                              int size);
-
+                          int size);
 ```
 
 ## Function Parameters
 
-|              |                                                                          |
-| ------------ | ------------------------------------------------------------------------ |
-| **mem**      | a pointer to a read-only buffer to feed an [SDL_RWops](SDL_RWops) stream |
-| **size**     | the buffer size, in bytes                                                |
+|              |          |                                                                          |
+| ------------ | -------- | ------------------------------------------------------------------------ |
+| const void * | **mem**  | a pointer to a read-only buffer to feed an [SDL_RWops](SDL_RWops) stream |
+| int          | **size** | the buffer size, in bytes                                                |
 
 ## Return Value
 
-Returns a pointer to a new [SDL_RWops](SDL_RWops) structure, or NULL if it
-fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_RWops](SDL_RWops) *) Returns a pointer to a new
+[SDL_RWops](SDL_RWops) structure, or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

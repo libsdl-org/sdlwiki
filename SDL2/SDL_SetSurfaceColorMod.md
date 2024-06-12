@@ -11,22 +11,21 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SetSurfaceColorMod(SDL_Surface * surface,
-                           Uint8 r, Uint8 g, Uint8 b);
-
+                       Uint8 r, Uint8 g, Uint8 b);
 ```
 
 ## Function Parameters
 
-|                 |                                                       |
-| --------------- | ----------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to update    |
-| **r**           | the red color value multiplied into blit operations   |
-| **g**           | the green color value multiplied into blit operations |
-| **b**           | the blue color value multiplied into blit operations  |
+|                              |             |                                                       |
+| ---------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update    |
+| Uint8                        | **r**       | the red color value multiplied into blit operations   |
+| Uint8                        | **g**       | the green color value multiplied into blit operations |
+| Uint8                        | **b**       | the blue color value multiplied into blit operations  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GL_BindTexture(SDL_Texture *texture, float *texw, float *texh);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                              |
-| --------------- | ------------------------------------------------------------------------------------------------------------ |
-| **texture**     | the texture to bind to the current OpenGL/ES/ES2 context                                                     |
-| **texw**        | a pointer to a float value which will be filled with the texture width or NULL if you don't need that value  |
-| **texh**        | a pointer to a float value which will be filled with the texture height or NULL if you don't need that value |
+|                              |             |                                                                                                              |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to bind to the current OpenGL/ES/ES2 context                                                     |
+| float *                      | **texw**    | a pointer to a float value which will be filled with the texture width or NULL if you don't need that value  |
+| float *                      | **texh**    | a pointer to a float value which will be filled with the texture height or NULL if you don't need that value |
 
 ## Return Value
 
-Returns 0 on success, or -1 if the operation is not supported; call
+(int) Returns 0 on success, or -1 if the operation is not supported; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

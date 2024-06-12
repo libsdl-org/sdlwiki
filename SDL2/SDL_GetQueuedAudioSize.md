@@ -11,18 +11,17 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_GetQueuedAudioSize(SDL_AudioDeviceID dev);
-
 ```
 
 ## Function Parameters
 
-|             |                                                        |
-| ----------- | ------------------------------------------------------ |
-| **dev**     | the device ID of which we will query queued audio size |
+|                                        |         |                                                        |
+| -------------------------------------- | ------- | ------------------------------------------------------ |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the device ID of which we will query queued audio size |
 
 ## Return Value
 
-Returns the number of bytes (not samples!) of queued audio.
+(Uint32) Returns the number of bytes (not samples!) of queued audio.
 
 ## Remarks
 

@@ -11,24 +11,24 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetPaletteColors(SDL_Palette * palette,
-                         const SDL_Color * colors,
-                         int firstcolor, int ncolors);
-
+                     const SDL_Color * colors,
+                     int firstcolor, int ncolors);
 ```
 
 ## Function Parameters
 
-|                    |                                                                        |
-| ------------------ | ---------------------------------------------------------------------- |
-| **palette**        | the [SDL_Palette](SDL_Palette) structure to modify                     |
-| **colors**         | an array of [SDL_Color](SDL_Color) structures to copy into the palette |
-| **firstcolor**     | the index of the first palette entry to modify                         |
-| **ncolors**        | the number of entries to modify                                        |
+|                                |                |                                                                        |
+| ------------------------------ | -------------- | ---------------------------------------------------------------------- |
+| [SDL_Palette](SDL_Palette) *   | **palette**    | the [SDL_Palette](SDL_Palette) structure to modify                     |
+| const [SDL_Color](SDL_Color) * | **colors**     | an array of [SDL_Color](SDL_Color) structures to copy into the palette |
+| int                            | **firstcolor** | the index of the first palette entry to modify                         |
+| int                            | **ncolors**    | the number of entries to modify                                        |
 
 ## Return Value
 
-Returns 0 on success or a negative error code if not all of the colors
-could be set; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 on success or a negative error code if not all of the
+colors could be set; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

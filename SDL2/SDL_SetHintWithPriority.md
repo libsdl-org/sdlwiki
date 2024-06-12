@@ -11,23 +11,22 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_SetHintWithPriority(const char *name,
-                                 const char *value,
-                                 SDL_HintPriority priority);
-
+                             const char *value,
+                             SDL_HintPriority priority);
 ```
 
 ## Function Parameters
 
-|                  |                                                             |
-| ---------------- | ----------------------------------------------------------- |
-| **name**         | the hint to set                                             |
-| **value**        | the value of the hint variable                              |
-| **priority**     | the [SDL_HintPriority](SDL_HintPriority) level for the hint |
+|                                      |              |                                                             |
+| ------------------------------------ | ------------ | ----------------------------------------------------------- |
+| const char *                         | **name**     | the hint to set                                             |
+| const char *                         | **value**    | the value of the hint variable                              |
+| [SDL_HintPriority](SDL_HintPriority) | **priority** | the [SDL_HintPriority](SDL_HintPriority) level for the hint |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
-otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the hint was set,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

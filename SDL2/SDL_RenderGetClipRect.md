@@ -11,16 +11,15 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderGetClipRect(SDL_Renderer * renderer,
-                           SDL_Rect * rect);
-
+                       SDL_Rect * rect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **renderer**     | the rendering context from which clip rectangle should be queried                                                        |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure filled in with the current clipping area or an empty rectangle if clipping is disabled |
+|                                |              |                                                                                                                          |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context from which clip rectangle should be queried                                                        |
+| [SDL_Rect](SDL_Rect) *         | **rect**     | an [SDL_Rect](SDL_Rect) structure filled in with the current clipping area or an empty rectangle if clipping is disabled |
 
 ## Version
 

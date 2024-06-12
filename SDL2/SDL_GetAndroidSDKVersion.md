@@ -11,12 +11,11 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GetAndroidSDKVersion(void);
-
 ```
 
 ## Return Value
 
-Returns the Android API level.
+(int) Returns the Android API level.
 
 ## Remarks
 

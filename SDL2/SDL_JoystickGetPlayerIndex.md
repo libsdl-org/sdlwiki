@@ -11,18 +11,17 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickGetPlayerIndex(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
 
 ## Return Value
 
-Returns the player index, or -1 if it's not available.
+(int) Returns the player index, or -1 if it's not available.
 
 ## Remarks
 

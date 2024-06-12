@@ -11,20 +11,20 @@ Defined in [SDL_power.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                                                                                                 |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **seconds**     | seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery                       |
-| **percent**     | percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery |
+|       |             |                                                                                                                                                                                 |
+| ----- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| int * | **seconds** | seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery                       |
+| int * | **percent** | percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery |
 
 ## Return Value
 
-Returns an [SDL_PowerState](SDL_PowerState) enum representing the current
-battery state.
+([SDL_PowerState](SDL_PowerState)) Returns an
+[SDL_PowerState](SDL_PowerState) enum representing the current battery
+state.
 
 ## Remarks
 

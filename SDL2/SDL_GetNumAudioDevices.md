@@ -11,20 +11,19 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetNumAudioDevices(int iscapture);
-
 ```
 
 ## Function Parameters
 
-|                   |                                                                         |
-| ----------------- | ----------------------------------------------------------------------- |
-| **iscapture**     | zero to request playback devices, non-zero to request recording devices |
+|     |               |                                                                         |
+| --- | ------------- | ----------------------------------------------------------------------- |
+| int | **iscapture** | zero to request playback devices, non-zero to request recording devices |
 
 ## Return Value
 
-Returns the number of available devices exposed by the current driver or -1
-if an explicit list of devices can't be determined. A return value of -1
-does not necessarily mean an error condition.
+(int) Returns the number of available devices exposed by the current driver
+or -1 if an explicit list of devices can't be determined. A return value of
+-1 does not necessarily mean an error condition.
 
 ## Remarks
 

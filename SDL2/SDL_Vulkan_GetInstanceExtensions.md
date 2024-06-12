@@ -11,22 +11,22 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_Vulkan_GetInstanceExtensions(SDL_Window *window,
-                                          unsigned int *pCount,
-                                          const char **pNames);
-
+                                      unsigned int *pCount,
+                                      const char **pNames);
 ```
 
 ## Function Parameters
 
-|                |                                                                                                                         |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **window**     | A window for which the required Vulkan instance extensions should be retrieved (will be deprecated in a future release) |
-| **pCount**     | A pointer to an unsigned int corresponding to the number of extensions to be returned                                   |
-| **pNames**     | NULL or a pointer to an array to be filled with required Vulkan instance extensions                                     |
+|                            |            |                                                                                                                         |
+| -------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | A window for which the required Vulkan instance extensions should be retrieved (will be deprecated in a future release) |
+| unsigned int *             | **pCount** | A pointer to an unsigned int corresponding to the number of extensions to be returned                                   |
+| const char **              | **pNames** | NULL or a pointer to an array to be filled with required Vulkan instance extensions                                     |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success,
+[SDL_FALSE](SDL_FALSE) on error.
 
 ## Remarks
 

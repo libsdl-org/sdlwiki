@@ -11,14 +11,13 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 void SDL_SetModState(SDL_Keymod modstate);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                       |
-| ---------------- | ----------------------------------------------------- |
-| **modstate**     | the desired [SDL_Keymod](SDL_Keymod) for the keyboard |
+|                          |              |                                                       |
+| ------------------------ | ------------ | ----------------------------------------------------- |
+| [SDL_Keymod](SDL_Keymod) | **modstate** | the desired [SDL_Keymod](SDL_Keymod) for the keyboard |
 
 ## Remarks
 

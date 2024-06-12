@@ -11,18 +11,17 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_sem* SDL_CreateSemaphore(Uint32 initial_value);
-
 ```
 
 ## Function Parameters
 
-|                       |                                     |
-| --------------------- | ----------------------------------- |
-| **initial_value**     | the starting value of the semaphore |
+|        |                   |                                     |
+| ------ | ----------------- | ----------------------------------- |
+| Uint32 | **initial_value** | the starting value of the semaphore |
 
 ## Return Value
 
-Returns a new semaphore or NULL on failure; call
+([SDL_sem](SDL_sem) *) Returns a new semaphore or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

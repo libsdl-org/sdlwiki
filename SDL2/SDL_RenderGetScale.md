@@ -11,17 +11,16 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderGetScale(SDL_Renderer * renderer,
-                       float *scaleX, float *scaleY);
-
+                   float *scaleX, float *scaleY);
 ```
 
 ## Function Parameters
 
-|                  |                                                         |
-| ---------------- | ------------------------------------------------------- |
-| **renderer**     | the renderer from which drawing scale should be queried |
-| **scaleX**       | a pointer filled in with the horizontal scaling factor  |
-| **scaleY**       | a pointer filled in with the vertical scaling factor    |
+|                                |              |                                                         |
+| ------------------------------ | ------------ | ------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which drawing scale should be queried |
+| float *                        | **scaleX**   | a pointer filled in with the horizontal scaling factor  |
+| float *                        | **scaleY**   | a pointer filled in with the vertical scaling factor    |
 
 ## Version
 

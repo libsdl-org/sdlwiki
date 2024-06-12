@@ -11,12 +11,11 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Window * SDL_GetMouseFocus(void);
-
 ```
 
 ## Return Value
 
-Returns the window with mouse focus.
+([SDL_Window](SDL_Window) *) Returns the window with mouse focus.
 
 ## Version
 

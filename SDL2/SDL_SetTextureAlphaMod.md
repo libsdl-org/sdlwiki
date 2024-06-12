@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetTextureAlphaMod(SDL_Texture * texture,
-                           Uint8 alpha);
-
+                       Uint8 alpha);
 ```
 
 ## Function Parameters
 
-|                 |                                                        |
-| --------------- | ------------------------------------------------------ |
-| **texture**     | the texture to update                                  |
-| **alpha**       | the source alpha value multiplied into copy operations |
+|                              |             |                                                        |
+| ---------------------------- | ----------- | ------------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                  |
+| Uint8                        | **alpha**   | the source alpha value multiplied into copy operations |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

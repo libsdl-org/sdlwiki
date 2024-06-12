@@ -11,18 +11,17 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_ShowCursor(int toggle);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                                                                                                  |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **toggle**     | [`SDL_ENABLE`](SDL_ENABLE) to show the cursor, [`SDL_DISABLE`](SDL_DISABLE) to hide it, [`SDL_QUERY`](SDL_QUERY) to query the current state without changing it. |
+|     |            |                                                                                                                                                                  |
+| --- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| int | **toggle** | [`SDL_ENABLE`](SDL_ENABLE) to show the cursor, [`SDL_DISABLE`](SDL_DISABLE) to hide it, [`SDL_QUERY`](SDL_QUERY) to query the current state without changing it. |
 
 ## Return Value
 
-Returns [`SDL_ENABLE`](SDL_ENABLE) if the cursor is shown, or
+(int) Returns [`SDL_ENABLE`](SDL_ENABLE) if the cursor is shown, or
 [`SDL_DISABLE`](SDL_DISABLE) if the cursor is hidden, or a negative error
 code on failure; call [SDL_GetError](SDL_GetError)() for more information.
 

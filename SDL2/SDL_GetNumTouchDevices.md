@@ -11,12 +11,11 @@ Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetNumTouchDevices(void);
-
 ```
 
 ## Return Value
 
-Returns the number of registered touch devices.
+(int) Returns the number of registered touch devices.
 
 ## Remarks
 

@@ -11,20 +11,19 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickSetVirtualAxis(SDL_Joystick *joystick, int axis, Sint16 value);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                   |
-| ---------------- | ------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.       |
-| **axis**         | the specific axis on the virtual joystick to set. |
-| **value**        | the new value for the specified axis.             |
+|                                |              |                                                   |
+| ------------------------------ | ------------ | ------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.       |
+| int                            | **axis**     | the specific axis on the virtual joystick to set. |
+| Sint16                         | **value**    | the new value for the specified axis.             |
 
 ## Return Value
 
-Returns 0 on success, -1 on error.
+(int) Returns 0 on success, -1 on error.
 
 ## Remarks
 

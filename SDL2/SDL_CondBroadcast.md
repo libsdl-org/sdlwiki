@@ -11,18 +11,17 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_CondBroadcast(SDL_cond * cond);
-
 ```
 
 ## Function Parameters
 
-|              |                                  |
-| ------------ | -------------------------------- |
-| **cond**     | the condition variable to signal |
+|                        |          |                                  |
+| ---------------------- | -------- | -------------------------------- |
+| [SDL_cond](SDL_cond) * | **cond** | the condition variable to signal |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

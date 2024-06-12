@@ -11,21 +11,20 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderSetScale(SDL_Renderer * renderer,
-                       float scaleX, float scaleY);
-
+                   float scaleX, float scaleY);
 ```
 
 ## Function Parameters
 
-|                  |                               |
-| ---------------- | ----------------------------- |
-| **renderer**     | a rendering context           |
-| **scaleX**       | the horizontal scaling factor |
-| **scaleY**       | the vertical scaling factor   |
+|                                |              |                               |
+| ------------------------------ | ------------ | ----------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | a rendering context           |
+| float                          | **scaleX**   | the horizontal scaling factor |
+| float                          | **scaleY**   | the vertical scaling factor   |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

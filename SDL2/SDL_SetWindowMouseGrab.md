@@ -11,16 +11,15 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowMouseGrab(SDL_Window * window,
-                            SDL_bool grabbed);
-
+                        SDL_bool grabbed);
 ```
 
 ## Function Parameters
 
-|                 |                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------- |
-| **window**      | The window for which the mouse grab mode should be set.                            |
-| **grabbed**     | This is [SDL_TRUE](SDL_TRUE) to grab mouse, and [SDL_FALSE](SDL_FALSE) to release. |
+|                            |             |                                                                                    |
+| -------------------------- | ----------- | ---------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**  | The window for which the mouse grab mode should be set.                            |
+| [SDL_bool](SDL_bool)       | **grabbed** | This is [SDL_TRUE](SDL_TRUE) to grab mouse, and [SDL_FALSE](SDL_FALSE) to release. |
 
 ## Remarks
 

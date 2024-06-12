@@ -11,18 +11,17 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowInputFocus(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                                            |
-| -------------- | ------------------------------------------ |
-| **window**     | the window that should get the input focus |
+|                            |            |                                            |
+| -------------------------- | ---------- | ------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window that should get the input focus |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 float SDL_GameControllerGetSensorDataRate(SDL_GameController *gamecontroller, SDL_SensorType type);
-
 ```
 
 ## Function Parameters
 
-|                        |                             |
-| ---------------------- | --------------------------- |
-| **gamecontroller**     | The controller to query     |
-| **type**               | The type of sensor to query |
+|                                            |                    |                             |
+| ------------------------------------------ | ------------------ | --------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query     |
+| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to query |
 
 ## Return Value
 
-Return the data rate, or 0.0f if the data rate is not available.
+(float) Return the data rate, or 0.0f if the data rate is not available.
 
 ## Version
 

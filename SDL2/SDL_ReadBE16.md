@@ -11,18 +11,17 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint16 SDL_ReadBE16(SDL_RWops * src);
-
 ```
 
 ## Function Parameters
 
-|             |                                    |
-| ----------- | ---------------------------------- |
-| **src**     | the stream from which to read data |
+|                          |         |                                    |
+| ------------------------ | ------- | ---------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src** | the stream from which to read data |
 
 ## Return Value
 
-Returns 16 bits of data in the native byte order of the platform.
+(Uint16) Returns 16 bits of data in the native byte order of the platform.
 
 ## Remarks
 

@@ -11,13 +11,13 @@ Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const SDL_AssertData * SDL_GetAssertionReport(void);
-
 ```
 
 ## Return Value
 
-Returns a list of all failed assertions or NULL if the list is empty. This
-memory should not be modified or freed by the application.
+(const [SDL_AssertData](SDL_AssertData) *) Returns a list of all failed
+assertions or NULL if the list is empty. This memory should not be modified
+or freed by the application.
 
 ## Remarks
 

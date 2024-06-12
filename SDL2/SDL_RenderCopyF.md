@@ -11,24 +11,23 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderCopyF(SDL_Renderer * renderer,
-                    SDL_Texture * texture,
-                    const SDL_Rect * srcrect,
-                    const SDL_FRect * dstrect);
-
+                SDL_Texture * texture,
+                const SDL_Rect * srcrect,
+                const SDL_FRect * dstrect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                  |
-| ---------------- | -------------------------------------------------------------------------------- |
-| **renderer**     | The renderer which should copy parts of a texture.                               |
-| **texture**      | The source texture.                                                              |
-| **srcrect**      | A pointer to the source rectangle, or NULL for the entire texture.               |
-| **dstrect**      | A pointer to the destination rectangle, or NULL for the entire rendering target. |
+|                                |              |                                                                                  |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should copy parts of a texture.                               |
+| [SDL_Texture](SDL_Texture) *   | **texture**  | The source texture.                                                              |
+| const [SDL_Rect](SDL_Rect) *   | **srcrect**  | A pointer to the source rectangle, or NULL for the entire texture.               |
+| const [SDL_FRect](SDL_FRect) * | **dstrect**  | A pointer to the destination rectangle, or NULL for the entire rendering target. |
 
 ## Return Value
 
-Return 0 on success, or -1 on error
+(int) Return 0 on success, or -1 on error
 
 ## Version
 

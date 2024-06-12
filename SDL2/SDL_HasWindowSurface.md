@@ -11,13 +11,12 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_HasWindowSurface(SDL_Window *window);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is a surface associated with the
-window, or [SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is a surface
+associated with the window, or [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

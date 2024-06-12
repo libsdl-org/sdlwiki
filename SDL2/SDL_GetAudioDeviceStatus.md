@@ -11,19 +11,18 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioStatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                               |
-| ----------- | --------------------------------------------------------------------------------------------- |
-| **dev**     | the ID of an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+|                                        |         |                                                                                               |
+| -------------------------------------- | ------- | --------------------------------------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the ID of an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
 
 ## Return Value
 
-Returns the [SDL_AudioStatus](SDL_AudioStatus) of the specified audio
-device.
+([SDL_AudioStatus](SDL_AudioStatus)) Returns the
+[SDL_AudioStatus](SDL_AudioStatus) of the specified audio device.
 
 ## Version
 

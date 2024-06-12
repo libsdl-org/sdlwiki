@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
-
 ```
 
 ## Function Parameters
 
-|                |                                               |
-| -------------- | --------------------------------------------- |
-| **rw**         | the data stream for the mappings to be added  |
-| **freerw**     | non-zero to close the stream after being read |
+|                          |            |                                               |
+| ------------------------ | ---------- | --------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **rw**     | the data stream for the mappings to be added  |
+| int                      | **freerw** | non-zero to close the stream after being read |
 
 ## Return Value
 
-Returns the number of mappings added or -1 on error; call
+(int) Returns the number of mappings added or -1 on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

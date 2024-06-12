@@ -10,8 +10,7 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 ## Syntax
 
 ```c
-void SDL_UnlockJoysticks(void) SDL_RELEASE(SDL_joystick_lock);
-
+void SDL_UnlockJoysticks(void);
 ```
 
 ## Remarks

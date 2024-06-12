@@ -12,23 +12,23 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 ```c
 SDL_Surface* SDL_CreateRGBSurfaceWithFormat
     (Uint32 flags, int width, int height, int depth, Uint32 format);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **flags**      | the flags are unused and should be set to 0                                        |
-| **width**      | the width of the surface                                                           |
-| **height**     | the height of the surface                                                          |
-| **depth**      | the depth of the surface in bits                                                   |
-| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+|        |            |                                                                                    |
+| ------ | ---------- | ---------------------------------------------------------------------------------- |
+| Uint32 | **flags**  | the flags are unused and should be set to 0                                        |
+| int    | **width**  | the width of the surface                                                           |
+| int    | **height** | the height of the surface                                                          |
+| int    | **depth**  | the depth of the surface in bits                                                   |
+| Uint32 | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

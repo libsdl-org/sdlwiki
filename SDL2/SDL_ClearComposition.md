@@ -11,7 +11,6 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 void SDL_ClearComposition(void);
-
 ```
 
 ## Version

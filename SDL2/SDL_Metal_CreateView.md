@@ -11,7 +11,6 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_MetalView SDL_Metal_CreateView(SDL_Window * window);
-
 ```
 
 ## Remarks

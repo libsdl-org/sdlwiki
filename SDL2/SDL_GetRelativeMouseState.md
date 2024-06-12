@@ -11,19 +11,18 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_GetRelativeMouseState(int *x, int *y);
-
 ```
 
 ## Function Parameters
 
-|           |                                                                   |
-| --------- | ----------------------------------------------------------------- |
-| **x**     | a pointer filled with the last recorded x coordinate of the mouse |
-| **y**     | a pointer filled with the last recorded y coordinate of the mouse |
+|       |       |                                                                   |
+| ----- | ----- | ----------------------------------------------------------------- |
+| int * | **x** | a pointer filled with the last recorded x coordinate of the mouse |
+| int * | **y** | a pointer filled with the last recorded y coordinate of the mouse |
 
 ## Return Value
 
-Returns a 32-bit button bitmask of the relative button state.
+(Uint32) Returns a 32-bit button bitmask of the relative button state.
 
 ## Remarks
 

@@ -10,20 +10,20 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ## Syntax
 
 ```c
-int SDL_UnlockMutex(SDL_mutex * mutex) SDL_RELEASE(mutex);
+int SDL_UnlockMutex(SDL_mutex * mutex);
 
 #define SDL_mutexV(m)   SDL_UnlockMutex(m)
 ```
 
 ## Function Parameters
 
-|               |                      |
-| ------------- | -------------------- |
-| **mutex**     | the mutex to unlock. |
+|                          |           |                      |
+| ------------------------ | --------- | -------------------- |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to unlock. |
 
 ## Return Value
 
-Returns 0, or -1 on error.
+(int) Returns 0, or -1 on error.
 
 ## Remarks
 

@@ -11,18 +11,17 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint8 SDL_ReadU8(SDL_RWops * src);
-
 ```
 
 ## Function Parameters
 
-|             |                                         |
-| ----------- | --------------------------------------- |
-| **src**     | the [SDL_RWops](SDL_RWops) to read from |
+|                          |         |                                         |
+| ------------------------ | ------- | --------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src** | the [SDL_RWops](SDL_RWops) to read from |
 
 ## Return Value
 
-Returns the read byte on success or 0 on failure; call
+(Uint8) Returns the read byte on success or 0 on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

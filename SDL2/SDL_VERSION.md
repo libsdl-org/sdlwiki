@@ -20,9 +20,9 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ## Macro Parameters
 
-|           |                                                                 |
-| --------- | --------------------------------------------------------------- |
-| **x**     | A pointer to a [SDL_version](SDL_version) struct to initialize. |
+|       |                                                                 |
+| ----- | --------------------------------------------------------------- |
+| **x** | A pointer to a [SDL_version](SDL_version) struct to initialize. |
 
 ## Remarks
 

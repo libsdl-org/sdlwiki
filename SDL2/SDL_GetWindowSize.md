@@ -11,17 +11,16 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_GetWindowSize(SDL_Window * window, int *w,
-                       int *h);
-
+                   int *h);
 ```
 
 ## Function Parameters
 
-|                |                                                                                       |
-| -------------- | ------------------------------------------------------------------------------------- |
-| **window**     | the window to query the width and height from                                         |
-| **w**          | a pointer filled in with the width of the window, in screen coordinates, may be NULL  |
-| **h**          | a pointer filled in with the height of the window, in screen coordinates, may be NULL |
+|                            |            |                                                                                       |
+| -------------------------- | ---------- | ------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query the width and height from                                         |
+| int *                      | **w**      | a pointer filled in with the width of the window, in screen coordinates, may be NULL  |
+| int *                      | **h**      | a pointer filled in with the height of the window, in screen coordinates, may be NULL |
 
 ## Remarks
 

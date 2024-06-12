@@ -11,18 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_GameControllerType SDL_GameControllerGetType(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                      |
-| ---------------------- | ------------------------------------ |
-| **gamecontroller**     | the game controller object to query. |
+|                                            |                    |                                      |
+| ------------------------------------------ | ------------------ | ------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to query. |
 
 ## Return Value
 
-Returns the controller type.
+([SDL_GameControllerType](SDL_GameControllerType)) Returns the controller
+type.
 
 ## Remarks
 

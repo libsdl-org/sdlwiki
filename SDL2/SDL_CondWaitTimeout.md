@@ -11,21 +11,20 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_CondWaitTimeout(SDL_cond * cond,
-                        SDL_mutex * mutex, Uint32 ms);
-
+                    SDL_mutex * mutex, Uint32 ms);
 ```
 
 ## Function Parameters
 
-|               |                                                                                                             |
-| ------------- | ----------------------------------------------------------------------------------------------------------- |
-| **cond**      | the condition variable to wait on                                                                           |
-| **mutex**     | the mutex used to coordinate thread access                                                                  |
-| **ms**        | the maximum time to wait, in milliseconds, or [`SDL_MUTEX_MAXWAIT`](SDL_MUTEX_MAXWAIT) to wait indefinitely |
+|                          |           |                                                                                                             |
+| ------------------------ | --------- | ----------------------------------------------------------------------------------------------------------- |
+| [SDL_cond](SDL_cond) *   | **cond**  | the condition variable to wait on                                                                           |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex used to coordinate thread access                                                                  |
+| Uint32                   | **ms**    | the maximum time to wait, in milliseconds, or [`SDL_MUTEX_MAXWAIT`](SDL_MUTEX_MAXWAIT) to wait indefinitely |
 
 ## Return Value
 
-Returns 0 if the condition variable is signaled,
+(int) Returns 0 if the condition variable is signaled,
 [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the condition is not signaled
 in the allotted time, or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.

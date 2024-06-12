@@ -11,19 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_GameControllerAxis SDL_GameControllerGetAxisFromString(const char *str);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                     |
-| ----------- | ------------------------------------------------------------------- |
-| **str**     | string representing a [SDL_GameController](SDL_GameController) axis |
+|              |         |                                                                     |
+| ------------ | ------- | ------------------------------------------------------------------- |
+| const char * | **str** | string representing a [SDL_GameController](SDL_GameController) axis |
 
 ## Return Value
 
-Returns the [SDL_GameControllerAxis](SDL_GameControllerAxis) enum
-corresponding to the input string, or
+([SDL_GameControllerAxis](SDL_GameControllerAxis)) Returns the
+[SDL_GameControllerAxis](SDL_GameControllerAxis) enum corresponding to the
+input string, or
 [`SDL_CONTROLLER_AXIS_INVALID`](SDL_CONTROLLER_AXIS_INVALID) if no match
 was found.
 

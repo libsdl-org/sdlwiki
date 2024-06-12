@@ -11,13 +11,12 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetCurrentVideoDriver(void);
-
 ```
 
 ## Return Value
 
-Returns the name of the current video driver or NULL if no driver has been
-initialized.
+(const char *) Returns the name of the current video driver or NULL if no
+driver has been initialized.
 
 ## Version
 

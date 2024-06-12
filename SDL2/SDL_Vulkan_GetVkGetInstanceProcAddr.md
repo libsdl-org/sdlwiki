@@ -11,12 +11,12 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void* SDL_Vulkan_GetVkGetInstanceProcAddr(void);
-
 ```
 
 ## Return Value
 
-Returns the function pointer for `vkGetInstanceProcAddr` or NULL on error.
+(void *) Returns the function pointer for `vkGetInstanceProcAddr` or NULL
+on error.
 
 ## Remarks
 

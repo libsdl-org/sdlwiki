@@ -11,21 +11,20 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_hid_device * SDL_hid_open(unsigned short vendor_id, unsigned short product_id, const wchar_t *serial_number);
-
 ```
 
 ## Function Parameters
 
-|                       |                                                            |
-| --------------------- | ---------------------------------------------------------- |
-| **vendor_id**         | The Vendor ID (VID) of the device to open.                 |
-| **product_id**        | The Product ID (PID) of the device to open.                |
-| **serial_number**     | The Serial Number of the device to open (Optionally NULL). |
+|                 |                   |                                                            |
+| --------------- | ----------------- | ---------------------------------------------------------- |
+| unsigned short  | **vendor_id**     | The Vendor ID (VID) of the device to open.                 |
+| unsigned short  | **product_id**    | The Product ID (PID) of the device to open.                |
+| const wchar_t * | **serial_number** | The Serial Number of the device to open (Optionally NULL). |
 
 ## Return Value
 
-Returns a pointer to a [SDL_hid_device](SDL_hid_device) object on success
-or NULL on failure.
+([SDL_hid_device](SDL_hid_device) *) Returns a pointer to a
+[SDL_hid_device](SDL_hid_device) object on success or NULL on failure.
 
 ## Remarks
 

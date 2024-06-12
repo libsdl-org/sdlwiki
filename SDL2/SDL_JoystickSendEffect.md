@@ -11,20 +11,20 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickSendEffect(SDL_Joystick *joystick, const void *data, int size);
-
 ```
 
 ## Function Parameters
 
-|                  |                                              |
-| ---------------- | -------------------------------------------- |
-| **joystick**     | The joystick to affect                       |
-| **data**         | The data to send to the joystick             |
-| **size**         | The size of the data to send to the joystick |
+|                                |              |                                              |
+| ------------------------------ | ------------ | -------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to affect                       |
+| const void *                   | **data**     | The data to send to the joystick             |
+| int                            | **size**     | The size of the data to send to the joystick |
 
 ## Return Value
 
-Returns 0, or -1 if this joystick or driver doesn't support effect packets
+(int) Returns 0, or -1 if this joystick or driver doesn't support effect
+packets
 
 ## Version
 

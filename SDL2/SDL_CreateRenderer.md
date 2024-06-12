@@ -11,22 +11,22 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
-                       int index, Uint32 flags);
-
+                   int index, Uint32 flags);
 ```
 
 ## Function Parameters
 
-|                |                                                                                                                   |
-| -------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **window**     | the window where rendering is displayed                                                                           |
-| **index**      | the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags |
-| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together                                            |
+|                            |            |                                                                                                                   |
+| -------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window where rendering is displayed                                                                           |
+| int                        | **index**  | the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags |
+| Uint32                     | **flags**  | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together                                            |
 
 ## Return Value
 
-Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Renderer](SDL_Renderer) *) Returns a valid rendering context or NULL
+if there was an error; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

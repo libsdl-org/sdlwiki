@@ -11,17 +11,16 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowMaximumSize(SDL_Window * window,
-                              int max_w, int max_h);
-
+                          int max_w, int max_h);
 ```
 
 ## Function Parameters
 
-|                |                                            |
-| -------------- | ------------------------------------------ |
-| **window**     | the window to change                       |
-| **max_w**      | the maximum width of the window in pixels  |
-| **max_h**      | the maximum height of the window in pixels |
+|                            |            |                                            |
+| -------------------------- | ---------- | ------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window to change                       |
+| int                        | **max_w**  | the maximum width of the window in pixels  |
+| int                        | **max_h**  | the maximum height of the window in pixels |
 
 ## Version
 

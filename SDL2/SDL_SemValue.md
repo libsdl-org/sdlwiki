@@ -11,18 +11,17 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_SemValue(SDL_sem * sem);
-
 ```
 
 ## Function Parameters
 
-|             |                        |
-| ----------- | ---------------------- |
-| **sem**     | the semaphore to query |
+|                      |         |                        |
+| -------------------- | ------- | ---------------------- |
+| [SDL_sem](SDL_sem) * | **sem** | the semaphore to query |
 
 ## Return Value
 
-Returns the current value of the semaphore.
+(Uint32) Returns the current value of the semaphore.
 
 ## Version
 

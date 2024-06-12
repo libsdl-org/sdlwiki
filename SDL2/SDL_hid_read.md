@@ -11,22 +11,21 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_hid_read(SDL_hid_device *dev, unsigned char *data, size_t length);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                                                        |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open)().                                                          |
-| **data**       | A buffer to put the read data into.                                                                                    |
-| **length**     | The number of bytes to read. For devices with multiple reports, make sure to read an extra byte for the report number. |
+|                                    |            |                                                                                                                        |
+| ---------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [SDL_hid_device](SDL_hid_device) * | **dev**    | A device handle returned from [SDL_hid_open](SDL_hid_open)().                                                          |
+| unsigned char *                    | **data**   | A buffer to put the read data into.                                                                                    |
+| size_t                             | **length** | The number of bytes to read. For devices with multiple reports, make sure to read an extra byte for the report number. |
 
 ## Return Value
 
-Returns the actual number of bytes read and -1 on error. If no packet was
-available to be read and the handle is in non-blocking mode, this function
-returns 0.
+(int) Returns the actual number of bytes read and -1 on error. If no packet
+was available to be read and the handle is in non-blocking mode, this
+function returns 0.
 
 ## Remarks
 

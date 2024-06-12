@@ -11,18 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 Uint16 SDL_JoystickGetVendor(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
 
 ## Return Value
 
-Returns the USB vendor ID of the selected joystick, or 0 if unavailable.
+(Uint16) Returns the USB vendor ID of the selected joystick, or 0 if
+unavailable.
 
 ## Remarks
 

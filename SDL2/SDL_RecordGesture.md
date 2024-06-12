@@ -11,18 +11,17 @@ Defined in [SDL_gesture.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_RecordGesture(SDL_TouchID touchId);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **touchId**     | the touch device id, or -1 for all touch devices |
+|                            |             |                                                  |
+| -------------------------- | ----------- | ------------------------------------------------ |
+| [SDL_TouchID](SDL_TouchID) | **touchId** | the touch device id, or -1 for all touch devices |
 
 ## Return Value
 
-Returns 1 on success or 0 if the specified device could not be found.
+(int) Returns 1 on success or 0 if the specified device could not be found.
 
 ## Remarks
 

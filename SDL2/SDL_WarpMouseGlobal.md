@@ -11,19 +11,18 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_WarpMouseGlobal(int x, int y);
-
 ```
 
 ## Function Parameters
 
-|           |                  |
-| --------- | ---------------- |
-| **x**     | the x coordinate |
-| **y**     | the y coordinate |
+|     |       |                  |
+| --- | ----- | ---------------- |
+| int | **x** | the x coordinate |
+| int | **y** | the y coordinate |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

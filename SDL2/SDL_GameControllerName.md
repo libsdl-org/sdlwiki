@@ -11,19 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 const char* SDL_GameControllerName(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                                        |
-| ---------------------- | ------------------------------------------------------------------------------------------------------ |
-| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
+|                                            |                    |                                                                                                        |
+| ------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
 
 ## Return Value
 
-Returns the implementation dependent name for the game controller, or NULL
-if there is no name or the identifier passed is invalid.
+(const char *) Returns the implementation dependent name for the game
+controller, or NULL if there is no name or the identifier passed is
+invalid.
 
 ## Remarks
 

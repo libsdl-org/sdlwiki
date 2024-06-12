@@ -11,14 +11,13 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_LockAudioDevice(SDL_AudioDeviceID dev);
-
 ```
 
 ## Function Parameters
 
-|             |                                   |
-| ----------- | --------------------------------- |
-| **dev**     | the ID of the device to be locked |
+|                                        |         |                                   |
+| -------------------------------------- | ------- | --------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the ID of the device to be locked |
 
 ## Remarks
 

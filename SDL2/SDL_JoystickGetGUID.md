@@ -11,20 +11,19 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_JoystickGUID SDL_JoystickGetGUID(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
 
 ## Return Value
 
-Returns the GUID of the given joystick. If called on an invalid index, this
-function returns a zero GUID; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_JoystickGUID](SDL_JoystickGUID)) Returns the GUID of the given
+joystick. If called on an invalid index, this function returns a zero GUID;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

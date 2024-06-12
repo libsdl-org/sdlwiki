@@ -11,14 +11,13 @@ Defined in [SDL.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL.h)
 
 ```c
 void SDL_QuitSubSystem(Uint32 flags);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                        |
-| ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+|        |           |                                                                                        |
+| ------ | --------- | -------------------------------------------------------------------------------------- |
+| Uint32 | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
 
 ## Remarks
 

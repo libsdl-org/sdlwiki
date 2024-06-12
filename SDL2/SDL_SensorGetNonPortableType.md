@@ -11,18 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SensorGetNonPortableType(SDL_Sensor *sensor);
-
 ```
 
 ## Function Parameters
 
-|                |                                                |
-| -------------- | ---------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to inspect |
+|                            |            |                                                |
+| -------------------------- | ---------- | ---------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to inspect |
 
 ## Return Value
 
-Returns the sensor platform dependent type, or -1 if `sensor` is NULL.
+(int) Returns the sensor platform dependent type, or -1 if `sensor` is
+NULL.
 
 ## Version
 

@@ -11,15 +11,14 @@ Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include
 
 ```c
 char * SDL_GetPrimarySelectionText(void);
-
 ```
 
 ## Return Value
 
-Returns the primary selection text on success or an empty string on
-failure; call [SDL_GetError](SDL_GetError)() for more information. Caller
-must call [SDL_free](SDL_free)() on the returned pointer when done with it
-(even if there was an error).
+(char *) Returns the primary selection text on success or an empty string
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
+Caller must call [SDL_free](SDL_free)() on the returned pointer when done
+with it (even if there was an error).
 
 ## Remarks
 

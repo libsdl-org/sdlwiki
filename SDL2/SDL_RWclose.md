@@ -11,18 +11,17 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_RWclose(SDL_RWops *context);
-
 ```
 
 ## Function Parameters
 
-|                 |                                           |
-| --------------- | ----------------------------------------- |
-| **context**     | [SDL_RWops](SDL_RWops) structure to close |
+|                          |             |                                           |
+| ------------------------ | ----------- | ----------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | [SDL_RWops](SDL_RWops) structure to close |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

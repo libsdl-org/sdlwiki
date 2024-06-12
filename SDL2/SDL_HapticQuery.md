@@ -11,19 +11,19 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 unsigned int SDL_HapticQuery(SDL_Haptic * haptic);
-
 ```
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
 
 ## Return Value
 
-Returns a list of supported haptic features in bitwise manner (OR'd), or 0
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(unsigned int) Returns a list of supported haptic features in bitwise
+manner (OR'd), or 0 on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

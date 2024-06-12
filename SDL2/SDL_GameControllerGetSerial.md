@@ -11,18 +11,17 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 const char * SDL_GameControllerGetSerial(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                      |
-| ---------------------- | ------------------------------------ |
-| **gamecontroller**     | the game controller object to query. |
+|                                            |                    |                                      |
+| ------------------------------------------ | ------------------ | ------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to query. |
 
 ## Return Value
 
-Return the serial number, or NULL if unavailable.
+(const char *) Return the serial number, or NULL if unavailable.
 
 ## Remarks
 

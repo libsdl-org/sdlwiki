@@ -11,18 +11,18 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_PollEvent(SDL_Event * event);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                               |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| **event**     | the [SDL_Event](SDL_Event) structure to be filled with the next event from the queue, or NULL |
+|                          |           |                                                                                               |
+| ------------------------ | --------- | --------------------------------------------------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) structure to be filled with the next event from the queue, or NULL |
 
 ## Return Value
 
-Returns 1 if there is a pending event or 0 if there are none available.
+(int) Returns 1 if there is a pending event or 0 if there are none
+available.
 
 ## Remarks
 

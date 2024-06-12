@@ -11,29 +11,28 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_UpdateYUVTexture(SDL_Texture * texture,
-                         const SDL_Rect * rect,
-                         const Uint8 *Yplane, int Ypitch,
-                         const Uint8 *Uplane, int Upitch,
-                         const Uint8 *Vplane, int Vpitch);
-
+                     const SDL_Rect * rect,
+                     const Uint8 *Yplane, int Ypitch,
+                     const Uint8 *Uplane, int Upitch,
+                     const Uint8 *Vplane, int Vpitch);
 ```
 
 ## Function Parameters
 
-|                 |                                                                                      |
-| --------------- | ------------------------------------------------------------------------------------ |
-| **texture**     | the texture to update                                                                |
-| **rect**        | a pointer to the rectangle of pixels to update, or NULL to update the entire texture |
-| **Yplane**      | the raw pixel data for the Y plane                                                   |
-| **Ypitch**      | the number of bytes between rows of pixel data for the Y plane                       |
-| **Uplane**      | the raw pixel data for the U plane                                                   |
-| **Upitch**      | the number of bytes between rows of pixel data for the U plane                       |
-| **Vplane**      | the raw pixel data for the V plane                                                   |
-| **Vpitch**      | the number of bytes between rows of pixel data for the V plane                       |
+|                              |             |                                                                                      |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                                                |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | a pointer to the rectangle of pixels to update, or NULL to update the entire texture |
+| const Uint8 *                | **Yplane**  | the raw pixel data for the Y plane                                                   |
+| int                          | **Ypitch**  | the number of bytes between rows of pixel data for the Y plane                       |
+| const Uint8 *                | **Uplane**  | the raw pixel data for the U plane                                                   |
+| int                          | **Upitch**  | the number of bytes between rows of pixel data for the U plane                       |
+| const Uint8 *                | **Vplane**  | the raw pixel data for the V plane                                                   |
+| int                          | **Vpitch**  | the number of bytes between rows of pixel data for the V plane                       |
 
 ## Return Value
 
-Returns 0 on success or -1 if the texture is not valid; call
+(int) Returns 0 on success or -1 if the texture is not valid; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,12 +11,11 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_threadID SDL_ThreadID(void);
-
 ```
 
 ## Return Value
 
-Returns the ID of the current thread.
+([SDL_threadID](SDL_threadID)) Returns the ID of the current thread.
 
 ## Remarks
 

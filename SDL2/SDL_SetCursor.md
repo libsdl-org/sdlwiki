@@ -11,14 +11,13 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetCursor(SDL_Cursor * cursor);
-
 ```
 
 ## Function Parameters
 
-|                |                         |
-| -------------- | ----------------------- |
-| **cursor**     | a cursor to make active |
+|                            |            |                         |
+| -------------------------- | ---------- | ----------------------- |
+| [SDL_Cursor](SDL_Cursor) * | **cursor** | a cursor to make active |
 
 ## Remarks
 

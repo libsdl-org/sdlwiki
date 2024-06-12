@@ -11,14 +11,13 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_PauseAudio(int pause_on);
-
 ```
 
 ## Function Parameters
 
-|                  |                                 |
-| ---------------- | ------------------------------- |
-| **pause_on**     | non-zero to pause, 0 to unpause |
+|     |              |                                 |
+| --- | ------------ | ------------------------------- |
+| int | **pause_on** | non-zero to pause, 0 to unpause |
 
 ## Remarks
 

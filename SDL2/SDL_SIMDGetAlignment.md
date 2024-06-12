@@ -11,12 +11,11 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 size_t SDL_SIMDGetAlignment(void);
-
 ```
 
 ## Return Value
 
-Returns the alignment in bytes needed for available, known SIMD
+(size_t) Returns the alignment in bytes needed for available, known SIMD
 instructions.
 
 ## Remarks

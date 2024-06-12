@@ -11,19 +11,18 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void * SDL_TLSGet(SDL_TLSID id);
-
 ```
 
 ## Function Parameters
 
-|            |                             |
-| ---------- | --------------------------- |
-| **id**     | the thread local storage ID |
+|                        |        |                             |
+| ---------------------- | ------ | --------------------------- |
+| [SDL_TLSID](SDL_TLSID) | **id** | the thread local storage ID |
 
 ## Return Value
 
-Returns the value associated with the ID for the current thread or NULL if
-no value has been set; call [SDL_GetError](SDL_GetError)() for more
+(void *) Returns the value associated with the ID for the current thread or
+NULL if no value has been set; call [SDL_GetError](SDL_GetError)() for more
 information.
 
 ## Version

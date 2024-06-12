@@ -11,24 +11,23 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetRenderDrawColor(SDL_Renderer * renderer,
-                   Uint8 r, Uint8 g, Uint8 b,
-                   Uint8 a);
-
+               Uint8 r, Uint8 g, Uint8 b,
+               Uint8 a);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                                                                                                                   |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                                                                                                                                                             |
-| **r**            | the red value used to draw on the rendering target                                                                                                                                                                |
-| **g**            | the green value used to draw on the rendering target                                                                                                                                                              |
-| **b**            | the blue value used to draw on the rendering target                                                                                                                                                               |
-| **a**            | the alpha value used to draw on the rendering target; usually [`SDL_ALPHA_OPAQUE`](SDL_ALPHA_OPAQUE) (255). Use [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) to specify how the alpha channel is used |
+|                                |              |                                                                                                                                                                                                                   |
+| ------------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                                                                                             |
+| Uint8                          | **r**        | the red value used to draw on the rendering target                                                                                                                                                                |
+| Uint8                          | **g**        | the green value used to draw on the rendering target                                                                                                                                                              |
+| Uint8                          | **b**        | the blue value used to draw on the rendering target                                                                                                                                                               |
+| Uint8                          | **a**        | the alpha value used to draw on the rendering target; usually [`SDL_ALPHA_OPAQUE`](SDL_ALPHA_OPAQUE) (255). Use [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) to specify how the alpha channel is used |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

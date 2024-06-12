@@ -11,14 +11,13 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_FreeWAV(Uint8 * audio_buf);
-
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                       |
-| ----------------- | ----------------------------------------------------------------------------------------------------- |
-| **audio_buf**     | a pointer to the buffer created by [SDL_LoadWAV](SDL_LoadWAV)() or [SDL_LoadWAV_RW](SDL_LoadWAV_RW)() |
+|         |               |                                                                                                       |
+| ------- | ------------- | ----------------------------------------------------------------------------------------------------- |
+| Uint8 * | **audio_buf** | a pointer to the buffer created by [SDL_LoadWAV](SDL_LoadWAV)() or [SDL_LoadWAV_RW](SDL_LoadWAV_RW)() |
 
 ## Remarks
 

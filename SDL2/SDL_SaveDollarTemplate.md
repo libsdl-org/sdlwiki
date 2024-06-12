@@ -11,20 +11,19 @@ Defined in [SDL_gesture.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SaveDollarTemplate(SDL_GestureID gestureId,SDL_RWops *dst);
-
 ```
 
 ## Function Parameters
 
-|                   |                                     |
-| ----------------- | ----------------------------------- |
-| **gestureId**     | a gesture id                        |
-| **dst**           | a [SDL_RWops](SDL_RWops) to save to |
+|                                |               |                                     |
+| ------------------------------ | ------------- | ----------------------------------- |
+| [SDL_GestureID](SDL_GestureID) | **gestureId** | a gesture id                        |
+| [SDL_RWops](SDL_RWops) *       | **dst**       | a [SDL_RWops](SDL_RWops) to save to |
 
 ## Return Value
 
-Returns 1 on success or 0 on failure; call [SDL_GetError](SDL_GetError)()
-for more information.
+(int) Returns 1 on success or 0 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

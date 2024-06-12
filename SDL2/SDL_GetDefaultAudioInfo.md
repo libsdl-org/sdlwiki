@@ -11,22 +11,21 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetDefaultAudioInfo(char **name,
-                            SDL_AudioSpec *spec,
-                            int iscapture);
-
+                        SDL_AudioSpec *spec,
+                        int iscapture);
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                                                                   |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**          | A pointer to be filled with the name of the default device (can be NULL). Please call [SDL_free](SDL_free)() when you are done with this pointer! |
-| **spec**          | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                                                            |
-| **iscapture**     | non-zero to query the default recording device, zero to query the default output device.                                                          |
+|                                  |               |                                                                                                                                                   |
+| -------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| char **                          | **name**      | A pointer to be filled with the name of the default device (can be NULL). Please call [SDL_free](SDL_free)() when you are done with this pointer! |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                                                            |
+| int                              | **iscapture** | non-zero to query the default recording device, zero to query the default output device.                                                          |
 
 ## Return Value
 
-Returns 0 on success, nonzero on error
+(int) Returns 0 on success, nonzero on error
 
 ## Remarks
 

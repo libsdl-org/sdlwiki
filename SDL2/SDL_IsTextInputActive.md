@@ -11,13 +11,12 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_IsTextInputActive(void);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if text input events are enabled else
-[SDL_FALSE](SDL_FALSE).
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if text input events
+are enabled else [SDL_FALSE](SDL_FALSE).
 
 ## Version
 

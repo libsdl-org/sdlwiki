@@ -11,18 +11,17 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickDetachVirtual(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                                           |
-| -------------------- | ----------------------------------------------------------------------------------------- |
-| **device_index**     | a value previously returned from [SDL_JoystickAttachVirtual](SDL_JoystickAttachVirtual)() |
+|     |                  |                                                                                           |
+| --- | ---------------- | ----------------------------------------------------------------------------------------- |
+| int | **device_index** | a value previously returned from [SDL_JoystickAttachVirtual](SDL_JoystickAttachVirtual)() |
 
 ## Return Value
 
-Returns 0 on success, or -1 if an error occurred.
+(int) Returns 0 on success, or -1 if an error occurred.
 
 ## Version
 

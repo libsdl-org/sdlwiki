@@ -11,14 +11,13 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_hid_close(SDL_hid_device *dev);
-
 ```
 
 ## Function Parameters
 
-|             |                                                               |
-| ----------- | ------------------------------------------------------------- |
-| **dev**     | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+|                                    |         |                                                               |
+| ---------------------------------- | ------- | ------------------------------------------------------------- |
+| [SDL_hid_device](SDL_hid_device) * | **dev** | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
 
 ## Version
 

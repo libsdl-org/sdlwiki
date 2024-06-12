@@ -11,20 +11,20 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_GLContext SDL_GL_CreateContext(SDL_Window *
-                                   window);
-
+                               window);
 ```
 
 ## Function Parameters
 
-|                |                                          |
-| -------------- | ---------------------------------------- |
-| **window**     | the window to associate with the context |
+|                            |            |                                          |
+| -------------------------- | ---------- | ---------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to associate with the context |
 
 ## Return Value
 
-Returns the OpenGL context associated with `window` or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+([SDL_GLContext](SDL_GLContext)) Returns the OpenGL context associated with
+`window` or NULL on error; call [SDL_GetError](SDL_GetError)() for more
+details.
 
 ## Remarks
 

@@ -11,23 +11,22 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawLine(SDL_Renderer * renderer,
-                       int x1, int y1, int x2, int y2);
-
+                   int x1, int y1, int x2, int y2);
 ```
 
 ## Function Parameters
 
-|                  |                                     |
-| ---------------- | ----------------------------------- |
-| **renderer**     | the rendering context               |
-| **x1**           | the x coordinate of the start point |
-| **y1**           | the y coordinate of the start point |
-| **x2**           | the x coordinate of the end point   |
-| **y2**           | the y coordinate of the end point   |
+|                                |              |                                     |
+| ------------------------------ | ------------ | ----------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context               |
+| int                            | **x1**       | the x coordinate of the start point |
+| int                            | **y1**       | the y coordinate of the start point |
+| int                            | **x2**       | the x coordinate of the end point   |
+| int                            | **y2**       | the y coordinate of the end point   |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

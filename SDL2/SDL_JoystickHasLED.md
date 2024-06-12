@@ -11,19 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_JoystickHasLED(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **joystick**     | The joystick to query |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query |
 
 ## Return Value
 
-Return [SDL_TRUE](SDL_TRUE) if the joystick has a modifiable LED,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Return [SDL_TRUE](SDL_TRUE) if the joystick has a
+modifiable LED, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

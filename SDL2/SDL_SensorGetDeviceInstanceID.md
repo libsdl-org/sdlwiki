@@ -11,18 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                    |
-| -------------------- | ---------------------------------- |
-| **device_index**     | The sensor to get instance id from |
+|     |                  |                                    |
+| --- | ---------------- | ---------------------------------- |
+| int | **device_index** | The sensor to get instance id from |
 
 ## Return Value
 
-Returns the sensor instance ID, or -1 if `device_index` is out of range.
+([SDL_SensorID](SDL_SensorID)) Returns the sensor instance ID, or -1 if
+`device_index` is out of range.
 
 ## Version
 

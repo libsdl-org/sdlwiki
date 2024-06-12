@@ -11,18 +11,17 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderFlush(SDL_Renderer * renderer);
-
 ```
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | the rendering context |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

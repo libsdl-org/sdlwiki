@@ -11,18 +11,17 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_Direct3D9GetAdapterIndex( int displayIndex );
-
 ```
 
 ## Function Parameters
 
-|                      |                                                           |
-| -------------------- | --------------------------------------------------------- |
-| **displayIndex**     | the display index for which to get the D3D9 adapter index |
+|     |                  |                                                           |
+| --- | ---------------- | --------------------------------------------------------- |
+| int | **displayIndex** | the display index for which to get the D3D9 adapter index |
 
 ## Return Value
 
-Returns the D3D9 adapter index on success or a negative error code on
+(int) Returns the D3D9 adapter index on success or a negative error code on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

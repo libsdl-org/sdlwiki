@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_bool SDL_GameControllerHasLED(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                         |
-| ---------------------- | ----------------------- |
-| **gamecontroller**     | The controller to query |
+|                                            |                    |                         |
+| ------------------------------------------ | ------------------ | ----------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE), or [SDL_FALSE](SDL_FALSE) if this controller
-does not have a modifiable LED
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE), or
+[SDL_FALSE](SDL_FALSE) if this controller does not have a modifiable LED
 
 ## Version
 

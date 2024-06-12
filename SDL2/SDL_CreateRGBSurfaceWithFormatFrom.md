@@ -12,24 +12,24 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 ```c
 SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom
     (void *pixels, int width, int height, int depth, int pitch, Uint32 format);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **pixels**     | a pointer to existing pixel data                                                   |
-| **width**      | the width of the surface                                                           |
-| **height**     | the height of the surface                                                          |
-| **depth**      | the depth of the surface in bits                                                   |
-| **pitch**      | the pitch of the surface in bytes                                                  |
-| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+|        |            |                                                                                    |
+| ------ | ---------- | ---------------------------------------------------------------------------------- |
+| void * | **pixels** | a pointer to existing pixel data                                                   |
+| int    | **width**  | the width of the surface                                                           |
+| int    | **height** | the height of the surface                                                          |
+| int    | **depth**  | the depth of the surface in bits                                                   |
+| int    | **pitch**  | the pitch of the surface in bytes                                                  |
+| Uint32 | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

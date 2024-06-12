@@ -12,20 +12,19 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 ```c
 int SDL_SaveBMP_RW
     (SDL_Surface * surface, SDL_RWops * dst, int freedst);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                           |
-| --------------- | ------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure containing the image to be saved |
-| **dst**         | a data stream to save to                                                  |
-| **freedst**     | non-zero to close the stream after being written                          |
+|                              |             |                                                                           |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved |
+| [SDL_RWops](SDL_RWops) *     | **dst**     | a data stream to save to                                                  |
+| int                          | **freedst** | non-zero to close the stream after being written                          |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

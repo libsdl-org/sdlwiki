@@ -11,21 +11,20 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GetRendererOutputSize(SDL_Renderer * renderer,
-                              int *w, int *h);
-
+                          int *w, int *h);
 ```
 
 ## Function Parameters
 
-|                  |                               |
-| ---------------- | ----------------------------- |
-| **renderer**     | the rendering context         |
-| **w**            | an int filled with the width  |
-| **h**            | an int filled with the height |
+|                                |              |                               |
+| ------------------------------ | ------------ | ----------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context         |
+| int *                          | **w**        | an int filled with the width  |
+| int *                          | **h**        | an int filled with the height |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

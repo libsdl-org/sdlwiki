@@ -11,21 +11,20 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_SetHint(const char *name,
-                     const char *value);
-
+                 const char *value);
 ```
 
 ## Function Parameters
 
-|               |                                |
-| ------------- | ------------------------------ |
-| **name**      | the hint to set                |
-| **value**     | the value of the hint variable |
+|              |           |                                |
+| ------------ | --------- | ------------------------------ |
+| const char * | **name**  | the hint to set                |
+| const char * | **value** | the value of the hint variable |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
-otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the hint was set,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

@@ -11,13 +11,13 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Window* SDL_GL_GetCurrentWindow(void);
-
 ```
 
 ## Return Value
 
-Returns the currently active OpenGL window on success or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Window](SDL_Window) *) Returns the currently active OpenGL window on
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

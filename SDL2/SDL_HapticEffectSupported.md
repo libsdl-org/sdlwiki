@@ -11,23 +11,22 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticEffectSupported(SDL_Haptic * haptic,
-                              SDL_HapticEffect *
-                              effect);
-
+                          SDL_HapticEffect *
+                          effect);
 ```
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
-| **effect**     | the desired effect to query                  |
+|                                        |            |                                              |
+| -------------------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *             | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
+| [SDL_HapticEffect](SDL_HapticEffect) * | **effect** | the desired effect to query                  |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if effect is supported, [SDL_FALSE](SDL_FALSE)
-if it isn't, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns [SDL_TRUE](SDL_TRUE) if effect is supported,
+[SDL_FALSE](SDL_FALSE) if it isn't, or a negative error code on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

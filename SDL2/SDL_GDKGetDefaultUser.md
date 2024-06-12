@@ -11,18 +11,17 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GDKGetDefaultUser(XUserHandle * outUserHandle);
-
 ```
 
 ## Function Parameters
 
-|                       |                                                         |
-| --------------------- | ------------------------------------------------------- |
-| **outUserHandle**     | a pointer to be filled in with the default user handle. |
+|               |                   |                                                         |
+| ------------- | ----------------- | ------------------------------------------------------- |
+| XUserHandle * | **outUserHandle** | a pointer to be filled in with the default user handle. |
 
 ## Return Value
 
-Returns 0 if success, -1 if any error occurs.
+(int) Returns 0 if success, -1 if any error occurs.
 
 ## Remarks
 

@@ -11,14 +11,13 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GL_GetSwapInterval(void);
-
 ```
 
 ## Return Value
 
-Returns 0 if there is no vertical retrace synchronization, 1 if the buffer
-swap is synchronized with the vertical retrace, and -1 if late swaps happen
-immediately instead of waiting for the next retrace; call
+(int) Returns 0 if there is no vertical retrace synchronization, 1 if the
+buffer swap is synchronized with the vertical retrace, and -1 if late swaps
+happen immediately instead of waiting for the next retrace; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,15 +11,14 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_FlushEvents(Uint32 minType, Uint32 maxType);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------- |
-| **minType**     | the low end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType) for details  |
-| **maxType**     | the high end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType) for details |
+|        |             |                                                                                                     |
+| ------ | ----------- | --------------------------------------------------------------------------------------------------- |
+| Uint32 | **minType** | the low end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType) for details  |
+| Uint32 | **maxType** | the high end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType) for details |
 
 ## Remarks
 

@@ -11,21 +11,20 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetDisplayMode(int displayIndex, int modeIndex,
-                       SDL_DisplayMode * mode);
-
+                   SDL_DisplayMode * mode);
 ```
 
 ## Function Parameters
 
-|                      |                                                                                        |
-| -------------------- | -------------------------------------------------------------------------------------- |
-| **displayIndex**     | the index of the display to query                                                      |
-| **modeIndex**        | the index of the display mode to query                                                 |
-| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the mode at `modeIndex` |
+|                                      |                  |                                                                                        |
+| ------------------------------------ | ---------------- | -------------------------------------------------------------------------------------- |
+| int                                  | **displayIndex** | the index of the display to query                                                      |
+| int                                  | **modeIndex**    | the index of the display mode to query                                                 |
+| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the mode at `modeIndex` |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

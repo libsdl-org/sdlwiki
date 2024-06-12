@@ -11,7 +11,6 @@ Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 void SDL_GDKSuspendComplete(void);
-
 ```
 
 ## Version

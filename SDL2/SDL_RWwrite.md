@@ -11,24 +11,23 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 size_t SDL_RWwrite(SDL_RWops *context,
-                   const void *ptr, size_t size,
-                   size_t num);
-
+               const void *ptr, size_t size,
+               size_t num);
 ```
 
 ## Function Parameters
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure |
-| **ptr**         | a pointer to a buffer containing data to write   |
-| **size**        | the size of an object to write, in bytes         |
-| **num**         | the number of objects to write                   |
+|                          |             |                                                  |
+| ------------------------ | ----------- | ------------------------------------------------ |
+| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure |
+| const void *             | **ptr**     | a pointer to a buffer containing data to write   |
+| size_t                   | **size**    | the size of an object to write, in bytes         |
+| size_t                   | **num**     | the number of objects to write                   |
 
 ## Return Value
 
-Returns the number of objects written, which will be less than **num** on
-error; call [SDL_GetError](SDL_GetError)() for more information.
+(size_t) Returns the number of objects written, which will be less than
+**num** on error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

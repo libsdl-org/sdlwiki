@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 const char* SDL_GameControllerGetStringForButton(SDL_GameControllerButton button);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                |
-| -------------- | ------------------------------------------------------------------------------ |
-| **button**     | an enum value for a given [SDL_GameControllerButton](SDL_GameControllerButton) |
+|                                                      |            |                                                                                |
+| ---------------------------------------------------- | ---------- | ------------------------------------------------------------------------------ |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button** | an enum value for a given [SDL_GameControllerButton](SDL_GameControllerButton) |
 
 ## Return Value
 
-Returns a string for the given button, or NULL if an invalid button is
-specified. The string returned is of the format used by
+(const char *) Returns a string for the given button, or NULL if an invalid
+button is specified. The string returned is of the format used by
 [SDL_GameController](SDL_GameController) mapping strings.
 
 ## Remarks

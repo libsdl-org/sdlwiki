@@ -11,13 +11,13 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioStatus SDL_GetAudioStatus(void);
-
 ```
 
 ## Return Value
 
-Returns the [SDL_AudioStatus](SDL_AudioStatus) of the audio device opened
-by [SDL_OpenAudio](SDL_OpenAudio)().
+([SDL_AudioStatus](SDL_AudioStatus)) Returns the
+[SDL_AudioStatus](SDL_AudioStatus) of the audio device opened by
+[SDL_OpenAudio](SDL_OpenAudio)().
 
 ## Remarks
 

@@ -11,7 +11,6 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_PumpEvents(void);
-
 ```
 
 ## Remarks

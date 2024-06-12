@@ -15,12 +15,12 @@ typedef void (SDLCALL *SDL_LogOutputFunction)(void *userdata, int category, SDL_
 
 ## Function Parameters
 
-|                  |                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------- |
-| **userdata**     | what was passed as `userdata` to [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction)() |
-| **category**     | the category of the message                                                             |
-| **priority**     | the priority of the message                                                             |
-| **message**      | the message being output                                                                |
+|              |                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------- |
+| **userdata** | what was passed as `userdata` to [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction)() |
+| **category** | the category of the message                                                             |
+| **priority** | the priority of the message                                                             |
+| **message**  | the message being output                                                                |
 
 ## Remarks
 

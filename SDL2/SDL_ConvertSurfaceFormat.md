@@ -12,21 +12,21 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 ```c
 SDL_Surface* SDL_ConvertSurfaceFormat
     (SDL_Surface * src, Uint32 pixel_format, Uint32 flags);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                                      |
-| -------------------- | ------------------------------------------------------------------------------------ |
-| **src**              | the existing [SDL_Surface](SDL_Surface) structure to convert                         |
-| **pixel_format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) that the new surface is optimized for |
-| **flags**            | the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API   |
+|                              |                  |                                                                                      |
+| ---------------------------- | ---------------- | ------------------------------------------------------------------------------------ |
+| [SDL_Surface](SDL_Surface) * | **src**          | the existing [SDL_Surface](SDL_Surface) structure to convert                         |
+| Uint32                       | **pixel_format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) that the new surface is optimized for |
+| Uint32                       | **flags**        | the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API   |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

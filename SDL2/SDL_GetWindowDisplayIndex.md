@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetWindowDisplayIndex(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the index of the display containing the center of the window on
-success or a negative error code on failure; call
+(int) Returns the index of the display containing the center of the window
+on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

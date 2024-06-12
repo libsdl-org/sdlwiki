@@ -11,23 +11,22 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_UpdateTexture(SDL_Texture * texture,
-                      const SDL_Rect * rect,
-                      const void *pixels, int pitch);
-
+                  const SDL_Rect * rect,
+                  const void *pixels, int pitch);
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
-| **texture**     | the texture to update                                                                                   |
-| **rect**        | an [SDL_Rect](SDL_Rect) structure representing the area to update, or NULL to update the entire texture |
-| **pixels**      | the raw pixel data in the format of the texture                                                         |
-| **pitch**       | the number of bytes in a row of pixel data, including padding between lines                             |
+|                              |             |                                                                                                         |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                                                                   |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | an [SDL_Rect](SDL_Rect) structure representing the area to update, or NULL to update the entire texture |
+| const void *                 | **pixels**  | the raw pixel data in the format of the texture                                                         |
+| int                          | **pitch**   | the number of bytes in a row of pixel data, including padding between lines                             |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -11,7 +11,6 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 void SDL_GameControllerUpdate(void);
-
 ```
 
 ## Remarks

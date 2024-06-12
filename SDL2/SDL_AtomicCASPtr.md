@@ -11,21 +11,20 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_AtomicCASPtr(void **a, void *oldval, void *newval);
-
 ```
 
 ## Function Parameters
 
-|                |                        |
-| -------------- | ---------------------- |
-| **a**          | a pointer to a pointer |
-| **oldval**     | the old pointer value  |
-| **newval**     | the new pointer value  |
+|         |            |                        |
+| ------- | ---------- | ---------------------- |
+| void ** | **a**      | a pointer to a pointer |
+| void *  | **oldval** | the old pointer value  |
+| void *  | **newval** | the new pointer value  |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the pointer was set, [SDL_FALSE](SDL_FALSE)
-otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the pointer was set,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

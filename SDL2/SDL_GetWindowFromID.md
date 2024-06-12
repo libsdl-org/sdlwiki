@@ -11,19 +11,19 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Window * SDL_GetWindowFromID(Uint32 id);
-
 ```
 
 ## Function Parameters
 
-|            |                      |
-| ---------- | -------------------- |
-| **id**     | the ID of the window |
+|        |        |                      |
+| ------ | ------ | -------------------- |
+| Uint32 | **id** | the ID of the window |
 
 ## Return Value
 
-Returns the window associated with `id` or NULL if it doesn't exist; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Window](SDL_Window) *) Returns the window associated with `id` or
+NULL if it doesn't exist; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

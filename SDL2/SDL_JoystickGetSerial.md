@@ -11,18 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 const char * SDL_JoystickGetSerial(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
 
 ## Return Value
 
-Returns the serial number of the selected joystick, or NULL if unavailable.
+(const char *) Returns the serial number of the selected joystick, or NULL
+if unavailable.
 
 ## Remarks
 

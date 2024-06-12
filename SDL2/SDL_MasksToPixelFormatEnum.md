@@ -11,26 +11,26 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint32 SDL_MasksToPixelFormatEnum(int bpp,
-                                  Uint32 Rmask,
-                                  Uint32 Gmask,
-                                  Uint32 Bmask,
-                                  Uint32 Amask);
-
+                              Uint32 Rmask,
+                              Uint32 Gmask,
+                              Uint32 Bmask,
+                              Uint32 Amask);
 ```
 
 ## Function Parameters
 
-|               |                                               |
-| ------------- | --------------------------------------------- |
-| **bpp**       | a bits per pixel value; usually 15, 16, or 32 |
-| **Rmask**     | the red mask for the format                   |
-| **Gmask**     | the green mask for the format                 |
-| **Bmask**     | the blue mask for the format                  |
-| **Amask**     | the alpha mask for the format                 |
+|        |           |                                               |
+| ------ | --------- | --------------------------------------------- |
+| int    | **bpp**   | a bits per pixel value; usually 15, 16, or 32 |
+| Uint32 | **Rmask** | the red mask for the format                   |
+| Uint32 | **Gmask** | the green mask for the format                 |
+| Uint32 | **Bmask** | the blue mask for the format                  |
+| Uint32 | **Amask** | the alpha mask for the format                 |
 
 ## Return Value
 
-Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values
+(Uint32) Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
+values
 
 ## Remarks
 

@@ -11,18 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char* SDL_SensorGetDeviceName(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                |
-| -------------------- | ------------------------------ |
-| **device_index**     | The sensor to obtain name from |
+|     |                  |                                |
+| --- | ---------------- | ------------------------------ |
+| int | **device_index** | The sensor to obtain name from |
 
 ## Return Value
 
-Returns the sensor name, or NULL if `device_index` is out of range.
+(const char *) Returns the sensor name, or NULL if `device_index` is out of
+range.
 
 ## Version
 

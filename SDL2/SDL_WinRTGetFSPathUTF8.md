@@ -11,19 +11,18 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char * SDL_WinRTGetFSPathUTF8(SDL_WinRT_Path pathType);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                       |
-| ---------------- | --------------------------------------------------------------------- |
-| **pathType**     | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
+|                                  |              |                                                                       |
+| -------------------------------- | ------------ | --------------------------------------------------------------------- |
+| [SDL_WinRT_Path](SDL_WinRT_Path) | **pathType** | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
 
 ## Return Value
 
-Returns a UTF-8 string (8-bit, multi-byte) containing the path, or NULL if
-the path is not available for any reason; call
+(const char *) Returns a UTF-8 string (8-bit, multi-byte) containing the
+path, or NULL if the path is not available for any reason; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

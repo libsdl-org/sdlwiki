@@ -11,22 +11,21 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawPoints(SDL_Renderer * renderer,
-                         const SDL_Point * points,
-                         int count);
-
+                     const SDL_Point * points,
+                     int count);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                 |
-| ---------------- | ------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                           |
-| **points**       | an array of [SDL_Point](SDL_Point) structures that represent the points to draw |
-| **count**        | the number of points to draw                                                    |
+|                                |              |                                                                                 |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                           |
+| const [SDL_Point](SDL_Point) * | **points**   | an array of [SDL_Point](SDL_Point) structures that represent the points to draw |
+| int                            | **count**    | the number of points to draw                                                    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

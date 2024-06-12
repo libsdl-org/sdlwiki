@@ -11,13 +11,12 @@ Defined in [SDL_locale.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Locale * SDL_GetPreferredLocales(void);
-
 ```
 
 ## Return Value
 
-Return array of locales, terminated with a locale with a NULL language
-field. Will return NULL on error.
+([SDL_Locale](SDL_Locale) *) Return array of locales, terminated with a
+locale with a NULL language field. Will return NULL on error.
 
 ## Remarks
 

@@ -11,21 +11,21 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Sint64 SDL_RWseek(SDL_RWops *context,
-                  Sint64 offset, int whence);
-
+              Sint64 offset, int whence);
 ```
 
 ## Function Parameters
 
-|                 |                                                                      |
-| --------------- | -------------------------------------------------------------------- |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure                     |
-| **offset**      | an offset in bytes, relative to **whence** location; can be negative |
-| **whence**      | any of `RW_SEEK_SET`, `RW_SEEK_CUR`, `RW_SEEK_END`                   |
+|                          |             |                                                                      |
+| ------------------------ | ----------- | -------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure                     |
+| Sint64                   | **offset**  | an offset in bytes, relative to **whence** location; can be negative |
+| int                      | **whence**  | any of `RW_SEEK_SET`, `RW_SEEK_CUR`, `RW_SEEK_END`                   |
 
 ## Return Value
 
-Returns the final offset in the data stream after the seek or -1 on error.
+(Sint64) Returns the final offset in the data stream after the seek or -1
+on error.
 
 ## Remarks
 

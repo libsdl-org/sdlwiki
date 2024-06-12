@@ -11,19 +11,19 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 void * SDL_SIMDRealloc(void *mem, const size_t len);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                                                                                                                                     |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **mem**     | The pointer obtained from [SDL_SIMDAlloc](SDL_SIMDAlloc). This function also accepts NULL, at which point this function is the same as calling [SDL_SIMDAlloc](SDL_SIMDAlloc) with a NULL pointer.  |
-| **len**     | The length, in bytes, of the block to allocated. The actual allocated block might be larger due to padding, etc. Passing 0 will return a non-NULL pointer, assuming the system isn't out of memory. |
+|              |         |                                                                                                                                                                                                     |
+| ------------ | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| void *       | **mem** | The pointer obtained from [SDL_SIMDAlloc](SDL_SIMDAlloc). This function also accepts NULL, at which point this function is the same as calling [SDL_SIMDAlloc](SDL_SIMDAlloc) with a NULL pointer.  |
+| const size_t | **len** | The length, in bytes, of the block to allocated. The actual allocated block might be larger due to padding, etc. Passing 0 will return a non-NULL pointer, assuming the system isn't out of memory. |
 
 ## Return Value
 
-Returns a pointer to the newly-reallocated block, NULL if out of memory.
+(void *) Returns a pointer to the newly-reallocated block, NULL if out of
+memory.
 
 ## Remarks
 

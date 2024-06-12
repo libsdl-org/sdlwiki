@@ -11,22 +11,21 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_AndroidShowToast(const char* message, int duration, int gravity, int xoffset, int yoffset);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                     |
-| ---------------- | --------------------------------------------------- |
-| **message**      | text message to be shown                            |
-| **duration**     | 0=short, 1=long                                     |
-| **gravity**      | where the notification should appear on the screen. |
-| **xoffset**      | set this parameter only when gravity >=0            |
-| **yoffset**      | set this parameter only when gravity >=0            |
+|              |              |                                                     |
+| ------------ | ------------ | --------------------------------------------------- |
+| const char * | **message**  | text message to be shown                            |
+| int          | **duration** | 0=short, 1=long                                     |
+| int          | **gravity**  | where the notification should appear on the screen. |
+| int          | **xoffset**  | set this parameter only when gravity >=0            |
+| int          | **yoffset**  | set this parameter only when gravity >=0            |
 
 ## Return Value
 
-Returns 0 if success, -1 if any error occurs.
+(int) Returns 0 if success, -1 if any error occurs.
 
 ## Remarks
 

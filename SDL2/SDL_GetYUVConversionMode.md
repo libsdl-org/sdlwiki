@@ -11,7 +11,6 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_YUV_CONVERSION_MODE SDL_GetYUVConversionMode(void);
-
 ```
 
 ## Version

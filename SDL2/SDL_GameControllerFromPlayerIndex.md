@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_GameController* SDL_GameControllerFromPlayerIndex(int player_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                     |
-| -------------------- | ------------------------------------------------------------------- |
-| **player_index**     | the player index, which is not the device index or the instance id! |
+|     |                  |                                                                     |
+| --- | ---------------- | ------------------------------------------------------------------- |
+| int | **player_index** | the player index, which is not the device index or the instance id! |
 
 ## Return Value
 
-Returns the [SDL_GameController](SDL_GameController) associated with a
-player index.
+([SDL_GameController](SDL_GameController) *) Returns the
+[SDL_GameController](SDL_GameController) associated with a player index.
 
 ## Remarks
 

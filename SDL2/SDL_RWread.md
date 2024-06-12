@@ -11,24 +11,23 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 size_t SDL_RWread(SDL_RWops *context,
-                  void *ptr, size_t size,
-                  size_t maxnum);
-
+              void *ptr, size_t size,
+              size_t maxnum);
 ```
 
 ## Function Parameters
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure |
-| **ptr**         | a pointer to a buffer to read data into          |
-| **size**        | the size of each object to read, in bytes        |
-| **maxnum**      | the maximum number of objects to be read         |
+|                          |             |                                                  |
+| ------------------------ | ----------- | ------------------------------------------------ |
+| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure |
+| void *                   | **ptr**     | a pointer to a buffer to read data into          |
+| size_t                   | **size**    | the size of each object to read, in bytes        |
+| size_t                   | **maxnum**  | the maximum number of objects to be read         |
 
 ## Return Value
 
-Returns the number of objects read, or 0 at error or end of file; call
-[SDL_GetError](SDL_GetError)() for more information.
+(size_t) Returns the number of objects read, or 0 at error or end of file;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

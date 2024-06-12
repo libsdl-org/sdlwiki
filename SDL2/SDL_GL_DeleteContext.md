@@ -11,14 +11,13 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_GL_DeleteContext(SDL_GLContext context);
-
 ```
 
 ## Function Parameters
 
-|                 |                                  |
-| --------------- | -------------------------------- |
-| **context**     | the OpenGL context to be deleted |
+|                                |             |                                  |
+| ------------------------------ | ----------- | -------------------------------- |
+| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to be deleted |
 
 ## Version
 

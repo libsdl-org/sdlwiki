@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 const char* SDL_GameControllerGetAppleSFSymbolsNameForButton(SDL_GameController *gamecontroller, SDL_GameControllerButton button);
-
 ```
 
 ## Function Parameters
 
-|                        |                                 |
-| ---------------------- | ------------------------------- |
-| **gamecontroller**     | the controller to query         |
-| **button**             | a button on the game controller |
+|                                                      |                    |                                 |
+| ---------------------------------------------------- | ------------------ | ------------------------------- |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | the controller to query         |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button on the game controller |
 
 ## Return Value
 
-Returns the sfSymbolsName or NULL if the name can't be found
+(const char *) Returns the sfSymbolsName or NULL if the name can't be found
 
 ## Version
 

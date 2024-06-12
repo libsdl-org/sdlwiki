@@ -11,19 +11,18 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_AtomicSet(SDL_atomic_t *a, int v);
-
 ```
 
 ## Function Parameters
 
-|           |                                                                      |
-| --------- | -------------------------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
-| **v**     | the desired value                                                    |
+|                                |       |                                                                      |
+| ------------------------------ | ----- | -------------------------------------------------------------------- |
+| [SDL_atomic_t](SDL_atomic_t) * | **a** | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
+| int                            | **v** | the desired value                                                    |
 
 ## Return Value
 
-Returns the previous value of the atomic variable.
+(int) Returns the previous value of the atomic variable.
 
 ## Remarks
 

@@ -11,16 +11,15 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowBordered(SDL_Window * window,
-                           SDL_bool bordered);
-
+                       SDL_bool bordered);
 ```
 
 ## Function Parameters
 
-|                  |                                                                             |
-| ---------------- | --------------------------------------------------------------------------- |
-| **window**       | the window of which to change the border state                              |
-| **bordered**     | [SDL_FALSE](SDL_FALSE) to remove border, [SDL_TRUE](SDL_TRUE) to add border |
+|                            |              |                                                                             |
+| -------------------------- | ------------ | --------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**   | the window of which to change the border state                              |
+| [SDL_bool](SDL_bool)       | **bordered** | [SDL_FALSE](SDL_FALSE) to remove border, [SDL_TRUE](SDL_TRUE) to add border |
 
 ## Remarks
 

@@ -11,16 +11,15 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderGetLogicalSize(SDL_Renderer * renderer, int *w, int *h);
-
 ```
 
 ## Function Parameters
 
-|                  |                                     |
-| ---------------- | ----------------------------------- |
-| **renderer**     | a rendering context                 |
-| **w**            | an int to be filled with the width  |
-| **h**            | an int to be filled with the height |
+|                                |              |                                     |
+| ------------------------------ | ------------ | ----------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | a rendering context                 |
+| int *                          | **w**        | an int to be filled with the width  |
+| int *                          | **h**        | an int to be filled with the height |
 
 ## Remarks
 

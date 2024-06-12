@@ -11,12 +11,11 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint64 SDL_GetPerformanceCounter(void);
-
 ```
 
 ## Return Value
 
-Returns the current counter value.
+(Uint64) Returns the current counter value.
 
 ## Remarks
 

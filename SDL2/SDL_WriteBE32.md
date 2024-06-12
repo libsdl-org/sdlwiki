@@ -11,19 +11,18 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 size_t SDL_WriteBE32(SDL_RWops * dst, Uint32 value);
-
 ```
 
 ## Function Parameters
 
-|               |                                          |
-| ------------- | ---------------------------------------- |
-| **dst**       | the stream to which data will be written |
-| **value**     | the data to be written, in native format |
+|                          |           |                                          |
+| ------------------------ | --------- | ---------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **dst**   | the stream to which data will be written |
+| Uint32                   | **value** | the data to be written, in native format |
 
 ## Return Value
 
-Returns 1 on successful write, 0 on error.
+(size_t) Returns 1 on successful write, 0 on error.
 
 ## Remarks
 

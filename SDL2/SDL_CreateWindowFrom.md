@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Window * SDL_CreateWindowFrom(const void *data);
-
 ```
 
 ## Function Parameters
 
-|              |                                                                                                  |
-| ------------ | ------------------------------------------------------------------------------------------------ |
-| **data**     | a pointer to driver-dependent window creation data, typically your native window cast to a void* |
+|              |          |                                                                                                  |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------ |
+| const void * | **data** | a pointer to driver-dependent window creation data, typically your native window cast to a void* |
 
 ## Return Value
 
-Returns the window that was created or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Window](SDL_Window) *) Returns the window that was created or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

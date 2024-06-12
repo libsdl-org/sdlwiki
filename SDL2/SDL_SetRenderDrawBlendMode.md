@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer,
-                               SDL_BlendMode blendMode);
-
+                           SDL_BlendMode blendMode);
 ```
 
 ## Function Parameters
 
-|                   |                                                        |
-| ----------------- | ------------------------------------------------------ |
-| **renderer**      | the rendering context                                  |
-| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode) to use for blending |
+|                                |               |                                                        |
+| ------------------------------ | ------------- | ------------------------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer**  | the rendering context                                  |
+| [SDL_BlendMode](SDL_BlendMode) | **blendMode** | the [SDL_BlendMode](SDL_BlendMode) to use for blending |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

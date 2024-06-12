@@ -11,15 +11,14 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_AndroidSendMessage(Uint32 command, int param);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                      |
-| --------------- | ---------------------------------------------------- |
-| **command**     | user command that must be greater or equal to 0x8000 |
-| **param**       | user parameter                                       |
+|        |             |                                                      |
+| ------ | ----------- | ---------------------------------------------------- |
+| Uint32 | **command** | user command that must be greater or equal to 0x8000 |
+| int    | **param**   | user parameter                                       |
 
 ## Remarks
 

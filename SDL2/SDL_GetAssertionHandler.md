@@ -11,19 +11,19 @@ Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_AssertionHandler SDL_GetAssertionHandler(void **puserdata);
-
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                                             |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **puserdata**     | pointer which is filled with the "userdata" pointer that was passed to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)() |
+|         |               |                                                                                                                             |
+| ------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| void ** | **puserdata** | pointer which is filled with the "userdata" pointer that was passed to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)() |
 
 ## Return Value
 
-Returns the [SDL_AssertionHandler](SDL_AssertionHandler) that is called
-when an assert triggers.
+([SDL_AssertionHandler](SDL_AssertionHandler)) Returns the
+[SDL_AssertionHandler](SDL_AssertionHandler) that is called when an assert
+triggers.
 
 ## Remarks
 

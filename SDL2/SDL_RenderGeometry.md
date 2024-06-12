@@ -11,26 +11,25 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderGeometry(SDL_Renderer *renderer,
-                       SDL_Texture *texture,
-                       const SDL_Vertex *vertices, int num_vertices,
-                       const int *indices, int num_indices);
-
+                   SDL_Texture *texture,
+                   const SDL_Vertex *vertices, int num_vertices,
+                   const int *indices, int num_indices);
 ```
 
 ## Function Parameters
 
-|                      |                                                                                                                              |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**         | The rendering context.                                                                                                       |
-| **texture**          | (optional) The SDL texture to use.                                                                                           |
-| **vertices**         | Vertices.                                                                                                                    |
-| **num_vertices**     | Number of vertices.                                                                                                          |
-| **indices**          | (optional) An array of integer indices into the 'vertices' array, if NULL all vertices will be rendered in sequential order. |
-| **num_indices**      | Number of indices.                                                                                                           |
+|                                  |                  |                                                                                                                              |
+| -------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer**     | The rendering context.                                                                                                       |
+| [SDL_Texture](SDL_Texture) *     | **texture**      | (optional) The SDL texture to use.                                                                                           |
+| const [SDL_Vertex](SDL_Vertex) * | **vertices**     | Vertices.                                                                                                                    |
+| int                              | **num_vertices** | Number of vertices.                                                                                                          |
+| const int *                      | **indices**      | (optional) An array of integer indices into the 'vertices' array, if NULL all vertices will be rendered in sequential order. |
+| int                              | **num_indices**  | Number of indices.                                                                                                           |
 
 ## Return Value
 
-Return 0 on success, or -1 if the operation is not supported
+(int) Return 0 on success, or -1 if the operation is not supported
 
 ## Version
 

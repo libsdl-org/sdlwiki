@@ -11,18 +11,17 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Sensor* SDL_SensorFromInstanceID(SDL_SensorID instance_id);
-
 ```
 
 ## Function Parameters
 
-|                     |                             |
-| ------------------- | --------------------------- |
-| **instance_id**     | The sensor from instance id |
+|                              |                 |                             |
+| ---------------------------- | --------------- | --------------------------- |
+| [SDL_SensorID](SDL_SensorID) | **instance_id** | The sensor from instance id |
 
 ## Return Value
 
-Returns an [SDL_Sensor](SDL_Sensor) object.
+([SDL_Sensor](SDL_Sensor) *) Returns an [SDL_Sensor](SDL_Sensor) object.
 
 ## Version
 

@@ -11,12 +11,11 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_hid_init(void);
-
 ```
 
 ## Return Value
 
-Returns 0 on success and -1 on error.
+(int) Returns 0 on success and -1 on error.
 
 ## Remarks
 

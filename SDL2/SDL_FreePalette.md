@@ -11,14 +11,13 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_FreePalette(SDL_Palette * palette);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                      |
-| --------------- | ---------------------------------------------------- |
-| **palette**     | the [SDL_Palette](SDL_Palette) structure to be freed |
+|                              |             |                                                      |
+| ---------------------------- | ----------- | ---------------------------------------------------- |
+| [SDL_Palette](SDL_Palette) * | **palette** | the [SDL_Palette](SDL_Palette) structure to be freed |
 
 ## Version
 

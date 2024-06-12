@@ -11,20 +11,19 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetColorKey(SDL_Surface * surface,
-                    Uint32 * key);
-
+                Uint32 * key);
 ```
 
 ## Function Parameters
 
-|                 |                                                   |
-| --------------- | ------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to query |
-| **key**         | a pointer filled in with the transparent pixel    |
+|                              |             |                                                   |
+| ---------------------------- | ----------- | ------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
+| Uint32 *                     | **key**     | a pointer filled in with the transparent pixel    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

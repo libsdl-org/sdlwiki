@@ -11,20 +11,19 @@ Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 int SDL_GDKRunApp(SDL_main_func mainFunction, void *reserved);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                 |
-| -------------------- | --------------------------------------------------------------- |
-| **mainFunction**     | the SDL app's C-style main(), an [SDL_main_func](SDL_main_func) |
-| **reserved**         | reserved for future use; should be NULL                         |
+|                                |                  |                                                                 |
+| ------------------------------ | ---------------- | --------------------------------------------------------------- |
+| [SDL_main_func](SDL_main_func) | **mainFunction** | the SDL app's C-style main(), an [SDL_main_func](SDL_main_func) |
+| void *                         | **reserved**     | reserved for future use; should be NULL                         |
 
 ## Return Value
 
-Returns 0 on success or -1 on failure; call [SDL_GetError](SDL_GetError)()
-to retrieve more information on the failure.
+(int) Returns 0 on success or -1 on failure; call
+[SDL_GetError](SDL_GetError)() to retrieve more information on the failure.
 
 ## Version
 

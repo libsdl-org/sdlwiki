@@ -10,20 +10,19 @@ Defined in [SDL_error.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ## Syntax
 
 ```c
-int SDL_SetError(SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(1);
-
+int SDL_SetError(const char *fmt, ...);
 ```
 
 ## Function Parameters
 
-|             |                                                                     |
-| ----------- | ------------------------------------------------------------------- |
-| **fmt**     | a printf()-style message format string                              |
-| **...**     | additional parameters matching % tokens in the `fmt` string, if any |
+|              |         |                                                                     |
+| ------------ | ------- | ------------------------------------------------------------------- |
+| const char * | **fmt** | a printf()-style message format string                              |
+| ...          | **...** | additional parameters matching % tokens in the `fmt` string, if any |
 
 ## Return Value
 
-Returns always -1.
+(int) Returns always -1.
 
 ## Remarks
 

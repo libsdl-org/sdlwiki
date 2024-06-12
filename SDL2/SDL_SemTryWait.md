@@ -11,20 +11,20 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SemTryWait(SDL_sem * sem);
-
 ```
 
 ## Function Parameters
 
-|             |                          |
-| ----------- | ------------------------ |
-| **sem**     | the semaphore to wait on |
+|                      |         |                          |
+| -------------------- | ------- | ------------------------ |
+| [SDL_sem](SDL_sem) * | **sem** | the semaphore to wait on |
 
 ## Return Value
 
-Returns 0 if the wait succeeds, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
-if the wait would block, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the wait succeeds,
+[`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the wait would block, or a
+negative error code on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

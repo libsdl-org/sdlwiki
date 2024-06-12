@@ -11,19 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Renderer * SDL_GetRenderer(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the rendering context on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Renderer](SDL_Renderer) *) Returns the rendering context on success
+or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

@@ -11,18 +11,17 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 double SDL_acos(double x);
-
 ```
 
 ## Function Parameters
 
-|           |                                   |
-| --------- | --------------------------------- |
-| **x**     | floating point value, in radians. |
+|        |       |                                   |
+| ------ | ----- | --------------------------------- |
+| double | **x** | floating point value, in radians. |
 
 ## Return Value
 
-Returns arc cosine of `x`.
+(double) Returns arc cosine of `x`.
 
 ## Remarks
 

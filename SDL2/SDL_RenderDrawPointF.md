@@ -11,21 +11,20 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawPointF(SDL_Renderer * renderer,
-                         float x, float y);
-
+                     float x, float y);
 ```
 
 ## Function Parameters
 
-|                  |                                         |
-| ---------------- | --------------------------------------- |
-| **renderer**     | The renderer which should draw a point. |
-| **x**            | The x coordinate of the point.          |
-| **y**            | The y coordinate of the point.          |
+|                                |              |                                         |
+| ------------------------------ | ------------ | --------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should draw a point. |
+| float                          | **x**        | The x coordinate of the point.          |
+| float                          | **y**        | The y coordinate of the point.          |
 
 ## Return Value
 
-Return 0 on success, or -1 on error
+(int) Return 0 on success, or -1 on error
 
 ## Version
 

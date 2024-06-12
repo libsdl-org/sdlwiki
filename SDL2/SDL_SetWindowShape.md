@@ -11,20 +11,19 @@ Defined in [SDL_shape.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowShape(SDL_Window *window,SDL_Surface *shape,SDL_WindowShapeMode *shape_mode);
-
 ```
 
 ## Function Parameters
 
-|                    |                                                      |
-| ------------------ | ---------------------------------------------------- |
-| **window**         | The shaped window whose parameters should be set.    |
-| **shape**          | A surface encoding the desired shape for the window. |
-| **shape_mode**     | The parameters to set for the shaped window.         |
+|                                              |                |                                                      |
+| -------------------------------------------- | -------------- | ---------------------------------------------------- |
+| [SDL_Window](SDL_Window) *                   | **window**     | The shaped window whose parameters should be set.    |
+| [SDL_Surface](SDL_Surface) *                 | **shape**      | A surface encoding the desired shape for the window. |
+| [SDL_WindowShapeMode](SDL_WindowShapeMode) * | **shape_mode** | The parameters to set for the shaped window.         |
 
 ## Return Value
 
-Return 0 on success,
+(int) Return 0 on success,
 [SDL_INVALID_SHAPE_ARGUMENT](SDL_INVALID_SHAPE_ARGUMENT) on an invalid
 shape argument, or [SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW) if
 the [SDL_Window](SDL_Window) given does not reference a valid shaped

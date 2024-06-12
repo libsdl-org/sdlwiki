@@ -11,18 +11,17 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetThreadPriority(SDL_ThreadPriority priority);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                     |
-| ---------------- | --------------------------------------------------- |
-| **priority**     | the [SDL_ThreadPriority](SDL_ThreadPriority) to set |
+|                                          |              |                                                     |
+| ---------------------------------------- | ------------ | --------------------------------------------------- |
+| [SDL_ThreadPriority](SDL_ThreadPriority) | **priority** | the [SDL_ThreadPriority](SDL_ThreadPriority) to set |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

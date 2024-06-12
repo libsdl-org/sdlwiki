@@ -15,13 +15,14 @@ SDL_FORCE_INLINE float SDL_SwapFloat(float x);</syntaxhighlight>
 == Function Parameters ==
 
 {|
+|float
 |'''x'''
 |the value to be swapped
 |}
 
 == Return Value ==
 
-Returns the swapped value.
+(float) Returns the swapped value.
 
 == See Also ==
 

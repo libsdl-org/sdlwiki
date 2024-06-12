@@ -11,18 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_GameControllerType SDL_GameControllerTypeForIndex(int joystick_index);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
+|     |                    |                                                                                     |
+| --- | ------------------ | ----------------------------------------------------------------------------------- |
+| int | **joystick_index** | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
 
 ## Return Value
 
-Returns the controller type.
+([SDL_GameControllerType](SDL_GameControllerType)) Returns the controller
+type.
 
 ## Remarks
 

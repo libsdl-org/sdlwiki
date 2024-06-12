@@ -11,14 +11,13 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_GL_SwapWindow(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                      |
-| -------------- | -------------------- |
-| **window**     | the window to change |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change |
 
 ## Remarks
 

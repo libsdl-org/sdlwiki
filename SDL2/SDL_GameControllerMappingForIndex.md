@@ -11,13 +11,12 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 char * SDL_GameControllerMappingForIndex(int mapping_index);
-
 ```
 
 ## Return Value
 
-Returns the mapping string. Must be freed with [SDL_free](SDL_free)().
-Returns NULL if the index is out of range.
+(char *) Returns the mapping string. Must be freed with
+[SDL_free](SDL_free)(). Returns NULL if the index is out of range.
 
 ## Version
 

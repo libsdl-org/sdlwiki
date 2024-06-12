@@ -11,19 +11,19 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_Joystick* SDL_JoystickFromInstanceID(SDL_JoystickID instance_id);
-
 ```
 
 ## Function Parameters
 
-|                     |                                                             |
-| ------------------- | ----------------------------------------------------------- |
-| **instance_id**     | the instance id to get the [SDL_Joystick](SDL_Joystick) for |
+|                                  |                 |                                                             |
+| -------------------------------- | --------------- | ----------------------------------------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the instance id to get the [SDL_Joystick](SDL_Joystick) for |
 
 ## Return Value
 
-Returns an [SDL_Joystick](SDL_Joystick) on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Joystick](SDL_Joystick) *) Returns an [SDL_Joystick](SDL_Joystick) on
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

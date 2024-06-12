@@ -11,19 +11,18 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                 |
-| ---------------------- | --------------------------------------------------------------- |
-| **gamecontroller**     | the game controller object that you want to get a joystick from |
+|                                            |                    |                                                                 |
+| ------------------------------------------ | ------------------ | --------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object that you want to get a joystick from |
 
 ## Return Value
 
-Returns a [SDL_Joystick](SDL_Joystick) object; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Joystick](SDL_Joystick) *) Returns a [SDL_Joystick](SDL_Joystick)
+object; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

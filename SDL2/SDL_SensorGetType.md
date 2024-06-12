@@ -11,18 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_SensorType SDL_SensorGetType(SDL_Sensor *sensor);
-
 ```
 
 ## Function Parameters
 
-|                |                                                |
-| -------------- | ---------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to inspect |
+|                            |            |                                                |
+| -------------------------- | ---------- | ---------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to inspect |
 
 ## Return Value
 
-Returns the [SDL_SensorType](SDL_SensorType) type, or
+([SDL_SensorType](SDL_SensorType)) Returns the
+[SDL_SensorType](SDL_SensorType) type, or
 [`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `sensor` is NULL.
 
 ## Version

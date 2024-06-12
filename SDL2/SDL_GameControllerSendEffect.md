@@ -11,20 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerSendEffect(SDL_GameController *gamecontroller, const void *data, int size);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                |
-| ---------------------- | ---------------------------------------------- |
-| **gamecontroller**     | The controller to affect                       |
-| **data**               | The data to send to the controller             |
-| **size**               | The size of the data to send to the controller |
+|                                            |                    |                                                |
+| ------------------------------------------ | ------------------ | ---------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to affect                       |
+| const void *                               | **data**           | The data to send to the controller             |
+| int                                        | **size**           | The size of the data to send to the controller |
 
 ## Return Value
 
-Returns 0, or -1 if this controller or driver doesn't support effect
+(int) Returns 0, or -1 if this controller or driver doesn't support effect
 packets
 
 ## Version

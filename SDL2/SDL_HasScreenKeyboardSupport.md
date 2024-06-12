@@ -11,13 +11,12 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_HasScreenKeyboardSupport(void);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the platform has some screen keyboard
-support or [SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the platform has
+some screen keyboard support or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Version
 

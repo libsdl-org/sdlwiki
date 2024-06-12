@@ -11,20 +11,19 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticStopEffect(SDL_Haptic * haptic,
-                         int effect);
-
+                     int effect);
 ```
 
 ## Function Parameters
 
-|                |                                                           |
-| -------------- | --------------------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to stop the effect on |
-| **effect**     | the ID of the haptic effect to stop                       |
+|                            |            |                                                           |
+| -------------------------- | ---------- | --------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to stop the effect on |
+| int                        | **effect** | the ID of the haptic effect to stop                       |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

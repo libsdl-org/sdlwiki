@@ -11,21 +11,20 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 Uint8 SDL_GameControllerGetButton(SDL_GameController *gamecontroller,
-                                  SDL_GameControllerButton button);
-
+                              SDL_GameControllerButton button);
 ```
 
 ## Function Parameters
 
-|                        |                                                                                         |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| **gamecontroller**     | a game controller                                                                       |
-| **button**             | a button index (one of the [SDL_GameControllerButton](SDL_GameControllerButton) values) |
+|                                                      |                    |                                                                                         |
+| ---------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller                                                                       |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button index (one of the [SDL_GameControllerButton](SDL_GameControllerButton) values) |
 
 ## Return Value
 
-Returns 1 for pressed state or 0 for not pressed state or error; call
-[SDL_GetError](SDL_GetError)() for more information.
+(Uint8) Returns 1 for pressed state or 0 for not pressed state or error;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

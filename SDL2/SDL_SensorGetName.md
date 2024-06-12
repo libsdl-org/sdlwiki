@@ -11,18 +11,17 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char* SDL_SensorGetName(SDL_Sensor *sensor);
-
 ```
 
 ## Function Parameters
 
-|                |                                     |
-| -------------- | ----------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object |
+|                            |            |                                     |
+| -------------------------- | ---------- | ----------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object |
 
 ## Return Value
 
-Returns the sensor name, or NULL if `sensor` is NULL.
+(const char *) Returns the sensor name, or NULL if `sensor` is NULL.
 
 ## Version
 

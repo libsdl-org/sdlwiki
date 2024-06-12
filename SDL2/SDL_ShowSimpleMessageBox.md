@@ -11,21 +11,20 @@ Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/SDL2/includ
 
 ```c
 int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *message, SDL_Window *window);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                     |
-| --------------- | --------------------------------------------------- |
-| **flags**       | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value |
-| **title**       | UTF-8 title text                                    |
-| **message**     | UTF-8 message text                                  |
-| **window**      | the parent window, or NULL for no parent            |
+|                            |             |                                                     |
+| -------------------------- | ----------- | --------------------------------------------------- |
+| Uint32                     | **flags**   | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value |
+| const char *               | **title**   | UTF-8 title text                                    |
+| const char *               | **message** | UTF-8 message text                                  |
+| [SDL_Window](SDL_Window) * | **window**  | the parent window, or NULL for no parent            |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

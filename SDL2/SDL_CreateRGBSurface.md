@@ -13,26 +13,26 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 SDL_Surface* SDL_CreateRGBSurface
     (Uint32 flags, int width, int height, int depth,
      Uint32 Rmask, Uint32 Gmask, Uint32 Bmask, Uint32 Amask);
-
 ```
 
 ## Function Parameters
 
-|                |                                             |
-| -------------- | ------------------------------------------- |
-| **flags**      | the flags are unused and should be set to 0 |
-| **width**      | the width of the surface                    |
-| **height**     | the height of the surface                   |
-| **depth**      | the depth of the surface in bits            |
-| **Rmask**      | the red mask for the pixels                 |
-| **Gmask**      | the green mask for the pixels               |
-| **Bmask**      | the blue mask for the pixels                |
-| **Amask**      | the alpha mask for the pixels               |
+|        |            |                                             |
+| ------ | ---------- | ------------------------------------------- |
+| Uint32 | **flags**  | the flags are unused and should be set to 0 |
+| int    | **width**  | the width of the surface                    |
+| int    | **height** | the height of the surface                   |
+| int    | **depth**  | the depth of the surface in bits            |
+| Uint32 | **Rmask**  | the red mask for the pixels                 |
+| Uint32 | **Gmask**  | the green mask for the pixels               |
+| Uint32 | **Bmask**  | the blue mask for the pixels                |
+| Uint32 | **Amask**  | the alpha mask for the pixels               |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

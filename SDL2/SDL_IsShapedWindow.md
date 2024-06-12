@@ -11,19 +11,19 @@ Defined in [SDL_shape.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_IsShapedWindow(const SDL_Window *window);
-
 ```
 
 ## Function Parameters
 
-|                |                                       |
-| -------------- | ------------------------------------- |
-| **window**     | The window to query for being shaped. |
+|                                  |            |                                       |
+| -------------------------------- | ---------- | ------------------------------------- |
+| const [SDL_Window](SDL_Window) * | **window** | The window to query for being shaped. |
 
 ## Return Value
 
-Return [SDL_TRUE](SDL_TRUE) if the window is a window that can be shaped,
-[SDL_FALSE](SDL_FALSE) if the window is unshaped or NULL.
+([SDL_bool](SDL_bool)) Return [SDL_TRUE](SDL_TRUE) if the window is a
+window that can be shaped, [SDL_FALSE](SDL_FALSE) if the window is unshaped
+or NULL.
 
 ## Version
 

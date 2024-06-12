@@ -11,19 +11,18 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const wchar_t * SDL_WinRTGetFSPathUNICODE(SDL_WinRT_Path pathType);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                       |
-| ---------------- | --------------------------------------------------------------------- |
-| **pathType**     | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
+|                                  |              |                                                                       |
+| -------------------------------- | ------------ | --------------------------------------------------------------------- |
+| [SDL_WinRT_Path](SDL_WinRT_Path) | **pathType** | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
 
 ## Return Value
 
-Returns a UCS-2 string (16-bit, wide-char) containing the path, or NULL if
-the path is not available for any reason; call
+(const wchar_t *) Returns a UCS-2 string (16-bit, wide-char) containing the
+path, or NULL if the path is not available for any reason; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

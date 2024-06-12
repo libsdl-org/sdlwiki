@@ -11,14 +11,13 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_FreeRW(SDL_RWops * area);
-
 ```
 
 ## Function Parameters
 
-|              |                                                  |
-| ------------ | ------------------------------------------------ |
-| **area**     | the [SDL_RWops](SDL_RWops) structure to be freed |
+|                          |          |                                                  |
+| ------------------------ | -------- | ------------------------------------------------ |
+| [SDL_RWops](SDL_RWops) * | **area** | the [SDL_RWops](SDL_RWops) structure to be freed |
 
 ## Remarks
 

@@ -11,14 +11,13 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_HapticClose(SDL_Haptic * haptic);
-
 ```
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to close |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to close |
 
 ## Version
 

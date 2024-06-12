@@ -11,19 +11,18 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Sint64 SDL_RWtell(SDL_RWops *context);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **context**     | a [SDL_RWops](SDL_RWops) data stream object from which to get the current offset |
+|                          |             |                                                                                  |
+| ------------------------ | ----------- | -------------------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | a [SDL_RWops](SDL_RWops) data stream object from which to get the current offset |
 
 ## Return Value
 
-Returns the current offset in the stream, or -1 if the information can not
-be determined.
+(Sint64) Returns the current offset in the stream, or -1 if the information
+can not be determined.
 
 ## Remarks
 

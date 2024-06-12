@@ -11,13 +11,12 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_cond* SDL_CreateCond(void);
-
 ```
 
 ## Return Value
 
-Returns a new condition variable or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_cond](SDL_cond) *) Returns a new condition variable or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

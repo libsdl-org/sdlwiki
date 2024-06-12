@@ -11,14 +11,13 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_DestroyTexture(SDL_Texture * texture);
-
 ```
 
 ## Function Parameters
 
-|                 |                        |
-| --------------- | ---------------------- |
-| **texture**     | the texture to destroy |
+|                              |             |                        |
+| ---------------------------- | ----------- | ---------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to destroy |
 
 ## Remarks
 

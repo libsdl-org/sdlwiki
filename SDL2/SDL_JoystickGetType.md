@@ -11,18 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_JoystickType SDL_JoystickGetType(SDL_Joystick *joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
 
 ## Return Value
 
-Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
+([SDL_JoystickType](SDL_JoystickType)) Returns the
+[SDL_JoystickType](SDL_JoystickType) of the selected joystick.
 
 ## Version
 

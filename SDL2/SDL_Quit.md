@@ -11,7 +11,6 @@ Defined in [SDL.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL.h)
 
 ```c
 void SDL_Quit(void);
-
 ```
 
 ## Remarks

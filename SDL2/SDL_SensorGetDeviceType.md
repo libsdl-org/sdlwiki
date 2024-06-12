@@ -11,18 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_SensorType SDL_SensorGetDeviceType(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                 |
-| -------------------- | ------------------------------- |
-| **device_index**     | The sensor to get the type from |
+|     |                  |                                 |
+| --- | ---------------- | ------------------------------- |
+| int | **device_index** | The sensor to get the type from |
 
 ## Return Value
 
-Returns the [SDL_SensorType](SDL_SensorType), or
+([SDL_SensorType](SDL_SensorType)) Returns the
+[SDL_SensorType](SDL_SensorType), or
 [`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `device_index` is out of
 range.
 

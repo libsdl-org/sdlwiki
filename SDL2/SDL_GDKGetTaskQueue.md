@@ -11,18 +11,17 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GDKGetTaskQueue(XTaskQueueHandle * outTaskQueue);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                   |
-| -------------------- | ------------------------------------------------- |
-| **outTaskQueue**     | a pointer to be filled in with task queue handle. |
+|                    |                  |                                                   |
+| ------------------ | ---------------- | ------------------------------------------------- |
+| XTaskQueueHandle * | **outTaskQueue** | a pointer to be filled in with task queue handle. |
 
 ## Return Value
 
-Returns 0 if success, -1 if any error occurs.
+(int) Returns 0 if success, -1 if any error occurs.
 
 ## Remarks
 

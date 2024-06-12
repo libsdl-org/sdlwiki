@@ -11,19 +11,18 @@ Defined in [SDL.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL.h)
 
 ```c
 Uint32 SDL_WasInit(Uint32 flags);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                        |
-| ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+|        |           |                                                                                        |
+| ------ | --------- | -------------------------------------------------------------------------------------- |
+| Uint32 | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
 
 ## Return Value
 
-Returns a mask of all initialized subsystems if `flags` is 0, otherwise it
-returns the initialization status of the specified subsystems.
+(Uint32) Returns a mask of all initialized subsystems if `flags` is 0,
+otherwise it returns the initialization status of the specified subsystems.
 
 The return value does not include
 [SDL_INIT_NOPARACHUTE](SDL_INIT_NOPARACHUTE).

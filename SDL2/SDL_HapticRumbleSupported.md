@@ -11,20 +11,19 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticRumbleSupported(SDL_Haptic * haptic);
-
 ```
 
 ## Function Parameters
 
-|                |                                           |
-| -------------- | ----------------------------------------- |
-| **haptic**     | haptic device to check for rumble support |
+|                            |            |                                           |
+| -------------------------- | ---------- | ----------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | haptic device to check for rumble support |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if effect is supported, [SDL_FALSE](SDL_FALSE)
-if it isn't, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns [SDL_TRUE](SDL_TRUE) if effect is supported,
+[SDL_FALSE](SDL_FALSE) if it isn't, or a negative error code on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

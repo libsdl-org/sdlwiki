@@ -11,13 +11,12 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 const char* SDL_GetRevision(void);
-
 ```
 
 ## Return Value
 
-Returns an arbitrary string, uniquely identifying the exact revision of the
-SDL library in use.
+(const char *) Returns an arbitrary string, uniquely identifying the exact
+revision of the SDL library in use.
 
 ## Remarks
 

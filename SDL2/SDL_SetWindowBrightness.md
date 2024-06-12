@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowBrightness(SDL_Window * window, float brightness);
-
 ```
 
 ## Function Parameters
 
-|                    |                                                                                                          |
-| ------------------ | -------------------------------------------------------------------------------------------------------- |
-| **window**         | the window used to select the display whose brightness will be changed                                   |
-| **brightness**     | the brightness (gamma multiplier) value to set where 0.0 is completely dark and 1.0 is normal brightness |
+|                            |                |                                                                                                          |
+| -------------------------- | -------------- | -------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**     | the window used to select the display whose brightness will be changed                                   |
+| float                      | **brightness** | the brightness (gamma multiplier) value to set where 0.0 is completely dark and 1.0 is normal brightness |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

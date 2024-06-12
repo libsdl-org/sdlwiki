@@ -11,26 +11,25 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_UpdateNVTexture(SDL_Texture * texture,
-                         const SDL_Rect * rect,
-                         const Uint8 *Yplane, int Ypitch,
-                         const Uint8 *UVplane, int UVpitch);
-
+                     const SDL_Rect * rect,
+                     const Uint8 *Yplane, int Ypitch,
+                     const Uint8 *UVplane, int UVpitch);
 ```
 
 ## Function Parameters
 
-|                 |                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------- |
-| **texture**     | the texture to update                                                                 |
-| **rect**        | a pointer to the rectangle of pixels to update, or NULL to update the entire texture. |
-| **Yplane**      | the raw pixel data for the Y plane.                                                   |
-| **Ypitch**      | the number of bytes between rows of pixel data for the Y plane.                       |
-| **UVplane**     | the raw pixel data for the UV plane.                                                  |
-| **UVpitch**     | the number of bytes between rows of pixel data for the UV plane.                      |
+|                              |             |                                                                                       |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                                                 |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | a pointer to the rectangle of pixels to update, or NULL to update the entire texture. |
+| const Uint8 *                | **Yplane**  | the raw pixel data for the Y plane.                                                   |
+| int                          | **Ypitch**  | the number of bytes between rows of pixel data for the Y plane.                       |
+| const Uint8 *                | **UVplane** | the raw pixel data for the UV plane.                                                  |
+| int                          | **UVpitch** | the number of bytes between rows of pixel data for the UV plane.                      |
 
 ## Return Value
 
-Return 0 on success, or -1 if the texture is not valid.
+(int) Return 0 on success, or -1 if the texture is not valid.
 
 ## Remarks
 

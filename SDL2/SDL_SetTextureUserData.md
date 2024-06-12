@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetTextureUserData(SDL_Texture * texture,
-                           void *userdata);
-
+                       void *userdata);
 ```
 
 ## Function Parameters
 
-|                  |                                            |
-| ---------------- | ------------------------------------------ |
-| **texture**      | the texture to update.                     |
-| **userdata**     | the pointer to associate with the texture. |
+|                              |              |                                            |
+| ---------------------------- | ------------ | ------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture**  | the texture to update.                     |
+| void *                       | **userdata** | the pointer to associate with the texture. |
 
 ## Return Value
 
-Returns 0 on success, or -1 if the texture is not valid.
+(int) Returns 0 on success, or -1 if the texture is not valid.
 
 ## Version
 

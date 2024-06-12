@@ -11,14 +11,13 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_DestroyMutex(SDL_mutex * mutex);
-
 ```
 
 ## Function Parameters
 
-|               |                      |
-| ------------- | -------------------- |
-| **mutex**     | the mutex to destroy |
+|                          |           |                      |
+| ------------------------ | --------- | -------------------- |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to destroy |
 
 ## Remarks
 

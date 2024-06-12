@@ -11,12 +11,11 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetCPUCacheLineSize(void);
-
 ```
 
 ## Return Value
 
-Returns the L1 cache line size of the CPU, in bytes.
+(int) Returns the L1 cache line size of the CPU, in bytes.
 
 ## Remarks
 

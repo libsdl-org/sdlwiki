@@ -11,16 +11,15 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_HapticDestroyEffect(SDL_Haptic * haptic,
-                             int effect);
-
+                         int effect);
 ```
 
 ## Function Parameters
 
-|                |                                                              |
-| -------------- | ------------------------------------------------------------ |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to destroy the effect on |
-| **effect**     | the ID of the haptic effect to destroy                       |
+|                            |            |                                                              |
+| -------------------------- | ---------- | ------------------------------------------------------------ |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to destroy the effect on |
+| int                        | **effect** | the ID of the haptic effect to destroy                       |
 
 ## Remarks
 

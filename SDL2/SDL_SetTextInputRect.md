@@ -11,14 +11,13 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 void SDL_SetTextInputRect(const SDL_Rect *rect);
-
 ```
 
 ## Function Parameters
 
-|              |                                                                                                 |
-| ------------ | ----------------------------------------------------------------------------------------------- |
-| **rect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to receive text (ignored if NULL) |
+|                              |          |                                                                                                 |
+| ---------------------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **rect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to receive text (ignored if NULL) |
 
 ## Remarks
 

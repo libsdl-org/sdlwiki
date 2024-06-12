@@ -10,20 +10,19 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ## Syntax
 
 ```c
-int SDL_TryLockMutex(SDL_mutex * mutex) SDL_TRY_ACQUIRE(0, mutex);
-
+int SDL_TryLockMutex(SDL_mutex * mutex);
 ```
 
 ## Function Parameters
 
-|               |                          |
-| ------------- | ------------------------ |
-| **mutex**     | the mutex to try to lock |
+|                          |           |                          |
+| ------------------------ | --------- | ------------------------ |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to try to lock |
 
 ## Return Value
 
-Returns 0, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT), or -1 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT), or -1 on
+error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

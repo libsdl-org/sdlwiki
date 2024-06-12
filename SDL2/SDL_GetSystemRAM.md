@@ -11,12 +11,11 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetSystemRAM(void);
-
 ```
 
 ## Return Value
 
-Returns the amount of RAM configured in the system in MiB.
+(int) Returns the amount of RAM configured in the system in MiB.
 
 ## Version
 

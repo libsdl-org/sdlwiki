@@ -11,17 +11,16 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_WarpMouseInWindow(SDL_Window * window,
-                           int x, int y);
-
+                       int x, int y);
 ```
 
 ## Function Parameters
 
-|                |                                                                        |
-| -------------- | ---------------------------------------------------------------------- |
-| **window**     | the window to move the mouse into, or NULL for the current mouse focus |
-| **x**          | the x coordinate within the window                                     |
-| **y**          | the y coordinate within the window                                     |
+|                            |            |                                                                        |
+| -------------------------- | ---------- | ---------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to move the mouse into, or NULL for the current mouse focus |
+| int                        | **x**      | the x coordinate within the window                                     |
+| int                        | **y**      | the y coordinate within the window                                     |
 
 ## Remarks
 

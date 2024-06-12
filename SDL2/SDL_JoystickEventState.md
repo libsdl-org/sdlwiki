@@ -11,19 +11,18 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickEventState(int state);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                                   |
-| ------------- | ------------------------------------------------------------------------------------------------- |
-| **state**     | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
+|     |           |                                                                                                   |
+| --- | --------- | ------------------------------------------------------------------------------------------------- |
+| int | **state** | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
 
 ## Return Value
 
-Returns If `state` is [`SDL_QUERY`](SDL_QUERY) then the current state is
-returned, otherwise `state` is returned (even if it was not one of the
+(int) Returns If `state` is [`SDL_QUERY`](SDL_QUERY) then the current state
+is returned, otherwise `state` is returned (even if it was not one of the
 allowed values).
 
 ## Remarks

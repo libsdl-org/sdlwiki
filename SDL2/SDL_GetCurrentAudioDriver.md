@@ -11,13 +11,12 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetCurrentAudioDriver(void);
-
 ```
 
 ## Return Value
 
-Returns the name of the current audio driver or NULL if no driver has been
-initialized.
+(const char *) Returns the name of the current audio driver or NULL if no
+driver has been initialized.
 
 ## Remarks
 

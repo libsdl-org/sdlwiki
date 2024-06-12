@@ -11,10 +11,9 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 char* SDL_iconv_string(const char *tocode,
-                       const char *fromcode,
-                       const char *inbuf,
-                       size_t inbytesleft);
-
+                   const char *fromcode,
+                   const char *inbuf,
+                   size_t inbytesleft);
 ```
 
 ## Version

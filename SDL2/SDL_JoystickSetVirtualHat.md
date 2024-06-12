@@ -11,20 +11,19 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickSetVirtualHat(SDL_Joystick *joystick, int hat, Uint8 value);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                  |
-| ---------------- | ------------------------------------------------ |
-| **joystick**     | the virtual joystick on which to set state.      |
-| **hat**          | the specific hat on the virtual joystick to set. |
-| **value**        | the new value for the specified hat.             |
+|                                |              |                                                  |
+| ------------------------------ | ------------ | ------------------------------------------------ |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.      |
+| int                            | **hat**      | the specific hat on the virtual joystick to set. |
+| Uint8                          | **value**    | the new value for the specified hat.             |
 
 ## Return Value
 
-Returns 0 on success, -1 on error.
+(int) Returns 0 on success, -1 on error.
 
 ## Remarks
 

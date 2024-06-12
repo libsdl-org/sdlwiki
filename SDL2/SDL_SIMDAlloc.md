@@ -11,18 +11,18 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 void * SDL_SIMDAlloc(const size_t len);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                                                 |
-| ----------- | --------------------------------------------------------------------------------------------------------------- |
-| **len**     | The length, in bytes, of the block to allocate. The actual allocated block might be larger due to padding, etc. |
+|              |         |                                                                                                                 |
+| ------------ | ------- | --------------------------------------------------------------------------------------------------------------- |
+| const size_t | **len** | The length, in bytes, of the block to allocate. The actual allocated block might be larger due to padding, etc. |
 
 ## Return Value
 
-Returns a pointer to the newly-allocated block, NULL if out of memory.
+(void *) Returns a pointer to the newly-allocated block, NULL if out of
+memory.
 
 ## Remarks
 

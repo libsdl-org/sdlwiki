@@ -11,15 +11,14 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 void SDL_JoystickSetPlayerIndex(SDL_Joystick *joystick, int player_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                                                    |
-| -------------------- | -------------------------------------------------------------------------------------------------- |
-| **joystick**         | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)()              |
-| **player_index**     | Player index to assign to this joystick, or -1 to clear the player index and turn off player LEDs. |
+|                                |                  |                                                                                                    |
+| ------------------------------ | ---------------- | -------------------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)()              |
+| int                            | **player_index** | Player index to assign to this joystick, or -1 to clear the player index and turn off player LEDs. |
 
 ## Version
 

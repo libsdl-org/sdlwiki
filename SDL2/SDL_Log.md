@@ -10,15 +10,14 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 ## Syntax
 
 ```c
-void SDL_Log(SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(1);
-
+void SDL_Log(const char *fmt, ...);
 ```
 
 ## Function Parameters
 
-|             |                                                                     |
-| ----------- | ------------------------------------------------------------------- |
-| **...**     | additional parameters matching % tokens in the `fmt` string, if any |
+|     |         |                                                                     |
+| --- | ------- | ------------------------------------------------------------------- |
+| ... | **...** | additional parameters matching % tokens in the `fmt` string, if any |
 
 ## Remarks
 

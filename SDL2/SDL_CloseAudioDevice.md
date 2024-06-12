@@ -11,14 +11,13 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_CloseAudioDevice(SDL_AudioDeviceID dev);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                     |
-| ----------- | ----------------------------------------------------------------------------------- |
-| **dev**     | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+|                                        |         |                                                                                     |
+| -------------------------------------- | ------- | ----------------------------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
 
 ## Remarks
 

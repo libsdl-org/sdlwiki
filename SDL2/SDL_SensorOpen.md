@@ -11,19 +11,18 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Sensor* SDL_SensorOpen(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                    |
-| -------------------- | ------------------ |
-| **device_index**     | The sensor to open |
+|     |                  |                    |
+| --- | ---------------- | ------------------ |
+| int | **device_index** | The sensor to open |
 
 ## Return Value
 
-Returns an [SDL_Sensor](SDL_Sensor) sensor object, or NULL if an error
-occurred.
+([SDL_Sensor](SDL_Sensor) *) Returns an [SDL_Sensor](SDL_Sensor) sensor
+object, or NULL if an error occurred.
 
 ## Version
 

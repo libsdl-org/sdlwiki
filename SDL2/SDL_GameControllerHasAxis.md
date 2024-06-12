@@ -12,20 +12,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 ```c
 extern DECLSPEC SDL_bool SDLCALL
 SDL_GameControllerHasAxis(SDL_GameController *gamecontroller, SDL_GameControllerAxis axis);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                |
-| ---------------------- | ------------------------------------------------------------------------------ |
-| **gamecontroller**     | a game controller                                                              |
-| **axis**               | an axis enum value (an [SDL_GameControllerAxis](SDL_GameControllerAxis) value) |
+|                                                  |                    |                                                                                |
+| ------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------ |
+| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller                                                              |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis enum value (an [SDL_GameControllerAxis](SDL_GameControllerAxis) value) |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the controller has this axis,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the controller has
+this axis, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

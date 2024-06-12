@@ -11,19 +11,18 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 void SDL_LogMessageV(int category,
-                     SDL_LogPriority priority,
-                     SDL_PRINTF_FORMAT_STRING const char *fmt, va_list ap) SDL_PRINTF_VARARG_FUNCV(3);
-
+                 SDL_LogPriority priority,
+                 const char *fmt, va_list ap);
 ```
 
 ## Function Parameters
 
-|                  |                                        |
-| ---------------- | -------------------------------------- |
-| **category**     | the category of the message            |
-| **priority**     | the priority of the message            |
-| **fmt**          | a printf() style message format string |
-| **ap**           | a variable argument list               |
+|                                    |              |                                        |
+| ---------------------------------- | ------------ | -------------------------------------- |
+| int                                | **category** | the category of the message            |
+| [SDL_LogPriority](SDL_LogPriority) | **priority** | the priority of the message            |
+| const char *                       | **fmt**      | a printf() style message format string |
+| va_list                            | **ap**       | a variable argument list               |
 
 ## Version
 

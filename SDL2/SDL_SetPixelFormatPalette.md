@@ -11,20 +11,19 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetPixelFormatPalette(SDL_PixelFormat * format,
-                              SDL_Palette *palette);
-
+                          SDL_Palette *palette);
 ```
 
 ## Function Parameters
 
-|                 |                                                                            |
-| --------------- | -------------------------------------------------------------------------- |
-| **format**      | the [SDL_PixelFormat](SDL_PixelFormat) structure that will use the palette |
-| **palette**     | the [SDL_Palette](SDL_Palette) structure that will be used                 |
+|                                      |             |                                                                            |
+| ------------------------------------ | ----------- | -------------------------------------------------------------------------- |
+| [SDL_PixelFormat](SDL_PixelFormat) * | **format**  | the [SDL_PixelFormat](SDL_PixelFormat) structure that will use the palette |
+| [SDL_Palette](SDL_Palette) *         | **palette** | the [SDL_Palette](SDL_Palette) structure that will be used                 |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

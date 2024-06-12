@@ -11,19 +11,18 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint32 SDL_RegisterEvents(int numevents);
-
 ```
 
 ## Function Parameters
 
-|                   |                                      |
-| ----------------- | ------------------------------------ |
-| **numevents**     | the number of events to be allocated |
+|     |               |                                      |
+| --- | ------------- | ------------------------------------ |
+| int | **numevents** | the number of events to be allocated |
 
 ## Return Value
 
-Returns the beginning event number, or (Uint32)-1 if there are not enough
-user-defined events left.
+(Uint32) Returns the beginning event number, or (Uint32)-1 if there are not
+enough user-defined events left.
 
 ## Remarks
 

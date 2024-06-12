@@ -11,20 +11,19 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetSurfaceAlphaMod(SDL_Surface * surface,
-                           Uint8 * alpha);
-
+                       Uint8 * alpha);
 ```
 
 ## Function Parameters
 
-|                 |                                                   |
-| --------------- | ------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to query |
-| **alpha**       | a pointer filled in with the current alpha value  |
+|                              |             |                                                   |
+| ---------------------------- | ----------- | ------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
+| Uint8 *                      | **alpha**   | a pointer filled in with the current alpha value  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

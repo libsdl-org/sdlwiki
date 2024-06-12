@@ -15,10 +15,10 @@ typedef SDL_AssertState (SDLCALL *SDL_AssertionHandler)( const SDL_AssertData* d
 
 ## Function Parameters
 
-|                  |                                                                                                    |
-| ---------------- | -------------------------------------------------------------------------------------------------- |
-| **data**         | a pointer to the [SDL_AssertData](SDL_AssertData) structure corresponding to the current assertion |
-| **userdata**     | what was passed as `userdata` to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)()              |
+|              |                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| **data**     | a pointer to the [SDL_AssertData](SDL_AssertData) structure corresponding to the current assertion |
+| **userdata** | what was passed as `userdata` to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)()              |
 
 ## Return Value
 

@@ -11,13 +11,13 @@ Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_AssertionHandler SDL_GetDefaultAssertionHandler(void);
-
 ```
 
 ## Return Value
 
-Returns the default [SDL_AssertionHandler](SDL_AssertionHandler) that is
-called when an assert triggers.
+([SDL_AssertionHandler](SDL_AssertionHandler)) Returns the default
+[SDL_AssertionHandler](SDL_AssertionHandler) that is called when an assert
+triggers.
 
 ## Remarks
 

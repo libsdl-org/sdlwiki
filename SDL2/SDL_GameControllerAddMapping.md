@@ -11,19 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerAddMapping(const char* mappingString);
-
 ```
 
 ## Function Parameters
 
-|                       |                    |
-| --------------------- | ------------------ |
-| **mappingString**     | the mapping string |
+|              |                   |                    |
+| ------------ | ----------------- | ------------------ |
+| const char * | **mappingString** | the mapping string |
 
 ## Return Value
 
-Returns 1 if a new mapping is added, 0 if an existing mapping is updated,
--1 on error; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 1 if a new mapping is added, 0 if an existing mapping is
+updated, -1 on error; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

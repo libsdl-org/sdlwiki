@@ -11,13 +11,12 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_Keymod SDL_GetModState(void);
-
 ```
 
 ## Return Value
 
-Returns an OR'd combination of the modifier keys for the keyboard. See
-[SDL_Keymod](SDL_Keymod) for details.
+([SDL_Keymod](SDL_Keymod)) Returns an OR'd combination of the modifier keys
+for the keyboard. See [SDL_Keymod](SDL_Keymod) for details.
 
 ## Version
 

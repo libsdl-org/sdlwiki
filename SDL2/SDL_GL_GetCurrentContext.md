@@ -11,13 +11,13 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_GLContext SDL_GL_GetCurrentContext(void);
-
 ```
 
 ## Return Value
 
-Returns the currently active OpenGL context or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_GLContext](SDL_GLContext)) Returns the currently active OpenGL
+context or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

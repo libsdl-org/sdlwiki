@@ -11,22 +11,21 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void* SDL_SetWindowData(SDL_Window * window,
-                        const char *name,
-                        void *userdata);
-
+                    const char *name,
+                    void *userdata);
 ```
 
 ## Function Parameters
 
-|                  |                                          |
-| ---------------- | ---------------------------------------- |
-| **window**       | the window to associate with the pointer |
-| **name**         | the name of the pointer                  |
-| **userdata**     | the associated pointer                   |
+|                            |              |                                          |
+| -------------------------- | ------------ | ---------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**   | the window to associate with the pointer |
+| const char *               | **name**     | the name of the pointer                  |
+| void *                     | **userdata** | the associated pointer                   |
 
 ## Return Value
 
-Returns the previous value associated with `name`.
+(void *) Returns the previous value associated with `name`.
 
 ## Remarks
 

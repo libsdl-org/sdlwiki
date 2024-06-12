@@ -11,32 +11,31 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
-                      SDL_AudioFormat src_format,
-                      Uint8 src_channels,
-                      int src_rate,
-                      SDL_AudioFormat dst_format,
-                      Uint8 dst_channels,
-                      int dst_rate);
-
+                  SDL_AudioFormat src_format,
+                  Uint8 src_channels,
+                  int src_rate,
+                  SDL_AudioFormat dst_format,
+                  Uint8 dst_channels,
+                  int dst_rate);
 ```
 
 ## Function Parameters
 
-|                      |                                                                                                |
-| -------------------- | ---------------------------------------------------------------------------------------------- |
-| **cvt**              | an [SDL_AudioCVT](SDL_AudioCVT) structure filled in with audio conversion information          |
-| **src_format**       | the source format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat)      |
-| **src_channels**     | the number of channels in the source                                                           |
-| **src_rate**         | the frequency (sample-frames-per-second) of the source                                         |
-| **dst_format**       | the destination format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat) |
-| **dst_channels**     | the number of channels in the destination                                                      |
-| **dst_rate**         | the frequency (sample-frames-per-second) of the destination                                    |
+|                                    |                  |                                                                                                |
+| ---------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------- |
+| [SDL_AudioCVT](SDL_AudioCVT) *     | **cvt**          | an [SDL_AudioCVT](SDL_AudioCVT) structure filled in with audio conversion information          |
+| [SDL_AudioFormat](SDL_AudioFormat) | **src_format**   | the source format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat)      |
+| Uint8                              | **src_channels** | the number of channels in the source                                                           |
+| int                                | **src_rate**     | the frequency (sample-frames-per-second) of the source                                         |
+| [SDL_AudioFormat](SDL_AudioFormat) | **dst_format**   | the destination format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat) |
+| Uint8                              | **dst_channels** | the number of channels in the destination                                                      |
+| int                                | **dst_rate**     | the frequency (sample-frames-per-second) of the destination                                    |
 
 ## Return Value
 
-Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or
-a negative error code on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(int) Returns 1 if the audio filter is prepared, 0 if no conversion is
+needed, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

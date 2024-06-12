@@ -11,19 +11,18 @@ Defined in [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void* SDL_LoadObject(const char *sofile);
-
 ```
 
 ## Function Parameters
 
-|                |                                            |
-| -------------- | ------------------------------------------ |
-| **sofile**     | a system-dependent name of the object file |
+|              |            |                                            |
+| ------------ | ---------- | ------------------------------------------ |
+| const char * | **sofile** | a system-dependent name of the object file |
 
 ## Return Value
 
-Returns an opaque pointer to the object handle or NULL if there was an
-error; call [SDL_GetError](SDL_GetError)() for more information.
+(void *) Returns an opaque pointer to the object handle or NULL if there
+was an error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

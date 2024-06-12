@@ -11,12 +11,11 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetNumAudioDrivers(void);
-
 ```
 
 ## Return Value
 
-Returns the number of built-in audio drivers.
+(int) Returns the number of built-in audio drivers.
 
 ## Remarks
 

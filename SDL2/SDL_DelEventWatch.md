@@ -11,16 +11,15 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_DelEventWatch(SDL_EventFilter filter,
-                       void *userdata);
-
+                   void *userdata);
 ```
 
 ## Function Parameters
 
-|                  |                                                                            |
-| ---------------- | -------------------------------------------------------------------------- |
-| **filter**       | the function originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)() |
-| **userdata**     | the pointer originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)()  |
+|                                    |              |                                                                            |
+| ---------------------------------- | ------------ | -------------------------------------------------------------------------- |
+| [SDL_EventFilter](SDL_EventFilter) | **filter**   | the function originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)() |
+| void *                             | **userdata** | the pointer originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)()  |
 
 ## Remarks
 

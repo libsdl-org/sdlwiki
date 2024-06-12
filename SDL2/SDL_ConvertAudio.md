@@ -11,19 +11,19 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_ConvertAudio(SDL_AudioCVT * cvt);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                                                   |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- |
-| **cvt**     | an [SDL_AudioCVT](SDL_AudioCVT) structure that was previously set up by [SDL_BuildAudioCVT](SDL_BuildAudioCVT)(). |
+|                                |         |                                                                                                                   |
+| ------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------- |
+| [SDL_AudioCVT](SDL_AudioCVT) * | **cvt** | an [SDL_AudioCVT](SDL_AudioCVT) structure that was previously set up by [SDL_BuildAudioCVT](SDL_BuildAudioCVT)(). |
 
 ## Return Value
 
-Returns 0 if the conversion was completed successfully or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the conversion was completed successfully or a negative
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

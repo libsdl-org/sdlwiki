@@ -11,18 +11,17 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_JoystickIsHaptic(SDL_Joystick * joystick);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                  |
-| ---------------- | ---------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) to test for haptic capabilities |
+|                                |              |                                                                  |
+| ------------------------------ | ------------ | ---------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to test for haptic capabilities |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the joystick is haptic,
+(int) Returns [SDL_TRUE](SDL_TRUE) if the joystick is haptic,
 [SDL_FALSE](SDL_FALSE) if it isn't, or a negative error code on failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 

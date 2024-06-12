@@ -11,19 +11,18 @@ Defined in [SDL_filesystem.h](https://github.com/libsdl-org/SDL/blob/SDL2/includ
 
 ```c
 char* SDL_GetPrefPath(const char *org, const char *app);
-
 ```
 
 ## Function Parameters
 
-|             |                               |
-| ----------- | ----------------------------- |
-| **org**     | the name of your organization |
-| **app**     | the name of your application  |
+|              |         |                               |
+| ------------ | ------- | ----------------------------- |
+| const char * | **org** | the name of your organization |
+| const char * | **app** | the name of your application  |
 
 ## Return Value
 
-Returns a UTF-8 string of the user directory in platform-dependent
+(char *) Returns a UTF-8 string of the user directory in platform-dependent
 notation. NULL if there's a problem (creating directory failed, etc.).
 
 ## Remarks

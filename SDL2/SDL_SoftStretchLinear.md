@@ -11,10 +11,9 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SoftStretchLinear(SDL_Surface * src,
-                    const SDL_Rect * srcrect,
-                    SDL_Surface * dst,
-                    const SDL_Rect * dstrect);
-
+                const SDL_Rect * srcrect,
+                SDL_Surface * dst,
+                const SDL_Rect * dstrect);
 ```
 
 ## Version

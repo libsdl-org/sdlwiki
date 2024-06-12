@@ -11,19 +11,18 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_IsScreenKeyboardShown(SDL_Window *window);
-
 ```
 
 ## Function Parameters
 
-|                |                                                        |
-| -------------- | ------------------------------------------------------ |
-| **window**     | the window for which screen keyboard should be queried |
+|                            |            |                                                        |
+| -------------------------- | ---------- | ------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window for which screen keyboard should be queried |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if screen keyboard is shown or
-[SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if screen keyboard is
+shown or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Version
 

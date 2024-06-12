@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_GetWindowKeyboardGrab(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if keyboard is grabbed, and
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if keyboard is grabbed,
+and [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

@@ -11,14 +11,13 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 void SDL_FreeSurface(SDL_Surface * surface);
-
 ```
 
 ## Function Parameters
 
-|                 |                                         |
-| --------------- | --------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) to free. |
+|                              |             |                                         |
+| ---------------------------- | ----------- | --------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) to free. |
 
 ## Remarks
 

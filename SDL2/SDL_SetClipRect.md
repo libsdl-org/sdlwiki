@@ -11,21 +11,21 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_bool SDL_SetClipRect(SDL_Surface * surface,
-                         const SDL_Rect * rect);
-
+                     const SDL_Rect * rect);
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to be clipped                                              |
-| **rect**        | the [SDL_Rect](SDL_Rect) structure representing the clipping rectangle, or NULL to disable clipping |
+|                              |             |                                                                                                     |
+| ---------------------------- | ----------- | --------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be clipped                                              |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | the [SDL_Rect](SDL_Rect) structure representing the clipping rectangle, or NULL to disable clipping |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the rectangle intersects the surface,
-otherwise [SDL_FALSE](SDL_FALSE) and blits will be completely clipped.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the rectangle
+intersects the surface, otherwise [SDL_FALSE](SDL_FALSE) and blits will be
+completely clipped.
 
 ## Remarks
 

@@ -11,18 +11,17 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 Uint64 SDL_GameControllerGetSteamHandle(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                      |
-| ---------------------- | ------------------------------------ |
-| **gamecontroller**     | the game controller object to query. |
+|                                            |                    |                                      |
+| ------------------------------------------ | ------------------ | ------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to query. |
 
 ## Return Value
 
-Returns the gamepad handle, or 0 if unavailable.
+(Uint64) Returns the gamepad handle, or 0 if unavailable.
 
 ## Remarks
 

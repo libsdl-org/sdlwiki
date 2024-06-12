@@ -11,14 +11,13 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_AtomicLock(SDL_SpinLock *lock);
-
 ```
 
 ## Function Parameters
 
-|              |                              |
-| ------------ | ---------------------------- |
-| **lock**     | a pointer to a lock variable |
+|                                |          |                              |
+| ------------------------------ | -------- | ---------------------------- |
+| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable |
 
 ## Remarks
 

@@ -11,20 +11,19 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Palette* SDL_AllocPalette(int ncolors);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                             |
-| --------------- | ----------------------------------------------------------- |
-| **ncolors**     | represents the number of color entries in the color palette |
+|     |             |                                                             |
+| --- | ----------- | ----------------------------------------------------------- |
+| int | **ncolors** | represents the number of color entries in the color palette |
 
 ## Return Value
 
-Returns a new [SDL_Palette](SDL_Palette) structure on success or NULL on
-failure (e.g. if there wasn't enough memory); call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Palette](SDL_Palette) *) Returns a new [SDL_Palette](SDL_Palette)
+structure on success or NULL on failure (e.g. if there wasn't enough
+memory); call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

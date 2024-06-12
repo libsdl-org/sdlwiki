@@ -11,21 +11,20 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_bool SDL_GameControllerHasButton(SDL_GameController *gamecontroller,
-                                     SDL_GameControllerButton button);
-
+                                 SDL_GameControllerButton button);
 ```
 
 ## Function Parameters
 
-|                        |                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| **gamecontroller**     | a game controller                                                                   |
-| **button**             | a button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
+|                                                      |                    |                                                                                     |
+| ---------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller                                                                   |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the controller has this button,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the controller has
+this button, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

@@ -11,18 +11,17 @@ Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void* SDL_AtomicGetPtr(void **a);
-
 ```
 
 ## Function Parameters
 
-|           |                        |
-| --------- | ---------------------- |
-| **a**     | a pointer to a pointer |
+|         |       |                        |
+| ------- | ----- | ---------------------- |
+| void ** | **a** | a pointer to a pointer |
 
 ## Return Value
 
-Returns the current value of a pointer.
+(void *) Returns the current value of a pointer.
 
 ## Remarks
 

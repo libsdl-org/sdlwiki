@@ -11,18 +11,17 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticOpened(int device_index);
-
 ```
 
 ## Function Parameters
 
-|                      |                                  |
-| -------------------- | -------------------------------- |
-| **device_index**     | the index of the device to query |
+|     |                  |                                  |
+| --- | ---------------- | -------------------------------- |
+| int | **device_index** | the index of the device to query |
 
 ## Return Value
 
-Returns 1 if it has been opened, 0 if it hasn't or on failure; call
+(int) Returns 1 if it has been opened, 0 if it hasn't or on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

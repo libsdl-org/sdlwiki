@@ -12,20 +12,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 ```c
 extern DECLSPEC Sint16 SDLCALL
 SDL_GameControllerGetAxis(SDL_GameController *gamecontroller, SDL_GameControllerAxis axis);
-
 ```
 
 ## Function Parameters
 
-|                        |                                                                                    |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| **gamecontroller**     | a game controller                                                                  |
-| **axis**               | an axis index (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values) |
+|                                                  |                    |                                                                                    |
+| ------------------------------------------------ | ------------------ | ---------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller                                                                  |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis index (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values) |
 
 ## Return Value
 
-Returns axis state (including 0) on success or 0 (also) on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(Sint16) Returns axis state (including 0) on success or 0 (also) on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

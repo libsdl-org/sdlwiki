@@ -11,22 +11,21 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawRectsF(SDL_Renderer * renderer,
-                         const SDL_FRect * rects,
-                         int count);
-
+                     const SDL_FRect * rects,
+                     int count);
 ```
 
 ## Function Parameters
 
-|                  |                                                     |
-| ---------------- | --------------------------------------------------- |
-| **renderer**     | The renderer which should draw multiple rectangles. |
-| **rects**        | A pointer to an array of destination rectangles.    |
-| **count**        | The number of rectangles.                           |
+|                                |              |                                                     |
+| ------------------------------ | ------------ | --------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should draw multiple rectangles. |
+| const [SDL_FRect](SDL_FRect) * | **rects**    | A pointer to an array of destination rectangles.    |
+| int                            | **count**    | The number of rectangles.                           |
 
 ## Return Value
 
-Return 0 on success, or -1 on error
+(int) Return 0 on success, or -1 on error
 
 ## Version
 

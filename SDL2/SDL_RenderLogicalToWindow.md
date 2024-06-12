@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderLogicalToWindow(SDL_Renderer * renderer, 
-                                    float logicalX, float logicalY,
-                                    int *windowX, int *windowY);
-
+                                float logicalX, float logicalY,
+                                int *windowX, int *windowY);
 ```
 
 ## Function Parameters
 
-|                  |                                                                     |
-| ---------------- | ------------------------------------------------------------------- |
-| **renderer**     | the renderer from which the window coordinates should be calculated |
-| **logicalX**     | the logical x coordinate                                            |
-| **logicalY**     | the logical y coordinate                                            |
-| **windowX**      | the pointer filled with the real X coordinate in the window         |
-| **windowY**      | the pointer filled with the real Y coordinate in the window         |
+|                                |              |                                                                     |
+| ------------------------------ | ------------ | ------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which the window coordinates should be calculated |
+| float                          | **logicalX** | the logical x coordinate                                            |
+| float                          | **logicalY** | the logical y coordinate                                            |
+| int *                          | **windowX**  | the pointer filled with the real X coordinate in the window         |
+| int *                          | **windowY**  | the pointer filled with the real Y coordinate in the window         |
 
 ## Remarks
 

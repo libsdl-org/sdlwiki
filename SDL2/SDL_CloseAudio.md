@@ -11,7 +11,6 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_CloseAudio(void);
-
 ```
 
 ## Remarks

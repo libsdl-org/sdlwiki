@@ -11,18 +11,17 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GL_UnbindTexture(SDL_Texture *texture);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                              |
-| --------------- | ------------------------------------------------------------ |
-| **texture**     | the texture to unbind from the current OpenGL/ES/ES2 context |
+|                              |             |                                                              |
+| ---------------------------- | ----------- | ------------------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to unbind from the current OpenGL/ES/ES2 context |
 
 ## Return Value
 
-Returns 0 on success, or -1 if the operation is not supported
+(int) Returns 0 on success, or -1 if the operation is not supported
 
 ## Remarks
 

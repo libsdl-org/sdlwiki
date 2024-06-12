@@ -11,18 +11,18 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 SDL_LogPriority SDL_LogGetPriority(int category);
-
 ```
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **category**     | the category to query |
+|     |              |                       |
+| --- | ------------ | --------------------- |
+| int | **category** | the category to query |
 
 ## Return Value
 
-Returns the [SDL_LogPriority](SDL_LogPriority) for the requested category
+([SDL_LogPriority](SDL_LogPriority)) Returns the
+[SDL_LogPriority](SDL_LogPriority) for the requested category
 
 ## Version
 

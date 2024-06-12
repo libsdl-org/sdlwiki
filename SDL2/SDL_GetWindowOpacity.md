@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetWindowOpacity(SDL_Window * window, float * out_opacity);
-
 ```
 
 ## Function Parameters
 
-|                     |                                                         |
-| ------------------- | ------------------------------------------------------- |
-| **window**          | the window to get the current opacity value from        |
-| **out_opacity**     | the float filled in (0.0f - transparent, 1.0f - opaque) |
+|                            |                 |                                                         |
+| -------------------------- | --------------- | ------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**      | the window to get the current opacity value from        |
+| float *                    | **out_opacity** | the float filled in (0.0f - transparent, 1.0f - opaque) |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

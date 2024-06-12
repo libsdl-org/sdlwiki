@@ -11,14 +11,13 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 void SDL_GetVersion(SDL_version * ver);
-
 ```
 
 ## Function Parameters
 
-|             |                                                                                |
-| ----------- | ------------------------------------------------------------------------------ |
-| **ver**     | the [SDL_version](SDL_version) structure that contains the version information |
+|                              |         |                                                                                |
+| ---------------------------- | ------- | ------------------------------------------------------------------------------ |
+| [SDL_version](SDL_version) * | **ver** | the [SDL_version](SDL_version) structure that contains the version information |
 
 ## Remarks
 

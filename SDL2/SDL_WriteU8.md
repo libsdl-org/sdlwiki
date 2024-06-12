@@ -11,20 +11,19 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 size_t SDL_WriteU8(SDL_RWops * dst, Uint8 value);
-
 ```
 
 ## Function Parameters
 
-|               |                                        |
-| ------------- | -------------------------------------- |
-| **dst**       | the [SDL_RWops](SDL_RWops) to write to |
-| **value**     | the byte value to write                |
+|                          |           |                                        |
+| ------------------------ | --------- | -------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **dst**   | the [SDL_RWops](SDL_RWops) to write to |
+| Uint8                    | **value** | the byte value to write                |
 
 ## Return Value
 
-Returns 1 on success or 0 on failure; call [SDL_GetError](SDL_GetError)()
-for more information.
+(size_t) Returns 1 on success or 0 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

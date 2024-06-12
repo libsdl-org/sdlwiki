@@ -11,14 +11,13 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_DestroyCond(SDL_cond * cond);
-
 ```
 
 ## Function Parameters
 
-|              |                                   |
-| ------------ | --------------------------------- |
-| **cond**     | the condition variable to destroy |
+|                        |          |                                   |
+| ---------------------- | -------- | --------------------------------- |
+| [SDL_cond](SDL_cond) * | **cond** | the condition variable to destroy |
 
 ## Version
 

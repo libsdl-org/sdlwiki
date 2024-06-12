@@ -11,22 +11,21 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_Surface* SDL_LoadBMP_RW(SDL_RWops * src,
-                            int freesrc);
-
+                        int freesrc);
 ```
 
 ## Function Parameters
 
-|                 |                                               |
-| --------------- | --------------------------------------------- |
-| **src**         | the data stream for the surface               |
-| **freesrc**     | non-zero to close the stream after being read |
+|                          |             |                                               |
+| ------------------------ | ----------- | --------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src**     | the data stream for the surface               |
+| int                      | **freesrc** | non-zero to close the stream after being read |
 
 ## Return Value
 
-Returns a pointer to a new [SDL_Surface](SDL_Surface) structure or NULL if
-there was an error; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_Surface](SDL_Surface) *) Returns a pointer to a new
+[SDL_Surface](SDL_Surface) structure or NULL if there was an error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

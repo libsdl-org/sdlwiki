@@ -11,20 +11,19 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderSetViewport(SDL_Renderer * renderer,
-                          const SDL_Rect * rect);
-
+                      const SDL_Rect * rect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                    |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **renderer**     | the rendering context                                                                                              |
-| **rect**         | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target |
+|                                |              |                                                                                                                    |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                              |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

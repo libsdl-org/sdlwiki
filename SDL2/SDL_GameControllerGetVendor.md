@@ -11,18 +11,17 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 Uint16 SDL_GameControllerGetVendor(SDL_GameController *gamecontroller);
-
 ```
 
 ## Function Parameters
 
-|                        |                                      |
-| ---------------------- | ------------------------------------ |
-| **gamecontroller**     | the game controller object to query. |
+|                                            |                    |                                      |
+| ------------------------------------------ | ------------------ | ------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to query. |
 
 ## Return Value
 
-Return the USB vendor ID, or zero if unavailable.
+(Uint16) Return the USB vendor ID, or zero if unavailable.
 
 ## Remarks
 

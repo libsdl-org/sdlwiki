@@ -11,19 +11,19 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_GameController* SDL_GameControllerFromInstanceID(SDL_JoystickID joyid);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                         |
-| ------------- | ----------------------------------------------------------------------- |
-| **joyid**     | the instance id to get the [SDL_GameController](SDL_GameController) for |
+|                                  |           |                                                                         |
+| -------------------------------- | --------- | ----------------------------------------------------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **joyid** | the instance id to get the [SDL_GameController](SDL_GameController) for |
 
 ## Return Value
 
-Returns an [SDL_GameController](SDL_GameController) on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_GameController](SDL_GameController) *) Returns an
+[SDL_GameController](SDL_GameController) on success or NULL on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

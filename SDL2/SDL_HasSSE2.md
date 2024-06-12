@@ -11,13 +11,12 @@ Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_bool SDL_HasSSE2(void);
-
 ```
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the CPU has SSE2 features or
-[SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the CPU has SSE2
+features or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Remarks
 

@@ -12,22 +12,22 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 ```c
 extern DECLSPEC SDL_GameControllerButtonBind SDLCALL
 SDL_GameControllerGetBindForButton(SDL_GameController *gamecontroller,
-           SDL_GameControllerButton button);
-
+       SDL_GameControllerButton button);
 ```
 
 ## Function Parameters
 
-|                        |                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------ |
-| **gamecontroller**     | a game controller                                                                    |
-| **button**             | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
+|                                                      |                    |                                                                                      |
+| ---------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller                                                                    |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
 
 ## Return Value
 
-Returns a [SDL_GameControllerButtonBind](SDL_GameControllerButtonBind)
-describing the bind. On failure (like the given Controller button doesn't
-exist on the device), its `.bindType` will be
+([SDL_GameControllerButtonBind](SDL_GameControllerButtonBind)) Returns a
+[SDL_GameControllerButtonBind](SDL_GameControllerButtonBind) describing the
+bind. On failure (like the given Controller button doesn't exist on the
+device), its `.bindType` will be
 [`SDL_CONTROLLER_BINDTYPE_NONE`](SDL_CONTROLLER_BINDTYPE_NONE).
 
 ## Version

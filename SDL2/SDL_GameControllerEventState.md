@@ -11,18 +11,17 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerEventState(int state);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                                   |
-| ------------- | ------------------------------------------------------------------------------------------------- |
-| **state**     | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
+|     |           |                                                                                                   |
+| --- | --------- | ------------------------------------------------------------------------------------------------- |
+| int | **state** | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
 
 ## Return Value
 
-Returns the same value passed to the function, with exception to -1
+(int) Returns the same value passed to the function, with exception to -1
 ([SDL_QUERY](SDL_QUERY)), which will return the current state.
 
 ## Remarks

@@ -11,20 +11,19 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetWindowDisplayMode(SDL_Window * window,
-                             SDL_DisplayMode * mode);
-
+                         SDL_DisplayMode * mode);
 ```
 
 ## Function Parameters
 
-|                |                                                                                            |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| **window**     | the window to query                                                                        |
-| **mode**       | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the fullscreen display mode |
+|                                      |            |                                                                                            |
+| ------------------------------------ | ---------- | ------------------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) *           | **window** | the window to query                                                                        |
+| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**   | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the fullscreen display mode |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

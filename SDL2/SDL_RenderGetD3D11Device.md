@@ -11,20 +11,19 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 ID3D11Device* SDL_RenderGetD3D11Device(SDL_Renderer * renderer);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **renderer**     | the renderer from which to get the associated D3D11 device |
+|                                |              |                                                            |
+| ------------------------------ | ------------ | ---------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D11 device |
 
 ## Return Value
 
-Returns the D3D11 device associated with given renderer or NULL if it is
-not a D3D11 renderer; call [SDL_GetError](SDL_GetError)() for more
-information.
+(ID3D11Device *) Returns the D3D11 device associated with given renderer or
+NULL if it is not a D3D11 renderer; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

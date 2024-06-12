@@ -11,19 +11,18 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 const char* SDL_GetScancodeName(SDL_Scancode scancode);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                   |
-| ---------------- | ------------------------------------------------- |
-| **scancode**     | the desired [SDL_Scancode](SDL_Scancode) to query |
+|                              |              |                                                   |
+| ---------------------------- | ------------ | ------------------------------------------------- |
+| [SDL_Scancode](SDL_Scancode) | **scancode** | the desired [SDL_Scancode](SDL_Scancode) to query |
 
 ## Return Value
 
-Returns a pointer to the name for the scancode. If the scancode doesn't
-have a name this function returns an empty string ("").
+(const char *) Returns a pointer to the name for the scancode. If the
+scancode doesn't have a name this function returns an empty string ("").
 
 ## Remarks
 

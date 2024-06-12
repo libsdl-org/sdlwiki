@@ -11,19 +11,18 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char * SDL_GetDisplayName(int displayIndex);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                            |
-| -------------------- | ---------------------------------------------------------- |
-| **displayIndex**     | the index of display from which the name should be queried |
+|     |                  |                                                            |
+| --- | ---------------- | ---------------------------------------------------------- |
+| int | **displayIndex** | the index of display from which the name should be queried |
 
 ## Return Value
 
-Returns the name of a display or NULL for an invalid display index or
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(const char *) Returns the name of a display or NULL for an invalid display
+index or failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

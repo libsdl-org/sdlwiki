@@ -11,13 +11,12 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 const char * SDL_AndroidGetInternalStoragePath(void);
-
 ```
 
 ## Return Value
 
-Returns the path used for internal storage or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(const char *) Returns the path used for internal storage or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

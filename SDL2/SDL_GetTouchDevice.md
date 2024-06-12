@@ -11,19 +11,19 @@ Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_TouchID SDL_GetTouchDevice(int index);
-
 ```
 
 ## Function Parameters
 
-|               |                        |
-| ------------- | ---------------------- |
-| **index**     | the touch device index |
+|     |           |                        |
+| --- | --------- | ---------------------- |
+| int | **index** | the touch device index |
 
 ## Return Value
 
-Returns the touch ID with the given index on success or 0 if the index is
-invalid; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_TouchID](SDL_TouchID)) Returns the touch ID with the given index on
+success or 0 if the index is invalid; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Version
 

@@ -11,19 +11,19 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_PixelFormat * SDL_AllocFormat(Uint32 pixel_format);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                              |
-| -------------------- | ------------------------------------------------------------ |
-| **pixel_format**     | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
+|        |                  |                                                              |
+| ------ | ---------------- | ------------------------------------------------------------ |
+| Uint32 | **pixel_format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
 
 ## Return Value
 
-Returns the new [SDL_PixelFormat](SDL_PixelFormat) structure or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_PixelFormat](SDL_PixelFormat) *) Returns the new
+[SDL_PixelFormat](SDL_PixelFormat) structure or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

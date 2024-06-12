@@ -11,13 +11,12 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint64 SDL_GetTicks64(void);
-
 ```
 
 ## Return Value
 
-Returns an unsigned 64-bit value representing the number of milliseconds
-since the SDL library initialized.
+(Uint64) Returns an unsigned 64-bit value representing the number of
+milliseconds since the SDL library initialized.
 
 ## Remarks
 

@@ -11,18 +11,17 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_UpdateWindowSurface(SDL_Window * window);
-
 ```
 
 ## Function Parameters
 
-|                |                      |
-| -------------- | -------------------- |
-| **window**     | the window to update |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to update |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

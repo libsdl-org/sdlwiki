@@ -11,12 +11,11 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint64 SDL_GetPerformanceFrequency(void);
-
 ```
 
 ## Return Value
 
-Returns a platform-specific count per second.
+(Uint64) Returns a platform-specific count per second.
 
 ## Version
 

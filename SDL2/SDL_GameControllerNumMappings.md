@@ -11,12 +11,11 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 int SDL_GameControllerNumMappings(void);
-
 ```
 
 ## Return Value
 
-Returns the number of mappings.
+(int) Returns the number of mappings.
 
 ## Version
 

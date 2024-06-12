@@ -11,21 +11,20 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_hid_get_indexed_string(SDL_hid_device *dev, int string_index, wchar_t *string, size_t maxlen);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                               |
-| -------------------- | ------------------------------------------------------------- |
-| **dev**              | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
-| **string_index**     | The index of the string to get.                               |
-| **string**           | A wide string buffer to put the data into.                    |
-| **maxlen**           | The length of the buffer in multiples of wchar_t.             |
+|                                    |                  |                                                               |
+| ---------------------------------- | ---------------- | ------------------------------------------------------------- |
+| [SDL_hid_device](SDL_hid_device) * | **dev**          | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| int                                | **string_index** | The index of the string to get.                               |
+| wchar_t *                          | **string**       | A wide string buffer to put the data into.                    |
+| size_t                             | **maxlen**       | The length of the buffer in multiples of wchar_t.             |
 
 ## Return Value
 
-Returns 0 on success and -1 on error.
+(int) Returns 0 on success and -1 on error.
 
 ## Version
 

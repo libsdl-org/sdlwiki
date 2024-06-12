@@ -11,19 +11,18 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetAudioDriver(int index);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                                                  |
-| ------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **index**     | the index of the audio driver; the value ranges from 0 to [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)() - 1 |
+|     |           |                                                                                                                  |
+| --- | --------- | ---------------------------------------------------------------------------------------------------------------- |
+| int | **index** | the index of the audio driver; the value ranges from 0 to [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)() - 1 |
 
 ## Return Value
 
-Returns the name of the audio driver at the requested index, or NULL if an
-invalid index was specified.
+(const char *) Returns the name of the audio driver at the requested index,
+or NULL if an invalid index was specified.
 
 ## Remarks
 

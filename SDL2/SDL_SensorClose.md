@@ -11,14 +11,13 @@ Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_SensorClose(SDL_Sensor *sensor);
-
 ```
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to close |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to close |
 
 ## Version
 

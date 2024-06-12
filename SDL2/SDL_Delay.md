@@ -11,14 +11,13 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_Delay(Uint32 ms);
-
 ```
 
 ## Function Parameters
 
-|            |                                     |
-| ---------- | ----------------------------------- |
-| **ms**     | the number of milliseconds to delay |
+|        |        |                                     |
+| ------ | ------ | ----------------------------------- |
+| Uint32 | **ms** | the number of milliseconds to delay |
 
 ## Remarks
 

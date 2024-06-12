@@ -11,24 +11,23 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint32 SDL_MapRGBA(const SDL_PixelFormat * format,
-                   Uint8 r, Uint8 g, Uint8 b,
-                   Uint8 a);
-
+               Uint8 r, Uint8 g, Uint8 b,
+               Uint8 a);
 ```
 
 ## Function Parameters
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **format**     | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the format of the pixel |
-| **r**          | the red component of the pixel in the range 0-255                                  |
-| **g**          | the green component of the pixel in the range 0-255                                |
-| **b**          | the blue component of the pixel in the range 0-255                                 |
-| **a**          | the alpha component of the pixel in the range 0-255                                |
+|                                            |            |                                                                                    |
+| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
+| const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the format of the pixel |
+| Uint8                                      | **r**      | the red component of the pixel in the range 0-255                                  |
+| Uint8                                      | **g**      | the green component of the pixel in the range 0-255                                |
+| Uint8                                      | **b**      | the blue component of the pixel in the range 0-255                                 |
+| Uint8                                      | **a**      | the alpha component of the pixel in the range 0-255                                |
 
 ## Return Value
 
-Returns a pixel value
+(Uint32) Returns a pixel value
 
 ## Remarks
 

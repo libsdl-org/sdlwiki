@@ -11,18 +11,18 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_RenderTargetSupported(SDL_Renderer *renderer);
-
 ```
 
 ## Function Parameters
 
-|                  |                                   |
-| ---------------- | --------------------------------- |
-| **renderer**     | the renderer that will be checked |
+|                                |              |                                   |
+| ------------------------------ | ------------ | --------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer that will be checked |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if supported or [SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if supported or
+[SDL_FALSE](SDL_FALSE) if not.
 
 ## Version
 

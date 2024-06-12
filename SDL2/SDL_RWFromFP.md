@@ -11,22 +11,21 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_RWFromFP(void * fp,
-                        SDL_bool autoclose);
-
+                    SDL_bool autoclose);
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                                                                              |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **fp**            | the `FILE*` that feeds the [SDL_RWops](SDL_RWops) stream                                                                                                     |
-| **autoclose**     | [SDL_TRUE](SDL_TRUE) to close the `FILE*` when closing the [SDL_RWops](SDL_RWops), [SDL_FALSE](SDL_FALSE) to leave the `FILE*` open when the RWops is closed |
+|                      |               |                                                                                                                                                              |
+| -------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| void *               | **fp**        | the `FILE*` that feeds the [SDL_RWops](SDL_RWops) stream                                                                                                     |
+| [SDL_bool](SDL_bool) | **autoclose** | [SDL_TRUE](SDL_TRUE) to close the `FILE*` when closing the [SDL_RWops](SDL_RWops), [SDL_FALSE](SDL_FALSE) to leave the `FILE*` open when the RWops is closed |
 
 ## Return Value
 
-Returns a pointer to the [SDL_RWops](SDL_RWops) structure that is created,
-or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_RWops](SDL_RWops) *) Returns a pointer to the [SDL_RWops](SDL_RWops)
+structure that is created, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

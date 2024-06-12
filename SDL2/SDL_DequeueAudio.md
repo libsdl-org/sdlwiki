@@ -11,21 +11,20 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Uint32 SDL_DequeueAudio(SDL_AudioDeviceID dev, void *data, Uint32 len);
-
 ```
 
 ## Function Parameters
 
-|              |                                                           |
-| ------------ | --------------------------------------------------------- |
-| **dev**      | the device ID from which we will dequeue audio            |
-| **data**     | a pointer into where audio data should be copied          |
-| **len**      | the number of bytes (not samples!) to which (data) points |
+|                                        |          |                                                           |
+| -------------------------------------- | -------- | --------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev**  | the device ID from which we will dequeue audio            |
+| void *                                 | **data** | a pointer into where audio data should be copied          |
+| Uint32                                 | **len**  | the number of bytes (not samples!) to which (data) points |
 
 ## Return Value
 
-Returns the number of bytes dequeued, which could be less than requested;
-call [SDL_GetError](SDL_GetError)() for more information.
+(Uint32) Returns the number of bytes dequeued, which could be less than
+requested; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

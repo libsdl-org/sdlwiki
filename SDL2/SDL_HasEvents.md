@@ -11,20 +11,19 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------- |
-| **minType**     | the low end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details  |
-| **maxType**     | the high end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details |
+|        |             |                                                                                                     |
+| ------ | ----------- | --------------------------------------------------------------------------------------------------- |
+| Uint32 | **minType** | the low end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details  |
+| Uint32 | **maxType** | the high end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if events with type >= `minType` and <=
-`maxType` are present, or [SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if events with type >=
+`minType` and <= `maxType` are present, or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Remarks
 
