@@ -5,26 +5,25 @@ Load an image from an SDL data source into a software surface.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * IMG_LoadTyped_IO(SDL_IOStream *src, SDL_bool closeio, const char *type);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------- |
-| **src**         | an SDL_IOStream that data will be read from.                                          |
-| **closeio**     | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
-| **type**        | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).             |
+|                |             |                                                                                       |
+| -------------- | ----------- | ------------------------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                          |
+| SDL_bool       | **closeio** | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
+| const char *   | **type**    | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).             |
 
 ## Return Value
 
-Returns a new SDL surface, or NULL on error.
+(SDL_Surface *) Returns a new SDL surface, or NULL on error.
 
 ## Remarks
 

@@ -5,24 +5,23 @@ Detect XCF image data on a readable/seekable SDL_IOStream.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 int IMG_isXCF(SDL_IOStream *src);
-
 ```
 
 ## Function Parameters
 
-|             |                                                         |
-| ----------- | ------------------------------------------------------- |
-| **src**     | a seekable/readable SDL_IOStream to provide image data. |
+|                |         |                                                         |
+| -------------- | ------- | ------------------------------------------------------- |
+| SDL_IOStream * | **src** | a seekable/readable SDL_IOStream to provide image data. |
 
 ## Return Value
 
-Returns non-zero if this is XCF data, zero otherwise.
+(int) Returns non-zero if this is XCF data, zero otherwise.
 
 ## Remarks
 

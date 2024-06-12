@@ -5,25 +5,24 @@ Load an image from a filesystem path into a GPU texture.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 SDL_Texture * IMG_LoadTexture(SDL_Renderer *renderer, const char *file);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                    |
-| ---------------- | -------------------------------------------------- |
-| **renderer**     | the SDL_Renderer to use to create the GPU texture. |
-| **file**         | a path on the filesystem to load an image from.    |
+|                |              |                                                    |
+| -------------- | ------------ | -------------------------------------------------- |
+| SDL_Renderer * | **renderer** | the SDL_Renderer to use to create the GPU texture. |
+| const char *   | **file**     | a path on the filesystem to load an image from.    |
 
 ## Return Value
 
-Returns a new texture, or NULL on error.
+(SDL_Texture *) Returns a new texture, or NULL on error.
 
 ## Remarks
 

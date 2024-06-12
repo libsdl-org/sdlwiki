@@ -5,24 +5,23 @@ Load a PCX image directly.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * IMG_LoadPCX_IO(SDL_IOStream *src);
-
 ```
 
 ## Function Parameters
 
-|             |                                          |
-| ----------- | ---------------------------------------- |
-| **src**     | an SDL_IOStream to load image data from. |
+|                |         |                                          |
+| -------------- | ------- | ---------------------------------------- |
+| SDL_IOStream * | **src** | an SDL_IOStream to load image data from. |
 
 ## Return Value
 
-Returns SDL surface, or NULL on error
+(SDL_Surface *) Returns SDL surface, or NULL on error
 
 ## Remarks
 

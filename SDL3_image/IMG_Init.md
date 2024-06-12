@@ -5,24 +5,23 @@ Initialize SDL_image.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 int IMG_Init(int flags);
-
 ```
 
 ## Function Parameters
 
-|               |                                      |
-| ------------- | ------------------------------------ |
-| **flags**     | initialization flags, OR'd together. |
+|     |           |                                      |
+| --- | --------- | ------------------------------------ |
+| int | **flags** | initialization flags, OR'd together. |
 
 ## Return Value
 
-Returns all currently initialized flags.
+(int) Returns all currently initialized flags.
 
 ## Remarks
 

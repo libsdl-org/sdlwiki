@@ -5,24 +5,24 @@ Load an animation from a file.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 IMG_Animation * IMG_LoadAnimation(const char *file);
-
 ```
 
 ## Function Parameters
 
-|              |                                                      |
-| ------------ | ---------------------------------------------------- |
-| **file**     | path on the filesystem containing an animated image. |
+|              |          |                                                      |
+| ------------ | -------- | ---------------------------------------------------- |
+| const char * | **file** | path on the filesystem containing an animated image. |
 
 ## Return Value
 
-Returns a new [IMG_Animation](IMG_Animation), or NULL on error.
+([IMG_Animation](IMG_Animation) *) Returns a new
+[IMG_Animation](IMG_Animation), or NULL on error.
 
 ## Remarks
 

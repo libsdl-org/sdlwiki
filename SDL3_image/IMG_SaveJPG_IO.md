@@ -5,27 +5,26 @@ Save an SDL_Surface into JPEG image data, via an SDL_IOStream.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 int IMG_SaveJPG_IO(SDL_Surface *surface, SDL_IOStream *dst, int closeio, int quality);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------- |
-| **surface**     | the SDL surface to save                                                               |
-| **dst**         | the SDL_IOStream to save the image data to.                                           |
-| **closeio**     | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
-| **quality**     | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality   |
+|                |             |                                                                                       |
+| -------------- | ----------- | ------------------------------------------------------------------------------------- |
+| SDL_Surface *  | **surface** | the SDL surface to save                                                               |
+| SDL_IOStream * | **dst**     | the SDL_IOStream to save the image data to.                                           |
+| int            | **closeio** | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
+| int            | **quality** | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality   |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error.
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

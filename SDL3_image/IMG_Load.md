@@ -5,24 +5,23 @@ Load an image from a filesystem path into a software surface.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * IMG_Load(const char *file);
-
 ```
 
 ## Function Parameters
 
-|              |                                                 |
-| ------------ | ----------------------------------------------- |
-| **file**     | a path on the filesystem to load an image from. |
+|              |          |                                                 |
+| ------------ | -------- | ----------------------------------------------- |
+| const char * | **file** | a path on the filesystem to load an image from. |
 
 ## Return Value
 
-Returns a new SDL surface, or NULL on error.
+(SDL_Surface *) Returns a new SDL surface, or NULL on error.
 
 ## Remarks
 

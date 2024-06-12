@@ -5,25 +5,25 @@ Load an animation from an SDL_IOStream.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 IMG_Animation * IMG_LoadAnimation_IO(SDL_IOStream *src, SDL_bool closeio);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------- |
-| **src**         | an SDL_IOStream that data will be read from.                                          |
-| **closeio**     | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
+|                |             |                                                                                       |
+| -------------- | ----------- | ------------------------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                          |
+| SDL_bool       | **closeio** | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
 
 ## Return Value
 
-Returns a new [IMG_Animation](IMG_Animation), or NULL on error.
+([IMG_Animation](IMG_Animation) *) Returns a new
+[IMG_Animation](IMG_Animation), or NULL on error.
 
 ## Remarks
 

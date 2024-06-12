@@ -5,20 +5,19 @@ Dispose of an [IMG_Animation](IMG_Animation) and free its resources.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 void IMG_FreeAnimation(IMG_Animation *anim);
-
 ```
 
 ## Function Parameters
 
-|              |                                               |
-| ------------ | --------------------------------------------- |
-| **anim**     | [IMG_Animation](IMG_Animation) to dispose of. |
+|                                  |          |                                               |
+| -------------------------------- | -------- | --------------------------------------------- |
+| [IMG_Animation](IMG_Animation) * | **anim** | [IMG_Animation](IMG_Animation) to dispose of. |
 
 ## Remarks
 

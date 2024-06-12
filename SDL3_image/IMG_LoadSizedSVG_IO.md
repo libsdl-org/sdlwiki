@@ -5,26 +5,25 @@ Load an SVG image, scaled to a specific size.
 
 ## Header File
 
-Defined in SDL_image.h
+Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/main/include/SDL3_image/SDL_image.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * IMG_LoadSizedSVG_IO(SDL_IOStream *src, int width, int height);
-
 ```
 
 ## Function Parameters
 
-|                |                                                     |
-| -------------- | --------------------------------------------------- |
-| **src**        | an SDL_IOStream to load SVG data from.              |
-| **width**      | desired width of the generated surface, in pixels.  |
-| **height**     | desired height of the generated surface, in pixels. |
+|                |            |                                                     |
+| -------------- | ---------- | --------------------------------------------------- |
+| SDL_IOStream * | **src**    | an SDL_IOStream to load SVG data from.              |
+| int            | **width**  | desired width of the generated surface, in pixels.  |
+| int            | **height** | desired height of the generated surface, in pixels. |
 
 ## Return Value
 
-Returns a new SDL surface, or NULL on error.
+(SDL_Surface *) Returns a new SDL surface, or NULL on error.
 
 ## Remarks
 
