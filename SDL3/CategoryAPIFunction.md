@@ -461,6 +461,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetTextureColorModFloat](SDL_GetTextureColorModFloat)
 - [SDL_GetTextureProperties](SDL_GetTextureProperties)
 - [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode)
+- [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_GetThreadID](SDL_GetThreadID)
 - [SDL_GetThreadName](SDL_GetThreadName)
 - [SDL_GetTicks](SDL_GetTicks)

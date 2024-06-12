@@ -70,6 +70,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_GetTextureColorModFloat](SDL_GetTextureColorModFloat)
 - [SDL_GetTextureProperties](SDL_GetTextureProperties)
 - [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode)
+- [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_LockTexture](SDL_LockTexture)
 - [SDL_LockTextureToSurface](SDL_LockTextureToSurface)
 - [SDL_QueryTexture](SDL_QueryTexture)
