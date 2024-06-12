@@ -48,7 +48,7 @@ load images directly into an SDL_Texture for use by the GPU without using a
 software surface: call [IMG_LoadTexture](IMG_LoadTexture)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_FreeSurface().
+call to [SDL_FreeSurface](SDL_FreeSurface)().
 
 ## Version
 
@@ -61,4 +61,3 @@ This function is available since SDL_image 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)
-
