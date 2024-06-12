@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetCurrentRenderOutputSize(SDL_Renderer *renderer, int *w, int *h);
+int SDL_GetCurrentRenderOutputSize(SDL_Renderer *renderer, float *w, float *h);
 ```
 
 ## Function Parameters

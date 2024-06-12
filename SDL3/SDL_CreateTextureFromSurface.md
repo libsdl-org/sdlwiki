@@ -33,8 +33,8 @@ The [SDL_TextureAccess](SDL_TextureAccess) hint for the created texture is
 [`SDL_TEXTUREACCESS_STATIC`](SDL_TEXTUREACCESS_STATIC).
 
 The pixel format of the created texture may be different from the pixel
-format of the surface. Use [SDL_QueryTexture](SDL_QueryTexture)() to query
-the pixel format of the texture.
+format of the surface, and can be queried using the
+[SDL_PROP_TEXTURE_FORMAT_NUMBER](SDL_PROP_TEXTURE_FORMAT_NUMBER) property.
 
 ## Version
 
@@ -68,7 +68,6 @@ surface = NULL;
 - [SDL_CreateTexture](SDL_CreateTexture)
 - [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 - [SDL_DestroyTexture](SDL_DestroyTexture)
-- [SDL_QueryTexture](SDL_QueryTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

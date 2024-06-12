@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 - [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 - [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 - [SDL_DestroyTexture](SDL_DestroyTexture)
-- [SDL_QueryTexture](SDL_QueryTexture)
+- [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----

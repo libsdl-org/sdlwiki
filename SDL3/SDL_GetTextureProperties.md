@@ -29,8 +29,16 @@ Returns a valid property ID on success or 0 on failure; call
 The following read-only properties are provided by SDL:
 
 - [`SDL_PROP_TEXTURE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_COLORSPACE_NUMBER):
-  an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace used
-  by the texture
+  an [SDL_ColorSpace](SDL_ColorSpace) value describing the texture
+  colorspace.
+- [`SDL_PROP_TEXTURE_FORMAT_NUMBER`](SDL_PROP_TEXTURE_FORMAT_NUMBER): one
+  of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum).
+- [`SDL_PROP_TEXTURE_ACCESS_NUMBER`](SDL_PROP_TEXTURE_ACCESS_NUMBER): one
+  of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess).
+- [`SDL_PROP_TEXTURE_WIDTH_NUMBER`](SDL_PROP_TEXTURE_WIDTH_NUMBER): the
+  width of the texture in pixels.
+- [`SDL_PROP_TEXTURE_HEIGHT_NUMBER`](SDL_PROP_TEXTURE_HEIGHT_NUMBER): the
+  height of the texture in pixels.
 - [`SDL_PROP_TEXTURE_SDR_WHITE_POINT_FLOAT`](SDL_PROP_TEXTURE_SDR_WHITE_POINT_FLOAT):
   for HDR10 and floating point textures, this defines the value of 100%
   diffuse white, with higher values being displayed in the High Dynamic

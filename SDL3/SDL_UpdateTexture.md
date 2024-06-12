@@ -29,9 +29,9 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-The pixel data must be in the pixel format of the texture. Use
-[SDL_QueryTexture](SDL_QueryTexture)() to query the pixel format of the
-texture.
+The pixel data must be in the pixel format of the texture, which can be
+queried using the
+[SDL_PROP_TEXTURE_FORMAT_NUMBER](SDL_PROP_TEXTURE_FORMAT_NUMBER) property.
 
 This is a fairly slow function, intended for use with static textures that
 do not change often.

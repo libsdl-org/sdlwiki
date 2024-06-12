@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetRenderViewport(SDL_Renderer *renderer, SDL_Rect *rect);
+int SDL_GetRenderViewport(SDL_Renderer *renderer, SDL_FRect *rect);
 ```
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                     |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure filled in with the current drawing area |
+|                  |                                                                             |
+| ---------------- | --------------------------------------------------------------------------- |
+| **renderer**     | the rendering context                                                       |
+| **rect**         | an [SDL_FRect](SDL_FRect) structure filled in with the current drawing area |
 
 ## Return Value
 
