@@ -5,24 +5,23 @@ Get the IP address of the remote system associated with the socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 IPaddress * SDLNet_TCP_GetPeerAddress(TCPsocket sock);
-
 ```
 
 ## Function Parameters
 
-|              |                      |
-| ------------ | -------------------- |
-| **sock**     | the socket to query. |
+|           |          |                      |
+| --------- | -------- | -------------------- |
+| TCPsocket | **sock** | the socket to query. |
 
 ## Return Value
 
-Returns the address information for the socket.
+(IPaddress *) Returns the address information for the socket.
 
 ## Remarks
 

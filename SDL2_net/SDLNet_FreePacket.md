@@ -5,20 +5,19 @@ Dispose of a UDP packet.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_FreePacket(UDPpacket *packet);
-
 ```
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **packet**     | the packet to free. |
+|             |            |                     |
+| ----------- | ---------- | ------------------- |
+| UDPpacket * | **packet** | the packet to free. |
 
 ## Remarks
 

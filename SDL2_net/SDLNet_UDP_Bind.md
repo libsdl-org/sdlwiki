@@ -5,26 +5,25 @@ Bind an address to the requested channel on the UDP socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_UDP_Bind(UDPsocket sock, int channel, const IPaddress *address);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                 |
-| --------------- | ------------------------------------------------------------------------------- |
-| **sock**        | the UDP socket to bind an address to a channel on.                              |
-| **channel**     | the channel of the socket to bind to, or -1 to use the first available channel. |
-| **address**     | the address to bind to the socket's channel.                                    |
+|                   |             |                                                                                 |
+| ----------------- | ----------- | ------------------------------------------------------------------------------- |
+| UDPsocket         | **sock**    | the UDP socket to bind an address to a channel on.                              |
+| int               | **channel** | the channel of the socket to bind to, or -1 to use the first available channel. |
+| const IPaddress * | **address** | the address to bind to the socket's channel.                                    |
 
 ## Return Value
 
-Returns the channel which was bound, or -1 on error.
+(int) Returns the channel which was bound, or -1 on error.
 
 ## Remarks
 

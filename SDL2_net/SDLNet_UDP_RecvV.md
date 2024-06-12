@@ -5,26 +5,25 @@ Receive a vector of pending packets from a UDP socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_UDP_RecvV(UDPsocket sock, UDPpacket **packets);
-
 ```
 
 ## Function Parameters
 
-|                 |                                       |
-| --------------- | ------------------------------------- |
-| **sock**        | the UDP socket to receive packets on. |
-| **packets**     | an array of packets, NULL terminated. |
+|              |             |                                       |
+| ------------ | ----------- | ------------------------------------- |
+| UDPsocket    | **sock**    | the UDP socket to receive packets on. |
+| UDPpacket ** | **packets** | an array of packets, NULL terminated. |
 
 ## Return Value
 
-Returns the number of packets read from the network, or -1 on error. 0
-means no packets were currently available.
+(int) Returns the number of packets read from the network, or -1 on error.
+0 means no packets were currently available.
 
 ## Remarks
 

@@ -5,7 +5,7 @@ Remove a UDP socket from a socket set.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
@@ -15,15 +15,15 @@ SDL_FORCE_INLINE int SDLNet_UDP_DelSocket(SDLNet_SocketSet set, UDPsocket sock);
 
 ## Function Parameters
 
-|              |                                         |
-| ------------ | --------------------------------------- |
-| **set**      | the socket set to remove a socket from. |
-| **sock**     | the socket to remove from the set.      |
+|                                      |          |                                         |
+| ------------------------------------ | -------- | --------------------------------------- |
+| [SDLNet_SocketSet](SDLNet_SocketSet) | **set**  | the socket set to remove a socket from. |
+| UDPsocket                            | **sock** | the socket to remove from the set.      |
 
 ## Return Value
 
-Returns the total number of sockets contained in the set (after `sock`'s
-removal), or -1 if `sock` was not in the set.
+(int) Returns the total number of sockets contained in the set (after
+`sock`'s removal), or -1 if `sock` was not in the set.
 
 ## Remarks
 

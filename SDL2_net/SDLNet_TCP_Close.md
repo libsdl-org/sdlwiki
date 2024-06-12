@@ -5,20 +5,19 @@ Close a TCP network socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_TCP_Close(TCPsocket sock);
-
 ```
 
 ## Function Parameters
 
-|              |                  |
-| ------------ | ---------------- |
-| **sock**     | socket to close. |
+|           |          |                  |
+| --------- | -------- | ---------------- |
+| TCPsocket | **sock** | socket to close. |
 
 ## Remarks
 

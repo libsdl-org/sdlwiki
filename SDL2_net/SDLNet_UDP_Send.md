@@ -5,25 +5,24 @@ Send a single UDP packet to the specified channel.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_UDP_Send(UDPsocket sock, int channel, UDPpacket *packet);
-
 ```
 
 ## Function Parameters
 
-|                |                                         |
-| -------------- | --------------------------------------- |
-| **sock**       | the UDP socket to send packets on.      |
-| **packet**     | a single packet to send to the network. |
+|             |            |                                         |
+| ----------- | ---------- | --------------------------------------- |
+| UDPsocket   | **sock**   | the UDP socket to send packets on.      |
+| UDPpacket * | **packet** | a single packet to send to the network. |
 
 ## Return Value
 
-Returns 1 if the packet was sent, or 0 on error.
+(int) Returns 1 if the packet was sent, or 0 on error.
 
 ## Remarks
 

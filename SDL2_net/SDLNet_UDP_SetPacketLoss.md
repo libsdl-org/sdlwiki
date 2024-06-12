@@ -5,21 +5,20 @@ Set the percentage of simulated packet loss for packets sent on the socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_UDP_SetPacketLoss(UDPsocket sock, int percent);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                            |
-| --------------- | ---------------------------------------------------------------------------------------------------------- |
-| **sock**        | the socket to simulate packet loss on.                                                                     |
-| **percent**     | a value from 0 to 100 of likelihood to drop a packet (higher the number means more likelihood of dropping. |
+|           |             |                                                                                                            |
+| --------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
+| UDPsocket | **sock**    | the socket to simulate packet loss on.                                                                     |
+| int       | **percent** | a value from 0 to 100 of likelihood to drop a packet (higher the number means more likelihood of dropping. |
 
 ## Remarks
 

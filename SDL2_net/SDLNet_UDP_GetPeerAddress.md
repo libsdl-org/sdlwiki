@@ -5,25 +5,24 @@ Get the IP address of the remote system for a socket and channel.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 IPaddress * SDLNet_UDP_GetPeerAddress(UDPsocket sock, int channel);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                       |
-| --------------- | ----------------------------------------------------- |
-| **sock**        | the UDP socket to unbind addresses from a channel on. |
-| **channel**     | the channel of the socket to unbind.                  |
+|           |             |                                                       |
+| --------- | ----------- | ----------------------------------------------------- |
+| UDPsocket | **sock**    | the UDP socket to unbind addresses from a channel on. |
+| int       | **channel** | the channel of the socket to unbind.                  |
 
 ## Return Value
 
-Returns the address bound to the socket's channel, or
+(IPaddress *) Returns the address bound to the socket's channel, or
 
 ## Remarks
 

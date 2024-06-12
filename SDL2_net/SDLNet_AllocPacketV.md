@@ -5,26 +5,25 @@ Allocate a UDP packet vector (array of packets).
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 UDPpacket ** SDLNet_AllocPacketV(int howmany, int size);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                          |
-| --------------- | -------------------------------------------------------- |
-| **howmany**     | the number of packets to allocate.                       |
-| **size**        | the maximum bytes of payload each packet should contain. |
+|     |             |                                                          |
+| --- | ----------- | -------------------------------------------------------- |
+| int | **howmany** | the number of packets to allocate.                       |
+| int | **size**    | the maximum bytes of payload each packet should contain. |
 
 ## Return Value
 
-Returns a pointer to the first packet in the array, or NULL if the function
-ran out of memory.
+(UDPpacket **) Returns a pointer to the first packet in the array, or NULL
+if the function ran out of memory.
 
 ## Remarks
 

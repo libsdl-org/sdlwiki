@@ -5,25 +5,24 @@ Get the addresses of network interfaces on this system.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_GetLocalAddresses(IPaddress *addresses, int maxcount);
-
 ```
 
 ## Function Parameters
 
-|                   |                                                         |
-| ----------------- | ------------------------------------------------------- |
-| **addresses**     | where to store the returned information.                |
-| **maxcount**      | the number of results that can be stored at `addresses` |
+|             |               |                                                         |
+| ----------- | ------------- | ------------------------------------------------------- |
+| IPaddress * | **addresses** | where to store the returned information.                |
+| int         | **maxcount**  | the number of results that can be stored at `addresses` |
 
 ## Return Value
 
-Returns the number of addresses saved in `addresses`
+(int) Returns the number of addresses saved in `addresses`
 
 ## Version
 

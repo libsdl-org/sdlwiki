@@ -5,20 +5,19 @@ Free a UDP packet vector (array of packets).
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_FreePacketV(UDPpacket **packetV);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                        |
-| --------------- | ---------------------------------------------------------------------- |
-| **packetV**     | the results of a call to [SDLNet_AllocPacketV](SDLNet_AllocPacketV)(). |
+|              |             |                                                                        |
+| ------------ | ----------- | ---------------------------------------------------------------------- |
+| UDPpacket ** | **packetV** | the results of a call to [SDLNet_AllocPacketV](SDLNet_AllocPacketV)(). |
 
 ## Remarks
 

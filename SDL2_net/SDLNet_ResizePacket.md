@@ -5,25 +5,24 @@ Reallocate a UDP packet's payload space.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_ResizePacket(UDPpacket *packet, int newsize);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                      |
-| --------------- | -------------------------------------------------------------------- |
-| **newsize**     | the new maximum number of bytes of payload this packet will contain. |
+|     |             |                                                                      |
+| --- | ----------- | -------------------------------------------------------------------- |
+| int | **newsize** | the new maximum number of bytes of payload this packet will contain. |
 
 ## Return Value
 
-Returns the new maximum payload size, which will be unchanged from the
-previous if the system ran out of memory.
+(int) Returns the new maximum payload size, which will be unchanged from
+the previous if the system ran out of memory.
 
 ## Remarks
 

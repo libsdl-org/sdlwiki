@@ -5,28 +5,27 @@ Send data over a non-server socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_TCP_Send(TCPsocket sock, const void *data, int len);
-
 ```
 
 ## Function Parameters
 
-|              |                                                         |
-| ------------ | ------------------------------------------------------- |
-| **sock**     | the socket to send data to.                             |
-| **data**     | a pointer to the bytes to send.                         |
-| **len**      | the number of bytes, pointed to by `data`, to transmit. |
+|              |          |                                                         |
+| ------------ | -------- | ------------------------------------------------------- |
+| TCPsocket    | **sock** | the socket to send data to.                             |
+| const void * | **data** | a pointer to the bytes to send.                         |
+| int          | **len**  | the number of bytes, pointed to by `data`, to transmit. |
 
 ## Return Value
 
-Returns number of bytes sent, which might be less if there was a problem or
-connection failure. If the socket is invalid, this function can return -1,
-but in valid uses it'll return >= 0.
+(int) Returns number of bytes sent, which might be less if there was a
+problem or connection failure. If the socket is invalid, this function can
+return -1, but in valid uses it'll return >= 0.
 
 ## Remarks
 

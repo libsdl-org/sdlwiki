@@ -5,26 +5,25 @@ Receive a single packet from a UDP socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_UDP_Recv(UDPsocket sock, UDPpacket *packet);
-
 ```
 
 ## Function Parameters
 
-|                |                                                        |
-| -------------- | ------------------------------------------------------ |
-| **sock**       | the UDP socket to receive packets on.                  |
-| **packet**     | a single packet to receive data into from the network. |
+|             |            |                                                        |
+| ----------- | ---------- | ------------------------------------------------------ |
+| UDPsocket   | **sock**   | the UDP socket to receive packets on.                  |
+| UDPpacket * | **packet** | a single packet to receive data into from the network. |
 
 ## Return Value
 
-Returns 1 if a new packet is available, or -1 on error. 0 means no packets
-were currently available.
+(int) Returns 1 if a new packet is available, or -1 on error. 0 means no
+packets were currently available.
 
 ## Remarks
 

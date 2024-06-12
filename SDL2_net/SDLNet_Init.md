@@ -5,18 +5,17 @@ Initialize SDL_net.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_Init(void);
-
 ```
 
 ## Return Value
 
-Returns 0 on success, -1 on error.
+(int) Returns 0 on success, -1 on error.
 
 ## Remarks
 

@@ -5,7 +5,7 @@ Add a UDP socket to a socket set, to be checked for available data.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
@@ -15,15 +15,15 @@ SDL_FORCE_INLINE int SDLNet_UDP_AddSocket(SDLNet_SocketSet set, UDPsocket sock);
 
 ## Function Parameters
 
-|              |                                        |
-| ------------ | -------------------------------------- |
-| **set**      | the socket set to add a new socket to. |
-| **sock**     | the socket to add to the set.          |
+|                                      |          |                                        |
+| ------------------------------------ | -------- | -------------------------------------- |
+| [SDLNet_SocketSet](SDLNet_SocketSet) | **set**  | the socket set to add a new socket to. |
+| UDPsocket                            | **sock** | the socket to add to the set.          |
 
 ## Return Value
 
-Returns the total number of sockets contained in the set (including this
-new one), or -1 if the set is already full.
+(int) Returns the total number of sockets contained in the set (including
+this new one), or -1 if the set is already full.
 
 ## Remarks
 

@@ -5,24 +5,23 @@ Open a UDP network socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 UDPsocket SDLNet_UDP_Open(Uint16 port);
-
 ```
 
 ## Function Parameters
 
-|              |                                      |
-| ------------ | ------------------------------------ |
-| **port**     | the UDP port to bind this socket to. |
+|        |          |                                      |
+| ------ | -------- | ------------------------------------ |
+| Uint16 | **port** | the UDP port to bind this socket to. |
 
 ## Return Value
 
-Returns a new UDP socket, ready to communicate.
+(UDPsocket) Returns a new UDP socket, ready to communicate.
 
 ## Remarks
 

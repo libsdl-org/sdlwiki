@@ -5,20 +5,19 @@ Close a UDP socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_UDP_Close(UDPsocket sock);
-
 ```
 
 ## Function Parameters
 
-|              |                      |
-| ------------ | -------------------- |
-| **sock**     | UDP socket to close. |
+|           |          |                      |
+| --------- | -------- | -------------------- |
+| UDPsocket | **sock** | UDP socket to close. |
 
 ## Remarks
 

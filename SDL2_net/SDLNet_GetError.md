@@ -5,18 +5,17 @@ Get the latest error message from SDL_net.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 const char * SDLNet_GetError(void);
-
 ```
 
 ## Return Value
 
-Returns the last set error message in UTF-8 encoding.
+(const char *) Returns the last set error message in UTF-8 encoding.
 
 ## Remarks
 

@@ -5,7 +5,7 @@ See if a specific socket has data available after checking it in a set.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
@@ -15,9 +15,9 @@ Defined in SDL_net.h
 
 ## Macro Parameters
 
-|              |                      |
-| ------------ | -------------------- |
-| **sock**     | the socket to check. |
+|          |                      |
+| -------- | -------------------- |
+| **sock** | the socket to check. |
 
 ## Return Value
 

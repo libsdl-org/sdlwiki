@@ -5,25 +5,24 @@ Allocate a socket set for use with [SDLNet_CheckSockets](SDLNet_CheckSockets)().
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_SocketSet SDLNet_AllocSocketSet(int maxsockets);
-
 ```
 
 ## Function Parameters
 
-|                    |                                                       |
-| ------------------ | ----------------------------------------------------- |
-| **maxsockets**     | the maximum amount of sockets to include in this set. |
+|     |                |                                                       |
+| --- | -------------- | ----------------------------------------------------- |
+| int | **maxsockets** | the maximum amount of sockets to include in this set. |
 
 ## Return Value
 
-Returns a socket set for up to `maxsockets` sockets, or NULL if the
-function ran out of memory.
+([SDLNet_SocketSet](SDLNet_SocketSet)) Returns a socket set for up to
+`maxsockets` sockets, or NULL if the function ran out of memory.
 
 ## Remarks
 

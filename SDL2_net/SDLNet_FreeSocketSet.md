@@ -5,20 +5,19 @@ Free a set of sockets allocated by [SDLNet_AllocSocketSet](SDLNet_AllocSocketSet
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_FreeSocketSet(SDLNet_SocketSet set);
-
 ```
 
 ## Function Parameters
 
-|             |                         |
-| ----------- | ----------------------- |
-| **set**     | the socket set to free. |
+|                                      |         |                         |
+| ------------------------------------ | ------- | ----------------------- |
+| [SDLNet_SocketSet](SDLNet_SocketSet) | **set** | the socket set to free. |
 
 ## Remarks
 

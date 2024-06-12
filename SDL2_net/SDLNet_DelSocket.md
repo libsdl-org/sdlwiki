@@ -5,26 +5,25 @@ Remove a socket from a set of sockets to be checked for available data.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_DelSocket(SDLNet_SocketSet set, SDLNet_GenericSocket sock);
-
 ```
 
 ## Function Parameters
 
-|              |                                         |
-| ------------ | --------------------------------------- |
-| **set**      | the socket set to remove a socket from. |
-| **sock**     | the socket to remove from the set.      |
+|                                              |          |                                         |
+| -------------------------------------------- | -------- | --------------------------------------- |
+| [SDLNet_SocketSet](SDLNet_SocketSet)         | **set**  | the socket set to remove a socket from. |
+| [SDLNet_GenericSocket](SDLNet_GenericSocket) | **sock** | the socket to remove from the set.      |
 
 ## Return Value
 
-Returns the total number of sockets contained in the set (after `sock`'s
-removal), or -1 if `sock` was not in the set.
+(int) Returns the total number of sockets contained in the set (after
+`sock`'s removal), or -1 if `sock` was not in the set.
 
 ## Remarks
 

@@ -5,18 +5,18 @@ Query the version of SDL_net that the program is linked against.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 const SDLNet_version * SDLNet_Linked_Version(void);
-
 ```
 
 ## Return Value
 
-Returns a pointer to the version information.
+(const [SDLNet_version](SDLNet_version) *) Returns a pointer to the version
+information.
 
 ## Remarks
 

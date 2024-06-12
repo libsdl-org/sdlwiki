@@ -5,20 +5,19 @@ Set an error message to be retrieved with [SDLNet_GetError](SDLNet_GetError).
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_SetError(const char *fmt, ...);
-
 ```
 
 ## Function Parameters
 
-|             |                                                     |
-| ----------- | --------------------------------------------------- |
-| **fmt**     | a printf-style format string for the error message. |
+|              |         |                                                     |
+| ------------ | ------- | --------------------------------------------------- |
+| const char * | **fmt** | a printf-style format string for the error message. |
 
 ## Remarks
 

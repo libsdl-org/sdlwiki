@@ -5,26 +5,25 @@ Resolve a host name and port to an IP address in network form.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_ResolveHost(IPaddress *address, const char *host, Uint16 port);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                             |
-| --------------- | ----------------------------------------------------------- |
-| **address**     | to be filled in with the resolved address and port.         |
-| **host**        | the hostname to lookup (like "libsdl.org")                  |
-| **port**        | the port intended to be connected to, to fill into address. |
+|              |             |                                                             |
+| ------------ | ----------- | ----------------------------------------------------------- |
+| IPaddress *  | **address** | to be filled in with the resolved address and port.         |
+| const char * | **host**    | the hostname to lookup (like "libsdl.org")                  |
+| Uint16       | **port**    | the port intended to be connected to, to fill into address. |
 
 ## Return Value
 
-Returns zero on success, -1 on error.
+(int) Returns zero on success, -1 on error.
 
 ## Remarks
 

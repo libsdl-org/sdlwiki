@@ -5,24 +5,24 @@ Open a TCP network socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 TCPsocket SDLNet_TCP_Open(IPaddress *ip);
-
 ```
 
 ## Function Parameters
 
-|            |                                                               |
-| ---------- | ------------------------------------------------------------- |
-| **ip**     | The address to open a connection to (or to host a server on). |
+|             |        |                                                               |
+| ----------- | ------ | ------------------------------------------------------------- |
+| IPaddress * | **ip** | The address to open a connection to (or to host a server on). |
 
 ## Return Value
 
-Returns the newly created socket, or NULL if there was an error.
+(TCPsocket) Returns the newly created socket, or NULL if there was an
+error.
 
 ## Remarks
 

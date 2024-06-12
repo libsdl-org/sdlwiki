@@ -5,26 +5,25 @@ Send a vector of packets to the the channels specified within the packet.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_UDP_SendV(UDPsocket sock, UDPpacket **packets, int npackets);
-
 ```
 
 ## Function Parameters
 
-|                  |                                               |
-| ---------------- | --------------------------------------------- |
-| **sock**         | the UDP socket to send packets on.            |
-| **packets**      | an array of packets to send to the network.   |
-| **npackets**     | the number of packets in the `packets` array. |
+|              |              |                                               |
+| ------------ | ------------ | --------------------------------------------- |
+| UDPsocket    | **sock**     | the UDP socket to send packets on.            |
+| UDPpacket ** | **packets**  | an array of packets to send to the network.   |
+| int          | **npackets** | the number of packets in the `packets` array. |
 
 ## Return Value
 
-Returns the number of packets successfully sent from this machine.
+(int) Returns the number of packets successfully sent from this machine.
 
 ## Remarks
 

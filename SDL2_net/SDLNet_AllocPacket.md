@@ -5,24 +5,24 @@ Allocate a single UDP packet.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 UDPpacket * SDLNet_AllocPacket(int size);
-
 ```
 
 ## Function Parameters
 
-|              |                                                                  |
-| ------------ | ---------------------------------------------------------------- |
-| **size**     | the maximum number of bytes of payload this packet will contain. |
+|     |          |                                                                  |
+| --- | -------- | ---------------------------------------------------------------- |
+| int | **size** | the maximum number of bytes of payload this packet will contain. |
 
 ## Return Value
 
-Returns the new packet, or NULL if the function ran out of memory.
+(UDPpacket *) Returns the new packet, or NULL if the function ran out of
+memory.
 
 ## Remarks
 

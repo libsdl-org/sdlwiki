@@ -5,26 +5,25 @@ Receive data from a non-server socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_TCP_Recv(TCPsocket sock, void *data, int maxlen);
-
 ```
 
 ## Function Parameters
 
-|                |                                                           |
-| -------------- | --------------------------------------------------------- |
-| **sock**       | the socket to send data to.                               |
-| **data**       | a pointer to where to store received data.                |
-| **maxlen**     | the maximum number of bytes that can be stored at `data`. |
+|           |            |                                                           |
+| --------- | ---------- | --------------------------------------------------------- |
+| TCPsocket | **sock**   | the socket to send data to.                               |
+| void *    | **data**   | a pointer to where to store received data.                |
+| int       | **maxlen** | the maximum number of bytes that can be stored at `data`. |
 
 ## Return Value
 
-Returns number of bytes received, which might be less than `maxlen`.
+(int) Returns number of bytes received, which might be less than `maxlen`.
 
 ## Remarks
 

@@ -5,20 +5,19 @@ Resolve an IP address to a host name in canonical form.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 const char * SDLNet_ResolveIP(const IPaddress *ip);
-
 ```
 
 ## Function Parameters
 
-|            |                                            |
-| ---------- | ------------------------------------------ |
-| **ip**     | the IP address to resolve into a hostname. |
+|                   |        |                                            |
+| ----------------- | ------ | ------------------------------------------ |
+| const IPaddress * | **ip** | the IP address to resolve into a hostname. |
 
 ## Remarks
 

@@ -5,21 +5,20 @@ Unbind all addresses from the given channel.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_UDP_Unbind(UDPsocket sock, int channel);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                       |
-| --------------- | ----------------------------------------------------- |
-| **sock**        | the UDP socket to unbind addresses from a channel on. |
-| **channel**     | the channel of the socket to unbind.                  |
+|           |             |                                                       |
+| --------- | ----------- | ----------------------------------------------------- |
+| UDPsocket | **sock**    | the UDP socket to unbind addresses from a channel on. |
+| int       | **channel** | the channel of the socket to unbind.                  |
 
 ## Remarks
 

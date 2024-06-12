@@ -5,26 +5,25 @@ Check a socket set for data availability.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/SDL2/include/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_CheckSockets(SDLNet_SocketSet set, Uint32 timeout);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                                              |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **set**         | the socket set to check for ready sockets.                                                                                   |
-| **timeout**     | the time to wait in milliseconds for new data to arrive. A timeout of zero checks for new data and returns without blocking. |
+|                                      |             |                                                                                                                              |
+| ------------------------------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [SDLNet_SocketSet](SDLNet_SocketSet) | **set**     | the socket set to check for ready sockets.                                                                                   |
+| Uint32                               | **timeout** | the time to wait in milliseconds for new data to arrive. A timeout of zero checks for new data and returns without blocking. |
 
 ## Return Value
 
-Returns the number of sockets ready for reading, or -1 if there was an
-error with the select() system call.
+(int) Returns the number of sockets ready for reading, or -1 if there was
+an error with the select() system call.
 
 ## Remarks
 
