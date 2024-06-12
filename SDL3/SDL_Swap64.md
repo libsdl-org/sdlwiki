@@ -26,8 +26,8 @@ Returns `x`, with its bytes in the opposite endian order.
 ## Remarks
 
 This will always byte-swap the value, whether it's currently in the native
-byteorder of the system or not. You should use [SDL_Swap64LE](SDL_Swap64LE)
-or [SDL_Swap64BE](SDL_Swap64BE) instead, in most cases.
+byteorder of the system or not. You should use [SDL_SwapLE64](SDL_SwapLE64)
+or [SDL_SwapBE64](SDL_SwapBE64) instead, in most cases.
 
 Note that this is a forced-inline function in a header, and not a public
 API function available in the SDL library (which is to say, the code is
