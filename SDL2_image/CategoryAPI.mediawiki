@@ -6,7 +6,9 @@
 <!-- BEGIN CATEGORY LIST -->
 * [[IMG_Animation]]
 * [[IMG_FreeAnimation]]
+* [[IMG_GetError]]
 * [[IMG_Init]]
+* [[IMG_InitFlags]]
 * [[IMG_isAVIF]]
 * [[IMG_isBMP]]
 * [[IMG_isCUR]]
@@ -64,4 +66,9 @@
 * [[IMG_SaveJPG_RW]]
 * [[IMG_SavePNG]]
 * [[IMG_SavePNG_RW]]
+* [[IMG_SetError]]
+* [[SDL_IMAGE_COMPILEDVERSION]]
+* [[SDL_IMAGE_MAJOR_VERSION]]
+* [[SDL_IMAGE_VERSION]]
+* [[SDL_IMAGE_VERSION_ATLEAST]]
 <!-- END CATEGORY LIST -->
