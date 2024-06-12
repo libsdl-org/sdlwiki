@@ -35,6 +35,8 @@ This wiki is your portal to documentation and other resources for SDL 2.0.
 *: Looking for more information than you can get online?  Check out the books listed here.
 * [[FAQs]]
 *: A few of the most commonly asked questions about using SDL are answered here.
+* [https://discord.gg/BwpFGBWsv8 Discord Server]
+*: Feel free to ask questions and talk with other developers using SDL2 via discord.
 * [https://discourse.libsdl.org/ Forums]
 *: A great place to keep up with the latest news, help other users out, and ask questions.
 * [[Contributing]]
