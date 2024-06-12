@@ -15,15 +15,15 @@ const char* SDL_GetJoystickName(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
 
 ## Return Value
 
-Returns the name of the selected joystick. If no name can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
-information.
+(const char *) Returns the name of the selected joystick. If no name can be
+found, this function returns NULL; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

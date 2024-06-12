@@ -15,13 +15,13 @@ int SDL_OpenURL(const char *url);
 
 ## Function Parameters
 
-|             |                                                                                         |
-| ----------- | --------------------------------------------------------------------------------------- |
-| **url**     | A valid URL/URI to open. Use `file:///full/path/to/file` for local files, if supported. |
+|              |         |                                                                                         |
+| ------------ | ------- | --------------------------------------------------------------------------------------- |
+| const char * | **url** | A valid URL/URI to open. Use `file:///full/path/to/file` for local files, if supported. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

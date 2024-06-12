@@ -15,14 +15,15 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|           |                                                                         |
-| --------- | ----------------------------------------------------------------------- |
-| **x**     | filled in with the current X coord relative to the desktop; can be NULL |
-| **y**     | filled in with the current Y coord relative to the desktop; can be NULL |
+|         |       |                                                                         |
+| ------- | ----- | ----------------------------------------------------------------------- |
+| float * | **x** | filled in with the current X coord relative to the desktop; can be NULL |
+| float * | **y** | filled in with the current Y coord relative to the desktop; can be NULL |
 
 ## Return Value
 
-Returns the current button state as a bitmask which can be tested using the
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns the current button
+state as a bitmask which can be tested using the
 [SDL_BUTTON](SDL_BUTTON)(X) macros.
 
 ## Remarks

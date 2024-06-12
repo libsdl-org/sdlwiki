@@ -15,15 +15,16 @@ extern SDL_DECLSPEC SDL_Finger **SDLCALL SDL_GetTouchFingers(SDL_TouchID touchID
 
 ## Function Parameters
 
-|                 |                                                                       |
-| --------------- | --------------------------------------------------------------------- |
-| **touchID**     | the ID of a touch device                                              |
-| **count**       | a pointer filled in with the number of fingers returned, can be NULL. |
+|                            |             |                                                                       |
+| -------------------------- | ----------- | --------------------------------------------------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of a touch device                                              |
+| int *                      | **count**   | a pointer filled in with the number of fingers returned, can be NULL. |
 
 ## Return Value
 
-Returns a NULL terminated array of [SDL_Finger](SDL_Finger) pointers which
-should be freed with [SDL_free](SDL_free)(), or NULL on error; call
+([SDL_Finger](SDL_Finger) **) Returns a NULL terminated array of
+[SDL_Finger](SDL_Finger) pointers which should be freed with
+[SDL_free](SDL_free)(), or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more details.
 
 ## Version

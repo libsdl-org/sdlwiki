@@ -15,14 +15,14 @@ int SDL_GetCameraPermissionState(SDL_Camera *camera);
 
 ## Function Parameters
 
-|                |                                   |
-| -------------- | --------------------------------- |
-| **camera**     | the opened camera device to query |
+|                            |            |                                   |
+| -------------------------- | ---------- | --------------------------------- |
+| [SDL_Camera](SDL_Camera) * | **camera** | the opened camera device to query |
 
 ## Return Value
 
-Returns -1 if user denied access to the camera, 1 if user approved access,
-0 if no decision has been made yet.
+(int) Returns -1 if user denied access to the camera, 1 if user approved
+access, 0 if no decision has been made yet.
 
 ## Remarks
 

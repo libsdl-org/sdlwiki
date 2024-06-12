@@ -15,10 +15,10 @@ char * SDL_GetClipboardText(void);
 
 ## Return Value
 
-Returns the clipboard text on success or an empty string on failure; call
-[SDL_GetError](SDL_GetError)() for more information. Caller must call
-[SDL_free](SDL_free)() on the returned pointer when done with it (even if
-there was an error).
+(char *) Returns the clipboard text on success or an empty string on
+failure; call [SDL_GetError](SDL_GetError)() for more information. Caller
+must call [SDL_free](SDL_free)() on the returned pointer when done with it
+(even if there was an error).
 
 ## Remarks
 

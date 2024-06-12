@@ -15,15 +15,16 @@ SDL_bool SDL_WriteU64LE(SDL_IOStream *dst, Uint64 value);
 
 ## Function Parameters
 
-|               |                                          |
-| ------------- | ---------------------------------------- |
-| **dst**       | the stream to which data will be written |
-| **value**     | the data to be written, in native format |
+|                                |           |                                          |
+| ------------------------------ | --------- | ---------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written |
+| Uint64                         | **value** | the data to be written, in native format |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on successful write, [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on successful write,
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

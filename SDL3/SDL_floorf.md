@@ -15,13 +15,13 @@ float SDL_floorf(float x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|       |       |                      |
+| ----- | ----- | -------------------- |
+| float | **x** | floating point value |
 
 ## Return Value
 
-Returns the floor of `x`
+(float) Returns the floor of `x`
 
 ## Remarks
 

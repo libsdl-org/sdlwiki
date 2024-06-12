@@ -15,16 +15,16 @@ SDL_TimerID SDL_AddTimer(Uint32 interval, SDL_TimerCallback callback, void *user
 
 ## Function Parameters
 
-|                  |                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| **interval**     | the timer delay, in milliseconds, passed to `callback`                                            |
-| **callback**     | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
-| **userdata**     | a pointer that is passed to `callback`                                                            |
+|                                        |              |                                                                                                   |
+| -------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
+| Uint32                                 | **interval** | the timer delay, in milliseconds, passed to `callback`                                            |
+| [SDL_TimerCallback](SDL_TimerCallback) | **callback** | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
+| void *                                 | **userdata** | a pointer that is passed to `callback`                                                            |
 
 ## Return Value
 
-Returns a timer ID or 0 if an error occurs; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_TimerID](SDL_TimerID)) Returns a timer ID or 0 if an error occurs;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

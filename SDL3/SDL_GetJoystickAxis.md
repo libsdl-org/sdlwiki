@@ -15,15 +15,15 @@ Sint16 SDL_GetJoystickAxis(SDL_Joystick *joystick, int axis);
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
-| **axis**         | the axis to query; the axis indices start at index 0                      |
+|                                |              |                                                                           |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| int                            | **axis**     | the axis to query; the axis indices start at index 0                      |
 
 ## Return Value
 
-Returns a 16-bit signed integer representing the current position of the
-axis or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+(Sint16) Returns a 16-bit signed integer representing the current position
+of the axis or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
 information.
 
 ## Remarks

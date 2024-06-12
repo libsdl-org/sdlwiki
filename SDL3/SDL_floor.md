@@ -15,13 +15,13 @@ double SDL_floor(double x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|        |       |                      |
+| ------ | ----- | -------------------- |
+| double | **x** | floating point value |
 
 ## Return Value
 
-Returns the floor of `x`
+(double) Returns the floor of `x`
 
 ## Remarks
 

@@ -15,13 +15,13 @@ Uint32 SDL_GetSemaphoreValue(SDL_Semaphore *sem);
 
 ## Function Parameters
 
-|             |                        |
-| ----------- | ---------------------- |
-| **sem**     | the semaphore to query |
+|                                  |         |                        |
+| -------------------------------- | ------- | ---------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to query |
 
 ## Return Value
 
-Returns the current value of the semaphore.
+(Uint32) Returns the current value of the semaphore.
 
 ## Version
 

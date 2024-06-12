@@ -15,16 +15,16 @@ int SDL_RumbleJoystick(SDL_Joystick *joystick, Uint16 low_frequency_rumble, Uint
 
 ## Function Parameters
 
-|                               |                                                                            |
-| ----------------------------- | -------------------------------------------------------------------------- |
-| **joystick**                  | The joystick to vibrate                                                    |
-| **low_frequency_rumble**      | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF   |
-| **high_frequency_rumble**     | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF |
-| **duration_ms**               | The duration of the rumble effect, in milliseconds                         |
+|                                |                           |                                                                            |
+| ------------------------------ | ------------------------- | -------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick**              | The joystick to vibrate                                                    |
+| Uint16                         | **low_frequency_rumble**  | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF   |
+| Uint16                         | **high_frequency_rumble** | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF |
+| Uint32                         | **duration_ms**           | The duration of the rumble effect, in milliseconds                         |
 
 ## Return Value
 
-Returns 0, or -1 if rumble isn't supported on this joystick
+(int) Returns 0, or -1 if rumble isn't supported on this joystick
 
 ## Remarks
 

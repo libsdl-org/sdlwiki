@@ -15,7 +15,7 @@ SDL_ThreadID SDL_GetCurrentThreadID(void);
 
 ## Return Value
 
-Returns the ID of the current thread.
+([SDL_ThreadID](SDL_ThreadID)) Returns the ID of the current thread.
 
 ## Remarks
 

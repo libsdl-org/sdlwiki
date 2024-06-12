@@ -15,9 +15,9 @@ void SDL_DestroyMutex(SDL_Mutex *mutex);
 
 ## Function Parameters
 
-|               |                      |
-| ------------- | -------------------- |
-| **mutex**     | the mutex to destroy |
+|                          |           |                      |
+| ------------------------ | --------- | -------------------- |
+| [SDL_Mutex](SDL_Mutex) * | **mutex** | the mutex to destroy |
 
 ## Remarks
 

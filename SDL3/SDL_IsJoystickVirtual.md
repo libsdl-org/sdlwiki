@@ -15,14 +15,14 @@ SDL_bool SDL_IsJoystickVirtual(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the joystick is virtual,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the joystick is
+virtual, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

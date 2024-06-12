@@ -15,15 +15,15 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(SDL_AudioDeviceID devid, const SDL_AudioSp
 
 ## Function Parameters
 
-|               |                                                                                                                                                                                                                       |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **devid**     | the device instance id to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE) for the most reasonable default device. |
-| **spec**      | the requested device configuration. Can be NULL to use reasonable defaults.                                                                                                                                           |
+|                                        |           |                                                                                                                                                                                                                       |
+| -------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid** | the device instance id to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE) for the most reasonable default device. |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **spec**  | the requested device configuration. Can be NULL to use reasonable defaults.                                                                                                                                           |
 
 ## Return Value
 
-Returns The device ID on success, 0 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns The device ID on success,
+0 on error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

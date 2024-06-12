@@ -15,16 +15,16 @@ int SDL_GetTextureColorMod(SDL_Texture *texture, Uint8 *r, Uint8 *g, Uint8 *b);
 
 ## Function Parameters
 
-|                 |                                                        |
-| --------------- | ------------------------------------------------------ |
-| **texture**     | the texture to query                                   |
-| **r**           | a pointer filled in with the current red color value   |
-| **g**           | a pointer filled in with the current green color value |
-| **b**           | a pointer filled in with the current blue color value  |
+|                              |             |                                                        |
+| ---------------------------- | ----------- | ------------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query                                   |
+| Uint8 *                      | **r**       | a pointer filled in with the current red color value   |
+| Uint8 *                      | **g**       | a pointer filled in with the current green color value |
+| Uint8 *                      | **b**       | a pointer filled in with the current blue color value  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

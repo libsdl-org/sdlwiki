@@ -15,12 +15,12 @@ typedef void (SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const
 
 ## Function Parameters
 
-|                  |                                                                               |
-| ---------------- | ----------------------------------------------------------------------------- |
-| **userdata**     | what was passed as `userdata` to [SDL_AddHintCallback](SDL_AddHintCallback)() |
-| **name**         | what was passed as `name` to [SDL_AddHintCallback](SDL_AddHintCallback)()     |
-| **oldValue**     | the previous hint value                                                       |
-| **newValue**     | the new value hint is to be set to                                            |
+|              |                                                                               |
+| ------------ | ----------------------------------------------------------------------------- |
+| **userdata** | what was passed as `userdata` to [SDL_AddHintCallback](SDL_AddHintCallback)() |
+| **name**     | what was passed as `name` to [SDL_AddHintCallback](SDL_AddHintCallback)()     |
+| **oldValue** | the previous hint value                                                       |
+| **newValue** | the new value hint is to be set to                                            |
 
 ## Version
 

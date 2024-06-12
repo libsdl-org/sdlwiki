@@ -15,15 +15,15 @@ SDL_TouchID* SDL_GetTouchDevices(int *count);
 
 ## Function Parameters
 
-|               |                                                                       |
-| ------------- | --------------------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of devices returned, can be NULL. |
+|       |           |                                                                       |
+| ----- | --------- | --------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of devices returned, can be NULL. |
 
 ## Return Value
 
-Returns a 0 terminated array of touch device IDs which should be freed with
-[SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+([SDL_TouchID](SDL_TouchID) *) Returns a 0 terminated array of touch device
+IDs which should be freed with [SDL_free](SDL_free)(), or NULL on error;
+call [SDL_GetError](SDL_GetError)() for more details.
 
 ## Remarks
 

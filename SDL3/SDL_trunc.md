@@ -15,13 +15,13 @@ double SDL_trunc(double x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|        |       |                      |
+| ------ | ----- | -------------------- |
+| double | **x** | floating point value |
 
 ## Return Value
 
-Returns `x` truncated to an integer
+(double) Returns `x` truncated to an integer
 
 ## Remarks
 

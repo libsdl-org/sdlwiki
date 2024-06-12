@@ -15,9 +15,9 @@ const char* SDL_GetError(void);
 
 ## Return Value
 
-Returns a message with information about the specific error that occurred,
-or an empty string if there hasn't been an error message set since the last
-call to [SDL_ClearError](SDL_ClearError)().
+(const char *) Returns a message with information about the specific error
+that occurred, or an empty string if there hasn't been an error message set
+since the last call to [SDL_ClearError](SDL_ClearError)().
 
 ## Remarks
 

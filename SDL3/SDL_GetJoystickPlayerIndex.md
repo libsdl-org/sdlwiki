@@ -15,13 +15,13 @@ int SDL_GetJoystickPlayerIndex(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
 
 ## Return Value
 
-Returns the player index, or -1 if it's not available.
+(int) Returns the player index, or -1 if it's not available.
 
 ## Remarks
 

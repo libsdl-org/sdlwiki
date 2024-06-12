@@ -15,13 +15,13 @@ int SDL_ResumeAudioStreamDevice(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                                                             |
-| -------------- | ----------------------------------------------------------- |
-| **stream**     | The audio stream associated with the audio device to resume |
+|                                      |            |                                                             |
+| ------------------------------------ | ---------- | ----------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream associated with the audio device to resume |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

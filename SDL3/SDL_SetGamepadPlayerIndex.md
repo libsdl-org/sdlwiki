@@ -15,14 +15,14 @@ int SDL_SetGamepadPlayerIndex(SDL_Gamepad *gamepad, int player_index);
 
 ## Function Parameters
 
-|                      |                                                                                                   |
-| -------------------- | ------------------------------------------------------------------------------------------------- |
-| **gamepad**          | the gamepad object to adjust.                                                                     |
-| **player_index**     | Player index to assign to this gamepad, or -1 to clear the player index and turn off player LEDs. |
+|                              |                  |                                                                                                   |
+| ---------------------------- | ---------------- | ------------------------------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**      | the gamepad object to adjust.                                                                     |
+| int                          | **player_index** | Player index to assign to this gamepad, or -1 to clear the player index and turn off player LEDs. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

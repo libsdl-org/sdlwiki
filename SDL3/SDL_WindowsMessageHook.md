@@ -15,10 +15,10 @@ typedef SDL_bool (SDLCALL *SDL_WindowsMessageHook)(void *userdata, MSG *msg);
 
 ## Function Parameters
 
-|                  |                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| **userdata**     | the app-defined pointer provided to [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook). |
-| **msg**          | a pointer to a Win32 event structure to process.                                            |
+|              |                                                                                             |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| **userdata** | the app-defined pointer provided to [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook). |
+| **msg**      | a pointer to a Win32 event structure to process.                                            |
 
 ## Return Value
 

@@ -15,15 +15,15 @@ void* SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
 
 ## Function Parameters
 
-|                |                             |
-| -------------- | --------------------------- |
-| **window**     | the window to query         |
-| **size**       | the size of the ICC profile |
+|                            |            |                             |
+| -------------------------- | ---------- | --------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query         |
+| size_t *                   | **size**   | the size of the ICC profile |
 
 ## Return Value
 
-Returns the raw ICC profile data on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(void *) Returns the raw ICC profile data on success or NULL on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

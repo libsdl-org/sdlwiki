@@ -15,14 +15,14 @@ int SDL_GetDisplayBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 
 ## Function Parameters
 
-|                   |                                                                      |
-| ----------------- | -------------------------------------------------------------------- |
-| **displayID**     | the instance ID of the display to query                              |
-| **rect**          | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+|                                |               |                                                                      |
+| ------------------------------ | ------------- | -------------------------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query                              |
+| [SDL_Rect](SDL_Rect) *         | **rect**      | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

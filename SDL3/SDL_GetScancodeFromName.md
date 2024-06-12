@@ -15,13 +15,13 @@ SDL_Scancode SDL_GetScancodeFromName(const char *name);
 
 ## Function Parameters
 
-|              |                                  |
-| ------------ | -------------------------------- |
-| **name**     | the human-readable scancode name |
+|              |          |                                  |
+| ------------ | -------- | -------------------------------- |
+| const char * | **name** | the human-readable scancode name |
 
 ## Return Value
 
-Returns the [SDL_Scancode](SDL_Scancode), or
+([SDL_Scancode](SDL_Scancode)) Returns the [SDL_Scancode](SDL_Scancode), or
 [`SDL_SCANCODE_UNKNOWN`](SDL_SCANCODE_UNKNOWN) if the name wasn't
 recognized; call [SDL_GetError](SDL_GetError)() for more information.
 

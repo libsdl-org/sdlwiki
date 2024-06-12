@@ -15,14 +15,14 @@ int SDL_GetTextureScaleMode(SDL_Texture *texture, SDL_ScaleMode *scaleMode);
 
 ## Function Parameters
 
-|                   |                                                  |
-| ----------------- | ------------------------------------------------ |
-| **texture**       | the texture to query.                            |
-| **scaleMode**     | a pointer filled in with the current scale mode. |
+|                                  |               |                                                  |
+| -------------------------------- | ------------- | ------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) *     | **texture**   | the texture to query.                            |
+| [SDL_ScaleMode](SDL_ScaleMode) * | **scaleMode** | a pointer filled in with the current scale mode. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

@@ -15,13 +15,13 @@ float SDL_GetDisplayContentScale(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                   |                                         |
-| ----------------- | --------------------------------------- |
-| **displayID**     | the instance ID of the display to query |
+|                                |               |                                         |
+| ------------------------------ | ------------- | --------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query |
 
 ## Return Value
 
-Returns The content scale of the display, or 0.0f on error; call
+(float) Returns The content scale of the display, or 0.0f on error; call
 [SDL_GetError](SDL_GetError)() for more details.
 
 ## Remarks

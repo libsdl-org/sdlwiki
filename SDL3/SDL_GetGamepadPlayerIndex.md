@@ -15,13 +15,13 @@ int SDL_GetGamepadPlayerIndex(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **gamepad**     | the gamepad object to query. |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object to query. |
 
 ## Return Value
 
-Returns the player index for gamepad, or -1 if it's not available.
+(int) Returns the player index for gamepad, or -1 if it's not available.
 
 ## Remarks
 

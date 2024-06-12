@@ -15,14 +15,15 @@ SDL_JoystickGUID SDL_GetJoystickInstanceGUID(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the GUID of the selected joystick. If called with an invalid
-instance_id, this function returns a zero GUID.
+([SDL_JoystickGUID](SDL_JoystickGUID)) Returns the GUID of the selected
+joystick. If called with an invalid instance_id, this function returns a
+zero GUID.
 
 ## Remarks
 

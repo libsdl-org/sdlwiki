@@ -15,14 +15,14 @@ int SDL_SetWindowAlwaysOnTop(SDL_Window *window, SDL_bool on_top);
 
 ## Function Parameters
 
-|                |                                                                                         |
-| -------------- | --------------------------------------------------------------------------------------- |
-| **window**     | The window of which to change the always on top state                                   |
-| **on_top**     | [SDL_TRUE](SDL_TRUE) to set the window always on top, [SDL_FALSE](SDL_FALSE) to disable |
+|                            |            |                                                                                         |
+| -------------------------- | ---------- | --------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | The window of which to change the always on top state                                   |
+| [SDL_bool](SDL_bool)       | **on_top** | [SDL_TRUE](SDL_TRUE) to set the window always on top, [SDL_FALSE](SDL_FALSE) to disable |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

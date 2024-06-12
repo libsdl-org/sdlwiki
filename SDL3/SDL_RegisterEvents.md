@@ -15,14 +15,14 @@ Uint32 SDL_RegisterEvents(int numevents);
 
 ## Function Parameters
 
-|                   |                                      |
-| ----------------- | ------------------------------------ |
-| **numevents**     | the number of events to be allocated |
+|     |               |                                      |
+| --- | ------------- | ------------------------------------ |
+| int | **numevents** | the number of events to be allocated |
 
 ## Return Value
 
-Returns the beginning event number, or 0 if numevents is invalid or if
-there are not enough user-defined events left.
+(Uint32) Returns the beginning event number, or 0 if numevents is invalid
+or if there are not enough user-defined events left.
 
 ## Version
 

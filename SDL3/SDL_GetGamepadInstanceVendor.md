@@ -15,14 +15,14 @@ Uint16 SDL_GetGamepadInstanceVendor(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the USB vendor ID of the selected gamepad. If called on an invalid
-index, this function returns zero
+(Uint16) Returns the USB vendor ID of the selected gamepad. If called on an
+invalid index, this function returns zero
 
 ## Remarks
 

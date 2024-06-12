@@ -15,13 +15,14 @@ SDL_IOStatus SDL_GetIOStatus(SDL_IOStream *context);
 
 ## Function Parameters
 
-|                 |                                            |
-| --------------- | ------------------------------------------ |
-| **context**     | the [SDL_IOStream](SDL_IOStream) to query. |
+|                                |             |                                            |
+| ------------------------------ | ----------- | ------------------------------------------ |
+| [SDL_IOStream](SDL_IOStream) * | **context** | the [SDL_IOStream](SDL_IOStream) to query. |
 
 ## Return Value
 
-Returns an [SDL_IOStatus](SDL_IOStatus) enum with the current state.
+([SDL_IOStatus](SDL_IOStatus)) Returns an [SDL_IOStatus](SDL_IOStatus) enum
+with the current state.
 
 ## Remarks
 

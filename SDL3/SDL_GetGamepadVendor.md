@@ -15,13 +15,13 @@ Uint16 SDL_GetGamepadVendor(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **gamepad**     | the gamepad object to query. |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object to query. |
 
 ## Return Value
 
-Returns the USB vendor ID, or zero if unavailable.
+(Uint16) Returns the USB vendor ID, or zero if unavailable.
 
 ## Remarks
 

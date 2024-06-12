@@ -15,15 +15,15 @@ SDL_JoystickID* SDL_GetJoysticks(int *count);
 
 ## Function Parameters
 
-|               |                                                           |
-| ------------- | --------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of joysticks returned |
+|       |           |                                                           |
+| ----- | --------- | --------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of joysticks returned |
 
 ## Return Value
 
-Returns a 0 terminated array of joystick instance IDs which should be freed
-with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+([SDL_JoystickID](SDL_JoystickID) *) Returns a 0 terminated array of
+joystick instance IDs which should be freed with [SDL_free](SDL_free)(), or
+NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
 
 ## Version
 

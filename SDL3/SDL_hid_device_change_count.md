@@ -15,8 +15,8 @@ Uint32 SDL_hid_device_change_count(void);
 
 ## Return Value
 
-Returns a change counter that is incremented with each potential device
-change, or 0 if device change detection isn't available.
+(Uint32) Returns a change counter that is incremented with each potential
+device change, or 0 if device change detection isn't available.
 
 ## Remarks
 

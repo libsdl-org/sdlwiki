@@ -15,8 +15,8 @@ SDL_bool SDL_HasMouse(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if a mouse is connected,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if a mouse is
+connected, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

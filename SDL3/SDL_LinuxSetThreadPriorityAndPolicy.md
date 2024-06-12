@@ -15,15 +15,15 @@ int SDL_LinuxSetThreadPriorityAndPolicy(Sint64 threadID, int sdlPriority, int sc
 
 ## Function Parameters
 
-|                     |                                                                       |
-| ------------------- | --------------------------------------------------------------------- |
-| **threadID**        | The Unix thread ID to change priority of.                             |
-| **sdlPriority**     | The new [SDL_ThreadPriority](SDL_ThreadPriority) value.               |
-| **schedPolicy**     | The new scheduling policy (SCHED_FIFO, SCHED_RR, SCHED_OTHER, etc...) |
+|        |                 |                                                                       |
+| ------ | --------------- | --------------------------------------------------------------------- |
+| Sint64 | **threadID**    | The Unix thread ID to change priority of.                             |
+| int    | **sdlPriority** | The new [SDL_ThreadPriority](SDL_ThreadPriority) value.               |
+| int    | **schedPolicy** | The new scheduling policy (SCHED_FIFO, SCHED_RR, SCHED_OTHER, etc...) |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,13 +15,14 @@ SDL_CameraPosition SDL_GetCameraDevicePosition(SDL_CameraDeviceID instance_id);
 
 ## Function Parameters
 
-|                     |                               |
-| ------------------- | ----------------------------- |
-| **instance_id**     | the camera device instance ID |
+|                                          |                 |                               |
+| ---------------------------------------- | --------------- | ----------------------------- |
+| [SDL_CameraDeviceID](SDL_CameraDeviceID) | **instance_id** | the camera device instance ID |
 
 ## Return Value
 
-Returns The position of the camera on the system hardware.
+([SDL_CameraPosition](SDL_CameraPosition)) Returns The position of the
+camera on the system hardware.
 
 ## Remarks
 

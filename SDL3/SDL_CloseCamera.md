@@ -15,9 +15,9 @@ void SDL_CloseCamera(SDL_Camera *camera);
 
 ## Function Parameters
 
-|                |                      |
-| -------------- | -------------------- |
-| **camera**     | opened camera device |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Camera](SDL_Camera) * | **camera** | opened camera device |
 
 ## Thread Safety
 

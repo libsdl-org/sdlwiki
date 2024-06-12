@@ -15,13 +15,13 @@ int SDL_Vulkan_LoadLibrary(const char *path);
 
 ## Function Parameters
 
-|              |                                                           |
-| ------------ | --------------------------------------------------------- |
-| **path**     | The platform dependent Vulkan loader library name or NULL |
+|              |          |                                                           |
+| ------------ | -------- | --------------------------------------------------------- |
+| const char * | **path** | The platform dependent Vulkan loader library name or NULL |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

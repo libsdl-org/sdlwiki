@@ -15,10 +15,10 @@ typedef void (SDLCALL *SDL_CleanupPropertyCallback)(void *userdata, void *value)
 
 ## Function Parameters
 
-|                  |                                                   |
-| ---------------- | ------------------------------------------------- |
-| **userdata**     | an app-defined pointer passed to the callback.    |
-| **value**        | the pointer assigned to the property to clean up. |
+|              |                                                   |
+| ------------ | ------------------------------------------------- |
+| **userdata** | an app-defined pointer passed to the callback.    |
+| **value**    | the pointer assigned to the property to clean up. |
 
 ## Remarks
 

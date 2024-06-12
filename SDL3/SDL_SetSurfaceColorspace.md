@@ -15,14 +15,14 @@ int SDL_SetSurfaceColorspace(SDL_Surface *surface, SDL_Colorspace colorspace);
 
 ## Function Parameters
 
-|                    |                                                                             |
-| ------------------ | --------------------------------------------------------------------------- |
-| **surface**        | the [SDL_Surface](SDL_Surface) structure to update                          |
-| **colorspace**     | an [SDL_ColorSpace](SDL_ColorSpace) value describing the surface colorspace |
+|                                  |                |                                                                             |
+| -------------------------------- | -------------- | --------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) *     | **surface**    | the [SDL_Surface](SDL_Surface) structure to update                          |
+| [SDL_Colorspace](SDL_Colorspace) | **colorspace** | an [SDL_ColorSpace](SDL_ColorSpace) value describing the surface colorspace |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

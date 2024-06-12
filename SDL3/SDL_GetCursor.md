@@ -15,7 +15,8 @@ SDL_Cursor* SDL_GetCursor(void);
 
 ## Return Value
 
-Returns the active cursor or NULL if there is no mouse.
+([SDL_Cursor](SDL_Cursor) *) Returns the active cursor or NULL if there is
+no mouse.
 
 ## Remarks
 

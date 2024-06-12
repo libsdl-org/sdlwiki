@@ -15,14 +15,15 @@ SDL_InitFlags SDL_WasInit(SDL_InitFlags flags);
 
 ## Function Parameters
 
-|               |                                                                                        |
-| ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+|                                |           |                                                                                        |
+| ------------------------------ | --------- | -------------------------------------------------------------------------------------- |
+| [SDL_InitFlags](SDL_InitFlags) | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
 
 ## Return Value
 
-Returns a mask of all initialized subsystems if `flags` is 0, otherwise it
-returns the initialization status of the specified subsystems.
+([SDL_InitFlags](SDL_InitFlags)) Returns a mask of all initialized
+subsystems if `flags` is 0, otherwise it returns the initialization status
+of the specified subsystems.
 
 ## Version
 

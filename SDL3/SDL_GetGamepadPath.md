@@ -15,14 +15,14 @@ const char* SDL_GetGamepadPath(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+|                              |             |                                                                                  |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
 
 ## Return Value
 
-Returns the implementation dependent path for the gamepad, or NULL if there
-is no path or the identifier passed is invalid.
+(const char *) Returns the implementation dependent path for the gamepad,
+or NULL if there is no path or the identifier passed is invalid.
 
 ## Remarks
 

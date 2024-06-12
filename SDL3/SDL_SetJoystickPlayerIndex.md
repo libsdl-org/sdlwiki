@@ -15,14 +15,14 @@ int SDL_SetJoystickPlayerIndex(SDL_Joystick *joystick, int player_index);
 
 ## Function Parameters
 
-|                      |                                                                                                    |
-| -------------------- | -------------------------------------------------------------------------------------------------- |
-| **joystick**         | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)()              |
-| **player_index**     | Player index to assign to this joystick, or -1 to clear the player index and turn off player LEDs. |
+|                                |                  |                                                                                                    |
+| ------------------------------ | ---------------- | -------------------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)()              |
+| int                            | **player_index** | Player index to assign to this joystick, or -1 to clear the player index and turn off player LEDs. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

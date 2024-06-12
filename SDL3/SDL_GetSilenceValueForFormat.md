@@ -15,13 +15,13 @@ int SDL_GetSilenceValueForFormat(SDL_AudioFormat format);
 
 ## Function Parameters
 
-|                |                                 |
-| -------------- | ------------------------------- |
-| **format**     | the audio data format to query. |
+|                                    |            |                                 |
+| ---------------------------------- | ---------- | ------------------------------- |
+| [SDL_AudioFormat](SDL_AudioFormat) | **format** | the audio data format to query. |
 
 ## Return Value
 
-Returns A byte value that can be passed to memset.
+(int) Returns A byte value that can be passed to memset.
 
 ## Remarks
 

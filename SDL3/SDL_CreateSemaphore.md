@@ -15,14 +15,14 @@ SDL_Semaphore* SDL_CreateSemaphore(Uint32 initial_value);
 
 ## Function Parameters
 
-|                       |                                     |
-| --------------------- | ----------------------------------- |
-| **initial_value**     | the starting value of the semaphore |
+|        |                   |                                     |
+| ------ | ----------------- | ----------------------------------- |
+| Uint32 | **initial_value** | the starting value of the semaphore |
 
 ## Return Value
 
-Returns a new semaphore or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Semaphore](SDL_Semaphore) *) Returns a new semaphore or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

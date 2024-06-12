@@ -15,14 +15,15 @@ SDL_bool SDL_HasClipboardData(const char *mime_type);
 
 ## Function Parameters
 
-|                   |                                     |
-| ----------------- | ----------------------------------- |
-| **mime_type**     | The mime type to check for data for |
+|              |               |                                     |
+| ------------ | ------------- | ----------------------------------- |
+| const char * | **mime_type** | The mime type to check for data for |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there exists data in clipboard for the
-provided mime type, [SDL_FALSE](SDL_FALSE) if it does not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there exists data in
+clipboard for the provided mime type, [SDL_FALSE](SDL_FALSE) if it does
+not.
 
 ## Version
 

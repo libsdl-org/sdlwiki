@@ -15,13 +15,13 @@ int SDL_WaitSemaphore(SDL_Semaphore *sem);
 
 ## Function Parameters
 
-|             |                       |
-| ----------- | --------------------- |
-| **sem**     | the semaphore wait on |
+|                                  |         |                       |
+| -------------------------------- | ------- | --------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore wait on |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,8 +15,8 @@ const char* SDL_GetCurrentAudioDriver(void);
 
 ## Return Value
 
-Returns the name of the current audio driver or NULL if no driver has been
-initialized.
+(const char *) Returns the name of the current audio driver or NULL if no
+driver has been initialized.
 
 ## Remarks
 

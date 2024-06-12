@@ -15,13 +15,13 @@ const char* SDL_GetDisplayName(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                   |                                         |
-| ----------------- | --------------------------------------- |
-| **displayID**     | the instance ID of the display to query |
+|                                |               |                                         |
+| ------------------------------ | ------------- | --------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query |
 
 ## Return Value
 
-Returns the name of a display or NULL on failure; call
+(const char *) Returns the name of a display or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

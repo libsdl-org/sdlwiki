@@ -15,13 +15,13 @@ double SDL_cos(double x);
 
 ## Function Parameters
 
-|           |                                  |
-| --------- | -------------------------------- |
-| **x**     | floating point value, in radians |
+|        |       |                                  |
+| ------ | ----- | -------------------------------- |
+| double | **x** | floating point value, in radians |
 
 ## Return Value
 
-Returns cosine of `x`
+(double) Returns cosine of `x`
 
 ## Remarks
 

@@ -15,13 +15,13 @@ float SDL_asinf(float x);
 
 ## Function Parameters
 
-|           |                       |
-| --------- | --------------------- |
-| **x**     | floating point value. |
+|       |       |                       |
+| ----- | ----- | --------------------- |
+| float | **x** | floating point value. |
 
 ## Return Value
 
-Returns arc sine of `x`, in radians.
+(float) Returns arc sine of `x`, in radians.
 
 ## Remarks
 

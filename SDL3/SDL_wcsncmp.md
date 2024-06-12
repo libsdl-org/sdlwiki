@@ -15,16 +15,16 @@ int SDL_wcsncmp(const wchar_t *str1, const wchar_t *str2, size_t maxlen);
 
 ## Function Parameters
 
-|                |                                                      |
-| -------------- | ---------------------------------------------------- |
-| **str1**       | The first string to compare. NULL is not permitted!  |
-| **str2**       | The second string to compare. NULL is not permitted! |
-| **maxlen**     | The maximum number of wchar_t to compare.            |
+|                 |            |                                                      |
+| --------------- | ---------- | ---------------------------------------------------- |
+| const wchar_t * | **str1**   | The first string to compare. NULL is not permitted!  |
+| const wchar_t * | **str2**   | The second string to compare. NULL is not permitted! |
+| size_t          | **maxlen** | The maximum number of wchar_t to compare.            |
 
 ## Return Value
 
-Returns less than zero if str1 is "less than" str2, greater than zero if
-str1 is "greater than" str2, and zero if the strings match exactly.
+(int) Returns less than zero if str1 is "less than" str2, greater than zero
+if str1 is "greater than" str2, and zero if the strings match exactly.
 
 ## Remarks
 

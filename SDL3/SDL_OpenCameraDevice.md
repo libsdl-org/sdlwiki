@@ -15,15 +15,15 @@ SDL_Camera* SDL_OpenCameraDevice(SDL_CameraDeviceID instance_id, const SDL_Camer
 
 ## Function Parameters
 
-|                     |                                                                   |
-| ------------------- | ----------------------------------------------------------------- |
-| **instance_id**     | the camera device instance ID                                     |
-| **spec**            | The desired format for data the device will provide. Can be NULL. |
+|                                          |                 |                                                                   |
+| ---------------------------------------- | --------------- | ----------------------------------------------------------------- |
+| [SDL_CameraDeviceID](SDL_CameraDeviceID) | **instance_id** | the camera device instance ID                                     |
+| const [SDL_CameraSpec](SDL_CameraSpec) * | **spec**        | The desired format for data the device will provide. Can be NULL. |
 
 ## Return Value
 
-Returns device, or NULL on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+([SDL_Camera](SDL_Camera) *) Returns device, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

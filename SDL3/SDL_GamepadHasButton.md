@@ -15,15 +15,15 @@ SDL_bool SDL_GamepadHasButton(SDL_Gamepad *gamepad, SDL_GamepadButton button);
 
 ## Function Parameters
 
-|                 |                                                                       |
-| --------------- | --------------------------------------------------------------------- |
-| **gamepad**     | a gamepad                                                             |
-| **button**      | a button enum value (an [SDL_GamepadButton](SDL_GamepadButton) value) |
+|                                        |             |                                                                       |
+| -------------------------------------- | ----------- | --------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *           | **gamepad** | a gamepad                                                             |
+| [SDL_GamepadButton](SDL_GamepadButton) | **button**  | a button enum value (an [SDL_GamepadButton](SDL_GamepadButton) value) |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the gamepad has this button,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the gamepad has this
+button, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

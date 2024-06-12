@@ -15,9 +15,9 @@ void SDL_QuitSubSystem(SDL_InitFlags flags);
 
 ## Function Parameters
 
-|               |                                                                                        |
-| ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+|                                |           |                                                                                        |
+| ------------------------------ | --------- | -------------------------------------------------------------------------------------- |
+| [SDL_InitFlags](SDL_InitFlags) | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
 
 ## Remarks
 

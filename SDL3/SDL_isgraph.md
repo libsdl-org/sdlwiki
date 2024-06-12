@@ -15,13 +15,14 @@ int SDL_isgraph(int x);
 
 ## Function Parameters
 
-|           |                           |
-| --------- | ------------------------- |
-| **x**     | character value to check. |
+|     |       |                           |
+| --- | ----- | ------------------------- |
+| int | **x** | character value to check. |
 
 ## Return Value
 
-Returns non-zero if x falls within the character class, zero otherwise.
+(int) Returns non-zero if x falls within the character class, zero
+otherwise.
 
 ## Remarks
 

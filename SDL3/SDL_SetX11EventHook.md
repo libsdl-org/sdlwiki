@@ -15,10 +15,10 @@ void SDL_SetX11EventHook(SDL_X11EventHook callback, void *userdata);
 
 ## Function Parameters
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **callback**     | The [SDL_X11EventHook](SDL_X11EventHook) function to call. |
-| **userdata**     | a pointer to pass to every iteration of `callback`         |
+|                                      |              |                                                            |
+| ------------------------------------ | ------------ | ---------------------------------------------------------- |
+| [SDL_X11EventHook](SDL_X11EventHook) | **callback** | The [SDL_X11EventHook](SDL_X11EventHook) function to call. |
+| void *                               | **userdata** | a pointer to pass to every iteration of `callback`         |
 
 ## Remarks
 

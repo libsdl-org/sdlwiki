@@ -15,13 +15,13 @@ float SDL_log10f(float x);
 
 ## Function Parameters
 
-|           |                                               |
-| --------- | --------------------------------------------- |
-| **x**     | floating point value. Must be greater than 0. |
+|       |       |                                               |
+| ----- | ----- | --------------------------------------------- |
+| float | **x** | floating point value. Must be greater than 0. |
 
 ## Return Value
 
-Returns the logarithm of `x`
+(float) Returns the logarithm of `x`
 
 ## Remarks
 

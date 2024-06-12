@@ -15,7 +15,7 @@ size_t SDL_GetSIMDAlignment(void);
 
 ## Return Value
 
-Returns the alignment in bytes needed for available, known SIMD
+(size_t) Returns the alignment in bytes needed for available, known SIMD
 instructions.
 
 ## Remarks

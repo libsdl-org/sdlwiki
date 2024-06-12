@@ -15,14 +15,14 @@ SDL_bool SDL_TryLockSpinlock(SDL_SpinLock *lock);
 
 ## Function Parameters
 
-|              |                              |
-| ------------ | ---------------------------- |
-| **lock**     | a pointer to a lock variable |
+|                                |          |                              |
+| ------------------------------ | -------- | ---------------------------- |
+| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the lock succeeded, [SDL_FALSE](SDL_FALSE)
-if the lock is already held.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the lock succeeded,
+[SDL_FALSE](SDL_FALSE) if the lock is already held.
 
 ## Remarks
 

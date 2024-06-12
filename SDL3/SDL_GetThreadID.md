@@ -15,14 +15,14 @@ SDL_ThreadID SDL_GetThreadID(SDL_Thread * thread);
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **thread**     | the thread to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Thread](SDL_Thread) * | **thread** | the thread to query |
 
 ## Return Value
 
-Returns the ID of the specified thread, or the ID of the current thread if
-`thread` is NULL.
+([SDL_ThreadID](SDL_ThreadID)) Returns the ID of the specified thread, or
+the ID of the current thread if `thread` is NULL.
 
 ## Remarks
 

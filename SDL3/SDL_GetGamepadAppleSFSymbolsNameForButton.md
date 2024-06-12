@@ -15,14 +15,14 @@ const char* SDL_GetGamepadAppleSFSymbolsNameForButton(SDL_Gamepad *gamepad, SDL_
 
 ## Function Parameters
 
-|                 |                         |
-| --------------- | ----------------------- |
-| **gamepad**     | the gamepad to query    |
-| **button**      | a button on the gamepad |
+|                                        |             |                         |
+| -------------------------------------- | ----------- | ----------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *           | **gamepad** | the gamepad to query    |
+| [SDL_GamepadButton](SDL_GamepadButton) | **button**  | a button on the gamepad |
 
 ## Return Value
 
-Returns the sfSymbolsName or NULL if the name can't be found
+(const char *) Returns the sfSymbolsName or NULL if the name can't be found
 
 ## Remarks
 

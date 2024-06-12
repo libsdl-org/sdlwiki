@@ -15,14 +15,14 @@ SDL_bool SDL_EventEnabled(Uint32 type);
 
 ## Function Parameters
 
-|              |                                                                   |
-| ------------ | ----------------------------------------------------------------- |
-| **type**     | the type of event; see [SDL_EventType](SDL_EventType) for details |
+|        |          |                                                                   |
+| ------ | -------- | ----------------------------------------------------------------- |
+| Uint32 | **type** | the type of event; see [SDL_EventType](SDL_EventType) for details |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the event is being processed,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the event is being
+processed, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

@@ -15,9 +15,9 @@ void SDL_CloseSensor(SDL_Sensor *sensor);
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to close |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to close |
 
 ## Version
 

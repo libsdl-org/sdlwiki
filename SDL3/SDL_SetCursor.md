@@ -15,13 +15,13 @@ int SDL_SetCursor(SDL_Cursor * cursor);
 
 ## Function Parameters
 
-|                |                         |
-| -------------- | ----------------------- |
-| **cursor**     | a cursor to make active |
+|                            |            |                         |
+| -------------------------- | ---------- | ----------------------- |
+| [SDL_Cursor](SDL_Cursor) * | **cursor** | a cursor to make active |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

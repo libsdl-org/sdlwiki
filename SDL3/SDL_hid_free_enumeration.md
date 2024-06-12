@@ -15,9 +15,9 @@ void SDL_hid_free_enumeration(SDL_hid_device_info *devs);
 
 ## Function Parameters
 
-|              |                                                                                            |
-| ------------ | ------------------------------------------------------------------------------------------ |
-| **devs**     | Pointer to a list of struct_device returned from [SDL_hid_enumerate](SDL_hid_enumerate)(). |
+|                                              |          |                                                                                            |
+| -------------------------------------------- | -------- | ------------------------------------------------------------------------------------------ |
+| [SDL_hid_device_info](SDL_hid_device_info) * | **devs** | Pointer to a list of struct_device returned from [SDL_hid_enumerate](SDL_hid_enumerate)(). |
 
 ## Remarks
 

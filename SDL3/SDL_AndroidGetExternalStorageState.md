@@ -15,13 +15,13 @@ int SDL_AndroidGetExternalStorageState(Uint32 *state);
 
 ## Function Parameters
 
-|               |                                                                                                    |
-| ------------- | -------------------------------------------------------------------------------------------------- |
-| **state**     | filled with the current state of external storage. 0 if external storage is currently unavailable. |
+|          |           |                                                                                                    |
+| -------- | --------- | -------------------------------------------------------------------------------------------------- |
+| Uint32 * | **state** | filled with the current state of external storage. 0 if external storage is currently unavailable. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

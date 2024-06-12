@@ -15,17 +15,17 @@ int SDL_SetRenderLogicalPresentation(SDL_Renderer *renderer, float w, float h, S
 
 ## Function Parameters
 
-|                    |                                      |
-| ------------------ | ------------------------------------ |
-| **renderer**       | the rendering context                |
-| **w**              | the width of the logical resolution  |
-| **h**              | the height of the logical resolution |
-| **mode**           | the presentation mode used           |
-| **scale_mode**     | the scale mode used                  |
+|                                                                    |                |                                      |
+| ------------------------------------------------------------------ | -------------- | ------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) *                                     | **renderer**   | the rendering context                |
+| float                                                              | **w**          | the width of the logical resolution  |
+| float                                                              | **h**          | the height of the logical resolution |
+| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) | **mode**       | the presentation mode used           |
+| [SDL_ScaleMode](SDL_ScaleMode)                                     | **scale_mode** | the scale mode used                  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

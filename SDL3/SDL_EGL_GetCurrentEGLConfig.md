@@ -15,8 +15,8 @@ SDL_EGLConfig SDL_EGL_GetCurrentEGLConfig(void);
 
 ## Return Value
 
-Returns the currently active EGL config or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_EGLConfig](SDL_EGLConfig)) Returns the currently active EGL config or
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

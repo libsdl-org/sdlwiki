@@ -15,15 +15,15 @@ int SDL_GetSensorData(SDL_Sensor *sensor, float *data, int num_values);
 
 ## Function Parameters
 
-|                    |                                                |
-| ------------------ | ---------------------------------------------- |
-| **sensor**         | The [SDL_Sensor](SDL_Sensor) object to query   |
-| **data**           | A pointer filled with the current sensor state |
-| **num_values**     | The number of values to write to data          |
+|                            |                |                                                |
+| -------------------------- | -------------- | ---------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor**     | The [SDL_Sensor](SDL_Sensor) object to query   |
+| float *                    | **data**       | A pointer filled with the current sensor state |
+| int                        | **num_values** | The number of values to write to data          |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

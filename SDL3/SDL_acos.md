@@ -15,13 +15,13 @@ double SDL_acos(double x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|        |       |                      |
+| ------ | ----- | -------------------- |
+| double | **x** | floating point value |
 
 ## Return Value
 
-Returns arc cosine of `x`, in radians
+(double) Returns arc cosine of `x`, in radians
 
 ## Remarks
 

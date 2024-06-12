@@ -15,13 +15,13 @@ int SDL_AddGamepadMappingsFromFile(const char *file);
 
 ## Function Parameters
 
-|              |                           |
-| ------------ | ------------------------- |
-| **file**     | the mappings file to load |
+|              |          |                           |
+| ------------ | -------- | ------------------------- |
+| const char * | **file** | the mappings file to load |
 
 ## Return Value
 
-Returns the number of mappings added or -1 on error; call
+(int) Returns the number of mappings added or -1 on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

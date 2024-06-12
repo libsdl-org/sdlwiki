@@ -15,14 +15,15 @@ SDL_bool SDL_PenConnected(SDL_PenID instance_id);
 
 ## Function Parameters
 
-|                     |           |
-| ------------------- | --------- |
-| **instance_id**     | A pen ID. |
+|                        |                 |           |
+| ---------------------- | --------------- | --------- |
+| [SDL_PenID](SDL_PenID) | **instance_id** | A pen ID. |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if "instance_id" is valid and the
-corresponding pen is attached, or [SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if "instance_id" is
+valid and the corresponding pen is attached, or [SDL_FALSE](SDL_FALSE)
+otherwise.
 
 ## Remarks
 

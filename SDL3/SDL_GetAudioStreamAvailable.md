@@ -15,13 +15,13 @@ int SDL_GetAudioStreamAvailable(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                           |
-| -------------- | ------------------------- |
-| **stream**     | The audio stream to query |
+|                                      |            |                           |
+| ------------------------------------ | ---------- | ------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to query |
 
 ## Return Value
 
-Returns the number of converted/resampled bytes available.
+(int) Returns the number of converted/resampled bytes available.
 
 ## Remarks
 

@@ -15,13 +15,13 @@ Uint64 SDL_GetStorageSpaceRemaining(SDL_Storage *storage);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **storage**     | a storage container to query |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to query |
 
 ## Return Value
 
-Returns the amount of remaining space, in bytes
+(Uint64) Returns the amount of remaining space, in bytes
 
 ## Version
 

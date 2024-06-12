@@ -15,13 +15,13 @@ SDL_GamepadType SDL_GetRealGamepadType(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **gamepad**     | the gamepad object to query. |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object to query. |
 
 ## Return Value
 
-Returns the gamepad type, or
+([SDL_GamepadType](SDL_GamepadType)) Returns the gamepad type, or
 [SDL_GAMEPAD_TYPE_UNKNOWN](SDL_GAMEPAD_TYPE_UNKNOWN) if it's not available.
 
 ## Version

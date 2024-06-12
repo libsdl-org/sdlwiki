@@ -15,13 +15,13 @@ int SDL_toupper(int x);
 
 ## Function Parameters
 
-|           |                           |
-| --------- | ------------------------- |
-| **x**     | character value to check. |
+|     |       |                           |
+| --- | ----- | ------------------------- |
+| int | **x** | character value to check. |
 
 ## Return Value
 
-Returns Capitalized version of x, or x if no conversion available.
+(int) Returns Capitalized version of x, or x if no conversion available.
 
 ## Remarks
 

@@ -15,15 +15,15 @@ int SDL_GetMaxHapticEffects(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
 
 ## Return Value
 
-Returns the number of effects the haptic device can store or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+(int) Returns the number of effects the haptic device can store or a
+negative error code on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

@@ -15,14 +15,15 @@ SDL_JoystickID SDL_GetJoystickInstanceID(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+|                                |              |                                                                           |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
 
 ## Return Value
 
-Returns the instance ID of the specified joystick on success or 0 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_JoystickID](SDL_JoystickID)) Returns the instance ID of the specified
+joystick on success or 0 on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Version
 

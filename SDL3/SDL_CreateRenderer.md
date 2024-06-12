@@ -15,15 +15,16 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name);
 
 ## Function Parameters
 
-|                |                                                                                                                    |
-| -------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **window**     | the window where rendering is displayed                                                                            |
-| **name**       | the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags |
+|                            |            |                                                                                                                    |
+| -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window where rendering is displayed                                                                            |
+| const char *               | **name**   | the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags |
 
 ## Return Value
 
-Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Renderer](SDL_Renderer) *) Returns a valid rendering context or NULL
+if there was an error; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

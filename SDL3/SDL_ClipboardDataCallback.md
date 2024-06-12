@@ -15,11 +15,11 @@ typedef const void *(SDLCALL *SDL_ClipboardDataCallback)(void *userdata, const c
 
 ## Function Parameters
 
-|                   |                                                          |
-| ----------------- | -------------------------------------------------------- |
-| **userdata**      | A pointer to provided user data                          |
-| **mime_type**     | The requested mime-type                                  |
-| **size**          | A pointer filled in with the length of the returned data |
+|               |                                                          |
+| ------------- | -------------------------------------------------------- |
+| **userdata**  | A pointer to provided user data                          |
+| **mime_type** | The requested mime-type                                  |
+| **size**      | A pointer filled in with the length of the returned data |
 
 ## Return Value
 

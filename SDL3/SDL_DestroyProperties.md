@@ -15,9 +15,9 @@ void SDL_DestroyProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|               |                           |
-| ------------- | ------------------------- |
-| **props**     | the properties to destroy |
+|                                      |           |                           |
+| ------------------------------------ | --------- | ------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to destroy |
 
 ## Remarks
 

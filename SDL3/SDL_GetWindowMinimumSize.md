@@ -15,15 +15,15 @@ int SDL_GetWindowMinimumSize(SDL_Window *window, int *w, int *h);
 
 ## Function Parameters
 
-|                |                                                                        |
-| -------------- | ---------------------------------------------------------------------- |
-| **window**     | the window to query                                                    |
-| **w**          | a pointer filled in with the minimum width of the window, may be NULL  |
-| **h**          | a pointer filled in with the minimum height of the window, may be NULL |
+|                            |            |                                                                        |
+| -------------------------- | ---------- | ---------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query                                                    |
+| int *                      | **w**      | a pointer filled in with the minimum width of the window, may be NULL  |
+| int *                      | **h**      | a pointer filled in with the minimum height of the window, may be NULL |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

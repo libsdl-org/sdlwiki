@@ -17,16 +17,16 @@ SDL_bool SDL_GetRectIntersection(const SDL_Rect * A,
 
 ## Function Parameters
 
-|                |                                                                                             |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| **A**          | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                          |
-| **B**          | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                         |
-| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the intersection of rectangles `A` and `B` |
+|                              |            |                                                                                             |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **A**      | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                          |
+| const [SDL_Rect](SDL_Rect) * | **B**      | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                         |
+| [SDL_Rect](SDL_Rect) *       | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the intersection of rectangles `A` and `B` |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is an
+intersection, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

@@ -15,7 +15,7 @@ int SDL_GetNumCameraDrivers(void);
 
 ## Return Value
 
-Returns the number of built-in camera drivers.
+(int) Returns the number of built-in camera drivers.
 
 ## Remarks
 

@@ -15,15 +15,16 @@ SDL_CameraSpec* SDL_GetCameraDeviceSupportedFormats(SDL_CameraDeviceID devid, in
 
 ## Function Parameters
 
-|               |                                                                           |
-| ------------- | ------------------------------------------------------------------------- |
-| **devid**     | the camera device instance ID to query.                                   |
-| **count**     | a pointer filled in with the number of elements in the list. Can be NULL. |
+|                                          |           |                                                                           |
+| ---------------------------------------- | --------- | ------------------------------------------------------------------------- |
+| [SDL_CameraDeviceID](SDL_CameraDeviceID) | **devid** | the camera device instance ID to query.                                   |
+| int *                                    | **count** | a pointer filled in with the number of elements in the list. Can be NULL. |
 
 ## Return Value
 
-Returns a 0 terminated array of [SDL_CameraSpecs](SDL_CameraSpecs), which
-should be freed with [SDL_free](SDL_free)(), or NULL on error; call
+([SDL_CameraSpec](SDL_CameraSpec) *) Returns a 0 terminated array of
+[SDL_CameraSpecs](SDL_CameraSpecs), which should be freed with
+[SDL_free](SDL_free)(), or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more details.
 
 ## Remarks

@@ -15,14 +15,14 @@ int SDL_SetRenderViewport(SDL_Renderer *renderer, const SDL_FRect *rect);
 
 ## Function Parameters
 
-|                  |                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                                                                |
-| **rect**         | the [SDL_FRect](SDL_FRect) structure representing the drawing area, or NULL to set the viewport to the entire target |
+|                                |              |                                                                                                                      |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                |
+| const [SDL_FRect](SDL_FRect) * | **rect**     | the [SDL_FRect](SDL_FRect) structure representing the drawing area, or NULL to set the viewport to the entire target |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

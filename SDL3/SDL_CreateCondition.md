@@ -15,8 +15,8 @@ SDL_Condition* SDL_CreateCondition(void);
 
 ## Return Value
 
-Returns a new condition variable or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Condition](SDL_Condition) *) Returns a new condition variable or NULL
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

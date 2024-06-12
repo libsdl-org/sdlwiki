@@ -15,13 +15,13 @@ int SDL_CloseIO(SDL_IOStream *context);
 
 ## Function Parameters
 
-|                 |                                                 |
-| --------------- | ----------------------------------------------- |
-| **context**     | [SDL_IOStream](SDL_IOStream) structure to close |
+|                                |             |                                                 |
+| ------------------------------ | ----------- | ----------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **context** | [SDL_IOStream](SDL_IOStream) structure to close |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

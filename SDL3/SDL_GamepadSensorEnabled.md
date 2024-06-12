@@ -15,15 +15,15 @@ SDL_bool SDL_GamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type);
 
 ## Function Parameters
 
-|                 |                             |
-| --------------- | --------------------------- |
-| **gamepad**     | The gamepad to query        |
-| **type**        | The type of sensor to query |
+|                                  |             |                             |
+| -------------------------------- | ----------- | --------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *     | **gamepad** | The gamepad to query        |
+| [SDL_SensorType](SDL_SensorType) | **type**    | The type of sensor to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the sensor is enabled,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the sensor is
+enabled, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

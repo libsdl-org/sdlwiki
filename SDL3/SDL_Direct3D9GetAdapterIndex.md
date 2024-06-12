@@ -15,13 +15,13 @@ int SDL_Direct3D9GetAdapterIndex(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                   |                                      |
-| ----------------- | ------------------------------------ |
-| **displayID**     | the instance of the display to query |
+|                                |               |                                      |
+| ------------------------------ | ------------- | ------------------------------------ |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance of the display to query |
 
 ## Return Value
 
-Returns the D3D9 adapter index on success or a negative error code on
+(int) Returns the D3D9 adapter index on success or a negative error code on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

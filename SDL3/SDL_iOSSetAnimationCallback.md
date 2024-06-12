@@ -15,16 +15,16 @@ int SDL_iOSSetAnimationCallback(SDL_Window * window, int interval, SDL_iOSAnimat
 
 ## Function Parameters
 
-|                       |                                                              |
-| --------------------- | ------------------------------------------------------------ |
-| **window**            | the window for which the animation callback should be set    |
-| **interval**          | the number of frames after which **callback** will be called |
-| **callback**          | the function to call for every frame.                        |
-| **callbackParam**     | a pointer that is passed to `callback`.                      |
+|                                                      |                   |                                                              |
+| ---------------------------------------------------- | ----------------- | ------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) *                           | **window**        | the window for which the animation callback should be set    |
+| int                                                  | **interval**      | the number of frames after which **callback** will be called |
+| [SDL_iOSAnimationCallback](SDL_iOSAnimationCallback) | **callback**      | the function to call for every frame.                        |
+| void *                                               | **callbackParam** | a pointer that is passed to `callback`.                      |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

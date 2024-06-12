@@ -15,14 +15,14 @@ float SDL_GetGamepadSensorDataRate(SDL_Gamepad *gamepad, SDL_SensorType type);
 
 ## Function Parameters
 
-|                 |                             |
-| --------------- | --------------------------- |
-| **gamepad**     | The gamepad to query        |
-| **type**        | The type of sensor to query |
+|                                  |             |                             |
+| -------------------------------- | ----------- | --------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *     | **gamepad** | The gamepad to query        |
+| [SDL_SensorType](SDL_SensorType) | **type**    | The type of sensor to query |
 
 ## Return Value
 
-Returns the data rate, or 0.0f if the data rate is not available.
+(float) Returns the data rate, or 0.0f if the data rate is not available.
 
 ## Version
 

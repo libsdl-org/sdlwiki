@@ -15,7 +15,7 @@ int SDL_GetCPUCacheLineSize(void);
 
 ## Return Value
 
-Returns the L1 cache line size of the CPU, in bytes.
+(int) Returns the L1 cache line size of the CPU, in bytes.
 
 ## Remarks
 

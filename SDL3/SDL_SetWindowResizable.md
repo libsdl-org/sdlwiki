@@ -15,14 +15,14 @@ int SDL_SetWindowResizable(SDL_Window *window, SDL_bool resizable);
 
 ## Function Parameters
 
-|                   |                                                                            |
-| ----------------- | -------------------------------------------------------------------------- |
-| **window**        | the window of which to change the resizable state                          |
-| **resizable**     | [SDL_TRUE](SDL_TRUE) to allow resizing, [SDL_FALSE](SDL_FALSE) to disallow |
+|                            |               |                                                                            |
+| -------------------------- | ------------- | -------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**    | the window of which to change the resizable state                          |
+| [SDL_bool](SDL_bool)       | **resizable** | [SDL_TRUE](SDL_TRUE) to allow resizing, [SDL_FALSE](SDL_FALSE) to disallow |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

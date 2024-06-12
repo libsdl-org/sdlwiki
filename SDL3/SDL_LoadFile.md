@@ -15,14 +15,14 @@ void* SDL_LoadFile(const char *file, size_t *datasize);
 
 ## Function Parameters
 
-|                  |                                                  |
-| ---------------- | ------------------------------------------------ |
-| **file**         | the path to read all available data from         |
-| **datasize**     | if not NULL, will store the number of bytes read |
+|              |              |                                                  |
+| ------------ | ------------ | ------------------------------------------------ |
+| const char * | **file**     | the path to read all available data from         |
+| size_t *     | **datasize** | if not NULL, will store the number of bytes read |
 
 ## Return Value
 
-Returns the data, or NULL if there was an error.
+(void *) Returns the data, or NULL if there was an error.
 
 ## Remarks
 

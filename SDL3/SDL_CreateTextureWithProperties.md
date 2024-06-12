@@ -15,16 +15,17 @@ SDL_Texture* SDL_CreateTextureWithProperties(SDL_Renderer *renderer, SDL_Propert
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | the rendering context |
-| **props**        | the properties to use |
+|                                      |              |                       |
+| ------------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) *       | **renderer** | the rendering context |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**    | the properties to use |
 
 ## Return Value
 
-Returns a pointer to the created texture or NULL if no rendering context
-was active, the format was unsupported, or the width or height were out of
-range; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Texture](SDL_Texture) *) Returns a pointer to the created texture or
+NULL if no rendering context was active, the format was unsupported, or the
+width or height were out of range; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

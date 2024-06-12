@@ -15,8 +15,8 @@ SDL_bool SDL_JoystickEventsEnabled(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if joystick events are being processed,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if joystick events are
+being processed, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

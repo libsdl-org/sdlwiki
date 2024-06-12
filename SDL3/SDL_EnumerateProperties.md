@@ -15,15 +15,15 @@ int SDL_EnumerateProperties(SDL_PropertiesID props, SDL_EnumeratePropertiesCallb
 
 ## Function Parameters
 
-|                  |                                        |
-| ---------------- | -------------------------------------- |
-| **props**        | the properties to query                |
-| **callback**     | the function to call for each property |
-| **userdata**     | a pointer that is passed to `callback` |
+|                                                                    |              |                                        |
+| ------------------------------------------------------------------ | ------------ | -------------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID)                               | **props**    | the properties to query                |
+| [SDL_EnumeratePropertiesCallback](SDL_EnumeratePropertiesCallback) | **callback** | the function to call for each property |
+| void *                                                             | **userdata** | a pointer that is passed to `callback` |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

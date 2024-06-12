@@ -15,14 +15,15 @@ char * SDL_GetGamepadMapping(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                                                     |
-| --------------- | --------------------------------------------------- |
-| **gamepad**     | the gamepad you want to get the current mapping for |
+|                              |             |                                                     |
+| ---------------------------- | ----------- | --------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad you want to get the current mapping for |
 
 ## Return Value
 
-Returns a string that has the gamepad's mapping or NULL if no mapping is
-available; call [SDL_GetError](SDL_GetError)() for more information.
+(char *) Returns a string that has the gamepad's mapping or NULL if no
+mapping is available; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

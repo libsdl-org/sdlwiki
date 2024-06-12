@@ -15,15 +15,15 @@ int SDL_GetAudioDeviceFormat(SDL_AudioDeviceID devid, SDL_AudioSpec *spec, int *
 
 ## Function Parameters
 
-|                       |                                                                     |
-| --------------------- | ------------------------------------------------------------------- |
-| **devid**             | the instance ID of the device to query.                             |
-| **spec**              | On return, will be filled with device details.                      |
-| **sample_frames**     | Pointer to store device buffer size, in sample frames. Can be NULL. |
+|                                        |                   |                                                                     |
+| -------------------------------------- | ----------------- | ------------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid**         | the instance ID of the device to query.                             |
+| [SDL_AudioSpec](SDL_AudioSpec) *       | **spec**          | On return, will be filled with device details.                      |
+| int *                                  | **sample_frames** | Pointer to store device buffer size, in sample frames. Can be NULL. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

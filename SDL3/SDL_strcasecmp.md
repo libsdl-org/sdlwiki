@@ -15,15 +15,15 @@ int SDL_strcasecmp(const char *str1, const char *str2);
 
 ## Function Parameters
 
-|              |                                                      |
-| ------------ | ---------------------------------------------------- |
-| **str1**     | The first string to compare. NULL is not permitted!  |
-| **str2**     | The second string to compare. NULL is not permitted! |
+|              |          |                                                      |
+| ------------ | -------- | ---------------------------------------------------- |
+| const char * | **str1** | The first string to compare. NULL is not permitted!  |
+| const char * | **str2** | The second string to compare. NULL is not permitted! |
 
 ## Return Value
 
-Returns less than zero if str1 is "less than" str2, greater than zero if
-str1 is "greater than" str2, and zero if the strings match exactly.
+(int) Returns less than zero if str1 is "less than" str2, greater than zero
+if str1 is "greater than" str2, and zero if the strings match exactly.
 
 ## Remarks
 

@@ -15,14 +15,14 @@ int SDL_FlipSurface(SDL_Surface *surface, SDL_FlipMode flip);
 
 ## Function Parameters
 
-|                 |                       |
-| --------------- | --------------------- |
-| **surface**     | the surface to flip   |
-| **flip**        | the direction to flip |
+|                              |             |                       |
+| ---------------------------- | ----------- | --------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the surface to flip   |
+| [SDL_FlipMode](SDL_FlipMode) | **flip**    | the direction to flip |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

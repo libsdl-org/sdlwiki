@@ -15,14 +15,14 @@ int SDL_SetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode blendMode);
 
 ## Function Parameters
 
-|                   |                                                                |
-| ----------------- | -------------------------------------------------------------- |
-| **texture**       | the texture to update                                          |
-| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode) to use for texture blending |
+|                                |               |                                                                |
+| ------------------------------ | ------------- | -------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) *   | **texture**   | the texture to update                                          |
+| [SDL_BlendMode](SDL_BlendMode) | **blendMode** | the [SDL_BlendMode](SDL_BlendMode) to use for texture blending |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,15 +15,15 @@ int SDL_RenderLines(SDL_Renderer *renderer, const SDL_FPoint *points, int count)
 
 ## Function Parameters
 
-|                  |                                                |
-| ---------------- | ---------------------------------------------- |
-| **renderer**     | The renderer which should draw multiple lines. |
-| **points**       | The points along the lines                     |
-| **count**        | The number of points, drawing count-1 lines    |
+|                                  |              |                                                |
+| -------------------------------- | ------------ | ---------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer** | The renderer which should draw multiple lines. |
+| const [SDL_FPoint](SDL_FPoint) * | **points**   | The points along the lines                     |
+| int                              | **count**    | The number of points, drawing count-1 lines    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

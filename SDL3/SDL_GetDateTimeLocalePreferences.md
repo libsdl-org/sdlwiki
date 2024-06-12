@@ -15,15 +15,15 @@ int SDL_GetDateTimeLocalePreferences(SDL_DateFormat *dateFormat, SDL_TimeFormat 
 
 ## Function Parameters
 
-|                    |                                                                                                 |
-| ------------------ | ----------------------------------------------------------------------------------------------- |
-| **dateFormat**     | a pointer to the [SDL_DateFormat](SDL_DateFormat) to hold the returned date format, may be NULL |
-| **timeFormat**     | a pointer to the [SDL_TimeFormat](SDL_TimeFormat) to hold the returned time format, may be NULL |
+|                                    |                |                                                                                                 |
+| ---------------------------------- | -------------- | ----------------------------------------------------------------------------------------------- |
+| [SDL_DateFormat](SDL_DateFormat) * | **dateFormat** | a pointer to the [SDL_DateFormat](SDL_DateFormat) to hold the returned date format, may be NULL |
+| [SDL_TimeFormat](SDL_TimeFormat) * | **timeFormat** | a pointer to the [SDL_TimeFormat](SDL_TimeFormat) to hold the returned time format, may be NULL |
 
 ## Return Value
 
-Returns 0 on success or -1 on error; call [SDL_GetError](SDL_GetError)()
-for more information.
+(int) Returns 0 on success or -1 on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -15,8 +15,8 @@ SDL_bool SDL_IsMouseHaptic(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the mouse is haptic or
-[SDL_FALSE](SDL_FALSE) if it isn't.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the mouse is haptic
+or [SDL_FALSE](SDL_FALSE) if it isn't.
 
 ## Version
 

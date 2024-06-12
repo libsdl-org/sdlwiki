@@ -15,14 +15,14 @@ int SDL_RemoveStoragePath(SDL_Storage *storage, const char *path);
 
 ## Function Parameters
 
-|                 |                                        |
-| --------------- | -------------------------------------- |
-| **storage**     | a storage container                    |
-| **path**        | the path of the directory to enumerate |
+|                              |             |                                        |
+| ---------------------------- | ----------- | -------------------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container                    |
+| const char *                 | **path**    | the path of the directory to enumerate |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

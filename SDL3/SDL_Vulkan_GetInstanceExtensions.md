@@ -15,13 +15,14 @@ char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
 
 ## Function Parameters
 
-|               |                                                             |
-| ------------- | ----------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of extensions returned. |
+|          |           |                                                             |
+| -------- | --------- | ----------------------------------------------------------- |
+| Uint32 * | **count** | a pointer filled in with the number of extensions returned. |
 
 ## Return Value
 
-Returns An array of extension name strings on success, NULL on error.
+(char const * const *) Returns An array of extension name strings on
+success, NULL on error.
 
 ## Remarks
 

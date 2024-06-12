@@ -15,13 +15,13 @@ float SDL_truncf(float x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|       |       |                      |
+| ----- | ----- | -------------------- |
+| float | **x** | floating point value |
 
 ## Return Value
 
-Returns `x` truncated to an integer
+(float) Returns `x` truncated to an integer
 
 ## Remarks
 

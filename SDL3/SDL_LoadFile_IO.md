@@ -15,15 +15,15 @@ void* SDL_LoadFile_IO(SDL_IOStream *src, size_t *datasize, SDL_bool closeio);
 
 ## Function Parameters
 
-|                  |                                                                                                                     |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **src**          | the [SDL_IOStream](SDL_IOStream) to read all available data from                                                    |
-| **datasize**     | if not NULL, will store the number of bytes read                                                                    |
-| **closeio**      | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
+|                                |              |                                                                                                                     |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**      | the [SDL_IOStream](SDL_IOStream) to read all available data from                                                    |
+| size_t *                       | **datasize** | if not NULL, will store the number of bytes read                                                                    |
+| [SDL_bool](SDL_bool)           | **closeio**  | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
-Returns the data, or NULL if there was an error.
+(void *) Returns the data, or NULL if there was an error.
 
 ## Remarks
 

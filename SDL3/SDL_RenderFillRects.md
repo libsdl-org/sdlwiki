@@ -15,15 +15,15 @@ int SDL_RenderFillRects(SDL_Renderer *renderer, const SDL_FRect *rects, int coun
 
 ## Function Parameters
 
-|                  |                                                     |
-| ---------------- | --------------------------------------------------- |
-| **renderer**     | The renderer which should fill multiple rectangles. |
-| **rects**        | A pointer to an array of destination rectangles.    |
-| **count**        | The number of rectangles.                           |
+|                                |              |                                                     |
+| ------------------------------ | ------------ | --------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should fill multiple rectangles. |
+| const [SDL_FRect](SDL_FRect) * | **rects**    | A pointer to an array of destination rectangles.    |
+| int                            | **count**    | The number of rectangles.                           |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

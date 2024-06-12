@@ -15,8 +15,9 @@ SDL_IOStream* SDL_IOFromDynamicMem(void);
 
 ## Return Value
 
-Returns a pointer to a new [SDL_IOStream](SDL_IOStream) structure, or NULL
-if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_IOStream](SDL_IOStream) *) Returns a pointer to a new
+[SDL_IOStream](SDL_IOStream) structure, or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

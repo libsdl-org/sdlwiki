@@ -15,13 +15,13 @@ int SDL_SetTextInputRect(const SDL_Rect *rect);
 
 ## Function Parameters
 
-|              |                                                                                                 |
-| ------------ | ----------------------------------------------------------------------------------------------- |
-| **rect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to receive text (ignored if NULL) |
+|                              |          |                                                                                                 |
+| ---------------------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **rect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to receive text (ignored if NULL) |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

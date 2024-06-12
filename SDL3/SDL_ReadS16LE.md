@@ -15,15 +15,16 @@ SDL_bool SDL_ReadS16LE(SDL_IOStream *src, Sint16 *value);
 
 ## Function Parameters
 
-|               |                                        |
-| ------------- | -------------------------------------- |
-| **src**       | the stream from which to read data     |
-| **value**     | a pointer filled in with the data read |
+|                                |           |                                        |
+| ------------------------------ | --------- | -------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data     |
+| Sint16 *                       | **value** | a pointer filled in with the data read |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on successful write, [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on successful write,
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

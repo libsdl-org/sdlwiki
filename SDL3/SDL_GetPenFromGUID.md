@@ -15,13 +15,13 @@ SDL_PenID SDL_GetPenFromGUID(SDL_GUID guid);
 
 ## Function Parameters
 
-|              |             |
-| ------------ | ----------- |
-| **guid**     | A pen GUID. |
+|                      |          |             |
+| -------------------- | -------- | ----------- |
+| [SDL_GUID](SDL_GUID) | **guid** | A pen GUID. |
 
 ## Return Value
 
-Returns A valid [SDL_PenID](SDL_PenID), or
+([SDL_PenID](SDL_PenID)) Returns A valid [SDL_PenID](SDL_PenID), or
 [SDL_PEN_INVALID](SDL_PEN_INVALID) if there is no matching
 [SDL_PenID](SDL_PenID).
 

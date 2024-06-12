@@ -15,15 +15,15 @@ SDL_AudioDeviceID* SDL_GetAudioOutputDevices(int *count);
 
 ## Function Parameters
 
-|               |                                                                           |
-| ------------- | ------------------------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of devices returned. NULL is allowed. |
+|       |           |                                                                           |
+| ----- | --------- | ------------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of devices returned. NULL is allowed. |
 
 ## Return Value
 
-Returns a 0 terminated array of device instance IDs which should be freed
-with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+([SDL_AudioDeviceID](SDL_AudioDeviceID) *) Returns a 0 terminated array of
+device instance IDs which should be freed with [SDL_free](SDL_free)(), or
+NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
 
 ## Remarks
 

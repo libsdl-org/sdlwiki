@@ -15,13 +15,13 @@ int SDL_SignalCondition(SDL_Condition *cond);
 
 ## Function Parameters
 
-|              |                                  |
-| ------------ | -------------------------------- |
-| **cond**     | the condition variable to signal |
+|                                  |          |                                  |
+| -------------------------------- | -------- | -------------------------------- |
+| [SDL_Condition](SDL_Condition) * | **cond** | the condition variable to signal |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety

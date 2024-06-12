@@ -15,17 +15,17 @@ SDL_hid_device_info * SDL_hid_enumerate(unsigned short vendor_id, unsigned short
 
 ## Function Parameters
 
-|                    |                                                                                 |
-| ------------------ | ------------------------------------------------------------------------------- |
-| **vendor_id**      | The Vendor ID (VID) of the types of device to open, or 0 to match any vendor.   |
-| **product_id**     | The Product ID (PID) of the types of device to open, or 0 to match any product. |
+|                |                |                                                                                 |
+| -------------- | -------------- | ------------------------------------------------------------------------------- |
+| unsigned short | **vendor_id**  | The Vendor ID (VID) of the types of device to open, or 0 to match any vendor.   |
+| unsigned short | **product_id** | The Product ID (PID) of the types of device to open, or 0 to match any product. |
 
 ## Return Value
 
-Returns a pointer to a linked list of type
-[SDL_hid_device_info](SDL_hid_device_info), containing information about
-the HID devices attached to the system, or NULL in the case of failure.
-Free this linked list by calling
+([SDL_hid_device_info](SDL_hid_device_info) *) Returns a pointer to a
+linked list of type [SDL_hid_device_info](SDL_hid_device_info), containing
+information about the HID devices attached to the system, or NULL in the
+case of failure. Free this linked list by calling
 [SDL_hid_free_enumeration](SDL_hid_free_enumeration)().
 
 ## Remarks

@@ -15,19 +15,19 @@ int SDL_SetJoystickVirtualTouchpad(SDL_Joystick *joystick, int touchpad, int fin
 
 ## Function Parameters
 
-|                  |                                                                                                                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.                                                                     |
-| **touchpad**     | the index of the touchpad on the virtual joystick to update.                                                    |
-| **finger**       | the index of the finger on the touchpad to set.                                                                 |
-| **state**        | [`SDL_PRESSED`](SDL_PRESSED) if the finger is pressed, [`SDL_RELEASED`](SDL_RELEASED) if the finger is released |
-| **x**            | the x coordinate of the finger on the touchpad, normalized 0 to 1, with the origin in the upper left            |
-| **y**            | the y coordinate of the finger on the touchpad, normalized 0 to 1, with the origin in the upper left            |
-| **pressure**     | the pressure of the finger                                                                                      |
+|                                |              |                                                                                                                 |
+| ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.                                                                     |
+| int                            | **touchpad** | the index of the touchpad on the virtual joystick to update.                                                    |
+| int                            | **finger**   | the index of the finger on the touchpad to set.                                                                 |
+| Uint8                          | **state**    | [`SDL_PRESSED`](SDL_PRESSED) if the finger is pressed, [`SDL_RELEASED`](SDL_RELEASED) if the finger is released |
+| float                          | **x**        | the x coordinate of the finger on the touchpad, normalized 0 to 1, with the origin in the upper left            |
+| float                          | **y**        | the y coordinate of the finger on the touchpad, normalized 0 to 1, with the origin in the upper left            |
+| float                          | **pressure** | the pressure of the finger                                                                                      |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

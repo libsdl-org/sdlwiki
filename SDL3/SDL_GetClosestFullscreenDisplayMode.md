@@ -15,19 +15,19 @@ const SDL_DisplayMode* SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID display
 
 ## Function Parameters
 
-|                                    |                                                                                    |
-| ---------------------------------- | ---------------------------------------------------------------------------------- |
-| **displayID**                      | the instance ID of the display to query                                            |
-| **w**                              | the width in pixels of the desired display mode                                    |
-| **h**                              | the height in pixels of the desired display mode                                   |
-| **refresh_rate**                   | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate |
-| **include_high_density_modes**     | Boolean to include high density modes in the search                                |
+|                                |                                |                                                                                    |
+| ------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID**                  | the instance ID of the display to query                                            |
+| int                            | **w**                          | the width in pixels of the desired display mode                                    |
+| int                            | **h**                          | the height in pixels of the desired display mode                                   |
+| float                          | **refresh_rate**               | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate |
+| [SDL_bool](SDL_bool)           | **include_high_density_modes** | Boolean to include high density modes in the search                                |
 
 ## Return Value
 
-Returns a pointer to the closest display mode equal to or larger than the
-desired mode, or NULL on error; call [SDL_GetError](SDL_GetError)() for
-more information.
+(const [SDL_DisplayMode](SDL_DisplayMode) *) Returns a pointer to the
+closest display mode equal to or larger than the desired mode, or NULL on
+error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -15,14 +15,14 @@ int SDL_WarpMouseGlobal(float x, float y);
 
 ## Function Parameters
 
-|           |                  |
-| --------- | ---------------- |
-| **x**     | the x coordinate |
-| **y**     | the y coordinate |
+|       |       |                  |
+| ----- | ----- | ---------------- |
+| float | **x** | the x coordinate |
+| float | **y** | the y coordinate |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

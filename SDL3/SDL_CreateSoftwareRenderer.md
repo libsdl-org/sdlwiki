@@ -15,14 +15,15 @@ SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                 |                                                                                           |
-| --------------- | ----------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure representing the surface where rendering is done |
+|                              |             |                                                                                           |
+| ---------------------------- | ----------- | ----------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure representing the surface where rendering is done |
 
 ## Return Value
 
-Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Renderer](SDL_Renderer) *) Returns a valid rendering context or NULL
+if there was an error; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

@@ -15,13 +15,13 @@ float SDL_sqrtf(float x);
 
 ## Function Parameters
 
-|           |                                                           |
-| --------- | --------------------------------------------------------- |
-| **x**     | floating point value. Must be greater than or equal to 0. |
+|       |       |                                                           |
+| ----- | ----- | --------------------------------------------------------- |
+| float | **x** | floating point value. Must be greater than or equal to 0. |
 
 ## Return Value
 
-Returns square root of `x`
+(float) Returns square root of `x`
 
 ## Remarks
 

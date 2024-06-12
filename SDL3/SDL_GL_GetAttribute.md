@@ -15,14 +15,14 @@ int SDL_GL_GetAttribute(SDL_GLattr attr, int *value);
 
 ## Function Parameters
 
-|               |                                                                               |
-| ------------- | ----------------------------------------------------------------------------- |
-| **attr**      | an [SDL_GLattr](SDL_GLattr) enum value specifying the OpenGL attribute to get |
-| **value**     | a pointer filled in with the current value of `attr`                          |
+|                          |           |                                                                               |
+| ------------------------ | --------- | ----------------------------------------------------------------------------- |
+| [SDL_GLattr](SDL_GLattr) | **attr**  | an [SDL_GLattr](SDL_GLattr) enum value specifying the OpenGL attribute to get |
+| int *                    | **value** | a pointer filled in with the current value of `attr`                          |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

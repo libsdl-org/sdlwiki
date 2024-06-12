@@ -15,7 +15,7 @@ int SDL_GetCPUCount(void);
 
 ## Return Value
 
-Returns the total number of logical CPU cores. On CPUs that include
+(int) Returns the total number of logical CPU cores. On CPUs that include
 technologies such as hyperthreading, the number of logical cores may be
 more than the number of physical cores.
 

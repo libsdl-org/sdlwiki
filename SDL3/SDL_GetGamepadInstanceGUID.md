@@ -15,14 +15,14 @@ SDL_JoystickGUID SDL_GetGamepadInstanceGUID(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the GUID of the selected gamepad. If called on an invalid index,
-this function returns a zero GUID
+([SDL_JoystickGUID](SDL_JoystickGUID)) Returns the GUID of the selected
+gamepad. If called on an invalid index, this function returns a zero GUID
 
 ## Remarks
 

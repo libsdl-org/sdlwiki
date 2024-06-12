@@ -15,12 +15,12 @@ typedef void (SDLCALL *SDL_AudioPostmixCallback)(void *userdata, const SDL_Audio
 
 ## Function Parameters
 
-|                  |                                                                                                                    |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **userdata**     | a pointer provided by the app through [SDL_SetAudioPostmixCallback](SDL_SetAudioPostmixCallback), for its own use. |
-| **spec**         | the current format of audio that is to be submitted to the audio device.                                           |
-| **buffer**       | the buffer of audio samples to be submitted. The callback can inspect and/or modify this data.                     |
-| **buflen**       | the size of `buffer` in bytes.                                                                                     |
+|              |                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **userdata** | a pointer provided by the app through [SDL_SetAudioPostmixCallback](SDL_SetAudioPostmixCallback), for its own use. |
+| **spec**     | the current format of audio that is to be submitted to the audio device.                                           |
+| **buffer**   | the buffer of audio samples to be submitted. The callback can inspect and/or modify this data.                     |
+| **buflen**   | the size of `buffer` in bytes.                                                                                     |
 
 ## Remarks
 

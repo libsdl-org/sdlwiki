@@ -15,15 +15,15 @@ SDL_bool SDL_RenderClipEnabled(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | the rendering context |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if clipping is enabled or
-[SDL_FALSE](SDL_FALSE) if not; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if clipping is enabled
+or [SDL_FALSE](SDL_FALSE) if not; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

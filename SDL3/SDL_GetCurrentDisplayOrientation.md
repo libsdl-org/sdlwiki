@@ -15,15 +15,16 @@ SDL_DisplayOrientation SDL_GetCurrentDisplayOrientation(SDL_DisplayID displayID)
 
 ## Function Parameters
 
-|                   |                                         |
-| ----------------- | --------------------------------------- |
-| **displayID**     | the instance ID of the display to query |
+|                                |               |                                         |
+| ------------------------------ | ------------- | --------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query |
 
 ## Return Value
 
-Returns The [SDL_DisplayOrientation](SDL_DisplayOrientation) enum value of
-the display, or [`SDL_ORIENTATION_UNKNOWN`](SDL_ORIENTATION_UNKNOWN) if it
-isn't available.
+([SDL_DisplayOrientation](SDL_DisplayOrientation)) Returns The
+[SDL_DisplayOrientation](SDL_DisplayOrientation) enum value of the display,
+or [`SDL_ORIENTATION_UNKNOWN`](SDL_ORIENTATION_UNKNOWN) if it isn't
+available.
 
 ## Version
 

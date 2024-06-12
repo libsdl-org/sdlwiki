@@ -15,9 +15,9 @@ void SDL_DestroyAudioStream(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                              |
-| -------------- | ---------------------------- |
-| **stream**     | The audio stream to destroy. |
+|                                      |            |                              |
+| ------------------------------------ | ---------- | ---------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to destroy. |
 
 ## Remarks
 

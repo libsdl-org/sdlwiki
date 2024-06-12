@@ -15,13 +15,13 @@ double SDL_fabs(double x);
 
 ## Function Parameters
 
-|           |                                              |
-| --------- | -------------------------------------------- |
-| **x**     | floating point value to use as the magnitude |
+|        |       |                                              |
+| ------ | ----- | -------------------------------------------- |
+| double | **x** | floating point value to use as the magnitude |
 
 ## Return Value
 
-Returns the absolute value of `x`
+(double) Returns the absolute value of `x`
 
 ## Remarks
 

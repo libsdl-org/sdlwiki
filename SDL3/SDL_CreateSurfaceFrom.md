@@ -15,18 +15,19 @@ SDL_Surface* SDL_CreateSurfaceFrom(void *pixels, int width, int height, int pitc
 
 ## Function Parameters
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **pixels**     | a pointer to existing pixel data                                                   |
-| **width**      | the width of the surface                                                           |
-| **height**     | the height of the surface                                                          |
-| **pitch**      | the number of bytes between each row, including padding                            |
-| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+|                                            |            |                                                                                    |
+| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
+| void *                                     | **pixels** | a pointer to existing pixel data                                                   |
+| int                                        | **width**  | the width of the surface                                                           |
+| int                                        | **height** | the height of the surface                                                          |
+| int                                        | **pitch**  | the number of bytes between each row, including padding                            |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

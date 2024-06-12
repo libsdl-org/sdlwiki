@@ -15,15 +15,15 @@ SDL_Renderer* SDL_GetRendererFromTexture(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                 |                      |
-| --------------- | -------------------- |
-| **texture**     | the texture to query |
+|                              |             |                      |
+| ---------------------------- | ----------- | -------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query |
 
 ## Return Value
 
-Returns a pointer to the [SDL_Renderer](SDL_Renderer) that created the
-texture, or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_Renderer](SDL_Renderer) *) Returns a pointer to the
+[SDL_Renderer](SDL_Renderer) that created the texture, or NULL on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

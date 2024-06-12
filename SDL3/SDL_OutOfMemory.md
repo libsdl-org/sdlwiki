@@ -15,7 +15,7 @@ int SDL_OutOfMemory(void);
 
 ## Return Value
 
-Returns -1
+(int) Returns -1
 
 ## Remarks
 

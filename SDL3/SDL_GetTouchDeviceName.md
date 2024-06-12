@@ -15,13 +15,13 @@ const char* SDL_GetTouchDeviceName(SDL_TouchID touchID);
 
 ## Function Parameters
 
-|                 |                               |
-| --------------- | ----------------------------- |
-| **touchID**     | the touch device instance ID. |
+|                            |             |                               |
+| -------------------------- | ----------- | ----------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchID** | the touch device instance ID. |
 
 ## Return Value
 
-Returns touch device name, or NULL on error; call
+(const char *) Returns touch device name, or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more details.
 
 ## Remarks

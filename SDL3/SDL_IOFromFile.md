@@ -15,16 +15,16 @@ SDL_IOStream* SDL_IOFromFile(const char *file, const char *mode);
 
 ## Function Parameters
 
-|              |                                                                        |
-| ------------ | ---------------------------------------------------------------------- |
-| **file**     | a UTF-8 string representing the filename to open                       |
-| **mode**     | an ASCII string representing the mode to be used for opening the file. |
+|              |          |                                                                        |
+| ------------ | -------- | ---------------------------------------------------------------------- |
+| const char * | **file** | a UTF-8 string representing the filename to open                       |
+| const char * | **mode** | an ASCII string representing the mode to be used for opening the file. |
 
 ## Return Value
 
-Returns a pointer to the [SDL_IOStream](SDL_IOStream) structure that is
-created, or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_IOStream](SDL_IOStream) *) Returns a pointer to the
+[SDL_IOStream](SDL_IOStream) structure that is created, or NULL on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

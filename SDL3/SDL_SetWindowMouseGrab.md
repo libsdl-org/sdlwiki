@@ -15,14 +15,14 @@ int SDL_SetWindowMouseGrab(SDL_Window *window, SDL_bool grabbed);
 
 ## Function Parameters
 
-|                 |                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------- |
-| **window**      | The window for which the mouse grab mode should be set.                            |
-| **grabbed**     | This is [SDL_TRUE](SDL_TRUE) to grab mouse, and [SDL_FALSE](SDL_FALSE) to release. |
+|                            |             |                                                                                    |
+| -------------------------- | ----------- | ---------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**  | The window for which the mouse grab mode should be set.                            |
+| [SDL_bool](SDL_bool)       | **grabbed** | This is [SDL_TRUE](SDL_TRUE) to grab mouse, and [SDL_FALSE](SDL_FALSE) to release. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

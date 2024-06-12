@@ -15,15 +15,15 @@ SDL_Haptic* SDL_GetHapticFromInstanceID(SDL_HapticID instance_id);
 
 ## Function Parameters
 
-|                     |                                                         |
-| ------------------- | ------------------------------------------------------- |
-| **instance_id**     | the instance ID to get the [SDL_Haptic](SDL_Haptic) for |
+|                              |                 |                                                         |
+| ---------------------------- | --------------- | ------------------------------------------------------- |
+| [SDL_HapticID](SDL_HapticID) | **instance_id** | the instance ID to get the [SDL_Haptic](SDL_Haptic) for |
 
 ## Return Value
 
-Returns an [SDL_Haptic](SDL_Haptic) on success or NULL on failure or if it
-hasn't been opened yet; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_Haptic](SDL_Haptic) *) Returns an [SDL_Haptic](SDL_Haptic) on success
+or NULL on failure or if it hasn't been opened yet; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

@@ -15,13 +15,13 @@ int SDL_SetPrimarySelectionText(const char *text);
 
 ## Function Parameters
 
-|              |                                            |
-| ------------ | ------------------------------------------ |
-| **text**     | the text to store in the primary selection |
+|              |          |                                            |
+| ------------ | -------- | ------------------------------------------ |
+| const char * | **text** | the text to store in the primary selection |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

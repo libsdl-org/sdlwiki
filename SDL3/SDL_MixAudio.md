@@ -18,17 +18,17 @@ int SDL_MixAudio(Uint8 * dst,
 
 ## Function Parameters
 
-|                |                                                                                        |
-| -------------- | -------------------------------------------------------------------------------------- |
-| **dst**        | the destination for the mixed audio                                                    |
-| **src**        | the source audio buffer to be mixed                                                    |
-| **format**     | the [SDL_AudioFormat](SDL_AudioFormat) structure representing the desired audio format |
-| **len**        | the length of the audio buffer in bytes                                                |
-| **volume**     | ranges from 0.0 - 1.0, and should be set to 1.0 for full audio volume                  |
+|                                    |            |                                                                                        |
+| ---------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
+| Uint8 *                            | **dst**    | the destination for the mixed audio                                                    |
+| const Uint8 *                      | **src**    | the source audio buffer to be mixed                                                    |
+| [SDL_AudioFormat](SDL_AudioFormat) | **format** | the [SDL_AudioFormat](SDL_AudioFormat) structure representing the desired audio format |
+| Uint32                             | **len**    | the length of the audio buffer in bytes                                                |
+| float                              | **volume** | ranges from 0.0 - 1.0, and should be set to 1.0 for full audio volume                  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

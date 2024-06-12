@@ -15,15 +15,16 @@ int SDL_SetAudioStreamPutCallback(SDL_AudioStream *stream, SDL_AudioStreamCallba
 
 ## Function Parameters
 
-|                  |                                                                      |
-| ---------------- | -------------------------------------------------------------------- |
-| **stream**       | the audio stream to set the new callback on.                         |
-| **callback**     | the new callback function to call when data is added to the stream.  |
-| **userdata**     | an opaque pointer provided to the callback for its own personal use. |
+|                                                    |              |                                                                      |
+| -------------------------------------------------- | ------------ | -------------------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) *               | **stream**   | the audio stream to set the new callback on.                         |
+| [SDL_AudioStreamCallback](SDL_AudioStreamCallback) | **callback** | the new callback function to call when data is added to the stream.  |
+| void *                                             | **userdata** | an opaque pointer provided to the callback for its own personal use. |
 
 ## Return Value
 
-Returns 0 on success, -1 on error. This only fails if `stream` is NULL.
+(int) Returns 0 on success, -1 on error. This only fails if `stream` is
+NULL.
 
 ## Remarks
 

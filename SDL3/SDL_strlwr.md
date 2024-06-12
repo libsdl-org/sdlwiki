@@ -15,13 +15,13 @@ char* SDL_strlwr(char *str);
 
 ## Function Parameters
 
-|             |                                 |
-| ----------- | ------------------------------- |
-| **str**     | The string to convert in-place. |
+|        |         |                                 |
+| ------ | ------- | ------------------------------- |
+| char * | **str** | The string to convert in-place. |
 
 ## Return Value
 
-Returns The `str` pointer passed into this function.
+(char *) Returns The `str` pointer passed into this function.
 
 ## Remarks
 

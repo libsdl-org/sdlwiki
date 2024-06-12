@@ -15,14 +15,15 @@ SDL_Joystick* SDL_GetJoystickFromPlayerIndex(int player_index);
 
 ## Function Parameters
 
-|                      |                                                              |
-| -------------------- | ------------------------------------------------------------ |
-| **player_index**     | the player index to get the [SDL_Joystick](SDL_Joystick) for |
+|     |                  |                                                              |
+| --- | ---------------- | ------------------------------------------------------------ |
+| int | **player_index** | the player index to get the [SDL_Joystick](SDL_Joystick) for |
 
 ## Return Value
 
-Returns an [SDL_Joystick](SDL_Joystick) on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Joystick](SDL_Joystick) *) Returns an [SDL_Joystick](SDL_Joystick) on
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

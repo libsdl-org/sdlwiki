@@ -15,14 +15,14 @@ int SDL_SetGamepadMapping(SDL_JoystickID instance_id, const char *mapping);
 
 ## Function Parameters
 
-|                     |                                                                  |
-| ------------------- | ---------------------------------------------------------------- |
-| **instance_id**     | the joystick instance ID                                         |
-| **mapping**         | the mapping to use for this device, or NULL to clear the mapping |
+|                                  |                 |                                                                  |
+| -------------------------------- | --------------- | ---------------------------------------------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID                                         |
+| const char *                     | **mapping**     | the mapping to use for this device, or NULL to clear the mapping |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

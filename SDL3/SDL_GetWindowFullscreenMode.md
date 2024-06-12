@@ -15,14 +15,15 @@ const SDL_DisplayMode* SDL_GetWindowFullscreenMode(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns a pointer to the exclusive fullscreen mode to use or NULL for
-borderless fullscreen desktop mode
+(const [SDL_DisplayMode](SDL_DisplayMode) *) Returns a pointer to the
+exclusive fullscreen mode to use or NULL for borderless fullscreen desktop
+mode
 
 ## Version
 

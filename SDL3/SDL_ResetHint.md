@@ -15,14 +15,14 @@ SDL_bool SDL_ResetHint(const char *name);
 
 ## Function Parameters
 
-|              |                 |
-| ------------ | --------------- |
-| **name**     | the hint to set |
+|              |          |                 |
+| ------------ | -------- | --------------- |
+| const char * | **name** | the hint to set |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
-otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the hint was set,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

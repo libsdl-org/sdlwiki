@@ -15,15 +15,15 @@ int SDL_RunHapticEffect(SDL_Haptic *haptic, int effect, Uint32 iterations);
 
 ## Function Parameters
 
-|                    |                                                                                                                |
-| ------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **haptic**         | the [SDL_Haptic](SDL_Haptic) device to run the effect on                                                       |
-| **effect**         | the ID of the haptic effect to run                                                                             |
-| **iterations**     | the number of iterations to run the effect; use [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) to repeat forever |
+|                            |                |                                                                                                                |
+| -------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic**     | the [SDL_Haptic](SDL_Haptic) device to run the effect on                                                       |
+| int                        | **effect**     | the ID of the haptic effect to run                                                                             |
+| Uint32                     | **iterations** | the number of iterations to run the effect; use [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) to repeat forever |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

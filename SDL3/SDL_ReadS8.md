@@ -15,15 +15,16 @@ SDL_bool SDL_ReadS8(SDL_IOStream *src, Sint8 *value);
 
 ## Function Parameters
 
-|               |                                               |
-| ------------- | --------------------------------------------- |
-| **src**       | the [SDL_IOStream](SDL_IOStream) to read from |
-| **value**     | a pointer filled in with the data read        |
+|                                |           |                                               |
+| ------------------------------ | --------- | --------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**   | the [SDL_IOStream](SDL_IOStream) to read from |
+| Sint8 *                        | **value** | a pointer filled in with the data read        |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

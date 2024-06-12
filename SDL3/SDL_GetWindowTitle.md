@@ -15,13 +15,14 @@ const char* SDL_GetWindowTitle(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the title of the window in UTF-8 format or "" if there is no title.
+(const char *) Returns the title of the window in UTF-8 format or "" if
+there is no title.
 
 ## Remarks
 

@@ -15,13 +15,14 @@ SDL_SensorType SDL_GetSensorInstanceType(SDL_SensorID instance_id);
 
 ## Function Parameters
 
-|                     |                        |
-| ------------------- | ---------------------- |
-| **instance_id**     | the sensor instance ID |
+|                              |                 |                        |
+| ---------------------------- | --------------- | ---------------------- |
+| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID |
 
 ## Return Value
 
-Returns the [SDL_SensorType](SDL_SensorType), or
+([SDL_SensorType](SDL_SensorType)) Returns the
+[SDL_SensorType](SDL_SensorType), or
 [`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `instance_id` is not valid
 
 ## Version

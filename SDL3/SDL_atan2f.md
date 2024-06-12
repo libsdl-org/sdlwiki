@@ -15,15 +15,15 @@ float SDL_atan2f(float y, float x);
 
 ## Function Parameters
 
-|           |                                                         |
-| --------- | ------------------------------------------------------- |
-| **x**     | floating point value of the denominator (x coordinate). |
-| **y**     | floating point value of the numerator (y coordinate)    |
+|       |       |                                                         |
+| ----- | ----- | ------------------------------------------------------- |
+| float | **y** | floating point value of the numerator (y coordinate)    |
+| float | **x** | floating point value of the denominator (x coordinate). |
 
 ## Return Value
 
-Returns arc tangent of of `y / x` in radians, or, if `x = 0`, either
-`-Pi/2`, `0`, or `Pi/2`, depending on the value of `y`.
+(float) Returns arc tangent of of `y / x` in radians, or, if `x = 0`,
+either `-Pi/2`, `0`, or `Pi/2`, depending on the value of `y`.
 
 ## Remarks
 

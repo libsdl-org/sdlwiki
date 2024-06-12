@@ -15,13 +15,13 @@ int SDL_hid_close(SDL_hid_device *dev);
 
 ## Function Parameters
 
-|             |                                                               |
-| ----------- | ------------------------------------------------------------- |
-| **dev**     | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+|                                    |         |                                                               |
+| ---------------------------------- | ------- | ------------------------------------------------------------- |
+| [SDL_hid_device](SDL_hid_device) * | **dev** | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

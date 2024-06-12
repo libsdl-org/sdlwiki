@@ -15,14 +15,14 @@ const char* SDL_GetGamepadAppleSFSymbolsNameForAxis(SDL_Gamepad *gamepad, SDL_Ga
 
 ## Function Parameters
 
-|                 |                        |
-| --------------- | ---------------------- |
-| **gamepad**     | the gamepad to query   |
-| **axis**        | an axis on the gamepad |
+|                                    |             |                        |
+| ---------------------------------- | ----------- | ---------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *       | **gamepad** | the gamepad to query   |
+| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis**    | an axis on the gamepad |
 
 ## Return Value
 
-Returns the sfSymbolsName or NULL if the name can't be found
+(const char *) Returns the sfSymbolsName or NULL if the name can't be found
 
 ## Remarks
 

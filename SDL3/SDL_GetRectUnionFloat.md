@@ -17,15 +17,15 @@ int SDL_GetRectUnionFloat(const SDL_FRect * A,
 
 ## Function Parameters
 
-|                |                                                                                        |
-| -------------- | -------------------------------------------------------------------------------------- |
-| **A**          | an [SDL_FRect](SDL_FRect) structure representing the first rectangle                   |
-| **B**          | an [SDL_FRect](SDL_FRect) structure representing the second rectangle                  |
-| **result**     | an [SDL_FRect](SDL_FRect) structure filled in with the union of rectangles `A` and `B` |
+|                                |            |                                                                                        |
+| ------------------------------ | ---------- | -------------------------------------------------------------------------------------- |
+| const [SDL_FRect](SDL_FRect) * | **A**      | an [SDL_FRect](SDL_FRect) structure representing the first rectangle                   |
+| const [SDL_FRect](SDL_FRect) * | **B**      | an [SDL_FRect](SDL_FRect) structure representing the second rectangle                  |
+| [SDL_FRect](SDL_FRect) *       | **result** | an [SDL_FRect](SDL_FRect) structure filled in with the union of rectangles `A` and `B` |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

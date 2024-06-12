@@ -15,17 +15,17 @@ int SDL_SendJoystickVirtualSensorData(SDL_Joystick *joystick, SDL_SensorType typ
 
 ## Function Parameters
 
-|                          |                                                                      |
-| ------------------------ | -------------------------------------------------------------------- |
-| **joystick**             | the virtual joystick on which to set state.                          |
-| **type**                 | the type of the sensor on the virtual joystick to update.            |
-| **sensor_timestamp**     | a 64-bit timestamp in nanoseconds associated with the sensor reading |
-| **data**                 | the data associated with the sensor reading                          |
-| **num_values**           | the number of values pointed to by `data`                            |
+|                                  |                      |                                                                      |
+| -------------------------------- | -------------------- | -------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) *   | **joystick**         | the virtual joystick on which to set state.                          |
+| [SDL_SensorType](SDL_SensorType) | **type**             | the type of the sensor on the virtual joystick to update.            |
+| Uint64                           | **sensor_timestamp** | a 64-bit timestamp in nanoseconds associated with the sensor reading |
+| const float *                    | **data**             | the data associated with the sensor reading                          |
+| int                              | **num_values**       | the number of values pointed to by `data`                            |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

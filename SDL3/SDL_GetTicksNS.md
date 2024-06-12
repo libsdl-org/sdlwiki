@@ -15,8 +15,8 @@ Uint64 SDL_GetTicksNS(void);
 
 ## Return Value
 
-Returns an unsigned 64-bit value representing the number of nanoseconds
-since the SDL library initialized.
+(Uint64) Returns an unsigned 64-bit value representing the number of
+nanoseconds since the SDL library initialized.
 
 ## Version
 

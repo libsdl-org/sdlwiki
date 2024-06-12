@@ -15,7 +15,7 @@ int SDL_GetSystemRAM(void);
 
 ## Return Value
 
-Returns the amount of RAM configured in the system in MiB.
+(int) Returns the amount of RAM configured in the system in MiB.
 
 ## Version
 

@@ -15,17 +15,17 @@ int SDL_GetRenderDrawColorFloat(SDL_Renderer *renderer, float *r, float *g, floa
 
 ## Function Parameters
 
-|                  |                                                                               |
-| ---------------- | ----------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                         |
-| **r**            | a pointer filled in with the red value used to draw on the rendering target   |
-| **g**            | a pointer filled in with the green value used to draw on the rendering target |
-| **b**            | a pointer filled in with the blue value used to draw on the rendering target  |
-| **a**            | a pointer filled in with the alpha value used to draw on the rendering target |
+|                                |              |                                                                               |
+| ------------------------------ | ------------ | ----------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                         |
+| float *                        | **r**        | a pointer filled in with the red value used to draw on the rendering target   |
+| float *                        | **g**        | a pointer filled in with the green value used to draw on the rendering target |
+| float *                        | **b**        | a pointer filled in with the blue value used to draw on the rendering target  |
+| float *                        | **a**        | a pointer filled in with the alpha value used to draw on the rendering target |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

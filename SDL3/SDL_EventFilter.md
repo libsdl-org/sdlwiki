@@ -15,10 +15,10 @@ typedef int (SDLCALL *SDL_EventFilter)(void *userdata, SDL_Event *event);
 
 ## Function Parameters
 
-|                  |                                                                                                                            |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **userdata**     | what was passed as `userdata` to [SDL_SetEventFilter](SDL_SetEventFilter)() or [SDL_AddEventWatch](SDL_AddEventWatch), etc |
-| **event**        | the event that triggered the callback                                                                                      |
+|              |                                                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| **userdata** | what was passed as `userdata` to [SDL_SetEventFilter](SDL_SetEventFilter)() or [SDL_AddEventWatch](SDL_AddEventWatch), etc |
+| **event**    | the event that triggered the callback                                                                                      |
 
 ## Return Value
 

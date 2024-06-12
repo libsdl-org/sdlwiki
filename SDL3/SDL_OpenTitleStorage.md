@@ -15,15 +15,16 @@ SDL_Storage* SDL_OpenTitleStorage(const char *override, SDL_PropertiesID props);
 
 ## Function Parameters
 
-|                  |                                                               |
-| ---------------- | ------------------------------------------------------------- |
-| **override**     | a path to override the backend's default title root           |
-| **props**        | a property list that may contain backend-specific information |
+|                                      |              |                                                               |
+| ------------------------------------ | ------------ | ------------------------------------------------------------- |
+| const char *                         | **override** | a path to override the backend's default title root           |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**    | a property list that may contain backend-specific information |
 
 ## Return Value
 
-Returns a title storage container on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Storage](SDL_Storage) *) Returns a title storage container on success
+or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

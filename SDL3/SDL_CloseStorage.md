@@ -15,13 +15,13 @@ int SDL_CloseStorage(SDL_Storage *storage);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **storage**     | a storage container to close |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to close |
 
 ## Return Value
 
-Returns 0 if the container was freed with no errors, a negative value
+(int) Returns 0 if the container was freed with no errors, a negative value
 otherwise; call [SDL_GetError](SDL_GetError)() for more information. Even
 if the function returns an error, the container data will be freed; the
 error is only for informational purposes.

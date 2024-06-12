@@ -15,14 +15,14 @@ float SDL_modff(float x, float *y);
 
 ## Function Parameters
 
-|           |                                                 |
-| --------- | ----------------------------------------------- |
-| **x**     | floating point value                            |
-| **y**     | output pointer to store the integer part of `x` |
+|         |       |                                                 |
+| ------- | ----- | ----------------------------------------------- |
+| float   | **x** | floating point value                            |
+| float * | **y** | output pointer to store the integer part of `x` |
 
 ## Return Value
 
-Returns the fractional part of `x`
+(float) Returns the fractional part of `x`
 
 ## Remarks
 

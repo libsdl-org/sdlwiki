@@ -15,14 +15,14 @@ int SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_window);
 
 ## Function Parameters
 
-|                       |                                        |
-| --------------------- | -------------------------------------- |
-| **modal_window**      | the window that should be set modal    |
-| **parent_window**     | the parent window for the modal window |
+|                            |                   |                                        |
+| -------------------------- | ----------------- | -------------------------------------- |
+| [SDL_Window](SDL_Window) * | **modal_window**  | the window that should be set modal    |
+| [SDL_Window](SDL_Window) * | **parent_window** | the parent window for the modal window |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

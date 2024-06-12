@@ -15,16 +15,16 @@ int SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destinatio
 
 ## Function Parameters
 
-|                     |                                                |
-| ------------------- | ---------------------------------------------- |
-| **storage**         | a storage container to read from               |
-| **path**            | the relative path of the file to read          |
-| **destination**     | a client-provided buffer to read the file into |
-| **length**          | the length of the destination buffer           |
+|                              |                 |                                                |
+| ---------------------------- | --------------- | ---------------------------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage**     | a storage container to read from               |
+| const char *                 | **path**        | the relative path of the file to read          |
+| void *                       | **destination** | a client-provided buffer to read the file into |
+| Uint64                       | **length**      | the length of the destination buffer           |
 
 ## Return Value
 
-Returns 0 if the file was read, a negative value otherwise; call
+(int) Returns 0 if the file was read, a negative value otherwise; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

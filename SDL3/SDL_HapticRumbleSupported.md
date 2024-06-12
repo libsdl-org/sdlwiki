@@ -15,14 +15,14 @@ SDL_bool SDL_HapticRumbleSupported(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                |                                           |
-| -------------- | ----------------------------------------- |
-| **haptic**     | haptic device to check for rumble support |
+|                            |            |                                           |
+| -------------------------- | ---------- | ----------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | haptic device to check for rumble support |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the effect is supported or
-[SDL_FALSE](SDL_FALSE) if it isn't.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the effect is
+supported or [SDL_FALSE](SDL_FALSE) if it isn't.
 
 ## Version
 

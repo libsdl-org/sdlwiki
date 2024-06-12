@@ -15,13 +15,13 @@ float SDL_sinf(float x);
 
 ## Function Parameters
 
-|           |                                  |
-| --------- | -------------------------------- |
-| **x**     | floating point value, in radians |
+|       |       |                                  |
+| ----- | ----- | -------------------------------- |
+| float | **x** | floating point value, in radians |
 
 ## Return Value
 
-Returns sine of `x`
+(float) Returns sine of `x`
 
 ## Remarks
 

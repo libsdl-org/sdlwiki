@@ -26,14 +26,14 @@ Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick, int hat);
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
-| **hat**          | the hat index to get the state from; indices start at index 0             |
+|                                |              |                                                                           |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| int                            | **hat**      | the hat index to get the state from; indices start at index 0             |
 
 ## Return Value
 
-Returns the current hat position.
+(Uint8) Returns the current hat position.
 
 ## Remarks
 

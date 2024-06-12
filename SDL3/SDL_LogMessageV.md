@@ -17,12 +17,12 @@ void SDL_LogMessageV(int category,
 
 ## Function Parameters
 
-|                  |                                        |
-| ---------------- | -------------------------------------- |
-| **category**     | the category of the message            |
-| **priority**     | the priority of the message            |
-| **fmt**          | a printf() style message format string |
-| **ap**           | a variable argument list               |
+|                                    |              |                                        |
+| ---------------------------------- | ------------ | -------------------------------------- |
+| int                                | **category** | the category of the message            |
+| [SDL_LogPriority](SDL_LogPriority) | **priority** | the priority of the message            |
+| const char *                       | **fmt**      | a printf() style message format string |
+| va_list                            | **ap**       | a variable argument list               |
 
 ## Version
 

@@ -15,14 +15,15 @@ double SDL_copysign(double x, double y);
 
 ## Function Parameters
 
-|           |                                              |
-| --------- | -------------------------------------------- |
-| **x**     | floating point value to use as the magnitude |
-| **y**     | floating point value to use as the sign      |
+|        |       |                                              |
+| ------ | ----- | -------------------------------------------- |
+| double | **x** | floating point value to use as the magnitude |
+| double | **y** | floating point value to use as the sign      |
 
 ## Return Value
 
-Returns the floating point value with the sign of y and the magnitude of x
+(double) Returns the floating point value with the sign of y and the
+magnitude of x
 
 ## Remarks
 

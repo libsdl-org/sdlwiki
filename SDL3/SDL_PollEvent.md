@@ -15,14 +15,14 @@ SDL_bool SDL_PollEvent(SDL_Event *event);
 
 ## Function Parameters
 
-|               |                                                                                               |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| **event**     | the [SDL_Event](SDL_Event) structure to be filled with the next event from the queue, or NULL |
+|                          |           |                                                                                               |
+| ------------------------ | --------- | --------------------------------------------------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) structure to be filled with the next event from the queue, or NULL |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if this got an event or [SDL_FALSE](SDL_FALSE)
-if there are none available.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this got an event or
+[SDL_FALSE](SDL_FALSE) if there are none available.
 
 ## Remarks
 

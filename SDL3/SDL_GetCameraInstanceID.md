@@ -15,14 +15,15 @@ SDL_CameraDeviceID SDL_GetCameraInstanceID(SDL_Camera *camera);
 
 ## Function Parameters
 
-|                |                                      |
-| -------------- | ------------------------------------ |
-| **camera**     | an [SDL_Camera](SDL_Camera) to query |
+|                            |            |                                      |
+| -------------------------- | ---------- | ------------------------------------ |
+| [SDL_Camera](SDL_Camera) * | **camera** | an [SDL_Camera](SDL_Camera) to query |
 
 ## Return Value
 
-Returns the instance ID of the specified camera on success or 0 on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_CameraDeviceID](SDL_CameraDeviceID)) Returns the instance ID of the
+specified camera on success or 0 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

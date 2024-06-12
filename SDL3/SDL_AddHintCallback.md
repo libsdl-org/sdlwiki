@@ -17,15 +17,15 @@ int SDL_AddHintCallback(const char *name,
 
 ## Function Parameters
 
-|                  |                                                                                                  |
-| ---------------- | ------------------------------------------------------------------------------------------------ |
-| **name**         | the hint to watch                                                                                |
-| **callback**     | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes |
-| **userdata**     | a pointer to pass to the callback function                                                       |
+|                                      |              |                                                                                                  |
+| ------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------ |
+| const char *                         | **name**     | the hint to watch                                                                                |
+| [SDL_HintCallback](SDL_HintCallback) | **callback** | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes |
+| void *                               | **userdata** | a pointer to pass to the callback function                                                       |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety

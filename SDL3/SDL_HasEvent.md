@@ -15,14 +15,15 @@ SDL_bool SDL_HasEvent(Uint32 type);
 
 ## Function Parameters
 
-|              |                                                                                 |
-| ------------ | ------------------------------------------------------------------------------- |
-| **type**     | the type of event to be queried; see [SDL_EventType](SDL_EventType) for details |
+|        |          |                                                                                 |
+| ------ | -------- | ------------------------------------------------------------------------------- |
+| Uint32 | **type** | the type of event to be queried; see [SDL_EventType](SDL_EventType) for details |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if events matching `type` are present, or
-[SDL_FALSE](SDL_FALSE) if events matching `type` are not present.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if events matching
+`type` are present, or [SDL_FALSE](SDL_FALSE) if events matching `type` are
+not present.
 
 ## Remarks
 

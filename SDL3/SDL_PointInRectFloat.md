@@ -15,15 +15,15 @@ SDL_FORCE_INLINE SDL_bool SDL_PointInRectFloat(const SDL_FPoint *p, const SDL_FR
 
 ## Function Parameters
 
-|           |                        |
-| --------- | ---------------------- |
-| **p**     | the point to test.     |
-| **r**     | the rectangle to test. |
+|                                  |       |                        |
+| -------------------------------- | ----- | ---------------------- |
+| const [SDL_FPoint](SDL_FPoint) * | **p** | the point to test.     |
+| const [SDL_FRect](SDL_FRect) *   | **r** | the rectangle to test. |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if `p` is contained by `r`,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if `p` is contained by
+`r`, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

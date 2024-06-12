@@ -15,14 +15,14 @@ int SDL_SetRenderTarget(SDL_Renderer *renderer, SDL_Texture *texture);
 
 ## Function Parameters
 
-|                  |                                                                                                                                                                         |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                                                                                                                   |
-| **texture**      | the targeted texture, which must be created with the [`SDL_TEXTUREACCESS_TARGET`](SDL_TEXTUREACCESS_TARGET) flag, or NULL to render to the window instead of a texture. |
+|                                |              |                                                                                                                                                                         |
+| ------------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                                                   |
+| [SDL_Texture](SDL_Texture) *   | **texture**  | the targeted texture, which must be created with the [`SDL_TEXTUREACCESS_TARGET`](SDL_TEXTUREACCESS_TARGET) flag, or NULL to render to the window instead of a texture. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

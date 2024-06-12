@@ -15,16 +15,16 @@ int SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const
 
 ## Function Parameters
 
-|                 |                                                     |
-| --------------- | --------------------------------------------------- |
-| **flags**       | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value |
-| **title**       | UTF-8 title text                                    |
-| **message**     | UTF-8 message text                                  |
-| **window**      | the parent window, or NULL for no parent            |
+|                                            |             |                                                     |
+| ------------------------------------------ | ----------- | --------------------------------------------------- |
+| [SDL_MessageBoxFlags](SDL_MessageBoxFlags) | **flags**   | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value |
+| const char *                               | **title**   | UTF-8 title text                                    |
+| const char *                               | **message** | UTF-8 message text                                  |
+| [SDL_Window](SDL_Window) *                 | **window**  | the parent window, or NULL for no parent            |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

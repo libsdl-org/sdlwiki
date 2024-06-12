@@ -15,13 +15,13 @@ int SDL_Init(SDL_InitFlags flags);
 
 ## Function Parameters
 
-|               |                                |
-| ------------- | ------------------------------ |
-| **flags**     | subsystem initialization flags |
+|                                |           |                                |
+| ------------------------------ | --------- | ------------------------------ |
+| [SDL_InitFlags](SDL_InitFlags) | **flags** | subsystem initialization flags |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

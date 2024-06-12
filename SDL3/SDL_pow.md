@@ -15,14 +15,14 @@ double SDL_pow(double x, double y);
 
 ## Function Parameters
 
-|           |              |
-| --------- | ------------ |
-| **x**     | the base     |
-| **y**     | the exponent |
+|        |       |              |
+| ------ | ----- | ------------ |
+| double | **x** | the base     |
+| double | **y** | the exponent |
 
 ## Return Value
 
-Returns `x` raised to the power `y`
+(double) Returns `x` raised to the power `y`
 
 ## Remarks
 

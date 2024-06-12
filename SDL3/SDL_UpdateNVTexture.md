@@ -18,18 +18,18 @@ int SDL_UpdateNVTexture(SDL_Texture *texture,
 
 ## Function Parameters
 
-|                 |                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------- |
-| **texture**     | the texture to update                                                                 |
-| **rect**        | a pointer to the rectangle of pixels to update, or NULL to update the entire texture. |
-| **Yplane**      | the raw pixel data for the Y plane.                                                   |
-| **Ypitch**      | the number of bytes between rows of pixel data for the Y plane.                       |
-| **UVplane**     | the raw pixel data for the UV plane.                                                  |
-| **UVpitch**     | the number of bytes between rows of pixel data for the UV plane.                      |
+|                              |             |                                                                                       |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                                                 |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | a pointer to the rectangle of pixels to update, or NULL to update the entire texture. |
+| const Uint8 *                | **Yplane**  | the raw pixel data for the Y plane.                                                   |
+| int                          | **Ypitch**  | the number of bytes between rows of pixel data for the Y plane.                       |
+| const Uint8 *                | **UVplane** | the raw pixel data for the UV plane.                                                  |
+| int                          | **UVpitch** | the number of bytes between rows of pixel data for the UV plane.                      |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

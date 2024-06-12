@@ -15,14 +15,14 @@ SDL_FORCE_INLINE SDL_bool SDL_HasExactlyOneBitSet32(Uint32 x);
 
 ## Function Parameters
 
-|           |                             |
-| --------- | --------------------------- |
-| **x**     | the 32-bit value to examine |
+|        |       |                             |
+| ------ | ----- | --------------------------- |
+| Uint32 | **x** | the 32-bit value to examine |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if exactly one bit is set in `x`,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if exactly one bit is
+set in `x`, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

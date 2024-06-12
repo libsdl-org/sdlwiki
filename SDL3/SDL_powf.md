@@ -15,14 +15,14 @@ float SDL_powf(float x, float y);
 
 ## Function Parameters
 
-|           |              |
-| --------- | ------------ |
-| **x**     | the base     |
-| **y**     | the exponent |
+|       |       |              |
+| ----- | ----- | ------------ |
+| float | **x** | the base     |
+| float | **y** | the exponent |
 
 ## Return Value
 
-Returns `x` raised to the power `y`
+(float) Returns `x` raised to the power `y`
 
 ## Remarks
 

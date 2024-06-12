@@ -15,15 +15,16 @@ SDL_FunctionPointer SDL_LoadFunction(void *handle, const char *name);
 
 ## Function Parameters
 
-|                |                                                                             |
-| -------------- | --------------------------------------------------------------------------- |
-| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
-| **name**       | the name of the function to look up                                         |
+|              |            |                                                                             |
+| ------------ | ---------- | --------------------------------------------------------------------------- |
+| void *       | **handle** | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
+| const char * | **name**   | the name of the function to look up                                         |
 
 ## Return Value
 
-Returns a pointer to the function or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_FunctionPointer](SDL_FunctionPointer)) Returns a pointer to the
+function or NULL if there was an error; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Remarks
 

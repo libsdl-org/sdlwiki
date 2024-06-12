@@ -15,14 +15,14 @@ Uint16 SDL_GetJoystickInstanceProductVersion(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the product version of the selected joystick. If called with an
-invalid instance_id, this function returns 0.
+(Uint16) Returns the product version of the selected joystick. If called
+with an invalid instance_id, this function returns 0.
 
 ## Remarks
 

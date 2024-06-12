@@ -15,8 +15,8 @@ SDL_bool SDL_HasLASX(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the CPU has LOONGARCH LASX features or
-[SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the CPU has
+LOONGARCH LASX features or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Remarks
 

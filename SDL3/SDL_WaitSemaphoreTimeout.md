@@ -15,16 +15,17 @@ int SDL_WaitSemaphoreTimeout(SDL_Semaphore *sem, Sint32 timeoutMS);
 
 ## Function Parameters
 
-|                   |                                            |
-| ----------------- | ------------------------------------------ |
-| **sem**           | the semaphore to wait on                   |
-| **timeoutMS**     | the length of the timeout, in milliseconds |
+|                                  |               |                                            |
+| -------------------------------- | ------------- | ------------------------------------------ |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem**       | the semaphore to wait on                   |
+| Sint32                           | **timeoutMS** | the length of the timeout, in milliseconds |
 
 ## Return Value
 
-Returns 0 if the wait succeeds, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
-if the wait does not succeed in the allotted time, or a negative error code
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the wait succeeds,
+[`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the wait does not succeed in
+the allotted time, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

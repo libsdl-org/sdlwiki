@@ -15,9 +15,9 @@ void SDL_UnbindAudioStream(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                                          |
-| -------------- | ---------------------------------------- |
-| **stream**     | an audio stream to unbind from a device. |
+|                                      |            |                                          |
+| ------------------------------------ | ---------- | ---------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | an audio stream to unbind from a device. |
 
 ## Remarks
 

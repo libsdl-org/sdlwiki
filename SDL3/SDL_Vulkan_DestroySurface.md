@@ -17,11 +17,11 @@ void SDL_Vulkan_DestroySurface(VkInstance instance,
 
 ## Function Parameters
 
-|                   |                                                                                                              |
-| ----------------- | ------------------------------------------------------------------------------------------------------------ |
-| **instance**      | The Vulkan instance handle                                                                                   |
-| **surface**       | VkSurfaceKHR handle to destroy                                                                               |
-| **allocator**     | A VkAllocationCallbacks struct, which lets the app set the allocator that destroys the surface. Can be NULL. |
+|                                      |               |                                                                                                              |
+| ------------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------ |
+| VkInstance                           | **instance**  | The Vulkan instance handle                                                                                   |
+| VkSurfaceKHR                         | **surface**   | VkSurfaceKHR handle to destroy                                                                               |
+| const struct VkAllocationCallbacks * | **allocator** | A VkAllocationCallbacks struct, which lets the app set the allocator that destroys the surface. Can be NULL. |
 
 ## Remarks
 

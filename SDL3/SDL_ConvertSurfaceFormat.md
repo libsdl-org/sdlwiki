@@ -15,15 +15,16 @@ SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface *surface, SDL_PixelFormatEnum 
 
 ## Function Parameters
 
-|                      |                                                              |
-| -------------------- | ------------------------------------------------------------ |
-| **surface**          | the existing [SDL_Surface](SDL_Surface) structure to convert |
-| **pixel_format**     | the new pixel format                                         |
+|                                            |                  |                                                              |
+| ------------------------------------------ | ---------------- | ------------------------------------------------------------ |
+| [SDL_Surface](SDL_Surface) *               | **surface**      | the existing [SDL_Surface](SDL_Surface) structure to convert |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **pixel_format** | the new pixel format                                         |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

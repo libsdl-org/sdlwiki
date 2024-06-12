@@ -15,14 +15,14 @@ SDL_Window* SDL_CreateWindowWithProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|               |                       |
-| ------------- | --------------------- |
-| **props**     | the properties to use |
+|                                      |           |                       |
+| ------------------------------------ | --------- | --------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to use |
 
 ## Return Value
 
-Returns the window that was created or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Window](SDL_Window) *) Returns the window that was created or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

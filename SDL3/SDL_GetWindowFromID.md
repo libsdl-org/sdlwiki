@@ -15,14 +15,15 @@ SDL_Window* SDL_GetWindowFromID(SDL_WindowID id);
 
 ## Function Parameters
 
-|            |                      |
-| ---------- | -------------------- |
-| **id**     | the ID of the window |
+|                              |        |                      |
+| ---------------------------- | ------ | -------------------- |
+| [SDL_WindowID](SDL_WindowID) | **id** | the ID of the window |
 
 ## Return Value
 
-Returns the window associated with `id` or NULL if it doesn't exist; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Window](SDL_Window) *) Returns the window associated with `id` or
+NULL if it doesn't exist; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

@@ -15,16 +15,16 @@ void* SDL_GetProperty(SDL_PropertiesID props, const char *name, void *default_va
 
 ## Function Parameters
 
-|                       |                                   |
-| --------------------- | --------------------------------- |
-| **props**             | the properties to query           |
-| **name**              | the name of the property to query |
-| **default_value**     | the default value of the property |
+|                                      |                   |                                   |
+| ------------------------------------ | ----------------- | --------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**         | the properties to query           |
+| const char *                         | **name**          | the name of the property to query |
+| void *                               | **default_value** | the default value of the property |
 
 ## Return Value
 
-Returns the value of the property, or `default_value` if it is not set or
-not a pointer property.
+(void *) Returns the value of the property, or `default_value` if it is not
+set or not a pointer property.
 
 ## Remarks
 

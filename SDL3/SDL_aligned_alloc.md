@@ -10,19 +10,19 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_MALLOC void* SDL_aligned_alloc(size_t alignment, size_t size);
+void* SDL_aligned_alloc(size_t alignment, size_t size);
 ```
 
 ## Function Parameters
 
-|                   |                         |
-| ----------------- | ----------------------- |
-| **alignment**     | the alignment requested |
-| **size**          | the size to allocate    |
+|        |               |                         |
+| ------ | ------------- | ----------------------- |
+| size_t | **alignment** | the alignment requested |
+| size_t | **size**      | the size to allocate    |
 
 ## Return Value
 
-Returns a pointer to the aligned memory
+(void *) Returns a pointer to the aligned memory
 
 ## Remarks
 

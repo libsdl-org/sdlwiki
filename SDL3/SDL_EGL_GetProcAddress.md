@@ -15,14 +15,15 @@ SDL_FunctionPointer SDL_EGL_GetProcAddress(const char *proc);
 
 ## Function Parameters
 
-|              |                             |
-| ------------ | --------------------------- |
-| **proc**     | the name of an EGL function |
+|              |          |                             |
+| ------------ | -------- | --------------------------- |
+| const char * | **proc** | the name of an EGL function |
 
 ## Return Value
 
-Returns a pointer to the named EGL function. The returned pointer should be
-cast to the appropriate function signature.
+([SDL_FunctionPointer](SDL_FunctionPointer)) Returns a pointer to the named
+EGL function. The returned pointer should be cast to the appropriate
+function signature.
 
 ## Remarks
 

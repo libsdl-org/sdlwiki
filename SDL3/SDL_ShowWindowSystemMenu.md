@@ -15,15 +15,15 @@ int SDL_ShowWindowSystemMenu(SDL_Window *window, int x, int y);
 
 ## Function Parameters
 
-|                |                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------- |
-| **window**     | the window for which the menu will be displayed                                    |
-| **x**          | the x coordinate of the menu, relative to the origin (top-left) of the client area |
-| **y**          | the y coordinate of the menu, relative to the origin (top-left) of the client area |
+|                            |            |                                                                                    |
+| -------------------------- | ---------- | ---------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window for which the menu will be displayed                                    |
+| int                        | **x**      | the x coordinate of the menu, relative to the origin (top-left) of the client area |
+| int                        | **y**      | the y coordinate of the menu, relative to the origin (top-left) of the client area |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

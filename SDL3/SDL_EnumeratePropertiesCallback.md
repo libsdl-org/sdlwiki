@@ -15,11 +15,11 @@ typedef void (SDLCALL *SDL_EnumeratePropertiesCallback)(void *userdata, SDL_Prop
 
 ## Function Parameters
 
-|                  |                                                                    |
-| ---------------- | ------------------------------------------------------------------ |
-| **userdata**     | an app-defined pointer passed to the callback.                     |
-| **props**        | the [SDL_PropertiesID](SDL_PropertiesID) that is being enumerated. |
-| **name**         | the next property name in the enumeration.                         |
+|              |                                                                    |
+| ------------ | ------------------------------------------------------------------ |
+| **userdata** | an app-defined pointer passed to the callback.                     |
+| **props**    | the [SDL_PropertiesID](SDL_PropertiesID) that is being enumerated. |
+| **name**     | the next property name in the enumeration.                         |
 
 ## Remarks
 

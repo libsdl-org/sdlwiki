@@ -15,13 +15,13 @@ int SDL_GL_SetSwapInterval(int interval);
 
 ## Function Parameters
 
-|                  |                                                                                                      |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| **interval**     | 0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for adaptive vsync |
+|     |              |                                                                                                      |
+| --- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| int | **interval** | 0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for adaptive vsync |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,14 +15,14 @@ SDL_bool SDL_GamepadConnected(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+|                              |             |                                                                                  |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the gamepad has been opened and is
-currently connected, or [SDL_FALSE](SDL_FALSE) if not.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the gamepad has been
+opened and is currently connected, or [SDL_FALSE](SDL_FALSE) if not.
 
 ## Version
 

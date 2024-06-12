@@ -15,16 +15,16 @@ int SDL_EnumerateStorageDirectory(SDL_Storage *storage, const char *path, SDL_En
 
 ## Function Parameters
 
-|                  |                                                           |
-| ---------------- | --------------------------------------------------------- |
-| **storage**      | a storage container                                       |
-| **path**         | the path of the directory to enumerate                    |
-| **callback**     | a function that is called for each entry in the directory |
-| **userdata**     | a pointer that is passed to `callback`                    |
+|                                                                  |              |                                                           |
+| ---------------------------------------------------------------- | ------------ | --------------------------------------------------------- |
+| [SDL_Storage](SDL_Storage) *                                     | **storage**  | a storage container                                       |
+| const char *                                                     | **path**     | the path of the directory to enumerate                    |
+| [SDL_EnumerateDirectoryCallback](SDL_EnumerateDirectoryCallback) | **callback** | a function that is called for each entry in the directory |
+| void *                                                           | **userdata** | a pointer that is passed to `callback`                    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

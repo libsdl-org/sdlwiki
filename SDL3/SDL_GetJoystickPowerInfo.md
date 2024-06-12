@@ -15,14 +15,14 @@ SDL_PowerState SDL_GetJoystickPowerInfo(SDL_Joystick *joystick, int *percent);
 
 ## Function Parameters
 
-|                  |                                                                                                                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **joystick**     | The joystick to query                                                                                                                                                                 |
-| **percent**      | a pointer filled in with the percentage of battery life left, between 0 and 100, or NULL to ignore. This will be filled in with -1 we can't determine a value or there is no battery. |
+|                                |              |                                                                                                                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query                                                                                                                                                                 |
+| int *                          | **percent**  | a pointer filled in with the percentage of battery life left, between 0 and 100, or NULL to ignore. This will be filled in with -1 we can't determine a value or there is no battery. |
 
 ## Return Value
 
-Returns the current battery state or
+([SDL_PowerState](SDL_PowerState)) Returns the current battery state or
 [`SDL_POWERSTATE_ERROR`](SDL_POWERSTATE_ERROR) on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 

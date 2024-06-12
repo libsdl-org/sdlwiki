@@ -15,15 +15,15 @@ Sint16 SDL_GetGamepadAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
 
 ## Function Parameters
 
-|                 |                                                                      |
-| --------------- | -------------------------------------------------------------------- |
-| **gamepad**     | a gamepad                                                            |
-| **axis**        | an axis index (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values) |
+|                                    |             |                                                                      |
+| ---------------------------------- | ----------- | -------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *       | **gamepad** | a gamepad                                                            |
+| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis**    | an axis index (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values) |
 
 ## Return Value
 
-Returns axis state (including 0) on success or 0 (also) on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(Sint16) Returns axis state (including 0) on success or 0 (also) on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

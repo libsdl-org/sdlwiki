@@ -15,14 +15,14 @@ const char* SDL_GetMouseInstanceName(SDL_MouseID instance_id);
 
 ## Function Parameters
 
-|                     |                       |
-| ------------------- | --------------------- |
-| **instance_id**     | the mouse instance ID |
+|                            |                 |                       |
+| -------------------------- | --------------- | --------------------- |
+| [SDL_MouseID](SDL_MouseID) | **instance_id** | the mouse instance ID |
 
 ## Return Value
 
-Returns the name of the selected mouse, or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(const char *) Returns the name of the selected mouse, or NULL on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

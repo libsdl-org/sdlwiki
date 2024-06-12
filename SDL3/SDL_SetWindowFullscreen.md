@@ -15,14 +15,14 @@ int SDL_SetWindowFullscreen(SDL_Window *window, SDL_bool fullscreen);
 
 ## Function Parameters
 
-|                    |                                                                                    |
-| ------------------ | ---------------------------------------------------------------------------------- |
-| **window**         | the window to change                                                               |
-| **fullscreen**     | [SDL_TRUE](SDL_TRUE) for fullscreen mode, [SDL_FALSE](SDL_FALSE) for windowed mode |
+|                            |                |                                                                                    |
+| -------------------------- | -------------- | ---------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**     | the window to change                                                               |
+| [SDL_bool](SDL_bool)       | **fullscreen** | [SDL_TRUE](SDL_TRUE) for fullscreen mode, [SDL_FALSE](SDL_FALSE) for windowed mode |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

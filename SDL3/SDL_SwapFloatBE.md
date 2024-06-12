@@ -15,9 +15,9 @@ Defined in [<SDL3/SDL_endian.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Macro Parameters
 
-|           |                                             |
-| --------- | ------------------------------------------- |
-| **x**     | the value to swap, in bigendian byte order. |
+|       |                                             |
+| ----- | ------------------------------------------- |
+| **x** | the value to swap, in bigendian byte order. |
 
 ## Return Value
 

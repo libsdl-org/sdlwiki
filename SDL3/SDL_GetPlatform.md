@@ -15,8 +15,8 @@ const char * SDL_GetPlatform(void);
 
 ## Return Value
 
-Returns the name of the platform. If the correct platform name is not
-available, returns a string beginning with the text "Unknown".
+(const char *) Returns the name of the platform. If the correct platform
+name is not available, returns a string beginning with the text "Unknown".
 
 ## Remarks
 

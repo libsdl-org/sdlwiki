@@ -15,15 +15,16 @@ extern SDL_DECLSPEC SDL_GamepadBinding **SDLCALL SDL_GetGamepadBindings(SDL_Game
 
 ## Function Parameters
 
-|                 |                                                          |
-| --------------- | -------------------------------------------------------- |
-| **gamepad**     | a gamepad                                                |
-| **count**       | a pointer filled in with the number of bindings returned |
+|                              |             |                                                          |
+| ---------------------------- | ----------- | -------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad                                                |
+| int *                        | **count**   | a pointer filled in with the number of bindings returned |
 
 ## Return Value
 
-Returns a NULL terminated array of pointers to bindings which should be
-freed with [SDL_free](SDL_free)(), or NULL on error; call
+([SDL_GamepadBinding](SDL_GamepadBinding) **) Returns a NULL terminated
+array of pointers to bindings which should be freed with
+[SDL_free](SDL_free)(), or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more details.
 
 ## Version

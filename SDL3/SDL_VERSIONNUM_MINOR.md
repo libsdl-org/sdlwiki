@@ -15,9 +15,9 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ## Macro Parameters
 
-|                 |                     |
-| --------------- | ------------------- |
-| **version**     | the version number. |
+|             |                     |
+| ----------- | ------------------- |
+| **version** | the version number. |
 
 ## Remarks
 

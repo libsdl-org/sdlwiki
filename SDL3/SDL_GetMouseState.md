@@ -15,14 +15,15 @@ SDL_MouseButtonFlags SDL_GetMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|           |                                                                            |
-| --------- | -------------------------------------------------------------------------- |
-| **x**     | the x coordinate of the mouse cursor position relative to the focus window |
-| **y**     | the y coordinate of the mouse cursor position relative to the focus window |
+|         |       |                                                                            |
+| ------- | ----- | -------------------------------------------------------------------------- |
+| float * | **x** | the x coordinate of the mouse cursor position relative to the focus window |
+| float * | **y** | the y coordinate of the mouse cursor position relative to the focus window |
 
 ## Return Value
 
-Returns a 32-bit button bitmask of the current button state.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns a 32-bit button
+bitmask of the current button state.
 
 ## Remarks
 

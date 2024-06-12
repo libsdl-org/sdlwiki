@@ -15,14 +15,14 @@ char* SDL_GetGamepadInstanceMapping(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the mapping string. Must be freed with [SDL_free](SDL_free)().
-Returns NULL if no mapping is available.
+(char *) Returns the mapping string. Must be freed with
+[SDL_free](SDL_free)(). Returns NULL if no mapping is available.
 
 ## Remarks
 

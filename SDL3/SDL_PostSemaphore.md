@@ -15,13 +15,13 @@ int SDL_PostSemaphore(SDL_Semaphore *sem);
 
 ## Function Parameters
 
-|             |                            |
-| ----------- | -------------------------- |
-| **sem**     | the semaphore to increment |
+|                                  |         |                            |
+| -------------------------------- | ------- | -------------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to increment |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

@@ -15,14 +15,14 @@ float SDL_fmodf(float x, float y);
 
 ## Function Parameters
 
-|           |                                 |
-| --------- | ------------------------------- |
-| **x**     | the numerator                   |
-| **y**     | the denominator. Must not be 0. |
+|       |       |                                 |
+| ----- | ----- | ------------------------------- |
+| float | **x** | the numerator                   |
+| float | **y** | the denominator. Must not be 0. |
 
 ## Return Value
 
-Returns the remainder of `x / y`
+(float) Returns the remainder of `x / y`
 
 ## Remarks
 

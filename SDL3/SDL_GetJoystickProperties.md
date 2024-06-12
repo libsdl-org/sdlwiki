@@ -15,14 +15,15 @@ SDL_PropertiesID SDL_GetJoystickProperties(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                  |                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

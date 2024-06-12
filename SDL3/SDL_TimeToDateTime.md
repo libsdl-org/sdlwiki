@@ -15,16 +15,16 @@ int SDL_TimeToDateTime(SDL_Time ticks, SDL_DateTime *dt, SDL_bool localTime);
 
 ## Function Parameters
 
-|                   |                                                                                                                                              |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ticks**         | the [SDL_Time](SDL_Time) to be converted                                                                                                     |
-| **dt**            | the resulting [SDL_DateTime](SDL_DateTime)                                                                                                   |
-| **localTime**     | the resulting [SDL_DateTime](SDL_DateTime) will be expressed in local time if true, otherwise it will be in Universal Coordinated Time (UTC) |
+|                                |               |                                                                                                                                              |
+| ------------------------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Time](SDL_Time)           | **ticks**     | the [SDL_Time](SDL_Time) to be converted                                                                                                     |
+| [SDL_DateTime](SDL_DateTime) * | **dt**        | the resulting [SDL_DateTime](SDL_DateTime)                                                                                                   |
+| [SDL_bool](SDL_bool)           | **localTime** | the resulting [SDL_DateTime](SDL_DateTime) will be expressed in local time if true, otherwise it will be in Universal Coordinated Time (UTC) |
 
 ## Return Value
 
-Returns 0 on success or -1 on error; call [SDL_GetError](SDL_GetError)()
-for more information.
+(int) Returns 0 on success or -1 on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

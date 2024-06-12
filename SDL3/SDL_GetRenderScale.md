@@ -15,15 +15,15 @@ int SDL_GetRenderScale(SDL_Renderer *renderer, float *scaleX, float *scaleY);
 
 ## Function Parameters
 
-|                  |                                                        |
-| ---------------- | ------------------------------------------------------ |
-| **renderer**     | the rendering context                                  |
-| **scaleX**       | a pointer filled in with the horizontal scaling factor |
-| **scaleY**       | a pointer filled in with the vertical scaling factor   |
+|                                |              |                                                        |
+| ------------------------------ | ------------ | ------------------------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                  |
+| float *                        | **scaleX**   | a pointer filled in with the horizontal scaling factor |
+| float *                        | **scaleY**   | a pointer filled in with the vertical scaling factor   |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

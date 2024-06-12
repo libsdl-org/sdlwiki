@@ -15,14 +15,14 @@ char* SDL_GetUserFolder(SDL_Folder folder);
 
 ## Function Parameters
 
-|                |                            |
-| -------------- | -------------------------- |
-| **folder**     | The type of folder to find |
+|                          |            |                            |
+| ------------------------ | ---------- | -------------------------- |
+| [SDL_Folder](SDL_Folder) | **folder** | The type of folder to find |
 
 ## Return Value
 
-Returns Either a null-terminated C string containing the full path to the
-folder, or NULL if an error happened.
+(char *) Returns Either a null-terminated C string containing the full path
+to the folder, or NULL if an error happened.
 
 ## Remarks
 

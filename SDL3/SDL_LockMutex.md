@@ -15,9 +15,9 @@ void SDL_LockMutex(SDL_Mutex *mutex);
 
 ## Function Parameters
 
-|               |                   |
-| ------------- | ----------------- |
-| **mutex**     | the mutex to lock |
+|                          |           |                   |
+| ------------------------ | --------- | ----------------- |
+| [SDL_Mutex](SDL_Mutex) * | **mutex** | the mutex to lock |
 
 ## Remarks
 

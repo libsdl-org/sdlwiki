@@ -15,14 +15,15 @@ const SDL_DisplayMode* SDL_GetDesktopDisplayMode(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                   |                                         |
-| ----------------- | --------------------------------------- |
-| **displayID**     | the instance ID of the display to query |
+|                                |               |                                         |
+| ------------------------------ | ------------- | --------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query |
 
 ## Return Value
 
-Returns a pointer to the desktop display mode or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+(const [SDL_DisplayMode](SDL_DisplayMode) *) Returns a pointer to the
+desktop display mode or NULL on error; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Remarks
 

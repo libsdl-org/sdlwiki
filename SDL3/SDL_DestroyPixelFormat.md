@@ -15,9 +15,9 @@ void SDL_DestroyPixelFormat(SDL_PixelFormat *format);
 
 ## Function Parameters
 
-|                |                                                          |
-| -------------- | -------------------------------------------------------- |
-| **format**     | the [SDL_PixelFormat](SDL_PixelFormat) structure to free |
+|                                      |            |                                                          |
+| ------------------------------------ | ---------- | -------------------------------------------------------- |
+| [SDL_PixelFormat](SDL_PixelFormat) * | **format** | the [SDL_PixelFormat](SDL_PixelFormat) structure to free |
 
 ## Version
 

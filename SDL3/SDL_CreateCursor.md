@@ -18,19 +18,20 @@ SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
 
 ## Function Parameters
 
-|               |                                                                                                           |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| **data**      | the color value for each pixel of the cursor                                                              |
-| **mask**      | the mask value for each pixel of the cursor                                                               |
-| **w**         | the width of the cursor                                                                                   |
-| **h**         | the height of the cursor                                                                                  |
-| **hot_x**     | the x-axis offset from the left of the cursor image to the mouse x position, in the range of 0 to `w` - 1 |
-| **hot_y**     | the y-axis offset from the top of the cursor image to the mouse y position, in the range of 0 to `h` - 1  |
+|               |           |                                                                                                           |
+| ------------- | --------- | --------------------------------------------------------------------------------------------------------- |
+| const Uint8 * | **data**  | the color value for each pixel of the cursor                                                              |
+| const Uint8 * | **mask**  | the mask value for each pixel of the cursor                                                               |
+| int           | **w**     | the width of the cursor                                                                                   |
+| int           | **h**     | the height of the cursor                                                                                  |
+| int           | **hot_x** | the x-axis offset from the left of the cursor image to the mouse x position, in the range of 0 to `w` - 1 |
+| int           | **hot_y** | the y-axis offset from the top of the cursor image to the mouse y position, in the range of 0 to `h` - 1  |
 
 ## Return Value
 
-Returns a new cursor with the specified parameters on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Cursor](SDL_Cursor) *) Returns a new cursor with the specified
+parameters on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

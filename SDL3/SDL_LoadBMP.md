@@ -15,15 +15,15 @@ SDL_Surface* SDL_LoadBMP(const char *file);
 
 ## Function Parameters
 
-|              |                      |
-| ------------ | -------------------- |
-| **file**     | the BMP file to load |
+|              |          |                      |
+| ------------ | -------- | -------------------- |
+| const char * | **file** | the BMP file to load |
 
 ## Return Value
 
-Returns a pointer to a new [SDL_Surface](SDL_Surface) structure or NULL if
-there was an error; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_Surface](SDL_Surface) *) Returns a pointer to a new
+[SDL_Surface](SDL_Surface) structure or NULL if there was an error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

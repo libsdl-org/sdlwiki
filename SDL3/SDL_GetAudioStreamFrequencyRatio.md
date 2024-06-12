@@ -15,13 +15,13 @@ float SDL_GetAudioStreamFrequencyRatio(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                                                  |
-| -------------- | ------------------------------------------------ |
-| **stream**     | the [SDL_AudioStream](SDL_AudioStream) to query. |
+|                                      |            |                                                  |
+| ------------------------------------ | ---------- | ------------------------------------------------ |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the [SDL_AudioStream](SDL_AudioStream) to query. |
 
 ## Return Value
 
-Returns the frequency ratio of the stream, or 0.0 on error
+(float) Returns the frequency ratio of the stream, or 0.0 on error
 
 ## Thread Safety
 

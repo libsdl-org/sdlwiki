@@ -15,13 +15,13 @@ void * SDL_AllocateEventMemory(size_t size);
 
 ## Function Parameters
 
-|              |                                  |
-| ------------ | -------------------------------- |
-| **size**     | the amount of memory to allocate |
+|        |          |                                  |
+| ------ | -------- | -------------------------------- |
+| size_t | **size** | the amount of memory to allocate |
 
 ## Return Value
 
-Returns a pointer to the memory allocated or NULL on failure; call
+(void *) Returns a pointer to the memory allocated or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

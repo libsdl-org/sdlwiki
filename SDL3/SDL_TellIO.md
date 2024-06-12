@@ -15,14 +15,14 @@ Sint64 SDL_TellIO(SDL_IOStream *context);
 
 ## Function Parameters
 
-|                 |                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------- |
-| **context**     | an [SDL_IOStream](SDL_IOStream) data stream object from which to get the current offset |
+|                                |             |                                                                                         |
+| ------------------------------ | ----------- | --------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **context** | an [SDL_IOStream](SDL_IOStream) data stream object from which to get the current offset |
 
 ## Return Value
 
-Returns the current offset in the stream, or -1 if the information can not
-be determined.
+(Sint64) Returns the current offset in the stream, or -1 if the information
+can not be determined.
 
 ## Remarks
 

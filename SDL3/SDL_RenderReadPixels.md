@@ -15,15 +15,16 @@ SDL_Surface * SDL_RenderReadPixels(SDL_Renderer *renderer, const SDL_Rect *rect)
 
 ## Function Parameters
 
-|                  |                                                                                                                                        |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                                                                                  |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure representing the area in pixels relative to the to current viewport, or NULL for the entire viewport |
+|                                |              |                                                                                                                                        |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                  |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the area in pixels relative to the to current viewport, or NULL for the entire viewport |
 
 ## Return Value
 
-Returns a new [SDL_Surface](SDL_Surface) on success or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns a new [SDL_Surface](SDL_Surface) on
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

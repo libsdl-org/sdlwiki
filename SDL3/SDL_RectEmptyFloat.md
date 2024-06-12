@@ -15,14 +15,14 @@ SDL_FORCE_INLINE SDL_bool SDL_RectEmptyFloat(const SDL_FRect *r);
 
 ## Function Parameters
 
-|           |                        |
-| --------- | ---------------------- |
-| **r**     | the rectangle to test. |
+|                                |       |                        |
+| ------------------------------ | ----- | ---------------------- |
+| const [SDL_FRect](SDL_FRect) * | **r** | the rectangle to test. |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the rectangle is "empty",
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the rectangle is
+"empty", [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

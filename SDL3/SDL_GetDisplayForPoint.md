@@ -15,14 +15,15 @@ SDL_DisplayID SDL_GetDisplayForPoint(const SDL_Point *point);
 
 ## Function Parameters
 
-|               |                    |
-| ------------- | ------------------ |
-| **point**     | the point to query |
+|                                |           |                    |
+| ------------------------------ | --------- | ------------------ |
+| const [SDL_Point](SDL_Point) * | **point** | the point to query |
 
 ## Return Value
 
-Returns the instance ID of the display containing the point or 0 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_DisplayID](SDL_DisplayID)) Returns the instance ID of the display
+containing the point or 0 on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Version
 

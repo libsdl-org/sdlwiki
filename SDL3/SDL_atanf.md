@@ -15,13 +15,13 @@ float SDL_atanf(float x);
 
 ## Function Parameters
 
-|           |                       |
-| --------- | --------------------- |
-| **x**     | floating point value. |
+|       |       |                       |
+| ----- | ----- | --------------------- |
+| float | **x** | floating point value. |
 
 ## Return Value
 
-Returns arc tangent of of `x` in radians, or 0 if `x = 0`
+(float) Returns arc tangent of of `x` in radians, or 0 if `x = 0`
 
 ## Remarks
 

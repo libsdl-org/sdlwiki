@@ -15,16 +15,16 @@ int SDL_RumbleGamepadTriggers(SDL_Gamepad *gamepad, Uint16 left_rumble, Uint16 r
 
 ## Function Parameters
 
-|                      |                                                                   |
-| -------------------- | ----------------------------------------------------------------- |
-| **gamepad**          | The gamepad to vibrate                                            |
-| **left_rumble**      | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
-| **right_rumble**     | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
-| **duration_ms**      | The duration of the rumble effect, in milliseconds                |
+|                              |                  |                                                                   |
+| ---------------------------- | ---------------- | ----------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**      | The gamepad to vibrate                                            |
+| Uint16                       | **left_rumble**  | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
+| Uint16                       | **right_rumble** | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
+| Uint32                       | **duration_ms**  | The duration of the rumble effect, in milliseconds                |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

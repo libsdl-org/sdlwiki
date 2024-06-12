@@ -15,14 +15,14 @@ int SDL_GetCurrentTime(SDL_Time *ticks);
 
 ## Function Parameters
 
-|               |                                                          |
-| ------------- | -------------------------------------------------------- |
-| **ticks**     | the [SDL_Time](SDL_Time) to hold the returned tick count |
+|                        |           |                                                          |
+| ---------------------- | --------- | -------------------------------------------------------- |
+| [SDL_Time](SDL_Time) * | **ticks** | the [SDL_Time](SDL_Time) to hold the returned tick count |
 
 ## Return Value
 
-Returns 0 on success or -1 on error; call [SDL_GetError](SDL_GetError)()
-for more information.
+(int) Returns 0 on success or -1 on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

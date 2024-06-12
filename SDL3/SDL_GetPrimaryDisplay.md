@@ -15,8 +15,9 @@ SDL_DisplayID SDL_GetPrimaryDisplay(void);
 
 ## Return Value
 
-Returns the instance ID of the primary display on success or 0 on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_DisplayID](SDL_DisplayID)) Returns the instance ID of the primary
+display on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

@@ -15,16 +15,16 @@ SDL_TimerID SDL_AddTimerNS(Uint64 interval, SDL_NSTimerCallback callback, void *
 
 ## Function Parameters
 
-|                  |                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| **interval**     | the timer delay, in nanoseconds, passed to `callback`                                             |
-| **callback**     | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
-| **userdata**     | a pointer that is passed to `callback`                                                            |
+|                                            |              |                                                                                                   |
+| ------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------- |
+| Uint64                                     | **interval** | the timer delay, in nanoseconds, passed to `callback`                                             |
+| [SDL_NSTimerCallback](SDL_NSTimerCallback) | **callback** | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
+| void *                                     | **userdata** | a pointer that is passed to `callback`                                                            |
 
 ## Return Value
 
-Returns a timer ID or 0 if an error occurs; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_TimerID](SDL_TimerID)) Returns a timer ID or 0 if an error occurs;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

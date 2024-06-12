@@ -15,13 +15,13 @@ SDL_TouchDeviceType SDL_GetTouchDeviceType(SDL_TouchID touchID);
 
 ## Function Parameters
 
-|                 |                          |
-| --------------- | ------------------------ |
-| **touchID**     | the ID of a touch device |
+|                            |             |                          |
+| -------------------------- | ----------- | ------------------------ |
+| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of a touch device |
 
 ## Return Value
 
-Returns touch device type
+([SDL_TouchDeviceType](SDL_TouchDeviceType)) Returns touch device type
 
 ## Version
 

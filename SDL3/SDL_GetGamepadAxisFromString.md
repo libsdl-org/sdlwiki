@@ -15,15 +15,16 @@ SDL_GamepadAxis SDL_GetGamepadAxisFromString(const char *str);
 
 ## Function Parameters
 
-|             |                                                       |
-| ----------- | ----------------------------------------------------- |
-| **str**     | string representing a [SDL_Gamepad](SDL_Gamepad) axis |
+|              |         |                                                       |
+| ------------ | ------- | ----------------------------------------------------- |
+| const char * | **str** | string representing a [SDL_Gamepad](SDL_Gamepad) axis |
 
 ## Return Value
 
-Returns the [SDL_GamepadAxis](SDL_GamepadAxis) enum corresponding to the
-input string, or [`SDL_GAMEPAD_AXIS_INVALID`](SDL_GAMEPAD_AXIS_INVALID) if
-no match was found.
+([SDL_GamepadAxis](SDL_GamepadAxis)) Returns the
+[SDL_GamepadAxis](SDL_GamepadAxis) enum corresponding to the input string,
+or [`SDL_GAMEPAD_AXIS_INVALID`](SDL_GAMEPAD_AXIS_INVALID) if no match was
+found.
 
 ## Remarks
 

@@ -15,13 +15,13 @@ const char* SDL_GetAudioDeviceName(SDL_AudioDeviceID devid);
 
 ## Function Parameters
 
-|               |                                         |
-| ------------- | --------------------------------------- |
-| **devid**     | the instance ID of the device to query. |
+|                                        |           |                                         |
+| -------------------------------------- | --------- | --------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid** | the instance ID of the device to query. |
 
 ## Return Value
 
-Returns the name of the audio device, or NULL on error.
+(const char *) Returns the name of the audio device, or NULL on error.
 
 ## Remarks
 

@@ -15,12 +15,12 @@ typedef void (SDLCALL *SDL_AudioStreamCallback)(void *userdata, SDL_AudioStream 
 
 ## Function Parameters
 
-|                           |                                                                               |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **stream**                | The SDL audio stream associated with this callback.                           |
-| **additional_amount**     | The amount of data, in bytes, that is needed right now.                       |
-| **total_amount**          | The total amount of data requested, in bytes, that is requested or available. |
-| **userdata**              | An opaque pointer provided by the app for their personal use.                 |
+|                       |                                                                               |
+| --------------------- | ----------------------------------------------------------------------------- |
+| **stream**            | The SDL audio stream associated with this callback.                           |
+| **additional_amount** | The amount of data, in bytes, that is needed right now.                       |
+| **total_amount**      | The total amount of data requested, in bytes, that is requested or available. |
+| **userdata**          | An opaque pointer provided by the app for their personal use.                 |
 
 ## Remarks
 

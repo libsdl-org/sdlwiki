@@ -15,13 +15,13 @@ int SDL_RemoveTimer(SDL_TimerID id);
 
 ## Function Parameters
 
-|            |                               |
-| ---------- | ----------------------------- |
-| **id**     | the ID of the timer to remove |
+|                            |        |                               |
+| -------------------------- | ------ | ----------------------------- |
+| [SDL_TimerID](SDL_TimerID) | **id** | the ID of the timer to remove |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

@@ -15,15 +15,15 @@ int SDL_GetWindowSizeInPixels(SDL_Window *window, int *w, int *h);
 
 ## Function Parameters
 
-|                |                                                                     |
-| -------------- | ------------------------------------------------------------------- |
-| **window**     | the window from which the drawable size should be queried           |
-| **w**          | a pointer to variable for storing the width in pixels, may be NULL  |
-| **h**          | a pointer to variable for storing the height in pixels, may be NULL |
+|                            |            |                                                                     |
+| -------------------------- | ---------- | ------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window from which the drawable size should be queried           |
+| int *                      | **w**      | a pointer to variable for storing the width in pixels, may be NULL  |
+| int *                      | **h**      | a pointer to variable for storing the height in pixels, may be NULL |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

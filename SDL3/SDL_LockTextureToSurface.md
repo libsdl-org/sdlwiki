@@ -17,15 +17,15 @@ int SDL_LockTextureToSurface(SDL_Texture *texture,
 
 ## Function Parameters
 
-|                 |                                                                                                                         |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **texture**     | the texture to lock for access, which must be created with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING) |
-| **rect**        | a pointer to the rectangle to lock for access. If the rect is NULL, the entire texture will be locked                   |
-| **surface**     | this is filled in with an SDL surface representing the locked area                                                      |
+|                               |             |                                                                                                                         |
+| ----------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) *  | **texture** | the texture to lock for access, which must be created with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING) |
+| const [SDL_Rect](SDL_Rect) *  | **rect**    | a pointer to the rectangle to lock for access. If the rect is NULL, the entire texture will be locked                   |
+| [SDL_Surface](SDL_Surface) ** | **surface** | this is filled in with an SDL surface representing the locked area                                                      |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

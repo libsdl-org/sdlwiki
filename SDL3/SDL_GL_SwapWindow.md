@@ -15,13 +15,13 @@ int SDL_GL_SwapWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                      |
-| -------------- | -------------------- |
-| **window**     | the window to change |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

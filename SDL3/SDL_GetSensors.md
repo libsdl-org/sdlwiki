@@ -15,15 +15,15 @@ SDL_SensorID* SDL_GetSensors(int *count);
 
 ## Function Parameters
 
-|               |                                                         |
-| ------------- | ------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of sensors returned |
+|       |           |                                                         |
+| ----- | --------- | ------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of sensors returned |
 
 ## Return Value
 
-Returns a 0 terminated array of sensor instance IDs which should be freed
-with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+([SDL_SensorID](SDL_SensorID) *) Returns a 0 terminated array of sensor
+instance IDs which should be freed with [SDL_free](SDL_free)(), or NULL on
+error; call [SDL_GetError](SDL_GetError)() for more details.
 
 ## Version
 

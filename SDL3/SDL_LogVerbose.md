@@ -15,11 +15,11 @@ void SDL_LogVerbose(int category, const char *fmt, ...);
 
 ## Function Parameters
 
-|                  |                                                                       |
-| ---------------- | --------------------------------------------------------------------- |
-| **category**     | the category of the message                                           |
-| **fmt**          | a printf() style message format string                                |
-| **...**          | additional parameters matching % tokens in the **fmt** string, if any |
+|              |              |                                                                       |
+| ------------ | ------------ | --------------------------------------------------------------------- |
+| int          | **category** | the category of the message                                           |
+| const char * | **fmt**      | a printf() style message format string                                |
+| ...          | **...**      | additional parameters matching % tokens in the **fmt** string, if any |
 
 ## Version
 

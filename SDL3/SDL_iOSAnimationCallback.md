@@ -15,9 +15,9 @@ typedef void (SDLCALL *SDL_iOSAnimationCallback)(void *userdata);
 
 ## Function Parameters
 
-|                  |                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **userdata**     | what was passed as `callbackParam` to [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback) as `callbackParam`. |
+|              |                                                                                                                      |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| **userdata** | what was passed as `callbackParam` to [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback) as `callbackParam`. |
 
 ## Remarks
 

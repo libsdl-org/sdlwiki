@@ -15,14 +15,14 @@ int SDL_GetWindowSurfaceVSync(SDL_Window *window, int *vsync);
 
 ## Function Parameters
 
-|                |                                                                                                                                                           |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **window**     | the window to query                                                                                                                                       |
-| **vsync**      | an int filled with the current vertical refresh sync interval. See [SDL_SetWindowSurfaceVSync](SDL_SetWindowSurfaceVSync)() for the meaning of the value. |
+|                            |            |                                                                                                                                                           |
+| -------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query                                                                                                                                       |
+| int *                      | **vsync**  | an int filled with the current vertical refresh sync interval. See [SDL_SetWindowSurfaceVSync](SDL_SetWindowSurfaceVSync)() for the meaning of the value. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

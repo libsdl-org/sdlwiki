@@ -15,13 +15,13 @@ float SDL_fabsf(float x);
 
 ## Function Parameters
 
-|           |                                              |
-| --------- | -------------------------------------------- |
-| **x**     | floating point value to use as the magnitude |
+|       |       |                                              |
+| ----- | ----- | -------------------------------------------- |
+| float | **x** | floating point value to use as the magnitude |
 
 ## Return Value
 
-Returns the absolute value of `x`
+(float) Returns the absolute value of `x`
 
 ## Remarks
 

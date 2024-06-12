@@ -15,15 +15,15 @@ SDL_DisplayID SDL_GetDisplayForWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the instance ID of the display containing the center of the window
-on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_DisplayID](SDL_DisplayID)) Returns the instance ID of the display
+containing the center of the window on success or 0 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

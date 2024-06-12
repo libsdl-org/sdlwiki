@@ -15,16 +15,16 @@ const char* SDL_GetKeyName(SDL_Keycode key);
 
 ## Function Parameters
 
-|             |                                                 |
-| ----------- | ----------------------------------------------- |
-| **key**     | the desired [SDL_Keycode](SDL_Keycode) to query |
+|                            |         |                                                 |
+| -------------------------- | ------- | ----------------------------------------------- |
+| [SDL_Keycode](SDL_Keycode) | **key** | the desired [SDL_Keycode](SDL_Keycode) to query |
 
 ## Return Value
 
-Returns a pointer to a UTF-8 string that stays valid at least until the
-next call to this function. If you need it around any longer, you must copy
-it. If the key doesn't have a name, this function returns an empty string
-("").
+(const char *) Returns a pointer to a UTF-8 string that stays valid at
+least until the next call to this function. If you need it around any
+longer, you must copy it. If the key doesn't have a name, this function
+returns an empty string ("").
 
 ## Remarks
 

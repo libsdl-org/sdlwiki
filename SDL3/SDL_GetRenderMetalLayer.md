@@ -15,14 +15,14 @@ void* SDL_GetRenderMetalLayer(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | The renderer to query |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer to query |
 
 ## Return Value
 
-Returns a `CAMetalLayer *` on success, or NULL if the renderer isn't a
-Metal renderer
+(void *) Returns a `CAMetalLayer *` on success, or NULL if the renderer
+isn't a Metal renderer
 
 ## Remarks
 

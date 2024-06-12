@@ -15,13 +15,13 @@ float SDL_cosf(float x);
 
 ## Function Parameters
 
-|           |                                  |
-| --------- | -------------------------------- |
-| **x**     | floating point value, in radians |
+|       |       |                                  |
+| ----- | ----- | -------------------------------- |
+| float | **x** | floating point value, in radians |
 
 ## Return Value
 
-Returns cosine of `x`
+(float) Returns cosine of `x`
 
 ## Remarks
 

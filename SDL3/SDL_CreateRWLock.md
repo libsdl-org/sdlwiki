@@ -15,8 +15,9 @@ SDL_RWLock* SDL_CreateRWLock(void);
 
 ## Return Value
 
-Returns the initialized and unlocked read/write lock or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_RWLock](SDL_RWLock) *) Returns the initialized and unlocked
+read/write lock or NULL on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

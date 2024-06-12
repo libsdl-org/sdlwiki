@@ -15,15 +15,15 @@ int SDL_GetRenderOutputSize(SDL_Renderer *renderer, float *w, float *h);
 
 ## Function Parameters
 
-|                  |                                               |
-| ---------------- | --------------------------------------------- |
-| **renderer**     | the rendering context                         |
-| **w**            | a pointer filled in with the width in pixels  |
-| **h**            | a pointer filled in with the height in pixels |
+|                                |              |                                               |
+| ------------------------------ | ------------ | --------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                         |
+| float *                        | **w**        | a pointer filled in with the width in pixels  |
+| float *                        | **h**        | a pointer filled in with the height in pixels |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

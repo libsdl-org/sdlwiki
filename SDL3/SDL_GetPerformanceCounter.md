@@ -15,7 +15,7 @@ Uint64 SDL_GetPerformanceCounter(void);
 
 ## Return Value
 
-Returns the current counter value.
+(Uint64) Returns the current counter value.
 
 ## Remarks
 

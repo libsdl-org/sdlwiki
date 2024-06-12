@@ -15,14 +15,14 @@ const char* SDL_GetRendererName(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | the rendering context |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context |
 
 ## Return Value
 
-Returns the name of the selected renderer, or NULL if the renderer is
-invalid.
+(const char *) Returns the name of the selected renderer, or NULL if the
+renderer is invalid.
 
 ## Remarks
 

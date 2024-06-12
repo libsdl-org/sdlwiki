@@ -15,14 +15,14 @@ int SDL_AddGamepadMappingsFromIO(SDL_IOStream *src, SDL_bool closeio);
 
 ## Function Parameters
 
-|                 |                                                                                                                     |
-| --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **src**         | the data stream for the mappings to be added                                                                        |
-| **closeio**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
+|                                |             |                                                                                                                     |
+| ------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the mappings to be added                                                                        |
+| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
-Returns the number of mappings added or -1 on error; call
+(int) Returns the number of mappings added or -1 on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

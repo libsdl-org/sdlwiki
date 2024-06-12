@@ -15,8 +15,8 @@ SDL_bool SDL_GetRelativeMouseMode(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if relative mode is enabled or
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if relative mode is
+enabled or [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Version
 

@@ -15,17 +15,17 @@ int SDL_SoftStretch(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst,
 
 ## Function Parameters
 
-|                   |                                                                                                 |
-| ----------------- | ----------------------------------------------------------------------------------------------- |
-| **src**           | the [SDL_Surface](SDL_Surface) structure to be copied from                                      |
-| **srcrect**       | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied                      |
-| **dst**           | the [SDL_Surface](SDL_Surface) structure that is the blit target                                |
-| **dstrect**       | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface |
-| **scaleMode**     | scale algorithm to be used                                                                      |
+|                                |               |                                                                                                 |
+| ------------------------------ | ------------- | ----------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) *   | **src**       | the [SDL_Surface](SDL_Surface) structure to be copied from                                      |
+| const [SDL_Rect](SDL_Rect) *   | **srcrect**   | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied                      |
+| [SDL_Surface](SDL_Surface) *   | **dst**       | the [SDL_Surface](SDL_Surface) structure that is the blit target                                |
+| const [SDL_Rect](SDL_Rect) *   | **dstrect**   | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface |
+| [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode** | scale algorithm to be used                                                                      |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

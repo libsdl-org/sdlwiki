@@ -15,14 +15,14 @@ double SDL_fmod(double x, double y);
 
 ## Function Parameters
 
-|           |                                 |
-| --------- | ------------------------------- |
-| **x**     | the numerator                   |
-| **y**     | the denominator. Must not be 0. |
+|        |       |                                 |
+| ------ | ----- | ------------------------------- |
+| double | **x** | the numerator                   |
+| double | **y** | the denominator. Must not be 0. |
 
 ## Return Value
 
-Returns the remainder of `x / y`
+(double) Returns the remainder of `x / y`
 
 ## Remarks
 

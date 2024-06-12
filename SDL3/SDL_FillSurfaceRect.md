@@ -15,15 +15,15 @@ int SDL_FillSurfaceRect(SDL_Surface *dst, const SDL_Rect *rect, Uint32 color);
 
 ## Function Parameters
 
-|               |                                                                                                           |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| **dst**       | the [SDL_Surface](SDL_Surface) structure that is the drawing target                                       |
-| **rect**      | the [SDL_Rect](SDL_Rect) structure representing the rectangle to fill, or NULL to fill the entire surface |
-| **color**     | the color to fill with                                                                                    |
+|                              |           |                                                                                                           |
+| ---------------------------- | --------- | --------------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **dst**   | the [SDL_Surface](SDL_Surface) structure that is the drawing target                                       |
+| const [SDL_Rect](SDL_Rect) * | **rect**  | the [SDL_Rect](SDL_Rect) structure representing the rectangle to fill, or NULL to fill the entire surface |
+| Uint32                       | **color** | the color to fill with                                                                                    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

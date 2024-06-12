@@ -16,15 +16,15 @@ SDL_bool SDL_HasRectIntersectionFloat(const SDL_FRect * A,
 
 ## Function Parameters
 
-|           |                                                                       |
-| --------- | --------------------------------------------------------------------- |
-| **A**     | an [SDL_FRect](SDL_FRect) structure representing the first rectangle  |
-| **B**     | an [SDL_FRect](SDL_FRect) structure representing the second rectangle |
+|                                |       |                                                                       |
+| ------------------------------ | ----- | --------------------------------------------------------------------- |
+| const [SDL_FRect](SDL_FRect) * | **A** | an [SDL_FRect](SDL_FRect) structure representing the first rectangle  |
+| const [SDL_FRect](SDL_FRect) * | **B** | an [SDL_FRect](SDL_FRect) structure representing the second rectangle |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is an
+intersection, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

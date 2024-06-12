@@ -15,13 +15,13 @@ int SDL_TryLockMutex(SDL_Mutex *mutex);
 
 ## Function Parameters
 
-|               |                          |
-| ------------- | ------------------------ |
-| **mutex**     | the mutex to try to lock |
+|                          |           |                          |
+| ------------------------ | --------- | ------------------------ |
+| [SDL_Mutex](SDL_Mutex) * | **mutex** | the mutex to try to lock |
 
 ## Return Value
 
-Returns 0 or [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
+(int) Returns 0 or [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
 
 ## Remarks
 

@@ -15,13 +15,13 @@ SDL_GamepadType SDL_GetRealGamepadInstanceType(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the gamepad type.
+([SDL_GamepadType](SDL_GamepadType)) Returns the gamepad type.
 
 ## Remarks
 

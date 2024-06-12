@@ -15,15 +15,15 @@ SDL_HapticID* SDL_GetHaptics(int *count);
 
 ## Function Parameters
 
-|               |                                                                |
-| ------------- | -------------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of haptic devices returned |
+|       |           |                                                                |
+| ----- | --------- | -------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of haptic devices returned |
 
 ## Return Value
 
-Returns a 0 terminated array of haptic device instance IDs which should be
-freed with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+([SDL_HapticID](SDL_HapticID) *) Returns a 0 terminated array of haptic
+device instance IDs which should be freed with [SDL_free](SDL_free)(), or
+NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
 
 ## Version
 

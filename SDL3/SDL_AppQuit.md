@@ -15,9 +15,9 @@ void SDL_AppQuit(void *appstate);
 
 ## Function Parameters
 
-|                  |                                                                         |
-| ---------------- | ----------------------------------------------------------------------- |
-| **appstate**     | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
+|        |              |                                                                         |
+| ------ | ------------ | ----------------------------------------------------------------------- |
+| void * | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
 
 ## Remarks
 

@@ -15,15 +15,15 @@ SDL_Thread * SDL_CreateThreadWithProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|               |                       |
-| ------------- | --------------------- |
-| **props**     | the properties to use |
+|                                      |           |                       |
+| ------------------------------------ | --------- | --------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to use |
 
 ## Return Value
 
-Returns an opaque pointer to the new thread object on success, NULL if the
-new thread could not be created; call [SDL_GetError](SDL_GetError)() for
-more information.
+([SDL_Thread](SDL_Thread) *) Returns an opaque pointer to the new thread
+object on success, NULL if the new thread could not be created; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

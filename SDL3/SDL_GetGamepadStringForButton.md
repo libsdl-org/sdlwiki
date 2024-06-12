@@ -15,14 +15,14 @@ const char* SDL_GetGamepadStringForButton(SDL_GamepadButton button);
 
 ## Function Parameters
 
-|                |                                                                  |
-| -------------- | ---------------------------------------------------------------- |
-| **button**     | an enum value for a given [SDL_GamepadButton](SDL_GamepadButton) |
+|                                        |            |                                                                  |
+| -------------------------------------- | ---------- | ---------------------------------------------------------------- |
+| [SDL_GamepadButton](SDL_GamepadButton) | **button** | an enum value for a given [SDL_GamepadButton](SDL_GamepadButton) |
 
 ## Return Value
 
-Returns a string for the given button, or NULL if an invalid button is
-specified. The string returned is of the format used by
+(const char *) Returns a string for the given button, or NULL if an invalid
+button is specified. The string returned is of the format used by
 [SDL_Gamepad](SDL_Gamepad) mapping strings.
 
 ## Remarks

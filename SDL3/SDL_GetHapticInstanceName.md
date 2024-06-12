@@ -15,15 +15,15 @@ const char* SDL_GetHapticInstanceName(SDL_HapticID instance_id);
 
 ## Function Parameters
 
-|                     |                               |
-| ------------------- | ----------------------------- |
-| **instance_id**     | the haptic device instance ID |
+|                              |                 |                               |
+| ---------------------------- | --------------- | ----------------------------- |
+| [SDL_HapticID](SDL_HapticID) | **instance_id** | the haptic device instance ID |
 
 ## Return Value
 
-Returns the name of the selected haptic device. If no name can be found,
-this function returns NULL; call [SDL_GetError](SDL_GetError)() for more
-information.
+(const char *) Returns the name of the selected haptic device. If no name
+can be found, this function returns NULL; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ void SDL_DestroyCursor(SDL_Cursor * cursor);
 
 ## Function Parameters
 
-|                |                    |
-| -------------- | ------------------ |
-| **cursor**     | the cursor to free |
+|                            |            |                    |
+| -------------------------- | ---------- | ------------------ |
+| [SDL_Cursor](SDL_Cursor) * | **cursor** | the cursor to free |
 
 ## Remarks
 

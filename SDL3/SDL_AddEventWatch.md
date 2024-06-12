@@ -15,14 +15,14 @@ int SDL_AddEventWatch(SDL_EventFilter filter, void *userdata);
 
 ## Function Parameters
 
-|                  |                                                                               |
-| ---------------- | ----------------------------------------------------------------------------- |
-| **filter**       | an [SDL_EventFilter](SDL_EventFilter) function to call when an event happens. |
-| **userdata**     | a pointer that is passed to `filter`                                          |
+|                                    |              |                                                                               |
+| ---------------------------------- | ------------ | ----------------------------------------------------------------------------- |
+| [SDL_EventFilter](SDL_EventFilter) | **filter**   | an [SDL_EventFilter](SDL_EventFilter) function to call when an event happens. |
+| void *                             | **userdata** | a pointer that is passed to `filter`                                          |
 
 ## Return Value
 
-Returns 0 on success, or a negative error code on failure; call
+(int) Returns 0 on success, or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

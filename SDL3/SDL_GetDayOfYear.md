@@ -15,16 +15,16 @@ int SDL_GetDayOfYear(int year, int month, int day);
 
 ## Function Parameters
 
-|               |                                 |
-| ------------- | ------------------------------- |
-| **year**      | the year component of the date  |
-| **month**     | the month component of the date |
-| **day**       | the day component of the date   |
+|     |           |                                 |
+| --- | --------- | ------------------------------- |
+| int | **year**  | the year component of the date  |
+| int | **month** | the month component of the date |
+| int | **day**   | the day component of the date   |
 
 ## Return Value
 
-Returns the day of year [0-365] if the date is valid, otherwise -1; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the day of year [0-365] if the date is valid, otherwise -1;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

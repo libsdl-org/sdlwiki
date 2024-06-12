@@ -15,7 +15,8 @@ SDL_TLSID SDL_CreateTLS(void);
 
 ## Return Value
 
-Returns the newly created thread local storage identifier or 0 on error.
+([SDL_TLSID](SDL_TLSID)) Returns the newly created thread local storage
+identifier or 0 on error.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ void SDL_UnlockMutex(SDL_Mutex *mutex);
 
 ## Function Parameters
 
-|               |                      |
-| ------------- | -------------------- |
-| **mutex**     | the mutex to unlock. |
+|                          |           |                      |
+| ------------------------ | --------- | -------------------- |
+| [SDL_Mutex](SDL_Mutex) * | **mutex** | the mutex to unlock. |
 
 ## Remarks
 

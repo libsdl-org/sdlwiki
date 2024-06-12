@@ -15,13 +15,13 @@ void* SDL_AtomicGetPtr(void **a);
 
 ## Function Parameters
 
-|           |                        |
-| --------- | ---------------------- |
-| **a**     | a pointer to a pointer |
+|         |       |                        |
+| ------- | ----- | ---------------------- |
+| void ** | **a** | a pointer to a pointer |
 
 ## Return Value
 
-Returns the current value of a pointer.
+(void *) Returns the current value of a pointer.
 
 ## Remarks
 

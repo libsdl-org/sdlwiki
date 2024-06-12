@@ -19,14 +19,14 @@ int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 
 ## Function Parameters
 
-|                  |                                     |
-| ---------------- | ----------------------------------- |
-| **renderer**     | The renderer to toggle.             |
-| **vsync**        | the vertical refresh sync interval. |
+|                                |              |                                     |
+| ------------------------------ | ------------ | ----------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer to toggle.             |
+| int                            | **vsync**    | the vertical refresh sync interval. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,16 +15,16 @@ int SDL_AppInit(void **appstate, int argc, char *argv[]);
 
 ## Function Parameters
 
-|                  |                                                                      |
-| ---------------- | -------------------------------------------------------------------- |
-| **appstate**     | a place where the app can optionally store a pointer for future use. |
-| **argc**         | The standard ANSI C main's argc; number of elements in `argv`        |
-| **argv**         | The standard ANSI C main's argv; array of command line arguments.    |
+|         |              |                                                                      |
+| ------- | ------------ | -------------------------------------------------------------------- |
+| void ** | **appstate** | a place where the app can optionally store a pointer for future use. |
+| int     | **argc**     | The standard ANSI C main's argc; number of elements in `argv`        |
+| char ** | **argv**     | The standard ANSI C main's argv; array of command line arguments.    |
 
 ## Return Value
 
-Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an error,
-[SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
+(int) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an
+error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
 [SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
 
 ## Remarks

@@ -15,9 +15,9 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Macro Parameters
 
-|           |                                             |
-| --------- | ------------------------------------------- |
-| **x**     | an [SDL_AudioSpec](SDL_AudioSpec) to query. |
+|       |                                             |
+| ----- | ------------------------------------------- |
+| **x** | an [SDL_AudioSpec](SDL_AudioSpec) to query. |
 
 ## Return Value
 

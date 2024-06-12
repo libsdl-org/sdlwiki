@@ -18,18 +18,18 @@ SDL_bool SDL_GetRectAndLineIntersection(const SDL_Rect *
 
 ## Function Parameters
 
-|              |                                                                           |
-| ------------ | ------------------------------------------------------------------------- |
-| **rect**     | an [SDL_Rect](SDL_Rect) structure representing the rectangle to intersect |
-| **X1**       | a pointer to the starting X-coordinate of the line                        |
-| **Y1**       | a pointer to the starting Y-coordinate of the line                        |
-| **X2**       | a pointer to the ending X-coordinate of the line                          |
-| **Y2**       | a pointer to the ending Y-coordinate of the line                          |
+|                              |          |                                                                           |
+| ---------------------------- | -------- | ------------------------------------------------------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **rect** | an [SDL_Rect](SDL_Rect) structure representing the rectangle to intersect |
+| int *                        | **X1**   | a pointer to the starting X-coordinate of the line                        |
+| int *                        | **Y1**   | a pointer to the starting Y-coordinate of the line                        |
+| int *                        | **X2**   | a pointer to the ending X-coordinate of the line                          |
+| int *                        | **Y2**   | a pointer to the ending Y-coordinate of the line                          |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is an
+intersection, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

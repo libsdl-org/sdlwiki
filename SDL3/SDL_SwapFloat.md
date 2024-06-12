@@ -15,13 +15,13 @@ SDL_FORCE_INLINE float SDL_SwapFloat(float x);
 
 ## Function Parameters
 
-|           |                         |
-| --------- | ----------------------- |
-| **x**     | the value to byte-swap. |
+|       |       |                         |
+| ----- | ----- | ----------------------- |
+| float | **x** | the value to byte-swap. |
 
 ## Return Value
 
-Returns x, with its bytes in the opposite endian order.
+(float) Returns x, with its bytes in the opposite endian order.
 
 ## Remarks
 

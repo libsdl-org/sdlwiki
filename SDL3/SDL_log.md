@@ -15,13 +15,13 @@ double SDL_log(double x);
 
 ## Function Parameters
 
-|           |                                               |
-| --------- | --------------------------------------------- |
-| **x**     | floating point value. Must be greater than 0. |
+|        |       |                                               |
+| ------ | ----- | --------------------------------------------- |
+| double | **x** | floating point value. Must be greater than 0. |
 
 ## Return Value
 
-Returns the natural logarithm of `x`
+(double) Returns the natural logarithm of `x`
 
 ## Remarks
 

@@ -15,14 +15,15 @@ SDL_Renderer * SDL_CreateRendererWithProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|               |                       |
-| ------------- | --------------------- |
-| **props**     | the properties to use |
+|                                      |           |                       |
+| ------------------------------------ | --------- | --------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to use |
 
 ## Return Value
 
-Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Renderer](SDL_Renderer) *) Returns a valid rendering context or NULL
+if there was an error; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

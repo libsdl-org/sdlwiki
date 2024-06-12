@@ -15,15 +15,15 @@ int SDL_RenameStoragePath(SDL_Storage *storage, const char *oldpath, const char 
 
 ## Function Parameters
 
-|                 |                     |
-| --------------- | ------------------- |
-| **storage**     | a storage container |
-| **oldpath**     | the old path        |
-| **newpath**     | the new path        |
+|                              |             |                     |
+| ---------------------------- | ----------- | ------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container |
+| const char *                 | **oldpath** | the old path        |
+| const char *                 | **newpath** | the new path        |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

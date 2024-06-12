@@ -15,13 +15,13 @@ Uint64 SDL_GetGamepadSteamHandle(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **gamepad**     | the gamepad object to query. |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object to query. |
 
 ## Return Value
 
-Returns the gamepad handle, or 0 if unavailable.
+(Uint64) Returns the gamepad handle, or 0 if unavailable.
 
 ## Remarks
 

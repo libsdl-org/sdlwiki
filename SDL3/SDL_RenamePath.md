@@ -15,14 +15,14 @@ int SDL_RenamePath(const char *oldpath, const char *newpath);
 
 ## Function Parameters
 
-|                 |              |
-| --------------- | ------------ |
-| **oldpath**     | the old path |
-| **newpath**     | the new path |
+|              |             |              |
+| ------------ | ----------- | ------------ |
+| const char * | **oldpath** | the old path |
+| const char * | **newpath** | the new path |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

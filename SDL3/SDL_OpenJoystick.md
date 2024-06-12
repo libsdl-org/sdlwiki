@@ -15,14 +15,15 @@ SDL_Joystick* SDL_OpenJoystick(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns a joystick identifier or NULL if an error occurred; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Joystick](SDL_Joystick) *) Returns a joystick identifier or NULL if
+an error occurred; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

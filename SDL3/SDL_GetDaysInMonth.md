@@ -15,14 +15,14 @@ int SDL_GetDaysInMonth(int year, int month);
 
 ## Function Parameters
 
-|               |                  |
-| ------------- | ---------------- |
-| **year**      | the year         |
-| **month**     | the month [1-12] |
+|     |           |                  |
+| --- | --------- | ---------------- |
+| int | **year**  | the year         |
+| int | **month** | the month [1-12] |
 
 ## Return Value
 
-Returns the number of days in the requested month, otherwise -1; call
+(int) Returns the number of days in the requested month, otherwise -1; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

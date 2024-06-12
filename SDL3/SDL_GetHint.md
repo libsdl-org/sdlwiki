@@ -15,13 +15,14 @@ const char * SDL_GetHint(const char *name);
 
 ## Function Parameters
 
-|              |                   |
-| ------------ | ----------------- |
-| **name**     | the hint to query |
+|              |          |                   |
+| ------------ | -------- | ----------------- |
+| const char * | **name** | the hint to query |
 
 ## Return Value
 
-Returns the string value of a hint or NULL if the hint isn't set.
+(const char *) Returns the string value of a hint or NULL if the hint isn't
+set.
 
 ## Remarks
 

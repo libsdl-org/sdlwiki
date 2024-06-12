@@ -15,13 +15,13 @@ SDL_Sensor* SDL_GetSensorFromInstanceID(SDL_SensorID instance_id);
 
 ## Function Parameters
 
-|                     |                        |
-| ------------------- | ---------------------- |
-| **instance_id**     | the sensor instance ID |
+|                              |                 |                        |
+| ---------------------------- | --------------- | ---------------------- |
+| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID |
 
 ## Return Value
 
-Returns an [SDL_Sensor](SDL_Sensor) object.
+([SDL_Sensor](SDL_Sensor) *) Returns an [SDL_Sensor](SDL_Sensor) object.
 
 ## Version
 

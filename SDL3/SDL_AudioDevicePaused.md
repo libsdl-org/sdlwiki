@@ -15,14 +15,14 @@ SDL_bool SDL_AudioDevicePaused(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|             |                                                                 |
-| ----------- | --------------------------------------------------------------- |
-| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+|                                        |         |                                                                 |
+| -------------------------------------- | ------- | --------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if device is valid and paused,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if device is valid and
+paused, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

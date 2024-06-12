@@ -15,16 +15,16 @@ int SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *lengt
 
 ## Function Parameters
 
-|                 |                                               |
-| --------------- | --------------------------------------------- |
-| **storage**     | a storage container to query                  |
-| **path**        | the relative path of the file to query        |
-| **length**      | a pointer to be filled with the file's length |
+|                              |             |                                               |
+| ---------------------------- | ----------- | --------------------------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to query                  |
+| const char *                 | **path**    | the relative path of the file to query        |
+| Uint64 *                     | **length**  | a pointer to be filled with the file's length |
 
 ## Return Value
 
-Returns 0 if the file could be queried, a negative value otherwise; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the file could be queried, a negative value otherwise;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

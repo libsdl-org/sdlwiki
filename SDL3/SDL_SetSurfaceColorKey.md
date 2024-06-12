@@ -15,15 +15,15 @@ int SDL_SetSurfaceColorKey(SDL_Surface *surface, int flag, Uint32 key);
 
 ## Function Parameters
 
-|                 |                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to update                                    |
-| **flag**        | [SDL_TRUE](SDL_TRUE) to enable color key, [SDL_FALSE](SDL_FALSE) to disable color key |
-| **key**         | the transparent pixel                                                                 |
+|                              |             |                                                                                       |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update                                    |
+| int                          | **flag**    | [SDL_TRUE](SDL_TRUE) to enable color key, [SDL_FALSE](SDL_FALSE) to disable color key |
+| Uint32                       | **key**     | the transparent pixel                                                                 |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

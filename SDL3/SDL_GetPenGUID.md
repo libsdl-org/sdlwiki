@@ -15,15 +15,15 @@ SDL_GUID SDL_GetPenGUID(SDL_PenID instance_id);
 
 ## Function Parameters
 
-|                     |                   |
-| ------------------- | ----------------- |
-| **instance_id**     | The pen to query. |
+|                        |                 |                   |
+| ---------------------- | --------------- | ----------------- |
+| [SDL_PenID](SDL_PenID) | **instance_id** | The pen to query. |
 
 ## Return Value
 
-Returns The corresponding pen GUID; persistent across multiple sessions. If
-"instance_id" is [SDL_PEN_INVALID](SDL_PEN_INVALID), returns an all-zeroes
-GUID.
+([SDL_GUID](SDL_GUID)) Returns The corresponding pen GUID; persistent
+across multiple sessions. If "instance_id" is
+[SDL_PEN_INVALID](SDL_PEN_INVALID), returns an all-zeroes GUID.
 
 ## Version
 

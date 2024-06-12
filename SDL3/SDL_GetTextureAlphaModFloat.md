@@ -15,14 +15,14 @@ int SDL_GetTextureAlphaModFloat(SDL_Texture *texture, float *alpha);
 
 ## Function Parameters
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **texture**     | the texture to query                             |
-| **alpha**       | a pointer filled in with the current alpha value |
+|                              |             |                                                  |
+| ---------------------------- | ----------- | ------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query                             |
+| float *                      | **alpha**   | a pointer filled in with the current alpha value |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

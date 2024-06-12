@@ -15,15 +15,15 @@ int SDL_AppEvent(void *appstate, const SDL_Event *event);
 
 ## Function Parameters
 
-|                  |                                                                         |
-| ---------------- | ----------------------------------------------------------------------- |
-| **appstate**     | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
-| **event**        | the new event for the app to examine.                                   |
+|                                |              |                                                                         |
+| ------------------------------ | ------------ | ----------------------------------------------------------------------- |
+| void *                         | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
+| const [SDL_Event](SDL_Event) * | **event**    | the new event for the app to examine.                                   |
 
 ## Return Value
 
-Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an error,
-[SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
+(int) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an
+error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
 [SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
 
 ## Remarks

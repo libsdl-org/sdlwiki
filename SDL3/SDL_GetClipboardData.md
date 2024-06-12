@@ -15,14 +15,14 @@ void* SDL_GetClipboardData(const char *mime_type, size_t *size);
 
 ## Function Parameters
 
-|                   |                                                          |
-| ----------------- | -------------------------------------------------------- |
-| **mime_type**     | The mime type to read from the clipboard                 |
-| **size**          | A pointer filled in with the length of the returned data |
+|              |               |                                                          |
+| ------------ | ------------- | -------------------------------------------------------- |
+| const char * | **mime_type** | The mime type to read from the clipboard                 |
+| size_t *     | **size**      | A pointer filled in with the length of the returned data |
 
 ## Return Value
 
-Returns the retrieved data buffer or NULL on failure; call
+(void *) Returns the retrieved data buffer or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information. Caller must call
 [SDL_free](SDL_free)() on the returned pointer when done with it.
 

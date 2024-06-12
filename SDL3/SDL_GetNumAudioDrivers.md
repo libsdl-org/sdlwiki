@@ -15,7 +15,7 @@ int SDL_GetNumAudioDrivers(void);
 
 ## Return Value
 
-Returns the number of built-in audio drivers.
+(int) Returns the number of built-in audio drivers.
 
 ## Remarks
 

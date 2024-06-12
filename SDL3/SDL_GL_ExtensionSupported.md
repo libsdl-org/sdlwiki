@@ -15,14 +15,14 @@ SDL_bool SDL_GL_ExtensionSupported(const char *extension);
 
 ## Function Parameters
 
-|                   |                                    |
-| ----------------- | ---------------------------------- |
-| **extension**     | the name of the extension to check |
+|              |               |                                    |
+| ------------ | ------------- | ---------------------------------- |
+| const char * | **extension** | the name of the extension to check |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the extension is supported,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the extension is
+supported, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

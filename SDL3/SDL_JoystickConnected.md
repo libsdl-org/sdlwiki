@@ -15,15 +15,15 @@ SDL_bool SDL_JoystickConnected(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **joystick**     | the joystick to query |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the joystick has been opened,
-[SDL_FALSE](SDL_FALSE) if it has not; call [SDL_GetError](SDL_GetError)()
-for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the joystick has
+been opened, [SDL_FALSE](SDL_FALSE) if it has not; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

@@ -15,15 +15,15 @@ SDL_Gamepad* SDL_GetGamepadFromInstanceID(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                                         |
-| ------------------- | --------------------------------------- |
-| **instance_id**     | the joystick instance ID of the gamepad |
+|                                  |                 |                                         |
+| -------------------------------- | --------------- | --------------------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID of the gamepad |
 
 ## Return Value
 
-Returns an [SDL_Gamepad](SDL_Gamepad) on success or NULL on failure or if
-it hasn't been opened yet; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_Gamepad](SDL_Gamepad) *) Returns an [SDL_Gamepad](SDL_Gamepad) on
+success or NULL on failure or if it hasn't been opened yet; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

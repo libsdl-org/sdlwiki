@@ -15,15 +15,15 @@ size_t SDL_IOprintf(SDL_IOStream *context, const char *fmt, ...);
 
 ## Function Parameters
 
-|                 |                                                                     |
-| --------------- | ------------------------------------------------------------------- |
-| **context**     | a pointer to an [SDL_IOStream](SDL_IOStream) structure              |
-| **fmt**         | a printf() style format string                                      |
-| **...**         | additional parameters matching % tokens in the `fmt` string, if any |
+|                                |             |                                                                     |
+| ------------------------------ | ----------- | ------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure              |
+| const char *                   | **fmt**     | a printf() style format string                                      |
+| ...                            | **...**     | additional parameters matching % tokens in the `fmt` string, if any |
 
 ## Return Value
 
-Returns the number of bytes written, or 0 on error; call
+(size_t) Returns the number of bytes written, or 0 on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

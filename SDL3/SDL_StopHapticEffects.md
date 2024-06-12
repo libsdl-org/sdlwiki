@@ -15,13 +15,13 @@ int SDL_StopHapticEffects(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                |                                             |
-| -------------- | ------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to stop |
+|                            |            |                                             |
+| -------------------------- | ---------- | ------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to stop |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

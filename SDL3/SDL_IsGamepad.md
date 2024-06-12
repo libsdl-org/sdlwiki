@@ -15,15 +15,15 @@ SDL_bool SDL_IsGamepad(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the given joystick is supported by the
-gamepad interface, [SDL_FALSE](SDL_FALSE) if it isn't or it's an invalid
-index.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the given joystick
+is supported by the gamepad interface, [SDL_FALSE](SDL_FALSE) if it isn't
+or it's an invalid index.
 
 ## Version
 

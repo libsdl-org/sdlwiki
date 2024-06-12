@@ -15,8 +15,8 @@ SDL_bool SDL_TextInputActive(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if text input events are enabled else
-[SDL_FALSE](SDL_FALSE).
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if text input events
+are enabled else [SDL_FALSE](SDL_FALSE).
 
 ## Version
 

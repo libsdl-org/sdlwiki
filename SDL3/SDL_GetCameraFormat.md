@@ -15,14 +15,14 @@ int SDL_GetCameraFormat(SDL_Camera *camera, SDL_CameraSpec *spec);
 
 ## Function Parameters
 
-|                |                                                                          |
-| -------------- | ------------------------------------------------------------------------ |
-| **camera**     | opened camera device                                                     |
-| **spec**       | The [SDL_CameraSpec](SDL_CameraSpec) to be initialized by this function. |
+|                                    |            |                                                                          |
+| ---------------------------------- | ---------- | ------------------------------------------------------------------------ |
+| [SDL_Camera](SDL_Camera) *         | **camera** | opened camera device                                                     |
+| [SDL_CameraSpec](SDL_CameraSpec) * | **spec**   | The [SDL_CameraSpec](SDL_CameraSpec) to be initialized by this function. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

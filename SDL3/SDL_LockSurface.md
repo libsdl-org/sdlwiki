@@ -15,13 +15,13 @@ int SDL_LockSurface(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                 |                                                       |
-| --------------- | ----------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to be locked |
+|                              |             |                                                       |
+| ---------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be locked |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

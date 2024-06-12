@@ -15,14 +15,14 @@ const char* SDL_GetCameraDriver(int index);
 
 ## Function Parameters
 
-|               |                                                                                                                     |
-| ------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **index**     | the index of the camera driver; the value ranges from 0 to [SDL_GetNumCameraDrivers](SDL_GetNumCameraDrivers)() - 1 |
+|     |           |                                                                                                                     |
+| --- | --------- | ------------------------------------------------------------------------------------------------------------------- |
+| int | **index** | the index of the camera driver; the value ranges from 0 to [SDL_GetNumCameraDrivers](SDL_GetNumCameraDrivers)() - 1 |
 
 ## Return Value
 
-Returns the name of the camera driver at the requested index, or NULL if an
-invalid index was specified.
+(const char *) Returns the name of the camera driver at the requested
+index, or NULL if an invalid index was specified.
 
 ## Remarks
 

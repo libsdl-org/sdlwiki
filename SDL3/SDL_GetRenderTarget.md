@@ -15,13 +15,14 @@ SDL_Texture* SDL_GetRenderTarget(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | the rendering context |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context |
 
 ## Return Value
 
-Returns the current render target or NULL for the default render target.
+([SDL_Texture](SDL_Texture) *) Returns the current render target or NULL
+for the default render target.
 
 ## Remarks
 

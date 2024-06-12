@@ -15,7 +15,7 @@ int SDL_GetVersion(void);
 
 ## Return Value
 
-Returns the version of the linked library.
+(int) Returns the version of the linked library.
 
 ## Remarks
 

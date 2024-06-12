@@ -15,13 +15,13 @@ int SDL_GetAudioStreamQueued(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                           |
-| -------------- | ------------------------- |
-| **stream**     | The audio stream to query |
+|                                      |            |                           |
+| ------------------------------------ | ---------- | ------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to query |
 
 ## Return Value
 
-Returns the number of bytes queued.
+(int) Returns the number of bytes queued.
 
 ## Remarks
 

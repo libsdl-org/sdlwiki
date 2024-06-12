@@ -15,14 +15,15 @@ SDL_AudioStream* SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_
 
 ## Function Parameters
 
-|                  |                                        |
-| ---------------- | -------------------------------------- |
-| **src_spec**     | The format details of the input audio  |
-| **dst_spec**     | The format details of the output audio |
+|                                        |              |                                        |
+| -------------------------------------- | ------------ | -------------------------------------- |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | The format details of the input audio  |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | The format details of the output audio |
 
 ## Return Value
 
-Returns a new audio stream on success, or NULL on failure.
+([SDL_AudioStream](SDL_AudioStream) *) Returns a new audio stream on
+success, or NULL on failure.
 
 ## Thread Safety
 

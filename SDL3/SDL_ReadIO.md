@@ -15,15 +15,16 @@ size_t SDL_ReadIO(SDL_IOStream *context, void *ptr, size_t size);
 
 ## Function Parameters
 
-|                 |                                                        |
-| --------------- | ------------------------------------------------------ |
-| **context**     | a pointer to an [SDL_IOStream](SDL_IOStream) structure |
-| **ptr**         | a pointer to a buffer to read data into                |
-| **size**        | the number of bytes to read from the data source.      |
+|                                |             |                                                        |
+| ------------------------------ | ----------- | ------------------------------------------------------ |
+| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure |
+| void *                         | **ptr**     | a pointer to a buffer to read data into                |
+| size_t                         | **size**    | the number of bytes to read from the data source.      |
 
 ## Return Value
 
-Returns the number of bytes read, or 0 on end of file or other error.
+(size_t) Returns the number of bytes read, or 0 on end of file or other
+error.
 
 ## Remarks
 

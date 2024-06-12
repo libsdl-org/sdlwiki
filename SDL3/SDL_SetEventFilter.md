@@ -15,10 +15,10 @@ void SDL_SetEventFilter(SDL_EventFilter filter, void *userdata);
 
 ## Function Parameters
 
-|                  |                                                                              |
-| ---------------- | ---------------------------------------------------------------------------- |
-| **filter**       | An [SDL_EventFilter](SDL_EventFilter) function to call when an event happens |
-| **userdata**     | a pointer that is passed to `filter`                                         |
+|                                    |              |                                                                              |
+| ---------------------------------- | ------------ | ---------------------------------------------------------------------------- |
+| [SDL_EventFilter](SDL_EventFilter) | **filter**   | An [SDL_EventFilter](SDL_EventFilter) function to call when an event happens |
+| void *                             | **userdata** | a pointer that is passed to `filter`                                         |
 
 ## Remarks
 

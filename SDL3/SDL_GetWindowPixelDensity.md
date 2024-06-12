@@ -15,13 +15,13 @@ float SDL_GetWindowPixelDensity(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the pixel density or 0.0f on failure; call
+(float) Returns the pixel density or 0.0f on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

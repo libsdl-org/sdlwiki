@@ -15,15 +15,15 @@ SDL_FORCE_INLINE SDL_bool SDL_RectsEqual(const SDL_Rect *a, const SDL_Rect *b);
 
 ## Function Parameters
 
-|           |                               |
-| --------- | ----------------------------- |
-| **a**     | the first rectangle to test.  |
-| **b**     | the second rectangle to test. |
+|                              |       |                               |
+| ---------------------------- | ----- | ----------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **a** | the first rectangle to test.  |
+| const [SDL_Rect](SDL_Rect) * | **b** | the second rectangle to test. |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the rectangles are equal,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the rectangles are
+equal, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

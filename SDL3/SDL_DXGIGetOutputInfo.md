@@ -15,16 +15,17 @@ SDL_bool SDL_DXGIGetOutputInfo(SDL_DisplayID displayID, int *adapterIndex, int *
 
 ## Function Parameters
 
-|                      |                                                  |
-| -------------------- | ------------------------------------------------ |
-| **displayID**        | the instance of the display to query             |
-| **adapterIndex**     | a pointer to be filled in with the adapter index |
-| **outputIndex**      | a pointer to be filled in with the output index  |
+|                                |                  |                                                  |
+| ------------------------------ | ---------------- | ------------------------------------------------ |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID**    | the instance of the display to query             |
+| int *                          | **adapterIndex** | a pointer to be filled in with the adapter index |
+| int *                          | **outputIndex**  | a pointer to be filled in with the output index  |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

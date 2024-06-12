@@ -15,14 +15,14 @@ const char* SDL_GetRenderDriver(int index);
 
 ## Function Parameters
 
-|               |                                                                                                                        |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **index**     | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)() - 1 |
+|     |           |                                                                                                                        |
+| --- | --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| int | **index** | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)() - 1 |
 
 ## Return Value
 
-Returns the name of the rendering driver at the requested index, or NULL if
-an invalid index was specified.
+(const char *) Returns the name of the rendering driver at the requested
+index, or NULL if an invalid index was specified.
 
 ## Remarks
 

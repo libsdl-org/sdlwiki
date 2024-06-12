@@ -15,14 +15,15 @@ SDL_HapticID SDL_GetHapticInstanceID(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
 
 ## Return Value
 
-Returns the instance ID of the specified haptic device on success or 0 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_HapticID](SDL_HapticID)) Returns the instance ID of the specified
+haptic device on success or 0 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

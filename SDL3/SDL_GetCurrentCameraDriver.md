@@ -15,8 +15,8 @@ const char* SDL_GetCurrentCameraDriver(void);
 
 ## Return Value
 
-Returns the name of the current camera driver or NULL if no driver has been
-initialized.
+(const char *) Returns the name of the current camera driver or NULL if no
+driver has been initialized.
 
 ## Remarks
 

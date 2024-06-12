@@ -15,14 +15,14 @@ int SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);
 
 ## Function Parameters
 
-|                        |                                                                                           |
-| ---------------------- | ----------------------------------------------------------------------------------------- |
-| **messageboxdata**     | the [SDL_MessageBoxData](SDL_MessageBoxData) structure with title, text and other options |
-| **buttonid**           | the pointer to which user id of hit button should be copied                               |
+|                                                  |                    |                                                                                           |
+| ------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------------- |
+| const [SDL_MessageBoxData](SDL_MessageBoxData) * | **messageboxdata** | the [SDL_MessageBoxData](SDL_MessageBoxData) structure with title, text and other options |
+| int *                                            | **buttonid**       | the pointer to which user id of hit button should be copied                               |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

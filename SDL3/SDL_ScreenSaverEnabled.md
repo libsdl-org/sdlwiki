@@ -15,8 +15,8 @@ SDL_bool SDL_ScreenSaverEnabled(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the screensaver is enabled,
-[SDL_FALSE](SDL_FALSE) if it is disabled.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the screensaver is
+enabled, [SDL_FALSE](SDL_FALSE) if it is disabled.
 
 ## Remarks
 

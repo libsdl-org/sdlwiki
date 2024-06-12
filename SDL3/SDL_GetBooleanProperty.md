@@ -15,16 +15,16 @@ SDL_bool SDL_GetBooleanProperty(SDL_PropertiesID props, const char *name, SDL_bo
 
 ## Function Parameters
 
-|                       |                                   |
-| --------------------- | --------------------------------- |
-| **props**             | the properties to query           |
-| **name**              | the name of the property to query |
-| **default_value**     | the default value of the property |
+|                                      |                   |                                   |
+| ------------------------------------ | ----------------- | --------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**         | the properties to query           |
+| const char *                         | **name**          | the name of the property to query |
+| [SDL_bool](SDL_bool)                 | **default_value** | the default value of the property |
 
 ## Return Value
 
-Returns the value of the property, or `default_value` if it is not set or
-not a float property.
+([SDL_bool](SDL_bool)) Returns the value of the property, or
+`default_value` if it is not set or not a float property.
 
 ## Remarks
 

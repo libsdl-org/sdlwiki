@@ -18,18 +18,18 @@ SDL_bool SDL_GetRectEnclosingPoints(const SDL_Point * points,
 
 ## Function Parameters
 
-|                |                                                                                  |
-| -------------- | -------------------------------------------------------------------------------- |
-| **points**     | an array of [SDL_Point](SDL_Point) structures representing points to be enclosed |
-| **count**      | the number of structures in the `points` array                                   |
-| **clip**       | an [SDL_Rect](SDL_Rect) used for clipping or NULL to enclose all points          |
-| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the minimal enclosing rectangle |
+|                                |            |                                                                                  |
+| ------------------------------ | ---------- | -------------------------------------------------------------------------------- |
+| const [SDL_Point](SDL_Point) * | **points** | an array of [SDL_Point](SDL_Point) structures representing points to be enclosed |
+| int                            | **count**  | the number of structures in the `points` array                                   |
+| const [SDL_Rect](SDL_Rect) *   | **clip**   | an [SDL_Rect](SDL_Rect) used for clipping or NULL to enclose all points          |
+| [SDL_Rect](SDL_Rect) *         | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the minimal enclosing rectangle |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if any points were enclosed or
-[SDL_FALSE](SDL_FALSE) if all the points were outside of the clipping
-rectangle.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if any points were
+enclosed or [SDL_FALSE](SDL_FALSE) if all the points were outside of the
+clipping rectangle.
 
 ## Remarks
 

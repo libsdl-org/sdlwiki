@@ -15,14 +15,14 @@ SDL_hid_device * SDL_hid_open_path(const char *path);
 
 ## Function Parameters
 
-|              |                                     |
-| ------------ | ----------------------------------- |
-| **path**     | The path name of the device to open |
+|              |          |                                     |
+| ------------ | -------- | ----------------------------------- |
+| const char * | **path** | The path name of the device to open |
 
 ## Return Value
 
-Returns a pointer to a [SDL_hid_device](SDL_hid_device) object on success
-or NULL on failure.
+([SDL_hid_device](SDL_hid_device) *) Returns a pointer to a
+[SDL_hid_device](SDL_hid_device) object on success or NULL on failure.
 
 ## Remarks
 

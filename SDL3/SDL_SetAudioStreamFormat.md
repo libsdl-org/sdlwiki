@@ -17,15 +17,15 @@ int SDL_SetAudioStreamFormat(SDL_AudioStream *stream,
 
 ## Function Parameters
 
-|                  |                                                                 |
-| ---------------- | --------------------------------------------------------------- |
-| **stream**       | The stream the format is being changed                          |
-| **src_spec**     | The new format of the audio input; if NULL, it is not changed.  |
-| **dst_spec**     | The new format of the audio output; if NULL, it is not changed. |
+|                                        |              |                                                                 |
+| -------------------------------------- | ------------ | --------------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) *   | **stream**   | The stream the format is being changed                          |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | The new format of the audio input; if NULL, it is not changed.  |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | The new format of the audio output; if NULL, it is not changed. |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+(int) Returns 0 on success, or -1 on error.
 
 ## Remarks
 

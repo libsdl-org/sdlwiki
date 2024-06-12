@@ -15,13 +15,13 @@ int SDL_GL_DeleteContext(SDL_GLContext context);
 
 ## Function Parameters
 
-|                 |                                  |
-| --------------- | -------------------------------- |
-| **context**     | the OpenGL context to be deleted |
+|                                |             |                                  |
+| ------------------------------ | ----------- | -------------------------------- |
+| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to be deleted |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

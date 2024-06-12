@@ -15,14 +15,14 @@ int SDL_GL_MakeCurrent(SDL_Window *window, SDL_GLContext context);
 
 ## Function Parameters
 
-|                 |                                                 |
-| --------------- | ----------------------------------------------- |
-| **window**      | the window to associate with the context        |
-| **context**     | the OpenGL context to associate with the window |
+|                                |             |                                                 |
+| ------------------------------ | ----------- | ----------------------------------------------- |
+| [SDL_Window](SDL_Window) *     | **window**  | the window to associate with the context        |
+| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to associate with the window |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,14 +15,14 @@ SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
 
 ## Function Parameters
 
-|                 |                                                                                                                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **seconds**     | a pointer filled in with the seconds of battery life left, or NULL to ignore. This will be filled in with -1 if we can't determine a value or there is no battery.                    |
-| **percent**     | a pointer filled in with the percentage of battery life left, between 0 and 100, or NULL to ignore. This will be filled in with -1 we can't determine a value or there is no battery. |
+|       |             |                                                                                                                                                                                       |
+| ----- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| int * | **seconds** | a pointer filled in with the seconds of battery life left, or NULL to ignore. This will be filled in with -1 if we can't determine a value or there is no battery.                    |
+| int * | **percent** | a pointer filled in with the percentage of battery life left, between 0 and 100, or NULL to ignore. This will be filled in with -1 we can't determine a value or there is no battery. |
 
 ## Return Value
 
-Returns the current battery state or
+([SDL_PowerState](SDL_PowerState)) Returns the current battery state or
 [`SDL_POWERSTATE_ERROR`](SDL_POWERSTATE_ERROR) on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 

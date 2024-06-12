@@ -15,15 +15,15 @@ SDL_bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *e
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
-| **effect**     | the desired effect to query                  |
+|                                              |            |                                              |
+| -------------------------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *                   | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
+| const [SDL_HapticEffect](SDL_HapticEffect) * | **effect** | the desired effect to query                  |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the effect is supported or
-[SDL_FALSE](SDL_FALSE) if it isn't.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the effect is
+supported or [SDL_FALSE](SDL_FALSE) if it isn't.
 
 ## Version
 

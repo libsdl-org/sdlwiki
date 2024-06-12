@@ -15,15 +15,15 @@ const char* SDL_GetGamepadInstanceName(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the name of the selected gamepad. If no name can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
-information.
+(const char *) Returns the name of the selected gamepad. If no name can be
+found, this function returns NULL; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

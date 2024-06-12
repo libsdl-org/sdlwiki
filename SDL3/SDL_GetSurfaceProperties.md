@@ -15,14 +15,15 @@ SDL_PropertiesID SDL_GetSurfaceProperties(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                 |                                                   |
-| --------------- | ------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to query |
+|                              |             |                                                   |
+| ---------------------------- | ----------- | ------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ void SDL_DetachThread(SDL_Thread * thread);
 
 ## Function Parameters
 
-|                |                                                                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **thread**     | the [SDL_Thread](SDL_Thread) pointer that was returned from the [SDL_CreateThread](SDL_CreateThread)() call that started this thread |
+|                            |            |                                                                                                                                      |
+| -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Thread](SDL_Thread) * | **thread** | the [SDL_Thread](SDL_Thread) pointer that was returned from the [SDL_CreateThread](SDL_CreateThread)() call that started this thread |
 
 ## Remarks
 

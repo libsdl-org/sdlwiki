@@ -15,13 +15,13 @@ char * SDL_GetGamepadMappingForGUID(SDL_JoystickGUID guid);
 
 ## Function Parameters
 
-|              |                                                                |
-| ------------ | -------------------------------------------------------------- |
-| **guid**     | a structure containing the GUID for which a mapping is desired |
+|                                      |          |                                                                |
+| ------------------------------------ | -------- | -------------------------------------------------------------- |
+| [SDL_JoystickGUID](SDL_JoystickGUID) | **guid** | a structure containing the GUID for which a mapping is desired |
 
 ## Return Value
 
-Returns a mapping string or NULL on error; call
+(char *) Returns a mapping string or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

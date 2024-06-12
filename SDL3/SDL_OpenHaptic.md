@@ -15,14 +15,14 @@ SDL_Haptic* SDL_OpenHaptic(SDL_HapticID instance_id);
 
 ## Function Parameters
 
-|                     |                               |
-| ------------------- | ----------------------------- |
-| **instance_id**     | the haptic device instance ID |
+|                              |                 |                               |
+| ---------------------------- | --------------- | ----------------------------- |
+| [SDL_HapticID](SDL_HapticID) | **instance_id** | the haptic device instance ID |
 
 ## Return Value
 
-Returns the device identifier or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Haptic](SDL_Haptic) *) Returns the device identifier or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

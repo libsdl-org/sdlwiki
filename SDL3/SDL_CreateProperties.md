@@ -15,8 +15,9 @@ SDL_PropertiesID SDL_CreateProperties(void);
 
 ## Return Value
 
-Returns an ID for a new set of properties, or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns an ID for a new set of
+properties, or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

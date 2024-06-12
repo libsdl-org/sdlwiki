@@ -15,16 +15,16 @@ SDL_GamepadButton SDL_GetGamepadButtonFromString(const char *str);
 
 ## Function Parameters
 
-|             |                                                       |
-| ----------- | ----------------------------------------------------- |
-| **str**     | string representing a [SDL_Gamepad](SDL_Gamepad) axis |
+|              |         |                                                       |
+| ------------ | ------- | ----------------------------------------------------- |
+| const char * | **str** | string representing a [SDL_Gamepad](SDL_Gamepad) axis |
 
 ## Return Value
 
-Returns the [SDL_GamepadButton](SDL_GamepadButton) enum corresponding to
-the input string, or
-[`SDL_GAMEPAD_BUTTON_INVALID`](SDL_GAMEPAD_BUTTON_INVALID) if no match was
-found.
+([SDL_GamepadButton](SDL_GamepadButton)) Returns the
+[SDL_GamepadButton](SDL_GamepadButton) enum corresponding to the input
+string, or [`SDL_GAMEPAD_BUTTON_INVALID`](SDL_GAMEPAD_BUTTON_INVALID) if no
+match was found.
 
 ## Remarks
 

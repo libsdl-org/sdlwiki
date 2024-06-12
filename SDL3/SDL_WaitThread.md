@@ -15,10 +15,10 @@ void SDL_WaitThread(SDL_Thread * thread, int *status);
 
 ## Function Parameters
 
-|                |                                                                                                                                              |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **thread**     | the [SDL_Thread](SDL_Thread) pointer that was returned from the [SDL_CreateThread](SDL_CreateThread)() call that started this thread         |
-| **status**     | pointer to an integer that will receive the value returned from the thread function by its 'return', or NULL to not receive such value back. |
+|                            |            |                                                                                                                                              |
+| -------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Thread](SDL_Thread) * | **thread** | the [SDL_Thread](SDL_Thread) pointer that was returned from the [SDL_CreateThread](SDL_CreateThread)() call that started this thread         |
+| int *                      | **status** | pointer to an integer that will receive the value returned from the thread function by its 'return', or NULL to not receive such value back. |
 
 ## Remarks
 

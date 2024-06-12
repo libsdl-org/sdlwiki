@@ -15,14 +15,14 @@ int SDL_GetRenderClipRect(SDL_Renderer *renderer, SDL_FRect *rect);
 
 ## Function Parameters
 
-|                  |                                                                                                                            |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                                                                      |
-| **rect**         | an [SDL_FRect](SDL_FRect) structure filled in with the current clipping area or an empty rectangle if clipping is disabled |
+|                                |              |                                                                                                                            |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                      |
+| [SDL_FRect](SDL_FRect) *       | **rect**     | an [SDL_FRect](SDL_FRect) structure filled in with the current clipping area or an empty rectangle if clipping is disabled |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

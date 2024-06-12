@@ -15,13 +15,13 @@ double SDL_atan(double x);
 
 ## Function Parameters
 
-|           |                       |
-| --------- | --------------------- |
-| **x**     | floating point value. |
+|        |       |                       |
+| ------ | ----- | --------------------- |
+| double | **x** | floating point value. |
 
 ## Return Value
 
-Returns arc tangent of of `x` in radians, or 0 if `x = 0`.
+(double) Returns arc tangent of of `x` in radians, or 0 if `x = 0`.
 
 ## Remarks
 

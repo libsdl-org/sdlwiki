@@ -15,9 +15,9 @@ void SDL_Delay(Uint32 ms);
 
 ## Function Parameters
 
-|            |                                     |
-| ---------- | ----------------------------------- |
-| **ms**     | the number of milliseconds to delay |
+|        |        |                                     |
+| ------ | ------ | ----------------------------------- |
+| Uint32 | **ms** | the number of milliseconds to delay |
 
 ## Remarks
 

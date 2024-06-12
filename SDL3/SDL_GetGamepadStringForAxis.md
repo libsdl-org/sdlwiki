@@ -15,14 +15,14 @@ const char * SDL_GetGamepadStringForAxis(SDL_GamepadAxis axis);
 
 ## Function Parameters
 
-|              |                                                              |
-| ------------ | ------------------------------------------------------------ |
-| **axis**     | an enum value for a given [SDL_GamepadAxis](SDL_GamepadAxis) |
+|                                    |          |                                                              |
+| ---------------------------------- | -------- | ------------------------------------------------------------ |
+| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis** | an enum value for a given [SDL_GamepadAxis](SDL_GamepadAxis) |
 
 ## Return Value
 
-Returns a string for the given axis, or NULL if an invalid axis is
-specified. The string returned is of the format used by
+(const char *) Returns a string for the given axis, or NULL if an invalid
+axis is specified. The string returned is of the format used by
 [SDL_Gamepad](SDL_Gamepad) mapping strings.
 
 ## Remarks

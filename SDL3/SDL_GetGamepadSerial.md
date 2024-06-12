@@ -15,13 +15,13 @@ const char * SDL_GetGamepadSerial(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                              |
-| --------------- | ---------------------------- |
-| **gamepad**     | the gamepad object to query. |
+|                              |             |                              |
+| ---------------------------- | ----------- | ---------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object to query. |
 
 ## Return Value
 
-Returns the serial number, or NULL if unavailable.
+(const char *) Returns the serial number, or NULL if unavailable.
 
 ## Remarks
 

@@ -15,14 +15,14 @@ int SDL_RenderRect(SDL_Renderer *renderer, const SDL_FRect *rect);
 
 ## Function Parameters
 
-|                  |                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------- |
-| **renderer**     | The renderer which should draw a rectangle.                                             |
-| **rect**         | A pointer to the destination rectangle, or NULL to outline the entire rendering target. |
+|                                |              |                                                                                         |
+| ------------------------------ | ------------ | --------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should draw a rectangle.                                             |
+| const [SDL_FRect](SDL_FRect) * | **rect**     | A pointer to the destination rectangle, or NULL to outline the entire rendering target. |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error
+(int) Returns 0 on success, or -1 on error
 
 ## Version
 

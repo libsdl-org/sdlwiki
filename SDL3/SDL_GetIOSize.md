@@ -15,15 +15,15 @@ Sint64 SDL_GetIOSize(SDL_IOStream *context);
 
 ## Function Parameters
 
-|                 |                                                                          |
-| --------------- | ------------------------------------------------------------------------ |
-| **context**     | the [SDL_IOStream](SDL_IOStream) to get the size of the data stream from |
+|                                |             |                                                                          |
+| ------------------------------ | ----------- | ------------------------------------------------------------------------ |
+| [SDL_IOStream](SDL_IOStream) * | **context** | the [SDL_IOStream](SDL_IOStream) to get the size of the data stream from |
 
 ## Return Value
 
-Returns the size of the data stream in the [SDL_IOStream](SDL_IOStream) on
-success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(Sint64) Returns the size of the data stream in the
+[SDL_IOStream](SDL_IOStream) on success or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

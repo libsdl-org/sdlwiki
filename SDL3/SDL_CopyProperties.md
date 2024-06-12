@@ -15,14 +15,14 @@ int SDL_CopyProperties(SDL_PropertiesID src, SDL_PropertiesID dst);
 
 ## Function Parameters
 
-|             |                            |
-| ----------- | -------------------------- |
-| **src**     | the properties to copy     |
-| **dst**     | the destination properties |
+|                                      |         |                            |
+| ------------------------------------ | ------- | -------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **src** | the properties to copy     |
+| [SDL_PropertiesID](SDL_PropertiesID) | **dst** | the destination properties |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

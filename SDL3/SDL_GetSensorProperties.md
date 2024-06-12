@@ -15,14 +15,15 @@ SDL_PropertiesID SDL_GetSensorProperties(SDL_Sensor *sensor);
 
 ## Function Parameters
 
-|                |                                     |
-| -------------- | ----------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object |
+|                            |            |                                     |
+| -------------------------- | ---------- | ----------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object |
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

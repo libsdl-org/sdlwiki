@@ -15,15 +15,15 @@ SDL_FORCE_INLINE SDL_bool SDL_PointInRect(const SDL_Point *p, const SDL_Rect *r)
 
 ## Function Parameters
 
-|           |                        |
-| --------- | ---------------------- |
-| **p**     | the point to test.     |
-| **r**     | the rectangle to test. |
+|                                |       |                        |
+| ------------------------------ | ----- | ---------------------- |
+| const [SDL_Point](SDL_Point) * | **p** | the point to test.     |
+| const [SDL_Rect](SDL_Rect) *   | **r** | the rectangle to test. |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if `p` is contained by `r`,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if `p` is contained by
+`r`, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

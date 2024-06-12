@@ -15,13 +15,13 @@ int SDL_HideWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                    |
-| -------------- | ------------------ |
-| **window**     | the window to hide |
+|                            |            |                    |
+| -------------------------- | ---------- | ------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window to hide |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

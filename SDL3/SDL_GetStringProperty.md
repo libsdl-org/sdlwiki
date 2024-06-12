@@ -15,16 +15,16 @@ const char* SDL_GetStringProperty(SDL_PropertiesID props, const char *name, cons
 
 ## Function Parameters
 
-|                       |                                   |
-| --------------------- | --------------------------------- |
-| **props**             | the properties to query           |
-| **name**              | the name of the property to query |
-| **default_value**     | the default value of the property |
+|                                      |                   |                                   |
+| ------------------------------------ | ----------------- | --------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**         | the properties to query           |
+| const char *                         | **name**          | the name of the property to query |
+| const char *                         | **default_value** | the default value of the property |
 
 ## Return Value
 
-Returns the value of the property, or `default_value` if it is not set or
-not a string property.
+(const char *) Returns the value of the property, or `default_value` if it
+is not set or not a string property.
 
 ## Remarks
 

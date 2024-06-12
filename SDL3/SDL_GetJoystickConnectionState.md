@@ -15,13 +15,14 @@ SDL_JoystickConnectionState SDL_GetJoystickConnectionState(SDL_Joystick *joystic
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **joystick**     | The joystick to query |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query |
 
 ## Return Value
 
-Returns the connection state on success or
+([SDL_JoystickConnectionState](SDL_JoystickConnectionState)) Returns the
+connection state on success or
 [`SDL_JOYSTICK_CONNECTION_INVALID`](SDL_JOYSTICK_CONNECTION_INVALID) on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 

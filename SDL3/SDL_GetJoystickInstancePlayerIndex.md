@@ -15,13 +15,13 @@ int SDL_GetJoystickInstancePlayerIndex(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the player index of a joystick, or -1 if it's not available
+(int) Returns the player index of a joystick, or -1 if it's not available
 
 ## Remarks
 

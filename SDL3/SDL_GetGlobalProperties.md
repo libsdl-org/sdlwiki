@@ -15,8 +15,9 @@ SDL_PropertiesID SDL_GetGlobalProperties(void);
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

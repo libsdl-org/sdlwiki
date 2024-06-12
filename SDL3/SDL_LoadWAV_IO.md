@@ -17,17 +17,17 @@ int SDL_LoadWAV_IO(SDL_IOStream * src, SDL_bool closeio,
 
 ## Function Parameters
 
-|                   |                                                                                                                        |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **src**           | The data source for the WAVE data                                                                                      |
-| **closeio**       | If [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error    |
-| **spec**          | A pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return |
-| **audio_buf**     | A pointer filled with the audio data, allocated by the function                                                        |
-| **audio_len**     | A pointer filled with the length of the audio data buffer in bytes                                                     |
+|                                  |               |                                                                                                                        |
+| -------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) *   | **src**       | The data source for the WAVE data                                                                                      |
+| [SDL_bool](SDL_bool)             | **closeio**   | If [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error    |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | A pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return |
+| Uint8 **                         | **audio_buf** | A pointer filled with the audio data, allocated by the function                                                        |
+| Uint32 *                         | **audio_len** | A pointer filled with the length of the audio data buffer in bytes                                                     |
 
 ## Return Value
 
-Returns 0 on success. `audio_buf` will be filled with a pointer to an
+(int) Returns 0 on success. `audio_buf` will be filled with a pointer to an
 allocated buffer containing the audio data, and `audio_len` is filled with
 the length of that audio buffer in bytes.
 

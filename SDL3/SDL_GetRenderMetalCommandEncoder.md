@@ -15,14 +15,14 @@ void* SDL_GetRenderMetalCommandEncoder(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                  |                       |
-| ---------------- | --------------------- |
-| **renderer**     | The renderer to query |
+|                                |              |                       |
+| ------------------------------ | ------------ | --------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer to query |
 
 ## Return Value
 
-Returns an `id<MTLRenderCommandEncoder>` on success, or NULL if the
-renderer isn't a Metal renderer or there was an error.
+(void *) Returns an `id<MTLRenderCommandEncoder>` on success, or NULL if
+the renderer isn't a Metal renderer or there was an error.
 
 ## Remarks
 

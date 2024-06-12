@@ -15,14 +15,14 @@ const char * SDL_WinRTGetFSPath(SDL_WinRT_Path pathType);
 
 ## Function Parameters
 
-|                  |                                                                       |
-| ---------------- | --------------------------------------------------------------------- |
-| **pathType**     | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
+|                                  |              |                                                                       |
+| -------------------------------- | ------------ | --------------------------------------------------------------------- |
+| [SDL_WinRT_Path](SDL_WinRT_Path) | **pathType** | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
 
 ## Return Value
 
-Returns a UTF-8 string (8-bit, multi-byte) containing the path, or NULL if
-the path is not available for any reason; call
+(const char *) Returns a UTF-8 string (8-bit, multi-byte) containing the
+path, or NULL if the path is not available for any reason; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,18 +15,18 @@ int SDL_PeepEvents(SDL_Event *events, int numevents, SDL_EventAction action, Uin
 
 ## Function Parameters
 
-|                   |                                                                                                                                                                                                                        |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **events**        | destination buffer for the retrieved events, may be NULL to leave the events in the queue and return the number of events that would have been stored.                                                                 |
-| **numevents**     | if action is [SDL_ADDEVENT](SDL_ADDEVENT), the number of events to add back to the event queue; if action is [SDL_PEEKEVENT](SDL_PEEKEVENT) or [SDL_GETEVENT](SDL_GETEVENT), the maximum number of events to retrieve. |
-| **action**        | action to take; see [[#action|Remarks]] for details.                                                                                                                                                                   |
-| **minType**       | minimum value of the event type to be considered; [SDL_EVENT_FIRST](SDL_EVENT_FIRST) is a safe choice.                                                                                                                 |
-| **maxType**       | maximum value of the event type to be considered; [SDL_EVENT_LAST](SDL_EVENT_LAST) is a safe choice.                                                                                                                   |
+|                                    |               |                                                                                                                                                                                                                        |
+| ---------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Event](SDL_Event) *           | **events**    | destination buffer for the retrieved events, may be NULL to leave the events in the queue and return the number of events that would have been stored.                                                                 |
+| int                                | **numevents** | if action is [SDL_ADDEVENT](SDL_ADDEVENT), the number of events to add back to the event queue; if action is [SDL_PEEKEVENT](SDL_PEEKEVENT) or [SDL_GETEVENT](SDL_GETEVENT), the maximum number of events to retrieve. |
+| [SDL_EventAction](SDL_EventAction) | **action**    | action to take; see [[#action|Remarks]] for details.                                                                                                                                                                   |
+| Uint32                             | **minType**   | minimum value of the event type to be considered; [SDL_EVENT_FIRST](SDL_EVENT_FIRST) is a safe choice.                                                                                                                 |
+| Uint32                             | **maxType**   | maximum value of the event type to be considered; [SDL_EVENT_LAST](SDL_EVENT_LAST) is a safe choice.                                                                                                                   |
 
 ## Return Value
 
-Returns the number of events actually stored or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of events actually stored or a negative error code
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

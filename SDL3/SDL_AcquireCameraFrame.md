@@ -15,15 +15,15 @@ SDL_Surface * SDL_AcquireCameraFrame(SDL_Camera *camera, Uint64 *timestampNS);
 
 ## Function Parameters
 
-|                     |                                                                             |
-| ------------------- | --------------------------------------------------------------------------- |
-| **camera**          | opened camera device                                                        |
-| **timestampNS**     | a pointer filled in with the frame's timestamp, or 0 on error. Can be NULL. |
+|                            |                 |                                                                             |
+| -------------------------- | --------------- | --------------------------------------------------------------------------- |
+| [SDL_Camera](SDL_Camera) * | **camera**      | opened camera device                                                        |
+| Uint64 *                   | **timestampNS** | a pointer filled in with the frame's timestamp, or 0 on error. Can be NULL. |
 
 ## Return Value
 
-Returns A new frame of video on success, NULL if none is currently
-available.
+([SDL_Surface](SDL_Surface) *) Returns A new frame of video on success,
+NULL if none is currently available.
 
 ## Remarks
 

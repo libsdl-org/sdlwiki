@@ -15,13 +15,13 @@ int SDL_AtomicGet(SDL_AtomicInt *a);
 
 ## Function Parameters
 
-|           |                                                         |
-| --------- | ------------------------------------------------------- |
-| **a**     | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable |
+|                                  |       |                                                         |
+| -------------------------------- | ----- | ------------------------------------------------------- |
+| [SDL_AtomicInt](SDL_AtomicInt) * | **a** | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable |
 
 ## Return Value
 
-Returns the current value of an atomic variable.
+(int) Returns the current value of an atomic variable.
 
 ## Remarks
 

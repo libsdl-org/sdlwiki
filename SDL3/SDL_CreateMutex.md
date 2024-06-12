@@ -15,8 +15,8 @@ SDL_Mutex* SDL_CreateMutex(void);
 
 ## Return Value
 
-Returns the initialized and unlocked mutex or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Mutex](SDL_Mutex) *) Returns the initialized and unlocked mutex or
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

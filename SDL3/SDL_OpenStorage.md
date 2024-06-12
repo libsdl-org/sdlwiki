@@ -15,15 +15,15 @@ SDL_Storage* SDL_OpenStorage(const SDL_StorageInterface *iface, void *userdata);
 
 ## Function Parameters
 
-|                  |                                                        |
-| ---------------- | ------------------------------------------------------ |
-| **iface**        | the function table to be used by this container        |
-| **userdata**     | the pointer that will be passed to the store interface |
+|                                                      |              |                                                        |
+| ---------------------------------------------------- | ------------ | ------------------------------------------------------ |
+| const [SDL_StorageInterface](SDL_StorageInterface) * | **iface**    | the function table to be used by this container        |
+| void *                                               | **userdata** | the pointer that will be passed to the store interface |
 
 ## Return Value
 
-Returns a storage container on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Storage](SDL_Storage) *) Returns a storage container on success or
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

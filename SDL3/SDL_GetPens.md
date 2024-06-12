@@ -15,15 +15,16 @@ SDL_PenID* SDL_GetPens(int *count);
 
 ## Function Parameters
 
-|               |                                                                                                          |
-| ------------- | -------------------------------------------------------------------------------------------------------- |
-| **count**     | The number of pens in the array (number of array elements minus 1, i.e., not counting the terminator 0). |
+|       |           |                                                                                                          |
+| ----- | --------- | -------------------------------------------------------------------------------------------------------- |
+| int * | **count** | The number of pens in the array (number of array elements minus 1, i.e., not counting the terminator 0). |
 
 ## Return Value
 
-Returns A 0 terminated array of [SDL_PenID](SDL_PenID) values, or NULL on
-error. The array must be freed with [SDL_free](SDL_free)(). On a NULL
-return, [SDL_GetError](SDL_GetError)() is set.
+([SDL_PenID](SDL_PenID) *) Returns A 0 terminated array of
+[SDL_PenID](SDL_PenID) values, or NULL on error. The array must be freed
+with [SDL_free](SDL_free)(). On a NULL return,
+[SDL_GetError](SDL_GetError)() is set.
 
 ## Remarks
 

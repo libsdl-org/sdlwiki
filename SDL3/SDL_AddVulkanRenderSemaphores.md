@@ -15,16 +15,16 @@ int SDL_AddVulkanRenderSemaphores(SDL_Renderer *renderer, Uint32 wait_stage_mask
 
 ## Function Parameters
 
-|                          |                                                                                                         |
-| ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| **renderer**             | the rendering context                                                                                   |
-| **wait_stage_mask**      | the VkPipelineStageFlags for the wait                                                                   |
-| **wait_semaphore**       | a VkSempahore to wait on before rendering the current frame, or 0 if not needed                         |
-| **signal_semaphore**     | a VkSempahore that SDL will signal when rendering for the current frame is complete, or 0 if not needed |
+|                                |                      |                                                                                                         |
+| ------------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer**         | the rendering context                                                                                   |
+| Uint32                         | **wait_stage_mask**  | the VkPipelineStageFlags for the wait                                                                   |
+| Sint64                         | **wait_semaphore**   | a VkSempahore to wait on before rendering the current frame, or 0 if not needed                         |
+| Sint64                         | **signal_semaphore** | a VkSempahore that SDL will signal when rendering for the current frame is complete, or 0 if not needed |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

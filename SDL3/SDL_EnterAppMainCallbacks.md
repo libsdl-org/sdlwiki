@@ -15,18 +15,18 @@ int SDL_EnterAppMainCallbacks(int argc, char* argv[], SDL_AppInit_func appinit, 
 
 ## Function Parameters
 
-|                  |                                                             |
-| ---------------- | ----------------------------------------------------------- |
-| **argc**         | standard Unix main argc                                     |
-| **argv**         | standard Unix main argv                                     |
-| **appinit**      | The application's [SDL_AppInit](SDL_AppInit) function       |
-| **appiter**      | The application's [SDL_AppIterate](SDL_AppIterate) function |
-| **appevent**     | The application's [SDL_AppEvent](SDL_AppEvent) function     |
-| **appquit**      | The application's [SDL_AppQuit](SDL_AppQuit) function       |
+|                                            |              |                                                             |
+| ------------------------------------------ | ------------ | ----------------------------------------------------------- |
+| int                                        | **argc**     | standard Unix main argc                                     |
+| char **                                    | **argv**     | standard Unix main argv                                     |
+| [SDL_AppInit_func](SDL_AppInit_func)       | **appinit**  | The application's [SDL_AppInit](SDL_AppInit) function       |
+| [SDL_AppIterate_func](SDL_AppIterate_func) | **appiter**  | The application's [SDL_AppIterate](SDL_AppIterate) function |
+| [SDL_AppEvent_func](SDL_AppEvent_func)     | **appevent** | The application's [SDL_AppEvent](SDL_AppEvent) function     |
+| [SDL_AppQuit_func](SDL_AppQuit_func)       | **appquit**  | The application's [SDL_AppQuit](SDL_AppQuit) function       |
 
 ## Return Value
 
-Returns standard Unix main return value
+(int) Returns standard Unix main return value
 
 ## Remarks
 

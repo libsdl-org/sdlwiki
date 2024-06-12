@@ -15,15 +15,15 @@ Uint8 SDL_GetGamepadButton(SDL_Gamepad *gamepad, SDL_GamepadButton button);
 
 ## Function Parameters
 
-|                 |                                                                           |
-| --------------- | ------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad                                                                 |
-| **button**      | a button index (one of the [SDL_GamepadButton](SDL_GamepadButton) values) |
+|                                        |             |                                                                           |
+| -------------------------------------- | ----------- | ------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *           | **gamepad** | a gamepad                                                                 |
+| [SDL_GamepadButton](SDL_GamepadButton) | **button**  | a button index (one of the [SDL_GamepadButton](SDL_GamepadButton) values) |
 
 ## Return Value
 
-Returns 1 for pressed state or 0 for not pressed state or error; call
-[SDL_GetError](SDL_GetError)() for more information.
+(Uint8) Returns 1 for pressed state or 0 for not pressed state or error;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

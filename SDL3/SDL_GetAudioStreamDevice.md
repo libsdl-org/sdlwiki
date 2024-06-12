@@ -15,13 +15,14 @@ SDL_AudioDeviceID SDL_GetAudioStreamDevice(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                            |
-| -------------- | -------------------------- |
-| **stream**     | the audio stream to query. |
+|                                      |            |                            |
+| ------------------------------------ | ---------- | -------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to query. |
 
 ## Return Value
 
-Returns The bound audio device, or 0 if not bound or invalid.
+([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns The bound audio device, or
+0 if not bound or invalid.
 
 ## Remarks
 

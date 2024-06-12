@@ -15,14 +15,14 @@ const char* SDL_GetGamepadStringForType(SDL_GamepadType type);
 
 ## Function Parameters
 
-|              |                                                              |
-| ------------ | ------------------------------------------------------------ |
-| **type**     | an enum value for a given [SDL_GamepadType](SDL_GamepadType) |
+|                                    |          |                                                              |
+| ---------------------------------- | -------- | ------------------------------------------------------------ |
+| [SDL_GamepadType](SDL_GamepadType) | **type** | an enum value for a given [SDL_GamepadType](SDL_GamepadType) |
 
 ## Return Value
 
-Returns a string for the given type, or NULL if an invalid type is
-specified. The string returned is of the format used by
+(const char *) Returns a string for the given type, or NULL if an invalid
+type is specified. The string returned is of the format used by
 [SDL_Gamepad](SDL_Gamepad) mapping strings.
 
 ## Remarks

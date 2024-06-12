@@ -15,15 +15,15 @@ int SDL_SetJoystickVirtualHat(SDL_Joystick *joystick, int hat, Uint8 value);
 
 ## Function Parameters
 
-|                  |                                                         |
-| ---------------- | ------------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.             |
-| **hat**          | the index of the hat on the virtual joystick to update. |
-| **value**        | the new value for the specified hat.                    |
+|                                |              |                                                         |
+| ------------------------------ | ------------ | ------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.             |
+| int                            | **hat**      | the index of the hat on the virtual joystick to update. |
+| Uint8                          | **value**    | the new value for the specified hat.                    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

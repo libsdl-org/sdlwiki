@@ -15,9 +15,9 @@ void SDL_Metal_DestroyView(SDL_MetalView view);
 
 ## Function Parameters
 
-|              |                                           |
-| ------------ | ----------------------------------------- |
-| **view**     | the [SDL_MetalView](SDL_MetalView) object |
+|                                |          |                                           |
+| ------------------------------ | -------- | ----------------------------------------- |
+| [SDL_MetalView](SDL_MetalView) | **view** | the [SDL_MetalView](SDL_MetalView) object |
 
 ## Remarks
 

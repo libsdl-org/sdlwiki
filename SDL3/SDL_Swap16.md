@@ -15,13 +15,13 @@ SDL_FORCE_INLINE Uint16 SDL_Swap16(Uint16 x);
 
 ## Function Parameters
 
-|           |                         |
-| --------- | ----------------------- |
-| **x**     | the value to byte-swap. |
+|        |       |                         |
+| ------ | ----- | ----------------------- |
+| Uint16 | **x** | the value to byte-swap. |
 
 ## Return Value
 
-Returns `x`, with its bytes in the opposite endian order.
+(Uint16) Returns `x`, with its bytes in the opposite endian order.
 
 ## Remarks
 

@@ -15,14 +15,15 @@ SDL_PropertiesID SDL_GetCameraProperties(SDL_Camera *camera);
 
 ## Function Parameters
 
-|                |                                                                                           |
-| -------------- | ----------------------------------------------------------------------------------------- |
-| **camera**     | the [SDL_Camera](SDL_Camera) obtained from [SDL_OpenCameraDevice](SDL_OpenCameraDevice)() |
+|                            |            |                                                                                           |
+| -------------------------- | ---------- | ----------------------------------------------------------------------------------------- |
+| [SDL_Camera](SDL_Camera) * | **camera** | the [SDL_Camera](SDL_Camera) obtained from [SDL_OpenCameraDevice](SDL_OpenCameraDevice)() |
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Thread Safety
 

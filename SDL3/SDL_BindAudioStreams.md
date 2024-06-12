@@ -15,16 +15,16 @@ int SDL_BindAudioStreams(SDL_AudioDeviceID devid, SDL_AudioStream **streams, int
 
 ## Function Parameters
 
-|                     |                                               |
-| ------------------- | --------------------------------------------- |
-| **devid**           | an audio device to bind a stream to.          |
-| **streams**         | an array of audio streams to unbind.          |
-| **num_streams**     | Number streams listed in the `streams` array. |
+|                                        |                 |                                               |
+| -------------------------------------- | --------------- | --------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid**       | an audio device to bind a stream to.          |
+| [SDL_AudioStream](SDL_AudioStream) **  | **streams**     | an array of audio streams to unbind.          |
+| int                                    | **num_streams** | Number streams listed in the `streams` array. |
 
 ## Return Value
 
-Returns 0 on success, -1 on error; call [SDL_GetError](SDL_GetError)() for
-more information.
+(int) Returns 0 on success, -1 on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

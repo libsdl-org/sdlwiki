@@ -15,15 +15,15 @@ int SDL_GetWindowPosition(SDL_Window *window, int *x, int *y);
 
 ## Function Parameters
 
-|                |                                                                    |
-| -------------- | ------------------------------------------------------------------ |
-| **window**     | the window to query                                                |
-| **x**          | a pointer filled in with the x position of the window, may be NULL |
-| **y**          | a pointer filled in with the y position of the window, may be NULL |
+|                            |            |                                                                    |
+| -------------------------- | ---------- | ------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window to query                                                |
+| int *                      | **x**      | a pointer filled in with the x position of the window, may be NULL |
+| int *                      | **y**      | a pointer filled in with the y position of the window, may be NULL |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

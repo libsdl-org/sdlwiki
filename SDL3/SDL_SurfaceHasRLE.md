@@ -15,14 +15,14 @@ SDL_bool SDL_SurfaceHasRLE(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                 |                                                   |
-| --------------- | ------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to query |
+|                              |             |                                                   |
+| ---------------------------- | ----------- | ------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the surface is RLE enabled,
-[SDL_FALSE](SDL_FALSE) otherwise.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the surface is RLE
+enabled, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

@@ -15,14 +15,15 @@ SDL_JoystickType SDL_GetJoystickInstanceType(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                     |                          |
-| ------------------- | ------------------------ |
-| **instance_id**     | the joystick instance ID |
+|                                  |                 |                          |
+| -------------------------------- | --------------- | ------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID |
 
 ## Return Value
 
-Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
-If called with an invalid instance_id, this function returns
+([SDL_JoystickType](SDL_JoystickType)) Returns the
+[SDL_JoystickType](SDL_JoystickType) of the selected joystick. If called
+with an invalid instance_id, this function returns
 [`SDL_JOYSTICK_TYPE_UNKNOWN`](SDL_JOYSTICK_TYPE_UNKNOWN).
 
 ## Remarks

@@ -15,14 +15,14 @@ int SDL_AppIterate(void *appstate);
 
 ## Function Parameters
 
-|                  |                                                                         |
-| ---------------- | ----------------------------------------------------------------------- |
-| **appstate**     | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
+|        |              |                                                                         |
+| ------ | ------------ | ----------------------------------------------------------------------- |
+| void * | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
 
 ## Return Value
 
-Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an error,
-[SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
+(int) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an
+error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
 [SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
 
 ## Remarks

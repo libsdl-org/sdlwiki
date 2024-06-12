@@ -15,14 +15,15 @@ SDL_Storage* SDL_OpenFileStorage(const char *path);
 
 ## Function Parameters
 
-|              |                                                                        |
-| ------------ | ---------------------------------------------------------------------- |
-| **path**     | the base path prepended to all storage paths, or NULL for no base path |
+|              |          |                                                                        |
+| ------------ | -------- | ---------------------------------------------------------------------- |
+| const char * | **path** | the base path prepended to all storage paths, or NULL for no base path |
 
 ## Return Value
 
-Returns a filesystem storage container on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Storage](SDL_Storage) *) Returns a filesystem storage container on
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

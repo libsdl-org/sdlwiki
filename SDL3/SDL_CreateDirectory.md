@@ -15,13 +15,13 @@ int SDL_CreateDirectory(const char *path);
 
 ## Function Parameters
 
-|              |                                     |
-| ------------ | ----------------------------------- |
-| **path**     | the path of the directory to create |
+|              |          |                                     |
+| ------------ | -------- | ----------------------------------- |
+| const char * | **path** | the path of the directory to create |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

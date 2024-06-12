@@ -15,15 +15,15 @@ int SDL_SetTLS(SDL_TLSID id, const void *value, SDL_TLSDestructorCallback destru
 
 ## Function Parameters
 
-|                    |                                                                          |
-| ------------------ | ------------------------------------------------------------------------ |
-| **id**             | the thread local storage ID                                              |
-| **value**          | the value to associate with the ID for the current thread                |
-| **destructor**     | a function called when the thread exits, to free the value. Can be NULL. |
+|                                                        |                |                                                                          |
+| ------------------------------------------------------ | -------------- | ------------------------------------------------------------------------ |
+| [SDL_TLSID](SDL_TLSID)                                 | **id**         | the thread local storage ID                                              |
+| const void *                                           | **value**      | the value to associate with the ID for the current thread                |
+| [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback) | **destructor** | a function called when the thread exits, to free the value. Can be NULL. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

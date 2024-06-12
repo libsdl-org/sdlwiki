@@ -15,9 +15,9 @@ void SDL_UnlockRWLock(SDL_RWLock *rwlock);
 
 ## Function Parameters
 
-|                |                       |
-| -------------- | --------------------- |
-| **rwlock**     | the rwlock to unlock. |
+|                            |            |                       |
+| -------------------------- | ---------- | --------------------- |
+| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the rwlock to unlock. |
 
 ## Remarks
 

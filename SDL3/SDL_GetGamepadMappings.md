@@ -15,14 +15,14 @@ char ** SDL_GetGamepadMappings(int *count);
 
 ## Function Parameters
 
-|               |                                                                        |
-| ------------- | ---------------------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of mappings returned, can be NULL. |
+|       |           |                                                                        |
+| ----- | --------- | ---------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of mappings returned, can be NULL. |
 
 ## Return Value
 
-Returns an array of the mapping strings, NULL-terminated. Must be freed
-with [SDL_free](SDL_free)(). Returns NULL on error.
+(char **) Returns an array of the mapping strings, NULL-terminated. Must be
+freed with [SDL_free](SDL_free)(). Returns NULL on error.
 
 ## Remarks
 

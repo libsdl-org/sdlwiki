@@ -15,8 +15,9 @@ SDL_EGLDisplay SDL_EGL_GetCurrentEGLDisplay(void);
 
 ## Return Value
 
-Returns the currently active EGL display or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_EGLDisplay](SDL_EGLDisplay)) Returns the currently active EGL display
+or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

@@ -15,11 +15,11 @@ typedef Uint32 (SDLCALL *SDL_TimerCallback)(void *userdata, SDL_TimerID timerID,
 
 ## Function Parameters
 
-|                  |                                                                                                 |
-| ---------------- | ----------------------------------------------------------------------------------------------- |
-| **userdata**     | an arbitrary pointer provided by the app through [SDL_AddTimer](SDL_AddTimer), for its own use. |
-| **timerID**      | the current timer being processed                                                               |
-| **interval**     | the current callback time interval.                                                             |
+|              |                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------- |
+| **userdata** | an arbitrary pointer provided by the app through [SDL_AddTimer](SDL_AddTimer), for its own use. |
+| **timerID**  | the current timer being processed                                                               |
+| **interval** | the current callback time interval.                                                             |
 
 ## Return Value
 

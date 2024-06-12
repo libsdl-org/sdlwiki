@@ -15,14 +15,14 @@ int SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
 
 ## Function Parameters
 
-|                |                                     |
-| -------------- | ----------------------------------- |
-| **camera**     | opened camera device                |
-| **frame**      | The video frame surface to release. |
+|                              |            |                                     |
+| ---------------------------- | ---------- | ----------------------------------- |
+| [SDL_Camera](SDL_Camera) *   | **camera** | opened camera device                |
+| [SDL_Surface](SDL_Surface) * | **frame**  | The video frame surface to release. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

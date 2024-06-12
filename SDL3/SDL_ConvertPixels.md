@@ -15,20 +15,20 @@ int SDL_ConvertPixels(int width, int height, SDL_PixelFormatEnum src_format, con
 
 ## Function Parameters
 
-|                    |                                                                                |
-| ------------------ | ------------------------------------------------------------------------------ |
-| **width**          | the width of the block to copy, in pixels                                      |
-| **height**         | the height of the block to copy, in pixels                                     |
-| **src_format**     | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format |
-| **src**            | a pointer to the source pixels                                                 |
-| **src_pitch**      | the pitch of the source pixels, in bytes                                       |
-| **dst_format**     | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format |
-| **dst**            | a pointer to be filled in with new pixel data                                  |
-| **dst_pitch**      | the pitch of the destination pixels, in bytes                                  |
+|                                            |                |                                                                                |
+| ------------------------------------------ | -------------- | ------------------------------------------------------------------------------ |
+| int                                        | **width**      | the width of the block to copy, in pixels                                      |
+| int                                        | **height**     | the height of the block to copy, in pixels                                     |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **src_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format |
+| const void *                               | **src**        | a pointer to the source pixels                                                 |
+| int                                        | **src_pitch**  | the pitch of the source pixels, in bytes                                       |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **dst_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format |
+| void *                                     | **dst**        | a pointer to be filled in with new pixel data                                  |
+| int                                        | **dst_pitch**  | the pitch of the destination pixels, in bytes                                  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

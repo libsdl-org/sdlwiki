@@ -15,17 +15,17 @@ int SDL_RenderLine(SDL_Renderer *renderer, float x1, float y1, float x2, float y
 
 ## Function Parameters
 
-|                  |                                        |
-| ---------------- | -------------------------------------- |
-| **renderer**     | The renderer which should draw a line. |
-| **x1**           | The x coordinate of the start point.   |
-| **y1**           | The y coordinate of the start point.   |
-| **x2**           | The x coordinate of the end point.     |
-| **y2**           | The y coordinate of the end point.     |
+|                                |              |                                        |
+| ------------------------------ | ------------ | -------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should draw a line. |
+| float                          | **x1**       | The x coordinate of the start point.   |
+| float                          | **y1**       | The y coordinate of the start point.   |
+| float                          | **x2**       | The x coordinate of the end point.     |
+| float                          | **y2**       | The y coordinate of the end point.     |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error
+(int) Returns 0 on success, or -1 on error
 
 ## Version
 

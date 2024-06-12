@@ -15,7 +15,7 @@ SDL_Window * SDL_GetMouseFocus(void);
 
 ## Return Value
 
-Returns the window with mouse focus.
+([SDL_Window](SDL_Window) *) Returns the window with mouse focus.
 
 ## Version
 

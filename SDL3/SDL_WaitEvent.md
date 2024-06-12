@@ -15,15 +15,15 @@ SDL_bool SDL_WaitEvent(SDL_Event *event);
 
 ## Function Parameters
 
-|               |                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------ |
-| **event**     | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL |
+|                          |           |                                                                                                  |
+| ------------------------ | --------- | ------------------------------------------------------------------------------------------------ |
+| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) if there
-was an error while waiting for events; call [SDL_GetError](SDL_GetError)()
-for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) if there was an error while waiting for events; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

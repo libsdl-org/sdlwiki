@@ -15,13 +15,13 @@ int SDL_GDKGetTaskQueue(XTaskQueueHandle * outTaskQueue);
 
 ## Function Parameters
 
-|                      |                                                   |
-| -------------------- | ------------------------------------------------- |
-| **outTaskQueue**     | a pointer to be filled in with task queue handle. |
+|                    |                  |                                                   |
+| ------------------ | ---------------- | ------------------------------------------------- |
+| XTaskQueueHandle * | **outTaskQueue** | a pointer to be filled in with task queue handle. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

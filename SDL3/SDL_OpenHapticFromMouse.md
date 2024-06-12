@@ -15,8 +15,8 @@ SDL_Haptic* SDL_OpenHapticFromMouse(void);
 
 ## Return Value
 
-Returns the haptic device identifier or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Haptic](SDL_Haptic) *) Returns the haptic device identifier or NULL
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

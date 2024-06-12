@@ -15,16 +15,16 @@ extern SDL_DECLSPEC char **SDLCALL SDL_GlobDirectory(const char *path, const cha
 
 ## Function Parameters
 
-|                 |                                                                                   |
-| --------------- | --------------------------------------------------------------------------------- |
-| **path**        | the path of the directory to enumerate                                            |
-| **pattern**     | the pattern that files in the directory must match. Can be NULL.                  |
-| **flags**       | `SDL_GLOB_*` bitflags that affect this search.                                    |
-| **count**       | on return, will be set to the number of items in the returned array. Can be NULL. |
+|                                |             |                                                                                   |
+| ------------------------------ | ----------- | --------------------------------------------------------------------------------- |
+| const char *                   | **path**    | the path of the directory to enumerate                                            |
+| const char *                   | **pattern** | the pattern that files in the directory must match. Can be NULL.                  |
+| [SDL_GlobFlags](SDL_GlobFlags) | **flags**   | `SDL_GLOB_*` bitflags that affect this search.                                    |
+| int *                          | **count**   | on return, will be set to the number of items in the returned array. Can be NULL. |
 
 ## Return Value
 
-Returns an array of strings on success or NULL on failure; call
+(char **) Returns an array of strings on success or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information. The caller should pass
 the returned pointer to [SDL_free](SDL_free) when done with it.
 

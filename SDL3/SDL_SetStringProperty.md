@@ -15,15 +15,15 @@ int SDL_SetStringProperty(SDL_PropertiesID props, const char *name, const char *
 
 ## Function Parameters
 
-|               |                                                               |
-| ------------- | ------------------------------------------------------------- |
-| **props**     | the properties to modify                                      |
-| **name**      | the name of the property to modify                            |
-| **value**     | the new value of the property, or NULL to delete the property |
+|                                      |           |                                                               |
+| ------------------------------------ | --------- | ------------------------------------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to modify                                      |
+| const char *                         | **name**  | the name of the property to modify                            |
+| const char *                         | **value** | the new value of the property, or NULL to delete the property |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -15,16 +15,16 @@ int SDL_GetJoystickBall(SDL_Joystick *joystick, int ball, int *dx, int *dy);
 
 ## Function Parameters
 
-|                  |                                                                  |
-| ---------------- | ---------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) to query                        |
-| **ball**         | the ball index to query; ball indices start at index 0           |
-| **dx**           | stores the difference in the x axis position since the last poll |
-| **dy**           | stores the difference in the y axis position since the last poll |
+|                                |              |                                                                  |
+| ------------------------------ | ------------ | ---------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to query                        |
+| int                            | **ball**     | the ball index to query; ball indices start at index 0           |
+| int *                          | **dx**       | stores the difference in the x axis position since the last poll |
+| int *                          | **dy**       | stores the difference in the y axis position since the last poll |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

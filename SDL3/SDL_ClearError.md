@@ -15,7 +15,7 @@ int SDL_ClearError(void);
 
 ## Return Value
 
-Returns 0
+(int) Returns 0
 
 ## Version
 

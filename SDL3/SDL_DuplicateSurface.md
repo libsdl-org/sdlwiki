@@ -15,14 +15,14 @@ SDL_Surface* SDL_DuplicateSurface(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                 |                           |
-| --------------- | ------------------------- |
-| **surface**     | the surface to duplicate. |
+|                              |             |                           |
+| ---------------------------- | ----------- | ------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the surface to duplicate. |
 
 ## Return Value
 
-Returns a copy of the surface, or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns a copy of the surface, or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

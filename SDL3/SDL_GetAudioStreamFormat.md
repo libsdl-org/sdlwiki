@@ -17,15 +17,15 @@ int SDL_GetAudioStreamFormat(SDL_AudioStream *stream,
 
 ## Function Parameters
 
-|                  |                                                          |
-| ---------------- | -------------------------------------------------------- |
-| **stream**       | the [SDL_AudioStream](SDL_AudioStream) to query.         |
-| **src_spec**     | Where to store the input audio format; ignored if NULL.  |
-| **dst_spec**     | Where to store the output audio format; ignored if NULL. |
+|                                      |              |                                                          |
+| ------------------------------------ | ------------ | -------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream**   | the [SDL_AudioStream](SDL_AudioStream) to query.         |
+| [SDL_AudioSpec](SDL_AudioSpec) *     | **src_spec** | Where to store the input audio format; ignored if NULL.  |
+| [SDL_AudioSpec](SDL_AudioSpec) *     | **dst_spec** | Where to store the output audio format; ignored if NULL. |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+(int) Returns 0 on success, or -1 on error.
 
 ## Thread Safety
 

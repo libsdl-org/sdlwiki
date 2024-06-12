@@ -15,16 +15,16 @@ size_t SDL_WriteIO(SDL_IOStream *context, const void *ptr, size_t size);
 
 ## Function Parameters
 
-|                 |                                                        |
-| --------------- | ------------------------------------------------------ |
-| **context**     | a pointer to an [SDL_IOStream](SDL_IOStream) structure |
-| **ptr**         | a pointer to a buffer containing data to write         |
-| **size**        | the number of bytes to write                           |
+|                                |             |                                                        |
+| ------------------------------ | ----------- | ------------------------------------------------------ |
+| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure |
+| const void *                   | **ptr**     | a pointer to a buffer containing data to write         |
+| size_t                         | **size**    | the number of bytes to write                           |
 
 ## Return Value
 
-Returns the number of bytes written, which will be less than `size` on
-error; call [SDL_GetError](SDL_GetError)() for more information.
+(size_t) Returns the number of bytes written, which will be less than
+`size` on error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

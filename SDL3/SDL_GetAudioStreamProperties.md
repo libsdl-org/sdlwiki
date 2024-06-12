@@ -15,14 +15,15 @@ SDL_PropertiesID SDL_GetAudioStreamProperties(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                                                 |
-| -------------- | ----------------------------------------------- |
-| **stream**     | the [SDL_AudioStream](SDL_AudioStream) to query |
+|                                      |            |                                                 |
+| ------------------------------------ | ---------- | ----------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the [SDL_AudioStream](SDL_AudioStream) to query |
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

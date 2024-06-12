@@ -15,19 +15,20 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormatEnum forma
 
 ## Function Parameters
 
-|                  |                                                                            |
-| ---------------- | -------------------------------------------------------------------------- |
-| **renderer**     | the rendering context                                                      |
-| **format**       | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum) |
-| **access**       | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess)     |
-| **w**            | the width of the texture in pixels                                         |
-| **h**            | the height of the texture in pixels                                        |
+|                                            |              |                                                                            |
+| ------------------------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *             | **renderer** | the rendering context                                                      |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format**   | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum) |
+| int                                        | **access**   | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess)     |
+| int                                        | **w**        | the width of the texture in pixels                                         |
+| int                                        | **h**        | the height of the texture in pixels                                        |
 
 ## Return Value
 
-Returns a pointer to the created texture or NULL if no rendering context
-was active, the format was unsupported, or the width or height were out of
-range; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Texture](SDL_Texture) *) Returns a pointer to the created texture or
+NULL if no rendering context was active, the format was unsupported, or the
+width or height were out of range; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

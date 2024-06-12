@@ -15,14 +15,14 @@ SDL_EGLSurface SDL_EGL_GetWindowEGLSurface(SDL_Window *window);
 
 ## Function Parameters
 
-|                |                     |
-| -------------- | ------------------- |
-| **window**     | the window to query |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query |
 
 ## Return Value
 
-Returns the EGLSurface pointer associated with the window, or NULL on
-failure.
+([SDL_EGLSurface](SDL_EGLSurface)) Returns the EGLSurface pointer
+associated with the window, or NULL on failure.
 
 ## Version
 

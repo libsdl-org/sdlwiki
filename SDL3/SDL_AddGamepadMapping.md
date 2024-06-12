@@ -15,14 +15,15 @@ int SDL_AddGamepadMapping(const char *mapping);
 
 ## Function Parameters
 
-|                 |                    |
-| --------------- | ------------------ |
-| **mapping**     | the mapping string |
+|              |             |                    |
+| ------------ | ----------- | ------------------ |
+| const char * | **mapping** | the mapping string |
 
 ## Return Value
 
-Returns 1 if a new mapping is added, 0 if an existing mapping is updated,
--1 on error; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 1 if a new mapping is added, 0 if an existing mapping is
+updated, -1 on error; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

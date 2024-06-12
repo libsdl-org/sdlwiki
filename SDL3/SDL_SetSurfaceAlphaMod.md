@@ -15,14 +15,14 @@ int SDL_SetSurfaceAlphaMod(SDL_Surface *surface, Uint8 alpha);
 
 ## Function Parameters
 
-|                 |                                                    |
-| --------------- | -------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to update |
-| **alpha**       | the alpha value multiplied into blit operations    |
+|                              |             |                                                    |
+| ---------------------------- | ----------- | -------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update |
+| Uint8                        | **alpha**   | the alpha value multiplied into blit operations    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

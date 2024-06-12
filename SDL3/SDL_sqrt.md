@@ -15,13 +15,13 @@ double SDL_sqrt(double x);
 
 ## Function Parameters
 
-|           |                                                           |
-| --------- | --------------------------------------------------------- |
-| **x**     | floating point value. Must be greater than or equal to 0. |
+|        |       |                                                           |
+| ------ | ----- | --------------------------------------------------------- |
+| double | **x** | floating point value. Must be greater than or equal to 0. |
 
 ## Return Value
 
-Returns square root of `x`
+(double) Returns square root of `x`
 
 ## Remarks
 

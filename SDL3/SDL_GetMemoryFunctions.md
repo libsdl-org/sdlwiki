@@ -18,12 +18,12 @@ void SDL_GetMemoryFunctions(SDL_malloc_func *malloc_func,
 
 ## Function Parameters
 
-|                      |                              |
-| -------------------- | ---------------------------- |
-| **malloc_func**      | filled with malloc function  |
-| **calloc_func**      | filled with calloc function  |
-| **realloc_func**     | filled with realloc function |
-| **free_func**        | filled with free function    |
+|                                        |                  |                              |
+| -------------------------------------- | ---------------- | ---------------------------- |
+| [SDL_malloc_func](SDL_malloc_func) *   | **malloc_func**  | filled with malloc function  |
+| [SDL_calloc_func](SDL_calloc_func) *   | **calloc_func**  | filled with calloc function  |
+| [SDL_realloc_func](SDL_realloc_func) * | **realloc_func** | filled with realloc function |
+| [SDL_free_func](SDL_free_func) *       | **free_func**    | filled with free function    |
 
 ## Version
 

@@ -15,16 +15,16 @@ int SDL_BlitSurfaceUnchecked(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surf
 
 ## Function Parameters
 
-|                 |                                                                                                                |
-| --------------- | -------------------------------------------------------------------------------------------------------------- |
-| **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                                                     |
-| **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface |
-| **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                                               |
-| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface                |
+|                              |             |                                                                                                                |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **src**     | the [SDL_Surface](SDL_Surface) structure to be copied from                                                     |
+| const [SDL_Rect](SDL_Rect) * | **srcrect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface |
+| [SDL_Surface](SDL_Surface) * | **dst**     | the [SDL_Surface](SDL_Surface) structure that is the blit target                                               |
+| const [SDL_Rect](SDL_Rect) * | **dstrect** | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface                |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

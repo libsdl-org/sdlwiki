@@ -15,14 +15,15 @@ SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|           |                                                                   |
-| --------- | ----------------------------------------------------------------- |
-| **x**     | a pointer filled with the last recorded x coordinate of the mouse |
-| **y**     | a pointer filled with the last recorded y coordinate of the mouse |
+|         |       |                                                                   |
+| ------- | ----- | ----------------------------------------------------------------- |
+| float * | **x** | a pointer filled with the last recorded x coordinate of the mouse |
+| float * | **y** | a pointer filled with the last recorded y coordinate of the mouse |
 
 ## Return Value
 
-Returns a 32-bit button bitmask of the relative button state.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns a 32-bit button
+bitmask of the relative button state.
 
 ## Remarks
 

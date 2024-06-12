@@ -15,14 +15,14 @@ int SDL_GetNumHapticAxes(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+|                            |            |                                              |
+| -------------------------- | ---------- | -------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
 
 ## Return Value
 
-Returns the number of axes on success or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of axes on success or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

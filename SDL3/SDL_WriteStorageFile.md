@@ -15,16 +15,16 @@ int SDL_WriteStorageFile(SDL_Storage *storage, const char *path, const void *sou
 
 ## Function Parameters
 
-|                 |                                        |
-| --------------- | -------------------------------------- |
-| **storage**     | a storage container to write to        |
-| **path**        | the relative path of the file to write |
-| **source**      | a client-provided buffer to write from |
-| **length**      | the length of the source buffer        |
+|                              |             |                                        |
+| ---------------------------- | ----------- | -------------------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to write to        |
+| const char *                 | **path**    | the relative path of the file to write |
+| const void *                 | **source**  | a client-provided buffer to write from |
+| Uint64                       | **length**  | the length of the source buffer        |
 
 ## Return Value
 
-Returns 0 if the file was written, a negative value otherwise; call
+(int) Returns 0 if the file was written, a negative value otherwise; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

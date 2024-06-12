@@ -15,14 +15,14 @@ int SDL_SetWindowShape(SDL_Window *window, SDL_Surface *shape);
 
 ## Function Parameters
 
-|                |                                                                                       |
-| -------------- | ------------------------------------------------------------------------------------- |
-| **window**     | the window                                                                            |
-| **shape**      | the surface representing the shape of the window, or NULL to remove any current shape |
+|                              |            |                                                                                       |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *   | **window** | the window                                                                            |
+| [SDL_Surface](SDL_Surface) * | **shape**  | the surface representing the shape of the window, or NULL to remove any current shape |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

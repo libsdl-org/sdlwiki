@@ -15,15 +15,15 @@ int SDL_SetJoystickVirtualButton(SDL_Joystick *joystick, int button, Uint8 value
 
 ## Function Parameters
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.                |
-| **button**       | the index of the button on the virtual joystick to update. |
-| **value**        | the new value for the specified button.                    |
+|                                |              |                                                            |
+| ------------------------------ | ------------ | ---------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.                |
+| int                            | **button**   | the index of the button on the virtual joystick to update. |
+| Uint8                          | **value**    | the new value for the specified button.                    |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

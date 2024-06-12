@@ -15,14 +15,14 @@ int SDL_hid_set_nonblocking(SDL_hid_device *dev, int nonblock);
 
 ## Function Parameters
 
-|                  |                                                                                           |
-| ---------------- | ----------------------------------------------------------------------------------------- |
-| **dev**          | A device handle returned from [SDL_hid_open](SDL_hid_open)().                             |
-| **nonblock**     | enable or not the nonblocking reads - 1 to enable nonblocking - 0 to disable nonblocking. |
+|                                    |              |                                                                                           |
+| ---------------------------------- | ------------ | ----------------------------------------------------------------------------------------- |
+| [SDL_hid_device](SDL_hid_device) * | **dev**      | A device handle returned from [SDL_hid_open](SDL_hid_open)().                             |
+| int                                | **nonblock** | enable or not the nonblocking reads - 1 to enable nonblocking - 0 to disable nonblocking. |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

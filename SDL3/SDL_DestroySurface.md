@@ -15,9 +15,9 @@ void SDL_DestroySurface(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                 |                                         |
-| --------------- | --------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) to free. |
+|                              |             |                                         |
+| ---------------------------- | ----------- | --------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) to free. |
 
 ## Remarks
 

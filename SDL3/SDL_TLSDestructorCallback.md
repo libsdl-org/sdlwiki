@@ -15,9 +15,9 @@ typedef void (SDLCALL *SDL_TLSDestructorCallback)(void *value);
 
 ## Function Parameters
 
-|               |                                                          |
-| ------------- | -------------------------------------------------------- |
-| **value**     | a pointer previously handed to [SDL_SetTLS](SDL_SetTLS). |
+|           |                                                          |
+| --------- | -------------------------------------------------------- |
+| **value** | a pointer previously handed to [SDL_SetTLS](SDL_SetTLS). |
 
 ## Remarks
 

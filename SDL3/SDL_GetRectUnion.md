@@ -17,15 +17,15 @@ int SDL_GetRectUnion(const SDL_Rect * A,
 
 ## Function Parameters
 
-|                |                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------ |
-| **A**          | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                   |
-| **B**          | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                  |
-| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the union of rectangles `A` and `B` |
+|                              |            |                                                                                      |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------ |
+| const [SDL_Rect](SDL_Rect) * | **A**      | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                   |
+| const [SDL_Rect](SDL_Rect) * | **B**      | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                  |
+| [SDL_Rect](SDL_Rect) *       | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the union of rectangles `A` and `B` |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

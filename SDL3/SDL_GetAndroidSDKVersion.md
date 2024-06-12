@@ -15,7 +15,7 @@ int SDL_GetAndroidSDKVersion(void);
 
 ## Return Value
 
-Returns the Android API level.
+(int) Returns the Android API level.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ void SDL_UnlockProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|               |                          |
-| ------------- | ------------------------ |
-| **props**     | the properties to unlock |
+|                                      |           |                          |
+| ------------------------------------ | --------- | ------------------------ |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to unlock |
 
 ## Thread Safety
 

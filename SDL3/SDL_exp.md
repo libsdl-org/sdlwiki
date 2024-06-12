@@ -15,13 +15,13 @@ double SDL_exp(double x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|        |       |                      |
+| ------ | ----- | -------------------- |
+| double | **x** | floating point value |
 
 ## Return Value
 
-Returns value of `e^x`
+(double) Returns value of `e^x`
 
 ## Remarks
 

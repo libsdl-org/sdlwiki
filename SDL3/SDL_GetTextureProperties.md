@@ -15,14 +15,15 @@ SDL_PropertiesID SDL_GetTextureProperties(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                 |                      |
-| --------------- | -------------------- |
-| **texture**     | the texture to query |
+|                              |             |                      |
+| ---------------------------- | ----------- | -------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query |
 
 ## Return Value
 
-Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PropertiesID](SDL_PropertiesID)) Returns a valid property ID on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

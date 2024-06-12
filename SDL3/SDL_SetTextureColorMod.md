@@ -15,16 +15,16 @@ int SDL_SetTextureColorMod(SDL_Texture *texture, Uint8 r, Uint8 g, Uint8 b);
 
 ## Function Parameters
 
-|                 |                                                       |
-| --------------- | ----------------------------------------------------- |
-| **texture**     | the texture to update                                 |
-| **r**           | the red color value multiplied into copy operations   |
-| **g**           | the green color value multiplied into copy operations |
-| **b**           | the blue color value multiplied into copy operations  |
+|                              |             |                                                       |
+| ---------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                 |
+| Uint8                        | **r**       | the red color value multiplied into copy operations   |
+| Uint8                        | **g**       | the green color value multiplied into copy operations |
+| Uint8                        | **b**       | the blue color value multiplied into copy operations  |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

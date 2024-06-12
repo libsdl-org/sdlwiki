@@ -15,14 +15,14 @@ int SDL_AndroidSendMessage(Uint32 command, int param);
 
 ## Function Parameters
 
-|                 |                                                      |
-| --------------- | ---------------------------------------------------- |
-| **command**     | user command that must be greater or equal to 0x8000 |
-| **param**       | user parameter                                       |
+|        |             |                                                      |
+| ------ | ----------- | ---------------------------------------------------- |
+| Uint32 | **command** | user command that must be greater or equal to 0x8000 |
+| int    | **param**   | user parameter                                       |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

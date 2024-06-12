@@ -17,16 +17,16 @@ SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
 
 ## Function Parameters
 
-|              |                       |
-| ------------ | --------------------- |
-| **data**     | assert data structure |
-| **func**     | function name         |
-| **file**     | file name             |
-| **line**     | line number           |
+|                                    |          |                       |
+| ---------------------------------- | -------- | --------------------- |
+| [SDL_AssertData](SDL_AssertData) * | **data** | assert data structure |
+| const char *                       | **func** | function name         |
+| const char *                       | **file** | file name             |
+| int                                | **line** | line number           |
 
 ## Return Value
 
-Returns assert state
+([SDL_AssertState](SDL_AssertState)) Returns assert state
 
 ## Remarks
 

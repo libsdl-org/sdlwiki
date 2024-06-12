@@ -15,15 +15,15 @@ int SDL_UpdateHapticEffect(SDL_Haptic *haptic, int effect, const SDL_HapticEffec
 
 ## Function Parameters
 
-|                |                                                                                               |
-| -------------- | --------------------------------------------------------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device that has the effect                                       |
-| **effect**     | the identifier of the effect to update                                                        |
-| **data**       | an [SDL_HapticEffect](SDL_HapticEffect) structure containing the new effect properties to use |
+|                                              |            |                                                                                               |
+| -------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *                   | **haptic** | the [SDL_Haptic](SDL_Haptic) device that has the effect                                       |
+| int                                          | **effect** | the identifier of the effect to update                                                        |
+| const [SDL_HapticEffect](SDL_HapticEffect) * | **data**   | an [SDL_HapticEffect](SDL_HapticEffect) structure containing the new effect properties to use |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

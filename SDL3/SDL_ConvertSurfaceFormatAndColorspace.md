@@ -15,17 +15,18 @@ SDL_Surface* SDL_ConvertSurfaceFormatAndColorspace(SDL_Surface *surface, SDL_Pix
 
 ## Function Parameters
 
-|                      |                                                                                |
-| -------------------- | ------------------------------------------------------------------------------ |
-| **surface**          | the existing [SDL_Surface](SDL_Surface) structure to convert                   |
-| **pixel_format**     | the new pixel format                                                           |
-| **colorspace**       | the new colorspace                                                             |
-| **props**            | an [SDL_PropertiesID](SDL_PropertiesID) with additional color properties, or 0 |
+|                                            |                  |                                                                                |
+| ------------------------------------------ | ---------------- | ------------------------------------------------------------------------------ |
+| [SDL_Surface](SDL_Surface) *               | **surface**      | the existing [SDL_Surface](SDL_Surface) structure to convert                   |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **pixel_format** | the new pixel format                                                           |
+| [SDL_Colorspace](SDL_Colorspace)           | **colorspace**   | the new colorspace                                                             |
+| [SDL_PropertiesID](SDL_PropertiesID)       | **props**        | an [SDL_PropertiesID](SDL_PropertiesID) with additional color properties, or 0 |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
+structure that is created or NULL if it fails; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

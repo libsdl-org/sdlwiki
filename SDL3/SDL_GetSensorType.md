@@ -15,13 +15,14 @@ SDL_SensorType SDL_GetSensorType(SDL_Sensor *sensor);
 
 ## Function Parameters
 
-|                |                                                |
-| -------------- | ---------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to inspect |
+|                            |            |                                                |
+| -------------------------- | ---------- | ---------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to inspect |
 
 ## Return Value
 
-Returns the [SDL_SensorType](SDL_SensorType) type, or
+([SDL_SensorType](SDL_SensorType)) Returns the
+[SDL_SensorType](SDL_SensorType) type, or
 [`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `sensor` is NULL.
 
 ## Version

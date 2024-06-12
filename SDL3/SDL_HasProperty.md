@@ -15,15 +15,15 @@ SDL_bool SDL_HasProperty(SDL_PropertiesID props, const char *name);
 
 ## Function Parameters
 
-|               |                                   |
-| ------------- | --------------------------------- |
-| **props**     | the properties to query           |
-| **name**      | the name of the property to query |
+|                                      |           |                                   |
+| ------------------------------------ | --------- | --------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to query           |
+| const char *                         | **name**  | the name of the property to query |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the property exists, or
-[SDL_FALSE](SDL_FALSE) if it doesn't.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the property exists,
+or [SDL_FALSE](SDL_FALSE) if it doesn't.
 
 ## Thread Safety
 

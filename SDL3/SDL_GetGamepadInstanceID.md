@@ -15,14 +15,15 @@ SDL_JoystickID SDL_GetGamepadInstanceID(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+|                              |             |                                                                                  |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
 
 ## Return Value
 
-Returns the instance ID of the specified gamepad on success or 0 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_JoystickID](SDL_JoystickID)) Returns the instance ID of the specified
+gamepad on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

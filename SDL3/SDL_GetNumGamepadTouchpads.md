@@ -15,13 +15,13 @@ int SDL_GetNumGamepadTouchpads(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                 |           |
-| --------------- | --------- |
-| **gamepad**     | a gamepad |
+|                              |             |           |
+| ---------------------------- | ----------- | --------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad |
 
 ## Return Value
 
-Returns number of touchpads
+(int) Returns number of touchpads
 
 ## Version
 

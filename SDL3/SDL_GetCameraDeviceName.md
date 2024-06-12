@@ -15,13 +15,13 @@ char * SDL_GetCameraDeviceName(SDL_CameraDeviceID instance_id);
 
 ## Function Parameters
 
-|                     |                               |
-| ------------------- | ----------------------------- |
-| **instance_id**     | the camera device instance ID |
+|                                          |                 |                               |
+| ---------------------------------------- | --------------- | ----------------------------- |
+| [SDL_CameraDeviceID](SDL_CameraDeviceID) | **instance_id** | the camera device instance ID |
 
 ## Return Value
 
-Returns Human-readable device name, or NULL on error; call
+(char *) Returns Human-readable device name, or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

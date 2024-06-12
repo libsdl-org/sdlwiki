@@ -15,13 +15,13 @@ int SDL_ClearAudioStream(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                           |
-| -------------- | ------------------------- |
-| **stream**     | The audio stream to clear |
+|                                      |            |                           |
+| ------------------------------------ | ---------- | ------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to clear |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

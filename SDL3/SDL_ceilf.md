@@ -15,13 +15,13 @@ float SDL_ceilf(float x);
 
 ## Function Parameters
 
-|           |                      |
-| --------- | -------------------- |
-| **x**     | floating point value |
+|       |       |                      |
+| ----- | ----- | -------------------- |
+| float | **x** | floating point value |
 
 ## Return Value
 
-Returns the ceiling of `x`
+(float) Returns the ceiling of `x`
 
 ## Remarks
 

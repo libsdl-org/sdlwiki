@@ -15,13 +15,13 @@ int SDL_PauseAudioDevice(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|             |                                                                 |
-| ----------- | --------------------------------------------------------------- |
-| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+|                                        |         |                                                                 |
+| -------------------------------------- | ------- | --------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
 
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -20,19 +20,19 @@ SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor,
 
 ## Function Parameters
 
-|                        |                                                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **srcColorFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the red, green, and blue components of the source pixels                            |
-| **dstColorFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the red, green, and blue components of the destination pixels                       |
-| **colorOperation**     | the [SDL_BlendOperation](SDL_BlendOperation) used to combine the red, green, and blue components of the source and destination pixels |
-| **srcAlphaFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the alpha component of the source pixels                                            |
-| **dstAlphaFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the alpha component of the destination pixels                                       |
-| **alphaOperation**     | the [SDL_BlendOperation](SDL_BlendOperation) used to combine the alpha component of the source and destination pixels                 |
+|                                          |                    |                                                                                                                                       |
+| ---------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_BlendFactor](SDL_BlendFactor)       | **srcColorFactor** | the [SDL_BlendFactor](SDL_BlendFactor) applied to the red, green, and blue components of the source pixels                            |
+| [SDL_BlendFactor](SDL_BlendFactor)       | **dstColorFactor** | the [SDL_BlendFactor](SDL_BlendFactor) applied to the red, green, and blue components of the destination pixels                       |
+| [SDL_BlendOperation](SDL_BlendOperation) | **colorOperation** | the [SDL_BlendOperation](SDL_BlendOperation) used to combine the red, green, and blue components of the source and destination pixels |
+| [SDL_BlendFactor](SDL_BlendFactor)       | **srcAlphaFactor** | the [SDL_BlendFactor](SDL_BlendFactor) applied to the alpha component of the source pixels                                            |
+| [SDL_BlendFactor](SDL_BlendFactor)       | **dstAlphaFactor** | the [SDL_BlendFactor](SDL_BlendFactor) applied to the alpha component of the destination pixels                                       |
+| [SDL_BlendOperation](SDL_BlendOperation) | **alphaOperation** | the [SDL_BlendOperation](SDL_BlendOperation) used to combine the alpha component of the source and destination pixels                 |
 
 ## Return Value
 
-Returns an [SDL_BlendMode](SDL_BlendMode) that represents the chosen
-factors and operations.
+([SDL_BlendMode](SDL_BlendMode)) Returns an [SDL_BlendMode](SDL_BlendMode)
+that represents the chosen factors and operations.
 
 ## Remarks
 

@@ -15,19 +15,20 @@ SDL_AudioStream* SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_Au
 
 ## Function Parameters
 
-|                  |                                                                                                                                                                                                                                                                       |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **devid**        | an audio device to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE).                                                                                               |
-| **spec**         | the audio stream's data format. Can be NULL.                                                                                                                                                                                                                          |
-| **callback**     | A callback where the app will provide new data for playback, or receive new data for capture. Can be NULL, in which case the app will need to call [SDL_PutAudioStreamData](SDL_PutAudioStreamData) or [SDL_GetAudioStreamData](SDL_GetAudioStreamData) as necessary. |
-| **userdata**     | App-controlled pointer passed to callback. Can be NULL. Ignored if callback is NULL.                                                                                                                                                                                  |
+|                                                    |              |                                                                                                                                                                                                                                                                       |
+| -------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID)             | **devid**    | an audio device to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE).                                                                                               |
+| const [SDL_AudioSpec](SDL_AudioSpec) *             | **spec**     | the audio stream's data format. Can be NULL.                                                                                                                                                                                                                          |
+| [SDL_AudioStreamCallback](SDL_AudioStreamCallback) | **callback** | A callback where the app will provide new data for playback, or receive new data for capture. Can be NULL, in which case the app will need to call [SDL_PutAudioStreamData](SDL_PutAudioStreamData) or [SDL_GetAudioStreamData](SDL_GetAudioStreamData) as necessary. |
+| void *                                             | **userdata** | App-controlled pointer passed to callback. Can be NULL. Ignored if callback is NULL.                                                                                                                                                                                  |
 
 ## Return Value
 
-Returns an audio stream on success, ready to use. NULL on error; call
-[SDL_GetError](SDL_GetError)() for more information. When done with this
-stream, call [SDL_DestroyAudioStream](SDL_DestroyAudioStream) to free
-resources and close the device.
+([SDL_AudioStream](SDL_AudioStream) *) Returns an audio stream on success,
+ready to use. NULL on error; call [SDL_GetError](SDL_GetError)() for more
+information. When done with this stream, call
+[SDL_DestroyAudioStream](SDL_DestroyAudioStream) to free resources and
+close the device.
 
 ## Remarks
 

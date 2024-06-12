@@ -15,13 +15,13 @@ double SDL_tan(double x);
 
 ## Function Parameters
 
-|           |                                  |
-| --------- | -------------------------------- |
-| **x**     | floating point value, in radians |
+|        |       |                                  |
+| ------ | ----- | -------------------------------- |
+| double | **x** | floating point value, in radians |
 
 ## Return Value
 
-Returns tangent of `x`
+(double) Returns tangent of `x`
 
 ## Remarks
 

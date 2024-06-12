@@ -15,7 +15,8 @@ SDL_FunctionPointer SDL_Vulkan_GetVkGetInstanceProcAddr(void);
 
 ## Return Value
 
-Returns the function pointer for `vkGetInstanceProcAddr` or NULL on error.
+([SDL_FunctionPointer](SDL_FunctionPointer)) Returns the function pointer
+for `vkGetInstanceProcAddr` or NULL on error.
 
 ## Remarks
 

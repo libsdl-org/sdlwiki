@@ -15,17 +15,18 @@ int SDL_RunApp(int argc, char* argv[], SDL_main_func mainFunction, void * reserv
 
 ## Function Parameters
 
-|                      |                                                                                                                                                                                                          |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **argc**             | The argc parameter from the application's main() function, or 0 if the platform's main-equivalent has no argc                                                                                            |
-| **argv**             | The argv parameter from the application's main() function, or NULL if the platform's main-equivalent has no argv                                                                                         |
-| **mainFunction**     | Your SDL app's C-style main(), an [SDL_main_func](SDL_main_func). NOT the function you're calling this from! Its name doesn't matter, but its signature must be like int my_main(int argc, char* argv[]) |
-| **reserved**         | should be NULL (reserved for future use, will probably be platform-specific then)                                                                                                                        |
+|                                |                  |                                                                                                                                                                                                          |
+| ------------------------------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| int                            | **argc**         | The argc parameter from the application's main() function, or 0 if the platform's main-equivalent has no argc                                                                                            |
+| char **                        | **argv**         | The argv parameter from the application's main() function, or NULL if the platform's main-equivalent has no argv                                                                                         |
+| [SDL_main_func](SDL_main_func) | **mainFunction** | Your SDL app's C-style main(), an [SDL_main_func](SDL_main_func). NOT the function you're calling this from! Its name doesn't matter, but its signature must be like int my_main(int argc, char* argv[]) |
+| void *                         | **reserved**     | should be NULL (reserved for future use, will probably be platform-specific then)                                                                                                                        |
 
 ## Return Value
 
-Returns the return value from mainFunction: 0 on success, -1 on failure;
-[SDL_GetError](SDL_GetError)() might have more information on the failure
+(int) Returns the return value from mainFunction: 0 on success, -1 on
+failure; [SDL_GetError](SDL_GetError)() might have more information on the
+failure
 
 ## Remarks
 
