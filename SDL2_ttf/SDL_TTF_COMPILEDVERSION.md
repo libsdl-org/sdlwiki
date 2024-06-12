@@ -5,7 +5,7 @@ This is the version number macro for the current SDL_ttf version.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 

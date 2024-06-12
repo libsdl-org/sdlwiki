@@ -5,27 +5,26 @@ Calculate the dimensions of a rendered string of UCS-2 text.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_SizeUNICODE(TTF_Font *font, const Uint16 *text, int *w, int *h);
-
 ```
 
 ## Function Parameters
 
-|              |                                                   |
-| ------------ | ------------------------------------------------- |
-| **font**     | the font to query.                                |
-| **text**     | text to calculate, in UCS-2 encoding.             |
-| **w**        | will be filled with width, in pixels, on return.  |
-| **h**        | will be filled with height, in pixels, on return. |
+|                        |          |                                                   |
+| ---------------------- | -------- | ------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to query.                                |
+| const Uint16 *         | **text** | text to calculate, in UCS-2 encoding.             |
+| int *                  | **w**    | will be filled with width, in pixels, on return.  |
+| int *                  | **h**    | will be filled with height, in pixels, on return. |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error.
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

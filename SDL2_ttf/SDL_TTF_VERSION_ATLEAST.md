@@ -5,7 +5,7 @@ This macro will evaluate to true if compiled with SDL_ttf at least X.Y.Z.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 

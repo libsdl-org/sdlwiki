@@ -5,28 +5,28 @@ Create a font from a file, using target resolutions (in DPI).
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 TTF_Font * TTF_OpenFontIndexDPI(const char *file, int ptsize, long index, unsigned int hdpi, unsigned int vdpi);
-
 ```
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **file**       | path to font file.                           |
-| **ptsize**     | point size to use for the newly-opened font. |
-| **index**      | index of the face in the font file.          |
-| **hdpi**       | the target horizontal DPI.                   |
-| **vdpi**       | the target vertical DPI.                     |
+|              |            |                                              |
+| ------------ | ---------- | -------------------------------------------- |
+| const char * | **file**   | path to font file.                           |
+| int          | **ptsize** | point size to use for the newly-opened font. |
+| long         | **index**  | index of the face in the font file.          |
+| unsigned int | **hdpi**   | the target horizontal DPI.                   |
+| unsigned int | **vdpi**   | the target vertical DPI.                     |
 
 ## Return Value
 
-Returns a valid [TTF_Font](TTF_Font), or NULL on error.
+([TTF_Font](TTF_Font) *) Returns a valid [TTF_Font](TTF_Font), or NULL on
+error.
 
 ## Remarks
 

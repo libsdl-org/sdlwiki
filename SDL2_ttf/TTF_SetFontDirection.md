@@ -5,25 +5,24 @@ Set direction to be used for text shaping by a font.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);
-
 ```
 
 ## Function Parameters
 
-|                   |                                      |
-| ----------------- | ------------------------------------ |
-| **font**          | the font to specify a direction for. |
-| **direction**     | the new direction for text to flow.  |
+|                                |               |                                      |
+| ------------------------------ | ------------- | ------------------------------------ |
+| [TTF_Font](TTF_Font) *         | **font**      | the font to specify a direction for. |
+| [TTF_Direction](TTF_Direction) | **direction** | the new direction for text to flow.  |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+(int) Returns 0 on success, or -1 on error.
 
 ## Remarks
 

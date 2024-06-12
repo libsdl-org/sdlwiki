@@ -5,18 +5,17 @@ Query the version of SDL_ttf that the program is linked against.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 const SDL_version * TTF_Linked_Version(void);
-
 ```
 
 ## Return Value
 
-Returns a pointer to the version information.
+(const SDL_version *) Returns a pointer to the version information.
 
 ## Remarks
 

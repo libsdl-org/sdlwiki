@@ -5,27 +5,27 @@ Render UCS-2 text at fast quality to a new 8-bit surface.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * TTF_RenderUNICODE_Solid(TTF_Font *font,
                 const Uint16 *text, SDL_Color fg);
-
 ```
 
 ## Function Parameters
 
-|              |                                    |
-| ------------ | ---------------------------------- |
-| **font**     | the font to render with.           |
-| **text**     | text to render, in UCS-2 encoding. |
-| **fg**       | the foreground color for the text. |
+|                        |          |                                    |
+| ---------------------- | -------- | ---------------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to render with.           |
+| const Uint16 *         | **text** | text to render, in UCS-2 encoding. |
+| SDL_Color              | **fg**   | the foreground color for the text. |
 
 ## Return Value
 
-Returns a new 8-bit, palettized surface, or NULL if there was an error.
+(SDL_Surface *) Returns a new 8-bit, palettized surface, or NULL if there
+was an error.
 
 ## Remarks
 

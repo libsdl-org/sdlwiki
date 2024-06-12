@@ -18,24 +18,23 @@ The default value is `HB_DIRECTION_LTR` (left-to-right text flow).
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_SetDirection(int direction); /* hb_direction_t */
-
 ```
 
 ## Function Parameters
 
-|                   |                          |
-| ----------------- | ------------------------ |
-| **direction**     | an hb_direction_t value. |
+|     |               |                          |
+| --- | ------------- | ------------------------ |
+| int | **direction** | an hb_direction_t value. |
 
 ## Return Value
 
-Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz support.
+(int) Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz support.
 
 ## Version
 

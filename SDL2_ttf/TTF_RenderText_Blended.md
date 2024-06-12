@@ -5,27 +5,27 @@ Render Latin1 text at high quality to a new ARGB surface.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * TTF_RenderText_Blended(TTF_Font *font,
                 const char *text, SDL_Color fg);
-
 ```
 
 ## Function Parameters
 
-|              |                                     |
-| ------------ | ----------------------------------- |
-| **font**     | the font to render with.            |
-| **text**     | text to render, in Latin1 encoding. |
-| **fg**       | the foreground color for the text.  |
+|                        |          |                                     |
+| ---------------------- | -------- | ----------------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to render with.            |
+| const char *           | **text** | text to render, in Latin1 encoding. |
+| SDL_Color              | **fg**   | the foreground color for the text.  |
 
 ## Return Value
 
-Returns a new 32-bit, ARGB surface, or NULL if there was an error.
+(SDL_Surface *) Returns a new 32-bit, ARGB surface, or NULL if there was an
+error.
 
 ## Remarks
 

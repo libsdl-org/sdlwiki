@@ -5,24 +5,23 @@ Query a font's current wrap alignment option.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_GetFontWrappedAlign(const TTF_Font *font);
-
 ```
 
 ## Function Parameters
 
-|              |                    |
-| ------------ | ------------------ |
-| **font**     | the font to query. |
+|                              |          |                    |
+| ---------------------------- | -------- | ------------------ |
+| const [TTF_Font](TTF_Font) * | **font** | the font to query. |
 
 ## Return Value
 
-Returns the font's current wrap alignment option.
+(int) Returns the font's current wrap alignment option.
 
 ## Remarks
 

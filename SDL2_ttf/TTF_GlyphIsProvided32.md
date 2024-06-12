@@ -5,25 +5,25 @@ Check whether a glyph is provided by the font for a 32-bit codepoint.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_GlyphIsProvided32(TTF_Font *font, Uint32 ch);
-
 ```
 
 ## Function Parameters
 
-|              |                              |
-| ------------ | ---------------------------- |
-| **font**     | the font to query.           |
-| **ch**       | the character code to check. |
+|                        |          |                              |
+| ---------------------- | -------- | ---------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to query.           |
+| Uint32                 | **ch**   | the character code to check. |
 
 ## Return Value
 
-Returns non-zero if font provides a glyph for this character, zero if not.
+(int) Returns non-zero if font provides a glyph for this character, zero if
+not.
 
 ## Remarks
 

@@ -5,25 +5,24 @@ Set script to be used for text shaping by a font.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_SetFontScriptName(TTF_Font *font, const char *script);
-
 ```
 
 ## Function Parameters
 
-|                |                                                 |
-| -------------- | ----------------------------------------------- |
-| **font**       | the font to specify a direction for.            |
-| **script**     | null-terminated string of exactly 4 characters. |
+|                        |            |                                                 |
+| ---------------------- | ---------- | ----------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**   | the font to specify a direction for.            |
+| const char *           | **script** | null-terminated string of exactly 4 characters. |
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+(int) Returns 0 on success, or -1 on error.
 
 ## Remarks
 

@@ -5,23 +5,22 @@ Query the metrics (dimensions) of a font's 16-bit glyph.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_GlyphMetrics(TTF_Font *font, Uint16 ch,
-int *minx, int *maxx,
-int *miny, int *maxy, int *advance);
-
+                        int *minx, int *maxx,
+                        int *miny, int *maxy, int *advance);
 ```
 
 ## Function Parameters
 
-|              |                              |
-| ------------ | ---------------------------- |
-| **font**     | the font to query.           |
-| **ch**       | the character code to check. |
+|                        |          |                              |
+| ---------------------- | -------- | ---------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to query.           |
+| Uint16                 | **ch**   | the character code to check. |
 
 ## Remarks
 

@@ -19,18 +19,17 @@ The default value is `HB_SCRIPT_UNKNOWN`.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_SetScript(int script); /* hb_script_t */
-
 ```
 
 ## Return Value
 
-Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz support.
+(int) Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz support.
 
 ## Version
 

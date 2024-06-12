@@ -5,21 +5,20 @@ Set a font's current style.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 void TTF_SetFontStyle(TTF_Font *font, int style);
-
 ```
 
 ## Function Parameters
 
-|               |                                             |
-| ------------- | ------------------------------------------- |
-| **font**      | the font to set a new style on.             |
-| **style**     | the new style values to set, OR'd together. |
+|                        |           |                                             |
+| ---------------------- | --------- | ------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**  | the font to set a new style on.             |
+| int                    | **style** | the new style values to set, OR'd together. |
 
 ## Remarks
 

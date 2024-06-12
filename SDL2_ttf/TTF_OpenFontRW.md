@@ -5,26 +5,26 @@ Create a font from an SDL_RWops, using a specified point size.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 TTF_Font * TTF_OpenFontRW(SDL_RWops *src, int freesrc, int ptsize);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                             |
-| --------------- | --------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops to provide a font file's data.                                 |
-| **freesrc**     | non-zero to close the RWops when the font is closed, zero to leave it open. |
-| **ptsize**      | point size to use for the newly-opened font.                                |
+|             |             |                                                                             |
+| ----------- | ----------- | --------------------------------------------------------------------------- |
+| SDL_RWops * | **src**     | an SDL_RWops to provide a font file's data.                                 |
+| int         | **freesrc** | non-zero to close the RWops when the font is closed, zero to leave it open. |
+| int         | **ptsize**  | point size to use for the newly-opened font.                                |
 
 ## Return Value
 
-Returns a valid [TTF_Font](TTF_Font), or NULL on error.
+([TTF_Font](TTF_Font) *) Returns a valid [TTF_Font](TTF_Font), or NULL on
+error.
 
 ## Remarks
 

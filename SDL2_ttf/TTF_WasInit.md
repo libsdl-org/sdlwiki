@@ -5,19 +5,18 @@ Check if SDL_ttf is initialized.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_WasInit(void);
-
 ```
 
 ## Return Value
 
-Returns the current number of initialization calls, that need to eventually
-be paired with this many calls to [TTF_Quit](TTF_Quit)().
+(int) Returns the current number of initialization calls, that need to
+eventually be paired with this many calls to [TTF_Quit](TTF_Quit)().
 
 ## Remarks
 

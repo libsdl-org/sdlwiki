@@ -5,27 +5,27 @@ Create a font from an SDL_RWops, using a specified face index.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/SDL2/include/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 TTF_Font * TTF_OpenFontIndexRW(SDL_RWops *src, int freesrc, int ptsize, long index);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                             |
-| --------------- | --------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops to provide a font file's data.                                 |
-| **freesrc**     | non-zero to close the RWops when the font is closed, zero to leave it open. |
-| **ptsize**      | point size to use for the newly-opened font.                                |
-| **index**       | index of the face in the font file.                                         |
+|             |             |                                                                             |
+| ----------- | ----------- | --------------------------------------------------------------------------- |
+| SDL_RWops * | **src**     | an SDL_RWops to provide a font file's data.                                 |
+| int         | **freesrc** | non-zero to close the RWops when the font is closed, zero to leave it open. |
+| int         | **ptsize**  | point size to use for the newly-opened font.                                |
+| long        | **index**   | index of the face in the font file.                                         |
 
 ## Return Value
 
-Returns a valid [TTF_Font](TTF_Font), or NULL on error.
+([TTF_Font](TTF_Font) *) Returns a valid [TTF_Font](TTF_Font), or NULL on
+error.
 
 ## Remarks
 
