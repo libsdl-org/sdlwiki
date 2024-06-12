@@ -5,26 +5,25 @@ Receive a new packet that a remote system sent to a datagram socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram);
-
 ```
 
 ## Function Parameters
 
-|               |                                           |
-| ------------- | ----------------------------------------- |
-| **sock**      | the datagram socket to send data through  |
-| **dgram**     | a pointer to the datagram packet pointer. |
+|                                                  |           |                                           |
+| ------------------------------------------------ | --------- | ----------------------------------------- |
+| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock**  | the datagram socket to send data through  |
+| [SDLNet_Datagram](SDLNet_Datagram) **            | **dgram** | a pointer to the datagram packet pointer. |
 
 ## Return Value
 
-Returns 0 if data sent or queued for transmission, -1 on failure; call
-SDL_GetError() for details.
+(int) Returns 0 if data sent or queued for transmission, -1 on failure;
+call SDL_GetError() for details.
 
 ## Remarks
 

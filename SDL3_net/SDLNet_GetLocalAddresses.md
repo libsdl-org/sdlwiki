@@ -5,26 +5,25 @@ Obtain a list of local addresses on the system.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 extern SDL_DECLSPEC SDLNet_Address **SDLCALL SDLNet_GetLocalAddresses(int *num_addresses);
-
 ```
 
 ## Function Parameters
 
-|                       |                                                                        |
-| --------------------- | ---------------------------------------------------------------------- |
-| **num_addresses**     | on exit, will be set to the number of addresses returned. Can be NULL. |
+|       |                   |                                                                        |
+| ----- | ----------------- | ---------------------------------------------------------------------- |
+| int * | **num_addresses** | on exit, will be set to the number of addresses returned. Can be NULL. |
 
 ## Return Value
 
-Returns A NULL-terminated array of [SDLNet_Address](SDLNet_Address)
-pointers, one for each bindable address on the system, or NULL on error;
-call SDL_GetError() for details.
+([SDLNet_Address](SDLNet_Address) **) Returns A NULL-terminated array of
+[SDLNet_Address](SDLNet_Address) pointers, one for each bindable address on
+the system, or NULL on error; call SDL_GetError() for details.
 
 ## Remarks
 

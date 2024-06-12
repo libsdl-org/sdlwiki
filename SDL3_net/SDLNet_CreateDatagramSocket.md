@@ -5,26 +5,25 @@ Create and bind a new datagram socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_DatagramSocket * SDLNet_CreateDatagramSocket(SDLNet_Address *addr, Uint16 port);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                               |
-| --------------- | --------------------------------------------------------------------------------------------- |
-| **address**     | the _local_ address to listen for connections on, or NULL.                                    |
-| **port**        | the port on the local address to listen for connections on, or zero for the system to decide. |
+|        |          |                                                                                               |
+| ------ | -------- | --------------------------------------------------------------------------------------------- |
+| Uint16 | **port** | the port on the local address to listen for connections on, or zero for the system to decide. |
 
 ## Return Value
 
-Returns a new [SDLNet_DatagramSocket](SDLNet_DatagramSocket), or NULL on
-error; call SDL_GetError() for details.
+([SDLNet_DatagramSocket](SDLNet_DatagramSocket) *) Returns a new
+[SDLNet_DatagramSocket](SDLNet_DatagramSocket), or NULL on error; call
+SDL_GetError() for details.
 
 ## Remarks
 

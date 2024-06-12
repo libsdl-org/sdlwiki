@@ -5,20 +5,19 @@ Drop a reference to an [SDLNet_Address](SDLNet_Address).
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_UnrefAddress(SDLNet_Address *address);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                              |
-| --------------- | ------------------------------------------------------------ |
-| **address**     | The [SDLNet_Address](SDLNet_Address) to drop a reference to. |
+|                                    |             |                                                              |
+| ---------------------------------- | ----------- | ------------------------------------------------------------ |
+| [SDLNet_Address](SDLNet_Address) * | **address** | The [SDLNet_Address](SDLNet_Address) to drop a reference to. |
 
 ## Remarks
 

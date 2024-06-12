@@ -5,29 +5,28 @@ Send a new packet over a datagram socket to a remote system.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_SendDatagram(SDLNet_DatagramSocket *sock, SDLNet_Address *address, Uint16 port, const void *buf, int buflen);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                      |
-| --------------- | ---------------------------------------------------- |
-| **sock**        | the datagram socket to send data through             |
-| **address**     | the [SDLNet_Address](SDLNet_Address) object address. |
-| **port**        | the address port.                                    |
-| **buf**         | a pointer to the data to send as a single packet.    |
-| **buflen**      | the size of the data to send, in bytes.              |
+|                                                  |             |                                                      |
+| ------------------------------------------------ | ----------- | ---------------------------------------------------- |
+| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock**    | the datagram socket to send data through             |
+| [SDLNet_Address](SDLNet_Address) *               | **address** | the [SDLNet_Address](SDLNet_Address) object address. |
+| Uint16                                           | **port**    | the address port.                                    |
+| const void *                                     | **buf**     | a pointer to the data to send as a single packet.    |
+| int                                              | **buflen**  | the size of the data to send, in bytes.              |
 
 ## Return Value
 
-Returns 0 if data sent or queued for transmission, -1 on failure; call
-SDL_GetError() for details.
+(int) Returns 0 if data sent or queued for transmission, -1 on failure;
+call SDL_GetError() for details.
 
 ## Remarks
 

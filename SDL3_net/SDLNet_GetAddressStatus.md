@@ -5,25 +5,24 @@ Check if an address is resolved, without blocking.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_GetAddressStatus(SDLNet_Address *address);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                |
-| --------------- | ---------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) to query. |
+|                                    |             |                                                |
+| ---------------------------------- | ----------- | ---------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **address** | The [SDLNet_Address](SDLNet_Address) to query. |
 
 ## Return Value
 
-Returns 1 if successfully resolved, -1 if resolution failed, 0 if still
-resolving; if -1, call SDL_GetError() for details.
+(int) Returns 1 if successfully resolved, -1 if resolution failed, 0 if
+still resolving; if -1, call SDL_GetError() for details.
 
 ## Remarks
 

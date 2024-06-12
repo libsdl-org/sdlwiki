@@ -5,21 +5,20 @@ Enable simulated stream socket failures.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_SimulateStreamPacketLoss(SDLNet_StreamSocket *sock, int percent_loss);
-
 ```
 
 ## Function Parameters
 
-|                      |                                                                          |
-| -------------------- | ------------------------------------------------------------------------ |
-| **sock**             | The socket to set a failure rate on.                                     |
-| **percent_loss**     | A number between 0 and 100. Higher means more failures. Zero to disable. |
+|                                              |                  |                                                                          |
+| -------------------------------------------- | ---------------- | ------------------------------------------------------------------------ |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**         | The socket to set a failure rate on.                                     |
+| int                                          | **percent_loss** | A number between 0 and 100. Higher means more failures. Zero to disable. |
 
 ## Remarks
 

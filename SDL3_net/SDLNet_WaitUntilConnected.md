@@ -5,26 +5,25 @@ Block until a stream socket has connected to a server.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_WaitUntilConnected(SDLNet_StreamSocket *sock, Sint32 timeout);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                                                      |
-| --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **sock**        | The [SDLNet_StreamSocket](SDLNet_StreamSocket) object to wait on.                                                    |
-| **timeout**     | Number of milliseconds to wait for resolution to complete. -1 to wait indefinitely, 0 to check once without waiting. |
+|                                              |             |                                                                                                                      |
+| -------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**    | The [SDLNet_StreamSocket](SDLNet_StreamSocket) object to wait on.                                                    |
+| Sint32                                       | **timeout** | Number of milliseconds to wait for resolution to complete. -1 to wait indefinitely, 0 to check once without waiting. |
 
 ## Return Value
 
-Returns 1 if successfully connected, -1 if connection failed, 0 if still
-connecting (this function timed out without resolution); if -1, call
+(int) Returns 1 if successfully connected, -1 if connection failed, 0 if
+still connecting (this function timed out without resolution); if -1, call
 SDL_GetError() for details.
 
 ## Remarks

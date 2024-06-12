@@ -5,24 +5,24 @@ Get a human-readable string from a resolved address.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 const char * SDLNet_GetAddressString(SDLNet_Address *address);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                |
-| --------------- | ---------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) to query. |
+|                                    |             |                                                |
+| ---------------------------------- | ----------- | ---------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **address** | The [SDLNet_Address](SDLNet_Address) to query. |
 
 ## Return Value
 
-Returns a string, or NULL on error; call SDL_GetError() for details.
+(const char *) Returns a string, or NULL on error; call SDL_GetError() for
+details.
 
 ## Remarks
 

@@ -5,26 +5,26 @@ Create a server, which listens for connections to accept.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_Server * SDLNet_CreateServer(SDLNet_Address *addr, Uint16 port);
-
 ```
 
 ## Function Parameters
 
-|              |                                                            |
-| ------------ | ---------------------------------------------------------- |
-| **addr**     | the _local_ address to listen for connections on, or NULL. |
-| **port**     | the port on the local address to listen for connections on |
+|                                    |          |                                                            |
+| ---------------------------------- | -------- | ---------------------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **addr** | the _local_ address to listen for connections on, or NULL. |
+| Uint16                             | **port** | the port on the local address to listen for connections on |
 
 ## Return Value
 
-Returns a new [SDLNet_StreamSocket](SDLNet_StreamSocket), pending
-connection, or NULL on error; call SDL_GetError() for details.
+([SDLNet_Server](SDLNet_Server) *) Returns a new
+[SDLNet_StreamSocket](SDLNet_StreamSocket), pending connection, or NULL on
+error; call SDL_GetError() for details.
 
 ## Remarks
 

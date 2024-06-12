@@ -5,20 +5,19 @@ Dispose of a previously-created stream socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 void SDLNet_DestroyStreamSocket(SDLNet_StreamSocket *sock);  /* Destroy your sockets when finished with them. Does not block, handles shutdown internally. */
-
 ```
 
 ## Function Parameters
 
-|              |                          |
-| ------------ | ------------------------ |
-| **sock**     | stream socket to destroy |
+|                                              |          |                          |
+| -------------------------------------------- | -------- | ------------------------ |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | stream socket to destroy |
 
 ## Remarks
 

@@ -5,25 +5,24 @@ Create a stream socket for the next pending client connection.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_AcceptClient(SDLNet_Server *server, SDLNet_StreamSocket **client_stream);
-
 ```
 
 ## Function Parameters
 
-|                       |                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------- |
-| **server**            | the server object to check for pending connections                              |
-| **client_stream**     | Will be set to a new stream socket if a connection was pending, NULL otherwise. |
+|                                               |                   |                                                                                 |
+| --------------------------------------------- | ----------------- | ------------------------------------------------------------------------------- |
+| [SDLNet_Server](SDLNet_Server) *              | **server**        | the server object to check for pending connections                              |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) ** | **client_stream** | Will be set to a new stream socket if a connection was pending, NULL otherwise. |
 
 ## Return Value
 
-Returns 0 on success (even if no new connections were pending), -1 on
+(int) Returns 0 on success (even if no new connections were pending), -1 on
 error; call SDL_GetError() for details.
 
 ## Remarks

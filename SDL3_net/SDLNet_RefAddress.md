@@ -5,24 +5,24 @@ Add a reference to an [SDLNet_Address](SDLNet_Address).
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_Address* SDLNet_RefAddress(SDLNet_Address *address);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                             |
-| --------------- | ----------------------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) to add a reference to. |
+|                                    |             |                                                             |
+| ---------------------------------- | ----------- | ----------------------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **address** | The [SDLNet_Address](SDLNet_Address) to add a reference to. |
 
 ## Return Value
 
-Returns the same address that was passed as a parameter.
+([SDLNet_Address](SDLNet_Address) *) Returns the same address that was
+passed as a parameter.
 
 ## Remarks
 

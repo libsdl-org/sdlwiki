@@ -5,25 +5,24 @@ Get the remote address of a stream socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_Address * SDLNet_GetStreamSocketAddress(SDLNet_StreamSocket *sock);
-
 ```
 
 ## Function Parameters
 
-|              |                            |
-| ------------ | -------------------------- |
-| **sock**     | the stream socket to query |
+|                                              |          |                            |
+| -------------------------------------------- | -------- | -------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | the stream socket to query |
 
 ## Return Value
 
-Returns the socket's remote address, or NULL on error; call SDL_GetError()
-for details.
+([SDLNet_Address](SDLNet_Address) *) Returns the socket's remote address,
+or NULL on error; call SDL_GetError() for details.
 
 ## Remarks
 

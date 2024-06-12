@@ -5,25 +5,24 @@ Check if a stream socket is connected, without blocking.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_GetConnectionStatus(SDLNet_StreamSocket *sock);
-
 ```
 
 ## Function Parameters
 
-|              |                             |
-| ------------ | --------------------------- |
-| **sock**     | the stream socket to query. |
+|                                              |          |                             |
+| -------------------------------------------- | -------- | --------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | the stream socket to query. |
 
 ## Return Value
 
-Returns 1 if successfully connected, -1 if connection failed, 0 if still
-connecting; if -1, call SDL_GetError() for details.
+(int) Returns 1 if successfully connected, -1 if connection failed, 0 if
+still connecting; if -1, call SDL_GetError() for details.
 
 ## Remarks
 

@@ -5,25 +5,25 @@ Resolve a human-readable hostname.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_Address * SDLNet_ResolveHostname(const char *host);
-
 ```
 
 ## Function Parameters
 
-|              |                          |
-| ------------ | ------------------------ |
-| **host**     | The hostname to resolve. |
+|              |          |                          |
+| ------------ | -------- | ------------------------ |
+| const char * | **host** | The hostname to resolve. |
 
 ## Return Value
 
-Returns A new [SDLNet_Address](SDLNet_Address) on success, NULL on error;
-call SDL_GetError() for details.
+([SDLNet_Address](SDLNet_Address) *) Returns A new
+[SDLNet_Address](SDLNet_Address) on success, NULL on error; call
+SDL_GetError() for details.
 
 ## Remarks
 

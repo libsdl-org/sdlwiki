@@ -5,22 +5,21 @@ Block on multiple sockets until at least one has data available.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_WaitUntilInputAvailable(void **vsockets, int numsockets, Sint32 timeout);
-
 ```
 
 ## Function Parameters
 
-|                    |                                                                                                                             |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| **vsockets**       | an array of pointers to various objects that can be waited on, each cast to a void pointer.                                 |
-| **numsockets**     | the number of pointers in the `vsockets` array.                                                                             |
-| **timeout**        | Number of milliseconds to wait for new input to become available. -1 to wait indefinitely, 0 to check once without waiting. |
+|         |                |                                                                                                                             |
+| ------- | -------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| void ** | **vsockets**   | an array of pointers to various objects that can be waited on, each cast to a void pointer.                                 |
+| int     | **numsockets** | the number of pointers in the `vsockets` array.                                                                             |
+| Sint32  | **timeout**    | Number of milliseconds to wait for new input to become available. -1 to wait indefinitely, 0 to check once without waiting. |
 
 ## Remarks
 

@@ -5,26 +5,26 @@ Begin connecting a socket as a client to a remote server.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 SDLNet_StreamSocket * SDLNet_CreateClient(SDLNet_Address *address, Uint16 port);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                |
-| --------------- | ---------------------------------------------- |
-| **address**     | the address of the remote server to connect to |
-| **port**        | the port on the remote server to connect to    |
+|                                    |             |                                                |
+| ---------------------------------- | ----------- | ---------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **address** | the address of the remote server to connect to |
+| Uint16                             | **port**    | the port on the remote server to connect to    |
 
 ## Return Value
 
-Returns a new [SDLNet_StreamSocket](SDLNet_StreamSocket), pending
-connection, or NULL on error; call SDL_GetError() for details.
+([SDLNet_StreamSocket](SDLNet_StreamSocket) *) Returns a new
+[SDLNet_StreamSocket](SDLNet_StreamSocket), pending connection, or NULL on
+error; call SDL_GetError() for details.
 
 ## Remarks
 

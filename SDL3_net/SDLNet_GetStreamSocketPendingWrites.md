@@ -5,25 +5,24 @@ Query bytes still pending transmission on a stream socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_GetStreamSocketPendingWrites(SDLNet_StreamSocket *sock);
-
 ```
 
 ## Function Parameters
 
-|              |                            |
-| ------------ | -------------------------- |
-| **sock**     | the stream socket to query |
+|                                              |          |                            |
+| -------------------------------------------- | -------- | -------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | the stream socket to query |
 
 ## Return Value
 
-Returns number of bytes still pending transmission, -1 on failure; call
-SDL_GetError() for details.
+(int) Returns number of bytes still pending transmission, -1 on failure;
+call SDL_GetError() for details.
 
 ## Remarks
 

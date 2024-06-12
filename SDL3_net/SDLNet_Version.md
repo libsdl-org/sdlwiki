@@ -5,18 +5,17 @@ This function gets the version of the dynamically linked SDL_net library.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_Version(void);
-
 ```
 
 ## Return Value
 
-Returns SDL_net version
+(int) Returns SDL_net version
 
 ## Version
 

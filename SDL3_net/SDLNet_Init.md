@@ -5,18 +5,17 @@ Initialize the SDL_net library.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_Init(void);
-
 ```
 
 ## Return Value
 
-Returns 0 on success, -1 on error; call SDL_GetError() for details.
+(int) Returns 0 on success, -1 on error; call SDL_GetError() for details.
 
 ## Remarks
 

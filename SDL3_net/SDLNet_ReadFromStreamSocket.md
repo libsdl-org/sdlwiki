@@ -5,28 +5,27 @@ Receive bytes that a remote system sent to a stream socket.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_ReadFromStreamSocket(SDLNet_StreamSocket *sock, void *buf, int buflen);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                                                     |
-| -------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **sock**       | the stream socket to receive data from                                                                              |
-| **buf**        | a pointer to a buffer where received data will be collected.                                                        |
-| **buflen**     | the size of the buffer pointed to by `buf`, in bytes. This is the maximum that will be read from the stream socket. |
+|                                              |            |                                                                                                                     |
+| -------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**   | the stream socket to receive data from                                                                              |
+| void *                                       | **buf**    | a pointer to a buffer where received data will be collected.                                                        |
+| int                                          | **buflen** | the size of the buffer pointed to by `buf`, in bytes. This is the maximum that will be read from the stream socket. |
 
 ## Return Value
 
-Returns number of bytes read from the stream socket (which can be less than
-`buflen` or zero if none available), -1 on failure; call SDL_GetError() for
-details.
+(int) Returns number of bytes read from the stream socket (which can be
+less than `buflen` or zero if none available), -1 on failure; call
+SDL_GetError() for details.
 
 ## Remarks
 

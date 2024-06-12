@@ -5,27 +5,26 @@ Send bytes over a stream socket to a remote system.
 
 ## Header File
 
-Defined in SDL_net.h
+Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/main/include/SDL3_net/SDL_net.h)
 
 ## Syntax
 
 ```c
 int SDLNet_WriteToStreamSocket(SDLNet_StreamSocket *sock, const void *buf, int buflen);
-
 ```
 
 ## Function Parameters
 
-|                |                                         |
-| -------------- | --------------------------------------- |
-| **sock**       | the stream socket to send data through  |
-| **buf**        | a pointer to the data to send.          |
-| **buflen**     | the size of the data to send, in bytes. |
+|                                              |            |                                         |
+| -------------------------------------------- | ---------- | --------------------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**   | the stream socket to send data through  |
+| const void *                                 | **buf**    | a pointer to the data to send.          |
+| int                                          | **buflen** | the size of the data to send, in bytes. |
 
 ## Return Value
 
-Returns 0 if data sent or queued for transmission, -1 on failure; call
-SDL_GetError() for details.
+(int) Returns 0 if data sent or queued for transmission, -1 on failure;
+call SDL_GetError() for details.
 
 ## Remarks
 
