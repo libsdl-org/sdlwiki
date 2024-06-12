@@ -3,24 +3,27 @@
 
 Load an image from an SDL data source into a software surface.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 SDL_Surface * IMG_LoadTyped_RW(SDL_RWops *src, int freesrc, const char *type);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
-| **type**        | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).     |
+|              |             |                                                                               |
+| ------------ | ----------- | ----------------------------------------------------------------------------- |
+| SDL_RWops *  | **src**     | an SDL_RWops that data will be read from.                                     |
+| int          | **freesrc** | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+| const char * | **type**    | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).     |
 
 ## Return Value
 
-Returns a new SDL surface, or NULL on error.
+(SDL_Surface *) Returns a new SDL surface, or NULL on error.
 
 ## Remarks
 
@@ -72,12 +75,12 @@ call to SDL_FreeSurface().
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_Load](IMG_Load)
-* [IMG_Load_RW](IMG_Load_RW)
-* [SDL_FreeSurface](SDL_FreeSurface)
+- [IMG_Load](IMG_Load)
+- [IMG_Load_RW](IMG_Load_RW)
+- [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

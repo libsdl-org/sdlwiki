@@ -3,24 +3,27 @@
 
 Save an SDL_Surface into a JPEG image file.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 int IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                     |
-| --------------- | ----------------------------------------------------------------------------------- |
-| **surface**     | the SDL surface to save                                                             |
-| **file**        | path on the filesystem to write new file to.                                        |
-| **quality**     | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality |
+|               |             |                                                                                     |
+| ------------- | ----------- | ----------------------------------------------------------------------------------- |
+| SDL_Surface * | **surface** | the SDL surface to save                                                             |
+| const char *  | **file**    | path on the filesystem to write new file to.                                        |
+| int           | **quality** | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error
+(int) Returns 0 if successful, -1 on error
 
 ## Remarks
 
@@ -30,12 +33,12 @@ If the file already exists, it will be overwritten.
 
 This function is available since SDL_image 2.0.2.
 
-## Related Functions
+## See Also
 
-* [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
-* [IMG_SavePNG](IMG_SavePNG)
-* [IMG_SavePNG_RW](IMG_SavePNG_RW)
+- [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
+- [IMG_SavePNG](IMG_SavePNG)
+- [IMG_SavePNG_RW](IMG_SavePNG_RW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,22 +3,26 @@
 
 Load a GIF animation directly.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 IMG_Animation * IMG_LoadGIFAnimation_RW(SDL_RWops *src);
-
 ```
 
 ## Function Parameters
 
-|             |                                           |
-| ----------- | ----------------------------------------- |
-| **src**     | an SDL_RWops that data will be read from. |
+|             |         |                                           |
+| ----------- | ------- | ----------------------------------------- |
+| SDL_RWops * | **src** | an SDL_RWops that data will be read from. |
 
 ## Return Value
 
-Returns a new [IMG_Animation](IMG_Animation), or NULL on error.
+([IMG_Animation](IMG_Animation) *) Returns a new
+[IMG_Animation](IMG_Animation), or NULL on error.
 
 ## Remarks
 
@@ -31,13 +35,13 @@ interface available here.
 
 This function is available since SDL_image 2.6.0.
 
-## Related Functions
+## See Also
 
-* [IMG_LoadAnimation](IMG_LoadAnimation)
-* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
-* [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW)
-* [IMG_FreeAnimation](IMG_FreeAnimation)
+- [IMG_LoadAnimation](IMG_LoadAnimation)
+- [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
+- [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW)
+- [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

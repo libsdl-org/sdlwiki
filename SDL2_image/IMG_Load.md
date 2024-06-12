@@ -3,22 +3,25 @@
 
 Load an image from a filesystem path into a software surface.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 SDL_Surface * IMG_Load(const char *file);
-
 ```
 
 ## Function Parameters
 
-|              |                                                 |
-| ------------ | ----------------------------------------------- |
-| **file**     | a path on the filesystem to load an image from. |
+|              |          |                                                 |
+| ------------ | -------- | ----------------------------------------------- |
+| const char * | **file** | a path on the filesystem to load an image from. |
 
 ## Return Value
 
-Returns a new SDL surface, or NULL on error.
+(SDL_Surface *) Returns a new SDL surface, or NULL on error.
 
 ## Remarks
 
@@ -54,11 +57,12 @@ call to SDL_FreeSurface().
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_LoadTyped_RW](IMG_LoadTyped_RW)
-* [IMG_Load_RW](IMG_Load_RW)
+- [IMG_LoadTyped_RW](IMG_LoadTyped_RW)
+- [IMG_Load_RW](IMG_Load_RW)
+- [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

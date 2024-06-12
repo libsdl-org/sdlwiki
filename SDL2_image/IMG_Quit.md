@@ -3,11 +3,14 @@
 
 Deinitialize SDL_image.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 void IMG_Quit(void);
-
 ```
 
 ## Remarks
@@ -33,10 +36,10 @@ this isn't required, be aware of the risks of deviating from that behavior.
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_Init](IMG_Init)
+- [IMG_Init](IMG_Init)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

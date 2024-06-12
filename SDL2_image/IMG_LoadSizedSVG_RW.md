@@ -3,24 +3,27 @@
 
 Load an SVG image, scaled to a specific size.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 SDL_Surface * IMG_LoadSizedSVG_RW(SDL_RWops *src, int width, int height);
-
 ```
 
 ## Function Parameters
 
-|                |                                                     |
-| -------------- | --------------------------------------------------- |
-| **src**        | an SDL_RWops to load SVG data from.                 |
-| **width**      | desired width of the generated surface, in pixels.  |
-| **height**     | desired height of the generated surface, in pixels. |
+|             |            |                                                     |
+| ----------- | ---------- | --------------------------------------------------- |
+| SDL_RWops * | **src**    | an SDL_RWops to load SVG data from.                 |
+| int         | **width**  | desired width of the generated surface, in pixels.  |
+| int         | **height** | desired height of the generated surface, in pixels. |
 
 ## Return Value
 
-Returns a new SDL surface, or NULL on error.
+(SDL_Surface *) Returns a new SDL surface, or NULL on error.
 
 ## Remarks
 
@@ -38,5 +41,5 @@ call to SDL_FreeSurface().
 This function is available since SDL_image 2.6.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

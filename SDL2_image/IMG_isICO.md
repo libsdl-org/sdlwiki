@@ -3,22 +3,25 @@
 
 Detect ICO image data on a readable/seekable SDL_RWops.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 int IMG_isICO(SDL_RWops *src);
-
 ```
 
 ## Function Parameters
 
-|             |                                                      |
-| ----------- | ---------------------------------------------------- |
-| **src**     | a seekable/readable SDL_RWops to provide image data. |
+|             |         |                                                      |
+| ----------- | ------- | ---------------------------------------------------- |
+| SDL_RWops * | **src** | a seekable/readable SDL_RWops to provide image data. |
 
 ## Return Value
 
-Returns non-zero if this is ICO data, zero otherwise.
+(int) Returns non-zero if this is ICO data, zero otherwise.
 
 ## Remarks
 
@@ -41,26 +44,26 @@ determine file type in many cases in its standard load functions.
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_isAVIF](IMG_isAVIF)
-* [IMG_isCUR](IMG_isCUR)
-* [IMG_isBMP](IMG_isBMP)
-* [IMG_isGIF](IMG_isGIF)
-* [IMG_isJPG](IMG_isJPG)
-* [IMG_isJXL](IMG_isJXL)
-* [IMG_isLBM](IMG_isLBM)
-* [IMG_isPCX](IMG_isPCX)
-* [IMG_isPNG](IMG_isPNG)
-* [IMG_isPNM](IMG_isPNM)
-* [IMG_isSVG](IMG_isSVG)
-* [IMG_isQOI](IMG_isQOI)
-* [IMG_isTIF](IMG_isTIF)
-* [IMG_isXCF](IMG_isXCF)
-* [IMG_isXPM](IMG_isXPM)
-* [IMG_isXV](IMG_isXV)
-* [IMG_isWEBP](IMG_isWEBP)
+- [IMG_isAVIF](IMG_isAVIF)
+- [IMG_isCUR](IMG_isCUR)
+- [IMG_isBMP](IMG_isBMP)
+- [IMG_isGIF](IMG_isGIF)
+- [IMG_isJPG](IMG_isJPG)
+- [IMG_isJXL](IMG_isJXL)
+- [IMG_isLBM](IMG_isLBM)
+- [IMG_isPCX](IMG_isPCX)
+- [IMG_isPNG](IMG_isPNG)
+- [IMG_isPNM](IMG_isPNM)
+- [IMG_isSVG](IMG_isSVG)
+- [IMG_isQOI](IMG_isQOI)
+- [IMG_isTIF](IMG_isTIF)
+- [IMG_isXCF](IMG_isXCF)
+- [IMG_isXPM](IMG_isXPM)
+- [IMG_isXV](IMG_isXV)
+- [IMG_isWEBP](IMG_isWEBP)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

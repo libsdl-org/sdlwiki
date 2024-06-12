@@ -3,22 +3,25 @@
 
 Load a XCF image directly.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 SDL_Surface * IMG_LoadXCF_RW(SDL_RWops *src);
-
 ```
 
 ## Function Parameters
 
-|             |                                       |
-| ----------- | ------------------------------------- |
-| **src**     | an SDL_RWops to load image data from. |
+|             |         |                                       |
+| ----------- | ------- | ------------------------------------- |
+| SDL_RWops * | **src** | an SDL_RWops to load image data from. |
 
 ## Return Value
 
-Returns SDL surface, or NULL on error
+(SDL_Surface *) Returns SDL surface, or NULL on error
 
 ## Remarks
 
@@ -31,27 +34,27 @@ interface available here.
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_LoadAVIF_RW](IMG_LoadAVIF_RW)
-* [IMG_LoadICO_RW](IMG_LoadICO_RW)
-* [IMG_LoadCUR_RW](IMG_LoadCUR_RW)
-* [IMG_LoadBMP_RW](IMG_LoadBMP_RW)
-* [IMG_LoadGIF_RW](IMG_LoadGIF_RW)
-* [IMG_LoadJPG_RW](IMG_LoadJPG_RW)
-* [IMG_LoadJXL_RW](IMG_LoadJXL_RW)
-* [IMG_LoadLBM_RW](IMG_LoadLBM_RW)
-* [IMG_LoadPCX_RW](IMG_LoadPCX_RW)
-* [IMG_LoadPNG_RW](IMG_LoadPNG_RW)
-* [IMG_LoadPNM_RW](IMG_LoadPNM_RW)
-* [IMG_LoadSVG_RW](IMG_LoadSVG_RW)
-* [IMG_LoadQOI_RW](IMG_LoadQOI_RW)
-* [IMG_LoadTGA_RW](IMG_LoadTGA_RW)
-* [IMG_LoadTIF_RW](IMG_LoadTIF_RW)
-* [IMG_LoadXPM_RW](IMG_LoadXPM_RW)
-* [IMG_LoadXV_RW](IMG_LoadXV_RW)
-* [IMG_LoadWEBP_RW](IMG_LoadWEBP_RW)
+- [IMG_LoadAVIF_RW](IMG_LoadAVIF_RW)
+- [IMG_LoadICO_RW](IMG_LoadICO_RW)
+- [IMG_LoadCUR_RW](IMG_LoadCUR_RW)
+- [IMG_LoadBMP_RW](IMG_LoadBMP_RW)
+- [IMG_LoadGIF_RW](IMG_LoadGIF_RW)
+- [IMG_LoadJPG_RW](IMG_LoadJPG_RW)
+- [IMG_LoadJXL_RW](IMG_LoadJXL_RW)
+- [IMG_LoadLBM_RW](IMG_LoadLBM_RW)
+- [IMG_LoadPCX_RW](IMG_LoadPCX_RW)
+- [IMG_LoadPNG_RW](IMG_LoadPNG_RW)
+- [IMG_LoadPNM_RW](IMG_LoadPNM_RW)
+- [IMG_LoadSVG_RW](IMG_LoadSVG_RW)
+- [IMG_LoadQOI_RW](IMG_LoadQOI_RW)
+- [IMG_LoadTGA_RW](IMG_LoadTGA_RW)
+- [IMG_LoadTIF_RW](IMG_LoadTIF_RW)
+- [IMG_LoadXPM_RW](IMG_LoadXPM_RW)
+- [IMG_LoadXV_RW](IMG_LoadXV_RW)
+- [IMG_LoadWEBP_RW](IMG_LoadWEBP_RW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

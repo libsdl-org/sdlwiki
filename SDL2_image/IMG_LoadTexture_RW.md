@@ -3,24 +3,27 @@
 
 Load an image from an SDL data source into a GPU texture.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 SDL_Texture * IMG_LoadTexture_RW(SDL_Renderer *renderer, SDL_RWops *src, int freesrc);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                               |
-| ---------------- | ----------------------------------------------------------------------------- |
-| **renderer**     | the SDL_Renderer to use to create the GPU texture.                            |
-| **src**          | an SDL_RWops that data will be read from.                                     |
-| **freesrc**      | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+|                |              |                                                                               |
+| -------------- | ------------ | ----------------------------------------------------------------------------- |
+| SDL_Renderer * | **renderer** | the SDL_Renderer to use to create the GPU texture.                            |
+| SDL_RWops *    | **src**      | an SDL_RWops that data will be read from.                                     |
+| int            | **freesrc**  | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
 
 ## Return Value
 
-Returns a new texture, or NULL on error.
+(SDL_Texture *) Returns a new texture, or NULL on error.
 
 ## Remarks
 
@@ -58,12 +61,12 @@ call to SDL_DestroyTexture().
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_LoadTexture](IMG_LoadTexture)
-* [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
+- [IMG_LoadTexture](IMG_LoadTexture)
+- [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
+- [SDL_DestroyTexture](SDL_DestroyTexture)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

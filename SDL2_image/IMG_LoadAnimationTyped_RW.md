@@ -1,26 +1,30 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_LoadAnimationTyped_RW
 
-Load an animation from an SDL datasource 
+Load an animation from an SDL datasource
+
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
 
 ## Syntax
 
 ```c
 IMG_Animation * IMG_LoadAnimationTyped_RW(SDL_RWops *src, int freesrc, const char *type);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
-| **type**        | a filename extension that represent this data ("GIF", etc).                   |
+|              |             |                                                                               |
+| ------------ | ----------- | ----------------------------------------------------------------------------- |
+| SDL_RWops *  | **src**     | an SDL_RWops that data will be read from.                                     |
+| int          | **freesrc** | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+| const char * | **type**    | a filename extension that represent this data ("GIF", etc).                   |
 
 ## Return Value
 
-Returns a new [IMG_Animation](IMG_Animation), or NULL on error.
+([IMG_Animation](IMG_Animation) *) Returns a new
+[IMG_Animation](IMG_Animation), or NULL on error.
 
 ## Remarks
 
@@ -41,12 +45,12 @@ call to [IMG_FreeAnimation](IMG_FreeAnimation)().
 
 This function is available since SDL_image 2.6.0.
 
-## Related Functions
+## See Also
 
-* [IMG_LoadAnimation](IMG_LoadAnimation)
-* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
-* [IMG_FreeAnimation](IMG_FreeAnimation)
+- [IMG_LoadAnimation](IMG_LoadAnimation)
+- [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
+- [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

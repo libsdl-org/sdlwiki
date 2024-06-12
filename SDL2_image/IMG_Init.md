@@ -3,22 +3,25 @@
 
 Initialize SDL_image.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 int IMG_Init(int flags);
-
 ```
 
 ## Function Parameters
 
-|               |                                      |
-| ------------- | ------------------------------------ |
-| **flags**     | initialization flags, OR'd together. |
+|     |           |                                      |
+| --- | --------- | ------------------------------------ |
+| int | **flags** | initialization flags, OR'd together. |
 
 ## Return Value
 
-Returns all currently initialized flags.
+(int) Returns all currently initialized flags.
 
 ## Remarks
 
@@ -78,10 +81,10 @@ SDL_Surfaces or SDL_Textures.
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_Quit](IMG_Quit)
+- [IMG_Quit](IMG_Quit)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

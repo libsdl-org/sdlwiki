@@ -3,23 +3,26 @@
 
 Save an SDL_Surface into PNG image data, via an SDL_RWops.
 
+## Header File
+
+Defined in [<SDL_image.h>](https://github.com/libsdl-org/SDL_image/blob/SDL2/include/SDL_image.h)
+
 ## Syntax
 
 ```c
 int IMG_SavePNG_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst);
-
 ```
 
 ## Function Parameters
 
-|                 |                                          |
-| --------------- | ---------------------------------------- |
-| **surface**     | the SDL surface to save                  |
-| **dst**         | the SDL_RWops to save the image data to. |
+|               |             |                                          |
+| ------------- | ----------- | ---------------------------------------- |
+| SDL_Surface * | **surface** | the SDL surface to save                  |
+| SDL_RWops *   | **dst**     | the SDL_RWops to save the image data to. |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error.
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 
@@ -30,12 +33,12 @@ If you just want to save to a filename, you can use
 
 This function is available since SDL_image 2.0.0.
 
-## Related Functions
+## See Also
 
-* [IMG_SavePNG](IMG_SavePNG)
-* [IMG_SaveJPG](IMG_SaveJPG)
-* [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
+- [IMG_SavePNG](IMG_SavePNG)
+- [IMG_SaveJPG](IMG_SaveJPG)
+- [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
