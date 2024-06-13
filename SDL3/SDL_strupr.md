@@ -13,6 +13,16 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 char* SDL_strupr(char *str);
 ```
 
+## Function Parameters
+
+|        |         |                                                  |
+| ------ | ------- | ------------------------------------------------ |
+| char * | **str** | The string to convert in-place. Can not be NULL. |
+
+## Return Value
+
+(char *) Returns The `str` pointer passed into this function.
+
 ## Remarks
 
 **WARNING**: Regardless of system locale, this will only convert ASCII

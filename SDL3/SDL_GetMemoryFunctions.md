@@ -25,9 +25,20 @@ void SDL_GetMemoryFunctions(SDL_malloc_func *malloc_func,
 | [SDL_realloc_func](SDL_realloc_func) * | **realloc_func** | filled with realloc function |
 | [SDL_free_func](SDL_free_func) *       | **free_func**    | filled with free function    |
 
+## Thread Safety
+
+This does not hold a lock, so do not call this in the unlikely event of a
+background thread calling [SDL_SetMemoryFunctions](SDL_SetMemoryFunctions)
+simultaneously.
+
 ## Version
 
 This function is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_SetMemoryFunctions](SDL_SetMemoryFunctions)
+- [SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

@@ -13,6 +13,18 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 typedef int (SDLCALL *SDL_main_func)(int argc, char *argv[]);
 ```
 
+## Function Parameters
+
+|          |                                       |
+| -------- | ------------------------------------- |
+| **argc** | an ANSI-C style main function's argc. |
+| **argv** | an ANSI-C style main function's argv. |
+
+## Return Value
+
+Returns Generally 0 is considered successful program completion, small
+non-zero values are considered errors.
+
 ## Version
 
 This datatype is available since SDL 3.0.0.

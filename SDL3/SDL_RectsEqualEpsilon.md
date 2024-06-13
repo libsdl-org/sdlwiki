@@ -15,10 +15,11 @@ SDL_FORCE_INLINE SDL_bool SDL_RectsEqualEpsilon(const SDL_FRect *a, const SDL_FR
 
 ## Function Parameters
 
-|                                |       |                               |
-| ------------------------------ | ----- | ----------------------------- |
-| const [SDL_FRect](SDL_FRect) * | **a** | the first rectangle to test.  |
-| const [SDL_FRect](SDL_FRect) * | **b** | the second rectangle to test. |
+|                                |             |                                   |
+| ------------------------------ | ----------- | --------------------------------- |
+| const [SDL_FRect](SDL_FRect) * | **a**       | the first rectangle to test.      |
+| const [SDL_FRect](SDL_FRect) * | **b**       | the second rectangle to test.     |
+| const float                    | **epsilon** | the epsilon value for comparison. |
 
 ## Return Value
 

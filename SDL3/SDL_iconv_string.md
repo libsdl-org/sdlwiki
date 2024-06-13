@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_iconv_string
 
-This function converts a buffer or string between encodings in one pass, returning a string that must be freed with [SDL_free](SDL_free)() or NULL on error.
+Helper function to convert a string's encoding in one call.
 
 ## Header File
 
@@ -15,6 +15,31 @@ char* SDL_iconv_string(const char *tocode,
                    const char *inbuf,
                    size_t inbytesleft);
 ```
+
+## Function Parameters
+
+|              |                 |                                                                                  |
+| ------------ | --------------- | -------------------------------------------------------------------------------- |
+| const char * | **tocode**      | the character encoding of the output string. Examples are "UTF-8", "UCS-4", etc. |
+| const char * | **fromcode**    | the character encoding of data in `inbuf`.                                       |
+| const char * | **inbuf**       | the string to convert to a different encoding.                                   |
+| size_t       | **inbytesleft** | the size of the input string _in bytes_.                                         |
+
+## Return Value
+
+(char *) Returns a new string, converted to the new encoding, or NULL on
+error.
+
+## Remarks
+
+This function converts a buffer or string between encodings in one pass.
+
+The string does not need to be NULL-terminated; this function operates on
+the number of bytes specified in `inbytesleft` whether there is a NULL
+character anywhere in the buffer.
+
+The returned string is owned by the caller, and should be passed to
+[SDL_free](SDL_free) when no longer needed.
 
 ## Version
 

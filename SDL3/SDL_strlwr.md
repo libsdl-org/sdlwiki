@@ -15,9 +15,9 @@ char* SDL_strlwr(char *str);
 
 ## Function Parameters
 
-|        |         |                                 |
-| ------ | ------- | ------------------------------- |
-| char * | **str** | The string to convert in-place. |
+|        |         |                                                  |
+| ------ | ------- | ------------------------------------------------ |
+| char * | **str** | The string to convert in-place. Can not be NULL. |
 
 ## Return Value
 
