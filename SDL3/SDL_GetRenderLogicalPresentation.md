@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, float *w, float *h, SDL_RendererLogicalPresentation *mode, SDL_ScaleMode *scale_mode);
+int SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, int *w, int *h, SDL_RendererLogicalPresentation *mode, SDL_ScaleMode *scale_mode);
 ```
 
 ## Function Parameters
@@ -18,8 +18,8 @@ int SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, float *w, float *h,
 |                                                                      |                |                                                |
 | -------------------------------------------------------------------- | -------------- | ---------------------------------------------- |
 | [SDL_Renderer](SDL_Renderer) *                                       | **renderer**   | the rendering context                          |
-| float *                                                              | **w**          | an int to be filled with the width             |
-| float *                                                              | **h**          | an int to be filled with the height            |
+| int *                                                                | **w**          | an int to be filled with the width             |
+| int *                                                                | **h**          | an int to be filled with the height            |
 | [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) * | **mode**       | a pointer filled in with the presentation mode |
 | [SDL_ScaleMode](SDL_ScaleMode) *                                     | **scale_mode** | a pointer filled in with the scale mode        |
 

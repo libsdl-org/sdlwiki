@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetRenderClipRect(SDL_Renderer *renderer, const SDL_FRect *rect);
+int SDL_SetRenderClipRect(SDL_Renderer *renderer, const SDL_Rect *rect);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                                                                       |
-| ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                 |
-| const [SDL_FRect](SDL_FRect) * | **rect**     | an [SDL_FRect](SDL_FRect) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
+|                                |              |                                                                                                                     |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                               |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
 
 ## Return Value
 
