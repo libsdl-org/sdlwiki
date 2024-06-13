@@ -52,7 +52,7 @@ load images directly into an SDL_Texture for use by the GPU without using a
 software surface: call [IMG_LoadTexture](IMG_LoadTexture)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_DestroySurface().
+call to [SDL_DestroySurface](https://wiki.libsdl.org/SDL3/SDL_DestroySurface)().
 
 ## Version
 
