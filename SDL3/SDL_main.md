@@ -22,8 +22,9 @@ int SDL_main(int argc, char *argv[]);
 
 ## Return Value
 
-(int) Returns Generally 0 is considered successful program completion,
-small non-zero values are considered errors.
+(int) Returns an ANSI-C main return code; generally 0 is considered
+successful program completion, and small non-zero values are considered
+errors.
 
 ## Remarks
 
