@@ -22,7 +22,7 @@ SDL_Surface * SDL_AcquireCameraFrame(SDL_Camera *camera, Uint64 *timestampNS);
 
 ## Return Value
 
-([SDL_Surface](SDL_Surface) *) Returns A new frame of video on success,
+([SDL_Surface](SDL_Surface) *) Returns a new frame of video on success,
 NULL if none is currently available.
 
 ## Remarks

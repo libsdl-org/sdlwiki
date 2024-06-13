@@ -21,7 +21,7 @@ const char* SDL_GetPenName(SDL_PenID instance_id);
 
 ## Return Value
 
-(const char *) Returns A string that contains the name of the pen, intended
+(const char *) Returns a string that contains the name of the pen, intended
 for human consumption. The string might or might not be localised,
 depending on platform settings. It is not guaranteed to be unique; use
 [SDL_GetPenGUID](SDL_GetPenGUID)() for (best-effort) unique identifiers.

@@ -22,7 +22,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(SDL_AudioDeviceID devid, const SDL_AudioSp
 
 ## Return Value
 
-([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns The device ID on success,
+([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns the device ID on success,
 0 on error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

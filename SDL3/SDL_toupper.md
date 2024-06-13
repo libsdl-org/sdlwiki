@@ -21,7 +21,7 @@ int SDL_toupper(int x);
 
 ## Return Value
 
-(int) Returns Capitalized version of x, or x if no conversion available.
+(int) Returns capitalized version of x, or x if no conversion available.
 
 ## Remarks
 

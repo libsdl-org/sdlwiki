@@ -21,7 +21,7 @@ SDL_AudioDeviceID SDL_GetAudioStreamDevice(SDL_AudioStream *stream);
 
 ## Return Value
 
-([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns The bound audio device, or
+([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns the bound audio device, or
 0 if not bound or invalid.
 
 ## Remarks

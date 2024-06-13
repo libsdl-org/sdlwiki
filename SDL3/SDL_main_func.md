@@ -22,8 +22,8 @@ typedef int (SDLCALL *SDL_main_func)(int argc, char *argv[]);
 
 ## Return Value
 
-Returns Generally 0 is considered successful program completion, small
-non-zero values are considered errors.
+Returns an ANSI-C main return code; generally 0 is considered successful
+program completion, and small non-zero values are considered errors.
 
 ## Version
 

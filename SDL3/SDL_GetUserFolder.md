@@ -21,7 +21,7 @@ char* SDL_GetUserFolder(SDL_Folder folder);
 
 ## Return Value
 
-(char *) Returns Either a null-terminated C string containing the full path
+(char *) Returns either a null-terminated C string containing the full path
 to the folder, or NULL if an error happened.
 
 ## Remarks

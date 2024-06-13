@@ -21,7 +21,7 @@ SDL_CameraPosition SDL_GetCameraDevicePosition(SDL_CameraDeviceID instance_id);
 
 ## Return Value
 
-([SDL_CameraPosition](SDL_CameraPosition)) Returns The position of the
+([SDL_CameraPosition](SDL_CameraPosition)) Returns the position of the
 camera on the system hardware.
 
 ## Remarks

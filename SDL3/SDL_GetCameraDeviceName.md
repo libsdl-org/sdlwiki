@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetCameraDeviceName
 
-Get human-readable device name for a camera.
+Get the human-readable device name for a camera.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-char * SDL_GetCameraDeviceName(SDL_CameraDeviceID instance_id);
+const char * SDL_GetCameraDeviceName(SDL_CameraDeviceID instance_id);
 ```
 
 ## Function Parameters
@@ -21,13 +21,12 @@ char * SDL_GetCameraDeviceName(SDL_CameraDeviceID instance_id);
 
 ## Return Value
 
-(char *) Returns Human-readable device name, or NULL on error; call
+(const char *) Returns a human-readable device name, or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-The returned string is owned by the caller; please release it with
-[SDL_free](SDL_free)() when done with it.
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Thread Safety
 

@@ -21,7 +21,7 @@ char* SDL_strlwr(char *str);
 
 ## Return Value
 
-(char *) Returns The `str` pointer passed into this function.
+(char *) Returns the `str` pointer passed into this function.
 
 ## Remarks
 

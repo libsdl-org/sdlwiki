@@ -21,7 +21,7 @@ SDL_GUID SDL_GetPenGUID(SDL_PenID instance_id);
 
 ## Return Value
 
-([SDL_GUID](SDL_GUID)) Returns The corresponding pen GUID; persistent
+([SDL_GUID](SDL_GUID)) Returns the corresponding pen GUID; persistent
 across multiple sessions. If "instance_id" is
 [SDL_PEN_INVALID](SDL_PEN_INVALID), returns an all-zeroes GUID.
 

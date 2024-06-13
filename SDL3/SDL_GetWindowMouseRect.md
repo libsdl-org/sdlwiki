@@ -21,7 +21,7 @@ const SDL_Rect* SDL_GetWindowMouseRect(SDL_Window *window);
 
 ## Return Value
 
-(const [SDL_Rect](SDL_Rect) *) Returns A pointer to the mouse confinement
+(const [SDL_Rect](SDL_Rect) *) Returns a pointer to the mouse confinement
 rectangle of a window, or NULL if there isn't one.
 
 ## Version

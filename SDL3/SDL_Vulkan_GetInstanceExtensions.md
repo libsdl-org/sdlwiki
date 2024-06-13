@@ -21,7 +21,7 @@ char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
 
 ## Return Value
 
-(char const * const *) Returns An array of extension name strings on
+(char const * const *) Returns an array of extension name strings on
 success, NULL on error.
 
 ## Remarks

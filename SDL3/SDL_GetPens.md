@@ -21,7 +21,7 @@ SDL_PenID* SDL_GetPens(int *count);
 
 ## Return Value
 
-([SDL_PenID](SDL_PenID) *) Returns A 0 terminated array of
+([SDL_PenID](SDL_PenID) *) Returns a 0 terminated array of
 [SDL_PenID](SDL_PenID) values, or NULL on error. The array must be freed
 with [SDL_free](SDL_free)(). On a NULL return,
 [SDL_GetError](SDL_GetError)() is set.

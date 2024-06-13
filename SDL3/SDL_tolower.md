@@ -21,7 +21,7 @@ int SDL_tolower(int x);
 
 ## Return Value
 
-(int) Returns Lowercase version of x, or x if no conversion available.
+(int) Returns lowercase version of x, or x if no conversion available.
 
 ## Remarks
 

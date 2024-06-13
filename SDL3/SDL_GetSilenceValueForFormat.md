@@ -21,7 +21,7 @@ int SDL_GetSilenceValueForFormat(SDL_AudioFormat format);
 
 ## Return Value
 
-(int) Returns A byte value that can be passed to memset.
+(int) Returns a byte value that can be passed to memset.
 
 ## Remarks
 

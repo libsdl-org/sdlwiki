@@ -21,7 +21,7 @@ SDL_PenSubtype SDL_GetPenType(SDL_PenID instance_id);
 
 ## Return Value
 
-([SDL_PenSubtype](SDL_PenSubtype)) Returns The corresponding pen type (cf.
+([SDL_PenSubtype](SDL_PenSubtype)) Returns the corresponding pen type (cf.
 [SDL_PenSubtype](SDL_PenSubtype)) or 0 on error. Note that the pen type
 does not dictate whether the pen tip is [SDL_PEN_TIP_INK](SDL_PEN_TIP_INK)
 or [SDL_PEN_TIP_ERASER](SDL_PEN_TIP_ERASER); to determine whether a pen is
