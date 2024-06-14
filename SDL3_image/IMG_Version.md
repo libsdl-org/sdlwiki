@@ -15,7 +15,7 @@ int IMG_Version(void);
 
 ## Return Value
 
-(int) Returns SDL_image version
+(int) Returns SDL_image version.
 
 ## Version
 

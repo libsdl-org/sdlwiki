@@ -21,7 +21,7 @@ SDL_Surface * IMG_LoadCUR_IO(SDL_IOStream *src);
 
 ## Return Value
 
-(SDL_Surface *) Returns SDL surface, or NULL on error
+(SDL_Surface *) Returns SDL surface, or NULL on error.
 
 ## Remarks
 

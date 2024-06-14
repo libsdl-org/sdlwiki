@@ -17,12 +17,12 @@ int IMG_SavePNG(SDL_Surface *surface, const char *file);
 
 |               |             |                                              |
 | ------------- | ----------- | -------------------------------------------- |
-| SDL_Surface * | **surface** | the SDL surface to save                      |
+| SDL_Surface * | **surface** | the SDL surface to save.                     |
 | const char *  | **file**    | path on the filesystem to write new file to. |
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 
