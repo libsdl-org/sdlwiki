@@ -16,9 +16,9 @@ SDL_GLContext SDL_GL_CreateContext(SDL_Window *
 
 ## Function Parameters
 
-|                            |            |                                          |
-| -------------------------- | ---------- | ---------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to associate with the context |
+|                            |            |                                           |
+| -------------------------- | ---------- | ----------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to associate with the context. |
 
 ## Return Value
 

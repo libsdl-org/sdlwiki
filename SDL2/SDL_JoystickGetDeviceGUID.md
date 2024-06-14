@@ -15,14 +15,14 @@ SDL_JoystickGUID SDL_JoystickGetDeviceGUID(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                                                     |
-| --- | ---------------- | ------------------------------------------------------------------- |
-| int | **device_index** | the index of the joystick to query (the N'th joystick on the system |
+|     |                  |                                                                      |
+| --- | ---------------- | -------------------------------------------------------------------- |
+| int | **device_index** | the index of the joystick to query (the N'th joystick on the system. |
 
 ## Return Value
 
 ([SDL_JoystickGUID](SDL_JoystickGUID)) Returns the GUID of the selected
-joystick. If called on an invalid index, this function returns a zero GUID
+joystick. If called on an invalid index, this function returns a zero GUID.
 
 ## Remarks
 

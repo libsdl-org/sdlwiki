@@ -15,10 +15,10 @@ int SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect * rect);
 
 ## Function Parameters
 
-|                        |                  |                                                                      |
-| ---------------------- | ---------------- | -------------------------------------------------------------------- |
-| int                    | **displayIndex** | the index of the display to query the usable bounds from             |
-| [SDL_Rect](SDL_Rect) * | **rect**         | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+|                        |                  |                                                                       |
+| ---------------------- | ---------------- | --------------------------------------------------------------------- |
+| int                    | **displayIndex** | the index of the display to query the usable bounds from.             |
+| [SDL_Rect](SDL_Rect) * | **rect**         | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds. |
 
 ## Return Value
 

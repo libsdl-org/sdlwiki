@@ -16,11 +16,11 @@ int SDL_GetDisplayMode(int displayIndex, int modeIndex,
 
 ## Function Parameters
 
-|                                      |                  |                                                                                        |
-| ------------------------------------ | ---------------- | -------------------------------------------------------------------------------------- |
-| int                                  | **displayIndex** | the index of the display to query                                                      |
-| int                                  | **modeIndex**    | the index of the display mode to query                                                 |
-| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the mode at `modeIndex` |
+|                                      |                  |                                                                                         |
+| ------------------------------------ | ---------------- | --------------------------------------------------------------------------------------- |
+| int                                  | **displayIndex** | the index of the display to query.                                                      |
+| int                                  | **modeIndex**    | the index of the display mode to query.                                                 |
+| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the mode at `modeIndex`. |
 
 ## Return Value
 

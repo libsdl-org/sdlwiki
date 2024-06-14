@@ -15,9 +15,9 @@ SDL_GameController* SDL_GameControllerFromInstanceID(SDL_JoystickID joyid);
 
 ## Function Parameters
 
-|                                  |           |                                                                         |
-| -------------------------------- | --------- | ----------------------------------------------------------------------- |
-| [SDL_JoystickID](SDL_JoystickID) | **joyid** | the instance id to get the [SDL_GameController](SDL_GameController) for |
+|                                  |           |                                                                          |
+| -------------------------------- | --------- | ------------------------------------------------------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **joyid** | the instance id to get the [SDL_GameController](SDL_GameController) for. |
 
 ## Return Value
 

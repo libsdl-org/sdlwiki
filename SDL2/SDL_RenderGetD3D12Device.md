@@ -15,9 +15,9 @@ ID3D12Device* SDL_RenderGetD3D12Device(SDL_Renderer* renderer);
 
 ## Function Parameters
 
-|                                |              |                                                            |
-| ------------------------------ | ------------ | ---------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D12 device |
+|                                |              |                                                             |
+| ------------------------------ | ------------ | ----------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D12 device. |
 
 ## Return Value
 

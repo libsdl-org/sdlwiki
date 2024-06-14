@@ -15,9 +15,9 @@ SDL_PixelFormat * SDL_AllocFormat(Uint32 pixel_format);
 
 ## Function Parameters
 
-|        |                  |                                                              |
-| ------ | ---------------- | ------------------------------------------------------------ |
-| Uint32 | **pixel_format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
+|        |                  |                                                               |
+| ------ | ---------------- | ------------------------------------------------------------- |
+| Uint32 | **pixel_format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values. |
 
 ## Return Value
 

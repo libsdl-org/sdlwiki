@@ -15,9 +15,9 @@ const wchar_t * SDL_WinRTGetFSPathUNICODE(SDL_WinRT_Path pathType);
 
 ## Function Parameters
 
-|                                  |              |                                                                       |
-| -------------------------------- | ------------ | --------------------------------------------------------------------- |
-| [SDL_WinRT_Path](SDL_WinRT_Path) | **pathType** | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
+|                                  |              |                                                                        |
+| -------------------------------- | ------------ | ---------------------------------------------------------------------- |
+| [SDL_WinRT_Path](SDL_WinRT_Path) | **pathType** | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path). |
 
 ## Return Value
 

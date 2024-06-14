@@ -16,10 +16,10 @@ int SDL_HapticStopEffect(SDL_Haptic * haptic,
 
 ## Function Parameters
 
-|                            |            |                                                           |
-| -------------------------- | ---------- | --------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to stop the effect on |
-| int                        | **effect** | the ID of the haptic effect to stop                       |
+|                            |            |                                                            |
+| -------------------------- | ---------- | ---------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to stop the effect on. |
+| int                        | **effect** | the ID of the haptic effect to stop.                       |
 
 ## Return Value
 

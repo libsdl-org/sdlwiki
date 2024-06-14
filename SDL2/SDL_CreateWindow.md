@@ -17,14 +17,14 @@ SDL_Window * SDL_CreateWindow(const char *title,
 
 ## Function Parameters
 
-|              |           |                                                                                                                                           |
-| ------------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| const char * | **title** | the title of the window, in UTF-8 encoding                                                                                                |
-| int          | **x**     | the x position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
-| int          | **y**     | the y position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
-| int          | **w**     | the width of the window, in screen coordinates                                                                                            |
-| int          | **h**     | the height of the window, in screen coordinates                                                                                           |
-| Uint32       | **flags** | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together                                                                        |
+|              |           |                                                                                                                                            |
+| ------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| const char * | **title** | the title of the window, in UTF-8 encoding.                                                                                                |
+| int          | **x**     | the x position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED). |
+| int          | **y**     | the y position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED). |
+| int          | **w**     | the width of the window, in screen coordinates.                                                                                            |
+| int          | **h**     | the height of the window, in screen coordinates.                                                                                           |
+| Uint32       | **flags** | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together.                                                                        |
 
 ## Return Value
 

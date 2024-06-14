@@ -17,13 +17,13 @@ int SDL_GetRenderDrawColor(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                                                                     |
-| ------------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                               |
-| Uint8 *                        | **r**        | a pointer filled in with the red value used to draw on the rendering target                                                         |
-| Uint8 *                        | **g**        | a pointer filled in with the green value used to draw on the rendering target                                                       |
-| Uint8 *                        | **b**        | a pointer filled in with the blue value used to draw on the rendering target                                                        |
-| Uint8 *                        | **a**        | a pointer filled in with the alpha value used to draw on the rendering target; usually [`SDL_ALPHA_OPAQUE`](SDL_ALPHA_OPAQUE) (255) |
+|                                |              |                                                                                                                                      |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                                               |
+| Uint8 *                        | **r**        | a pointer filled in with the red value used to draw on the rendering target.                                                         |
+| Uint8 *                        | **g**        | a pointer filled in with the green value used to draw on the rendering target.                                                       |
+| Uint8 *                        | **b**        | a pointer filled in with the blue value used to draw on the rendering target.                                                        |
+| Uint8 *                        | **a**        | a pointer filled in with the alpha value used to draw on the rendering target; usually [`SDL_ALPHA_OPAQUE`](SDL_ALPHA_OPAQUE) (255). |
 
 ## Return Value
 

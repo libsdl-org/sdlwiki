@@ -17,11 +17,11 @@ int SDL_RenderFillRects(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                      |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                |
-| const [SDL_Rect](SDL_Rect) *   | **rects**    | an array of [SDL_Rect](SDL_Rect) structures representing the rectangles to be filled |
-| int                            | **count**    | the number of rectangles                                                             |
+|                                |              |                                                                                       |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                |
+| const [SDL_Rect](SDL_Rect) *   | **rects**    | an array of [SDL_Rect](SDL_Rect) structures representing the rectangles to be filled. |
+| int                            | **count**    | the number of rectangles.                                                             |
 
 ## Return Value
 

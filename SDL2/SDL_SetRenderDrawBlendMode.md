@@ -16,10 +16,10 @@ int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |               |                                                        |
-| ------------------------------ | ------------- | ------------------------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) * | **renderer**  | the rendering context                                  |
-| [SDL_BlendMode](SDL_BlendMode) | **blendMode** | the [SDL_BlendMode](SDL_BlendMode) to use for blending |
+|                                |               |                                                         |
+| ------------------------------ | ------------- | ------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer**  | the rendering context.                                  |
+| [SDL_BlendMode](SDL_BlendMode) | **blendMode** | the [SDL_BlendMode](SDL_BlendMode) to use for blending. |
 
 ## Return Value
 

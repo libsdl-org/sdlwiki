@@ -16,10 +16,10 @@ Uint8 SDL_GameControllerGetButton(SDL_GameController *gamecontroller,
 
 ## Function Parameters
 
-|                                                      |                    |                                                                                         |
-| ---------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------- |
-| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller                                                                       |
-| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button index (one of the [SDL_GameControllerButton](SDL_GameControllerButton) values) |
+|                                                      |                    |                                                                                          |
+| ---------------------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller.                                                                       |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button index (one of the [SDL_GameControllerButton](SDL_GameControllerButton) values). |
 
 ## Return Value
 

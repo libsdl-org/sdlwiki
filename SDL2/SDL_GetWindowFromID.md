@@ -15,9 +15,9 @@ SDL_Window * SDL_GetWindowFromID(Uint32 id);
 
 ## Function Parameters
 
-|        |        |                      |
-| ------ | ------ | -------------------- |
-| Uint32 | **id** | the ID of the window |
+|        |        |                       |
+| ------ | ------ | --------------------- |
+| Uint32 | **id** | the ID of the window. |
 
 ## Return Value
 

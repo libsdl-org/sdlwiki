@@ -15,9 +15,9 @@ SDL_TouchID SDL_GetTouchDevice(int index);
 
 ## Function Parameters
 
-|     |           |                        |
-| --- | --------- | ---------------------- |
-| int | **index** | the touch device index |
+|     |           |                         |
+| --- | --------- | ----------------------- |
+| int | **index** | the touch device index. |
 
 ## Return Value
 

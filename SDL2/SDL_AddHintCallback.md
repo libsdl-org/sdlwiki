@@ -17,11 +17,11 @@ void SDL_AddHintCallback(const char *name,
 
 ## Function Parameters
 
-|                                      |              |                                                                                                  |
-| ------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------ |
-| const char *                         | **name**     | the hint to watch                                                                                |
-| [SDL_HintCallback](SDL_HintCallback) | **callback** | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes |
-| void *                               | **userdata** | a pointer to pass to the callback function                                                       |
+|                                      |              |                                                                                                   |
+| ------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------- |
+| const char *                         | **name**     | the hint to watch.                                                                                |
+| [SDL_HintCallback](SDL_HintCallback) | **callback** | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes. |
+| void *                               | **userdata** | a pointer to pass to the callback function.                                                       |
 
 ## Version
 

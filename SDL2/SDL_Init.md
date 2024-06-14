@@ -15,9 +15,9 @@ int SDL_Init(Uint32 flags);
 
 ## Function Parameters
 
-|        |           |                                |
-| ------ | --------- | ------------------------------ |
-| Uint32 | **flags** | subsystem initialization flags |
+|        |           |                                 |
+| ------ | --------- | ------------------------------- |
+| Uint32 | **flags** | subsystem initialization flags. |
 
 ## Return Value
 

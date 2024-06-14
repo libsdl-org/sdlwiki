@@ -17,12 +17,12 @@ int SDL_LockTexture(SDL_Texture * texture,
 
 ## Function Parameters
 
-|                              |             |                                                                                                                     |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to lock for access, which was created with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING) |
-| const [SDL_Rect](SDL_Rect) * | **rect**    | an [SDL_Rect](SDL_Rect) structure representing the area to lock for access; NULL to lock the entire texture         |
-| void **                      | **pixels**  | this is filled in with a pointer to the locked pixels, appropriately offset by the locked area                      |
-| int *                        | **pitch**   | this is filled in with the pitch of the locked pixels; the pitch is the length of one row in bytes                  |
+|                              |             |                                                                                                                      |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to lock for access, which was created with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING). |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | an [SDL_Rect](SDL_Rect) structure representing the area to lock for access; NULL to lock the entire texture.         |
+| void **                      | **pixels**  | this is filled in with a pointer to the locked pixels, appropriately offset by the locked area.                      |
+| int *                        | **pitch**   | this is filled in with the pitch of the locked pixels; the pitch is the length of one row in bytes.                  |
 
 ## Return Value
 

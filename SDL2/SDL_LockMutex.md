@@ -17,9 +17,9 @@ int SDL_LockMutex(SDL_mutex * mutex);
 
 ## Function Parameters
 
-|                          |           |                   |
-| ------------------------ | --------- | ----------------- |
-| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to lock |
+|                          |           |                    |
+| ------------------------ | --------- | ------------------ |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to lock. |
 
 ## Return Value
 

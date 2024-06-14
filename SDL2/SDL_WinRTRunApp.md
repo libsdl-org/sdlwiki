@@ -15,10 +15,10 @@ int SDL_WinRTRunApp(SDL_main_func mainFunction, void * reserved);
 
 ## Function Parameters
 
-|                                |                  |                                                                 |
-| ------------------------------ | ---------------- | --------------------------------------------------------------- |
-| [SDL_main_func](SDL_main_func) | **mainFunction** | the SDL app's C-style main(), an [SDL_main_func](SDL_main_func) |
-| void *                         | **reserved**     | reserved for future use; should be NULL                         |
+|                                |                  |                                                                  |
+| ------------------------------ | ---------------- | ---------------------------------------------------------------- |
+| [SDL_main_func](SDL_main_func) | **mainFunction** | the SDL app's C-style main(), an [SDL_main_func](SDL_main_func). |
+| void *                         | **reserved**     | reserved for future use; should be NULL.                         |
 
 ## Return Value
 

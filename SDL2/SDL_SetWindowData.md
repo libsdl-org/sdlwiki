@@ -17,11 +17,11 @@ void* SDL_SetWindowData(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |              |                                          |
-| -------------------------- | ------------ | ---------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**   | the window to associate with the pointer |
-| const char *               | **name**     | the name of the pointer                  |
-| void *                     | **userdata** | the associated pointer                   |
+|                            |              |                                           |
+| -------------------------- | ------------ | ----------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**   | the window to associate with the pointer. |
+| const char *               | **name**     | the name of the pointer.                  |
+| void *                     | **userdata** | the associated pointer.                   |
 
 ## Return Value
 

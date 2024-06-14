@@ -15,9 +15,9 @@ int SDL_TryLockMutex(SDL_mutex * mutex);
 
 ## Function Parameters
 
-|                          |           |                          |
-| ------------------------ | --------- | ------------------------ |
-| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to try to lock |
+|                          |           |                           |
+| ------------------------ | --------- | ------------------------- |
+| [SDL_mutex](SDL_mutex) * | **mutex** | the mutex to try to lock. |
 
 ## Return Value
 

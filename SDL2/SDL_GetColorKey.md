@@ -16,10 +16,10 @@ int SDL_GetColorKey(SDL_Surface * surface,
 
 ## Function Parameters
 
-|                              |             |                                                   |
-| ---------------------------- | ----------- | ------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
-| Uint32 *                     | **key**     | a pointer filled in with the transparent pixel    |
+|                              |             |                                                    |
+| ---------------------------- | ----------- | -------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query. |
+| Uint32 *                     | **key**     | a pointer filled in with the transparent pixel.    |
 
 ## Return Value
 

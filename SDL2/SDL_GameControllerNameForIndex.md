@@ -15,9 +15,9 @@ const char* SDL_GameControllerNameForIndex(int joystick_index);
 
 ## Function Parameters
 
-|     |                    |                                                                                     |
-| --- | ------------------ | ----------------------------------------------------------------------------------- |
-| int | **joystick_index** | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
+|     |                    |                                                                                      |
+| --- | ------------------ | ------------------------------------------------------------------------------------ |
+| int | **joystick_index** | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1. |
 
 ## Return Value
 

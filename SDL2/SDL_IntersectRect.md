@@ -17,11 +17,11 @@ SDL_bool SDL_IntersectRect(const SDL_Rect * A,
 
 ## Function Parameters
 
-|                              |            |                                                                                             |
-| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------- |
-| const [SDL_Rect](SDL_Rect) * | **A**      | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                          |
-| const [SDL_Rect](SDL_Rect) * | **B**      | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                         |
-| [SDL_Rect](SDL_Rect) *       | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the intersection of rectangles `A` and `B` |
+|                              |            |                                                                                              |
+| ---------------------------- | ---------- | -------------------------------------------------------------------------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **A**      | an [SDL_Rect](SDL_Rect) structure representing the first rectangle.                          |
+| const [SDL_Rect](SDL_Rect) * | **B**      | an [SDL_Rect](SDL_Rect) structure representing the second rectangle.                         |
+| [SDL_Rect](SDL_Rect) *       | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the intersection of rectangles `A` and `B`. |
 
 ## Return Value
 

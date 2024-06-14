@@ -16,10 +16,10 @@ void SDL_SetWindowGrab(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |             |                                                                               |
-| -------------------------- | ----------- | ----------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**  | the window for which the input grab mode should be set                        |
-| [SDL_bool](SDL_bool)       | **grabbed** | [SDL_TRUE](SDL_TRUE) to grab input or [SDL_FALSE](SDL_FALSE) to release input |
+|                            |             |                                                                                |
+| -------------------------- | ----------- | ------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window**  | the window for which the input grab mode should be set.                        |
+| [SDL_bool](SDL_bool)       | **grabbed** | [SDL_TRUE](SDL_TRUE) to grab input or [SDL_FALSE](SDL_FALSE) to release input. |
 
 ## Remarks
 

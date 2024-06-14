@@ -15,9 +15,9 @@ void SDL_DestroyCond(SDL_cond * cond);
 
 ## Function Parameters
 
-|                        |          |                                   |
-| ---------------------- | -------- | --------------------------------- |
-| [SDL_cond](SDL_cond) * | **cond** | the condition variable to destroy |
+|                        |          |                                    |
+| ---------------------- | -------- | ---------------------------------- |
+| [SDL_cond](SDL_cond) * | **cond** | the condition variable to destroy. |
 
 ## Version
 

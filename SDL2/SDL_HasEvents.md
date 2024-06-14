@@ -15,10 +15,10 @@ SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 
 ## Function Parameters
 
-|        |             |                                                                                                     |
-| ------ | ----------- | --------------------------------------------------------------------------------------------------- |
-| Uint32 | **minType** | the low end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details  |
-| Uint32 | **maxType** | the high end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details |
+|        |             |                                                                                                      |
+| ------ | ----------- | ---------------------------------------------------------------------------------------------------- |
+| Uint32 | **minType** | the low end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details.  |
+| Uint32 | **maxType** | the high end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details. |
 
 ## Return Value
 

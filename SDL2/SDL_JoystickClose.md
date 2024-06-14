@@ -15,9 +15,9 @@ void SDL_JoystickClose(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                                |              |                              |
-| ------------------------------ | ------------ | ---------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick device to close |
+|                                |              |                               |
+| ------------------------------ | ------------ | ----------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick device to close. |
 
 ## Version
 

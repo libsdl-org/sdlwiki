@@ -16,10 +16,10 @@ void* SDL_GetWindowData(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |            |                         |
-| -------------------------- | ---------- | ----------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to query     |
-| const char *               | **name**   | the name of the pointer |
+|                            |            |                          |
+| -------------------------- | ---------- | ------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window to query.     |
+| const char *               | **name**   | the name of the pointer. |
 
 ## Return Value
 

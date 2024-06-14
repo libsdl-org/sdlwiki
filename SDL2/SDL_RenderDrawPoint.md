@@ -16,11 +16,11 @@ int SDL_RenderDrawPoint(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                               |
-| ------------------------------ | ------------ | ----------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context         |
-| int                            | **x**        | the x coordinate of the point |
-| int                            | **y**        | the y coordinate of the point |
+|                                |              |                                |
+| ------------------------------ | ------------ | ------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.         |
+| int                            | **x**        | the x coordinate of the point. |
+| int                            | **y**        | the y coordinate of the point. |
 
 ## Return Value
 

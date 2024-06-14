@@ -15,10 +15,10 @@ SDL_Finger * SDL_GetTouchFinger(SDL_TouchID touchID, int index);
 
 ## Function Parameters
 
-|                            |             |                                      |
-| -------------------------- | ----------- | ------------------------------------ |
-| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of the requested touch device |
-| int                        | **index**   | the index of the requested finger    |
+|                            |             |                                       |
+| -------------------------- | ----------- | ------------------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of the requested touch device. |
+| int                        | **index**   | the index of the requested finger.    |
 
 ## Return Value
 

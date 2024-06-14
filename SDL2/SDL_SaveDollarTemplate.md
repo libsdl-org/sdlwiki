@@ -15,10 +15,10 @@ int SDL_SaveDollarTemplate(SDL_GestureID gestureId,SDL_RWops *dst);
 
 ## Function Parameters
 
-|                                |               |                                     |
-| ------------------------------ | ------------- | ----------------------------------- |
-| [SDL_GestureID](SDL_GestureID) | **gestureId** | a gesture id                        |
-| [SDL_RWops](SDL_RWops) *       | **dst**       | a [SDL_RWops](SDL_RWops) to save to |
+|                                |               |                                      |
+| ------------------------------ | ------------- | ------------------------------------ |
+| [SDL_GestureID](SDL_GestureID) | **gestureId** | a gesture id.                        |
+| [SDL_RWops](SDL_RWops) *       | **dst**       | a [SDL_RWops](SDL_RWops) to save to. |
 
 ## Return Value
 

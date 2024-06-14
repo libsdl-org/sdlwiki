@@ -15,9 +15,9 @@ int SDL_Direct3D9GetAdapterIndex( int displayIndex );
 
 ## Function Parameters
 
-|     |                  |                                                           |
-| --- | ---------------- | --------------------------------------------------------- |
-| int | **displayIndex** | the display index for which to get the D3D9 adapter index |
+|     |                  |                                                            |
+| --- | ---------------- | ---------------------------------------------------------- |
+| int | **displayIndex** | the display index for which to get the D3D9 adapter index. |
 
 ## Return Value
 

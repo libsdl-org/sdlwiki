@@ -15,9 +15,9 @@ SDL_AssertionHandler SDL_GetAssertionHandler(void **puserdata);
 
 ## Function Parameters
 
-|         |               |                                                                                                                             |
-| ------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| void ** | **puserdata** | pointer which is filled with the "userdata" pointer that was passed to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)() |
+|         |               |                                                                                                                              |
+| ------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| void ** | **puserdata** | pointer which is filled with the "userdata" pointer that was passed to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)(). |
 
 ## Return Value
 

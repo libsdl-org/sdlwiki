@@ -16,11 +16,11 @@ SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
 
 ## Function Parameters
 
-|                                          |          |                                                                                 |
-| ---------------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| [SDL_ThreadFunction](SDL_ThreadFunction) | **fn**   | the [SDL_ThreadFunction](SDL_ThreadFunction) function to call in the new thread |
-| const char *                             | **name** | the name of the thread                                                          |
-| void *                                   | **data** | a pointer that is passed to `fn`                                                |
+|                                          |          |                                                                                  |
+| ---------------------------------------- | -------- | -------------------------------------------------------------------------------- |
+| [SDL_ThreadFunction](SDL_ThreadFunction) | **fn**   | the [SDL_ThreadFunction](SDL_ThreadFunction) function to call in the new thread. |
+| const char *                             | **name** | the name of the thread.                                                          |
+| void *                                   | **data** | a pointer that is passed to `fn`.                                                |
 
 ## Return Value
 

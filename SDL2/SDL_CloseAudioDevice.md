@@ -15,9 +15,9 @@ void SDL_CloseAudioDevice(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|                                        |         |                                                                                     |
-| -------------------------------------- | ------- | ----------------------------------------------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+|                                        |         |                                                                                      |
+| -------------------------------------- | ------- | ------------------------------------------------------------------------------------ |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). |
 
 ## Remarks
 

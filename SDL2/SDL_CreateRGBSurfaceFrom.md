@@ -23,17 +23,17 @@ SDL_Surface* SDL_CreateRGBSurfaceFrom(void *pixels,
 
 ## Function Parameters
 
-|        |            |                                   |
-| ------ | ---------- | --------------------------------- |
-| void * | **pixels** | a pointer to existing pixel data  |
-| int    | **width**  | the width of the surface          |
-| int    | **height** | the height of the surface         |
-| int    | **depth**  | the depth of the surface in bits  |
-| int    | **pitch**  | the pitch of the surface in bytes |
-| Uint32 | **Rmask**  | the red mask for the pixels       |
-| Uint32 | **Gmask**  | the green mask for the pixels     |
-| Uint32 | **Bmask**  | the blue mask for the pixels      |
-| Uint32 | **Amask**  | the alpha mask for the pixels     |
+|        |            |                                    |
+| ------ | ---------- | ---------------------------------- |
+| void * | **pixels** | a pointer to existing pixel data.  |
+| int    | **width**  | the width of the surface.          |
+| int    | **height** | the height of the surface.         |
+| int    | **depth**  | the depth of the surface in bits.  |
+| int    | **pitch**  | the pitch of the surface in bytes. |
+| Uint32 | **Rmask**  | the red mask for the pixels.       |
+| Uint32 | **Gmask**  | the green mask for the pixels.     |
+| Uint32 | **Bmask**  | the blue mask for the pixels.      |
+| Uint32 | **Amask**  | the alpha mask for the pixels.     |
 
 ## Return Value
 

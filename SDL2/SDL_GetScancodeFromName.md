@@ -15,9 +15,9 @@ SDL_Scancode SDL_GetScancodeFromName(const char *name);
 
 ## Function Parameters
 
-|              |          |                                  |
-| ------------ | -------- | -------------------------------- |
-| const char * | **name** | the human-readable scancode name |
+|              |          |                                   |
+| ------------ | -------- | --------------------------------- |
+| const char * | **name** | the human-readable scancode name. |
 
 ## Return Value
 

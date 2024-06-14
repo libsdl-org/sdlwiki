@@ -15,14 +15,15 @@ const char* SDL_GameControllerGetAppleSFSymbolsNameForAxis(SDL_GameController *g
 
 ## Function Parameters
 
-|                                                  |                    |                                |
-| ------------------------------------------------ | ------------------ | ------------------------------ |
-| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | the controller to query        |
-| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis on the game controller |
+|                                                  |                    |                                 |
+| ------------------------------------------------ | ------------------ | ------------------------------- |
+| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | the controller to query.        |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis on the game controller. |
 
 ## Return Value
 
-(const char *) Returns the sfSymbolsName or NULL if the name can't be found
+(const char *) Returns the sfSymbolsName or NULL if the name can't be
+found.
 
 ## Version
 

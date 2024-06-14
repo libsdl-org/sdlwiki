@@ -15,10 +15,10 @@ int SDL_GetWindowOpacity(SDL_Window * window, float * out_opacity);
 
 ## Function Parameters
 
-|                            |                 |                                                         |
-| -------------------------- | --------------- | ------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**      | the window to get the current opacity value from        |
-| float *                    | **out_opacity** | the float filled in (0.0f - transparent, 1.0f - opaque) |
+|                            |                 |                                                          |
+| -------------------------- | --------------- | -------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**      | the window to get the current opacity value from.        |
+| float *                    | **out_opacity** | the float filled in (0.0f - transparent, 1.0f - opaque). |
 
 ## Return Value
 

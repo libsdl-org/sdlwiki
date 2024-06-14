@@ -18,12 +18,12 @@ SDL_bool SDL_EnclosePoints(const SDL_Point * points,
 
 ## Function Parameters
 
-|                                |            |                                                                                  |
-| ------------------------------ | ---------- | -------------------------------------------------------------------------------- |
-| const [SDL_Point](SDL_Point) * | **points** | an array of [SDL_Point](SDL_Point) structures representing points to be enclosed |
-| int                            | **count**  | the number of structures in the `points` array                                   |
-| const [SDL_Rect](SDL_Rect) *   | **clip**   | an [SDL_Rect](SDL_Rect) used for clipping or NULL to enclose all points          |
-| [SDL_Rect](SDL_Rect) *         | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the minimal enclosing rectangle |
+|                                |            |                                                                                   |
+| ------------------------------ | ---------- | --------------------------------------------------------------------------------- |
+| const [SDL_Point](SDL_Point) * | **points** | an array of [SDL_Point](SDL_Point) structures representing points to be enclosed. |
+| int                            | **count**  | the number of structures in the `points` array.                                   |
+| const [SDL_Rect](SDL_Rect) *   | **clip**   | an [SDL_Rect](SDL_Rect) used for clipping or NULL to enclose all points.          |
+| [SDL_Rect](SDL_Rect) *         | **result** | an [SDL_Rect](SDL_Rect) structure filled in with the minimal enclosing rectangle. |
 
 ## Return Value
 

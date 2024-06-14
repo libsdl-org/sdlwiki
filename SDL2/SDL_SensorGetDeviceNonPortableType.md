@@ -15,9 +15,9 @@ int SDL_SensorGetDeviceNonPortableType(int device_index);
 
 ## Function Parameters
 
-|     |                  |                     |
-| --- | ---------------- | ------------------- |
-| int | **device_index** | The sensor to check |
+|     |                  |                      |
+| --- | ---------------- | -------------------- |
+| int | **device_index** | The sensor to check. |
 
 ## Return Value
 

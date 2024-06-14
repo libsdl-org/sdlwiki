@@ -16,10 +16,10 @@ int SDL_GetRenderDriverInfo(int index,
 
 ## Function Parameters
 
-|                                        |           |                                                                                                         |
-| -------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------- |
-| int                                    | **index** | the index of the driver to query information about                                                      |
-| [SDL_RendererInfo](SDL_RendererInfo) * | **info**  | an [SDL_RendererInfo](SDL_RendererInfo) structure to be filled with information on the rendering driver |
+|                                        |           |                                                                                                          |
+| -------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
+| int                                    | **index** | the index of the driver to query information about.                                                      |
+| [SDL_RendererInfo](SDL_RendererInfo) * | **info**  | an [SDL_RendererInfo](SDL_RendererInfo) structure to be filled with information on the rendering driver. |
 
 ## Return Value
 

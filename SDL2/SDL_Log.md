@@ -15,9 +15,9 @@ void SDL_Log(const char *fmt, ...);
 
 ## Function Parameters
 
-|     |         |                                                                     |
-| --- | ------- | ------------------------------------------------------------------- |
-| ... | **...** | additional parameters matching % tokens in the `fmt` string, if any |
+|     |         |                                                                      |
+| --- | ------- | -------------------------------------------------------------------- |
+| ... | **...** | additional parameters matching % tokens in the `fmt` string, if any. |
 
 ## Remarks
 

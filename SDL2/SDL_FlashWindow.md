@@ -15,10 +15,10 @@ int SDL_FlashWindow(SDL_Window * window, SDL_FlashOperation operation);
 
 ## Function Parameters
 
-|                                          |               |                          |
-| ---------------------------------------- | ------------- | ------------------------ |
-| [SDL_Window](SDL_Window) *               | **window**    | the window to be flashed |
-| [SDL_FlashOperation](SDL_FlashOperation) | **operation** | the flash operation      |
+|                                          |               |                           |
+| ---------------------------------------- | ------------- | ------------------------- |
+| [SDL_Window](SDL_Window) *               | **window**    | the window to be flashed. |
+| [SDL_FlashOperation](SDL_FlashOperation) | **operation** | the flash operation.      |
 
 ## Return Value
 

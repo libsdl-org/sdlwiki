@@ -15,9 +15,9 @@ int SDL_SaveAllDollarTemplates(SDL_RWops *dst);
 
 ## Function Parameters
 
-|                          |         |                                     |
-| ------------------------ | ------- | ----------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **dst** | a [SDL_RWops](SDL_RWops) to save to |
+|                          |         |                                      |
+| ------------------------ | ------- | ------------------------------------ |
+| [SDL_RWops](SDL_RWops) * | **dst** | a [SDL_RWops](SDL_RWops) to save to. |
 
 ## Return Value
 

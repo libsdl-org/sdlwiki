@@ -18,13 +18,13 @@ int SDL_RenderReadPixels(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                                                                             |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                       |
-| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the area to read, or NULL for the entire render target                                       |
-| Uint32                         | **format**   | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the desired format of the pixel data, or 0 to use the format of the rendering target |
-| void *                         | **pixels**   | a pointer to the pixel data to copy into                                                                                                    |
-| int                            | **pitch**    | the pitch of the `pixels` parameter                                                                                                         |
+|                                |              |                                                                                                                                              |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                                                       |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the area to read, or NULL for the entire render target.                                       |
+| Uint32                         | **format**   | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the desired format of the pixel data, or 0 to use the format of the rendering target. |
+| void *                         | **pixels**   | a pointer to the pixel data to copy into.                                                                                                    |
+| int                            | **pitch**    | the pitch of the `pixels` parameter.                                                                                                         |
 
 ## Return Value
 

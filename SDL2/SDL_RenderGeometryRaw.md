@@ -25,20 +25,20 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
 | [SDL_Renderer](SDL_Renderer) * | **renderer**     | The rendering context.                                                                                                |
 | [SDL_Texture](SDL_Texture) *   | **texture**      | (optional) The SDL texture to use.                                                                                    |
-| const float *                  | **xy**           | Vertex positions                                                                                                      |
-| int                            | **xy_stride**    | Byte size to move from one element to the next element                                                                |
-| const [SDL_Color](SDL_Color) * | **color**        | Vertex colors (as [SDL_Color](SDL_Color))                                                                             |
-| int                            | **color_stride** | Byte size to move from one element to the next element                                                                |
-| const float *                  | **uv**           | Vertex normalized texture coordinates                                                                                 |
-| int                            | **uv_stride**    | Byte size to move from one element to the next element                                                                |
+| const float *                  | **xy**           | Vertex positions.                                                                                                     |
+| int                            | **xy_stride**    | Byte size to move from one element to the next element.                                                               |
+| const [SDL_Color](SDL_Color) * | **color**        | Vertex colors (as [SDL_Color](SDL_Color)).                                                                            |
+| int                            | **color_stride** | Byte size to move from one element to the next element.                                                               |
+| const float *                  | **uv**           | Vertex normalized texture coordinates.                                                                                |
+| int                            | **uv_stride**    | Byte size to move from one element to the next element.                                                               |
 | int                            | **num_vertices** | Number of vertices.                                                                                                   |
 | const void *                   | **indices**      | (optional) An array of indices into the 'vertices' arrays, if NULL all vertices will be rendered in sequential order. |
 | int                            | **num_indices**  | Number of indices.                                                                                                    |
-| int                            | **size_indices** | Index size: 1 (byte), 2 (short), 4 (int)                                                                              |
+| int                            | **size_indices** | Index size: 1 (byte), 2 (short), 4 (int).                                                                             |
 
 ## Return Value
 
-(int) Return 0 on success, or -1 if the operation is not supported
+(int) Return 0 on success, or -1 if the operation is not supported.
 
 ## Version
 

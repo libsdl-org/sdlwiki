@@ -15,9 +15,9 @@ SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
 
 ## Function Parameters
 
-|                                |          |                              |
-| ------------------------------ | -------- | ---------------------------- |
-| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable |
+|                                |          |                               |
+| ------------------------------ | -------- | ----------------------------- |
+| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable. |
 
 ## Return Value
 

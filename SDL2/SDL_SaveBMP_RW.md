@@ -16,11 +16,11 @@ int SDL_SaveBMP_RW
 
 ## Function Parameters
 
-|                              |             |                                                                           |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved |
-| [SDL_RWops](SDL_RWops) *     | **dst**     | a data stream to save to                                                  |
-| int                          | **freedst** | non-zero to close the stream after being written                          |
+|                              |             |                                                                            |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved. |
+| [SDL_RWops](SDL_RWops) *     | **dst**     | a data stream to save to.                                                  |
+| int                          | **freedst** | non-zero to close the stream after being written.                          |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ SDL_bool SDL_GetWindowGrab(SDL_Window * window);
 
 ## Function Parameters
 
-|                            |            |                     |
-| -------------------------- | ---------- | ------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to query |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query. |
 
 ## Return Value
 

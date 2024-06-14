@@ -15,9 +15,9 @@ int SDL_CondBroadcast(SDL_cond * cond);
 
 ## Function Parameters
 
-|                        |          |                                  |
-| ---------------------- | -------- | -------------------------------- |
-| [SDL_cond](SDL_cond) * | **cond** | the condition variable to signal |
+|                        |          |                                   |
+| ---------------------- | -------- | --------------------------------- |
+| [SDL_cond](SDL_cond) * | **cond** | the condition variable to signal. |
 
 ## Return Value
 

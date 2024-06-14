@@ -19,13 +19,13 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops * src,
 
 ## Function Parameters
 
-|                                  |               |                                                                                              |
-| -------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
-| [SDL_RWops](SDL_RWops) *         | **src**       | The data source for the WAVE data                                                            |
-| int                              | **freesrc**   | If non-zero, SDL will _always_ free the data source                                          |
-| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | An [SDL_AudioSpec](SDL_AudioSpec) that will be filled in with the wave file's format details |
-| Uint8 **                         | **audio_buf** | A pointer filled with the audio data, allocated by the function.                             |
-| Uint32 *                         | **audio_len** | A pointer filled with the length of the audio data buffer in bytes                           |
+|                                  |               |                                                                                               |
+| -------------------------------- | ------------- | --------------------------------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) *         | **src**       | The data source for the WAVE data.                                                            |
+| int                              | **freesrc**   | If non-zero, SDL will _always_ free the data source.                                          |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | An [SDL_AudioSpec](SDL_AudioSpec) that will be filled in with the wave file's format details. |
+| Uint8 **                         | **audio_buf** | A pointer filled with the audio data, allocated by the function.                              |
+| Uint32 *                         | **audio_len** | A pointer filled with the length of the audio data buffer in bytes.                           |
 
 ## Return Value
 

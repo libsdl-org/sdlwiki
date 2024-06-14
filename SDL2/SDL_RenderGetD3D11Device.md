@@ -15,9 +15,9 @@ ID3D11Device* SDL_RenderGetD3D11Device(SDL_Renderer * renderer);
 
 ## Function Parameters
 
-|                                |              |                                                            |
-| ------------------------------ | ------------ | ---------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D11 device |
+|                                |              |                                                             |
+| ------------------------------ | ------------ | ----------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D11 device. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ SDL_threadID SDL_GetThreadID(SDL_Thread * thread);
 
 ## Function Parameters
 
-|                            |            |                     |
-| -------------------------- | ---------- | ------------------- |
-| [SDL_Thread](SDL_Thread) * | **thread** | the thread to query |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Thread](SDL_Thread) * | **thread** | the thread to query. |
 
 ## Return Value
 

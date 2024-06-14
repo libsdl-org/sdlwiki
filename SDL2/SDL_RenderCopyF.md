@@ -27,7 +27,7 @@ int SDL_RenderCopyF(SDL_Renderer * renderer,
 
 ## Return Value
 
-(int) Return 0 on success, or -1 on error
+(int) Return 0 on success, or -1 on error.
 
 ## Version
 

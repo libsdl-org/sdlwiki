@@ -15,10 +15,10 @@ char * SDL_GetErrorMsg(char *errstr, int maxlen);
 
 ## Function Parameters
 
-|        |            |                                                                                  |
-| ------ | ---------- | -------------------------------------------------------------------------------- |
-| char * | **errstr** | A buffer to fill with the last error message that was set for the current thread |
-| int    | **maxlen** | The size of the buffer pointed to by the errstr parameter                        |
+|        |            |                                                                                   |
+| ------ | ---------- | --------------------------------------------------------------------------------- |
+| char * | **errstr** | A buffer to fill with the last error message that was set for the current thread. |
+| int    | **maxlen** | The size of the buffer pointed to by the errstr parameter.                        |
 
 ## Return Value
 

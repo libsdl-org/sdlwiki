@@ -15,9 +15,9 @@ SDL_bool SDL_RenderGetIntegerScale(SDL_Renderer * renderer);
 
 ## Function Parameters
 
-|                                |              |                                                           |
-| ------------------------------ | ------------ | --------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which integer scaling should be queried |
+|                                |              |                                                            |
+| ------------------------------ | ------------ | ---------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which integer scaling should be queried. |
 
 ## Return Value
 

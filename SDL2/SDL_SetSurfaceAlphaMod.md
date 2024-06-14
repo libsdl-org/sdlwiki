@@ -16,10 +16,10 @@ int SDL_SetSurfaceAlphaMod(SDL_Surface * surface,
 
 ## Function Parameters
 
-|                              |             |                                                    |
-| ---------------------------- | ----------- | -------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update |
-| Uint8                        | **alpha**   | the alpha value multiplied into blit operations    |
+|                              |             |                                                     |
+| ---------------------------- | ----------- | --------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update. |
+| Uint8                        | **alpha**   | the alpha value multiplied into blit operations.    |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ Sint64 SDL_RWsize(SDL_RWops *context);
 
 ## Function Parameters
 
-|                          |             |                                                                    |
-| ------------------------ | ----------- | ------------------------------------------------------------------ |
-| [SDL_RWops](SDL_RWops) * | **context** | the [SDL_RWops](SDL_RWops) to get the size of the data stream from |
+|                          |             |                                                                     |
+| ------------------------ | ----------- | ------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | the [SDL_RWops](SDL_RWops) to get the size of the data stream from. |
 
 ## Return Value
 

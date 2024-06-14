@@ -15,9 +15,9 @@ int SDL_HapticRumbleInit(SDL_Haptic * haptic);
 
 ## Function Parameters
 
-|                            |            |                                                            |
-| -------------------------- | ---------- | ---------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the haptic device to initialize for simple rumble playback |
+|                            |            |                                                             |
+| -------------------------- | ---------- | ----------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the haptic device to initialize for simple rumble playback. |
 
 ## Return Value
 

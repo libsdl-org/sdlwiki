@@ -15,10 +15,10 @@ void SDL_CalculateGammaRamp(float gamma, Uint16 * ramp);
 
 ## Function Parameters
 
-|          |           |                                                      |
-| -------- | --------- | ---------------------------------------------------- |
-| float    | **gamma** | a gamma value where 0.0 is black and 1.0 is identity |
-| Uint16 * | **ramp**  | an array of 256 values filled in with the gamma ramp |
+|          |           |                                                       |
+| -------- | --------- | ----------------------------------------------------- |
+| float    | **gamma** | a gamma value where 0.0 is black and 1.0 is identity. |
+| Uint16 * | **ramp**  | an array of 256 values filled in with the gamma ramp. |
 
 ## Version
 

@@ -16,10 +16,10 @@ SDL_GameControllerHasAxis(SDL_GameController *gamecontroller, SDL_GameController
 
 ## Function Parameters
 
-|                                                  |                    |                                                                                |
-| ------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------ |
-| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller                                                              |
-| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis enum value (an [SDL_GameControllerAxis](SDL_GameControllerAxis) value) |
+|                                                  |                    |                                                                                 |
+| ------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller.                                                              |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis enum value (an [SDL_GameControllerAxis](SDL_GameControllerAxis) value). |
 
 ## Return Value
 

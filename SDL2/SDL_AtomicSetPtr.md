@@ -15,10 +15,10 @@ void* SDL_AtomicSetPtr(void **a, void* v);
 
 ## Function Parameters
 
-|         |       |                           |
-| ------- | ----- | ------------------------- |
-| void ** | **a** | a pointer to a pointer    |
-| void *  | **v** | the desired pointer value |
+|         |       |                            |
+| ------- | ----- | -------------------------- |
+| void ** | **a** | a pointer to a pointer.    |
+| void *  | **v** | the desired pointer value. |
 
 ## Return Value
 

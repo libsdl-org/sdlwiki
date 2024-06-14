@@ -15,9 +15,9 @@ float SDL_GetWindowBrightness(SDL_Window * window);
 
 ## Function Parameters
 
-|                            |            |                                                                        |
-| -------------------------- | ---------- | ---------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose brightness will be queried |
+|                            |            |                                                                         |
+| -------------------------- | ---------- | ----------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose brightness will be queried. |
 
 ## Return Value
 

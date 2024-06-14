@@ -16,10 +16,10 @@ int SDL_GetRendererInfo(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                        |              |                                                                                                      |
-| -------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *         | **renderer** | the rendering context                                                                                |
-| [SDL_RendererInfo](SDL_RendererInfo) * | **info**     | an [SDL_RendererInfo](SDL_RendererInfo) structure filled with information about the current renderer |
+|                                        |              |                                                                                                       |
+| -------------------------------------- | ------------ | ----------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *         | **renderer** | the rendering context.                                                                                |
+| [SDL_RendererInfo](SDL_RendererInfo) * | **info**     | an [SDL_RendererInfo](SDL_RendererInfo) structure filled with information about the current renderer. |
 
 ## Return Value
 

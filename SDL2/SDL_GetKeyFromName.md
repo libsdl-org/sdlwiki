@@ -15,9 +15,9 @@ SDL_Keycode SDL_GetKeyFromName(const char *name);
 
 ## Function Parameters
 
-|              |          |                             |
-| ------------ | -------- | --------------------------- |
-| const char * | **name** | the human-readable key name |
+|              |          |                              |
+| ------------ | -------- | ---------------------------- |
+| const char * | **name** | the human-readable key name. |
 
 ## Return Value
 

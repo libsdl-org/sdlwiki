@@ -15,9 +15,9 @@ int SDL_SensorGetNonPortableType(SDL_Sensor *sensor);
 
 ## Function Parameters
 
-|                            |            |                                                |
-| -------------------------- | ---------- | ---------------------------------------------- |
-| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to inspect |
+|                            |            |                                                 |
+| -------------------------- | ---------- | ----------------------------------------------- |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object to inspect. |
 
 ## Return Value
 

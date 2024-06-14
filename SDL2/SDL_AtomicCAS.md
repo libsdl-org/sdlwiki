@@ -15,11 +15,11 @@ SDL_bool SDL_AtomicCAS(SDL_atomic_t *a, int oldval, int newval);
 
 ## Function Parameters
 
-|                                |            |                                                                      |
-| ------------------------------ | ---------- | -------------------------------------------------------------------- |
-| [SDL_atomic_t](SDL_atomic_t) * | **a**      | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
-| int                            | **oldval** | the old value                                                        |
-| int                            | **newval** | the new value                                                        |
+|                                |            |                                                                       |
+| ------------------------------ | ---------- | --------------------------------------------------------------------- |
+| [SDL_atomic_t](SDL_atomic_t) * | **a**      | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified. |
+| int                            | **oldval** | the old value.                                                        |
+| int                            | **newval** | the new value.                                                        |
 
 ## Return Value
 

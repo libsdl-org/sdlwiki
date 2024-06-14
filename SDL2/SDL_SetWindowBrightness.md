@@ -15,10 +15,10 @@ int SDL_SetWindowBrightness(SDL_Window * window, float brightness);
 
 ## Function Parameters
 
-|                            |                |                                                                                                          |
-| -------------------------- | -------------- | -------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**     | the window used to select the display whose brightness will be changed                                   |
-| float                      | **brightness** | the brightness (gamma multiplier) value to set where 0.0 is completely dark and 1.0 is normal brightness |
+|                            |                |                                                                                                           |
+| -------------------------- | -------------- | --------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**     | the window used to select the display whose brightness will be changed.                                   |
+| float                      | **brightness** | the brightness (gamma multiplier) value to set where 0.0 is completely dark and 1.0 is normal brightness. |
 
 ## Return Value
 

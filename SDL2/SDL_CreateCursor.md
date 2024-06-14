@@ -18,14 +18,14 @@ SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
 
 ## Function Parameters
 
-|               |           |                                                                                                  |
-| ------------- | --------- | ------------------------------------------------------------------------------------------------ |
-| const Uint8 * | **data**  | the color value for each pixel of the cursor                                                     |
-| const Uint8 * | **mask**  | the mask value for each pixel of the cursor                                                      |
-| int           | **w**     | the width of the cursor                                                                          |
-| int           | **h**     | the height of the cursor                                                                         |
-| int           | **hot_x** | the X-axis location of the upper left corner of the cursor relative to the actual mouse position |
-| int           | **hot_y** | the Y-axis location of the upper left corner of the cursor relative to the actual mouse position |
+|               |           |                                                                                                   |
+| ------------- | --------- | ------------------------------------------------------------------------------------------------- |
+| const Uint8 * | **data**  | the color value for each pixel of the cursor.                                                     |
+| const Uint8 * | **mask**  | the mask value for each pixel of the cursor.                                                      |
+| int           | **w**     | the width of the cursor.                                                                          |
+| int           | **h**     | the height of the cursor.                                                                         |
+| int           | **hot_x** | the X-axis location of the upper left corner of the cursor relative to the actual mouse position. |
+| int           | **hot_y** | the Y-axis location of the upper left corner of the cursor relative to the actual mouse position. |
 
 ## Return Value
 

@@ -17,11 +17,11 @@ int SDL_RenderDrawLines(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                   |
-| ------------------------------ | ------------ | --------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                             |
-| const [SDL_Point](SDL_Point) * | **points**   | an array of [SDL_Point](SDL_Point) structures representing points along the lines |
-| int                            | **count**    | the number of points, drawing count-1 lines                                       |
+|                                |              |                                                                                    |
+| ------------------------------ | ------------ | ---------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                             |
+| const [SDL_Point](SDL_Point) * | **points**   | an array of [SDL_Point](SDL_Point) structures representing points along the lines. |
+| int                            | **count**    | the number of points, drawing count-1 lines.                                       |
 
 ## Return Value
 

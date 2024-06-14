@@ -23,10 +23,10 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(
 |                                        |                     |                                                                                                                                                                           |
 | -------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | const char *                           | **device**          | a UTF-8 string reported by [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)() or a driver-specific name as appropriate. NULL requests the most reasonable default device. |
-| int                                    | **iscapture**       | non-zero to specify a device should be opened for recording, not playback                                                                                                 |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **desired**         | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                             |
-| [SDL_AudioSpec](SDL_AudioSpec) *       | **obtained**        | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                            |
-| int                                    | **allowed_changes** | 0, or one or more flags OR'd together                                                                                                                                     |
+| int                                    | **iscapture**       | non-zero to specify a device should be opened for recording, not playback.                                                                                                |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **desired**         | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information.                            |
+| [SDL_AudioSpec](SDL_AudioSpec) *       | **obtained**        | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information.                           |
+| int                                    | **allowed_changes** | 0, or one or more flags OR'd together.                                                                                                                                    |
 
 ## Return Value
 

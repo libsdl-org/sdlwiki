@@ -16,10 +16,10 @@ void SDL_LogSetPriority(int category,
 
 ## Function Parameters
 
-|                                    |              |                                                  |
-| ---------------------------------- | ------------ | ------------------------------------------------ |
-| int                                | **category** | the category to assign a priority to             |
-| [SDL_LogPriority](SDL_LogPriority) | **priority** | the [SDL_LogPriority](SDL_LogPriority) to assign |
+|                                    |              |                                                   |
+| ---------------------------------- | ------------ | ------------------------------------------------- |
+| int                                | **category** | the category to assign a priority to.             |
+| [SDL_LogPriority](SDL_LogPriority) | **priority** | the [SDL_LogPriority](SDL_LogPriority) to assign. |
 
 ## Version
 

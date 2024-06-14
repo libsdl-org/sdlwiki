@@ -16,10 +16,10 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter * filter,
 
 ## Function Parameters
 
-|                                      |              |                                                                            |
-| ------------------------------------ | ------------ | -------------------------------------------------------------------------- |
-| [SDL_EventFilter](SDL_EventFilter) * | **filter**   | the current callback function will be stored here                          |
-| void **                              | **userdata** | the pointer that is passed to the current event filter will be stored here |
+|                                      |              |                                                                             |
+| ------------------------------------ | ------------ | --------------------------------------------------------------------------- |
+| [SDL_EventFilter](SDL_EventFilter) * | **filter**   | the current callback function will be stored here.                          |
+| void **                              | **userdata** | the pointer that is passed to the current event filter will be stored here. |
 
 ## Return Value
 

@@ -25,7 +25,7 @@ int SDL_GetDefaultAudioInfo(char **name,
 
 ## Return Value
 
-(int) Returns 0 on success, nonzero on error
+(int) Returns 0 on success, nonzero on error.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key);
 
 ## Function Parameters
 
-|                            |         |                                                 |
-| -------------------------- | ------- | ----------------------------------------------- |
-| [SDL_Keycode](SDL_Keycode) | **key** | the desired [SDL_Keycode](SDL_Keycode) to query |
+|                            |         |                                                  |
+| -------------------------- | ------- | ------------------------------------------------ |
+| [SDL_Keycode](SDL_Keycode) | **key** | the desired [SDL_Keycode](SDL_Keycode) to query. |
 
 ## Return Value
 

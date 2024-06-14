@@ -15,9 +15,9 @@ SDL_Joystick* SDL_JoystickOpen(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                    |
-| --- | ---------------- | ---------------------------------- |
-| int | **device_index** | the index of the joystick to query |
+|     |                  |                                     |
+| --- | ---------------- | ----------------------------------- |
+| int | **device_index** | the index of the joystick to query. |
 
 ## Return Value
 

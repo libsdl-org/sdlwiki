@@ -15,9 +15,9 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|                                        |         |                                   |
-| -------------------------------------- | ------- | --------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the ID of the device to be locked |
+|                                        |         |                                    |
+| -------------------------------------- | ------- | ---------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the ID of the device to be locked. |
 
 ## Remarks
 

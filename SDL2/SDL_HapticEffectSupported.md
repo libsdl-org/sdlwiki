@@ -17,10 +17,10 @@ int SDL_HapticEffectSupported(SDL_Haptic * haptic,
 
 ## Function Parameters
 
-|                                        |            |                                              |
-| -------------------------------------- | ---------- | -------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) *             | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
-| [SDL_HapticEffect](SDL_HapticEffect) * | **effect** | the desired effect to query                  |
+|                                        |            |                                               |
+| -------------------------------------- | ---------- | --------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *             | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query. |
+| [SDL_HapticEffect](SDL_HapticEffect) * | **effect** | the desired effect to query.                  |
 
 ## Return Value
 

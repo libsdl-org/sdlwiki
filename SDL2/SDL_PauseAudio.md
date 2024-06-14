@@ -15,9 +15,9 @@ void SDL_PauseAudio(int pause_on);
 
 ## Function Parameters
 
-|     |              |                                 |
-| --- | ------------ | ------------------------------- |
-| int | **pause_on** | non-zero to pause, 0 to unpause |
+|     |              |                                  |
+| --- | ------------ | -------------------------------- |
+| int | **pause_on** | non-zero to pause, 0 to unpause. |
 
 ## Remarks
 

@@ -17,11 +17,11 @@ SDL_bool SDL_SetHintWithPriority(const char *name,
 
 ## Function Parameters
 
-|                                      |              |                                                             |
-| ------------------------------------ | ------------ | ----------------------------------------------------------- |
-| const char *                         | **name**     | the hint to set                                             |
-| const char *                         | **value**    | the value of the hint variable                              |
-| [SDL_HintPriority](SDL_HintPriority) | **priority** | the [SDL_HintPriority](SDL_HintPriority) level for the hint |
+|                                      |              |                                                              |
+| ------------------------------------ | ------------ | ------------------------------------------------------------ |
+| const char *                         | **name**     | the hint to set.                                             |
+| const char *                         | **value**    | the value of the hint variable.                              |
+| [SDL_HintPriority](SDL_HintPriority) | **priority** | the [SDL_HintPriority](SDL_HintPriority) level for the hint. |
 
 ## Return Value
 

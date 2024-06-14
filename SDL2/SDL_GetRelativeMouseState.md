@@ -15,10 +15,10 @@ Uint32 SDL_GetRelativeMouseState(int *x, int *y);
 
 ## Function Parameters
 
-|       |       |                                                                   |
-| ----- | ----- | ----------------------------------------------------------------- |
-| int * | **x** | a pointer filled with the last recorded x coordinate of the mouse |
-| int * | **y** | a pointer filled with the last recorded y coordinate of the mouse |
+|       |       |                                                                    |
+| ----- | ----- | ------------------------------------------------------------------ |
+| int * | **x** | a pointer filled with the last recorded x coordinate of the mouse. |
+| int * | **y** | a pointer filled with the last recorded y coordinate of the mouse. |
 
 ## Return Value
 

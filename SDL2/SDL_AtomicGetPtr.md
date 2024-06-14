@@ -15,9 +15,9 @@ void* SDL_AtomicGetPtr(void **a);
 
 ## Function Parameters
 
-|         |       |                        |
-| ------- | ----- | ---------------------- |
-| void ** | **a** | a pointer to a pointer |
+|         |       |                         |
+| ------- | ----- | ----------------------- |
+| void ** | **a** | a pointer to a pointer. |
 
 ## Return Value
 

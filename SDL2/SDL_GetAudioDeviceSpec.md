@@ -17,15 +17,15 @@ int SDL_GetAudioDeviceSpec(int index,
 
 ## Function Parameters
 
-|                                  |               |                                                                                                                    |
-| -------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
-| int                              | **index**     | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
-| int                              | **iscapture** | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
-| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                             |
+|                                  |               |                                                                                                                     |
+| -------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------- |
+| int                              | **index**     | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1. |
+| int                              | **iscapture** | non-zero to query the list of recording devices, zero to query the list of output devices.                          |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                              |
 
 ## Return Value
 
-(int) Returns 0 on success, nonzero on error
+(int) Returns 0 on success, nonzero on error.
 
 ## Remarks
 

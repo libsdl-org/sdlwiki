@@ -16,11 +16,11 @@ void SDL_RenderGetScale(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                         |
-| ------------------------------ | ------------ | ------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which drawing scale should be queried |
-| float *                        | **scaleX**   | a pointer filled in with the horizontal scaling factor  |
-| float *                        | **scaleY**   | a pointer filled in with the vertical scaling factor    |
+|                                |              |                                                          |
+| ------------------------------ | ------------ | -------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which drawing scale should be queried. |
+| float *                        | **scaleX**   | a pointer filled in with the horizontal scaling factor.  |
+| float *                        | **scaleY**   | a pointer filled in with the vertical scaling factor.    |
 
 ## Version
 

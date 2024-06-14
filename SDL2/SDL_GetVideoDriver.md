@@ -15,9 +15,9 @@ const char* SDL_GetVideoDriver(int index);
 
 ## Function Parameters
 
-|     |           |                             |
-| --- | --------- | --------------------------- |
-| int | **index** | the index of a video driver |
+|     |           |                              |
+| --- | --------- | ---------------------------- |
+| int | **index** | the index of a video driver. |
 
 ## Return Value
 

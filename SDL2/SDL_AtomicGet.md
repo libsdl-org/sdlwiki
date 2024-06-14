@@ -15,9 +15,9 @@ int SDL_AtomicGet(SDL_atomic_t *a);
 
 ## Function Parameters
 
-|                                |       |                                                       |
-| ------------------------------ | ----- | ----------------------------------------------------- |
-| [SDL_atomic_t](SDL_atomic_t) * | **a** | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable |
+|                                |       |                                                        |
+| ------------------------------ | ----- | ------------------------------------------------------ |
+| [SDL_atomic_t](SDL_atomic_t) * | **a** | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable. |
 
 ## Return Value
 

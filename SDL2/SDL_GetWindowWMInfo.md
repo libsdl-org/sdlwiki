@@ -16,10 +16,10 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window * window,
 
 ## Function Parameters
 
-|                                  |            |                                                                               |
-| -------------------------------- | ---------- | ----------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) *       | **window** | the window about which information is being requested                         |
-| [SDL_SysWMinfo](SDL_SysWMinfo) * | **info**   | an [SDL_SysWMinfo](SDL_SysWMinfo) structure filled in with window information |
+|                                  |            |                                                                                |
+| -------------------------------- | ---------- | ------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) *       | **window** | the window about which information is being requested.                         |
+| [SDL_SysWMinfo](SDL_SysWMinfo) * | **info**   | an [SDL_SysWMinfo](SDL_SysWMinfo) structure filled in with window information. |
 
 ## Return Value
 

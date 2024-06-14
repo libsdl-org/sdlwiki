@@ -15,11 +15,11 @@ int SDL_GL_BindTexture(SDL_Texture *texture, float *texw, float *texh);
 
 ## Function Parameters
 
-|                              |             |                                                                                                              |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------ |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to bind to the current OpenGL/ES/ES2 context                                                     |
-| float *                      | **texw**    | a pointer to a float value which will be filled with the texture width or NULL if you don't need that value  |
-| float *                      | **texh**    | a pointer to a float value which will be filled with the texture height or NULL if you don't need that value |
+|                              |             |                                                                                                               |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to bind to the current OpenGL/ES/ES2 context.                                                     |
+| float *                      | **texw**    | a pointer to a float value which will be filled with the texture width or NULL if you don't need that value.  |
+| float *                      | **texh**    | a pointer to a float value which will be filled with the texture height or NULL if you don't need that value. |
 
 ## Return Value
 

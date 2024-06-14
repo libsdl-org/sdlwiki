@@ -18,12 +18,12 @@ int SDL_SetWindowGammaRamp(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |            |                                                                                                            |
-| -------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose gamma ramp will be changed                                     |
-| const Uint16 *             | **red**    | a 256 element array of 16-bit quantities representing the translation table for the red channel, or NULL   |
-| const Uint16 *             | **green**  | a 256 element array of 16-bit quantities representing the translation table for the green channel, or NULL |
-| const Uint16 *             | **blue**   | a 256 element array of 16-bit quantities representing the translation table for the blue channel, or NULL  |
+|                            |            |                                                                                                             |
+| -------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose gamma ramp will be changed.                                     |
+| const Uint16 *             | **red**    | a 256 element array of 16-bit quantities representing the translation table for the red channel, or NULL.   |
+| const Uint16 *             | **green**  | a 256 element array of 16-bit quantities representing the translation table for the green channel, or NULL. |
+| const Uint16 *             | **blue**   | a 256 element array of 16-bit quantities representing the translation table for the blue channel, or NULL.  |
 
 ## Return Value
 

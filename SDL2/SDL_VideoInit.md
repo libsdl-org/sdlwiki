@@ -15,9 +15,9 @@ int SDL_VideoInit(const char *driver_name);
 
 ## Function Parameters
 
-|              |                 |                                                                          |
-| ------------ | --------------- | ------------------------------------------------------------------------ |
-| const char * | **driver_name** | the name of a video driver to initialize, or NULL for the default driver |
+|              |                 |                                                                           |
+| ------------ | --------------- | ------------------------------------------------------------------------- |
+| const char * | **driver_name** | the name of a video driver to initialize, or NULL for the default driver. |
 
 ## Return Value
 

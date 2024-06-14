@@ -18,13 +18,13 @@ SDL_bool SDL_IntersectFRectAndLine(const SDL_FRect *
 
 ## Function Parameters
 
-|                                |          |                                                                             |
-| ------------------------------ | -------- | --------------------------------------------------------------------------- |
-| const [SDL_FRect](SDL_FRect) * | **rect** | an [SDL_FRect](SDL_FRect) structure representing the rectangle to intersect |
-| float *                        | **X1**   | a pointer to the starting X-coordinate of the line                          |
-| float *                        | **Y1**   | a pointer to the starting Y-coordinate of the line                          |
-| float *                        | **X2**   | a pointer to the ending X-coordinate of the line                            |
-| float *                        | **Y2**   | a pointer to the ending Y-coordinate of the line                            |
+|                                |          |                                                                              |
+| ------------------------------ | -------- | ---------------------------------------------------------------------------- |
+| const [SDL_FRect](SDL_FRect) * | **rect** | an [SDL_FRect](SDL_FRect) structure representing the rectangle to intersect. |
+| float *                        | **X1**   | a pointer to the starting X-coordinate of the line.                          |
+| float *                        | **Y1**   | a pointer to the starting Y-coordinate of the line.                          |
+| float *                        | **X2**   | a pointer to the ending X-coordinate of the line.                            |
+| float *                        | **Y2**   | a pointer to the ending Y-coordinate of the line.                            |
 
 ## Return Value
 

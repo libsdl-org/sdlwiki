@@ -15,11 +15,11 @@ int SDL_TLSSet(SDL_TLSID id, const void *value, SDL_TLSDestructorCallback destru
 
 ## Function Parameters
 
-|                                                        |                |                                                            |
-| ------------------------------------------------------ | -------------- | ---------------------------------------------------------- |
-| [SDL_TLSID](SDL_TLSID)                                 | **id**         | the thread local storage ID                                |
-| const void *                                           | **value**      | the value to associate with the ID for the current thread  |
-| [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback) | **destructor** | a function called when the thread exits, to free the value |
+|                                                        |                |                                                             |
+| ------------------------------------------------------ | -------------- | ----------------------------------------------------------- |
+| [SDL_TLSID](SDL_TLSID)                                 | **id**         | the thread local storage ID.                                |
+| const void *                                           | **value**      | the value to associate with the ID for the current thread.  |
+| [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback) | **destructor** | a function called when the thread exits, to free the value. |
 
 ## Return Value
 

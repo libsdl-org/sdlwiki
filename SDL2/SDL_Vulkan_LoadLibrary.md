@@ -15,9 +15,9 @@ int SDL_Vulkan_LoadLibrary(const char *path);
 
 ## Function Parameters
 
-|              |          |                                                           |
-| ------------ | -------- | --------------------------------------------------------- |
-| const char * | **path** | The platform dependent Vulkan loader library name or NULL |
+|              |          |                                                            |
+| ------------ | -------- | ---------------------------------------------------------- |
+| const char * | **path** | The platform dependent Vulkan loader library name or NULL. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ int SDL_WaitEvent(SDL_Event * event);
 
 ## Function Parameters
 
-|                          |           |                                                                                                  |
-| ------------------------ | --------- | ------------------------------------------------------------------------------------------------ |
-| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL |
+|                          |           |                                                                                                   |
+| ------------------------ | --------- | ------------------------------------------------------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL. |
 
 ## Return Value
 

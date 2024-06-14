@@ -15,9 +15,9 @@ Uint64 SDL_ReadBE64(SDL_RWops * src);
 
 ## Function Parameters
 
-|                          |         |                                    |
-| ------------------------ | ------- | ---------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **src** | the stream from which to read data |
+|                          |         |                                     |
+| ------------------------ | ------- | ----------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src** | the stream from which to read data. |
 
 ## Return Value
 

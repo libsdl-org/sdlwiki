@@ -15,9 +15,9 @@ SDL_DisplayOrientation SDL_GetDisplayOrientation(int displayIndex);
 
 ## Function Parameters
 
-|     |                  |                                   |
-| --- | ---------------- | --------------------------------- |
-| int | **displayIndex** | the index of the display to query |
+|     |                  |                                    |
+| --- | ---------------- | ---------------------------------- |
+| int | **displayIndex** | the index of the display to query. |
 
 ## Return Value
 

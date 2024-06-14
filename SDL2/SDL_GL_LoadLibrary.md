@@ -15,9 +15,9 @@ int SDL_GL_LoadLibrary(const char *path);
 
 ## Function Parameters
 
-|              |          |                                                                                        |
-| ------------ | -------- | -------------------------------------------------------------------------------------- |
-| const char * | **path** | the platform dependent OpenGL library name, or NULL to open the default OpenGL library |
+|              |          |                                                                                         |
+| ------------ | -------- | --------------------------------------------------------------------------------------- |
+| const char * | **path** | the platform dependent OpenGL library name, or NULL to open the default OpenGL library. |
 
 ## Return Value
 

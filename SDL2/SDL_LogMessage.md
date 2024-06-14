@@ -17,12 +17,12 @@ void SDL_LogMessage(int category,
 
 ## Function Parameters
 
-|                                    |              |                                                                       |
-| ---------------------------------- | ------------ | --------------------------------------------------------------------- |
-| int                                | **category** | the category of the message                                           |
-| [SDL_LogPriority](SDL_LogPriority) | **priority** | the priority of the message                                           |
-| const char *                       | **fmt**      | a printf() style message format string                                |
-| ...                                | **...**      | additional parameters matching % tokens in the **fmt** string, if any |
+|                                    |              |                                                                        |
+| ---------------------------------- | ------------ | ---------------------------------------------------------------------- |
+| int                                | **category** | the category of the message.                                           |
+| [SDL_LogPriority](SDL_LogPriority) | **priority** | the priority of the message.                                           |
+| const char *                       | **fmt**      | a printf() style message format string.                                |
+| ...                                | **...**      | additional parameters matching % tokens in the **fmt** string, if any. |
 
 ## Version
 

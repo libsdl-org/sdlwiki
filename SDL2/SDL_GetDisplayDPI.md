@@ -15,12 +15,12 @@ int SDL_GetDisplayDPI(int displayIndex, float * ddpi, float * hdpi, float * vdpi
 
 ## Function Parameters
 
-|         |                  |                                                                         |
-| ------- | ---------------- | ----------------------------------------------------------------------- |
-| int     | **displayIndex** | the index of the display from which DPI information should be queried   |
-| float * | **ddpi**         | a pointer filled in with the diagonal DPI of the display; may be NULL   |
-| float * | **hdpi**         | a pointer filled in with the horizontal DPI of the display; may be NULL |
-| float * | **vdpi**         | a pointer filled in with the vertical DPI of the display; may be NULL   |
+|         |                  |                                                                          |
+| ------- | ---------------- | ------------------------------------------------------------------------ |
+| int     | **displayIndex** | the index of the display from which DPI information should be queried.   |
+| float * | **ddpi**         | a pointer filled in with the diagonal DPI of the display; may be NULL.   |
+| float * | **hdpi**         | a pointer filled in with the horizontal DPI of the display; may be NULL. |
+| float * | **vdpi**         | a pointer filled in with the vertical DPI of the display; may be NULL.   |
 
 ## Return Value
 

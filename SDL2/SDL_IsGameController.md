@@ -15,9 +15,9 @@ SDL_bool SDL_IsGameController(int joystick_index);
 
 ## Function Parameters
 
-|     |                    |                                                                            |
-| --- | ------------------ | -------------------------------------------------------------------------- |
-| int | **joystick_index** | the device_index of a device, up to [SDL_NumJoysticks](SDL_NumJoysticks)() |
+|     |                    |                                                                             |
+| --- | ------------------ | --------------------------------------------------------------------------- |
+| int | **joystick_index** | the device_index of a device, up to [SDL_NumJoysticks](SDL_NumJoysticks)(). |
 
 ## Return Value
 

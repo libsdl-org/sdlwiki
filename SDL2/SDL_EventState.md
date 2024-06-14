@@ -15,10 +15,10 @@ Uint8 SDL_EventState(Uint32 type, int state);
 
 ## Function Parameters
 
-|        |           |                                                                   |
-| ------ | --------- | ----------------------------------------------------------------- |
-| Uint32 | **type**  | the type of event; see [SDL_EventType](SDL_EventType) for details |
-| int    | **state** | how to process the event                                          |
+|        |           |                                                                    |
+| ------ | --------- | ------------------------------------------------------------------ |
+| Uint32 | **type**  | the type of event; see [SDL_EventType](SDL_EventType) for details. |
+| int    | **state** | how to process the event.                                          |
 
 ## Return Value
 

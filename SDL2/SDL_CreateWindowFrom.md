@@ -15,9 +15,9 @@ SDL_Window * SDL_CreateWindowFrom(const void *data);
 
 ## Function Parameters
 
-|              |          |                                                                                                  |
-| ------------ | -------- | ------------------------------------------------------------------------------------------------ |
-| const void * | **data** | a pointer to driver-dependent window creation data, typically your native window cast to a void* |
+|              |          |                                                                                                   |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------- |
+| const void * | **data** | a pointer to driver-dependent window creation data, typically your native window cast to a void*. |
 
 ## Return Value
 

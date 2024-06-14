@@ -15,9 +15,9 @@ SDL_GameControllerAxis SDL_GameControllerGetAxisFromString(const char *str);
 
 ## Function Parameters
 
-|              |         |                                                                     |
-| ------------ | ------- | ------------------------------------------------------------------- |
-| const char * | **str** | string representing a [SDL_GameController](SDL_GameController) axis |
+|              |         |                                                                      |
+| ------------ | ------- | -------------------------------------------------------------------- |
+| const char * | **str** | string representing a [SDL_GameController](SDL_GameController) axis. |
 
 ## Return Value
 

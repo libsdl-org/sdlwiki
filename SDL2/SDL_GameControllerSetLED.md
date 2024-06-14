@@ -15,16 +15,16 @@ int SDL_GameControllerSetLED(SDL_GameController *gamecontroller, Uint8 red, Uint
 
 ## Function Parameters
 
-|                                            |                    |                                |
-| ------------------------------------------ | ------------------ | ------------------------------ |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to update       |
-| Uint8                                      | **red**            | The intensity of the red LED   |
-| Uint8                                      | **green**          | The intensity of the green LED |
-| Uint8                                      | **blue**           | The intensity of the blue LED  |
+|                                            |                    |                                 |
+| ------------------------------------------ | ------------------ | ------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to update.       |
+| Uint8                                      | **red**            | The intensity of the red LED.   |
+| Uint8                                      | **green**          | The intensity of the green LED. |
+| Uint8                                      | **blue**           | The intensity of the blue LED.  |
 
 ## Return Value
 
-(int) Returns 0, or -1 if this controller does not have a modifiable LED
+(int) Returns 0, or -1 if this controller does not have a modifiable LED.
 
 ## Version
 

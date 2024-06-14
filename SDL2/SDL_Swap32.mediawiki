@@ -17,7 +17,7 @@ SDL_FORCE_INLINE Uint32 SDL_Swap32(Uint32 x);</syntaxhighlight>
 {|
 |Uint32
 |'''x'''
-|the value to be swapped
+|the value to be swapped.
 |}
 
 == Return Value ==

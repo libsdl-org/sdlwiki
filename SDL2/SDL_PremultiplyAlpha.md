@@ -19,16 +19,16 @@ int SDL_PremultiplyAlpha(int width, int height,
 
 ## Function Parameters
 
-|              |                |                                                                                |
-| ------------ | -------------- | ------------------------------------------------------------------------------ |
-| int          | **width**      | the width of the block to convert, in pixels                                   |
-| int          | **height**     | the height of the block to convert, in pixels                                  |
-| Uint32       | **src_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format |
-| const void * | **src**        | a pointer to the source pixels                                                 |
-| int          | **src_pitch**  | the pitch of the source pixels, in bytes                                       |
-| Uint32       | **dst_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format |
-| void *       | **dst**        | a pointer to be filled in with premultiplied pixel data                        |
-| int          | **dst_pitch**  | the pitch of the destination pixels, in bytes                                  |
+|              |                |                                                                                 |
+| ------------ | -------------- | ------------------------------------------------------------------------------- |
+| int          | **width**      | the width of the block to convert, in pixels.                                   |
+| int          | **height**     | the height of the block to convert, in pixels.                                  |
+| Uint32       | **src_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format. |
+| const void * | **src**        | a pointer to the source pixels.                                                 |
+| int          | **src_pitch**  | the pitch of the source pixels, in bytes.                                       |
+| Uint32       | **dst_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format. |
+| void *       | **dst**        | a pointer to be filled in with premultiplied pixel data.                        |
+| int          | **dst_pitch**  | the pitch of the destination pixels, in bytes.                                  |
 
 ## Return Value
 

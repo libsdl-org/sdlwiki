@@ -15,9 +15,9 @@ int SDL_UpdateWindowSurface(SDL_Window * window);
 
 ## Function Parameters
 
-|                            |            |                      |
-| -------------------------- | ---------- | -------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to update |
+|                            |            |                       |
+| -------------------------- | ---------- | --------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to update. |
 
 ## Return Value
 

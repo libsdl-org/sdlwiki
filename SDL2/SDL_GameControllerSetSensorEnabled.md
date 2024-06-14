@@ -15,11 +15,11 @@ int SDL_GameControllerSetSensorEnabled(SDL_GameController *gamecontroller, SDL_S
 
 ## Function Parameters
 
-|                                            |                    |                                          |
-| ------------------------------------------ | ------------------ | ---------------------------------------- |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to update                 |
-| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to enable/disable     |
-| [SDL_bool](SDL_bool)                       | **enabled**        | Whether data reporting should be enabled |
+|                                            |                    |                                           |
+| ------------------------------------------ | ------------------ | ----------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to update.                 |
+| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to enable/disable.     |
+| [SDL_bool](SDL_bool)                       | **enabled**        | Whether data reporting should be enabled. |
 
 ## Return Value
 

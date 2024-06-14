@@ -15,9 +15,9 @@ SDL_SensorType SDL_SensorGetDeviceType(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                 |
-| --- | ---------------- | ------------------------------- |
-| int | **device_index** | The sensor to get the type from |
+|     |                  |                                  |
+| --- | ---------------- | -------------------------------- |
+| int | **device_index** | The sensor to get the type from. |
 
 ## Return Value
 

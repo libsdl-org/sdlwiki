@@ -15,9 +15,9 @@ const char* SDL_GameControllerGetStringForButton(SDL_GameControllerButton button
 
 ## Function Parameters
 
-|                                                      |            |                                                                                |
-| ---------------------------------------------------- | ---------- | ------------------------------------------------------------------------------ |
-| [SDL_GameControllerButton](SDL_GameControllerButton) | **button** | an enum value for a given [SDL_GameControllerButton](SDL_GameControllerButton) |
+|                                                      |            |                                                                                 |
+| ---------------------------------------------------- | ---------- | ------------------------------------------------------------------------------- |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button** | an enum value for a given [SDL_GameControllerButton](SDL_GameControllerButton). |
 
 ## Return Value
 

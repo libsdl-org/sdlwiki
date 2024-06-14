@@ -15,9 +15,9 @@ int SDL_RecordGesture(SDL_TouchID touchId);
 
 ## Function Parameters
 
-|                            |             |                                                  |
-| -------------------------- | ----------- | ------------------------------------------------ |
-| [SDL_TouchID](SDL_TouchID) | **touchId** | the touch device id, or -1 for all touch devices |
+|                            |             |                                                   |
+| -------------------------- | ----------- | ------------------------------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchId** | the touch device id, or -1 for all touch devices. |
 
 ## Return Value
 

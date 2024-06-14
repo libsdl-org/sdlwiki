@@ -15,9 +15,9 @@ int SDL_SetClipboardText(const char *text);
 
 ## Function Parameters
 
-|              |          |                                    |
-| ------------ | -------- | ---------------------------------- |
-| const char * | **text** | the text to store in the clipboard |
+|              |          |                                     |
+| ------------ | -------- | ----------------------------------- |
+| const char * | **text** | the text to store in the clipboard. |
 
 ## Return Value
 

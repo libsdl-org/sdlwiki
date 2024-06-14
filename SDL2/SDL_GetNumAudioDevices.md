@@ -15,9 +15,9 @@ int SDL_GetNumAudioDevices(int iscapture);
 
 ## Function Parameters
 
-|     |               |                                                                         |
-| --- | ------------- | ----------------------------------------------------------------------- |
-| int | **iscapture** | zero to request playback devices, non-zero to request recording devices |
+|     |               |                                                                          |
+| --- | ------------- | ------------------------------------------------------------------------ |
+| int | **iscapture** | zero to request playback devices, non-zero to request recording devices. |
 
 ## Return Value
 

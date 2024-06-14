@@ -16,10 +16,10 @@ SDL_GameControllerGetAxis(SDL_GameController *gamecontroller, SDL_GameController
 
 ## Function Parameters
 
-|                                                  |                    |                                                                                    |
-| ------------------------------------------------ | ------------------ | ---------------------------------------------------------------------------------- |
-| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller                                                                  |
-| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis index (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values) |
+|                                                  |                    |                                                                                     |
+| ------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller.                                                                  |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis index (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values). |
 
 ## Return Value
 

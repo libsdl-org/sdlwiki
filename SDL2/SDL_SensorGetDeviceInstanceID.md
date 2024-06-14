@@ -15,9 +15,9 @@ SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                    |
-| --- | ---------------- | ---------------------------------- |
-| int | **device_index** | The sensor to get instance id from |
+|     |                  |                                     |
+| --- | ---------------- | ----------------------------------- |
+| int | **device_index** | The sensor to get instance id from. |
 
 ## Return Value
 

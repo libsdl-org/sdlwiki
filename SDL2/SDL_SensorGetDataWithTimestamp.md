@@ -15,12 +15,12 @@ int SDL_SensorGetDataWithTimestamp(SDL_Sensor *sensor, Uint64 *timestamp, float 
 
 ## Function Parameters
 
-|                            |                |                                                                                                             |
-| -------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------- |
-| [SDL_Sensor](SDL_Sensor) * | **sensor**     | The [SDL_Sensor](SDL_Sensor) object to query                                                                |
-| Uint64 *                   | **timestamp**  | A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not |
-| float *                    | **data**       | A pointer filled with the current sensor state                                                              |
-| int                        | **num_values** | The number of values to write to data                                                                       |
+|                            |                |                                                                                                              |
+| -------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
+| [SDL_Sensor](SDL_Sensor) * | **sensor**     | The [SDL_Sensor](SDL_Sensor) object to query.                                                                |
+| Uint64 *                   | **timestamp**  | A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not. |
+| float *                    | **data**       | A pointer filled with the current sensor state.                                                              |
+| int                        | **num_values** | The number of values to write to data.                                                                       |
 
 ## Return Value
 

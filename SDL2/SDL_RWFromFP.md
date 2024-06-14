@@ -16,10 +16,10 @@ SDL_RWops* SDL_RWFromFP(void * fp,
 
 ## Function Parameters
 
-|                      |               |                                                                                                                                                              |
-| -------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| void *               | **fp**        | the `FILE*` that feeds the [SDL_RWops](SDL_RWops) stream                                                                                                     |
-| [SDL_bool](SDL_bool) | **autoclose** | [SDL_TRUE](SDL_TRUE) to close the `FILE*` when closing the [SDL_RWops](SDL_RWops), [SDL_FALSE](SDL_FALSE) to leave the `FILE*` open when the RWops is closed |
+|                      |               |                                                                                                                                                               |
+| -------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| void *               | **fp**        | the `FILE*` that feeds the [SDL_RWops](SDL_RWops) stream.                                                                                                     |
+| [SDL_bool](SDL_bool) | **autoclose** | [SDL_TRUE](SDL_TRUE) to close the `FILE*` when closing the [SDL_RWops](SDL_RWops), [SDL_FALSE](SDL_FALSE) to leave the `FILE*` open when the RWops is closed. |
 
 ## Return Value
 

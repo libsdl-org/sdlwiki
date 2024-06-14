@@ -15,9 +15,9 @@ SDL_hid_device * SDL_hid_open_path(const char *path, int bExclusive);
 
 ## Function Parameters
 
-|              |          |                                     |
-| ------------ | -------- | ----------------------------------- |
-| const char * | **path** | The path name of the device to open |
+|              |          |                                      |
+| ------------ | -------- | ------------------------------------ |
+| const char * | **path** | The path name of the device to open. |
 
 ## Return Value
 

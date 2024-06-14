@@ -15,9 +15,9 @@ void* SDL_GL_GetProcAddress(const char *proc);
 
 ## Function Parameters
 
-|              |          |                                |
-| ------------ | -------- | ------------------------------ |
-| const char * | **proc** | the name of an OpenGL function |
+|              |          |                                 |
+| ------------ | -------- | ------------------------------- |
+| const char * | **proc** | the name of an OpenGL function. |
 
 ## Return Value
 

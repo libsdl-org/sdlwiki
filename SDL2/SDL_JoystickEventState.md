@@ -15,9 +15,9 @@ int SDL_JoystickEventState(int state);
 
 ## Function Parameters
 
-|     |           |                                                                                                   |
-| --- | --------- | ------------------------------------------------------------------------------------------------- |
-| int | **state** | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
+|     |           |                                                                                                    |
+| --- | --------- | -------------------------------------------------------------------------------------------------- |
+| int | **state** | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE). |
 
 ## Return Value
 

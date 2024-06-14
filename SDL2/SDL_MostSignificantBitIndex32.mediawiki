@@ -17,7 +17,7 @@ SDL_FORCE_INLINE int SDL_MostSignificantBitIndex32(Uint32 x);</syntaxhighlight>
 {|
 |Uint32
 |'''x'''
-|the number to find the MSB of
+|the number to find the MSB of.
 |}
 
 == Return Value ==

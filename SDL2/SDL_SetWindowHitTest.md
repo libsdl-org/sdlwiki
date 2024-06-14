@@ -17,11 +17,11 @@ int SDL_SetWindowHitTest(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |                   |                                                    |
-| -------------------------- | ----------------- | -------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**        | the window to set hit-testing on                   |
-| [SDL_HitTest](SDL_HitTest) | **callback**      | the function to call when doing a hit-test         |
-| void *                     | **callback_data** | an app-defined void pointer passed to **callback** |
+|                            |                   |                                                     |
+| -------------------------- | ----------------- | --------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**        | the window to set hit-testing on.                   |
+| [SDL_HitTest](SDL_HitTest) | **callback**      | the function to call when doing a hit-test.         |
+| void *                     | **callback_data** | an app-defined void pointer passed to **callback**. |
 
 ## Return Value
 

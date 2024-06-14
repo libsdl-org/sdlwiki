@@ -15,9 +15,9 @@ SDL_bool SDL_RenderIsClipEnabled(SDL_Renderer * renderer);
 
 ## Function Parameters
 
-|                                |              |                                                      |
-| ------------------------------ | ------------ | ---------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which clip state should be queried |
+|                                |              |                                                       |
+| ------------------------------ | ------------ | ----------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which clip state should be queried. |
 
 ## Return Value
 

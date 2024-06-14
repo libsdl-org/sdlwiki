@@ -15,9 +15,9 @@ int SDL_GetNumTouchFingers(SDL_TouchID touchID);
 
 ## Function Parameters
 
-|                            |             |                          |
-| -------------------------- | ----------- | ------------------------ |
-| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of a touch device |
+|                            |             |                           |
+| -------------------------- | ----------- | ------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of a touch device. |
 
 ## Return Value
 

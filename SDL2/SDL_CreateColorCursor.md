@@ -17,11 +17,11 @@ SDL_Cursor* SDL_CreateColorCursor(SDL_Surface *surface,
 
 ## Function Parameters
 
-|                              |             |                                                                       |
-| ---------------------------- | ----------- | --------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | an [SDL_Surface](SDL_Surface) structure representing the cursor image |
-| int                          | **hot_x**   | the x position of the cursor hot spot                                 |
-| int                          | **hot_y**   | the y position of the cursor hot spot                                 |
+|                              |             |                                                                        |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | an [SDL_Surface](SDL_Surface) structure representing the cursor image. |
+| int                          | **hot_x**   | the x position of the cursor hot spot.                                 |
+| int                          | **hot_y**   | the y position of the cursor hot spot.                                 |
 
 ## Return Value
 

@@ -16,10 +16,10 @@ int SDL_WaitEventTimeout(SDL_Event * event,
 
 ## Function Parameters
 
-|                          |             |                                                                                                  |
-| ------------------------ | ----------- | ------------------------------------------------------------------------------------------------ |
-| [SDL_Event](SDL_Event) * | **event**   | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL |
-| int                      | **timeout** | the maximum number of milliseconds to wait for the next available event                          |
+|                          |             |                                                                                                   |
+| ------------------------ | ----------- | ------------------------------------------------------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event**   | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL. |
+| int                      | **timeout** | the maximum number of milliseconds to wait for the next available event.                          |
 
 ## Return Value
 

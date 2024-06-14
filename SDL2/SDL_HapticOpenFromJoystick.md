@@ -16,9 +16,9 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick *
 
 ## Function Parameters
 
-|                                |              |                                                                 |
-| ------------------------------ | ------------ | --------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to create a haptic device from |
+|                                |              |                                                                  |
+| ------------------------------ | ------------ | ---------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to create a haptic device from. |
 
 ## Return Value
 

@@ -17,12 +17,12 @@ size_t SDL_RWwrite(SDL_RWops *context,
 
 ## Function Parameters
 
-|                          |             |                                                  |
-| ------------------------ | ----------- | ------------------------------------------------ |
-| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure |
-| const void *             | **ptr**     | a pointer to a buffer containing data to write   |
-| size_t                   | **size**    | the size of an object to write, in bytes         |
-| size_t                   | **num**     | the number of objects to write                   |
+|                          |             |                                                   |
+| ------------------------ | ----------- | ------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure. |
+| const void *             | **ptr**     | a pointer to a buffer containing data to write.   |
+| size_t                   | **size**    | the size of an object to write, in bytes.         |
+| size_t                   | **num**     | the number of objects to write.                   |
 
 ## Return Value
 

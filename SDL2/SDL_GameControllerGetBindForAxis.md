@@ -17,10 +17,10 @@ SDL_GameControllerGetBindForAxis(SDL_GameController *gamecontroller,
 
 ## Function Parameters
 
-|                                                  |                    |                                                                                         |
-| ------------------------------------------------ | ------------------ | --------------------------------------------------------------------------------------- |
-| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller                                                                       |
-| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis enum value (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values) |
+|                                                  |                    |                                                                                          |
+| ------------------------------------------------ | ------------------ | ---------------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *       | **gamecontroller** | a game controller.                                                                       |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis**           | an axis enum value (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values). |
 
 ## Return Value
 

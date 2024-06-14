@@ -16,10 +16,10 @@ Sint16 SDL_JoystickGetAxis(SDL_Joystick *joystick,
 
 ## Function Parameters
 
-|                                |              |                                                                           |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
-| int                            | **axis**     | the axis to query; the axis indices start at index 0                      |
+|                                |              |                                                                            |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information. |
+| int                            | **axis**     | the axis to query; the axis indices start at index 0.                      |
 
 ## Return Value
 

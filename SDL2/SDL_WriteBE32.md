@@ -15,10 +15,10 @@ size_t SDL_WriteBE32(SDL_RWops * dst, Uint32 value);
 
 ## Function Parameters
 
-|                          |           |                                          |
-| ------------------------ | --------- | ---------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **dst**   | the stream to which data will be written |
-| Uint32                   | **value** | the data to be written, in native format |
+|                          |           |                                           |
+| ------------------------ | --------- | ----------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **dst**   | the stream to which data will be written. |
+| Uint32                   | **value** | the data to be written, in native format. |
 
 ## Return Value
 

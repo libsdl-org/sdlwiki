@@ -15,10 +15,10 @@ SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
 
 ## Function Parameters
 
-|       |             |                                                                                                                                                                                 |
-| ----- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| int * | **seconds** | seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery                       |
-| int * | **percent** | percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery |
+|       |             |                                                                                                                                                                                  |
+| ----- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| int * | **seconds** | seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery.                       |
+| int * | **percent** | percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ const char * SDL_GetDisplayName(int displayIndex);
 
 ## Function Parameters
 
-|     |                  |                                                            |
-| --- | ---------------- | ---------------------------------------------------------- |
-| int | **displayIndex** | the index of display from which the name should be queried |
+|     |                  |                                                             |
+| --- | ---------------- | ----------------------------------------------------------- |
+| int | **displayIndex** | the index of display from which the name should be queried. |
 
 ## Return Value
 

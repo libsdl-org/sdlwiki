@@ -15,9 +15,9 @@ char * SDL_GameControllerMappingForGUID(SDL_JoystickGUID guid);
 
 ## Function Parameters
 
-|                                      |          |                                                                |
-| ------------------------------------ | -------- | -------------------------------------------------------------- |
-| [SDL_JoystickGUID](SDL_JoystickGUID) | **guid** | a structure containing the GUID for which a mapping is desired |
+|                                      |          |                                                                 |
+| ------------------------------------ | -------- | --------------------------------------------------------------- |
+| [SDL_JoystickGUID](SDL_JoystickGUID) | **guid** | a structure containing the GUID for which a mapping is desired. |
 
 ## Return Value
 

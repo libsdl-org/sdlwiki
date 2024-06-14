@@ -15,10 +15,10 @@ SDL_RWops* SDL_RWFromMem(void *mem, int size);
 
 ## Function Parameters
 
-|        |          |                                                                |
-| ------ | -------- | -------------------------------------------------------------- |
-| void * | **mem**  | a pointer to a buffer to feed an [SDL_RWops](SDL_RWops) stream |
-| int    | **size** | the buffer size, in bytes                                      |
+|        |          |                                                                 |
+| ------ | -------- | --------------------------------------------------------------- |
+| void * | **mem**  | a pointer to a buffer to feed an [SDL_RWops](SDL_RWops) stream. |
+| int    | **size** | the buffer size, in bytes.                                      |
 
 ## Return Value
 

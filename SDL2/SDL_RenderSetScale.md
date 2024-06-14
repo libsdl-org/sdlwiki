@@ -16,11 +16,11 @@ int SDL_RenderSetScale(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                               |
-| ------------------------------ | ------------ | ----------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | a rendering context           |
-| float                          | **scaleX**   | the horizontal scaling factor |
-| float                          | **scaleY**   | the vertical scaling factor   |
+|                                |              |                                |
+| ------------------------------ | ------------ | ------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | a rendering context.           |
+| float                          | **scaleX**   | the horizontal scaling factor. |
+| float                          | **scaleY**   | the vertical scaling factor.   |
 
 ## Return Value
 

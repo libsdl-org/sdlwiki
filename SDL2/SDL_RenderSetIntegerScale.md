@@ -16,10 +16,10 @@ int SDL_RenderSetIntegerScale(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                      |
-| ------------------------------ | ------------ | ---------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer for which integer scaling should be set |
-| [SDL_bool](SDL_bool)           | **enable**   | enable or disable the integer scaling for rendering  |
+|                                |              |                                                       |
+| ------------------------------ | ------------ | ----------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer for which integer scaling should be set. |
+| [SDL_bool](SDL_bool)           | **enable**   | enable or disable the integer scaling for rendering.  |
 
 ## Return Value
 

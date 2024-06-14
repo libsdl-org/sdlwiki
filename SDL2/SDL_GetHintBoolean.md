@@ -15,10 +15,10 @@ SDL_bool SDL_GetHintBoolean(const char *name, SDL_bool default_value);
 
 ## Function Parameters
 
-|                      |                   |                                                    |
-| -------------------- | ----------------- | -------------------------------------------------- |
-| const char *         | **name**          | the name of the hint to get the boolean value from |
-| [SDL_bool](SDL_bool) | **default_value** | the value to return if the hint does not exist     |
+|                      |                   |                                                     |
+| -------------------- | ----------------- | --------------------------------------------------- |
+| const char *         | **name**          | the name of the hint to get the boolean value from. |
+| [SDL_bool](SDL_bool) | **default_value** | the value to return if the hint does not exist.     |
 
 ## Return Value
 

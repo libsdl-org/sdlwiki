@@ -18,12 +18,12 @@ int SDL_RenderCopy(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                                                                                   |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                             |
-| [SDL_Texture](SDL_Texture) *   | **texture**  | the source texture                                                                                                                                |
-| const [SDL_Rect](SDL_Rect) *   | **srcrect**  | the source [SDL_Rect](SDL_Rect) structure or NULL for the entire texture                                                                          |
-| const [SDL_Rect](SDL_Rect) *   | **dstrect**  | the destination [SDL_Rect](SDL_Rect) structure or NULL for the entire rendering target; the texture will be stretched to fill the given rectangle |
+|                                |              |                                                                                                                                                    |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                                                             |
+| [SDL_Texture](SDL_Texture) *   | **texture**  | the source texture.                                                                                                                                |
+| const [SDL_Rect](SDL_Rect) *   | **srcrect**  | the source [SDL_Rect](SDL_Rect) structure or NULL for the entire texture.                                                                          |
+| const [SDL_Rect](SDL_Rect) *   | **dstrect**  | the destination [SDL_Rect](SDL_Rect) structure or NULL for the entire rendering target; the texture will be stretched to fill the given rectangle. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis);
 
 ## Function Parameters
 
-|                                                  |          |                                                                            |
-| ------------------------------------------------ | -------- | -------------------------------------------------------------------------- |
-| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis** | an enum value for a given [SDL_GameControllerAxis](SDL_GameControllerAxis) |
+|                                                  |          |                                                                             |
+| ------------------------------------------------ | -------- | --------------------------------------------------------------------------- |
+| [SDL_GameControllerAxis](SDL_GameControllerAxis) | **axis** | an enum value for a given [SDL_GameControllerAxis](SDL_GameControllerAxis). |
 
 ## Return Value
 

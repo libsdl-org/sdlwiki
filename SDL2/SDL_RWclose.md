@@ -15,9 +15,9 @@ int SDL_RWclose(SDL_RWops *context);
 
 ## Function Parameters
 
-|                          |             |                                           |
-| ------------------------ | ----------- | ----------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **context** | [SDL_RWops](SDL_RWops) structure to close |
+|                          |             |                                            |
+| ------------------------ | ----------- | ------------------------------------------ |
+| [SDL_RWops](SDL_RWops) * | **context** | [SDL_RWops](SDL_RWops) structure to close. |
 
 ## Return Value
 

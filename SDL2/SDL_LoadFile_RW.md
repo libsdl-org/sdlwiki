@@ -17,11 +17,11 @@ void* SDL_LoadFile_RW(SDL_RWops *src,
 
 ## Function Parameters
 
-|                          |              |                                                                           |
-| ------------------------ | ------------ | ------------------------------------------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **src**      | the [SDL_RWops](SDL_RWops) to read all available data from                |
-| size_t *                 | **datasize** | if not NULL, will store the number of bytes read                          |
-| int                      | **freesrc**  | if non-zero, calls [SDL_RWclose](SDL_RWclose)() on `src` before returning |
+|                          |              |                                                                            |
+| ------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src**      | the [SDL_RWops](SDL_RWops) to read all available data from.                |
+| size_t *                 | **datasize** | if not NULL, will store the number of bytes read.                          |
+| int                      | **freesrc**  | if non-zero, calls [SDL_RWclose](SDL_RWclose)() on `src` before returning. |
 
 ## Return Value
 

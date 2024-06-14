@@ -17,7 +17,7 @@ void SDL_JoystickSetPlayerIndex(SDL_Joystick *joystick, int player_index);
 
 |                                |                  |                                                                                                    |
 | ------------------------------ | ---------------- | -------------------------------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)()              |
+| [SDL_Joystick](SDL_Joystick) * | **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)().             |
 | int                            | **player_index** | Player index to assign to this joystick, or -1 to clear the player index and turn off player LEDs. |
 
 ## Version

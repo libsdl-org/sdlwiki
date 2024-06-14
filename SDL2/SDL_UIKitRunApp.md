@@ -15,15 +15,15 @@ int SDL_UIKitRunApp(int argc, char *argv[], SDL_main_func mainFunction);
 
 ## Function Parameters
 
-|                                |                  |                                                                 |
-| ------------------------------ | ---------------- | --------------------------------------------------------------- |
-| int                            | **argc**         | The argc parameter from the application's main() function       |
-| char **                        | **argv**         | The argv parameter from the application's main() function       |
-| [SDL_main_func](SDL_main_func) | **mainFunction** | The SDL app's C-style main(), an [SDL_main_func](SDL_main_func) |
+|                                |                  |                                                                  |
+| ------------------------------ | ---------------- | ---------------------------------------------------------------- |
+| int                            | **argc**         | The argc parameter from the application's main() function.       |
+| char **                        | **argv**         | The argv parameter from the application's main() function.       |
+| [SDL_main_func](SDL_main_func) | **mainFunction** | The SDL app's C-style main(), an [SDL_main_func](SDL_main_func). |
 
 ## Return Value
 
-(int) Return the return value from mainFunction
+(int) Return the return value from mainFunction.
 
 ## Version
 

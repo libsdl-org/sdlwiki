@@ -15,9 +15,9 @@ void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|                                        |         |                                     |
-| -------------------------------------- | ------- | ----------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the ID of the device to be unlocked |
+|                                        |         |                                      |
+| -------------------------------------- | ------- | ------------------------------------ |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the ID of the device to be unlocked. |
 
 ## Remarks
 

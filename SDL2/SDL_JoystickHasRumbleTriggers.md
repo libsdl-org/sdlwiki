@@ -15,9 +15,9 @@ SDL_bool SDL_JoystickHasRumbleTriggers(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                                |              |                       |
-| ------------------------------ | ------------ | --------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query |
+|                                |              |                        |
+| ------------------------------ | ------------ | ---------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query. |
 
 ## Return Value
 

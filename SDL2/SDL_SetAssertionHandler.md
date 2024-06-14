@@ -17,10 +17,10 @@ void SDL_SetAssertionHandler(
 
 ## Function Parameters
 
-|                                              |              |                                                                                                                           |
-| -------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_AssertionHandler](SDL_AssertionHandler) | **handler**  | the [SDL_AssertionHandler](SDL_AssertionHandler) function to call when an assertion fails or NULL for the default handler |
-| void *                                       | **userdata** | a pointer that is passed to `handler`                                                                                     |
+|                                              |              |                                                                                                                            |
+| -------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_AssertionHandler](SDL_AssertionHandler) | **handler**  | the [SDL_AssertionHandler](SDL_AssertionHandler) function to call when an assertion fails or NULL for the default handler. |
+| void *                                       | **userdata** | a pointer that is passed to `handler`.                                                                                     |
 
 ## Remarks
 

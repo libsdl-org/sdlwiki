@@ -16,11 +16,11 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |            |                                                                 |
-| -------------------------- | ---------- | --------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | an [SDL_Window](SDL_Window) for which the size is to be queried |
-| int *                      | **w**      | Pointer to the variable to write the width to or NULL           |
-| int *                      | **h**      | Pointer to the variable to write the height to or NULL          |
+|                            |            |                                                                  |
+| -------------------------- | ---------- | ---------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | an [SDL_Window](SDL_Window) for which the size is to be queried. |
+| int *                      | **w**      | Pointer to the variable to write the width to or NULL.           |
+| int *                      | **h**      | Pointer to the variable to write the height to or NULL.          |
 
 ## Remarks
 

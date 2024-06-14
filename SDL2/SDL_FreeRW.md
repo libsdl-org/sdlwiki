@@ -15,9 +15,9 @@ void SDL_FreeRW(SDL_RWops * area);
 
 ## Function Parameters
 
-|                          |          |                                                  |
-| ------------------------ | -------- | ------------------------------------------------ |
-| [SDL_RWops](SDL_RWops) * | **area** | the [SDL_RWops](SDL_RWops) structure to be freed |
+|                          |          |                                                   |
+| ------------------------ | -------- | ------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **area** | the [SDL_RWops](SDL_RWops) structure to be freed. |
 
 ## Remarks
 

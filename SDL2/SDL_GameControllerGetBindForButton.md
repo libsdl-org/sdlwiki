@@ -17,10 +17,10 @@ SDL_GameControllerGetBindForButton(SDL_GameController *gamecontroller,
 
 ## Function Parameters
 
-|                                                      |                    |                                                                                      |
-| ---------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
-| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller                                                                    |
-| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
+|                                                      |                    |                                                                                       |
+| ---------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller.                                                                    |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value). |
 
 ## Return Value
 

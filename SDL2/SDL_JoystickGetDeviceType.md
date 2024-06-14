@@ -15,16 +15,16 @@ SDL_JoystickType SDL_JoystickGetDeviceType(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                                                     |
-| --- | ---------------- | ------------------------------------------------------------------- |
-| int | **device_index** | the index of the joystick to query (the N'th joystick on the system |
+|     |                  |                                                                      |
+| --- | ---------------- | -------------------------------------------------------------------- |
+| int | **device_index** | the index of the joystick to query (the N'th joystick on the system. |
 
 ## Return Value
 
 ([SDL_JoystickType](SDL_JoystickType)) Returns the
 [SDL_JoystickType](SDL_JoystickType) of the selected joystick. If called on
 an invalid index, this function returns
-[`SDL_JOYSTICK_TYPE_UNKNOWN`](SDL_JOYSTICK_TYPE_UNKNOWN)
+[`SDL_JOYSTICK_TYPE_UNKNOWN`](SDL_JOYSTICK_TYPE_UNKNOWN).
 
 ## Remarks
 

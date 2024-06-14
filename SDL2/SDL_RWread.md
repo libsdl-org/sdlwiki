@@ -17,12 +17,12 @@ size_t SDL_RWread(SDL_RWops *context,
 
 ## Function Parameters
 
-|                          |             |                                                  |
-| ------------------------ | ----------- | ------------------------------------------------ |
-| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure |
-| void *                   | **ptr**     | a pointer to a buffer to read data into          |
-| size_t                   | **size**    | the size of each object to read, in bytes        |
-| size_t                   | **maxnum**  | the maximum number of objects to be read         |
+|                          |             |                                                   |
+| ------------------------ | ----------- | ------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure. |
+| void *                   | **ptr**     | a pointer to a buffer to read data into.          |
+| size_t                   | **size**    | the size of each object to read, in bytes.        |
+| size_t                   | **maxnum**  | the maximum number of objects to be read.         |
 
 ## Return Value
 

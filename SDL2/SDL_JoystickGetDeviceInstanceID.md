@@ -15,9 +15,9 @@ SDL_JoystickID SDL_JoystickGetDeviceInstanceID(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                                                     |
-| --- | ---------------- | ------------------------------------------------------------------- |
-| int | **device_index** | the index of the joystick to query (the N'th joystick on the system |
+|     |                  |                                                                      |
+| --- | ---------------- | -------------------------------------------------------------------- |
+| int | **device_index** | the index of the joystick to query (the N'th joystick on the system. |
 
 ## Return Value
 

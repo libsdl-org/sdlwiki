@@ -17,16 +17,16 @@ SDL_Surface* SDL_CreateRGBSurface
 
 ## Function Parameters
 
-|        |            |                                             |
-| ------ | ---------- | ------------------------------------------- |
-| Uint32 | **flags**  | the flags are unused and should be set to 0 |
-| int    | **width**  | the width of the surface                    |
-| int    | **height** | the height of the surface                   |
-| int    | **depth**  | the depth of the surface in bits            |
-| Uint32 | **Rmask**  | the red mask for the pixels                 |
-| Uint32 | **Gmask**  | the green mask for the pixels               |
-| Uint32 | **Bmask**  | the blue mask for the pixels                |
-| Uint32 | **Amask**  | the alpha mask for the pixels               |
+|        |            |                                              |
+| ------ | ---------- | -------------------------------------------- |
+| Uint32 | **flags**  | the flags are unused and should be set to 0. |
+| int    | **width**  | the width of the surface.                    |
+| int    | **height** | the height of the surface.                   |
+| int    | **depth**  | the depth of the surface in bits.            |
+| Uint32 | **Rmask**  | the red mask for the pixels.                 |
+| Uint32 | **Gmask**  | the green mask for the pixels.               |
+| Uint32 | **Bmask**  | the blue mask for the pixels.                |
+| Uint32 | **Amask**  | the alpha mask for the pixels.               |
 
 ## Return Value
 

@@ -15,10 +15,10 @@ size_t SDL_WriteU8(SDL_RWops * dst, Uint8 value);
 
 ## Function Parameters
 
-|                          |           |                                        |
-| ------------------------ | --------- | -------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **dst**   | the [SDL_RWops](SDL_RWops) to write to |
-| Uint8                    | **value** | the byte value to write                |
+|                          |           |                                         |
+| ------------------------ | --------- | --------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **dst**   | the [SDL_RWops](SDL_RWops) to write to. |
+| Uint8                    | **value** | the byte value to write.                |
 
 ## Return Value
 

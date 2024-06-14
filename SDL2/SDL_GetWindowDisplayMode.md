@@ -16,10 +16,10 @@ int SDL_GetWindowDisplayMode(SDL_Window * window,
 
 ## Function Parameters
 
-|                                      |            |                                                                                            |
-| ------------------------------------ | ---------- | ------------------------------------------------------------------------------------------ |
-| [SDL_Window](SDL_Window) *           | **window** | the window to query                                                                        |
-| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**   | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the fullscreen display mode |
+|                                      |            |                                                                                             |
+| ------------------------------------ | ---------- | ------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *           | **window** | the window to query.                                                                        |
+| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**   | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the fullscreen display mode. |
 
 ## Return Value
 

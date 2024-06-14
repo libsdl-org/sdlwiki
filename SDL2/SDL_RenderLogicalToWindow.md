@@ -17,13 +17,13 @@ void SDL_RenderLogicalToWindow(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                     |
-| ------------------------------ | ------------ | ------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which the window coordinates should be calculated |
-| float                          | **logicalX** | the logical x coordinate                                            |
-| float                          | **logicalY** | the logical y coordinate                                            |
-| int *                          | **windowX**  | the pointer filled with the real X coordinate in the window         |
-| int *                          | **windowY**  | the pointer filled with the real Y coordinate in the window         |
+|                                |              |                                                                      |
+| ------------------------------ | ------------ | -------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which the window coordinates should be calculated. |
+| float                          | **logicalX** | the logical x coordinate.                                            |
+| float                          | **logicalY** | the logical y coordinate.                                            |
+| int *                          | **windowX**  | the pointer filled with the real X coordinate in the window.         |
+| int *                          | **windowY**  | the pointer filled with the real Y coordinate in the window.         |
 
 ## Remarks
 

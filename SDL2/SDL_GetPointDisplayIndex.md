@@ -15,9 +15,9 @@ int SDL_GetPointDisplayIndex(const SDL_Point * point);
 
 ## Function Parameters
 
-|                                |           |                    |
-| ------------------------------ | --------- | ------------------ |
-| const [SDL_Point](SDL_Point) * | **point** | the point to query |
+|                                |           |                     |
+| ------------------------------ | --------- | ------------------- |
+| const [SDL_Point](SDL_Point) * | **point** | the point to query. |
 
 ## Return Value
 

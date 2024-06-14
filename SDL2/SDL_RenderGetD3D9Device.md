@@ -15,9 +15,9 @@ IDirect3DDevice9* SDL_RenderGetD3D9Device(SDL_Renderer * renderer);
 
 ## Function Parameters
 
-|                                |              |                                                          |
-| ------------------------------ | ------------ | -------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D device |
+|                                |              |                                                           |
+| ------------------------------ | ------------ | --------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer from which to get the associated D3D device. |
 
 ## Return Value
 

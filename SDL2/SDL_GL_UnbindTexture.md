@@ -15,13 +15,13 @@ int SDL_GL_UnbindTexture(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                              |             |                                                              |
-| ---------------------------- | ----------- | ------------------------------------------------------------ |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to unbind from the current OpenGL/ES/ES2 context |
+|                              |             |                                                               |
+| ---------------------------- | ----------- | ------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to unbind from the current OpenGL/ES/ES2 context. |
 
 ## Return Value
 
-(int) Returns 0 on success, or -1 if the operation is not supported
+(int) Returns 0 on success, or -1 if the operation is not supported.
 
 ## Remarks
 

@@ -16,13 +16,13 @@ int SDL_RenderDrawLine(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                     |
-| ------------------------------ | ------------ | ----------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context               |
-| int                            | **x1**       | the x coordinate of the start point |
-| int                            | **y1**       | the y coordinate of the start point |
-| int                            | **x2**       | the x coordinate of the end point   |
-| int                            | **y2**       | the y coordinate of the end point   |
+|                                |              |                                      |
+| ------------------------------ | ------------ | ------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.               |
+| int                            | **x1**       | the x coordinate of the start point. |
+| int                            | **y1**       | the y coordinate of the start point. |
+| int                            | **x2**       | the x coordinate of the end point.   |
+| int                            | **y2**       | the y coordinate of the end point.   |
 
 ## Return Value
 

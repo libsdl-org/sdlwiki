@@ -21,15 +21,15 @@ int SDL_RenderCopyEx(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                            |              |                                                                                                                                                         |
-| ------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *             | **renderer** | the rendering context                                                                                                                                   |
-| [SDL_Texture](SDL_Texture) *               | **texture**  | the source texture                                                                                                                                      |
-| const [SDL_Rect](SDL_Rect) *               | **srcrect**  | the source [SDL_Rect](SDL_Rect) structure or NULL for the entire texture                                                                                |
-| const [SDL_Rect](SDL_Rect) *               | **dstrect**  | the destination [SDL_Rect](SDL_Rect) structure or NULL for the entire rendering target                                                                  |
-| const double                               | **angle**    | an angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction                                   |
-| const [SDL_Point](SDL_Point) *             | **center**   | a pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around `dstrect.w / 2`, `dstrect.h / 2`) |
-| const [SDL_RendererFlip](SDL_RendererFlip) | **flip**     | a [SDL_RendererFlip](SDL_RendererFlip) value stating which flipping actions should be performed on the texture                                          |
+|                                            |              |                                                                                                                                                          |
+| ------------------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *             | **renderer** | the rendering context.                                                                                                                                   |
+| [SDL_Texture](SDL_Texture) *               | **texture**  | the source texture.                                                                                                                                      |
+| const [SDL_Rect](SDL_Rect) *               | **srcrect**  | the source [SDL_Rect](SDL_Rect) structure or NULL for the entire texture.                                                                                |
+| const [SDL_Rect](SDL_Rect) *               | **dstrect**  | the destination [SDL_Rect](SDL_Rect) structure or NULL for the entire rendering target.                                                                  |
+| const double                               | **angle**    | an angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction.                                   |
+| const [SDL_Point](SDL_Point) *             | **center**   | a pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around `dstrect.w / 2`, `dstrect.h / 2`). |
+| const [SDL_RendererFlip](SDL_RendererFlip) | **flip**     | a [SDL_RendererFlip](SDL_RendererFlip) value stating which flipping actions should be performed on the texture.                                          |
 
 ## Return Value
 

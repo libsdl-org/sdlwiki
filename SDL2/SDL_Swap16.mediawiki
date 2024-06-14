@@ -17,7 +17,7 @@ SDL_FORCE_INLINE Uint16 SDL_Swap16(Uint16 x);</syntaxhighlight>
 {|
 |Uint16
 |'''x'''
-|the value to be swapped
+|the value to be swapped.
 |}
 
 == Return Value ==

@@ -18,13 +18,13 @@ SDL_Texture * SDL_CreateTexture(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                            |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                      |
-| Uint32                         | **format**   | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum) |
-| int                            | **access**   | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess)     |
-| int                            | **w**        | the width of the texture in pixels                                         |
-| int                            | **h**        | the height of the texture in pixels                                        |
+|                                |              |                                                                             |
+| ------------------------------ | ------------ | --------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                      |
+| Uint32                         | **format**   | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum). |
+| int                            | **access**   | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess).     |
+| int                            | **w**        | the width of the texture in pixels.                                         |
+| int                            | **h**        | the height of the texture in pixels.                                        |
 
 ## Return Value
 

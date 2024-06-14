@@ -15,11 +15,11 @@ int SDL_AudioStreamPut(SDL_AudioStream *stream, const void *buf, int len);
 
 ## Function Parameters
 
-|                                      |            |                                             |
-| ------------------------------------ | ---------- | ------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The stream the audio data is being added to |
-| const void *                         | **buf**    | A pointer to the audio data to add          |
-| int                                  | **len**    | The number of bytes to write to the stream  |
+|                                      |            |                                              |
+| ------------------------------------ | ---------- | -------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The stream the audio data is being added to. |
+| const void *                         | **buf**    | A pointer to the audio data to add.          |
+| int                                  | **len**    | The number of bytes to write to the stream.  |
 
 ## Return Value
 

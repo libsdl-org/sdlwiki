@@ -17,7 +17,7 @@ SDL_FORCE_INLINE float SDL_SwapFloat(float x);</syntaxhighlight>
 {|
 |float
 |'''x'''
-|the value to be swapped
+|the value to be swapped.
 |}
 
 == Return Value ==

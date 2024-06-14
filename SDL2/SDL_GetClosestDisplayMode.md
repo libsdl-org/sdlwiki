@@ -15,11 +15,11 @@ SDL_DisplayMode * SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayM
 
 ## Function Parameters
 
-|                                            |                  |                                                                                                                 |
-| ------------------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------------------- |
-| int                                        | **displayIndex** | the index of the display to query                                                                               |
-| const [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure containing the desired display mode                             |
-| [SDL_DisplayMode](SDL_DisplayMode) *       | **closest**      | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the closest match of the available display modes |
+|                                            |                  |                                                                                                                  |
+| ------------------------------------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| int                                        | **displayIndex** | the index of the display to query.                                                                               |
+| const [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure containing the desired display mode.                             |
+| [SDL_DisplayMode](SDL_DisplayMode) *       | **closest**      | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the closest match of the available display modes. |
 
 ## Return Value
 

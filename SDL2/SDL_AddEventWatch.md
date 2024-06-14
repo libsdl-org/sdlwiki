@@ -19,7 +19,7 @@ void SDL_AddEventWatch(SDL_EventFilter filter,
 |                                    |              |                                                                               |
 | ---------------------------------- | ------------ | ----------------------------------------------------------------------------- |
 | [SDL_EventFilter](SDL_EventFilter) | **filter**   | an [SDL_EventFilter](SDL_EventFilter) function to call when an event happens. |
-| void *                             | **userdata** | a pointer that is passed to `filter`                                          |
+| void *                             | **userdata** | a pointer that is passed to `filter`.                                         |
 
 ## Remarks
 

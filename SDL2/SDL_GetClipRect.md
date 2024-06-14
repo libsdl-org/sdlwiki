@@ -16,10 +16,10 @@ void SDL_GetClipRect(SDL_Surface * surface,
 
 ## Function Parameters
 
-|                              |             |                                                                                         |
-| ---------------------------- | ----------- | --------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure representing the surface to be clipped         |
-| [SDL_Rect](SDL_Rect) *       | **rect**    | an [SDL_Rect](SDL_Rect) structure filled in with the clipping rectangle for the surface |
+|                              |             |                                                                                          |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure representing the surface to be clipped.         |
+| [SDL_Rect](SDL_Rect) *       | **rect**    | an [SDL_Rect](SDL_Rect) structure filled in with the clipping rectangle for the surface. |
 
 ## Remarks
 

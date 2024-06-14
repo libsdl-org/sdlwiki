@@ -15,10 +15,10 @@ int SDL_WarpMouseGlobal(int x, int y);
 
 ## Function Parameters
 
-|     |       |                  |
-| --- | ----- | ---------------- |
-| int | **x** | the x coordinate |
-| int | **y** | the y coordinate |
+|     |       |                   |
+| --- | ----- | ----------------- |
+| int | **x** | the x coordinate. |
+| int | **y** | the y coordinate. |
 
 ## Return Value
 

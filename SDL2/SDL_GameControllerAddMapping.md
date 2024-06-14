@@ -15,9 +15,9 @@ int SDL_GameControllerAddMapping(const char* mappingString);
 
 ## Function Parameters
 
-|              |                   |                    |
-| ------------ | ----------------- | ------------------ |
-| const char * | **mappingString** | the mapping string |
+|              |                   |                     |
+| ------------ | ----------------- | ------------------- |
+| const char * | **mappingString** | the mapping string. |
 
 ## Return Value
 

@@ -16,10 +16,10 @@ int SDL_GetSurfaceAlphaMod(SDL_Surface * surface,
 
 ## Function Parameters
 
-|                              |             |                                                   |
-| ---------------------------- | ----------- | ------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
-| Uint8 *                      | **alpha**   | a pointer filled in with the current alpha value  |
+|                              |             |                                                    |
+| ---------------------------- | ----------- | -------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query. |
+| Uint8 *                      | **alpha**   | a pointer filled in with the current alpha value.  |
 
 ## Return Value
 

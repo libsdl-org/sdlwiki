@@ -16,10 +16,10 @@ int SDL_RenderDrawRect(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                                                      |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                |
-| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the rectangle to draw, or NULL to outline the entire rendering target |
+|                                |              |                                                                                                                       |
+| ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                                |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the rectangle to draw, or NULL to outline the entire rendering target. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ const char* SDL_GetPixelFormatName(Uint32 format);
 
 ## Function Parameters
 
-|        |            |                           |
-| ------ | ---------- | ------------------------- |
-| Uint32 | **format** | the pixel format to query |
+|        |            |                            |
+| ------ | ---------- | -------------------------- |
+| Uint32 | **format** | the pixel format to query. |
 
 ## Return Value
 

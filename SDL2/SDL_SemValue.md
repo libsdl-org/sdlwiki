@@ -15,9 +15,9 @@ Uint32 SDL_SemValue(SDL_sem * sem);
 
 ## Function Parameters
 
-|                      |         |                        |
-| -------------------- | ------- | ---------------------- |
-| [SDL_sem](SDL_sem) * | **sem** | the semaphore to query |
+|                      |         |                         |
+| -------------------- | ------- | ----------------------- |
+| [SDL_sem](SDL_sem) * | **sem** | the semaphore to query. |
 
 ## Return Value
 

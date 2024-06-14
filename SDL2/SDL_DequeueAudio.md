@@ -15,11 +15,11 @@ Uint32 SDL_DequeueAudio(SDL_AudioDeviceID dev, void *data, Uint32 len);
 
 ## Function Parameters
 
-|                                        |          |                                                           |
-| -------------------------------------- | -------- | --------------------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev**  | the device ID from which we will dequeue audio            |
-| void *                                 | **data** | a pointer into where audio data should be copied          |
-| Uint32                                 | **len**  | the number of bytes (not samples!) to which (data) points |
+|                                        |          |                                                            |
+| -------------------------------------- | -------- | ---------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev**  | the device ID from which we will dequeue audio.            |
+| void *                                 | **data** | a pointer into where audio data should be copied.          |
+| Uint32                                 | **len**  | the number of bytes (not samples!) to which (data) points. |
 
 ## Return Value
 

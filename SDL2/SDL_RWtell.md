@@ -15,9 +15,9 @@ Sint64 SDL_RWtell(SDL_RWops *context);
 
 ## Function Parameters
 
-|                          |             |                                                                                  |
-| ------------------------ | ----------- | -------------------------------------------------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **context** | a [SDL_RWops](SDL_RWops) data stream object from which to get the current offset |
+|                          |             |                                                                                   |
+| ------------------------ | ----------- | --------------------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | a [SDL_RWops](SDL_RWops) data stream object from which to get the current offset. |
 
 ## Return Value
 

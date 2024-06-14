@@ -15,9 +15,9 @@ void SDL_MinimizeWindow(SDL_Window * window);
 
 ## Function Parameters
 
-|                            |            |                        |
-| -------------------------- | ---------- | ---------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to minimize |
+|                            |            |                         |
+| -------------------------- | ---------- | ----------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to minimize. |
 
 ## Version
 

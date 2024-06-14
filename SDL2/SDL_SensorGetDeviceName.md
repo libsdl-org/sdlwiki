@@ -15,9 +15,9 @@ const char* SDL_SensorGetDeviceName(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                |
-| --- | ---------------- | ------------------------------ |
-| int | **device_index** | The sensor to obtain name from |
+|     |                  |                                 |
+| --- | ---------------- | ------------------------------- |
+| int | **device_index** | The sensor to obtain name from. |
 
 ## Return Value
 

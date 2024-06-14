@@ -21,15 +21,15 @@ int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
 
 ## Function Parameters
 
-|                                    |                  |                                                                                                |
-| ---------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------- |
-| [SDL_AudioCVT](SDL_AudioCVT) *     | **cvt**          | an [SDL_AudioCVT](SDL_AudioCVT) structure filled in with audio conversion information          |
-| [SDL_AudioFormat](SDL_AudioFormat) | **src_format**   | the source format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat)      |
-| Uint8                              | **src_channels** | the number of channels in the source                                                           |
-| int                                | **src_rate**     | the frequency (sample-frames-per-second) of the source                                         |
-| [SDL_AudioFormat](SDL_AudioFormat) | **dst_format**   | the destination format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat) |
-| Uint8                              | **dst_channels** | the number of channels in the destination                                                      |
-| int                                | **dst_rate**     | the frequency (sample-frames-per-second) of the destination                                    |
+|                                    |                  |                                                                                                 |
+| ---------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
+| [SDL_AudioCVT](SDL_AudioCVT) *     | **cvt**          | an [SDL_AudioCVT](SDL_AudioCVT) structure filled in with audio conversion information.          |
+| [SDL_AudioFormat](SDL_AudioFormat) | **src_format**   | the source format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat).      |
+| Uint8                              | **src_channels** | the number of channels in the source.                                                           |
+| int                                | **src_rate**     | the frequency (sample-frames-per-second) of the source.                                         |
+| [SDL_AudioFormat](SDL_AudioFormat) | **dst_format**   | the destination format of the audio data; for more info see [SDL_AudioFormat](SDL_AudioFormat). |
+| Uint8                              | **dst_channels** | the number of channels in the destination.                                                      |
+| int                                | **dst_rate**     | the frequency (sample-frames-per-second) of the destination.                                    |
 
 ## Return Value
 

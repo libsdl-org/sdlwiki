@@ -15,10 +15,10 @@ SDL_bool SDL_GameControllerHasSensor(SDL_GameController *gamecontroller, SDL_Sen
 
 ## Function Parameters
 
-|                                            |                    |                             |
-| ------------------------------------------ | ------------------ | --------------------------- |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query     |
-| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to query |
+|                                            |                    |                              |
+| ------------------------------------------ | ------------------ | ---------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query.     |
+| [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to query. |
 
 ## Return Value
 

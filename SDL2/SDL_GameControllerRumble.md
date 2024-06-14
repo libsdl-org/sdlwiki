@@ -15,16 +15,16 @@ int SDL_GameControllerRumble(SDL_GameController *gamecontroller, Uint16 low_freq
 
 ## Function Parameters
 
-|                                            |                           |                                                                            |
-| ------------------------------------------ | ------------------------- | -------------------------------------------------------------------------- |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller**        | The controller to vibrate                                                  |
-| Uint16                                     | **low_frequency_rumble**  | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF   |
-| Uint16                                     | **high_frequency_rumble** | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF |
-| Uint32                                     | **duration_ms**           | The duration of the rumble effect, in milliseconds                         |
+|                                            |                           |                                                                             |
+| ------------------------------------------ | ------------------------- | --------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller**        | The controller to vibrate.                                                  |
+| Uint16                                     | **low_frequency_rumble**  | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF.   |
+| Uint16                                     | **high_frequency_rumble** | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF. |
+| Uint32                                     | **duration_ms**           | The duration of the rumble effect, in milliseconds.                         |
 
 ## Return Value
 
-(int) Returns 0, or -1 if rumble isn't supported on this controller
+(int) Returns 0, or -1 if rumble isn't supported on this controller.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ int SDL_HapticOpened(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                  |
-| --- | ---------------- | -------------------------------- |
-| int | **device_index** | the index of the device to query |
+|     |                  |                                   |
+| --- | ---------------- | --------------------------------- |
+| int | **device_index** | the index of the device to query. |
 
 ## Return Value
 

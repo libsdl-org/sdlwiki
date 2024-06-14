@@ -16,10 +16,10 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick *joystick,
 
 ## Function Parameters
 
-|                                |              |                                                                           |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
-| int                            | **button**   | the button index to get the state from; indices start at index 0          |
+|                                |              |                                                                            |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information. |
+| int                            | **button**   | the button index to get the state from; indices start at index 0.          |
 
 ## Return Value
 

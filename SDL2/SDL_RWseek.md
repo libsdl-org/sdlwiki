@@ -16,11 +16,11 @@ Sint64 SDL_RWseek(SDL_RWops *context,
 
 ## Function Parameters
 
-|                          |             |                                                                      |
-| ------------------------ | ----------- | -------------------------------------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure                     |
-| Sint64                   | **offset**  | an offset in bytes, relative to **whence** location; can be negative |
-| int                      | **whence**  | any of `RW_SEEK_SET`, `RW_SEEK_CUR`, `RW_SEEK_END`                   |
+|                          |             |                                                                       |
+| ------------------------ | ----------- | --------------------------------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **context** | a pointer to an [SDL_RWops](SDL_RWops) structure.                     |
+| Sint64                   | **offset**  | an offset in bytes, relative to **whence** location; can be negative. |
+| int                      | **whence**  | any of `RW_SEEK_SET`, `RW_SEEK_CUR`, `RW_SEEK_END`.                   |
 
 ## Return Value
 

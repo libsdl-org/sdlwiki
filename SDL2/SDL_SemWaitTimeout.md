@@ -15,10 +15,10 @@ int SDL_SemWaitTimeout(SDL_sem *sem, Uint32 timeout);
 
 ## Function Parameters
 
-|                      |             |                                            |
-| -------------------- | ----------- | ------------------------------------------ |
-| [SDL_sem](SDL_sem) * | **sem**     | the semaphore to wait on                   |
-| Uint32               | **timeout** | the length of the timeout, in milliseconds |
+|                      |             |                                             |
+| -------------------- | ----------- | ------------------------------------------- |
+| [SDL_sem](SDL_sem) * | **sem**     | the semaphore to wait on.                   |
+| Uint32               | **timeout** | the length of the timeout, in milliseconds. |
 
 ## Return Value
 

@@ -15,14 +15,15 @@ const char* SDL_GameControllerGetAppleSFSymbolsNameForButton(SDL_GameController 
 
 ## Function Parameters
 
-|                                                      |                    |                                 |
-| ---------------------------------------------------- | ------------------ | ------------------------------- |
-| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | the controller to query         |
-| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button on the game controller |
+|                                                      |                    |                                  |
+| ---------------------------------------------------- | ------------------ | -------------------------------- |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | the controller to query.         |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button on the game controller. |
 
 ## Return Value
 
-(const char *) Returns the sfSymbolsName or NULL if the name can't be found
+(const char *) Returns the sfSymbolsName or NULL if the name can't be
+found.
 
 ## Version
 

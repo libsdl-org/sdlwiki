@@ -15,9 +15,9 @@ int SDL_HapticRumbleSupported(SDL_Haptic * haptic);
 
 ## Function Parameters
 
-|                            |            |                                           |
-| -------------------------- | ---------- | ----------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | haptic device to check for rumble support |
+|                            |            |                                            |
+| -------------------------- | ---------- | ------------------------------------------ |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | haptic device to check for rumble support. |
 
 ## Return Value
 

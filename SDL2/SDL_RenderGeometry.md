@@ -29,7 +29,7 @@ int SDL_RenderGeometry(SDL_Renderer *renderer,
 
 ## Return Value
 
-(int) Return 0 on success, or -1 if the operation is not supported
+(int) Return 0 on success, or -1 if the operation is not supported.
 
 ## Version
 

@@ -15,9 +15,9 @@ Uint32 SDL_GetQueuedAudioSize(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|                                        |         |                                                        |
-| -------------------------------------- | ------- | ------------------------------------------------------ |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the device ID of which we will query queued audio size |
+|                                        |         |                                                         |
+| -------------------------------------- | ------- | ------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the device ID of which we will query queued audio size. |
 
 ## Return Value
 

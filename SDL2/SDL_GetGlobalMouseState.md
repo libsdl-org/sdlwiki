@@ -15,10 +15,10 @@ Uint32 SDL_GetGlobalMouseState(int *x, int *y);
 
 ## Function Parameters
 
-|       |       |                                                                         |
-| ----- | ----- | ----------------------------------------------------------------------- |
-| int * | **x** | filled in with the current X coord relative to the desktop; can be NULL |
-| int * | **y** | filled in with the current Y coord relative to the desktop; can be NULL |
+|       |       |                                                                          |
+| ----- | ----- | ------------------------------------------------------------------------ |
+| int * | **x** | filled in with the current X coord relative to the desktop; can be NULL. |
+| int * | **y** | filled in with the current Y coord relative to the desktop; can be NULL. |
 
 ## Return Value
 

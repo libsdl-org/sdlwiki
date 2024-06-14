@@ -16,11 +16,11 @@ void SDL_SetWindowMinimumSize(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |            |                                            |
-| -------------------------- | ---------- | ------------------------------------------ |
-| [SDL_Window](SDL_Window) * | **window** | the window to change                       |
-| int                        | **min_w**  | the minimum width of the window in pixels  |
-| int                        | **min_h**  | the minimum height of the window in pixels |
+|                            |            |                                             |
+| -------------------------- | ---------- | ------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change.                       |
+| int                        | **min_w**  | the minimum width of the window in pixels.  |
+| int                        | **min_h**  | the minimum height of the window in pixels. |
 
 ## Version
 

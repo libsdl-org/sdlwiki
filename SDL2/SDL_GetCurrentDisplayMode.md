@@ -15,10 +15,10 @@ int SDL_GetCurrentDisplayMode(int displayIndex, SDL_DisplayMode * mode);
 
 ## Function Parameters
 
-|                                      |                  |                                                                                         |
-| ------------------------------------ | ---------------- | --------------------------------------------------------------------------------------- |
-| int                                  | **displayIndex** | the index of the display to query                                                       |
-| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the current display mode |
+|                                      |                  |                                                                                          |
+| ------------------------------------ | ---------------- | ---------------------------------------------------------------------------------------- |
+| int                                  | **displayIndex** | the index of the display to query.                                                       |
+| [SDL_DisplayMode](SDL_DisplayMode) * | **mode**         | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the current display mode. |
 
 ## Return Value
 

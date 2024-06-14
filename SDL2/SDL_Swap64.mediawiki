@@ -17,7 +17,7 @@ SDL_FORCE_INLINE Uint64 SDL_Swap64(Uint64 x);</syntaxhighlight>
 {|
 |Uint64
 |'''x'''
-|the value to be swapped
+|the value to be swapped.
 |}
 
 == Return Value ==

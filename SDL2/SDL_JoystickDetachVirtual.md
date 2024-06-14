@@ -15,9 +15,9 @@ int SDL_JoystickDetachVirtual(int device_index);
 
 ## Function Parameters
 
-|     |                  |                                                                                           |
-| --- | ---------------- | ----------------------------------------------------------------------------------------- |
-| int | **device_index** | a value previously returned from [SDL_JoystickAttachVirtual](SDL_JoystickAttachVirtual)() |
+|     |                  |                                                                                            |
+| --- | ---------------- | ------------------------------------------------------------------------------------------ |
+| int | **device_index** | a value previously returned from [SDL_JoystickAttachVirtual](SDL_JoystickAttachVirtual)(). |
 
 ## Return Value
 

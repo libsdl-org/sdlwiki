@@ -18,11 +18,11 @@ SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom
 
 |        |            |                                                                                    |
 | ------ | ---------- | ---------------------------------------------------------------------------------- |
-| void * | **pixels** | a pointer to existing pixel data                                                   |
-| int    | **width**  | the width of the surface                                                           |
-| int    | **height** | the height of the surface                                                          |
-| int    | **depth**  | the depth of the surface in bits                                                   |
-| int    | **pitch**  | the pitch of the surface in bytes                                                  |
+| void * | **pixels** | a pointer to existing pixel data.                                                  |
+| int    | **width**  | the width of the surface.                                                          |
+| int    | **height** | the height of the surface.                                                         |
+| int    | **depth**  | the depth of the surface in bits.                                                  |
+| int    | **pitch**  | the pitch of the surface in bytes.                                                 |
 | Uint32 | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value

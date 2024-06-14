@@ -15,9 +15,9 @@ int SDL_HapticRumbleStop(SDL_Haptic * haptic);
 
 ## Function Parameters
 
-|                            |            |                                                |
-| -------------------------- | ---------- | ---------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the haptic device to stop the rumble effect on |
+|                            |            |                                                 |
+| -------------------------- | ---------- | ----------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the haptic device to stop the rumble effect on. |
 
 ## Return Value
 

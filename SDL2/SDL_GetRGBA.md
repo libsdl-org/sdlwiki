@@ -18,14 +18,14 @@ void SDL_GetRGBA(Uint32 pixel,
 
 ## Function Parameters
 
-|                                            |            |                                                                                    |
-| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
-| Uint32                                     | **pixel**  | a pixel value                                                                      |
-| const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the format of the pixel |
-| Uint8 *                                    | **r**      | a pointer filled in with the red component                                         |
-| Uint8 *                                    | **g**      | a pointer filled in with the green component                                       |
-| Uint8 *                                    | **b**      | a pointer filled in with the blue component                                        |
-| Uint8 *                                    | **a**      | a pointer filled in with the alpha component                                       |
+|                                            |            |                                                                                     |
+| ------------------------------------------ | ---------- | ----------------------------------------------------------------------------------- |
+| Uint32                                     | **pixel**  | a pixel value.                                                                      |
+| const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the format of the pixel. |
+| Uint8 *                                    | **r**      | a pointer filled in with the red component.                                         |
+| Uint8 *                                    | **g**      | a pointer filled in with the green component.                                       |
+| Uint8 *                                    | **b**      | a pointer filled in with the blue component.                                        |
+| Uint8 *                                    | **a**      | a pointer filled in with the alpha component.                                       |
 
 ## Remarks
 

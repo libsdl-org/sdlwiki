@@ -17,13 +17,13 @@ int SDL_CreateWindowAndRenderer(
 
 ## Function Parameters
 
-|                                 |                  |                                                                                  |
-| ------------------------------- | ---------------- | -------------------------------------------------------------------------------- |
-| int                             | **width**        | the width of the window                                                          |
-| int                             | **height**       | the height of the window                                                         |
-| Uint32                          | **window_flags** | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow)()) |
-| [SDL_Window](SDL_Window) **     | **window**       | a pointer filled with the window, or NULL on error                               |
-| [SDL_Renderer](SDL_Renderer) ** | **renderer**     | a pointer filled with the renderer, or NULL on error                             |
+|                                 |                  |                                                                                   |
+| ------------------------------- | ---------------- | --------------------------------------------------------------------------------- |
+| int                             | **width**        | the width of the window.                                                          |
+| int                             | **height**       | the height of the window.                                                         |
+| Uint32                          | **window_flags** | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow)()). |
+| [SDL_Window](SDL_Window) **     | **window**       | a pointer filled with the window, or NULL on error.                               |
+| [SDL_Renderer](SDL_Renderer) ** | **renderer**     | a pointer filled with the renderer, or NULL on error.                             |
 
 ## Return Value
 

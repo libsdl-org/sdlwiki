@@ -16,10 +16,10 @@ SDL_bool SDL_GameControllerHasButton(SDL_GameController *gamecontroller,
 
 ## Function Parameters
 
-|                                                      |                    |                                                                                     |
-| ---------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------- |
-| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller                                                                   |
-| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
+|                                                      |                    |                                                                                      |
+| ---------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
+| [SDL_GameController](SDL_GameController) *           | **gamecontroller** | a game controller.                                                                   |
+| [SDL_GameControllerButton](SDL_GameControllerButton) | **button**         | a button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value). |
 
 ## Return Value
 

@@ -16,16 +16,16 @@ Uint32 SDL_MapRGB(const SDL_PixelFormat * format,
 
 ## Function Parameters
 
-|                                            |            |                                                                             |
-| ------------------------------------------ | ---------- | --------------------------------------------------------------------------- |
-| const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the pixel format |
-| Uint8                                      | **r**      | the red component of the pixel in the range 0-255                           |
-| Uint8                                      | **g**      | the green component of the pixel in the range 0-255                         |
-| Uint8                                      | **b**      | the blue component of the pixel in the range 0-255                          |
+|                                            |            |                                                                              |
+| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------- |
+| const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the pixel format. |
+| Uint8                                      | **r**      | the red component of the pixel in the range 0-255.                           |
+| Uint8                                      | **g**      | the green component of the pixel in the range 0-255.                         |
+| Uint8                                      | **b**      | the blue component of the pixel in the range 0-255.                          |
 
 ## Return Value
 
-(Uint32) Returns a pixel value
+(Uint32) Returns a pixel value.
 
 ## Remarks
 

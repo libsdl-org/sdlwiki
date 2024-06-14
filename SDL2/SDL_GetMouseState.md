@@ -15,10 +15,10 @@ Uint32 SDL_GetMouseState(int *x, int *y);
 
 ## Function Parameters
 
-|       |       |                                                                            |
-| ----- | ----- | -------------------------------------------------------------------------- |
-| int * | **x** | the x coordinate of the mouse cursor position relative to the focus window |
-| int * | **y** | the y coordinate of the mouse cursor position relative to the focus window |
+|       |       |                                                                             |
+| ----- | ----- | --------------------------------------------------------------------------- |
+| int * | **x** | the x coordinate of the mouse cursor position relative to the focus window. |
+| int * | **y** | the y coordinate of the mouse cursor position relative to the focus window. |
 
 ## Return Value
 

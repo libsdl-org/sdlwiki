@@ -18,10 +18,10 @@ SDL_Surface* SDL_CreateRGBSurfaceWithFormat
 
 |        |            |                                                                                    |
 | ------ | ---------- | ---------------------------------------------------------------------------------- |
-| Uint32 | **flags**  | the flags are unused and should be set to 0                                        |
-| int    | **width**  | the width of the surface                                                           |
-| int    | **height** | the height of the surface                                                          |
-| int    | **depth**  | the depth of the surface in bits                                                   |
+| Uint32 | **flags**  | the flags are unused and should be set to 0.                                       |
+| int    | **width**  | the width of the surface.                                                          |
+| int    | **height** | the height of the surface.                                                         |
+| int    | **depth**  | the depth of the surface in bits.                                                  |
 | Uint32 | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value

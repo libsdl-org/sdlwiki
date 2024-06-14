@@ -15,9 +15,9 @@ SDL_JoystickID SDL_JoystickInstanceID(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                                |              |                                                                           |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+|                                |              |                                                                            |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information. |
 
 ## Return Value
 

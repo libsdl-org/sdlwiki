@@ -16,10 +16,10 @@ int SDL_RenderFillRect(SDL_Renderer * renderer,
 
 ## Function Parameters
 
-|                                |              |                                                                                                                |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                          |
-| const [SDL_Rect](SDL_Rect) *   | **rect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to fill, or NULL for the entire rendering target |
+|                                |              |                                                                                                                 |
+| ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                          |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to fill, or NULL for the entire rendering target. |
 
 ## Return Value
 

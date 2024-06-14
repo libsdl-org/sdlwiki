@@ -15,9 +15,9 @@ const Uint8* SDL_GetKeyboardState(int *numkeys);
 
 ## Function Parameters
 
-|       |             |                                                        |
-| ----- | ----------- | ------------------------------------------------------ |
-| int * | **numkeys** | if non-NULL, receives the length of the returned array |
+|       |             |                                                         |
+| ----- | ----------- | ------------------------------------------------------- |
+| int * | **numkeys** | if non-NULL, receives the length of the returned array. |
 
 ## Return Value
 

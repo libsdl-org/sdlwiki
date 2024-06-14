@@ -15,9 +15,9 @@ SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller);
 
 ## Function Parameters
 
-|                                            |                    |                                                                                                        |
-| ------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller** | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
+|                                            |                    |                                                                                                         |
+| ------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)(). |
 
 ## Return Value
 

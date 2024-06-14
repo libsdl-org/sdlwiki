@@ -16,10 +16,10 @@ int SDL_SetWindowDisplayMode(SDL_Window * window,
 
 ## Function Parameters
 
-|                                            |            |                                                                                                                                                                 |
-| ------------------------------------------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) *                 | **window** | the window to affect                                                                                                                                            |
-| const [SDL_DisplayMode](SDL_DisplayMode) * | **mode**   | the [SDL_DisplayMode](SDL_DisplayMode) structure representing the mode to use, or NULL to use the window's dimensions and the desktop's format and refresh rate |
+|                                            |            |                                                                                                                                                                  |
+| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *                 | **window** | the window to affect.                                                                                                                                            |
+| const [SDL_DisplayMode](SDL_DisplayMode) * | **mode**   | the [SDL_DisplayMode](SDL_DisplayMode) structure representing the mode to use, or NULL to use the window's dimensions and the desktop's format and refresh rate. |
 
 ## Return Value
 

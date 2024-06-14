@@ -18,12 +18,12 @@ int SDL_GetWindowGammaRamp(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |            |                                                                                                              |
-| -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------ |
-| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose gamma ramp will be queried                                       |
-| Uint16 *                   | **red**    | a 256 element array of 16-bit quantities filled in with the translation table for the red channel, or NULL   |
-| Uint16 *                   | **green**  | a 256 element array of 16-bit quantities filled in with the translation table for the green channel, or NULL |
-| Uint16 *                   | **blue**   | a 256 element array of 16-bit quantities filled in with the translation table for the blue channel, or NULL  |
+|                            |            |                                                                                                               |
+| -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window used to select the display whose gamma ramp will be queried.                                       |
+| Uint16 *                   | **red**    | a 256 element array of 16-bit quantities filled in with the translation table for the red channel, or NULL.   |
+| Uint16 *                   | **green**  | a 256 element array of 16-bit quantities filled in with the translation table for the green channel, or NULL. |
+| Uint16 *                   | **blue**   | a 256 element array of 16-bit quantities filled in with the translation table for the blue channel, or NULL.  |
 
 ## Return Value
 

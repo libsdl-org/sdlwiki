@@ -16,10 +16,10 @@ int SDL_SetSurfacePalette(SDL_Surface * surface,
 
 ## Function Parameters
 
-|                              |             |                                                    |
-| ---------------------------- | ----------- | -------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update |
-| [SDL_Palette](SDL_Palette) * | **palette** | the [SDL_Palette](SDL_Palette) structure to use    |
+|                              |             |                                                     |
+| ---------------------------- | ----------- | --------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update. |
+| [SDL_Palette](SDL_Palette) * | **palette** | the [SDL_Palette](SDL_Palette) structure to use.    |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ char * SDL_GameControllerMapping(SDL_GameController *gamecontroller);
 
 ## Function Parameters
 
-|                                            |                    |                                                             |
-| ------------------------------------------ | ------------------ | ----------------------------------------------------------- |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller you want to get the current mapping for |
+|                                            |                    |                                                              |
+| ------------------------------------------ | ------------------ | ------------------------------------------------------------ |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller you want to get the current mapping for. |
 
 ## Return Value
 

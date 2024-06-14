@@ -15,9 +15,9 @@ void SDL_ClearQueuedAudio(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|                                        |         |                                                 |
-| -------------------------------------- | ------- | ----------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the device ID of which to clear the audio queue |
+|                                        |         |                                                  |
+| -------------------------------------- | ------- | ------------------------------------------------ |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | the device ID of which to clear the audio queue. |
 
 ## Remarks
 

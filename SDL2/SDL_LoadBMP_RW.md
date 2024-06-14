@@ -16,10 +16,10 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops * src,
 
 ## Function Parameters
 
-|                          |             |                                               |
-| ------------------------ | ----------- | --------------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **src**     | the data stream for the surface               |
-| int                      | **freesrc** | non-zero to close the stream after being read |
+|                          |             |                                                |
+| ------------------------ | ----------- | ---------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src**     | the data stream for the surface.               |
+| int                      | **freesrc** | non-zero to close the stream after being read. |
 
 ## Return Value
 

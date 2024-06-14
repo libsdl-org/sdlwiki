@@ -15,9 +15,9 @@ SDL_Sensor* SDL_SensorOpen(int device_index);
 
 ## Function Parameters
 
-|     |                  |                    |
-| --- | ---------------- | ------------------ |
-| int | **device_index** | The sensor to open |
+|     |                  |                     |
+| --- | ---------------- | ------------------- |
+| int | **device_index** | The sensor to open. |
 
 ## Return Value
 

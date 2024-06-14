@@ -15,9 +15,9 @@ int SDL_SemPost(SDL_sem * sem);
 
 ## Function Parameters
 
-|                      |         |                            |
-| -------------------- | ------- | -------------------------- |
-| [SDL_sem](SDL_sem) * | **sem** | the semaphore to increment |
+|                      |         |                             |
+| -------------------- | ------- | --------------------------- |
+| [SDL_sem](SDL_sem) * | **sem** | the semaphore to increment. |
 
 ## Return Value
 

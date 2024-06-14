@@ -16,10 +16,10 @@ int SDL_HapticSetAutocenter(SDL_Haptic * haptic,
 
 ## Function Parameters
 
-|                            |                |                                                             |
-| -------------------------- | -------------- | ----------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic**     | the [SDL_Haptic](SDL_Haptic) device to set autocentering on |
-| int                        | **autocenter** | value to set autocenter to (0-100)                          |
+|                            |                |                                                              |
+| -------------------------- | -------------- | ------------------------------------------------------------ |
+| [SDL_Haptic](SDL_Haptic) * | **haptic**     | the [SDL_Haptic](SDL_Haptic) device to set autocentering on. |
+| int                        | **autocenter** | value to set autocenter to (0-100).                          |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ SDL_sem* SDL_CreateSemaphore(Uint32 initial_value);
 
 ## Function Parameters
 
-|        |                   |                                     |
-| ------ | ----------------- | ----------------------------------- |
-| Uint32 | **initial_value** | the starting value of the semaphore |
+|        |                   |                                      |
+| ------ | ----------------- | ------------------------------------ |
+| Uint32 | **initial_value** | the starting value of the semaphore. |
 
 ## Return Value
 

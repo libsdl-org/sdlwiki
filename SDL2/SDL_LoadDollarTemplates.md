@@ -15,10 +15,10 @@ int SDL_LoadDollarTemplates(SDL_TouchID touchId, SDL_RWops *src);
 
 ## Function Parameters
 
-|                            |             |                                       |
-| -------------------------- | ----------- | ------------------------------------- |
-| [SDL_TouchID](SDL_TouchID) | **touchId** | a touch id                            |
-| [SDL_RWops](SDL_RWops) *   | **src**     | a [SDL_RWops](SDL_RWops) to load from |
+|                            |             |                                        |
+| -------------------------- | ----------- | -------------------------------------- |
+| [SDL_TouchID](SDL_TouchID) | **touchId** | a touch id.                            |
+| [SDL_RWops](SDL_RWops) *   | **src**     | a [SDL_RWops](SDL_RWops) to load from. |
 
 ## Return Value
 

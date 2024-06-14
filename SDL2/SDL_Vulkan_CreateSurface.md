@@ -17,11 +17,11 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
 
 ## Function Parameters
 
-|                            |              |                                                                        |
-| -------------------------- | ------------ | ---------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**   | The window to which to attach the Vulkan surface                       |
-| VkInstance                 | **instance** | The Vulkan instance handle                                             |
-| VkSurfaceKHR *             | **surface**  | A pointer to a VkSurfaceKHR handle to output the newly created surface |
+|                            |              |                                                                         |
+| -------------------------- | ------------ | ----------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**   | The window to which to attach the Vulkan surface.                       |
+| VkInstance                 | **instance** | The Vulkan instance handle.                                             |
+| VkSurfaceKHR *             | **surface**  | A pointer to a VkSurfaceKHR handle to output the newly created surface. |
 
 ## Return Value
 

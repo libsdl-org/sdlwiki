@@ -15,10 +15,10 @@ int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
 
 ## Function Parameters
 
-|                          |            |                                               |
-| ------------------------ | ---------- | --------------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **rw**     | the data stream for the mappings to be added  |
-| int                      | **freerw** | non-zero to close the stream after being read |
+|                          |            |                                                |
+| ------------------------ | ---------- | ---------------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **rw**     | the data stream for the mappings to be added.  |
+| int                      | **freerw** | non-zero to close the stream after being read. |
 
 ## Return Value
 

@@ -16,10 +16,10 @@ SDL_RWops* SDL_RWFromConstMem(const void *mem,
 
 ## Function Parameters
 
-|              |          |                                                                          |
-| ------------ | -------- | ------------------------------------------------------------------------ |
-| const void * | **mem**  | a pointer to a read-only buffer to feed an [SDL_RWops](SDL_RWops) stream |
-| int          | **size** | the buffer size, in bytes                                                |
+|              |          |                                                                           |
+| ------------ | -------- | ------------------------------------------------------------------------- |
+| const void * | **mem**  | a pointer to a read-only buffer to feed an [SDL_RWops](SDL_RWops) stream. |
+| int          | **size** | the buffer size, in bytes.                                                |
 
 ## Return Value
 

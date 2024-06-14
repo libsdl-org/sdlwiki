@@ -15,9 +15,9 @@ Uint8 SDL_ReadU8(SDL_RWops * src);
 
 ## Function Parameters
 
-|                          |         |                                         |
-| ------------------------ | ------- | --------------------------------------- |
-| [SDL_RWops](SDL_RWops) * | **src** | the [SDL_RWops](SDL_RWops) to read from |
+|                          |         |                                          |
+| ------------------------ | ------- | ---------------------------------------- |
+| [SDL_RWops](SDL_RWops) * | **src** | the [SDL_RWops](SDL_RWops) to read from. |
 
 ## Return Value
 

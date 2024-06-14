@@ -15,9 +15,9 @@ int SDL_AudioInit(const char *driver_name);
 
 ## Function Parameters
 
-|              |                 |                                      |
-| ------------ | --------------- | ------------------------------------ |
-| const char * | **driver_name** | the name of the desired audio driver |
+|              |                 |                                       |
+| ------------ | --------------- | ------------------------------------- |
+| const char * | **driver_name** | the name of the desired audio driver. |
 
 ## Return Value
 

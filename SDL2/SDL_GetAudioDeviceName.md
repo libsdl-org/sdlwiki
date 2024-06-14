@@ -16,10 +16,10 @@ const char* SDL_GetAudioDeviceName(int index,
 
 ## Function Parameters
 
-|     |               |                                                                                                                    |
-| --- | ------------- | ------------------------------------------------------------------------------------------------------------------ |
-| int | **index**     | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
-| int | **iscapture** | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
+|     |               |                                                                                                                     |
+| --- | ------------- | ------------------------------------------------------------------------------------------------------------------- |
+| int | **index**     | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1. |
+| int | **iscapture** | non-zero to query the list of recording devices, zero to query the list of output devices.                          |
 
 ## Return Value
 

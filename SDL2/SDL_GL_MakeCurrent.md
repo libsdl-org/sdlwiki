@@ -16,10 +16,10 @@ int SDL_GL_MakeCurrent(SDL_Window * window,
 
 ## Function Parameters
 
-|                                |             |                                                 |
-| ------------------------------ | ----------- | ----------------------------------------------- |
-| [SDL_Window](SDL_Window) *     | **window**  | the window to associate with the context        |
-| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to associate with the window |
+|                                |             |                                                  |
+| ------------------------------ | ----------- | ------------------------------------------------ |
+| [SDL_Window](SDL_Window) *     | **window**  | the window to associate with the context.        |
+| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to associate with the window. |
 
 ## Return Value
 
