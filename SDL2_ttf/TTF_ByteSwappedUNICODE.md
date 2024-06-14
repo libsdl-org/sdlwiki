@@ -15,9 +15,9 @@ void TTF_ByteSwappedUNICODE(SDL_bool swapped);
 
 ## Function Parameters
 
-|          |             |                                                 |
-| -------- | ----------- | ----------------------------------------------- |
-| SDL_bool | **swapped** | boolean to indicate whether text is byteswapped |
+|          |             |                                                  |
+| -------- | ----------- | ------------------------------------------------ |
+| SDL_bool | **swapped** | boolean to indicate whether text is byteswapped. |
 
 ## Remarks
 
