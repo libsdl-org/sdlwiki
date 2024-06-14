@@ -18,7 +18,7 @@ int SDLNet_ResolveHost(IPaddress *address, const char *host, Uint16 port);
 |              |             |                                                             |
 | ------------ | ----------- | ----------------------------------------------------------- |
 | IPaddress *  | **address** | to be filled in with the resolved address and port.         |
-| const char * | **host**    | the hostname to lookup (like "libsdl.org")                  |
+| const char * | **host**    | the hostname to lookup (like "libsdl.org").                 |
 | Uint16       | **port**    | the port intended to be connected to, to fill into address. |
 
 ## Return Value

@@ -22,7 +22,7 @@ IPaddress * SDLNet_UDP_GetPeerAddress(UDPsocket sock, int channel);
 
 ## Return Value
 
-(IPaddress *) Returns the address bound to the socket's channel, or
+(IPaddress *) Returns the address bound to the socket's channel, or.
 
 ## Remarks
 

@@ -15,14 +15,14 @@ int SDLNet_GetLocalAddresses(IPaddress *addresses, int maxcount);
 
 ## Function Parameters
 
-|             |               |                                                         |
-| ----------- | ------------- | ------------------------------------------------------- |
-| IPaddress * | **addresses** | where to store the returned information.                |
-| int         | **maxcount**  | the number of results that can be stored at `addresses` |
+|             |               |                                                          |
+| ----------- | ------------- | -------------------------------------------------------- |
+| IPaddress * | **addresses** | where to store the returned information.                 |
+| int         | **maxcount**  | the number of results that can be stored at `addresses`. |
 
 ## Return Value
 
-(int) Returns the number of addresses saved in `addresses`
+(int) Returns the number of addresses saved in `addresses`.
 
 ## Version
 
