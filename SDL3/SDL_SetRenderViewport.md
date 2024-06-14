@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
   SDL_SetRenderViewport(renderer, &VPrect);
 
   SDL_SetRenderDrawColorFloat(renderer, 1.0, 0.0, 0.0, 1.0);
-  SDL_RenderFillRect(renderer, nullptr);
+  SDL_RenderFillRect(renderer, NULL);
 
   SDL_SetRenderDrawColorFloat(renderer, 0.0, 1.0, 1.0, 1.0);
   for (int i = 0; i < 8; i++) {
