@@ -21,7 +21,7 @@ int Mix_GroupOldest(int tag);
 
 ## Return Value
 
-(int) Returns the "oldest" sample playing in a group of channels
+(int) Returns the "oldest" sample playing in a group of channels.
 
 ## Remarks
 

@@ -15,13 +15,13 @@ int Mix_SetMusicCMD(const char *command);
 
 ## Function Parameters
 
-|              |             |         |
-| ------------ | ----------- | ------- |
-| const char * | **command** | command |
+|              |             |          |
+| ------------ | ----------- | -------- |
+| const char * | **command** | command. |
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

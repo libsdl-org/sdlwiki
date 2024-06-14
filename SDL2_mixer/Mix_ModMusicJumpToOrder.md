@@ -15,9 +15,9 @@ int Mix_ModMusicJumpToOrder(int order);
 
 ## Function Parameters
 
-|     |           |       |
-| --- | --------- | ----- |
-| int | **order** | order |
+|     |           |        |
+| --- | --------- | ------ |
+| int | **order** | order. |
 
 ## Return Value
 

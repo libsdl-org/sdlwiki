@@ -21,7 +21,7 @@ int Mix_SetTimidityCfg(const char *path);
 
 ## Return Value
 
-(int) Returns 1 if successful, 0 on error
+(int) Returns 1 if successful, 0 on error.
 
 ## Remarks
 

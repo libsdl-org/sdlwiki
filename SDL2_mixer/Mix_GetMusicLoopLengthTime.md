@@ -22,7 +22,7 @@ double Mix_GetMusicLoopLengthTime(Mix_Music *music);
 ## Return Value
 
 (double) Returns -1.0 if this feature is not used for this music or not
-supported for some codec
+supported for some codec.
 
 ## Remarks
 

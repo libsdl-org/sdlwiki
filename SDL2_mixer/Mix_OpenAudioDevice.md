@@ -22,7 +22,7 @@ int Mix_OpenAudioDevice(int frequency, Uint16 format, int channels, int chunksiz
 | int          | **channels**        | number of channels (1 is mono, 2 is stereo, etc).                            |
 | int          | **chunksize**       | audio buffer size in sample FRAMES (total samples divided by channel count). |
 | const char * | **device**          | the device name to open, or NULL to choose a reasonable default.             |
-| int          | **allowed_changes** | Allow change flags (see SDL_AUDIO_ALLOW_* flags)                             |
+| int          | **allowed_changes** | Allow change flags (see SDL_AUDIO_ALLOW_* flags).                            |
 
 ## Return Value
 
