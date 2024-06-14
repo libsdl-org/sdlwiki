@@ -22,7 +22,7 @@ int TTF_SetFontSize(TTF_Font *font, int ptsize);
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

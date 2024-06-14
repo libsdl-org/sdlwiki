@@ -15,7 +15,7 @@ int TTF_Version(void);
 
 ## Return Value
 
-(int) Returns SDL_ttf version
+(int) Returns SDL_ttf version.
 
 ## Version
 
