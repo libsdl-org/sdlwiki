@@ -23,7 +23,7 @@ int Mix_GroupChannels(int from, int to, int tag);
 
 ## Return Value
 
-(int) Returns 0 if successful, negative on error
+(int) Returns 0 if successful, negative on error.
 
 ## Remarks
 

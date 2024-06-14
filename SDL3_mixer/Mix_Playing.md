@@ -15,9 +15,9 @@ int Mix_Playing(int channel);
 
 ## Function Parameters
 
-|     |             |         |
-| --- | ----------- | ------- |
-| int | **channel** | channel |
+|     |             |          |
+| --- | ----------- | -------- |
+| int | **channel** | channel. |
 
 ## Return Value
 

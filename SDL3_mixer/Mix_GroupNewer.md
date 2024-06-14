@@ -21,7 +21,7 @@ int Mix_GroupNewer(int tag);
 
 ## Return Value
 
-(int) Returns the "most recent" sample playing in a group of channels
+(int) Returns the "most recent" sample playing in a group of channels.
 
 ## Remarks
 

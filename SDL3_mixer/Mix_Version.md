@@ -15,7 +15,7 @@ int Mix_Version(void);
 
 ## Return Value
 
-(int) Returns SDL_mixer version
+(int) Returns SDL_mixer version.
 
 ## Version
 

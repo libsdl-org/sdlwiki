@@ -19,8 +19,8 @@ int Mix_RegisterEffect(int chan, Mix_EffectFunc_t f, Mix_EffectDone_t d, void *a
 | ------------------------------------ | -------- | ------------------------------------------------------------------------------ |
 | int                                  | **chan** | the channel to register an effect to, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
 | [Mix_EffectFunc_t](Mix_EffectFunc_t) | **f**    | effect the callback to run when more of this channel is to be mixed.           |
-| [Mix_EffectDone_t](Mix_EffectDone_t) | **d**    | effect done callback                                                           |
-| void *                               | **arg**  | argument                                                                       |
+| [Mix_EffectDone_t](Mix_EffectDone_t) | **d**    | effect done callback.                                                          |
+| void *                               | **arg**  | argument.                                                                      |
 
 ## Return Value
 
