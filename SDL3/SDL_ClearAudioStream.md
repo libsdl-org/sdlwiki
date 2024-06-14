@@ -15,9 +15,9 @@ int SDL_ClearAudioStream(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                                      |            |                           |
-| ------------------------------------ | ---------- | ------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to clear |
+|                                      |            |                            |
+| ------------------------------------ | ---------- | -------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to clear. |
 
 ## Return Value
 

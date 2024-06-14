@@ -15,13 +15,13 @@ const SDL_DisplayMode* SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID display
 
 ## Function Parameters
 
-|                                |                                |                                                                                    |
-| ------------------------------ | ------------------------------ | ---------------------------------------------------------------------------------- |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID**                  | the instance ID of the display to query                                            |
-| int                            | **w**                          | the width in pixels of the desired display mode                                    |
-| int                            | **h**                          | the height in pixels of the desired display mode                                   |
-| float                          | **refresh_rate**               | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate |
-| [SDL_bool](SDL_bool)           | **include_high_density_modes** | Boolean to include high density modes in the search                                |
+|                                |                                |                                                                                     |
+| ------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID**                  | the instance ID of the display to query.                                            |
+| int                            | **w**                          | the width in pixels of the desired display mode.                                    |
+| int                            | **h**                          | the height in pixels of the desired display mode.                                   |
+| float                          | **refresh_rate**               | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate. |
+| [SDL_bool](SDL_bool)           | **include_high_density_modes** | boolean to include high density modes in the search.                                |
 
 ## Return Value
 

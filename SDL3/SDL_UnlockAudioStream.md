@@ -17,7 +17,7 @@ int SDL_UnlockAudioStream(SDL_AudioStream *stream);
 
 |                                      |            |                             |
 | ------------------------------------ | ---------- | --------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to unlock. |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to unlock. |
 
 ## Return Value
 

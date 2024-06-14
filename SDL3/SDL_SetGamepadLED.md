@@ -15,12 +15,12 @@ int SDL_SetGamepadLED(SDL_Gamepad *gamepad, Uint8 red, Uint8 green, Uint8 blue);
 
 ## Function Parameters
 
-|                              |             |                                |
-| ---------------------------- | ----------- | ------------------------------ |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | The gamepad to update          |
-| Uint8                        | **red**     | The intensity of the red LED   |
-| Uint8                        | **green**   | The intensity of the green LED |
-| Uint8                        | **blue**    | The intensity of the blue LED  |
+|                              |             |                                 |
+| ---------------------------- | ----------- | ------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad to update.          |
+| Uint8                        | **red**     | the intensity of the red LED.   |
+| Uint8                        | **green**   | the intensity of the green LED. |
+| Uint8                        | **blue**    | the intensity of the blue LED.  |
 
 ## Return Value
 

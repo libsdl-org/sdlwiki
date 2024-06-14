@@ -15,10 +15,10 @@ int SDL_GetDisplayUsableBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 
 ## Function Parameters
 
-|                                |               |                                                                      |
-| ------------------------------ | ------------- | -------------------------------------------------------------------- |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query                              |
-| [SDL_Rect](SDL_Rect) *         | **rect**      | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+|                                |               |                                                                       |
+| ------------------------------ | ------------- | --------------------------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query.                              |
+| [SDL_Rect](SDL_Rect) *         | **rect**      | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds. |
 
 ## Return Value
 

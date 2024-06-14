@@ -15,9 +15,9 @@ void SDL_LockRWLockForReading(SDL_RWLock *rwlock);
 
 ## Function Parameters
 
-|                            |            |                             |
-| -------------------------- | ---------- | --------------------------- |
-| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the read/write lock to lock |
+|                            |            |                              |
+| -------------------------- | ---------- | ---------------------------- |
+| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the read/write lock to lock. |
 
 ## Remarks
 

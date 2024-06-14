@@ -15,9 +15,9 @@ int SDL_RestoreWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                       |
-| -------------------------- | ---------- | --------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to restore |
+|                            |            |                        |
+| -------------------------- | ---------- | ---------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to restore. |
 
 ## Return Value
 

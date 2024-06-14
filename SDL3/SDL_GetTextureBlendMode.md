@@ -15,10 +15,10 @@ int SDL_GetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode *blendMode);
 
 ## Function Parameters
 
-|                                  |               |                                                                     |
-| -------------------------------- | ------------- | ------------------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) *     | **texture**   | the texture to query                                                |
-| [SDL_BlendMode](SDL_BlendMode) * | **blendMode** | a pointer filled in with the current [SDL_BlendMode](SDL_BlendMode) |
+|                                  |               |                                                                      |
+| -------------------------------- | ------------- | -------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) *     | **texture**   | the texture to query.                                                |
+| [SDL_BlendMode](SDL_BlendMode) * | **blendMode** | a pointer filled in with the current [SDL_BlendMode](SDL_BlendMode). |
 
 ## Return Value
 

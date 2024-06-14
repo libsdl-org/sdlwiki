@@ -19,16 +19,16 @@ int SDL_UpdateYUVTexture(SDL_Texture *texture,
 
 ## Function Parameters
 
-|                              |             |                                                                                      |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------------------ |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                                                |
-| const [SDL_Rect](SDL_Rect) * | **rect**    | a pointer to the rectangle of pixels to update, or NULL to update the entire texture |
-| const Uint8 *                | **Yplane**  | the raw pixel data for the Y plane                                                   |
-| int                          | **Ypitch**  | the number of bytes between rows of pixel data for the Y plane                       |
-| const Uint8 *                | **Uplane**  | the raw pixel data for the U plane                                                   |
-| int                          | **Upitch**  | the number of bytes between rows of pixel data for the U plane                       |
-| const Uint8 *                | **Vplane**  | the raw pixel data for the V plane                                                   |
-| int                          | **Vpitch**  | the number of bytes between rows of pixel data for the V plane                       |
+|                              |             |                                                                                       |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update.                                                                |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | a pointer to the rectangle of pixels to update, or NULL to update the entire texture. |
+| const Uint8 *                | **Yplane**  | the raw pixel data for the Y plane.                                                   |
+| int                          | **Ypitch**  | the number of bytes between rows of pixel data for the Y plane.                       |
+| const Uint8 *                | **Uplane**  | the raw pixel data for the U plane.                                                   |
+| int                          | **Upitch**  | the number of bytes between rows of pixel data for the U plane.                       |
+| const Uint8 *                | **Vplane**  | the raw pixel data for the V plane.                                                   |
+| int                          | **Vpitch**  | the number of bytes between rows of pixel data for the V plane.                       |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ char * SDL_GetGamepadMapping(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                              |             |                                                     |
-| ---------------------------- | ----------- | --------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad you want to get the current mapping for |
+|                              |             |                                                      |
+| ---------------------------- | ----------- | ---------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad you want to get the current mapping for. |
 
 ## Return Value
 

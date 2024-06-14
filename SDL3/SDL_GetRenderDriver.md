@@ -15,9 +15,9 @@ const char* SDL_GetRenderDriver(int index);
 
 ## Function Parameters
 
-|     |           |                                                                                                                        |
-| --- | --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| int | **index** | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)() - 1 |
+|     |           |                                                                                                                         |
+| --- | --------- | ----------------------------------------------------------------------------------------------------------------------- |
+| int | **index** | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)() - 1. |
 
 ## Return Value
 

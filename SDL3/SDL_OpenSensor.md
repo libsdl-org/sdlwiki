@@ -15,9 +15,9 @@ SDL_Sensor* SDL_OpenSensor(SDL_SensorID instance_id);
 
 ## Function Parameters
 
-|                              |                 |                        |
-| ---------------------------- | --------------- | ---------------------- |
-| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID |
+|                              |                 |                         |
+| ---------------------------- | --------------- | ----------------------- |
+| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID. |
 
 ## Return Value
 

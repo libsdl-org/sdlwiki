@@ -17,8 +17,8 @@ int SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
 
 |                              |            |                                     |
 | ---------------------------- | ---------- | ----------------------------------- |
-| [SDL_Camera](SDL_Camera) *   | **camera** | opened camera device                |
-| [SDL_Surface](SDL_Surface) * | **frame**  | The video frame surface to release. |
+| [SDL_Camera](SDL_Camera) *   | **camera** | opened camera device.               |
+| [SDL_Surface](SDL_Surface) * | **frame**  | the video frame surface to release. |
 
 ## Return Value
 

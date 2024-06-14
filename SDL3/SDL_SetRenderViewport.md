@@ -15,10 +15,10 @@ int SDL_SetRenderViewport(SDL_Renderer *renderer, const SDL_Rect *rect);
 
 ## Function Parameters
 
-|                                |              |                                                                                                                    |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                              |
-| const [SDL_Rect](SDL_Rect) *   | **rect**     | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target |
+|                                |              |                                                                                                                     |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                              |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target. |
 
 ## Return Value
 

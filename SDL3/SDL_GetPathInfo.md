@@ -15,10 +15,10 @@ int SDL_GetPathInfo(const char *path, SDL_PathInfo *info);
 
 ## Function Parameters
 
-|                                |          |                                                                                                   |
-| ------------------------------ | -------- | ------------------------------------------------------------------------------------------------- |
-| const char *                   | **path** | the path to query                                                                                 |
-| [SDL_PathInfo](SDL_PathInfo) * | **info** | a pointer filled in with information about the path, or NULL to check for the existence of a file |
+|                                |          |                                                                                                    |
+| ------------------------------ | -------- | -------------------------------------------------------------------------------------------------- |
+| const char *                   | **path** | the path to query.                                                                                 |
+| [SDL_PathInfo](SDL_PathInfo) * | **info** | a pointer filled in with information about the path, or NULL to check for the existence of a file. |
 
 ## Return Value
 

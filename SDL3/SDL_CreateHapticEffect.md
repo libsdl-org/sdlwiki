@@ -15,10 +15,10 @@ int SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 
 ## Function Parameters
 
-|                                              |            |                                                                                                     |
-| -------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) *                   | **haptic** | an [SDL_Haptic](SDL_Haptic) device to create the effect on                                          |
-| const [SDL_HapticEffect](SDL_HapticEffect) * | **effect** | an [SDL_HapticEffect](SDL_HapticEffect) structure containing the properties of the effect to create |
+|                                              |            |                                                                                                      |
+| -------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *                   | **haptic** | an [SDL_Haptic](SDL_Haptic) device to create the effect on.                                          |
+| const [SDL_HapticEffect](SDL_HapticEffect) * | **effect** | an [SDL_HapticEffect](SDL_HapticEffect) structure containing the properties of the effect to create. |
 
 ## Return Value
 

@@ -15,13 +15,13 @@ int SDL_TryLockRWLockForWriting(SDL_RWLock *rwlock);
 
 ## Function Parameters
 
-|                            |            |                           |
-| -------------------------- | ---------- | ------------------------- |
-| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the rwlock to try to lock |
+|                            |            |                            |
+| -------------------------- | ---------- | -------------------------- |
+| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the rwlock to try to lock. |
 
 ## Return Value
 
-(int) Returns 0 or [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT)
+(int) Returns 0 or [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT).
 
 ## Remarks
 

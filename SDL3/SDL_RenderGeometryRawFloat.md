@@ -23,18 +23,18 @@ int SDL_RenderGeometryRawFloat(SDL_Renderer *renderer,
 
 |                                  |                  |                                                                                                                       |
 | -------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *   | **renderer**     | The rendering context.                                                                                                |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer**     | the rendering context.                                                                                                |
 | [SDL_Texture](SDL_Texture) *     | **texture**      | (optional) The SDL texture to use.                                                                                    |
-| const float *                    | **xy**           | Vertex positions                                                                                                      |
-| int                              | **xy_stride**    | Byte size to move from one element to the next element                                                                |
-| const [SDL_FColor](SDL_FColor) * | **color**        | Vertex colors (as [SDL_FColor](SDL_FColor))                                                                           |
-| int                              | **color_stride** | Byte size to move from one element to the next element                                                                |
-| const float *                    | **uv**           | Vertex normalized texture coordinates                                                                                 |
-| int                              | **uv_stride**    | Byte size to move from one element to the next element                                                                |
-| int                              | **num_vertices** | Number of vertices.                                                                                                   |
+| const float *                    | **xy**           | vertex positions.                                                                                                     |
+| int                              | **xy_stride**    | byte size to move from one element to the next element.                                                               |
+| const [SDL_FColor](SDL_FColor) * | **color**        | vertex colors (as [SDL_FColor](SDL_FColor)).                                                                          |
+| int                              | **color_stride** | byte size to move from one element to the next element.                                                               |
+| const float *                    | **uv**           | vertex normalized texture coordinates.                                                                                |
+| int                              | **uv_stride**    | byte size to move from one element to the next element.                                                               |
+| int                              | **num_vertices** | number of vertices.                                                                                                   |
 | const void *                     | **indices**      | (optional) An array of indices into the 'vertices' arrays, if NULL all vertices will be rendered in sequential order. |
-| int                              | **num_indices**  | Number of indices.                                                                                                    |
-| int                              | **size_indices** | Index size: 1 (byte), 2 (short), 4 (int)                                                                              |
+| int                              | **num_indices**  | number of indices.                                                                                                    |
+| int                              | **size_indices** | index size: 1 (byte), 2 (short), 4 (int).                                                                             |
 
 ## Return Value
 

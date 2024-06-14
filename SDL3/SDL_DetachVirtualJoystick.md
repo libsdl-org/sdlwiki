@@ -15,9 +15,9 @@ int SDL_DetachVirtualJoystick(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                                  |                 |                                                                                                             |
-| -------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------- |
-| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID, previously returned from [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)() |
+|                                  |                 |                                                                                                              |
+| -------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID, previously returned from [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)(). |
 
 ## Return Value
 

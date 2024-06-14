@@ -15,10 +15,10 @@ int SDL_SetSurfaceRLE(SDL_Surface *surface, int flag);
 
 ## Function Parameters
 
-|                              |             |                                                      |
-| ---------------------------- | ----------- | ---------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to optimize |
-| int                          | **flag**    | 0 to disable, non-zero to enable RLE acceleration    |
+|                              |             |                                                       |
+| ---------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to optimize. |
+| int                          | **flag**    | 0 to disable, non-zero to enable RLE acceleration.    |
 
 ## Return Value
 

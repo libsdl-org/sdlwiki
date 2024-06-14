@@ -15,9 +15,9 @@ int SDL_ShowWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                    |
-| -------------------------- | ---------- | ------------------ |
-| [SDL_Window](SDL_Window) * | **window** | the window to show |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to show. |
 
 ## Return Value
 

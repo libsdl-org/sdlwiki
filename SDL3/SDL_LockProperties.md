@@ -15,9 +15,9 @@ int SDL_LockProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|                                      |           |                        |
-| ------------------------------------ | --------- | ---------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to lock |
+|                                      |           |                         |
+| ------------------------------------ | --------- | ----------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to lock. |
 
 ## Return Value
 

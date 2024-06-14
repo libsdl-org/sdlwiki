@@ -20,16 +20,16 @@ int SDL_RenderGeometry(SDL_Renderer *renderer,
 
 |                                  |                  |                                                                                                                              |
 | -------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *   | **renderer**     | The rendering context.                                                                                                       |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer**     | the rendering context.                                                                                                       |
 | [SDL_Texture](SDL_Texture) *     | **texture**      | (optional) The SDL texture to use.                                                                                           |
-| const [SDL_Vertex](SDL_Vertex) * | **vertices**     | Vertices.                                                                                                                    |
-| int                              | **num_vertices** | Number of vertices.                                                                                                          |
+| const [SDL_Vertex](SDL_Vertex) * | **vertices**     | vertices.                                                                                                                    |
+| int                              | **num_vertices** | number of vertices.                                                                                                          |
 | const int *                      | **indices**      | (optional) An array of integer indices into the 'vertices' array, if NULL all vertices will be rendered in sequential order. |
-| int                              | **num_indices**  | Number of indices.                                                                                                           |
+| int                              | **num_indices**  | number of indices.                                                                                                           |
 
 ## Return Value
 
-(int) Returns 0 on success, or -1 if the operation is not supported
+(int) Returns 0 on success, or -1 if the operation is not supported.
 
 ## Version
 

@@ -15,9 +15,9 @@ SDL_JoystickID* SDL_GetJoysticks(int *count);
 
 ## Function Parameters
 
-|       |           |                                                           |
-| ----- | --------- | --------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of joysticks returned |
+|       |           |                                                            |
+| ----- | --------- | ---------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of joysticks returned. |
 
 ## Return Value
 

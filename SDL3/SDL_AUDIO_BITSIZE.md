@@ -15,13 +15,13 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Macro Parameters
 
-|       |                                             |
-| ----- | ------------------------------------------- |
-| **x** | an [SDL_AudioFormat](SDL_AudioFormat) value |
+|       |                                              |
+| ----- | -------------------------------------------- |
+| **x** | an [SDL_AudioFormat](SDL_AudioFormat) value. |
 
 ## Return Value
 
-Returns data size in bits
+Returns data size in bits.
 
 ## Remarks
 

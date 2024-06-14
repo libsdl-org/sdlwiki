@@ -17,11 +17,11 @@ Uint32 SDL_GetPenStatus(SDL_PenID instance_id, float *x, float *y, float *axes, 
 
 |                        |                 |                                                                                                                     |
 | ---------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_PenID](SDL_PenID) | **instance_id** | The pen to query.                                                                                                   |
-| float *                | **x**           | Out-mode parameter for pen x coordinate. May be NULL.                                                               |
-| float *                | **y**           | Out-mode parameter for pen y coordinate. May be NULL.                                                               |
-| float *                | **axes**        | Out-mode parameter for axis information. May be null. The axes are in the same order as [SDL_PenAxis](SDL_PenAxis). |
-| size_t                 | **num_axes**    | Maximum number of axes to write to "axes".                                                                          |
+| [SDL_PenID](SDL_PenID) | **instance_id** | the pen to query.                                                                                                   |
+| float *                | **x**           | out-mode parameter for pen x coordinate. May be NULL.                                                               |
+| float *                | **y**           | out-mode parameter for pen y coordinate. May be NULL.                                                               |
+| float *                | **axes**        | out-mode parameter for axis information. May be null. The axes are in the same order as [SDL_PenAxis](SDL_PenAxis). |
+| size_t                 | **num_axes**    | maximum number of axes to write to "axes".                                                                          |
 
 ## Return Value
 

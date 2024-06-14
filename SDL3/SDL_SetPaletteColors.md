@@ -17,12 +17,12 @@ int SDL_SetPaletteColors(SDL_Palette * palette,
 
 ## Function Parameters
 
-|                                |                |                                                                        |
-| ------------------------------ | -------------- | ---------------------------------------------------------------------- |
-| [SDL_Palette](SDL_Palette) *   | **palette**    | the [SDL_Palette](SDL_Palette) structure to modify                     |
-| const [SDL_Color](SDL_Color) * | **colors**     | an array of [SDL_Color](SDL_Color) structures to copy into the palette |
-| int                            | **firstcolor** | the index of the first palette entry to modify                         |
-| int                            | **ncolors**    | the number of entries to modify                                        |
+|                                |                |                                                                         |
+| ------------------------------ | -------------- | ----------------------------------------------------------------------- |
+| [SDL_Palette](SDL_Palette) *   | **palette**    | the [SDL_Palette](SDL_Palette) structure to modify.                     |
+| const [SDL_Color](SDL_Color) * | **colors**     | an array of [SDL_Color](SDL_Color) structures to copy into the palette. |
+| int                            | **firstcolor** | the index of the first palette entry to modify.                         |
+| int                            | **ncolors**    | the number of entries to modify.                                        |
 
 ## Return Value
 

@@ -18,10 +18,10 @@ int SDL_LoadWAV(const char *path, SDL_AudioSpec * spec,
 
 |                                  |               |                                                                                                                         |
 | -------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| const char *                     | **path**      | The file path of the WAV file to open.                                                                                  |
-| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | A pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return. |
-| Uint8 **                         | **audio_buf** | A pointer filled with the audio data, allocated by the function.                                                        |
-| Uint32 *                         | **audio_len** | A pointer filled with the length of the audio data buffer in bytes                                                      |
+| const char *                     | **path**      | the file path of the WAV file to open.                                                                                  |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | a pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return. |
+| Uint8 **                         | **audio_buf** | a pointer filled with the audio data, allocated by the function.                                                        |
+| Uint32 *                         | **audio_len** | a pointer filled with the length of the audio data buffer in bytes.                                                     |
 
 ## Return Value
 

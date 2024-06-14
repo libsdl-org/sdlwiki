@@ -15,9 +15,9 @@ SDL_GamepadType SDL_GetGamepadTypeFromString(const char *str);
 
 ## Function Parameters
 
-|              |         |                                                               |
-| ------------ | ------- | ------------------------------------------------------------- |
-| const char * | **str** | string representing a [SDL_GamepadType](SDL_GamepadType) type |
+|              |         |                                                                |
+| ------------ | ------- | -------------------------------------------------------------- |
+| const char * | **str** | string representing a [SDL_GamepadType](SDL_GamepadType) type. |
 
 ## Return Value
 

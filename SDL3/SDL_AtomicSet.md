@@ -15,10 +15,10 @@ int SDL_AtomicSet(SDL_AtomicInt *a, int v);
 
 ## Function Parameters
 
-|                                  |       |                                                                        |
-| -------------------------------- | ----- | ---------------------------------------------------------------------- |
-| [SDL_AtomicInt](SDL_AtomicInt) * | **a** | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified |
-| int                              | **v** | the desired value                                                      |
+|                                  |       |                                                                         |
+| -------------------------------- | ----- | ----------------------------------------------------------------------- |
+| [SDL_AtomicInt](SDL_AtomicInt) * | **a** | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified. |
+| int                              | **v** | the desired value.                                                      |
 
 ## Return Value
 

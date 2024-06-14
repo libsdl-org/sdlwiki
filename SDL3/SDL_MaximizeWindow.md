@@ -15,9 +15,9 @@ int SDL_MaximizeWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                        |
-| -------------------------- | ---------- | ---------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to maximize |
+|                            |            |                         |
+| -------------------------- | ---------- | ----------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to maximize. |
 
 ## Return Value
 

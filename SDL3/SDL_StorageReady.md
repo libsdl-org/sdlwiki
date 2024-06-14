@@ -15,14 +15,14 @@ SDL_bool SDL_StorageReady(SDL_Storage *storage);
 
 ## Function Parameters
 
-|                              |             |                              |
-| ---------------------------- | ----------- | ---------------------------- |
-| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to query |
+|                              |             |                               |
+| ---------------------------- | ----------- | ----------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to query. |
 
 ## Return Value
 
 ([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the container is
-ready, [SDL_FALSE](SDL_FALSE) otherwise
+ready, [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 

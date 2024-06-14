@@ -15,9 +15,9 @@ int SDL_GL_SwapWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                      |
-| -------------------------- | ---------- | -------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to change |
+|                            |            |                       |
+| -------------------------- | ---------- | --------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change. |
 
 ## Return Value
 

@@ -17,13 +17,13 @@ int SDL_RenderPoint(SDL_Renderer *renderer, float x, float y);
 
 |                                |              |                                         |
 | ------------------------------ | ------------ | --------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should draw a point. |
-| float                          | **x**        | The x coordinate of the point.          |
-| float                          | **y**        | The y coordinate of the point.          |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer which should draw a point. |
+| float                          | **x**        | the x coordinate of the point.          |
+| float                          | **y**        | the y coordinate of the point.          |
 
 ## Return Value
 
-(int) Returns 0 on success, or -1 on error
+(int) Returns 0 on success, or -1 on error.
 
 ## Version
 

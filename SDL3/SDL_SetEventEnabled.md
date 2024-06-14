@@ -15,10 +15,10 @@ void SDL_SetEventEnabled(Uint32 type, SDL_bool enabled);
 
 ## Function Parameters
 
-|                      |             |                                                                   |
-| -------------------- | ----------- | ----------------------------------------------------------------- |
-| Uint32               | **type**    | the type of event; see [SDL_EventType](SDL_EventType) for details |
-| [SDL_bool](SDL_bool) | **enabled** | whether to process the event or not                               |
+|                      |             |                                                                    |
+| -------------------- | ----------- | ------------------------------------------------------------------ |
+| Uint32               | **type**    | the type of event; see [SDL_EventType](SDL_EventType) for details. |
+| [SDL_bool](SDL_bool) | **enabled** | whether to process the event or not.                               |
 
 ## Version
 

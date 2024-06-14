@@ -15,10 +15,10 @@ SDL_bool SDL_ReadU16BE(SDL_IOStream *src, Uint16 *value);
 
 ## Function Parameters
 
-|                                |           |                                        |
-| ------------------------------ | --------- | -------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data     |
-| Uint16 *                       | **value** | a pointer filled in with the data read |
+|                                |           |                                         |
+| ------------------------------ | --------- | --------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
+| Uint16 *                       | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

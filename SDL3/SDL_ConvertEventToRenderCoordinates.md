@@ -15,10 +15,10 @@ int SDL_ConvertEventToRenderCoordinates(SDL_Renderer *renderer, SDL_Event *event
 
 ## Function Parameters
 
-|                                |              |                       |
-| ------------------------------ | ------------ | --------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context |
-| [SDL_Event](SDL_Event) *       | **event**    | the event to modify   |
+|                                |              |                        |
+| ------------------------------ | ------------ | ---------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context. |
+| [SDL_Event](SDL_Event) *       | **event**    | the event to modify.   |
 
 ## Return Value
 

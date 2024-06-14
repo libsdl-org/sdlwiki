@@ -15,10 +15,10 @@ SDL_bool SDL_ReadU32BE(SDL_IOStream *src, Uint32 *value);
 
 ## Function Parameters
 
-|                                |           |                                        |
-| ------------------------------ | --------- | -------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data     |
-| Uint32 *                       | **value** | a pointer filled in with the data read |
+|                                |           |                                         |
+| ------------------------------ | --------- | --------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
+| Uint32 *                       | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

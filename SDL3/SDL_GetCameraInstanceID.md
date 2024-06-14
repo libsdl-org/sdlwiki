@@ -15,9 +15,9 @@ SDL_CameraDeviceID SDL_GetCameraInstanceID(SDL_Camera *camera);
 
 ## Function Parameters
 
-|                            |            |                                      |
-| -------------------------- | ---------- | ------------------------------------ |
-| [SDL_Camera](SDL_Camera) * | **camera** | an [SDL_Camera](SDL_Camera) to query |
+|                            |            |                                       |
+| -------------------------- | ---------- | ------------------------------------- |
+| [SDL_Camera](SDL_Camera) * | **camera** | an [SDL_Camera](SDL_Camera) to query. |
 
 ## Return Value
 

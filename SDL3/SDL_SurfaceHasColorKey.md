@@ -15,9 +15,9 @@ SDL_bool SDL_SurfaceHasColorKey(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                              |             |                                                   |
-| ---------------------------- | ----------- | ------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query |
+|                              |             |                                                    |
+| ---------------------------- | ----------- | -------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query. |
 
 ## Return Value
 

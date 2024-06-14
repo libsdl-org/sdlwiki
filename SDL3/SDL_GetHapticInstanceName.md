@@ -15,9 +15,9 @@ const char* SDL_GetHapticInstanceName(SDL_HapticID instance_id);
 
 ## Function Parameters
 
-|                              |                 |                               |
-| ---------------------------- | --------------- | ----------------------------- |
-| [SDL_HapticID](SDL_HapticID) | **instance_id** | the haptic device instance ID |
+|                              |                 |                                |
+| ---------------------------- | --------------- | ------------------------------ |
+| [SDL_HapticID](SDL_HapticID) | **instance_id** | the haptic device instance ID. |
 
 ## Return Value
 

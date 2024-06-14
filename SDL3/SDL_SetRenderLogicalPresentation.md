@@ -15,13 +15,13 @@ int SDL_SetRenderLogicalPresentation(SDL_Renderer *renderer, int w, int h, SDL_R
 
 ## Function Parameters
 
-|                                                                    |                |                                      |
-| ------------------------------------------------------------------ | -------------- | ------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) *                                     | **renderer**   | the rendering context                |
-| int                                                                | **w**          | the width of the logical resolution  |
-| int                                                                | **h**          | the height of the logical resolution |
-| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) | **mode**       | the presentation mode used           |
-| [SDL_ScaleMode](SDL_ScaleMode)                                     | **scale_mode** | the scale mode used                  |
+|                                                                    |                |                                       |
+| ------------------------------------------------------------------ | -------------- | ------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *                                     | **renderer**   | the rendering context.                |
+| int                                                                | **w**          | the width of the logical resolution.  |
+| int                                                                | **h**          | the height of the logical resolution. |
+| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) | **mode**       | the presentation mode used.           |
+| [SDL_ScaleMode](SDL_ScaleMode)                                     | **scale_mode** | the scale mode used.                  |
 
 ## Return Value
 

@@ -16,11 +16,11 @@ void SDL_WarpMouseInWindow(SDL_Window * window,
 
 ## Function Parameters
 
-|                            |            |                                                                        |
-| -------------------------- | ---------- | ---------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to move the mouse into, or NULL for the current mouse focus |
-| float                      | **x**      | the x coordinate within the window                                     |
-| float                      | **y**      | the y coordinate within the window                                     |
+|                            |            |                                                                         |
+| -------------------------- | ---------- | ----------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to move the mouse into, or NULL for the current mouse focus. |
+| float                      | **x**      | the x coordinate within the window.                                     |
+| float                      | **y**      | the y coordinate within the window.                                     |
 
 ## Remarks
 

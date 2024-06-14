@@ -15,9 +15,9 @@ void SDL_DestroyPalette(SDL_Palette * palette);
 
 ## Function Parameters
 
-|                              |             |                                                      |
-| ---------------------------- | ----------- | ---------------------------------------------------- |
-| [SDL_Palette](SDL_Palette) * | **palette** | the [SDL_Palette](SDL_Palette) structure to be freed |
+|                              |             |                                                       |
+| ---------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_Palette](SDL_Palette) * | **palette** | the [SDL_Palette](SDL_Palette) structure to be freed. |
 
 ## Version
 

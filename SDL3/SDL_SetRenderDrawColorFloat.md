@@ -15,13 +15,13 @@ int SDL_SetRenderDrawColorFloat(SDL_Renderer *renderer, float r, float g, float 
 
 ## Function Parameters
 
-|                                |              |                                                                                                                                                             |
-| ------------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                                                                       |
-| float                          | **r**        | the red value used to draw on the rendering target                                                                                                          |
-| float                          | **g**        | the green value used to draw on the rendering target                                                                                                        |
-| float                          | **b**        | the blue value used to draw on the rendering target                                                                                                         |
-| float                          | **a**        | the alpha value used to draw on the rendering target. Use [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) to specify how the alpha channel is used |
+|                                |              |                                                                                                                                                              |
+| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                                                                       |
+| float                          | **r**        | the red value used to draw on the rendering target.                                                                                                          |
+| float                          | **g**        | the green value used to draw on the rendering target.                                                                                                        |
+| float                          | **b**        | the blue value used to draw on the rendering target.                                                                                                         |
+| float                          | **a**        | the alpha value used to draw on the rendering target. Use [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) to specify how the alpha channel is used. |
 
 ## Return Value
 

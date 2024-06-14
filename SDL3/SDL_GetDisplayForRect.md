@@ -15,9 +15,9 @@ SDL_DisplayID SDL_GetDisplayForRect(const SDL_Rect *rect);
 
 ## Function Parameters
 
-|                              |          |                   |
-| ---------------------------- | -------- | ----------------- |
-| const [SDL_Rect](SDL_Rect) * | **rect** | the rect to query |
+|                              |          |                    |
+| ---------------------------- | -------- | ------------------ |
+| const [SDL_Rect](SDL_Rect) * | **rect** | the rect to query. |
 
 ## Return Value
 

@@ -15,14 +15,14 @@ int SDL_GetNumGamepadTouchpadFingers(SDL_Gamepad *gamepad, int touchpad);
 
 ## Function Parameters
 
-|                              |              |            |
-| ---------------------------- | ------------ | ---------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**  | a gamepad  |
-| int                          | **touchpad** | a touchpad |
+|                              |              |             |
+| ---------------------------- | ------------ | ----------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**  | a gamepad.  |
+| int                          | **touchpad** | a touchpad. |
 
 ## Return Value
 
-(int) Returns number of supported simultaneous fingers
+(int) Returns number of supported simultaneous fingers.
 
 ## Version
 

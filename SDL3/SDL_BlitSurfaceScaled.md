@@ -15,13 +15,13 @@ int SDL_BlitSurfaceScaled(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface
 
 ## Function Parameters
 
-|                                |               |                                                                                                                                                       |
-| ------------------------------ | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) *   | **src**       | the [SDL_Surface](SDL_Surface) structure to be copied from                                                                                            |
-| const [SDL_Rect](SDL_Rect) *   | **srcrect**   | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied                                                                            |
-| [SDL_Surface](SDL_Surface) *   | **dst**       | the [SDL_Surface](SDL_Surface) structure that is the blit target                                                                                      |
-| [SDL_Rect](SDL_Rect) *         | **dstrect**   | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface, filled with the actual rectangle used after clipping |
-| [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode** | the [SDL_ScaleMode](SDL_ScaleMode) to be used                                                                                                         |
+|                                |               |                                                                                                                                                        |
+| ------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Surface](SDL_Surface) *   | **src**       | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                                            |
+| const [SDL_Rect](SDL_Rect) *   | **srcrect**   | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied.                                                                            |
+| [SDL_Surface](SDL_Surface) *   | **dst**       | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                                      |
+| [SDL_Rect](SDL_Rect) *         | **dstrect**   | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface, filled with the actual rectangle used after clipping. |
+| [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode** | the [SDL_ScaleMode](SDL_ScaleMode) to be used.                                                                                                         |
 
 ## Return Value
 

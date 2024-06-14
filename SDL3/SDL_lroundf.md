@@ -15,13 +15,13 @@ long SDL_lroundf(float x);
 
 ## Function Parameters
 
-|       |       |                      |
-| ----- | ----- | -------------------- |
-| float | **x** | floating point value |
+|       |       |                       |
+| ----- | ----- | --------------------- |
+| float | **x** | floating point value. |
 
 ## Return Value
 
-(long) Returns the nearest integer to `x`
+(long) Returns the nearest integer to `x`.
 
 ## Remarks
 

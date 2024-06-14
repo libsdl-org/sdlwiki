@@ -15,10 +15,10 @@ int SDL_GetSurfaceColorspace(SDL_Surface *surface, SDL_Colorspace *colorspace);
 
 ## Function Parameters
 
-|                                    |                |                                                                                                      |
-| ---------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) *       | **surface**    | the [SDL_Surface](SDL_Surface) structure to query                                                    |
-| [SDL_Colorspace](SDL_Colorspace) * | **colorspace** | a pointer filled in with an [SDL_ColorSpace](SDL_ColorSpace) value describing the surface colorspace |
+|                                    |                |                                                                                                       |
+| ---------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) *       | **surface**    | the [SDL_Surface](SDL_Surface) structure to query.                                                    |
+| [SDL_Colorspace](SDL_Colorspace) * | **colorspace** | a pointer filled in with an [SDL_ColorSpace](SDL_ColorSpace) value describing the surface colorspace. |
 
 ## Return Value
 

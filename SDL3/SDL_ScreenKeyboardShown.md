@@ -15,9 +15,9 @@ SDL_bool SDL_ScreenKeyboardShown(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                                                        |
-| -------------------------- | ---------- | ------------------------------------------------------ |
-| [SDL_Window](SDL_Window) * | **window** | the window for which screen keyboard should be queried |
+|                            |            |                                                         |
+| -------------------------- | ---------- | ------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window for which screen keyboard should be queried. |
 
 ## Return Value
 

@@ -17,7 +17,7 @@ int SDL_GetTextureSize(SDL_Texture *texture, float *w, float *h);
 
 |                              |             |                                                                                                                             |
 | ---------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query                                                                                                        |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query.                                                                                                       |
 | float *                      | **w**       | a pointer filled in with the width of the texture in pixels. This argument can be NULL if you don't need this information.  |
 | float *                      | **h**       | a pointer filled in with the height of the texture in pixels. This argument can be NULL if you don't need this information. |
 

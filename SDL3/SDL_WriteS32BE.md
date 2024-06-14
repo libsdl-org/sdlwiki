@@ -15,10 +15,10 @@ SDL_bool SDL_WriteS32BE(SDL_IOStream *dst, Sint32 value);
 
 ## Function Parameters
 
-|                                |           |                                          |
-| ------------------------------ | --------- | ---------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written |
-| Sint32                         | **value** | the data to be written, in native format |
+|                                |           |                                           |
+| ------------------------------ | --------- | ----------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written. |
+| Sint32                         | **value** | the data to be written, in native format. |
 
 ## Return Value
 

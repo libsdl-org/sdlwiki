@@ -19,9 +19,9 @@ int SDL_SetAudioStreamFormat(SDL_AudioStream *stream,
 
 |                                        |              |                                                                 |
 | -------------------------------------- | ------------ | --------------------------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) *   | **stream**   | The stream the format is being changed                          |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | The new format of the audio input; if NULL, it is not changed.  |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | The new format of the audio output; if NULL, it is not changed. |
+| [SDL_AudioStream](SDL_AudioStream) *   | **stream**   | the stream the format is being changed.                         |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | the new format of the audio input; if NULL, it is not changed.  |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | the new format of the audio output; if NULL, it is not changed. |
 
 ## Return Value
 

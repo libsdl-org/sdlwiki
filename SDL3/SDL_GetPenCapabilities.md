@@ -15,15 +15,15 @@ SDL_PenCapabilityFlags SDL_GetPenCapabilities(SDL_PenID instance_id, SDL_PenCapa
 
 ## Function Parameters
 
-|                                                  |                  |                                                                          |
-| ------------------------------------------------ | ---------------- | ------------------------------------------------------------------------ |
-| [SDL_PenID](SDL_PenID)                           | **instance_id**  | The pen to query.                                                        |
-| [SDL_PenCapabilityInfo](SDL_PenCapabilityInfo) * | **capabilities** | Detail information about pen capabilities, such as the number of buttons |
+|                                                  |                  |                                                                           |
+| ------------------------------------------------ | ---------------- | ------------------------------------------------------------------------- |
+| [SDL_PenID](SDL_PenID)                           | **instance_id**  | the pen to query.                                                         |
+| [SDL_PenCapabilityInfo](SDL_PenCapabilityInfo) * | **capabilities** | detail information about pen capabilities, such as the number of buttons. |
 
 ## Return Value
 
 ([SDL_PenCapabilityFlags](SDL_PenCapabilityFlags)) Returns a set of
-capability flags, cf. [SDL_PEN_CAPABILITIES](SDL_PEN_CAPABILITIES)
+capability flags, cf. [SDL_PEN_CAPABILITIES](SDL_PEN_CAPABILITIES).
 
 ## Version
 

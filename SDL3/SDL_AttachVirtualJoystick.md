@@ -15,9 +15,9 @@ SDL_JoystickID SDL_AttachVirtualJoystick(const SDL_VirtualJoystickDesc *desc);
 
 ## Function Parameters
 
-|                                                            |          |                      |
-| ---------------------------------------------------------- | -------- | -------------------- |
-| const [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc) * | **desc** | Joystick description |
+|                                                            |          |                       |
+| ---------------------------------------------------------- | -------- | --------------------- |
+| const [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc) * | **desc** | joystick description. |
 
 ## Return Value
 

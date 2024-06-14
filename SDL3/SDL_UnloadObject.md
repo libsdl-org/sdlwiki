@@ -15,9 +15,9 @@ void SDL_UnloadObject(void *handle);
 
 ## Function Parameters
 
-|        |            |                                                                             |
-| ------ | ---------- | --------------------------------------------------------------------------- |
-| void * | **handle** | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
+|        |            |                                                                              |
+| ------ | ---------- | ---------------------------------------------------------------------------- |
+| void * | **handle** | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)(). |
 
 ## Version
 

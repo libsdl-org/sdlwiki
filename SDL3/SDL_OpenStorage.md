@@ -15,10 +15,10 @@ SDL_Storage* SDL_OpenStorage(const SDL_StorageInterface *iface, void *userdata);
 
 ## Function Parameters
 
-|                                                      |              |                                                        |
-| ---------------------------------------------------- | ------------ | ------------------------------------------------------ |
-| const [SDL_StorageInterface](SDL_StorageInterface) * | **iface**    | the function table to be used by this container        |
-| void *                                               | **userdata** | the pointer that will be passed to the store interface |
+|                                                      |              |                                                         |
+| ---------------------------------------------------- | ------------ | ------------------------------------------------------- |
+| const [SDL_StorageInterface](SDL_StorageInterface) * | **iface**    | the function table to be used by this container.        |
+| void *                                               | **userdata** | the pointer that will be passed to the store interface. |
 
 ## Return Value
 

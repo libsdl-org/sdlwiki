@@ -15,9 +15,9 @@ SDL_DisplayID* SDL_GetDisplays(int *count);
 
 ## Function Parameters
 
-|       |           |                                                          |
-| ----- | --------- | -------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of displays returned |
+|       |           |                                                           |
+| ----- | --------- | --------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of displays returned. |
 
 ## Return Value
 

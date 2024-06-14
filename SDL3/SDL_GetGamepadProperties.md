@@ -15,9 +15,9 @@ SDL_PropertiesID SDL_GetGamepadProperties(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                              |             |                                                                                  |
-| ---------------------------- | ----------- | -------------------------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+|                              |             |                                                                                   |
+| ---------------------------- | ----------- | --------------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)(). |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Macro Parameters
 
-|               |                       |
-| ------------- | --------------------- |
-| **condition** | boolean value to test |
+|               |                        |
+| ------------- | ---------------------- |
+| **condition** | boolean value to test. |
 
 ## Remarks
 

@@ -15,11 +15,11 @@ typedef SDL_HitTestResult (SDLCALL *SDL_HitTest)(SDL_Window *win, const SDL_Poin
 
 ## Function Parameters
 
-|          |                                                                                      |
-| -------- | ------------------------------------------------------------------------------------ |
-| **win**  | the [SDL_Window](SDL_Window) where hit-testing was set on                            |
-| **area** | an [SDL_Point](SDL_Point) which should be hit-tested                                 |
-| **data** | what was passed as `callback_data` to [SDL_SetWindowHitTest](SDL_SetWindowHitTest)() |
+|          |                                                                                       |
+| -------- | ------------------------------------------------------------------------------------- |
+| **win**  | the [SDL_Window](SDL_Window) where hit-testing was set on.                            |
+| **area** | an [SDL_Point](SDL_Point) which should be hit-tested.                                 |
+| **data** | what was passed as `callback_data` to [SDL_SetWindowHitTest](SDL_SetWindowHitTest)(). |
 
 ## Return Value
 

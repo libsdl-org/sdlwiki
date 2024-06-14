@@ -15,9 +15,9 @@ int SDL_Direct3D9GetAdapterIndex(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                                |               |                                      |
-| ------------------------------ | ------------- | ------------------------------------ |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance of the display to query |
+|                                |               |                                       |
+| ------------------------------ | ------------- | ------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance of the display to query. |
 
 ## Return Value
 

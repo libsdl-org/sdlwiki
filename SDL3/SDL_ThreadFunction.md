@@ -15,9 +15,9 @@ typedef int (SDLCALL * SDL_ThreadFunction) (void *data);
 
 ## Function Parameters
 
-|          |                                                                     |
-| -------- | ------------------------------------------------------------------- |
-| **data** | what was passed as `data` to [SDL_CreateThread](SDL_CreateThread)() |
+|          |                                                                      |
+| -------- | -------------------------------------------------------------------- |
+| **data** | what was passed as `data` to [SDL_CreateThread](SDL_CreateThread)(). |
 
 ## Return Value
 

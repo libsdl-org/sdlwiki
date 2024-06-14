@@ -15,11 +15,11 @@ int SDL_PlayHapticRumble(SDL_Haptic *haptic, float strength, Uint32 length);
 
 ## Function Parameters
 
-|                            |              |                                                     |
-| -------------------------- | ------------ | --------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic**   | the haptic device to play the rumble effect on      |
-| float                      | **strength** | strength of the rumble to play as a 0-1 float value |
-| Uint32                     | **length**   | length of the rumble to play in milliseconds        |
+|                            |              |                                                      |
+| -------------------------- | ------------ | ---------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic**   | the haptic device to play the rumble effect on.      |
+| float                      | **strength** | strength of the rumble to play as a 0-1 float value. |
+| Uint32                     | **length**   | length of the rumble to play in milliseconds.        |
 
 ## Return Value
 

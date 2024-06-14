@@ -15,14 +15,14 @@ int SDL_GetSensorInstanceNonPortableType(SDL_SensorID instance_id);
 
 ## Function Parameters
 
-|                              |                 |                        |
-| ---------------------------- | --------------- | ---------------------- |
-| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID |
+|                              |                 |                         |
+| ---------------------------- | --------------- | ----------------------- |
+| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID. |
 
 ## Return Value
 
 (int) Returns the sensor platform dependent type, or -1 if `instance_id` is
-not valid
+not valid.
 
 ## Version
 

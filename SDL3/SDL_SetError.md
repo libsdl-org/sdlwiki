@@ -15,10 +15,10 @@ int SDL_SetError(const char *fmt, ...);
 
 ## Function Parameters
 
-|              |         |                                                                     |
-| ------------ | ------- | ------------------------------------------------------------------- |
-| const char * | **fmt** | a printf()-style message format string                              |
-| ...          | **...** | additional parameters matching % tokens in the `fmt` string, if any |
+|              |         |                                                                      |
+| ------------ | ------- | -------------------------------------------------------------------- |
+| const char * | **fmt** | a printf()-style message format string.                              |
+| ...          | **...** | additional parameters matching % tokens in the `fmt` string, if any. |
 
 ## Return Value
 

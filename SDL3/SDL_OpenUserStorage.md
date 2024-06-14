@@ -15,11 +15,11 @@ SDL_Storage* SDL_OpenUserStorage(const char *org, const char *app, SDL_Propertie
 
 ## Function Parameters
 
-|                                      |           |                                                               |
-| ------------------------------------ | --------- | ------------------------------------------------------------- |
-| const char *                         | **org**   | the name of your organization                                 |
-| const char *                         | **app**   | the name of your application                                  |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props** | a property list that may contain backend-specific information |
+|                                      |           |                                                                |
+| ------------------------------------ | --------- | -------------------------------------------------------------- |
+| const char *                         | **org**   | the name of your organization.                                 |
+| const char *                         | **app**   | the name of your application.                                  |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | a property list that may contain backend-specific information. |
 
 ## Return Value
 

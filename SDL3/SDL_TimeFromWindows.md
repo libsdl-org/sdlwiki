@@ -15,14 +15,14 @@ SDL_Time SDL_TimeFromWindows(Uint32 dwLowDateTime, Uint32 dwHighDateTime);
 
 ## Function Parameters
 
-|        |                    |                                                |
-| ------ | ------------------ | ---------------------------------------------- |
-| Uint32 | **dwLowDateTime**  | the low portion of the Windows FILETIME value  |
-| Uint32 | **dwHighDateTime** | the high portion of the Windows FILETIME value |
+|        |                    |                                                 |
+| ------ | ------------------ | ----------------------------------------------- |
+| Uint32 | **dwLowDateTime**  | the low portion of the Windows FILETIME value.  |
+| Uint32 | **dwHighDateTime** | the high portion of the Windows FILETIME value. |
 
 ## Return Value
 
-([SDL_Time](SDL_Time)) Returns the converted SDL time
+([SDL_Time](SDL_Time)) Returns the converted SDL time.
 
 ## Remarks
 

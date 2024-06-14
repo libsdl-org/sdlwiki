@@ -17,8 +17,8 @@ extern SDL_DECLSPEC char **SDLCALL SDL_GlobStorageDirectory(SDL_Storage *storage
 
 |                                |             |                                                                                   |
 | ------------------------------ | ----------- | --------------------------------------------------------------------------------- |
-| [SDL_Storage](SDL_Storage) *   | **storage** | a storage container                                                               |
-| const char *                   | **path**    | the path of the directory to enumerate                                            |
+| [SDL_Storage](SDL_Storage) *   | **storage** | a storage container.                                                              |
+| const char *                   | **path**    | the path of the directory to enumerate.                                           |
 | const char *                   | **pattern** | the pattern that files in the directory must match. Can be NULL.                  |
 | [SDL_GlobFlags](SDL_GlobFlags) | **flags**   | `SDL_GLOB_*` bitflags that affect this search.                                    |
 | int *                          | **count**   | on return, will be set to the number of items in the returned array. Can be NULL. |

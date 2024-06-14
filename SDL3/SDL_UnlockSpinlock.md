@@ -15,9 +15,9 @@ void SDL_UnlockSpinlock(SDL_SpinLock *lock);
 
 ## Function Parameters
 
-|                                |          |                              |
-| ------------------------------ | -------- | ---------------------------- |
-| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable |
+|                                |          |                               |
+| ------------------------------ | -------- | ----------------------------- |
+| [SDL_SpinLock](SDL_SpinLock) * | **lock** | a pointer to a lock variable. |
 
 ## Remarks
 

@@ -15,9 +15,9 @@ SDL_FORCE_INLINE SDL_bool SDL_HasExactlyOneBitSet32(Uint32 x);
 
 ## Function Parameters
 
-|        |       |                             |
-| ------ | ----- | --------------------------- |
-| Uint32 | **x** | the 32-bit value to examine |
+|        |       |                              |
+| ------ | ----- | ---------------------------- |
+| Uint32 | **x** | the 32-bit value to examine. |
 
 ## Return Value
 

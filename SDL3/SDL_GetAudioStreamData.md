@@ -15,15 +15,15 @@ int SDL_GetAudioStreamData(SDL_AudioStream *stream, void *buf, int len);
 
 ## Function Parameters
 
-|                                      |            |                                              |
-| ------------------------------------ | ---------- | -------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The stream the audio is being requested from |
-| void *                               | **buf**    | A buffer to fill with audio data             |
-| int                                  | **len**    | The maximum number of bytes to fill          |
+|                                      |            |                                               |
+| ------------------------------------ | ---------- | --------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the stream the audio is being requested from. |
+| void *                               | **buf**    | a buffer to fill with audio data.             |
+| int                                  | **len**    | the maximum number of bytes to fill.          |
 
 ## Return Value
 
-(int) Returns the number of bytes read from the stream, or -1 on error
+(int) Returns the number of bytes read from the stream, or -1 on error.
 
 ## Remarks
 

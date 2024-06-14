@@ -15,10 +15,10 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface, const SDL_PixelFormat *for
 
 ## Function Parameters
 
-|                                            |             |                                                                                        |
-| ------------------------------------------ | ----------- | -------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) *               | **surface** | the existing [SDL_Surface](SDL_Surface) structure to convert                           |
-| const [SDL_PixelFormat](SDL_PixelFormat) * | **format**  | the [SDL_PixelFormat](SDL_PixelFormat) structure that the new surface is optimized for |
+|                                            |             |                                                                                         |
+| ------------------------------------------ | ----------- | --------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) *               | **surface** | the existing [SDL_Surface](SDL_Surface) structure to convert.                           |
+| const [SDL_PixelFormat](SDL_PixelFormat) * | **format**  | the [SDL_PixelFormat](SDL_PixelFormat) structure that the new surface is optimized for. |
 
 ## Return Value
 

@@ -15,10 +15,10 @@ SDL_bool SDL_WriteU16LE(SDL_IOStream *dst, Uint16 value);
 
 ## Function Parameters
 
-|                                |           |                                          |
-| ------------------------------ | --------- | ---------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written |
-| Uint16                         | **value** | the data to be written, in native format |
+|                                |           |                                           |
+| ------------------------------ | --------- | ----------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written. |
+| Uint16                         | **value** | the data to be written, in native format. |
 
 ## Return Value
 

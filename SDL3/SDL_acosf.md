@@ -21,7 +21,7 @@ float SDL_acosf(float x);
 
 ## Return Value
 
-(float) Returns arc cosine of `x`, in radians
+(float) Returns arc cosine of `x`, in radians.
 
 ## Remarks
 

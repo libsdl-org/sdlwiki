@@ -15,9 +15,9 @@ void SDL_SetGamepadEventsEnabled(SDL_bool enabled);
 
 ## Function Parameters
 
-|                      |             |                                          |
-| -------------------- | ----------- | ---------------------------------------- |
-| [SDL_bool](SDL_bool) | **enabled** | whether to process gamepad events or not |
+|                      |             |                                           |
+| -------------------- | ----------- | ----------------------------------------- |
+| [SDL_bool](SDL_bool) | **enabled** | whether to process gamepad events or not. |
 
 ## Remarks
 

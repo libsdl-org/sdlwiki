@@ -15,10 +15,10 @@ SDL_IOStream* SDL_IOFromConstMem(const void *mem, size_t size);
 
 ## Function Parameters
 
-|              |          |                                                                                |
-| ------------ | -------- | ------------------------------------------------------------------------------ |
-| const void * | **mem**  | a pointer to a read-only buffer to feed an [SDL_IOStream](SDL_IOStream) stream |
-| size_t       | **size** | the buffer size, in bytes                                                      |
+|              |          |                                                                                 |
+| ------------ | -------- | ------------------------------------------------------------------------------- |
+| const void * | **mem**  | a pointer to a read-only buffer to feed an [SDL_IOStream](SDL_IOStream) stream. |
+| size_t       | **size** | the buffer size, in bytes.                                                      |
 
 ## Return Value
 

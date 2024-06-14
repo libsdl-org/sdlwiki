@@ -17,9 +17,9 @@ int SDL_hid_get_input_report(SDL_hid_device *dev, unsigned char *data, size_t le
 
 |                                    |            |                                                                                                                                                                                                      |
 | ---------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_hid_device](SDL_hid_device) * | **dev**    | A device handle returned from [SDL_hid_open](SDL_hid_open)().                                                                                                                                        |
-| unsigned char *                    | **data**   | A buffer to put the read data into, including the Report ID. Set the first byte of `data` to the Report ID of the report to be read, or set it to zero if your device does not use numbered reports. |
-| size_t                             | **length** | The number of bytes to read, including an extra byte for the report ID. The buffer can be longer than the actual report.                                                                             |
+| [SDL_hid_device](SDL_hid_device) * | **dev**    | a device handle returned from [SDL_hid_open](SDL_hid_open)().                                                                                                                                        |
+| unsigned char *                    | **data**   | a buffer to put the read data into, including the Report ID. Set the first byte of `data` to the Report ID of the report to be read, or set it to zero if your device does not use numbered reports. |
+| size_t                             | **length** | the number of bytes to read, including an extra byte for the report ID. The buffer can be longer than the actual report.                                                                             |
 
 ## Return Value
 

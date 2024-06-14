@@ -15,9 +15,9 @@ const char* SDL_GetGamepadStringForButton(SDL_GamepadButton button);
 
 ## Function Parameters
 
-|                                        |            |                                                                  |
-| -------------------------------------- | ---------- | ---------------------------------------------------------------- |
-| [SDL_GamepadButton](SDL_GamepadButton) | **button** | an enum value for a given [SDL_GamepadButton](SDL_GamepadButton) |
+|                                        |            |                                                                   |
+| -------------------------------------- | ---------- | ----------------------------------------------------------------- |
+| [SDL_GamepadButton](SDL_GamepadButton) | **button** | an enum value for a given [SDL_GamepadButton](SDL_GamepadButton). |
 
 ## Return Value
 

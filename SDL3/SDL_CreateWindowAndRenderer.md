@@ -15,14 +15,14 @@ int SDL_CreateWindowAndRenderer(const char *title, int width, int height, SDL_Wi
 
 ## Function Parameters
 
-|                                    |                  |                                                                                  |
-| ---------------------------------- | ---------------- | -------------------------------------------------------------------------------- |
-| const char *                       | **title**        | the title of the window, in UTF-8 encoding                                       |
-| int                                | **width**        | the width of the window                                                          |
-| int                                | **height**       | the height of the window                                                         |
-| [SDL_WindowFlags](SDL_WindowFlags) | **window_flags** | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow)()) |
-| [SDL_Window](SDL_Window) **        | **window**       | a pointer filled with the window, or NULL on error                               |
-| [SDL_Renderer](SDL_Renderer) **    | **renderer**     | a pointer filled with the renderer, or NULL on error                             |
+|                                    |                  |                                                                                   |
+| ---------------------------------- | ---------------- | --------------------------------------------------------------------------------- |
+| const char *                       | **title**        | the title of the window, in UTF-8 encoding.                                       |
+| int                                | **width**        | the width of the window.                                                          |
+| int                                | **height**       | the height of the window.                                                         |
+| [SDL_WindowFlags](SDL_WindowFlags) | **window_flags** | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow)()). |
+| [SDL_Window](SDL_Window) **        | **window**       | a pointer filled with the window, or NULL on error.                               |
+| [SDL_Renderer](SDL_Renderer) **    | **renderer**     | a pointer filled with the renderer, or NULL on error.                             |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ int SDL_GetCameraPermissionState(SDL_Camera *camera);
 
 ## Function Parameters
 
-|                            |            |                                   |
-| -------------------------- | ---------- | --------------------------------- |
-| [SDL_Camera](SDL_Camera) * | **camera** | the opened camera device to query |
+|                            |            |                                    |
+| -------------------------- | ---------- | ---------------------------------- |
+| [SDL_Camera](SDL_Camera) * | **camera** | the opened camera device to query. |
 
 ## Return Value
 

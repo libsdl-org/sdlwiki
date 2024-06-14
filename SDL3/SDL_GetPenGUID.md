@@ -17,7 +17,7 @@ SDL_GUID SDL_GetPenGUID(SDL_PenID instance_id);
 
 |                        |                 |                   |
 | ---------------------- | --------------- | ----------------- |
-| [SDL_PenID](SDL_PenID) | **instance_id** | The pen to query. |
+| [SDL_PenID](SDL_PenID) | **instance_id** | the pen to query. |
 
 ## Return Value
 

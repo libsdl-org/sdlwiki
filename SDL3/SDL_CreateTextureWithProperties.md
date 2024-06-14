@@ -15,10 +15,10 @@ SDL_Texture* SDL_CreateTextureWithProperties(SDL_Renderer *renderer, SDL_Propert
 
 ## Function Parameters
 
-|                                      |              |                       |
-| ------------------------------------ | ------------ | --------------------- |
-| [SDL_Renderer](SDL_Renderer) *       | **renderer** | the rendering context |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props**    | the properties to use |
+|                                      |              |                        |
+| ------------------------------------ | ------------ | ---------------------- |
+| [SDL_Renderer](SDL_Renderer) *       | **renderer** | the rendering context. |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**    | the properties to use. |
 
 ## Return Value
 

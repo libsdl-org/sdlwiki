@@ -15,9 +15,9 @@ int SDL_SetCursor(SDL_Cursor * cursor);
 
 ## Function Parameters
 
-|                            |            |                         |
-| -------------------------- | ---------- | ----------------------- |
-| [SDL_Cursor](SDL_Cursor) * | **cursor** | a cursor to make active |
+|                            |            |                          |
+| -------------------------- | ---------- | ------------------------ |
+| [SDL_Cursor](SDL_Cursor) * | **cursor** | a cursor to make active. |
 
 ## Return Value
 

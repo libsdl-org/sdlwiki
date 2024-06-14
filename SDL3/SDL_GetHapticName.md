@@ -15,9 +15,9 @@ const char* SDL_GetHapticName(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                            |            |                                                                                   |
-| -------------------------- | ---------- | --------------------------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+|                            |            |                                                                                    |
+| -------------------------- | ---------- | ---------------------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)(). |
 
 ## Return Value
 

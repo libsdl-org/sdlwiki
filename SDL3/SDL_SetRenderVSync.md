@@ -21,7 +21,7 @@ int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 
 |                                |              |                                     |
 | ------------------------------ | ------------ | ----------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer to toggle.             |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer to toggle.             |
 | int                            | **vsync**    | the vertical refresh sync interval. |
 
 ## Return Value

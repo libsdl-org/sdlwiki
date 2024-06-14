@@ -15,9 +15,9 @@ SDL_bool SDL_IsJoystickHaptic(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                                |              |                                                                  |
-| ------------------------------ | ------------ | ---------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to test for haptic capabilities |
+|                                |              |                                                                   |
+| ------------------------------ | ------------ | ----------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) to test for haptic capabilities. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ SDL_Gamepad* SDL_GetGamepadFromPlayerIndex(int player_index);
 
 ## Function Parameters
 
-|     |                  |                                                        |
-| --- | ---------------- | ------------------------------------------------------ |
-| int | **player_index** | the player index, which different from the instance ID |
+|     |                  |                                                         |
+| --- | ---------------- | ------------------------------------------------------- |
+| int | **player_index** | the player index, which different from the instance ID. |
 
 ## Return Value
 

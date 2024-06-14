@@ -16,10 +16,10 @@ SDL_bool SDL_SetHint(const char *name,
 
 ## Function Parameters
 
-|              |           |                                |
-| ------------ | --------- | ------------------------------ |
-| const char * | **name**  | the hint to set                |
-| const char * | **value** | the value of the hint variable |
+|              |           |                                 |
+| ------------ | --------- | ------------------------------- |
+| const char * | **name**  | the hint to set.                |
+| const char * | **value** | the value of the hint variable. |
 
 ## Return Value
 

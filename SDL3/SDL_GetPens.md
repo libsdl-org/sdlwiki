@@ -17,7 +17,7 @@ SDL_PenID* SDL_GetPens(int *count);
 
 |       |           |                                                                                                          |
 | ----- | --------- | -------------------------------------------------------------------------------------------------------- |
-| int * | **count** | The number of pens in the array (number of array elements minus 1, i.e., not counting the terminator 0). |
+| int * | **count** | the number of pens in the array (number of array elements minus 1, i.e., not counting the terminator 0). |
 
 ## Return Value
 

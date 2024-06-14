@@ -15,12 +15,12 @@ int SDL_SetTextureColorModFloat(SDL_Texture *texture, float r, float g, float b)
 
 ## Function Parameters
 
-|                              |             |                                                       |
-| ---------------------------- | ----------- | ----------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                 |
-| float                        | **r**       | the red color value multiplied into copy operations   |
-| float                        | **g**       | the green color value multiplied into copy operations |
-| float                        | **b**       | the blue color value multiplied into copy operations  |
+|                              |             |                                                        |
+| ---------------------------- | ----------- | ------------------------------------------------------ |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update.                                 |
+| float                        | **r**       | the red color value multiplied into copy operations.   |
+| float                        | **g**       | the green color value multiplied into copy operations. |
+| float                        | **b**       | the blue color value multiplied into copy operations.  |
 
 ## Return Value
 

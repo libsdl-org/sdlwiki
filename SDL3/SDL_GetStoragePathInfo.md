@@ -15,11 +15,11 @@ int SDL_GetStoragePathInfo(SDL_Storage *storage, const char *path, SDL_PathInfo 
 
 ## Function Parameters
 
-|                                |             |                                                                                                   |
-| ------------------------------ | ----------- | ------------------------------------------------------------------------------------------------- |
-| [SDL_Storage](SDL_Storage) *   | **storage** | a storage container                                                                               |
-| const char *                   | **path**    | the path to query                                                                                 |
-| [SDL_PathInfo](SDL_PathInfo) * | **info**    | a pointer filled in with information about the path, or NULL to check for the existence of a file |
+|                                |             |                                                                                                    |
+| ------------------------------ | ----------- | -------------------------------------------------------------------------------------------------- |
+| [SDL_Storage](SDL_Storage) *   | **storage** | a storage container.                                                                               |
+| const char *                   | **path**    | the path to query.                                                                                 |
+| [SDL_PathInfo](SDL_PathInfo) * | **info**    | a pointer filled in with information about the path, or NULL to check for the existence of a file. |
 
 ## Return Value
 

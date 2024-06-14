@@ -15,9 +15,9 @@ void* SDL_GetRenderMetalCommandEncoder(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                                |              |                       |
-| ------------------------------ | ------------ | --------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer to query |
+|                                |              |                        |
+| ------------------------------ | ------------ | ---------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer to query. |
 
 ## Return Value
 

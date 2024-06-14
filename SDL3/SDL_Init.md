@@ -15,9 +15,9 @@ int SDL_Init(SDL_InitFlags flags);
 
 ## Function Parameters
 
-|                                |           |                                |
-| ------------------------------ | --------- | ------------------------------ |
-| [SDL_InitFlags](SDL_InitFlags) | **flags** | subsystem initialization flags |
+|                                |           |                                 |
+| ------------------------------ | --------- | ------------------------------- |
+| [SDL_InitFlags](SDL_InitFlags) | **flags** | subsystem initialization flags. |
 
 ## Return Value
 

@@ -17,11 +17,11 @@ int SDL_AndroidShowToast(const char* message, int duration, int gravity, int xof
 
 |              |              |                                                     |
 | ------------ | ------------ | --------------------------------------------------- |
-| const char * | **message**  | text message to be shown                            |
-| int          | **duration** | 0=short, 1=long                                     |
+| const char * | **message**  | text message to be shown.                           |
+| int          | **duration** | 0=short, 1=long.                                    |
 | int          | **gravity**  | where the notification should appear on the screen. |
-| int          | **xoffset**  | set this parameter only when gravity >=0            |
-| int          | **yoffset**  | set this parameter only when gravity >=0            |
+| int          | **xoffset**  | set this parameter only when gravity >=0.           |
+| int          | **yoffset**  | set this parameter only when gravity >=0.           |
 
 ## Return Value
 

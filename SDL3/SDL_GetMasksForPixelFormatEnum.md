@@ -20,14 +20,14 @@ SDL_bool SDL_GetMasksForPixelFormatEnum(SDL_PixelFormatEnum format,
 
 ## Function Parameters
 
-|                                            |            |                                                              |
-| ------------------------------------------ | ---------- | ------------------------------------------------------------ |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
-| int *                                      | **bpp**    | a bits per pixel value; usually 15, 16, or 32                |
-| Uint32 *                                   | **Rmask**  | a pointer filled in with the red mask for the format         |
-| Uint32 *                                   | **Gmask**  | a pointer filled in with the green mask for the format       |
-| Uint32 *                                   | **Bmask**  | a pointer filled in with the blue mask for the format        |
-| Uint32 *                                   | **Amask**  | a pointer filled in with the alpha mask for the format       |
+|                                            |            |                                                               |
+| ------------------------------------------ | ---------- | ------------------------------------------------------------- |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values. |
+| int *                                      | **bpp**    | a bits per pixel value; usually 15, 16, or 32.                |
+| Uint32 *                                   | **Rmask**  | a pointer filled in with the red mask for the format.         |
+| Uint32 *                                   | **Gmask**  | a pointer filled in with the green mask for the format.       |
+| Uint32 *                                   | **Bmask**  | a pointer filled in with the blue mask for the format.        |
+| Uint32 *                                   | **Amask**  | a pointer filled in with the alpha mask for the format.       |
 
 ## Return Value
 

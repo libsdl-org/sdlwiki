@@ -15,15 +15,15 @@ int SDL_GetGamepadTouchpadFinger(SDL_Gamepad *gamepad, int touchpad, int finger,
 
 ## Function Parameters
 
-|                              |              |                                                                              |
-| ---------------------------- | ------------ | ---------------------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**  | a gamepad                                                                    |
-| int                          | **touchpad** | a touchpad                                                                   |
-| int                          | **finger**   | a finger                                                                     |
-| Uint8 *                      | **state**    | filled with state                                                            |
-| float *                      | **x**        | filled with x position, normalized 0 to 1, with the origin in the upper left |
-| float *                      | **y**        | filled with y position, normalized 0 to 1, with the origin in the upper left |
-| float *                      | **pressure** | filled with pressure value                                                   |
+|                              |              |                                                                               |
+| ---------------------------- | ------------ | ----------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**  | a gamepad.                                                                    |
+| int                          | **touchpad** | a touchpad.                                                                   |
+| int                          | **finger**   | a finger.                                                                     |
+| Uint8 *                      | **state**    | filled with state.                                                            |
+| float *                      | **x**        | filled with x position, normalized 0 to 1, with the origin in the upper left. |
+| float *                      | **y**        | filled with y position, normalized 0 to 1, with the origin in the upper left. |
+| float *                      | **pressure** | filled with pressure value.                                                   |
 
 ## Return Value
 

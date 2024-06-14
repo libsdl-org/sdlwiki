@@ -15,9 +15,9 @@ int SDL_PauseHaptic(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                            |            |                                              |
-| -------------------------- | ---------- | -------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to pause |
+|                            |            |                                               |
+| -------------------------- | ---------- | --------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to pause. |
 
 ## Return Value
 

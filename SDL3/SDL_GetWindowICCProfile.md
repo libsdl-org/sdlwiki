@@ -15,10 +15,10 @@ void* SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
 
 ## Function Parameters
 
-|                            |            |                             |
-| -------------------------- | ---------- | --------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to query         |
-| size_t *                   | **size**   | the size of the ICC profile |
+|                            |            |                              |
+| -------------------------- | ---------- | ---------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query.         |
+| size_t *                   | **size**   | the size of the ICC profile. |
 
 ## Return Value
 

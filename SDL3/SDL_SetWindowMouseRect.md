@@ -17,8 +17,8 @@ int SDL_SetWindowMouseRect(SDL_Window *window, const SDL_Rect *rect);
 
 |                              |            |                                                                                                                  |
 | ---------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) *   | **window** | The window that will be associated with the barrier.                                                             |
-| const [SDL_Rect](SDL_Rect) * | **rect**   | A rectangle area in window-relative coordinates. If NULL the barrier for the specified window will be destroyed. |
+| [SDL_Window](SDL_Window) *   | **window** | the window that will be associated with the barrier.                                                             |
+| const [SDL_Rect](SDL_Rect) * | **rect**   | a rectangle area in window-relative coordinates. If NULL the barrier for the specified window will be destroyed. |
 
 ## Return Value
 

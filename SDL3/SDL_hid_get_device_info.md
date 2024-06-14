@@ -17,7 +17,7 @@ SDL_hid_device_info * SDL_hid_get_device_info(SDL_hid_device *dev);
 
 |                                    |         |                                                               |
 | ---------------------------------- | ------- | ------------------------------------------------------------- |
-| [SDL_hid_device](SDL_hid_device) * | **dev** | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| [SDL_hid_device](SDL_hid_device) * | **dev** | a device handle returned from [SDL_hid_open](SDL_hid_open)(). |
 
 ## Return Value
 

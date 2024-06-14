@@ -21,7 +21,7 @@ double SDL_log(double x);
 
 ## Return Value
 
-(double) Returns the natural logarithm of `x`
+(double) Returns the natural logarithm of `x`.
 
 ## Remarks
 

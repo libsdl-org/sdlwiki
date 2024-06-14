@@ -17,7 +17,7 @@ int SDL_OpenURL(const char *url);
 
 |              |         |                                                                                         |
 | ------------ | ------- | --------------------------------------------------------------------------------------- |
-| const char * | **url** | A valid URL/URI to open. Use `file:///full/path/to/file` for local files, if supported. |
+| const char * | **url** | a valid URL/URI to open. Use `file:///full/path/to/file` for local files, if supported. |
 
 ## Return Value
 

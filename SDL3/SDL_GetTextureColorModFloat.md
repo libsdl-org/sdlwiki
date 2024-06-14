@@ -15,12 +15,12 @@ int SDL_GetTextureColorModFloat(SDL_Texture *texture, float *r, float *g, float 
 
 ## Function Parameters
 
-|                              |             |                                                        |
-| ---------------------------- | ----------- | ------------------------------------------------------ |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query                                   |
-| float *                      | **r**       | a pointer filled in with the current red color value   |
-| float *                      | **g**       | a pointer filled in with the current green color value |
-| float *                      | **b**       | a pointer filled in with the current blue color value  |
+|                              |             |                                                         |
+| ---------------------------- | ----------- | ------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query.                                   |
+| float *                      | **r**       | a pointer filled in with the current red color value.   |
+| float *                      | **g**       | a pointer filled in with the current green color value. |
+| float *                      | **b**       | a pointer filled in with the current blue color value.  |
 
 ## Return Value
 

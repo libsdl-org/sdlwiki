@@ -15,9 +15,9 @@ void SDL_FlushEvent(Uint32 type);
 
 ## Function Parameters
 
-|        |          |                                                                                 |
-| ------ | -------- | ------------------------------------------------------------------------------- |
-| Uint32 | **type** | the type of event to be cleared; see [SDL_EventType](SDL_EventType) for details |
+|        |          |                                                                                  |
+| ------ | -------- | -------------------------------------------------------------------------------- |
+| Uint32 | **type** | the type of event to be cleared; see [SDL_EventType](SDL_EventType) for details. |
 
 ## Remarks
 

@@ -15,10 +15,10 @@ extern SDL_DECLSPEC SDL_GamepadBinding **SDLCALL SDL_GetGamepadBindings(SDL_Game
 
 ## Function Parameters
 
-|                              |             |                                                          |
-| ---------------------------- | ----------- | -------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad                                                |
-| int *                        | **count**   | a pointer filled in with the number of bindings returned |
+|                              |             |                                                           |
+| ---------------------------- | ----------- | --------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad.                                                |
+| int *                        | **count**   | a pointer filled in with the number of bindings returned. |
 
 ## Return Value
 

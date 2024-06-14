@@ -15,11 +15,11 @@ int SDL_SetWindowAspectRatio(SDL_Window *window, float min_aspect, float max_asp
 
 ## Function Parameters
 
-|                            |                |                                                              |
-| -------------------------- | -------------- | ------------------------------------------------------------ |
-| [SDL_Window](SDL_Window) * | **window**     | the window to change                                         |
-| float                      | **min_aspect** | the minimum aspect ratio of the window, or 0.0f for no limit |
-| float                      | **max_aspect** | the maximum aspect ratio of the window, or 0.0f for no limit |
+|                            |                |                                                               |
+| -------------------------- | -------------- | ------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**     | the window to change.                                         |
+| float                      | **min_aspect** | the minimum aspect ratio of the window, or 0.0f for no limit. |
+| float                      | **max_aspect** | the maximum aspect ratio of the window, or 0.0f for no limit. |
 
 ## Return Value
 

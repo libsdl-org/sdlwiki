@@ -15,12 +15,12 @@ int SDL_GetGamepadSensorData(SDL_Gamepad *gamepad, SDL_SensorType type, float *d
 
 ## Function Parameters
 
-|                                  |                |                                                |
-| -------------------------------- | -------------- | ---------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) *     | **gamepad**    | The gamepad to query                           |
-| [SDL_SensorType](SDL_SensorType) | **type**       | The type of sensor to query                    |
-| float *                          | **data**       | A pointer filled with the current sensor state |
-| int                              | **num_values** | The number of values to write to data          |
+|                                  |                |                                                 |
+| -------------------------------- | -------------- | ----------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *     | **gamepad**    | the gamepad to query.                           |
+| [SDL_SensorType](SDL_SensorType) | **type**       | the type of sensor to query.                    |
+| float *                          | **data**       | a pointer filled with the current sensor state. |
+| int                              | **num_values** | the number of values to write to data.          |
 
 ## Return Value
 

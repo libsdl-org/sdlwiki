@@ -15,12 +15,12 @@ int SDL_UpdateTexture(SDL_Texture *texture, const SDL_Rect *rect, const void *pi
 
 ## Function Parameters
 
-|                              |             |                                                                                                         |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                                                                   |
-| const [SDL_Rect](SDL_Rect) * | **rect**    | an [SDL_Rect](SDL_Rect) structure representing the area to update, or NULL to update the entire texture |
-| const void *                 | **pixels**  | the raw pixel data in the format of the texture                                                         |
-| int                          | **pitch**   | the number of bytes in a row of pixel data, including padding between lines                             |
+|                              |             |                                                                                                          |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update.                                                                                   |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | an [SDL_Rect](SDL_Rect) structure representing the area to update, or NULL to update the entire texture. |
+| const void *                 | **pixels**  | the raw pixel data in the format of the texture.                                                         |
+| int                          | **pitch**   | the number of bytes in a row of pixel data, including padding between lines.                             |
 
 ## Return Value
 

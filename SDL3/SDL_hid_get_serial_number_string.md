@@ -17,9 +17,9 @@ int SDL_hid_get_serial_number_string(SDL_hid_device *dev, wchar_t *string, size_
 
 |                                    |            |                                                               |
 | ---------------------------------- | ---------- | ------------------------------------------------------------- |
-| [SDL_hid_device](SDL_hid_device) * | **dev**    | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
-| wchar_t *                          | **string** | A wide string buffer to put the data into.                    |
-| size_t                             | **maxlen** | The length of the buffer in multiples of wchar_t.             |
+| [SDL_hid_device](SDL_hid_device) * | **dev**    | a device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| wchar_t *                          | **string** | a wide string buffer to put the data into.                    |
+| size_t                             | **maxlen** | the length of the buffer in multiples of wchar_t.             |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ Uint32 SDL_GetSemaphoreValue(SDL_Semaphore *sem);
 
 ## Function Parameters
 
-|                                  |         |                        |
-| -------------------------------- | ------- | ---------------------- |
-| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to query |
+|                                  |         |                         |
+| -------------------------------- | ------- | ----------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to query. |
 
 ## Return Value
 

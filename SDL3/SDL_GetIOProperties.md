@@ -15,9 +15,9 @@ SDL_PropertiesID SDL_GetIOProperties(SDL_IOStream *context);
 
 ## Function Parameters
 
-|                                |             |                                                        |
-| ------------------------------ | ----------- | ------------------------------------------------------ |
-| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure |
+|                                |             |                                                         |
+| ------------------------------ | ----------- | ------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure. |
 
 ## Return Value
 

@@ -17,9 +17,9 @@ SDL_hid_device * SDL_hid_open(unsigned short vendor_id, unsigned short product_i
 
 |                 |                   |                                                            |
 | --------------- | ----------------- | ---------------------------------------------------------- |
-| unsigned short  | **vendor_id**     | The Vendor ID (VID) of the device to open.                 |
-| unsigned short  | **product_id**    | The Product ID (PID) of the device to open.                |
-| const wchar_t * | **serial_number** | The Serial Number of the device to open (Optionally NULL). |
+| unsigned short  | **vendor_id**     | the Vendor ID (VID) of the device to open.                 |
+| unsigned short  | **product_id**    | the Product ID (PID) of the device to open.                |
+| const wchar_t * | **serial_number** | the Serial Number of the device to open (Optionally NULL). |
 
 ## Return Value
 

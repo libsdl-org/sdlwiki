@@ -15,9 +15,9 @@ int SDL_FlushRenderer(SDL_Renderer *renderer);
 
 ## Function Parameters
 
-|                                |              |                       |
-| ------------------------------ | ------------ | --------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context |
+|                                |              |                        |
+| ------------------------------ | ------------ | ---------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context. |
 
 ## Return Value
 

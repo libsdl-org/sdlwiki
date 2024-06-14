@@ -17,9 +17,9 @@ int SDL_hid_send_feature_report(SDL_hid_device *dev, const unsigned char *data, 
 
 |                                    |            |                                                                       |
 | ---------------------------------- | ---------- | --------------------------------------------------------------------- |
-| [SDL_hid_device](SDL_hid_device) * | **dev**    | A device handle returned from [SDL_hid_open](SDL_hid_open)().         |
-| const unsigned char *              | **data**   | The data to send, including the report number as the first byte.      |
-| size_t                             | **length** | The length in bytes of the data to send, including the report number. |
+| [SDL_hid_device](SDL_hid_device) * | **dev**    | a device handle returned from [SDL_hid_open](SDL_hid_open)().         |
+| const unsigned char *              | **data**   | the data to send, including the report number as the first byte.      |
+| size_t                             | **length** | the length in bytes of the data to send, including the report number. |
 
 ## Return Value
 

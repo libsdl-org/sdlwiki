@@ -21,7 +21,7 @@ float SDL_atanf(float x);
 
 ## Return Value
 
-(float) Returns arc tangent of of `x` in radians, or 0 if `x = 0`
+(float) Returns arc tangent of of `x` in radians, or 0 if `x = 0`.
 
 ## Remarks
 

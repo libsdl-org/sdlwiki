@@ -17,12 +17,12 @@ float SDL_fmodf(float x, float y);
 
 |       |       |                                 |
 | ----- | ----- | ------------------------------- |
-| float | **x** | the numerator                   |
+| float | **x** | the numerator.                  |
 | float | **y** | the denominator. Must not be 0. |
 
 ## Return Value
 
-(float) Returns the remainder of `x / y`
+(float) Returns the remainder of `x / y`.
 
 ## Remarks
 

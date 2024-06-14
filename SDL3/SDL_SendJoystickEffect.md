@@ -15,11 +15,11 @@ int SDL_SendJoystickEffect(SDL_Joystick *joystick, const void *data, int size);
 
 ## Function Parameters
 
-|                                |              |                                              |
-| ------------------------------ | ------------ | -------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to affect                       |
-| const void *                   | **data**     | The data to send to the joystick             |
-| int                            | **size**     | The size of the data to send to the joystick |
+|                                |              |                                               |
+| ------------------------------ | ------------ | --------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to affect.                       |
+| const void *                   | **data**     | the data to send to the joystick.             |
+| int                            | **size**     | the size of the data to send to the joystick. |
 
 ## Return Value
 

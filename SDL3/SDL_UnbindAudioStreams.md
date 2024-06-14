@@ -18,7 +18,7 @@ void SDL_UnbindAudioStreams(SDL_AudioStream **streams, int num_streams);
 |                                       |                 |                                               |
 | ------------------------------------- | --------------- | --------------------------------------------- |
 | [SDL_AudioStream](SDL_AudioStream) ** | **streams**     | an array of audio streams to unbind.          |
-| int                                   | **num_streams** | Number streams listed in the `streams` array. |
+| int                                   | **num_streams** | number streams listed in the `streams` array. |
 
 ## Remarks
 

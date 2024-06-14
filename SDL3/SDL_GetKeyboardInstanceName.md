@@ -15,9 +15,9 @@ const char* SDL_GetKeyboardInstanceName(SDL_KeyboardID instance_id);
 
 ## Function Parameters
 
-|                                  |                 |                          |
-| -------------------------------- | --------------- | ------------------------ |
-| [SDL_KeyboardID](SDL_KeyboardID) | **instance_id** | the keyboard instance ID |
+|                                  |                 |                           |
+| -------------------------------- | --------------- | ------------------------- |
+| [SDL_KeyboardID](SDL_KeyboardID) | **instance_id** | the keyboard instance ID. |
 
 ## Return Value
 

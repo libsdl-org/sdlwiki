@@ -17,13 +17,13 @@ int SDL_LoadWAV_IO(SDL_IOStream * src, SDL_bool closeio,
 
 ## Function Parameters
 
-|                                  |               |                                                                                                                        |
-| -------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) *   | **src**       | The data source for the WAVE data                                                                                      |
-| [SDL_bool](SDL_bool)             | **closeio**   | If [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error    |
-| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | A pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return |
-| Uint8 **                         | **audio_buf** | A pointer filled with the audio data, allocated by the function                                                        |
-| Uint32 *                         | **audio_len** | A pointer filled with the length of the audio data buffer in bytes                                                     |
+|                                  |               |                                                                                                                         |
+| -------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) *   | **src**       | the data source for the WAVE data.                                                                                      |
+| [SDL_bool](SDL_bool)             | **closeio**   | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error.    |
+| [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | a pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return. |
+| Uint8 **                         | **audio_buf** | a pointer filled with the audio data, allocated by the function.                                                        |
+| Uint32 *                         | **audio_len** | a pointer filled with the length of the audio data buffer in bytes.                                                     |
 
 ## Return Value
 

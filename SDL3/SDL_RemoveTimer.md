@@ -15,9 +15,9 @@ int SDL_RemoveTimer(SDL_TimerID id);
 
 ## Function Parameters
 
-|                            |        |                               |
-| -------------------------- | ------ | ----------------------------- |
-| [SDL_TimerID](SDL_TimerID) | **id** | the ID of the timer to remove |
+|                            |        |                                |
+| -------------------------- | ------ | ------------------------------ |
+| [SDL_TimerID](SDL_TimerID) | **id** | the ID of the timer to remove. |
 
 ## Return Value
 

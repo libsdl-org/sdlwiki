@@ -17,7 +17,7 @@ extern SDL_DECLSPEC SDL_Finger **SDLCALL SDL_GetTouchFingers(SDL_TouchID touchID
 
 |                            |             |                                                                       |
 | -------------------------- | ----------- | --------------------------------------------------------------------- |
-| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of a touch device                                              |
+| [SDL_TouchID](SDL_TouchID) | **touchID** | the ID of a touch device.                                             |
 | int *                      | **count**   | a pointer filled in with the number of fingers returned, can be NULL. |
 
 ## Return Value

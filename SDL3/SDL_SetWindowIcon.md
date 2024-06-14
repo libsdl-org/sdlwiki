@@ -15,10 +15,10 @@ int SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
 
 ## Function Parameters
 
-|                              |            |                                                                            |
-| ---------------------------- | ---------- | -------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) *   | **window** | the window to change                                                       |
-| [SDL_Surface](SDL_Surface) * | **icon**   | an [SDL_Surface](SDL_Surface) structure containing the icon for the window |
+|                              |            |                                                                             |
+| ---------------------------- | ---------- | --------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *   | **window** | the window to change.                                                       |
+| [SDL_Surface](SDL_Surface) * | **icon**   | an [SDL_Surface](SDL_Surface) structure containing the icon for the window. |
 
 ## Return Value
 

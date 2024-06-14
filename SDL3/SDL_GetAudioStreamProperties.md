@@ -15,9 +15,9 @@ SDL_PropertiesID SDL_GetAudioStreamProperties(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                                      |            |                                                 |
-| ------------------------------------ | ---------- | ----------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the [SDL_AudioStream](SDL_AudioStream) to query |
+|                                      |            |                                                  |
+| ------------------------------------ | ---------- | ------------------------------------------------ |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the [SDL_AudioStream](SDL_AudioStream) to query. |
 
 ## Return Value
 

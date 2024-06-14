@@ -15,9 +15,9 @@ SDL_FunctionPointer SDL_EGL_GetProcAddress(const char *proc);
 
 ## Function Parameters
 
-|              |          |                             |
-| ------------ | -------- | --------------------------- |
-| const char * | **proc** | the name of an EGL function |
+|              |          |                              |
+| ------------ | -------- | ---------------------------- |
+| const char * | **proc** | the name of an EGL function. |
 
 ## Return Value
 

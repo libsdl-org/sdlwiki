@@ -15,9 +15,9 @@ const char * SDL_GetGamepadStringForAxis(SDL_GamepadAxis axis);
 
 ## Function Parameters
 
-|                                    |          |                                                              |
-| ---------------------------------- | -------- | ------------------------------------------------------------ |
-| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis** | an enum value for a given [SDL_GamepadAxis](SDL_GamepadAxis) |
+|                                    |          |                                                               |
+| ---------------------------------- | -------- | ------------------------------------------------------------- |
+| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis** | an enum value for a given [SDL_GamepadAxis](SDL_GamepadAxis). |
 
 ## Return Value
 

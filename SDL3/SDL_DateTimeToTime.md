@@ -15,10 +15,10 @@ int SDL_DateTimeToTime(const SDL_DateTime *dt, SDL_Time *ticks);
 
 ## Function Parameters
 
-|                                      |           |                                         |
-| ------------------------------------ | --------- | --------------------------------------- |
-| const [SDL_DateTime](SDL_DateTime) * | **dt**    | the source [SDL_DateTime](SDL_DateTime) |
-| [SDL_Time](SDL_Time) *               | **ticks** | the resulting [SDL_Time](SDL_Time)      |
+|                                      |           |                                          |
+| ------------------------------------ | --------- | ---------------------------------------- |
+| const [SDL_DateTime](SDL_DateTime) * | **dt**    | the source [SDL_DateTime](SDL_DateTime). |
+| [SDL_Time](SDL_Time) *               | **ticks** | the resulting [SDL_Time](SDL_Time).      |
 
 ## Return Value
 

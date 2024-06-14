@@ -15,11 +15,11 @@ SDL_bool SDL_DXGIGetOutputInfo(SDL_DisplayID displayID, int *adapterIndex, int *
 
 ## Function Parameters
 
-|                                |                  |                                                  |
-| ------------------------------ | ---------------- | ------------------------------------------------ |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID**    | the instance of the display to query             |
-| int *                          | **adapterIndex** | a pointer to be filled in with the adapter index |
-| int *                          | **outputIndex**  | a pointer to be filled in with the output index  |
+|                                |                  |                                                   |
+| ------------------------------ | ---------------- | ------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID**    | the instance of the display to query.             |
+| int *                          | **adapterIndex** | a pointer to be filled in with the adapter index. |
+| int *                          | **outputIndex**  | a pointer to be filled in with the output index.  |
 
 ## Return Value
 

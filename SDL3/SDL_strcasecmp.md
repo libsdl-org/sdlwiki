@@ -17,8 +17,8 @@ int SDL_strcasecmp(const char *str1, const char *str2);
 
 |              |          |                                                      |
 | ------------ | -------- | ---------------------------------------------------- |
-| const char * | **str1** | The first string to compare. NULL is not permitted!  |
-| const char * | **str2** | The second string to compare. NULL is not permitted! |
+| const char * | **str1** | the first string to compare. NULL is not permitted!  |
+| const char * | **str2** | the second string to compare. NULL is not permitted! |
 
 ## Return Value
 

@@ -15,10 +15,10 @@ SDL_bool SDL_WriteU8(SDL_IOStream *dst, Uint8 value);
 
 ## Function Parameters
 
-|                                |           |                                              |
-| ------------------------------ | --------- | -------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **dst**   | the [SDL_IOStream](SDL_IOStream) to write to |
-| Uint8                          | **value** | the byte value to write                      |
+|                                |           |                                               |
+| ------------------------------ | --------- | --------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **dst**   | the [SDL_IOStream](SDL_IOStream) to write to. |
+| Uint8                          | **value** | the byte value to write.                      |
 
 ## Return Value
 

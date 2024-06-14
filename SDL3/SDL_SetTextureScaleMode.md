@@ -17,7 +17,7 @@ int SDL_SetTextureScaleMode(SDL_Texture *texture, SDL_ScaleMode scaleMode);
 
 |                                |               |                                                                |
 | ------------------------------ | ------------- | -------------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) *   | **texture**   | The texture to update.                                         |
+| [SDL_Texture](SDL_Texture) *   | **texture**   | the texture to update.                                         |
 | [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode** | the [SDL_ScaleMode](SDL_ScaleMode) to use for texture scaling. |
 
 ## Return Value

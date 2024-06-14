@@ -15,9 +15,9 @@ const char* SDL_GetPixelFormatName(SDL_PixelFormatEnum format);
 
 ## Function Parameters
 
-|                                            |            |                           |
-| ------------------------------------------ | ---------- | ------------------------- |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the pixel format to query |
+|                                            |            |                            |
+| ------------------------------------------ | ---------- | -------------------------- |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the pixel format to query. |
 
 ## Return Value
 

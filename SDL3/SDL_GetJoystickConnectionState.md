@@ -15,9 +15,9 @@ SDL_JoystickConnectionState SDL_GetJoystickConnectionState(SDL_Joystick *joystic
 
 ## Function Parameters
 
-|                                |              |                       |
-| ------------------------------ | ------------ | --------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query |
+|                                |              |                        |
+| ------------------------------ | ------------ | ---------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to query. |
 
 ## Return Value
 

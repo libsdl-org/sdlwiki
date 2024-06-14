@@ -15,9 +15,9 @@ int SDL_GetCurrentTime(SDL_Time *ticks);
 
 ## Function Parameters
 
-|                        |           |                                                          |
-| ---------------------- | --------- | -------------------------------------------------------- |
-| [SDL_Time](SDL_Time) * | **ticks** | the [SDL_Time](SDL_Time) to hold the returned tick count |
+|                        |           |                                                           |
+| ---------------------- | --------- | --------------------------------------------------------- |
+| [SDL_Time](SDL_Time) * | **ticks** | the [SDL_Time](SDL_Time) to hold the returned tick count. |
 
 ## Return Value
 

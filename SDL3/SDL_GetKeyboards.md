@@ -15,9 +15,9 @@ SDL_KeyboardID* SDL_GetKeyboards(int *count);
 
 ## Function Parameters
 
-|       |           |                                                           |
-| ----- | --------- | --------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of keyboards returned |
+|       |           |                                                            |
+| ----- | --------- | ---------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of keyboards returned. |
 
 ## Return Value
 

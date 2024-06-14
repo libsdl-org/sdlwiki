@@ -17,8 +17,8 @@ SDL_IOStream* SDL_OpenIO(const SDL_IOStreamInterface *iface, void *userdata);
 
 |                                                        |              |                                                                             |
 | ------------------------------------------------------ | ------------ | --------------------------------------------------------------------------- |
-| const [SDL_IOStreamInterface](SDL_IOStreamInterface) * | **iface**    | The function pointers that implement this [SDL_IOStream](SDL_IOStream).     |
-| void *                                                 | **userdata** | The app-controlled pointer that is passed to iface's functions when called. |
+| const [SDL_IOStreamInterface](SDL_IOStreamInterface) * | **iface**    | the function pointers that implement this [SDL_IOStream](SDL_IOStream).     |
+| void *                                                 | **userdata** | the app-controlled pointer that is passed to iface's functions when called. |
 
 ## Return Value
 

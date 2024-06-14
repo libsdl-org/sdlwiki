@@ -15,9 +15,9 @@ SDL_bool SDL_EventEnabled(Uint32 type);
 
 ## Function Parameters
 
-|        |          |                                                                   |
-| ------ | -------- | ----------------------------------------------------------------- |
-| Uint32 | **type** | the type of event; see [SDL_EventType](SDL_EventType) for details |
+|        |          |                                                                    |
+| ------ | -------- | ------------------------------------------------------------------ |
+| Uint32 | **type** | the type of event; see [SDL_EventType](SDL_EventType) for details. |
 
 ## Return Value
 

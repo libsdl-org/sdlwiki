@@ -15,9 +15,9 @@ Uint32 SDL_RegisterEvents(int numevents);
 
 ## Function Parameters
 
-|     |               |                                      |
-| --- | ------------- | ------------------------------------ |
-| int | **numevents** | the number of events to be allocated |
+|     |               |                                       |
+| --- | ------------- | ------------------------------------- |
+| int | **numevents** | the number of events to be allocated. |
 
 ## Return Value
 

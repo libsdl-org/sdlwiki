@@ -21,7 +21,7 @@ float SDL_logf(float x);
 
 ## Return Value
 
-(float) Returns the natural logarithm of `x`
+(float) Returns the natural logarithm of `x`.
 
 ## Remarks
 

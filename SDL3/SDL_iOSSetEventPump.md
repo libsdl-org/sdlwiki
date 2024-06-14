@@ -15,9 +15,9 @@ void SDL_iOSSetEventPump(SDL_bool enabled);
 
 ## Function Parameters
 
-|                      |             |                                                                                     |
-| -------------------- | ----------- | ----------------------------------------------------------------------------------- |
-| [SDL_bool](SDL_bool) | **enabled** | [SDL_TRUE](SDL_TRUE) to enable the event pump, [SDL_FALSE](SDL_FALSE) to disable it |
+|                      |             |                                                                                      |
+| -------------------- | ----------- | ------------------------------------------------------------------------------------ |
+| [SDL_bool](SDL_bool) | **enabled** | [SDL_TRUE](SDL_TRUE) to enable the event pump, [SDL_FALSE](SDL_FALSE) to disable it. |
 
 ## Remarks
 

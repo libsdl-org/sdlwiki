@@ -15,12 +15,12 @@ int SDL_GetSurfaceColorMod(SDL_Surface *surface, Uint8 *r, Uint8 *g, Uint8 *b);
 
 ## Function Parameters
 
-|                              |             |                                                        |
-| ---------------------------- | ----------- | ------------------------------------------------------ |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query      |
-| Uint8 *                      | **r**       | a pointer filled in with the current red color value   |
-| Uint8 *                      | **g**       | a pointer filled in with the current green color value |
-| Uint8 *                      | **b**       | a pointer filled in with the current blue color value  |
+|                              |             |                                                         |
+| ---------------------------- | ----------- | ------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query.      |
+| Uint8 *                      | **r**       | a pointer filled in with the current red color value.   |
+| Uint8 *                      | **g**       | a pointer filled in with the current green color value. |
+| Uint8 *                      | **b**       | a pointer filled in with the current blue color value.  |
 
 ## Return Value
 

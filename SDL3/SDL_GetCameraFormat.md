@@ -17,8 +17,8 @@ int SDL_GetCameraFormat(SDL_Camera *camera, SDL_CameraSpec *spec);
 
 |                                    |            |                                                                          |
 | ---------------------------------- | ---------- | ------------------------------------------------------------------------ |
-| [SDL_Camera](SDL_Camera) *         | **camera** | opened camera device                                                     |
-| [SDL_CameraSpec](SDL_CameraSpec) * | **spec**   | The [SDL_CameraSpec](SDL_CameraSpec) to be initialized by this function. |
+| [SDL_Camera](SDL_Camera) *         | **camera** | opened camera device.                                                    |
+| [SDL_CameraSpec](SDL_CameraSpec) * | **spec**   | the [SDL_CameraSpec](SDL_CameraSpec) to be initialized by this function. |
 
 ## Return Value
 

@@ -19,13 +19,13 @@ SDL_PixelFormatEnum SDL_GetPixelFormatEnumForMasks(int bpp,
 
 ## Function Parameters
 
-|        |           |                                               |
-| ------ | --------- | --------------------------------------------- |
-| int    | **bpp**   | a bits per pixel value; usually 15, 16, or 32 |
-| Uint32 | **Rmask** | the red mask for the format                   |
-| Uint32 | **Gmask** | the green mask for the format                 |
-| Uint32 | **Bmask** | the blue mask for the format                  |
-| Uint32 | **Amask** | the alpha mask for the format                 |
+|        |           |                                                |
+| ------ | --------- | ---------------------------------------------- |
+| int    | **bpp**   | a bits per pixel value; usually 15, 16, or 32. |
+| Uint32 | **Rmask** | the red mask for the format.                   |
+| Uint32 | **Gmask** | the green mask for the format.                 |
+| Uint32 | **Bmask** | the blue mask for the format.                  |
+| Uint32 | **Amask** | the alpha mask for the format.                 |
 
 ## Return Value
 

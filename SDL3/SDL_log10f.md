@@ -21,7 +21,7 @@ float SDL_log10f(float x);
 
 ## Return Value
 
-(float) Returns the logarithm of `x`
+(float) Returns the logarithm of `x`.
 
 ## Remarks
 

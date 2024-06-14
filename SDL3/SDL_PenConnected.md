@@ -17,7 +17,7 @@ SDL_bool SDL_PenConnected(SDL_PenID instance_id);
 
 |                        |                 |           |
 | ---------------------- | --------------- | --------- |
-| [SDL_PenID](SDL_PenID) | **instance_id** | A pen ID. |
+| [SDL_PenID](SDL_PenID) | **instance_id** | a pen ID. |
 
 ## Return Value
 

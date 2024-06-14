@@ -15,10 +15,10 @@ int SDL_GetRenderDrawBlendMode(SDL_Renderer *renderer, SDL_BlendMode *blendMode)
 
 ## Function Parameters
 
-|                                  |               |                                                                     |
-| -------------------------------- | ------------- | ------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *   | **renderer**  | the rendering context                                               |
-| [SDL_BlendMode](SDL_BlendMode) * | **blendMode** | a pointer filled in with the current [SDL_BlendMode](SDL_BlendMode) |
+|                                  |               |                                                                      |
+| -------------------------------- | ------------- | -------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer**  | the rendering context.                                               |
+| [SDL_BlendMode](SDL_BlendMode) * | **blendMode** | a pointer filled in with the current [SDL_BlendMode](SDL_BlendMode). |
 
 ## Return Value
 

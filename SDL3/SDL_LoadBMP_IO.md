@@ -15,10 +15,10 @@ SDL_Surface* SDL_LoadBMP_IO(SDL_IOStream *src, SDL_bool closeio);
 
 ## Function Parameters
 
-|                                |             |                                                                                                                     |
-| ------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the surface                                                                                     |
-| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
+|                                |             |                                                                                                                      |
+| ------------------------------ | ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the surface.                                                                                     |
+| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
 
 ## Return Value
 

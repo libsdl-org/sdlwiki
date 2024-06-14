@@ -15,9 +15,9 @@ void SDL_CloseHaptic(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                            |            |                                              |
-| -------------------------- | ---------- | -------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to close |
+|                            |            |                                               |
+| -------------------------- | ---------- | --------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to close. |
 
 ## Version
 

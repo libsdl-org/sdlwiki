@@ -15,16 +15,16 @@ SDL_GamepadButtonLabel SDL_GetGamepadButtonLabelForType(SDL_GamepadType type, SD
 
 ## Function Parameters
 
-|                                        |            |                                                                           |
-| -------------------------------------- | ---------- | ------------------------------------------------------------------------- |
-| [SDL_GamepadType](SDL_GamepadType)     | **type**   | the type of gamepad to check                                              |
-| [SDL_GamepadButton](SDL_GamepadButton) | **button** | a button index (one of the [SDL_GamepadButton](SDL_GamepadButton) values) |
+|                                        |            |                                                                            |
+| -------------------------------------- | ---------- | -------------------------------------------------------------------------- |
+| [SDL_GamepadType](SDL_GamepadType)     | **type**   | the type of gamepad to check.                                              |
+| [SDL_GamepadButton](SDL_GamepadButton) | **button** | a button index (one of the [SDL_GamepadButton](SDL_GamepadButton) values). |
 
 ## Return Value
 
 ([SDL_GamepadButtonLabel](SDL_GamepadButtonLabel)) Returns the
 [SDL_GamepadButtonLabel](SDL_GamepadButtonLabel) enum corresponding to the
-button label
+button label.
 
 ## Version
 

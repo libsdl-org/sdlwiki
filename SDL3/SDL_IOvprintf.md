@@ -15,11 +15,11 @@ size_t SDL_IOvprintf(SDL_IOStream *context, const char *fmt, va_list ap);
 
 ## Function Parameters
 
-|                                |             |                                                        |
-| ------------------------------ | ----------- | ------------------------------------------------------ |
-| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure |
-| const char *                   | **fmt**     | a printf() style format string                         |
-| va_list                        | **ap**      | a variable argument list                               |
+|                                |             |                                                         |
+| ------------------------------ | ----------- | ------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure. |
+| const char *                   | **fmt**     | a printf() style format string.                         |
+| va_list                        | **ap**      | a variable argument list.                               |
 
 ## Return Value
 

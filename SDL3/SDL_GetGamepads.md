@@ -15,9 +15,9 @@ SDL_JoystickID* SDL_GetGamepads(int *count);
 
 ## Function Parameters
 
-|       |           |                                                          |
-| ----- | --------- | -------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of gamepads returned |
+|       |           |                                                           |
+| ----- | --------- | --------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of gamepads returned. |
 
 ## Return Value
 

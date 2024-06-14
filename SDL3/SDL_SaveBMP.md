@@ -15,10 +15,10 @@ int SDL_SaveBMP(SDL_Surface *surface, const char *file);
 
 ## Function Parameters
 
-|                              |             |                                                                           |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved |
-| const char *                 | **file**    | a file to save to                                                         |
+|                              |             |                                                                            |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved. |
+| const char *                 | **file**    | a file to save to.                                                         |
 
 ## Return Value
 

@@ -15,12 +15,12 @@ SDL_Window* SDL_CreateWindow(const char *title, int w, int h, SDL_WindowFlags fl
 
 ## Function Parameters
 
-|                                    |           |                                                                    |
-| ---------------------------------- | --------- | ------------------------------------------------------------------ |
-| const char *                       | **title** | the title of the window, in UTF-8 encoding                         |
-| int                                | **w**     | the width of the window                                            |
-| int                                | **h**     | the height of the window                                           |
-| [SDL_WindowFlags](SDL_WindowFlags) | **flags** | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together |
+|                                    |           |                                                                     |
+| ---------------------------------- | --------- | ------------------------------------------------------------------- |
+| const char *                       | **title** | the title of the window, in UTF-8 encoding.                         |
+| int                                | **w**     | the width of the window.                                            |
+| int                                | **h**     | the height of the window.                                           |
+| [SDL_WindowFlags](SDL_WindowFlags) | **flags** | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together. |
 
 ## Return Value
 

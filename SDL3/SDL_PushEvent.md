@@ -15,9 +15,9 @@ int SDL_PushEvent(SDL_Event *event);
 
 ## Function Parameters
 
-|                          |           |                                                     |
-| ------------------------ | --------- | --------------------------------------------------- |
-| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) to be added to the queue |
+|                          |           |                                                      |
+| ------------------------ | --------- | ---------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event** | the [SDL_Event](SDL_Event) to be added to the queue. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ SDL_Gamepad* SDL_GetGamepadFromInstanceID(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                                  |                 |                                         |
-| -------------------------------- | --------------- | --------------------------------------- |
-| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID of the gamepad |
+|                                  |                 |                                          |
+| -------------------------------- | --------------- | ---------------------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID of the gamepad. |
 
 ## Return Value
 

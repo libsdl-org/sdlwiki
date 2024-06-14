@@ -18,7 +18,7 @@ int SDL_LinuxSetThreadPriority(Sint64 threadID, int priority);
 |        |              |                                           |
 | ------ | ------------ | ----------------------------------------- |
 | Sint64 | **threadID** | the Unix thread ID to change priority of. |
-| int    | **priority** | The new, Unix-specific, priority value.   |
+| int    | **priority** | the new, Unix-specific, priority value.   |
 
 ## Return Value
 

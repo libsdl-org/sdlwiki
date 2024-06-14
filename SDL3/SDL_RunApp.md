@@ -17,16 +17,16 @@ int SDL_RunApp(int argc, char* argv[], SDL_main_func mainFunction, void * reserv
 
 |                                |                  |                                                                                                                                            |
 | ------------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| int                            | **argc**         | The argc parameter from the application's main() function, or 0 if the platform's main-equivalent has no argc                              |
-| char **                        | **argv**         | The argv parameter from the application's main() function, or NULL if the platform's main-equivalent has no argv                           |
-| [SDL_main_func](SDL_main_func) | **mainFunction** | Your SDL app's C-style main(). NOT the function you're calling this from! Its name doesn't matter; it doesn't literally have to be `main`. |
-| void *                         | **reserved**     | should be NULL (reserved for future use, will probably be platform-specific then)                                                          |
+| int                            | **argc**         | the argc parameter from the application's main() function, or 0 if the platform's main-equivalent has no argc.                             |
+| char **                        | **argv**         | the argv parameter from the application's main() function, or NULL if the platform's main-equivalent has no argv.                          |
+| [SDL_main_func](SDL_main_func) | **mainFunction** | your SDL app's C-style main(). NOT the function you're calling this from! Its name doesn't matter; it doesn't literally have to be `main`. |
+| void *                         | **reserved**     | should be NULL (reserved for future use, will probably be platform-specific then).                                                         |
 
 ## Return Value
 
 (int) Returns the return value from mainFunction: 0 on success, -1 on
 failure; [SDL_GetError](SDL_GetError)() might have more information on the
-failure
+failure.
 
 ## Remarks
 

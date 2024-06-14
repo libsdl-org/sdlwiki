@@ -15,9 +15,9 @@ int SDL_CloseStorage(SDL_Storage *storage);
 
 ## Function Parameters
 
-|                              |             |                              |
-| ---------------------------- | ----------- | ---------------------------- |
-| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to close |
+|                              |             |                               |
+| ---------------------------- | ----------- | ----------------------------- |
+| [SDL_Storage](SDL_Storage) * | **storage** | a storage container to close. |
 
 ## Return Value
 

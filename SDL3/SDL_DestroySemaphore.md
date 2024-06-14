@@ -15,9 +15,9 @@ void SDL_DestroySemaphore(SDL_Semaphore *sem);
 
 ## Function Parameters
 
-|                                  |         |                          |
-| -------------------------------- | ------- | ------------------------ |
-| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to destroy |
+|                                  |         |                           |
+| -------------------------------- | ------- | ------------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to destroy. |
 
 ## Remarks
 

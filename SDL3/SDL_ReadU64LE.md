@@ -15,10 +15,10 @@ SDL_bool SDL_ReadU64LE(SDL_IOStream *src, Uint64 *value);
 
 ## Function Parameters
 
-|                                |           |                                        |
-| ------------------------------ | --------- | -------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data     |
-| Uint64 *                       | **value** | a pointer filled in with the data read |
+|                                |           |                                         |
+| ------------------------------ | --------- | --------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
+| Uint64 *                       | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

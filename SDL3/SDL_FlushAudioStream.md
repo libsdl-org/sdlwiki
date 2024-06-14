@@ -15,9 +15,9 @@ int SDL_FlushAudioStream(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                                      |            |                           |
-| ------------------------------------ | ---------- | ------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to flush |
+|                                      |            |                            |
+| ------------------------------------ | ---------- | -------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to flush. |
 
 ## Return Value
 

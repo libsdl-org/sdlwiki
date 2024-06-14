@@ -15,9 +15,9 @@ void SDL_DestroyTexture(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                              |             |                        |
-| ---------------------------- | ----------- | ---------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to destroy |
+|                              |             |                         |
+| ---------------------------- | ----------- | ----------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to destroy. |
 
 ## Remarks
 

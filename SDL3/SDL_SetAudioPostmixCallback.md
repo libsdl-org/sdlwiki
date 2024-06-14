@@ -17,9 +17,9 @@ int SDL_SetAudioPostmixCallback(SDL_AudioDeviceID devid, SDL_AudioPostmixCallbac
 
 |                                                      |              |                                                         |
 | ---------------------------------------------------- | ------------ | ------------------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID)               | **devid**    | The ID of an opened audio device.                       |
-| [SDL_AudioPostmixCallback](SDL_AudioPostmixCallback) | **callback** | A callback function to be called. Can be NULL.          |
-| void *                                               | **userdata** | App-controlled pointer passed to callback. Can be NULL. |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID)               | **devid**    | the ID of an opened audio device.                       |
+| [SDL_AudioPostmixCallback](SDL_AudioPostmixCallback) | **callback** | a callback function to be called. Can be NULL.          |
+| void *                                               | **userdata** | app-controlled pointer passed to callback. Can be NULL. |
 
 ## Return Value
 

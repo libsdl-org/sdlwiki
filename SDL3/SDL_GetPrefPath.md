@@ -15,10 +15,10 @@ char* SDL_GetPrefPath(const char *org, const char *app);
 
 ## Function Parameters
 
-|              |         |                               |
-| ------------ | ------- | ----------------------------- |
-| const char * | **org** | the name of your organization |
-| const char * | **app** | the name of your application  |
+|              |         |                                |
+| ------------ | ------- | ------------------------------ |
+| const char * | **org** | the name of your organization. |
+| const char * | **app** | the name of your application.  |
 
 ## Return Value
 

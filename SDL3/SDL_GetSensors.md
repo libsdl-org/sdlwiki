@@ -15,9 +15,9 @@ SDL_SensorID* SDL_GetSensors(int *count);
 
 ## Function Parameters
 
-|       |           |                                                         |
-| ----- | --------- | ------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of sensors returned |
+|       |           |                                                          |
+| ----- | --------- | -------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of sensors returned. |
 
 ## Return Value
 

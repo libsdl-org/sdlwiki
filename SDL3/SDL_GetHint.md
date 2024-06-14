@@ -15,9 +15,9 @@ const char * SDL_GetHint(const char *name);
 
 ## Function Parameters
 
-|              |          |                   |
-| ------------ | -------- | ----------------- |
-| const char * | **name** | the hint to query |
+|              |          |                    |
+| ------------ | -------- | ------------------ |
+| const char * | **name** | the hint to query. |
 
 ## Return Value
 

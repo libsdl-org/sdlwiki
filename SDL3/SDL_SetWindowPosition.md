@@ -15,11 +15,11 @@ int SDL_SetWindowPosition(SDL_Window *window, int x, int y);
 
 ## Function Parameters
 
-|                            |            |                                                                                                                                               |
-| -------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to reposition                                                                                                                      |
-| int                        | **x**      | the x coordinate of the window, or [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED) or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
-| int                        | **y**      | the y coordinate of the window, or [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED) or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
+|                            |            |                                                                                                                                                |
+| -------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to reposition.                                                                                                                      |
+| int                        | **x**      | the x coordinate of the window, or [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED) or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED). |
+| int                        | **y**      | the y coordinate of the window, or [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED) or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED). |
 
 ## Return Value
 

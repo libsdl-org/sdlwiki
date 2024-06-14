@@ -16,11 +16,11 @@ int SDL_WaitConditionTimeout(SDL_Condition *cond,
 
 ## Function Parameters
 
-|                                  |               |                                                                       |
-| -------------------------------- | ------------- | --------------------------------------------------------------------- |
-| [SDL_Condition](SDL_Condition) * | **cond**      | the condition variable to wait on                                     |
-| [SDL_Mutex](SDL_Mutex) *         | **mutex**     | the mutex used to coordinate thread access                            |
-| Sint32                           | **timeoutMS** | the maximum time to wait, in milliseconds, or -1 to wait indefinitely |
+|                                  |               |                                                                        |
+| -------------------------------- | ------------- | ---------------------------------------------------------------------- |
+| [SDL_Condition](SDL_Condition) * | **cond**      | the condition variable to wait on.                                     |
+| [SDL_Mutex](SDL_Mutex) *         | **mutex**     | the mutex used to coordinate thread access.                            |
+| Sint32                           | **timeoutMS** | the maximum time to wait, in milliseconds, or -1 to wait indefinitely. |
 
 ## Return Value
 

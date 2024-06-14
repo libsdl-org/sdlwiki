@@ -15,10 +15,10 @@ Sint16 SDL_GetGamepadAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
 
 ## Function Parameters
 
-|                                    |             |                                                                      |
-| ---------------------------------- | ----------- | -------------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) *       | **gamepad** | a gamepad                                                            |
-| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis**    | an axis index (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values) |
+|                                    |             |                                                                       |
+| ---------------------------------- | ----------- | --------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *       | **gamepad** | a gamepad.                                                            |
+| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis**    | an axis index (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values). |
 
 ## Return Value
 

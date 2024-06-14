@@ -15,9 +15,9 @@ SDL_Renderer* SDL_GetRendererFromTexture(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                              |             |                      |
-| ---------------------------- | ----------- | -------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query |
+|                              |             |                       |
+| ---------------------------- | ----------- | --------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query. |
 
 ## Return Value
 

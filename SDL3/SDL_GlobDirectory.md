@@ -17,7 +17,7 @@ extern SDL_DECLSPEC char **SDLCALL SDL_GlobDirectory(const char *path, const cha
 
 |                                |             |                                                                                   |
 | ------------------------------ | ----------- | --------------------------------------------------------------------------------- |
-| const char *                   | **path**    | the path of the directory to enumerate                                            |
+| const char *                   | **path**    | the path of the directory to enumerate.                                           |
 | const char *                   | **pattern** | the pattern that files in the directory must match. Can be NULL.                  |
 | [SDL_GlobFlags](SDL_GlobFlags) | **flags**   | `SDL_GLOB_*` bitflags that affect this search.                                    |
 | int *                          | **count**   | on return, will be set to the number of items in the returned array. Can be NULL. |

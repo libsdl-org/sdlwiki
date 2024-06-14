@@ -15,11 +15,11 @@ int SDL_SaveBMP_IO(SDL_Surface *surface, SDL_IOStream *dst, SDL_bool closeio);
 
 ## Function Parameters
 
-|                                |             |                                                                                                                     |
-| ------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) *   | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved                                           |
-| [SDL_IOStream](SDL_IOStream) * | **dst**     | a data stream to save to                                                                                            |
-| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `dst` before returning, even in the case of an error |
+|                                |             |                                                                                                                      |
+| ------------------------------ | ----------- | -------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) *   | **surface** | the [SDL_Surface](SDL_Surface) structure containing the image to be saved.                                           |
+| [SDL_IOStream](SDL_IOStream) * | **dst**     | a data stream to save to.                                                                                            |
+| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `dst` before returning, even in the case of an error. |
 
 ## Return Value
 

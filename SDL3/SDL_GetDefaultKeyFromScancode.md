@@ -15,9 +15,9 @@ SDL_Keycode SDL_GetDefaultKeyFromScancode(SDL_Scancode scancode);
 
 ## Function Parameters
 
-|                              |              |                                                   |
-| ---------------------------- | ------------ | ------------------------------------------------- |
-| [SDL_Scancode](SDL_Scancode) | **scancode** | the desired [SDL_Scancode](SDL_Scancode) to query |
+|                              |              |                                                    |
+| ---------------------------- | ------------ | -------------------------------------------------- |
+| [SDL_Scancode](SDL_Scancode) | **scancode** | the desired [SDL_Scancode](SDL_Scancode) to query. |
 
 ## Return Value
 

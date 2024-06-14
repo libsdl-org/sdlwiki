@@ -15,11 +15,11 @@ int SDL_SetGamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type, SDL_b
 
 ## Function Parameters
 
-|                                  |             |                                          |
-| -------------------------------- | ----------- | ---------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) *     | **gamepad** | The gamepad to update                    |
-| [SDL_SensorType](SDL_SensorType) | **type**    | The type of sensor to enable/disable     |
-| [SDL_bool](SDL_bool)             | **enabled** | Whether data reporting should be enabled |
+|                                  |             |                                           |
+| -------------------------------- | ----------- | ----------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *     | **gamepad** | the gamepad to update.                    |
+| [SDL_SensorType](SDL_SensorType) | **type**    | the type of sensor to enable/disable.     |
+| [SDL_bool](SDL_bool)             | **enabled** | whether data reporting should be enabled. |
 
 ## Return Value
 

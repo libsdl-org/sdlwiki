@@ -15,9 +15,9 @@ int SDL_GetMaxHapticEffectsPlaying(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                            |            |                                                                      |
-| -------------------------- | ---------- | -------------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query maximum playing effects |
+|                            |            |                                                                       |
+| -------------------------- | ---------- | --------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query maximum playing effects. |
 
 ## Return Value
 

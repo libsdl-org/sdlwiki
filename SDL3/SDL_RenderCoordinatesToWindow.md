@@ -15,13 +15,13 @@ int SDL_RenderCoordinatesToWindow(SDL_Renderer *renderer, float x, float y, floa
 
 ## Function Parameters
 
-|                                |              |                                                              |
-| ------------------------------ | ------------ | ------------------------------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                        |
-| float                          | **x**        | the x coordinate in render coordinates                       |
-| float                          | **y**        | the y coordinate in render coordinates                       |
-| float *                        | **window_x** | a pointer filled with the x coordinate in window coordinates |
-| float *                        | **window_y** | a pointer filled with the y coordinate in window coordinates |
+|                                |              |                                                               |
+| ------------------------------ | ------------ | ------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                        |
+| float                          | **x**        | the x coordinate in render coordinates.                       |
+| float                          | **y**        | the y coordinate in render coordinates.                       |
+| float *                        | **window_x** | a pointer filled with the x coordinate in window coordinates. |
+| float *                        | **window_y** | a pointer filled with the y coordinate in window coordinates. |
 
 ## Return Value
 

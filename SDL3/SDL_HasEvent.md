@@ -15,9 +15,9 @@ SDL_bool SDL_HasEvent(Uint32 type);
 
 ## Function Parameters
 
-|        |          |                                                                                 |
-| ------ | -------- | ------------------------------------------------------------------------------- |
-| Uint32 | **type** | the type of event to be queried; see [SDL_EventType](SDL_EventType) for details |
+|        |          |                                                                                  |
+| ------ | -------- | -------------------------------------------------------------------------------- |
+| Uint32 | **type** | the type of event to be queried; see [SDL_EventType](SDL_EventType) for details. |
 
 ## Return Value
 

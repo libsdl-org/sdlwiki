@@ -15,9 +15,9 @@ SDL_Storage* SDL_OpenFileStorage(const char *path);
 
 ## Function Parameters
 
-|              |          |                                                                        |
-| ------------ | -------- | ---------------------------------------------------------------------- |
-| const char * | **path** | the base path prepended to all storage paths, or NULL for no base path |
+|              |          |                                                                         |
+| ------------ | -------- | ----------------------------------------------------------------------- |
+| const char * | **path** | the base path prepended to all storage paths, or NULL for no base path. |
 
 ## Return Value
 

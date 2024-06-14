@@ -17,7 +17,7 @@ SDL_IOStream* SDL_IOFromFile(const char *file, const char *mode);
 
 |              |          |                                                                        |
 | ------------ | -------- | ---------------------------------------------------------------------- |
-| const char * | **file** | a UTF-8 string representing the filename to open                       |
+| const char * | **file** | a UTF-8 string representing the filename to open.                      |
 | const char * | **mode** | an ASCII string representing the mode to be used for opening the file. |
 
 ## Return Value

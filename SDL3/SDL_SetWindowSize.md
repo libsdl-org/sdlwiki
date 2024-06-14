@@ -15,11 +15,11 @@ int SDL_SetWindowSize(SDL_Window *window, int w, int h);
 
 ## Function Parameters
 
-|                            |            |                                       |
-| -------------------------- | ---------- | ------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to change                  |
-| int                        | **w**      | the width of the window, must be > 0  |
-| int                        | **h**      | the height of the window, must be > 0 |
+|                            |            |                                        |
+| -------------------------- | ---------- | -------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change.                  |
+| int                        | **w**      | the width of the window, must be > 0.  |
+| int                        | **h**      | the height of the window, must be > 0. |
 
 ## Return Value
 

@@ -21,7 +21,7 @@ double SDL_sqrt(double x);
 
 ## Return Value
 
-(double) Returns square root of `x`
+(double) Returns square root of `x`.
 
 ## Remarks
 

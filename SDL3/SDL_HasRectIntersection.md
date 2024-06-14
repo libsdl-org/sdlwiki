@@ -16,10 +16,10 @@ SDL_bool SDL_HasRectIntersection(const SDL_Rect * A,
 
 ## Function Parameters
 
-|                              |       |                                                                     |
-| ---------------------------- | ----- | ------------------------------------------------------------------- |
-| const [SDL_Rect](SDL_Rect) * | **A** | an [SDL_Rect](SDL_Rect) structure representing the first rectangle  |
-| const [SDL_Rect](SDL_Rect) * | **B** | an [SDL_Rect](SDL_Rect) structure representing the second rectangle |
+|                              |       |                                                                      |
+| ---------------------------- | ----- | -------------------------------------------------------------------- |
+| const [SDL_Rect](SDL_Rect) * | **A** | an [SDL_Rect](SDL_Rect) structure representing the first rectangle.  |
+| const [SDL_Rect](SDL_Rect) * | **B** | an [SDL_Rect](SDL_Rect) structure representing the second rectangle. |
 
 ## Return Value
 

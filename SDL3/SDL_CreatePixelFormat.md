@@ -15,9 +15,9 @@ SDL_PixelFormat * SDL_CreatePixelFormat(SDL_PixelFormatEnum pixel_format);
 
 ## Function Parameters
 
-|                                            |                  |                                                              |
-| ------------------------------------------ | ---------------- | ------------------------------------------------------------ |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **pixel_format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
+|                                            |                  |                                                               |
+| ------------------------------------------ | ---------------- | ------------------------------------------------------------- |
+| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **pixel_format** | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values. |
 
 ## Return Value
 

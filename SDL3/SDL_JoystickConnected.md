@@ -15,9 +15,9 @@ SDL_bool SDL_JoystickConnected(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                                |              |                       |
-| ------------------------------ | ------------ | --------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to query |
+|                                |              |                        |
+| ------------------------------ | ------------ | ---------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to query. |
 
 ## Return Value
 

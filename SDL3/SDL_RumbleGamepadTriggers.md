@@ -15,12 +15,12 @@ int SDL_RumbleGamepadTriggers(SDL_Gamepad *gamepad, Uint16 left_rumble, Uint16 r
 
 ## Function Parameters
 
-|                              |                  |                                                                   |
-| ---------------------------- | ---------------- | ----------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**      | The gamepad to vibrate                                            |
-| Uint16                       | **left_rumble**  | The intensity of the left trigger rumble motor, from 0 to 0xFFFF  |
-| Uint16                       | **right_rumble** | The intensity of the right trigger rumble motor, from 0 to 0xFFFF |
-| Uint32                       | **duration_ms**  | The duration of the rumble effect, in milliseconds                |
+|                              |                  |                                                                    |
+| ---------------------------- | ---------------- | ------------------------------------------------------------------ |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**      | the gamepad to vibrate.                                            |
+| Uint16                       | **left_rumble**  | the intensity of the left trigger rumble motor, from 0 to 0xFFFF.  |
+| Uint16                       | **right_rumble** | the intensity of the right trigger rumble motor, from 0 to 0xFFFF. |
+| Uint32                       | **duration_ms**  | the duration of the rumble effect, in milliseconds.                |
 
 ## Return Value
 

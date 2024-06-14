@@ -15,9 +15,9 @@ Uint32 SDL_GetHapticFeatures(SDL_Haptic *haptic);
 
 ## Function Parameters
 
-|                            |            |                                              |
-| -------------------------- | ---------- | -------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query |
+|                            |            |                                               |
+| -------------------------- | ---------- | --------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query. |
 
 ## Return Value
 

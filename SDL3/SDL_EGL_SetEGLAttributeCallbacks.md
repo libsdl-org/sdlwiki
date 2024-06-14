@@ -19,9 +19,9 @@ void SDL_EGL_SetEGLAttributeCallbacks(SDL_EGLAttribArrayCallback platformAttribC
 
 |                                                          |                            |                                                           |
 | -------------------------------------------------------- | -------------------------- | --------------------------------------------------------- |
-| [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback) | **platformAttribCallback** | Callback for attributes to pass to eglGetPlatformDisplay. |
-| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **surfaceAttribCallback**  | Callback for attributes to pass to eglCreateSurface.      |
-| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **contextAttribCallback**  | Callback for attributes to pass to eglCreateContext.      |
+| [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback) | **platformAttribCallback** | callback for attributes to pass to eglGetPlatformDisplay. |
+| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **surfaceAttribCallback**  | callback for attributes to pass to eglCreateSurface.      |
+| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **contextAttribCallback**  | callback for attributes to pass to eglCreateContext.      |
 
 ## Remarks
 

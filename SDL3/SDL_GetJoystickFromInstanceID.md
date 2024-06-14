@@ -15,9 +15,9 @@ SDL_Joystick* SDL_GetJoystickFromInstanceID(SDL_JoystickID instance_id);
 
 ## Function Parameters
 
-|                                  |                 |                                                             |
-| -------------------------------- | --------------- | ----------------------------------------------------------- |
-| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the instance ID to get the [SDL_Joystick](SDL_Joystick) for |
+|                                  |                 |                                                              |
+| -------------------------------- | --------------- | ------------------------------------------------------------ |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the instance ID to get the [SDL_Joystick](SDL_Joystick) for. |
 
 ## Return Value
 

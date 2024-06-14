@@ -15,9 +15,9 @@ int SDL_GL_DeleteContext(SDL_GLContext context);
 
 ## Function Parameters
 
-|                                |             |                                  |
-| ------------------------------ | ----------- | -------------------------------- |
-| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to be deleted |
+|                                |             |                                   |
+| ------------------------------ | ----------- | --------------------------------- |
+| [SDL_GLContext](SDL_GLContext) | **context** | the OpenGL context to be deleted. |
 
 ## Return Value
 

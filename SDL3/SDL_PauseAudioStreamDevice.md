@@ -15,9 +15,9 @@ int SDL_PauseAudioStreamDevice(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                                      |            |                                                            |
-| ------------------------------------ | ---------- | ---------------------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream associated with the audio device to pause |
+|                                      |            |                                                             |
+| ------------------------------------ | ---------- | ----------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream associated with the audio device to pause. |
 
 ## Return Value
 

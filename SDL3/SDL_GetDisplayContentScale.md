@@ -15,9 +15,9 @@ float SDL_GetDisplayContentScale(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                                |               |                                         |
-| ------------------------------ | ------------- | --------------------------------------- |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query |
+|                                |               |                                          |
+| ------------------------------ | ------------- | ---------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query. |
 
 ## Return Value
 

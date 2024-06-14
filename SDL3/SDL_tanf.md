@@ -15,13 +15,13 @@ float SDL_tanf(float x);
 
 ## Function Parameters
 
-|       |       |                                  |
-| ----- | ----- | -------------------------------- |
-| float | **x** | floating point value, in radians |
+|       |       |                                   |
+| ----- | ----- | --------------------------------- |
+| float | **x** | floating point value, in radians. |
 
 ## Return Value
 
-(float) Returns tangent of `x`
+(float) Returns tangent of `x`.
 
 ## Remarks
 

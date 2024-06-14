@@ -15,10 +15,10 @@ int SDL_ClearProperty(SDL_PropertiesID props, const char *name);
 
 ## Function Parameters
 
-|                                      |           |                                   |
-| ------------------------------------ | --------- | --------------------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to modify          |
-| const char *                         | **name**  | the name of the property to clear |
+|                                      |           |                                    |
+| ------------------------------------ | --------- | ---------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to modify.          |
+| const char *                         | **name**  | the name of the property to clear. |
 
 ## Return Value
 

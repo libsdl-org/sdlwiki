@@ -17,8 +17,8 @@ SDL_FORCE_INLINE int SDL_size_mul_overflow (size_t a, size_t b, size_t *ret);
 
 |          |         |                                                                            |
 | -------- | ------- | -------------------------------------------------------------------------- |
-| size_t   | **a**   | the multiplicand                                                           |
-| size_t   | **b**   | the multiplier                                                             |
+| size_t   | **a**   | the multiplicand.                                                          |
+| size_t   | **b**   | the multiplier.                                                            |
 | size_t * | **ret** | on non-overflow output, stores the multiplication result. May not be NULL. |
 
 ## Return Value

@@ -15,10 +15,10 @@ extern SDL_DECLSPEC const SDL_DisplayMode **SDLCALL SDL_GetFullscreenDisplayMode
 
 ## Function Parameters
 
-|                                |               |                                                               |
-| ------------------------------ | ------------- | ------------------------------------------------------------- |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query                       |
-| int *                          | **count**     | a pointer filled in with the number of display modes returned |
+|                                |               |                                                                |
+| ------------------------------ | ------------- | -------------------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query.                       |
+| int *                          | **count**     | a pointer filled in with the number of display modes returned. |
 
 ## Return Value
 

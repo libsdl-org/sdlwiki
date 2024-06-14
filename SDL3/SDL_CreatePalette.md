@@ -15,9 +15,9 @@ SDL_Palette* SDL_CreatePalette(int ncolors);
 
 ## Function Parameters
 
-|     |             |                                                             |
-| --- | ----------- | ----------------------------------------------------------- |
-| int | **ncolors** | represents the number of color entries in the color palette |
+|     |             |                                                              |
+| --- | ----------- | ------------------------------------------------------------ |
+| int | **ncolors** | represents the number of color entries in the color palette. |
 
 ## Return Value
 

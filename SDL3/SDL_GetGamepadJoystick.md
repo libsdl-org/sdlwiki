@@ -15,9 +15,9 @@ SDL_Joystick* SDL_GetGamepadJoystick(SDL_Gamepad *gamepad);
 
 ## Function Parameters
 
-|                              |             |                                                         |
-| ---------------------------- | ----------- | ------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object that you want to get a joystick from |
+|                              |             |                                                          |
+| ---------------------------- | ----------- | -------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object that you want to get a joystick from. |
 
 ## Return Value
 

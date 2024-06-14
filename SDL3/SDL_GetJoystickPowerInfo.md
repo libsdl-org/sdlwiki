@@ -17,7 +17,7 @@ SDL_PowerState SDL_GetJoystickPowerInfo(SDL_Joystick *joystick, int *percent);
 
 |                                |              |                                                                                                                                                                                       |
 | ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to query                                                                                                                                                                 |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to query.                                                                                                                                                                |
 | int *                          | **percent**  | a pointer filled in with the percentage of battery life left, between 0 and 100, or NULL to ignore. This will be filled in with -1 we can't determine a value or there is no battery. |
 
 ## Return Value

@@ -15,9 +15,9 @@ void * SDL_GetTLS(SDL_TLSID id);
 
 ## Function Parameters
 
-|                        |        |                             |
-| ---------------------- | ------ | --------------------------- |
-| [SDL_TLSID](SDL_TLSID) | **id** | the thread local storage ID |
+|                        |        |                              |
+| ---------------------- | ------ | ---------------------------- |
+| [SDL_TLSID](SDL_TLSID) | **id** | the thread local storage ID. |
 
 ## Return Value
 

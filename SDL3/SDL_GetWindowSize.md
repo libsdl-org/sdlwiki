@@ -15,11 +15,11 @@ int SDL_GetWindowSize(SDL_Window *window, int *w, int *h);
 
 ## Function Parameters
 
-|                            |            |                                                                |
-| -------------------------- | ---------- | -------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to query the width and height from                  |
-| int *                      | **w**      | a pointer filled in with the width of the window, may be NULL  |
-| int *                      | **h**      | a pointer filled in with the height of the window, may be NULL |
+|                            |            |                                                                 |
+| -------------------------- | ---------- | --------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query the width and height from.                  |
+| int *                      | **w**      | a pointer filled in with the width of the window, may be NULL.  |
+| int *                      | **h**      | a pointer filled in with the height of the window, may be NULL. |
 
 ## Return Value
 

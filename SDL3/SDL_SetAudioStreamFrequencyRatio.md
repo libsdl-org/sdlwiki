@@ -17,8 +17,8 @@ int SDL_SetAudioStreamFrequencyRatio(SDL_AudioStream *stream, float ratio);
 
 |                                      |            |                                                                         |
 | ------------------------------------ | ---------- | ----------------------------------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The stream the frequency ratio is being changed                         |
-| float                                | **ratio**  | The frequency ratio. 1.0 is normal speed. Must be between 0.01 and 100. |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the stream the frequency ratio is being changed.                        |
+| float                                | **ratio**  | the frequency ratio. 1.0 is normal speed. Must be between 0.01 and 100. |
 
 ## Return Value
 

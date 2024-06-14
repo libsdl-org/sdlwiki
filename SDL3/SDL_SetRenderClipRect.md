@@ -15,10 +15,10 @@ int SDL_SetRenderClipRect(SDL_Renderer *renderer, const SDL_Rect *rect);
 
 ## Function Parameters
 
-|                                |              |                                                                                                                     |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                                               |
-| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
+|                                |              |                                                                                                                      |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                               |
+| const [SDL_Rect](SDL_Rect) *   | **rect**     | an [SDL_Rect](SDL_Rect) structure representing the clip area, relative to the viewport, or NULL to disable clipping. |
 
 ## Return Value
 

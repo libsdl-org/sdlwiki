@@ -15,9 +15,9 @@ void SDL_DelayNS(Uint64 ns);
 
 ## Function Parameters
 
-|        |        |                                    |
-| ------ | ------ | ---------------------------------- |
-| Uint64 | **ns** | the number of nanoseconds to delay |
+|        |        |                                     |
+| ------ | ------ | ----------------------------------- |
+| Uint64 | **ns** | the number of nanoseconds to delay. |
 
 ## Remarks
 

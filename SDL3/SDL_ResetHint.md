@@ -15,9 +15,9 @@ SDL_bool SDL_ResetHint(const char *name);
 
 ## Function Parameters
 
-|              |          |                 |
-| ------------ | -------- | --------------- |
-| const char * | **name** | the hint to set |
+|              |          |                  |
+| ------------ | -------- | ---------------- |
+| const char * | **name** | the hint to set. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ int SDL_AddGamepadMappingsFromFile(const char *file);
 
 ## Function Parameters
 
-|              |          |                           |
-| ------------ | -------- | ------------------------- |
-| const char * | **file** | the mappings file to load |
+|              |          |                            |
+| ------------ | -------- | -------------------------- |
+| const char * | **file** | the mappings file to load. |
 
 ## Return Value
 

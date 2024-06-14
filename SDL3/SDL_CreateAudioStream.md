@@ -15,10 +15,10 @@ SDL_AudioStream* SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_
 
 ## Function Parameters
 
-|                                        |              |                                        |
-| -------------------------------------- | ------------ | -------------------------------------- |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | The format details of the input audio  |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | The format details of the output audio |
+|                                        |              |                                         |
+| -------------------------------------- | ------------ | --------------------------------------- |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | the format details of the input audio.  |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | the format details of the output audio. |
 
 ## Return Value
 

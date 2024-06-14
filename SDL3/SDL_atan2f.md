@@ -17,7 +17,7 @@ float SDL_atan2f(float y, float x);
 
 |       |       |                                                         |
 | ----- | ----- | ------------------------------------------------------- |
-| float | **y** | floating point value of the numerator (y coordinate)    |
+| float | **y** | floating point value of the numerator (y coordinate).   |
 | float | **x** | floating point value of the denominator (x coordinate). |
 
 ## Return Value

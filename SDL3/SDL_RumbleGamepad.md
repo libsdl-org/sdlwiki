@@ -15,16 +15,16 @@ int SDL_RumbleGamepad(SDL_Gamepad *gamepad, Uint16 low_frequency_rumble, Uint16 
 
 ## Function Parameters
 
-|                              |                           |                                                                            |
-| ---------------------------- | ------------------------- | -------------------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**               | The gamepad to vibrate                                                     |
-| Uint16                       | **low_frequency_rumble**  | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF   |
-| Uint16                       | **high_frequency_rumble** | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF |
-| Uint32                       | **duration_ms**           | The duration of the rumble effect, in milliseconds                         |
+|                              |                           |                                                                             |
+| ---------------------------- | ------------------------- | --------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**               | the gamepad to vibrate.                                                     |
+| Uint16                       | **low_frequency_rumble**  | the intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF.   |
+| Uint16                       | **high_frequency_rumble** | the intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF. |
+| Uint32                       | **duration_ms**           | the duration of the rumble effect, in milliseconds.                         |
 
 ## Return Value
 
-(int) Returns 0, or -1 if rumble isn't supported on this gamepad
+(int) Returns 0, or -1 if rumble isn't supported on this gamepad.
 
 ## Remarks
 

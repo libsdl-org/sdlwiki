@@ -17,9 +17,9 @@ int SDL_RenderRects(SDL_Renderer *renderer, const SDL_FRect *rects, int count);
 
 |                                |              |                                                     |
 | ------------------------------ | ------------ | --------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | The renderer which should draw multiple rectangles. |
-| const [SDL_FRect](SDL_FRect) * | **rects**    | A pointer to an array of destination rectangles.    |
-| int                            | **count**    | The number of rectangles.                           |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the renderer which should draw multiple rectangles. |
+| const [SDL_FRect](SDL_FRect) * | **rects**    | a pointer to an array of destination rectangles.    |
+| int                            | **count**    | the number of rectangles.                           |
 
 ## Return Value
 

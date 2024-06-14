@@ -15,15 +15,15 @@ int SDL_ReadSurfacePixel(SDL_Surface *surface, int x, int y, Uint8 *r, Uint8 *g,
 
 ## Function Parameters
 
-|                              |             |                                                                                   |
-| ---------------------------- | ----------- | --------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the surface to read                                                               |
-| int                          | **x**       | the horizontal coordinate, 0 <= x < width                                         |
-| int                          | **y**       | the vertical coordinate, 0 <= y < height                                          |
-| Uint8 *                      | **r**       | a pointer filled in with the red channel, 0-255, or NULL to ignore this channel   |
-| Uint8 *                      | **g**       | a pointer filled in with the green channel, 0-255, or NULL to ignore this channel |
-| Uint8 *                      | **b**       | a pointer filled in with the blue channel, 0-255, or NULL to ignore this channel  |
-| Uint8 *                      | **a**       | a pointer filled in with the alpha channel, 0-255, or NULL to ignore this channel |
+|                              |             |                                                                                    |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the surface to read.                                                               |
+| int                          | **x**       | the horizontal coordinate, 0 <= x < width.                                         |
+| int                          | **y**       | the vertical coordinate, 0 <= y < height.                                          |
+| Uint8 *                      | **r**       | a pointer filled in with the red channel, 0-255, or NULL to ignore this channel.   |
+| Uint8 *                      | **g**       | a pointer filled in with the green channel, 0-255, or NULL to ignore this channel. |
+| Uint8 *                      | **b**       | a pointer filled in with the blue channel, 0-255, or NULL to ignore this channel.  |
+| Uint8 *                      | **a**       | a pointer filled in with the alpha channel, 0-255, or NULL to ignore this channel. |
 
 ## Return Value
 

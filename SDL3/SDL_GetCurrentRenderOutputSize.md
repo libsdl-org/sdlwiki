@@ -15,11 +15,11 @@ int SDL_GetCurrentRenderOutputSize(SDL_Renderer *renderer, int *w, int *h);
 
 ## Function Parameters
 
-|                                |              |                                             |
-| ------------------------------ | ------------ | ------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                       |
-| int *                          | **w**        | a pointer filled in with the current width  |
-| int *                          | **h**        | a pointer filled in with the current height |
+|                                |              |                                              |
+| ------------------------------ | ------------ | -------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                       |
+| int *                          | **w**        | a pointer filled in with the current width.  |
+| int *                          | **h**        | a pointer filled in with the current height. |
 
 ## Return Value
 

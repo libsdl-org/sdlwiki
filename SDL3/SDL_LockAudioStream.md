@@ -17,7 +17,7 @@ int SDL_LockAudioStream(SDL_AudioStream *stream);
 
 |                                      |            |                           |
 | ------------------------------------ | ---------- | ------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to lock. |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to lock. |
 
 ## Return Value
 

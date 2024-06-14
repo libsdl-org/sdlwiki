@@ -15,9 +15,9 @@ int SDL_SyncWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                                                                  |
-| -------------------------- | ---------- | ---------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window for which to wait for the pending state to be applied |
+|                            |            |                                                                   |
+| -------------------------- | ---------- | ----------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window for which to wait for the pending state to be applied. |
 
 ## Return Value
 

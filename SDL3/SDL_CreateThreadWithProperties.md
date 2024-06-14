@@ -15,9 +15,9 @@ SDL_Thread * SDL_CreateThreadWithProperties(SDL_PropertiesID props);
 
 ## Function Parameters
 
-|                                      |           |                       |
-| ------------------------------------ | --------- | --------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to use |
+|                                      |           |                        |
+| ------------------------------------ | --------- | ---------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to use. |
 
 ## Return Value
 

@@ -15,11 +15,11 @@ int SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
 
 ## Function Parameters
 
-|                      |             |                                                        |
-| -------------------- | ----------- | ------------------------------------------------------ |
-| [SDL_GUID](SDL_GUID) | **guid**    | the [SDL_GUID](SDL_GUID) you wish to convert to string |
-| char *               | **pszGUID** | buffer in which to write the ASCII string              |
-| int                  | **cbGUID**  | the size of pszGUID                                    |
+|                      |             |                                                         |
+| -------------------- | ----------- | ------------------------------------------------------- |
+| [SDL_GUID](SDL_GUID) | **guid**    | the [SDL_GUID](SDL_GUID) you wish to convert to string. |
+| char *               | **pszGUID** | buffer in which to write the ASCII string.              |
+| int                  | **cbGUID**  | the size of pszGUID.                                    |
 
 ## Return Value
 

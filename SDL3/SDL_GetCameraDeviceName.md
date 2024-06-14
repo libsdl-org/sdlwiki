@@ -15,9 +15,9 @@ const char * SDL_GetCameraDeviceName(SDL_CameraDeviceID instance_id);
 
 ## Function Parameters
 
-|                                          |                 |                               |
-| ---------------------------------------- | --------------- | ----------------------------- |
-| [SDL_CameraDeviceID](SDL_CameraDeviceID) | **instance_id** | the camera device instance ID |
+|                                          |                 |                                |
+| ---------------------------------------- | --------------- | ------------------------------ |
+| [SDL_CameraDeviceID](SDL_CameraDeviceID) | **instance_id** | the camera device instance ID. |
 
 ## Return Value
 

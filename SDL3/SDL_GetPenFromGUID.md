@@ -17,7 +17,7 @@ SDL_PenID SDL_GetPenFromGUID(SDL_GUID guid);
 
 |                      |          |             |
 | -------------------- | -------- | ----------- |
-| [SDL_GUID](SDL_GUID) | **guid** | A pen GUID. |
+| [SDL_GUID](SDL_GUID) | **guid** | a pen GUID. |
 
 ## Return Value
 

@@ -17,7 +17,7 @@ char* SDL_strlwr(char *str);
 
 |        |         |                                                  |
 | ------ | ------- | ------------------------------------------------ |
-| char * | **str** | The string to convert in-place. Can not be NULL. |
+| char * | **str** | the string to convert in-place. Can not be NULL. |
 
 ## Return Value
 

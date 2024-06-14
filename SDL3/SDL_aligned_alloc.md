@@ -15,14 +15,14 @@ void* SDL_aligned_alloc(size_t alignment, size_t size);
 
 ## Function Parameters
 
-|        |               |                         |
-| ------ | ------------- | ----------------------- |
-| size_t | **alignment** | the alignment requested |
-| size_t | **size**      | the size to allocate    |
+|        |               |                          |
+| ------ | ------------- | ------------------------ |
+| size_t | **alignment** | the alignment requested. |
+| size_t | **size**      | the size to allocate.    |
 
 ## Return Value
 
-(void *) Returns a pointer to the aligned memory
+(void *) Returns a pointer to the aligned memory.
 
 ## Remarks
 

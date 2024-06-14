@@ -15,9 +15,9 @@ int SDL_AddGamepadMapping(const char *mapping);
 
 ## Function Parameters
 
-|              |             |                    |
-| ------------ | ----------- | ------------------ |
-| const char * | **mapping** | the mapping string |
+|              |             |                     |
+| ------------ | ----------- | ------------------- |
+| const char * | **mapping** | the mapping string. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ void * SDL_AllocateEventMemory(size_t size);
 
 ## Function Parameters
 
-|        |          |                                  |
-| ------ | -------- | -------------------------------- |
-| size_t | **size** | the amount of memory to allocate |
+|        |          |                                   |
+| ------ | -------- | --------------------------------- |
+| size_t | **size** | the amount of memory to allocate. |
 
 ## Return Value
 

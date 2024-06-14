@@ -15,10 +15,10 @@ int SDL_GetRenderColorScale(SDL_Renderer *renderer, float *scale);
 
 ## Function Parameters
 
-|                                |              |                                                        |
-| ------------------------------ | ------------ | ------------------------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                  |
-| float *                        | **scale**    | a pointer filled in with the current color scale value |
+|                                |              |                                                         |
+| ------------------------------ | ------------ | ------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                  |
+| float *                        | **scale**    | a pointer filled in with the current color scale value. |
 
 ## Return Value
 

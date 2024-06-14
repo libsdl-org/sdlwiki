@@ -15,10 +15,10 @@ int SDL_AndroidSendMessage(Uint32 command, int param);
 
 ## Function Parameters
 
-|        |             |                                                      |
-| ------ | ----------- | ---------------------------------------------------- |
-| Uint32 | **command** | user command that must be greater or equal to 0x8000 |
-| int    | **param**   | user parameter                                       |
+|        |             |                                                       |
+| ------ | ----------- | ----------------------------------------------------- |
+| Uint32 | **command** | user command that must be greater or equal to 0x8000. |
+| int    | **param**   | user parameter.                                       |
 
 ## Return Value
 

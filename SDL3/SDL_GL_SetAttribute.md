@@ -15,10 +15,10 @@ int SDL_GL_SetAttribute(SDL_GLattr attr, int value);
 
 ## Function Parameters
 
-|                          |           |                                                                               |
-| ------------------------ | --------- | ----------------------------------------------------------------------------- |
-| [SDL_GLattr](SDL_GLattr) | **attr**  | an [SDL_GLattr](SDL_GLattr) enum value specifying the OpenGL attribute to set |
-| int                      | **value** | the desired value for the attribute                                           |
+|                          |           |                                                                                |
+| ------------------------ | --------- | ------------------------------------------------------------------------------ |
+| [SDL_GLattr](SDL_GLattr) | **attr**  | an [SDL_GLattr](SDL_GLattr) enum value specifying the OpenGL attribute to set. |
+| int                      | **value** | the desired value for the attribute.                                           |
 
 ## Return Value
 

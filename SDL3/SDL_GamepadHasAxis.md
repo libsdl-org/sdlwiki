@@ -15,10 +15,10 @@ SDL_bool SDL_GamepadHasAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
 
 ## Function Parameters
 
-|                                    |             |                                                                  |
-| ---------------------------------- | ----------- | ---------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) *       | **gamepad** | a gamepad                                                        |
-| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis**    | an axis enum value (an [SDL_GamepadAxis](SDL_GamepadAxis) value) |
+|                                    |             |                                                                   |
+| ---------------------------------- | ----------- | ----------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) *       | **gamepad** | a gamepad.                                                        |
+| [SDL_GamepadAxis](SDL_GamepadAxis) | **axis**    | an axis enum value (an [SDL_GamepadAxis](SDL_GamepadAxis) value). |
 
 ## Return Value
 

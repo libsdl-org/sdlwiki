@@ -15,10 +15,10 @@ int SDL_CopyProperties(SDL_PropertiesID src, SDL_PropertiesID dst);
 
 ## Function Parameters
 
-|                                      |         |                            |
-| ------------------------------------ | ------- | -------------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID) | **src** | the properties to copy     |
-| [SDL_PropertiesID](SDL_PropertiesID) | **dst** | the destination properties |
+|                                      |         |                             |
+| ------------------------------------ | ------- | --------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **src** | the properties to copy.     |
+| [SDL_PropertiesID](SDL_PropertiesID) | **dst** | the destination properties. |
 
 ## Return Value
 

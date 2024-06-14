@@ -15,9 +15,9 @@ int SDL_WaitSemaphore(SDL_Semaphore *sem);
 
 ## Function Parameters
 
-|                                  |         |                       |
-| -------------------------------- | ------- | --------------------- |
-| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore wait on |
+|                                  |         |                        |
+| -------------------------------- | ------- | ---------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore wait on. |
 
 ## Return Value
 

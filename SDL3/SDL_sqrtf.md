@@ -21,7 +21,7 @@ float SDL_sqrtf(float x);
 
 ## Return Value
 
-(float) Returns square root of `x`
+(float) Returns square root of `x`.
 
 ## Remarks
 

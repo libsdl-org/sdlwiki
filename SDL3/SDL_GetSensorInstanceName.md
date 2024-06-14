@@ -15,14 +15,14 @@ const char* SDL_GetSensorInstanceName(SDL_SensorID instance_id);
 
 ## Function Parameters
 
-|                              |                 |                        |
-| ---------------------------- | --------------- | ---------------------- |
-| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID |
+|                              |                 |                         |
+| ---------------------------- | --------------- | ----------------------- |
+| [SDL_SensorID](SDL_SensorID) | **instance_id** | the sensor instance ID. |
 
 ## Return Value
 
 (const char *) Returns the sensor name, or NULL if `instance_id` is not
-valid
+valid.
 
 ## Remarks
 

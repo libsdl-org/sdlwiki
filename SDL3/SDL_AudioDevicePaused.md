@@ -15,9 +15,9 @@ SDL_bool SDL_AudioDevicePaused(SDL_AudioDeviceID dev);
 
 ## Function Parameters
 
-|                                        |         |                                                                 |
-| -------------------------------------- | ------- | --------------------------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+|                                        |         |                                                                  |
+| -------------------------------------- | ------- | ---------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ const char* SDL_GetDisplayName(SDL_DisplayID displayID);
 
 ## Function Parameters
 
-|                                |               |                                         |
-| ------------------------------ | ------------- | --------------------------------------- |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query |
+|                                |               |                                          |
+| ------------------------------ | ------------- | ---------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query. |
 
 ## Return Value
 

@@ -17,11 +17,11 @@ SDL_bool SDL_GetRectIntersectionFloat(const SDL_FRect * A,
 
 ## Function Parameters
 
-|                                |            |                                                                                               |
-| ------------------------------ | ---------- | --------------------------------------------------------------------------------------------- |
-| const [SDL_FRect](SDL_FRect) * | **A**      | an [SDL_FRect](SDL_FRect) structure representing the first rectangle                          |
-| const [SDL_FRect](SDL_FRect) * | **B**      | an [SDL_FRect](SDL_FRect) structure representing the second rectangle                         |
-| [SDL_FRect](SDL_FRect) *       | **result** | an [SDL_FRect](SDL_FRect) structure filled in with the intersection of rectangles `A` and `B` |
+|                                |            |                                                                                                |
+| ------------------------------ | ---------- | ---------------------------------------------------------------------------------------------- |
+| const [SDL_FRect](SDL_FRect) * | **A**      | an [SDL_FRect](SDL_FRect) structure representing the first rectangle.                          |
+| const [SDL_FRect](SDL_FRect) * | **B**      | an [SDL_FRect](SDL_FRect) structure representing the second rectangle.                         |
+| [SDL_FRect](SDL_FRect) *       | **result** | an [SDL_FRect](SDL_FRect) structure filled in with the intersection of rectangles `A` and `B`. |
 
 ## Return Value
 

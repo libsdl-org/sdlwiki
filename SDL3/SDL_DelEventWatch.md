@@ -15,10 +15,10 @@ void SDL_DelEventWatch(SDL_EventFilter filter, void *userdata);
 
 ## Function Parameters
 
-|                                    |              |                                                                            |
-| ---------------------------------- | ------------ | -------------------------------------------------------------------------- |
-| [SDL_EventFilter](SDL_EventFilter) | **filter**   | the function originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)() |
-| void *                             | **userdata** | the pointer originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)()  |
+|                                    |              |                                                                             |
+| ---------------------------------- | ------------ | --------------------------------------------------------------------------- |
+| [SDL_EventFilter](SDL_EventFilter) | **filter**   | the function originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)(). |
+| void *                             | **userdata** | the pointer originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)().  |
 
 ## Remarks
 

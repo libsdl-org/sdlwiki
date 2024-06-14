@@ -15,10 +15,10 @@ int SDL_SetHapticGain(SDL_Haptic *haptic, int gain);
 
 ## Function Parameters
 
-|                            |            |                                                                 |
-| -------------------------- | ---------- | --------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to set the gain on          |
-| int                        | **gain**   | value to set the gain to, should be between 0 and 100 (0 - 100) |
+|                            |            |                                                                  |
+| -------------------------- | ---------- | ---------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to set the gain on.          |
+| int                        | **gain**   | value to set the gain to, should be between 0 and 100 (0 - 100). |
 
 ## Return Value
 

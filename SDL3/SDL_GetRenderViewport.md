@@ -15,10 +15,10 @@ int SDL_GetRenderViewport(SDL_Renderer *renderer, SDL_Rect *rect);
 
 ## Function Parameters
 
-|                                |              |                                                                           |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                     |
-| [SDL_Rect](SDL_Rect) *         | **rect**     | an [SDL_Rect](SDL_Rect) structure filled in with the current drawing area |
+|                                |              |                                                                            |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                     |
+| [SDL_Rect](SDL_Rect) *         | **rect**     | an [SDL_Rect](SDL_Rect) structure filled in with the current drawing area. |
 
 ## Return Value
 

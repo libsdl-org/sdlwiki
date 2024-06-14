@@ -15,10 +15,10 @@ int SDL_SetWindowOpacity(SDL_Window *window, float opacity);
 
 ## Function Parameters
 
-|                            |             |                                                       |
-| -------------------------- | ----------- | ----------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**  | the window which will be made transparent or opaque   |
-| float                      | **opacity** | the opacity value (0.0f - transparent, 1.0f - opaque) |
+|                            |             |                                                        |
+| -------------------------- | ----------- | ------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window**  | the window which will be made transparent or opaque.   |
+| float                      | **opacity** | the opacity value (0.0f - transparent, 1.0f - opaque). |
 
 ## Return Value
 

@@ -15,11 +15,11 @@ int SDL_GetWindowAspectRatio(SDL_Window *window, float *min_aspect, float *max_a
 
 ## Function Parameters
 
-|                            |                |                                                                              |
-| -------------------------- | -------------- | ---------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**     | the window to query the width and height from                                |
-| float *                    | **min_aspect** | a pointer filled in with the minimum aspect ratio of the window, may be NULL |
-| float *                    | **max_aspect** | a pointer filled in with the maximum aspect ratio of the window, may be NULL |
+|                            |                |                                                                               |
+| -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**     | the window to query the width and height from.                                |
+| float *                    | **min_aspect** | a pointer filled in with the minimum aspect ratio of the window, may be NULL. |
+| float *                    | **max_aspect** | a pointer filled in with the maximum aspect ratio of the window, may be NULL. |
 
 ## Return Value
 

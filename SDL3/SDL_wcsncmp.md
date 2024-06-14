@@ -17,9 +17,9 @@ int SDL_wcsncmp(const wchar_t *str1, const wchar_t *str2, size_t maxlen);
 
 |                 |            |                                                      |
 | --------------- | ---------- | ---------------------------------------------------- |
-| const wchar_t * | **str1**   | The first string to compare. NULL is not permitted!  |
-| const wchar_t * | **str2**   | The second string to compare. NULL is not permitted! |
-| size_t          | **maxlen** | The maximum number of wchar_t to compare.            |
+| const wchar_t * | **str1**   | the first string to compare. NULL is not permitted!  |
+| const wchar_t * | **str2**   | the second string to compare. NULL is not permitted! |
+| size_t          | **maxlen** | the maximum number of wchar_t to compare.            |
 
 ## Return Value
 

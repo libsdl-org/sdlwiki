@@ -15,10 +15,10 @@ int SDL_WaitCondition(SDL_Condition *cond, SDL_Mutex *mutex);
 
 ## Function Parameters
 
-|                                  |           |                                            |
-| -------------------------------- | --------- | ------------------------------------------ |
-| [SDL_Condition](SDL_Condition) * | **cond**  | the condition variable to wait on          |
-| [SDL_Mutex](SDL_Mutex) *         | **mutex** | the mutex used to coordinate thread access |
+|                                  |           |                                             |
+| -------------------------------- | --------- | ------------------------------------------- |
+| [SDL_Condition](SDL_Condition) * | **cond**  | the condition variable to wait on.          |
+| [SDL_Mutex](SDL_Mutex) *         | **mutex** | the mutex used to coordinate thread access. |
 
 ## Return Value
 

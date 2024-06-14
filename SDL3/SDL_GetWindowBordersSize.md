@@ -15,13 +15,13 @@ int SDL_GetWindowBordersSize(SDL_Window *window, int *top, int *left, int *botto
 
 ## Function Parameters
 
-|                            |            |                                                                                  |
-| -------------------------- | ---------- | -------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to query the size values of the border (decorations) from             |
-| int *                      | **top**    | pointer to variable for storing the size of the top border; NULL is permitted    |
-| int *                      | **left**   | pointer to variable for storing the size of the left border; NULL is permitted   |
-| int *                      | **bottom** | pointer to variable for storing the size of the bottom border; NULL is permitted |
-| int *                      | **right**  | pointer to variable for storing the size of the right border; NULL is permitted  |
+|                            |            |                                                                                   |
+| -------------------------- | ---------- | --------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query the size values of the border (decorations) from.             |
+| int *                      | **top**    | pointer to variable for storing the size of the top border; NULL is permitted.    |
+| int *                      | **left**   | pointer to variable for storing the size of the left border; NULL is permitted.   |
+| int *                      | **bottom** | pointer to variable for storing the size of the bottom border; NULL is permitted. |
+| int *                      | **right**  | pointer to variable for storing the size of the right border; NULL is permitted.  |
 
 ## Return Value
 

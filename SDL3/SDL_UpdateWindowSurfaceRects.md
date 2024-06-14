@@ -15,11 +15,11 @@ int SDL_UpdateWindowSurfaceRects(SDL_Window *window, const SDL_Rect *rects, int 
 
 ## Function Parameters
 
-|                              |              |                                                                                                  |
-| ---------------------------- | ------------ | ------------------------------------------------------------------------------------------------ |
-| [SDL_Window](SDL_Window) *   | **window**   | the window to update                                                                             |
-| const [SDL_Rect](SDL_Rect) * | **rects**    | an array of [SDL_Rect](SDL_Rect) structures representing areas of the surface to copy, in pixels |
-| int                          | **numrects** | the number of rectangles                                                                         |
+|                              |              |                                                                                                   |
+| ---------------------------- | ------------ | ------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *   | **window**   | the window to update.                                                                             |
+| const [SDL_Rect](SDL_Rect) * | **rects**    | an array of [SDL_Rect](SDL_Rect) structures representing areas of the surface to copy, in pixels. |
+| int                          | **numrects** | the number of rectangles.                                                                         |
 
 ## Return Value
 

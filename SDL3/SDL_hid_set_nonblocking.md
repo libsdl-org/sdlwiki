@@ -17,7 +17,7 @@ int SDL_hid_set_nonblocking(SDL_hid_device *dev, int nonblock);
 
 |                                    |              |                                                                                           |
 | ---------------------------------- | ------------ | ----------------------------------------------------------------------------------------- |
-| [SDL_hid_device](SDL_hid_device) * | **dev**      | A device handle returned from [SDL_hid_open](SDL_hid_open)().                             |
+| [SDL_hid_device](SDL_hid_device) * | **dev**      | a device handle returned from [SDL_hid_open](SDL_hid_open)().                             |
 | int                                | **nonblock** | enable or not the nonblocking reads - 1 to enable nonblocking - 0 to disable nonblocking. |
 
 ## Return Value

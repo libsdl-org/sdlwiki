@@ -17,9 +17,9 @@ int SDL_AndroidRequestPermission(const char *permission, SDL_AndroidRequestPermi
 
 |                                                                              |                |                                                           |
 | ---------------------------------------------------------------------------- | -------------- | --------------------------------------------------------- |
-| const char *                                                                 | **permission** | The permission to request.                                |
-| [SDL_AndroidRequestPermissionCallback](SDL_AndroidRequestPermissionCallback) | **cb**         | The callback to trigger when the request has a response.  |
-| void *                                                                       | **userdata**   | An app-controlled pointer that is passed to the callback. |
+| const char *                                                                 | **permission** | the permission to request.                                |
+| [SDL_AndroidRequestPermissionCallback](SDL_AndroidRequestPermissionCallback) | **cb**         | the callback to trigger when the request has a response.  |
+| void *                                                                       | **userdata**   | an app-controlled pointer that is passed to the callback. |
 
 ## Return Value
 

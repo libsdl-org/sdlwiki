@@ -15,10 +15,10 @@ SDL_bool SDL_ReadU8(SDL_IOStream *src, Uint8 *value);
 
 ## Function Parameters
 
-|                                |           |                                               |
-| ------------------------------ | --------- | --------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**   | the [SDL_IOStream](SDL_IOStream) to read from |
-| Uint8 *                        | **value** | a pointer filled in with the data read        |
+|                                |           |                                                |
+| ------------------------------ | --------- | ---------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**   | the [SDL_IOStream](SDL_IOStream) to read from. |
+| Uint8 *                        | **value** | a pointer filled in with the data read.        |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ int SDL_HideWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                    |
-| -------------------------- | ---------- | ------------------ |
-| [SDL_Window](SDL_Window) * | **window** | the window to hide |
+|                            |            |                     |
+| -------------------------- | ---------- | ------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to hide. |
 
 ## Return Value
 

@@ -15,13 +15,13 @@ void* SDL_Metal_GetLayer(SDL_MetalView view);
 
 ## Function Parameters
 
-|                                |          |                                           |
-| ------------------------------ | -------- | ----------------------------------------- |
-| [SDL_MetalView](SDL_MetalView) | **view** | the [SDL_MetalView](SDL_MetalView) object |
+|                                |          |                                            |
+| ------------------------------ | -------- | ------------------------------------------ |
+| [SDL_MetalView](SDL_MetalView) | **view** | the [SDL_MetalView](SDL_MetalView) object. |
 
 ## Return Value
 
-(void *) Returns a pointer
+(void *) Returns a pointer.
 
 ## Version
 

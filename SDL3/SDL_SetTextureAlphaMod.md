@@ -15,10 +15,10 @@ int SDL_SetTextureAlphaMod(SDL_Texture *texture, Uint8 alpha);
 
 ## Function Parameters
 
-|                              |             |                                                        |
-| ---------------------------- | ----------- | ------------------------------------------------------ |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update                                  |
-| Uint8                        | **alpha**   | the source alpha value multiplied into copy operations |
+|                              |             |                                                         |
+| ---------------------------- | ----------- | ------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to update.                                  |
+| Uint8                        | **alpha**   | the source alpha value multiplied into copy operations. |
 
 ## Return Value
 

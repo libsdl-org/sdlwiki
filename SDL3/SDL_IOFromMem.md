@@ -15,10 +15,10 @@ SDL_IOStream* SDL_IOFromMem(void *mem, size_t size);
 
 ## Function Parameters
 
-|        |          |                                                                      |
-| ------ | -------- | -------------------------------------------------------------------- |
-| void * | **mem**  | a pointer to a buffer to feed an [SDL_IOStream](SDL_IOStream) stream |
-| size_t | **size** | the buffer size, in bytes                                            |
+|        |          |                                                                       |
+| ------ | -------- | --------------------------------------------------------------------- |
+| void * | **mem**  | a pointer to a buffer to feed an [SDL_IOStream](SDL_IOStream) stream. |
+| size_t | **size** | the buffer size, in bytes.                                            |
 
 ## Return Value
 

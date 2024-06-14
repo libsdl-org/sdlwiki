@@ -15,9 +15,9 @@ void SDL_SetModState(SDL_Keymod modstate);
 
 ## Function Parameters
 
-|                          |              |                                                       |
-| ------------------------ | ------------ | ----------------------------------------------------- |
-| [SDL_Keymod](SDL_Keymod) | **modstate** | the desired [SDL_Keymod](SDL_Keymod) for the keyboard |
+|                          |              |                                                        |
+| ------------------------ | ------------ | ------------------------------------------------------ |
+| [SDL_Keymod](SDL_Keymod) | **modstate** | the desired [SDL_Keymod](SDL_Keymod) for the keyboard. |
 
 ## Remarks
 

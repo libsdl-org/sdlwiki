@@ -15,10 +15,10 @@ int SDL_SetWindowTitle(SDL_Window *window, const char *title);
 
 ## Function Parameters
 
-|                            |            |                                          |
-| -------------------------- | ---------- | ---------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to change                     |
-| const char *               | **title**  | the desired window title in UTF-8 format |
+|                            |            |                                           |
+| -------------------------- | ---------- | ----------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to change.                     |
+| const char *               | **title**  | the desired window title in UTF-8 format. |
 
 ## Return Value
 

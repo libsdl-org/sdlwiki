@@ -22,12 +22,12 @@ int SDL_ConvertAudioSamples(const SDL_AudioSpec *src_spec,
 
 |                                        |              |                                                                                                                                      |
 | -------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | The format details of the input audio                                                                                                |
-| const Uint8 *                          | **src_data** | The audio data to be converted                                                                                                       |
-| int                                    | **src_len**  | The len of src_data                                                                                                                  |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | The format details of the output audio                                                                                               |
-| Uint8 **                               | **dst_data** | Will be filled with a pointer to converted audio data, which should be freed with [SDL_free](SDL_free)(). On error, it will be NULL. |
-| int *                                  | **dst_len**  | Will be filled with the len of dst_data                                                                                              |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **src_spec** | the format details of the input audio.                                                                                               |
+| const Uint8 *                          | **src_data** | the audio data to be converted.                                                                                                      |
+| int                                    | **src_len**  | the len of src_data.                                                                                                                 |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **dst_spec** | the format details of the output audio.                                                                                              |
+| Uint8 **                               | **dst_data** | will be filled with a pointer to converted audio data, which should be freed with [SDL_free](SDL_free)(). On error, it will be NULL. |
+| int *                                  | **dst_len**  | will be filled with the len of dst_data.                                                                                             |
 
 ## Return Value
 

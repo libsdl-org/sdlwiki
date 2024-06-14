@@ -15,9 +15,9 @@ int SDL_SetWindowInputFocus(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                                            |
-| -------------------------- | ---------- | ------------------------------------------ |
-| [SDL_Window](SDL_Window) * | **window** | the window that should get the input focus |
+|                            |            |                                             |
+| -------------------------- | ---------- | ------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window that should get the input focus. |
 
 ## Return Value
 

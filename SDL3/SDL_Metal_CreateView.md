@@ -15,13 +15,13 @@ SDL_MetalView SDL_Metal_CreateView(SDL_Window * window);
 
 ## Function Parameters
 
-|                            |            |            |
-| -------------------------- | ---------- | ---------- |
-| [SDL_Window](SDL_Window) * | **window** | the window |
+|                            |            |             |
+| -------------------------- | ---------- | ----------- |
+| [SDL_Window](SDL_Window) * | **window** | the window. |
 
 ## Return Value
 
-([SDL_MetalView](SDL_MetalView)) Returns handle NSView or UIView
+([SDL_MetalView](SDL_MetalView)) Returns handle NSView or UIView.
 
 ## Remarks
 

@@ -15,10 +15,10 @@ SDL_bool SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
 
 ## Function Parameters
 
-|                          |               |                                                                                                  |
-| ------------------------ | ------------- | ------------------------------------------------------------------------------------------------ |
-| [SDL_Event](SDL_Event) * | **event**     | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL |
-| Sint32                   | **timeoutMS** | the maximum number of milliseconds to wait for the next available event                          |
+|                          |               |                                                                                                   |
+| ------------------------ | ------------- | ------------------------------------------------------------------------------------------------- |
+| [SDL_Event](SDL_Event) * | **event**     | the [SDL_Event](SDL_Event) structure to be filled in with the next event from the queue, or NULL. |
+| Sint32                   | **timeoutMS** | the maximum number of milliseconds to wait for the next available event.                          |
 
 ## Return Value
 

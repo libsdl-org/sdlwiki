@@ -15,10 +15,10 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|         |       |                                                                         |
-| ------- | ----- | ----------------------------------------------------------------------- |
-| float * | **x** | filled in with the current X coord relative to the desktop; can be NULL |
-| float * | **y** | filled in with the current Y coord relative to the desktop; can be NULL |
+|         |       |                                                                          |
+| ------- | ----- | ------------------------------------------------------------------------ |
+| float * | **x** | filled in with the current X coord relative to the desktop; can be NULL. |
+| float * | **y** | filled in with the current Y coord relative to the desktop; can be NULL. |
 
 ## Return Value
 

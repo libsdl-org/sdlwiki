@@ -15,13 +15,13 @@ float SDL_expf(float x);
 
 ## Function Parameters
 
-|       |       |                      |
-| ----- | ----- | -------------------- |
-| float | **x** | floating point value |
+|       |       |                       |
+| ----- | ----- | --------------------- |
+| float | **x** | floating point value. |
 
 ## Return Value
 
-(float) Returns value of `e^x`
+(float) Returns value of `e^x`.
 
 ## Remarks
 

@@ -15,9 +15,9 @@ SDL_Haptic* SDL_GetHapticFromInstanceID(SDL_HapticID instance_id);
 
 ## Function Parameters
 
-|                              |                 |                                                         |
-| ---------------------------- | --------------- | ------------------------------------------------------- |
-| [SDL_HapticID](SDL_HapticID) | **instance_id** | the instance ID to get the [SDL_Haptic](SDL_Haptic) for |
+|                              |                 |                                                          |
+| ---------------------------- | --------------- | -------------------------------------------------------- |
+| [SDL_HapticID](SDL_HapticID) | **instance_id** | the instance ID to get the [SDL_Haptic](SDL_Haptic) for. |
 
 ## Return Value
 

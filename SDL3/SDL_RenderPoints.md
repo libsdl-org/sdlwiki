@@ -17,9 +17,9 @@ int SDL_RenderPoints(SDL_Renderer *renderer, const SDL_FPoint *points, int count
 
 |                                  |              |                                                 |
 | -------------------------------- | ------------ | ----------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *   | **renderer** | The renderer which should draw multiple points. |
-| const [SDL_FPoint](SDL_FPoint) * | **points**   | The points to draw                              |
-| int                              | **count**    | The number of points to draw                    |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer** | the renderer which should draw multiple points. |
+| const [SDL_FPoint](SDL_FPoint) * | **points**   | the points to draw.                             |
+| int                              | **count**    | the number of points to draw.                   |
 
 ## Return Value
 

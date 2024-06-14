@@ -15,10 +15,10 @@ SDL_PropertyType SDL_GetPropertyType(SDL_PropertiesID props, const char *name);
 
 ## Function Parameters
 
-|                                      |           |                                   |
-| ------------------------------------ | --------- | --------------------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to query           |
-| const char *                         | **name**  | the name of the property to query |
+|                                      |           |                                    |
+| ------------------------------------ | --------- | ---------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to query.           |
+| const char *                         | **name**  | the name of the property to query. |
 
 ## Return Value
 

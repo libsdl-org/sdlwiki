@@ -17,12 +17,12 @@ double SDL_fmod(double x, double y);
 
 |        |       |                                 |
 | ------ | ----- | ------------------------------- |
-| double | **x** | the numerator                   |
+| double | **x** | the numerator.                  |
 | double | **y** | the denominator. Must not be 0. |
 
 ## Return Value
 
-(double) Returns the remainder of `x / y`
+(double) Returns the remainder of `x / y`.
 
 ## Remarks
 

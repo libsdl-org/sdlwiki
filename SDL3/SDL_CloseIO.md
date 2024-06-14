@@ -15,9 +15,9 @@ int SDL_CloseIO(SDL_IOStream *context);
 
 ## Function Parameters
 
-|                                |             |                                                 |
-| ------------------------------ | ----------- | ----------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **context** | [SDL_IOStream](SDL_IOStream) structure to close |
+|                                |             |                                                  |
+| ------------------------------ | ----------- | ------------------------------------------------ |
+| [SDL_IOStream](SDL_IOStream) * | **context** | [SDL_IOStream](SDL_IOStream) structure to close. |
 
 ## Return Value
 

@@ -15,9 +15,9 @@ char* SDL_GetUserFolder(SDL_Folder folder);
 
 ## Function Parameters
 
-|                          |            |                            |
-| ------------------------ | ---------- | -------------------------- |
-| [SDL_Folder](SDL_Folder) | **folder** | The type of folder to find |
+|                          |            |                             |
+| ------------------------ | ---------- | --------------------------- |
+| [SDL_Folder](SDL_Folder) | **folder** | the type of folder to find. |
 
 ## Return Value
 

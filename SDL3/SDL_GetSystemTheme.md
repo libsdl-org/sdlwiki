@@ -16,7 +16,7 @@ SDL_SystemTheme SDL_GetSystemTheme(void);
 ## Return Value
 
 ([SDL_SystemTheme](SDL_SystemTheme)) Returns the current system theme,
-light, dark, or unknown
+light, dark, or unknown.
 
 ## Version
 

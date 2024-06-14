@@ -15,9 +15,9 @@ void SDL_UnlockTexture(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                              |             |                                                          |
-| ---------------------------- | ----------- | -------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | a texture locked by [SDL_LockTexture](SDL_LockTexture)() |
+|                              |             |                                                           |
+| ---------------------------- | ----------- | --------------------------------------------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | a texture locked by [SDL_LockTexture](SDL_LockTexture)(). |
 
 ## Remarks
 

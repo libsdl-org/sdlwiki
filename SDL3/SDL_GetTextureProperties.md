@@ -15,9 +15,9 @@ SDL_PropertiesID SDL_GetTextureProperties(SDL_Texture *texture);
 
 ## Function Parameters
 
-|                              |             |                      |
-| ---------------------------- | ----------- | -------------------- |
-| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query |
+|                              |             |                       |
+| ---------------------------- | ----------- | --------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query. |
 
 ## Return Value
 

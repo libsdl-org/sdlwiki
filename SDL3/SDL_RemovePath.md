@@ -15,9 +15,9 @@ int SDL_RemovePath(const char *path);
 
 ## Function Parameters
 
-|              |          |                                        |
-| ------------ | -------- | -------------------------------------- |
-| const char * | **path** | the path of the directory to enumerate |
+|              |          |                                         |
+| ------------ | -------- | --------------------------------------- |
+| const char * | **path** | the path of the directory to enumerate. |
 
 ## Return Value
 

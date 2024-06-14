@@ -15,13 +15,13 @@ int SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, int *w, int *h, SDL
 
 ## Function Parameters
 
-|                                                                      |                |                                                |
-| -------------------------------------------------------------------- | -------------- | ---------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *                                       | **renderer**   | the rendering context                          |
-| int *                                                                | **w**          | an int to be filled with the width             |
-| int *                                                                | **h**          | an int to be filled with the height            |
-| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) * | **mode**       | a pointer filled in with the presentation mode |
-| [SDL_ScaleMode](SDL_ScaleMode) *                                     | **scale_mode** | a pointer filled in with the scale mode        |
+|                                                                      |                |                                                 |
+| -------------------------------------------------------------------- | -------------- | ----------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *                                       | **renderer**   | the rendering context.                          |
+| int *                                                                | **w**          | an int to be filled with the width.             |
+| int *                                                                | **h**          | an int to be filled with the height.            |
+| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) * | **mode**       | a pointer filled in with the presentation mode. |
+| [SDL_ScaleMode](SDL_ScaleMode) *                                     | **scale_mode** | a pointer filled in with the scale mode.        |
 
 ## Return Value
 

@@ -15,13 +15,13 @@ double SDL_ceil(double x);
 
 ## Function Parameters
 
-|        |       |                      |
-| ------ | ----- | -------------------- |
-| double | **x** | floating point value |
+|        |       |                       |
+| ------ | ----- | --------------------- |
+| double | **x** | floating point value. |
 
 ## Return Value
 
-(double) Returns the ceiling of `x`
+(double) Returns the ceiling of `x`.
 
 ## Remarks
 

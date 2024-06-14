@@ -15,9 +15,9 @@ int SDL_RaiseWindow(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                     |
-| -------------------------- | ---------- | ------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to raise |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to raise. |
 
 ## Return Value
 

@@ -15,13 +15,13 @@ int SDL_SetPropertyWithCleanup(SDL_PropertiesID props, const char *name, void *v
 
 ## Function Parameters
 
-|                                                            |              |                                                                                        |
-| ---------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID)                       | **props**    | the properties to modify                                                               |
-| const char *                                               | **name**     | the name of the property to modify                                                     |
-| void *                                                     | **value**    | the new value of the property, or NULL to delete the property                          |
-| [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback) | **cleanup**  | the function to call when this property is deleted, or NULL if no cleanup is necessary |
-| void *                                                     | **userdata** | a pointer that is passed to the cleanup function                                       |
+|                                                            |              |                                                                                         |
+| ---------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID)                       | **props**    | the properties to modify.                                                               |
+| const char *                                               | **name**     | the name of the property to modify.                                                     |
+| void *                                                     | **value**    | the new value of the property, or NULL to delete the property.                          |
+| [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback) | **cleanup**  | the function to call when this property is deleted, or NULL if no cleanup is necessary. |
+| void *                                                     | **userdata** | a pointer that is passed to the cleanup function.                                       |
 
 ## Return Value
 

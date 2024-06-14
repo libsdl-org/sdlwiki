@@ -17,7 +17,7 @@ void SDL_DestroyAudioStream(SDL_AudioStream *stream);
 
 |                                      |            |                              |
 | ------------------------------------ | ---------- | ---------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream to destroy. |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to destroy. |
 
 ## Remarks
 

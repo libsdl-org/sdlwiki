@@ -15,11 +15,11 @@ int SDL_GetDayOfYear(int year, int month, int day);
 
 ## Function Parameters
 
-|     |           |                                 |
-| --- | --------- | ------------------------------- |
-| int | **year**  | the year component of the date  |
-| int | **month** | the month component of the date |
-| int | **day**   | the day component of the date   |
+|     |           |                                  |
+| --- | --------- | -------------------------------- |
+| int | **year**  | the year component of the date.  |
+| int | **month** | the month component of the date. |
+| int | **day**   | the day component of the date.   |
 
 ## Return Value
 

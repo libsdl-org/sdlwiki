@@ -15,9 +15,9 @@ int SDL_ResumeAudioStreamDevice(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                                      |            |                                                             |
-| ------------------------------------ | ---------- | ----------------------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | The audio stream associated with the audio device to resume |
+|                                      |            |                                                              |
+| ------------------------------------ | ---------- | ------------------------------------------------------------ |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream associated with the audio device to resume. |
 
 ## Return Value
 

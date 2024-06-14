@@ -17,9 +17,9 @@ int SDL_hid_read(SDL_hid_device *dev, unsigned char *data, size_t length);
 
 |                                    |            |                                                                                                                        |
 | ---------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [SDL_hid_device](SDL_hid_device) * | **dev**    | A device handle returned from [SDL_hid_open](SDL_hid_open)().                                                          |
-| unsigned char *                    | **data**   | A buffer to put the read data into.                                                                                    |
-| size_t                             | **length** | The number of bytes to read. For devices with multiple reports, make sure to read an extra byte for the report number. |
+| [SDL_hid_device](SDL_hid_device) * | **dev**    | a device handle returned from [SDL_hid_open](SDL_hid_open)().                                                          |
+| unsigned char *                    | **data**   | a buffer to put the read data into.                                                                                    |
+| size_t                             | **length** | the number of bytes to read. For devices with multiple reports, make sure to read an extra byte for the report number. |
 
 ## Return Value
 

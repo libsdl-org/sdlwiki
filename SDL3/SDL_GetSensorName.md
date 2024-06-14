@@ -15,9 +15,9 @@ const char* SDL_GetSensorName(SDL_Sensor *sensor);
 
 ## Function Parameters
 
-|                            |            |                                     |
-| -------------------------- | ---------- | ----------------------------------- |
-| [SDL_Sensor](SDL_Sensor) * | **sensor** | The [SDL_Sensor](SDL_Sensor) object |
+|                            |            |                                      |
+| -------------------------- | ---------- | ------------------------------------ |
+| [SDL_Sensor](SDL_Sensor) * | **sensor** | the [SDL_Sensor](SDL_Sensor) object. |
 
 ## Return Value
 

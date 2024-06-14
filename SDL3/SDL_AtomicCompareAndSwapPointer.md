@@ -15,11 +15,11 @@ SDL_bool SDL_AtomicCompareAndSwapPointer(void **a, void *oldval, void *newval);
 
 ## Function Parameters
 
-|         |            |                        |
-| ------- | ---------- | ---------------------- |
-| void ** | **a**      | a pointer to a pointer |
-| void *  | **oldval** | the old pointer value  |
-| void *  | **newval** | the new pointer value  |
+|         |            |                         |
+| ------- | ---------- | ----------------------- |
+| void ** | **a**      | a pointer to a pointer. |
+| void *  | **oldval** | the old pointer value.  |
+| void *  | **newval** | the new pointer value.  |
 
 ## Return Value
 

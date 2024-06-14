@@ -20,10 +20,10 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
 
 |                                      |               |                                                                                                             |
 | ------------------------------------ | ------------- | ----------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) *           | **window**    | The window to which to attach the Vulkan surface                                                            |
-| VkInstance                           | **instance**  | The Vulkan instance handle                                                                                  |
-| const struct VkAllocationCallbacks * | **allocator** | A VkAllocationCallbacks struct, which lets the app set the allocator that creates the surface. Can be NULL. |
-| VkSurfaceKHR *                       | **surface**   | A pointer to a VkSurfaceKHR handle to output the newly created surface                                      |
+| [SDL_Window](SDL_Window) *           | **window**    | the window to which to attach the Vulkan surface.                                                           |
+| VkInstance                           | **instance**  | the Vulkan instance handle.                                                                                 |
+| const struct VkAllocationCallbacks * | **allocator** | a VkAllocationCallbacks struct, which lets the app set the allocator that creates the surface. Can be NULL. |
+| VkSurfaceKHR *                       | **surface**   | a pointer to a VkSurfaceKHR handle to output the newly created surface.                                     |
 
 ## Return Value
 

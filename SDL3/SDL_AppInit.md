@@ -18,8 +18,8 @@ int SDL_AppInit(void **appstate, int argc, char *argv[]);
 |         |              |                                                                      |
 | ------- | ------------ | -------------------------------------------------------------------- |
 | void ** | **appstate** | a place where the app can optionally store a pointer for future use. |
-| int     | **argc**     | The standard ANSI C main's argc; number of elements in `argv`        |
-| char ** | **argv**     | The standard ANSI C main's argv; array of command line arguments.    |
+| int     | **argc**     | the standard ANSI C main's argc; number of elements in `argv`.       |
+| char ** | **argv**     | the standard ANSI C main's argv; array of command line arguments.    |
 
 ## Return Value
 

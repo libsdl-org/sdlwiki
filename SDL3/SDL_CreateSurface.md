@@ -17,8 +17,8 @@ SDL_Surface* SDL_CreateSurface(int width, int height, SDL_PixelFormatEnum format
 
 |                                            |            |                                                                                    |
 | ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
-| int                                        | **width**  | the width of the surface                                                           |
-| int                                        | **height** | the height of the surface                                                          |
+| int                                        | **width**  | the width of the surface.                                                          |
+| int                                        | **height** | the height of the surface.                                                         |
 | [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value

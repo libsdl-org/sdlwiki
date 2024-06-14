@@ -15,14 +15,14 @@ float SDL_scalbnf(float x, int n);
 
 ## Function Parameters
 
-|       |       |                                   |
-| ----- | ----- | --------------------------------- |
-| float | **x** | floating point value to be scaled |
-| int   | **n** | integer exponent                  |
+|       |       |                                    |
+| ----- | ----- | ---------------------------------- |
+| float | **x** | floating point value to be scaled. |
+| int   | **n** | integer exponent.                  |
 
 ## Return Value
 
-(float) Returns `x * 2^n`
+(float) Returns `x * 2^n`.
 
 ## Remarks
 

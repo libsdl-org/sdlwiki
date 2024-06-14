@@ -15,9 +15,9 @@ const char* SDL_GetGamepadStringForType(SDL_GamepadType type);
 
 ## Function Parameters
 
-|                                    |          |                                                              |
-| ---------------------------------- | -------- | ------------------------------------------------------------ |
-| [SDL_GamepadType](SDL_GamepadType) | **type** | an enum value for a given [SDL_GamepadType](SDL_GamepadType) |
+|                                    |          |                                                               |
+| ---------------------------------- | -------- | ------------------------------------------------------------- |
+| [SDL_GamepadType](SDL_GamepadType) | **type** | an enum value for a given [SDL_GamepadType](SDL_GamepadType). |
 
 ## Return Value
 

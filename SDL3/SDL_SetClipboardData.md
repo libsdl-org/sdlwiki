@@ -15,13 +15,13 @@ int SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardCleanu
 
 ## Function Parameters
 
-|                                                              |                    |                                                                      |
-| ------------------------------------------------------------ | ------------------ | -------------------------------------------------------------------- |
-| [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)       | **callback**       | A function pointer to the function that provides the clipboard data  |
-| [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback) | **cleanup**        | A function pointer to the function that cleans up the clipboard data |
-| void *                                                       | **userdata**       | An opaque pointer that will be forwarded to the callbacks            |
-| const char **                                                | **mime_types**     | A list of mime-types that are being offered                          |
-| size_t                                                       | **num_mime_types** | The number of mime-types in the mime_types list                      |
+|                                                              |                    |                                                                       |
+| ------------------------------------------------------------ | ------------------ | --------------------------------------------------------------------- |
+| [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)       | **callback**       | a function pointer to the function that provides the clipboard data.  |
+| [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback) | **cleanup**        | a function pointer to the function that cleans up the clipboard data. |
+| void *                                                       | **userdata**       | an opaque pointer that will be forwarded to the callbacks.            |
+| const char **                                                | **mime_types**     | a list of mime-types that are being offered.                          |
+| size_t                                                       | **num_mime_types** | the number of mime-types in the mime_types list.                      |
 
 ## Return Value
 

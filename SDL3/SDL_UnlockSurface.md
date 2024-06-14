@@ -15,9 +15,9 @@ void SDL_UnlockSurface(SDL_Surface *surface);
 
 ## Function Parameters
 
-|                              |             |                                                         |
-| ---------------------------- | ----------- | ------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be unlocked |
+|                              |             |                                                          |
+| ---------------------------- | ----------- | -------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be unlocked. |
 
 ## Version
 

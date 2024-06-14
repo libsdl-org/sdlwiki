@@ -15,9 +15,9 @@ SDL_Surface* SDL_LoadBMP(const char *file);
 
 ## Function Parameters
 
-|              |          |                      |
-| ------------ | -------- | -------------------- |
-| const char * | **file** | the BMP file to load |
+|              |          |                       |
+| ------------ | -------- | --------------------- |
+| const char * | **file** | the BMP file to load. |
 
 ## Return Value
 

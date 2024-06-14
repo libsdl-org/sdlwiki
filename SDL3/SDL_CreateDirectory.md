@@ -15,9 +15,9 @@ int SDL_CreateDirectory(const char *path);
 
 ## Function Parameters
 
-|              |          |                                     |
-| ------------ | -------- | ----------------------------------- |
-| const char * | **path** | the path of the directory to create |
+|              |          |                                      |
+| ------------ | -------- | ------------------------------------ |
+| const char * | **path** | the path of the directory to create. |
 
 ## Return Value
 

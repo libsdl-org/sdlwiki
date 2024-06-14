@@ -15,10 +15,10 @@ SDL_Storage* SDL_OpenTitleStorage(const char *override, SDL_PropertiesID props);
 
 ## Function Parameters
 
-|                                      |              |                                                               |
-| ------------------------------------ | ------------ | ------------------------------------------------------------- |
-| const char *                         | **override** | a path to override the backend's default title root           |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props**    | a property list that may contain backend-specific information |
+|                                      |              |                                                                |
+| ------------------------------------ | ------------ | -------------------------------------------------------------- |
+| const char *                         | **override** | a path to override the backend's default title root.           |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props**    | a property list that may contain backend-specific information. |
 
 ## Return Value
 

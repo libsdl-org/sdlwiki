@@ -15,9 +15,9 @@ SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id);
 
 ## Function Parameters
 
-|                                      |        |                                                    |
-| ------------------------------------ | ------ | -------------------------------------------------- |
-| [SDL_SystemCursor](SDL_SystemCursor) | **id** | an [SDL_SystemCursor](SDL_SystemCursor) enum value |
+|                                      |        |                                                     |
+| ------------------------------------ | ------ | --------------------------------------------------- |
+| [SDL_SystemCursor](SDL_SystemCursor) | **id** | an [SDL_SystemCursor](SDL_SystemCursor) enum value. |
 
 ## Return Value
 

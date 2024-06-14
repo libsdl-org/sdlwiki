@@ -15,11 +15,11 @@ int SDL_SetNumberProperty(SDL_PropertiesID props, const char *name, Sint64 value
 
 ## Function Parameters
 
-|                                      |           |                                    |
-| ------------------------------------ | --------- | ---------------------------------- |
-| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to modify           |
-| const char *                         | **name**  | the name of the property to modify |
-| Sint64                               | **value** | the new value of the property      |
+|                                      |           |                                     |
+| ------------------------------------ | --------- | ----------------------------------- |
+| [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to modify.           |
+| const char *                         | **name**  | the name of the property to modify. |
+| Sint64                               | **value** | the new value of the property.      |
 
 ## Return Value
 

@@ -17,7 +17,7 @@ const char* SDL_GetPenName(SDL_PenID instance_id);
 
 |                        |                 |                   |
 | ---------------------- | --------------- | ----------------- |
-| [SDL_PenID](SDL_PenID) | **instance_id** | The pen to query. |
+| [SDL_PenID](SDL_PenID) | **instance_id** | the pen to query. |
 
 ## Return Value
 
@@ -27,7 +27,7 @@ depending on platform settings. It is not guaranteed to be unique; use
 [SDL_GetPenGUID](SDL_GetPenGUID)() for (best-effort) unique identifiers.
 The pointer is managed by the SDL pen subsystem and must not be
 deallocated. The pointer remains valid until SDL is shut down. Returns NULL
-on error (cf. [SDL_GetError](SDL_GetError)())
+on error (cf. [SDL_GetError](SDL_GetError)()).
 
 ## Remarks
 

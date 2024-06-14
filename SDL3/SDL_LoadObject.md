@@ -15,9 +15,9 @@ void* SDL_LoadObject(const char *sofile);
 
 ## Function Parameters
 
-|              |            |                                            |
-| ------------ | ---------- | ------------------------------------------ |
-| const char * | **sofile** | a system-dependent name of the object file |
+|              |            |                                             |
+| ------------ | ---------- | ------------------------------------------- |
+| const char * | **sofile** | a system-dependent name of the object file. |
 
 ## Return Value
 

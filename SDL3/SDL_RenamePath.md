@@ -15,10 +15,10 @@ int SDL_RenamePath(const char *oldpath, const char *newpath);
 
 ## Function Parameters
 
-|              |             |              |
-| ------------ | ----------- | ------------ |
-| const char * | **oldpath** | the old path |
-| const char * | **newpath** | the new path |
+|              |             |               |
+| ------------ | ----------- | ------------- |
+| const char * | **oldpath** | the old path. |
+| const char * | **newpath** | the new path. |
 
 ## Return Value
 

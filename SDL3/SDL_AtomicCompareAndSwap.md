@@ -15,11 +15,11 @@ SDL_bool SDL_AtomicCompareAndSwap(SDL_AtomicInt *a, int oldval, int newval);
 
 ## Function Parameters
 
-|                                  |            |                                                                        |
-| -------------------------------- | ---------- | ---------------------------------------------------------------------- |
-| [SDL_AtomicInt](SDL_AtomicInt) * | **a**      | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified |
-| int                              | **oldval** | the old value                                                          |
-| int                              | **newval** | the new value                                                          |
+|                                  |            |                                                                         |
+| -------------------------------- | ---------- | ----------------------------------------------------------------------- |
+| [SDL_AtomicInt](SDL_AtomicInt) * | **a**      | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified. |
+| int                              | **oldval** | the old value.                                                          |
+| int                              | **newval** | the new value.                                                          |
 
 ## Return Value
 

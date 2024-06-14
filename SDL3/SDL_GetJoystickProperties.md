@@ -15,9 +15,9 @@ SDL_PropertiesID SDL_GetJoystickProperties(SDL_Joystick *joystick);
 
 ## Function Parameters
 
-|                                |              |                                                                                       |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+|                                |              |                                                                                        |
+| ------------------------------ | ------------ | -------------------------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)(). |
 
 ## Return Value
 

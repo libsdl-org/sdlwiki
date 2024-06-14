@@ -15,9 +15,9 @@ int SDL_SetPrimarySelectionText(const char *text);
 
 ## Function Parameters
 
-|              |          |                                            |
-| ------------ | -------- | ------------------------------------------ |
-| const char * | **text** | the text to store in the primary selection |
+|              |          |                                             |
+| ------------ | -------- | ------------------------------------------- |
+| const char * | **text** | the text to store in the primary selection. |
 
 ## Return Value
 

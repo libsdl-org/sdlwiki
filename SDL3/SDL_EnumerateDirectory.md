@@ -15,11 +15,11 @@ int SDL_EnumerateDirectory(const char *path, SDL_EnumerateDirectoryCallback call
 
 ## Function Parameters
 
-|                                                                  |              |                                                           |
-| ---------------------------------------------------------------- | ------------ | --------------------------------------------------------- |
-| const char *                                                     | **path**     | the path of the directory to enumerate                    |
-| [SDL_EnumerateDirectoryCallback](SDL_EnumerateDirectoryCallback) | **callback** | a function that is called for each entry in the directory |
-| void *                                                           | **userdata** | a pointer that is passed to `callback`                    |
+|                                                                  |              |                                                            |
+| ---------------------------------------------------------------- | ------------ | ---------------------------------------------------------- |
+| const char *                                                     | **path**     | the path of the directory to enumerate.                    |
+| [SDL_EnumerateDirectoryCallback](SDL_EnumerateDirectoryCallback) | **callback** | a function that is called for each entry in the directory. |
+| void *                                                           | **userdata** | a pointer that is passed to `callback`.                    |
 
 ## Return Value
 

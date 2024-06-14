@@ -15,12 +15,12 @@ int SDL_SetJoystickLED(SDL_Joystick *joystick, Uint8 red, Uint8 green, Uint8 blu
 
 ## Function Parameters
 
-|                                |              |                                |
-| ------------------------------ | ------------ | ------------------------------ |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | The joystick to update         |
-| Uint8                          | **red**      | The intensity of the red LED   |
-| Uint8                          | **green**    | The intensity of the green LED |
-| Uint8                          | **blue**     | The intensity of the blue LED  |
+|                                |              |                                 |
+| ------------------------------ | ------------ | ------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick to update.         |
+| Uint8                          | **red**      | the intensity of the red LED.   |
+| Uint8                          | **green**    | the intensity of the green LED. |
+| Uint8                          | **blue**     | the intensity of the blue LED.  |
 
 ## Return Value
 

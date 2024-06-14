@@ -15,14 +15,14 @@ double SDL_modf(double x, double *y);
 
 ## Function Parameters
 
-|          |       |                                                 |
-| -------- | ----- | ----------------------------------------------- |
-| double   | **x** | floating point value                            |
-| double * | **y** | output pointer to store the integer part of `x` |
+|          |       |                                                  |
+| -------- | ----- | ------------------------------------------------ |
+| double   | **x** | floating point value.                            |
+| double * | **y** | output pointer to store the integer part of `x`. |
 
 ## Return Value
 
-(double) Returns the fractional part of `x`
+(double) Returns the fractional part of `x`.
 
 ## Remarks
 

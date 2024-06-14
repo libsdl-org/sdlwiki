@@ -15,9 +15,9 @@ SDL_MouseID* SDL_GetMice(int *count);
 
 ## Function Parameters
 
-|       |           |                                                      |
-| ----- | --------- | ---------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of mice returned |
+|       |           |                                                       |
+| ----- | --------- | ----------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of mice returned. |
 
 ## Return Value
 

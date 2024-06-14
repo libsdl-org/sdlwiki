@@ -15,9 +15,9 @@ SDL_bool SDL_HasClipboardData(const char *mime_type);
 
 ## Function Parameters
 
-|              |               |                                     |
-| ------------ | ------------- | ----------------------------------- |
-| const char * | **mime_type** | The mime type to check for data for |
+|              |               |                                      |
+| ------------ | ------------- | ------------------------------------ |
+| const char * | **mime_type** | the mime type to check for data for. |
 
 ## Return Value
 

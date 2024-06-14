@@ -15,9 +15,9 @@ SDL_GUID SDL_GUIDFromString(const char *pchGUID);
 
 ## Function Parameters
 
-|              |             |                                                     |
-| ------------ | ----------- | --------------------------------------------------- |
-| const char * | **pchGUID** | string containing an ASCII representation of a GUID |
+|              |             |                                                      |
+| ------------ | ----------- | ---------------------------------------------------- |
+| const char * | **pchGUID** | string containing an ASCII representation of a GUID. |
 
 ## Return Value
 

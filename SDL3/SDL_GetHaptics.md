@@ -15,9 +15,9 @@ SDL_HapticID* SDL_GetHaptics(int *count);
 
 ## Function Parameters
 
-|       |           |                                                                |
-| ----- | --------- | -------------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of haptic devices returned |
+|       |           |                                                                 |
+| ----- | --------- | --------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of haptic devices returned. |
 
 ## Return Value
 

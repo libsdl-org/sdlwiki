@@ -15,13 +15,13 @@ double SDL_sin(double x);
 
 ## Function Parameters
 
-|        |       |                                  |
-| ------ | ----- | -------------------------------- |
-| double | **x** | floating point value, in radians |
+|        |       |                                   |
+| ------ | ----- | --------------------------------- |
+| double | **x** | floating point value, in radians. |
 
 ## Return Value
 
-(double) Returns sine of `x`
+(double) Returns sine of `x`.
 
 ## Remarks
 

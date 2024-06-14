@@ -15,10 +15,10 @@ SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer *renderer, SDL_Surface *s
 
 ## Function Parameters
 
-|                                |              |                                                                                         |
-| ------------------------------ | ------------ | --------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context                                                                   |
-| [SDL_Surface](SDL_Surface) *   | **surface**  | the [SDL_Surface](SDL_Surface) structure containing pixel data used to fill the texture |
+|                                |              |                                                                                          |
+| ------------------------------ | ------------ | ---------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                   |
+| [SDL_Surface](SDL_Surface) *   | **surface**  | the [SDL_Surface](SDL_Surface) structure containing pixel data used to fill the texture. |
 
 ## Return Value
 

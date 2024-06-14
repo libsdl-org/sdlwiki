@@ -15,9 +15,9 @@ void SDL_SetJoystickEventsEnabled(SDL_bool enabled);
 
 ## Function Parameters
 
-|                      |             |                                           |
-| -------------------- | ----------- | ----------------------------------------- |
-| [SDL_bool](SDL_bool) | **enabled** | whether to process joystick events or not |
+|                      |             |                                            |
+| -------------------- | ----------- | ------------------------------------------ |
+| [SDL_bool](SDL_bool) | **enabled** | whether to process joystick events or not. |
 
 ## Remarks
 

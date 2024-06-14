@@ -17,8 +17,8 @@ int SDL_wcscasecmp(const wchar_t *str1, const wchar_t *str2);
 
 |                 |          |                                                      |
 | --------------- | -------- | ---------------------------------------------------- |
-| const wchar_t * | **str1** | The first string to compare. NULL is not permitted!  |
-| const wchar_t * | **str2** | The second string to compare. NULL is not permitted! |
+| const wchar_t * | **str1** | the first string to compare. NULL is not permitted!  |
+| const wchar_t * | **str2** | the second string to compare. NULL is not permitted! |
 
 ## Return Value
 

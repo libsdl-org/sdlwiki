@@ -15,9 +15,9 @@ void SDL_DestroyRWLock(SDL_RWLock *rwlock);
 
 ## Function Parameters
 
-|                            |            |                       |
-| -------------------------- | ---------- | --------------------- |
-| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the rwlock to destroy |
+|                            |            |                        |
+| -------------------------- | ---------- | ---------------------- |
+| [SDL_RWLock](SDL_RWLock) * | **rwlock** | the rwlock to destroy. |
 
 ## Remarks
 

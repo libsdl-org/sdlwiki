@@ -17,9 +17,9 @@ typedef void(SDLCALL *SDL_DialogFileCallback)(void *userdata, const char * const
 
 |              |                                                  |
 | ------------ | ------------------------------------------------ |
-| **userdata** | An app-provided pointer, for the callback's use. |
-| **filelist** | The file(s) chosen by the user.                  |
-| **filter**   | Index of the selected filter.                    |
+| **userdata** | an app-provided pointer, for the callback's use. |
+| **filelist** | the file(s) chosen by the user.                  |
+| **filter**   | index of the selected filter.                    |
 
 ## Remarks
 

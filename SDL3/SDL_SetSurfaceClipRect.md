@@ -15,10 +15,10 @@ SDL_bool SDL_SetSurfaceClipRect(SDL_Surface *surface, const SDL_Rect *rect);
 
 ## Function Parameters
 
-|                              |             |                                                                                                     |
-| ---------------------------- | ----------- | --------------------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be clipped                                              |
-| const [SDL_Rect](SDL_Rect) * | **rect**    | the [SDL_Rect](SDL_Rect) structure representing the clipping rectangle, or NULL to disable clipping |
+|                              |             |                                                                                                      |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be clipped.                                              |
+| const [SDL_Rect](SDL_Rect) * | **rect**    | the [SDL_Rect](SDL_Rect) structure representing the clipping rectangle, or NULL to disable clipping. |
 
 ## Return Value
 

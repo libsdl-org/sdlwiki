@@ -15,9 +15,9 @@ typedef void (SDLCALL *SDL_ClipboardCleanupCallback)(void *userdata);
 
 ## Function Parameters
 
-|              |                                 |
-| ------------ | ------------------------------- |
-| **userdata** | A pointer to provided user data |
+|              |                                  |
+| ------------ | -------------------------------- |
+| **userdata** | a pointer to provided user data. |
 
 ## Version
 

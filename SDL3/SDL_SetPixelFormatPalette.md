@@ -16,10 +16,10 @@ int SDL_SetPixelFormatPalette(SDL_PixelFormat * format,
 
 ## Function Parameters
 
-|                                      |             |                                                                            |
-| ------------------------------------ | ----------- | -------------------------------------------------------------------------- |
-| [SDL_PixelFormat](SDL_PixelFormat) * | **format**  | the [SDL_PixelFormat](SDL_PixelFormat) structure that will use the palette |
-| [SDL_Palette](SDL_Palette) *         | **palette** | the [SDL_Palette](SDL_Palette) structure that will be used                 |
+|                                      |             |                                                                             |
+| ------------------------------------ | ----------- | --------------------------------------------------------------------------- |
+| [SDL_PixelFormat](SDL_PixelFormat) * | **format**  | the [SDL_PixelFormat](SDL_PixelFormat) structure that will use the palette. |
+| [SDL_Palette](SDL_Palette) *         | **palette** | the [SDL_Palette](SDL_Palette) structure that will be used.                 |
 
 ## Return Value
 

@@ -15,13 +15,13 @@ int SDL_SendJoystickVirtualSensorData(SDL_Joystick *joystick, SDL_SensorType typ
 
 ## Function Parameters
 
-|                                  |                      |                                                                      |
-| -------------------------------- | -------------------- | -------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) *   | **joystick**         | the virtual joystick on which to set state.                          |
-| [SDL_SensorType](SDL_SensorType) | **type**             | the type of the sensor on the virtual joystick to update.            |
-| Uint64                           | **sensor_timestamp** | a 64-bit timestamp in nanoseconds associated with the sensor reading |
-| const float *                    | **data**             | the data associated with the sensor reading                          |
-| int                              | **num_values**       | the number of values pointed to by `data`                            |
+|                                  |                      |                                                                       |
+| -------------------------------- | -------------------- | --------------------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) *   | **joystick**         | the virtual joystick on which to set state.                           |
+| [SDL_SensorType](SDL_SensorType) | **type**             | the type of the sensor on the virtual joystick to update.             |
+| Uint64                           | **sensor_timestamp** | a 64-bit timestamp in nanoseconds associated with the sensor reading. |
+| const float *                    | **data**             | the data associated with the sensor reading.                          |
+| int                              | **num_values**       | the number of values pointed to by `data`.                            |
 
 ## Return Value
 

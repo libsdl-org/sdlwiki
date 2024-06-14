@@ -21,7 +21,7 @@ float SDL_GetAudioStreamFrequencyRatio(SDL_AudioStream *stream);
 
 ## Return Value
 
-(float) Returns the frequency ratio of the stream, or 0.0 on error
+(float) Returns the frequency ratio of the stream, or 0.0 on error.
 
 ## Thread Safety
 

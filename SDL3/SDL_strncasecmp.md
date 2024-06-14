@@ -17,9 +17,9 @@ int SDL_strncasecmp(const char *str1, const char *str2, size_t maxlen);
 
 |              |            |                                                      |
 | ------------ | ---------- | ---------------------------------------------------- |
-| const char * | **str1**   | The first string to compare. NULL is not permitted!  |
-| const char * | **str2**   | The second string to compare. NULL is not permitted! |
-| size_t       | **maxlen** | The maximum number of bytes to compare.              |
+| const char * | **str1**   | the first string to compare. NULL is not permitted!  |
+| const char * | **str2**   | the second string to compare. NULL is not permitted! |
+| size_t       | **maxlen** | the maximum number of bytes to compare.              |
 
 ## Return Value
 

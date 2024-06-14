@@ -15,14 +15,14 @@ SDL_WindowFlags SDL_GetWindowFlags(SDL_Window *window);
 
 ## Function Parameters
 
-|                            |            |                     |
-| -------------------------- | ---------- | ------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window to query |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to query. |
 
 ## Return Value
 
 ([SDL_WindowFlags](SDL_WindowFlags)) Returns a mask of the
-[SDL_WindowFlags](SDL_WindowFlags) associated with `window`
+[SDL_WindowFlags](SDL_WindowFlags) associated with `window`.
 
 ## Version
 
