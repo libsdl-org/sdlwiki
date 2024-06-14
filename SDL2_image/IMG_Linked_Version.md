@@ -15,7 +15,7 @@ const SDL_version * IMG_Linked_Version(void);
 
 ## Return Value
 
-(const SDL_version *) Returns SDL_image version
+(const SDL_version *) Returns SDL_image version.
 
 ## Remarks
 

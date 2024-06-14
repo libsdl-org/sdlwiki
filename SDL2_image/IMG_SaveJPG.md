@@ -15,15 +15,15 @@ int IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);
 
 ## Function Parameters
 
-|               |             |                                                                                     |
-| ------------- | ----------- | ----------------------------------------------------------------------------------- |
-| SDL_Surface * | **surface** | the SDL surface to save                                                             |
-| const char *  | **file**    | path on the filesystem to write new file to.                                        |
-| int           | **quality** | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality |
+|               |             |                                                                                      |
+| ------------- | ----------- | ------------------------------------------------------------------------------------ |
+| SDL_Surface * | **surface** | the SDL surface to save.                                                             |
+| const char *  | **file**    | path on the filesystem to write new file to.                                         |
+| int           | **quality** | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality. |
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

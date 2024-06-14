@@ -17,7 +17,7 @@ int IMG_SavePNG_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst);
 
 |               |             |                                          |
 | ------------- | ----------- | ---------------------------------------- |
-| SDL_Surface * | **surface** | the SDL surface to save                  |
+| SDL_Surface * | **surface** | the SDL surface to save.                 |
 | SDL_RWops *   | **dst**     | the SDL_RWops to save the image data to. |
 
 ## Return Value

@@ -21,7 +21,7 @@ SDL_Surface * IMG_LoadXPM_RW(SDL_RWops *src);
 
 ## Return Value
 
-(SDL_Surface *) Returns SDL surface, or NULL on error
+(SDL_Surface *) Returns SDL surface, or NULL on error.
 
 ## Remarks
 
