@@ -15,9 +15,9 @@ void SDLNet_DestroyStreamSocket(SDLNet_StreamSocket *sock);  /* Destroy your soc
 
 ## Function Parameters
 
-|                                              |          |                          |
-| -------------------------------------------- | -------- | ------------------------ |
-| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | stream socket to destroy |
+|                                              |          |                           |
+| -------------------------------------------- | -------- | ------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | stream socket to destroy. |
 
 ## Remarks
 

@@ -15,10 +15,10 @@ SDLNet_Server * SDLNet_CreateServer(SDLNet_Address *addr, Uint16 port);
 
 ## Function Parameters
 
-|                                    |          |                                                            |
-| ---------------------------------- | -------- | ---------------------------------------------------------- |
-| [SDLNet_Address](SDLNet_Address) * | **addr** | the _local_ address to listen for connections on, or NULL. |
-| Uint16                             | **port** | the port on the local address to listen for connections on |
+|                                    |          |                                                             |
+| ---------------------------------- | -------- | ----------------------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **addr** | the _local_ address to listen for connections on, or NULL.  |
+| Uint16                             | **port** | the port on the local address to listen for connections on. |
 
 ## Return Value
 

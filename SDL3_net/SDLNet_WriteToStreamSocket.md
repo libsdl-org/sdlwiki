@@ -17,7 +17,7 @@ int SDLNet_WriteToStreamSocket(SDLNet_StreamSocket *sock, const void *buf, int b
 
 |                                              |            |                                         |
 | -------------------------------------------- | ---------- | --------------------------------------- |
-| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**   | the stream socket to send data through  |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**   | the stream socket to send data through. |
 | const void *                                 | **buf**    | a pointer to the data to send.          |
 | int                                          | **buflen** | the size of the data to send, in bytes. |
 

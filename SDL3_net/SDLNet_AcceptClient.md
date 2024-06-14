@@ -17,7 +17,7 @@ int SDLNet_AcceptClient(SDLNet_Server *server, SDLNet_StreamSocket **client_stre
 
 |                                               |                   |                                                                                 |
 | --------------------------------------------- | ----------------- | ------------------------------------------------------------------------------- |
-| [SDLNet_Server](SDLNet_Server) *              | **server**        | the server object to check for pending connections                              |
+| [SDLNet_Server](SDLNet_Server) *              | **server**        | the server object to check for pending connections.                             |
 | [SDLNet_StreamSocket](SDLNet_StreamSocket) ** | **client_stream** | Will be set to a new stream socket if a connection was pending, NULL otherwise. |
 
 ## Return Value

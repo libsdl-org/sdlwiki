@@ -17,7 +17,7 @@ int SDLNet_ReadFromStreamSocket(SDLNet_StreamSocket *sock, void *buf, int buflen
 
 |                                              |            |                                                                                                                     |
 | -------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**   | the stream socket to receive data from                                                                              |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**   | the stream socket to receive data from.                                                                             |
 | void *                                       | **buf**    | a pointer to a buffer where received data will be collected.                                                        |
 | int                                          | **buflen** | the size of the buffer pointed to by `buf`, in bytes. This is the maximum that will be read from the stream socket. |
 

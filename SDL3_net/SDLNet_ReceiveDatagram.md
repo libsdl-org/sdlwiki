@@ -17,7 +17,7 @@ int SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram)
 
 |                                                  |           |                                           |
 | ------------------------------------------------ | --------- | ----------------------------------------- |
-| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock**  | the datagram socket to send data through  |
+| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock**  | the datagram socket to send data through. |
 | [SDLNet_Datagram](SDLNet_Datagram) **            | **dgram** | a pointer to the datagram packet pointer. |
 
 ## Return Value

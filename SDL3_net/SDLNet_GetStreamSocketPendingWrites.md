@@ -15,9 +15,9 @@ int SDLNet_GetStreamSocketPendingWrites(SDLNet_StreamSocket *sock);
 
 ## Function Parameters
 
-|                                              |          |                            |
-| -------------------------------------------- | -------- | -------------------------- |
-| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | the stream socket to query |
+|                                              |          |                             |
+| -------------------------------------------- | -------- | --------------------------- |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock** | the stream socket to query. |
 
 ## Return Value
 

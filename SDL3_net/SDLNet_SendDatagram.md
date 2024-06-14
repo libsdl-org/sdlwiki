@@ -17,7 +17,7 @@ int SDLNet_SendDatagram(SDLNet_DatagramSocket *sock, SDLNet_Address *address, Ui
 
 |                                                  |             |                                                      |
 | ------------------------------------------------ | ----------- | ---------------------------------------------------- |
-| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock**    | the datagram socket to send data through             |
+| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock**    | the datagram socket to send data through.            |
 | [SDLNet_Address](SDLNet_Address) *               | **address** | the [SDLNet_Address](SDLNet_Address) object address. |
 | Uint16                                           | **port**    | the address port.                                    |
 | const void *                                     | **buf**     | a pointer to the data to send as a single packet.    |

@@ -15,9 +15,9 @@ void SDLNet_DestroyDatagramSocket(SDLNet_DatagramSocket *sock);
 
 ## Function Parameters
 
-|                                                  |          |                            |
-| ------------------------------------------------ | -------- | -------------------------- |
-| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock** | datagram socket to destroy |
+|                                                  |          |                             |
+| ------------------------------------------------ | -------- | --------------------------- |
+| [SDLNet_DatagramSocket](SDLNet_DatagramSocket) * | **sock** | datagram socket to destroy. |
 
 ## Remarks
 

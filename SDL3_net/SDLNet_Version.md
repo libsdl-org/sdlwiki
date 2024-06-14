@@ -15,7 +15,7 @@ int SDLNet_Version(void);
 
 ## Return Value
 
-(int) Returns SDL_net version
+(int) Returns SDL_net version.
 
 ## Version
 

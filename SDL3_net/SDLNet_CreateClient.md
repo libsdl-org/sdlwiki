@@ -15,10 +15,10 @@ SDLNet_StreamSocket * SDLNet_CreateClient(SDLNet_Address *address, Uint16 port);
 
 ## Function Parameters
 
-|                                    |             |                                                |
-| ---------------------------------- | ----------- | ---------------------------------------------- |
-| [SDLNet_Address](SDLNet_Address) * | **address** | the address of the remote server to connect to |
-| Uint16                             | **port**    | the port on the remote server to connect to    |
+|                                    |             |                                                 |
+| ---------------------------------- | ----------- | ----------------------------------------------- |
+| [SDLNet_Address](SDLNet_Address) * | **address** | the address of the remote server to connect to. |
+| Uint16                             | **port**    | the port on the remote server to connect to.    |
 
 ## Return Value
 

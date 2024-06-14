@@ -17,7 +17,7 @@ int SDLNet_WaitUntilStreamSocketDrained(SDLNet_StreamSocket *sock, Sint32 timeou
 
 |                                              |             |                                                                                                                    |
 | -------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------ |
-| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**    | the stream socket to wait on                                                                                       |
+| [SDLNet_StreamSocket](SDLNet_StreamSocket) * | **sock**    | the stream socket to wait on.                                                                                      |
 | Sint32                                       | **timeout** | Number of milliseconds to wait for draining to complete. -1 to wait indefinitely, 0 to check once without waiting. |
 
 ## Return Value

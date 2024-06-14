@@ -15,9 +15,9 @@ void SDLNet_DestroyServer(SDLNet_Server *server);
 
 ## Function Parameters
 
-|                                  |            |                   |
-| -------------------------------- | ---------- | ----------------- |
-| [SDLNet_Server](SDLNet_Server) * | **server** | server to destroy |
+|                                  |            |                    |
+| -------------------------------- | ---------- | ------------------ |
+| [SDLNet_Server](SDLNet_Server) * | **server** | server to destroy. |
 
 ## Remarks
 
