@@ -39,6 +39,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_GamepadSensorEvent](SDL_GamepadSensorEvent)
 - [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)
+- [SDL_GLContextState](SDL_GLContextState)
 - [SDL_GUID](SDL_GUID)
 - [SDL_HapticCondition](SDL_HapticCondition)
 - [SDL_HapticConstant](SDL_HapticConstant)
