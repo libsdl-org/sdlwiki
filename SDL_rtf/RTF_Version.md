@@ -15,7 +15,7 @@ int RTF_Version(void);
 
 ## Return Value
 
-(int) Returns SDL_rtf version
+(int) Returns SDL_rtf version.
 
 ## Version
 
