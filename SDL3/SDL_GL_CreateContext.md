@@ -33,8 +33,7 @@ Those functions must be loaded at run-time, either with an OpenGL
 extension-handling library or with
 [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)() and its related functions.
 
-[SDL_GLContext](SDL_GLContext) is an alias for `void *`. It's opaque to the
-application.
+[SDL_GLContext](SDL_GLContext) is opaque to the application.
 
 ## Version
 
