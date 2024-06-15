@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-typedef void *SDL_GLContext;
+typedef struct SDL_GLContextState *SDL_GLContext;
 ```
 
 ## Version
