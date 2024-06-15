@@ -15,10 +15,10 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(SDL_AudioDeviceID devid, const SDL_AudioSp
 
 ## Function Parameters
 
-|                                        |           |                                                                                                                                                                                                                       |
-| -------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid** | the device instance id to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE) for the most reasonable default device. |
-| const [SDL_AudioSpec](SDL_AudioSpec) * | **spec**  | the requested device configuration. Can be NULL to use reasonable defaults.                                                                                                                                           |
+|                                        |           |                                                                                                                                                                                                                               |
+| -------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid** | the device instance id to open, or [SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK) or [SDL_AUDIO_DEVICE_DEFAULT_RECORDING](SDL_AUDIO_DEVICE_DEFAULT_RECORDING) for the most reasonable default device. |
+| const [SDL_AudioSpec](SDL_AudioSpec) * | **spec**  | the requested device configuration. Can be NULL to use reasonable defaults.                                                                                                                                                   |
 
 ## Return Value
 
@@ -27,10 +27,10 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(SDL_AudioDeviceID devid, const SDL_AudioSp
 
 ## Remarks
 
-You can open both output and capture devices through this function. Output
-devices will take data from bound audio streams, mix it, and send it to the
-hardware. Capture devices will feed any bound audio streams with a copy of
-any incoming data.
+You can open both playback and recording devices through this function.
+Playback devices will take data from bound audio streams, mix it, and send
+it to the hardware. Recording devices will feed any bound audio streams
+with a copy of any incoming data.
 
 An opened audio device starts out with no audio streams bound. To start
 audio playing, bind a stream and supply audio data to it. Unlike SDL2,
@@ -41,15 +41,15 @@ fairly closely by using
 function).
 
 If you don't care about opening a specific device, pass a `devid` of either
-[`SDL_AUDIO_DEVICE_DEFAULT_OUTPUT`](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or
-[`SDL_AUDIO_DEVICE_DEFAULT_CAPTURE`](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE). In
-this case, SDL will try to pick the most reasonable default, and may also
-switch between physical devices seamlessly later, if the most reasonable
-default changes during the lifetime of this opened device (user changed the
-default in the OS's system preferences, the default got unplugged so the
-system jumped to a new default, the user plugged in headphones on a mobile
-device, etc). Unless you have a good reason to choose a specific device,
-this is probably what you want.
+[`SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK`](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK) or
+[`SDL_AUDIO_DEVICE_DEFAULT_RECORDING`](SDL_AUDIO_DEVICE_DEFAULT_RECORDING).
+In this case, SDL will try to pick the most reasonable default, and may
+also switch between physical devices seamlessly later, if the most
+reasonable default changes during the lifetime of this opened device (user
+changed the default in the OS's system preferences, the default got
+unplugged so the system jumped to a new default, the user plugged in
+headphones on a mobile device, etc). Unless you have a good reason to
+choose a specific device, this is probably what you want.
 
 You may request a specific format for the audio device, but there is no
 promise the device will honor that request for several reasons. As such,

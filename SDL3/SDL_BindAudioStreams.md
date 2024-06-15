@@ -28,9 +28,9 @@ int SDL_BindAudioStreams(SDL_AudioDeviceID devid, SDL_AudioStream **streams, int
 
 ## Remarks
 
-Audio data will flow through any bound streams. For an output device, data
+Audio data will flow through any bound streams. For a playback device, data
 for all bound streams will be mixed together and fed to the device. For a
-capture device, a copy of recorded data will be provided to each bound
+recording device, a copy of recorded data will be provided to each bound
 stream.
 
 Audio streams can only be bound to an open device. This operation is
@@ -41,10 +41,10 @@ or none of them will be.
 It is an error to bind an already-bound stream; it must be explicitly
 unbound first.
 
-Binding a stream to a device will set its output format for output devices,
-and its input format for capture devices, so they match the device's
-settings. The caller is welcome to change the other end of the stream's
-format at any time.
+Binding a stream to a device will set its output format for playback
+devices, and its input format for recording devices, so they match the
+device's settings. The caller is welcome to change the other end of the
+stream's format at any time.
 
 ## Thread Safety
 

@@ -51,8 +51,8 @@ SDL_free(devices);
 
 ## See Also
 
-- [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
-- [SDL_GetAudioCaptureDevices](SDL_GetAudioCaptureDevices)
+- [SDL_GetAudioPlaybackDevices](SDL_GetAudioPlaybackDevices)
+- [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
 - [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----

@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 - [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
 - [SDL_FlushAudioStream](SDL_FlushAudioStream)
 - [SDL_ClearAudioStream](SDL_ClearAudioStream)
-- [SDL_ChangeAudioStreamOutput](SDL_ChangeAudioStreamOutput)
+- [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
 - [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
 
 ----

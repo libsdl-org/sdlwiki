@@ -33,10 +33,10 @@ using. If the device isn't yet opened, this will report the device's
 preferred format (or a reasonable default if this can't be determined).
 
 You may also specify
-[SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or
-[SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE) here,
-which is useful for getting a reasonable recommendation before opening the
-system-recommended default device.
+[SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK) or
+[SDL_AUDIO_DEVICE_DEFAULT_RECORDING](SDL_AUDIO_DEVICE_DEFAULT_RECORDING)
+here, which is useful for getting a reasonable recommendation before
+opening the system-recommended default device.
 
 You can also use this to request the current device buffer size. This is
 specified in sample frames and represents the amount of data SDL will feed

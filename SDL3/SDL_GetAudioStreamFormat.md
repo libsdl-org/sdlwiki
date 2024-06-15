@@ -36,6 +36,10 @@ stream-specific mutex while running.
 
 This function is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
