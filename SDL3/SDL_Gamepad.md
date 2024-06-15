@@ -18,5 +18,5 @@ typedef struct SDL_Gamepad SDL_Gamepad;
 This struct is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGamepad](CategoryGamepad)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGamepad](CategoryGamepad)
 
