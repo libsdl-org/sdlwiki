@@ -190,6 +190,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
 - [SDL_GetAudioDriver](SDL_GetAudioDriver)
 - [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
+- [SDL_GetAudioPlaybackDevices](SDL_GetAudioPlaybackDevices)
+- [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
 - [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
 - [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
 - [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
