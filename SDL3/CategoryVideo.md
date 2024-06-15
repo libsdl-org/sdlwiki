@@ -125,6 +125,7 @@ SDL video functions.
 - [SDL_EGLDisplay](SDL_EGLDisplay)
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_HitTest](SDL_HitTest)
+- [SDL_Window](SDL_Window)
 - [SDL_WindowFlags](SDL_WindowFlags)
 <!-- END CATEGORY LIST -->
 
@@ -134,7 +135,6 @@ SDL video functions.
 <!-- BEGIN CATEGORY LIST: CategoryVideo, CategoryAPIStruct -->
 - [SDL_DisplayMode](SDL_DisplayMode)
 - [SDL_GLContextState](SDL_GLContextState)
-- [SDL_Window](SDL_Window)
 <!-- END CATEGORY LIST -->
 
 ## Enums
