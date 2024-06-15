@@ -106,7 +106,7 @@ want.format = SDL_AUDIO_F32;
 want.channels = 2;
 want.freq = 48000;
 
-dev = SDL_OpenAudioDevice(SDL_AUDIO_DEVICE_DEFAULT_OUTPUT, &want);
+dev = SDL_OpenAudioDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &want);
 if (dev == 0) {
     SDL_Log("Failed to open audio: %s", SDL_GetError());
 } else {

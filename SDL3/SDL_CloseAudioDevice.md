@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 
 ```c
 extern SDL_AudioSpec want;
-SDL_AudioDeviceID devid = SDL_OpenAudioDevice(SDL_AUDIO_DEVICE_DEFAULT_OUTPUT, &want);
+SDL_AudioDeviceID devid = SDL_OpenAudioDevice(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &want);
 if (devid != 0) {
     SDL_ResumeAudioDevice(devid);
     SDL_Delay(5000);  // let device play for 5 seconds
