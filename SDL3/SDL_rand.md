@@ -28,7 +28,7 @@ serious needs.
 
 ## Thread Safety
 
-All calls should be from from a single thread, use
+All calls should be made from a single thread, use
 [SDL_rand_r](SDL_rand_r)() when using multiple threads.
 
 ## Version
