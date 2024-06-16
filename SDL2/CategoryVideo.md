@@ -113,6 +113,7 @@ Header file for SDL video functions.
 <!-- BEGIN CATEGORY LIST: CategoryVideo, CategoryAPIDatatype -->
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_HitTest](SDL_HitTest)
+- [SDL_Window](SDL_Window)
 <!-- END CATEGORY LIST -->
 
 ## Structs
