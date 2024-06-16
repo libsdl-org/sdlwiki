@@ -35,7 +35,7 @@ For thumbsticks, the state is a value ranging from -32768 (up/left) to
 
 Triggers range from 0 when released to 32767 when fully pressed, and never
 return a negative value. Note that this differs from the value reported by
-the lower-level [SDL_GetJoystickAxis](SDL_GetJoystickAxis)(), which
+the lower-level [SDL_JoystickGetAxis](SDL_JoystickGetAxis)(), which
 normally uses the full range.
 
 ## Version
