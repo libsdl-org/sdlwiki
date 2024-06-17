@@ -7,7 +7,7 @@ Building and installing SDL for your platform (including how to obtain prebuilt 
 
 ## SDL 3.0
 
-The source code to the latest official release of SDL3 is [here](https://github.com/libsdl-org/SDL/releases).
+There are no official releases of SDL3 yet, but when there are, the source code to the latest official release of SDL3 will be [here](https://github.com/libsdl-org/SDL/releases).
 
 If you want up to the minute bug fixes and improvements, you can track our work in SDL's [Git](https://git-scm.com Git) repository, [here](https://github.com/libsdl-org/SDL). To clone the repo:
 
