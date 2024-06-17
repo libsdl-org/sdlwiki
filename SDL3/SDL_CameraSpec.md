@@ -13,6 +13,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 typedef struct SDL_CameraSpec
 {
     SDL_PixelFormatEnum format; /**< Frame format */
+    SDL_Colorspace colorspace;  /**< Frame colorspace */
     int width;                  /**< Frame width */
     int height;                 /**< Frame height */
     int interval_numerator;     /**< Frame rate numerator ((dom / num) == fps, (num / dom) == duration) */
