@@ -12,6 +12,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Pen API](CategoryPen): access to pens (like Wacom tablets and Apple Pencil, etc).
 - [The new audio subsystem](CategoryAudio): mix multiple audio streams on logical devices. A good visual summary is [on YouTube](https://www.youtube.com/watch?v=MLau3hWJBeE).
 - [Time API](CategoryTime): date and time functionality beyond ticks and performance counters.
+- [Properties API](CategoryProperties): fast, flexible dictionaries of name/value pairs.
 - [Colorspace support](SDL_Colorspace): Surfaces and the renderer, etc, can manage multiple colorspaces.
 - (More new features are still coming to SDL3, so check back here later!)
 
