@@ -43,8 +43,8 @@ so it'll prepare all its state again later, from scratch.
 
 This means you do not need to save state in your rendering code to protect
 the SDL renderer. However, there lots of arbitrary pieces of Direct3D and
-OpenGL state that can confuse things; you should use your best judgement
-and be prepared to make changes if specific state needs to be protected.
+OpenGL state that can confuse things; you should use your best judgment and
+be prepared to make changes if specific state needs to be protected.
 
 ## Version
 
