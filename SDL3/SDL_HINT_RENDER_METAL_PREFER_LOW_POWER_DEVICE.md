@@ -17,7 +17,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 The variable can be set to the following values:
 
-- "0": Use the prefered OS device. (default)
+- "0": Use the preferred OS device. (default)
 - "1": Select a low power device.
 
 This hint should be set before creating a renderer.

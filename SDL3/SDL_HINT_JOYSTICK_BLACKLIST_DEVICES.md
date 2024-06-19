@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_HINT_JOYSTICK_BLACKLIST_DEVICES
 
-A variable containing a list of devices that should not be considerd joysticks.
+A variable containing a list of devices that should not be considered joysticks.
 
 ## Header File
 

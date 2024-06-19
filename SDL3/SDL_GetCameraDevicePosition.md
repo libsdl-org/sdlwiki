@@ -27,7 +27,7 @@ camera on the system hardware.
 ## Remarks
 
 Most platforms will report UNKNOWN, but mobile devices, like phones, can
-often make a distiction between cameras on the front of the device (that
+often make a distinction between cameras on the front of the device (that
 points towards the user, for taking "selfies") and cameras on the back (for
 filming in the direction the user is facing).
 

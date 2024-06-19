@@ -24,7 +24,7 @@ reason the app needs to dictate this (because they want either lower
 latency or higher throughput AND ARE WILLING TO DEAL WITH what that might
 require of the app), they can specify it.
 
-SDL will try to accomodate this value, but there is no promise you'll get
+SDL will try to accommodate this value, but there is no promise you'll get
 the buffer size requested. Many platforms won't honor this request at all,
 or might adjust it.
 

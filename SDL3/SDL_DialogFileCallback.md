@@ -27,7 +27,7 @@ The specific usage is described in each function.
 
 If `filelist` is:
 
-- NULL, an error occured. Details can be obtained with
+- NULL, an error occurred. Details can be obtained with
   [SDL_GetError](SDL_GetError)().
 - A pointer to NULL, the user either didn't choose any file or canceled the
   dialog.
