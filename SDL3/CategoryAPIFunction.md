@@ -693,7 +693,6 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_PushEvent](SDL_PushEvent)
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-- [SDL_QueryTexture](SDL_QueryTexture)
 - [SDL_Quit](SDL_Quit)
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
 - [SDL_RaiseWindow](SDL_RaiseWindow)

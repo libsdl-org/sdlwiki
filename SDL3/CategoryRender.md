@@ -73,7 +73,6 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_LockTexture](SDL_LockTexture)
 - [SDL_LockTextureToSurface](SDL_LockTextureToSurface)
-- [SDL_QueryTexture](SDL_QueryTexture)
 - [SDL_RenderClear](SDL_RenderClear)
 - [SDL_RenderClipEnabled](SDL_RenderClipEnabled)
 - [SDL_RenderCoordinatesFromWindow](SDL_RenderCoordinatesFromWindow)
