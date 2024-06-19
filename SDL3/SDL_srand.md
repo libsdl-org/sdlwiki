@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_srand
 
-Seed the pseudo-random number generator
+Seed the pseudo-random number generator.
 
 ## Header File
 
@@ -18,6 +18,11 @@ void SDL_srand(Uint64 seed);
 |        |          |                                                                                                                 |
 | ------ | -------- | --------------------------------------------------------------------------------------------------------------- |
 | Uint64 | **seed** | the value to use as a random number seed, or 0 to use [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)(). |
+
+## Remarks
+
+Reusing the seed number will cause [SDL_rand](SDL_rand)() to repeat the
+same stream of 'random' numbers.
 
 ## Thread Safety
 

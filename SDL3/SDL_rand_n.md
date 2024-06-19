@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_rand
+# SDL_rand_n
 
-Get 32 pseudo-random bits.
+Generates a pseudo-random number less than n
 
 ## Header File
 
@@ -10,21 +10,27 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-Uint32 SDL_rand(void);
+Uint32 SDL_rand_n(Uint32 n);
 ```
+
+## Function Parameters
+
+|        |       |                                |
+| ------ | ----- | ------------------------------ |
+| Uint32 | **n** | the number of possible values. |
 
 ## Return Value
 
-(Uint32) Returns a random value in the range of
-[0-[SDL_MAX_UINT32](SDL_MAX_UINT32)].
+(Uint32) Returns a random value in the range of [0 .. n-1].
 
 ## Remarks
 
-You likely want to use [SDL_rand_n](SDL_rand_n)() to get a psuedo-randum
-number instead.
+The method used is faster and of better quality than `SDL_rand() % n`.
+However just like with `SDL_rand() % n`, bias increases with larger n. Odds
+are better than 99.9% even for n under 1 million.
 
-If you want reproducible output, be sure to initialize with
-[SDL_srand](SDL_srand)() first.
+Example: to simulate a d6 use `SDL_rand_n(6) + 1` The +1 converts 0..5 to
+1..6
 
 There are no guarantees as to the quality of the random sequence produced,
 and this should not be used for security (cryptography, passwords) or where
@@ -42,9 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_srand](SDL_srand)
-- [SDL_rand_n](SDL_rand_n)
-- [SDL_rand_float](SDL_rand_float)
+- [SDL_rand](SDL_rand)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
