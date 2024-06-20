@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_rand_n
+# SDL_rand_bits
 
-Generates a pseudo-random number less than n for positive n
+Generates 32 pseudo-random bits.
 
 ## Header File
 
@@ -10,27 +10,18 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-Sint32 SDL_rand_n(Sint32 n);
+Uint32 SDL_rand_bits(void);
 ```
-
-## Function Parameters
-
-|        |       |                                                      |
-| ------ | ----- | ---------------------------------------------------- |
-| Sint32 | **n** | the number of possible outcomes. n must be positive. |
 
 ## Return Value
 
-(Sint32) Returns a random value in the range of [0 .. n-1].
+(Uint32) Returns a random value in the range of
+[0-[SDL_MAX_UINT32](SDL_MAX_UINT32)].
 
 ## Remarks
 
-The method used is faster and of better quality than `rand() % n`. Odds are
-roughly 99.9% even for n = 1 million. Evenness is better for smaller n, and
-much worse as n gets bigger.
-
-Example: to simulate a d6 use `SDL_rand_n(6) + 1` The +1 converts 0..5 to
-1..6
+You likely want to use [SDL_rand_n](SDL_rand_n)() to get a psuedo-randum
+number instead.
 
 If you want reproducible output, be sure to initialize with
 [SDL_srand](SDL_srand)() first.
@@ -52,6 +43,7 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_srand](SDL_srand)
+- [SDL_rand_n](SDL_rand_n)
 - [SDL_rand_float](SDL_rand_float)
 
 ----
