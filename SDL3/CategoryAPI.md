@@ -697,6 +697,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
 - [SDL_RaiseWindow](SDL_RaiseWindow)
 - [SDL_rand](SDL_rand)
+- [SDL_rand_bits](SDL_rand_bits)
 - [SDL_rand_float](SDL_rand_float)
 - [SDL_rand_n](SDL_rand_n)
 - [SDL_rand_r](SDL_rand_r)
