@@ -30,24 +30,9 @@ information.
 The following read-only properties are provided by SDL:
 
 - [`SDL_PROP_DISPLAY_HDR_ENABLED_BOOLEAN`](SDL_PROP_DISPLAY_HDR_ENABLED_BOOLEAN):
-  true if the display has HDR headroom above the SDR white point. This
-  property can change dynamically when
-  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
-  is sent.
-- [`SDL_PROP_DISPLAY_SDR_WHITE_POINT_FLOAT`](SDL_PROP_DISPLAY_SDR_WHITE_POINT_FLOAT):
-  the value of SDR white in the
-  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) colorspace. On
-  Windows this corresponds to the SDR white level in scRGB colorspace, and
-  on Apple platforms this is always 1.0 for EDR content. This property can
-  change dynamically when
-  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
-  is sent.
-- [`SDL_PROP_DISPLAY_HDR_HEADROOM_FLOAT`](SDL_PROP_DISPLAY_HDR_HEADROOM_FLOAT):
-  the additional high dynamic range that can be displayed, in terms of the
-  SDR white point. When HDR is not enabled, this will be 1.0. This property
-  can change dynamically when
-  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
-  is sent.
+  true if the display has HDR headroom above the SDR white point. This is
+  for informational and diagnostic purposes only, as not all platforms
+  provide this information at the display level.
 
 On KMS/DRM:
 

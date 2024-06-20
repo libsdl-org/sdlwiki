@@ -31,6 +31,25 @@ The following read-only properties are provided by SDL:
 
 - [`SDL_PROP_WINDOW_SHAPE_POINTER`](SDL_PROP_WINDOW_SHAPE_POINTER): the
   surface associated with a shaped window
+- [`SDL_PROP_WINDOW_HDR_ENABLED_BOOLEAN`](SDL_PROP_WINDOW_HDR_ENABLED_BOOLEAN):
+  true if the window has HDR headroom above the SDR white point. This
+  property can change dynamically when
+  [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
+  is sent.
+- [`SDL_PROP_WINDOW_SDR_WHITE_LEVEL_FLOAT`](SDL_PROP_WINDOW_SDR_WHITE_LEVEL_FLOAT):
+  the value of SDR white in the
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) colorspace. On
+  Windows this corresponds to the SDR white level in scRGB colorspace, and
+  on Apple platforms this is always 1.0 for EDR content. This property can
+  change dynamically when
+  [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
+  is sent.
+- [`SDL_PROP_WINDOW_HDR_HEADROOM_FLOAT`](SDL_PROP_WINDOW_HDR_HEADROOM_FLOAT):
+  the additional high dynamic range that can be displayed, in terms of the
+  SDR white point. When HDR is not enabled, this will be 1.0. This property
+  can change dynamically when
+  [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
+  is sent.
 
 On Android:
 
