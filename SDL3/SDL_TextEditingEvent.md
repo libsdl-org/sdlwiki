@@ -16,7 +16,7 @@ typedef struct SDL_TextEditingEvent
     Uint32 reserved;
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_WindowID windowID; /**< The window with keyboard focus, if any */
-    char *text;         /**< The editing text */
+    const char *text;   /**< The editing text */
     Sint32 start;       /**< The start cursor of selected editing text */
     Sint32 length;      /**< The length of selected editing text */
 } SDL_TextEditingEvent;
@@ -24,8 +24,7 @@ typedef struct SDL_TextEditingEvent
 
 ## Remarks
 
-The `text` is owned by SDL and should be copied if the application wants to
-hold onto it beyond the scope of handling this event.
+The text string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

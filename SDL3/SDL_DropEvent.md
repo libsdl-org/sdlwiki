@@ -18,15 +18,15 @@ typedef struct SDL_DropEvent
     SDL_WindowID windowID;    /**< The window that was dropped on, if any */
     float x;            /**< X coordinate, relative to window (not on begin) */
     float y;            /**< Y coordinate, relative to window (not on begin) */
-    char *source;       /**< The source app that sent this drop event, or NULL if that isn't available */
-    char *data;         /**< The text for SDL_EVENT_DROP_TEXT and the file name for SDL_EVENT_DROP_FILE, NULL for other events */
+    const char *source; /**< The source app that sent this drop event, or NULL if that isn't available */
+    const char *data;   /**< The text for SDL_EVENT_DROP_TEXT and the file name for SDL_EVENT_DROP_FILE, NULL for other events */
 } SDL_DropEvent;
 ```
 
 ## Remarks
 
-The `data` is owned by SDL and should be copied if the application wants to
-hold onto it beyond the scope of handling this event. Do not free it!
+The source and data strings follow the
+[SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

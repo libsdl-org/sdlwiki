@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetScancodeFromKey
+# SDL_GetDefaultScancodeFromKey
 
-Get the scancode corresponding to the given key code according to the current keyboard layout.
+Get the scancode corresponding to the given key code according to a default en_US keyboard layout.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key, SDL_Keymod *modstate);
+SDL_Scancode SDL_GetDefaultScancodeFromKey(SDL_Keycode key, SDL_Keymod *modstate);
 ```
 
 ## Function Parameters
@@ -36,8 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetDefaultScancodeFromKey](SDL_GetDefaultScancodeFromKey)
-- [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
+- [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 - [SDL_GetScancodeName](SDL_GetScancodeName)
 
 ----

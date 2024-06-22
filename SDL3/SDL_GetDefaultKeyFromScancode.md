@@ -10,14 +10,15 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_Keycode SDL_GetDefaultKeyFromScancode(SDL_Scancode scancode);
+SDL_Keycode SDL_GetDefaultKeyFromScancode(SDL_Scancode scancode, SDL_Keymod modstate);
 ```
 
 ## Function Parameters
 
-|                              |              |                                                    |
-| ---------------------------- | ------------ | -------------------------------------------------- |
-| [SDL_Scancode](SDL_Scancode) | **scancode** | the desired [SDL_Scancode](SDL_Scancode) to query. |
+|                              |              |                                                                       |
+| ---------------------------- | ------------ | --------------------------------------------------------------------- |
+| [SDL_Scancode](SDL_Scancode) | **scancode** | the desired [SDL_Scancode](SDL_Scancode) to query.                    |
+| [SDL_Keymod](SDL_Keymod)     | **modstate** | the modifier state to use when translating the scancode to a keycode. |
 
 ## Return Value
 

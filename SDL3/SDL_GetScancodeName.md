@@ -26,8 +26,6 @@ scancode doesn't have a name this function returns an empty string ("").
 
 ## Remarks
 
-See [SDL_Scancode](SDL_Scancode) for details.
-
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 **Warning**: The returned name is by design not stable across platforms,
@@ -48,6 +46,7 @@ This function is available since SDL 3.0.0.
 
 - [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 - [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
+- [SDL_SetScancodeName](SDL_SetScancodeName)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

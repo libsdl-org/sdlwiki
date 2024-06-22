@@ -347,6 +347,21 @@ The SDL_EVENT_WINDOW_RESIZED event is always sent, even in response to SDL_SetWi
 
 The SDL_EVENT_WINDOW_SIZE_CHANGED event has been removed, and you can use SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED to detect window backbuffer size changes.
 
+The keysym field of key events has been removed to remove one level of indirection, and `sym` has been renamed `key`.
+
+Code that looked like this:
+```c
+    SDL_Event event;
+    SDL_Keycode key = event.key.keysym.sym;
+    SDL_Keymod mod = event.key.keysym.mod;
+```
+now looks like this:
+```c
+    SDL_Event event;
+    SDL_Keycode key = event.key.key;
+    SDL_Keymod mod = event.key.mod;
+```
+
 The gamepad event structures caxis, cbutton, cdevice, ctouchpad, and csensor have been renamed gaxis, gbutton, gdevice, gtouchpad, and gsensor.
 
 The mouseX and mouseY fields of SDL_MouseWheelEvent have been renamed mouse_x and mouse_y.
@@ -890,12 +905,17 @@ The following symbols have been removed:
 
 Text input is no longer automatically enabled when initializing video, you should call SDL_StartTextInput() when you want to receive text input and call SDL_StopTextInput() when you are done. Starting text input may shown an input method editor (IME) and cause key up/down events to be skipped, so should only be enabled when the application wants text input.
 
+SDL_GetDefaultKeyFromScancode(), SDL_GetKeyFromScancode(), and SDL_GetScancodeFromKey() take an SDL_Keymod parameter and use that to provide the correct result based on keyboard modifier state.
+
 The following functions have been renamed:
 * SDL_IsScreenKeyboardShown() => SDL_ScreenKeyboardShown()
 * SDL_IsTextInputActive() => SDL_TextInputActive()
 
 The following functions have been removed:
 * SDL_IsTextInputShown()
+
+The following structures have been removed:
+* SDL_Keysym
 
 ## SDL_keycode.h
 
@@ -904,6 +924,19 @@ SDL_Keycode is now Uint32 and the SDLK_* constants are now defines instead of an
 The following symbols have been removed:
 
 * KMOD_RESERVED - No replacement. A bit named "RESERVED" probably shouldn't be used in an app, but if you need it, this was equivalent to KMOD_SCROLL (0x8000) in SDL2.
+* SDLK_WWW
+* SDLK_MAIL
+* SDLK_CALCULATOR
+* SDLK_COMPUTER
+* SDLK_BRIGHTNESSDOWN
+* SDLK_BRIGHTNESSUP
+* SDLK_DISPLAYSWITCH
+* SDLK_KBDILLUMTOGGLE
+* SDLK_KBDILLUMDOWN
+* SDLK_KBDILLUMUP
+* SDLK_APP1
+* SDLK_APP2
+
 
 The following symbols have been renamed:
 * KMOD_ALT => SDL_KMOD_ALT
@@ -923,7 +956,16 @@ The following symbols have been renamed:
 * KMOD_RSHIFT => SDL_KMOD_RSHIFT
 * KMOD_SCROLL => SDL_KMOD_SCROLL
 * KMOD_SHIFT => SDL_KMOD_SHIFT
+* SDLK_AUDIOFASTFORWARD => SDLK_MEDIA_FAST_FORWARD
+* SDLK_AUDIOMUTE => SDLK_MUTE
+* SDLK_AUDIONEXT => SDLK_MEDIA_NEXT_TRACK
+* SDLK_AUDIOPLAY => SDLK_MEDIA_PLAY
+* SDLK_AUDIOPREV => SDLK_MEDIA_PREVIOUS_TRACK
+* SDLK_AUDIOREWIND => SDLK_MEDIA_REWIND
+* SDLK_AUDIOSTOP => SDLK_MEDIA_STOP
 * SDLK_BACKQUOTE => SDLK_GRAVE
+* SDLK_EJECT => SDLK_MEDIA_EJECT
+* SDLK_MEDIASELECT => SDLK_MEDIA_SELECT
 * SDLK_QUOTE => SDLK_APOSTROPHE
 * SDLK_QUOTEDBL => SDLK_DBLAPOSTROPHE
 
@@ -1414,6 +1456,33 @@ The following functions have been renamed:
 
 The following structures have been renamed:
 * SDL_RWops => SDL_IOStream
+
+## SDL_scancode.h
+
+The following symbols have been removed:
+* SDL_SCANCODE_WWW
+* SDL_SCANCODE_MAIL
+* SDL_SCANCODE_CALCULATOR
+* SDL_SCANCODE_COMPUTER
+* SDL_SCANCODE_BRIGHTNESSDOWN
+* SDL_SCANCODE_BRIGHTNESSUP
+* SDL_SCANCODE_DISPLAYSWITCH
+* SDL_SCANCODE_KBDILLUMTOGGLE
+* SDL_SCANCODE_KBDILLUMDOWN
+* SDL_SCANCODE_KBDILLUMUP
+* SDL_SCANCODE_APP1
+* SDL_SCANCODE_APP2
+
+The following symbols have been renamed:
+* SDL_SCANCODE_AUDIOFASTFORWARD => SDL_SCANCODE_MEDIA_FAST_FORWARD
+* SDL_SCANCODE_AUDIOMUTE => SDL_SCANCODE_MUTE
+* SDL_SCANCODE_AUDIONEXT => SDL_SCANCODE_MEDIA_NEXT_TRACK
+* SDL_SCANCODE_AUDIOPLAY => SDL_SCANCODE_MEDIA_PLAY
+* SDL_SCANCODE_AUDIOPREV => SDL_SCANCODE_MEDIA_PREVIOUS_TRACK
+* SDL_SCANCODE_AUDIOREWIND => SDL_SCANCODE_MEDIA_REWIND
+* SDL_SCANCODE_AUDIOSTOP => SDL_SCANCODE_MEDIA_STOP
+* SDL_SCANCODE_EJECT => SDL_SCANCODE_MEDIA_EJECT
+* SDL_SCANCODE_MEDIASELECT => SDL_SCANCODE_MEDIA_SELECT
 
 ## SDL_sensor.h
 
