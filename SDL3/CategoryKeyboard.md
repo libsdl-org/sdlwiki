@@ -10,6 +10,7 @@ SDL keyboard management.
 <!-- BEGIN CATEGORY LIST: CategoryKeyboard, CategoryAPIFunction -->
 - [SDL_ClearComposition](SDL_ClearComposition)
 - [SDL_GetDefaultKeyFromScancode](SDL_GetDefaultKeyFromScancode)
+- [SDL_GetDefaultScancodeFromKey](SDL_GetDefaultScancodeFromKey)
 - [SDL_GetKeyboardFocus](SDL_GetKeyboardFocus)
 - [SDL_GetKeyboardInstanceName](SDL_GetKeyboardInstanceName)
 - [SDL_GetKeyboards](SDL_GetKeyboards)
@@ -26,6 +27,7 @@ SDL keyboard management.
 - [SDL_ResetKeyboard](SDL_ResetKeyboard)
 - [SDL_ScreenKeyboardShown](SDL_ScreenKeyboardShown)
 - [SDL_SetModState](SDL_SetModState)
+- [SDL_SetScancodeName](SDL_SetScancodeName)
 - [SDL_SetTextInputRect](SDL_SetTextInputRect)
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StopTextInput](SDL_StopTextInput)
