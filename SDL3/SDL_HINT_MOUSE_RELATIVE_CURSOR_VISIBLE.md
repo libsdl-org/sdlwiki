@@ -23,6 +23,12 @@ Note that for systems without raw hardware inputs, relative mode is
 implemented using warping, so the hardware cursor will visibly warp between
 frames if this is enabled on those systems.
 
+This hint can be set anytime.
+
+## Version
+
+This hint is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

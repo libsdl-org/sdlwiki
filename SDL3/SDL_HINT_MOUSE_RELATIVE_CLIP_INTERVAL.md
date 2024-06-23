@@ -21,6 +21,12 @@ The default value varies depending on the operating system, this variable
 might not have any effects on inapplicable platforms such as those without
 a cursor.
 
+This hint can be set anytime.
+
+## Version
+
+This hint is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 
