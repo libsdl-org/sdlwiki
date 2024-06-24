@@ -1,5 +1,5 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_rand_bits
+# SDL_rand_bits_r
 
 Generate 32 pseudo-random bits.
 
@@ -10,8 +10,14 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-Uint32 SDL_rand_bits(void);
+Uint32 SDL_rand_bits_r(Uint64 *state);
 ```
+
+## Function Parameters
+
+|          |           |                                                                     |
+| -------- | --------- | ------------------------------------------------------------------- |
+| Uint64 * | **state** | a pointer to the current random number state, this may not be NULL. |
 
 ## Return Value
 
@@ -20,8 +26,8 @@ Uint32 SDL_rand_bits(void);
 
 ## Remarks
 
-You likely want to use [SDL_rand](SDL_rand)() to get a psuedo-random number
-instead.
+You likely want to use [SDL_rand_r](SDL_rand_r)() to get a psuedo-random
+number instead.
 
 There are no guarantees as to the quality of the random sequence produced,
 and this should not be used for security (cryptography, passwords) or where
@@ -31,7 +37,8 @@ of those to meet any serious needs.
 
 ## Thread Safety
 
-All calls should be made from a single thread
+This function is thread-safe, as long as the state pointer isn't shared
+between threads.
 
 ## Version
 
@@ -39,9 +46,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_rand](SDL_rand)
-- [SDL_randf](SDL_randf)
-- [SDL_srand](SDL_srand)
+- [SDL_rand_r](SDL_rand_r)
+- [SDL_randf_r](SDL_randf_r)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

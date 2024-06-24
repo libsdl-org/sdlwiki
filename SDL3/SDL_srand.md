@@ -34,9 +34,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_rand_n](SDL_rand_n)
-- [SDL_rand_float](SDL_rand_float)
+- [SDL_rand](SDL_rand)
 - [SDL_rand_bits](SDL_rand_bits)
+- [SDL_randf](SDL_randf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
