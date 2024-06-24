@@ -61,6 +61,7 @@ SDL video functions.
 - [SDL_GetWindowPixelFormat](SDL_GetWindowPixelFormat)
 - [SDL_GetWindowPosition](SDL_GetWindowPosition)
 - [SDL_GetWindowProperties](SDL_GetWindowProperties)
+- [SDL_GetWindows](SDL_GetWindows)
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
 - [SDL_GetWindowSurface](SDL_GetWindowSurface)
