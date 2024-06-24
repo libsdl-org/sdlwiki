@@ -10,8 +10,19 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-void SDL_ClearComposition(void);
+int SDL_ClearComposition(SDL_Window *window);
 ```
+
+## Function Parameters
+
+|                            |            |                       |
+| -------------------------- | ---------- | --------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to affect. |
+
+## Return Value
+
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

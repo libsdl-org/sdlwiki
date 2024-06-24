@@ -10,14 +10,15 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-int SDL_SetTextInputRect(const SDL_Rect *rect);
+int SDL_SetTextInputRect(SDL_Window *window, const SDL_Rect *rect);
 ```
 
 ## Function Parameters
 
-|                              |          |                                                                                                  |
-| ---------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
-| const [SDL_Rect](SDL_Rect) * | **rect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to receive text (ignored if NULL). |
+|                              |            |                                                                                                  |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) *   | **window** | the window for which to set the text input rectangle.                                            |
+| const [SDL_Rect](SDL_Rect) * | **rect**   | the [SDL_Rect](SDL_Rect) structure representing the rectangle to receive text (ignored if NULL). |
 
 ## Return Value
 
@@ -25,6 +26,8 @@ int SDL_SetTextInputRect(const SDL_Rect *rect);
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
+
+This is often set to the extents of a text field within the window.
 
 Native input methods will place a window with word suggestions near it,
 without covering the text being inputted.

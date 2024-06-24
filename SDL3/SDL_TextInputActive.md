@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_TextInputActive
 
-Check whether or not Unicode text input events are enabled.
+Check whether or not Unicode text input events are enabled for a window.
 
 ## Header File
 
@@ -10,8 +10,14 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_TextInputActive(void);
+SDL_bool SDL_TextInputActive(SDL_Window *window);
 ```
+
+## Function Parameters
+
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window to check. |
 
 ## Return Value
 
