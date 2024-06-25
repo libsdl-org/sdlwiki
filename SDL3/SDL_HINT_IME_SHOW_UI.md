@@ -17,8 +17,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 The variable can be set to the following values:
 
-- "0": Native UI components are not display. (default)
-- "1": Native UI components are displayed.
+- "0": Native UI components are not display.
+- "1": Native UI components are displayed. (default)
 
 This hint should be set before SDL is initialized.
 
