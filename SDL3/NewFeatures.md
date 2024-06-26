@@ -14,6 +14,10 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Time API](CategoryTime): date and time functionality beyond ticks and performance counters.
 - [Properties API](CategoryProperties): fast, flexible dictionaries of name/value pairs.
 - [Colorspace support](SDL_Colorspace): Surfaces and the renderer, etc, can manage multiple colorspaces.
+- The Clipboard API [can support any data type](SDL_SetClipboardData) (SDL2 only handled text), and apps can provide data in multiple formats upon request in [a provided callback](SDL_ClipboardDataCallback).
+- Multiple [keyboards](SDL_GetKeyboards) and [mice](SDL_GetMice) can be managed separately.
+- [System theme](SDL_GetSystemTheme) (light, dark) can be queried.
+- HiDPI support is dramatically improved over SDL2.
 - (More new features are still coming to SDL3, so check back here later!)
 
 If you are looking to move to SDL3 so you can start using these new features, you should take a look at [README/migration](README/migration) for all the little details.
