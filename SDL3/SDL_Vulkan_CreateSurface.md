@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
+int SDL_Vulkan_CreateSurface(SDL_Window *window,
                               VkInstance instance,
                               const struct VkAllocationCallbacks *allocator,
                               VkSurfaceKHR* surface);
@@ -27,8 +27,8 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success,
-[SDL_FALSE](SDL_FALSE) on error.
+(int) Returns 0 on success, -1 on error (check
+[SDL_GetError](SDL_GetError)() for specifics).
 
 ## Remarks
 
