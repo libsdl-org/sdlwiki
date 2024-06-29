@@ -12,13 +12,13 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 typedef struct SDL_TextEditingEvent
 {
-    SDL_EventType type; /**< SDL_EVENT_TEXT_EDITING */
+    SDL_EventType type;         /**< SDL_EVENT_TEXT_EDITING */
     Uint32 reserved;
-    Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
-    SDL_WindowID windowID; /**< The window with keyboard focus, if any */
-    const char *text;   /**< The editing text */
-    Sint32 start;       /**< The start cursor of selected editing text, or -1 if not set */
-    Sint32 length;      /**< The length of selected editing text, or -1 if not set */
+    Uint64 timestamp;           /**< In nanoseconds, populated using SDL_GetTicksNS() */
+    SDL_WindowID windowID;      /**< The window with keyboard focus, if any */
+    const char *text;           /**< The editing text */
+    Sint32 start;               /**< The start cursor of selected editing text, or -1 if not set */
+    Sint32 length;              /**< The length of selected editing text, or -1 if not set */
 } SDL_TextEditingEvent;
 ```
 

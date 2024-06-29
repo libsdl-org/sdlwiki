@@ -19,6 +19,7 @@ typedef union SDL_Event
     SDL_KeyboardDeviceEvent kdevice;        /**< Keyboard device change event data */
     SDL_KeyboardEvent key;                  /**< Keyboard event data */
     SDL_TextEditingEvent edit;              /**< Text editing event data */
+    SDL_TextEditingCandidatesEvent edit_candidates; /**< Text editing candidates event data */
     SDL_TextInputEvent text;                /**< Text input event data */
     SDL_MouseDeviceEvent mdevice;           /**< Mouse device change event data */
     SDL_MouseMotionEvent motion;            /**< Mouse motion event data */

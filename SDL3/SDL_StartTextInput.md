@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SetTextInputRect](SDL_SetTextInputRect)
+- [SDL_SetTextInputArea](SDL_SetTextInputArea)
 - [SDL_StopTextInput](SDL_StopTextInput)
 - [SDL_TextInputActive](SDL_TextInputActive)
 

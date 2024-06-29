@@ -101,6 +101,7 @@ typedef enum SDL_EventType
                                             input language or keyboard layout change. */
     SDL_EVENT_KEYBOARD_ADDED,          /**< A new keyboard has been inserted into the system */
     SDL_EVENT_KEYBOARD_REMOVED,        /**< A keyboard has been removed */
+    SDL_EVENT_TEXT_EDITING_CANDIDATES, /**< Keyboard text editing candidates */
 
     /* Mouse events */
     SDL_EVENT_MOUSE_MOTION    = 0x400, /**< Mouse moved */
