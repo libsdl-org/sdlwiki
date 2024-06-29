@@ -49,6 +49,7 @@ This function is available since SDL 3.0.0.
 
 - [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
+- [SDL_GetRenderLogicalPresentationRect](SDL_GetRenderLogicalPresentationRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
