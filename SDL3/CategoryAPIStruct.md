@@ -78,6 +78,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_SensorEvent](SDL_SensorEvent)
 - [SDL_StorageInterface](SDL_StorageInterface)
 - [SDL_Surface](SDL_Surface)
+- [SDL_TextEditingCandidatesEvent](SDL_TextEditingCandidatesEvent)
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)
 - [SDL_TextInputEvent](SDL_TextInputEvent)
 - [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
