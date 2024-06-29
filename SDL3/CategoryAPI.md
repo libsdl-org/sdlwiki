@@ -414,6 +414,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_GetRendererName](SDL_GetRendererName)
 - [SDL_GetRendererProperties](SDL_GetRendererProperties)
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
+- [SDL_GetRenderLogicalPresentationRect](SDL_GetRenderLogicalPresentationRect)
 - [SDL_GetRenderMetalCommandEncoder](SDL_GetRenderMetalCommandEncoder)
 - [SDL_GetRenderMetalLayer](SDL_GetRenderMetalLayer)
 - [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
