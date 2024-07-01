@@ -121,6 +121,7 @@ If you were writing an SDL frontend for [Vim](https://www.vim.org/), you would n
 In this case, you would need to handle both key events and input events as above, in addition you might want to know what the modified keycode for the event is:
 
 ```c
+SDL_bool quit_the_app = SDL_FALSE;
 while (!quit_the_app) {
     SDL_Event e;
     while (SDL_WaitEvent(&e)) {
@@ -146,6 +147,7 @@ So you've made your game, and now you're taking the original advice about adding
 For this, use [SDL_GetKeyName](SDL_GetKeyName) with the [SDL_Keycode](SDL_Keycode) you get from an event:
 
 ```c
+SDL_bool quit_the_app = SDL_FALSE;
 while (!quit_the_app) {
     SDL_Event e;
     while (SDL_WaitEvent(&e)) {
