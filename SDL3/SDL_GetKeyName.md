@@ -28,6 +28,9 @@ returns an empty string ("").
 
 ## Remarks
 
+Both lowercase and uppercase alphabetic keycodes have uppercase names, e.g.
+[SDL_Keycode](SDL_Keycode) 'a' and 'A' both have the name "A".
+
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
