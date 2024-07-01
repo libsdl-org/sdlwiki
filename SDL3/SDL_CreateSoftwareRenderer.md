@@ -86,7 +86,7 @@ void loop()
             return;
         }
 
-        if ((e.type == SDL_EVENT_KEY_DOWN) && (e.key.keysym.sym == SDLK_ESCAPE)) {
+        if ((e.type == SDL_EVENT_KEY_DOWN) && (e.key.key == SDLK_ESCAPE)) {
             done = 1;
             return;
         }

@@ -54,12 +54,12 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-    // Default Usage:
-    SDL_Event sdlevent;
-    sdlevent.type = SDL_EVENT_KEY_DOWN;
-    sdlevent.key.keysym.sym = SDLK_1;
+SDL_Event sdlevent;
+SDL_zero(sdlevent);
+sdlevent.type = SDL_EVENT_KEY_DOWN;
+sdlevent.key.key = SDLK_1;
 
-    SDL_PushEvent(&sdlevent);
+SDL_PushEvent(&sdlevent);
 ```
 
 ## See Also

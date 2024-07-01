@@ -80,7 +80,7 @@ This function is available since SDL 3.0.0.
 // window to a specific color as the space bar is pressed.
 static int SDLCALL my_event_filter(void *userdata, SDL_Event * event)
 {
-    if ((event->type == SDL_EVENT_KEY_DOWN) && (event->key.keysym.sym == SDLK_SPACE)) {
+    if ((event->type == SDL_EVENT_KEY_DOWN) && (event->key.key == SDLK_SPACE)) {
         Uint8 *blue = (Uint8 *) userdata;
         if (*blue == 0) {
             *blue = 255;
