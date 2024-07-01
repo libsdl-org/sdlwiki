@@ -43,8 +43,8 @@ First, an example:
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 
-extern void InitVideo();
-extern void Redraw();
+extern SDL_Window *InitVideo();
+extern void Redraw(SDL_Window *window);
 
 extern char *text;
 extern char *composition;
@@ -55,10 +55,10 @@ int main(int argc, char *argv[])
 {
     SDL_bool done = SDL_FALSE;
 
-    InitVideo();
+    SDL_Window *window = InitVideo();
     /* ... */
 
-    SDL_StartTextInput();
+    SDL_StartTextInput(window);
     while (!done) {
         SDL_Event event;
         if (SDL_PollEvent(&event)) {
@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
                     break;
             }
         }
-        Redraw();
+        Redraw(window);
     }
 
     SDL_Quit();
