@@ -142,3 +142,18 @@ Obviously there are many keys that _don't_ generate a character, or characters t
 ## Showing key names to users
 
 So you've made your game, and now you're taking the original advice about adding user-configurable keybindings, and you need to know how to show the user the key's name in your config UI, and maybe also in a "press [current keybinding] to jump" tutorial message.
+
+For this, use [SDL_GetKeyName](SDL_GetKeyName) with the [SDL_Keycode](SDL_Keycode) you get from an event:
+
+```c
+while (!quit_the_app) {
+    SDL_Event e;
+    while (SDL_WaitEvent(&e)) {
+        /* user has pressed a key? */
+        if (e.type == SDL_EVENT_KEY_DOWN) {
+            SDL_Log("Wow, you just pressed the %s key!", SDL_GetKeyName(e.key.key));
+        }
+    }
+}
+```
+
