@@ -21,15 +21,14 @@ const char* SDL_GetKeyName(SDL_Keycode key);
 
 ## Return Value
 
-(const char *) Returns a pointer to a UTF-8 string that stays valid at
-least until the next call to this function. If you need it around any
-longer, you must copy it. If the key doesn't have a name, this function
-returns an empty string ("").
+(const char *) Returns a UTF-8 encoded string of the key name.
 
 ## Remarks
 
 Both lowercase and uppercase alphabetic keycodes have uppercase names, e.g.
 [SDL_Keycode](SDL_Keycode) 'a' and 'A' both have the name "A".
+
+If the key doesn't have a name, this function returns an empty string ("").
 
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
