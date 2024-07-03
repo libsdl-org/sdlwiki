@@ -1983,6 +1983,7 @@ The following functions have been removed:
 * SDL_GetWindowData() - use SDL_GetWindowProperties() instead
 * SDL_SetWindowData() - use SDL_GetWindowProperties() instead
 * SDL_CreateWindowFrom() - use SDL_CreateWindowWithProperties() with the properties that allow you to wrap an existing window
+* SDL_SetWindowInputFocus() - use SDL_RaiseWindow() instead
 
 The SDL_Window id type is named SDL_WindowID
 
@@ -2007,9 +2008,11 @@ The following symbols have been renamed:
 * SDL_WINDOWEVENT_RESTORED => SDL_EVENT_WINDOW_RESTORED
 * SDL_WINDOWEVENT_SHOWN => SDL_EVENT_WINDOW_SHOWN
 * SDL_WINDOWEVENT_SIZE_CHANGED => SDL_EVENT_WINDOW_SIZE_CHANGED
-* SDL_WINDOWEVENT_TAKE_FOCUS => SDL_EVENT_WINDOW_TAKE_FOCUS
 * SDL_WINDOW_ALLOW_HIGHDPI => SDL_WINDOW_HIGH_PIXEL_DENSITY
 * SDL_WINDOW_INPUT_GRABBED => SDL_WINDOW_MOUSE_GRABBED
+
+The following symbols have been removed:
+* SDL_WINDOWEVENT_TAKE_FOCUS
 
 The following window operations are now considered to be asynchronous requests and should not be assumed to succeed unless
 a corresponding event has been received:
