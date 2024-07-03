@@ -15,6 +15,8 @@ typedef struct SDL_AudioSpec
     SDL_AudioFormat format;     /**< Audio data format */
     int channels;               /**< Number of channels: 1 mono, 2 stereo, etc */
     int freq;                   /**< sample rate: sample frames per second */
+    SDL_bool use_channel_map;   /**< If SDL_FALSE, ignore `channel_map` and use default order. */
+    Uint8 channel_map[SDL_MAX_CHANNEL_MAP_SIZE];      /**< `channels` items of channel order. */
 } SDL_AudioSpec;
 ```
 
