@@ -36,6 +36,10 @@ specified in `spec`, which can change between callbacks if the audio device
 changed. However, this only covers frequency and channel count; data is
 always provided here in [SDL_AUDIO_F32](SDL_AUDIO_F32) format.
 
+The postmix callback runs _after_ logical device gain and audiostream gain
+have been applied, which is to say you can make the output data louder at
+this point than the gain settings would suggest.
+
 ## Thread Safety
 
 This will run from a background thread owned by SDL. The application is
