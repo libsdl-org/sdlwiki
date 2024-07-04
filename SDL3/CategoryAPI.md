@@ -946,6 +946,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
 - [SDL_TryLockSpinlock](SDL_TryLockSpinlock)
 - [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+- [SDL_UCS4ToUTF8](SDL_UCS4ToUTF8)
 - [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
 - [SDL_UnbindAudioStreams](SDL_UnbindAudioStreams)
 - [SDL_UnloadObject](SDL_UnloadObject)

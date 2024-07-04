@@ -97,6 +97,7 @@ runtime equivalents, but with an SDL_ prefix.
 - [SDL_toupper](SDL_toupper)
 - [SDL_trunc](SDL_trunc)
 - [SDL_truncf](SDL_truncf)
+- [SDL_UCS4ToUTF8](SDL_UCS4ToUTF8)
 - [SDL_wcscasecmp](SDL_wcscasecmp)
 - [SDL_wcscmp](SDL_wcscmp)
 - [SDL_wcsncasecmp](SDL_wcsncasecmp)
