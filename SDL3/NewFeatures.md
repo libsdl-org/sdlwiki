@@ -4,19 +4,24 @@ If you've got an SDL2 app, you might be wondering if you should move to SDL3, or
 
 A lot of things you're already using in SDL2 are easier, more consistent, and just generally _better_ in SDL3, so the upgrade can be worth it in any case, but here are some things that are _new features_ in SDL3 that you might want access to:
 
+- [Extremely good documentation](APIByCategory): We've spent a _ton_ of effort writing and revising the API reference.
 - [Dialog API](CategoryDialog): access to system file dialogs (file and folder selection UI for opening/saving).
 - [Filesystem API](CategoryFilesystem): simple directory management and globbing.
 - [Storage API](CategoryStorage): Abstract interface to platform-specific storage.
 - [Camera API](CategoryCamera): access to webcams.
 - [Main Callbacks](README/main-functions#main-callbacks-in-sdl3): _optionally_ run your program from callbacks instead of `main()`.
 - [Pen API](CategoryPen): access to pens (like Wacom tablets and Apple Pencil, etc).
-- [The new audio subsystem](CategoryAudio): mix multiple audio streams on logical devices. A good visual summary is [on YouTube](https://www.youtube.com/watch?v=MLau3hWJBeE).
+- [Logical audio devices](SDL_OpenAudioDevice): different parts of an app can get their own unique audio device to use.
+- [Audio streams](SDL_CreateAudioStream): handle buffering, converting, resampling, mixing, channel mapping, and gain. Bind to an audio device and go!
+- [Default audio devices](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK): SDL3 will automatically manage migrating to new physical hardware as devices are plugged in, ripped out, or changed.
 - [Time API](CategoryTime): date and time functionality beyond ticks and performance counters.
 - [Properties API](CategoryProperties): fast, flexible dictionaries of name/value pairs.
 - [Colorspace support](SDL_Colorspace): Surfaces and the renderer, etc, can manage multiple colorspaces.
 - The Clipboard API [can support any data type](SDL_SetClipboardData) (SDL2 only handled text), and apps can provide data in multiple formats upon request in [a provided callback](SDL_ClipboardDataCallback).
 - Multiple [keyboards](SDL_GetKeyboards) and [mice](SDL_GetMice) can be managed separately.
 - [System theme](SDL_GetSystemTheme) (light, dark) can be queried.
+- [Better keyboard input](KeyboardBestPractices), for all your keypress needs.
+- [Unicode-friendly case-insensitive string comparison](SDL_strcasecmp).
 - HiDPI support is dramatically improved over SDL2.
 - (More new features are still coming to SDL3, so check back here later!)
 
