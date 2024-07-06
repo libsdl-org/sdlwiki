@@ -31,21 +31,30 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 `flags` may be any of the following OR'd together:
 
-- [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN): fullscreen window at
-  desktop resolution
-- [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL): window usable with an OpenGL
-  context
-- [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN): window usable with a Vulkan
-  instance
-- [`SDL_WINDOW_METAL`](SDL_WINDOW_METAL): window usable with a Metal
-  instance
-- [`SDL_WINDOW_HIDDEN`](SDL_WINDOW_HIDDEN): window is not visible
+- [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN): fullscreen window at desktop resolution
+- [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL): window usable with an OpenGL context
+- [`SDL_WINDOW_OCCLUDED`](SDL_WINDOW_OCCLUDED): window is occluded
+- [`SDL_WINDOW_HIDDEN`](SDL_WINDOW_HIDDEN): window is not visible context
 - [`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS): no window decoration
 - [`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE): window can be resized
 - [`SDL_WINDOW_MINIMIZED`](SDL_WINDOW_MINIMIZED): window is minimized
 - [`SDL_WINDOW_MAXIMIZED`](SDL_WINDOW_MAXIMIZED): window is maximized
-- [`SDL_WINDOW_MOUSE_GRABBED`](SDL_WINDOW_MOUSE_GRABBED): window has
-  grabbed mouse focus
+- [`SDL_WINDOW_MOUSE_GRABBED`](SDL_WINDOW_MOUSE_GRABBED): window has grabbed mouse focus
+- [`SDL_WINDOW_INPUT_FOCUS`](SDL_WINDOW_INPUT_FOCUS): window has input focus
+- [`SDL_WINDOW_MOUSE_FOCUS`](SDL_WINDOW_MOUSE_FOCUS): window has mouse focus
+- [`SDL_WINDOW_EXTERNAL`](SDL_WINDOW_EXTERNAL): window not created by SDL
+- [`SDL_WINDOW_MODAL`](SDL_WINDOW_MODAL): window is modal
+- [`SDL_WINDOW_HIGH_PIXEL_DENSITY`](SDL_WINDOW_HIGH_PIXEL_DENSITY): window uses high pixel density back buffer if possible
+- [`SDL_WINDOW_MOUSE_CAPTURE`](SDL_WINDOW_MOUSE_CAPTURE): window has mouse captured (unrelated to MOUSE_GRABBED)
+- [`SDL_WINDOW_ALWAYS_ON_TOP`](SDL_WINDOW_ALWAYS_ON_TOP): window should always be above others
+- [`SDL_WINDOW_UTILITY`](SDL_WINDOW_UTILITY): window should be treated as a utility window, not showing in the task bar and window list
+- [`SDL_WINDOW_TOOLTIP`](SDL_WINDOW_TOOLTIP): window should be treated as a tooltip and does not get mouse or keyboard focus, requires a parent window
+- [`SDL_WINDOW_POPUP_MENU`](SDL_WINDOW_POPUP_MENU): window should be treated as a popup menu, requires a parent window
+- [`SDL_WINDOW_KEYBOARD_GRABBED`](SDL_WINDOW_KEYBOARD_GRABBED): window has grabbed keyboard input
+- [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN): window usable with a Vulkan instance
+- [`SDL_WINDOW_METAL`](SDL_WINDOW_METAL): window usable with a Metal instance
+- [`SDL_WINDOW_TRANSPARENT`](SDL_WINDOW_TRANSPARENT): window with transparent buffer
+- [`SDL_WINDOW_NOT_FOCUSABLE`](SDL_WINDOW_NOT_FOCUSABLE): window should not be focusable
 
 The [SDL_Window](SDL_Window) is implicitly shown if
 [SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN) is not set.
