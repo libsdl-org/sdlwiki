@@ -16,7 +16,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Remarks
 
 All network-enabled WinRT apps must make a privacy policy available to its
-users. On Windows 8, 8.1, and RT, Microsoft mandates that this policy be be
+users. On Windows 8, 8.1, and RT, Microsoft mandates that this policy be
 available in the Windows Settings charm, as accessed from within the app.
 SDL provides code to add a URL-based link there, which can point to the
 app's privacy policy.
