@@ -17,7 +17,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 This is useful as a debug tool to validate memory leaks, but shouldn't ever
 be set in production applications, as other libraries used by the
-application might use dbus under the hood and this cause cause crashes if
+application might use dbus under the hood and this cause crashes if
 they continue after [SDL_Quit](SDL_Quit)().
 
 The variable can be set to the following values:
