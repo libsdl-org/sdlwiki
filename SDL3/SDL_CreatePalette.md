@@ -29,6 +29,10 @@ memory); call [SDL_GetError](SDL_GetError)() for more information.
 
 The palette entries are initialized to white.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
@@ -37,7 +41,7 @@ This function is available since SDL 3.0.0.
 
 - [SDL_DestroyPalette](SDL_DestroyPalette)
 - [SDL_SetPaletteColors](SDL_SetPaletteColors)
-- [SDL_SetPixelFormatPalette](SDL_SetPixelFormatPalette)
+- [SDL_SetSurfacePalette](SDL_SetSurfacePalette)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)

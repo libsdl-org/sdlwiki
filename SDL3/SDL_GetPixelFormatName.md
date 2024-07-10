@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetPixelFormatName(SDL_PixelFormatEnum format);
+const char* SDL_GetPixelFormatName(SDL_PixelFormat format);
 ```
 
 ## Function Parameters
 
-|                                            |            |                            |
-| ------------------------------------------ | ---------- | -------------------------- |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the pixel format to query. |
+|                                    |            |                            |
+| ---------------------------------- | ---------- | -------------------------- |
+| [SDL_PixelFormat](SDL_PixelFormat) | **format** | the pixel format to query. |
 
 ## Return Value
 
@@ -28,6 +28,10 @@ format isn't recognized.
 ## Remarks
 
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

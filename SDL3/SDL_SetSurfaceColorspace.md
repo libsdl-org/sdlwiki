@@ -34,6 +34,10 @@ interpreted in color operations.
 
 This function is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_GetSurfaceColorspace](SDL_GetSurfaceColorspace)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

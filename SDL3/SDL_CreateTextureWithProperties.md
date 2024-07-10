@@ -39,9 +39,8 @@ These are the supported properties:
   textures, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
   textures and [SDL_COLORSPACE_JPEG](SDL_COLORSPACE_JPEG) for YUV textures.
 - [`SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER`](SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER):
-  one of the enumerated values in
-  [SDL_PixelFormatEnum](SDL_PixelFormatEnum), defaults to the best RGBA
-  format for the renderer
+  one of the enumerated values in [SDL_PixelFormat](SDL_PixelFormat),
+  defaults to the best RGBA format for the renderer
 - [`SDL_PROP_TEXTURE_CREATE_ACCESS_NUMBER`](SDL_PROP_TEXTURE_CREATE_ACCESS_NUMBER):
   one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess),
   defaults to [SDL_TEXTUREACCESS_STATIC](SDL_TEXTUREACCESS_STATIC)

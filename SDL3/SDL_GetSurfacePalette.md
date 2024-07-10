@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetSurfaceColorspace
+# SDL_GetSurfacePalette
 
-Get the colorspace used by a surface.
+Get the palette used by a surface.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Colorspace SDL_GetSurfaceColorspace(SDL_Surface *surface);
+SDL_Palette * SDL_GetSurfacePalette(SDL_Surface *surface);
 ```
 
 ## Function Parameters
@@ -21,17 +21,8 @@ SDL_Colorspace SDL_GetSurfaceColorspace(SDL_Surface *surface);
 
 ## Return Value
 
-([SDL_Colorspace](SDL_Colorspace)) Returns the colorspace used by the
-surface, or [SDL_COLORSPACE_UNKNOWN](SDL_COLORSPACE_UNKNOWN) if the surface
-is NULL.
-
-## Remarks
-
-The colorspace defaults to
-[SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) for floating point
-formats, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for 10-bit formats,
-[SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB surfaces and
-[SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for YUV textures.
+([SDL_Palette](SDL_Palette) *) Returns a pointer to the palette used by the
+surface, or NULL if there is no palette used.
 
 ## Version
 
@@ -39,7 +30,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SetSurfaceColorspace](SDL_SetSurfaceColorspace)
+- [SDL_SetSurfacePalette](SDL_SetSurfacePalette)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

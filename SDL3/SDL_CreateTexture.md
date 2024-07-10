@@ -10,18 +10,18 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormatEnum format, int access, int w, int h);
+SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormat format, int access, int w, int h);
 ```
 
 ## Function Parameters
 
-|                                            |              |                                                                             |
-| ------------------------------------------ | ------------ | --------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *             | **renderer** | the rendering context.                                                      |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format**   | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum). |
-| int                                        | **access**   | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess).     |
-| int                                        | **w**        | the width of the texture in pixels.                                         |
-| int                                        | **h**        | the height of the texture in pixels.                                        |
+|                                    |              |                                                                         |
+| ---------------------------------- | ------------ | ----------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *     | **renderer** | the rendering context.                                                  |
+| [SDL_PixelFormat](SDL_PixelFormat) | **format**   | one of the enumerated values in [SDL_PixelFormat](SDL_PixelFormat).     |
+| int                                | **access**   | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess). |
+| int                                | **w**        | the width of the texture in pixels.                                     |
+| int                                | **h**        | the height of the texture in pixels.                                    |
 
 ## Return Value
 

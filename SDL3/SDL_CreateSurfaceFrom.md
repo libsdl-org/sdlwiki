@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateSurfaceFrom
 
-Allocate a new RGB surface with a specific pixel format and existing pixel data.
+Allocate a new surface with a specific pixel format and existing pixel data.
 
 ## Header File
 
@@ -10,18 +10,18 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_CreateSurfaceFrom(void *pixels, int width, int height, int pitch, SDL_PixelFormatEnum format);
+SDL_Surface* SDL_CreateSurfaceFrom(int width, int height, SDL_PixelFormat format, void *pixels, int pitch);
 ```
 
 ## Function Parameters
 
-|                                            |            |                                                                                    |
-| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
-| void *                                     | **pixels** | a pointer to existing pixel data.                                                  |
-| int                                        | **width**  | the width of the surface.                                                          |
-| int                                        | **height** | the height of the surface.                                                         |
-| int                                        | **pitch**  | the number of bytes between each row, including padding.                           |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+|                                    |            |                                                                            |
+| ---------------------------------- | ---------- | -------------------------------------------------------------------------- |
+| int                                | **width**  | the width of the surface.                                                  |
+| int                                | **height** | the height of the surface.                                                 |
+| [SDL_PixelFormat](SDL_PixelFormat) | **format** | the [SDL_PixelFormat](SDL_PixelFormat) for the new surface's pixel format. |
+| void *                             | **pixels** | a pointer to existing pixel data.                                          |
+| int                                | **pitch**  | the number of bytes between each row, including padding.                   |
 
 ## Return Value
 

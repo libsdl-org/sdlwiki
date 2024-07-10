@@ -12,16 +12,15 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ```c
 typedef Uint32 SDL_SurfaceFlags;
 
-#define SDL_PREALLOC                0x00000001u /**< Surface uses preallocated memory */
-#define SDL_RLEACCEL                0x00000002u /**< Surface is RLE encoded */
-#define SDL_DONTFREE                0x00000004u /**< Surface is referenced internally */
-#define SDL_SIMD_ALIGNED            0x00000008u /**< Surface uses aligned memory */
-#define SDL_SURFACE_USES_PROPERTIES 0x00000010u /**< Surface uses properties */
+#define SDL_SURFACE_PREALLOCATED    0x00000001u /**< Surface uses preallocated pixel memory */
+#define SDL_SURFACE_LOCK_NEEDED     0x00000002u /**< Surface needs to be locked to access pixels */
+#define SDL_SURFACE_LOCKED          0x00000004u /**< Surface is currently locked */
+#define SDL_SURFACE_SIMD_ALIGNED    0x00000008u /**< Surface uses pixel memory allocated with SDL_aligned_alloc() */
 ```
 
 ## Remarks
 
-These are generally meant to be considered read-only.
+These are generally considered read-only.
 
 ## Version
 

@@ -33,7 +33,7 @@ The following read-only properties are provided by SDL:
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the texture
   colorspace.
 - [`SDL_PROP_TEXTURE_FORMAT_NUMBER`](SDL_PROP_TEXTURE_FORMAT_NUMBER): one
-  of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum).
+  of the enumerated values in [SDL_PixelFormat](SDL_PixelFormat).
 - [`SDL_PROP_TEXTURE_ACCESS_NUMBER`](SDL_PROP_TEXTURE_ACCESS_NUMBER): one
   of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess).
 - [`SDL_PROP_TEXTURE_WIDTH_NUMBER`](SDL_PROP_TEXTURE_WIDTH_NUMBER): the

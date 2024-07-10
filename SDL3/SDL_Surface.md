@@ -13,27 +13,15 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 typedef struct SDL_Surface
 {
     SDL_SurfaceFlags flags;     /**< Read-only */
-    SDL_PixelFormat *format;    /**< Read-only */
+    SDL_PixelFormat format;     /**< Read-only */
     int w, h;                   /**< Read-only */
     int pitch;                  /**< Read-only */
-    void *pixels;               /**< Read-write */
+    void *pixels;               /**< Read-only pointer, writable pixels if non-NULL */
 
-    void *reserved;             /**< Private */
+    int refcount;               /**< Application reference count, used when freeing surface */
 
-    /** information needed for surfaces requiring locks */
-    int locked;                 /**< Read-only */
+    SDL_SurfaceData *internal;  /**< Private */
 
-    /** list of BlitMap that hold a reference to this surface */
-    void *list_blitmap;         /**< Private */
-
-    /** clipping information */
-    SDL_Rect clip_rect;         /**< Read-only */
-
-    /** info for fast blit mapping to other surfaces */
-    SDL_BlitMap *map;           /**< Private */
-
-    /** Reference count -- used when freeing surface */
-    int refcount;               /**< Read-mostly */
 } SDL_Surface;
 ```
 

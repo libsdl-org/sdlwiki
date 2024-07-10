@@ -10,18 +10,18 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-Uint32 SDL_MapRGB(const SDL_PixelFormat * format,
-              Uint8 r, Uint8 g, Uint8 b);
+Uint32 SDL_MapRGB(const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 r, Uint8 g, Uint8 b);
 ```
 
 ## Function Parameters
 
-|                                            |            |                                                                              |
-| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------- |
-| const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the pixel format. |
-| Uint8                                      | **r**      | the red component of the pixel in the range 0-255.                           |
-| Uint8                                      | **g**      | the green component of the pixel in the range 0-255.                         |
-| Uint8                                      | **b**      | the blue component of the pixel in the range 0-255.                          |
+|                                                          |             |                                                                                            |
+| -------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------ |
+| const [SDL_PixelFormatDetails](SDL_PixelFormatDetails) * | **format**  | a pointer to [SDL_PixelFormatDetails](SDL_PixelFormatDetails) describing the pixel format. |
+| const [SDL_Palette](SDL_Palette) *                       | **palette** | an optional palette for indexed formats, may be NULL.                                      |
+| Uint8                                                    | **r**       | the red component of the pixel in the range 0-255.                                         |
+| Uint8                                                    | **g**       | the green component of the pixel in the range 0-255.                                       |
+| Uint8                                                    | **b**       | the blue component of the pixel in the range 0-255.                                        |
 
 ## Return Value
 
@@ -44,6 +44,11 @@ upper bits of the return value can safely be ignored (e.g., with a 16-bpp
 format the return value can be assigned to a Uint16, and similarly a Uint8
 for an 8-bpp format).
 
+## Thread Safety
+
+It is safe to call this function from any thread, as long as the palette is
+not modified.
+
 ## Version
 
 This function is available since SDL 3.0.0.
@@ -51,8 +56,8 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_GetRGB](SDL_GetRGB)
-- [SDL_GetRGBA](SDL_GetRGBA)
 - [SDL_MapRGBA](SDL_MapRGBA)
+- [SDL_MapSurfaceRGB](SDL_MapSurfaceRGB)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)

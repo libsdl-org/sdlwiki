@@ -33,6 +33,11 @@ A single palette can be shared with many surfaces.
 
 This function is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_CreatePalette](SDL_CreatePalette)
+- [SDL_GetSurfacePalette](SDL_GetSurfacePalette)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

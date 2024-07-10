@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_DestroySurface
 
-Free an RGB surface.
+Free a surface.
 
 ## Header File
 
@@ -29,6 +29,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_CreateStackSurface](SDL_CreateStackSurface)
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
 

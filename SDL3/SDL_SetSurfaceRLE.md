@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_SetSurfaceRLE(SDL_Surface *surface, int flag);
+int SDL_SetSurfaceRLE(SDL_Surface *surface, SDL_bool enabled);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                       |
-| ---------------------------- | ----------- | ----------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to optimize. |
-| int                          | **flag**    | 0 to disable, non-zero to enable RLE acceleration.    |
+|                              |             |                                                                                        |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to optimize.                                  |
+| [SDL_bool](SDL_bool)         | **enabled** | [SDL_TRUE](SDL_TRUE) to enable RLE acceleration, [SDL_FALSE](SDL_FALSE) to disable it. |
 
 ## Return Value
 

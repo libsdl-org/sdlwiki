@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void SDL_DestroyPalette(SDL_Palette * palette);
+void SDL_DestroyPalette(SDL_Palette *palette);
 ```
 
 ## Function Parameters
@@ -18,6 +18,11 @@ void SDL_DestroyPalette(SDL_Palette * palette);
 |                              |             |                                                       |
 | ---------------------------- | ----------- | ----------------------------------------------------- |
 | [SDL_Palette](SDL_Palette) * | **palette** | the [SDL_Palette](SDL_Palette) structure to be freed. |
+
+## Thread Safety
+
+It is safe to call this function from any thread, as long as the palette is
+not modified or destroyed in another thread.
 
 ## Version
 

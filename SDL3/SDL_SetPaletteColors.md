@@ -10,9 +10,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetPaletteColors(SDL_Palette * palette,
-                     const SDL_Color * colors,
-                     int firstcolor, int ncolors);
+int SDL_SetPaletteColors(SDL_Palette *palette, const SDL_Color *colors, int firstcolor, int ncolors);
 ```
 
 ## Function Parameters
@@ -28,6 +26,11 @@ int SDL_SetPaletteColors(SDL_Palette * palette,
 
 (int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Thread Safety
+
+It is safe to call this function from any thread, as long as the palette is
+not modified or destroyed in another thread.
 
 ## Version
 

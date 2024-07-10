@@ -41,10 +41,9 @@ The following read-only properties are provided by SDL:
 - [`SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER`](SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER):
   the maximum texture width and height
 - [`SDL_PROP_RENDERER_TEXTURE_FORMATS_POINTER`](SDL_PROP_RENDERER_TEXTURE_FORMATS_POINTER):
-  a (const [SDL_PixelFormatEnum](SDL_PixelFormatEnum) *) array of pixel
-  formats, terminated with
-  [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN), representing the
-  available texture formats for this renderer.
+  a (const [SDL_PixelFormat](SDL_PixelFormat) *) array of pixel formats,
+  terminated with [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN),
+  representing the available texture formats for this renderer.
 - [`SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
   output to the display, defaults to

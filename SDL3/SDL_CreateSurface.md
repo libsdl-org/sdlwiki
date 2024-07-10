@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateSurface
 
-Allocate a new RGB surface with a specific pixel format.
+Allocate a new surface with a specific pixel format.
 
 ## Header File
 
@@ -10,16 +10,16 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_CreateSurface(int width, int height, SDL_PixelFormatEnum format);
+SDL_Surface* SDL_CreateSurface(int width, int height, SDL_PixelFormat format);
 ```
 
 ## Function Parameters
 
-|                                            |            |                                                                                    |
-| ------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
-| int                                        | **width**  | the width of the surface.                                                          |
-| int                                        | **height** | the height of the surface.                                                         |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **format** | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+|                                    |            |                                                                            |
+| ---------------------------------- | ---------- | -------------------------------------------------------------------------- |
+| int                                | **width**  | the width of the surface.                                                  |
+| int                                | **height** | the height of the surface.                                                 |
+| [SDL_PixelFormat](SDL_PixelFormat) | **format** | the [SDL_PixelFormat](SDL_PixelFormat) for the new surface's pixel format. |
 
 ## Return Value
 

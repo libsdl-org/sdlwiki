@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface, const SDL_PixelFormat *format);
+SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface, SDL_PixelFormat format);
 ```
 
 ## Function Parameters
 
-|                                            |             |                                                                                         |
-| ------------------------------------------ | ----------- | --------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) *               | **surface** | the existing [SDL_Surface](SDL_Surface) structure to convert.                           |
-| const [SDL_PixelFormat](SDL_PixelFormat) * | **format**  | the [SDL_PixelFormat](SDL_PixelFormat) structure that the new surface is optimized for. |
+|                                    |             |                                                               |
+| ---------------------------------- | ----------- | ------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) *       | **surface** | the existing [SDL_Surface](SDL_Surface) structure to convert. |
+| [SDL_PixelFormat](SDL_PixelFormat) | **format**  | the new pixel format.                                         |
 
 ## Return Value
 
@@ -32,6 +32,11 @@ This function is used to optimize images for faster *repeat* blitting. This
 is accomplished by converting the original and storing the result as a new
 surface. The new, optimized surface can then be used as the source for
 future blits, making them faster.
+
+If you are converting to an indexed surface and want to map colors to a
+palette, you can use
+[SDL_ConvertSurfaceAndColorspace](SDL_ConvertSurfaceAndColorspace)()
+instead.
 
 ## Version
 
@@ -51,9 +56,7 @@ SDL_DestroyPixelFormat(format);
 
 ## See Also
 
-- [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
-- [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
-- [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
+- [SDL_ConvertSurfaceAndColorspace](SDL_ConvertSurfaceAndColorspace)
 - [SDL_DestroySurface](SDL_DestroySurface)
 
 ----

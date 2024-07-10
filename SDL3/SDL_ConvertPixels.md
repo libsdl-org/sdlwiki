@@ -10,21 +10,21 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_ConvertPixels(int width, int height, SDL_PixelFormatEnum src_format, const void *src, int src_pitch, SDL_PixelFormatEnum dst_format, void *dst, int dst_pitch);
+int SDL_ConvertPixels(int width, int height, SDL_PixelFormat src_format, const void *src, int src_pitch, SDL_PixelFormat dst_format, void *dst, int dst_pitch);
 ```
 
 ## Function Parameters
 
-|                                            |                |                                                                                 |
-| ------------------------------------------ | -------------- | ------------------------------------------------------------------------------- |
-| int                                        | **width**      | the width of the block to copy, in pixels.                                      |
-| int                                        | **height**     | the height of the block to copy, in pixels.                                     |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **src_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format. |
-| const void *                               | **src**        | a pointer to the source pixels.                                                 |
-| int                                        | **src_pitch**  | the pitch of the source pixels, in bytes.                                       |
-| [SDL_PixelFormatEnum](SDL_PixelFormatEnum) | **dst_format** | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format. |
-| void *                                     | **dst**        | a pointer to be filled in with new pixel data.                                  |
-| int                                        | **dst_pitch**  | the pitch of the destination pixels, in bytes.                                  |
+|                                    |                |                                                                         |
+| ---------------------------------- | -------------- | ----------------------------------------------------------------------- |
+| int                                | **width**      | the width of the block to copy, in pixels.                              |
+| int                                | **height**     | the height of the block to copy, in pixels.                             |
+| [SDL_PixelFormat](SDL_PixelFormat) | **src_format** | an [SDL_PixelFormat](SDL_PixelFormat) value of the `src` pixels format. |
+| const void *                       | **src**        | a pointer to the source pixels.                                         |
+| int                                | **src_pitch**  | the pitch of the source pixels, in bytes.                               |
+| [SDL_PixelFormat](SDL_PixelFormat) | **dst_format** | an [SDL_PixelFormat](SDL_PixelFormat) value of the `dst` pixels format. |
+| void *                             | **dst**        | a pointer to be filled in with new pixel data.                          |
+| int                                | **dst_pitch**  | the pitch of the destination pixels, in bytes.                          |
 
 ## Return Value
 
