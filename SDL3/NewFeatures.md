@@ -27,6 +27,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [SDL_GetTicksNS](SDL_GetTicksNS): when milliseconds won't cut it, you can use nanoseconds!
 - [Async windowing](SDL_SyncWindow)
 - More consistent API naming conventions. Everything is named consistently across the API now, instead of different subsystems taking different approaches. Also, we've tended toward more descriptive names for things in SDL3.
+- Rules about memory management are more clear in SDL3 (what happens if I query a device's name and the device is unplugged before I can touch the string? [There's a policy for that!](SDL_GetStringRule)). In SDL2, you hoped for the best.
 - (More new features are still coming to SDL3, so check back here later!)
 
 If you are looking to move to SDL3 so you can start using these new features, you should take a look at [README/migration](README/migration) for all the little details.
