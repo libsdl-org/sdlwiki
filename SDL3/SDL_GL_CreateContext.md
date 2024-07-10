@@ -62,7 +62,7 @@ SDL_GL_DeleteContext(glcontext);
 
 ## See Also
 
-- [SDL_GL_DeleteContext](SDL_GL_DeleteContext)
+- [SDL_GL_DestroyContext](SDL_GL_DestroyContext)
 - [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
 ----
