@@ -20,7 +20,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - The Clipboard API [can support any data type](SDL_SetClipboardData) (SDL2 only handled text), and apps can provide data in multiple formats upon request in [a provided callback](SDL_ClipboardDataCallback).
 - Multiple [keyboards](SDL_GetKeyboards) and [mice](SDL_GetMice) can be managed separately.
 - [System theme](SDL_GetSystemTheme) (light, dark) can be queried.
-- [Better keyboard input](KeyboardBestPractices), for all your keypress needs.
+- [Better keyboard input](BestKeyboardPractices), for all your keypress needs.
 - [Unicode-friendly case-insensitive string comparison](SDL_strcasecmp).
 - HiDPI support is dramatically improved over SDL2.
 - 64-bit [SDL_GetTicks](SDL_GetTicks): No more worrying about timer wraparound every ~49 days!
