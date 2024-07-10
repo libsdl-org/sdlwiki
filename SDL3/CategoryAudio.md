@@ -21,7 +21,12 @@ SDL also provides a simple .WAV loader in [SDL_LoadWAV](SDL_LoadWAV) (and
 [SDL_LoadWAV_IO](SDL_LoadWAV_IO) if you aren't reading from a file) as a
 basic means to load sound data into your program.
 
-## Channel layouts as SDL expects them
+## Channel layouts
+
+Audio data passing through SDL is uncompressed PCM data, interleaved. One
+can provide their own decompression through an MP3, etc, decoder, but SDL
+does not provide this directly. Each interleaved channel of data is meant
+to be in a specific order.
 
 Abbreviations:
 
@@ -54,7 +59,7 @@ This is the same order as DirectSound expects, but applied to all
 platforms; SDL will swizzle the channels as necessary if a platform expects
 something different.
 
-[SDL_AudioStream](SDL_AudioStream) can also be provided a channel map to
+[SDL_AudioStream](SDL_AudioStream) can also be provided channel maps to
 change this ordering to whatever is necessary, in other audio processing
 scenarios.
 
