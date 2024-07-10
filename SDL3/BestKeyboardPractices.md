@@ -110,7 +110,7 @@ while (!text_input_complete) {
 }
 ```
 
-If you're writing a fullscreen game, you might want to render IME UI yourself, so you'd set SDL_HINT_IME_IMPLEMENTED_UI appropriately and handle the SDL_EVENT_TEXT_EDITING and SDL_EVENT_TEXT_EDITING_CANDIDATES events. See testime.c for an example of this.
+If you're writing a fullscreen game, you might want to render IME UI yourself, so you'd set SDL_HINT_IME_IMPLEMENTED_UI appropriately and handle the SDL_EVENT_TEXT_EDITING and SDL_EVENT_TEXT_EDITING_CANDIDATES events. See [testime.c](https://github.com/libsdl-org/SDL/blob/main/test/testime.c) for an example of this.
 
 ## The Text Editor
 
