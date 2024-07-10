@@ -1,7 +1,5 @@
 # Best keyboard practices in SDL3.
 
-***THIS PAGE IS STILL A WORK IN PROGRESS, WHICH IS WHY SOME SECTIONS DON'T HAVE CODE OR SPECIFIC SOLUTION DETAILS.***
-
 ## First things first
 
 Keyboard input is a surprisingly complicated topic after you step outside of your usual country and language (and sometimes before you do, too).
