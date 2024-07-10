@@ -33,6 +33,8 @@ int direction_user_should_move(const SDL_Event *e)
         return -1;  /* pressed what would be "S" on a US QWERTY keyboard. Move backward! */
     }
 
+    /* (We aren't doing it here, but extra credit if your code sees both keys are pressed and cancel each other out!) */
+
     return 0;  /* wasn't key in W or S location, don't move. */
 }
 ```
