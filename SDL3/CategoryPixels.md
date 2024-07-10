@@ -12,8 +12,11 @@ Pixel management.
 - [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
 - [SDL_DestroyPalette](SDL_DestroyPalette)
 - [SDL_DestroyPixelFormat](SDL_DestroyPixelFormat)
+- [SDL_GetMasksForPixelFormat](SDL_GetMasksForPixelFormat)
 - [SDL_GetMasksForPixelFormatEnum](SDL_GetMasksForPixelFormatEnum)
+- [SDL_GetPixelFormatDetails](SDL_GetPixelFormatDetails)
 - [SDL_GetPixelFormatEnumForMasks](SDL_GetPixelFormatEnumForMasks)
+- [SDL_GetPixelFormatForMasks](SDL_GetPixelFormatForMasks)
 - [SDL_GetPixelFormatName](SDL_GetPixelFormatName)
 - [SDL_GetRGB](SDL_GetRGB)
 - [SDL_GetRGBA](SDL_GetRGBA)
@@ -38,6 +41,7 @@ Pixel management.
 - [SDL_FColor](SDL_FColor)
 - [SDL_Palette](SDL_Palette)
 - [SDL_PixelFormat](SDL_PixelFormat)
+- [SDL_PixelFormatDetails](SDL_PixelFormatDetails)
 <!-- END CATEGORY LIST -->
 
 ## Enums
@@ -49,6 +53,7 @@ Pixel management.
 - [SDL_ColorRange](SDL_ColorRange)
 - [SDL_ColorType](SDL_ColorType)
 - [SDL_MatrixCoefficients](SDL_MatrixCoefficients)
+- [SDL_PixelFormat](SDL_PixelFormat)
 - [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
 - [SDL_TransferCharacteristics](SDL_TransferCharacteristics)
 <!-- END CATEGORY LIST -->

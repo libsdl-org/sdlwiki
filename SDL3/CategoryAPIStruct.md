@@ -72,6 +72,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_PenMotionEvent](SDL_PenMotionEvent)
 - [SDL_PenTipEvent](SDL_PenTipEvent)
 - [SDL_PixelFormat](SDL_PixelFormat)
+- [SDL_PixelFormatDetails](SDL_PixelFormatDetails)
 - [SDL_Point](SDL_Point)
 - [SDL_QuitEvent](SDL_QuitEvent)
 - [SDL_Rect](SDL_Rect)
