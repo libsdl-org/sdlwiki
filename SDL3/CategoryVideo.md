@@ -68,7 +68,6 @@ SDL video functions.
 - [SDL_GetWindowSurfaceVSync](SDL_GetWindowSurfaceVSync)
 - [SDL_GetWindowTitle](SDL_GetWindowTitle)
 - [SDL_GL_CreateContext](SDL_GL_CreateContext)
-- [SDL_GL_DeleteContext](SDL_GL_DeleteContext)
 - [SDL_GL_DestroyContext](SDL_GL_DestroyContext)
 - [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)
 - [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
