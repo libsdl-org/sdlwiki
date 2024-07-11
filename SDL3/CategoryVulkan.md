@@ -11,6 +11,7 @@ Functions for creating Vulkan surfaces on SDL windows.
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 - [SDL_Vulkan_DestroySurface](SDL_Vulkan_DestroySurface)
 - [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
+- [SDL_Vulkan_GetPresentationSupport](SDL_Vulkan_GetPresentationSupport)
 - [SDL_Vulkan_GetVkGetInstanceProcAddr](SDL_Vulkan_GetVkGetInstanceProcAddr)
 - [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
 - [SDL_Vulkan_UnloadLibrary](SDL_Vulkan_UnloadLibrary)
