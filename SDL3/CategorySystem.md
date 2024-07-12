@@ -10,6 +10,7 @@ Platform-specific SDL API functions.
 <!-- BEGIN CATEGORY LIST: CategorySystem, CategoryAPIFunction -->
 - [SDL_AndroidBackButton](SDL_AndroidBackButton)
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
+- [SDL_AndroidGetCachePath](SDL_AndroidGetCachePath)
 - [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
 - [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState)
 - [SDL_AndroidGetInternalStoragePath](SDL_AndroidGetInternalStoragePath)
