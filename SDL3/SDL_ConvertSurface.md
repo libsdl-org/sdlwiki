@@ -47,10 +47,7 @@ This function is available since SDL 3.0.0.
 ```c
 
 SDL_Surface *input;
-
-SDL_PixelFormat *format = SDL_CreatePixelFormat(SDL_PIXELFORMAT_RGBA32);
-SDL_Surface *output = SDL_ConvertSurface(input, format);
-SDL_DestroyPixelFormat(format);
+SDL_Surface *output = SDL_ConvertSurface(input, SDL_PIXELFORMAT_RGBA32);
 
 ```
 
