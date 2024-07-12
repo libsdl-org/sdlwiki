@@ -41,9 +41,7 @@ This function is available since SDL 3.0.0.
 
 ```c
 SDL_Surface* surface; // a valid surface from wherever.
-SDL_PixelFormat* pixelFormat = surface->format;
-Uint32 pixelFormatEnum = pixelFormat->format;
-const char* surfacePixelFormatName = SDL_GetPixelFormatName(pixelFormatEnum);
+const char* surfacePixelFormatName = SDL_GetPixelFormatName(surface->format);
 SDL_Log("The surface's pixelformat is %s", surfacePixelFormatName);
 // prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
 ```
