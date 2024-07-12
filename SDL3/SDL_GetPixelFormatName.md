@@ -22,7 +22,7 @@ const char* SDL_GetPixelFormatName(SDL_PixelFormat format);
 ## Return Value
 
 (const char *) Returns the human readable name of the specified pixel
-format or [`SDL_PIXELFORMAT_UNKNOWN`](SDL_PIXELFORMAT_UNKNOWN) if the
+format or "[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN)" if the
 format isn't recognized.
 
 ## Remarks
