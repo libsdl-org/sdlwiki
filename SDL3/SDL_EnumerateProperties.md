@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_EnumerateProperties
 
-Enumerate the properties on a set of properties.
+Enumerate on a set of properties.
 
 ## Header File
 
