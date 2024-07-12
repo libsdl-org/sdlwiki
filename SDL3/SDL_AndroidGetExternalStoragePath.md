@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_AndroidGetExternalStoragePath
 
-Get the path used for external storage for this application.
+Get the path used for external storage for this Android application.
 
 ## Header File
 
@@ -26,6 +26,10 @@ to by other applications.
 
 Your external storage path is typically:
 `/storage/sdcard0/Android/data/your.app.package/files`.
+
+This is a C wrapper over `android.content.Context.getExternalFilesDir()`:
+
+https://developer.android.com/reference/android/content/Context#getExternalFilesDir()
 
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 

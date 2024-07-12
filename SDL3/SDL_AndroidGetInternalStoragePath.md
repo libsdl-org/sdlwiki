@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_AndroidGetInternalStoragePath
 
-Get the path used for internal storage for this application.
+Get the path used for internal storage for this Android application.
 
 ## Header File
 
@@ -25,6 +25,10 @@ applications.
 
 Your internal storage path is typically:
 `/data/data/your.app.package/files`.
+
+This is a C wrapper over `android.content.Context.getFilesDir()`:
+
+https://developer.android.com/reference/android/content/Context#getFilesDir()
 
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
