@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetNumberProperty
 
-Set an integer property on a group of properties.
+Set an integer property in a group of properties.
 
 ## Header File
 

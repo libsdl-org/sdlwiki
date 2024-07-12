@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetBooleanProperty
 
-Set a boolean property on a group of properties.
+Set a boolean property in a group of properties.
 
 ## Header File
 

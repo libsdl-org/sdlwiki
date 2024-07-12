@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetPointerPropertyWithCleanup
 
-Set a property on a group of properties with a cleanup function that is called when the property is deleted.
+Set a pointer property in a group of properties with a cleanup function that is called when the property is deleted.
 
 ## Header File
 
