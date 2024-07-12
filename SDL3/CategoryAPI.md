@@ -1021,6 +1021,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_AudioStreamCallback](SDL_AudioStreamCallback)
 - [SDL_BlendMode](SDL_BlendMode)
 - [SDL_bool](SDL_bool)
+- [SDL_Camera](SDL_Camera)
 - [SDL_CameraDeviceID](SDL_CameraDeviceID)
 - [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback)
 - [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback)
