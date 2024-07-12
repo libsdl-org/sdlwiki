@@ -29,8 +29,8 @@ This callback is set per-property. Different properties in the same set can
 have different cleanup callbacks.
 
 This callback will be called _during_
-[SDL_SetPropertyWithCleanup](SDL_SetPropertyWithCleanup) if the function
-fails for any reason.
+[SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup) if
+the function fails for any reason.
 
 ## Thread Safety
 
@@ -43,7 +43,7 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SetPropertyWithCleanup](SDL_SetPropertyWithCleanup)
+- [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryProperties](CategoryProperties)

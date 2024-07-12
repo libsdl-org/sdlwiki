@@ -29,8 +29,9 @@ int SDL_CopyProperties(SDL_PropertiesID src, SDL_PropertiesID dst);
 
 Copy all the properties from one set of properties to another, with the
 exception of properties requiring cleanup (set using
-[SDL_SetPropertyWithCleanup](SDL_SetPropertyWithCleanup)()), which will not
-be copied. Any property that already exists on `dst` will be overwritten.
+[SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)()),
+which will not be copied. Any property that already exists on `dst` will be
+overwritten.
 
 ## Thread Safety
 

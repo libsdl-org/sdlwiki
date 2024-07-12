@@ -149,11 +149,6 @@ On X11:
 
 This function is available since SDL 3.0.0.
 
-## See Also
-
-- [SDL_GetProperty](SDL_GetProperty)
-- [SDL_GetNumberProperty](SDL_GetNumberProperty)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

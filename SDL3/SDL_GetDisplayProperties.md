@@ -46,11 +46,6 @@ On KMS/DRM:
 
 This function is available since SDL 3.0.0.
 
-## See Also
-
-- [SDL_GetProperty](SDL_GetProperty)
-- [SDL_SetProperty](SDL_SetProperty)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

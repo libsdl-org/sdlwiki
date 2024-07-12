@@ -11,8 +11,9 @@ with the [SDL_DestroyProperties](SDL_DestroyProperties) function.
 Properties can be added to and retrieved from a property set through the
 following functions:
 
-- [SDL_SetProperty](SDL_SetProperty) and [SDL_GetProperty](SDL_GetProperty)
-  operate on `void*` pointer types.
+- [SDL_SetPointerProperty](SDL_SetPointerProperty) and
+  [SDL_GetPointerProperty](SDL_GetPointerProperty) operate on `void*`
+  pointer types.
 - [SDL_SetStringProperty](SDL_SetStringProperty) and
   [SDL_GetStringProperty](SDL_GetStringProperty) operate on string types.
 - [SDL_SetNumberProperty](SDL_SetNumberProperty) and
