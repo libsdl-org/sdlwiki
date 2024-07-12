@@ -82,7 +82,6 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_RenderFillRects](SDL_RenderFillRects)
 - [SDL_RenderGeometry](SDL_RenderGeometry)
 - [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
-- [SDL_RenderGeometryRawFloat](SDL_RenderGeometryRawFloat)
 - [SDL_RenderLine](SDL_RenderLine)
 - [SDL_RenderLines](SDL_RenderLines)
 - [SDL_RenderPoint](SDL_RenderPoint)

@@ -96,7 +96,6 @@ SDL video functions.
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_SetWindowHitTest](SDL_SetWindowHitTest)
 - [SDL_SetWindowIcon](SDL_SetWindowIcon)
-- [SDL_SetWindowInputFocus](SDL_SetWindowInputFocus)
 - [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
 - [SDL_SetWindowMaximumSize](SDL_SetWindowMaximumSize)
 - [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)

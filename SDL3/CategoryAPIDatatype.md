@@ -72,7 +72,6 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_AudioStream](SDL_AudioStream)
 - [SDL_AudioStreamCallback](SDL_AudioStreamCallback)
 - [SDL_BlendMode](SDL_BlendMode)
-- [SDL_BlitMap](SDL_BlitMap)
 - [SDL_bool](SDL_bool)
 - [SDL_CameraDeviceID](SDL_CameraDeviceID)
 - [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback)

@@ -48,7 +48,6 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_PenAxis](SDL_PenAxis)
 - [SDL_PenSubtype](SDL_PenSubtype)
 - [SDL_PixelFormat](SDL_PixelFormat)
-- [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
 - [SDL_PowerState](SDL_PowerState)
 - [SDL_PropertyType](SDL_PropertyType)
 - [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation)

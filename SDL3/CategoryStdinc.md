@@ -67,8 +67,6 @@ runtime equivalents, but with an SDL_ prefix.
 - [SDL_rand](SDL_rand)
 - [SDL_rand_bits](SDL_rand_bits)
 - [SDL_rand_bits_r](SDL_rand_bits_r)
-- [SDL_rand_float](SDL_rand_float)
-- [SDL_rand_n](SDL_rand_n)
 - [SDL_rand_r](SDL_rand_r)
 - [SDL_randf](SDL_randf)
 - [SDL_randf_r](SDL_randf_r)

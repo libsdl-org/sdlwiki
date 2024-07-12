@@ -15,7 +15,6 @@ need locks to manage thread safety. Those pieces are in [CategoryMutex](Category
 - [SDL_CleanupTLS](SDL_CleanupTLS)
 - [SDL_CreateThread](SDL_CreateThread)
 - [SDL_CreateThreadWithProperties](SDL_CreateThreadWithProperties)
-- [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
 - [SDL_CreateTLS](SDL_CreateTLS)
 - [SDL_DetachThread](SDL_DetachThread)
 - [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
