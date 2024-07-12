@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-struct SDL_Camera;
+typedef struct SDL_Camera SDL_Camera;
 ```
 
 ## Version
@@ -18,5 +18,6 @@ struct SDL_Camera;
 This struct is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryCamera](CategoryCamera)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryCamera](CategoryCamera), [CategoryAPIStruct](CategoryAPIStruct), 
+
 
