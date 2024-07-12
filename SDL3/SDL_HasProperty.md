@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_HasProperty
 
-Return whether a property exists in a set of properties.
+Return whether a property exists in a group of properties.
 
 ## Header File
 

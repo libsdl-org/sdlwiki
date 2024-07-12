@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateProperties
 
-Create a set of properties.
+Create a group of properties.
 
 ## Header File
 
@@ -15,7 +15,7 @@ SDL_PropertiesID SDL_CreateProperties(void);
 
 ## Return Value
 
-([SDL_PropertiesID](SDL_PropertiesID)) Returns an ID for a new set of
+([SDL_PropertiesID](SDL_PropertiesID)) Returns an ID for a new group of
 properties, or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
 information.
 

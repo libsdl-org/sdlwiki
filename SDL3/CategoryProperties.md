@@ -3,12 +3,12 @@
 A property is a variable that can be created and retrieved by name at
 runtime.
 
-All properties are part of a property set
-([SDL_PropertiesID](SDL_PropertiesID)). A property set can be created with
-the [SDL_CreateProperties](SDL_CreateProperties) function and destroyed
-with the [SDL_DestroyProperties](SDL_DestroyProperties) function.
+All properties are part of a property group
+([SDL_PropertiesID](SDL_PropertiesID)). A property group can be created
+with the [SDL_CreateProperties](SDL_CreateProperties) function and
+destroyed with the [SDL_DestroyProperties](SDL_DestroyProperties) function.
 
-Properties can be added to and retrieved from a property set through the
+Properties can be added to and retrieved from a property group through the
 following functions:
 
 - [SDL_SetPointerProperty](SDL_SetPointerProperty) and
@@ -26,7 +26,7 @@ following functions:
   [SDL_GetBooleanProperty](SDL_GetBooleanProperty) operate on boolean
   types.
 
-Properties can be removed from a set by using
+Properties can be removed from a group by using
 [SDL_ClearProperty](SDL_ClearProperty).
 
 <!-- END CATEGORY DOCUMENTATION -->

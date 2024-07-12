@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_EnumeratePropertiesCallback
 
-A callback used to enumerate all properties set in an [SDL_PropertiesID](SDL_PropertiesID).
+A callback used to enumerate all the properties in a group of properties.
 
 ## Header File
 

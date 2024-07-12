@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_EnumerateProperties
 
-Enumerate the properties contained in a property set.
+Enumerate the properties contained in a group of properties.
 
 ## Header File
 
@@ -28,8 +28,8 @@ int SDL_EnumerateProperties(SDL_PropertiesID props, SDL_EnumeratePropertiesCallb
 
 ## Remarks
 
-The callback function is called for each property on the set of properties.
-The properties are locked during enumeration.
+The callback function is called for each property in the group of
+properties. The properties are locked during enumeration.
 
 ## Thread Safety
 

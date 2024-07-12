@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetFloatProperty
 
-Set a floating point property on a set of properties.
+Set a floating point property on a group of properties.
 
 ## Header File
 

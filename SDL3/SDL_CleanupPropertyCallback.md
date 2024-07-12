@@ -25,8 +25,8 @@ typedef void (SDLCALL *SDL_CleanupPropertyCallback)(void *userdata, void *value)
 This should release any resources associated with `value` that are no
 longer needed.
 
-This callback is set per-property. Different properties in the same set can
-have different cleanup callbacks.
+This callback is set per-property. Different properties in the same group
+can have different cleanup callbacks.
 
 This callback will be called _during_
 [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup) if

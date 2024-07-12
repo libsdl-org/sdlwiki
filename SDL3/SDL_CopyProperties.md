@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CopyProperties
 
-Copy a set of properties.
+Copy a group of properties.
 
 ## Header File
 
@@ -27,7 +27,7 @@ int SDL_CopyProperties(SDL_PropertiesID src, SDL_PropertiesID dst);
 
 ## Remarks
 
-Copy all the properties from one set of properties to another, with the
+Copy all the properties from one group of properties to another, with the
 exception of properties requiring cleanup (set using
 [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)()),
 which will not be copied. Any property that already exists on `dst` will be

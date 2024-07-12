@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetPropertyType
 
-Get the type of a property on a set of properties.
+Get the type of a property on a group of properties.
 
 ## Header File
 
