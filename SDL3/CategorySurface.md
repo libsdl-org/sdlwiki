@@ -18,6 +18,7 @@
 - [SDL_ConvertSurfaceAndColorspace](SDL_ConvertSurfaceAndColorspace)
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
+- [SDL_CreateSurfacePalette](SDL_CreateSurfacePalette)
 - [SDL_DestroySurface](SDL_DestroySurface)
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
 - [SDL_FillSurfaceRect](SDL_FillSurfaceRect)
