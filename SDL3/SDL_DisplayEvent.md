@@ -17,6 +17,7 @@ typedef struct SDL_DisplayEvent
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_DisplayID displayID;/**< The associated display */
     Sint32 data1;       /**< event dependent data */
+    Sint32 data2;       /**< event dependent data */
 } SDL_DisplayEvent;
 ```
 

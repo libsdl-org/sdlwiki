@@ -53,6 +53,8 @@ typedef enum SDL_EventType
     SDL_EVENT_DISPLAY_ADDED,                 /**< Display has been added to the system */
     SDL_EVENT_DISPLAY_REMOVED,               /**< Display has been removed from the system */
     SDL_EVENT_DISPLAY_MOVED,                 /**< Display has changed position */
+    SDL_EVENT_DISPLAY_DESKTOP_MODE_CHANGED,  /**< Display has changed desktop mode */
+    SDL_EVENT_DISPLAY_CURRENT_MODE_CHANGED,  /**< Display has changed current mode */
     SDL_EVENT_DISPLAY_CONTENT_SCALE_CHANGED, /**< Display has changed content scale */
     SDL_EVENT_DISPLAY_FIRST = SDL_EVENT_DISPLAY_ORIENTATION,
     SDL_EVENT_DISPLAY_LAST = SDL_EVENT_DISPLAY_CONTENT_SCALE_CHANGED,
