@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetGamepadProductFromID](SDL_GetGamepadProductFromID)
+- [SDL_GetGamepadProductForID](SDL_GetGamepadProductForID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

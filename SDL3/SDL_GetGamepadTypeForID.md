@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetRealGamepadType
+# SDL_GetGamepadTypeForID
 
-Get the type of an opened gamepad, ignoring any mapping override.
+Get the type of a gamepad.
 
 ## Header File
 
@@ -10,19 +10,22 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_GamepadType SDL_GetRealGamepadType(SDL_Gamepad *gamepad);
+SDL_GamepadType SDL_GetGamepadTypeForID(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters
 
-|                              |             |                              |
-| ---------------------------- | ----------- | ---------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | the gamepad object to query. |
+|                                  |                 |                           |
+| -------------------------------- | --------------- | ------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID. |
 
 ## Return Value
 
-([SDL_GamepadType](SDL_GamepadType)) Returns the gamepad type, or
-[SDL_GAMEPAD_TYPE_UNKNOWN](SDL_GAMEPAD_TYPE_UNKNOWN) if it's not available.
+([SDL_GamepadType](SDL_GamepadType)) Returns the gamepad type.
+
+## Remarks
+
+This can be called before any gamepads are opened.
 
 ## Version
 
@@ -30,6 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_GetGamepadType](SDL_GetGamepadType)
+- [SDL_GetGamepads](SDL_GetGamepads)
 - [SDL_GetRealGamepadTypeForID](SDL_GetRealGamepadTypeForID)
 
 ----

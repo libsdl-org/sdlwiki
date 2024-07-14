@@ -35,7 +35,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetJoystickPathFromID](SDL_GetJoystickPathFromID)
+- [SDL_GetJoystickPathForID](SDL_GetJoystickPathForID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

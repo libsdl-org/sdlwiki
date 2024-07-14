@@ -39,7 +39,7 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
-- [SDL_GetGamepadMappingFromID](SDL_GetGamepadMappingFromID)
+- [SDL_GetGamepadMappingForID](SDL_GetGamepadMappingForID)
 - [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 - [SDL_SetGamepadMapping](SDL_SetGamepadMapping)
 

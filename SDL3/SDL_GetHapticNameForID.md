@@ -1,5 +1,5 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetHapticName
+# SDL_GetHapticNameForID
 
 Get the implementation dependent name of a haptic device.
 
@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetHapticName(SDL_Haptic *haptic);
+const char* SDL_GetHapticNameForID(SDL_HapticID instance_id);
 ```
 
 ## Function Parameters
 
-|                            |            |                                                                                    |
-| -------------------------- | ---------- | ---------------------------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)(). |
+|                              |                 |                                |
+| ---------------------------- | --------------- | ------------------------------ |
+| [SDL_HapticID](SDL_HapticID) | **instance_id** | the haptic device instance ID. |
 
 ## Return Value
 
@@ -27,6 +27,8 @@ can be found, this function returns NULL; call
 
 ## Remarks
 
+This can be called before any haptic devices are opened.
+
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
@@ -35,7 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetHapticNameForID](SDL_GetHapticNameForID)
+- [SDL_GetHapticName](SDL_GetHapticName)
+- [SDL_OpenHaptic](SDL_OpenHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

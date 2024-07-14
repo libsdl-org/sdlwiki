@@ -36,7 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetJoystickGUIDFromID](SDL_GetJoystickGUIDFromID)
+- [SDL_GetJoystickGUIDForID](SDL_GetJoystickGUIDForID)
 - [SDL_GetJoystickGUID](SDL_GetJoystickGUID)
 - [SDL_GetJoystickGUIDFromString](SDL_GetJoystickGUIDFromString)
 
