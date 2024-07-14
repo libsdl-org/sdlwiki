@@ -51,7 +51,7 @@
 
 | **View information and functions related to...** | **View the header**                                                                     |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| [Force Feedback Support](CategoryForceFeedback)  | [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)   |
+| [Force Feedback Support](CategoryHaptic)  | [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)   |
 
 
 ## Audio
@@ -103,7 +103,7 @@
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | [Shared Object/DLL Management](CategorySharedObject) | [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h) |
 | [Power Management Status](CategoryPower)             | [SDL_power.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h)           |
-| [Message Boxes](CategoryMessageBox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h) |
+| [Message Boxes](CategoryMessagebox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h) |
 | [File Dialogs](CategoryDialog)                       | [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)         |
 | [Locale Info](CategoryLocale)                        | [SDL_locale.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_locale.h)         |
 | [Platform-specific Functionality](CategorySystem)    | [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)         |
