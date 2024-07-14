@@ -44,6 +44,7 @@ the background, you should set the following hint before calling
 - [SDL_GetJoystickButton](SDL_GetJoystickButton)
 - [SDL_GetJoystickConnectionState](SDL_GetJoystickConnectionState)
 - [SDL_GetJoystickFirmwareVersion](SDL_GetJoystickFirmwareVersion)
+- [SDL_GetJoystickFromID](SDL_GetJoystickFromID)
 - [SDL_GetJoystickFromInstanceID](SDL_GetJoystickFromInstanceID)
 - [SDL_GetJoystickFromPlayerIndex](SDL_GetJoystickFromPlayerIndex)
 - [SDL_GetJoystickGUID](SDL_GetJoystickGUID)

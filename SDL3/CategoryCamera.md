@@ -22,11 +22,17 @@ processed as pixels in memory.
 - [SDL_GetCameraDeviceSupportedFormats](SDL_GetCameraDeviceSupportedFormats)
 - [SDL_GetCameraDriver](SDL_GetCameraDriver)
 - [SDL_GetCameraFormat](SDL_GetCameraFormat)
+- [SDL_GetCameraID](SDL_GetCameraID)
 - [SDL_GetCameraInstanceID](SDL_GetCameraInstanceID)
+- [SDL_GetCameraName](SDL_GetCameraName)
 - [SDL_GetCameraPermissionState](SDL_GetCameraPermissionState)
+- [SDL_GetCameraPosition](SDL_GetCameraPosition)
 - [SDL_GetCameraProperties](SDL_GetCameraProperties)
+- [SDL_GetCameras](SDL_GetCameras)
+- [SDL_GetCameraSupportedFormats](SDL_GetCameraSupportedFormats)
 - [SDL_GetCurrentCameraDriver](SDL_GetCurrentCameraDriver)
 - [SDL_GetNumCameraDrivers](SDL_GetNumCameraDrivers)
+- [SDL_OpenCamera](SDL_OpenCamera)
 - [SDL_OpenCameraDevice](SDL_OpenCameraDevice)
 - [SDL_ReleaseCameraFrame](SDL_ReleaseCameraFrame)
 <!-- END CATEGORY LIST -->
@@ -37,6 +43,7 @@ processed as pixels in memory.
 <!-- BEGIN CATEGORY LIST: CategoryCamera, CategoryAPIDatatype -->
 - [SDL_Camera](SDL_Camera)
 - [SDL_CameraDeviceID](SDL_CameraDeviceID)
+- [SDL_CameraID](SDL_CameraID)
 <!-- END CATEGORY LIST -->
 
 ## Structs

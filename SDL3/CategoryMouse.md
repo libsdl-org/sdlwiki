@@ -20,6 +20,7 @@ SDL mouse handling.
 - [SDL_GetMice](SDL_GetMice)
 - [SDL_GetMouseFocus](SDL_GetMouseFocus)
 - [SDL_GetMouseInstanceName](SDL_GetMouseInstanceName)
+- [SDL_GetMouseNameFromID](SDL_GetMouseNameFromID)
 - [SDL_GetMouseState](SDL_GetMouseState)
 - [SDL_GetRelativeMouseMode](SDL_GetRelativeMouseMode)
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
