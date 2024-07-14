@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_ColorRange
 
-The color range, as described by https://www.itu.int/rec/R-REC-BT.2100-2-201807-I/en
+Colorspace color range, as described by https://www.itu.int/rec/R-REC-BT.2100-2-201807-I/en
 
 ## Header File
 
