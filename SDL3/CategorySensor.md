@@ -11,7 +11,6 @@ SDL sensor management.
 - [SDL_CloseSensor](SDL_CloseSensor)
 - [SDL_GetSensorData](SDL_GetSensorData)
 - [SDL_GetSensorFromID](SDL_GetSensorFromID)
-- [SDL_GetSensorFromInstanceID](SDL_GetSensorFromInstanceID)
 - [SDL_GetSensorID](SDL_GetSensorID)
 - [SDL_GetSensorName](SDL_GetSensorName)
 - [SDL_GetSensorNameFromID](SDL_GetSensorNameFromID)

@@ -12,7 +12,6 @@ SDL keyboard management.
 - [SDL_GetDefaultKeyFromScancode](SDL_GetDefaultKeyFromScancode)
 - [SDL_GetDefaultScancodeFromKey](SDL_GetDefaultScancodeFromKey)
 - [SDL_GetKeyboardFocus](SDL_GetKeyboardFocus)
-- [SDL_GetKeyboardInstanceName](SDL_GetKeyboardInstanceName)
 - [SDL_GetKeyboardNameFromID](SDL_GetKeyboardNameFromID)
 - [SDL_GetKeyboards](SDL_GetKeyboards)
 - [SDL_GetKeyboardState](SDL_GetKeyboardState)

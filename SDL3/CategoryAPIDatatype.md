@@ -74,7 +74,6 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_BlendMode](SDL_BlendMode)
 - [SDL_bool](SDL_bool)
 - [SDL_Camera](SDL_Camera)
-- [SDL_CameraDeviceID](SDL_CameraDeviceID)
 - [SDL_CameraID](SDL_CameraID)
 - [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback)
 - [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback)
