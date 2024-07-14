@@ -42,7 +42,11 @@ encouraged to call [SDL_RenderClear](SDL_RenderClear)() to initialize the
 backbuffer before starting each new frame's drawing, even if you plan to
 overwrite every pixel.
 
-Please note, that in case of rendering to a texture - there is **no need** to call `SDL_RenderPresent` after drawing needed objects to a texture, you are only required to change back the rendering target to default via `SDL_SetRenderTarget(renderer, NULL)` afterwards, as textures by themselves do not have a concept of backbuffers.
+Please note, that in case of rendering to a texture - there is **no need**
+to call [`SDL_RenderPresent`](SDL_RenderPresent) after drawing needed
+objects to a texture, you are only required to change back the rendering
+target to default via `SDL_SetRenderTarget(renderer, NULL)` afterwards, as
+textures by themselves do not have a concept of backbuffers.
 
 ## Thread Safety
 
