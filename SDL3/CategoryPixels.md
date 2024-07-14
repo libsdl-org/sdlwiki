@@ -35,7 +35,6 @@ Pixel management.
 - [SDL_Color](SDL_Color)
 - [SDL_FColor](SDL_FColor)
 - [SDL_Palette](SDL_Palette)
-- [SDL_PixelFormat](SDL_PixelFormat)
 - [SDL_PixelFormatDetails](SDL_PixelFormatDetails)
 <!-- END CATEGORY LIST -->
 

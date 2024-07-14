@@ -88,6 +88,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_GlobFlags](SDL_GlobFlags)
 - [SDL_HapticID](SDL_HapticID)
+- [SDL_hid_device](SDL_hid_device)
 - [SDL_HintCallback](SDL_HintCallback)
 - [SDL_HitTest](SDL_HitTest)
 - [SDL_InitFlags](SDL_InitFlags)
