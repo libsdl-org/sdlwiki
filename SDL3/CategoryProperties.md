@@ -55,8 +55,6 @@ Properties can be removed from a group by using
 - [SDL_SetNumberProperty](SDL_SetNumberProperty)
 - [SDL_SetPointerProperty](SDL_SetPointerProperty)
 - [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)
-- [SDL_SetProperty](SDL_SetProperty)
-- [SDL_SetPropertyWithCleanup](SDL_SetPropertyWithCleanup)
 - [SDL_SetStringProperty](SDL_SetStringProperty)
 - [SDL_UnlockProperties](SDL_UnlockProperties)
 <!-- END CATEGORY LIST -->
