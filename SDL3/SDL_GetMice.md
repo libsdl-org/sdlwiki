@@ -38,7 +38,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetMouseInstanceName](SDL_GetMouseInstanceName)
+- [SDL_GetMouseNameFromID](SDL_GetMouseNameFromID)
 - [SDL_HasMouse](SDL_HasMouse)
 
 ----

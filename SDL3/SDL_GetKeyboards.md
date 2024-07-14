@@ -38,7 +38,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetKeyboardInstanceName](SDL_GetKeyboardInstanceName)
+- [SDL_GetKeyboardNameFromID](SDL_GetKeyboardNameFromID)
 - [SDL_HasKeyboard](SDL_HasKeyboard)
 
 ----

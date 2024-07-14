@@ -32,7 +32,7 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetCameraDeviceSupportedFormats](SDL_GetCameraDeviceSupportedFormats)
+- [SDL_GetCameraSupportedFormats](SDL_GetCameraSupportedFormats)
 - [SDL_GetCameraFormat](SDL_GetCameraFormat)
 
 ----

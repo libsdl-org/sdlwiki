@@ -48,7 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_OpenCameraDevice](SDL_OpenCameraDevice)
+- [SDL_OpenCamera](SDL_OpenCamera)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCamera](CategoryCamera)
