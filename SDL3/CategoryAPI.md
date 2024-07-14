@@ -1204,6 +1204,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_ChromaLocation](SDL_ChromaLocation)
 - [SDL_ColorPrimaries](SDL_ColorPrimaries)
 - [SDL_ColorRange](SDL_ColorRange)
+- [SDL_Colorspace](SDL_Colorspace)
 - [SDL_ColorType](SDL_ColorType)
 - [SDL_DateFormat](SDL_DateFormat)
 - [SDL_DisplayOrientation](SDL_DisplayOrientation)

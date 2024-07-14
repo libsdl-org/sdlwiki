@@ -46,6 +46,7 @@ Pixel management.
 - [SDL_ChromaLocation](SDL_ChromaLocation)
 - [SDL_ColorPrimaries](SDL_ColorPrimaries)
 - [SDL_ColorRange](SDL_ColorRange)
+- [SDL_Colorspace](SDL_Colorspace)
 - [SDL_ColorType](SDL_ColorType)
 - [SDL_MatrixCoefficients](SDL_MatrixCoefficients)
 - [SDL_PixelFormat](SDL_PixelFormat)
