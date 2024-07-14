@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-Uint32 SDL_GetWindowPixelFormat(SDL_Window *window);
+SDL_PixelFormat SDL_GetWindowPixelFormat(SDL_Window *window);
 ```
 
 ## Function Parameters
@@ -21,9 +21,9 @@ Uint32 SDL_GetWindowPixelFormat(SDL_Window *window);
 
 ## Return Value
 
-(Uint32) Returns the pixel format of the window on success or
-[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_PixelFormat](SDL_PixelFormat)) Returns the pixel format of the window
+on success or [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 
