@@ -30,7 +30,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetJoystickInstanceType](SDL_GetJoystickInstanceType)
+- [SDL_GetJoystickTypeFromID](SDL_GetJoystickTypeFromID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

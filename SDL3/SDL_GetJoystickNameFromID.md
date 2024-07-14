@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetJoystickPath
+# SDL_GetJoystickNameFromID
 
-Get the implementation dependent path of a joystick.
+Get the implementation dependent name of a joystick.
 
 ## Header File
 
@@ -10,22 +10,24 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char* SDL_GetJoystickPath(SDL_Joystick *joystick);
+const char* SDL_GetJoystickNameFromID(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                                        |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)(). |
+|                                  |                 |                           |
+| -------------------------------- | --------------- | ------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID. |
 
 ## Return Value
 
-(const char *) Returns the path of the selected joystick. If no path can be
+(const char *) Returns the name of the selected joystick. If no name can be
 found, this function returns NULL; call [SDL_GetError](SDL_GetError)() for
 more information.
 
 ## Remarks
+
+This can be called before any joysticks are opened.
 
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
@@ -35,7 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetJoystickPathFromID](SDL_GetJoystickPathFromID)
+- [SDL_GetJoystickName](SDL_GetJoystickName)
+- [SDL_GetJoysticks](SDL_GetJoysticks)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

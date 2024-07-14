@@ -30,7 +30,7 @@ typedef enum SDL_JoystickType
 In some cases, SDL can identify a low-level joystick as being a certain
 type of device, and will report it through
 [SDL_GetJoystickType](SDL_GetJoystickType) (or
-[SDL_GetJoystickInstanceType](SDL_GetJoystickInstanceType)).
+[SDL_GetJoystickTypeFromID](SDL_GetJoystickTypeFromID)).
 
 This is by no means a complete list of everything that can be plugged into
 a computer.

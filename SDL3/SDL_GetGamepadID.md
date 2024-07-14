@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetGamepadPath
+# SDL_GetGamepadID
 
-Get the implementation-dependent path for an opened gamepad.
+Get the instance ID of an opened gamepad.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-const char* SDL_GetGamepadPath(SDL_Gamepad *gamepad);
+SDL_JoystickID SDL_GetGamepadID(SDL_Gamepad *gamepad);
 ```
 
 ## Function Parameters
@@ -21,20 +21,13 @@ const char* SDL_GetGamepadPath(SDL_Gamepad *gamepad);
 
 ## Return Value
 
-(const char *) Returns the implementation dependent path for the gamepad,
-or NULL if there is no path or the identifier passed is invalid.
-
-## Remarks
-
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+([SDL_JoystickID](SDL_JoystickID)) Returns the instance ID of the specified
+gamepad on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
-
-## See Also
-
-- [SDL_GetGamepadPathFromID](SDL_GetGamepadPathFromID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

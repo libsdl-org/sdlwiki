@@ -29,7 +29,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID)
+- [SDL_GetJoystickGUIDFromID](SDL_GetJoystickGUIDFromID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

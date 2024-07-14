@@ -1,5 +1,5 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetJoystickPath
+# SDL_GetJoystickPathFromID
 
 Get the implementation dependent path of a joystick.
 
@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char* SDL_GetJoystickPath(SDL_Joystick *joystick);
+const char* SDL_GetJoystickPathFromID(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                                        |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)(). |
+|                                  |                 |                           |
+| -------------------------------- | --------------- | ------------------------- |
+| [SDL_JoystickID](SDL_JoystickID) | **instance_id** | the joystick instance ID. |
 
 ## Return Value
 
@@ -27,6 +27,8 @@ more information.
 
 ## Remarks
 
+This can be called before any joysticks are opened.
+
 The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
@@ -35,7 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetJoystickPathFromID](SDL_GetJoystickPathFromID)
+- [SDL_GetJoystickPath](SDL_GetJoystickPath)
+- [SDL_GetJoysticks](SDL_GetJoysticks)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
