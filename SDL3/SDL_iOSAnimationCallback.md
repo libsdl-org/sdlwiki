@@ -17,14 +17,14 @@ typedef void (SDLCALL *SDL_iOSAnimationCallback)(void *userdata);
 
 |              |                                                                                                                      |
 | ------------ | -------------------------------------------------------------------------------------------------------------------- |
-| **userdata** | what was passed as `callbackParam` to [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback) as `callbackParam`. |
+| **userdata** | what was passed as `callbackParam` to [SDL_SetiOSAnimationCallback](SDL_SetiOSAnimationCallback) as `callbackParam`. |
 
 ## Remarks
 
 This datatype is only useful on Apple iOS.
 
 After passing a function pointer of this type to
-[SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback), the system will
+[SDL_SetiOSAnimationCallback](SDL_SetiOSAnimationCallback), the system will
 call that function pointer at a regular interval.
 
 ## Version
@@ -33,7 +33,7 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)
+- [SDL_SetiOSAnimationCallback](SDL_SetiOSAnimationCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySystem](CategorySystem)
