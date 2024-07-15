@@ -12,12 +12,14 @@ Defined in [<SDL3/SDL_blendmode.h>](https://github.com/libsdl-org/SDL/blob/main/
 ```c
 typedef Uint32 SDL_BlendMode;
 
-#define SDL_BLENDMODE_NONE      0x00000000u /**< no blending
+#define SDL_BLENDMODE_NONE                  0x00000000u /**< no blending
 ```
 
 ## Remarks
 
-Note that additional values may be obtained from
+These predefined blend modes are supported everywhere.
+
+Additional values may be obtained from
 [SDL_ComposeCustomBlendMode](SDL_ComposeCustomBlendMode).
 
 ## Version
