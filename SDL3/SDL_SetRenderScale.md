@@ -28,7 +28,7 @@ int SDL_SetRenderScale(SDL_Renderer *renderer, float scaleX, float scaleY);
 
 ## Remarks
 
-The drawing coordinates are scaled by the x/y scaling factors before they
+The drawing coordinates, submitted for rendering after this call, are scaled by the x and y scaling factors before they
 are used by the renderer. This allows resolution independent drawing with a
 single coordinate system.
 
