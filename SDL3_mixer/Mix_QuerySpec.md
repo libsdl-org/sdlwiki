@@ -10,16 +10,16 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_QuerySpec(int *frequency, Uint16 *format, int *channels);
+int Mix_QuerySpec(int *frequency, SDL_AudioFormat *format, int *channels);
 ```
 
 ## Function Parameters
 
-|          |               |                                                                    |
-| -------- | ------------- | ------------------------------------------------------------------ |
-| int *    | **frequency** | On return, will be filled with the audio device's frequency in Hz. |
-| Uint16 * | **format**    | On return, will be filled with the audio device's format.          |
-| int *    | **channels**  | On return, will be filled with the audio device's channel count.   |
+|                   |               |                                                                    |
+| ----------------- | ------------- | ------------------------------------------------------------------ |
+| int *             | **frequency** | On return, will be filled with the audio device's frequency in Hz. |
+| SDL_AudioFormat * | **format**    | On return, will be filled with the audio device's format.          |
+| int *             | **channels**  | On return, will be filled with the audio device's channel count.   |
 
 ## Return Value
 
