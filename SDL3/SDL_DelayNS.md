@@ -22,8 +22,8 @@ void SDL_DelayNS(Uint64 ns);
 ## Remarks
 
 This function waits a specified number of nanoseconds before returning. It
-waits at least the specified time, but possibly longer due to OS
-scheduling.
+will attempt to wait as close to the requested time as possible, busy
+waiting if necessary, but could return later due to OS scheduling.
 
 ## Version
 
