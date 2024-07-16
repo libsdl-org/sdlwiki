@@ -76,6 +76,7 @@
 - [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
 - [Mix_MasterVolume](Mix_MasterVolume)
 - [Mix_ModMusicJumpToOrder](Mix_ModMusicJumpToOrder)
+- [Mix_Music](Mix_Music)
 - [Mix_MusicDuration](Mix_MusicDuration)
 - [Mix_MusicType](Mix_MusicType)
 - [Mix_OpenAudio](Mix_OpenAudio)
