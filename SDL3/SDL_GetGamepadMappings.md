@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-char ** SDL_GetGamepadMappings(int *count);
+const char * const * SDL_GetGamepadMappings(int *count);
 ```
 
 ## Function Parameters
@@ -21,13 +21,12 @@ char ** SDL_GetGamepadMappings(int *count);
 
 ## Return Value
 
-(char **) Returns an array of the mapping strings, NULL-terminated. Must be
-freed with [SDL_free](SDL_free)(). Returns NULL on error.
+(const char * const *) Returns an array of the mapping strings,
+NULL-terminated. Returns NULL on error.
 
 ## Remarks
 
-You must free the returned pointer with [SDL_free](SDL_free)() when you are
-done with it, but you do _not_ free each string in the array.
+The returned pointer follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

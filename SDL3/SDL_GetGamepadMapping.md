@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-char * SDL_GetGamepadMapping(SDL_Gamepad *gamepad);
+const char * SDL_GetGamepadMapping(SDL_Gamepad *gamepad);
 ```
 
 ## Function Parameters
@@ -21,13 +21,13 @@ char * SDL_GetGamepadMapping(SDL_Gamepad *gamepad);
 
 ## Return Value
 
-(char *) Returns a string that has the gamepad's mapping or NULL if no
-mapping is available; call [SDL_GetError](SDL_GetError)() for more
+(const char *) Returns a string that has the gamepad's mapping or NULL if
+no mapping is available; call [SDL_GetError](SDL_GetError)() for more
 information.
 
 ## Remarks
 
-The returned string must be freed with [SDL_free](SDL_free)().
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 Details about mappings are discussed with
 [SDL_AddGamepadMapping](SDL_AddGamepadMapping)().

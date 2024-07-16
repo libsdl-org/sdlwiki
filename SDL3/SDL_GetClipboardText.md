@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetClipboardText
 
-Get UTF-8 text from the clipboard, which must be freed with [SDL_free](SDL_free)().
+Get UTF-8 text from the clipboard.
 
 ## Header File
 
@@ -10,20 +10,20 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-char * SDL_GetClipboardText(void);
+const char * SDL_GetClipboardText(void);
 ```
 
 ## Return Value
 
-(char *) Returns the clipboard text on success or an empty string on
-failure; call [SDL_GetError](SDL_GetError)() for more information. Caller
-must call [SDL_free](SDL_free)() on the returned pointer when done with it
-(even if there was an error).
+(const char *) Returns the clipboard text on success or an empty string on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 This functions returns empty string if there was not enough memory left for
 a copy of the clipboard's content.
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

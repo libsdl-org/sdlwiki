@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetUserFolder
 
-Finds the most suitable user folder for the specified purpose, and returns its path in OS-specific notation.
+Finds the most suitable user folder for a specific purpose.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-char* SDL_GetUserFolder(SDL_Folder folder);
+const char* SDL_GetUserFolder(SDL_Folder folder);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ char* SDL_GetUserFolder(SDL_Folder folder);
 
 ## Return Value
 
-(char *) Returns either a null-terminated C string containing the full path
-to the folder, or NULL if an error happened.
+(const char *) Returns either a null-terminated C string containing the
+full path to the folder, or NULL if an error happened.
 
 ## Remarks
 
@@ -36,14 +36,10 @@ data for the application to manage, see
 [SDL_GetBasePath](SDL_GetBasePath)() and
 [SDL_GetPrefPath](SDL_GetPrefPath)().
 
-Note that the function is expensive, and should be called once at the
-beginning of the execution and kept for as long as needed.
-
 The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
-The returned value is owned by the caller and should be freed with
-[SDL_free](SDL_free)().
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 If NULL is returned, the error may be obtained with
 [SDL_GetError](SDL_GetError)().
@@ -51,10 +47,6 @@ If NULL is returned, the error may be obtained with
 ## Version
 
 This function is available since SDL 3.0.0.
-
-## See Also
-
-- [SDL_Folder](SDL_Folder)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-char * SDL_GetGamepadMappingForGUID(SDL_JoystickGUID guid);
+const char * SDL_GetGamepadMappingForGUID(SDL_JoystickGUID guid);
 ```
 
 ## Function Parameters
@@ -21,12 +21,12 @@ char * SDL_GetGamepadMappingForGUID(SDL_JoystickGUID guid);
 
 ## Return Value
 
-(char *) Returns a mapping string or NULL on error; call
+(const char *) Returns a mapping string or NULL on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-The returned string must be freed with [SDL_free](SDL_free)().
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

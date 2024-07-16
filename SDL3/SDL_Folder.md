@@ -47,7 +47,9 @@ typedef enum SDL_Folder
     SDL_FOLDER_TEMPLATES,
     /** Video files that can be played using a standard video player (mp4,
       webm...). */
-    SDL_FOLDER_VIDEOS
+    SDL_FOLDER_VIDEOS,
+    /** total number of types in this enum, not a folder type by itself. */
+    SDL_FOLDER_TOTAL
 } SDL_Folder;
 ```
 

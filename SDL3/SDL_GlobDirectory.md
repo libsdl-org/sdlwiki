@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-extern SDL_DECLSPEC char **SDLCALL SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
+const char * const* SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
 ```
 
 ## Function Parameters
@@ -24,9 +24,10 @@ extern SDL_DECLSPEC char **SDLCALL SDL_GlobDirectory(const char *path, const cha
 
 ## Return Value
 
-(char **) Returns an array of strings on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information. The caller should pass
-the returned pointer to [SDL_free](SDL_free) when done with it.
+(const char * const *) Returns an array of strings on success or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information. The
+caller should pass the returned pointer to [SDL_free](SDL_free) when done
+with it.
 
 ## Remarks
 
@@ -44,8 +45,7 @@ The returned array is always NULL-terminated, for your iterating
 convenience, but if `count` is non-NULL, on return it will contain the
 number of items in the array, not counting the NULL terminator.
 
-You must free the returned pointer with [SDL_free](SDL_free)() when done
-with it.
+The returned pointer follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Thread Safety
 
