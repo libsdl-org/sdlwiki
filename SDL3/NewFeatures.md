@@ -27,6 +27,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - HiDPI support is dramatically improved over SDL2.
 - 64-bit [SDL_GetTicks](SDL_GetTicks): No more worrying about timer wraparound every ~49 days!
 - [SDL_GetTicksNS](SDL_GetTicksNS): when milliseconds won't cut it, you can use nanoseconds!
+- [SDL_DelayNS](SDL_DelayNS): Nanosecond-precision waits, using a mixture of OS-level sleeps and busy-waits.
 - [Async windowing](SDL_SyncWindow)
 - (More new features are still coming to SDL3, so check back here later!)
 
