@@ -171,6 +171,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_FlushRenderer](SDL_FlushRenderer)
 - [SDL_fmod](SDL_fmod)
 - [SDL_fmodf](SDL_fmodf)
+- [SDL_FreeEventMemory](SDL_FreeEventMemory)
 - [SDL_GamepadConnected](SDL_GamepadConnected)
 - [SDL_GamepadEventsEnabled](SDL_GamepadEventsEnabled)
 - [SDL_GamepadHasAxis](SDL_GamepadHasAxis)

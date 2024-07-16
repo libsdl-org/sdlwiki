@@ -15,6 +15,7 @@ Event queue management.
 - [SDL_FilterEvents](SDL_FilterEvents)
 - [SDL_FlushEvent](SDL_FlushEvent)
 - [SDL_FlushEvents](SDL_FlushEvents)
+- [SDL_FreeEventMemory](SDL_FreeEventMemory)
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_HasEvent](SDL_HasEvent)
 - [SDL_HasEvents](SDL_HasEvents)
