@@ -10,20 +10,24 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void * SDL_GetTLS(SDL_TLSID id);
+void * SDL_GetTLS(SDL_TLSID *id);
 ```
 
 ## Function Parameters
 
-|                        |        |                              |
-| ---------------------- | ------ | ---------------------------- |
-| [SDL_TLSID](SDL_TLSID) | **id** | the thread local storage ID. |
+|                          |        |                                                            |
+| ------------------------ | ------ | ---------------------------------------------------------- |
+| [SDL_TLSID](SDL_TLSID) * | **id** | a pointer to the thread local storage ID, may not be NULL. |
 
 ## Return Value
 
 (void *) Returns the value associated with the ID for the current thread or
 NULL if no value has been set; call [SDL_GetError](SDL_GetError)() for more
 information.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

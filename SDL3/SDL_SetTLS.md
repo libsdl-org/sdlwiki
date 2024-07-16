@@ -10,16 +10,16 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetTLS(SDL_TLSID id, const void *value, SDL_TLSDestructorCallback destructor);
+int SDL_SetTLS(SDL_TLSID *id, const void *value, SDL_TLSDestructorCallback destructor);
 ```
 
 ## Function Parameters
 
 |                                                        |                |                                                                          |
 | ------------------------------------------------------ | -------------- | ------------------------------------------------------------------------ |
-| [SDL_TLSID](SDL_TLSID)                                 | **id**         | the thread local storage ID.                                             |
+| [SDL_TLSID](SDL_TLSID) *                               | **id**         | a pointer to the thread local storage ID, may not be NULL.               |
 | const void *                                           | **value**      | the value to associate with the ID for the current thread.               |
-| [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback) | **destructor** | a function called when the thread exits, to free the value. Can be NULL. |
+| [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback) | **destructor** | a function called when the thread exits, to free the value, may be NULL. |
 
 ## Return Value
 
@@ -28,11 +28,19 @@ int SDL_SetTLS(SDL_TLSID id, const void *value, SDL_TLSDestructorCallback destru
 
 ## Remarks
 
+If the thread local storage ID is not initialized (the value is 0), a new
+ID will be created in a thread-safe way, so all calls using a pointer to
+the same ID will refer to the same local storage.
+
 Note that replacing a value from a previous call to this function on the
 same thread does _not_ call the previous value's destructor!
 
 `destructor` can be NULL; it is assumed that `value` does not need to be
 cleaned up if so.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

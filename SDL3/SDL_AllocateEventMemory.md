@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_AllocateEventMemory
 
-Allocate dynamic memory for an SDL event.
+Allocate temporary memory for an SDL event.
 
 ## Header File
 
@@ -36,6 +36,10 @@ It is safe to call this function from any thread.
 ## Version
 
 This function is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_FreeEventMemory](SDL_FreeEventMemory)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
