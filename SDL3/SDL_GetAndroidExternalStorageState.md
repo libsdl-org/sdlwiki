@@ -10,19 +10,13 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetAndroidExternalStorageState(Uint32 *state);
+Uint32 SDL_GetAndroidExternalStorageState(void);
 ```
-
-## Function Parameters
-
-|          |           |                                                                                                    |
-| -------- | --------- | -------------------------------------------------------------------------------------------------- |
-| Uint32 * | **state** | filled with the current state of external storage. 0 if external storage is currently unavailable. |
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(Uint32) Returns the current state of external storage, or 0 if external
+storage is currently unavailable.
 
 ## Remarks
 

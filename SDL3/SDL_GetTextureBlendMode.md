@@ -10,20 +10,19 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode *blendMode);
+SDL_BlendMode SDL_GetTextureBlendMode(SDL_Texture *texture);
 ```
 
 ## Function Parameters
 
-|                                  |               |                                                                      |
-| -------------------------------- | ------------- | -------------------------------------------------------------------- |
-| [SDL_Texture](SDL_Texture) *     | **texture**   | the texture to query.                                                |
-| [SDL_BlendMode](SDL_BlendMode) * | **blendMode** | a pointer filled in with the current [SDL_BlendMode](SDL_BlendMode). |
+|                              |             |                       |
+| ---------------------------- | ----------- | --------------------- |
+| [SDL_Texture](SDL_Texture) * | **texture** | the texture to query. |
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_BlendMode](SDL_BlendMode)) Returns the current
+[SDL_BlendMode](SDL_BlendMode).
 
 ## Version
 
