@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-Uint32 SDL_GetSurfaceColorKey(SDL_Surface *surface);
+int SDL_GetSurfaceColorKey(SDL_Surface *surface, Uint32 *key);
 ```
 
 ## Function Parameters
@@ -18,10 +18,12 @@ Uint32 SDL_GetSurfaceColorKey(SDL_Surface *surface);
 |                              |             |                                                    |
 | ---------------------------- | ----------- | -------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query. |
+| Uint32 *                     | **key**     | a pointer filled in with the transparent pixel.    |
 
 ## Return Value
 
-(Uint32) Returns the transparent pixel.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

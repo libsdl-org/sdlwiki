@@ -10,19 +10,20 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_BlendMode SDL_GetRenderDrawBlendMode(SDL_Renderer *renderer);
+int SDL_GetRenderDrawBlendMode(SDL_Renderer *renderer, SDL_BlendMode *blendMode);
 ```
 
 ## Function Parameters
 
-|                                |              |                        |
-| ------------------------------ | ------------ | ---------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context. |
+|                                  |               |                                                                      |
+| -------------------------------- | ------------- | -------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *   | **renderer**  | the rendering context.                                               |
+| [SDL_BlendMode](SDL_BlendMode) * | **blendMode** | a pointer filled in with the current [SDL_BlendMode](SDL_BlendMode). |
 
 ## Return Value
 
-([SDL_BlendMode](SDL_BlendMode)) Returns the current
-[SDL_BlendMode](SDL_BlendMode).
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

@@ -10,18 +10,20 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-float SDL_GetRenderColorScale(SDL_Renderer *renderer);
+int SDL_GetRenderColorScale(SDL_Renderer *renderer, float *scale);
 ```
 
 ## Function Parameters
 
-|                                |              |                        |
-| ------------------------------ | ------------ | ---------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context. |
+|                                |              |                                                         |
+| ------------------------------ | ------------ | ------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                  |
+| float *                        | **scale**    | a pointer filled in with the current color scale value. |
 
 ## Return Value
 
-(float) Returns the current color scale value.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 
