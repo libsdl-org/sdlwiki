@@ -20,7 +20,9 @@ typedef struct SDL_DisplayMode
     float refresh_rate;             /**< refresh rate (or 0.0f for unspecified) */
     int refresh_rate_numerator;     /**< precise refresh rate numerator (or 0 for unspecified) */
     int refresh_rate_denominator;   /**< precise refresh rate denominator */
-    void *driverdata;               /**< driver-specific data, initialize to 0 */
+
+    SDL_DisplayModeData *internal;  /**< Private */
+
 } SDL_DisplayMode;
 ```
 
