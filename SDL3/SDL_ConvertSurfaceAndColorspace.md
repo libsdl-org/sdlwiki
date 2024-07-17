@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_ConvertSurfaceAndColorspace(SDL_Surface *surface, SDL_PixelFormat format, const SDL_Palette *palette, SDL_Colorspace colorspace, SDL_PropertiesID props);
+SDL_Surface* SDL_ConvertSurfaceAndColorspace(SDL_Surface *surface, SDL_PixelFormat format, SDL_Palette *palette, SDL_Colorspace colorspace, SDL_PropertiesID props);
 ```
 
 ## Function Parameters
@@ -19,7 +19,7 @@ SDL_Surface* SDL_ConvertSurfaceAndColorspace(SDL_Surface *surface, SDL_PixelForm
 | ------------------------------------ | -------------- | ------------------------------------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) *         | **surface**    | the existing [SDL_Surface](SDL_Surface) structure to convert.                   |
 | [SDL_PixelFormat](SDL_PixelFormat)   | **format**     | the new pixel format.                                                           |
-| const [SDL_Palette](SDL_Palette) *   | **palette**    | an optional palette to use for indexed formats, may be NULL.                    |
+| [SDL_Palette](SDL_Palette) *         | **palette**    | an optional palette to use for indexed formats, may be NULL.                    |
 | [SDL_Colorspace](SDL_Colorspace)     | **colorspace** | the new colorspace.                                                             |
 | [SDL_PropertiesID](SDL_PropertiesID) | **props**      | an [SDL_PropertiesID](SDL_PropertiesID) with additional color properties, or 0. |
 
