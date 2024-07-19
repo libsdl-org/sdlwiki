@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-const char* SDL_GetStringProperty(SDL_PropertiesID props, const char *name, const char *default_value);
+const char * SDL_GetStringProperty(SDL_PropertiesID props, const char *name, const char *default_value);
 ```
 
 ## Function Parameters
@@ -28,7 +28,8 @@ is not set or not a string property.
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

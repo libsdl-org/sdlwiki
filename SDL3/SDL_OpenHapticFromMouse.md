@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Haptic* SDL_OpenHapticFromMouse(void);
+SDL_Haptic * SDL_OpenHapticFromMouse(void);
 ```
 
 ## Return Value

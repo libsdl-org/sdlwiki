@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-void* SDL_LoadFile(const char *file, size_t *datasize);
+void * SDL_LoadFile(const char *file, size_t *datasize);
 ```
 
 ## Function Parameters
@@ -22,7 +22,8 @@ void* SDL_LoadFile(const char *file, size_t *datasize);
 
 ## Return Value
 
-(void *) Returns the data, or NULL if there was an error.
+(void *) Returns the data or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

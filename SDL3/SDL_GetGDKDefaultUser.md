@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetGDKDefaultUser(XUserHandle * outUserHandle);
+int SDL_GetGDKDefaultUser(XUserHandle *outUserHandle);
 ```
 
 ## Function Parameters
@@ -21,7 +21,8 @@ int SDL_GetGDKDefaultUser(XUserHandle * outUserHandle);
 
 ## Return Value
 
-(int) Returns 0 if success, -1 if any error occurs.
+(int) Returns 0 if success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

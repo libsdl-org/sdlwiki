@@ -23,8 +23,8 @@ SDL_FunctionPointer SDL_LoadFunction(void *handle, const char *name);
 ## Return Value
 
 ([SDL_FunctionPointer](SDL_FunctionPointer)) Returns a pointer to the
-function or NULL if there was an error; call [SDL_GetError](SDL_GetError)()
-for more information.
+function or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

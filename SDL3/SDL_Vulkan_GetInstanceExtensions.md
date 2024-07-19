@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
+char const * const * SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
 ```
 
 ## Function Parameters
@@ -22,7 +22,8 @@ char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
 ## Return Value
 
 (char const * const *) Returns an array of extension name strings on
-success, NULL on error.
+success, NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

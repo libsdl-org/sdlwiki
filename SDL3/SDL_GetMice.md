@@ -10,20 +10,20 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_MouseID* SDL_GetMice(int *count);
+const SDL_MouseID * SDL_GetMice(int *count);
 ```
 
 ## Function Parameters
 
-|       |           |                                                       |
-| ----- | --------- | ----------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of mice returned. |
+|       |           |                                                                    |
+| ----- | --------- | ------------------------------------------------------------------ |
+| int * | **count** | a pointer filled in with the number of mice returned, may be NULL. |
 
 ## Return Value
 
-([SDL_MouseID](SDL_MouseID) *) Returns a 0 terminated array of mouse
-instance IDs which should be freed with [SDL_free](SDL_free)(), or NULL on
-error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_MouseID](SDL_MouseID) *) Returns a 0 terminated array of mouse
+instance IDs or NULL on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 
@@ -31,6 +31,9 @@ Note that this will include any device or virtual driver that includes
 mouse functionality, including some game controllers, KVM switches, etc.
 You should wait for input from a device before you consider it actively in
 use.
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

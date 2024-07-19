@@ -22,8 +22,7 @@ SDL_JoystickID SDL_AttachVirtualJoystick(const SDL_VirtualJoystickDesc *desc);
 ## Return Value
 
 ([SDL_JoystickID](SDL_JoystickID)) Returns the joystick instance ID, or 0
-if an error occurred; call [SDL_GetError](SDL_GetError)() for more
-information.
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

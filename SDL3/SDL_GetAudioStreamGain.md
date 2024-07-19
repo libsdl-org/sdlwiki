@@ -21,7 +21,8 @@ float SDL_GetAudioStreamGain(SDL_AudioStream *stream);
 
 ## Return Value
 
-(float) Returns the gain of the stream, or -1.0f on error.
+(float) Returns the gain of the stream or -1.0f on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

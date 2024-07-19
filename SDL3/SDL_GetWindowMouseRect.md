@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_Rect* SDL_GetWindowMouseRect(SDL_Window *window);
+const SDL_Rect * SDL_GetWindowMouseRect(SDL_Window *window);
 ```
 
 ## Function Parameters

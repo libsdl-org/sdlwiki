@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Haptic* SDL_GetHapticFromID(SDL_HapticID instance_id);
+SDL_Haptic * SDL_GetHapticFromID(SDL_HapticID instance_id);
 ```
 
 ## Function Parameters

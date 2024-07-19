@@ -10,20 +10,25 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_CameraID* SDL_GetCameras(int *count);
+const SDL_CameraID * SDL_GetCameras(int *count);
 ```
 
 ## Function Parameters
 
-|       |           |                                                                     |
-| ----- | --------- | ------------------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of camera devices. Can be NULL. |
+|       |           |                                                                       |
+| ----- | --------- | --------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of cameras returned, may be NULL. |
 
 ## Return Value
 
-([SDL_CameraID](SDL_CameraID) *) Returns a 0 terminated array of camera
-instance IDs which should be freed with [SDL_free](SDL_free)(), or NULL on
-error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_CameraID](SDL_CameraID) *) Returns a 0 terminated array of
+camera instance IDs or NULL on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
+
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

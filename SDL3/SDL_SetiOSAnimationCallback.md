@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetiOSAnimationCallback(SDL_Window * window, int interval, SDL_iOSAnimationCallback callback, void *callbackParam);
+int SDL_SetiOSAnimationCallback(SDL_Window *window, int interval, SDL_iOSAnimationCallback callback, void *callbackParam);
 ```
 
 ## Function Parameters
@@ -32,7 +32,7 @@ int SDL_SetiOSAnimationCallback(SDL_Window * window, int interval, SDL_iOSAnimat
 The function prototype for `callback` is:
 
 ```c
-void callback(void* callbackParam);
+void callback(void *callbackParam);
 ```
 
 Where its parameter, `callbackParam`, is what was passed as `callbackParam`

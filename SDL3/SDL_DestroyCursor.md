@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void SDL_DestroyCursor(SDL_Cursor * cursor);
+void SDL_DestroyCursor(SDL_Cursor *cursor);
 ```
 
 ## Function Parameters

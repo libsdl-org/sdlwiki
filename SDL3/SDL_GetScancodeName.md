@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char* SDL_GetScancodeName(SDL_Scancode scancode);
+const char * SDL_GetScancodeName(SDL_Scancode scancode);
 ```
 
 ## Function Parameters
@@ -26,7 +26,8 @@ scancode doesn't have a name this function returns an empty string ("").
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 **Warning**: The returned name is by design not stable across platforms,
 e.g. the name for [`SDL_SCANCODE_LGUI`](SDL_SCANCODE_LGUI) is "Left GUI"

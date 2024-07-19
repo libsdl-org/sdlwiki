@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const char* SDL_GetTouchDeviceName(SDL_TouchID touchID);
+const char * SDL_GetTouchDeviceName(SDL_TouchID touchID);
 ```
 
 ## Function Parameters
@@ -21,12 +21,13 @@ const char* SDL_GetTouchDeviceName(SDL_TouchID touchID);
 
 ## Return Value
 
-(const char *) Returns touch device name, or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+(const char *) Returns touch device name, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

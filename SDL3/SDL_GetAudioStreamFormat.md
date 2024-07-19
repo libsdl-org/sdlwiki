@@ -25,7 +25,8 @@ int SDL_GetAudioStreamFormat(SDL_AudioStream *stream,
 
 ## Return Value
 
-(int) Returns 0 on success, or -1 on error.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

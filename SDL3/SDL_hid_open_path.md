@@ -22,7 +22,8 @@ SDL_hid_device * SDL_hid_open_path(const char *path);
 ## Return Value
 
 ([SDL_hid_device](SDL_hid_device) *) Returns a pointer to a
-[SDL_hid_device](SDL_hid_device) object on success or NULL on failure.
+[SDL_hid_device](SDL_hid_device) object on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

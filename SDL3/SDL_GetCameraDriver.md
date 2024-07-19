@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetCameraDriver(int index);
+const char * SDL_GetCameraDriver(int index);
 ```
 
 ## Function Parameters
@@ -34,7 +34,8 @@ The names of drivers are all simple, low-ASCII identifiers, like "v4l2",
 "coremedia" or "android". These never have Unicode characters, and are not
 meant to be proper names.
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

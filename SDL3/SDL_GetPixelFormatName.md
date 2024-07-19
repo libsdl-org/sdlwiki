@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetPixelFormatName(SDL_PixelFormat format);
+const char * SDL_GetPixelFormatName(SDL_PixelFormat format);
 ```
 
 ## Function Parameters
@@ -24,10 +24,6 @@ const char* SDL_GetPixelFormatName(SDL_PixelFormat format);
 (const char *) Returns the human readable name of the specified pixel
 format or "[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN)" if the
 format isn't recognized.
-
-## Remarks
-
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Thread Safety
 

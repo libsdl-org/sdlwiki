@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void* SDL_GetRenderMetalLayer(SDL_Renderer *renderer);
+void * SDL_GetRenderMetalLayer(SDL_Renderer *renderer);
 ```
 
 ## Function Parameters

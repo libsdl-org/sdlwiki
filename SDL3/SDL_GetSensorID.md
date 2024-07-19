@@ -21,8 +21,8 @@ SDL_SensorID SDL_GetSensorID(SDL_Sensor *sensor);
 
 ## Return Value
 
-([SDL_SensorID](SDL_SensorID)) Returns the sensor instance ID, or 0 if
-`sensor` is NULL.
+([SDL_SensorID](SDL_SensorID)) Returns the sensor instance ID, or 0 on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

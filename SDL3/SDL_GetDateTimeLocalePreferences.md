@@ -22,7 +22,7 @@ int SDL_GetDateTimeLocalePreferences(SDL_DateFormat *dateFormat, SDL_TimeFormat 
 
 ## Return Value
 
-(int) Returns 0 on success or -1 on error; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

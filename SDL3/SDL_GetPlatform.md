@@ -28,8 +28,6 @@ Here are the names returned for some (but not all) supported platforms:
 - "iOS"
 - "Android"
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
-
 ## Version
 
 This function is available since SDL 3.0.0.

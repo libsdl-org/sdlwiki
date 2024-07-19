@@ -10,22 +10,21 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-extern SDL_DECLSPEC const SDL_DisplayMode **SDLCALL SDL_GetFullscreenDisplayModes(SDL_DisplayID displayID, int *count);
+const SDL_DisplayMode * const * SDL_GetFullscreenDisplayModes(SDL_DisplayID displayID, int *count);
 ```
 
 ## Function Parameters
 
-|                                |               |                                                                |
-| ------------------------------ | ------------- | -------------------------------------------------------------- |
-| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query.                       |
-| int *                          | **count**     | a pointer filled in with the number of display modes returned. |
+|                                |               |                                                                             |
+| ------------------------------ | ------------- | --------------------------------------------------------------------------- |
+| [SDL_DisplayID](SDL_DisplayID) | **displayID** | the instance ID of the display to query.                                    |
+| int *                          | **count**     | a pointer filled in with the number of display modes returned, may be NULL. |
 
 ## Return Value
 
-(const [SDL_DisplayMode](SDL_DisplayMode) **) Returns a NULL terminated
-array of display mode pointers which should be freed with
-[SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_DisplayMode](SDL_DisplayMode) * const *) Returns a NULL
+terminated array of display mode pointers or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -37,6 +36,9 @@ The display modes are sorted in this priority:
 - packed pixel layout -> largest to smallest
 - refresh rate -> highest to lowest
 - pixel density -> lowest to highest
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

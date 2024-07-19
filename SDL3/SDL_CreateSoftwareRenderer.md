@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface *surface);
+SDL_Renderer * SDL_CreateSoftwareRenderer(SDL_Surface *surface);
 ```
 
 ## Function Parameters

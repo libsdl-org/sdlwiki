@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_LoadBMP(const char *file);
+SDL_Surface * SDL_LoadBMP(const char *file);
 ```
 
 ## Function Parameters
@@ -22,7 +22,7 @@ SDL_Surface* SDL_LoadBMP(const char *file);
 ## Return Value
 
 ([SDL_Surface](SDL_Surface) *) Returns a pointer to a new
-[SDL_Surface](SDL_Surface) structure or NULL if there was an error; call
+[SDL_Surface](SDL_Surface) structure or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

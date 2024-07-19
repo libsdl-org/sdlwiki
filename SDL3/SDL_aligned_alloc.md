@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void* SDL_aligned_alloc(size_t alignment, size_t size);
+void * SDL_aligned_alloc(size_t alignment, size_t size);
 ```
 
 ## Function Parameters

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-extern SDL_DECLSPEC SDL_GamepadBinding **SDLCALL SDL_GetGamepadBindings(SDL_Gamepad *gamepad, int *count);
+SDL_GamepadBinding ** SDL_GetGamepadBindings(SDL_Gamepad *gamepad, int *count);
 ```
 
 ## Function Parameters
@@ -24,7 +24,7 @@ extern SDL_DECLSPEC SDL_GamepadBinding **SDLCALL SDL_GetGamepadBindings(SDL_Game
 
 ([SDL_GamepadBinding](SDL_GamepadBinding) **) Returns a NULL terminated
 array of pointers to bindings which should be freed with
-[SDL_free](SDL_free)(), or NULL on error; call
+[SDL_free](SDL_free)(), or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more details.
 
 ## Version

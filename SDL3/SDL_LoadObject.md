@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_loadso.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void* SDL_LoadObject(const char *sofile);
+void * SDL_LoadObject(const char *sofile);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ void* SDL_LoadObject(const char *sofile);
 
 ## Return Value
 
-(void *) Returns an opaque pointer to the object handle or NULL if there
-was an error; call [SDL_GetError](SDL_GetError)() for more information.
+(void *) Returns an opaque pointer to the object handle or NULL on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

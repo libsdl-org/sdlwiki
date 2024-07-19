@@ -23,8 +23,9 @@ int SDL_SetAudioStreamGetCallback(SDL_AudioStream *stream, SDL_AudioStreamCallba
 
 ## Return Value
 
-(int) Returns 0 on success, -1 on error. This only fails if `stream` is
-NULL.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information. This only fails if
+`stream` is NULL.
 
 ## Remarks
 

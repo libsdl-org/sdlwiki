@@ -23,8 +23,8 @@ int SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *lengt
 
 ## Return Value
 
-(int) Returns 0 if the file could be queried, a negative value otherwise;
-call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the file could be queried or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

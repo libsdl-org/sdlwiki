@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_pen.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-const char* SDL_GetPenName(SDL_PenID instance_id);
+const char * SDL_GetPenName(SDL_PenID instance_id);
 ```
 
 ## Function Parameters
@@ -31,7 +31,8 @@ on error (cf. [SDL_GetError](SDL_GetError)()).
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

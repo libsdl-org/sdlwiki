@@ -10,20 +10,20 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_AudioDeviceID* SDL_GetAudioRecordingDevices(int *count);
+const SDL_AudioDeviceID * SDL_GetAudioRecordingDevices(int *count);
 ```
 
 ## Function Parameters
 
-|       |           |                                                                           |
-| ----- | --------- | ------------------------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of devices returned. NULL is allowed. |
+|       |           |                                                                       |
+| ----- | --------- | --------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of devices returned, may be NULL. |
 
 ## Return Value
 
-([SDL_AudioDeviceID](SDL_AudioDeviceID) *) Returns a 0 terminated array of
-device instance IDs which should be freed with [SDL_free](SDL_free)(), or
-NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_AudioDeviceID](SDL_AudioDeviceID) *) Returns a 0 terminated
+array of device instance IDs, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -37,6 +37,9 @@ IDs returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)().
 
 If this function returns NULL, to signify an error, `*count` will be set to
 zero.
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

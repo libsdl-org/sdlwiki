@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Haptic* SDL_OpenHapticFromJoystick(SDL_Joystick *joystick);
+SDL_Haptic * SDL_OpenHapticFromJoystick(SDL_Joystick *joystick);
 ```
 
 ## Function Parameters

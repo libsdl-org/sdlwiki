@@ -10,13 +10,13 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_IOStream* SDL_IOFromDynamicMem(void);
+SDL_IOStream * SDL_IOFromDynamicMem(void);
 ```
 
 ## Return Value
 
 ([SDL_IOStream](SDL_IOStream) *) Returns a pointer to a new
-[SDL_IOStream](SDL_IOStream) structure, or NULL if it fails; call
+[SDL_IOStream](SDL_IOStream) structure or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

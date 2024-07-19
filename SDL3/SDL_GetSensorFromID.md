@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_sensor.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Sensor* SDL_GetSensorFromID(SDL_SensorID instance_id);
+SDL_Sensor * SDL_GetSensorFromID(SDL_SensorID instance_id);
 ```
 
 ## Function Parameters
@@ -21,7 +21,8 @@ SDL_Sensor* SDL_GetSensorFromID(SDL_SensorID instance_id);
 
 ## Return Value
 
-([SDL_Sensor](SDL_Sensor) *) Returns an [SDL_Sensor](SDL_Sensor) object.
+([SDL_Sensor](SDL_Sensor) *) Returns an [SDL_Sensor](SDL_Sensor) object or
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

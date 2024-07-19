@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_DisplayMode* SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID displayID, int w, int h, float refresh_rate, SDL_bool include_high_density_modes);
+const SDL_DisplayMode * SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID displayID, int w, int h, float refresh_rate, SDL_bool include_high_density_modes);
 ```
 
 ## Function Parameters
@@ -27,7 +27,7 @@ const SDL_DisplayMode* SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID display
 
 (const [SDL_DisplayMode](SDL_DisplayMode) *) Returns a pointer to the
 closest display mode equal to or larger than the desired mode, or NULL on
-error; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

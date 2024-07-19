@@ -22,7 +22,7 @@ int SDL_SetError(const char *fmt, ...);
 
 ## Return Value
 
-(int) Returns always -1.
+(int) Returns -1.
 
 ## Remarks
 

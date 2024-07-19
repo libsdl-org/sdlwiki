@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-char* SDL_iconv_string(const char *tocode,
+char * SDL_iconv_string(const char *tocode,
                    const char *fromcode,
                    const char *inbuf,
                    size_t inbytesleft);

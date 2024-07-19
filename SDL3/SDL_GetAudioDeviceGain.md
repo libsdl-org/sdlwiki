@@ -21,7 +21,8 @@ float SDL_GetAudioDeviceGain(SDL_AudioDeviceID devid);
 
 ## Return Value
 
-(float) Returns the gain of the device, or -1.0f on error.
+(float) Returns the gain of the device or -1.0f on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

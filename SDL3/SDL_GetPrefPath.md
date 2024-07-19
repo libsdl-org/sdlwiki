@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-const char* SDL_GetPrefPath(const char *org, const char *app);
+const char * SDL_GetPrefPath(const char *org, const char *app);
 ```
 
 ## Function Parameters
@@ -67,7 +67,8 @@ follow these rules:
 The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

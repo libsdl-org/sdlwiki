@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_IOStream* SDL_OpenIO(const SDL_IOStreamInterface *iface, void *userdata);
+SDL_IOStream * SDL_OpenIO(const SDL_IOStreamInterface *iface, void *userdata);
 ```
 
 ## Function Parameters
@@ -23,8 +23,8 @@ SDL_IOStream* SDL_OpenIO(const SDL_IOStreamInterface *iface, void *userdata);
 ## Return Value
 
 ([SDL_IOStream](SDL_IOStream) *) Returns a pointer to the allocated memory
-on success, or NULL on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+on success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

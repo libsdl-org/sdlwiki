@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_DuplicateSurface(SDL_Surface *surface);
+SDL_Surface * SDL_DuplicateSurface(SDL_Surface *surface);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ SDL_Surface* SDL_DuplicateSurface(SDL_Surface *surface);
 
 ## Return Value
 
-([SDL_Surface](SDL_Surface) *) Returns a copy of the surface, or NULL on
+([SDL_Surface](SDL_Surface) *) Returns a copy of the surface or NULL on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

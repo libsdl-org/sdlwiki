@@ -23,7 +23,8 @@ int SDL_hid_write(SDL_hid_device *dev, const unsigned char *data, size_t length)
 
 ## Return Value
 
-(int) Returns the actual number of bytes written and -1 on error.
+(int) Returns the actual number of bytes written and -1 on on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

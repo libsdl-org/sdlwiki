@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-const char * const* SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
+const char * const * SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
 ```
 
 ## Function Parameters
@@ -45,7 +45,8 @@ The returned array is always NULL-terminated, for your iterating
 convenience, but if `count` is non-NULL, on return it will contain the
 number of items in the array, not counting the NULL terminator.
 
-The returned pointer follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

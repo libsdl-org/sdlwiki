@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Joystick* SDL_GetGamepadJoystick(SDL_Gamepad *gamepad);
+SDL_Joystick * SDL_GetGamepadJoystick(SDL_Gamepad *gamepad);
 ```
 
 ## Function Parameters
@@ -22,7 +22,8 @@ SDL_Joystick* SDL_GetGamepadJoystick(SDL_Gamepad *gamepad);
 ## Return Value
 
 ([SDL_Joystick](SDL_Joystick) *) Returns an [SDL_Joystick](SDL_Joystick)
-object; call [SDL_GetError](SDL_GetError)() for more information.
+object, or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

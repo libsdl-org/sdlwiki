@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetThreadName(SDL_Thread *thread);
+const char * SDL_GetThreadName(SDL_Thread *thread);
 ```
 
 ## Function Parameters
@@ -26,7 +26,8 @@ thread, or NULL if it doesn't have a name.
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

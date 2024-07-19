@@ -161,7 +161,6 @@ Rather than iterating over audio devices using a device index, there are new fun
                 const char *name = SDL_GetAudioDeviceName(instance_id);
                 SDL_Log("AudioDevice %" SDL_PRIu32 ": %s\n", instance_id, name);
             }
-            SDL_free(devices);
         }
         SDL_QuitSubSystem(SDL_INIT_AUDIO);
     }
@@ -696,7 +695,7 @@ Rather than iterating over haptic devices using device index, there is a new fun
 {
     if (SDL_InitSubSystem(SDL_INIT_HAPTIC) == 0) {
         int i, num_haptics;
-        SDL_HapticID *haptics = SDL_GetHaptics(&num_haptics);
+        const SDL_HapticID *haptics = SDL_GetHaptics(&num_haptics);
         if (haptics) {
             for (i = 0; i < num_haptics; ++i) {
                 SDL_HapticID instance_id = haptics[i];
@@ -705,7 +704,6 @@ Rather than iterating over haptic devices using device index, there is a new fun
                 SDL_Log("Haptic %" SDL_PRIu32 ": %s\n",
                         instance_id, name ? name : "Unknown");
             }
-            SDL_free(haptics);
         }
         SDL_QuitSubSystem(SDL_INIT_HAPTIC);
     }
@@ -825,7 +823,7 @@ Rather than iterating over joysticks using device index, there is a new function
 {
     if (SDL_InitSubSystem(SDL_INIT_JOYSTICK) == 0) {
         int i, num_joysticks;
-        SDL_JoystickID *joysticks = SDL_GetJoysticks(&num_joysticks);
+        const SDL_JoystickID *joysticks = SDL_GetJoysticks(&num_joysticks);
         if (joysticks) {
             for (i = 0; i < num_joysticks; ++i) {
                 SDL_JoystickID instance_id = joysticks[i];
@@ -835,7 +833,6 @@ Rather than iterating over joysticks using device index, there is a new function
                 SDL_Log("Joystick %" SDL_PRIu32 ": %s%s%s VID 0x%.4x, PID 0x%.4x\n",
                         instance_id, name ? name : "Unknown", path ? ", " : "", path ? path : "", SDL_GetJoystickVendorForID(instance_id), SDL_GetJoystickProductForID(instance_id));
             }
-            SDL_free(joysticks);
         }
         SDL_QuitSubSystem(SDL_INIT_JOYSTICK);
     }
@@ -863,8 +860,7 @@ The following functions have been renamed:
 * SDL_JoystickGetButton() => SDL_GetJoystickButton()
 * SDL_JoystickGetFirmwareVersion() => SDL_GetJoystickFirmwareVersion()
 * SDL_JoystickGetGUID() => SDL_GetJoystickGUID()
-* SDL_JoystickGetGUIDFromString() => SDL_GetJoystickGUIDFromString()
-* SDL_JoystickGetGUIDString() => SDL_GetJoystickGUIDString()
+* SDL_JoystickGetGUIDFromString() => SDL_GUIDFromString()
 * SDL_JoystickGetHat() => SDL_GetJoystickHat()
 * SDL_JoystickGetPlayerIndex() => SDL_GetJoystickPlayerIndex()
 * SDL_JoystickGetProduct() => SDL_GetJoystickProduct()
@@ -905,6 +901,7 @@ The following functions have been removed:
 * SDL_JoystickGetDeviceProductVersion() - replaced with SDL_GetJoystickProductVersionForID()
 * SDL_JoystickGetDeviceType() - replaced with SDL_GetJoystickTypeForID()
 * SDL_JoystickGetDeviceVendor() - replaced with SDL_GetJoystickVendorForID()
+* SDL_JoystickGetGUIDString() - replaced with SDL_GUIDToString()
 * SDL_JoystickHasLED() - replaced with SDL_PROP_JOYSTICK_CAP_RGB_LED_BOOLEAN
 * SDL_JoystickHasRumble() - replaced with SDL_PROP_JOYSTICK_CAP_RUMBLE_BOOLEAN
 * SDL_JoystickHasRumbleTriggers() - replaced with SDL_PROP_JOYSTICK_CAP_TRIGGER_RUMBLE_BOOLEAN
@@ -915,6 +912,9 @@ The following functions have been removed:
 
 The following symbols have been removed:
 * SDL_JOYBALLMOTION
+
+The following structures have been renamed:
+* SDL_JoystickGUID => SDL_GUID
 
 ## SDL_keyboard.h
 
@@ -1567,7 +1567,7 @@ Rather than iterating over sensors using device index, there is a new function S
 {
     if (SDL_InitSubSystem(SDL_INIT_SENSOR) == 0) {
         int i, num_sensors;
-        SDL_SensorID *sensors = SDL_GetSensors(&num_sensors);
+        const SDL_SensorID *sensors = SDL_GetSensors(&num_sensors);
         if (sensors) {
             for (i = 0; i < num_sensors; ++i) {
                 SDL_Log("Sensor %" SDL_PRIu32 ": %s, type %d, platform type %d\n",
@@ -1576,7 +1576,6 @@ Rather than iterating over sensors using device index, there is a new function S
                         SDL_GetSensorTypeForID(sensors[i]),
                         SDL_GetSensorNonPortableTypeForID(sensors[i]));
             }
-            SDL_free(sensors);
         }
         SDL_QuitSubSystem(SDL_INIT_SENSOR);
     }
@@ -1971,7 +1970,7 @@ Rather than iterating over displays using display index, there is a new function
 {
     if (SDL_InitSubSystem(SDL_INIT_VIDEO) == 0) {
         int i, num_displays = 0;
-        SDL_DisplayID *displays = SDL_GetDisplays(&num_displays);
+        const SDL_DisplayID *displays = SDL_GetDisplays(&num_displays);
         if (displays) {
             for (i = 0; i < num_displays; ++i) {
                 SDL_DisplayID instance_id = displays[i];
@@ -1979,7 +1978,6 @@ Rather than iterating over displays using display index, there is a new function
 
                 SDL_Log("Display %" SDL_PRIu32 ": %s\n", instance_id, name ? name : "Unknown");
             }
-            SDL_free(displays);
         }
         SDL_QuitSubSystem(SDL_INIT_VIDEO);
     }
@@ -2017,14 +2015,13 @@ Rather than iterating over display modes using an index, there is a new function
 {
     SDL_DisplayID display = SDL_GetPrimaryDisplay();
     int num_modes = 0;
-    SDL_DisplayMode **modes = SDL_GetFullscreenDisplayModes(display, &num_modes);
+    const SDL_DisplayMode * const *modes = SDL_GetFullscreenDisplayModes(display, &num_modes);
     if (modes) {
         for (i = 0; i < num_modes; ++i) {
             SDL_DisplayMode *mode = modes[i];
             SDL_Log("Display %" SDL_PRIu32 " mode %d: %dx%d@%gx %gHz\n",
                     display, i, mode->w, mode->h, mode->pixel_density, mode->refresh_rate);
         }
-        SDL_free(modes);
     }
 }
 ```

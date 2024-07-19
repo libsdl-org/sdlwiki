@@ -24,7 +24,8 @@ int SDL_hid_get_input_report(SDL_hid_device *dev, unsigned char *data, size_t le
 ## Return Value
 
 (int) Returns the number of bytes read plus one for the report ID (which is
-still in the first byte), or -1 on error.
+still in the first byte), or -1 on on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

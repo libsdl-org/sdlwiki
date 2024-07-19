@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_IOStream* SDL_IOFromFile(const char *file, const char *mode);
+SDL_IOStream * SDL_IOFromFile(const char *file, const char *mode);
 ```
 
 ## Function Parameters
@@ -23,7 +23,7 @@ SDL_IOStream* SDL_IOFromFile(const char *file, const char *mode);
 ## Return Value
 
 ([SDL_IOStream](SDL_IOStream) *) Returns a pointer to the
-[SDL_IOStream](SDL_IOStream) structure that is created, or NULL on failure;
+[SDL_IOStream](SDL_IOStream) structure that is created or NULL on failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

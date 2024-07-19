@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-const char* SDL_GetGamepadStringForButton(SDL_GamepadButton button);
+const char * SDL_GetGamepadStringForButton(SDL_GamepadButton button);
 ```
 
 ## Function Parameters
@@ -27,7 +27,8 @@ button is specified. The string returned is of the format used by
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

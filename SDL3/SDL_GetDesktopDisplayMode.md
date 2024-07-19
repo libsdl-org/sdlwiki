@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_DisplayMode* SDL_GetDesktopDisplayMode(SDL_DisplayID displayID);
+const SDL_DisplayMode * SDL_GetDesktopDisplayMode(SDL_DisplayID displayID);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ const SDL_DisplayMode* SDL_GetDesktopDisplayMode(SDL_DisplayID displayID);
 ## Return Value
 
 (const [SDL_DisplayMode](SDL_DisplayMode) *) Returns a pointer to the
-desktop display mode or NULL on error; call [SDL_GetError](SDL_GetError)()
-for more information.
+desktop display mode or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

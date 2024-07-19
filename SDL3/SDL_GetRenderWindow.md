@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Window* SDL_GetRenderWindow(SDL_Renderer *renderer);
+SDL_Window * SDL_GetRenderWindow(SDL_Renderer *renderer);
 ```
 
 ## Function Parameters

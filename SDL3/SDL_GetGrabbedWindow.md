@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_Window* SDL_GetGrabbedWindow(void);
+SDL_Window * SDL_GetGrabbedWindow(void);
 ```
 
 ## Return Value

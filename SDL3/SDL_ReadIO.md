@@ -24,7 +24,7 @@ size_t SDL_ReadIO(SDL_IOStream *context, void *ptr, size_t size);
 ## Return Value
 
 (size_t) Returns the number of bytes read, or 0 on end of file or other
-error.
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

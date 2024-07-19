@@ -22,9 +22,9 @@ SDL_hid_device_info * SDL_hid_get_device_info(SDL_hid_device *dev);
 ## Return Value
 
 ([SDL_hid_device_info](SDL_hid_device_info) *) Returns a pointer to the
-[SDL_hid_device_info](SDL_hid_device_info) for this hid_device, or NULL in
-the case of failure; call [SDL_GetError](SDL_GetError)() for more
-information. This struct is valid until the device is closed with
+[SDL_hid_device_info](SDL_hid_device_info) for this hid_device or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information. This
+struct is valid until the device is closed with
 [SDL_hid_close](SDL_hid_close)().
 
 ## Version

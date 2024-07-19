@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_metal.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_MetalView SDL_Metal_CreateView(SDL_Window * window);
+SDL_MetalView SDL_Metal_CreateView(SDL_Window *window);
 ```
 
 ## Function Parameters

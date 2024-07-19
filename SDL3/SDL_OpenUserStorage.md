@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Storage* SDL_OpenUserStorage(const char *org, const char *app, SDL_PropertiesID props);
+SDL_Storage * SDL_OpenUserStorage(const char *org, const char *app, SDL_PropertiesID props);
 ```
 
 ## Function Parameters

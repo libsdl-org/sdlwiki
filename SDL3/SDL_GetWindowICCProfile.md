@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void* SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
+const void * SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
 ```
 
 ## Function Parameters
@@ -22,12 +22,13 @@ void* SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
 
 ## Return Value
 
-(void *) Returns the raw ICC profile data on success or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+(const void *) Returns the raw ICC profile data on success or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-Data returned should be freed with [SDL_free](SDL_free).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

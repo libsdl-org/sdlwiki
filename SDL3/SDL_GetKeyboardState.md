@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const Uint8* SDL_GetKeyboardState(int *numkeys);
+const Uint8 * SDL_GetKeyboardState(int *numkeys);
 ```
 
 ## Function Parameters

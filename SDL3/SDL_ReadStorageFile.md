@@ -24,8 +24,8 @@ int SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destinatio
 
 ## Return Value
 
-(int) Returns 0 if the file was read, a negative value otherwise; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the file was read or a negative error code on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

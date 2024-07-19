@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_sensor.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetSensorNameForID(SDL_SensorID instance_id);
+const char * SDL_GetSensorNameForID(SDL_SensorID instance_id);
 ```
 
 ## Function Parameters
@@ -28,7 +28,8 @@ valid.
 
 This can be called before any sensors are opened.
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

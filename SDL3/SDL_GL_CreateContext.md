@@ -22,8 +22,8 @@ SDL_GLContext SDL_GL_CreateContext(SDL_Window *window);
 ## Return Value
 
 ([SDL_GLContext](SDL_GLContext)) Returns the OpenGL context associated with
-`window` or NULL on error; call [SDL_GetError](SDL_GetError)() for more
-details.
+`window` or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

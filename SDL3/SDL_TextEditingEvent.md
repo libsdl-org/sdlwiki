@@ -28,7 +28,9 @@ The start cursor is the position, in UTF-8 characters, where new typing
 will be inserted into the editing text. The length is the number of UTF-8
 characters that will be replaced by new typing.
 
-The text string follows the [SDL_GetStringRule](SDL_GetStringRule).
+The text string is temporary memory which will be automatically freed
+later, and can be claimed with
+[SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

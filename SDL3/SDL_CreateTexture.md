@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormat format, int access, int w, int h);
+SDL_Texture * SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormat format, int access, int w, int h);
 ```
 
 ## Function Parameters

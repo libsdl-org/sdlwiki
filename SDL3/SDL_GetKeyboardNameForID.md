@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char* SDL_GetKeyboardNameForID(SDL_KeyboardID instance_id);
+const char * SDL_GetKeyboardNameForID(SDL_KeyboardID instance_id);
 ```
 
 ## Function Parameters
@@ -21,14 +21,15 @@ const char* SDL_GetKeyboardNameForID(SDL_KeyboardID instance_id);
 
 ## Return Value
 
-(const char *) Returns the name of the selected keyboard, or NULL on
+(const char *) Returns the name of the selected keyboard or NULL on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 This function returns "" if the keyboard doesn't have a name.
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

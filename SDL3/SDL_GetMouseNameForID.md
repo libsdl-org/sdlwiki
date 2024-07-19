@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const char* SDL_GetMouseNameForID(SDL_MouseID instance_id);
+const char * SDL_GetMouseNameForID(SDL_MouseID instance_id);
 ```
 
 ## Function Parameters
@@ -28,7 +28,8 @@ call [SDL_GetError](SDL_GetError)() for more information.
 
 This function returns "" if the mouse doesn't have a name.
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

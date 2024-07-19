@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Gamepad* SDL_GetGamepadFromID(SDL_JoystickID instance_id);
+SDL_Gamepad * SDL_GetGamepadFromID(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters

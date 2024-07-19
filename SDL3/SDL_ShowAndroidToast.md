@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_ShowAndroidToast(const char* message, int duration, int gravity, int xoffset, int yoffset);
+int SDL_ShowAndroidToast(const char *message, int duration, int gravity, int xoffset, int yoffset);
 ```
 
 ## Function Parameters

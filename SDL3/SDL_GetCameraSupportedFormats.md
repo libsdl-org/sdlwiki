@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_CameraSpec* SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);
+const SDL_CameraSpec * const * SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);
 ```
 
 ## Function Parameters
@@ -18,14 +18,13 @@ SDL_CameraSpec* SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);
 |                              |           |                                                                           |
 | ---------------------------- | --------- | ------------------------------------------------------------------------- |
 | [SDL_CameraID](SDL_CameraID) | **devid** | the camera device instance ID to query.                                   |
-| int *                        | **count** | a pointer filled in with the number of elements in the list. Can be NULL. |
+| int *                        | **count** | a pointer filled in with the number of elements in the list, may be NULL. |
 
 ## Return Value
 
-([SDL_CameraSpec](SDL_CameraSpec) *) Returns a 0 terminated array of
-[SDL_CameraSpecs](SDL_CameraSpecs), which should be freed with
-[SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_CameraSpec](SDL_CameraSpec) * const *) Returns a NULL
+terminated array of pointers to [SDL_CameraSpec](SDL_CameraSpec) or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -40,18 +39,16 @@ format for you, and if you instead specify a desired format, it will
 transparently convert to the requested format on your behalf.
 
 If `count` is not NULL, it will be filled with the number of elements in
-the returned array. Additionally, the last element of the array has all
-fields set to zero (this element is not included in `count`).
+the returned array.
 
-The returned list is owned by the caller, and should be released with
-[SDL_free](SDL_free)() when no longer needed.
+Note that it's legal for a camera to supply an empty list. This is what
+will happen on Emscripten builds, since that platform won't tell _anything_
+about available cameras until you've opened one, and won't even tell if
+there _is_ a camera until the user has given you permission to check
+through a scary warning popup.
 
-Note that it's legal for a camera to supply a list with only the zeroed
-final element and `*count` set to zero; this is what will happen on
-Emscripten builds, since that platform won't tell _anything_ about
-available cameras until you've opened one, and won't even tell if there
-_is_ a camera until the user has given you permission to check through a
-scary warning popup.
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

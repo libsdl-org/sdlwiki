@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_Joystick* SDL_GetJoystickFromID(SDL_JoystickID instance_id);
+SDL_Joystick * SDL_GetJoystickFromID(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters

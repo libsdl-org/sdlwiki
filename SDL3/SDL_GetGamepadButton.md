@@ -22,7 +22,7 @@ Uint8 SDL_GetGamepadButton(SDL_Gamepad *gamepad, SDL_GamepadButton button);
 
 ## Return Value
 
-(Uint8) Returns 1 for pressed state or 0 for not pressed state or error;
+(Uint8) Returns 1 for pressed state or 0 for not pressed state or failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

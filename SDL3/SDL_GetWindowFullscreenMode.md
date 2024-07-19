@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_DisplayMode* SDL_GetWindowFullscreenMode(SDL_Window *window);
+const SDL_DisplayMode * SDL_GetWindowFullscreenMode(SDL_Window *window);
 ```
 
 ## Function Parameters

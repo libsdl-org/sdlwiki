@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetRendererName(SDL_Renderer *renderer);
+const char * SDL_GetRendererName(SDL_Renderer *renderer);
 ```
 
 ## Function Parameters
@@ -21,12 +21,13 @@ const char* SDL_GetRendererName(SDL_Renderer *renderer);
 
 ## Return Value
 
-(const char *) Returns the name of the selected renderer, or NULL if the
-renderer is invalid.
+(const char *) Returns the name of the selected renderer, or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

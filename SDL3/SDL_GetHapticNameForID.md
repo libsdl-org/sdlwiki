@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char* SDL_GetHapticNameForID(SDL_HapticID instance_id);
+const char * SDL_GetHapticNameForID(SDL_HapticID instance_id);
 ```
 
 ## Function Parameters
@@ -29,7 +29,8 @@ can be found, this function returns NULL; call
 
 This can be called before any haptic devices are opened.
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

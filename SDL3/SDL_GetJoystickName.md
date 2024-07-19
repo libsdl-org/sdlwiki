@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char* SDL_GetJoystickName(SDL_Joystick *joystick);
+const char * SDL_GetJoystickName(SDL_Joystick *joystick);
 ```
 
 ## Function Parameters
@@ -27,7 +27,8 @@ more information.
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-extern SDL_DECLSPEC SDL_Finger **SDLCALL SDL_GetTouchFingers(SDL_TouchID touchID, int *count);
+SDL_Finger ** SDL_GetTouchFingers(SDL_TouchID touchID, int *count);
 ```
 
 ## Function Parameters
@@ -24,8 +24,8 @@ extern SDL_DECLSPEC SDL_Finger **SDLCALL SDL_GetTouchFingers(SDL_TouchID touchID
 
 ([SDL_Finger](SDL_Finger) **) Returns a NULL terminated array of
 [SDL_Finger](SDL_Finger) pointers which should be freed with
-[SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+[SDL_free](SDL_free)(), or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

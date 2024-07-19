@@ -10,13 +10,13 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_Cursor* SDL_GetDefaultCursor(void);
+SDL_Cursor * SDL_GetDefaultCursor(void);
 ```
 
 ## Return Value
 
 ([SDL_Cursor](SDL_Cursor) *) Returns the default cursor on success or NULL
-on failure.
+on failuree; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

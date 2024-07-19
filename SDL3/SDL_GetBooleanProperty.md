@@ -24,7 +24,7 @@ SDL_bool SDL_GetBooleanProperty(SDL_PropertiesID props, const char *name, SDL_bo
 ## Return Value
 
 ([SDL_bool](SDL_bool)) Returns the value of the property, or
-`default_value` if it is not set or not a float property.
+`default_value` if it is not set or not a boolean property.
 
 ## Remarks
 

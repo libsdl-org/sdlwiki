@@ -22,7 +22,8 @@ int SDL_SetLinuxThreadPriority(Sint64 threadID, int priority);
 
 ## Return Value
 
-(int) Returns 0 on success, or -1 on error.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

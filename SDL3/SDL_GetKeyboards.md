@@ -10,20 +10,20 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_KeyboardID* SDL_GetKeyboards(int *count);
+const SDL_KeyboardID * SDL_GetKeyboards(int *count);
 ```
 
 ## Function Parameters
 
-|       |           |                                                            |
-| ----- | --------- | ---------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of keyboards returned. |
+|       |           |                                                                         |
+| ----- | --------- | ----------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of keyboards returned, may be NULL. |
 
 ## Return Value
 
-([SDL_KeyboardID](SDL_KeyboardID) *) Returns a 0 terminated array of
-keyboards instance IDs which should be freed with [SDL_free](SDL_free)(),
-or NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_KeyboardID](SDL_KeyboardID) *) Returns a 0 terminated array of
+keyboards instance IDs or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -31,6 +31,9 @@ Note that this will include any device or virtual driver that includes
 keyboard functionality, including some mice, KVM switches, motherboard
 power buttons, etc. You should wait for input from a device before you
 consider it actively in use.
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

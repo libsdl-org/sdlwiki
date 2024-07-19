@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char* SDL_GetKeyName(SDL_Keycode key);
+const char * SDL_GetKeyName(SDL_Keycode key);
 ```
 
 ## Function Parameters
@@ -30,7 +30,8 @@ Both lowercase and uppercase alphabetic keycodes have uppercase names, e.g.
 
 If the key doesn't have a name, this function returns an empty string ("").
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

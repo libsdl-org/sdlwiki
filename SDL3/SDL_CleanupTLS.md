@@ -13,6 +13,12 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 void SDL_CleanupTLS(void);
 ```
 
+## Remarks
+
+If you are creating your threads outside of SDL and then calling SDL
+functions, you should call this function before your thread exits, to
+properly clean up SDL memory.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.

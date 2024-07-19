@@ -22,7 +22,7 @@ SDL_bool SDL_WriteU8(SDL_IOStream *dst, Uint8 value);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on successful write,
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on successful write or
 [SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
 more information.
 

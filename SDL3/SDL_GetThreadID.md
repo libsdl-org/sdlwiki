@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_ThreadID SDL_GetThreadID(SDL_Thread * thread);
+SDL_ThreadID SDL_GetThreadID(SDL_Thread *thread);
 ```
 
 ## Function Parameters

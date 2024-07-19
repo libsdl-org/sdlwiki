@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-extern SDL_DECLSPEC SDL_Window **SDLCALL SDL_GetWindows(int *count);
+SDL_Window * const * SDL_GetWindows(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,14 @@ extern SDL_DECLSPEC SDL_Window **SDLCALL SDL_GetWindows(int *count);
 
 ## Return Value
 
-([SDL_Window](SDL_Window) **) Returns a 0 terminated array of window
-pointers which should be freed with [SDL_free](SDL_free)(), or NULL on
-error; call [SDL_GetError](SDL_GetError)() for more details.
+([SDL_Window](SDL_Window) * const *) Returns a NULL terminated array of
+[SDL_Window](SDL_Window) pointers or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

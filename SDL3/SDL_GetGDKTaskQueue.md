@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetGDKTaskQueue(XTaskQueueHandle * outTaskQueue);
+int SDL_GetGDKTaskQueue(XTaskQueueHandle *outTaskQueue);
 ```
 
 ## Function Parameters

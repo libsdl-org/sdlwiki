@@ -15,10 +15,9 @@ The term "player_index" is the number assigned to a player on a specific
 controller. For XInput controllers this returns the XInput user index. Many
 joysticks will not be able to supply this information.
 
-The term [SDL_JoystickGUID](SDL_JoystickGUID) is a stable 128-bit
-identifier for a joystick device that does not change over time, it
-identifies class of the device (a X360 wired controller for example). This
-identifier is platform dependent.
+[SDL_GUID](SDL_GUID) is used as a stable 128-bit identifier for a joystick
+device that does not change over time. It identifies class of the device (a
+X360 wired controller for example). This identifier is platform dependent.
 
 In order to use these functions, [SDL_Init](SDL_Init)() must have been
 called with the [SDL_INIT_JOYSTICK](SDL_INIT_JOYSTICK) flag. This causes

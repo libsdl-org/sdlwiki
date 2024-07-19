@@ -33,9 +33,8 @@ data in the [order that SDL expects](CategoryAudio#channel-layouts).
 Audio devices usually have no remapping applied. This is represented by
 returning NULL, and does not signify an error.
 
-The returned array follows the [SDL_GetStringRule](SDL_GetStringRule) (even
-though, strictly speaking, it isn't a string, it has the same memory
-manangement rules).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

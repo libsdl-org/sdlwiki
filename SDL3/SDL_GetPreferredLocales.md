@@ -10,14 +10,20 @@ Defined in [<SDL3/SDL_locale.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Locale * SDL_GetPreferredLocales(void);
+const SDL_Locale * const * SDL_GetPreferredLocales(int *count);
 ```
+
+## Function Parameters
+
+|       |           |                                                                       |
+| ----- | --------- | --------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of locales returned, may be NULL. |
 
 ## Return Value
 
-([SDL_Locale](SDL_Locale) *) Returns array of locales, terminated with a
-locale with a NULL language field. Will return NULL on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+(const [SDL_Locale](SDL_Locale) * const *) Returns a NULL terminated array
+of locale pointers, or NULL on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Remarks
 
@@ -56,6 +62,9 @@ your program; SDL will send an
 [SDL_EVENT_LOCALE_CHANGED](SDL_EVENT_LOCALE_CHANGED) event in this case, if
 possible, and you can call this function again to get an updated copy of
 preferred locales.
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

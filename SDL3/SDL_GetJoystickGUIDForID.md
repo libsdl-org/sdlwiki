@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_JoystickGUID SDL_GetJoystickGUIDForID(SDL_JoystickID instance_id);
+SDL_GUID SDL_GetJoystickGUIDForID(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_JoystickGUID SDL_GetJoystickGUIDForID(SDL_JoystickID instance_id);
 
 ## Return Value
 
-([SDL_JoystickGUID](SDL_JoystickGUID)) Returns the GUID of the selected
-joystick. If called with an invalid instance_id, this function returns a
-zero GUID.
+([SDL_GUID](SDL_GUID)) Returns the GUID of the selected joystick. If called
+with an invalid instance_id, this function returns a zero GUID.
 
 ## Remarks
 
@@ -36,7 +35,7 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_GetJoystickGUID](SDL_GetJoystickGUID)
-- [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString)
+- [SDL_GUIDToString](SDL_GUIDToString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

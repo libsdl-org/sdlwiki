@@ -27,7 +27,8 @@ information.
 
 ## Remarks
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 Details about mappings are discussed with
 [SDL_AddGamepadMapping](SDL_AddGamepadMapping)().

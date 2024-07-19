@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_CreateSurfaceFrom(int width, int height, SDL_PixelFormat format, void *pixels, int pitch);
+SDL_Surface * SDL_CreateSurfaceFrom(int width, int height, SDL_PixelFormat format, void *pixels, int pitch);
 ```
 
 ## Function Parameters
@@ -26,7 +26,7 @@ SDL_Surface* SDL_CreateSurfaceFrom(int width, int height, SDL_PixelFormat format
 ## Return Value
 
 ([SDL_Surface](SDL_Surface) *) Returns the new [SDL_Surface](SDL_Surface)
-structure that is created or NULL if it fails; call
+structure that is created or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

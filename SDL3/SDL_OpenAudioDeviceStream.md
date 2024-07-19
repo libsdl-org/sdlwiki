@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_AudioStream* SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec, SDL_AudioStreamCallback callback, void *userdata);
+SDL_AudioStream * SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec, SDL_AudioStreamCallback callback, void *userdata);
 ```
 
 ## Function Parameters
@@ -25,8 +25,8 @@ SDL_AudioStream* SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_Au
 ## Return Value
 
 ([SDL_AudioStream](SDL_AudioStream) *) Returns an audio stream on success,
-ready to use. NULL on error; call [SDL_GetError](SDL_GetError)() for more
-information. When done with this stream, call
+ready to use, or NULL on failure; call [SDL_GetError](SDL_GetError)() for
+more information. When done with this stream, call
 [SDL_DestroyAudioStream](SDL_DestroyAudioStream) to free resources and
 close the device.
 

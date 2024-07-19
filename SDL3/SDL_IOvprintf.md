@@ -23,7 +23,7 @@ size_t SDL_IOvprintf(SDL_IOStream *context, const char *fmt, va_list ap);
 
 ## Return Value
 
-(size_t) Returns the number of bytes written, or 0 on error; call
+(size_t) Returns the number of bytes written or 0 on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

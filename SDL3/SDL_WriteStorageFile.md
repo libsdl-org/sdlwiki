@@ -24,8 +24,8 @@ int SDL_WriteStorageFile(SDL_Storage *storage, const char *path, const void *sou
 
 ## Return Value
 
-(int) Returns 0 if the file was written, a negative value otherwise; call
-[SDL_GetError](SDL_GetError)() for more information.
+(int) Returns 0 if the file was written or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

@@ -10,20 +10,25 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_HapticID* SDL_GetHaptics(int *count);
+const SDL_HapticID * SDL_GetHaptics(int *count);
 ```
 
 ## Function Parameters
 
-|       |           |                                                                 |
-| ----- | --------- | --------------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of haptic devices returned. |
+|       |           |                                                                              |
+| ----- | --------- | ---------------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of haptic devices returned, may be NULL. |
 
 ## Return Value
 
-([SDL_HapticID](SDL_HapticID) *) Returns a 0 terminated array of haptic
-device instance IDs which should be freed with [SDL_free](SDL_free)(), or
-NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_HapticID](SDL_HapticID) *) Returns a 0 terminated array of
+haptic device instance IDs or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

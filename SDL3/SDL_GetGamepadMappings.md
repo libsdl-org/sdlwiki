@@ -22,11 +22,13 @@ const char * const * SDL_GetGamepadMappings(int *count);
 ## Return Value
 
 (const char * const *) Returns an array of the mapping strings,
-NULL-terminated. Returns NULL on error.
+NULL-terminated, or NULL on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Remarks
 
-The returned pointer follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

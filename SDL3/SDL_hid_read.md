@@ -23,9 +23,10 @@ int SDL_hid_read(SDL_hid_device *dev, unsigned char *data, size_t length);
 
 ## Return Value
 
-(int) Returns the actual number of bytes read and -1 on error. If no packet
-was available to be read and the handle is in non-blocking mode, this
-function returns 0.
+(int) Returns the actual number of bytes read and -1 on failure; call
+[SDL_GetError](SDL_GetError)() for more information. If no packet was
+available to be read and the handle is in non-blocking mode, this function
+returns 0.
 
 ## Remarks
 

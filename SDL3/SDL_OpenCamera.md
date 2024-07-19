@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Camera* SDL_OpenCamera(SDL_CameraID instance_id, const SDL_CameraSpec *spec);
+SDL_Camera * SDL_OpenCamera(SDL_CameraID instance_id, const SDL_CameraSpec *spec);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ SDL_Camera* SDL_OpenCamera(SDL_CameraID instance_id, const SDL_CameraSpec *spec)
 
 ## Return Value
 
-([SDL_Camera](SDL_Camera) *) Returns device, or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_Camera](SDL_Camera) *) Returns an [SDL_Camera](SDL_Camera) object or
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

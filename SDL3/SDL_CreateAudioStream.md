@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_AudioStream* SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_AudioSpec *dst_spec);
+SDL_AudioStream * SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_AudioSpec *dst_spec);
 ```
 
 ## Function Parameters
@@ -23,7 +23,8 @@ SDL_AudioStream* SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_
 ## Return Value
 
 ([SDL_AudioStream](SDL_AudioStream) *) Returns a new audio stream on
-success, or NULL on failure.
+success or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Thread Safety
 

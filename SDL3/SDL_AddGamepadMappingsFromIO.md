@@ -22,7 +22,7 @@ int SDL_AddGamepadMappingsFromIO(SDL_IOStream *src, SDL_bool closeio);
 
 ## Return Value
 
-(int) Returns the number of mappings added or -1 on error; call
+(int) Returns the number of mappings added or -1 on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_Joystick* SDL_OpenJoystick(SDL_JoystickID instance_id);
+SDL_Joystick * SDL_OpenJoystick(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_Joystick* SDL_OpenJoystick(SDL_JoystickID instance_id);
 
 ## Return Value
 
-([SDL_Joystick](SDL_Joystick) *) Returns a joystick identifier or NULL if
-an error occurred; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_Joystick](SDL_Joystick) *) Returns a joystick identifier or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -16,7 +16,8 @@ void * SDL_GetAndroidActivity(void);
 ## Return Value
 
 (void *) Returns the jobject representing the instance of the Activity
-class of the Android application, or NULL on error.
+class of the Android application, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

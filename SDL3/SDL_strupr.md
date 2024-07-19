@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-char* SDL_strupr(char *str);
+char * SDL_strupr(char *str);
 ```
 
 ## Function Parameters

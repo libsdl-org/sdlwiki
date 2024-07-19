@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void SDL_DetachThread(SDL_Thread * thread);
+void SDL_DetachThread(SDL_Thread *thread);
 ```
 
 ## Function Parameters

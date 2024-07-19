@@ -10,20 +10,25 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_JoystickID* SDL_GetJoysticks(int *count);
+const SDL_JoystickID * SDL_GetJoysticks(int *count);
 ```
 
 ## Function Parameters
 
-|       |           |                                                            |
-| ----- | --------- | ---------------------------------------------------------- |
-| int * | **count** | a pointer filled in with the number of joysticks returned. |
+|       |           |                                                                         |
+| ----- | --------- | ----------------------------------------------------------------------- |
+| int * | **count** | a pointer filled in with the number of joysticks returned, may be NULL. |
 
 ## Return Value
 
-([SDL_JoystickID](SDL_JoystickID) *) Returns a 0 terminated array of
-joystick instance IDs which should be freed with [SDL_free](SDL_free)(), or
-NULL on error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_JoystickID](SDL_JoystickID) *) Returns a 0 terminated array of
+joystick instance IDs or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

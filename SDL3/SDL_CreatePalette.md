@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Palette* SDL_CreatePalette(int ncolors);
+SDL_Palette * SDL_CreatePalette(int ncolors);
 ```
 
 ## Function Parameters

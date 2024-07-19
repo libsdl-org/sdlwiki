@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_DisplayID* SDL_GetDisplays(int *count);
+const SDL_DisplayID * SDL_GetDisplays(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,14 @@ SDL_DisplayID* SDL_GetDisplays(int *count);
 
 ## Return Value
 
-([SDL_DisplayID](SDL_DisplayID) *) Returns a 0 terminated array of display
-instance IDs which should be freed with [SDL_free](SDL_free)(), or NULL on
-error; call [SDL_GetError](SDL_GetError)() for more details.
+(const [SDL_DisplayID](SDL_DisplayID) *) Returns a 0 terminated array of
+display instance IDs or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

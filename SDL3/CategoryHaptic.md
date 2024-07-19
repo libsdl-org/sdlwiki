@@ -26,7 +26,6 @@ Simple rumble example:
    SDL_HapticID *haptics = SDL_GetHaptics(NULL);
    if (haptics) {
        haptic = SDL_OpenHaptic(haptics[0]);
-       SDL_free(haptics);
    }
    if (haptic == NULL)
       return -1;

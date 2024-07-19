@@ -23,7 +23,8 @@ int SDL_SetAudioStreamInputChannelMap(SDL_AudioStream *stream, const int *chmap,
 
 ## Return Value
 
-(int) Returns 0 on success, -1 on error.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -21,7 +21,7 @@ int SDL_GetCurrentTime(SDL_Time *ticks);
 
 ## Return Value
 
-(int) Returns 0 on success or -1 on error; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const char* SDL_GetCurrentAudioDriver(void);
+const char * SDL_GetCurrentAudioDriver(void);
 ```
 
 ## Return Value
@@ -24,7 +24,8 @@ The names of drivers are all simple, low-ASCII identifiers, like "alsa",
 "coreaudio" or "wasapi". These never have Unicode characters, and are not
 meant to be proper names.
 
-The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Thread Safety
 

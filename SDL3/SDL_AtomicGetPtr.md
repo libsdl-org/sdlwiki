@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void* SDL_AtomicGetPtr(void **a);
+void * SDL_AtomicGetPtr(void **a);
 ```
 
 ## Function Parameters

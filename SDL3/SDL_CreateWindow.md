@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_Window* SDL_CreateWindow(const char *title, int w, int h, SDL_WindowFlags flags);
+SDL_Window * SDL_CreateWindow(const char *title, int w, int h, SDL_WindowFlags flags);
 ```
 
 ## Function Parameters

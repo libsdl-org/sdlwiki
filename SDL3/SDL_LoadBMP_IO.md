@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface* SDL_LoadBMP_IO(SDL_IOStream *src, SDL_bool closeio);
+SDL_Surface * SDL_LoadBMP_IO(SDL_IOStream *src, SDL_bool closeio);
 ```
 
 ## Function Parameters
@@ -23,7 +23,7 @@ SDL_Surface* SDL_LoadBMP_IO(SDL_IOStream *src, SDL_bool closeio);
 ## Return Value
 
 ([SDL_Surface](SDL_Surface) *) Returns a pointer to a new
-[SDL_Surface](SDL_Surface) structure or NULL if there was an error; call
+[SDL_Surface](SDL_Surface) structure or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

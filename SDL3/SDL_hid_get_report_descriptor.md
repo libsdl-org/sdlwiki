@@ -23,7 +23,7 @@ int SDL_hid_get_report_descriptor(SDL_hid_device *dev, unsigned char *buf, size_
 
 ## Return Value
 
-(int) Returns the number of bytes actually copied, or -1 on error; call
+(int) Returns the number of bytes actually copied or -1 on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

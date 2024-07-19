@@ -10,25 +10,24 @@ Defined in [<SDL3/SDL_guid.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-int SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
+const char * SDL_GUIDToString(SDL_GUID guid);
 ```
 
 ## Function Parameters
 
-|                      |             |                                                         |
-| -------------------- | ----------- | ------------------------------------------------------- |
-| [SDL_GUID](SDL_GUID) | **guid**    | the [SDL_GUID](SDL_GUID) you wish to convert to string. |
-| char *               | **pszGUID** | buffer in which to write the ASCII string.              |
-| int                  | **cbGUID**  | the size of pszGUID.                                    |
+|                      |          |                                                         |
+| -------------------- | -------- | ------------------------------------------------------- |
+| [SDL_GUID](SDL_GUID) | **guid** | the [SDL_GUID](SDL_GUID) you wish to convert to string. |
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(const char *) Returns the string representation of the GUID or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-You should supply at least 33 bytes for pszGUID.
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

@@ -25,8 +25,9 @@ typedef struct SDL_DropEvent
 
 ## Remarks
 
-The source and data strings follow the
-[SDL_GetStringRule](SDL_GetStringRule).
+The source and data strings are temporary memory which will be
+automatically freed later, and can be claimed with
+[SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 
