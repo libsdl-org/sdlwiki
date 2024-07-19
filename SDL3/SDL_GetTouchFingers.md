@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_Finger ** SDL_GetTouchFingers(SDL_TouchID touchID, int *count);
+const SDL_Finger * const * SDL_GetTouchFingers(SDL_TouchID touchID, int *count);
 ```
 
 ## Function Parameters
@@ -22,10 +22,14 @@ SDL_Finger ** SDL_GetTouchFingers(SDL_TouchID touchID, int *count);
 
 ## Return Value
 
-([SDL_Finger](SDL_Finger) **) Returns a NULL terminated array of
-[SDL_Finger](SDL_Finger) pointers which should be freed with
-[SDL_free](SDL_free)(), or NULL on failure; call
+(const [SDL_Finger](SDL_Finger) * const *) Returns a NULL terminated array
+of [SDL_Finger](SDL_Finger) pointers or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

@@ -25,9 +25,7 @@ const char * const * SDL_GlobDirectory(const char *path, const char *pattern, SD
 ## Return Value
 
 (const char * const *) Returns an array of strings on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information. The
-caller should pass the returned pointer to [SDL_free](SDL_free) when done
-with it.
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
