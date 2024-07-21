@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RectEmptyFloat
 
-Determine whether a floating point rectangle has no area.
+Determine whether a floating point rectangle can contain any point.
 
 ## Header File
 
@@ -27,7 +27,7 @@ SDL_FORCE_INLINE SDL_bool SDL_RectEmptyFloat(const SDL_FRect *r);
 ## Remarks
 
 A rectangle is considered "empty" for this function if `r` is NULL, or if
-`r`'s width and/or height are <= 0.0f.
+`r`'s width and/or height are < 0.0f.
 
 Note that this is a forced-inline function in a header, and not a public
 API function available in the SDL library (which is to say, the code is
