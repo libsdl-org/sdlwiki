@@ -10,17 +10,17 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_BlitSurface(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, SDL_Rect *dstrect);
+int SDL_BlitSurface(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, const SDL_Rect *dstrect);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                                                                                                                                                                                                                 |
-| ---------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **src**     | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                                                                                                                                     |
-| const [SDL_Rect](SDL_Rect) * | **srcrect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface.                                                                                                                                 |
-| [SDL_Surface](SDL_Surface) * | **dst**     | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                                                                                                                               |
-| [SDL_Rect](SDL_Rect) *       | **dstrect** | the [SDL_Rect](SDL_Rect) structure representing the x and y position in the destination surface. On input the width and height are ignored (taken from srcrect), and on output this is filled in with the actual rectangle used after clipping. |
+|                              |             |                                                                                                                                                                                                                                                                                                |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **src**     | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                                                                                                                                                                                    |
+| const [SDL_Rect](SDL_Rect) * | **srcrect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface.                                                                                                                                                                                |
+| [SDL_Surface](SDL_Surface) * | **dst**     | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                                                                                                                                                                              |
+| const [SDL_Rect](SDL_Rect) * | **dstrect** | the [SDL_Rect](SDL_Rect) structure representing the x and y position in the destination surface, or NULL for (0,0). The width and height are ignored, and are copied from `srcrect`. If you want a specific width and height, you should use [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)(). |
 
 ## Return Value
 
@@ -46,7 +46,7 @@ defined as follows:
       SDL_SRCCOLORKEY ignored.
     Source surface blend mode set to SDL_BLENDMODE_NONE:
       copy RGB.
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
+      if SDL_SRCCOLORKEY set, only copy the pixels that do not match the
       RGB values of the source color key, ignoring alpha in the
       comparison.
 
@@ -56,7 +56,7 @@ defined as follows:
     Source surface blend mode set to SDL_BLENDMODE_NONE:
       copy RGB, set destination alpha to source per-surface alpha value.
     both:
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
+      if SDL_SRCCOLORKEY set, only copy the pixels that do not match the
       source color key.
 
   RGBA->RGBA:
@@ -65,7 +65,7 @@ defined as follows:
       SDL_SRCCOLORKEY ignored.
     Source surface blend mode set to SDL_BLENDMODE_NONE:
       copy all of RGBA to the destination.
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
+      if SDL_SRCCOLORKEY set, only copy the pixels that do not match the
       RGB values of the source color key, ignoring alpha in the
       comparison.
 
@@ -75,7 +75,7 @@ defined as follows:
     Source surface blend mode set to SDL_BLENDMODE_NONE:
       copy RGB.
     both:
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
+      if SDL_SRCCOLORKEY set, only copy the pixels that do not match the
       source color key.
 ```
 

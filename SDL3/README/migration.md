@@ -1717,6 +1717,8 @@ But if you're migrating your code which uses masks, you probably have a format i
 0x0000F800 0x000007E0 0x0000001F 0x00000000 => SDL_PIXELFORMAT_RGB565
 ```
 
+SDL_BlitSurface() and SDL_BlitSurfaceScaled() now have a const `dstrect` parameter and do not fill it in with the final destination rectangle.
+
 SDL_BlitSurfaceScaled() and SDL_BlitSurfaceUncheckedScaled() now take a scale paramater.
 
 SDL_SoftStretch() now takes a scale paramater.
@@ -1754,7 +1756,8 @@ The following functions have been removed:
 * SDL_GetYUVConversionMode()
 * SDL_GetYUVConversionModeForResolution()
 * SDL_SetYUVConversionMode() - use SDL_SetSurfaceColorspace() to set the surface colorspace and SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER with SDL_CreateTextureWithProperties() to set the texture colorspace. The default colorspace for YUV pixel formats is SDL_COLORSPACE_JPEG.
-* SDL_SoftStretchLinear() - use SDL_SoftStretch() with SDL_SCALEMODE_LINEAR
+* SDL_SoftStretch() - use SDL_BlitSurfaceScaled() with SDL_SCALEMODE_NEAREST
+* SDL_SoftStretchLinear() - use SDL_BlitSurfaceScaled() with SDL_SCALEMODE_LINEAR
 
 The following symbols have been renamed:
 * SDL_PREALLOC => SDL_SURFACE_PREALLOCATED
