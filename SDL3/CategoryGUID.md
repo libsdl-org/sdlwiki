@@ -11,6 +11,7 @@ identifiable by this value: "globally unique."
 <!-- BEGIN CATEGORY LIST: CategoryGUID, CategoryAPIFunction -->
 - [SDL_GUIDFromString](SDL_GUIDFromString)
 - [SDL_GUIDToString](SDL_GUIDToString)
+- [SDL_StringToGUID](SDL_StringToGUID)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes

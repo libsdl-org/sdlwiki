@@ -930,6 +930,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_StorageReady](SDL_StorageReady)
 - [SDL_strcasecmp](SDL_strcasecmp)
 - [SDL_strcmp](SDL_strcmp)
+- [SDL_StringToGUID](SDL_StringToGUID)
 - [SDL_strlwr](SDL_strlwr)
 - [SDL_strncasecmp](SDL_strncasecmp)
 - [SDL_strncmp](SDL_strncmp)
