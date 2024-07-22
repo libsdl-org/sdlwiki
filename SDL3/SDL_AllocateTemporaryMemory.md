@@ -40,7 +40,6 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)
-- [SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

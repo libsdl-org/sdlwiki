@@ -27,35 +27,15 @@ not temporary or was allocated on a different thread.
 
 ## Remarks
 
-This function changes ownership of temporary memory allocated for events
-and functions that return temporary memory. If this function succeeds, the
-memory will no longer be automatically freed by SDL, it must be freed using
-[SDL_free](SDL_free)() by the application.
+Some functions return temporary memory which SDL will automatically clean
+up later. Normally you won't save these results beyond the current function
+scope, but if you want to use them later, you can call this function to get
+a pointer that the application owns, and should be freed using
+[SDL_free](SDL_free)().
 
-If the memory isn't temporary, or it was allocated on a different thread,
-or if it is associated with an event currently in the event queue, this
-will return NULL, and the application does not have ownership of the
-memory.
-
-Essentially you have 3 options for handling temporary memory:
-
-1. After calling a function that returns temporary memory, pass that
-pointer to [SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)(). This gives
-you full control over the management of allocations.
-
-2. On your main thread, temporary memory is automatically cleaned up when
-processing events. On other threads, you can periodically call
-[SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)(NULL) to clean up any
-temporary memory that has accumulated.
-
-3. After calling a function that returns temporary memory, pass that
-pointer to [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)(). This
-transfers ownership of the memory to your application and you can pass it
-to other threads or save it indefinitely, calling [SDL_free](SDL_free)() to
-free it when you're ready.
-
-Any of the three options are valid, and you can mix and match them to suit
-your application.
+If the memory isn't temporary, or it was returned from an SDL function
+called on a different thread, this will return NULL, and the application
+does not have ownership of the memory.
 
 ## Thread Safety
 
