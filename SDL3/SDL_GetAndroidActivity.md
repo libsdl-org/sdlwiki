@@ -38,8 +38,8 @@ It is safe to call this function from any thread.
 ## Version
 
 This function is available since SDL 3.0.0.
--
--## Code Examples
+
+## Code Examples
 -
 -```c++
 #include <SDL3/SDL.h>
