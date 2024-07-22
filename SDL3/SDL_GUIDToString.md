@@ -35,7 +35,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GUIDFromString](SDL_GUIDFromString)
+- [SDL_StringToGUID](SDL_StringToGUID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGUID](CategoryGUID)
