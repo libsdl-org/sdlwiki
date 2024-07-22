@@ -36,7 +36,7 @@ The following read-only properties are provided by SDL:
 
 On KMS/DRM:
 
-- [`SDL_PROP_DISPLAY_KMSDRM_ORIENTATION_NUMBER`](SDL_PROP_DISPLAY_KMSDRM_ORIENTATION_NUMBER):
+- [`SDL_PROP_DISPLAY_KMSDRM_PANEL_ORIENTATION_NUMBER`](SDL_PROP_DISPLAY_KMSDRM_PANEL_ORIENTATION_NUMBER):
   the "panel orientation" property for the display in degrees of clockwise
   rotation. Note that this is provided only as a hint, and the application
   is responsible for any coordinate transformations needed to conform to
