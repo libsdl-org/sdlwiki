@@ -40,8 +40,8 @@ It is safe to call this function from any thread.
 This function is available since SDL 3.0.0.
 
 ## Code Examples
--
--```c++
+
+```c++
 #include <SDL3/SDL.h>
 #include <jni.h>
 
