@@ -107,7 +107,6 @@ Note that the SDL haptic subsystem is not thread-safe.
 - [SDL_GetHapticID](SDL_GetHapticID)
 - [SDL_GetHapticName](SDL_GetHapticName)
 - [SDL_GetHapticNameForID](SDL_GetHapticNameForID)
-- [SDL_GetHapticNameFromID](SDL_GetHapticNameFromID)
 - [SDL_GetHaptics](SDL_GetHaptics)
 - [SDL_GetMaxHapticEffects](SDL_GetMaxHapticEffects)
 - [SDL_GetMaxHapticEffectsPlaying](SDL_GetMaxHapticEffectsPlaying)

@@ -95,7 +95,6 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_iOSAnimationCallback](SDL_iOSAnimationCallback)
 - [SDL_IOStream](SDL_IOStream)
 - [SDL_Joystick](SDL_Joystick)
-- [SDL_JoystickGUID](SDL_JoystickGUID)
 - [SDL_JoystickID](SDL_JoystickID)
 - [SDL_KeyboardID](SDL_KeyboardID)
 - [SDL_Keycode](SDL_Keycode)

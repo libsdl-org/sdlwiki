@@ -55,7 +55,6 @@
 - [SDL_SetSurfaceColorspace](SDL_SetSurfaceColorspace)
 - [SDL_SetSurfacePalette](SDL_SetSurfacePalette)
 - [SDL_SetSurfaceRLE](SDL_SetSurfaceRLE)
-- [SDL_SoftStretch](SDL_SoftStretch)
 - [SDL_SurfaceHasColorKey](SDL_SurfaceHasColorKey)
 - [SDL_SurfaceHasRLE](SDL_SurfaceHasRLE)
 - [SDL_UnlockSurface](SDL_UnlockSurface)
