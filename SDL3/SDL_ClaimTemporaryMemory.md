@@ -23,19 +23,17 @@ void * SDL_ClaimTemporaryMemory(const void *mem);
 
 (void *) Returns a pointer to the memory now owned by the application,
 which must be freed using [SDL_free](SDL_free)(), or NULL if the memory is
-not temporary or was allocated on a different thread.
+not temporary or is not owned by this thread.
 
 ## Remarks
 
 Some functions return temporary memory which SDL will automatically clean
-up later. Normally you won't save these results beyond the current function
-scope, but if you want to use them later, you can call this function to get
-a pointer that the application owns, and should be freed using
-[SDL_free](SDL_free)().
+up. If you want to hold onto it for a long time or beyond the current
+function scope, you can call this function to get a pointer that you own,
+and can free using [SDL_free](SDL_free)() when you're done.
 
-If the memory isn't temporary, or it was returned from an SDL function
-called on a different thread, this will return NULL, and the application
-does not have ownership of the memory.
+If the memory isn't temporary, this will return NULL, and you don't have
+ownership of the memory.
 
 ## Thread Safety
 
