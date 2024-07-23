@@ -71,7 +71,7 @@ while (!quit_the_app) {
 
 ## The Chat Box
 
-Unicode is hard! If you are composing text a string at a time ("Enter your name, adventurer!" screens or accepting sentences for a chat interface, etc) you should _not_ be using key press events! This will _never_ do the right thing various keyboards and human languages around the world.
+Unicode is hard! If you are composing text a string at a time ("Enter your name, adventurer!" screens or accepting sentences for a chat interface, etc) you should _not_ be using key press events! This will _never_ do the right thing across various keyboards and human languages around the world.
 
 One should instead call [SDL_StartTextInput](SDL_StartTextInput), and listen for [SDL_EVENT_TEXT_INPUT](SDL_EVENT_TEXT_INPUT) events. When done accepting input, call [SDL_StopTextInput](SDL_StopTextInput). This approach will let the system provide input interfaces that are familiar to the user (including popping up a virtual keyboard on mobile devices, and other UI for composing in various languages). Then the event will provide Unicode strings in UTF-8 format, which might be complete lines of text or a single character, depending on the system. **You will not be able to replicate these interfaces in your application for everyone in the world**, do not try to build this yourself on top of individual keypress events.
 
