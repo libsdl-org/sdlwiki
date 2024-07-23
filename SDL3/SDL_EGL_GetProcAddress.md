@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_EGL_GetCurrentEGLDisplay](SDL_EGL_GetCurrentEGLDisplay)
+- [SDL_EGL_GetCurrentDisplay](SDL_EGL_GetCurrentDisplay)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
