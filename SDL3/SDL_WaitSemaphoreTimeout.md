@@ -76,7 +76,7 @@ SDL_DestroySemaphore(sem);
 
 ## See Also
 
-- [SDL_PostSemaphore](SDL_PostSemaphore)
+- [SDL_SignalSemaphore](SDL_SignalSemaphore)
 - [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
 - [SDL_WaitSemaphore](SDL_WaitSemaphore)
 
