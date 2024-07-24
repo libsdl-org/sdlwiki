@@ -921,6 +921,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_ShowWindow](SDL_ShowWindow)
 - [SDL_ShowWindowSystemMenu](SDL_ShowWindowSystemMenu)
 - [SDL_SignalCondition](SDL_SignalCondition)
+- [SDL_SignalSemaphore](SDL_SignalSemaphore)
 - [SDL_sin](SDL_sin)
 - [SDL_sinf](SDL_sinf)
 - [SDL_size_add_overflow](SDL_size_add_overflow)

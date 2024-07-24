@@ -23,6 +23,7 @@ Functions to provide thread synchronization primitives.
 - [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
 - [SDL_PostSemaphore](SDL_PostSemaphore)
 - [SDL_SignalCondition](SDL_SignalCondition)
+- [SDL_SignalSemaphore](SDL_SignalSemaphore)
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
 - [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
