@@ -767,6 +767,7 @@ Calling SDL_GetHint() with the name of the hint being changed from within a hint
 
 The following hints have been removed:
 * SDL_HINT_ACCELEROMETER_AS_JOYSTICK
+* SDL_HINT_ANDROID_BLOCK_ON_PAUSE_PAUSEAUDIO - the audio will be paused when the application is paused, and SDL_HINT_ANDROID_BLOCK_ON_PAUSE can be used to control that
 * SDL_HINT_GAMECONTROLLER_USE_BUTTON_LABELS - gamepad buttons are always positional
 * SDL_HINT_GRAB_KEYBOARD - use SDL_SetWindowKeyboardGrab() instead
 * SDL_HINT_IDLE_TIMER_DISABLED - use SDL_DisableScreenSaver() instead
@@ -1799,6 +1800,8 @@ The following functions have been renamed:
 * SDL_GDKGetTaskQueue() => SDL_GetGDKTaskQueue()
 * SDL_LinuxSetThreadPriority() => SDL_SetLinuxThreadPriority()
 * SDL_LinuxSetThreadPriorityAndPolicy() => SDL_SetLinuxThreadPriorityAndPolicy()
+* SDL_OnApplicationDidBecomeActive() => SDL_OnApplicationDidEnterForeground()
+* SDL_OnApplicationWillResignActive() => SDL_OnApplicationWillEnterBackground()
 * SDL_WinRTGetDeviceFamily() => SDL_GetWinRTDeviceFamily()
 * SDL_GetWinRTFSPathUTF8() => SDL_GetWinRTFSPath()
 * SDL_iOSSetAnimationCallback() => SDL_SetiOSAnimationCallback()
