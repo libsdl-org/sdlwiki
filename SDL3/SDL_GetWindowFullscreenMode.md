@@ -25,6 +25,11 @@ const SDL_DisplayMode * SDL_GetWindowFullscreenMode(SDL_Window *window);
 exclusive fullscreen mode to use or NULL for borderless fullscreen desktop
 mode.
 
+## Remarks
+
+This returns temporary memory which will be automatically freed later, and
+can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
+
 ## Version
 
 This function is available since SDL 3.0.0.
