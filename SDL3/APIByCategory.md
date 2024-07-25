@@ -109,5 +109,5 @@
 | [Platform-specific Functionality](CategorySystem)    | [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)         |
 | [Standard Library Functionality](CategoryStdinc)     | [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)         |
 | [GUIDs](CategoryGUID)                                | [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)             |
-| [Miscellaneous](CategoryMisc)                        | [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)           |
+| [Miscellaneous](CategoryMisc)                        | [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_misc.h)             |
 
