@@ -279,10 +279,6 @@ to [SDLK_0](SDLK_0)...[SDLK_9](SDLK_9) on AZERTY layouts.
 
 This datatype is available since SDL 3.0.0.
 
-## See Also
-
-- [SDL_KeyCode](SDL_KeyCode)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryKeycode](CategoryKeycode)
 
