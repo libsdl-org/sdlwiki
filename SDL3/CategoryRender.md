@@ -59,6 +59,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_GetRenderMetalCommandEncoder](SDL_GetRenderMetalCommandEncoder)
 - [SDL_GetRenderMetalLayer](SDL_GetRenderMetalLayer)
 - [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
+- [SDL_GetRenderSafeArea](SDL_GetRenderSafeArea)
 - [SDL_GetRenderScale](SDL_GetRenderScale)
 - [SDL_GetRenderTarget](SDL_GetRenderTarget)
 - [SDL_GetRenderViewport](SDL_GetRenderViewport)
