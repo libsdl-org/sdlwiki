@@ -31,7 +31,7 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetTouchFinger](SDL_GetTouchFinger)
+- [SDL_GetTouchFingers](SDL_GetTouchFingers)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryTouch](CategoryTouch)
