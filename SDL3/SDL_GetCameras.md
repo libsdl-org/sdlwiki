@@ -25,11 +25,6 @@ const SDL_CameraID * SDL_GetCameras(int *count);
 camera instance IDs or NULL on failure; call [SDL_GetError](SDL_GetError)()
 for more information.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

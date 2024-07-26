@@ -24,11 +24,6 @@ const char * SDL_GetDisplayName(SDL_DisplayID displayID);
 (const char *) Returns the name of a display or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

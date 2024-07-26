@@ -31,9 +31,6 @@ On some platforms SDL first sees the touch device if it was actually used.
 Therefore the returned list might be empty, although devices are available.
 After using all devices at least once the number will be correct.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

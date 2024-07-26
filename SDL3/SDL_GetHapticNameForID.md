@@ -29,9 +29,6 @@ can be found, this function returns NULL; call
 
 This can be called before any haptic devices are opened.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

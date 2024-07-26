@@ -43,9 +43,6 @@ The returned array is always NULL-terminated, for your iterating
 convenience, but if `count` is non-NULL, on return it will contain the
 number of items in the array, not counting the NULL terminator.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

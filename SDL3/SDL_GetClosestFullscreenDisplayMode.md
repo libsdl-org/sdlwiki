@@ -38,9 +38,6 @@ are scanned with size being first priority, format being second priority,
 and finally checking the refresh rate. If all the available modes are too
 small, then NULL is returned.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

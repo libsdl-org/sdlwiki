@@ -24,11 +24,6 @@ const char * SDL_GetCameraName(SDL_CameraID instance_id);
 (const char *) Returns a human-readable device name or NULL on failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

@@ -25,9 +25,6 @@ const void * SDL_GetClipboardData(const char *mime_type, size_t *size);
 (const void *) Returns the retrieved data buffer or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Remarks
 
 The size of text data does not include the terminator, but the text is

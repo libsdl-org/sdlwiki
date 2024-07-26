@@ -25,11 +25,6 @@ const char * SDL_GetGamepadAppleSFSymbolsNameForButton(SDL_Gamepad *gamepad, SDL
 (const char *) Returns the sfSymbolsName or NULL if the name can't be
 found.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

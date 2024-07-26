@@ -47,9 +47,6 @@ about available cameras until you've opened one, and won't even tell if
 there _is_ a camera until the user has given you permission to check
 through a scary warning popup.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

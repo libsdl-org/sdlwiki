@@ -25,9 +25,9 @@ typedef struct SDL_TextEditingCandidatesEvent
 
 ## Remarks
 
-The candidates are temporary memory which will be automatically freed
-later, and can be claimed with
-[SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
+The candidates are a single allocation of temporary memory which will be
+freed in [SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)() and can be
+claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
 
 ## Version
 

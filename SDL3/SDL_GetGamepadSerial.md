@@ -27,9 +27,6 @@ const char * SDL_GetGamepadSerial(SDL_Gamepad *gamepad);
 
 Returns the serial number of the gamepad, or NULL if it is not available.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

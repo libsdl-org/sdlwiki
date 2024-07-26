@@ -24,11 +24,6 @@ const char * SDL_GetHint(const char *name);
 (const char *) Returns the string value of a hint or NULL if the hint isn't
 set.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

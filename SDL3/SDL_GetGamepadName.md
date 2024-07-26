@@ -24,11 +24,6 @@ const char * SDL_GetGamepadName(SDL_Gamepad *gamepad);
 (const char *) Returns the implementation dependent name for the gamepad,
 or NULL if there is no name or the identifier passed is invalid.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

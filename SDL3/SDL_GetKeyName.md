@@ -30,9 +30,6 @@ Both lowercase and uppercase alphabetic keycodes have uppercase names, e.g.
 
 If the key doesn't have a name, this function returns an empty string ("").
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

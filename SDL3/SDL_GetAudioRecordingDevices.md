@@ -38,9 +38,6 @@ IDs returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)().
 If this function returns NULL, to signify an error, `*count` will be set to
 zero.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

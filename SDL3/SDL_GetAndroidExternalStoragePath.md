@@ -31,9 +31,6 @@ This is a C wrapper over `android.content.Context.getExternalFilesDir()`:
 
 https://developer.android.com/reference/android/content/Context#getExternalFilesDir()
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

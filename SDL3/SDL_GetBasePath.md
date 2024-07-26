@@ -50,9 +50,6 @@ the executable. As such it is not a writable directory.
 The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

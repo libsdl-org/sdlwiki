@@ -25,11 +25,6 @@ const char * SDL_GetGamepadStringForType(SDL_GamepadType type);
 type is specified. The string returned is of the format used by
 [SDL_Gamepad](SDL_Gamepad) mapping strings.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

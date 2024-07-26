@@ -39,9 +39,6 @@ data for the application to manage, see
 The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 If NULL is returned, the error may be obtained with
 [SDL_GetError](SDL_GetError)().
 

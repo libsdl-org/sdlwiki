@@ -34,9 +34,6 @@ The names of drivers are all simple, low-ASCII identifiers, like "v4l2",
 "coremedia" or "android". These never have Unicode characters, and are not
 meant to be proper names.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

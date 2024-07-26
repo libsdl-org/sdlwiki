@@ -57,9 +57,6 @@ your program; SDL will send an
 possible, and you can call this function again to get an updated copy of
 preferred locales.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

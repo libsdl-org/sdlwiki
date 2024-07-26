@@ -28,9 +28,6 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function returns "" if the keyboard doesn't have a name.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

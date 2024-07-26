@@ -33,9 +33,6 @@ data in the [order that SDL expects](CategoryAudio#channel-layouts).
 Audio streams default to no remapping applied. This is represented by
 returning NULL, and does not signify an error.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread, as it holds a

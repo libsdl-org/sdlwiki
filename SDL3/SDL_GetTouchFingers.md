@@ -26,11 +26,6 @@ const SDL_Finger * const * SDL_GetTouchFingers(SDL_TouchID touchID, int *count);
 of [SDL_Finger](SDL_Finger) pointers or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

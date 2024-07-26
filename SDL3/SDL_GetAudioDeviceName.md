@@ -24,11 +24,6 @@ const char * SDL_GetAudioDeviceName(SDL_AudioDeviceID devid);
 (const char *) Returns the name of the audio device, or NULL on failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

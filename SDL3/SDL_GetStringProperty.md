@@ -26,11 +26,6 @@ const char * SDL_GetStringProperty(SDL_PropertiesID props, const char *name, con
 (const char *) Returns the value of the property, or `default_value` if it
 is not set or not a string property.
 
-## Remarks
-
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Thread Safety
 
 It is safe to call this function from any thread.

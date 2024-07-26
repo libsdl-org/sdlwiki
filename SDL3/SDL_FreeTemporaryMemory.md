@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_AllocateTemporaryMemory
+# SDL_FreeTemporaryMemory
 
-Allocate temporary memory.
+Free temporary memory for the current thread.
 
 ## Header File
 
@@ -10,24 +10,19 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void * SDL_AllocateTemporaryMemory(size_t size);
+void SDL_FreeTemporaryMemory(void);
 ```
-
-## Function Parameters
-
-|        |          |                                   |
-| ------ | -------- | --------------------------------- |
-| size_t | **size** | the amount of memory to allocate. |
-
-## Return Value
-
-(void *) Returns a pointer to the memory allocated or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-You can use this to allocate memory from the temporary memory pool for the
-current thread.
+This function frees all temporary memory for the current thread. If you
+would like to hold onto a specific pointer beyond this call, you should
+call [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)() to move it out
+of the temporary memory pool.
+
+This function is automatically called in [SDL_Quit](SDL_Quit)() on the main
+thread and in [SDL_CleanupTLS](SDL_CleanupTLS)() when other threads
+complete.
 
 ## Thread Safety
 
@@ -39,8 +34,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_AllocateTemporaryMemory](SDL_AllocateTemporaryMemory)
 - [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)
-- [SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

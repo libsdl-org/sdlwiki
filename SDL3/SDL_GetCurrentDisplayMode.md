@@ -32,9 +32,6 @@ There's a difference between this function and
 fullscreen and has changed the resolution. In that case this function will
 return the current display mode, and not the previous native display mode.
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 ## Version
 
 This function is available since SDL 3.0.0.

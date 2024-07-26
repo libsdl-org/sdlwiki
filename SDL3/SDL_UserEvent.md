@@ -30,6 +30,10 @@ application. The event can be pushed onto the event queue using
 completely up to the programmer; the only requirement is that '''type''' is
 a value obtained from [SDL_RegisterEvents](SDL_RegisterEvents)().
 
+If the data pointers are temporary memory, they will be automatically
+transfered to the thread that pulls the event from the queue, or freed if
+the event is flushed.
+
 ## Version
 
 This struct is available since SDL 3.0.0.

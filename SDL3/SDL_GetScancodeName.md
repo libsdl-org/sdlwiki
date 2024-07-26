@@ -26,9 +26,6 @@ scancode doesn't have a name this function returns an empty string ("").
 
 ## Remarks
 
-This returns temporary memory which will be automatically freed later, and
-can be claimed with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 **Warning**: The returned name is by design not stable across platforms,
 e.g. the name for [`SDL_SCANCODE_LGUI`](SDL_SCANCODE_LGUI) is "Left GUI"
 under Linux but "Left Windows" under Microsoft Windows, and some scancodes
