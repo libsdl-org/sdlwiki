@@ -169,6 +169,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_FlushRenderer](SDL_FlushRenderer)
 - [SDL_fmod](SDL_fmod)
 - [SDL_fmodf](SDL_fmodf)
+- [SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)
 - [SDL_GamepadConnected](SDL_GamepadConnected)
 - [SDL_GamepadEventsEnabled](SDL_GamepadEventsEnabled)
 - [SDL_GamepadHasAxis](SDL_GamepadHasAxis)
