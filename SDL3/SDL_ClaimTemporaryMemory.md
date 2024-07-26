@@ -28,9 +28,10 @@ not temporary or is not owned by this thread.
 ## Remarks
 
 Some functions return temporary memory which SDL will automatically clean
-up. If you want to hold onto it for a long time or beyond the current
-function scope, you can call this function to get a pointer that you own,
-and can free using [SDL_free](SDL_free)() when you're done.
+up. If you want to hold onto it past the current event being handled or
+beyond the current function scope, you can call this function to get a
+pointer that you own, and can free using [SDL_free](SDL_free)() when you're
+done.
 
 If the memory isn't temporary, this will return NULL, and you don't have
 ownership of the memory.
