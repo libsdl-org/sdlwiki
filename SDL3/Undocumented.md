@@ -53,6 +53,7 @@
 - [SDL_uitoa](SDL_uitoa)
 - [SDL_ulltoa](SDL_ulltoa)
 - [SDL_ultoa](SDL_ultoa)
+- [SDL_unsetenv](SDL_unsetenv)
 - [SDL_utf8strlcpy](SDL_utf8strlcpy)
 - [SDL_utf8strlen](SDL_utf8strlen)
 - [SDL_utf8strnlen](SDL_utf8strnlen)
