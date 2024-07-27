@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_TouchID * SDL_GetTouchDevices(int *count);
+SDL_TouchID * SDL_GetTouchDevices(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_TouchID * SDL_GetTouchDevices(int *count);
 
 ## Return Value
 
-(const [SDL_TouchID](SDL_TouchID) *) Returns a 0 terminated array of touch
-device IDs or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_TouchID](SDL_TouchID) *) Returns a 0 terminated array of touch device
+IDs or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information. This should be freed with [SDL_free](SDL_free)() when it is no
+longer needed.
 
 ## Remarks
 

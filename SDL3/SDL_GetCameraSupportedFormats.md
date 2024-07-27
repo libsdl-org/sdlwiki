@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const SDL_CameraSpec * const * SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);
+SDL_CameraSpec ** SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);
 ```
 
 ## Function Parameters
@@ -22,9 +22,11 @@ const SDL_CameraSpec * const * SDL_GetCameraSupportedFormats(SDL_CameraID devid,
 
 ## Return Value
 
-(const [SDL_CameraSpec](SDL_CameraSpec) * const *) Returns a NULL
-terminated array of pointers to [SDL_CameraSpec](SDL_CameraSpec) or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_CameraSpec](SDL_CameraSpec) **) Returns a NULL terminated array of
+pointers to [SDL_CameraSpec](SDL_CameraSpec) or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information. This is a single
+allocation that should be freed with [SDL_free](SDL_free)() when it is no
+longer needed.
 
 ## Remarks
 

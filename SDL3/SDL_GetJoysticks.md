@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const SDL_JoystickID * SDL_GetJoysticks(int *count);
+SDL_JoystickID * SDL_GetJoysticks(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_JoystickID * SDL_GetJoysticks(int *count);
 
 ## Return Value
 
-(const [SDL_JoystickID](SDL_JoystickID) *) Returns a 0 terminated array of
+([SDL_JoystickID](SDL_JoystickID) *) Returns a 0 terminated array of
 joystick instance IDs or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError)() for more information. This should be freed
+with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Version
 

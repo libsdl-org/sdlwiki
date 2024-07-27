@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const SDL_KeyboardID * SDL_GetKeyboards(int *count);
+SDL_KeyboardID * SDL_GetKeyboards(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_KeyboardID * SDL_GetKeyboards(int *count);
 
 ## Return Value
 
-(const [SDL_KeyboardID](SDL_KeyboardID) *) Returns a 0 terminated array of
+([SDL_KeyboardID](SDL_KeyboardID) *) Returns a 0 terminated array of
 keyboards instance IDs or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError)() for more information. This should be freed
+with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

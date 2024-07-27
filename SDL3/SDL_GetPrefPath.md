@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-const char * SDL_GetPrefPath(const char *org, const char *app);
+char * SDL_GetPrefPath(const char *org, const char *app);
 ```
 
 ## Function Parameters
@@ -22,9 +22,9 @@ const char * SDL_GetPrefPath(const char *org, const char *app);
 
 ## Return Value
 
-(const char *) Returns a UTF-8 string of the user directory in
-platform-dependent notation. NULL if there's a problem (creating directory
-failed, etc.).
+(char *) Returns a UTF-8 string of the user directory in platform-dependent
+notation. NULL if there's a problem (creating directory failed, etc.). This
+should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

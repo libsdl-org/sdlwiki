@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-const void * SDL_GetClipboardData(const char *mime_type, size_t *size);
+void * SDL_GetClipboardData(const char *mime_type, size_t *size);
 ```
 
 ## Function Parameters
@@ -22,8 +22,9 @@ const void * SDL_GetClipboardData(const char *mime_type, size_t *size);
 
 ## Return Value
 
-(const void *) Returns the retrieved data buffer or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(void *) Returns the retrieved data buffer or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information. This should be freed
+with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

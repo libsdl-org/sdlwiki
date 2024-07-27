@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-const char * const * SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
+char ** SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
 ```
 
 ## Function Parameters
@@ -24,8 +24,10 @@ const char * const * SDL_GlobDirectory(const char *path, const char *pattern, SD
 
 ## Return Value
 
-(const char * const *) Returns an array of strings on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(char **) Returns an array of strings on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information. This is a single
+allocation that should be freed with [SDL_free](SDL_free)() when it is no
+longer needed.
 
 ## Remarks
 

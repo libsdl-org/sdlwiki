@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_MouseID * SDL_GetMice(int *count);
+SDL_MouseID * SDL_GetMice(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_MouseID * SDL_GetMice(int *count);
 
 ## Return Value
 
-(const [SDL_MouseID](SDL_MouseID) *) Returns a 0 terminated array of mouse
+([SDL_MouseID](SDL_MouseID) *) Returns a 0 terminated array of mouse
 instance IDs or NULL on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+more information. This should be freed with [SDL_free](SDL_free)() when it
+is no longer needed.
 
 ## Remarks
 

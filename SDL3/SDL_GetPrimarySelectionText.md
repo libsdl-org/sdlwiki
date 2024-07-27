@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-const char * SDL_GetPrimarySelectionText(void);
+char * SDL_GetPrimarySelectionText(void);
 ```
 
 ## Return Value
 
-(const char *) Returns the primary selection text on success or an empty
-string on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+(char *) Returns the primary selection text on success or an empty string
+on failure; call [SDL_GetError](SDL_GetError)() for more information. This
+should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

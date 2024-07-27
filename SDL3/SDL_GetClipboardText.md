@@ -10,13 +10,14 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-const char * SDL_GetClipboardText(void);
+char * SDL_GetClipboardText(void);
 ```
 
 ## Return Value
 
-(const char *) Returns the clipboard text on success or an empty string on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(char *) Returns the clipboard text on success or an empty string on
+failure; call [SDL_GetError](SDL_GetError)() for more information. This
+should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

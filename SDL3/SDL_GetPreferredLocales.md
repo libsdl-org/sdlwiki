@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_locale.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const SDL_Locale * const * SDL_GetPreferredLocales(int *count);
+SDL_Locale ** SDL_GetPreferredLocales(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_Locale * const * SDL_GetPreferredLocales(int *count);
 
 ## Return Value
 
-(const [SDL_Locale](SDL_Locale) * const *) Returns a NULL terminated array
-of locale pointers, or NULL on failure; call [SDL_GetError](SDL_GetError)()
-for more information.
+([SDL_Locale](SDL_Locale) **) Returns a NULL terminated array of locale
+pointers, or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information. This is a single allocation that should be freed with
+[SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

@@ -10,19 +10,16 @@ Defined in [<SDL3/SDL_guid.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-const char * SDL_GUIDToString(SDL_GUID guid);
+void SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
 ```
 
 ## Function Parameters
 
-|                      |          |                                                         |
-| -------------------- | -------- | ------------------------------------------------------- |
-| [SDL_GUID](SDL_GUID) | **guid** | the [SDL_GUID](SDL_GUID) you wish to convert to string. |
-
-## Return Value
-
-(const char *) Returns the string representation of the GUID or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+|                      |             |                                                         |
+| -------------------- | ----------- | ------------------------------------------------------- |
+| [SDL_GUID](SDL_GUID) | **guid**    | the [SDL_GUID](SDL_GUID) you wish to convert to string. |
+| char *               | **pszGUID** | buffer in which to write the ASCII string.              |
+| int                  | **cbGUID**  | the size of pszGUID, should be at least 33 bytes.       |
 
 ## Version
 

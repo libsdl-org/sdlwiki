@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-const SDL_GamepadBinding * const * SDL_GetGamepadBindings(SDL_Gamepad *gamepad, int *count);
+SDL_GamepadBinding ** SDL_GetGamepadBindings(SDL_Gamepad *gamepad, int *count);
 ```
 
 ## Function Parameters
@@ -22,9 +22,11 @@ const SDL_GamepadBinding * const * SDL_GetGamepadBindings(SDL_Gamepad *gamepad, 
 
 ## Return Value
 
-(const [SDL_GamepadBinding](SDL_GamepadBinding) * const *) Returns a NULL
-terminated array of pointers to bindings or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_GamepadBinding](SDL_GamepadBinding) **) Returns a NULL terminated
+array of pointers to bindings or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information. This is a single
+allocation that should be freed with [SDL_free](SDL_free)() when it is no
+longer needed.
 
 ## Version
 

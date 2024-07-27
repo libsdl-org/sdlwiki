@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_DisplayID * SDL_GetDisplays(int *count);
+SDL_DisplayID * SDL_GetDisplays(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_DisplayID * SDL_GetDisplays(int *count);
 
 ## Return Value
 
-(const [SDL_DisplayID](SDL_DisplayID) *) Returns a 0 terminated array of
-display instance IDs or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_DisplayID](SDL_DisplayID) *) Returns a 0 terminated array of display
+instance IDs or NULL on failure; call [SDL_GetError](SDL_GetError)() for
+more information. This should be freed with [SDL_free](SDL_free)() when it
+is no longer needed.
 
 ## Version
 

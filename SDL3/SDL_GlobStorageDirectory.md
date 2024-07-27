@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-const char * const * SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
+char ** SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
 ```
 
 ## Function Parameters
@@ -25,10 +25,11 @@ const char * const * SDL_GlobStorageDirectory(SDL_Storage *storage, const char *
 
 ## Return Value
 
-(const char * const *) Returns an array of strings on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information. The
-caller should pass the returned pointer to [SDL_free](SDL_free) when done
-with it.
+(char **) Returns an array of strings on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information. The caller should pass
+the returned pointer to [SDL_free](SDL_free) when done with it. This is a
+single allocation that should be freed with [SDL_free](SDL_free)() when it
+is no longer needed.
 
 ## Remarks
 

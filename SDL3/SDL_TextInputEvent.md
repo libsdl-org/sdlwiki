@@ -22,10 +22,6 @@ typedef struct SDL_TextInputEvent
 
 ## Remarks
 
-The text string is temporary memory which will be freed in
-[SDL_FreeTemporaryMemory](SDL_FreeTemporaryMemory)() and can be claimed
-with [SDL_ClaimTemporaryMemory](SDL_ClaimTemporaryMemory)().
-
 This event will never be delivered unless text input is enabled by calling
 [SDL_StartTextInput](SDL_StartTextInput)(). Text input is disabled by
 default!

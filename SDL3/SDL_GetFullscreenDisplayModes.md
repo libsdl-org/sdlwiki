@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const SDL_DisplayMode * const * SDL_GetFullscreenDisplayModes(SDL_DisplayID displayID, int *count);
+SDL_DisplayMode ** SDL_GetFullscreenDisplayModes(SDL_DisplayID displayID, int *count);
 ```
 
 ## Function Parameters
@@ -22,9 +22,11 @@ const SDL_DisplayMode * const * SDL_GetFullscreenDisplayModes(SDL_DisplayID disp
 
 ## Return Value
 
-(const [SDL_DisplayMode](SDL_DisplayMode) * const *) Returns a NULL
-terminated array of display mode pointers or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_DisplayMode](SDL_DisplayMode) **) Returns a NULL terminated array of
+display mode pointers or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information. This is a single
+allocation that should be freed with [SDL_free](SDL_free)() when it is no
+longer needed.
 
 ## Remarks
 

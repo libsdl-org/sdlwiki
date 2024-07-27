@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const int * SDL_GetAudioStreamOutputChannelMap(SDL_AudioStream *stream, int *count);
+int * SDL_GetAudioStreamOutputChannelMap(SDL_AudioStream *stream, int *count);
 ```
 
 ## Function Parameters
@@ -22,8 +22,9 @@ const int * SDL_GetAudioStreamOutputChannelMap(SDL_AudioStream *stream, int *cou
 
 ## Return Value
 
-(const int *) Returns an array of the current channel mapping, with as many
-elements as the current output spec's channels, or NULL if default.
+(int *) Returns an array of the current channel mapping, with as many
+elements as the current output spec's channels, or NULL if default. This
+should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 

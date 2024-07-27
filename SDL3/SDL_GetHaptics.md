@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const SDL_HapticID * SDL_GetHaptics(int *count);
+SDL_HapticID * SDL_GetHaptics(int *count);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ const SDL_HapticID * SDL_GetHaptics(int *count);
 
 ## Return Value
 
-(const [SDL_HapticID](SDL_HapticID) *) Returns a 0 terminated array of
-haptic device instance IDs or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_HapticID](SDL_HapticID) *) Returns a 0 terminated array of haptic
+device instance IDs or NULL on failure; call [SDL_GetError](SDL_GetError)()
+for more information. This should be freed with [SDL_free](SDL_free)() when
+it is no longer needed.
 
 ## Version
 
