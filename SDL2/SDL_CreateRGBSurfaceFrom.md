@@ -11,14 +11,14 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_Surface* SDL_CreateRGBSurfaceFrom(void *pixels,
-                                  int width,
-                                  int height,
-                                  int depth,
-                                  int pitch,
-                                  Uint32 Rmask,
-                                  Uint32 Gmask,
-                                  Uint32 Bmask,
-                                  Uint32 Amask);
+                                      int width,
+                                      int height,
+                                      int depth,
+                                      int pitch,
+                                      Uint32 Rmask,
+                                      Uint32 Gmask,
+                                      Uint32 Bmask,
+                                      Uint32 Amask);
 ```
 
 ## Function Parameters

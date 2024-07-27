@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void* SDL_GetWindowData(SDL_Window * window,
-                    const char *name);
+                        const char *name);
 ```
 
 ## Function Parameters

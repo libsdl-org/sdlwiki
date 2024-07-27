@@ -11,7 +11,7 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_RWFromFile(const char *file,
-                      const char *mode);
+                          const char *mode);
 ```
 
 ## Function Parameters

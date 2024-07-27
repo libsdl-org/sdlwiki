@@ -11,8 +11,8 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetPaletteColors(SDL_Palette * palette,
-                     const SDL_Color * colors,
-                     int firstcolor, int ncolors);
+                         const SDL_Color * colors,
+                         int firstcolor, int ncolors);
 ```
 
 ## Function Parameters

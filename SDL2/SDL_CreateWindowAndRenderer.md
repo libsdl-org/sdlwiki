@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_CreateWindowAndRenderer(
-    int width, int height, Uint32 window_flags,
-    SDL_Window **window, SDL_Renderer **renderer);
+        int width, int height, Uint32 window_flags,
+        SDL_Window **window, SDL_Renderer **renderer);
 ```
 
 ## Function Parameters

@@ -11,9 +11,9 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderGeometry(SDL_Renderer *renderer,
-                   SDL_Texture *texture,
-                   const SDL_Vertex *vertices, int num_vertices,
-                   const int *indices, int num_indices);
+                       SDL_Texture *texture,
+                       const SDL_Vertex *vertices, int num_vertices,
+                       const int *indices, int num_indices);
 ```
 
 ## Function Parameters

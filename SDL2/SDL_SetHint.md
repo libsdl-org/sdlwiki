@@ -11,7 +11,7 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_SetHint(const char *name,
-                 const char *value);
+                     const char *value);
 ```
 
 ## Function Parameters

@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
-                   int index, Uint32 flags);
+                       int index, Uint32 flags);
 ```
 
 ## Function Parameters

@@ -11,7 +11,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticSetAutocenter(SDL_Haptic * haptic,
-                        int autocenter);
+                            int autocenter);
 ```
 
 ## Function Parameters

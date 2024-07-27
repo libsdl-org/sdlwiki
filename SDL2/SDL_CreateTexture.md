@@ -11,9 +11,9 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Texture * SDL_CreateTexture(SDL_Renderer * renderer,
-                            Uint32 format,
-                            int access, int w,
-                            int h);
+                                Uint32 format,
+                                int access, int w,
+                                int h);
 ```
 
 ## Function Parameters

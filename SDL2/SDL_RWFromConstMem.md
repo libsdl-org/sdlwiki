@@ -11,7 +11,7 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_RWFromConstMem(const void *mem,
-                          int size);
+                              int size);
 ```
 
 ## Function Parameters

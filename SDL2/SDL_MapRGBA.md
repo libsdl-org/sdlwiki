@@ -11,8 +11,8 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint32 SDL_MapRGBA(const SDL_PixelFormat * format,
-               Uint8 r, Uint8 g, Uint8 b,
-               Uint8 a);
+                   Uint8 r, Uint8 g, Uint8 b,
+                   Uint8 a);
 ```
 
 ## Function Parameters

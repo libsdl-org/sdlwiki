@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SetSurfacePalette(SDL_Surface * surface,
-                      SDL_Palette * palette);
+                          SDL_Palette * palette);
 ```
 
 ## Function Parameters

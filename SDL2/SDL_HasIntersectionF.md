@@ -11,7 +11,7 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_HasIntersectionF(const SDL_FRect * A,
-                          const SDL_FRect * B);
+                              const SDL_FRect * B);
 ```
 
 ## Function Parameters

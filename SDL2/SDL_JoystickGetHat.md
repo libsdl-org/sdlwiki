@@ -11,7 +11,7 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 Uint8 SDL_JoystickGetHat(SDL_Joystick *joystick,
-                     int hat);
+                         int hat);
 ```
 
 ## Function Parameters

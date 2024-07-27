@@ -11,7 +11,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick *
-                                   joystick);
+                                       joystick);
 ```
 
 ## Function Parameters

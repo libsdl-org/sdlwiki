@@ -11,8 +11,8 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_DelHintCallback(const char *name,
-                     SDL_HintCallback callback,
-                     void *userdata);
+                         SDL_HintCallback callback,
+                         void *userdata);
 ```
 
 ## Function Parameters

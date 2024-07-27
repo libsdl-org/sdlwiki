@@ -11,7 +11,7 @@ Defined in [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void* SDL_LoadFunction(void *handle,
-                   const char *name);
+                       const char *name);
 ```
 
 ## Function Parameters

@@ -11,8 +11,8 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticUpdateEffect(SDL_Haptic * haptic,
-                       int effect,
-                       SDL_HapticEffect * data);
+                           int effect,
+                           SDL_HapticEffect * data);
 ```
 
 ## Function Parameters

@@ -11,7 +11,7 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_Vulkan_GetDrawableSize(SDL_Window * window,
-                            int *w, int *h);
+                                int *w, int *h);
 ```
 
 ## Function Parameters

@@ -11,8 +11,8 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 size_t SDL_RWread(SDL_RWops *context,
-              void *ptr, size_t size,
-              size_t maxnum);
+                  void *ptr, size_t size,
+                  size_t maxnum);
 ```
 
 ## Function Parameters

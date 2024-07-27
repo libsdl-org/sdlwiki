@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderFillRect(SDL_Renderer * renderer,
-                   const SDL_Rect * rect);
+                       const SDL_Rect * rect);
 ```
 
 ## Function Parameters

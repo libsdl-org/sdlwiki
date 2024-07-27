@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 void SDL_GetClipRect(SDL_Surface * surface,
-                 SDL_Rect * rect);
+                     SDL_Rect * rect);
 ```
 
 ## Function Parameters

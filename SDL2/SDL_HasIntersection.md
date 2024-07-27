@@ -11,7 +11,7 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_HasIntersection(const SDL_Rect * A,
-                         const SDL_Rect * B);
+                             const SDL_Rect * B);
 ```
 
 ## Function Parameters

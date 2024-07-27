@@ -11,8 +11,8 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_SetHintWithPriority(const char *name,
-                             const char *value,
-                             SDL_HintPriority priority);
+                                 const char *value,
+                                 SDL_HintPriority priority);
 ```
 
 ## Function Parameters

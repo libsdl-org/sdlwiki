@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetSurfaceAlphaMod(SDL_Surface * surface,
-                       Uint8 * alpha);
+                           Uint8 * alpha);
 ```
 
 ## Function Parameters

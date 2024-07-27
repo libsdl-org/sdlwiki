@@ -11,11 +11,11 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioDeviceID SDL_OpenAudioDevice(
-                      const char *device,
-                      int iscapture,
-                      const SDL_AudioSpec *desired,
-                      SDL_AudioSpec *obtained,
-                      int allowed_changes);
+                          const char *device,
+                          int iscapture,
+                          const SDL_AudioSpec *desired,
+                          SDL_AudioSpec *obtained,
+                          int allowed_changes);
 ```
 
 ## Function Parameters

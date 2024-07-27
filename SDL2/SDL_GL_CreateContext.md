@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_GLContext SDL_GL_CreateContext(SDL_Window *
-                               window);
+                                   window);
 ```
 
 ## Function Parameters

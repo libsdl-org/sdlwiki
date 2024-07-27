@@ -12,7 +12,7 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 ```c
 extern DECLSPEC SDL_GameControllerButtonBind SDLCALL
 SDL_GameControllerGetBindForAxis(SDL_GameController *gamecontroller,
-     SDL_GameControllerAxis axis);
+                                 SDL_GameControllerAxis axis);
 ```
 
 ## Function Parameters

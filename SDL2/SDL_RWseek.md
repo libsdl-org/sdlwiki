@@ -11,7 +11,7 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 Sint64 SDL_RWseek(SDL_RWops *context,
-              Sint64 offset, int whence);
+                  Sint64 offset, int whence);
 ```
 
 ## Function Parameters

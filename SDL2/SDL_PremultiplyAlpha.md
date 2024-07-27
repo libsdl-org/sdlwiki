@@ -11,10 +11,10 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_PremultiplyAlpha(int width, int height,
-                     Uint32 src_format,
-                     const void * src, int src_pitch,
-                     Uint32 dst_format,
-                     void * dst, int dst_pitch);
+                         Uint32 src_format,
+                         const void * src, int src_pitch,
+                         Uint32 dst_format,
+                         void * dst, int dst_pitch);
 ```
 
 ## Function Parameters

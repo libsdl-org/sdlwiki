@@ -11,8 +11,8 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_Vulkan_GetInstanceExtensions(SDL_Window *window,
-                                      unsigned int *pCount,
-                                      const char **pNames);
+                                          unsigned int *pCount,
+                                          const char **pNames);
 ```
 
 ## Function Parameters

@@ -11,8 +11,8 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 void SDL_UnionFRect(const SDL_FRect * A,
-                const SDL_FRect * B,
-                SDL_FRect * result);
+                    const SDL_FRect * B,
+                    SDL_FRect * result);
 ```
 
 ## Function Parameters

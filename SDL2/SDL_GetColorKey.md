@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetColorKey(SDL_Surface * surface,
-                Uint32 * key);
+                    Uint32 * key);
 ```
 
 ## Function Parameters

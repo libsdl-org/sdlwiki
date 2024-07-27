@@ -11,8 +11,8 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetAudioDeviceSpec(int index,
-                       int iscapture,
-                       SDL_AudioSpec *spec);
+                           int iscapture,
+                           SDL_AudioSpec *spec);
 ```
 
 ## Function Parameters

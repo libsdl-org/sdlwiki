@@ -11,8 +11,8 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_PeepEvents(SDL_Event * events, int numevents,
-               SDL_eventaction action,
-               Uint32 minType, Uint32 maxType);
+                   SDL_eventaction action,
+                   Uint32 minType, Uint32 maxType);
 ```
 
 ## Function Parameters

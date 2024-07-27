@@ -11,12 +11,12 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
-                  SDL_AudioFormat src_format,
-                  Uint8 src_channels,
-                  int src_rate,
-                  SDL_AudioFormat dst_format,
-                  Uint8 dst_channels,
-                  int dst_rate);
+                      SDL_AudioFormat src_format,
+                      Uint8 src_channels,
+                      int src_rate,
+                      SDL_AudioFormat dst_format,
+                      Uint8 dst_channels,
+                      int dst_rate);
 ```
 
 ## Function Parameters

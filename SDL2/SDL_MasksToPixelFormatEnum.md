@@ -11,10 +11,10 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 Uint32 SDL_MasksToPixelFormatEnum(int bpp,
-                              Uint32 Rmask,
-                              Uint32 Gmask,
-                              Uint32 Bmask,
-                              Uint32 Amask);
+                                  Uint32 Rmask,
+                                  Uint32 Gmask,
+                                  Uint32 Bmask,
+                                  Uint32 Amask);
 ```
 
 ## Function Parameters

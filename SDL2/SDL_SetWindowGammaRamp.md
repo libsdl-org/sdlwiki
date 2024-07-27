@@ -11,9 +11,9 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowGammaRamp(SDL_Window * window,
-                       const Uint16 * red,
-                       const Uint16 * green,
-                       const Uint16 * blue);
+                           const Uint16 * red,
+                           const Uint16 * green,
+                           const Uint16 * blue);
 ```
 
 ## Function Parameters

@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer,
-                           SDL_BlendMode blendMode);
+                               SDL_BlendMode blendMode);
 ```
 
 ## Function Parameters
