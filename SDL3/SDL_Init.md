@@ -66,6 +66,11 @@ Subsystem initialization is ref-counted, you must call
 manually (or call [SDL_Quit](SDL_Quit)() to force shutdown). If a subsystem
 is already loaded then this call will increase the ref-count and return.
 
+Consider reporting some basic metadata about your application before
+calling [SDL_Init](SDL_Init), using either
+[SDL_SetAppMetadata](SDL_SetAppMetadata)() or
+[SDL_SetAppMetadataProperty](SDL_SetAppMetadataProperty)().
+
 ## Version
 
 This function is available since SDL 3.0.0.
@@ -92,6 +97,8 @@ int main(int argc, char* argv[])
 
 ## See Also
 
+- [SDL_SetAppMetadata](SDL_SetAppMetadata)
+- [SDL_SetAppMetadataProperty](SDL_SetAppMetadataProperty)
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_Quit](SDL_Quit)
 - [SDL_SetMainReady](SDL_SetMainReady)
