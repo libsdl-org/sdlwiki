@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_HINT_APP_NAME
 
-Specify an application name.
+A variable setting the application name.
 
 ## Header File
 
@@ -21,12 +21,9 @@ audio streams, and in lists of applications which are inhibiting the
 screensaver. You should use a string that describes your program ("My Game
 2: The Revenge")
 
-Setting this to "" or leaving it unset will have SDL use a reasonable
-default: probably the application's name or "SDL Application" if SDL
-doesn't have any better information.
-
-Note that, for audio streams, this can be overridden with
-[SDL_HINT_AUDIO_DEVICE_APP_NAME](SDL_HINT_AUDIO_DEVICE_APP_NAME).
+This will override
+[SDL_PROP_APP_METADATA_NAME_STRING](SDL_PROP_APP_METADATA_NAME_STRING), if
+set by the application.
 
 This hint should be set before SDL is initialized.
 
