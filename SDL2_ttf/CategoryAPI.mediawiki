@@ -12,6 +12,7 @@
 * [[TTF_ByteSwappedUNICODE]]
 * [[TTF_CloseFont]]
 * [[TTF_Direction]]
+* [[TTF_Font]]
 * [[TTF_FontAscent]]
 * [[TTF_FontDescent]]
 * [[TTF_FontFaceFamilyName]]
