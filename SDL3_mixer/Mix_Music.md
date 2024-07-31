@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-typedef struct _Mix_Music Mix_Music;
+typedef struct Mix_Music Mix_Music;
 ```
 
 ----
