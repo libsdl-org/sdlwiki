@@ -28,6 +28,17 @@ SDL_Cursor * SDL_CreateColorCursor(SDL_Surface *surface,
 ([SDL_Cursor](SDL_Cursor) *) Returns the new cursor on success or NULL on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+If this function is passed a surface with alternate representations, the
+surface will be interpreted as the content to be used for 100% display
+scale, and the alternate representations will be used for high DPI
+situations. For example, if the original surface is 32x32, then on a 2x
+macOS display or 200% display scale on Windows, a 64x64 version of the
+image will be used, if available. If a matching version of the image isn't
+available, the closest size image will be scaled to the appropriate size
+and be used instead.
+
 ## Version
 
 This function is available since SDL 3.0.0.

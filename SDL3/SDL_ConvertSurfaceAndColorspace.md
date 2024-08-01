@@ -35,6 +35,9 @@ This function converts an existing surface to a new format and colorspace
 and returns the new surface. This will perform any pixel format and
 colorspace conversion needed.
 
+If the original surface has alternate images, the new surface will have a
+reference to them as well.
+
 ## Version
 
 This function is available since SDL 3.0.0.
