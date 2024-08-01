@@ -10,20 +10,23 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_BlitSurface9Grid(SDL_Surface *src, const SDL_Rect *srcrect, int corner_size, float scale, SDL_ScaleMode scaleMode, SDL_Surface *dst, const SDL_Rect *dstrect);
+int SDL_BlitSurface9Grid(SDL_Surface *src, const SDL_Rect *srcrect, int left_width, int right_width, int top_height, int bottom_height, float scale, SDL_ScaleMode scaleMode, SDL_Surface *dst, const SDL_Rect *dstrect);
 ```
 
 ## Function Parameters
 
-|                                |                 |                                                                                                                                      |
-| ------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [SDL_Surface](SDL_Surface) *   | **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                          |
-| const [SDL_Rect](SDL_Rect) *   | **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be used for the 9-grid, or NULL to use the entire surface.          |
-| int                            | **corner_size** | the size, in pixels, of the corner in `srcrect`.                                                                                     |
-| float                          | **scale**       | the scale used to transform the corner of `srcrect` into the corner of `dstrect`, or 0.0f for an unscaled blit.                      |
-| [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode**   | scale algorithm to be used.                                                                                                          |
-| [SDL_Surface](SDL_Surface) *   | **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                    |
-| const [SDL_Rect](SDL_Rect) *   | **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface, or NULL to fill the entire surface. |
+|                                |                   |                                                                                                                                      |
+| ------------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Surface](SDL_Surface) *   | **src**           | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                          |
+| const [SDL_Rect](SDL_Rect) *   | **srcrect**       | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be used for the 9-grid, or NULL to use the entire surface.          |
+| int                            | **left_width**    | the width, in pixels, of the left corners in `srcrect`.                                                                              |
+| int                            | **right_width**   | the width, in pixels, of the right corners in `srcrect`.                                                                             |
+| int                            | **top_height**    | the height, in pixels, of the top corners in `srcrect`.                                                                              |
+| int                            | **bottom_height** | the height, in pixels, of the bottom corners in `srcrect`.                                                                           |
+| float                          | **scale**         | the scale used to transform the corner of `srcrect` into the corner of `dstrect`, or 0.0f for an unscaled blit.                      |
+| [SDL_ScaleMode](SDL_ScaleMode) | **scaleMode**     | scale algorithm to be used.                                                                                                          |
+| [SDL_Surface](SDL_Surface) *   | **dst**           | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                    |
+| const [SDL_Rect](SDL_Rect) *   | **dstrect**       | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface, or NULL to fill the entire surface. |
 
 ## Return Value
 
@@ -33,10 +36,10 @@ int SDL_BlitSurface9Grid(SDL_Surface *src, const SDL_Rect *srcrect, int corner_s
 ## Remarks
 
 The pixels in the source surface are split into a 3x3 grid, using the
-corner size for each corner, and the sides and center making up the
-remaining pixels. The corners are then scaled using `scale` and fit into
-the corners of the destination rectangle. The sides and center are then
-stretched into place to cover the remaining destination rectangle.
+different corner sizes for each corner, and the sides and center making up
+the remaining pixels. The corners are then scaled using `scale` and fit
+into the corners of the destination rectangle. The sides and center are
+then stretched into place to cover the remaining destination rectangle.
 
 ## Thread Safety
 
