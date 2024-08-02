@@ -939,6 +939,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_sqrtf](SDL_sqrtf)
 - [SDL_srand](SDL_srand)
 - [SDL_StartTextInput](SDL_StartTextInput)
+- [SDL_StartTextInputWithProperties](SDL_StartTextInputWithProperties)
 - [SDL_StepUTF8](SDL_StepUTF8)
 - [SDL_StopHapticEffect](SDL_StopHapticEffect)
 - [SDL_StopHapticEffects](SDL_StopHapticEffects)
