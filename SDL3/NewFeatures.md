@@ -20,6 +20,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Time API](CategoryTime): date and time functionality beyond ticks and performance counters.
 - [Properties API](CategoryProperties): fast, flexible dictionaries of name/value pairs.
 - [Colorspace support](SDL_Colorspace): Surfaces and the renderer, etc, can manage multiple colorspaces.
+- [Alternate surface representations](SDL_AddSurfaceAlternateImage) for embedding HiDPI versions of images into a single SDL_Surface.
 - The Clipboard API [can support any data type](SDL_SetClipboardData) (SDL2 only handled text), and apps can provide data in multiple formats upon request in [a provided callback](SDL_ClipboardDataCallback).
 - Multiple [keyboards](SDL_GetKeyboards) and [mice](SDL_GetMice) can be managed separately.
 - [System theme](SDL_GetSystemTheme) (light, dark) can be queried.
