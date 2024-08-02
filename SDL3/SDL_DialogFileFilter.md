@@ -33,15 +33,14 @@ This struct is available since SDL 3.0.0.
 
 ## Code Examples
 
-This structure is most often used as a **NULL-terminated** array:
+This structure is most often used as an array:
 
 ```c
 const SDL_DialogFileFilter filters[] = {
     { "PNG images",  "png" },
     { "JPEG images", "jpg;jpeg" },
     { "All images",  "png;jpg;jpeg" },
-    { "All files",   "*" },
-    { NULL, NULL }
+    { "All files",   "*" }
 };
 ```
 
