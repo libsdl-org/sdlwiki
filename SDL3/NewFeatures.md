@@ -7,7 +7,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Extremely good documentation](APIByCategory): We've spent a _ton_ of effort writing and revising the API reference.
 - [Example programs](https://github.com/libsdl-org/SDL/tree/main/examples) to get you started, [running in your web browser](https://examples.libsdl.org/)!
 - More consistent API naming conventions. Everything is named consistently across the API now, instead of different subsystems taking different approaches. Also, we've tended toward more descriptive names for things in SDL3.
-- Rules about memory management are more clear in SDL3 (what happens if I query a device's name and the device is unplugged before I can touch the string? [There's a policy for that!](https://cohost.org/icculus/post/6989097-sdl3-temporary-memor)). In SDL2, you hoped for the best.
+- Rules about memory management are more clear in SDL3 (what happens if I query a device's name and the device is unplugged before I can touch the string? SDL3 protects this memory. In SDL2, you hoped for the best.
 - [Dialog API](CategoryDialog): access to system file dialogs (file and folder selection UI for opening/saving).
 - [Filesystem API](CategoryFilesystem): simple directory management and globbing, access to topic-specific user folders.
 - [Storage API](CategoryStorage): Abstract interface to platform-specific storage.
