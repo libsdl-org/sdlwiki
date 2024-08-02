@@ -15,6 +15,9 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Remarks
 
+This hint sets the default value of
+[SDL_PROP_TEXTINPUT_MULTILINE_BOOLEAN](SDL_PROP_TEXTINPUT_MULTILINE_BOOLEAN).
+
 The variable can be set to the following values:
 
 - "0": The return key will be handled as a key event. (default)
