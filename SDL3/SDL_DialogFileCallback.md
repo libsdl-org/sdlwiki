@@ -55,8 +55,7 @@ static const SDL_DialogFileFilter filters[] = {
     { "PNG images",  "png" },
     { "JPEG images", "jpg;jpeg" },
     { "All images",  "png;jpg;jpeg" },
-    { "All files",   "*" },
-    { NULL, NULL }
+    { "All files",   "*" }
 };
 
 static void SDLCALL callback(void* userdata, const char* const* filelist, int filter)
@@ -75,14 +74,13 @@ static void SDLCALL callback(void* userdata, const char* const* filelist, int fi
         filelist++;
     }
 
-    if (filter == -1) {
+    if (filter < 0) {
         SDL_Log("The current platform does not support fetching "
-                "the selected filter.");
+                "the selected filter, or the user did not select"
+                " any filter.");
     } else if (filter < SDL_arraysize(filters)) {
         SDL_Log("The filter selected by the user is '%s' (%s).",
                 filters[filter].pattern, filters[filter].name);
-    } else {
-        SDL_Log("The user did not select any filter.");
     }
 }
 ```
