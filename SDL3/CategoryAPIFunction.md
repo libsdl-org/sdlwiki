@@ -496,6 +496,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetWindowBordersSize](SDL_GetWindowBordersSize)
 - [SDL_GetWindowDisplayScale](SDL_GetWindowDisplayScale)
 - [SDL_GetWindowFlags](SDL_GetWindowFlags)
+- [SDL_GetWindowFromEvent](SDL_GetWindowFromEvent)
 - [SDL_GetWindowFromID](SDL_GetWindowFromID)
 - [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
 - [SDL_GetWindowICCProfile](SDL_GetWindowICCProfile)
