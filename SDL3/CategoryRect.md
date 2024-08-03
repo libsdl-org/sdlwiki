@@ -26,6 +26,7 @@ interger and floating point versions.
 - [SDL_RectsEqual](SDL_RectsEqual)
 - [SDL_RectsEqualEpsilon](SDL_RectsEqualEpsilon)
 - [SDL_RectsEqualFloat](SDL_RectsEqualFloat)
+- [SDL_RectToFRect](SDL_RectToFRect)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes

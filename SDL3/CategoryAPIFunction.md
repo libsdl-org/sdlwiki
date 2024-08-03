@@ -753,6 +753,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_RectsEqual](SDL_RectsEqual)
 - [SDL_RectsEqualEpsilon](SDL_RectsEqualEpsilon)
 - [SDL_RectsEqualFloat](SDL_RectsEqualFloat)
+- [SDL_RectToFRect](SDL_RectToFRect)
 - [SDL_RegisterApp](SDL_RegisterApp)
 - [SDL_RegisterEvents](SDL_RegisterEvents)
 - [SDL_ReleaseCameraFrame](SDL_ReleaseCameraFrame)
