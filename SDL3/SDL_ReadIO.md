@@ -30,9 +30,11 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function reads up `size` bytes from the data source to the area
 pointed at by `ptr`. This function may read less bytes than requested. It
-will return zero when the data stream is completely read, or on error. To
-determine if there was an error or all data was read, call
-[SDL_GetIOStatus](SDL_GetIOStatus)().
+will return zero when the data stream is completely read, and
+[SDL_GetIOStatus](SDL_GetIOStatus)() will return
+[SDL_IO_STATUS_EOF](SDL_IO_STATUS_EOF), or on error, and
+[SDL_GetIOStatus](SDL_GetIOStatus)() will return
+[SDL_IO_STATUS_ERROR](SDL_IO_STATUS_ERROR).
 
 ## Version
 
