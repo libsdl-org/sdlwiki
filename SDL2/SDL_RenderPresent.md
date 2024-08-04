@@ -37,6 +37,8 @@ encouraged to call [SDL_RenderClear](SDL_RenderClear)() to initialize the
 backbuffer before starting each new frame's drawing, even if you plan to
 overwrite every pixel.
 
+SDL_CreateRenderer(SDL_Window *window, int deviceDriver, SDL_RENDERER_TYPE);
+
 ## Thread Safety
 
 You may only call this function on the main thread. If this happens to work
