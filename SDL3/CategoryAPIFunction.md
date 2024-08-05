@@ -850,6 +850,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_SetLogOutputFunction](SDL_SetLogOutputFunction)
 - [SDL_SetLogPriorities](SDL_SetLogPriorities)
 - [SDL_SetLogPriority](SDL_SetLogPriority)
+- [SDL_SetLogPriorityPrefix](SDL_SetLogPriorityPrefix)
 - [SDL_SetMainReady](SDL_SetMainReady)
 - [SDL_SetMemoryFunctions](SDL_SetMemoryFunctions)
 - [SDL_SetModState](SDL_SetModState)

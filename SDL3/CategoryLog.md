@@ -58,6 +58,7 @@ Here's where the messages go on different platforms:
 - [SDL_SetLogOutputFunction](SDL_SetLogOutputFunction)
 - [SDL_SetLogPriorities](SDL_SetLogPriorities)
 - [SDL_SetLogPriority](SDL_SetLogPriority)
+- [SDL_SetLogPriorityPrefix](SDL_SetLogPriorityPrefix)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
