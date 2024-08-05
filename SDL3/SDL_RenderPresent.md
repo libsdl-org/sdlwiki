@@ -62,15 +62,16 @@ Please refer to the code example in [SDL_RenderClear](SDL_RenderClear).
 
 ## See Also
 
+- [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_RenderClear](SDL_RenderClear)
+- [SDL_RenderFillRect](SDL_RenderFillRect)
+- [SDL_RenderFillRects](SDL_RenderFillRects)
 - [SDL_RenderLine](SDL_RenderLine)
 - [SDL_RenderLines](SDL_RenderLines)
 - [SDL_RenderPoint](SDL_RenderPoint)
 - [SDL_RenderPoints](SDL_RenderPoints)
 - [SDL_RenderRect](SDL_RenderRect)
 - [SDL_RenderRects](SDL_RenderRects)
-- [SDL_RenderFillRect](SDL_RenderFillRect)
-- [SDL_RenderFillRects](SDL_RenderFillRects)
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 - [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
