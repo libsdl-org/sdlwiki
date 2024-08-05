@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 void SDL_DelHintCallback(const char *name,
-                     SDL_HintCallback callback,
-                     void *userdata);
+                         SDL_HintCallback callback,
+                         void *userdata);
 ```
 
 ## Function Parameters
@@ -22,6 +22,10 @@ void SDL_DelHintCallback(const char *name,
 | const char *                         | **name**     | the hint being watched.                                                                           |
 | [SDL_HintCallback](SDL_HintCallback) | **callback** | an [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes. |
 | void *                               | **userdata** | a pointer being passed to the callback function.                                                  |
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

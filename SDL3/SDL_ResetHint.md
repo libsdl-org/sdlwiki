@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_ResetHint(const char *name);
+int SDL_ResetHint(const char *name);
 ```
 
 ## Function Parameters
@@ -21,14 +21,18 @@ SDL_bool SDL_ResetHint(const char *name);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the hint was set,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 This will reset a hint to the value of the environment variable, or NULL if
 the environment isn't set. Callbacks will be called normally with this
 change.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

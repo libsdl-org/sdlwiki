@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_AddHintCallback(const char *name,
-                    SDL_HintCallback callback,
-                    void *userdata);
+                        SDL_HintCallback callback,
+                        void *userdata);
 ```
 
 ## Function Parameters
@@ -20,7 +20,7 @@ int SDL_AddHintCallback(const char *name,
 |                                      |              |                                                                                                   |
 | ------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------- |
 | const char *                         | **name**     | the hint to watch.                                                                                |
-| [SDL_HintCallback](SDL_HintCallback) | **callback** | an [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes. |
+| [SDL_HintCallback](SDL_HintCallback) | **callback** | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes. |
 | void *                               | **userdata** | a pointer to pass to the callback function.                                                       |
 
 ## Return Value
@@ -28,9 +28,14 @@ int SDL_AddHintCallback(const char *name,
 (int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The callback function is called _during_ this function, to provide it an
+initial value, and again each time the hint's value changes.
+
 ## Thread Safety
 
-It is **NOT** safe to call this function from two threads at once.
+It is safe to call this function from any thread.
 
 ## Version
 

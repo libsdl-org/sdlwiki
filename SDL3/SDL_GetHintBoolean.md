@@ -25,6 +25,10 @@ SDL_bool SDL_GetHintBoolean(const char *name, SDL_bool default_value);
 ([SDL_bool](SDL_bool)) Returns the boolean value of a hint or the provided
 default value if the hint does not exist.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

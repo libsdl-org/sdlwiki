@@ -24,6 +24,14 @@ const char * SDL_GetHint(const char *name);
 (const char *) Returns the string value of a hint or NULL if the hint isn't
 set.
 
+## Thread Safety
+
+It is safe to call this function from any thread, however the return value
+only remains valid until the hint is changed; if another thread might do
+so, the app should supply locks and/or make a copy of the string. Note that
+using a hint callback instead is always thread-safe, as SDL holds a lock on
+the thread subsystem during the callback.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -10,8 +10,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetHint(const char *name,
-                 const char *value);
+int SDL_SetHint(const char *name, const char *value);
 ```
 
 ## Function Parameters
@@ -23,8 +22,8 @@ SDL_bool SDL_SetHint(const char *name,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the hint was set,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -32,6 +31,10 @@ Hints will not be set if there is an existing override hint or environment
 variable that takes precedence. You can use
 [SDL_SetHintWithPriority](SDL_SetHintWithPriority)() to set the hint with
 override priority instead.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

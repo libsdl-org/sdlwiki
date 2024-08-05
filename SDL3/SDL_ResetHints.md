@@ -19,6 +19,10 @@ This will reset all hints to the value of the associated environment
 variable, or NULL if the environment isn't set. Callbacks will be called
 normally with this change.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

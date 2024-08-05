@@ -10,9 +10,9 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetHintWithPriority(const char *name,
-                             const char *value,
-                             SDL_HintPriority priority);
+int SDL_SetHintWithPriority(const char *name,
+                            const char *value,
+                            SDL_HintPriority priority);
 ```
 
 ## Function Parameters
@@ -25,14 +25,18 @@ SDL_bool SDL_SetHintWithPriority(const char *name,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the hint was set,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 The priority controls the behavior when setting a hint that already has a
 value. Hints will replace existing hints of their priority and lower.
 Environment variables are considered to have override priority.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 
