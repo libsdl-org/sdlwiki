@@ -49,6 +49,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
+- [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_RenderClear](SDL_RenderClear)
 - [SDL_RenderDrawLine](SDL_RenderDrawLine)
 - [SDL_RenderDrawLines](SDL_RenderDrawLines)
