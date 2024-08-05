@@ -22,8 +22,8 @@ just ignore it and step through the chunks until a fixed limit is reached.
 Note that files that have trailing data unrelated to the WAVE file or
 corrupt files may slow down the loading process without a reliable
 boundary. By default, SDL stops after 10000 chunks to prevent wasting time.
-Use the environment variable [SDL_WAVE_CHUNK_LIMIT](SDL_WAVE_CHUNK_LIMIT)
-to adjust this value.
+Use [SDL_HINT_WAVE_CHUNK_LIMIT](SDL_HINT_WAVE_CHUNK_LIMIT) to adjust this
+value.
 
 The variable can be set to the following values:
 
