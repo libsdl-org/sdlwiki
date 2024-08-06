@@ -10,15 +10,14 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char * SDL_GetKeyName(SDL_Keycode key, SDL_bool uppercase);
+const char * SDL_GetKeyName(SDL_Keycode key);
 ```
 
 ## Function Parameters
 
-|                            |               |                                                                                                                                                                                          |
-| -------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Keycode](SDL_Keycode) | **key**       | the desired [SDL_Keycode](SDL_Keycode) to query.                                                                                                                                         |
-| [SDL_bool](SDL_bool)       | **uppercase** | [SDL_TRUE](SDL_TRUE) if the name should be the letter printed on the key on the keyboard, which is usually uppercase, or [SDL_FALSE](SDL_FALSE) to return the name of the key unchanged. |
+|                            |         |                                                  |
+| -------------------------- | ------- | ------------------------------------------------ |
+| [SDL_Keycode](SDL_Keycode) | **key** | the desired [SDL_Keycode](SDL_Keycode) to query. |
 
 ## Return Value
 
