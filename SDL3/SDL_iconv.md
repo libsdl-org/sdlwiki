@@ -34,12 +34,14 @@ invalid input sequence is encountered, or
 [SDL_ICONV_EINVAL](SDL_ICONV_EINVAL) is returned when an incomplete input
 sequence is encountered.
 
-On exit: - inbuf will point to the beginning of the next multibyte
+On exit:
+
+- inbuf will point to the beginning of the next multibyte
 sequence. On error, this is the location of the problematic input sequence.
 On success, this is the end of the input sequence. - inbytesleft will be
-set to the number of bytes left to convert, which will be 0 on success. -
-outbuf will point to the location where to store the next output byte. -
-outbytesleft will be set to the number of bytes left in the output buffer.
+set to the number of bytes left to convert, which will be 0 on success. 
+- outbuf will point to the location where to store the next output byte.
+- outbytesleft will be set to the number of bytes left in the output buffer.
 
 ## Remarks
 
