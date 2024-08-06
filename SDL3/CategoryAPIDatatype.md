@@ -98,6 +98,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_JoystickID](SDL_JoystickID)
 - [SDL_KeyboardID](SDL_KeyboardID)
 - [SDL_Keycode](SDL_Keycode)
+- [SDL_Keymap](SDL_Keymap)
 - [SDL_Keymod](SDL_Keymod)
 - [SDL_LogOutputFunction](SDL_LogOutputFunction)
 - [SDL_main_func](SDL_main_func)
