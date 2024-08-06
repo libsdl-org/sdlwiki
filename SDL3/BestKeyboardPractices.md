@@ -153,7 +153,7 @@ while (!quit_the_app) {
     while (SDL_WaitEvent(&e)) {
         /* user has pressed a key? */
         if (e.type == SDL_EVENT_KEY_DOWN) {
-            SDL_Log("Wow, you just pressed the %s key!", SDL_GetKeyName(e.key.key, SDL_TRUE));
+            SDL_Log("Wow, you just pressed the %s key!", SDL_GetKeyName(e.key.key));
         }
     }
 }
