@@ -45,6 +45,12 @@ The returned string is owned by the caller, and should be passed to
 
 This function is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_iconv_open](SDL_iconv_open)
+- [SDL_iconv_close](SDL_iconv_close)
+- [SDL_iconv](SDL_iconv)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 
