@@ -379,6 +379,8 @@ SDL_AddEventWatch() now returns -1 if it fails because it ran out of memory and 
 
 SDL_RegisterEvents() now returns 0 if it couldn't allocate any user events.
 
+SDL_EventFilter functions now return SDL_bool.
+
 The following symbols have been renamed:
 * SDL_APP_DIDENTERBACKGROUND => SDL_EVENT_DID_ENTER_BACKGROUND
 * SDL_APP_DIDENTERFOREGROUND => SDL_EVENT_DID_ENTER_FOREGROUND
@@ -1105,6 +1107,10 @@ SDL_SystemCursor's items from SDL2 have been renamed to match CSS cursor names.
 
 The following functions have been renamed:
 * SDL_FreeCursor() => SDL_DestroyCursor()
+
+The following functions have been removed:
+* SDL_SetRelativeMouseMode() - replaced with SDL_SetWindowRelativeMouseMode()
+* SDL_GetRelativeMouseMode() - replaced with SDL_GetWindowRelativeMouseMode()
 
 The following symbols have been renamed:
 * SDL_SYSTEM_CURSOR_ARROW => SDL_SYSTEM_CURSOR_DEFAULT

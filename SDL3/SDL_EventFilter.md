@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-typedef int (SDLCALL *SDL_EventFilter)(void *userdata, SDL_Event *event);
+typedef SDL_bool (SDLCALL *SDL_EventFilter)(void *userdata, SDL_Event *event);
 ```
 
 ## Function Parameters
@@ -22,9 +22,9 @@ typedef int (SDLCALL *SDL_EventFilter)(void *userdata, SDL_Event *event);
 
 ## Return Value
 
-Returns 1 to permit event to be added to the queue, and 0 to disallow it.
-When used with [SDL_AddEventWatch](SDL_AddEventWatch), the return value is
-ignored.
+Returns [SDL_TRUE](SDL_TRUE) to permit event to be added to the queue, and
+[SDL_FALSE](SDL_FALSE) to disallow it. When used with
+[SDL_AddEventWatch](SDL_AddEventWatch), the return value is ignored.
 
 ## Thread Safety
 

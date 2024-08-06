@@ -38,7 +38,8 @@ sparingly, and in small bursts. For example, you might want to track the
 mouse while the user is dragging something, until the user releases a mouse
 button. It is not recommended that you capture the mouse for long periods
 of time, such as the entire time your app is running. For that, you should
-probably use [SDL_SetRelativeMouseMode](SDL_SetRelativeMouseMode)() or
+probably use
+[SDL_SetWindowRelativeMouseMode](SDL_SetWindowRelativeMouseMode)() or
 [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)(), depending on your
 goals.
 

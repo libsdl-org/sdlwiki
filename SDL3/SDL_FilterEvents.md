@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_FilterEvents
 
-Run a specific filter function on the current event queue, removing any events for which the filter returns 0.
+Run a specific filter function on the current event queue, removing any events for which the filter returns [SDL_FALSE](SDL_FALSE).
 
 ## Header File
 
