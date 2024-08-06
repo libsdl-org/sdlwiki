@@ -10,23 +10,21 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char * SDL_GetKeyName(SDL_Keycode key);
+const char * SDL_GetKeyName(SDL_Keycode key, SDL_bool uppercase);
 ```
 
 ## Function Parameters
 
-|                            |         |                                                  |
-| -------------------------- | ------- | ------------------------------------------------ |
-| [SDL_Keycode](SDL_Keycode) | **key** | the desired [SDL_Keycode](SDL_Keycode) to query. |
+|                            |               |                                                                                                                                                                                          |
+| -------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Keycode](SDL_Keycode) | **key**       | the desired [SDL_Keycode](SDL_Keycode) to query.                                                                                                                                         |
+| [SDL_bool](SDL_bool)       | **uppercase** | [SDL_TRUE](SDL_TRUE) if the name should be the letter printed on the key on the keyboard, which is usually uppercase, or [SDL_FALSE](SDL_FALSE) to return the name of the key unchanged. |
 
 ## Return Value
 
 (const char *) Returns a UTF-8 encoded string of the key name.
 
 ## Remarks
-
-Both lowercase and uppercase alphabetic keycodes have uppercase names, e.g.
-[SDL_Keycode](SDL_Keycode) 'a' and 'A' both have the name "A".
 
 If the key doesn't have a name, this function returns an empty string ("").
 
