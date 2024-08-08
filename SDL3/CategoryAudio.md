@@ -83,6 +83,7 @@ scenarios.
 - [SDL_GetAudioDeviceGain](SDL_GetAudioDeviceGain)
 - [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
 - [SDL_GetAudioDriver](SDL_GetAudioDriver)
+- [SDL_GetAudioFormatName](SDL_GetAudioFormatName)
 - [SDL_GetAudioPlaybackDevices](SDL_GetAudioPlaybackDevices)
 - [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
 - [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
