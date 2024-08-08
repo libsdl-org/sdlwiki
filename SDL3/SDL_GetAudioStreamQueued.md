@@ -21,7 +21,8 @@ int SDL_GetAudioStreamQueued(SDL_AudioStream *stream);
 
 ## Return Value
 
-(int) Returns the number of bytes queued.
+(int) Returns the number of bytes queued or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
