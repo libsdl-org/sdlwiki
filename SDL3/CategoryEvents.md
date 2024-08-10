@@ -68,7 +68,6 @@ Event queue management.
 - [SDL_PenButtonEvent](SDL_PenButtonEvent)
 - [SDL_PenMotionEvent](SDL_PenMotionEvent)
 - [SDL_PenProximityEvent](SDL_PenProximityEvent)
-- [SDL_PenTipEvent](SDL_PenTipEvent)
 - [SDL_PenTouchEvent](SDL_PenTouchEvent)
 - [SDL_QuitEvent](SDL_QuitEvent)
 - [SDL_SensorEvent](SDL_SensorEvent)

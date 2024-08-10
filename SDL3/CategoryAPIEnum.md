@@ -49,7 +49,6 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 - [SDL_MouseWheelDirection](SDL_MouseWheelDirection)
 - [SDL_PenAxis](SDL_PenAxis)
-- [SDL_PenSubtype](SDL_PenSubtype)
 - [SDL_PixelFormat](SDL_PixelFormat)
 - [SDL_PowerState](SDL_PowerState)
 - [SDL_PropertyType](SDL_PropertyType)
