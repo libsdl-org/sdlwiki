@@ -109,6 +109,8 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_Mutex](SDL_Mutex)
 - [SDL_NSTimerCallback](SDL_NSTimerCallback)
 - [SDL_PenCapabilityFlags](SDL_PenCapabilityFlags)
+- [SDL_PenID](SDL_PenID)
+- [SDL_PenInputFlags](SDL_PenInputFlags)
 - [SDL_PropertiesID](SDL_PropertiesID)
 - [SDL_Renderer](SDL_Renderer)
 - [SDL_RWLock](SDL_RWLock)
