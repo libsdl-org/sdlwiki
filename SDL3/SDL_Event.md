@@ -42,9 +42,11 @@ typedef union SDL_Event
     SDL_QuitEvent quit;                     /**< Quit request event data */
     SDL_UserEvent user;                     /**< Custom event data */
     SDL_TouchFingerEvent tfinger;           /**< Touch finger event data */
-    SDL_PenTipEvent ptip;                   /**< Pen tip touching or leaving drawing surface */
-    SDL_PenMotionEvent pmotion;             /**< Pen change in position, pressure, or angle */
-    SDL_PenButtonEvent pbutton;             /**< Pen button press */
+    SDL_PenProximityEvent pproximity;       /**< Pen proximity event data */
+    SDL_PenTouchEvent ptouch;               /**< Pen tip touching event data */
+    SDL_PenMotionEvent pmotion;             /**< Pen motion event data */
+    SDL_PenButtonEvent pbutton;             /**< Pen button event data */
+    SDL_PenAxisEvent paxis;                 /**< Pen axis event data */
     SDL_DropEvent drop;                     /**< Drag and drop event data */
     SDL_ClipboardEvent clipboard;           /**< Clipboard event data */
 

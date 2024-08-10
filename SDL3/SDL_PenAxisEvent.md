@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_PenMotionEvent
+# SDL_PenAxisEvent
 
-Pressure-sensitive pen motion event structure (event.pmotion.*)
+Pressure-sensitive pen pressure / angle event structure (event.paxis.*)
 
 ## Header File
 
@@ -10,27 +10,25 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-typedef struct SDL_PenMotionEvent
+typedef struct SDL_PenAxisEvent
 {
-    SDL_EventType type; /**< SDL_EVENT_PEN_MOTION */
+    SDL_EventType type;     /**< SDL_EVENT_PEN_AXIS */
     Uint32 reserved;
-    Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
-    SDL_WindowID windowID; /**< The window with mouse focus, if any */
+    Uint64 timestamp;       /**< In nanoseconds, populated using SDL_GetTicksNS() */
+    SDL_WindowID windowID;  /**< The window with pen focus, if any */
     SDL_PenID which;        /**< The pen instance id */
     SDL_PenInputFlags pen_state;   /**< Complete pen input state at time of event */
     float x;                /**< X position of pen on tablet */
     float y;                /**< Y position of pen on tablet */
-} SDL_PenMotionEvent;
+    SDL_PenAxis axis;       /**< Axis that has changed */
+    float value;            /**< New value of axis */
+} SDL_PenAxisEvent;
 ```
 
 ## Remarks
 
-Depending on the hardware, you may get motion events when the pen is not
-touching a tablet, for tracking a pen even when it isn't drawing. You
-should listen for [SDL_EVENT_PEN_DOWN](SDL_EVENT_PEN_DOWN) and
-[SDL_EVENT_PEN_UP](SDL_EVENT_PEN_UP) events, or check `pen_state &
-SDL_PEN_INPUT_DOWN` to decide if a pen is "drawing" when dealing with pen
-motion.
+You might get some of these events even if the pen isn't touching the
+tablet.
 
 ## Version
 
