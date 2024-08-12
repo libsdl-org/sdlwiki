@@ -56,6 +56,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_GetPixelFormatDetails](SDL_GetPixelFormatDetails)
 - [SDL_GetRGBA](SDL_GetRGBA)
 - [SDL_MapRGB](SDL_MapRGB)
 - [SDL_MapSurfaceRGBA](SDL_MapSurfaceRGBA)
