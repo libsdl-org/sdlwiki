@@ -17,8 +17,7 @@ typedef Uint32 SDL_KeyboardID;
 
 If the keyboard is disconnected and reconnected, it will get a new ID.
 
-The ID value starts at 1 and increments from there. The value 0 is an
-invalid ID.
+The value 0 is an invalid ID.
 
 ## Version
 
