@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-int SDL_AppIterate(void *appstate);
+SDL_AppResult SDL_AppIterate(void *appstate);
 ```
 
 ## Function Parameters
@@ -21,9 +21,9 @@ int SDL_AppIterate(void *appstate);
 
 ## Return Value
 
-(int) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an
-error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
-[SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
+([SDL_AppResult](SDL_AppResult)) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE)
+to terminate with an error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate
+with success, [SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
 
 ## Remarks
 

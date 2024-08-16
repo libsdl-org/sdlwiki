@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-int SDL_AppEvent(void *appstate, const SDL_Event *event);
+SDL_AppResult SDL_AppEvent(void *appstate, const SDL_Event *event);
 ```
 
 ## Function Parameters
@@ -22,9 +22,9 @@ int SDL_AppEvent(void *appstate, const SDL_Event *event);
 
 ## Return Value
 
-(int) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an
-error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
-[SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
+([SDL_AppResult](SDL_AppResult)) Returns [SDL_APP_FAILURE](SDL_APP_FAILURE)
+to terminate with an error, [SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate
+with success, [SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
 
 ## Remarks
 
