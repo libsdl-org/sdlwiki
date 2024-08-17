@@ -32,7 +32,7 @@ This function is available since SDL 3.0.0.
 
 ```c
 extern void *my_callback_param;
-extern Uint32 SDLCALL my_callbackfunc(Uint32 interval, void *param);
+extern Uint32 SDLCALL my_callbackfunc(void *userdata, SDL_TimerID timerID, Uint32 interval);
 
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
 

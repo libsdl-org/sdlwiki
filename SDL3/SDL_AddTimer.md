@@ -60,7 +60,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-Uint32 my_callbackfunc_1(Uint32 interval, void *param) {
+Uint32 SDLCALL my_callbackfunc_1(void *userdata, SDL_TimerID timerID, Uint32 interval) {
     SDL_Event event;
     SDL_UserEvent userevent;
 
@@ -93,7 +93,7 @@ Note that it is possible to avoid the multithreading problems with SDL timers by
 void my_function(void *);
 
 /* with the same code as before: */
-Uint32 my_callbackfunc_2(Uint32 interval, void *param) {
+Uint32 SDLCALL my_callbackfunc_2(void *userdata, SDL_TimerID timerID, Uint32 interval) {
     SDL_Event event;
     SDL_UserEvent userevent;
 
@@ -104,7 +104,7 @@ Uint32 my_callbackfunc_2(Uint32 interval, void *param) {
     userevent.type = SDL_EVENT_USER;
     userevent.code = 0;
     userevent.data1 = &my_function;
-    userevent.data2 = param;
+    userevent.data2 = userdata;
 
     event.type = SDL_EVENT_USER;
     event.user = userevent;

@@ -52,12 +52,12 @@ extern void handle_error(void);
 #define VK_EXT_DEBUG_REPORT_EXTENSION_NAME "VK_EXT_debug_report"
 #endif
 
-int count_instance_extensions;
+Uint32 count_instance_extensions;
 const char * const *instance_extensions = SDL_Vulkan_GetInstanceExtensions(&count_instance_extensions);
 
 if (instance_extensions == NULL) { handle_error(); }
 
-Uint32 count_extensions = count_instance_extensions;
+int count_extensions = count_instance_extensions;
 const char **extensions = SDL_malloc(count_extensions * sizeof(const char *));
 extensions[0] = VK_EXT_DEBUG_REPORT_EXTENSION_NAME;
 SDL_memcpy(&extensions[1], instance_extensions, count_instance_extensions * sizeof(const char*)); 

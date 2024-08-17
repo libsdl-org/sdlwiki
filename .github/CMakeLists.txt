@@ -73,6 +73,21 @@ foreach(example_path IN LISTS example_paths)
     add_library(${target} OBJECT "${example_path}")
     target_compile_definitions(${target} PRIVATE __ANDROID__)
     target_link_libraries(${target} PRIVATE JNI::JNI)
+    if(MSVC)
+    else()
+        target_compile_options(${target} PRIVATE
+            "-Wall"
+            "-Werror"
+            "-Wno-error=main"
+            "-Wno-error=maybe-uninitialized"
+            "-Wno-error=uninitialized"
+            "-Wno-error=unused-but-set-variable"
+            "-Wno-error=unused-function"
+            "-Wno-error=unused-label"
+            "-Wno-error=unused-variable"
+            "-Wno-error=unused-const-variable"
+        )
+    endif()
 
     get_filename_component(sdl_project "${example_relative}" DIRECTORY)
     if(USE_FIND_PACKAGE)

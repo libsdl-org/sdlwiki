@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 ```c
 int count;
 SDL_AudioDeviceID *devices;
-devices = SDL_GetAudioOutputDevices(&count);
+devices = SDL_GetAudioPlaybackDevices(&count);
 
 for (int i = 0; i < count; ++i) {
     SDL_Log("Audio device %d: %s", i, SDL_GetAudioDeviceName(devices[i]));

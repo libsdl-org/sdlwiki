@@ -51,7 +51,7 @@ SDL_Semaphore *sem;
 // Increments the semaphore every 2s
 int poster_thread() {
   for (int i = 0; i < NB_WAITER; i++) {
-    SDL_PostSemaphore(sem);
+    SDL_SignalSemaphore(sem);
     SDL_Delay(2 * 1000);
   }
   return 0;
