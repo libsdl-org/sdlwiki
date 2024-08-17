@@ -20,10 +20,6 @@ typedef enum SDL_AppResult
 
 ## Remarks
 
-See
-https://wiki.libsdl.org/SDL3/README/main-functions#main-callbacks-in-sdl3
-for details.
-
 Returning [SDL_APP_SUCCESS](SDL_APP_SUCCESS) or
 [SDL_APP_FAILURE](SDL_APP_FAILURE) from [SDL_AppInit](SDL_AppInit),
 [SDL_AppEvent](SDL_AppEvent), or [SDL_AppIterate](SDL_AppIterate) will
@@ -35,6 +31,10 @@ there was an error generally or not.
 
 Returning [SDL_APP_CONTINUE](SDL_APP_CONTINUE) from these functions will
 let the app continue to run.
+
+See
+[Main callbacks in SDL3](https://wiki.libsdl.org/SDL3/README/main-functions#main-callbacks-in-sdl3)
+for complete details.
 
 ## Version
 
