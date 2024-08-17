@@ -56,8 +56,8 @@ glClearColor(0,0,0,1);
 glClear(GL_COLOR_BUFFER_BIT);
 SDL_GL_SwapWindow(window);
 
-// Once finished with OpenGL functions, the SDL_GLContext can be deleted.
-SDL_GL_DeleteContext(glcontext);  
+// Once finished with OpenGL functions, the SDL_GLContext can be destroyed.
+SDL_GL_DestroyContext(glcontext);  
 ```
 
 ## See Also
