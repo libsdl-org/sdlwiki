@@ -31,16 +31,16 @@ This function is available since SDL 3.0.0.
 static int ticks = 0;
 
 static Uint32 SDLCALL
-ticktock(Uint32 interval, void *param)
+ticktock(void *userdata, SDL_TimerID timerID, Uint32 interval)
 {
     ++ticks;
-    return (interval);
+    return interval;
 }
 
 static Uint32 SDLCALL
-callback(Uint32 interval, void *param)
+callback(void *userdata, SDL_TimerID timerID, Uint32 interval)
 {
-    SDL_Log("Timer %d : param = %d", interval, (int) (uintptr_t) param);
+    SDL_Log("Timer %" SDL_PRIs32 "  interval=%" SDL_PRIs32 " userdata=%p", timerID, interval, userdata);
     return interval;
 }
 
@@ -109,12 +109,12 @@ main(int argc, char *argv[])
 
     start = SDL_GetPerformanceCounter();
     for (i = 0; i < 1000000; ++i) {
-        ticktock(0, NULL);
+        ticktock(NULL, 0, 0);
     }
     now = SDL_GetPerformanceCounter();
     SDL_Log("1 million iterations of ticktock took %f ms", (double)((now - start)*1000) / SDL_GetPerformanceFrequency());
 
-    SDL_Log("Performance counter frequency: %" SDL_PRIu64, (unsigned long long) SDL_GetPerformanceFrequency());
+    SDL_Log("Performance counter frequency: %" SDL_PRIu64, SDL_GetPerformanceFrequency());
     start32 = SDL_GetTicks();
     start = SDL_GetPerformanceCounter();
     SDL_Delay(1000);

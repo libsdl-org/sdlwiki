@@ -56,7 +56,7 @@ sem = SDL_CreateSemaphore(0);
 Thread_A:
     while (!SDL_AtomicGet(&done)) {
         add_data_to_queue();
-        SDL_PostSemaphore(sem);
+        SDL_SignalSemaphore(sem);
     }
 Thread_B:
     const Uint32 timeout = 1000; /* wake up every second */
@@ -68,7 +68,7 @@ Thread_B:
     }
 
 SDL_AtomicSet(&done, 1);
-SDL_PostSemaphore(sem);
+SDL_SignalSemaphore(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);
 

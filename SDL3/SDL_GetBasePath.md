@@ -58,10 +58,10 @@ This function is available since SDL 3.0.0.
 
 ```c
 
-char *data_path = NULL;
+const char *data_path = NULL;
 
 void InitializeDataPath(void) {
-    char *base_path = SDL_GetBasePath();
+    const char *base_path = SDL_GetBasePath();
     if (base_path) {
         data_path = base_path;
     } else {

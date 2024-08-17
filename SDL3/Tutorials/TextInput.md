@@ -47,7 +47,7 @@ extern SDL_Window *InitVideo();
 extern void Redraw(SDL_Window *window);
 
 extern char *text;
-extern char *composition;
+extern const char *composition;
 extern Sint32 cursor;
 extern Sint32 selection_len;
 

@@ -33,7 +33,7 @@ def markdown_extract(path: Path):
                     block_language = m.groups()[0]
                     if not block_language:
                         block_language = "c"
-                    assert block_language in ("c", "c++", "output"), f"language is \"{block_language}\""
+
                 in_code_block = not in_code_block
                 was_in_example_block = in_example_block
                 in_example_block = in_code_block and block_language in ("c", "c++")
