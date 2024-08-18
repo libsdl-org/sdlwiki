@@ -57,7 +57,7 @@ const char * const *instance_extensions = SDL_Vulkan_GetInstanceExtensions(&coun
 
 if (instance_extensions == NULL) { handle_error(); }
 
-int count_extensions = count_instance_extensions;
+int count_extensions = count_instance_extensions + 1;
 const char **extensions = SDL_malloc(count_extensions * sizeof(const char *));
 extensions[0] = VK_EXT_DEBUG_REPORT_EXTENSION_NAME;
 SDL_memcpy(&extensions[1], instance_extensions, count_instance_extensions * sizeof(const char*)); 
