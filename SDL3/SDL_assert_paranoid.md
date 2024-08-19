@@ -41,9 +41,6 @@ to set this to "break" so that your debugger takes control as soon as
 assert is triggered, instead of risking a bad UI interaction (deadlock,
 etc) in the application.
 
-Note that [SDL_ASSERT](SDL_ASSERT) is an _environment variable_ and not an
-SDL hint! Please refer to your platform's documentation for how to set it!
-
 ## Version
 
 This macro is available since SDL 3.0.0.
