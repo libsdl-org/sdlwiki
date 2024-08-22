@@ -22,7 +22,7 @@ int SDL_SetAudioStreamGain(SDL_AudioStream *stream, float gain);
 
 ## Return Value
 
-(int) Returns 0 on successor a negative error code on failure; call
+(int) Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
