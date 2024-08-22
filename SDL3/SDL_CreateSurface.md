@@ -27,6 +27,10 @@ SDL_Surface * SDL_CreateSurface(int width, int height, SDL_PixelFormat format);
 structure that is created or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The pixels of the new surface are initialized to zero.
+
 ## Version
 
 This function is available since SDL 3.0.0.
