@@ -17,8 +17,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 The variable can be set to the following values:
 
-- "0": GameInput is not used.
-- "1": GameInput is used. (default)
+- "0": GameInput is not used. (default)
+- "1": GameInput is used.
 
 This hint should be set before SDL is initialized.
 
