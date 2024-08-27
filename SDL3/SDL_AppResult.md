@@ -12,9 +12,9 @@ Defined in [<SDL3/SDL_init.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ```c
 typedef enum SDL_AppResult
 {
-    SDL_APP_CONTINUE,   /** Value that requests that the app continue from the main callbacks. */
-    SDL_APP_SUCCESS,    /** Value that requests termination with success from the main callbacks. */
-    SDL_APP_FAILURE     /** Value that requests termination with error from the main callbacks. */
+    SDL_APP_CONTINUE,   /**< Value that requests that the app continue from the main callbacks. */
+    SDL_APP_SUCCESS,    /**< Value that requests termination with success from the main callbacks. */
+    SDL_APP_FAILURE     /**< Value that requests termination with error from the main callbacks. */
 } SDL_AppResult;
 ```
 
