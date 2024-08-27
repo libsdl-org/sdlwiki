@@ -22,8 +22,8 @@ int SDL_GetDaysInMonth(int year, int month);
 
 ## Return Value
 
-(int) Returns the number of days in the requested month or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of days in the requested month or -1 on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

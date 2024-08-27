@@ -21,9 +21,8 @@ int SDL_GetAudioStreamAvailable(SDL_AudioStream *stream);
 
 ## Return Value
 
-(int) Returns the number of converted/resampled bytes available or a
-negative error code on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(int) Returns the number of converted/resampled bytes available or -1 on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

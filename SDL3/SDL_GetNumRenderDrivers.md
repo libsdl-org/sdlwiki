@@ -15,8 +15,7 @@ int SDL_GetNumRenderDrivers(void);
 
 ## Return Value
 
-(int) Returns a number >= 0 on success or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of built in render drivers.
 
 ## Remarks
 

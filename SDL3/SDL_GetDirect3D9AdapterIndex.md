@@ -21,8 +21,8 @@ int SDL_GetDirect3D9AdapterIndex(SDL_DisplayID displayID);
 
 ## Return Value
 
-(int) Returns the D3D9 adapter index on success or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the D3D9 adapter index on success or -1 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

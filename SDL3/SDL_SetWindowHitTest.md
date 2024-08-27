@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_SetWindowHitTest(SDL_Window *window, SDL_HitTest callback, void *callback_data);
+SDL_bool SDL_SetWindowHitTest(SDL_Window *window, SDL_HitTest callback, void *callback_data);
 ```
 
 ## Function Parameters
@@ -23,8 +23,9 @@ int SDL_SetWindowHitTest(SDL_Window *window, SDL_HitTest callback, void *callbac
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 
@@ -46,8 +47,9 @@ resizing the window and not deliver it to the application.
 Specifying NULL for a callback disables hit-testing. Hit-testing is
 disabled by default.
 
-Platforms that don't support this functionality will return -1
-unconditionally, even if you're attempting to disable hit-testing.
+Platforms that don't support this functionality will return
+[SDL_FALSE](SDL_FALSE) unconditionally, even if you're attempting to
+disable hit-testing.
 
 Your callback may fire at any time, and its firing does not indicate any
 specific behavior (for example, on Windows, this certainly might fire when

@@ -25,8 +25,8 @@ int SDL_PeepEvents(SDL_Event *events, int numevents, SDL_EventAction action, Uin
 
 ## Return Value
 
-(int) Returns the number of events actually stored or a negative error code
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of events actually stored or -1 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

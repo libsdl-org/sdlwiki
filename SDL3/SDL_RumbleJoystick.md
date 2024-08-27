@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-int SDL_RumbleJoystick(SDL_Joystick *joystick, Uint16 low_frequency_rumble, Uint16 high_frequency_rumble, Uint32 duration_ms);
+SDL_bool SDL_RumbleJoystick(SDL_Joystick *joystick, Uint16 low_frequency_rumble, Uint16 high_frequency_rumble, Uint32 duration_ms);
 ```
 
 ## Function Parameters
@@ -24,7 +24,8 @@ int SDL_RumbleJoystick(SDL_Joystick *joystick, Uint16 low_frequency_rumble, Uint
 
 ## Return Value
 
-(int) Returns 0, or -1 if rumble isn't supported on this joystick.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE), or
+[SDL_FALSE](SDL_FALSE) if rumble isn't supported on this joystick.
 
 ## Remarks
 

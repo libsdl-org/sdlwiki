@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_RumbleGamepad(SDL_Gamepad *gamepad, Uint16 low_frequency_rumble, Uint16 high_frequency_rumble, Uint32 duration_ms);
+SDL_bool SDL_RumbleGamepad(SDL_Gamepad *gamepad, Uint16 low_frequency_rumble, Uint16 high_frequency_rumble, Uint32 duration_ms);
 ```
 
 ## Function Parameters
@@ -24,7 +24,9 @@ int SDL_RumbleGamepad(SDL_Gamepad *gamepad, Uint16 low_frequency_rumble, Uint16 
 
 ## Return Value
 
-(int) Returns 0, or -1 if rumble isn't supported on this gamepad.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

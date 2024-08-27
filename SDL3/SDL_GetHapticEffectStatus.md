@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
+SDL_bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
 ```
 
 ## Function Parameters
@@ -22,9 +22,9 @@ int SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
 
 ## Return Value
 
-(int) Returns 0 if it isn't playing, 1 if it is playing, or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if it is playing,
+[SDL_FALSE](SDL_FALSE) if it isn't playing or haptic status isn't
+supported.
 
 ## Remarks
 
@@ -33,6 +33,10 @@ Device must support the [SDL_HAPTIC_STATUS](SDL_HAPTIC_STATUS) feature.
 ## Version
 
 This function is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_GetHapticFeatures](SDL_GetHapticFeatures)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

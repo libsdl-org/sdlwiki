@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-int SDL_GetPathInfo(const char *path, SDL_PathInfo *info);
+SDL_bool SDL_GetPathInfo(const char *path, SDL_PathInfo *info);
 ```
 
 ## Function Parameters
@@ -22,9 +22,9 @@ int SDL_GetPathInfo(const char *path, SDL_PathInfo *info);
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code if the file doesn't
-exist, or another failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) if the file doesn't exist, or another failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

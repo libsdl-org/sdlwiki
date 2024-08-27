@@ -24,8 +24,7 @@ int SDL_GetDayOfWeek(int year, int month, int day);
 ## Return Value
 
 (int) Returns a value between 0 and 6 (0 being Sunday) if the date is valid
-or a negative error code on failure; call [SDL_GetError](SDL_GetError)()
-for more information.
+or -1 on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_SignalCondition(SDL_Condition *cond);
+void SDL_SignalCondition(SDL_Condition *cond);
 ```
 
 ## Function Parameters
@@ -18,11 +18,6 @@ int SDL_SignalCondition(SDL_Condition *cond);
 |                                  |          |                                   |
 | -------------------------------- | -------- | --------------------------------- |
 | [SDL_Condition](SDL_Condition) * | **cond** | the condition variable to signal. |
-
-## Return Value
-
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

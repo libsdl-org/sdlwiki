@@ -57,9 +57,10 @@ typedef struct SDL_IOStreamInterface
      *  The SDL_IOStream is still destroyed even if this fails, so clean up anything
      *  even if flushing to disk returns an error.
      *
-     *  \return 0 if successful or -1 on write error when flushing data.
+     *  \return SDL_TRUE if successful or SDL_FALSE on write error when flushing data.
      */
-    int (SDLCALL *close)(void *userdata);
+    SDL_bool (SDLCALL *close)(void *userdata);
+
 } SDL_IOStreamInterface;
 ```
 

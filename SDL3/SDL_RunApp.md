@@ -24,7 +24,7 @@ int SDL_RunApp(int argc, char *argv[], SDL_main_func mainFunction, void *reserve
 
 ## Return Value
 
-(int) Returns the return value from mainFunction: 0 on success, -1 on
+(int) Returns the return value from mainFunction: 0 on success, otherwise
 failure; [SDL_GetError](SDL_GetError)() might have more information on the
 failure.
 

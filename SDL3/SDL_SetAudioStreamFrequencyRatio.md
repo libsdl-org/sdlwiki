@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_SetAudioStreamFrequencyRatio(SDL_AudioStream *stream, float ratio);
+SDL_bool SDL_SetAudioStreamFrequencyRatio(SDL_AudioStream *stream, float ratio);
 ```
 
 ## Function Parameters
@@ -22,8 +22,9 @@ int SDL_SetAudioStreamFrequencyRatio(SDL_AudioStream *stream, float ratio);
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

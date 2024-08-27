@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_PushEvent(SDL_Event *event);
+SDL_bool SDL_PushEvent(SDL_Event *event);
 ```
 
 ## Function Parameters
@@ -21,9 +21,10 @@ int SDL_PushEvent(SDL_Event *event);
 
 ## Return Value
 
-(int) Returns 1 on success, 0 if the event was filtered, or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
-information. A common reason for error is the event queue being full.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success,
+[SDL_FALSE](SDL_FALSE) if the event was filtered or on failure; call
+[SDL_GetError](SDL_GetError)() for more information. A common reason for
+error is the event queue being full.
 
 ## Remarks
 

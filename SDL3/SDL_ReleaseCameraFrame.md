@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
+void SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
 ```
 
 ## Function Parameters
@@ -19,11 +19,6 @@ int SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
 | ---------------------------- | ---------- | ----------------------------------- |
 | [SDL_Camera](SDL_Camera) *   | **camera** | opened camera device.               |
 | [SDL_Surface](SDL_Surface) * | **frame**  | the video frame surface to release. |
-
-## Return Value
-
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

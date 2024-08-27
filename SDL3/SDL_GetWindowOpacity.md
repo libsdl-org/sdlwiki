@@ -21,9 +21,8 @@ float SDL_GetWindowOpacity(SDL_Window *window);
 
 ## Return Value
 
-(float) Returns the opacity, (0.0f - transparent, 1.0f - opaque), or a
-negative error code on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(float) Returns the opacity, (0.0f - transparent, 1.0f - opaque), or -1.0f
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_FALSE 0
+#define SDL_FALSE false
 ```
 
 ## Version

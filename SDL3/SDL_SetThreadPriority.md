@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetThreadPriority(SDL_ThreadPriority priority);
+SDL_bool SDL_SetThreadPriority(SDL_ThreadPriority priority);
 ```
 
 ## Function Parameters
@@ -21,8 +21,9 @@ int SDL_SetThreadPriority(SDL_ThreadPriority priority);
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

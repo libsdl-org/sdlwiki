@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *length);
+SDL_bool SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *length);
 ```
 
 ## Function Parameters
@@ -23,8 +23,9 @@ int SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *lengt
 
 ## Return Value
 
-(int) Returns 0 if the file could be queried or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the file could be
+queried or [SDL_FALSE](SDL_FALSE) on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

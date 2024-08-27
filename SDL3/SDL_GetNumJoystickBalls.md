@@ -21,8 +21,8 @@ int SDL_GetNumJoystickBalls(SDL_Joystick *joystick);
 
 ## Return Value
 
-(int) Returns the number of trackballs on success or a negative error code
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of trackballs on success or -1 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

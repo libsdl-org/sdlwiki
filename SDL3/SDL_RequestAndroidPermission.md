@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_RequestAndroidPermission(const char *permission, SDL_RequestAndroidPermissionCallback cb, void *userdata);
+SDL_bool SDL_RequestAndroidPermission(const char *permission, SDL_RequestAndroidPermissionCallback cb, void *userdata);
 ```
 
 ## Function Parameters
@@ -23,9 +23,10 @@ int SDL_RequestAndroidPermission(const char *permission, SDL_RequestAndroidPermi
 
 ## Return Value
 
-(int) Returns zero if the request was submitted, -1 if there was an error
-submitting. The result of the request is only ever reported through the
-callback, not this return value.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the request was
+submitted, [SDL_FALSE](SDL_FALSE) if there was an error submitting. The
+result of the request is only ever reported through the callback, not this
+return value.
 
 ## Remarks
 

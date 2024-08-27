@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_TryLockRWLockForWriting(SDL_RWLock *rwlock);
+SDL_bool SDL_TryLockRWLockForWriting(SDL_RWLock *rwlock);
 ```
 
 ## Function Parameters
@@ -21,14 +21,15 @@ int SDL_TryLockRWLockForWriting(SDL_RWLock *rwlock);
 
 ## Return Value
 
-(int) Returns 0 or [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT).
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success,
+[SDL_FALSE](SDL_FALSE) if the lock would block.
 
 ## Remarks
 
 This works just like
 [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)(), but if the rwlock
-is not available, this function returns
-[`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT) immediately.
+is not available, then this function returns [SDL_FALSE](SDL_FALSE)
+immediately.
 
 This technique is useful if you need exclusive access to a resource but
 don't want to wait for it, and will return to it to try again later.
@@ -41,10 +42,7 @@ It is illegal to request a write lock from a thread that already holds a
 read-only lock. Doing so results in undefined behavior. Unlock the
 read-only lock before requesting a write lock.
 
-This function does not fail; if rwlock is NULL, it will return 0
-immediately having locked nothing. If rwlock is valid, this function will
-always either lock the rwlock and return 0, or return
-[SDL_RWLOCK_TIMEOUT](SDL_RWLOCK_TIMEOUT) and lock nothing.
+This function returns [SDL_TRUE](SDL_TRUE) if passed a NULL rwlock.
 
 ## Version
 

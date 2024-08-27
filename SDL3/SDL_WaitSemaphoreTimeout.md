@@ -10,29 +10,26 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_WaitSemaphoreTimeout(SDL_Semaphore *sem, Sint32 timeoutMS);
+SDL_bool SDL_WaitSemaphoreTimeout(SDL_Semaphore *sem, Sint32 timeoutMS);
 ```
 
 ## Function Parameters
 
-|                                  |               |                                             |
-| -------------------------------- | ------------- | ------------------------------------------- |
-| [SDL_Semaphore](SDL_Semaphore) * | **sem**       | the semaphore to wait on.                   |
-| Sint32                           | **timeoutMS** | the length of the timeout, in milliseconds. |
+|                                  |               |                                                                         |
+| -------------------------------- | ------------- | ----------------------------------------------------------------------- |
+| [SDL_Semaphore](SDL_Semaphore) * | **sem**       | the semaphore to wait on.                                               |
+| Sint32                           | **timeoutMS** | the length of the timeout, in milliseconds, or -1 to wait indefinitely. |
 
 ## Return Value
 
-(int) Returns 0 if the wait succeeds,
-[`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the wait does not succeed in
-the allotted time, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the wait succeeds or
+[SDL_FALSE](SDL_FALSE) if the wait times out.
 
 ## Remarks
 
 This function suspends the calling thread until either the semaphore
-pointed to by `sem` has a positive value, the call is interrupted by a
-signal or error, or the specified time has elapsed. If the call is
-successful it will atomically decrement the semaphore value.
+pointed to by `sem` has a positive value or the specified time has elapsed.
+If the call is successful it will atomically decrement the semaphore value.
 
 ## Version
 

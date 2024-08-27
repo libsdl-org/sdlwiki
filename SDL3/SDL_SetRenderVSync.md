@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
+SDL_bool SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 
 
 #define SDL_RENDERER_VSYNC_DISABLED 0
@@ -26,8 +26,9 @@ int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

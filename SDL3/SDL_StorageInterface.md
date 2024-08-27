@@ -13,34 +13,34 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 typedef struct SDL_StorageInterface
 {
     /* Called when the storage is closed */
-    int (SDLCALL *close)(void *userdata);
+    SDL_bool (SDLCALL *close)(void *userdata);
 
     /* Optional, returns whether the storage is currently ready for access */
     SDL_bool (SDLCALL *ready)(void *userdata);
 
     /* Enumerate a directory, optional for write-only storage */
-    int (SDLCALL *enumerate)(void *userdata, const char *path, SDL_EnumerateDirectoryCallback callback, void *callback_userdata);
+    SDL_bool (SDLCALL *enumerate)(void *userdata, const char *path, SDL_EnumerateDirectoryCallback callback, void *callback_userdata);
 
     /* Get path information, optional for write-only storage */
-    int (SDLCALL *info)(void *userdata, const char *path, SDL_PathInfo *info);
+    SDL_bool (SDLCALL *info)(void *userdata, const char *path, SDL_PathInfo *info);
 
     /* Read a file from storage, optional for write-only storage */
-    int (SDLCALL *read_file)(void *userdata, const char *path, void *destination, Uint64 length);
+    SDL_bool (SDLCALL *read_file)(void *userdata, const char *path, void *destination, Uint64 length);
 
     /* Write a file to storage, optional for read-only storage */
-    int (SDLCALL *write_file)(void *userdata, const char *path, const void *source, Uint64 length);
+    SDL_bool (SDLCALL *write_file)(void *userdata, const char *path, const void *source, Uint64 length);
 
     /* Create a directory, optional for read-only storage */
-    int (SDLCALL *mkdir)(void *userdata, const char *path);
+    SDL_bool (SDLCALL *mkdir)(void *userdata, const char *path);
 
     /* Remove a file or empty directory, optional for read-only storage */
-    int (SDLCALL *remove)(void *userdata, const char *path);
+    SDL_bool (SDLCALL *remove)(void *userdata, const char *path);
 
     /* Rename a path, optional for read-only storage */
-    int (SDLCALL *rename)(void *userdata, const char *oldpath, const char *newpath);
+    SDL_bool (SDLCALL *rename)(void *userdata, const char *oldpath, const char *newpath);
 
     /* Copy a file, optional for read-only storage */
-    int (SDLCALL *copy)(void *userdata, const char *oldpath, const char *newpath);
+    SDL_bool (SDLCALL *copy)(void *userdata, const char *oldpath, const char *newpath);
 
     /* Get the space remaining, optional for read-only storage */
     Uint64 (SDLCALL *space_remaining)(void *userdata);

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_GL_SetSwapInterval(int interval);
+SDL_bool SDL_GL_SetSwapInterval(int interval);
 ```
 
 ## Function Parameters
@@ -21,8 +21,9 @@ int SDL_GL_SetSwapInterval(int interval);
 
 ## Return Value
 
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
+[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 
@@ -31,8 +32,8 @@ vsync. Adaptive vsync works the same as vsync, but if you've already missed
 the vertical retrace for a given frame, it swaps buffers immediately, which
 might be less jarring for the user during occasional framerate drops. If an
 application requests adaptive vsync and the system does not support it,
-this function will fail and return -1. In such a case, you should probably
-retry the call with 1 for the interval.
+this function will fail and return [SDL_FALSE](SDL_FALSE). In such a case,
+you should probably retry the call with 1 for the interval.
 
 Adaptive vsync is implemented for some glX drivers with
 GLX_EXT_swap_control_tear, and for some Windows drivers with

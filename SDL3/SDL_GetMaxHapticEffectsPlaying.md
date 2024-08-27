@@ -22,8 +22,8 @@ int SDL_GetMaxHapticEffectsPlaying(SDL_Haptic *haptic);
 ## Return Value
 
 (int) Returns the number of effects the haptic device can play at the same
-time or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+time or -1 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

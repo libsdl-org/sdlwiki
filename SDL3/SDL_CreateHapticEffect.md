@@ -22,8 +22,8 @@ int SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 
 ## Return Value
 
-(int) Returns the ID of the effect on success or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the ID of the effect on success or -1 on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

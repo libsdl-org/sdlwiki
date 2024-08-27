@@ -10,10 +10,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint * points,
-                        int count,
-                        const SDL_FRect * clip,
-                        SDL_FRect * result);
+SDL_bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint *points, int count, const SDL_FRect *clip, SDL_FRect *result);
 ```
 
 ## Function Parameters

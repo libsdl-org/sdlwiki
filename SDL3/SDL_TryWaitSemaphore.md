@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_TryWaitSemaphore(SDL_Semaphore *sem);
+SDL_bool SDL_TryWaitSemaphore(SDL_Semaphore *sem);
 ```
 
 ## Function Parameters
@@ -21,17 +21,15 @@ int SDL_TryWaitSemaphore(SDL_Semaphore *sem);
 
 ## Return Value
 
-(int) Returns 0 if the wait succeeds,
-[`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the wait would block, or a
-negative error code on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the wait succeeds,
+[SDL_FALSE](SDL_FALSE) if the wait would block.
 
 ## Remarks
 
 This function checks to see if the semaphore pointed to by `sem` has a
 positive value and atomically decrements the semaphore value if it does. If
 the semaphore doesn't have a positive value, the function immediately
-returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
+returns [SDL_FALSE](SDL_FALSE).
 
 ## Version
 

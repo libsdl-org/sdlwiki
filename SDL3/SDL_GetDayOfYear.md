@@ -23,9 +23,8 @@ int SDL_GetDayOfYear(int year, int month, int day);
 
 ## Return Value
 
-(int) Returns the day of year [0-365] if the date is valid or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+(int) Returns the day of year [0-365] if the date is valid or -1 on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

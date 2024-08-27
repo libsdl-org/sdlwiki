@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_WaitCondition(SDL_Condition *cond, SDL_Mutex *mutex);
+void SDL_WaitCondition(SDL_Condition *cond, SDL_Mutex *mutex);
 ```
 
 ## Function Parameters
@@ -19,11 +19,6 @@ int SDL_WaitCondition(SDL_Condition *cond, SDL_Mutex *mutex);
 | -------------------------------- | --------- | ------------------------------------------- |
 | [SDL_Condition](SDL_Condition) * | **cond**  | the condition variable to wait on.          |
 | [SDL_Mutex](SDL_Mutex) *         | **mutex** | the mutex used to coordinate thread access. |
-
-## Return Value
-
-(int) Returns 0 when it is signaled or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

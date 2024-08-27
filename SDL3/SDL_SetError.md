@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_error.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_SetError(const char *fmt, ...);
+SDL_bool SDL_SetError(const char *fmt, ...);
 ```
 
 ## Function Parameters
@@ -22,7 +22,7 @@ int SDL_SetError(const char *fmt, ...);
 
 ## Return Value
 
-(int) Returns -1.
+([SDL_bool](SDL_bool)) Returns [SDL_FALSE](SDL_FALSE).
 
 ## Remarks
 

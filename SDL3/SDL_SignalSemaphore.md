@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_SignalSemaphore(SDL_Semaphore *sem);
+void SDL_SignalSemaphore(SDL_Semaphore *sem);
 ```
 
 ## Function Parameters
@@ -18,11 +18,6 @@ int SDL_SignalSemaphore(SDL_Semaphore *sem);
 |                                  |         |                             |
 | -------------------------------- | ------- | --------------------------- |
 | [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore to increment. |
-
-## Return Value
-
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

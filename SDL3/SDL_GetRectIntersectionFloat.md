@@ -10,9 +10,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_bool SDL_GetRectIntersectionFloat(const SDL_FRect * A,
-                        const SDL_FRect * B,
-                        SDL_FRect * result);
+SDL_bool SDL_GetRectIntersectionFloat(const SDL_FRect *A, const SDL_FRect *B, SDL_FRect *result);
 ```
 
 ## Function Parameters

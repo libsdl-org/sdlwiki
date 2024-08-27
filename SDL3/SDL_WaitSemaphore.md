@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-int SDL_WaitSemaphore(SDL_Semaphore *sem);
+void SDL_WaitSemaphore(SDL_Semaphore *sem);
 ```
 
 ## Function Parameters
@@ -19,17 +19,11 @@ int SDL_WaitSemaphore(SDL_Semaphore *sem);
 | -------------------------------- | ------- | ---------------------- |
 | [SDL_Semaphore](SDL_Semaphore) * | **sem** | the semaphore wait on. |
 
-## Return Value
-
-(int) Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
-
 ## Remarks
 
-This function suspends the calling thread until either the semaphore
-pointed to by `sem` has a positive value or the call is interrupted by a
-signal or error. If the call is successful it will atomically decrement the
-semaphore value.
+This function suspends the calling thread until the semaphore pointed to by
+`sem` has a positive value, and then atomically decrement the semaphore
+value.
 
 This function is the equivalent of calling
 [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)() with a time length

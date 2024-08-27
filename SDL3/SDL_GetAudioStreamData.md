@@ -23,8 +23,8 @@ int SDL_GetAudioStreamData(SDL_AudioStream *stream, void *buf, int len);
 
 ## Return Value
 
-(int) Returns the number of bytes read from the stream or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of bytes read from the stream or -1 on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -29,15 +29,15 @@ Simple rumble example:
        SDL_free(haptics);
    }
    if (haptic == NULL)
-      return -1;
+      return;
 
    // Initialize simple rumble
-   if (SDL_InitHapticRumble(haptic) != 0)
-      return -1;
+   if (!SDL_InitHapticRumble(haptic))
+      return;
 
    // Play effect at 50% strength for 2 seconds
-   if (SDL_PlayHapticRumble(haptic, 0.5, 2000) != 0)
-      return -1;
+   if (!SDL_PlayHapticRumble(haptic, 0.5, 2000))
+      return;
    SDL_Delay(2000);
 
    // Clean up
@@ -47,7 +47,7 @@ Simple rumble example:
 Complete example:
 
 ```c
-int test_haptic(SDL_Joystick *joystick)
+SDL_bool test_haptic(SDL_Joystick *joystick)
 {
    SDL_Haptic *haptic;
    SDL_HapticEffect effect;
@@ -55,12 +55,12 @@ int test_haptic(SDL_Joystick *joystick)
 
    // Open the device
    haptic = SDL_OpenHapticFromJoystick(joystick);
-   if (haptic == NULL) return -1; // Most likely joystick isn't haptic
+   if (haptic == NULL) return SDL_FALSE; // Most likely joystick isn't haptic
 
    // See if it can do sine waves
    if ((SDL_GetHapticFeatures(haptic) & SDL_HAPTIC_SINE)==0) {
       SDL_CloseHaptic(haptic); // No sine effect
-      return -1;
+      return SDL_FALSE;
    }
 
    // Create the effect
@@ -87,7 +87,7 @@ int test_haptic(SDL_Joystick *joystick)
    // Close the device
    SDL_CloseHaptic(haptic);
 
-   return 0; // Success
+   return SDL_TRUE; // Success
 }
 ```
 

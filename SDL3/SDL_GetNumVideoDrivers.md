@@ -15,8 +15,7 @@ int SDL_GetNumVideoDrivers(void);
 
 ## Return Value
 
-(int) Returns a number >= 1 on success or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+(int) Returns the number of built in video drivers.
 
 ## Version
 
