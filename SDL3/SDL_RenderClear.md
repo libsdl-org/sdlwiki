@@ -47,7 +47,7 @@ int main(int argc, char* argv[])
         SDL_Renderer* renderer;
 
         /* Initialize SDL. */
-        if (SDL_Init(SDL_INIT_VIDEO) < 0)
+        if (!SDL_Init(SDL_INIT_VIDEO))
                 return 1;
 
         /* Create the window where we will draw. */
