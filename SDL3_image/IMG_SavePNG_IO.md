@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-int IMG_SavePNG_IO(SDL_Surface *surface, SDL_IOStream *dst, int closeio);
+SDL_bool IMG_SavePNG_IO(SDL_Surface *surface, SDL_IOStream *dst, int closeio);
 ```
 
 ## Function Parameters
@@ -23,7 +23,7 @@ int IMG_SavePNG_IO(SDL_Surface *surface, SDL_IOStream *dst, int closeio);
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error.
+(SDL_bool) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

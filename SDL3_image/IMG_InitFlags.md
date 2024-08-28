@@ -10,17 +10,17 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-typedef enum IMG_InitFlags
-{
-    IMG_INIT_JPG    = 0x00000001,
-    IMG_INIT_PNG    = 0x00000002,
-    IMG_INIT_TIF    = 0x00000004,
-    IMG_INIT_WEBP   = 0x00000008,
-    IMG_INIT_JXL    = 0x00000010,
-    IMG_INIT_AVIF   = 0x00000020
-} IMG_InitFlags;
+typedef Uint32 IMG_InitFlags;
+
+#define IMG_INIT_JPG    0x00000001
+#define IMG_INIT_PNG    0x00000002
+#define IMG_INIT_TIF    0x00000004
+#define IMG_INIT_WEBP   0x00000008
+#define IMG_INIT_JXL    0x00000010
+#define IMG_INIT_AVIF   0x00000020
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
+
 

@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-int IMG_isJXL(SDL_IOStream *src);
+SDL_bool IMG_isJXL(SDL_IOStream *src);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ int IMG_isJXL(SDL_IOStream *src);
 
 ## Return Value
 
-(int) Returns non-zero if this is JXL data, zero otherwise.
+(SDL_bool) Returns non-zero if this is JXL data, zero otherwise.
 
 ## Remarks
 

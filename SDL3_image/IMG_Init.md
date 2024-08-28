@@ -10,18 +10,18 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-int IMG_Init(int flags);
+IMG_InitFlags IMG_Init(IMG_InitFlags flags);
 ```
 
 ## Function Parameters
 
-|     |           |                                      |
-| --- | --------- | ------------------------------------ |
-| int | **flags** | initialization flags, OR'd together. |
+|                                |           |                                      |
+| ------------------------------ | --------- | ------------------------------------ |
+| [IMG_InitFlags](IMG_InitFlags) | **flags** | initialization flags, OR'd together. |
 
 ## Return Value
 
-(int) Returns all currently initialized flags.
+([IMG_InitFlags](IMG_InitFlags)) Returns all currently initialized flags.
 
 ## Remarks
 

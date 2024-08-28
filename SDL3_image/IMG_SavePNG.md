@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-int IMG_SavePNG(SDL_Surface *surface, const char *file);
+SDL_bool IMG_SavePNG(SDL_Surface *surface, const char *file);
 ```
 
 ## Function Parameters
@@ -22,7 +22,7 @@ int IMG_SavePNG(SDL_Surface *surface, const char *file);
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error.
+(SDL_bool) Returns 0 if successful, -1 on error.
 
 ## Remarks
 
