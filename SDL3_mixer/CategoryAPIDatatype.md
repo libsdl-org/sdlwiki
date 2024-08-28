@@ -6,6 +6,7 @@
 <!-- BEGIN CATEGORY LIST -->
 - [Mix_EffectDone_t](Mix_EffectDone_t)
 - [Mix_EffectFunc_t](Mix_EffectFunc_t)
+- [MIX_InitFlags](MIX_InitFlags)
 - [Mix_Music](Mix_Music)
 <!-- END CATEGORY LIST -->
 
