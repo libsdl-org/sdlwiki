@@ -55,7 +55,7 @@ main(int argc, char *argv[])
     /* Enable standard application logging */
     SDL_SetLogPriority(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO);
 
-    if (SDL_Init(SDL_INIT_TIMER) < 0) {
+    if (!SDL_Init(SDL_INIT_TIMER)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL: %s", SDL_GetError());
         return (1);
     }
