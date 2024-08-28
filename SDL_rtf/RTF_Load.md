@@ -10,7 +10,7 @@ Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/mai
 ## Syntax
 
 ```c
-int RTF_Load(RTF_Context *ctx, const char *file);
+SDL_bool RTF_Load(RTF_Context *ctx, const char *file);
 ```
 
 ## Function Parameters
@@ -22,7 +22,8 @@ int RTF_Load(RTF_Context *ctx, const char *file);
 
 ## Return Value
 
-(int) Returns 0 on success, -1 on failure.
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 
