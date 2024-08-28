@@ -58,10 +58,10 @@ main(int argc, char *argv[])
     SDL_Cursor *cursor = NULL;
     SDL_bool error = SDL_TRUE;
 
-    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    if (!SDL_Init(SDL_INIT_VIDEO)) {
         goto exit;
     }
-    if (SDL_CreateWindowAndRenderer("Hello SDL", 640, 480, 0, &window, &renderer) < 0) {
+    if (!SDL_CreateWindowAndRenderer("Hello SDL", 640, 480, 0, &window, &renderer)) {
         goto exit;
     }
     surface = SDL_LoadBMP((1 < argc) ? argv[1] : "cursor.bmp");
