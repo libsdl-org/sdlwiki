@@ -36,8 +36,6 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
-
 void create_and_wait_threads(void);
 
 #define NB_WAITER 10
@@ -50,15 +48,10 @@ int poster_thread() {
   }
   return 0;
 }
-int waiter_thread() {
-  int status;
-  status = SDL_WaitSemaphore(sem);
-  
-  if (status == 0) {
-    SDL_Log("Semaphore was decremented.\n");
-  } else {
-    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "An error has occured while waiting: %s\n", SDL_GetError());
-  }
+int waiter_thread()
+{
+  SDL_WaitSemaphore(sem);
+  SDL_Log("Semaphore was decremented.\n");
   return 0;
 }
 int main() {

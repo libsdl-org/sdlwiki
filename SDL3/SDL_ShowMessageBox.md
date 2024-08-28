@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
         &colorScheme /* .colorScheme */
     };
     int buttonid;
-    if (SDL_ShowMessageBox(&messageboxdata, &buttonid) < 0) {
+    if (!SDL_ShowMessageBox(&messageboxdata, &buttonid)) {
         SDL_Log("error displaying message box");
         return 1;
     }

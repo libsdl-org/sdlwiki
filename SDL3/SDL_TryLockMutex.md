@@ -41,7 +41,6 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-int status;
 SDL_Mutex *mutex;
 
 mutex = SDL_CreateMutex();
@@ -50,15 +49,11 @@ if (!mutex) {
   return 1;
 }
 
-status = SDL_TryLockMutex(mutex);
-
-if (status == 0) {
+if (SDL_TryLockMutex(mutex)) {
   SDL_Log("Locked mutex\n");
   SDL_UnlockMutex(mutex);
-} else if (status == SDL_MUTEX_TIMEDOUT) {
-  /* Mutex not available for locking right now */
 } else {
-  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't lock mutex\n");
+  /* Mutex not available for locking right now */
 }
 
 SDL_DestroyMutex(mutex);

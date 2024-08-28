@@ -28,7 +28,7 @@ This function is available since SDL 3.0.0.
 ```c
 int main(int argc, char *argv[]) {
     /* ... */
-    if (SDL_ShowCursor() < 0) {
+    if (!SDL_ShowCursor()) {
       SDL_Log("Failed to show the cursor");
     }
     /* ... */
