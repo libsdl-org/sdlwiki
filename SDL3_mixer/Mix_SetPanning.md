@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_SetPanning(int channel, Uint8 left, Uint8 right);
+SDL_bool Mix_SetPanning(int channel, Uint8 left, Uint8 right);
 ```
 
 ## Function Parameters
@@ -23,9 +23,8 @@ int Mix_SetPanning(int channel, Uint8 left, Uint8 right);
 
 ## Return Value
 
-(int) Returns zero if error (no such channel or
-[Mix_RegisterEffect](Mix_RegisterEffect)() fails), nonzero if panning
-effect enabled.
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 

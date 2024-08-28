@@ -10,18 +10,18 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_Init(int flags);
+MIX_InitFlags Mix_Init(MIX_InitFlags flags);
 ```
 
 ## Function Parameters
 
-|     |           |                                      |
-| --- | --------- | ------------------------------------ |
-| int | **flags** | initialization flags, OR'd together. |
+|                                |           |                                      |
+| ------------------------------ | --------- | ------------------------------------ |
+| [MIX_InitFlags](MIX_InitFlags) | **flags** | initialization flags, OR'd together. |
 
 ## Return Value
 
-(int) Returns all currently initialized flags.
+([MIX_InitFlags](MIX_InitFlags)) Returns all currently initialized flags.
 
 ## Remarks
 

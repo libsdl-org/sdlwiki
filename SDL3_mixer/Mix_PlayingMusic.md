@@ -10,12 +10,12 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_PlayingMusic(void);
+SDL_bool Mix_PlayingMusic(void);
 ```
 
 ## Return Value
 
-(int) Returns non-zero if music is playing, zero otherwise.
+(SDL_bool) Returns SDL_TRUE if music is playing, SDL_FALSE otherwise.
 
 ## Remarks
 

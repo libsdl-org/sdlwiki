@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_ResumeGroup(int tag);
+void Mix_ResumeGroup(int tag);
 ```
 
 ## Function Parameters
@@ -18,10 +18,6 @@ int Mix_ResumeGroup(int tag);
 |     |         |                                                          |
 | --- | ------- | -------------------------------------------------------- |
 | int | **tag** | an arbitrary value, assigned to channels, to search for. |
-
-## Return Value
-
-(int) Returns zero, whether any channels were resumed or not.
 
 ## Remarks
 

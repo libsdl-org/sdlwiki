@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_SetReverseStereo(int channel, int flip);
+SDL_bool Mix_SetReverseStereo(int channel, int flip);
 ```
 
 ## Function Parameters
@@ -22,11 +22,9 @@ int Mix_SetReverseStereo(int channel, int flip);
 
 ## Return Value
 
-(int) Returns zero if error (no such channel or
-[Mix_RegisterEffect](Mix_RegisterEffect)() fails), nonzero if reversing
-effect is enabled. Note that an audio device in mono mode is a no-op, but
-this call will return successful in that case. Error messages can be
-retrieved from [Mix_GetError](Mix_GetError)().
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information. Note that an audio device in mono mode
+is a no-op, but this call will return successful in that case.
 
 ## Remarks
 

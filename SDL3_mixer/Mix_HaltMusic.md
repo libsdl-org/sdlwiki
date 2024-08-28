@@ -10,12 +10,8 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_HaltMusic(void);
+void Mix_HaltMusic(void);
 ```
-
-## Return Value
-
-(int) Returns zero, regardless of whether any music was halted.
 
 ## Remarks
 

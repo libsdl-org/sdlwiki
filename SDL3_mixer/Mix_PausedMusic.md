@@ -10,12 +10,12 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_PausedMusic(void);
+SDL_bool Mix_PausedMusic(void);
 ```
 
 ## Return Value
 
-(int) Return 1 if music is paused, 0 otherwise.
+(SDL_bool) Return SDL_TRUE if music is paused, SDL_FALSE otherwise.
 
 ## Version
 

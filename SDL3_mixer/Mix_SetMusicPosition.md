@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_SetMusicPosition(double position);
+SDL_bool Mix_SetMusicPosition(double position);
 ```
 
 ## Function Parameters
@@ -21,7 +21,8 @@ int Mix_SetMusicPosition(double position);
 
 ## Return Value
 
-(int) Returns 0 if successful, or -1 if it failed or not implemented.
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 

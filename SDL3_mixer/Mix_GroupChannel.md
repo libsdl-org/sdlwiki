@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_GroupChannel(int which, int tag);
+SDL_bool Mix_GroupChannel(int which, int tag);
 ```
 
 ## Function Parameters
@@ -22,7 +22,8 @@ int Mix_GroupChannel(int which, int tag);
 
 ## Return Value
 
-(int) Returns non-zero on success, zero on error (no such channel).
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 

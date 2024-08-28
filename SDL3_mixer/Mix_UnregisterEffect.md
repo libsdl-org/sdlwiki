@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);
+SDL_bool Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ int Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);
 
 ## Return Value
 
-(int) Returns zero if error (no such channel or effect), nonzero if
-removed. Error messages can be retrieved from
-[Mix_GetError](Mix_GetError)().
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 

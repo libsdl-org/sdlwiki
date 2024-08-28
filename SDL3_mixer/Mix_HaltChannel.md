@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-int Mix_HaltChannel(int channel);
+void Mix_HaltChannel(int channel);
 ```
 
 ## Function Parameters
@@ -18,10 +18,6 @@ int Mix_HaltChannel(int channel);
 |     |             |                                              |
 | --- | ----------- | -------------------------------------------- |
 | int | **channel** | channel to halt, or -1 to halt all channels. |
-
-## Return Value
-
-(int) Returns 0 on success, or -1 on error.
 
 ## Remarks
 
