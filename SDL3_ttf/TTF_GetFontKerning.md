@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_GetFontKerning
 
-Query whether or not kerning is allowed for a font.
+Query whether or not kerning is enabled for a font.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_GetFontKerning(const TTF_Font *font);
+SDL_bool TTF_GetFontKerning(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ int TTF_GetFontKerning(const TTF_Font *font);
 
 ## Return Value
 
-(int) Returns non-zero if kerning is enabled, zero otherwise.
+(SDL_bool) Returns SDL_TRUE if kerning is enabled, SDL_FALSE otherwise.
 
 ## Version
 

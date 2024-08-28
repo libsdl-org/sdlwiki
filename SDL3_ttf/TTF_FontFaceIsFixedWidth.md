@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_FontFaceIsFixedWidth(const TTF_Font *font);
+SDL_bool TTF_FontFaceIsFixedWidth(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ int TTF_FontFaceIsFixedWidth(const TTF_Font *font);
 
 ## Return Value
 
-(int) Returns non-zero if fixed-width, zero if not.
+(SDL_bool) Returns SDL_TRUE if fixed-width, SDL_FALSE if not.
 
 ## Remarks
 

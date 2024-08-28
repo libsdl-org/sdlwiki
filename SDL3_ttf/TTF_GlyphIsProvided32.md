@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_GlyphIsProvided32(TTF_Font *font, Uint32 ch);
+SDL_bool TTF_GlyphIsProvided32(TTF_Font *font, Uint32 ch);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ int TTF_GlyphIsProvided32(TTF_Font *font, Uint32 ch);
 
 ## Return Value
 
-(int) Returns non-zero if font provides a glyph for this character, zero if
-not.
+(SDL_bool) Returns SDL_TRUE if font provides a glyph for this character,
+SDL_FALSE if not.
 
 ## Remarks
 

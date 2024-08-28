@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_SetFontKerning
 
-Set if kerning is allowed for a font.
+Set if kerning is enabled for a font.
 
 ## Header File
 
@@ -10,15 +10,15 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-void TTF_SetFontKerning(TTF_Font *font, int allowed);
+void TTF_SetFontKerning(TTF_Font *font, SDL_bool enabled);
 ```
 
 ## Function Parameters
 
-|                        |             |                                              |
-| ---------------------- | ----------- | -------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**    | the font to set kerning on.                  |
-| int                    | **allowed** | non-zero to allow kerning, zero to disallow. |
+|                        |             |                                                   |
+| ---------------------- | ----------- | ------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**    | the font to set kerning on.                       |
+| SDL_bool               | **enabled** | SDL_TRUE to enable kerning, SDL_FALSE to disable. |
 
 ## Remarks
 

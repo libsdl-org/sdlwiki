@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_MeasureUNICODE(TTF_Font *font, const Uint16 *text, int measure_width, int *extent, int *count);
+SDL_bool TTF_MeasureUNICODE(TTF_Font *font, const Uint16 *text, int measure_width, int *extent, int *count);
 ```
 
 ## Function Parameters
@@ -25,7 +25,8 @@ int TTF_MeasureUNICODE(TTF_Font *font, const Uint16 *text, int measure_width, in
 
 ## Return Value
 
-(int) Returns 0 if successful, -1 on error.
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 

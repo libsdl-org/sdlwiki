@@ -10,19 +10,19 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_Init(void);
+SDL_bool TTF_Init(void);
 ```
 
 ## Return Value
 
-(int) Returns 0 on success, -1 on error.
+(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
+SDL_GetError() for more information.
 
 ## Remarks
 
 You must successfully call this function before it is safe to call any
 other function in this library, with one exception: a human-readable error
-message can be retrieved from [TTF_GetError](TTF_GetError)() if this
-function fails.
+message can be retrieved from SDL_GetError() if this function fails.
 
 SDL must be initialized before calls to functions in this library, because
 this library uses utility functions from the SDL library.
