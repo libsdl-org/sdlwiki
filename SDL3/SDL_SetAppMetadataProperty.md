@@ -63,15 +63,16 @@ These are the supported properties:
   package your application in a container such as Flatpak, the app ID
   should match the name of your Flatpak container as well. This has no
   default.
-- [`SDL_PROP_APP_METADATA_CREATOR_STRING`](SDL_PROP_APP_METADATA_CREATOR_STRING): The human-readable name of the
-  creator/developer/maker of this app, like "MojoWorkshop, LLC"
+- [`SDL_PROP_APP_METADATA_CREATOR_STRING`](SDL_PROP_APP_METADATA_CREATOR_STRING):
+  The human-readable name of the creator/developer/maker of this app, like
+  "MojoWorkshop, LLC"
 - [`SDL_PROP_APP_METADATA_COPYRIGHT_STRING`](SDL_PROP_APP_METADATA_COPYRIGHT_STRING):
   The human-readable copyright notice, like "Copyright (c) 2024
   MojoWorkshop, LLC" or whatnot. Keep this to one line, don't paste a copy
   of a whole software license in here. This has no default.
-- [`SDL_PROP_APP_METADATA_URL_STRING`](SDL_PROP_APP_METADATA_URL_STRING): A URL to the app on the web. Maybe a
-  product page, or a storefront, or even a GitHub repository, for user's
-  further information This has no default.
+- [`SDL_PROP_APP_METADATA_URL_STRING`](SDL_PROP_APP_METADATA_URL_STRING): A
+  URL to the app on the web. Maybe a product page, or a storefront, or even
+  a GitHub repository, for user's further information This has no default.
 - [`SDL_PROP_APP_METADATA_TYPE_STRING`](SDL_PROP_APP_METADATA_TYPE_STRING):
   The type of application this is. Currently this string can be "game" for
   a video game, "mediaplayer" for a media player, or generically
