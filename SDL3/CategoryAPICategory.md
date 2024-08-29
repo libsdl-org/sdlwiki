@@ -22,6 +22,7 @@ A more human-friendly version is over in [APIByCategory](APIByCategory), if you 
 - [CategoryEvents](CategoryEvents)
 - [CategoryFilesystem](CategoryFilesystem)
 - [CategoryGamepad](CategoryGamepad)
+- [CategoryGpu](CategoryGpu)
 - [CategoryGUID](CategoryGUID)
 - [CategoryHaptic](CategoryHaptic)
 - [CategoryHIDAPI](CategoryHIDAPI)

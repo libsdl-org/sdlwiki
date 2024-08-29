@@ -21,6 +21,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [CategoryEvents](CategoryEvents)
 - [CategoryFilesystem](CategoryFilesystem)
 - [CategoryGamepad](CategoryGamepad)
+- [CategoryGpu](CategoryGpu)
 - [CategoryGUID](CategoryGUID)
 - [CategoryHaptic](CategoryHaptic)
 - [CategoryHIDAPI](CategoryHIDAPI)
