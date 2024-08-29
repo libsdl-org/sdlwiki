@@ -37,7 +37,7 @@ group during a pass, always pop it in the same pass.
 
 ## Version
 
-This function is available since SDL 3.x.x
+This function is available since SDL 3.0.0.
 
 ## See Also
 

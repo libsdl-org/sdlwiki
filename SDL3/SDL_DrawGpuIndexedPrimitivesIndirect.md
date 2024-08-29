@@ -36,7 +36,7 @@ must not call this function before binding a graphics pipeline.
 
 ## Version
 
-This function is available since SDL 3.x.x
+This function is available since SDL 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGpu](CategoryGpu)

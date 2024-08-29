@@ -61,7 +61,7 @@ which will automatically use the vertex input information from the
 
 ## Version
 
-This function is available since SDL 3.x.x
+This function is available since SDL 3.0.0.
 
 ## See Also
 

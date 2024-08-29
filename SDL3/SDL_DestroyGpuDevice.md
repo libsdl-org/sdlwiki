@@ -21,7 +21,7 @@ void SDL_DestroyGpuDevice(SDL_GpuDevice *device);
 
 ## Version
 
-This function is available since SDL 3.x.x
+This function is available since SDL 3.0.0.
 
 ## See Also
 

@@ -37,7 +37,7 @@ command in a subsequent submission begins executing.
 
 ## Version
 
-This function is available since SDL 3.x.x
+This function is available since SDL 3.0.0.
 
 ## See Also
 
