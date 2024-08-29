@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-const char * SDL_GetHint(const char *name);
+const char* SDL_GetHint(const char *name);
 ```
 
 ## Function Parameters

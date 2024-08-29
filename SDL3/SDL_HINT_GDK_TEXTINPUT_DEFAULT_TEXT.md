@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-#define SDL_HINT_GDK_TEXTINPUT_DEFAULT_TEXT  "SDL_GDK_TEXTINPUT_DEFAULT_TEXT"
+#define SDL_HINT_GDK_TEXTINPUT_DEFAULT_TEXT "SDL_GDK_TEXTINPUT_DEFAULT_TEXT"
 ```
 
 ## Remarks

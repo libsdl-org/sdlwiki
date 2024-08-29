@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-#define SDL_HINT_AUDIO_CATEGORY   "SDL_AUDIO_CATEGORY"
+#define SDL_HINT_AUDIO_CATEGORY "SDL_AUDIO_CATEGORY"
 ```
 
 ## Remarks
