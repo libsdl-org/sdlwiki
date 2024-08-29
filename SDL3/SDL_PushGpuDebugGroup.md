@@ -44,5 +44,6 @@ This function is available since SDL 3.0.0.
 - [SDL_PopGpuDebugGroup](SDL_PopGpuDebugGroup)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGpu](CategoryGpu)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU), [CategoryGpu](CategoryGpu)
+
 
