@@ -52,9 +52,9 @@ This function is available since SDL 3.0.0.
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
 - [SDL_BindGPUFragmentStorageTextures](SDL_BindGPUFragmentStorageTextures)
 - [SDL_BindGPUComputeStorageTextures](SDL_BindGPUComputeStorageTextures)
-- [SDL_BlitGPU](SDL_BlitGPU)
+- [SDL_BlitGPUTexture](SDL_BlitGPUTexture)
 - [SDL_ReleaseGPUTexture](SDL_ReleaseGPUTexture)
-- [SDL_SupportsGPUTextureFormat](SDL_SupportsGPUTextureFormat)
+- [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

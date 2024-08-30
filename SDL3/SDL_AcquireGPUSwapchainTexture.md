@@ -46,9 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_ClaimGPUWindow](SDL_ClaimGPUWindow)
-- [SDL_SubmitGPU](SDL_SubmitGPU)
-- [SDL_SubmitGPUAndAcquireFence](SDL_SubmitGPUAndAcquireFence)
+- [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)
+- [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
+- [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

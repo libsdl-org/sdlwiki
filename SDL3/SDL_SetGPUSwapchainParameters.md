@@ -35,8 +35,9 @@ SDL_bool SDL_SetGPUSwapchainParameters(
 
 This function will fail if the requested present mode or swapchain
 composition are unsupported by the device. Check if the parameters are
-supported via [SDL_SupportsGPUPresentMode](SDL_SupportsGPUPresentMode) /
-[SDL_SupportsGPUSwapchainComposition](SDL_SupportsGPUSwapchainComposition)
+supported via
+[SDL_WindowSupportsGPUPresentMode](SDL_WindowSupportsGPUPresentMode) /
+[SDL_WindowSupportsGPUSwapchainComposition](SDL_WindowSupportsGPUSwapchainComposition)
 prior to calling this function.
 
 [SDL_GPU_PRESENTMODE_VSYNC](SDL_GPU_PRESENTMODE_VSYNC) and
@@ -49,8 +50,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SupportsGPUPresentMode](SDL_SupportsGPUPresentMode)
-- [SDL_SupportsGPUSwapchainComposition](SDL_SupportsGPUSwapchainComposition)
+- [SDL_WindowSupportsGPUPresentMode](SDL_WindowSupportsGPUPresentMode)
+- [SDL_WindowSupportsGPUSwapchainComposition](SDL_WindowSupportsGPUSwapchainComposition)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

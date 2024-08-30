@@ -37,8 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SubmitGPU](SDL_SubmitGPU)
-- [SDL_SubmitGPUAndAcquireFence](SDL_SubmitGPUAndAcquireFence)
+- [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
+- [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

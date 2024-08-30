@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_ReleaseGPUFence
+# SDL_WaitForGPUIdle
 
-Releases a fence obtained from [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence).
+Blocks the thread until the GPU is completely idle.
 
 ## Header File
 
@@ -10,9 +10,8 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_ReleaseGPUFence(
-    SDL_GPUDevice *device,
-    SDL_GPUFence *fence);
+void SDL_WaitForGPUIdle(
+    SDL_GPUDevice *device);
 ```
 
 ## Function Parameters
@@ -20,7 +19,6 @@ void SDL_ReleaseGPUFence(
 |                                  |            |                |
 | -------------------------------- | ---------- | -------------- |
 | [SDL_GPUDevice](SDL_GPUDevice) * | **device** | a GPU context. |
-| [SDL_GPUFence](SDL_GPUFence) *   | **fence**  | a fence.       |
 
 ## Version
 
@@ -28,7 +26,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
+- [SDL_WaitForGPUFences](SDL_WaitForGPUFences)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
