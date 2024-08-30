@@ -21,7 +21,7 @@ force a specific target, such as "d3d11" if, say, your hardware supports
 D3D12 but want to try using D3D11 instead.
 
 This hint should be set before
-[SDL_GpuSelectBackend](SDL_GpuSelectBackend)() is called.
+[SDL_GPUSelectBackend](SDL_GPUSelectBackend)() is called.
 
 ## Version
 
