@@ -15,11 +15,11 @@ SDL_bool SDL_SetAudioStreamGetCallback(SDL_AudioStream *stream, SDL_AudioStreamC
 
 ## Function Parameters
 
-|                                                    |              |                                                                      |
-| -------------------------------------------------- | ------------ | -------------------------------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) *               | **stream**   | the audio stream to set the new callback on.                         |
-| [SDL_AudioStreamCallback](SDL_AudioStreamCallback) | **callback** | the new callback function to call when data is added to the stream.  |
-| void *                                             | **userdata** | an opaque pointer provided to the callback for its own personal use. |
+|                                                    |              |                                                                           |
+| -------------------------------------------------- | ------------ | ------------------------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) *               | **stream**   | the audio stream to set the new callback on.                              |
+| [SDL_AudioStreamCallback](SDL_AudioStreamCallback) | **callback** | the new callback function to call when data is requested from the stream. |
+| void *                                             | **userdata** | an opaque pointer provided to the callback for its own personal use.      |
 
 ## Return Value
 
