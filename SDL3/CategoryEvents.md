@@ -23,6 +23,7 @@ Event queue management.
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_PushEvent](SDL_PushEvent)
 - [SDL_RegisterEvents](SDL_RegisterEvents)
+- [SDL_RemoveEventWatch](SDL_RemoveEventWatch)
 - [SDL_SetEventEnabled](SDL_SetEventEnabled)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_WaitEvent](SDL_WaitEvent)

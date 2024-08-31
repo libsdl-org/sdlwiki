@@ -24,6 +24,7 @@ work.
 - [SDL_DelHintCallback](SDL_DelHintCallback)
 - [SDL_GetHint](SDL_GetHint)
 - [SDL_GetHintBoolean](SDL_GetHintBoolean)
+- [SDL_RemoveHintCallback](SDL_RemoveHintCallback)
 - [SDL_ResetHint](SDL_ResetHint)
 - [SDL_ResetHints](SDL_ResetHints)
 - [SDL_SetHint](SDL_SetHint)
