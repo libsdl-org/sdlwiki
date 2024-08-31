@@ -88,7 +88,9 @@ The following structures have been renamed:
 The following functions have been renamed:
 * SDL_AtomicCAS() => SDL_AtomicCompareAndSwap()
 * SDL_AtomicCASPtr() => SDL_AtomicCompareAndSwapPointer()
+* SDL_AtomicGetPtr() => SDL_AtomicGetPointer()
 * SDL_AtomicLock() => SDL_LockSpinlock()
+* SDL_AtomicSetPtr() => SDL_AtomicSetPointer()
 * SDL_AtomicTryLock() => SDL_TryLockSpinlock()
 * SDL_AtomicUnlock() => SDL_UnlockSpinlock()
 
@@ -486,6 +488,9 @@ The following functions have been removed:
 The following enums have been renamed:
 * SDL_eventaction => SDL_EventAction
 
+The following functions have been renamed:
+* SDL_DelEventWatch() => SDL_RemoveEventWatch()
+
 ## SDL_gamecontroller.h
 
 SDL_gamecontroller.h has been renamed SDL_gamepad.h, and all APIs have been renamed to match.
@@ -859,6 +864,9 @@ The following environment variables have been removed:
 
 The following functions have been removed:
 * SDL_ClearHints() - replaced with SDL_ResetHints()
+
+The following functions have been renamed:
+* SDL_DelHintCallback() => SDL_RemoveHintCallback()
 
 ## SDL_init.h
 

@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_DelHintCallback](SDL_DelHintCallback)
+- [SDL_RemoveHintCallback](SDL_RemoveHintCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

@@ -54,7 +54,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_DelEventWatch](SDL_DelEventWatch)
+- [SDL_RemoveEventWatch](SDL_RemoveEventWatch)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 
 ----

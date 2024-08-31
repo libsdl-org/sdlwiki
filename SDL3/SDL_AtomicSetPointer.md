@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_AtomicCompareAndSwapPointer
+# SDL_AtomicSetPointer
 
-Set a pointer to a new value if it is currently an old value.
+Set a pointer to a value atomically.
 
 ## Header File
 
@@ -10,21 +10,19 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_AtomicCompareAndSwapPointer(void **a, void *oldval, void *newval);
+void * SDL_AtomicSetPointer(void **a, void *v);
 ```
 
 ## Function Parameters
 
-|         |            |                         |
-| ------- | ---------- | ----------------------- |
-| void ** | **a**      | a pointer to a pointer. |
-| void *  | **oldval** | the old pointer value.  |
-| void *  | **newval** | the new pointer value.  |
+|         |       |                            |
+| ------- | ----- | -------------------------- |
+| void ** | **a** | a pointer to a pointer.    |
+| void *  | **v** | the desired pointer value. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the pointer was set,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(void *) Returns the previous value of the pointer.
 
 ## Remarks
 
@@ -41,9 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_AtomicCompareAndSwap](SDL_AtomicCompareAndSwap)
+- [SDL_AtomicCompareAndSwapPointer](SDL_AtomicCompareAndSwapPointer)
 - [SDL_AtomicGetPointer](SDL_AtomicGetPointer)
-- [SDL_AtomicSetPointer](SDL_AtomicSetPointer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
