@@ -61,6 +61,13 @@
 | [Audio Playback, Recording, and Mixing](CategoryAudio) | [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h)     |
 
 
+## GPU
+
+| **View information and functions related to...**  | **View the header**                                                                     |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [3D rendering and GPU compute](CategoryGPU)       | [SDL_gpu.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gpu.h)     |
+
+
 ## Threads
 
 | **View information and functions related to...**   | **View the header**                                                                     |
