@@ -29,7 +29,7 @@ void SDL_BindGPUFragmentSamplers(
 ## Remarks
 
 The textures must have been created with
-[SDL_GPU_TEXTUREUSAGE_SAMPLER_BIT](SDL_GPU_TEXTUREUSAGE_SAMPLER_BIT).
+[SDL_GPU_TEXTUREUSAGE_SAMPLER](SDL_GPU_TEXTUREUSAGE_SAMPLER).
 
 ## Version
 
