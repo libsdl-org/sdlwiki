@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_AppResult SDL_AppEvent(void *appstate, const SDL_Event *event);
+SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                         |
-| ------------------------------ | ------------ | ----------------------------------------------------------------------- |
-| void *                         | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
-| const [SDL_Event](SDL_Event) * | **event**    | the new event for the app to examine.                                   |
+|                          |              |                                                                         |
+| ------------------------ | ------------ | ----------------------------------------------------------------------- |
+| void *                   | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
+| [SDL_Event](SDL_Event) * | **event**    | the new event for the app to examine.                                   |
 
 ## Return Value
 
