@@ -40,7 +40,7 @@ These are the supported properties:
 
 These are the current shader format properties:
 
-- [`SDL_PROP_GPU_DEVICE_CREATE_SHADERS_SECRET_BOOL`](SDL_PROP_GPU_DEVICE_CREATE_SHADERS_SECRET_BOOL):
+- [`SDL_PROP_GPU_DEVICE_CREATE_SHADERS_PRIVATE_BOOL`](SDL_PROP_GPU_DEVICE_CREATE_SHADERS_PRIVATE_BOOL):
   The app is able to provide shaders for an NDA platform.
 - [`SDL_PROP_GPU_DEVICE_CREATE_SHADERS_SPIRV_BOOL`](SDL_PROP_GPU_DEVICE_CREATE_SHADERS_SPIRV_BOOL):
   The app is able to provide SPIR-V shaders if applicable.
