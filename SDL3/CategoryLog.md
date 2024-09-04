@@ -1,6 +1,6 @@
 # CategoryLog
 
-Simple log messages with priorities and categories. A message’s
+Simple log messages with priorities and categories. A message's
 [SDL_LogPriority](SDL_LogPriority) signifies how important the message is.
 A message's [SDL_LogCategory](SDL_LogCategory) signifies from what domain
 it belongs to. Every category has a minimum priority specified: when a
