@@ -17,7 +17,7 @@ typedef SDL_AssertState (SDLCALL *SDL_AssertionHandler)( const SDL_AssertData* d
 
 |              |                                                                                                     |
 | ------------ | --------------------------------------------------------------------------------------------------- |
-| **data**     | a pointer to the [SDL_AssertData](SDL_assert_data) structure corresponding to the current assertion. |
+| **data**     | a pointer to the [SDL_AssertData](SDL_AssertData) structure corresponding to the current assertion. |
 | **userdata** | what was passed as `userdata` to [SDL_SetAssertionHandler](SDL_SetAssertionHandler)().              |
 
 ## Return Value
