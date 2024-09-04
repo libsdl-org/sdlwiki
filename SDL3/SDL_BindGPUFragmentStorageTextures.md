@@ -13,18 +13,18 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 void SDL_BindGPUFragmentStorageTextures(
     SDL_GPURenderPass *renderPass,
     Uint32 firstSlot,
-    SDL_GPUTexture **storageTextures,
+    SDL_GPUTexture *const *storageTextures,
     Uint32 bindingCount);
 ```
 
 ## Function Parameters
 
-|                                          |                     |                                                          |
-| ---------------------------------------- | ------------------- | -------------------------------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass**      | a render pass handle.                                    |
-| Uint32                                   | **firstSlot**       | the fragment storage texture slot to begin binding from. |
-| [SDL_GPUTexture](SDL_GPUTexture) **      | **storageTextures** | an array of storage textures.                            |
-| Uint32                                   | **bindingCount**    | the number of storage textures to bind from the array.   |
+|                                           |                     |                                                          |
+| ----------------------------------------- | ------------------- | -------------------------------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *  | **renderPass**      | a render pass handle.                                    |
+| Uint32                                    | **firstSlot**       | the fragment storage texture slot to begin binding from. |
+| [SDL_GPUTexture](SDL_GPUTexture) *const * | **storageTextures** | an array of storage textures.                            |
+| Uint32                                    | **bindingCount**    | the number of storage textures to bind from the array.   |
 
 ## Remarks
 

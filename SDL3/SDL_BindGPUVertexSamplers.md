@@ -13,18 +13,18 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 void SDL_BindGPUVertexSamplers(
     SDL_GPURenderPass *renderPass,
     Uint32 firstSlot,
-    SDL_GPUTextureSamplerBinding *textureSamplerBindings,
+    const SDL_GPUTextureSamplerBinding *textureSamplerBindings,
     Uint32 bindingCount);
 ```
 
 ## Function Parameters
 
-|                                                                |                            |                                                             |
-| -------------------------------------------------------------- | -------------------------- | ----------------------------------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *                       | **renderPass**             | a render pass handle.                                       |
-| Uint32                                                         | **firstSlot**              | the vertex sampler slot to begin binding from.              |
-| [SDL_GPUTextureSamplerBinding](SDL_GPUTextureSamplerBinding) * | **textureSamplerBindings** | an array of texture-sampler binding structs.                |
-| Uint32                                                         | **bindingCount**           | the number of texture-sampler pairs to bind from the array. |
+|                                                                      |                            |                                                             |
+| -------------------------------------------------------------------- | -------------------------- | ----------------------------------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *                             | **renderPass**             | a render pass handle.                                       |
+| Uint32                                                               | **firstSlot**              | the vertex sampler slot to begin binding from.              |
+| const [SDL_GPUTextureSamplerBinding](SDL_GPUTextureSamplerBinding) * | **textureSamplerBindings** | an array of texture-sampler binding structs.                |
+| Uint32                                                               | **bindingCount**           | the number of texture-sampler pairs to bind from the array. |
 
 ## Remarks
 

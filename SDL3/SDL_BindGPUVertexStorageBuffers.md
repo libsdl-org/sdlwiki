@@ -13,7 +13,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 void SDL_BindGPUVertexStorageBuffers(
     SDL_GPURenderPass *renderPass,
     Uint32 firstSlot,
-    SDL_GPUBuffer **storageBuffers,
+    SDL_GPUBuffer *const *storageBuffers,
     Uint32 bindingCount);
 ```
 
@@ -23,7 +23,7 @@ void SDL_BindGPUVertexStorageBuffers(
 | ---------------------------------------- | ------------------ | ----------------------------------------------------- |
 | [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass**     | a render pass handle.                                 |
 | Uint32                                   | **firstSlot**      | the vertex storage buffer slot to begin binding from. |
-| [SDL_GPUBuffer](SDL_GPUBuffer) **        | **storageBuffers** | an array of buffers.                                  |
+| [SDL_GPUBuffer](SDL_GPUBuffer) *const *  | **storageBuffers** | an array of buffers.                                  |
 | Uint32                                   | **bindingCount**   | the number of buffers to bind from the array.         |
 
 ## Remarks

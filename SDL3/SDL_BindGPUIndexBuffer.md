@@ -12,17 +12,17 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 void SDL_BindGPUIndexBuffer(
     SDL_GPURenderPass *renderPass,
-    SDL_GPUBufferBinding *pBinding,
+    const SDL_GPUBufferBinding *pBinding,
     SDL_GPUIndexElementSize indexElementSize);
 ```
 
 ## Function Parameters
 
-|                                                    |                      |                                                              |
-| -------------------------------------------------- | -------------------- | ------------------------------------------------------------ |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *           | **renderPass**       | a render pass handle.                                        |
-| [SDL_GPUBufferBinding](SDL_GPUBufferBinding) *     | **pBinding**         | a pointer to a struct containing an index buffer and offset. |
-| [SDL_GPUIndexElementSize](SDL_GPUIndexElementSize) | **indexElementSize** | whether the index values in the buffer are 16- or 32-bit.    |
+|                                                      |                      |                                                              |
+| ---------------------------------------------------- | -------------------- | ------------------------------------------------------------ |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *             | **renderPass**       | a render pass handle.                                        |
+| const [SDL_GPUBufferBinding](SDL_GPUBufferBinding) * | **pBinding**         | a pointer to a struct containing an index buffer and offset. |
+| [SDL_GPUIndexElementSize](SDL_GPUIndexElementSize)   | **indexElementSize** | whether the index values in the buffer are 16- or 32-bit.    |
 
 ## Version
 

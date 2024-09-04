@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 void SDL_SetGPUScissor(
     SDL_GPURenderPass *renderPass,
-    SDL_Rect *scissor);
+    const SDL_Rect *scissor);
 ```
 
 ## Function Parameters
@@ -20,7 +20,7 @@ void SDL_SetGPUScissor(
 |                                          |                |                          |
 | ---------------------------------------- | -------------- | ------------------------ |
 | [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass** | a render pass handle.    |
-| [SDL_Rect](SDL_Rect) *                   | **scissor**    | the scissor area to set. |
+| const [SDL_Rect](SDL_Rect) *             | **scissor**    | the scissor area to set. |
 
 ## Version
 

@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 SDL_GPUTexture* SDL_CreateGPUTexture(
     SDL_GPUDevice *device,
-    SDL_GPUTextureCreateInfo *textureCreateInfo);
+    const SDL_GPUTextureCreateInfo *textureCreateInfo);
 ```
 
 ## Function Parameters
 
-|                                                        |                       |                                                         |
-| ------------------------------------------------------ | --------------------- | ------------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                       | **device**            | a GPU Context.                                          |
-| [SDL_GPUTextureCreateInfo](SDL_GPUTextureCreateInfo) * | **textureCreateInfo** | a struct describing the state of the texture to create. |
+|                                                              |                       |                                                         |
+| ------------------------------------------------------------ | --------------------- | ------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                             | **device**            | a GPU Context.                                          |
+| const [SDL_GPUTextureCreateInfo](SDL_GPUTextureCreateInfo) * | **textureCreateInfo** | a struct describing the state of the texture to create. |
 
 ## Return Value
 

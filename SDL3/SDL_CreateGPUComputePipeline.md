@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 SDL_GPUComputePipeline* SDL_CreateGPUComputePipeline(
     SDL_GPUDevice *device,
-    SDL_GPUComputePipelineCreateInfo *computePipelineCreateInfo);
+    const SDL_GPUComputePipelineCreateInfo *computePipelineCreateInfo);
 ```
 
 ## Function Parameters
 
-|                                                                        |                               |                                                                  |
-| ---------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                                       | **device**                    | a GPU Context.                                                   |
-| [SDL_GPUComputePipelineCreateInfo](SDL_GPUComputePipelineCreateInfo) * | **computePipelineCreateInfo** | a struct describing the state of the requested compute pipeline. |
+|                                                                              |                               |                                                                  |
+| ---------------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                                             | **device**                    | a GPU Context.                                                   |
+| const [SDL_GPUComputePipelineCreateInfo](SDL_GPUComputePipelineCreateInfo) * | **computePipelineCreateInfo** | a struct describing the state of the requested compute pipeline. |
 
 ## Return Value
 

@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 SDL_GPUBuffer* SDL_CreateGPUBuffer(
     SDL_GPUDevice *device,
-    SDL_GPUBufferCreateInfo *bufferCreateInfo);
+    const SDL_GPUBufferCreateInfo *bufferCreateInfo);
 ```
 
 ## Function Parameters
 
-|                                                      |                      |                                                        |
-| ---------------------------------------------------- | -------------------- | ------------------------------------------------------ |
-| [SDL_GPUDevice](SDL_GPUDevice) *                     | **device**           | a GPU Context.                                         |
-| [SDL_GPUBufferCreateInfo](SDL_GPUBufferCreateInfo) * | **bufferCreateInfo** | a struct describing the state of the buffer to create. |
+|                                                            |                      |                                                        |
+| ---------------------------------------------------------- | -------------------- | ------------------------------------------------------ |
+| [SDL_GPUDevice](SDL_GPUDevice) *                           | **device**           | a GPU Context.                                         |
+| const [SDL_GPUBufferCreateInfo](SDL_GPUBufferCreateInfo) * | **bufferCreateInfo** | a struct describing the state of the buffer to create. |
 
 ## Return Value
 
