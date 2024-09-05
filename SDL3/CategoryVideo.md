@@ -100,6 +100,7 @@ SDL video functions.
 - [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
 - [SDL_SetWindowMaximumSize](SDL_SetWindowMaximumSize)
 - [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
+- [SDL_SetWindowModal](SDL_SetWindowModal)
 - [SDL_SetWindowModalFor](SDL_SetWindowModalFor)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
