@@ -41,12 +41,18 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_SetGPUBufferName](SDL_SetGPUBufferName)
 - [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)
+- [SDL_DownloadFromGPUBuffer](SDL_DownloadFromGPUBuffer)
+- [SDL_CopyGPUBufferToBuffer](SDL_CopyGPUBufferToBuffer)
 - [SDL_BindGPUVertexBuffers](SDL_BindGPUVertexBuffers)
 - [SDL_BindGPUIndexBuffer](SDL_BindGPUIndexBuffer)
 - [SDL_BindGPUVertexStorageBuffers](SDL_BindGPUVertexStorageBuffers)
 - [SDL_BindGPUFragmentStorageBuffers](SDL_BindGPUFragmentStorageBuffers)
+- [SDL_DrawGPUPrimitivesIndirect](SDL_DrawGPUPrimitivesIndirect)
+- [SDL_DrawGPUIndexedPrimitivesIndirect](SDL_DrawGPUIndexedPrimitivesIndirect)
 - [SDL_BindGPUComputeStorageBuffers](SDL_BindGPUComputeStorageBuffers)
+- [SDL_DispatchGPUComputeIndirect](SDL_DispatchGPUComputeIndirect)
 - [SDL_ReleaseGPUBuffer](SDL_ReleaseGPUBuffer)
 
 ----

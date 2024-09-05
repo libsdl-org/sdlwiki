@@ -36,7 +36,8 @@ using the window.
 The swapchain will be created with
 [SDL_GPU_SWAPCHAINCOMPOSITION_SDR](SDL_GPU_SWAPCHAINCOMPOSITION_SDR) and
 [SDL_GPU_PRESENTMODE_VSYNC](SDL_GPU_PRESENTMODE_VSYNC). If you want to have
-different swapchain parameters, you must call SetSwapchainParameters after
+different swapchain parameters, you must call
+[SDL_SetGPUSwapchainParameters](SDL_SetGPUSwapchainParameters) after
 claiming the window.
 
 ## Version

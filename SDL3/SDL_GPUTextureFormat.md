@@ -1,0 +1,133 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GPUTextureFormat
+
+Specifies the pixel format of a texture.
+
+## Header File
+
+Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gpu.h)
+
+## Syntax
+
+```c
+typedef enum SDL_GPUTextureFormat
+{
+    SDL_GPU_TEXTUREFORMAT_INVALID = -1,
+
+    /* Unsigned Normalized Float Color Formats */
+    SDL_GPU_TEXTUREFORMAT_A8_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R8_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R8G8_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R8G8B8A8_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R16_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R16G16_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R16G16B16A16_UNORM,
+    SDL_GPU_TEXTUREFORMAT_R10G10B10A2_UNORM,
+    SDL_GPU_TEXTUREFORMAT_B5G6R5_UNORM,
+    SDL_GPU_TEXTUREFORMAT_B5G5R5A1_UNORM,
+    SDL_GPU_TEXTUREFORMAT_B4G4R4A4_UNORM,
+    SDL_GPU_TEXTUREFORMAT_B8G8R8A8_UNORM,
+    /* Compressed Unsigned Normalized Float Color Formats */
+    SDL_GPU_TEXTUREFORMAT_BC1_RGBA_UNORM,
+    SDL_GPU_TEXTUREFORMAT_BC2_RGBA_UNORM,
+    SDL_GPU_TEXTUREFORMAT_BC3_RGBA_UNORM,
+    SDL_GPU_TEXTUREFORMAT_BC4_R_UNORM,
+    SDL_GPU_TEXTUREFORMAT_BC5_RG_UNORM,
+    SDL_GPU_TEXTUREFORMAT_BC7_RGBA_UNORM,
+    /* Compressed Signed Float Color Formats */
+    SDL_GPU_TEXTUREFORMAT_BC6H_RGB_FLOAT,
+    /* Compressed Unsigned Float Color Formats */
+    SDL_GPU_TEXTUREFORMAT_BC6H_RGB_UFLOAT,
+    /* Signed Normalized Float Color Formats  */
+    SDL_GPU_TEXTUREFORMAT_R8_SNORM,
+    SDL_GPU_TEXTUREFORMAT_R8G8_SNORM,
+    SDL_GPU_TEXTUREFORMAT_R8G8B8A8_SNORM,
+    SDL_GPU_TEXTUREFORMAT_R16_SNORM,
+    SDL_GPU_TEXTUREFORMAT_R16G16_SNORM,
+    SDL_GPU_TEXTUREFORMAT_R16G16B16A16_SNORM,
+    /* Signed Float Color Formats */
+    SDL_GPU_TEXTUREFORMAT_R16_FLOAT,
+    SDL_GPU_TEXTUREFORMAT_R16G16_FLOAT,
+    SDL_GPU_TEXTUREFORMAT_R16G16B16A16_FLOAT,
+    SDL_GPU_TEXTUREFORMAT_R32_FLOAT,
+    SDL_GPU_TEXTUREFORMAT_R32G32_FLOAT,
+    SDL_GPU_TEXTUREFORMAT_R32G32B32A32_FLOAT,
+    /* Unsigned Float Color Formats */
+    SDL_GPU_TEXTUREFORMAT_R11G11B10_UFLOAT,
+    /* Unsigned Integer Color Formats */
+    SDL_GPU_TEXTUREFORMAT_R8_UINT,
+    SDL_GPU_TEXTUREFORMAT_R8G8_UINT,
+    SDL_GPU_TEXTUREFORMAT_R8G8B8A8_UINT,
+    SDL_GPU_TEXTUREFORMAT_R16_UINT,
+    SDL_GPU_TEXTUREFORMAT_R16G16_UINT,
+    SDL_GPU_TEXTUREFORMAT_R16G16B16A16_UINT,
+    /* Signed Integer Color Formats */
+    SDL_GPU_TEXTUREFORMAT_R8_INT,
+    SDL_GPU_TEXTUREFORMAT_R8G8_INT,
+    SDL_GPU_TEXTUREFORMAT_R8G8B8A8_INT,
+    SDL_GPU_TEXTUREFORMAT_R16_INT,
+    SDL_GPU_TEXTUREFORMAT_R16G16_INT,
+    SDL_GPU_TEXTUREFORMAT_R16G16B16A16_INT,
+    /* SRGB Unsigned Normalized Color Formats */
+    SDL_GPU_TEXTUREFORMAT_R8G8B8A8_UNORM_SRGB,
+    SDL_GPU_TEXTUREFORMAT_B8G8R8A8_UNORM_SRGB,
+    /* Compressed SRGB Unsigned Normalized Color Formats */
+    SDL_GPU_TEXTUREFORMAT_BC1_RGBA_UNORM_SRGB,
+    SDL_GPU_TEXTUREFORMAT_BC2_RGBA_UNORM_SRGB,
+    SDL_GPU_TEXTUREFORMAT_BC3_RGBA_UNORM_SRGB,
+    SDL_GPU_TEXTUREFORMAT_BC7_RGBA_UNORM_SRGB,
+    /* Depth Formats */
+    SDL_GPU_TEXTUREFORMAT_D16_UNORM,
+    SDL_GPU_TEXTUREFORMAT_D24_UNORM,
+    SDL_GPU_TEXTUREFORMAT_D32_FLOAT,
+    SDL_GPU_TEXTUREFORMAT_D24_UNORM_S8_UINT,
+    SDL_GPU_TEXTUREFORMAT_D32_FLOAT_S8_UINT
+} SDL_GPUTextureFormat;
+```
+
+## Remarks
+
+Texture format support varies depending on driver, hardware, and usage
+flags. In general, you should use
+[SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat) to query if a
+format is supported before using it. However, there are a few guaranteed
+formats.
+
+For SAMPLER usage, the following formats are universally supported: -
+R8G8B8A8_UNORM - B8G8R8A8_UNORM - R8_UNORM - R8_SNORM - R8G8_UNORM -
+R8G8_SNORM - R8G8B8A8_SNORM - R16_FLOAT - R16G16_FLOAT - R16G16B16A16_FLOAT
+- R32_FLOAT - R32G32_FLOAT - R32G32B32A32_FLOAT - R11G11B10_UFLOAT -
+R8G8B8A8_UNORM_SRGB - B8G8R8A8_UNORM_SRGB - D16_UNORM
+
+For COLOR_TARGET usage, the following formats are universally supported: -
+R8G8B8A8_UNORM - B8G8R8A8_UNORM - R8_UNORM - R16_FLOAT - R16G16_FLOAT -
+R16G16B16A16_FLOAT - R32_FLOAT - R32G32_FLOAT - R32G32B32A32_FLOAT -
+R8_UINT - R8G8_UINT - R8G8B8A8_UINT - R16_UINT - R16G16_UINT -
+R16G16B16A16_UINT - R8_INT - R8G8_INT - R8G8B8A8_INT - R16_INT - R16G16_INT
+- R16G16B16A16_INT - R8G8B8A8_UNORM_SRGB - B8G8R8A8_UNORM_SRGB
+
+For STORAGE usages, the following formats are universally supported: -
+R8G8B8A8_UNORM - R8G8B8A8_SNORM - R16G16B16A16_FLOAT - R32_FLOAT -
+R32G32_FLOAT - R32G32B32A32_FLOAT - R8G8B8A8_UINT - R16G16B16A16_UINT -
+R8G8B8A8_INT - R16G16B16A16_INT
+
+For DEPTH_STENCIL_TARGET usage, the following formats are universally
+supported: - D16_UNORM - Either (but not necessarily both!) D24_UNORM or
+D32_SFLOAT - Either (but not necessarily both!) D24_UNORM_S8_UINT or
+D32_SFLOAT_S8_UINT
+
+Unless D16_UNORM is sufficient for your purposes, always check which of
+D24/D32 is supported before creating a depth-stencil texture!
+
+## Version
+
+This enum is available since SDL 3.0.0
+
+## See Also
+
+- [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
+- [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)
+
