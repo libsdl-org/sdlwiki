@@ -29,12 +29,14 @@ It is recommended to query
 after claiming the window if you wish to change the swapchain composition
 from SDR.
 
-SDR: B8G8R8A8 or R8G8B8A8 swapchain. Pixel values are in nonlinear sRGB
-encoding. SDR_LINEAR: B8G8R8A8_SRGB or R8G8B8A8_SRGB swapchain. Pixel
-values are in nonlinear sRGB encoding. HDR_EXTENDED_LINEAR:
-R16G16B16A16_SFLOAT swapchain. Pixel values are in extended linear
-encoding. HDR10_ST2048: A2R10G10B10 or A2B10G10R10 swapchain. Pixel values
-are in PQ ST2048 encoding.
+- SDR: B8G8R8A8 or R8G8B8A8 swapchain. Pixel values are in nonlinear sRGB
+  encoding.
+- SDR_LINEAR: B8G8R8A8_SRGB or R8G8B8A8_SRGB swapchain. Pixel values are in
+  nonlinear sRGB encoding.
+- HDR_EXTENDED_LINEAR: R16G16B16A16_SFLOAT swapchain. Pixel values are in
+  extended linear encoding.
+- HDR10_ST2048: A2R10G10B10 or A2B10G10R10 swapchain. Pixel values are in
+  PQ ST2048 encoding.
 
 ## Version
 
