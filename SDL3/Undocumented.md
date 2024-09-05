@@ -2,6 +2,7 @@
 
 ## Functions defined in the headers, but not in the wiki
 
+- [SDL_SetWindowParent](SDL_SetWindowParent)
 - [SDL_abs](SDL_abs)
 - [SDL_asprintf](SDL_asprintf)
 - [SDL_atof](SDL_atof)
