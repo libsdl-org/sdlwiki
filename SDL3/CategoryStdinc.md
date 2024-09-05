@@ -91,6 +91,7 @@ runtime equivalents, but with an SDL_ prefix.
 - [SDL_strlwr](SDL_strlwr)
 - [SDL_strncasecmp](SDL_strncasecmp)
 - [SDL_strncmp](SDL_strncmp)
+- [SDL_strpbrk](SDL_strpbrk)
 - [SDL_strupr](SDL_strupr)
 - [SDL_tan](SDL_tan)
 - [SDL_tanf](SDL_tanf)
