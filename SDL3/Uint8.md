@@ -11,6 +11,8 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 typedef uint8_t Uint8;
+#define SDL_MAX_UINT8   ((Uint8)0xFF)           /* 255 */
+#define SDL_MIN_UINT8   ((Uint8)0x00)           /* 0 */
 ```
 
 ## Version

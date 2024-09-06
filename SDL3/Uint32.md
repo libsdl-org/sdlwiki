@@ -11,6 +11,8 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 typedef uint32_t Uint32;
+#define SDL_MAX_UINT32  ((Uint32)0xFFFFFFFFu)   /* 4294967295 */
+#define SDL_MIN_UINT32  ((Uint32)0x00000000)    /* 0 */
 ```
 
 ## Version
