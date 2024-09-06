@@ -15,10 +15,10 @@ SDL_IOStream * SDL_OpenIO(const SDL_IOStreamInterface *iface, void *userdata);
 
 ## Function Parameters
 
-|                                                        |              |                                                                             |
-| ------------------------------------------------------ | ------------ | --------------------------------------------------------------------------- |
-| const [SDL_IOStreamInterface](SDL_IOStreamInterface) * | **iface**    | the function pointers that implement this [SDL_IOStream](SDL_IOStream).     |
-| void *                                                 | **userdata** | the app-controlled pointer that is passed to iface's functions when called. |
+|                                                        |              |                                                                                                                                |
+| ------------------------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| const [SDL_IOStreamInterface](SDL_IOStreamInterface) * | **iface**    | the interface that implements this [SDL_IOStream](SDL_IOStream), initialized using [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)(). |
+| void *                                                 | **userdata** | the pointer that will be passed to the interface functions.                                                                    |
 
 ## Return Value
 
@@ -35,10 +35,8 @@ use the built-in implementations in SDL, like
 [SDL_IOFromFile](SDL_IOFromFile)() or [SDL_IOFromMem](SDL_IOFromMem)(),
 etc.
 
-You must free the returned pointer with [SDL_CloseIO](SDL_CloseIO)().
-
 This function makes a copy of `iface` and the caller does not need to keep
-this data around after this call.
+it around after this call.
 
 ## Version
 
@@ -47,6 +45,7 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_CloseIO](SDL_CloseIO)
+- [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
 - [SDL_IOFromConstMem](SDL_IOFromConstMem)
 - [SDL_IOFromFile](SDL_IOFromFile)
 - [SDL_IOFromMem](SDL_IOFromMem)

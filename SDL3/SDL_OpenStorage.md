@@ -15,10 +15,10 @@ SDL_Storage * SDL_OpenStorage(const SDL_StorageInterface *iface, void *userdata)
 
 ## Function Parameters
 
-|                                                      |              |                                                         |
-| ---------------------------------------------------- | ------------ | ------------------------------------------------------- |
-| const [SDL_StorageInterface](SDL_StorageInterface) * | **iface**    | the function table to be used by this container.        |
-| void *                                               | **userdata** | the pointer that will be passed to the store interface. |
+|                                                      |              |                                                                                                           |
+| ---------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------- |
+| const [SDL_StorageInterface](SDL_StorageInterface) * | **iface**    | the interface that implements this storage, initialized using [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)(). |
+| void *                                               | **userdata** | the pointer that will be passed to the interface functions.                                               |
 
 ## Return Value
 
@@ -33,6 +33,9 @@ their own [SDL_Storage](SDL_Storage) implementation. If you just need an
 SDL, like [SDL_OpenTitleStorage](SDL_OpenTitleStorage)() or
 [SDL_OpenUserStorage](SDL_OpenUserStorage)().
 
+This function makes a copy of `iface` and the caller does not need to keep
+it around after this call.
+
 ## Version
 
 This function is available since SDL 3.0.0.
@@ -42,6 +45,7 @@ This function is available since SDL 3.0.0.
 - [SDL_CloseStorage](SDL_CloseStorage)
 - [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
 - [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)
+- [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
 - [SDL_ReadStorageFile](SDL_ReadStorageFile)
 - [SDL_StorageReady](SDL_StorageReady)
 - [SDL_WriteStorageFile](SDL_WriteStorageFile)

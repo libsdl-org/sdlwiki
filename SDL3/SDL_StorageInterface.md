@@ -12,6 +12,9 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ```c
 typedef struct SDL_StorageInterface
 {
+    /* The version of this interface */
+    Uint32 version;
+
     /* Called when the storage is closed */
     SDL_bool (SDLCALL *close)(void *userdata);
 
@@ -58,9 +61,16 @@ It is not usually necessary to do this; SDL provides standard
 implementations for many things you might expect to do with an
 [SDL_Storage](SDL_Storage).
 
+This structure should be initialized using
+[SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)()
+
 ## Version
 
 This struct is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStorage](CategoryStorage)

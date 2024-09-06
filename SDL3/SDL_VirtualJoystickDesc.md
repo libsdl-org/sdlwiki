@@ -12,6 +12,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ```c
 typedef struct SDL_VirtualJoystickDesc
 {
+    Uint32 version;     /**< the version of this interface */
     Uint16 type;        /**< `SDL_JoystickType` */
     Uint16 padding;     /**< unused */
     Uint16 vendor_id;   /**< the USB vendor ID of this joystick */
@@ -45,7 +46,9 @@ typedef struct SDL_VirtualJoystickDesc
 
 ## Remarks
 
-All elements of this structure are optional and can be left 0.
+This structure should be initialized using
+[SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)(). All elements of this structure
+are optional.
 
 ## Version
 
@@ -54,6 +57,7 @@ This struct is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)
+- [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
 - [SDL_VirtualJoystickSensorDesc](SDL_VirtualJoystickSensorDesc)
 - [SDL_VirtualJoystickTouchpadDesc](SDL_VirtualJoystickTouchpadDesc)
 

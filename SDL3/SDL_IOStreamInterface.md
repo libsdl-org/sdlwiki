@@ -12,6 +12,9 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ```c
 typedef struct SDL_IOStreamInterface
 {
+    /* The version of this interface */
+    Uint32 version;
+
     /**
      *  Return the number of bytes in this SDL_IOStream
      *
@@ -72,9 +75,16 @@ not necessarily required, as SDL already offers several common types of I/O
 streams, via functions like [SDL_IOFromFile](SDL_IOFromFile)() and
 [SDL_IOFromMem](SDL_IOFromMem)().
 
+This structure should be initialized using
+[SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)()
+
 ## Version
 
 This struct is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryIOStream](CategoryIOStream)
