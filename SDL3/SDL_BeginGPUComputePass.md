@@ -11,22 +11,22 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 SDL_GPUComputePass* SDL_BeginGPUComputePass(
-    SDL_GPUCommandBuffer *commandBuffer,
-    const SDL_GPUStorageTextureWriteOnlyBinding *storageTextureBindings,
-    Uint32 storageTextureBindingCount,
-    const SDL_GPUStorageBufferWriteOnlyBinding *storageBufferBindings,
-    Uint32 storageBufferBindingCount);
+    SDL_GPUCommandBuffer *command_buffer,
+    const SDL_GPUStorageTextureWriteOnlyBinding *storage_texture_bindings,
+    Uint32 num_storage_texture_bindings,
+    const SDL_GPUStorageBufferWriteOnlyBinding *storage_buffer_bindings,
+    Uint32 num_storage_buffer_bindings);
 ```
 
 ## Function Parameters
 
-|                                                                                        |                                |                                                        |
-| -------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------ |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *                                         | **commandBuffer**              | a command buffer.                                      |
-| const [SDL_GPUStorageTextureWriteOnlyBinding](SDL_GPUStorageTextureWriteOnlyBinding) * | **storageTextureBindings**     | an array of writeable storage texture binding structs. |
-| Uint32                                                                                 | **storageTextureBindingCount** | the number of storage textures to bind from the array. |
-| const [SDL_GPUStorageBufferWriteOnlyBinding](SDL_GPUStorageBufferWriteOnlyBinding) *   | **storageBufferBindings**      | an array of writeable storage buffer binding structs.  |
-| Uint32                                                                                 | **storageBufferBindingCount**  | the number of storage buffers to bind from the array.  |
+|                                                                                        |                                  |                                                        |
+| -------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------------ |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *                                         | **command_buffer**               | a command buffer.                                      |
+| const [SDL_GPUStorageTextureWriteOnlyBinding](SDL_GPUStorageTextureWriteOnlyBinding) * | **storage_texture_bindings**     | an array of writeable storage texture binding structs. |
+| Uint32                                                                                 | **num_storage_texture_bindings** | the number of storage textures to bind from the array. |
+| const [SDL_GPUStorageBufferWriteOnlyBinding](SDL_GPUStorageBufferWriteOnlyBinding) *   | **storage_buffer_bindings**      | an array of writeable storage buffer binding structs.  |
+| Uint32                                                                                 | **num_storage_buffer_bindings**  | the number of storage buffers to bind from the array.  |
 
 ## Return Value
 

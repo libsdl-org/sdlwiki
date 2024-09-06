@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_DownloadFromGPUBuffer(
-    SDL_GPUCopyPass *copyPass,
+    SDL_GPUCopyPass *copy_pass,
     const SDL_GPUBufferRegion *source,
     const SDL_GPUTransferBufferLocation *destination);
 ```
@@ -20,7 +20,7 @@ void SDL_DownloadFromGPUBuffer(
 
 |                                                                        |                 |                                              |
 | ---------------------------------------------------------------------- | --------------- | -------------------------------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                                   | **copyPass**    | a copy pass handle.                          |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                                   | **copy_pass**   | a copy pass handle.                          |
 | const [SDL_GPUBufferRegion](SDL_GPUBufferRegion) *                     | **source**      | the source buffer with offset and size.      |
 | const [SDL_GPUTransferBufferLocation](SDL_GPUTransferBufferLocation) * | **destination** | the destination transfer buffer with offset. |
 

@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_PushGPUDebugGroup(
-    SDL_GPUCommandBuffer *commandBuffer,
+    SDL_GPUCommandBuffer *command_buffer,
     const char *name);
 ```
 
 ## Function Parameters
 
-|                                                |                   |                                               |
-| ---------------------------------------------- | ----------------- | --------------------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **commandBuffer** | a command buffer.                             |
-| const char *                                   | **name**          | a UTF-8 string constant that names the group. |
+|                                                |                    |                                               |
+| ---------------------------------------------- | ------------------ | --------------------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer.                             |
+| const char *                                   | **name**           | a UTF-8 string constant that names the group. |
 
 ## Remarks
 

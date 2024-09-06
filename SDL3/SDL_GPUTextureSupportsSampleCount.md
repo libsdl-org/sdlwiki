@@ -13,16 +13,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 SDL_bool SDL_GPUTextureSupportsSampleCount(
     SDL_GPUDevice *device,
     SDL_GPUTextureFormat format,
-    SDL_GPUSampleCount sampleCount);
+    SDL_GPUSampleCount sample_count);
 ```
 
 ## Function Parameters
 
-|                                              |                 |                              |
-| -------------------------------------------- | --------------- | ---------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *             | **device**      | a GPU context.               |
-| [SDL_GPUTextureFormat](SDL_GPUTextureFormat) | **format**      | the texture format to check. |
-| [SDL_GPUSampleCount](SDL_GPUSampleCount)     | **sampleCount** | the sample count to check.   |
+|                                              |                  |                              |
+| -------------------------------------------- | ---------------- | ---------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *             | **device**       | a GPU context.               |
+| [SDL_GPUTextureFormat](SDL_GPUTextureFormat) | **format**       | the texture format to check. |
+| [SDL_GPUSampleCount](SDL_GPUSampleCount)     | **sample_count** | the sample count to check.   |
 
 ## Return Value
 

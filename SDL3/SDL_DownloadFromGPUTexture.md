@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_DownloadFromGPUTexture(
-    SDL_GPUCopyPass *copyPass,
+    SDL_GPUCopyPass *copy_pass,
     const SDL_GPUTextureRegion *source,
     const SDL_GPUTextureTransferInfo *destination);
 ```
@@ -20,7 +20,7 @@ void SDL_DownloadFromGPUTexture(
 
 |                                                                  |                 |                                                                |
 | ---------------------------------------------------------------- | --------------- | -------------------------------------------------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                             | **copyPass**    | a copy pass handle.                                            |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                             | **copy_pass**   | a copy pass handle.                                            |
 | const [SDL_GPUTextureRegion](SDL_GPUTextureRegion) *             | **source**      | the source texture region.                                     |
 | const [SDL_GPUTextureTransferInfo](SDL_GPUTextureTransferInfo) * | **destination** | the destination transfer buffer with image layout information. |
 

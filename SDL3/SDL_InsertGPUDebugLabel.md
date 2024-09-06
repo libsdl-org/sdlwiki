@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_InsertGPUDebugLabel(
-    SDL_GPUCommandBuffer *commandBuffer,
+    SDL_GPUCommandBuffer *command_buffer,
     const char *text);
 ```
 
 ## Function Parameters
 
-|                                                |                   |                                                 |
-| ---------------------------------------------- | ----------------- | ----------------------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **commandBuffer** | a command buffer.                               |
-| const char *                                   | **text**          | a UTF-8 string constant to insert as the label. |
+|                                                |                    |                                                 |
+| ---------------------------------------------- | ------------------ | ----------------------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer.                               |
+| const char *                                   | **text**           | a UTF-8 string constant to insert as the label. |
 
 ## Remarks
 

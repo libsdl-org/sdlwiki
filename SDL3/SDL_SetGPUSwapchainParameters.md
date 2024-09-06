@@ -13,18 +13,18 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 SDL_bool SDL_SetGPUSwapchainParameters(
     SDL_GPUDevice *device,
     SDL_Window *window,
-    SDL_GPUSwapchainComposition swapchainComposition,
-    SDL_GPUPresentMode presentMode);
+    SDL_GPUSwapchainComposition swapchain_composition,
+    SDL_GPUPresentMode present_mode);
 ```
 
 ## Function Parameters
 
-|                                                            |                          |                                                    |
-| ---------------------------------------------------------- | ------------------------ | -------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                           | **device**               | a GPU context.                                     |
-| [SDL_Window](SDL_Window) *                                 | **window**               | an [SDL_Window](SDL_Window) that has been claimed. |
-| [SDL_GPUSwapchainComposition](SDL_GPUSwapchainComposition) | **swapchainComposition** | the desired composition of the swapchain.          |
-| [SDL_GPUPresentMode](SDL_GPUPresentMode)                   | **presentMode**          | the desired present mode for the swapchain.        |
+|                                                            |                           |                                                    |
+| ---------------------------------------------------------- | ------------------------- | -------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                           | **device**                | a GPU context.                                     |
+| [SDL_Window](SDL_Window) *                                 | **window**                | an [SDL_Window](SDL_Window) that has been claimed. |
+| [SDL_GPUSwapchainComposition](SDL_GPUSwapchainComposition) | **swapchain_composition** | the desired composition of the swapchain.          |
+| [SDL_GPUPresentMode](SDL_GPUPresentMode)                   | **present_mode**          | the desired present mode for the swapchain.        |
 
 ## Return Value
 

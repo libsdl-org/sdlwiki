@@ -11,14 +11,14 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_SubmitGPUCommandBuffer(
-    SDL_GPUCommandBuffer *commandBuffer);
+    SDL_GPUCommandBuffer *command_buffer);
 ```
 
 ## Function Parameters
 
-|                                                |                   |                   |
-| ---------------------------------------------- | ----------------- | ----------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **commandBuffer** | a command buffer. |
+|                                                |                    |                   |
+| ---------------------------------------------- | ------------------ | ----------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer. |
 
 ## Remarks
 

@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 SDL_GPUTexture* SDL_AcquireGPUSwapchainTexture(
-    SDL_GPUCommandBuffer *commandBuffer,
+    SDL_GPUCommandBuffer *command_buffer,
     SDL_Window *window,
-    Uint32 *pWidth,
-    Uint32 *pHeight);
+    Uint32 *w,
+    Uint32 *h);
 ```
 
 ## Function Parameters
 
-|                                                |                   |                                                |
-| ---------------------------------------------- | ----------------- | ---------------------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **commandBuffer** | a command buffer.                              |
-| [SDL_Window](SDL_Window) *                     | **window**        | a window that has been claimed.                |
-| Uint32 *                                       | **pWidth**        | a pointer filled in with the swapchain width.  |
-| Uint32 *                                       | **pHeight**       | a pointer filled in with the swapchain height. |
+|                                                |                    |                                                |
+| ---------------------------------------------- | ------------------ | ---------------------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer.                              |
+| [SDL_Window](SDL_Window) *                     | **window**         | a window that has been claimed.                |
+| Uint32 *                                       | **w**              | a pointer filled in with the swapchain width.  |
+| Uint32 *                                       | **h**              | a pointer filled in with the swapchain height. |
 
 ## Return Value
 

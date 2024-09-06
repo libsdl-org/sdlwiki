@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_BindGPUComputePipeline(
-    SDL_GPUComputePass *computePass,
-    SDL_GPUComputePipeline *computePipeline);
+    SDL_GPUComputePass *compute_pass,
+    SDL_GPUComputePipeline *compute_pipeline);
 ```
 
 ## Function Parameters
 
-|                                                    |                     |                             |
-| -------------------------------------------------- | ------------------- | --------------------------- |
-| [SDL_GPUComputePass](SDL_GPUComputePass) *         | **computePass**     | a compute pass handle.      |
-| [SDL_GPUComputePipeline](SDL_GPUComputePipeline) * | **computePipeline** | a compute pipeline to bind. |
+|                                                    |                      |                             |
+| -------------------------------------------------- | -------------------- | --------------------------- |
+| [SDL_GPUComputePass](SDL_GPUComputePass) *         | **compute_pass**     | a compute pass handle.      |
+| [SDL_GPUComputePipeline](SDL_GPUComputePipeline) * | **compute_pipeline** | a compute pipeline to bind. |
 
 ## Version
 

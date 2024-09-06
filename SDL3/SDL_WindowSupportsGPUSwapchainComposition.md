@@ -13,16 +13,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 SDL_bool SDL_WindowSupportsGPUSwapchainComposition(
     SDL_GPUDevice *device,
     SDL_Window *window,
-    SDL_GPUSwapchainComposition swapchainComposition);
+    SDL_GPUSwapchainComposition swapchain_composition);
 ```
 
 ## Function Parameters
 
-|                                                            |                          |                                     |
-| ---------------------------------------------------------- | ------------------------ | ----------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                           | **device**               | a GPU context.                      |
-| [SDL_Window](SDL_Window) *                                 | **window**               | an [SDL_Window](SDL_Window).        |
-| [SDL_GPUSwapchainComposition](SDL_GPUSwapchainComposition) | **swapchainComposition** | the swapchain composition to check. |
+|                                                            |                           |                                     |
+| ---------------------------------------------------------- | ------------------------- | ----------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                           | **device**                | a GPU context.                      |
+| [SDL_Window](SDL_Window) *                                 | **window**                | an [SDL_Window](SDL_Window).        |
+| [SDL_GPUSwapchainComposition](SDL_GPUSwapchainComposition) | **swapchain_composition** | the swapchain composition to check. |
 
 ## Return Value
 

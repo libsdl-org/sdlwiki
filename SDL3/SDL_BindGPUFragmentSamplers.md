@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_BindGPUFragmentSamplers(
-    SDL_GPURenderPass *renderPass,
-    Uint32 firstSlot,
-    const SDL_GPUTextureSamplerBinding *textureSamplerBindings,
-    Uint32 bindingCount);
+    SDL_GPURenderPass *render_pass,
+    Uint32 first_slot,
+    const SDL_GPUTextureSamplerBinding *texture_sampler_bindings,
+    Uint32 num_bindings);
 ```
 
 ## Function Parameters
 
-|                                                                      |                            |                                                             |
-| -------------------------------------------------------------------- | -------------------------- | ----------------------------------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *                             | **renderPass**             | a render pass handle.                                       |
-| Uint32                                                               | **firstSlot**              | the fragment sampler slot to begin binding from.            |
-| const [SDL_GPUTextureSamplerBinding](SDL_GPUTextureSamplerBinding) * | **textureSamplerBindings** | an array of texture-sampler binding structs.                |
-| Uint32                                                               | **bindingCount**           | the number of texture-sampler pairs to bind from the array. |
+|                                                                      |                              |                                                             |
+| -------------------------------------------------------------------- | ---------------------------- | ----------------------------------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *                             | **render_pass**              | a render pass handle.                                       |
+| Uint32                                                               | **first_slot**               | the fragment sampler slot to begin binding from.            |
+| const [SDL_GPUTextureSamplerBinding](SDL_GPUTextureSamplerBinding) * | **texture_sampler_bindings** | an array of texture-sampler binding structs.                |
+| Uint32                                                               | **num_bindings**             | the number of texture-sampler pairs to bind from the array. |
 
 ## Remarks
 

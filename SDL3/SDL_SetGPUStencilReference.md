@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_SetGPUStencilReference(
-    SDL_GPURenderPass *renderPass,
+    SDL_GPURenderPass *render_pass,
     Uint8 reference);
 ```
 
 ## Function Parameters
 
-|                                          |                |                                     |
-| ---------------------------------------- | -------------- | ----------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass** | a render pass handle.               |
-| Uint8                                    | **reference**  | the stencil reference value to set. |
+|                                          |                 |                                     |
+| ---------------------------------------- | --------------- | ----------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass** | a render pass handle.               |
+| Uint8                                    | **reference**   | the stencil reference value to set. |
 
 ## Version
 

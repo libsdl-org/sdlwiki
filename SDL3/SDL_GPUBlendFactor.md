@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GPUBlendFactor
 
-Specifies a blending factor to be used when pixels in a render pass texture attachment are blended with existing pixels in the texture.
+Specifies a blending factor to be used when pixels in a render target are blended with existing pixels in the texture.
 
 ## Header File
 

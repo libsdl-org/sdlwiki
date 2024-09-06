@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_BindGPUComputeStorageBuffers(
-    SDL_GPUComputePass *computePass,
-    Uint32 firstSlot,
-    SDL_GPUBuffer *const *storageBuffers,
-    Uint32 bindingCount);
+    SDL_GPUComputePass *compute_pass,
+    Uint32 first_slot,
+    SDL_GPUBuffer *const *storage_buffers,
+    Uint32 num_bindings);
 ```
 
 ## Function Parameters
 
-|                                            |                    |                                                        |
-| ------------------------------------------ | ------------------ | ------------------------------------------------------ |
-| [SDL_GPUComputePass](SDL_GPUComputePass) * | **computePass**    | a compute pass handle.                                 |
-| Uint32                                     | **firstSlot**      | the compute storage buffer slot to begin binding from. |
-| [SDL_GPUBuffer](SDL_GPUBuffer) *const *    | **storageBuffers** | an array of storage buffer binding structs.            |
-| Uint32                                     | **bindingCount**   | the number of storage buffers to bind from the array.  |
+|                                            |                     |                                                        |
+| ------------------------------------------ | ------------------- | ------------------------------------------------------ |
+| [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass**    | a compute pass handle.                                 |
+| Uint32                                     | **first_slot**      | the compute storage buffer slot to begin binding from. |
+| [SDL_GPUBuffer](SDL_GPUBuffer) *const *    | **storage_buffers** | an array of storage buffer binding structs.            |
+| Uint32                                     | **num_bindings**    | the number of storage buffers to bind from the array.  |
 
 ## Remarks
 

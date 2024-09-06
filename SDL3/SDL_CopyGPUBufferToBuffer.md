@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_CopyGPUBufferToBuffer(
-    SDL_GPUCopyPass *copyPass,
+    SDL_GPUCopyPass *copy_pass,
     const SDL_GPUBufferLocation *source,
     const SDL_GPUBufferLocation *destination,
     Uint32 size,
@@ -22,7 +22,7 @@ void SDL_CopyGPUBufferToBuffer(
 
 |                                                        |                 |                                                                                                       |
 | ------------------------------------------------------ | --------------- | ----------------------------------------------------------------------------------------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                   | **copyPass**    | a copy pass handle.                                                                                   |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                   | **copy_pass**   | a copy pass handle.                                                                                   |
 | const [SDL_GPUBufferLocation](SDL_GPUBufferLocation) * | **source**      | the buffer and offset to copy from.                                                                   |
 | const [SDL_GPUBufferLocation](SDL_GPUBufferLocation) * | **destination** | the buffer and offset to copy to.                                                                     |
 | Uint32                                                 | **size**        | the length of the buffer to copy.                                                                     |

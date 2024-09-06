@@ -22,7 +22,7 @@ typedef enum SDL_GPUSampleCount
 ## Remarks
 
 Used in multisampling. Note that this value only applies when the texture
-is used as a render pass attachment.
+is used as a render target.
 
 ## Version
 

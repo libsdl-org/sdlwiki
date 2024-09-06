@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_BindGPUComputeStorageTextures(
-    SDL_GPUComputePass *computePass,
-    Uint32 firstSlot,
-    SDL_GPUTexture *const *storageTextures,
-    Uint32 bindingCount);
+    SDL_GPUComputePass *compute_pass,
+    Uint32 first_slot,
+    SDL_GPUTexture *const *storage_textures,
+    Uint32 num_bindings);
 ```
 
 ## Function Parameters
 
-|                                            |                     |                                                         |
-| ------------------------------------------ | ------------------- | ------------------------------------------------------- |
-| [SDL_GPUComputePass](SDL_GPUComputePass) * | **computePass**     | a compute pass handle.                                  |
-| Uint32                                     | **firstSlot**       | the compute storage texture slot to begin binding from. |
-| [SDL_GPUTexture](SDL_GPUTexture) *const *  | **storageTextures** | an array of storage textures.                           |
-| Uint32                                     | **bindingCount**    | the number of storage textures to bind from the array.  |
+|                                            |                      |                                                         |
+| ------------------------------------------ | -------------------- | ------------------------------------------------------- |
+| [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass**     | a compute pass handle.                                  |
+| Uint32                                     | **first_slot**       | the compute storage texture slot to begin binding from. |
+| [SDL_GPUTexture](SDL_GPUTexture) *const *  | **storage_textures** | an array of storage textures.                           |
+| Uint32                                     | **num_bindings**     | the number of storage textures to bind from the array.  |
 
 ## Remarks
 

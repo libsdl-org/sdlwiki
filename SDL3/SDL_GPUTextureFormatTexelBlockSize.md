@@ -11,14 +11,14 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 Uint32 SDL_GPUTextureFormatTexelBlockSize(
-    SDL_GPUTextureFormat textureFormat);
+    SDL_GPUTextureFormat format);
 ```
 
 ## Function Parameters
 
-|                                              |                   |                                                        |
-| -------------------------------------------- | ----------------- | ------------------------------------------------------ |
-| [SDL_GPUTextureFormat](SDL_GPUTextureFormat) | **textureFormat** | the texture format you want to know the texel size of. |
+|                                              |            |                                                        |
+| -------------------------------------------- | ---------- | ------------------------------------------------------ |
+| [SDL_GPUTextureFormat](SDL_GPUTextureFormat) | **format** | the texture format you want to know the texel size of. |
 
 ## Return Value
 

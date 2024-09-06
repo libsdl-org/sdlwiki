@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_CopyGPUTextureToTexture(
-    SDL_GPUCopyPass *copyPass,
+    SDL_GPUCopyPass *copy_pass,
     const SDL_GPUTextureLocation *source,
     const SDL_GPUTextureLocation *destination,
     Uint32 w,
@@ -24,7 +24,7 @@ void SDL_CopyGPUTextureToTexture(
 
 |                                                          |                 |                                                                                                                             |
 | -------------------------------------------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                     | **copyPass**    | a copy pass handle.                                                                                                         |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                     | **copy_pass**   | a copy pass handle.                                                                                                         |
 | const [SDL_GPUTextureLocation](SDL_GPUTextureLocation) * | **source**      | a source texture region.                                                                                                    |
 | const [SDL_GPUTextureLocation](SDL_GPUTextureLocation) * | **destination** | a destination texture region.                                                                                               |
 | Uint32                                                   | **w**           | the width of the region to copy.                                                                                            |

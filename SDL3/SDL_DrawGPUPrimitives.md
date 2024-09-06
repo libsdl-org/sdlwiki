@@ -11,28 +11,28 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_DrawGPUPrimitives(
-    SDL_GPURenderPass *renderPass,
-    Uint32 vertexCount,
-    Uint32 instanceCount,
-    Uint32 firstVertex,
-    Uint32 firstInstance);
+    SDL_GPURenderPass *render_pass,
+    Uint32 num_vertices,
+    Uint32 num_instances,
+    Uint32 first_vertex,
+    Uint32 first_instance);
 ```
 
 ## Function Parameters
 
-|                                          |                   |                                             |
-| ---------------------------------------- | ----------------- | ------------------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass**    | a render pass handle.                       |
-| Uint32                                   | **vertexCount**   | the number of vertices to draw.             |
-| Uint32                                   | **instanceCount** | the number of instances that will be drawn. |
-| Uint32                                   | **firstVertex**   | the index of the first vertex to draw.      |
-| Uint32                                   | **firstInstance** | the ID of the first instance to draw.       |
+|                                          |                    |                                             |
+| ---------------------------------------- | ------------------ | ------------------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass**    | a render pass handle.                       |
+| Uint32                                   | **num_vertices**   | the number of vertices to draw.             |
+| Uint32                                   | **num_instances**  | the number of instances that will be drawn. |
+| Uint32                                   | **first_vertex**   | the index of the first vertex to draw.      |
+| Uint32                                   | **first_instance** | the ID of the first instance to draw.       |
 
 ## Remarks
 
 You must not call this function before binding a graphics pipeline.
 
-Note that the `firstVertex` and `firstInstance` parameters are NOT
+Note that the `first_vertex` and `first_instance` parameters are NOT
 compatible with built-in vertex/instance ID variables in shaders (for
 example, SV_VertexID). If your shader depends on these variables, the
 correlating draw call parameter MUST be 0.

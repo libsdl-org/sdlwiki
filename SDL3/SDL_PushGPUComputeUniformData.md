@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_PushGPUComputeUniformData(
-    SDL_GPUCommandBuffer *commandBuffer,
-    Uint32 slotIndex,
+    SDL_GPUCommandBuffer *command_buffer,
+    Uint32 slot_index,
     const void *data,
-    Uint32 dataLengthInBytes);
+    Uint32 length);
 ```
 
 ## Function Parameters
 
-|                                                |                       |                                   |
-| ---------------------------------------------- | --------------------- | --------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **commandBuffer**     | a command buffer.                 |
-| Uint32                                         | **slotIndex**         | the uniform slot to push data to. |
-| const void *                                   | **data**              | client data to write.             |
-| Uint32                                         | **dataLengthInBytes** | the length of the data to write.  |
+|                                                |                    |                                   |
+| ---------------------------------------------- | ------------------ | --------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer.                 |
+| Uint32                                         | **slot_index**     | the uniform slot to push data to. |
+| const void *                                   | **data**           | client data to write.             |
+| Uint32                                         | **length**         | the length of the data to write.  |
 
 ## Remarks
 

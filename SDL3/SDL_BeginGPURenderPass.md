@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 SDL_GPURenderPass* SDL_BeginGPURenderPass(
-    SDL_GPUCommandBuffer *commandBuffer,
-    const SDL_GPUColorAttachmentInfo *colorAttachmentInfos,
-    Uint32 colorAttachmentCount,
-    const SDL_GPUDepthStencilAttachmentInfo *depthStencilAttachmentInfo);
+    SDL_GPUCommandBuffer *command_buffer,
+    const SDL_GPUColorTargetInfo *color_target_infos,
+    Uint32 num_color_targets,
+    const SDL_GPUDepthStencilTargetInfo *depth_stencil_target_info);
 ```
 
 ## Function Parameters
 
-|                                                                                |                                |                                                                                       |
-| ------------------------------------------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *                                 | **commandBuffer**              | a command buffer.                                                                     |
-| const [SDL_GPUColorAttachmentInfo](SDL_GPUColorAttachmentInfo) *               | **colorAttachmentInfos**       | an array of texture subresources with corresponding clear values and load/store ops.  |
-| Uint32                                                                         | **colorAttachmentCount**       | the number of color attachments in the colorAttachmentInfos array.                    |
-| const [SDL_GPUDepthStencilAttachmentInfo](SDL_GPUDepthStencilAttachmentInfo) * | **depthStencilAttachmentInfo** | a texture subresource with corresponding clear value and load/store ops, may be NULL. |
+|                                                                        |                               |                                                                                       |
+| ---------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *                         | **command_buffer**            | a command buffer.                                                                     |
+| const [SDL_GPUColorTargetInfo](SDL_GPUColorTargetInfo) *               | **color_target_infos**        | an array of texture subresources with corresponding clear values and load/store ops.  |
+| Uint32                                                                 | **num_color_targets**         | the number of color targets in the color_target_infos array.                          |
+| const [SDL_GPUDepthStencilTargetInfo](SDL_GPUDepthStencilTargetInfo) * | **depth_stencil_target_info** | a texture subresource with corresponding clear value and load/store ops, may be NULL. |
 
 ## Return Value
 

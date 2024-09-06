@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_GenerateMipmapsForGPUTexture(
-    SDL_GPUCommandBuffer *commandBuffer,
+    SDL_GPUCommandBuffer *command_buffer,
     SDL_GPUTexture *texture);
 ```
 
 ## Function Parameters
 
-|                                                |                   |                                       |
-| ---------------------------------------------- | ----------------- | ------------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **commandBuffer** | a commandBuffer.                      |
-| [SDL_GPUTexture](SDL_GPUTexture) *             | **texture**       | a texture with more than 1 mip level. |
+|                                                |                    |                                       |
+| ---------------------------------------------- | ------------------ | ------------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command_buffer.                     |
+| [SDL_GPUTexture](SDL_GPUTexture) *             | **texture**        | a texture with more than 1 mip level. |
 
 ## Remarks
 

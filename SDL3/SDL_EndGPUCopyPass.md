@@ -11,14 +11,14 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_EndGPUCopyPass(
-    SDL_GPUCopyPass *copyPass);
+    SDL_GPUCopyPass *copy_pass);
 ```
 
 ## Function Parameters
 
-|                                      |              |                     |
-| ------------------------------------ | ------------ | ------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) * | **copyPass** | a copy pass handle. |
+|                                      |               |                     |
+| ------------------------------------ | ------------- | ------------------- |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) * | **copy_pass** | a copy pass handle. |
 
 ## Version
 

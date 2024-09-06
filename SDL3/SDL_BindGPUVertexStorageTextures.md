@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_BindGPUVertexStorageTextures(
-    SDL_GPURenderPass *renderPass,
-    Uint32 firstSlot,
-    SDL_GPUTexture *const *storageTextures,
-    Uint32 bindingCount);
+    SDL_GPURenderPass *render_pass,
+    Uint32 first_slot,
+    SDL_GPUTexture *const *storage_textures,
+    Uint32 num_bindings);
 ```
 
 ## Function Parameters
 
-|                                           |                     |                                                        |
-| ----------------------------------------- | ------------------- | ------------------------------------------------------ |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *  | **renderPass**      | a render pass handle.                                  |
-| Uint32                                    | **firstSlot**       | the vertex storage texture slot to begin binding from. |
-| [SDL_GPUTexture](SDL_GPUTexture) *const * | **storageTextures** | an array of storage textures.                          |
-| Uint32                                    | **bindingCount**    | the number of storage texture to bind from the array.  |
+|                                           |                      |                                                        |
+| ----------------------------------------- | -------------------- | ------------------------------------------------------ |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *  | **render_pass**      | a render pass handle.                                  |
+| Uint32                                    | **first_slot**       | the vertex storage texture slot to begin binding from. |
+| [SDL_GPUTexture](SDL_GPUTexture) *const * | **storage_textures** | an array of storage textures.                          |
+| Uint32                                    | **num_bindings**     | the number of storage texture to bind from the array.  |
 
 ## Remarks
 

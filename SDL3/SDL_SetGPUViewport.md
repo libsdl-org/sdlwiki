@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_SetGPUViewport(
-    SDL_GPURenderPass *renderPass,
+    SDL_GPURenderPass *render_pass,
     const SDL_GPUViewport *viewport);
 ```
 
 ## Function Parameters
 
-|                                            |                |                       |
-| ------------------------------------------ | -------------- | --------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *   | **renderPass** | a render pass handle. |
-| const [SDL_GPUViewport](SDL_GPUViewport) * | **viewport**   | the viewport to set.  |
+|                                            |                 |                       |
+| ------------------------------------------ | --------------- | --------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *   | **render_pass** | a render pass handle. |
+| const [SDL_GPUViewport](SDL_GPUViewport) * | **viewport**    | the viewport to set.  |
 
 ## Version
 

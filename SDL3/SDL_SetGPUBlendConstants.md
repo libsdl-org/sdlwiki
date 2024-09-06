@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_SetGPUBlendConstants(
-    SDL_GPURenderPass *renderPass,
-    SDL_FColor blendConstants);
+    SDL_GPURenderPass *render_pass,
+    SDL_FColor blend_constants);
 ```
 
 ## Function Parameters
 
-|                                          |                    |                           |
-| ---------------------------------------- | ------------------ | ------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass**     | a render pass handle.     |
-| [SDL_FColor](SDL_FColor)                 | **blendConstants** | the blend constant color. |
+|                                          |                     |                           |
+| ---------------------------------------- | ------------------- | ------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass**     | a render pass handle.     |
+| [SDL_FColor](SDL_FColor)                 | **blend_constants** | the blend constant color. |
 
 ## Version
 

@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 SDL_GPUTransferBuffer* SDL_CreateGPUTransferBuffer(
     SDL_GPUDevice *device,
-    const SDL_GPUTransferBufferCreateInfo *transferBufferCreateInfo);
+    const SDL_GPUTransferBufferCreateInfo *createinfo);
 ```
 
 ## Function Parameters
 
-|                                                                            |                              |                                                                 |
-| -------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                                           | **device**                   | a GPU Context.                                                  |
-| const [SDL_GPUTransferBufferCreateInfo](SDL_GPUTransferBufferCreateInfo) * | **transferBufferCreateInfo** | a struct describing the state of the transfer buffer to create. |
+|                                                                            |                |                                                                 |
+| -------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                                           | **device**     | a GPU Context.                                                  |
+| const [SDL_GPUTransferBufferCreateInfo](SDL_GPUTransferBufferCreateInfo) * | **createinfo** | a struct describing the state of the transfer buffer to create. |
 
 ## Return Value
 

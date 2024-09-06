@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 void SDL_UnmapGPUTransferBuffer(
     SDL_GPUDevice *device,
-    SDL_GPUTransferBuffer *transferBuffer);
+    SDL_GPUTransferBuffer *transfer_buffer);
 ```
 
 ## Function Parameters
 
-|                                                  |                    |                                      |
-| ------------------------------------------------ | ------------------ | ------------------------------------ |
-| [SDL_GPUDevice](SDL_GPUDevice) *                 | **device**         | a GPU context.                       |
-| [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) * | **transferBuffer** | a previously mapped transfer buffer. |
+|                                                  |                     |                                      |
+| ------------------------------------------------ | ------------------- | ------------------------------------ |
+| [SDL_GPUDevice](SDL_GPUDevice) *                 | **device**          | a GPU context.                       |
+| [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) * | **transfer_buffer** | a previously mapped transfer buffer. |
 
 ## Version
 

@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 SDL_GPUSampler* SDL_CreateGPUSampler(
     SDL_GPUDevice *device,
-    const SDL_GPUSamplerCreateInfo *samplerCreateInfo);
+    const SDL_GPUSamplerCreateInfo *createinfo);
 ```
 
 ## Function Parameters
 
-|                                                              |                       |                                                       |
-| ------------------------------------------------------------ | --------------------- | ----------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                             | **device**            | a GPU Context.                                        |
-| const [SDL_GPUSamplerCreateInfo](SDL_GPUSamplerCreateInfo) * | **samplerCreateInfo** | a struct describing the state of the desired sampler. |
+|                                                              |                |                                                         |
+| ------------------------------------------------------------ | -------------- | ------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                             | **device**     | a GPU Context.                                          |
+| const [SDL_GPUSamplerCreateInfo](SDL_GPUSamplerCreateInfo) * | **createinfo** | a struct describing the state of the sampler to create. |
 
 ## Return Value
 

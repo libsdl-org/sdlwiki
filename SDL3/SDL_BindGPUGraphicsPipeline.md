@@ -11,16 +11,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_BindGPUGraphicsPipeline(
-    SDL_GPURenderPass *renderPass,
-    SDL_GPUGraphicsPipeline *graphicsPipeline);
+    SDL_GPURenderPass *render_pass,
+    SDL_GPUGraphicsPipeline *graphics_pipeline);
 ```
 
 ## Function Parameters
 
-|                                                      |                      |                                |
-| ---------------------------------------------------- | -------------------- | ------------------------------ |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *             | **renderPass**       | a render pass handle.          |
-| [SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline) * | **graphicsPipeline** | the graphics pipeline to bind. |
+|                                                      |                       |                                |
+| ---------------------------------------------------- | --------------------- | ------------------------------ |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *             | **render_pass**       | a render pass handle.          |
+| [SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline) * | **graphics_pipeline** | the graphics pipeline to bind. |
 
 ## Remarks
 

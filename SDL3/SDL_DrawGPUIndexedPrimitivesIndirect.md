@@ -11,22 +11,22 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_DrawGPUIndexedPrimitivesIndirect(
-    SDL_GPURenderPass *renderPass,
+    SDL_GPURenderPass *render_pass,
     SDL_GPUBuffer *buffer,
-    Uint32 offsetInBytes,
-    Uint32 drawCount,
-    Uint32 stride);
+    Uint32 offset,
+    Uint32 draw_count,
+    Uint32 pitch);
 ```
 
 ## Function Parameters
 
-|                                          |                   |                                                                             |
-| ---------------------------------------- | ----------------- | --------------------------------------------------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) * | **renderPass**    | a render pass handle.                                                       |
-| [SDL_GPUBuffer](SDL_GPUBuffer) *         | **buffer**        | a buffer containing draw parameters.                                        |
-| Uint32                                   | **offsetInBytes** | the offset to start reading from the draw buffer.                           |
-| Uint32                                   | **drawCount**     | the number of draw parameter sets that should be read from the draw buffer. |
-| Uint32                                   | **stride**        | the byte stride between sets of draw parameters.                            |
+|                                          |                 |                                                                             |
+| ---------------------------------------- | --------------- | --------------------------------------------------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass** | a render pass handle.                                                       |
+| [SDL_GPUBuffer](SDL_GPUBuffer) *         | **buffer**      | a buffer containing draw parameters.                                        |
+| Uint32                                   | **offset**      | the offset to start reading from the draw buffer.                           |
+| Uint32                                   | **draw_count**  | the number of draw parameter sets that should be read from the draw buffer. |
+| Uint32                                   | **pitch**       | the byte pitch between sets of draw parameters.                             |
 
 ## Remarks
 

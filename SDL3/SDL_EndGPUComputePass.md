@@ -11,14 +11,14 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_EndGPUComputePass(
-    SDL_GPUComputePass *computePass);
+    SDL_GPUComputePass *compute_pass);
 ```
 
 ## Function Parameters
 
-|                                            |                 |                        |
-| ------------------------------------------ | --------------- | ---------------------- |
-| [SDL_GPUComputePass](SDL_GPUComputePass) * | **computePass** | a compute pass handle. |
+|                                            |                  |                        |
+| ------------------------------------------ | ---------------- | ---------------------- |
+| [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass** | a compute pass handle. |
 
 ## Remarks
 

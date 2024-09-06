@@ -11,20 +11,20 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_DispatchGPUCompute(
-    SDL_GPUComputePass *computePass,
-    Uint32 groupCountX,
-    Uint32 groupCountY,
-    Uint32 groupCountZ);
+    SDL_GPUComputePass *compute_pass,
+    Uint32 groupcount_x,
+    Uint32 groupcount_y,
+    Uint32 groupcount_z);
 ```
 
 ## Function Parameters
 
-|                                            |                 |                                                            |
-| ------------------------------------------ | --------------- | ---------------------------------------------------------- |
-| [SDL_GPUComputePass](SDL_GPUComputePass) * | **computePass** | a compute pass handle.                                     |
-| Uint32                                     | **groupCountX** | number of local workgroups to dispatch in the X dimension. |
-| Uint32                                     | **groupCountY** | number of local workgroups to dispatch in the Y dimension. |
-| Uint32                                     | **groupCountZ** | number of local workgroups to dispatch in the Z dimension. |
+|                                            |                  |                                                            |
+| ------------------------------------------ | ---------------- | ---------------------------------------------------------- |
+| [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass** | a compute pass handle.                                     |
+| Uint32                                     | **groupcount_x** | number of local workgroups to dispatch in the X dimension. |
+| Uint32                                     | **groupcount_y** | number of local workgroups to dispatch in the Y dimension. |
+| Uint32                                     | **groupcount_z** | number of local workgroups to dispatch in the Z dimension. |
 
 ## Remarks
 

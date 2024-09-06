@@ -11,18 +11,18 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_DispatchGPUComputeIndirect(
-    SDL_GPUComputePass *computePass,
+    SDL_GPUComputePass *compute_pass,
     SDL_GPUBuffer *buffer,
-    Uint32 offsetInBytes);
+    Uint32 offset);
 ```
 
 ## Function Parameters
 
-|                                            |                   |                                                       |
-| ------------------------------------------ | ----------------- | ----------------------------------------------------- |
-| [SDL_GPUComputePass](SDL_GPUComputePass) * | **computePass**   | a compute pass handle.                                |
-| [SDL_GPUBuffer](SDL_GPUBuffer) *           | **buffer**        | a buffer containing dispatch parameters.              |
-| Uint32                                     | **offsetInBytes** | the offset to start reading from the dispatch buffer. |
+|                                            |                  |                                                       |
+| ------------------------------------------ | ---------------- | ----------------------------------------------------- |
+| [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass** | a compute pass handle.                                |
+| [SDL_GPUBuffer](SDL_GPUBuffer) *           | **buffer**       | a buffer containing dispatch parameters.              |
+| Uint32                                     | **offset**       | the offset to start reading from the dispatch buffer. |
 
 ## Remarks
 

@@ -12,15 +12,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 void SDL_ReleaseGPUComputePipeline(
     SDL_GPUDevice *device,
-    SDL_GPUComputePipeline *computePipeline);
+    SDL_GPUComputePipeline *compute_pipeline);
 ```
 
 ## Function Parameters
 
-|                                                    |                     |                                     |
-| -------------------------------------------------- | ------------------- | ----------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                   | **device**          | a GPU context.                      |
-| [SDL_GPUComputePipeline](SDL_GPUComputePipeline) * | **computePipeline** | a compute pipeline to be destroyed. |
+|                                                    |                      |                                     |
+| -------------------------------------------------- | -------------------- | ----------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                   | **device**           | a GPU context.                      |
+| [SDL_GPUComputePipeline](SDL_GPUComputePipeline) * | **compute_pipeline** | a compute pipeline to be destroyed. |
 
 ## Remarks
 
