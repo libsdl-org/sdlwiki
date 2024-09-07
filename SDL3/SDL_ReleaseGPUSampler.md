@@ -24,7 +24,7 @@ void SDL_ReleaseGPUSampler(
 
 ## Remarks
 
-You must not reference the texture after calling this function.
+You must not reference the sampler after calling this function.
 
 ## Version
 
