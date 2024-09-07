@@ -20,13 +20,13 @@ void SDL_CopyGPUBufferToBuffer(
 
 ## Function Parameters
 
-|                                                        |                 |                                                                                                       |
-| ------------------------------------------------------ | --------------- | ----------------------------------------------------------------------------------------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                   | **copy_pass**   | a copy pass handle.                                                                                   |
-| const [SDL_GPUBufferLocation](SDL_GPUBufferLocation) * | **source**      | the buffer and offset to copy from.                                                                   |
-| const [SDL_GPUBufferLocation](SDL_GPUBufferLocation) * | **destination** | the buffer and offset to copy to.                                                                     |
-| Uint32                                                 | **size**        | the length of the buffer to copy.                                                                     |
-| [SDL_bool](SDL_bool)                                   | **cycle**       | if [SDL_TRUE](SDL_TRUE), cycles the destination buffer if it is bound, otherwise overwrites the data. |
+|                                                        |                 |                                                                                                               |
+| ------------------------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------- |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                   | **copy_pass**   | a copy pass handle.                                                                                           |
+| const [SDL_GPUBufferLocation](SDL_GPUBufferLocation) * | **source**      | the buffer and offset to copy from.                                                                           |
+| const [SDL_GPUBufferLocation](SDL_GPUBufferLocation) * | **destination** | the buffer and offset to copy to.                                                                             |
+| Uint32                                                 | **size**        | the length of the buffer to copy.                                                                             |
+| [SDL_bool](SDL_bool)                                   | **cycle**       | if [SDL_TRUE](SDL_TRUE), cycles the destination buffer if it is already bound, otherwise overwrites the data. |
 
 ## Remarks
 

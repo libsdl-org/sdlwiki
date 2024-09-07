@@ -19,12 +19,12 @@ void SDL_UploadToGPUBuffer(
 
 ## Function Parameters
 
-|                                                                        |                 |                                                                                           |
-| ---------------------------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------------- |
-| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                                   | **copy_pass**   | a copy pass handle.                                                                       |
-| const [SDL_GPUTransferBufferLocation](SDL_GPUTransferBufferLocation) * | **source**      | the source transfer buffer with offset.                                                   |
-| const [SDL_GPUBufferRegion](SDL_GPUBufferRegion) *                     | **destination** | the destination buffer with offset and size.                                              |
-| [SDL_bool](SDL_bool)                                                   | **cycle**       | if [SDL_TRUE](SDL_TRUE), cycles the buffer if it is bound, otherwise overwrites the data. |
+|                                                                        |                 |                                                                                                   |
+| ---------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
+| [SDL_GPUCopyPass](SDL_GPUCopyPass) *                                   | **copy_pass**   | a copy pass handle.                                                                               |
+| const [SDL_GPUTransferBufferLocation](SDL_GPUTransferBufferLocation) * | **source**      | the source transfer buffer with offset.                                                           |
+| const [SDL_GPUBufferRegion](SDL_GPUBufferRegion) *                     | **destination** | the destination buffer with offset and size.                                                      |
+| [SDL_bool](SDL_bool)                                                   | **cycle**       | if [SDL_TRUE](SDL_TRUE), cycles the buffer if it is already bound, otherwise overwrites the data. |
 
 ## Remarks
 

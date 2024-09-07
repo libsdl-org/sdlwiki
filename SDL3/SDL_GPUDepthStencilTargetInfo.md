@@ -1,0 +1,74 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GPUDepthStencilTargetInfo
+
+A structure specifying the parameters of a depth-stencil target used by a render pass.
+
+## Header File
+
+Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gpu.h)
+
+## Syntax
+
+```c
+typedef struct SDL_GPUDepthStencilTargetInfo
+{
+    SDL_GPUTexture *texture;               /**< The texture that will be used as the depth stencil target by the render pass. */
+    SDL_GPUDepthStencilValue clear_value;  /**< The depth-stencil clear values. Can be ignored by the render pass if SDL_GPU_LOADOP_CLEAR is not used. */
+    SDL_GPULoadOp load_op;                 /**< What is done with the depth contents at the beginning of the render pass. */
+    SDL_GPUStoreOp store_op;               /**< What is done with the depth results of the render pass. */
+    SDL_GPULoadOp stencil_load_op;         /**< What is done with the stencil contents at the beginning of the render pass. */
+    SDL_GPUStoreOp stencil_store_op;       /**< What is done with the stencil results of the render pass. */
+    SDL_bool cycle;                        /**< SDL_TRUE cycles the texture if the texture is bound and any load ops are not LOAD */
+    Uint8 padding1;
+    Uint8 padding2;
+    Uint8 padding3;
+} SDL_GPUDepthStencilTargetInfo;
+```
+
+## Remarks
+
+The load_op field determines what is done with the depth contents of the
+texture at the beginning of the render pass.
+
+- LOAD: Loads the depth values currently in the texture.
+- CLEAR: Clears the texture to a single depth.
+- DONT_CARE: The driver will do whatever it wants with the memory. This is
+  a good option if you know that every single pixel will be touched in the
+  render pass.
+
+The store_op field determines what is done with the depth results of the
+render pass.
+
+- STORE: Stores the depth results in the texture.
+- DONT_CARE: The driver will do whatever it wants with the depth results.
+  This is often a good option for depth/stencil textures that don't need to
+  be reused again.
+
+The stencil_load_op field determines what is done with the stencil contents
+of the texture at the beginning of the render pass.
+
+- LOAD: Loads the stencil values currently in the texture.
+- CLEAR: Clears the stencil values to a single value.
+- DONT_CARE: The driver will do whatever it wants with the memory. This is
+  a good option if you know that every single pixel will be touched in the
+  render pass.
+
+The stencil_store_op field determines what is done with the stencil results
+of the render pass.
+
+- STORE: Stores the stencil results in the texture.
+- DONT_CARE: The driver will do whatever it wants with the stencil results.
+  This is often a good option for depth/stencil textures that don't need to
+  be reused again.
+
+## Version
+
+This struct is available since SDL 3.0.0
+
+## See Also
+
+- [SDL_BeginGPURenderPass](SDL_BeginGPURenderPass)
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
+

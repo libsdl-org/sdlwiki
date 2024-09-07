@@ -18,11 +18,11 @@ void* SDL_MapGPUTransferBuffer(
 
 ## Function Parameters
 
-|                                                  |                     |                                                                     |
-| ------------------------------------------------ | ------------------- | ------------------------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                 | **device**          | a GPU context.                                                      |
-| [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) * | **transfer_buffer** | a transfer buffer.                                                  |
-| [SDL_bool](SDL_bool)                             | **cycle**           | if [SDL_TRUE](SDL_TRUE), cycles the transfer buffer if it is bound. |
+|                                                  |                     |                                                                             |
+| ------------------------------------------------ | ------------------- | --------------------------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                 | **device**          | a GPU context.                                                              |
+| [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) * | **transfer_buffer** | a transfer buffer.                                                          |
+| [SDL_bool](SDL_bool)                             | **cycle**           | if [SDL_TRUE](SDL_TRUE), cycles the transfer buffer if it is already bound. |
 
 ## Return Value
 
