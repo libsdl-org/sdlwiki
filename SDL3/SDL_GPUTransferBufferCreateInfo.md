@@ -12,8 +12,8 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef struct SDL_GPUTransferBufferCreateInfo
 {
-    SDL_GPUTransferBufferUsage usage;  /** How the transfer buffer is intended to be used by the client. */
-    Uint32 size;                       /** The size in bytes of the transfer buffer. */
+    SDL_GPUTransferBufferUsage usage;  /**< How the transfer buffer is intended to be used by the client. */
+    Uint32 size;                       /**< The size in bytes of the transfer buffer. */
 
     SDL_PropertiesID props;            /**< A properties ID for extensions. Should be 0 if no extensions are needed. */
 } SDL_GPUTransferBufferCreateInfo;
