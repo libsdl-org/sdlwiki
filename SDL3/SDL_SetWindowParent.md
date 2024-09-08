@@ -29,7 +29,7 @@ more information.
 ## Remarks
 
 If the window is already the child of an existing window, it will be
-reparented to the new owner. Setting the parent window to null unparents
+reparented to the new owner. Setting the parent window to NULL unparents
 the window and removes child window status.
 
 Attempting to set the parent of a window that is currently in the modal
