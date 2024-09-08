@@ -30,6 +30,10 @@ NULL if no rendering context was active, the format was unsupported, or the
 width or height were out of range; call [SDL_GetError](SDL_GetError)() for
 more information.
 
+## Remarks
+
+The contents of a texture when first created are not defined.
+
 ## Version
 
 This function is available since SDL 3.0.0.
