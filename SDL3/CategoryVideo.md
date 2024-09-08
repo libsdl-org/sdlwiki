@@ -105,6 +105,7 @@ SDL video functions.
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
 - [SDL_SetWindowOpacity](SDL_SetWindowOpacity)
+- [SDL_SetWindowParent](SDL_SetWindowParent)
 - [SDL_SetWindowPosition](SDL_SetWindowPosition)
 - [SDL_SetWindowResizable](SDL_SetWindowResizable)
 - [SDL_SetWindowShape](SDL_SetWindowShape)
