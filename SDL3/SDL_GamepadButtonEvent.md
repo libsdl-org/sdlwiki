@@ -17,7 +17,7 @@ typedef struct SDL_GamepadButtonEvent
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_JoystickID which; /**< The joystick instance id */
     Uint8 button;       /**< The gamepad button (SDL_GamepadButton) */
-    Uint8 state;        /**< SDL_PRESSED or SDL_RELEASED */
+    SDL_bool down;      /**< SDL_TRUE if the button is pressed */
     Uint8 padding1;
     Uint8 padding2;
 } SDL_GamepadButtonEvent;

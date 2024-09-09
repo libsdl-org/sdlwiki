@@ -18,7 +18,7 @@ typedef struct SDL_MouseButtonEvent
     SDL_WindowID windowID; /**< The window with mouse focus, if any */
     SDL_MouseID which;  /**< The mouse instance id, SDL_TOUCH_MOUSEID */
     Uint8 button;       /**< The mouse button index */
-    Uint8 state;        /**< SDL_PRESSED or SDL_RELEASED */
+    SDL_bool down;      /**< SDL_TRUE if the button is pressed */
     Uint8 clicks;       /**< 1 for single-click, 2 for double-click, etc. */
     Uint8 padding;
     float x;            /**< X coordinate, relative to window */
