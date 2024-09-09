@@ -1,8 +1,10 @@
 # CategoryStdinc
 
 This is a general header that includes C language support. It implements a
-subset of the C runtime: these should all behave the same way as their C
-runtime equivalents, but with an SDL_ prefix.
+subset of the C runtime APIs, but with an `SDL_` prefix. For most common
+use cases, these should behave the same way as their C runtime equivalents,
+but they may differ in how or whether they handle certain edge cases. When
+in doubt, consult the documentation for details.
 
 <!-- END CATEGORY DOCUMENTATION -->
 

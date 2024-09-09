@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_aligned_free
+# SDL_free
 
-Free memory allocated by [SDL_aligned_alloc](SDL_aligned_alloc)().
+Free allocated memory.
 
 ## Header File
 
@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void SDL_aligned_free(void *mem);
+void SDL_free(void *mem);
 ```
 
 ## Function Parameters
 
-|        |         |                                                                                     |
-| ------ | ------- | ----------------------------------------------------------------------------------- |
-| void * | **mem** | a pointer previously returned by [SDL_aligned_alloc](SDL_aligned_alloc)(), or NULL. |
+|        |         |                                         |
+| ------ | ------- | --------------------------------------- |
+| void * | **mem** | a pointer to allocated memory, or NULL. |
 
 ## Remarks
 
@@ -36,7 +36,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_aligned_alloc](SDL_aligned_alloc)
+- [SDL_malloc](SDL_malloc)
+- [SDL_calloc](SDL_calloc)
+- [SDL_realloc](SDL_realloc)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

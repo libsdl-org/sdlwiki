@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-char * SDL_strpbrk(const char * SDL_RESTRICT str, const char * SDL_RESTRICT breakset);
+char * SDL_strpbrk(const char *str, const char *breakset);
 ```
 
 ## Function Parameters
 
-|                                           |              |                                                                         |
-| ----------------------------------------- | ------------ | ----------------------------------------------------------------------- |
-| const char * [SDL_RESTRICT](SDL_RESTRICT) | **str**      | The null-terminated string to be searched.                              |
-| const char * [SDL_RESTRICT](SDL_RESTRICT) | **breakset** | A null-terminated string containing the list of characters to look for. |
+|              |              |                                                                                                                            |
+| ------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| const char * | **str**      | The null-terminated string to be searched. Must not be NULL, and must not overlap with `breakset`.                         |
+| const char * | **breakset** | A null-terminated string containing the list of characters to look for. Must not be NULL, and must not overlap with `str`. |
 
 ## Return Value
 
