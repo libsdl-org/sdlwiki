@@ -87,6 +87,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_EGLDisplay](SDL_EGLDisplay)
 - [SDL_EnumeratePropertiesCallback](SDL_EnumeratePropertiesCallback)
 - [SDL_EventFilter](SDL_EventFilter)
+- [SDL_FunctionPointer](SDL_FunctionPointer)
 - [SDL_Gamepad](SDL_Gamepad)
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_GlobFlags](SDL_GlobFlags)

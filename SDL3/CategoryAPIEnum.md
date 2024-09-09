@@ -25,6 +25,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_ColorType](SDL_ColorType)
 - [SDL_DateFormat](SDL_DateFormat)
 - [SDL_DisplayOrientation](SDL_DisplayOrientation)
+- [SDL_EventAction](SDL_EventAction)
 - [SDL_EventType](SDL_EventType)
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_FlipMode](SDL_FlipMode)
