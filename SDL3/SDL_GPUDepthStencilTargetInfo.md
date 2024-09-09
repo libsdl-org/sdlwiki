@@ -13,15 +13,15 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 typedef struct SDL_GPUDepthStencilTargetInfo
 {
     SDL_GPUTexture *texture;               /**< The texture that will be used as the depth stencil target by the render pass. */
-    SDL_GPUDepthStencilValue clear_value;  /**< The depth-stencil clear values. Can be ignored by the render pass if SDL_GPU_LOADOP_CLEAR is not used. */
+    float clear_depth;                     /**< The value to clear the depth component to at the beginning of the render pass. Ignored if SDL_GPU_LOADOP_CLEAR is not used. */
     SDL_GPULoadOp load_op;                 /**< What is done with the depth contents at the beginning of the render pass. */
     SDL_GPUStoreOp store_op;               /**< What is done with the depth results of the render pass. */
     SDL_GPULoadOp stencil_load_op;         /**< What is done with the stencil contents at the beginning of the render pass. */
     SDL_GPUStoreOp stencil_store_op;       /**< What is done with the stencil results of the render pass. */
     SDL_bool cycle;                        /**< SDL_TRUE cycles the texture if the texture is bound and any load ops are not LOAD */
+    Uint8 clear_stencil;                   /**< The value to clear the stencil component to at the beginning of the render pass. Ignored if SDL_GPU_LOADOP_CLEAR is not used. */
     Uint8 padding1;
     Uint8 padding2;
-    Uint8 padding3;
 } SDL_GPUDepthStencilTargetInfo;
 ```
 
