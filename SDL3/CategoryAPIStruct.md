@@ -35,6 +35,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_GamepadSensorEvent](SDL_GamepadSensorEvent)
 - [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)
+- [SDL_GPUBlitInfo](SDL_GPUBlitInfo)
 - [SDL_GPUBlitRegion](SDL_GPUBlitRegion)
 - [SDL_GPUBufferBinding](SDL_GPUBufferBinding)
 - [SDL_GPUBufferCreateInfo](SDL_GPUBufferCreateInfo)
