@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_strtoull
 
-Parse a Uint64 from a string.
+Parse an `unsigned long long` from a string.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-Uint64 SDL_strtoull(const char *str, char **endp, int base);
+unsigned long long SDL_strtoull(const char *str, char **endp, int base);
 ```
 
 ## Function Parameters
@@ -23,7 +23,7 @@ Uint64 SDL_strtoull(const char *str, char **endp, int base);
 
 ## Return Value
 
-(Uint64) Returns The parsed Uint64.
+(unsigned long long) Returns The parsed `unsigned long long`.
 
 ## Remarks
 
@@ -33,9 +33,6 @@ This function makes fewer guarantees than the C runtime `strtoull`:
   other bases is unspecified.
 - It is unspecified what this function returns when the parsed integer does
   not fit inside a `long long`.
-
-Also note that unlike the C runtime `strtoull`, this function returns a
-Uint64, not an `unsigned long long`.
 
 ## Thread Safety
 

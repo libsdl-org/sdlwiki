@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_strtoll
 
-Parse an Sint64 from a string.
+Parse a `long long` from a string.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-Sint64 SDL_strtoll(const char *str, char **endp, int base);
+long long SDL_strtoll(const char *str, char **endp, int base);
 ```
 
 ## Function Parameters
@@ -23,7 +23,7 @@ Sint64 SDL_strtoll(const char *str, char **endp, int base);
 
 ## Return Value
 
-(Sint64) Returns The parsed Sint64.
+(long long) Returns The parsed `long long`.
 
 ## Remarks
 
@@ -33,9 +33,6 @@ This function makes fewer guarantees than the C runtime `strtoll`:
   other bases is unspecified.
 - It is unspecified what this function returns when the parsed integer does
   not fit inside a `long long`.
-
-Also note that unlike the C runtime `strtoll`, this function returns an
-Sint64, not a `long long`.
 
 ## Thread Safety
 
