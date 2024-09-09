@@ -15,7 +15,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Remarks
 
-This defaults to "libX11-xcb.so"
+The default is platform-specific, often "libX11-xcb.so.1".
 
 This hint should be set before initializing the video subsystem.
 
