@@ -40,7 +40,16 @@ pass. A default viewport and scissor state are automatically set when this
 is called. You cannot begin another render pass, or begin a compute pass or
 copy pass until you have ended the render pass.
 
-### D3D12 Warnings
+## Version
+
+This function is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_EndGPURenderPass](SDL_EndGPURenderPass)
+
+
+## D3D12 Warnings
 
 On D3D12 with [debug_mode](SDL_CreateGPUDevice#function-parameters) enabled,
 when clearing a color texture or depth/stencil texture, you may see a
@@ -66,14 +75,6 @@ For the depth/stencil texture:
 
 - [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_DEPTH_FLOAT](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_DEPTH_FLOAT): the depth clear value
 - [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_STENCIL_UINT8](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_STENCIL_UINT8): the stencil clear value
-
-## Version
-
-This function is available since SDL 3.0.0.
-
-## See Also
-
-- [SDL_EndGPURenderPass](SDL_EndGPURenderPass)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

@@ -27,8 +27,19 @@ typedef enum SDL_AudioFormat
         /* SDL_DEFINE_AUDIO_FORMAT(1, 1, 0, 32), */
     SDL_AUDIO_F32LE     = 0x8120u,  /**< 32-bit floating point samples */
         /* SDL_DEFINE_AUDIO_FORMAT(1, 0, 1, 32), */
-    SDL_AUDIO_F32BE     = 0x9120u   /**< As above, but big-endian byte order */
+    SDL_AUDIO_F32BE     = 0x9120u,  /**< As above, but big-endian byte order */
         /* SDL_DEFINE_AUDIO_FORMAT(1, 1, 1, 32), */
+
+    /* These represent the current system's byteorder. */
+    #if SDL_BYTEORDER == SDL_LIL_ENDIAN
+    SDL_AUDIO_S16 = SDL_AUDIO_S16LE,
+    SDL_AUDIO_S32 = SDL_AUDIO_S32LE,
+    SDL_AUDIO_F32 = SDL_AUDIO_F32LE
+    #else
+    SDL_AUDIO_S16 = SDL_AUDIO_S16BE,
+    SDL_AUDIO_S32 = SDL_AUDIO_S32BE,
+    SDL_AUDIO_F32 = SDL_AUDIO_F32BE
+    #endif
 } SDL_AudioFormat;
 ```
 
