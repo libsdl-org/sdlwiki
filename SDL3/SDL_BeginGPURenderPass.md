@@ -40,6 +40,33 @@ pass. A default viewport and scissor state are automatically set when this
 is called. You cannot begin another render pass, or begin a compute pass or
 copy pass until you have ended the render pass.
 
+### D3D12 Warnings
+
+On D3D12 with [debug_mode](SDL_CreateGPUDevice#function-parameters) enabled,
+when clearing a color texture or depth/stencil texture, you may see a
+`CLEARRENDERTARGETVIEW_MISMATCHINGCLEARVALUE` or
+`CLEARDEPTHSTENCILVIEW_MISMATCHINGCLEARVALUE` warning at runtime like:
+
+> D3D12 WARNING: ... The clear values do not match those passed to resource
+> creation. The clear operation is typically slower as a result; but will
+> still clear to the desired value.
+
+You can avoid these warnings by, when creating the texture, setting the relevant
+properties below, in the `props` of your [SDL_GPUTextureCreateInfo](SDL_GPUTextureCreateInfo),
+to the same clear color/depth/stencil value that you use in your render pass.
+
+For the color texture:
+
+- [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_R_FLOAT](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_R_FLOAT): the red channel of the clear color
+- [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_G_FLOAT](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_G_FLOAT): the green channel of the clear color
+- [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_B_FLOAT](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_B_FLOAT): the blue channel of the clear color
+- [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_A_FLOAT](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_A_FLOAT): the alpha channel of the clear color
+
+For the depth/stencil texture:
+
+- [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_DEPTH_FLOAT](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_DEPTH_FLOAT): the depth clear value
+- [SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_STENCIL_UINT8](SDL_PROP_GPU_CREATETEXTURE_D3D12_CLEAR_STENCIL_UINT8): the stencil clear value
+
 ## Version
 
 This function is available since SDL 3.0.0.
