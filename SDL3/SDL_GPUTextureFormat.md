@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef enum SDL_GPUTextureFormat
 {
-    SDL_GPU_TEXTUREFORMAT_INVALID = -1,
+    SDL_GPU_TEXTUREFORMAT_INVALID = 0,
 
     /* Unsigned Normalized Float Color Formats */
     SDL_GPU_TEXTUREFORMAT_A8_UNORM,
