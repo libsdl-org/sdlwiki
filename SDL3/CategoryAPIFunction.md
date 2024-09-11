@@ -52,6 +52,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_BindAudioStream](SDL_BindAudioStream)
 - [SDL_BindAudioStreams](SDL_BindAudioStreams)
 - [SDL_BindGPUComputePipeline](SDL_BindGPUComputePipeline)
+- [SDL_BindGPUComputeSamplers](SDL_BindGPUComputeSamplers)
 - [SDL_BindGPUComputeStorageBuffers](SDL_BindGPUComputeStorageBuffers)
 - [SDL_BindGPUComputeStorageTextures](SDL_BindGPUComputeStorageTextures)
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)

@@ -14,6 +14,7 @@ Include file for SDL GPU API functions
 - [SDL_BeginGPUCopyPass](SDL_BeginGPUCopyPass)
 - [SDL_BeginGPURenderPass](SDL_BeginGPURenderPass)
 - [SDL_BindGPUComputePipeline](SDL_BindGPUComputePipeline)
+- [SDL_BindGPUComputeSamplers](SDL_BindGPUComputeSamplers)
 - [SDL_BindGPUComputeStorageBuffers](SDL_BindGPUComputeStorageBuffers)
 - [SDL_BindGPUComputeStorageTextures](SDL_BindGPUComputeStorageTextures)
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
