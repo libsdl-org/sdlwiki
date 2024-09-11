@@ -34,22 +34,23 @@ depending on the shader format.
 
 For SPIR-V shaders, use the following resource sets:
 
-- 0: Read-only storage textures, followed by read-only storage buffers
+- 0: Sampled textures, followed by read-only storage textures, followed by
+  read-only storage buffers
 - 1: Write-only storage textures, followed by write-only storage buffers
 - 2: Uniform buffers
 
 For DXBC Shader Model 5_0 shaders, use the following register order:
 
-- t registers: Read-only storage textures, followed by read-only storage
-  buffers
+- t registers: Sampled textures, followed by read-only storage textures,
+  followed by read-only storage buffers
 - u registers: Write-only storage textures, followed by write-only storage
   buffers
 - b registers: Uniform buffers
 
 For DXIL shaders, use the following register order:
 
-- (t[n], space0): Read-only storage textures, followed by read-only storage
-  buffers
+- (t[n], space0): Sampled textures, followed by read-only storage textures,
+  followed by read-only storage buffers
 - (u[n], space1): Write-only storage textures, followed by write-only
   storage buffers
 - (b[n], space2): Uniform buffers
@@ -58,8 +59,8 @@ For MSL/metallib, use the following order:
 
 - [[buffer]]: Uniform buffers, followed by write-only storage buffers,
   followed by write-only storage buffers
-- [[texture]]: Read-only storage textures, followed by write-only storage
-  textures
+- [[texture]]: Sampled textures, followed by read-only storage textures,
+  followed by write-only storage textures
 
 ## Version
 

@@ -16,6 +16,7 @@ typedef struct SDL_GPUComputePipelineCreateInfo
     const Uint8 *code;                      /**< A pointer to compute shader code. */
     const char *entrypoint;                 /**< A pointer to a null-terminated UTF-8 string specifying the entry point function name for the shader. */
     SDL_GPUShaderFormat format;             /**< The format of the compute shader code. */
+    Uint32 num_samplers;                    /**< The number of samplers defined in the shader. */
     Uint32 num_readonly_storage_textures;   /**< The number of readonly storage textures defined in the shader. */
     Uint32 num_readonly_storage_buffers;    /**< The number of readonly storage buffers defined in the shader. */
     Uint32 num_writeonly_storage_textures;  /**< The number of writeonly storage textures defined in the shader. */
