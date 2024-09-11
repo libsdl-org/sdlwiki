@@ -12,6 +12,8 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef enum SDL_GPUVertexElementFormat
 {
+    SDL_GPU_VERTEXELEMENTFORMAT_INVALID,
+
     /* 32-bit Signed Integers */
     SDL_GPU_VERTEXELEMENTFORMAT_INT,
     SDL_GPU_VERTEXELEMENTFORMAT_INT2,

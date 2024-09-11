@@ -15,13 +15,13 @@ typedef struct SDL_GPURasterizerState
     SDL_GPUFillMode fill_mode;         /**< Whether polygons will be filled in or drawn as lines. */
     SDL_GPUCullMode cull_mode;         /**< The facing direction in which triangles will be culled. */
     SDL_GPUFrontFace front_face;       /**< The vertex winding that will cause a triangle to be determined as front-facing. */
+    float depth_bias_constant_factor;  /**< A scalar factor controlling the depth value added to each fragment. */
+    float depth_bias_clamp;            /**< The maximum depth bias of a fragment. */
+    float depth_bias_slope_factor;     /**< A scalar factor applied to a fragment's slope in depth calculations. */
     SDL_bool enable_depth_bias;        /**< SDL_TRUE to bias fragment depth values. */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;
-    float depth_bias_constant_factor;  /**< A scalar factor controlling the depth value added to each fragment. */
-    float depth_bias_clamp;            /**< The maximum depth bias of a fragment. */
-    float depth_bias_slope_factor;     /**< A scalar factor applied to a fragment's slope in depth calculations. */
 } SDL_GPURasterizerState;
 ```
 

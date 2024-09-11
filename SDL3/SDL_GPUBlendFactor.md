@@ -12,6 +12,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef enum SDL_GPUBlendFactor
 {
+    SDL_GPU_BLENDFACTOR_INVALID,
     SDL_GPU_BLENDFACTOR_ZERO,                      /**< 0 */
     SDL_GPU_BLENDFACTOR_ONE,                       /**< 1 */
     SDL_GPU_BLENDFACTOR_SRC_COLOR,                 /**< source color */

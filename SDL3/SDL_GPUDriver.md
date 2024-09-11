@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef enum SDL_GPUDriver
 {
-    SDL_GPU_DRIVER_INVALID = -1,
+    SDL_GPU_DRIVER_INVALID,
     SDL_GPU_DRIVER_PRIVATE, /* NDA'd platforms */
     SDL_GPU_DRIVER_VULKAN,
     SDL_GPU_DRIVER_D3D11,

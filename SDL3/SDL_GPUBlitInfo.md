@@ -18,7 +18,7 @@ typedef struct SDL_GPUBlitInfo {
     SDL_FlipMode flip_mode;         /**< The flip mode for the source region. */
     SDL_GPUFilter filter;           /**< The filter mode used when blitting. */
     SDL_bool cycle;                 /**< SDL_TRUE cycles the destination texture if it is already bound. */
-    Uint8 padding;
+    Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;
 } SDL_GPUBlitInfo;
