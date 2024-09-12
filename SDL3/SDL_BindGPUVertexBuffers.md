@@ -12,19 +12,19 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 void SDL_BindGPUVertexBuffers(
     SDL_GPURenderPass *render_pass,
-    Uint32 first_binding,
+    Uint32 first_slot,
     const SDL_GPUBufferBinding *bindings,
     Uint32 num_bindings);
 ```
 
 ## Function Parameters
 
-|                                                      |                   |                                                                                                               |
-| ---------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------- |
-| [SDL_GPURenderPass](SDL_GPURenderPass) *             | **render_pass**   | a render pass handle.                                                                                         |
-| Uint32                                               | **first_binding** | the starting bind point for the vertex buffers.                                                               |
-| const [SDL_GPUBufferBinding](SDL_GPUBufferBinding) * | **bindings**      | an array of [SDL_GPUBufferBinding](SDL_GPUBufferBinding) structs containing vertex buffers and offset values. |
-| Uint32                                               | **num_bindings**  | the number of bindings in the bindings array.                                                                 |
+|                                                      |                  |                                                                                                               |
+| ---------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| [SDL_GPURenderPass](SDL_GPURenderPass) *             | **render_pass**  | a render pass handle.                                                                                         |
+| Uint32                                               | **first_slot**   | the vertex buffer slot to begin binding from.                                                                 |
+| const [SDL_GPUBufferBinding](SDL_GPUBufferBinding) * | **bindings**     | an array of [SDL_GPUBufferBinding](SDL_GPUBufferBinding) structs containing vertex buffers and offset values. |
+| Uint32                                               | **num_bindings** | the number of bindings in the bindings array.                                                                 |
 
 ## Version
 

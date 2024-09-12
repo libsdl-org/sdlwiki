@@ -13,11 +13,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 typedef struct SDL_GPUVertexAttribute
 {
     Uint32 location;                    /**< The shader input location index. */
-    Uint32 binding_index;               /**< The binding index. */
+    Uint32 buffer_slot;                 /**< The binding slot of the associated vertex buffer. */
     SDL_GPUVertexElementFormat format;  /**< The size and type of the attribute data. */
     Uint32 offset;                      /**< The byte offset of this attribute relative to the start of the vertex element. */
 } SDL_GPUVertexAttribute;
 ```
+
+## Remarks
+
+All vertex attribute locations provided to an
+[SDL_GPUVertexInputState](SDL_GPUVertexInputState) must be unique.
 
 ## Version
 
@@ -25,7 +30,7 @@ This struct is available since SDL 3.0.0
 
 ## See Also
 
-- [SDL_GPUVertexBinding](SDL_GPUVertexBinding)
+- [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 
 ----
