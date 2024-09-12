@@ -14,8 +14,7 @@ void SDL_DrawGPUIndexedPrimitivesIndirect(
     SDL_GPURenderPass *render_pass,
     SDL_GPUBuffer *buffer,
     Uint32 offset,
-    Uint32 draw_count,
-    Uint32 pitch);
+    Uint32 draw_count);
 ```
 
 ## Function Parameters
@@ -26,11 +25,11 @@ void SDL_DrawGPUIndexedPrimitivesIndirect(
 | [SDL_GPUBuffer](SDL_GPUBuffer) *         | **buffer**      | a buffer containing draw parameters.                                        |
 | Uint32                                   | **offset**      | the offset to start reading from the draw buffer.                           |
 | Uint32                                   | **draw_count**  | the number of draw parameter sets that should be read from the draw buffer. |
-| Uint32                                   | **pitch**       | the byte pitch between sets of draw parameters.                             |
 
 ## Remarks
 
-The buffer layout should match the layout of
+The buffer must consist of tightly-packed draw parameter sets that each
+match the the layout of
 [SDL_GPUIndexedIndirectDrawCommand](SDL_GPUIndexedIndirectDrawCommand). You
 must not call this function before binding a graphics pipeline.
 
