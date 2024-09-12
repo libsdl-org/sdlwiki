@@ -4,6 +4,9 @@ There are a number of SDL tutorials available from different sources.
 
 == Multi-Subject ==
 
+* [https://thenumb.at/cpp-course/index.html#sdl thenumb.at SDL2 Tutorials]
+: Excellent starter for C++ users (although the SDL tutorials are _mostly_ C code).
+
 * [http://www.sdltutorials.com/ SDLTutorials.com]  
 : Warning: content up to 15 years out of date.  Check comments to see if code is invalid before using tutorials.
 : A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
