@@ -157,6 +157,7 @@ Include file for SDL GPU API functions
 - [SDL_GPUTransferBufferLocation](SDL_GPUTransferBufferLocation)
 - [SDL_GPUVertexAttribute](SDL_GPUVertexAttribute)
 - [SDL_GPUVertexBinding](SDL_GPUVertexBinding)
+- [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 - [SDL_GPUViewport](SDL_GPUViewport)
 <!-- END CATEGORY LIST -->

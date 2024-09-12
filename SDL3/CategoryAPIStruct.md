@@ -69,6 +69,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GPUTransferBufferLocation](SDL_GPUTransferBufferLocation)
 - [SDL_GPUVertexAttribute](SDL_GPUVertexAttribute)
 - [SDL_GPUVertexBinding](SDL_GPUVertexBinding)
+- [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 - [SDL_GPUViewport](SDL_GPUViewport)
 - [SDL_GUID](SDL_GUID)
