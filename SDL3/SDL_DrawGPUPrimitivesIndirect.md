@@ -29,7 +29,7 @@ void SDL_DrawGPUPrimitivesIndirect(
 ## Remarks
 
 The buffer must consist of tightly-packed draw parameter sets that each
-match the the layout of
+match the layout of
 [SDL_GPUIndirectDrawCommand](SDL_GPUIndirectDrawCommand). You must not call
 this function before binding a graphics pipeline.
 
