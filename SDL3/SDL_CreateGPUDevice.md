@@ -35,7 +35,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_GetGPUDriver](SDL_GetGPUDriver)
+- [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
+- [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
 - [SDL_DestroyGPUDevice](SDL_DestroyGPUDevice)
 
 ----

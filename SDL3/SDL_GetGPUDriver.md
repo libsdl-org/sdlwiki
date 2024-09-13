@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetGPUDriver
 
-Returns the backend used to create this GPU context.
+Get the name of a built in GPU driver.
 
 ## Header File
 
@@ -10,23 +10,35 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUDriver SDL_GetGPUDriver(SDL_GPUDevice *device);
+const char * SDL_GetGPUDriver(int index);
 ```
 
 ## Function Parameters
 
-|                                  |            |                         |
-| -------------------------------- | ---------- | ----------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) * | **device** | a GPU context to query. |
+|     |           |                            |
+| --- | --------- | -------------------------- |
+| int | **index** | the index of a GPU driver. |
 
 ## Return Value
 
-([SDL_GPUDriver](SDL_GPUDriver)) Returns an [SDL_GPUDriver](SDL_GPUDriver)
-value, or [SDL_GPU_DRIVER_INVALID](SDL_GPU_DRIVER_INVALID) on error.
+(const char *) Returns the name of the GPU driver with the given **index**.
+
+## Remarks
+
+The GPU drivers are presented in the order in which they are normally
+checked during initialization.
+
+The names of drivers are all simple, low-ASCII identifiers, like "vulkan",
+"metal" or "direct3d12". These never have Unicode characters, and are not
+meant to be proper names.
 
 ## Version
 
 This function is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_GetNumGPUDrivers](SDL_GetNumGPUDrivers)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
