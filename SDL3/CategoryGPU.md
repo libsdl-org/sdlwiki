@@ -71,6 +71,8 @@ Include file for SDL GPU API functions
 - [SDL_PushGPUFragmentUniformData](SDL_PushGPUFragmentUniformData)
 - [SDL_PushGPUVertexUniformData](SDL_PushGPUVertexUniformData)
 - [SDL_QueryGPUFence](SDL_QueryGPUFence)
+- [SDL_QueryGPUSupport](SDL_QueryGPUSupport)
+- [SDL_QueryGPUSupportWithProperties](SDL_QueryGPUSupportWithProperties)
 - [SDL_ReleaseGPUBuffer](SDL_ReleaseGPUBuffer)
 - [SDL_ReleaseGPUComputePipeline](SDL_ReleaseGPUComputePipeline)
 - [SDL_ReleaseGPUFence](SDL_ReleaseGPUFence)
