@@ -15,24 +15,24 @@ unsigned long long SDL_strtoull(const char *str, char **endp, int base);
 
 ## Function Parameters
 
-|              |          |                                                                                                                                            |
-| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| const char * | **str**  | The null-terminated string to read. Must not be NULL.                                                                                      |
-| char **      | **endp** | If not NULL, the address of the first invalid character (i.e. the next character after the parsed number) will be written to this pointer. |
-| int          | **base** | The base of the integer to read. The values 0, 10 and 16 are supported. If 0, the base will be inferred from the integer's prefix.         |
+|              |          |                                                                                                                                                                                               |
+| ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const char * | **str**  | The null-terminated string to read. Must not be NULL.                                                                                                                                         |
+| char **      | **endp** | If not NULL, the address of the first invalid character (i.e. the next character after the parsed number) will be written to this pointer.                                                    |
+| int          | **base** | The base of the integer to read. Supported values are 0 and 2 to 36 inclusive. If 0, the base will be inferred from the number's prefix (0x for hexadecimal, 0 for octal, decimal otherwise). |
 
 ## Return Value
 
-(unsigned long long) Returns The parsed `unsigned long long`.
+(unsigned long long) Returns The parsed `unsigned long long`, or 0 if no
+number could be parsed.
 
 ## Remarks
 
-This function makes fewer guarantees than the C runtime `strtoull`:
+If `str` starts with whitespace, then those whitespace characters are
+skipped before attempting to parse the number.
 
-- Only the bases 10 and 16 are guaranteed to be supported. The behavior for
-  other bases is unspecified.
-- It is unspecified what this function returns when the parsed integer does
-  not fit inside a `long long`.
+If the parsed number does not fit inside an `unsigned long long`, the
+result is clamped to the maximum representable `unsigned long long` value.
 
 ## Thread Safety
 

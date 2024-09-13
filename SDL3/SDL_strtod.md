@@ -22,7 +22,7 @@ double SDL_strtod(const char *str, char **endp);
 
 ## Return Value
 
-(double) Returns The parsed `double`.
+(double) Returns The parsed `double`, or 0 if no number could be parsed.
 
 ## Remarks
 

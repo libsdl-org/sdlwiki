@@ -15,24 +15,23 @@ long SDL_wcstol(const wchar_t *str, wchar_t **endp, int base);
 
 ## Function Parameters
 
-|                 |          |                                                                                                                                                 |
-| --------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| const wchar_t * | **str**  | The null-terminated wide string to read. Must not be NULL.                                                                                      |
-| wchar_t **      | **endp** | If not NULL, the address of the first invalid wide character (i.e. the next character after the parsed number) will be written to this pointer. |
-| int             | **base** | The base of the integer to read. The values 0, 10 and 16 are supported. If 0, the base will be inferred from the integer's prefix.              |
+|                 |          |                                                                                                                                                                                               |
+| --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const wchar_t * | **str**  | The null-terminated wide string to read. Must not be NULL.                                                                                                                                    |
+| wchar_t **      | **endp** | If not NULL, the address of the first invalid wide character (i.e. the next character after the parsed number) will be written to this pointer.                                               |
+| int             | **base** | The base of the integer to read. Supported values are 0 and 2 to 36 inclusive. If 0, the base will be inferred from the number's prefix (0x for hexadecimal, 0 for octal, decimal otherwise). |
 
 ## Return Value
 
-(long) Returns The parsed `long`.
+(long) Returns The parsed `long`, or 0 if no number could be parsed.
 
 ## Remarks
 
-This function makes fewer guarantees than the C runtime `wcstol`:
+If `str` starts with whitespace, then those whitespace characters are
+skipped before attempting to parse the number.
 
-- Only the bases 10 and 16 are guaranteed to be supported. The behavior for
-  other bases is unspecified.
-- It is unspecified what this function returns when the parsed integer does
-  not fit inside a `long`.
+If the parsed number does not fit inside a `long`, the result is clamped to
+the minimum and maximum representable `long` values.
 
 ## Thread Safety
 
