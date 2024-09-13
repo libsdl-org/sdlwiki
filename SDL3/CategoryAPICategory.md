@@ -44,6 +44,7 @@ A more human-friendly version is over in [APIByCategory](APIByCategory), if you 
 - [CategoryPixels](CategoryPixels)
 - [CategoryPlatform](CategoryPlatform)
 - [CategoryPower](CategoryPower)
+- [CategoryProcess](CategoryProcess)
 - [CategoryProperties](CategoryProperties)
 - [CategoryRect](CategoryRect)
 - [CategoryRender](CategoryRender)

@@ -43,6 +43,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [CategoryPixels](CategoryPixels)
 - [CategoryPlatform](CategoryPlatform)
 - [CategoryPower](CategoryPower)
+- [CategoryProcess](CategoryProcess)
 - [CategoryProperties](CategoryProperties)
 - [CategoryRect](CategoryRect)
 - [CategoryRender](CategoryRender)
