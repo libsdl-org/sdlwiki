@@ -67,6 +67,7 @@ This function is available since SDL 3.0.0.
 - [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
 - [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
 - [SDL_DestroyGPUDevice](SDL_DestroyGPUDevice)
+- [SDL_QueryGPUSupportWithProperties](SDL_QueryGPUSupportWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
