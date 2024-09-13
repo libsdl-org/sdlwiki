@@ -85,6 +85,9 @@ The following properties may be set at creation time by SDL:
   app, trying to use this pointer will almost certainly result in a crash!
   This is mostly a problem on Windows; make sure you build SDL and your app
   with the same compiler and settings to avoid it.
+- [`SDL_PROP_IOSTREAM_FILE_DESCRIPTOR_NUMBER`](SDL_PROP_IOSTREAM_FILE_DESCRIPTOR_NUMBER):
+  a file descriptor that this [SDL_IOStream](SDL_IOStream) is using to
+  access the filesystem.
 - [`SDL_PROP_IOSTREAM_ANDROID_AASSET_POINTER`](SDL_PROP_IOSTREAM_ANDROID_AASSET_POINTER):
   a pointer, that can be cast to an Android NDK `AAsset *`, that this
   [SDL_IOStream](SDL_IOStream) is using to access the filesystem. If SDL
@@ -98,6 +101,7 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_CloseIO](SDL_CloseIO)
+- [SDL_FlushIO](SDL_FlushIO)
 - [SDL_ReadIO](SDL_ReadIO)
 - [SDL_SeekIO](SDL_SeekIO)
 - [SDL_TellIO](SDL_TellIO)

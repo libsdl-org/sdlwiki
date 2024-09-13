@@ -23,9 +23,8 @@ Sint64 SDL_SeekIO(SDL_IOStream *context, Sint64 offset, SDL_IOWhence whence);
 
 ## Return Value
 
-(Sint64) Returns the final offset in the data stream after the seek or a
-negative error code on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(Sint64) Returns the final offset in the data stream after the seek or -1
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

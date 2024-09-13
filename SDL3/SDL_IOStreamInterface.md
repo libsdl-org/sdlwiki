@@ -55,6 +55,17 @@ typedef struct SDL_IOStreamInterface
     size_t (SDLCALL *write)(void *userdata, const void *ptr, size_t size, SDL_IOStatus *status);
 
     /**
+     *  If the stream is buffering, make sure the data is written out.
+     *
+     *  On failure, you should set `*status` to a value from the
+     *  SDL_IOStatus enum. You do not have to explicitly set this on
+     *  a successful flush.
+     *
+     *  \return SDL_TRUE if successful or SDL_FALSE on write error when flushing data.
+     */
+    SDL_bool (SDLCALL *flush)(void *userdata, SDL_IOStatus *status);
+
+    /**
      *  Close and free any allocated resources.
      *
      *  The SDL_IOStream is still destroyed even if this fails, so clean up anything

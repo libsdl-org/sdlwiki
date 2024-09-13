@@ -48,6 +48,7 @@ This function is available since SDL 3.0.0.
 
 - [SDL_IOFromConstMem](SDL_IOFromConstMem)
 - [SDL_CloseIO](SDL_CloseIO)
+- [SDL_FlushIO](SDL_FlushIO)
 - [SDL_ReadIO](SDL_ReadIO)
 - [SDL_SeekIO](SDL_SeekIO)
 - [SDL_TellIO](SDL_TellIO)

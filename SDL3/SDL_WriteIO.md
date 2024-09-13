@@ -49,6 +49,7 @@ This function is available since SDL 3.0.0.
 - [SDL_IOprintf](SDL_IOprintf)
 - [SDL_ReadIO](SDL_ReadIO)
 - [SDL_SeekIO](SDL_SeekIO)
+- [SDL_FlushIO](SDL_FlushIO)
 - [SDL_GetIOStatus](SDL_GetIOStatus)
 
 ----
