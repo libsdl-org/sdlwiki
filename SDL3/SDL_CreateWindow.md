@@ -130,7 +130,7 @@ int main(int argc, char* argv[]) {
 
     SDL_Window *window;                    // Declare a pointer
 
-    SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL2
+    SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL3
 
     // Create an application window with the following settings:
     window = SDL_CreateWindow(
