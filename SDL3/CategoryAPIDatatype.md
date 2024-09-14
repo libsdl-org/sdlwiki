@@ -88,6 +88,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback)
 - [SDL_EGLDisplay](SDL_EGLDisplay)
 - [SDL_EnumeratePropertiesCallback](SDL_EnumeratePropertiesCallback)
+- [SDL_Environment](SDL_Environment)
 - [SDL_EventFilter](SDL_EventFilter)
 - [SDL_free_func](SDL_free_func)
 - [SDL_FunctionPointer](SDL_FunctionPointer)
