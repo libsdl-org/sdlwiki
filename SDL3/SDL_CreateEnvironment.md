@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateEnvironment
 
-Create a set of environment variables
+Create a set of environment variables.
 
 ## Header File
 
@@ -12,6 +12,12 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 SDL_Environment * SDL_CreateEnvironment(SDL_bool populated);
 ```
+
+## Function Parameters
+
+|                      |               |                                                                                                                              |
+| -------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_bool](SDL_bool) | **populated** | [SDL_TRUE](SDL_TRUE) to initialize it from the C runtime environment, [SDL_FALSE](SDL_FALSE) to create an empty environment. |
 
 ## Return Value
 
