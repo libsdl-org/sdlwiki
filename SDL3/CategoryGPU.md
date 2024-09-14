@@ -60,6 +60,8 @@ Include file for SDL GPU API functions
 - [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
 - [SDL_GetGPUSwapchainTextureFormat](SDL_GetGPUSwapchainTextureFormat)
 - [SDL_GetNumGPUDrivers](SDL_GetNumGPUDrivers)
+- [SDL_GPUSupportsProperties](SDL_GPUSupportsProperties)
+- [SDL_GPUSupportsShaderFormats](SDL_GPUSupportsShaderFormats)
 - [SDL_GPUTextureFormatTexelBlockSize](SDL_GPUTextureFormatTexelBlockSize)
 - [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
 - [SDL_GPUTextureSupportsSampleCount](SDL_GPUTextureSupportsSampleCount)
