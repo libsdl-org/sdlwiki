@@ -20,6 +20,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Default audio devices](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK): SDL3 will automatically manage migrating to new physical hardware as devices are plugged in, ripped out, or changed.
 - [Time API](CategoryTime): date and time functionality beyond ticks and performance counters.
 - [Properties API](CategoryProperties): fast, flexible dictionaries of name/value pairs.
+- [Process API](CategoryProcess): Spawn child processes and communicate with them in various ways.
 - [Colorspace support](SDL_Colorspace): Surfaces and the renderer, etc, can manage multiple colorspaces.
 - [Alternate surface representations](SDL_AddSurfaceAlternateImage) for embedding HiDPI versions of images into a single SDL_Surface.
 - The Clipboard API [can support any data type](SDL_SetClipboardData) (SDL2 only handled text), and apps can provide data in multiple formats upon request in [a provided callback](SDL_ClipboardDataCallback).
