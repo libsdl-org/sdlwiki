@@ -10,14 +10,8 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Environment * SDL_CreateEnvironment(SDL_bool empty);
+SDL_Environment * SDL_CreateEnvironment(SDL_bool populated);
 ```
-
-## Function Parameters
-
-|                      |           |                                                                                                                              |
-| -------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_bool](SDL_bool) | **empty** | [SDL_TRUE](SDL_TRUE) to create an empty environment, [SDL_FALSE](SDL_FALSE) to initialize it from the C runtime environment. |
 
 ## Return Value
 
