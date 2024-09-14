@@ -39,6 +39,7 @@ information about the functions, structures, enumerations and macros.
 - [API by category](APIByCategory)
 - [Complete API index](CategoryAPI)
 - [All functions](CategoryAPIFunction)
+- [All datatypes](CategoryAPIDatatype)
 - [All structures/unions](CategoryAPIStruct)
 - [All enums](CategoryAPIEnum)
 - [All macros](CategoryAPIMacro)
