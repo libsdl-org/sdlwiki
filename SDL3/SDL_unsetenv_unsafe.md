@@ -26,7 +26,7 @@ int SDL_unsetenv_unsafe(const char *name);
 ## Thread Safety
 
 This function is not thread safe, consider using
-[SDL_UnsetEnvironmentVariable](SDL_UnsetEnvironmentVariable)() instead..
+[SDL_UnsetEnvironmentVariable](SDL_UnsetEnvironmentVariable)() instead.
 
 ## Version
 
