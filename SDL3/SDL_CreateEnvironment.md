@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateEnvironment
 
-Create a set of environment variables.
+Create a set of environment variables
 
 ## Header File
 
@@ -27,9 +27,9 @@ more information.
 
 ## Thread Safety
 
-If `empty` is [SDL_TRUE](SDL_TRUE), it is safe to call this function from
-any thread, otherwise it is safe if no other threads are calling setenv()
-or unsetenv()
+If `populated` is [SDL_FALSE](SDL_FALSE), it is safe to call this function
+from any thread, otherwise it is safe if no other threads are calling
+setenv() or unsetenv()
 
 ## Version
 

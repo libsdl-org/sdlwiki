@@ -7,10 +7,11 @@ processes.
 
 You can create a new subprocess with
 [SDL_CreateProcess](SDL_CreateProcess)() and optionally read and write to
-it using [SDL_ReadProcess](SDL_ReadProcess)() and
-[SDL_WriteProcess](SDL_WriteProcess)(). If more advanced functionality like
-chaining input between processes is necessary, you can use
-[SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)().
+it using [SDL_ReadProcess](SDL_ReadProcess)() or
+[SDL_GetProcessInput](SDL_GetProcessInput)() and
+[SDL_GetProcessOutput](SDL_GetProcessOutput)(). If more advanced
+functionality like chaining input between processes is necessary, you can
+use [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)().
 
 You can get the status of a created process with
 [SDL_WaitProcess](SDL_WaitProcess)(), or terminate the process with

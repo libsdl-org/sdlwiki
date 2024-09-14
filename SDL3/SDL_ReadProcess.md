@@ -32,10 +32,6 @@ If a process was created with I/O enabled, you can use this function to
 read the output. This function blocks until the process is complete,
 capturing all output, and providing the process exit code.
 
-This is just a convenience function. If you need more control over the
-process, you can get the output stream from the process properties and read
-it directly.
-
 The data is allocated with a zero byte at the end (null terminated) for
 convenience. This extra byte is not included in the value reported via
 `datasize`.
@@ -54,8 +50,6 @@ This function is available since SDL 3.0.0.
 
 - [SDL_CreateProcess](SDL_CreateProcess)
 - [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)
-- [SDL_GetProcessProperties](SDL_GetProcessProperties)
-- [SDL_WriteProcess](SDL_WriteProcess)
 - [SDL_DestroyProcess](SDL_DestroyProcess)
 
 ----

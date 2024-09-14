@@ -36,10 +36,11 @@ If a standard I/O stream is set to
 [SDL_IOStream](SDL_IOStream) that is available to the application. Standard
 input will be available as
 [`SDL_PROP_PROCESS_STDIN_POINTER`](SDL_PROP_PROCESS_STDIN_POINTER) and
-allows [SDL_WriteProcess](SDL_WriteProcess)(), standard output will be
-available as
+allows [SDL_GetProcessInput](SDL_GetProcessInput)(), standard output will
+be available as
 [`SDL_PROP_PROCESS_STDOUT_POINTER`](SDL_PROP_PROCESS_STDOUT_POINTER) and
-allows [SDL_ReadProcess](SDL_ReadProcess)(), and standard error will be
+allows [SDL_ReadProcess](SDL_ReadProcess)() and
+[SDL_GetProcessOutput](SDL_GetProcessOutput)(), and standard error will be
 available as
 [`SDL_PROP_PROCESS_STDERR_POINTER`](SDL_PROP_PROCESS_STDERR_POINTER) in the
 properties for the created process.
@@ -72,7 +73,8 @@ This enum is available since SDL 3.0.0.
 - [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)
 - [SDL_GetProcessProperties](SDL_GetProcessProperties)
 - [SDL_ReadProcess](SDL_ReadProcess)
-- [SDL_WriteProcess](SDL_WriteProcess)
+- [SDL_GetProcessInput](SDL_GetProcessInput)
+- [SDL_GetProcessOutput](SDL_GetProcessOutput)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryProcess](CategoryProcess)

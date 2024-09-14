@@ -33,10 +33,9 @@ These are the supported properties:
   NULL pointer, e.g. const char *args[] = { "myprogram", "argument", NULL
   }. This is a required property.
 - [`SDL_PROP_PROCESS_CREATE_ENVIRONMENT_POINTER`](SDL_PROP_PROCESS_CREATE_ENVIRONMENT_POINTER):
-  an array of strings containing variable=value, and a NULL pointer, e.g.
-  const char *env[] = { "PATH=/bin:/usr/bin", NULL }. If this property is
-  set, it will be the entire environment for the process, otherwise the
-  current environment is used.
+  an [SDL_Environment](SDL_Environment) pointer. If this property is set,
+  it will be the entire environment for the process, otherwise the current
+  environment is used.
 - [`SDL_PROP_PROCESS_CREATE_STDIN_NUMBER`](SDL_PROP_PROCESS_CREATE_STDIN_NUMBER):
   an [SDL_ProcessIO](SDL_ProcessIO) value describing where standard input
   for the process comes from, defaults to
@@ -66,6 +65,11 @@ These are the supported properties:
   standard output of the process. This property has no effect if
   [`SDL_PROP_PROCESS_CREATE_STDERR_NUMBER`](SDL_PROP_PROCESS_CREATE_STDERR_NUMBER)
   is set.
+- [`SDL_PROP_PROCESS_CREATE_BACKGROUND_BOOLEAN`](SDL_PROP_PROCESS_CREATE_BACKGROUND_BOOLEAN):
+  true if the process should run in the background. In this case the
+  default input and output is
+  [`SDL_PROCESS_STDIO_NULL`](SDL_PROCESS_STDIO_NULL) and the exitcode of
+  the process is not available, and will always be 0.
 
 On POSIX platforms, wait() and waitpid(-1, ...) should not be called, and
 SIGCHLD should not be ignored or handled because those would prevent SDL
@@ -85,7 +89,8 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateProcess](SDL_CreateProcess)
 - [SDL_GetProcessProperties](SDL_GetProcessProperties)
 - [SDL_ReadProcess](SDL_ReadProcess)
-- [SDL_WriteProcess](SDL_WriteProcess)
+- [SDL_GetProcessInput](SDL_GetProcessInput)
+- [SDL_GetProcessOutput](SDL_GetProcessOutput)
 - [SDL_KillProcess](SDL_KillProcess)
 - [SDL_WaitProcess](SDL_WaitProcess)
 - [SDL_DestroyProcess](SDL_DestroyProcess)

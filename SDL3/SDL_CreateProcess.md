@@ -40,8 +40,9 @@ Setting pipe_stdio to [SDL_TRUE](SDL_TRUE) is equivalent to setting
 and
 [`SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER`](SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER)
 to [`SDL_PROCESS_STDIO_APP`](SDL_PROCESS_STDIO_APP), and will allow the use
-of [SDL_ReadProcess](SDL_ReadProcess)() and
-[SDL_WriteProcess](SDL_WriteProcess)().
+of [SDL_ReadProcess](SDL_ReadProcess)() or
+[SDL_GetProcessInput](SDL_GetProcessInput)() and
+[SDL_GetProcessOutput](SDL_GetProcessOutput)().
 
 See [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)()
 for more details.
@@ -59,7 +60,8 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)
 - [SDL_GetProcessProperties](SDL_GetProcessProperties)
 - [SDL_ReadProcess](SDL_ReadProcess)
-- [SDL_WriteProcess](SDL_WriteProcess)
+- [SDL_GetProcessInput](SDL_GetProcessInput)
+- [SDL_GetProcessOutput](SDL_GetProcessOutput)
 - [SDL_KillProcess](SDL_KillProcess)
 - [SDL_WaitProcess](SDL_WaitProcess)
 - [SDL_DestroyProcess](SDL_DestroyProcess)
