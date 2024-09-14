@@ -53,7 +53,7 @@ The last command says "sudo" so we can write it to /usr/local (by default). You 
 Once you have the library installed, you can use the pkg-config program to help you compile your own code:
 
 ```bash
-gcc -o myprogram myprogram.c `pkg-config sdl3 --cflags --libs
+gcc -o myprogram myprogram.c `pkg-config sdl3 --cflags --libs`
 ```
 
 SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Wayland isn't available, it might try to load X11 support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible.
@@ -83,7 +83,7 @@ On Windows, SDL does not depend on a C runtime at all, not even for malloc(). Th
 
 You can build for macOS "the Unix way" with the CMake project files, and Xcode projects are also provided. You can ship an SDL.framework, or just build the .dylib file and ship it with an appropriate install_name to ship beside your program's binary.
 
-If you are building "the Unix way," we encourage you to use `-DCMAKE_OSX_ARCHITECTURES=x86_64;arm64` when running CMake, so you get a "Universal" binary that runs on both Intel and Apple Silicon processors.
+If you are building "the Unix way," we encourage you to use `-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64"` when running CMake, so you get a "Universal" binary that runs on both Intel and Apple Silicon processors.
 
 SDL3 has dropped support for PowerPC Macs and Mac OS X versions older than 10.9.
 
