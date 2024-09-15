@@ -1,5 +1,5 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_getenv_unsafe
+# SDL_getenv
 
 Get the value of a variable in the environment.
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char * SDL_getenv_unsafe(const char *name);
+const char * SDL_getenv(const char *name);
 ```
 
 ## Function Parameters
@@ -26,21 +26,15 @@ can't be found.
 
 ## Remarks
 
-This function bypasses SDL's cached copy of the environment and is not
-thread-safe.
+This function uses SDL's cached copy of the environment and is thread-safe.
 
 ## Thread Safety
 
-This function is not thread safe, consider using [SDL_getenv](SDL_getenv)()
-instead.
+It is safe to call this function from any thread.
 
 ## Version
 
 This function is available since SDL 3.0.0.
-
-## See Also
-
-- [SDL_getenv](SDL_getenv)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
