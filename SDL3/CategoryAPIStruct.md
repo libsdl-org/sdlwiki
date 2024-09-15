@@ -49,6 +49,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GPUDepthStencilTargetInfo](SDL_GPUDepthStencilTargetInfo)
 - [SDL_GPUDepthStencilValue](SDL_GPUDepthStencilValue)
 - [SDL_GPUGraphicsPipelineCreateInfo](SDL_GPUGraphicsPipelineCreateInfo)
+- [SDL_GPUGraphicsPipelineTargetInfo](SDL_GPUGraphicsPipelineTargetInfo)
 - [SDL_GpuGraphicsPipelineTargetInfo](SDL_GpuGraphicsPipelineTargetInfo)
 - [SDL_GPUIndexedIndirectDrawCommand](SDL_GPUIndexedIndirectDrawCommand)
 - [SDL_GPUIndirectDispatchCommand](SDL_GPUIndirectDispatchCommand)
