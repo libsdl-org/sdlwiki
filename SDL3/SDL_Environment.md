@@ -20,7 +20,6 @@ This struct is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_GetEnvironment](SDL_GetEnvironment)
-- [SDL_CleanupEnvironment](SDL_CleanupEnvironment)
 - [SDL_CreateEnvironment](SDL_CreateEnvironment)
 - [SDL_GetEnvironmentVariable](SDL_GetEnvironmentVariable)
 - [SDL_GetEnvironmentVariables](SDL_GetEnvironmentVariables)

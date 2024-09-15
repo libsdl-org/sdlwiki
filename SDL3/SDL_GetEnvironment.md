@@ -25,7 +25,9 @@ This is initialized at application start and is not affected by setenv()
 and unsetenv() calls after that point. Use
 [SDL_SetEnvironmentVariable](SDL_SetEnvironmentVariable)() and
 [SDL_UnsetEnvironmentVariable](SDL_UnsetEnvironmentVariable)() if you want
-to modify this environment.
+to modify this environment, or [SDL_setenv_unsafe](SDL_setenv_unsafe)() or
+[SDL_unsetenv_unsafe](SDL_unsetenv_unsafe)() if you want changes to persist
+in the C runtime environment after [SDL_Quit](SDL_Quit)().
 
 ## Thread Safety
 
@@ -37,7 +39,6 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_CleanupEnvironment](SDL_CleanupEnvironment)
 - [SDL_GetEnvironmentVariable](SDL_GetEnvironmentVariable)
 - [SDL_GetEnvironmentVariables](SDL_GetEnvironmentVariables)
 - [SDL_SetEnvironmentVariable](SDL_SetEnvironmentVariable)
