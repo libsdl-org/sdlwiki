@@ -298,6 +298,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetDisplays](SDL_GetDisplays)
 - [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds)
 - [SDL_GetDXGIOutputInfo](SDL_GetDXGIOutputInfo)
+- [SDL_getenv](SDL_getenv)
 - [SDL_getenv_unsafe](SDL_getenv_unsafe)
 - [SDL_GetEnvironment](SDL_GetEnvironment)
 - [SDL_GetEnvironmentVariable](SDL_GetEnvironmentVariable)

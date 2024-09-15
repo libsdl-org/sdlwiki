@@ -43,6 +43,7 @@ in doubt, consult the documentation for details.
 - [SDL_fmod](SDL_fmod)
 - [SDL_fmodf](SDL_fmodf)
 - [SDL_free](SDL_free)
+- [SDL_getenv](SDL_getenv)
 - [SDL_getenv_unsafe](SDL_getenv_unsafe)
 - [SDL_GetEnvironment](SDL_GetEnvironment)
 - [SDL_GetEnvironmentVariable](SDL_GetEnvironmentVariable)
