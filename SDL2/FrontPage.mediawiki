@@ -15,7 +15,6 @@ This is the SDL wiki; SDL's main website is [https://libsdl.org/ libsdl.org].
 
 This wiki is your portal to documentation and other resources for SDL 2.0.
 
-
 == Using the SDL documentation Wiki ==
 
 * [[Introduction]]
