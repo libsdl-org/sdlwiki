@@ -40,7 +40,7 @@ the changes have taken effect.
 
 When the new mode takes effect, an
 [SDL_EVENT_WINDOW_RESIZED](SDL_EVENT_WINDOW_RESIZED) and/or an
-[SDL_EVENT_WINDOOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOOW_PIXEL_SIZE_CHANGED)
+[SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED)
 event will be emitted with the new mode dimensions.
 
 ## Version
