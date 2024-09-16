@@ -76,7 +76,7 @@ For MSL/metallib, use the following order:
 - [[texture]]: Sampled textures, followed by storage textures
 - [[sampler]]: Samplers with indices corresponding to the sampled textures
 - [[buffer]]: Uniform buffers, followed by storage buffers. Vertex buffer 0
-  is bound at [[buffer(30)]], vertex buffer 1 at [[buffer(29)]], and so on.
+  is bound at [[buffer(14)]], vertex buffer 1 at [[buffer(15)]], and so on.
   Rather than manually authoring vertex buffer indices, use the
   [[stage_in]] attribute which will automatically use the vertex input
   information from the [SDL_GPUPipeline](SDL_GPUPipeline).
