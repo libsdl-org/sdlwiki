@@ -31,7 +31,8 @@ more information.
 The parameter `opacity` will be clamped internally between 0.0f
 (transparent) and 1.0f (opaque).
 
-This function also returns -1 if setting the opacity isn't supported.
+This function also returns [SDL_FALSE](SDL_FALSE) if setting the opacity
+isn't supported.
 
 ## Version
 

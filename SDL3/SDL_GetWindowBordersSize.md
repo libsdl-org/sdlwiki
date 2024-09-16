@@ -31,9 +31,9 @@ more information.
 
 ## Remarks
 
-Note: If this function fails (returns -1), the size values will be
-initialized to 0, 0, 0, 0 (if a non-NULL pointer is provided), as if the
-window in question was borderless.
+Note: If this function fails (returns [SDL_FALSE](SDL_FALSE)), the size
+values will be initialized to 0, 0, 0, 0 (if a non-NULL pointer is
+provided), as if the window in question was borderless.
 
 Note: This function may fail on systems where the window has not yet been
 decorated by the display server (for example, immediately after calling
@@ -42,7 +42,8 @@ least until the window has been presented and composited, so that the
 window system has a chance to decorate the window and provide the border
 dimensions to SDL.
 
-This function also returns -1 if getting the information is not supported.
+This function also returns [SDL_FALSE](SDL_FALSE) if getting the
+information is not supported.
 
 ## Version
 
