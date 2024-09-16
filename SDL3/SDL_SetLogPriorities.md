@@ -19,6 +19,10 @@ void SDL_SetLogPriorities(SDL_LogPriority priority);
 | ---------------------------------- | ------------ | ------------------------------------------------- |
 | [SDL_LogPriority](SDL_LogPriority) | **priority** | the [SDL_LogPriority](SDL_LogPriority) to assign. |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

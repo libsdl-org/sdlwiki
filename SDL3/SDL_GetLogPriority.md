@@ -24,6 +24,10 @@ SDL_LogPriority SDL_GetLogPriority(int category);
 ([SDL_LogPriority](SDL_LogPriority)) Returns the
 [SDL_LogPriority](SDL_LogPriority) for the requested category.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

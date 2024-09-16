@@ -10,8 +10,7 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_SetLogPriority(int category,
-                    SDL_LogPriority priority);
+void SDL_SetLogPriority(int category, SDL_LogPriority priority);
 ```
 
 ## Function Parameters
@@ -20,6 +19,10 @@ void SDL_SetLogPriority(int category,
 | ---------------------------------- | ------------ | ------------------------------------------------- |
 | int                                | **category** | the category to assign a priority to.             |
 | [SDL_LogPriority](SDL_LogPriority) | **priority** | the [SDL_LogPriority](SDL_LogPriority) to assign. |
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

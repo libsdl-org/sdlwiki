@@ -21,6 +21,10 @@ void SDL_LogCritical(int category, const char *fmt, ...);
 | const char * | **fmt**      | a printf() style message format string.                                |
 | ...          | **...**      | additional parameters matching % tokens in the **fmt** string, if any. |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

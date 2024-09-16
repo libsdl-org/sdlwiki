@@ -20,6 +20,10 @@ void SDL_SetLogOutputFunction(SDL_LogOutputFunction callback, void *userdata);
 | [SDL_LogOutputFunction](SDL_LogOutputFunction) | **callback** | an [SDL_LogOutputFunction](SDL_LogOutputFunction) to call instead of the default. |
 | void *                                         | **userdata** | a pointer that is passed to `callback`.                                           |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

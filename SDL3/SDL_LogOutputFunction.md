@@ -24,7 +24,9 @@ typedef void (SDLCALL *SDL_LogOutputFunction)(void *userdata, int category, SDL_
 
 ## Remarks
 
-This function is called by SDL when there is new text to be logged.
+This function is called by SDL when there is new text to be logged. A mutex
+is held so that this function is never called by more than one thread at
+once.
 
 ## Version
 

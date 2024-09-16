@@ -12,7 +12,8 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef enum SDL_LogPriority
 {
-    SDL_LOG_PRIORITY_VERBOSE = 1,
+    SDL_LOG_PRIORITY_INVALID,
+    SDL_LOG_PRIORITY_VERBOSE,
     SDL_LOG_PRIORITY_DEBUG,
     SDL_LOG_PRIORITY_INFO,
     SDL_LOG_PRIORITY_WARN,

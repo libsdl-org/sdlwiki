@@ -24,6 +24,10 @@ void SDL_LogMessageV(int category,
 | const char *                       | **fmt**      | a printf() style message format string. |
 | va_list                            | **ap**       | a variable argument list.               |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
