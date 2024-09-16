@@ -61,6 +61,8 @@ of the render pass.
   This is often a good option for depth/stencil textures that don't need to
   be reused again.
 
+Note that depth/stencil targets do not support multisample resolves.
+
 ## Version
 
 This struct is available since SDL 3.0.0
