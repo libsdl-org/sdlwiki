@@ -52,6 +52,7 @@ Here's where the messages go on different platforms:
 - [SDL_LogInfo](SDL_LogInfo)
 - [SDL_LogMessage](SDL_LogMessage)
 - [SDL_LogMessageV](SDL_LogMessageV)
+- [SDL_LogTrace](SDL_LogTrace)
 - [SDL_LogVerbose](SDL_LogVerbose)
 - [SDL_LogWarn](SDL_LogWarn)
 - [SDL_ResetLogPriorities](SDL_ResetLogPriorities)
