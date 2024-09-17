@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_AtomicInt
+# SDL_AtomicU32
 
-A type representing an atomic integer value.
+A type representing an atomic unsigned 32-bit value.
 
 ## Header File
 
@@ -10,16 +10,16 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-typedef struct SDL_AtomicInt { int value; } SDL_AtomicInt;
+typedef struct SDL_AtomicU32 { Uint32 value; } SDL_AtomicU32;
 ```
 
 ## Remarks
 
 This can be used to manage a value that is synchronized across multiple
 CPUs without a race condition; when an app sets a value with
-[SDL_SetAtomicInt](SDL_SetAtomicInt) all other threads, regardless of the
+[SDL_SetAtomicU32](SDL_SetAtomicU32) all other threads, regardless of the
 CPU it is running on, will see that value when retrieved with
-[SDL_GetAtomicInt](SDL_GetAtomicInt), regardless of CPU caches, etc.
+[SDL_GetAtomicU32](SDL_GetAtomicU32), regardless of CPU caches, etc.
 
 This is also useful for atomic compare-and-swap operations: a thread can
 change the value as long as its current value matches expectations. When
@@ -38,10 +38,10 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_CompareAndSwapAtomicInt](SDL_CompareAndSwapAtomicInt)
-- [SDL_GetAtomicInt](SDL_GetAtomicInt)
-- [SDL_SetAtomicInt](SDL_SetAtomicInt)
-- [SDL_AddAtomicInt](SDL_AddAtomicInt)
+- [SDL_CompareAndSwapAtomicU32](SDL_CompareAndSwapAtomicU32)
+- [SDL_GetAtomicU32](SDL_GetAtomicU32)
+- [SDL_SetAtomicU32](SDL_SetAtomicU32)
+- [SDL_AddAtomicU32](SDL_AddAtomicU32)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)

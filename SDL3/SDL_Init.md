@@ -45,7 +45,6 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 
 `flags` may be any of the following OR'd together:
 
-- [`SDL_INIT_TIMER`](SDL_INIT_TIMER): timer subsystem
 - [`SDL_INIT_AUDIO`](SDL_INIT_AUDIO): audio subsystem; automatically
   initializes the events subsystem
 - [`SDL_INIT_VIDEO`](SDL_INIT_VIDEO): video subsystem; automatically

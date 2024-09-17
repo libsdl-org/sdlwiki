@@ -28,9 +28,6 @@ SDL_TimerID SDL_AddTimer(Uint32 interval, SDL_TimerCallback callback, void *user
 
 ## Remarks
 
-If you use this function, you must pass [`SDL_INIT_TIMER`](SDL_INIT_TIMER)
-to [SDL_Init](SDL_Init)().
-
 The callback function is passed the current timer interval and the user
 supplied parameter from the [SDL_AddTimer](SDL_AddTimer)() call and should
 return the next timer interval. If the value returned from the callback is

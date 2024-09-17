@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_AtomicIncRef(a)    SDL_AtomicAdd(a, 1)
+#define SDL_AtomicIncRef(a)    SDL_AddAtomicInt(a, 1)
 ```
 
 ## Macro Parameters
