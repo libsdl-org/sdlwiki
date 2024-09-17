@@ -13,6 +13,7 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 typedef enum SDL_LogPriority
 {
     SDL_LOG_PRIORITY_INVALID,
+    SDL_LOG_PRIORITY_TRACE,
     SDL_LOG_PRIORITY_VERBOSE,
     SDL_LOG_PRIORITY_DEBUG,
     SDL_LOG_PRIORITY_INFO,

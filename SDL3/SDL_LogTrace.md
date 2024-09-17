@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_LogCritical
+# SDL_LogTrace
 
-Log a message with [SDL_LOG_PRIORITY_CRITICAL](SDL_LOG_PRIORITY_CRITICAL).
+Log a message with [SDL_LOG_PRIORITY_TRACE](SDL_LOG_PRIORITY_TRACE).
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_LogCritical(int category, const char *fmt, ...);
+void SDL_LogTrace(int category, const char *fmt, ...);
 ```
 
 ## Function Parameters
@@ -32,6 +32,7 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_Log](SDL_Log)
+- [SDL_LogCritical](SDL_LogCritical)
 - [SDL_LogDebug](SDL_LogDebug)
 - [SDL_LogError](SDL_LogError)
 - [SDL_LogInfo](SDL_LogInfo)
