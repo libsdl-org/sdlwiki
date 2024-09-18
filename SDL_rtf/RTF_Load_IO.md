@@ -10,28 +10,28 @@ Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/mai
 ## Syntax
 
 ```c
-SDL_bool RTF_Load_IO(RTF_Context *ctx, SDL_IOStream *src, SDL_bool closeio);
+bool RTF_Load_IO(RTF_Context *ctx, SDL_IOStream *src, bool closeio);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                                              |
-| ---------------------------- | ----------- | ---------------------------------------------------------------------------- |
-| [RTF_Context](RTF_Context) * | **ctx**     | the RTF context to update.                                                   |
-| SDL_IOStream *               | **src**     | the SDL_IOStream to load RTF data from.                                      |
-| SDL_bool                     | **closeio** | SDL_TRUE to close `src` when the font is closed, SDL_FALSE to leave it open. |
+|                              |             |                                                                      |
+| ---------------------------- | ----------- | -------------------------------------------------------------------- |
+| [RTF_Context](RTF_Context) * | **ctx**     | the RTF context to update.                                           |
+| SDL_IOStream *               | **src**     | the SDL_IOStream to load RTF data from.                              |
+| bool                         | **closeio** | true to close `src` when the font is closed, false to leave it open. |
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
-SDL_GetError() for more information.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 
 This can be called multiple times to change the text displayed.
 
-If `closeio` is SDL_TRUE, this function will close `src`, whether this
-function succeeded or not.
+If `closeio` is true, this function will close `src`, whether this function
+succeeded or not.
 
 On failure, call [RTF_GetError](RTF_GetError)() to get a human-readable
 text message corresponding to the error.
