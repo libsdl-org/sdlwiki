@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_bool TTF_GlyphMetrics(TTF_Font *font, Uint16 ch,
+bool TTF_GlyphMetrics(TTF_Font *font, Uint16 ch,
                         int *minx, int *maxx,
                         int *miny, int *maxy, int *advance);
 ```
@@ -24,8 +24,8 @@ SDL_bool TTF_GlyphMetrics(TTF_Font *font, Uint16 ch,
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
-SDL_GetError() for more information.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 

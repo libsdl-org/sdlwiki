@@ -10,14 +10,14 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-void TTF_ByteSwappedUNICODE(SDL_bool swapped);
+void TTF_ByteSwappedUNICODE(bool swapped);
 ```
 
 ## Function Parameters
 
-|          |             |                                                  |
-| -------- | ----------- | ------------------------------------------------ |
-| SDL_bool | **swapped** | boolean to indicate whether text is byteswapped. |
+|      |             |                                                  |
+| ---- | ----------- | ------------------------------------------------ |
+| bool | **swapped** | boolean to indicate whether text is byteswapped. |
 
 ## Remarks
 

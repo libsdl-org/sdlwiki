@@ -10,16 +10,16 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, SDL_bool closeio, int ptsize);
+TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, bool closeio, int ptsize);
 ```
 
 ## Function Parameters
 
-|                |             |                                                                              |
-| -------------- | ----------- | ---------------------------------------------------------------------------- |
-| SDL_IOStream * | **src**     | an SDL_IOStream to provide a font file's data.                               |
-| SDL_bool       | **closeio** | SDL_TRUE to close `src` when the font is closed, SDL_FALSE to leave it open. |
-| int            | **ptsize**  | point size to use for the newly-opened font.                                 |
+|                |             |                                                                      |
+| -------------- | ----------- | -------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream to provide a font file's data.                       |
+| bool           | **closeio** | true to close `src` when the font is closed, false to leave it open. |
+| int            | **ptsize**  | point size to use for the newly-opened font.                         |
 
 ## Return Value
 
@@ -32,9 +32,8 @@ Some .fon fonts will have several sizes embedded in the file, so the point
 size becomes the index of choosing which size. If the value is too high,
 the last indexed size will be the default.
 
-If `closeio` is SDL_TRUE, `src` will be automatically closed once the font
-is closed. Otherwise you should close `src` yourself after closing the
-font.
+If `closeio` is true, `src` will be automatically closed once the font is
+closed. Otherwise you should close `src` yourself after closing the font.
 
 When done with the returned [TTF_Font](TTF_Font), use
 [TTF_CloseFont](TTF_CloseFont)() to dispose of it.

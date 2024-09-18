@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_bool TTF_GetFontKerning(const TTF_Font *font);
+bool TTF_GetFontKerning(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ SDL_bool TTF_GetFontKerning(const TTF_Font *font);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE if kerning is enabled, SDL_FALSE otherwise.
+(bool) Returns true if kerning is enabled, false otherwise.
 
 ## Version
 

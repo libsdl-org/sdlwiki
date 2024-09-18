@@ -10,15 +10,15 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-void TTF_SetFontKerning(TTF_Font *font, SDL_bool enabled);
+void TTF_SetFontKerning(TTF_Font *font, bool enabled);
 ```
 
 ## Function Parameters
 
-|                        |             |                                                   |
-| ---------------------- | ----------- | ------------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**    | the font to set kerning on.                       |
-| SDL_bool               | **enabled** | SDL_TRUE to enable kerning, SDL_FALSE to disable. |
+|                        |             |                                           |
+| ---------------------- | ----------- | ----------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**    | the font to set kerning on.               |
+| bool                   | **enabled** | true to enable kerning, false to disable. |
 
 ## Remarks
 

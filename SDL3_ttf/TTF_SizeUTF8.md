@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_bool TTF_SizeUTF8(TTF_Font *font, const char *text, int *w, int *h);
+bool TTF_SizeUTF8(TTF_Font *font, const char *text, int *w, int *h);
 ```
 
 ## Function Parameters
@@ -24,8 +24,8 @@ SDL_bool TTF_SizeUTF8(TTF_Font *font, const char *text, int *w, int *h);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
-SDL_GetError() for more information.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 
