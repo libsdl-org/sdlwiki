@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-SDL_bool IMG_isJPG(SDL_IOStream *src);
+bool IMG_isJPG(SDL_IOStream *src);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ SDL_bool IMG_isJPG(SDL_IOStream *src);
 
 ## Return Value
 
-(SDL_bool) Returns non-zero if this is JPG data, zero otherwise.
+(bool) Returns non-zero if this is JPG data, zero otherwise.
 
 ## Remarks
 

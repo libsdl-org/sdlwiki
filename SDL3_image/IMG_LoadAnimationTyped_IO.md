@@ -10,16 +10,16 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-IMG_Animation * IMG_LoadAnimationTyped_IO(SDL_IOStream *src, SDL_bool closeio, const char *type);
+IMG_Animation * IMG_LoadAnimationTyped_IO(SDL_IOStream *src, bool closeio, const char *type);
 ```
 
 ## Function Parameters
 
-|                |             |                                                                                       |
-| -------------- | ----------- | ------------------------------------------------------------------------------------- |
-| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                          |
-| SDL_bool       | **closeio** | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
-| const char *   | **type**    | a filename extension that represent this data ("GIF", etc).                           |
+|                |             |                                                                               |
+| -------------- | ----------- | ----------------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                  |
+| bool           | **closeio** | true to close/free the SDL_IOStream before returning, false to leave it open. |
+| const char *   | **type**    | a filename extension that represent this data ("GIF", etc).                   |
 
 ## Return Value
 
@@ -34,9 +34,9 @@ the image data, but may rely on the caller-provided type string for formats
 that it cannot autodetect. If `type` is NULL, SDL_image will rely solely on
 its ability to guess the format.
 
-If `closeio` is SDL_TRUE, `src` will be closed before returning, whether
-this function succeeds or not. SDL_image reads everything it needs from
-`src` during this call in any case.
+If `closeio` is true, `src` will be closed before returning, whether this
+function succeeds or not. SDL_image reads everything it needs from `src`
+during this call in any case.
 
 When done with the returned animation, the app should dispose of it with a
 call to [IMG_FreeAnimation](IMG_FreeAnimation)().

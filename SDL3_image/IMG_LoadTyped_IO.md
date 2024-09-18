@@ -10,16 +10,16 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-SDL_Surface * IMG_LoadTyped_IO(SDL_IOStream *src, SDL_bool closeio, const char *type);
+SDL_Surface * IMG_LoadTyped_IO(SDL_IOStream *src, bool closeio, const char *type);
 ```
 
 ## Function Parameters
 
-|                |             |                                                                                       |
-| -------------- | ----------- | ------------------------------------------------------------------------------------- |
-| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                          |
-| SDL_bool       | **closeio** | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
-| const char *   | **type**    | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).             |
+|                |             |                                                                               |
+| -------------- | ----------- | ----------------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                  |
+| bool           | **closeio** | true to close/free the SDL_IOStream before returning, false to leave it open. |
+| const char *   | **type**    | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).     |
 
 ## Return Value
 
@@ -45,9 +45,9 @@ for the surface. You can enable RLE acceleration on the surface afterwards
 by calling: SDL_SetSurfaceColorKey(image, SDL_RLEACCEL,
 image->format->colorkey);
 
-If `closeio` is SDL_TRUE, `src` will be closed before returning, whether
-this function succeeds or not. SDL_image reads everything it needs from
-`src` during this call in any case.
+If `closeio` is true, `src` will be closed before returning, whether this
+function succeeds or not. SDL_image reads everything it needs from `src`
+during this call in any case.
 
 Even though this function accepts a file type, SDL_image may still try
 other decoders that are capable of detecting file type from the contents of
