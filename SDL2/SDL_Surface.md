@@ -38,6 +38,26 @@ typedef struct SDL_Surface
 } SDL_Surface;
 ```
 
+## Code examples
+
+```c
+/* This is meant to show how to edit a surface's pixels on the CPU, but
+   normally you should use SDL_FillRect() to wipe a surface's contents. */
+void WipeSurface(SDL_Surface *surface)
+{
+    /* This is fast for surfaces that don't require locking. */
+    /* Once locked, surface->pixels is safe to access. */
+    SDL_LockSurface(surface);
+
+    /* This assumes that color value zero is black. Use
+       SDL_MapRGBA() for more robust surface color mapping! */
+    /* height times pitch is the size of the surface's whole buffer. */
+    SDL_memset(surface->pixels, 0, surface->h * surface->pitch);
+
+    SDL_UnlockSurface(surface);
+}
+```
+
 ## Remarks
 
 This structure should be treated as read-only, except for `pixels`, which,
