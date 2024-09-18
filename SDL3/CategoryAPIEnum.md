@@ -45,7 +45,6 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_GPUCompareOp](SDL_GPUCompareOp)
 - [SDL_GPUCubeMapFace](SDL_GPUCubeMapFace)
 - [SDL_GPUCullMode](SDL_GPUCullMode)
-- [SDL_GPUDriver](SDL_GPUDriver)
 - [SDL_GPUFillMode](SDL_GPUFillMode)
 - [SDL_GPUFilter](SDL_GPUFilter)
 - [SDL_GPUFrontFace](SDL_GPUFrontFace)
@@ -96,7 +95,5 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_ThreadPriority](SDL_ThreadPriority)
 - [SDL_TimeFormat](SDL_TimeFormat)
 - [SDL_TransferCharacteristics](SDL_TransferCharacteristics)
-- [SDL_WinRT_DeviceFamily](SDL_WinRT_DeviceFamily)
-- [SDL_WinRT_Path](SDL_WinRT_Path)
 <!-- END CATEGORY LIST -->
 

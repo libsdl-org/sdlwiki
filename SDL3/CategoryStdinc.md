@@ -27,7 +27,6 @@ in doubt, consult the documentation for details.
 - [SDL_calloc](SDL_calloc)
 - [SDL_ceil](SDL_ceil)
 - [SDL_ceilf](SDL_ceilf)
-- [SDL_CleanupEnvironment](SDL_CleanupEnvironment)
 - [SDL_copysign](SDL_copysign)
 - [SDL_copysignf](SDL_copysignf)
 - [SDL_cos](SDL_cos)

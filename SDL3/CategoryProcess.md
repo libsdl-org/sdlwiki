@@ -35,7 +35,6 @@ still running!
 - [SDL_KillProcess](SDL_KillProcess)
 - [SDL_ReadProcess](SDL_ReadProcess)
 - [SDL_WaitProcess](SDL_WaitProcess)
-- [SDL_WriteProcess](SDL_WriteProcess)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
