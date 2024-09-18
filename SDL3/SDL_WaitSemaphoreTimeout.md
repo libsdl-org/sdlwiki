@@ -47,24 +47,24 @@ void wait_for_threads(void);
 
 SDL_AtomicInt done;
 SDL_Semaphore *sem;
-SDL_AtomicSet(&done, 0);
+SDL_SetAtomicInt(&done, 0);
 sem = SDL_CreateSemaphore(0);
 
 Thread_A:
-    while (!SDL_AtomicGet(&done)) {
+    while (!SDL_GetAtomicInt(&done)) {
         add_data_to_queue();
         SDL_SignalSemaphore(sem);
     }
 Thread_B:
     const Uint32 timeout = 1000; /* wake up every second */
-    while (!SDL_AtomicGet(&done)) {
+    while (!SDL_GetAtomicInt(&done)) {
         if (SDL_WaitSemaphoreTimeout(sem, timeout) == 0 && data_available()) {
             get_data_from_queue();
         }
         /* ... do other processing */
     }
 
-SDL_AtomicSet(&done, 1);
+SDL_SetAtomicInt(&done, 1);
 SDL_SignalSemaphore(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);

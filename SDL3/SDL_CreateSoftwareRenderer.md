@@ -103,9 +103,6 @@ int main(int argc, char *argv[])
 {
     SDL_Surface *surface;
 
-    /* Enable standard application logging */
-    SDL_SetLogPriority(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO);
-
     /* Initialize SDL */
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_Init fail : %s\n", SDL_GetError());
