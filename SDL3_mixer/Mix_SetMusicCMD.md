@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-SDL_bool Mix_SetMusicCMD(const char *command);
+bool Mix_SetMusicCMD(const char *command);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool Mix_SetMusicCMD(const char *command);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
-SDL_GetError() for more information.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 

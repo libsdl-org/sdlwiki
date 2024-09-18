@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-SDL_bool Mix_FadeOutMusic(int ms);
+bool Mix_FadeOutMusic(int ms);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool Mix_FadeOutMusic(int ms);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE if music was scheduled to fade, SDL_FALSE
-otherwise. If no music is currently playing, this returns SDL_FALSE.
+(bool) Returns true if music was scheduled to fade, false otherwise. If no
+music is currently playing, this returns false.
 
 ## Remarks
 

@@ -10,16 +10,16 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-Mix_Music * Mix_LoadMUSType_IO(SDL_IOStream *src, Mix_MusicType type, SDL_bool closeio);
+Mix_Music * Mix_LoadMUSType_IO(SDL_IOStream *src, Mix_MusicType type, bool closeio);
 ```
 
 ## Function Parameters
 
-|                                |             |                                                                                  |
-| ------------------------------ | ----------- | -------------------------------------------------------------------------------- |
-| SDL_IOStream *                 | **src**     | an SDL_IOStream that data will be read from.                                     |
-| [Mix_MusicType](Mix_MusicType) | **type**    | the type of audio data provided by `src`.                                        |
-| SDL_bool                       | **closeio** | SDL_TRUE to close the SDL_IOStream before returning, SDL_FALSE to leave it open. |
+|                                |             |                                                                          |
+| ------------------------------ | ----------- | ------------------------------------------------------------------------ |
+| SDL_IOStream *                 | **src**     | an SDL_IOStream that data will be read from.                             |
+| [Mix_MusicType](Mix_MusicType) | **type**    | the type of audio data provided by `src`.                                |
+| bool                           | **closeio** | true to close the SDL_IOStream before returning, false to leave it open. |
 
 ## Return Value
 
@@ -58,9 +58,9 @@ Currently, the following types are supported:
 - `MUS_OPUS` (Opus files)
 - `MUS_WAVPACK` (WavPack files)
 
-If `closeio` is SDL_TRUE, the IOStream will be closed before returning,
-whether this function succeeds or not. SDL_mixer reads everything it needs
-from the IOStream during this call in any case.
+If `closeio` is true, the IOStream will be closed before returning, whether
+this function succeeds or not. SDL_mixer reads everything it needs from the
+IOStream during this call in any case.
 
 As a convenience, there is a function to read files from disk without
 having to deal with SDL_IOStream: `Mix_LoadMUS("filename.mp3")` will manage

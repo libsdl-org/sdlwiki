@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-SDL_bool Mix_HasChunkDecoder(const char *name);
+bool Mix_HasChunkDecoder(const char *name);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool Mix_HasChunkDecoder(const char *name);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE if a decoder by that name is available,
-SDL_FALSE otherwise.
+(bool) Returns true if a decoder by that name is available, false
+otherwise.
 
 ## Remarks
 

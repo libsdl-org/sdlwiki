@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-SDL_bool Mix_FadeInMusic(Mix_Music *music, int loops, int ms);
+bool Mix_FadeInMusic(Mix_Music *music, int loops, int ms);
 ```
 
 ## Function Parameters
@@ -23,8 +23,8 @@ SDL_bool Mix_FadeInMusic(Mix_Music *music, int loops, int ms);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE on success or SDL_FALSE on failure; call
-SDL_GetError() for more information.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 

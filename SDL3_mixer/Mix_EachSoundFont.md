@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-SDL_bool Mix_EachSoundFont(Mix_EachSoundFontCallback function, void *data);
+bool Mix_EachSoundFont(Mix_EachSoundFontCallback function, void *data);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ SDL_bool Mix_EachSoundFont(Mix_EachSoundFontCallback function, void *data);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE if callback ever returned SDL_TRUE, SDL_FALSE
-on error or if the callback never returned SDL_TRUE.
+(bool) Returns true if callback ever returned true, false on error or if
+the callback never returned true.
 
 ## Remarks
 

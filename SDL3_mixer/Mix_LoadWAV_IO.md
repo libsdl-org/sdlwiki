@@ -10,15 +10,15 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-Mix_Chunk * Mix_LoadWAV_IO(SDL_IOStream *src, SDL_bool closeio);
+Mix_Chunk * Mix_LoadWAV_IO(SDL_IOStream *src, bool closeio);
 ```
 
 ## Function Parameters
 
-|                |             |                                                                                  |
-| -------------- | ----------- | -------------------------------------------------------------------------------- |
-| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                     |
-| SDL_bool       | **closeio** | SDL_TRUE to close the SDL_IOStream before returning, SDL_FALSE to leave it open. |
+|                |             |                                                                          |
+| -------------- | ----------- | ------------------------------------------------------------------------ |
+| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                             |
+| bool           | **closeio** | true to close the SDL_IOStream before returning, false to leave it open. |
 
 ## Return Value
 
@@ -41,9 +41,9 @@ won't need to decode again, whereas music always needs to be decoded on the
 fly. Also, crucially, there are as many channels for chunks as the app can
 allocate, but SDL_mixer only offers a single "music" channel.
 
-If `closeio` is SDL_TRUE, the IOStream will be closed before returning,
-whether this function succeeds or not. SDL_mixer reads everything it needs
-from the IOStream during this call in any case.
+If `closeio` is true, the IOStream will be closed before returning, whether
+this function succeeds or not. SDL_mixer reads everything it needs from the
+IOStream during this call in any case.
 
 There is a separate function (a macro, before SDL_mixer 3.0.0) to read
 files from disk without having to deal with SDL_IOStream:

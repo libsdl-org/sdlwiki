@@ -49,7 +49,7 @@ When done with a chunk, the app should dispose of it with a call to
 
 Note that before SDL_mixer 3.0.0, this function was a macro that called
 [Mix_LoadWAV_IO](Mix_LoadWAV_IO)(), creating a IOStream and setting
-`closeio` to SDL_TRUE. This macro has since been promoted to a proper API
+`closeio` to true. This macro has since been promoted to a proper API
 function. Older binaries linked against a newer SDL_mixer will still call
 [Mix_LoadWAV_IO](Mix_LoadWAV_IO) directly, as they are using the macro,
 which was available since the dawn of time.

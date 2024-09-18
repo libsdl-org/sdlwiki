@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-SDL_bool Mix_QuerySpec(int *frequency, SDL_AudioFormat *format, int *channels);
+bool Mix_QuerySpec(int *frequency, SDL_AudioFormat *format, int *channels);
 ```
 
 ## Function Parameters
@@ -23,8 +23,7 @@ SDL_bool Mix_QuerySpec(int *frequency, SDL_AudioFormat *format, int *channels);
 
 ## Return Value
 
-(SDL_bool) Returns SDL_TRUE if the audio device has been opened, SDL_TRUE
-otherwise.
+(bool) Returns true if the audio device has been opened, true otherwise.
 
 ## Remarks
 
