@@ -217,7 +217,7 @@ You can do some simple effects with the render API without having to get down in
 
 * Color alpha: [SDL_Color](SDL_Color) now contains a fourth, '''alpha''' component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named `unused`). In SDL3, you should.
 * Alpha blending: use [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) instead of `SDL_SetAlpha()`. Alpha-blending on surfaces can be disabled via [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)() and on textures with [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)().
-* Colorkey: When calling [SDL_SetSurfaceColorKey](SDL_SetSurfaceColorKey)(), you should pass `SDL_TRUE` instead of `SDL_SRCCOLORKEY`.
+* Colorkey: When calling [SDL_SetSurfaceColorKey](SDL_SetSurfaceColorKey)(), you should pass `true` instead of `SDL_SRCCOLORKEY`.
 * Color modulation: Some renderers now support a global color alteration (`srcC = srcC * color`), check [SDL_SetTextureColorMod](SDL_SetTextureColorMod)() for details.
 
 ### OpenGL
@@ -270,7 +270,7 @@ SDL_WM_GrabInput(SDL_GRAB_ON);
 In SDL3, this works slightly differently. You call...
 
 ```c
-SDL_SetRelativeMouseMode(SDL_TRUE);
+SDL_SetRelativeMouseMode(true);
 ```
 
 ...and SDL does the rest.

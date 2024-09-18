@@ -51,7 +51,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-SDL_bool condition = SDL_FALSE;
+bool condition = false;
 SDL_Mutex *lock;
 SDL_Condition *cond;
 lock = SDL_CreateMutex();
@@ -59,7 +59,7 @@ cond = SDL_CreateCondition();
 
 Thread_A:
     const Uint32 timeout = 1000; /* wake up every second */
-    SDL_bool done = SDL_FALSE;
+    bool done = false;
     while (!done) {
         SDL_LockMutex(lock);
         while (!condition && SDL_WaitConditionTimeout(cond, lock, timeout) == 0) {
@@ -74,7 +74,7 @@ Thread_A:
 Thread_B:
     SDL_LockMutex(lock);
     /* ... */
-    condition = SDL_TRUE;
+    condition = true;
     /* ... */
     SDL_SignalCondition(cond);
     SDL_UnlockMutex(lock);

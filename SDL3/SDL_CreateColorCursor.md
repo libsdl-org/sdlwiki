@@ -56,7 +56,7 @@ main(int argc, char *argv[])
     SDL_Renderer *renderer = NULL;
     SDL_Surface *surface = NULL;
     SDL_Cursor *cursor = NULL;
-    SDL_bool error = SDL_TRUE;
+    bool error = true;
 
     if (!SDL_Init(SDL_INIT_VIDEO)) {
         goto exit;
@@ -75,13 +75,13 @@ main(int argc, char *argv[])
 
     SDL_SetCursor(cursor);
     SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-    while (SDL_TRUE) {
+    while (true) {
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
             switch (event.type) {
             case SDL_EVENT_MOUSE_BUTTON_UP:
             case SDL_EVENT_QUIT:
-                error = SDL_FALSE;
+                error = false;
                 goto exit;
             }
         }

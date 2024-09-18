@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 
 // BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
 
-SDL_bool condition = SDL_FALSE;
+bool condition = false;
 SDL_Mutex *lock;
 SDL_Condition *cond;
 lock = SDL_CreateMutex();
@@ -54,7 +54,7 @@ Thread_B:
 Thread_C:
     SDL_LockMutex(lock);
     /* ... */
-    condition = SDL_TRUE;
+    condition = true;
     /* ... */
     SDL_BroadcastCondition(cond);
     SDL_UnlockMutex(lock);

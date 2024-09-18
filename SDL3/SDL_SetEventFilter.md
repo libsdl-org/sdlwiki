@@ -78,7 +78,7 @@ This function is available since SDL 3.0.0.
 // the value pointed to by `userdata`, to represent the color blue,
 // between 255 and 0. The main program uses this value to clear the
 // window to a specific color as the space bar is pressed.
-static SDL_bool SDLCALL my_event_filter(void *userdata, SDL_Event * event)
+static bool SDLCALL my_event_filter(void *userdata, SDL_Event * event)
 {
     if ((event->type == SDL_EVENT_KEY_DOWN) && (event->key.key == SDLK_SPACE)) {
         Uint8 *blue = (Uint8 *) userdata;
@@ -88,7 +88,7 @@ static SDL_bool SDLCALL my_event_filter(void *userdata, SDL_Event * event)
             *blue = 0;
         }
     }
-    return SDL_TRUE;  // let all events be added to the queue since we always return 1.
+    return true;  // let all events be added to the queue since we always return 1.
 }
 
 int main(int argc, char **argv)

@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
     SDL_Texture *bitmapTex = NULL;
     SDL_Surface *bitmapSurface = NULL;
     int width = 320, height = 240;
-    SDL_bool loopShouldStop = SDL_FALSE;
+    bool loopShouldStop = false;
 
     SDL_Init(SDL_INIT_VIDEO);
 
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
             switch (event.type)
             {
                 case SDL_EVENT_QUIT:
-                    loopShouldStop = SDL_TRUE;
+                    loopShouldStop = true;
                     break;
             }
         }

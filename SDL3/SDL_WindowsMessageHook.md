@@ -45,11 +45,11 @@ This datatype is available since SDL 3.0.0.
 
 ```c
 #if defined(SDL_PLATFORM_WIN32) || defined(SDL_PLATFORM_GDK)
-SDL_bool MyMessageHook(void *userdata, MSG *msg)
+bool MyMessageHook(void *userdata, MSG *msg)
 {
     // do things with userdata and msg...
 
-    return SDL_TRUE; // let SDL continue processing the message 
+    return true; // let SDL continue processing the message 
 }
 
 // ...

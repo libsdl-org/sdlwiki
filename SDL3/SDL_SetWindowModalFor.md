@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_window);
+bool SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_window);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ SDL_bool SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_wind
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
+([bool](bool)) Returns [true](true) on success or
+[false](false) on failure; call [SDL_GetError](SDL_GetError)() for
 more information.
 
 ## Remarks

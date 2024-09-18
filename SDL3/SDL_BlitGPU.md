@@ -16,7 +16,7 @@ void SDL_BlitGPU(
     SDL_GPUBlitRegion *destination,
     SDL_FlipMode flipMode,
     SDL_GPUFilter filterMode,
-    SDL_bool cycle);
+    bool cycle);
 ```
 
 ## Function Parameters
@@ -28,7 +28,7 @@ void SDL_BlitGPU(
 | [SDL_GPUBlitRegion](SDL_GPUBlitRegion) *       | **destination**   | the texture region to copy to.                                                                                              |
 | [SDL_FlipMode](SDL_FlipMode)                   | **flipMode**      | the flip mode for the source texture region.                                                                                |
 | [SDL_GPUFilter](SDL_GPUFilter)                 | **filterMode**    | the filter mode that will be used when blitting.                                                                            |
-| [SDL_bool](SDL_bool)                           | **cycle**         | if [SDL_TRUE](SDL_TRUE), cycles the destination texture if the destination texture is bound, otherwise overwrites the data. |
+| [bool](bool)                           | **cycle**         | if [true](true), cycles the destination texture if the destination texture is bound, otherwise overwrites the data. |
 
 ## Remarks
 

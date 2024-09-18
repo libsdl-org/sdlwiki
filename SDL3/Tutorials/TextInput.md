@@ -53,7 +53,7 @@ extern Sint32 selection_len;
 
 int main(int argc, char *argv[])
 {
-    SDL_bool done = SDL_FALSE;
+    bool done = false;
 
     SDL_Window *window = InitVideo();
     /* ... */
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
             switch (event.type) {
                 case SDL_EVENT_QUIT:
                     /* Quit */
-                    done = SDL_TRUE;
+                    done = true;
                     break;
                 case SDL_EVENT_TEXT_INPUT:
                     /* Add new text onto the end of our text */

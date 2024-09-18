@@ -26,7 +26,7 @@ This function is available since SDL 3.0.0.
 
 ```c
 int variable;
-SDL_bool quit = SDL_FALSE;
+bool quit = false;
 unsigned int lastTime = 0, currentTime;
 while (!quit) {
   // do stuff

@@ -30,7 +30,7 @@ Typical use of condition variables:
 ```c
 // BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
 
-SDL_bool condition = SDL_FALSE;
+bool condition = false;
 SDL_Mutex *lock;
 SDL_Condition *cond;
 lock = SDL_CreateMutex();
@@ -46,7 +46,7 @@ Thread_A:
 Thread_B:
     SDL_LockMutex(lock);
     /* ... */
-    condition = SDL_TRUE;
+    condition = true;
     /* ... */
     SDL_SignalCondition(cond);
     SDL_UnlockMutex(lock);
