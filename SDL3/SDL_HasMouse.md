@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_HasMouse(void);
+bool SDL_HasMouse(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if a mouse is
-connected, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if a mouse is connected, false otherwise.
 
 ## Version
 

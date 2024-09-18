@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Environment * SDL_CreateEnvironment(SDL_bool populated);
+SDL_Environment * SDL_CreateEnvironment(bool populated);
 ```
 
 ## Function Parameters
 
-|                      |               |                                                                                                                              |
-| -------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_bool](SDL_bool) | **populated** | [SDL_TRUE](SDL_TRUE) to initialize it from the C runtime environment, [SDL_FALSE](SDL_FALSE) to create an empty environment. |
+|      |               |                                                                                             |
+| ---- | ------------- | ------------------------------------------------------------------------------------------- |
+| bool | **populated** | true to initialize it from the C runtime environment, false to create an empty environment. |
 
 ## Return Value
 
@@ -27,9 +27,8 @@ more information.
 
 ## Thread Safety
 
-If `populated` is [SDL_FALSE](SDL_FALSE), it is safe to call this function
-from any thread, otherwise it is safe if no other threads are calling
-setenv() or unsetenv()
+If `populated` is false, it is safe to call this function from any thread,
+otherwise it is safe if no other threads are calling setenv() or unsetenv()
 
 ## Version
 

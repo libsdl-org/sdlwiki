@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick, int axis, Sint16 *state);
+bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick, int axis, Sint16 *state);
 ```
 
 ## Function Parameters
@@ -23,8 +23,7 @@ SDL_bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick, int axis, Sint1
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this axis has any
-initial value, or [SDL_FALSE](SDL_FALSE) if not.
+(bool) Returns true if this axis has any initial value, or false if not.
 
 ## Remarks
 

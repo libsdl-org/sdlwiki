@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-SDL_bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardCleanupCallback cleanup, void *userdata, const char **mime_types, size_t num_mime_types);
+bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardCleanupCallback cleanup, void *userdata, const char **mime_types, size_t num_mime_types);
 ```
 
 ## Function Parameters
@@ -25,9 +25,8 @@ SDL_bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardC
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

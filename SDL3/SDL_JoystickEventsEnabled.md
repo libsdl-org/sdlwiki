@@ -10,13 +10,13 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_JoystickEventsEnabled(void);
+bool SDL_JoystickEventsEnabled(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if joystick events are
-being processed, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if joystick events are being processed, false
+otherwise.
 
 ## Remarks
 

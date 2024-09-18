@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_FORCE_INLINE SDL_bool SDL_size_add_check_overflow(size_t a, size_t b, size_t *ret);
+SDL_FORCE_INLINE bool SDL_size_add_check_overflow(size_t a, size_t b, size_t *ret);
 ```
 
 ## Function Parameters
@@ -23,8 +23,7 @@ SDL_FORCE_INLINE SDL_bool SDL_size_add_check_overflow(size_t a, size_t b, size_t
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_FALSE](SDL_FALSE) on overflow,
-[SDL_TRUE](SDL_TRUE) if result is added without overflow.
+(bool) Returns false on overflow, true if result is added without overflow.
 
 ## Remarks
 

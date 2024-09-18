@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_GetWindowBordersSize(SDL_Window *window, int *top, int *left, int *bottom, int *right);
+bool SDL_GetWindowBordersSize(SDL_Window *window, int *top, int *left, int *bottom, int *right);
 ```
 
 ## Function Parameters
@@ -25,15 +25,14 @@ SDL_bool SDL_GetWindowBordersSize(SDL_Window *window, int *top, int *left, int *
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-Note: If this function fails (returns [SDL_FALSE](SDL_FALSE)), the size
-values will be initialized to 0, 0, 0, 0 (if a non-NULL pointer is
-provided), as if the window in question was borderless.
+Note: If this function fails (returns false), the size values will be
+initialized to 0, 0, 0, 0 (if a non-NULL pointer is provided), as if the
+window in question was borderless.
 
 Note: This function may fail on systems where the window has not yet been
 decorated by the display server (for example, immediately after calling
@@ -42,8 +41,8 @@ least until the window has been presented and composited, so that the
 window system has a chance to decorate the window and provide the border
 dimensions to SDL.
 
-This function also returns [SDL_FALSE](SDL_FALSE) if getting the
-information is not supported.
+This function also returns false if getting the information is not
+supported.
 
 ## Version
 

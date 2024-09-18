@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-SDL_bool SDL_SetBooleanProperty(SDL_PropertiesID props, const char *name, SDL_bool value);
+bool SDL_SetBooleanProperty(SDL_PropertiesID props, const char *name, bool value);
 ```
 
 ## Function Parameters
@@ -19,13 +19,12 @@ SDL_bool SDL_SetBooleanProperty(SDL_PropertiesID props, const char *name, SDL_bo
 | ------------------------------------ | --------- | ----------------------------------- |
 | [SDL_PropertiesID](SDL_PropertiesID) | **props** | the properties to modify.           |
 | const char *                         | **name**  | the name of the property to modify. |
-| [SDL_bool](SDL_bool)                 | **value** | the new value of the property.      |
+| bool                                 | **value** | the new value of the property.      |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

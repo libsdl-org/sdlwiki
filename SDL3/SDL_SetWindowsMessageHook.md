@@ -22,9 +22,8 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 
 ## Remarks
 
-The callback may modify the message, and should return [SDL_TRUE](SDL_TRUE)
-if the message should continue to be processed, or [SDL_FALSE](SDL_FALSE)
-to prevent further processing.
+The callback may modify the message, and should return true if the message
+should continue to be processed, or false to prevent further processing.
 
 ## Version
 

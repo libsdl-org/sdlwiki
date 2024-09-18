@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void SDL_hid_ble_scan(SDL_bool active);
+void SDL_hid_ble_scan(bool active);
 ```
 
 ## Function Parameters
 
-|                      |            |                                                                                  |
-| -------------------- | ---------- | -------------------------------------------------------------------------------- |
-| [SDL_bool](SDL_bool) | **active** | [SDL_TRUE](SDL_TRUE) to start the scan, [SDL_FALSE](SDL_FALSE) to stop the scan. |
+|      |            |                                                 |
+| ---- | ---------- | ----------------------------------------------- |
+| bool | **active** | true to start the scan, false to stop the scan. |
 
 ## Version
 

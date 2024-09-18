@@ -22,11 +22,10 @@ void SDL_SetEventFilter(SDL_EventFilter filter, void *userdata);
 
 ## Remarks
 
-If the filter function returns [SDL_TRUE](SDL_TRUE) when called, then the
-event will be added to the internal queue. If it returns
-[SDL_FALSE](SDL_FALSE), then the event will be dropped from the queue, but
-the internal state will still be updated. This allows selective filtering
-of dynamically arriving events.
+If the filter function returns true when called, then the event will be
+added to the internal queue. If it returns false, then the event will be
+dropped from the queue, but the internal state will still be updated. This
+allows selective filtering of dynamically arriving events.
 
 **WARNING**: Be very careful of what you do in the event filter function,
 as it may run in a different thread!

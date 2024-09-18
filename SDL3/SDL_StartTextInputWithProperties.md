@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_StartTextInputWithProperties(SDL_Window *window, SDL_PropertiesID props);
+bool SDL_StartTextInputWithProperties(SDL_Window *window, SDL_PropertiesID props);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_StartTextInputWithProperties(SDL_Window *window, SDL_PropertiesID p
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -52,13 +51,11 @@ These are the supported properties:
   [SDL_CAPITALIZE_NONE](SDL_CAPITALIZE_NONE) for e-mail addresses,
   usernames, and passwords.
 - [`SDL_PROP_TEXTINPUT_AUTOCORRECT_BOOLEAN`](SDL_PROP_TEXTINPUT_AUTOCORRECT_BOOLEAN)
-  - true to enable auto completion and auto correction, defaults to
-  [SDL_TRUE](SDL_TRUE).
+  - true to enable auto completion and auto correction, defaults to true.
 - [`SDL_PROP_TEXTINPUT_MULTILINE_BOOLEAN`](SDL_PROP_TEXTINPUT_MULTILINE_BOOLEAN)
-  - true if multiple lines of text are allowed. This defaults to
-  [SDL_TRUE](SDL_TRUE) if
+  - true if multiple lines of text are allowed. This defaults to true if
   [SDL_HINT_RETURN_KEY_HIDES_IME](SDL_HINT_RETURN_KEY_HIDES_IME) is "0" or
-  is not set, and defaults to [SDL_FALSE](SDL_FALSE) if
+  is not set, and defaults to false if
   [SDL_HINT_RETURN_KEY_HIDES_IME](SDL_HINT_RETURN_KEY_HIDES_IME) is "1".
 
 On Android you can directly specify the input type:

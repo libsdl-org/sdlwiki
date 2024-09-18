@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_ReadS16BE(SDL_IOStream *src, Sint16 *value);
+bool SDL_ReadS16BE(SDL_IOStream *src, Sint16 *value);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_ReadS16BE(SDL_IOStream *src, Sint16 *value);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on successful write or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on successful write or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

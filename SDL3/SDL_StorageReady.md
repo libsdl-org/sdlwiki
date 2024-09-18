@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_StorageReady(SDL_Storage *storage);
+bool SDL_StorageReady(SDL_Storage *storage);
 ```
 
 ## Function Parameters
@@ -21,14 +21,13 @@ SDL_bool SDL_StorageReady(SDL_Storage *storage);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the container is
-ready, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the container is ready, false otherwise.
 
 ## Remarks
 
-This function should be called in regular intervals until it returns
-[SDL_TRUE](SDL_TRUE) - however, it is not recommended to spinwait on this
-call, as the backend may depend on a synchronous message loop.
+This function should be called in regular intervals until it returns true -
+however, it is not recommended to spinwait on this call, as the backend may
+depend on a synchronous message loop.
 
 ## Version
 

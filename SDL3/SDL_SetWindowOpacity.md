@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowOpacity(SDL_Window *window, float opacity);
+bool SDL_SetWindowOpacity(SDL_Window *window, float opacity);
 ```
 
 ## Function Parameters
@@ -22,17 +22,15 @@ SDL_bool SDL_SetWindowOpacity(SDL_Window *window, float opacity);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 The parameter `opacity` will be clamped internally between 0.0f
 (transparent) and 1.0f (opaque).
 
-This function also returns [SDL_FALSE](SDL_FALSE) if setting the opacity
-isn't supported.
+This function also returns false if setting the opacity isn't supported.
 
 ## Version
 

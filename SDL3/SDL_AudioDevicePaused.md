@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_AudioDevicePaused(SDL_AudioDeviceID dev);
+bool SDL_AudioDevicePaused(SDL_AudioDeviceID dev);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_bool SDL_AudioDevicePaused(SDL_AudioDeviceID dev);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if device is valid and
-paused, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if device is valid and paused, false otherwise.
 
 ## Remarks
 

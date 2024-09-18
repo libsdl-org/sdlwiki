@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_JoystickConnected(SDL_Joystick *joystick);
+bool SDL_JoystickConnected(SDL_Joystick *joystick);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_bool SDL_JoystickConnected(SDL_Joystick *joystick);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the joystick has
-been opened, [SDL_FALSE](SDL_FALSE) if it has not; call
-[SDL_GetError](SDL_GetError)() for more information.
+(bool) Returns true if the joystick has been opened, false if it has not;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

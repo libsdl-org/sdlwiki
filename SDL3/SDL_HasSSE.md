@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_cpuinfo.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_HasSSE(void);
+bool SDL_HasSSE(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the CPU has SSE
-features or [SDL_FALSE](SDL_FALSE) if not.
+(bool) Returns true if the CPU has SSE features or false if not.
 
 ## Remarks
 

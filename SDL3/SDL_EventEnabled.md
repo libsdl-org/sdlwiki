@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_EventEnabled(Uint32 type);
+bool SDL_EventEnabled(Uint32 type);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_bool SDL_EventEnabled(Uint32 type);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the event is being
-processed, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the event is being processed, false otherwise.
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
+bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if it is playing,
-[SDL_FALSE](SDL_FALSE) if it isn't playing or haptic status isn't
-supported.
+(bool) Returns true if it is playing, false if it isn't playing or haptic
+status isn't supported.
 
 ## Remarks
 

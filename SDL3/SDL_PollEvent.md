@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_PollEvent(SDL_Event *event);
+bool SDL_PollEvent(SDL_Event *event);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool SDL_PollEvent(SDL_Event *event);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this got an event or
-[SDL_FALSE](SDL_FALSE) if there are none available.
+(bool) Returns true if this got an event or false if there are none
+available.
 
 ## Remarks
 

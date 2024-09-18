@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);
+bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);
 ```
 
 ## Function Parameters
@@ -22,8 +22,7 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) if there is no event filter set.
+(bool) Returns true on success or false if there is no event filter set.
 
 ## Remarks
 

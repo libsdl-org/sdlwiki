@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_SetTextureAlphaMod(SDL_Texture *texture, Uint8 alpha);
+bool SDL_SetTextureAlphaMod(SDL_Texture *texture, Uint8 alpha);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_SetTextureAlphaMod(SDL_Texture *texture, Uint8 alpha);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -34,7 +33,7 @@ value is modulated by this alpha value according to the following formula:
 `srcA = srcA * (alpha / 255)`
 
 Alpha modulation is not always supported by the renderer; it will return
-[SDL_FALSE](SDL_FALSE) if alpha modulation is not supported.
+false if alpha modulation is not supported.
 
 ## Version
 

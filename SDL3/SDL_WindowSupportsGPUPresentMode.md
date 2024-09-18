@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_bool SDL_WindowSupportsGPUPresentMode(
+bool SDL_WindowSupportsGPUPresentMode(
     SDL_GPUDevice *device,
     SDL_Window *window,
     SDL_GPUPresentMode present_mode);
@@ -26,8 +26,7 @@ SDL_bool SDL_WindowSupportsGPUPresentMode(
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if supported,
-[SDL_FALSE](SDL_FALSE) if unsupported (or on error).
+(bool) Returns true if supported, false if unsupported (or on error).
 
 ## Remarks
 

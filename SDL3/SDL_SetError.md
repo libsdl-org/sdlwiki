@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_error.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetError(const char *fmt, ...);
+bool SDL_SetError(const char *fmt, ...);
 ```
 
 ## Function Parameters
@@ -22,15 +22,14 @@ SDL_bool SDL_SetError(const char *fmt, ...);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_FALSE](SDL_FALSE).
+(bool) Returns false.
 
 ## Remarks
 
 Calling this function will replace any previous error message that was set.
 
-This function always returns [SDL_FALSE](SDL_FALSE), since SDL frequently
-uses [SDL_FALSE](SDL_FALSE) to signify a failing result, leading to this
-idiom:
+This function always returns false, since SDL frequently uses false to
+signify a failing result, leading to this idiom:
 
 ```c
 if (error_code) {

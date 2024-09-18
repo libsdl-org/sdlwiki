@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowBordered(SDL_Window *window, SDL_bool bordered);
+bool SDL_SetWindowBordered(SDL_Window *window, bool bordered);
 ```
 
 ## Function Parameters
 
-|                            |              |                                                                              |
-| -------------------------- | ------------ | ---------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**   | the window of which to change the border state.                              |
-| [SDL_bool](SDL_bool)       | **bordered** | [SDL_FALSE](SDL_FALSE) to remove border, [SDL_TRUE](SDL_TRUE) to add border. |
+|                            |              |                                                 |
+| -------------------------- | ------------ | ----------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**   | the window of which to change the border state. |
+| bool                       | **bordered** | false to remove border, true to add border.     |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

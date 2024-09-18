@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_bool SDL_TimeToDateTime(SDL_Time ticks, SDL_DateTime *dt, SDL_bool localTime);
+bool SDL_TimeToDateTime(SDL_Time ticks, SDL_DateTime *dt, bool localTime);
 ```
 
 ## Function Parameters
@@ -19,13 +19,12 @@ SDL_bool SDL_TimeToDateTime(SDL_Time ticks, SDL_DateTime *dt, SDL_bool localTime
 | ------------------------------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | [SDL_Time](SDL_Time)           | **ticks**     | the [SDL_Time](SDL_Time) to be converted.                                                                                                     |
 | [SDL_DateTime](SDL_DateTime) * | **dt**        | the resulting [SDL_DateTime](SDL_DateTime).                                                                                                   |
-| [SDL_bool](SDL_bool)           | **localTime** | the resulting [SDL_DateTime](SDL_DateTime) will be expressed in local time if true, otherwise it will be in Universal Coordinated Time (UTC). |
+| bool                           | **localTime** | the resulting [SDL_DateTime](SDL_DateTime) will be expressed in local time if true, otherwise it will be in Universal Coordinated Time (UTC). |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

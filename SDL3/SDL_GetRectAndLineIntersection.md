@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_bool SDL_GetRectAndLineIntersection(const SDL_Rect *rect, int *X1, int *Y1, int *X2, int *Y2);
+bool SDL_GetRectAndLineIntersection(const SDL_Rect *rect, int *X1, int *Y1, int *X2, int *Y2);
 ```
 
 ## Function Parameters
@@ -25,8 +25,7 @@ SDL_bool SDL_GetRectAndLineIntersection(const SDL_Rect *rect, int *X1, int *Y1, 
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is an
-intersection, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if there is an intersection, false otherwise.
 
 ## Remarks
 

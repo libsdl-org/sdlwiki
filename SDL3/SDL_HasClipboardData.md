@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-SDL_bool SDL_HasClipboardData(const char *mime_type);
+bool SDL_HasClipboardData(const char *mime_type);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_bool SDL_HasClipboardData(const char *mime_type);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there exists data in
-clipboard for the provided mime type, [SDL_FALSE](SDL_FALSE) if it does
-not.
+(bool) Returns true if there exists data in clipboard for the provided mime
+type, false if it does not.
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_HasEvent(Uint32 type);
+bool SDL_HasEvent(Uint32 type);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_bool SDL_HasEvent(Uint32 type);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if events matching
-`type` are present, or [SDL_FALSE](SDL_FALSE) if events matching `type` are
-not present.
+(bool) Returns true if events matching `type` are present, or false if
+events matching `type` are not present.
 
 ## Remarks
 

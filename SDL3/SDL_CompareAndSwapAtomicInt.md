@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_CompareAndSwapAtomicInt(SDL_AtomicInt *a, int oldval, int newval);
+bool SDL_CompareAndSwapAtomicInt(SDL_AtomicInt *a, int oldval, int newval);
 ```
 
 ## Function Parameters
@@ -23,8 +23,7 @@ SDL_bool SDL_CompareAndSwapAtomicInt(SDL_AtomicInt *a, int oldval, int newval);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the atomic variable
-was set, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the atomic variable was set, false otherwise.
 
 ## Remarks
 

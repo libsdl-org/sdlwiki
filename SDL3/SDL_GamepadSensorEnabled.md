@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_GamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type);
+bool SDL_GamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type);
 ```
 
 ## Function Parameters
@@ -22,8 +22,7 @@ SDL_bool SDL_GamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the sensor is
-enabled, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the sensor is enabled, false otherwise.
 
 ## Version
 

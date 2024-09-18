@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_bool SDL_GetRectIntersection(const SDL_Rect *A, const SDL_Rect *B, SDL_Rect *result);
+bool SDL_GetRectIntersection(const SDL_Rect *A, const SDL_Rect *B, SDL_Rect *result);
 ```
 
 ## Function Parameters
@@ -23,12 +23,11 @@ SDL_bool SDL_GetRectIntersection(const SDL_Rect *A, const SDL_Rect *B, SDL_Rect 
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is an
-intersection, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if there is an intersection, false otherwise.
 
 ## Remarks
 
-If `result` is NULL then this function will return [SDL_FALSE](SDL_FALSE).
+If `result` is NULL then this function will return false.
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint *points, int count, const SDL_FRect *clip, SDL_FRect *result);
+bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint *points, int count, const SDL_FRect *clip, SDL_FRect *result);
 ```
 
 ## Function Parameters
@@ -24,9 +24,8 @@ SDL_bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint *points, int count, co
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if any points were
-enclosed or [SDL_FALSE](SDL_FALSE) if all the points were outside of the
-clipping rectangle.
+(bool) Returns true if any points were enclosed or false if all the points
+were outside of the clipping rectangle.
 
 ## Remarks
 

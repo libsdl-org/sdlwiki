@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_process.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_WaitProcess(SDL_Process *process, SDL_bool block, int *exitcode);
+bool SDL_WaitProcess(SDL_Process *process, bool block, int *exitcode);
 ```
 
 ## Function Parameters
@@ -18,13 +18,12 @@ SDL_bool SDL_WaitProcess(SDL_Process *process, SDL_bool block, int *exitcode);
 |                              |              |                                                                                        |
 | ---------------------------- | ------------ | -------------------------------------------------------------------------------------- |
 | [SDL_Process](SDL_Process) * | **process**  | The process to wait for.                                                               |
-| [SDL_bool](SDL_bool)         | **block**    | If true, block until the process finishes; otherwise, report on the process' status.   |
+| bool                         | **block**    | If true, block until the process finishes; otherwise, report on the process' status.   |
 | int *                        | **exitcode** | a pointer filled in with the process exit code if the process has exited, may be NULL. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the process exited,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the process exited, false otherwise.
 
 ## Remarks
 

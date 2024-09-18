@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_GamepadConnected(SDL_Gamepad *gamepad);
+bool SDL_GamepadConnected(SDL_Gamepad *gamepad);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool SDL_GamepadConnected(SDL_Gamepad *gamepad);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the gamepad has been
-opened and is currently connected, or [SDL_FALSE](SDL_FALSE) if not.
+(bool) Returns true if the gamepad has been opened and is currently
+connected, or false if not.
 
 ## Version
 

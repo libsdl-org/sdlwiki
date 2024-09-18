@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destination, Uint64 length);
+bool SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destination, Uint64 length);
 ```
 
 ## Function Parameters
@@ -24,9 +24,8 @@ SDL_bool SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *desti
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the file was read or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true if the file was read or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

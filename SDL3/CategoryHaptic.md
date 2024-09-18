@@ -47,7 +47,7 @@ Simple rumble example:
 Complete example:
 
 ```c
-SDL_bool test_haptic(SDL_Joystick *joystick)
+bool test_haptic(SDL_Joystick *joystick)
 {
    SDL_Haptic *haptic;
    SDL_HapticEffect effect;
@@ -55,12 +55,12 @@ SDL_bool test_haptic(SDL_Joystick *joystick)
 
    // Open the device
    haptic = SDL_OpenHapticFromJoystick(joystick);
-   if (haptic == NULL) return SDL_FALSE; // Most likely joystick isn't haptic
+   if (haptic == NULL) return false; // Most likely joystick isn't haptic
 
    // See if it can do sine waves
    if ((SDL_GetHapticFeatures(haptic) & SDL_HAPTIC_SINE)==0) {
       SDL_CloseHaptic(haptic); // No sine effect
-      return SDL_FALSE;
+      return false;
    }
 
    // Create the effect
@@ -87,7 +87,7 @@ SDL_bool test_haptic(SDL_Joystick *joystick)
    // Close the device
    SDL_CloseHaptic(haptic);
 
-   return SDL_TRUE; // Success
+   return true; // Success
 }
 ```
 

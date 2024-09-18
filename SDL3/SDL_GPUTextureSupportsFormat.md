@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_bool SDL_GPUTextureSupportsFormat(
+bool SDL_GPUTextureSupportsFormat(
     SDL_GPUDevice *device,
     SDL_GPUTextureFormat format,
     SDL_GPUTextureType type,
@@ -28,8 +28,8 @@ SDL_bool SDL_GPUTextureSupportsFormat(
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns whether the texture format is supported for
-this type and usage.
+(bool) Returns whether the texture format is supported for this type and
+usage.
 
 ## Version
 

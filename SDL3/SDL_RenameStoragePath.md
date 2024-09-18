@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_RenameStoragePath(SDL_Storage *storage, const char *oldpath, const char *newpath);
+bool SDL_RenameStoragePath(SDL_Storage *storage, const char *oldpath, const char *newpath);
 ```
 
 ## Function Parameters
@@ -23,9 +23,8 @@ SDL_bool SDL_RenameStoragePath(SDL_Storage *storage, const char *oldpath, const 
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

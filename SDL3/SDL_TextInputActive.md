@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_TextInputActive(SDL_Window *window);
+bool SDL_TextInputActive(SDL_Window *window);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_bool SDL_TextInputActive(SDL_Window *window);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if text input events
-are enabled else [SDL_FALSE](SDL_FALSE).
+(bool) Returns true if text input events are enabled else false.
 
 ## Version
 

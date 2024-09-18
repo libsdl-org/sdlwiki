@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_cpuinfo.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_HasLASX(void);
+bool SDL_HasLASX(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the CPU has
-LOONGARCH LASX features or [SDL_FALSE](SDL_FALSE) if not.
+(bool) Returns true if the CPU has LOONGARCH LASX features or false if not.
 
 ## Remarks
 

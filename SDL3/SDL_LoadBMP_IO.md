@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface * SDL_LoadBMP_IO(SDL_IOStream *src, SDL_bool closeio);
+SDL_Surface * SDL_LoadBMP_IO(SDL_IOStream *src, bool closeio);
 ```
 
 ## Function Parameters
 
-|                                |             |                                                                                                                      |
-| ------------------------------ | ----------- | -------------------------------------------------------------------------------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the surface.                                                                                     |
-| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
+|                                |             |                                                                                                      |
+| ------------------------------ | ----------- | ---------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the surface.                                                                     |
+| bool                           | **closeio** | if true, calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
 
 ## Return Value
 

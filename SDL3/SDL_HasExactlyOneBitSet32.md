@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_bits.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_FORCE_INLINE SDL_bool SDL_HasExactlyOneBitSet32(Uint32 x);
+SDL_FORCE_INLINE bool SDL_HasExactlyOneBitSet32(Uint32 x);
 ```
 
 ## Function Parameters
@@ -21,14 +21,12 @@ SDL_FORCE_INLINE SDL_bool SDL_HasExactlyOneBitSet32(Uint32 x);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if exactly one bit is
-set in `x`, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if exactly one bit is set in `x`, false otherwise.
 
 ## Remarks
 
 If there are no bits set (`x` is zero), or more than one bit set, this
-returns [SDL_FALSE](SDL_FALSE). If any one bit is exclusively set, this
-returns [SDL_TRUE](SDL_TRUE).
+returns false. If any one bit is exclusively set, this returns true.
 
 Note that this is a forced-inline function in a header, and not a public
 API function available in the SDL library (which is to say, the code is

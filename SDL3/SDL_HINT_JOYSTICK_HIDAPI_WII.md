@@ -20,8 +20,8 @@ The variable can be set to the following values:
 - "0": HIDAPI driver is not used.
 - "1": HIDAPI driver is used.
 
-This driver doesn't work with the dolphinbar, so the default is
-[SDL_FALSE](SDL_FALSE) for now.
+This driver doesn't work with the dolphinbar, so the default is false for
+now.
 
 This hint should be set before enumerating controllers.
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_WindowHasSurface(SDL_Window *window);
+bool SDL_WindowHasSurface(SDL_Window *window);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool SDL_WindowHasSurface(SDL_Window *window);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if there is a surface
-associated with the window, or [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if there is a surface associated with the window, or
+false otherwise.
 
 ## Version
 

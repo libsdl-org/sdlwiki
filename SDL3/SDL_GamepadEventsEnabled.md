@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_GamepadEventsEnabled(void);
+bool SDL_GamepadEventsEnabled(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if gamepad events are
-being processed, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if gamepad events are being processed, false otherwise.
 
 ## Remarks
 

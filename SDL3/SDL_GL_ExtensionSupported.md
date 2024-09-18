@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_GL_ExtensionSupported(const char *extension);
+bool SDL_GL_ExtensionSupported(const char *extension);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_bool SDL_GL_ExtensionSupported(const char *extension);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the extension is
-supported, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the extension is supported, false otherwise.
 
 ## Remarks
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_TryLockRWLockForReading(SDL_RWLock *rwlock);
+bool SDL_TryLockRWLockForReading(SDL_RWLock *rwlock);
 ```
 
 ## Function Parameters
@@ -21,15 +21,13 @@ SDL_bool SDL_TryLockRWLockForReading(SDL_RWLock *rwlock);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success,
-[SDL_FALSE](SDL_FALSE) if the lock would block.
+(bool) Returns true on success, false if the lock would block.
 
 ## Remarks
 
 This works just like
 [SDL_LockRWLockForReading](SDL_LockRWLockForReading)(), but if the rwlock
-is not available, then this function returns [SDL_FALSE](SDL_FALSE)
-immediately.
+is not available, then this function returns false immediately.
 
 This technique is useful if you need access to a resource but don't want to
 wait for it, and will return to it to try again later.
@@ -37,7 +35,7 @@ wait for it, and will return to it to try again later.
 Trying to lock for read-only access can succeed if other threads are
 holding read-only locks, as this won't prevent access.
 
-This function returns [SDL_TRUE](SDL_TRUE) if passed a NULL rwlock.
+This function returns true if passed a NULL rwlock.
 
 ## Version
 

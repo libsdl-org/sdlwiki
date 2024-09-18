@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode, SDL_Keymod modstate, SDL_bool key_event);
+SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode, SDL_Keymod modstate, bool key_event);
 ```
 
 ## Function Parameters
@@ -19,7 +19,7 @@ SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode, SDL_Keymod modstate, S
 | ---------------------------- | ------------- | --------------------------------------------------------------------- |
 | [SDL_Scancode](SDL_Scancode) | **scancode**  | the desired [SDL_Scancode](SDL_Scancode) to query.                    |
 | [SDL_Keymod](SDL_Keymod)     | **modstate**  | the modifier state to use when translating the scancode to a keycode. |
-| [SDL_bool](SDL_bool)         | **key_event** | [SDL_TRUE](SDL_TRUE) if the keycode will be used in key events.       |
+| bool                         | **key_event** | true if the keycode will be used in key events.                       |
 
 ## Return Value
 
@@ -31,8 +31,8 @@ corresponds to the given [SDL_Scancode](SDL_Scancode).
 If you want to get the keycode as it would be delivered in key events,
 including options specified in
 [SDL_HINT_KEYCODE_OPTIONS](SDL_HINT_KEYCODE_OPTIONS), then you should pass
-`key_event` as [SDL_TRUE](SDL_TRUE). Otherwise this function simply
-translates the scancode based on the given modifier state.
+`key_event` as true. Otherwise this function simply translates the scancode
+based on the given modifier state.
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_SurfaceHasRLE(SDL_Surface *surface);
+bool SDL_SurfaceHasRLE(SDL_Surface *surface);
 ```
 
 ## Function Parameters
@@ -21,13 +21,11 @@ SDL_bool SDL_SurfaceHasRLE(SDL_Surface *surface);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the surface is RLE
-enabled, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the surface is RLE enabled, false otherwise.
 
 ## Remarks
 
-It is safe to pass a NULL `surface` here; it will return
-[SDL_FALSE](SDL_FALSE).
+It is safe to pass a NULL `surface` here; it will return false.
 
 ## Version
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_SetJoystickVirtualTouchpad(SDL_Joystick *joystick, int touchpad, int finger, SDL_bool down, float x, float y, float pressure);
+bool SDL_SetJoystickVirtualTouchpad(SDL_Joystick *joystick, int touchpad, int finger, bool down, float x, float y, float pressure);
 ```
 
 ## Function Parameters
@@ -20,16 +20,15 @@ SDL_bool SDL_SetJoystickVirtualTouchpad(SDL_Joystick *joystick, int touchpad, in
 | [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.                                                           |
 | int                            | **touchpad** | the index of the touchpad on the virtual joystick to update.                                          |
 | int                            | **finger**   | the index of the finger on the touchpad to set.                                                       |
-| [SDL_bool](SDL_bool)           | **down**     | [SDL_TRUE](SDL_TRUE) if the finger is pressed, [SDL_FALSE](SDL_FALSE) if the finger is released.      |
+| bool                           | **down**     | true if the finger is pressed, false if the finger is released.                                       |
 | float                          | **x**        | the x coordinate of the finger on the touchpad, normalized 0 to 1, with the origin in the upper left. |
 | float                          | **y**        | the y coordinate of the finger on the touchpad, normalized 0 to 1, with the origin in the upper left. |
 | float                          | **pressure** | the pressure of the finger.                                                                           |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

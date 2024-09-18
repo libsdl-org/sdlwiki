@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_process.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_KillProcess(SDL_Process *process, SDL_bool force);
+bool SDL_KillProcess(SDL_Process *process, bool force);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                                                                                                                                                                                                                                                       |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Process](SDL_Process) * | **process** | The process to stop.                                                                                                                                                                                                                                                                  |
-| [SDL_bool](SDL_bool)         | **force**   | [SDL_TRUE](SDL_TRUE) to terminate the process immediately, [SDL_FALSE](SDL_FALSE) to try to stop the process gracefully. In general you should try to stop the process gracefully first as terminating a process may leave it with half-written data or in some other unstable state. |
+|                              |             |                                                                                                                                                                                                                                                      |
+| ---------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Process](SDL_Process) * | **process** | The process to stop.                                                                                                                                                                                                                                 |
+| bool                         | **force**   | true to terminate the process immediately, false to try to stop the process gracefully. In general you should try to stop the process gracefully first as terminating a process may leave it with half-written data or in some other unstable state. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

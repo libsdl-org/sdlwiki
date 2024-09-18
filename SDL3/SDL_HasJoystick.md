@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_HasJoystick(void);
+bool SDL_HasJoystick(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if a joystick is
-connected, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if a joystick is connected, false otherwise.
 
 ## Version
 

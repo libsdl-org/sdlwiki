@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_AddGamepadMappingsFromIO(SDL_IOStream *src, SDL_bool closeio);
+int SDL_AddGamepadMappingsFromIO(SDL_IOStream *src, bool closeio);
 ```
 
 ## Function Parameters
 
-|                                |             |                                                                                                                      |
-| ------------------------------ | ----------- | -------------------------------------------------------------------------------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the mappings to be added.                                                                        |
-| [SDL_bool](SDL_bool)           | **closeio** | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
+|                                |             |                                                                                                      |
+| ------------------------------ | ----------- | ---------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**     | the data stream for the mappings to be added.                                                        |
+| bool                           | **closeio** | if true, calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
 
 ## Return Value
 

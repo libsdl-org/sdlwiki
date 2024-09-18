@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_IsDeXMode(void);
+bool SDL_IsDeXMode(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this is a DeX
-docking station, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if this is a DeX docking station, false otherwise.
 
 ## Version
 

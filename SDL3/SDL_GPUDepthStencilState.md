@@ -17,9 +17,9 @@ typedef struct SDL_GPUDepthStencilState
     SDL_GPUStencilOpState front_stencil_state;  /**< The stencil op state for front-facing triangles. */
     Uint8 compare_mask;                         /**< Selects the bits of the stencil values participating in the stencil test. */
     Uint8 write_mask;                           /**< Selects the bits of the stencil values updated by the stencil test. */
-    SDL_bool enable_depth_test;                 /**< SDL_TRUE enables the depth test. */
-    SDL_bool enable_depth_write;                /**< SDL_TRUE enables depth writes. Depth writes are always disabled when enable_depth_test is SDL_FALSE. */
-    SDL_bool enable_stencil_test;               /**< SDL_TRUE enables the stencil test. */
+    bool enable_depth_test;                 /**< true enables the depth test. */
+    bool enable_depth_write;                /**< true enables depth writes. Depth writes are always disabled when enable_depth_test is false. */
+    bool enable_stencil_test;               /**< true enables the stencil test. */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;

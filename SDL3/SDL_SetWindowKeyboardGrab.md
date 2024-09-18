@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowKeyboardGrab(SDL_Window *window, SDL_bool grabbed);
+bool SDL_SetWindowKeyboardGrab(SDL_Window *window, bool grabbed);
 ```
 
 ## Function Parameters
 
-|                            |             |                                                                                       |
-| -------------------------- | ----------- | ------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**  | the window for which the keyboard grab mode should be set.                            |
-| [SDL_bool](SDL_bool)       | **grabbed** | this is [SDL_TRUE](SDL_TRUE) to grab keyboard, and [SDL_FALSE](SDL_FALSE) to release. |
+|                            |             |                                                            |
+| -------------------------- | ----------- | ---------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**  | the window for which the keyboard grab mode should be set. |
+| bool                       | **grabbed** | this is true to grab keyboard, and false to release.       |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

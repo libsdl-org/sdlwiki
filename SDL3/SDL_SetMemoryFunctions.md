@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
+bool SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
                                 SDL_calloc_func calloc_func,
                                 SDL_realloc_func realloc_func,
                                 SDL_free_func free_func);
@@ -27,9 +27,8 @@ SDL_bool SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

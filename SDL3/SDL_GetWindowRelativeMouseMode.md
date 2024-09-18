@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_GetWindowRelativeMouseMode(SDL_Window *window);
+bool SDL_GetWindowRelativeMouseMode(SDL_Window *window);
 ```
 
 ## Function Parameters
@@ -21,8 +21,8 @@ SDL_bool SDL_GetWindowRelativeMouseMode(SDL_Window *window);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if relative mode is
-enabled for a window or [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if relative mode is enabled for a window or false
+otherwise.
 
 ## Version
 

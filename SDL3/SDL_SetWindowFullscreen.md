@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowFullscreen(SDL_Window *window, SDL_bool fullscreen);
+bool SDL_SetWindowFullscreen(SDL_Window *window, bool fullscreen);
 ```
 
 ## Function Parameters
 
-|                            |                |                                                                                     |
-| -------------------------- | -------------- | ----------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**     | the window to change.                                                               |
-| [SDL_bool](SDL_bool)       | **fullscreen** | [SDL_TRUE](SDL_TRUE) for fullscreen mode, [SDL_FALSE](SDL_FALSE) for windowed mode. |
+|                            |                |                                                    |
+| -------------------------- | -------------- | -------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**     | the window to change.                              |
+| bool                       | **fullscreen** | true for fullscreen mode, false for windowed mode. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

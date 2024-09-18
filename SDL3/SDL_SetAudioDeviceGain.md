@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetAudioDeviceGain(SDL_AudioDeviceID devid, float gain);
+bool SDL_SetAudioDeviceGain(SDL_AudioDeviceID devid, float gain);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_SetAudioDeviceGain(SDL_AudioDeviceID devid, float gain);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -34,10 +33,10 @@ with a gain of zero being silence.
 Audio devices default to a gain of 1.0f (no change in output).
 
 Physical devices may not have their gain changed, only logical devices, and
-this function will always return [SDL_FALSE](SDL_FALSE) when used on
-physical devices. While it might seem attractive to adjust several logical
-devices at once in this way, it would allow an app or library to interfere
-with another portion of the program's otherwise-isolated devices.
+this function will always return false when used on physical devices. While
+it might seem attractive to adjust several logical devices at once in this
+way, it would allow an app or library to interfere with another portion of
+the program's otherwise-isolated devices.
 
 This is applied, along with any per-audiostream gain, during playback to
 the hardware, and can be continuously changed to create various effects. On

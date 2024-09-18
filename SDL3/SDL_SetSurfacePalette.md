@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_SetSurfacePalette(SDL_Surface *surface, SDL_Palette *palette);
+bool SDL_SetSurfacePalette(SDL_Surface *surface, SDL_Palette *palette);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_SetSurfacePalette(SDL_Surface *surface, SDL_Palette *palette);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

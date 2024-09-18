@@ -19,7 +19,7 @@ typedef struct SDL_TextEditingCandidatesEvent
     const char * const *candidates;    /**< The list of candidates, or NULL if there are no candidates available */
     Sint32 num_candidates;      /**< The number of strings in `candidates` */
     Sint32 selected_candidate;  /**< The index of the selected candidate, or -1 if no candidate is selected */
-    SDL_bool horizontal;          /**< SDL_TRUE if the list is horizontal, SDL_FALSE if it's vertical */
+    bool horizontal;          /**< true if the list is horizontal, false if it's vertical */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;

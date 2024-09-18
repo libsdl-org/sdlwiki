@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowResizable(SDL_Window *window, SDL_bool resizable);
+bool SDL_SetWindowResizable(SDL_Window *window, bool resizable);
 ```
 
 ## Function Parameters
 
-|                            |               |                                                                             |
-| -------------------------- | ------------- | --------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**    | the window of which to change the resizable state.                          |
-| [SDL_bool](SDL_bool)       | **resizable** | [SDL_TRUE](SDL_TRUE) to allow resizing, [SDL_FALSE](SDL_FALSE) to disallow. |
+|                            |               |                                                    |
+| -------------------------- | ------------- | -------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**    | the window of which to change the resizable state. |
+| bool                       | **resizable** | true to allow resizing, false to disallow.         |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

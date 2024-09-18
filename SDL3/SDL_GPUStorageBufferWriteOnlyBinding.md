@@ -13,7 +13,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 typedef struct SDL_GPUStorageBufferWriteOnlyBinding
 {
     SDL_GPUBuffer *buffer;  /**< The buffer to bind. Must have been created with SDL_GPU_BUFFERUSAGE_COMPUTE_STORAGE_WRITE. */
-    SDL_bool cycle;         /**< SDL_TRUE cycles the buffer if it is already bound. */
+    bool cycle;         /**< true cycles the buffer if it is already bound. */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;

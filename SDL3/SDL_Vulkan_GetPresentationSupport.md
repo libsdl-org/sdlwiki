@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_Vulkan_GetPresentationSupport(VkInstance instance,
+bool SDL_Vulkan_GetPresentationSupport(VkInstance instance,
                                            VkPhysicalDevice physicalDevice,
                                            Uint32 queueFamilyIndex);
 ```
@@ -25,8 +25,8 @@ SDL_bool SDL_Vulkan_GetPresentationSupport(VkInstance instance,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if supported,
-[SDL_FALSE](SDL_FALSE) if unsupported or an error occurred.
+(bool) Returns true if supported, false if unsupported or an error
+occurred.
 
 ## Remarks
 

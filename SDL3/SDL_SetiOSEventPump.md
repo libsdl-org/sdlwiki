@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void SDL_SetiOSEventPump(SDL_bool enabled);
+void SDL_SetiOSEventPump(bool enabled);
 ```
 
 ## Function Parameters
 
-|                      |             |                                                                                      |
-| -------------------- | ----------- | ------------------------------------------------------------------------------------ |
-| [SDL_bool](SDL_bool) | **enabled** | [SDL_TRUE](SDL_TRUE) to enable the event pump, [SDL_FALSE](SDL_FALSE) to disable it. |
+|      |             |                                                     |
+| ---- | ----------- | --------------------------------------------------- |
+| bool | **enabled** | true to enable the event pump, false to disable it. |
 
 ## Remarks
 

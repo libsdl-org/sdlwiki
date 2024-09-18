@@ -20,8 +20,8 @@ typedef struct SDL_PenTouchEvent
     SDL_PenInputFlags pen_state;   /**< Complete pen input state at time of event */
     float x;                /**< X position of pen on tablet */
     float y;                /**< Y position of pen on tablet */
-    SDL_bool eraser;        /**< SDL_TRUE if eraser end is used (not all pens support this). */
-    SDL_bool down;          /**< SDL_TRUE if the pen is touching or SDL_FALSE if the pen is lifted off */
+    bool eraser;        /**< true if eraser end is used (not all pens support this). */
+    bool down;          /**< true if the pen is touching or false if the pen is lifted off */
 } SDL_PenTouchEvent;
 ```
 

@@ -13,16 +13,16 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 void* SDL_MapGPUTransferBuffer(
     SDL_GPUDevice *device,
     SDL_GPUTransferBuffer *transfer_buffer,
-    SDL_bool cycle);
+    bool cycle);
 ```
 
 ## Function Parameters
 
-|                                                  |                     |                                                                             |
-| ------------------------------------------------ | ------------------- | --------------------------------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) *                 | **device**          | a GPU context.                                                              |
-| [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) * | **transfer_buffer** | a transfer buffer.                                                          |
-| [SDL_bool](SDL_bool)                             | **cycle**           | if [SDL_TRUE](SDL_TRUE), cycles the transfer buffer if it is already bound. |
+|                                                  |                     |                                                             |
+| ------------------------------------------------ | ------------------- | ----------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) *                 | **device**          | a GPU context.                                              |
+| [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) * | **transfer_buffer** | a transfer buffer.                                          |
+| bool                                             | **cycle**           | if true, cycles the transfer buffer if it is already bound. |
 
 ## Return Value
 

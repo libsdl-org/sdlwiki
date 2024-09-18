@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_LoadWAV_IO(SDL_IOStream *src, SDL_bool closeio, SDL_AudioSpec *spec, Uint8 **audio_buf, Uint32 *audio_len);
+bool SDL_LoadWAV_IO(SDL_IOStream *src, bool closeio, SDL_AudioSpec *spec, Uint8 **audio_buf, Uint32 *audio_len);
 ```
 
 ## Function Parameters
@@ -18,21 +18,20 @@ SDL_bool SDL_LoadWAV_IO(SDL_IOStream *src, SDL_bool closeio, SDL_AudioSpec *spec
 |                                  |               |                                                                                                                         |
 | -------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) *   | **src**       | the data source for the WAVE data.                                                                                      |
-| [SDL_bool](SDL_bool)             | **closeio**   | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error.    |
+| bool                             | **closeio**   | if true, calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error.                    |
 | [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | a pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return. |
 | Uint8 **                         | **audio_buf** | a pointer filled with the audio data, allocated by the function.                                                        |
 | Uint32 *                         | **audio_len** | a pointer filled with the length of the audio data buffer in bytes.                                                     |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success. `audio_buf`
-will be filled with a pointer to an allocated buffer containing the audio
-data, and `audio_len` is filled with the length of that audio buffer in
-bytes.
+(bool) Returns true on success. `audio_buf` will be filled with a pointer
+to an allocated buffer containing the audio data, and `audio_len` is filled
+with the length of that audio buffer in bytes.
 
-This function returns [SDL_FALSE](SDL_FALSE) if the .WAV file cannot be
-opened, uses an unknown data format, or is corrupt; call
-[SDL_GetError](SDL_GetError)() for more information.
+This function returns false if the .WAV file cannot be opened, uses an
+unknown data format, or is corrupt; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 When the application is done with the data returned in `audio_buf`, it
 should call [SDL_free](SDL_free)() to dispose of it.

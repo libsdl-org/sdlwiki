@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_IsChromebook(void);
+bool SDL_IsChromebook(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this is a
-Chromebook, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if this is a Chromebook, false otherwise.
 
 ## Version
 

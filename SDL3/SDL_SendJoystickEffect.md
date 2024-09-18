@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_SendJoystickEffect(SDL_Joystick *joystick, const void *data, int size);
+bool SDL_SendJoystickEffect(SDL_Joystick *joystick, const void *data, int size);
 ```
 
 ## Function Parameters
@@ -23,9 +23,8 @@ SDL_bool SDL_SendJoystickEffect(SDL_Joystick *joystick, const void *data, int si
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

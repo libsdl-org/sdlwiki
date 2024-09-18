@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_GetGDKDefaultUser(XUserHandle *outUserHandle);
+bool SDL_GetGDKDefaultUser(XUserHandle *outUserHandle);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_bool SDL_GetGDKDefaultUser(XUserHandle *outUserHandle);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true if success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

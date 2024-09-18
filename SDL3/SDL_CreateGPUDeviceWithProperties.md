@@ -30,11 +30,10 @@ on failure.
 These are the supported properties:
 
 - [`SDL_PROP_GPU_DEVICE_CREATE_DEBUGMODE_BOOL`](SDL_PROP_GPU_DEVICE_CREATE_DEBUGMODE_BOOL):
-  enable debug mode properties and validations, defaults to
-  [SDL_TRUE](SDL_TRUE).
+  enable debug mode properties and validations, defaults to true.
 - [`SDL_PROP_GPU_DEVICE_CREATE_PREFERLOWPOWER_BOOL`](SDL_PROP_GPU_DEVICE_CREATE_PREFERLOWPOWER_BOOL):
   enable to prefer energy efficiency over maximum GPU performance, defaults
-  to [SDL_FALSE](SDL_FALSE).
+  to false.
 - [`SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING`](SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING):
   the name of the GPU driver to use, if a specific one is desired.
 

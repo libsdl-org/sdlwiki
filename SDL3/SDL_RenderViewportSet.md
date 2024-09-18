@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_RenderViewportSet(SDL_Renderer *renderer);
+bool SDL_RenderViewportSet(SDL_Renderer *renderer);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_bool SDL_RenderViewportSet(SDL_Renderer *renderer);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the viewport was set
-to a specific rectangle, or [SDL_FALSE](SDL_FALSE) if it was set to NULL
-(the entire target).
+(bool) Returns true if the viewport was set to a specific rectangle, or
+false if it was set to NULL (the entire target).
 
 ## Remarks
 

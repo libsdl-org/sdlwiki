@@ -61,9 +61,9 @@ typedef struct SDL_IOStreamInterface
      *  SDL_IOStatus enum. You do not have to explicitly set this on
      *  a successful flush.
      *
-     *  \return SDL_TRUE if successful or SDL_FALSE on write error when flushing data.
+     *  \return true if successful or false on write error when flushing data.
      */
-    SDL_bool (SDLCALL *flush)(void *userdata, SDL_IOStatus *status);
+    bool (SDLCALL *flush)(void *userdata, SDL_IOStatus *status);
 
     /**
      *  Close and free any allocated resources.
@@ -71,9 +71,9 @@ typedef struct SDL_IOStreamInterface
      *  The SDL_IOStream is still destroyed even if this fails, so clean up anything
      *  even if flushing to disk returns an error.
      *
-     *  \return SDL_TRUE if successful or SDL_FALSE on write error when flushing data.
+     *  \return true if successful or false on write error when flushing data.
      */
-    SDL_bool (SDLCALL *close)(void *userdata);
+    bool (SDLCALL *close)(void *userdata);
 
 } SDL_IOStreamInterface;
 ```

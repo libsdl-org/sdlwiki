@@ -10,16 +10,16 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-void * SDL_LoadFile_IO(SDL_IOStream *src, size_t *datasize, SDL_bool closeio);
+void * SDL_LoadFile_IO(SDL_IOStream *src, size_t *datasize, bool closeio);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                                                                      |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------- |
-| [SDL_IOStream](SDL_IOStream) * | **src**      | the [SDL_IOStream](SDL_IOStream) to read all available data from.                                                    |
-| size_t *                       | **datasize** | a pointer filled in with the number of bytes read, may be NULL.                                                      |
-| [SDL_bool](SDL_bool)           | **closeio**  | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
+|                                |              |                                                                                                      |
+| ------------------------------ | ------------ | ---------------------------------------------------------------------------------------------------- |
+| [SDL_IOStream](SDL_IOStream) * | **src**      | the [SDL_IOStream](SDL_IOStream) to read all available data from.                                    |
+| size_t *                       | **datasize** | a pointer filled in with the number of bytes read, may be NULL.                                      |
+| bool                           | **closeio**  | if true, calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error. |
 
 ## Return Value
 

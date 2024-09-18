@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_process.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Process* SDL_CreateProcess(const char * const *args, SDL_bool pipe_stdio);
+SDL_Process* SDL_CreateProcess(const char * const *args, bool pipe_stdio);
 ```
 
 ## Function Parameters
 
-|                      |                |                                                                                                                                                                                                                     |
-| -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| const char * const * | **args**       | the path and arguments for the new process.                                                                                                                                                                         |
-| [SDL_bool](SDL_bool) | **pipe_stdio** | [SDL_TRUE](SDL_TRUE) to create pipes to the process's standard input and from the process's standard output, [SDL_FALSE](SDL_FALSE) for the process to have no input and inherit the application's standard output. |
+|                      |                |                                                                                                                                                                                    |
+| -------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const char * const * | **args**       | the path and arguments for the new process.                                                                                                                                        |
+| bool                 | **pipe_stdio** | true to create pipes to the process's standard input and from the process's standard output, false for the process to have no input and inherit the application's standard output. |
 
 ## Return Value
 
@@ -35,7 +35,7 @@ argument list should be terminated with a NULL, e.g.:
 const char *args[] = { "myprogram", "argument", NULL };
 ```
 
-Setting pipe_stdio to [SDL_TRUE](SDL_TRUE) is equivalent to setting
+Setting pipe_stdio to true is equivalent to setting
 [`SDL_PROP_PROCESS_CREATE_STDIN_NUMBER`](SDL_PROP_PROCESS_CREATE_STDIN_NUMBER)
 and
 [`SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER`](SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER)

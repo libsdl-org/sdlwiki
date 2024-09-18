@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_LockTexture(SDL_Texture *texture,
+bool SDL_LockTexture(SDL_Texture *texture,
                 const SDL_Rect *rect,
                 void **pixels, int *pitch);
 ```
@@ -26,8 +26,8 @@ SDL_bool SDL_LockTexture(SDL_Texture *texture,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) if the texture is not valid or was not created with
+(bool) Returns true on success or false if the texture is not valid or was
+not created with
 [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING); call
 [SDL_GetError](SDL_GetError)() for more information.
 

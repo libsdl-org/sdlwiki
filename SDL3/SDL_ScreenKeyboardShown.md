@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_ScreenKeyboardShown(SDL_Window *window);
+bool SDL_ScreenKeyboardShown(SDL_Window *window);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_bool SDL_ScreenKeyboardShown(SDL_Window *window);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if screen keyboard is
-shown or [SDL_FALSE](SDL_FALSE) if not.
+(bool) Returns true if screen keyboard is shown or false if not.
 
 ## Version
 

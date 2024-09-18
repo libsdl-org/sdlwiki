@@ -21,8 +21,8 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the variable reached zero after
-decrementing, [SDL_FALSE](SDL_FALSE) otherwise.
+Returns true if the variable reached zero after decrementing, false
+otherwise.
 
 ## Remarks
 

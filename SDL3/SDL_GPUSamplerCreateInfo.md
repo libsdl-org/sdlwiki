@@ -19,12 +19,12 @@ typedef struct SDL_GPUSamplerCreateInfo
     SDL_GPUSamplerAddressMode address_mode_v;  /**< The addressing mode for V coordinates outside [0, 1). */
     SDL_GPUSamplerAddressMode address_mode_w;  /**< The addressing mode for W coordinates outside [0, 1). */
     float mip_lod_bias;                        /**< The bias to be added to mipmap LOD calculation. */
-    float max_anisotropy;                      /**< The anisotropy value clamp used by the sampler. If enable_anisotropy is SDL_FALSE, this is ignored. */
+    float max_anisotropy;                      /**< The anisotropy value clamp used by the sampler. If enable_anisotropy is false, this is ignored. */
     SDL_GPUCompareOp compare_op;               /**< The comparison operator to apply to fetched data before filtering. */
     float min_lod;                             /**< Clamps the minimum of the computed LOD value. */
     float max_lod;                             /**< Clamps the maximum of the computed LOD value. */
-    SDL_bool enable_anisotropy;                /**< SDL_TRUE to enable anisotropic filtering. */
-    SDL_bool enable_compare;                   /**< SDL_TRUE to enable comparison against a reference value during lookups. */
+    bool enable_anisotropy;                /**< true to enable anisotropic filtering. */
+    bool enable_compare;                   /**< true to enable comparison against a reference value during lookups. */
     Uint8 padding1;
     Uint8 padding2;
 

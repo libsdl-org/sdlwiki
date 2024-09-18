@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_bool SDL_SetGPUSwapchainParameters(
+bool SDL_SetGPUSwapchainParameters(
     SDL_GPUDevice *device,
     SDL_Window *window,
     SDL_GPUSwapchainComposition swapchain_composition,
@@ -28,8 +28,7 @@ SDL_bool SDL_SetGPUSwapchainParameters(
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if successful,
-[SDL_FALSE](SDL_FALSE) on error.
+(bool) Returns true if successful, false on error.
 
 ## Remarks
 

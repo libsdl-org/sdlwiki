@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_WaitConditionTimeout(SDL_Condition *cond,
+bool SDL_WaitConditionTimeout(SDL_Condition *cond,
                     SDL_Mutex *mutex, Sint32 timeoutMS);
 ```
 
@@ -24,9 +24,8 @@ SDL_bool SDL_WaitConditionTimeout(SDL_Condition *cond,
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the condition
-variable is signaled, [SDL_FALSE](SDL_FALSE) if the condition is not
-signaled in the allotted time.
+(bool) Returns true if the condition variable is signaled, false if the
+condition is not signaled in the allotted time.
 
 ## Remarks
 

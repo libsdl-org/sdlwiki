@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowFocusable(SDL_Window *window, SDL_bool focusable);
+bool SDL_SetWindowFocusable(SDL_Window *window, bool focusable);
 ```
 
 ## Function Parameters
 
-|                            |               |                                                                                             |
-| -------------------------- | ------------- | ------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window**    | the window to set focusable state.                                                          |
-| [SDL_bool](SDL_bool)       | **focusable** | [SDL_TRUE](SDL_TRUE) to allow input focus, [SDL_FALSE](SDL_FALSE) to not allow input focus. |
+|                            |               |                                                            |
+| -------------------------- | ------------- | ---------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window**    | the window to set focusable state.                         |
+| bool                       | **focusable** | true to allow input focus, false to not allow input focus. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

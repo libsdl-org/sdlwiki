@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-SDL_bool SDL_GetBooleanProperty(SDL_PropertiesID props, const char *name, SDL_bool default_value);
+bool SDL_GetBooleanProperty(SDL_PropertiesID props, const char *name, bool default_value);
 ```
 
 ## Function Parameters
@@ -19,12 +19,12 @@ SDL_bool SDL_GetBooleanProperty(SDL_PropertiesID props, const char *name, SDL_bo
 | ------------------------------------ | ----------------- | ---------------------------------- |
 | [SDL_PropertiesID](SDL_PropertiesID) | **props**         | the properties to query.           |
 | const char *                         | **name**          | the name of the property to query. |
-| [SDL_bool](SDL_bool)                 | **default_value** | the default value of the property. |
+| bool                                 | **default_value** | the default value of the property. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns the value of the property, or
-`default_value` if it is not set or not a boolean property.
+(bool) Returns the value of the property, or `default_value` if it is not
+set or not a boolean property.
 
 ## Remarks
 

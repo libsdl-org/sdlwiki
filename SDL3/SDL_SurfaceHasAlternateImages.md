@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_SurfaceHasAlternateImages(SDL_Surface *surface);
+bool SDL_SurfaceHasAlternateImages(SDL_Surface *surface);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_bool SDL_SurfaceHasAlternateImages(SDL_Surface *surface);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if alternate versions
-are available or [SDL_TRUE](SDL_TRUE) otherwise.
+(bool) Returns true if alternate versions are available or true otherwise.
 
 ## Version
 

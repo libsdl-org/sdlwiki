@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_RenderRect(SDL_Renderer *renderer, const SDL_FRect *rect);
+bool SDL_RenderRect(SDL_Renderer *renderer, const SDL_FRect *rect);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_RenderRect(SDL_Renderer *renderer, const SDL_FRect *rect);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

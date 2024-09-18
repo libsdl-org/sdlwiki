@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-SDL_bool SDL_HasClipboardText(void);
+bool SDL_HasClipboardText(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the clipboard has
-text, or [SDL_FALSE](SDL_FALSE) if it does not.
+(bool) Returns true if the clipboard has text, or false if it does not.
 
 ## Version
 

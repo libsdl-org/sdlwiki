@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID displayID, int w, int h, float refresh_rate, SDL_bool include_high_density_modes, SDL_DisplayMode *mode);
+bool SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID displayID, int w, int h, float refresh_rate, bool include_high_density_modes, SDL_DisplayMode *mode);
 ```
 
 ## Function Parameters
@@ -21,14 +21,13 @@ SDL_bool SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID displayID, int w, int
 | int                                  | **w**                          | the width in pixels of the desired display mode.                                            |
 | int                                  | **h**                          | the height in pixels of the desired display mode.                                           |
 | float                                | **refresh_rate**               | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate.         |
-| [SDL_bool](SDL_bool)                 | **include_high_density_modes** | boolean to include high density modes in the search.                                        |
+| bool                                 | **include_high_density_modes** | boolean to include high density modes in the search.                                        |
 | [SDL_DisplayMode](SDL_DisplayMode) * | **mode**                       | a pointer filled in with the closest display mode equal to or larger than the desired mode. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

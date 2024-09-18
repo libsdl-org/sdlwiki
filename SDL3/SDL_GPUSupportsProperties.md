@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_bool SDL_GPUSupportsProperties(
+bool SDL_GPUSupportsProperties(
     SDL_PropertiesID props);
 ```
 
@@ -22,8 +22,7 @@ SDL_bool SDL_GPUSupportsProperties(
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if supported,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if supported, false otherwise.
 
 ## Version
 

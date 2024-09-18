@@ -21,8 +21,8 @@ typedef struct SDL_KeyboardEvent
     SDL_Keycode key;        /**< SDL virtual key code */
     SDL_Keymod mod;         /**< current key modifiers */
     Uint16 raw;             /**< The platform dependent scancode for this event */
-    SDL_bool down;          /**< SDL_TRUE if the key is pressed */
-    SDL_bool repeat;        /**< SDL_TRUE if this is a key repeat */
+    bool down;          /**< true if the key is pressed */
+    bool repeat;        /**< true if this is a key repeat */
 } SDL_KeyboardEvent;
 ```
 

@@ -10,14 +10,14 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-void SDL_SetJoystickEventsEnabled(SDL_bool enabled);
+void SDL_SetJoystickEventsEnabled(bool enabled);
 ```
 
 ## Function Parameters
 
-|                      |             |                                            |
-| -------------------- | ----------- | ------------------------------------------ |
-| [SDL_bool](SDL_bool) | **enabled** | whether to process joystick events or not. |
+|      |             |                                            |
+| ---- | ----------- | ------------------------------------------ |
+| bool | **enabled** | whether to process joystick events or not. |
 
 ## Remarks
 

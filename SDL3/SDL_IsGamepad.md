@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_IsGamepad(SDL_JoystickID instance_id);
+bool SDL_IsGamepad(SDL_JoystickID instance_id);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ SDL_bool SDL_IsGamepad(SDL_JoystickID instance_id);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the given joystick
-is supported by the gamepad interface, [SDL_FALSE](SDL_FALSE) if it isn't
-or it's an invalid index.
+(bool) Returns true if the given joystick is supported by the gamepad
+interface, false if it isn't or it's an invalid index.
 
 ## Version
 

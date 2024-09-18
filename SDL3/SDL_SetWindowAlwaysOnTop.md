@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_SetWindowAlwaysOnTop(SDL_Window *window, SDL_bool on_top);
+bool SDL_SetWindowAlwaysOnTop(SDL_Window *window, bool on_top);
 ```
 
 ## Function Parameters
 
-|                            |            |                                                                                          |
-| -------------------------- | ---------- | ---------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window of which to change the always on top state.                                   |
-| [SDL_bool](SDL_bool)       | **on_top** | [SDL_TRUE](SDL_TRUE) to set the window always on top, [SDL_FALSE](SDL_FALSE) to disable. |
+|                            |            |                                                         |
+| -------------------------- | ---------- | ------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window of which to change the always on top state.  |
+| bool                       | **on_top** | true to set the window always on top, false to disable. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

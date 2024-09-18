@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
+bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 ```
 
 ## Function Parameters
@@ -22,8 +22,7 @@ SDL_bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *e
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the effect is
-supported or [SDL_FALSE](SDL_FALSE) if it isn't.
+(bool) Returns true if the effect is supported or false if it isn't.
 
 ## Version
 

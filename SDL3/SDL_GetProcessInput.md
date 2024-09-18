@@ -27,9 +27,9 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 ## Remarks
 
 The process must have been created with
-[SDL_CreateProcess](SDL_CreateProcess)() and pipe_stdio set to
-[SDL_TRUE](SDL_TRUE), or with
-[SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)() and
+[SDL_CreateProcess](SDL_CreateProcess)() and pipe_stdio set to true, or
+with [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)()
+and
 [`SDL_PROP_PROCESS_CREATE_STDIN_NUMBER`](SDL_PROP_PROCESS_CREATE_STDIN_NUMBER)
 set to [`SDL_PROCESS_STDIO_APP`](SDL_PROCESS_STDIO_APP).
 

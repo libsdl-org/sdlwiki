@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_messagebox.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-SDL_bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const char *message, SDL_Window *window);
+bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const char *message, SDL_Window *window);
 ```
 
 ## Function Parameters
@@ -24,9 +24,8 @@ SDL_bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, 
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

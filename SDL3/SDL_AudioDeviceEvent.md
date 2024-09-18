@@ -16,7 +16,7 @@ typedef struct SDL_AudioDeviceEvent
     Uint32 reserved;
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_AudioDeviceID which;       /**< SDL_AudioDeviceID for the device being added or removed or changing */
-    SDL_bool recording; /**< SDL_FALSE if a playback device, SDL_TRUE if a recording device. */
+    bool recording; /**< false if a playback device, true if a recording device. */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;

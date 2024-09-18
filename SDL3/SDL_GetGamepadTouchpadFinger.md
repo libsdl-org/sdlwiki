@@ -10,26 +10,25 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_GetGamepadTouchpadFinger(SDL_Gamepad *gamepad, int touchpad, int finger, SDL_bool *down, float *x, float *y, float *pressure);
+bool SDL_GetGamepadTouchpadFinger(SDL_Gamepad *gamepad, int touchpad, int finger, bool *down, float *x, float *y, float *pressure);
 ```
 
 ## Function Parameters
 
-|                              |              |                                                                                                                  |
-| ---------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------- |
-| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**  | a gamepad.                                                                                                       |
-| int                          | **touchpad** | a touchpad.                                                                                                      |
-| int                          | **finger**   | a finger.                                                                                                        |
-| [SDL_bool](SDL_bool) *       | **down**     | a pointer filled with [SDL_TRUE](SDL_TRUE) if the finger is down, [SDL_FALSE](SDL_FALSE) otherwise, may be NULL. |
-| float *                      | **x**        | a pointer filled with the x position, normalized 0 to 1, with the origin in the upper left, may be NULL.         |
-| float *                      | **y**        | a pointer filled with the y position, normalized 0 to 1, with the origin in the upper left, may be NULL.         |
-| float *                      | **pressure** | a pointer filled with pressure value, may be NULL.                                                               |
+|                              |              |                                                                                                          |
+| ---------------------------- | ------------ | -------------------------------------------------------------------------------------------------------- |
+| [SDL_Gamepad](SDL_Gamepad) * | **gamepad**  | a gamepad.                                                                                               |
+| int                          | **touchpad** | a touchpad.                                                                                              |
+| int                          | **finger**   | a finger.                                                                                                |
+| bool *                       | **down**     | a pointer filled with true if the finger is down, false otherwise, may be NULL.                          |
+| float *                      | **x**        | a pointer filled with the x position, normalized 0 to 1, with the origin in the upper left, may be NULL. |
+| float *                      | **y**        | a pointer filled with the y position, normalized 0 to 1, with the origin in the upper left, may be NULL. |
+| float *                      | **pressure** | a pointer filled with pressure value, may be NULL.                                                       |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

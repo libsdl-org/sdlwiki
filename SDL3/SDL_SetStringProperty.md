@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-SDL_bool SDL_SetStringProperty(SDL_PropertiesID props, const char *name, const char *value);
+bool SDL_SetStringProperty(SDL_PropertiesID props, const char *name, const char *value);
 ```
 
 ## Function Parameters
@@ -23,9 +23,8 @@ SDL_bool SDL_SetStringProperty(SDL_PropertiesID props, const char *name, const c
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -22,9 +22,8 @@ void SDL_SetX11EventHook(SDL_X11EventHook callback, void *userdata);
 
 ## Remarks
 
-The callback may modify the event, and should return [SDL_TRUE](SDL_TRUE)
-if the event should continue to be processed, or [SDL_FALSE](SDL_FALSE) to
-prevent further processing.
+The callback may modify the event, and should return true if the event
+should continue to be processed, or false to prevent further processing.
 
 ## Version
 

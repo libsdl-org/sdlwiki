@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_HasGamepad(void);
+bool SDL_HasGamepad(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if a gamepad is
-connected, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if a gamepad is connected, false otherwise.
 
 ## Version
 

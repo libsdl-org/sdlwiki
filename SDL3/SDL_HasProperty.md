@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-SDL_bool SDL_HasProperty(SDL_PropertiesID props, const char *name);
+bool SDL_HasProperty(SDL_PropertiesID props, const char *name);
 ```
 
 ## Function Parameters
@@ -22,8 +22,7 @@ SDL_bool SDL_HasProperty(SDL_PropertiesID props, const char *name);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the property exists,
-or [SDL_FALSE](SDL_FALSE) if it doesn't.
+(bool) Returns true if the property exists, or false if it doesn't.
 
 ## Thread Safety
 

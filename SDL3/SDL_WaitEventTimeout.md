@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
+bool SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ SDL_bool SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this got an event or
-[SDL_FALSE](SDL_FALSE) if the timeout elapsed without any events available.
+(bool) Returns true if this got an event or false if the timeout elapsed
+without any events available.
 
 ## Remarks
 

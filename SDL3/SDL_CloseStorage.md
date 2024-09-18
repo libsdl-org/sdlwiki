@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_CloseStorage(SDL_Storage *storage);
+bool SDL_CloseStorage(SDL_Storage *storage);
 ```
 
 ## Function Parameters
@@ -21,11 +21,10 @@ SDL_bool SDL_CloseStorage(SDL_Storage *storage);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the container was
-freed with no errors, [SDL_FALSE](SDL_FALSE) otherwise; call
-[SDL_GetError](SDL_GetError)() for more information. Even if the function
-returns an error, the container data will be freed; the error is only for
-informational purposes.
+(bool) Returns true if the container was freed with no errors, false
+otherwise; call [SDL_GetError](SDL_GetError)() for more information. Even
+if the function returns an error, the container data will be freed; the
+error is only for informational purposes.
 
 ## Version
 

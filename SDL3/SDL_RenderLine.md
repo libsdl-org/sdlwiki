@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_RenderLine(SDL_Renderer *renderer, float x1, float y1, float x2, float y2);
+bool SDL_RenderLine(SDL_Renderer *renderer, float x1, float y1, float x2, float y2);
 ```
 
 ## Function Parameters
@@ -25,9 +25,8 @@ SDL_bool SDL_RenderLine(SDL_Renderer *renderer, float x1, float y1, float x2, fl
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

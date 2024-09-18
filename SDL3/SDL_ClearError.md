@@ -10,12 +10,12 @@ Defined in [<SDL3/SDL_error.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_ClearError(void);
+bool SDL_ClearError(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE).
+(bool) Returns true.
 
 ## Version
 

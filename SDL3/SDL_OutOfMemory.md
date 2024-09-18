@@ -10,12 +10,12 @@ Defined in [<SDL3/SDL_error.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_OutOfMemory(void);
+bool SDL_OutOfMemory(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_FALSE](SDL_FALSE).
+(bool) Returns false.
 
 ## Remarks
 

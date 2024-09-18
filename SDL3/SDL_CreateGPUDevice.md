@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 SDL_GPUDevice* SDL_CreateGPUDevice(
     SDL_GPUShaderFormat format_flags,
-    SDL_bool debug_mode,
+    bool debug_mode,
     const char *name);
 ```
 
@@ -21,7 +21,7 @@ SDL_GPUDevice* SDL_CreateGPUDevice(
 |                                            |                  |                                                                       |
 | ------------------------------------------ | ---------------- | --------------------------------------------------------------------- |
 | [SDL_GPUShaderFormat](SDL_GPUShaderFormat) | **format_flags** | a bitflag indicating which shader formats the app is able to provide. |
-| [SDL_bool](SDL_bool)                       | **debug_mode**   | enable debug mode properties and validations.                         |
+| bool                                       | **debug_mode**   | enable debug mode properties and validations.                         |
 | const char *                               | **name**         | the preferred GPU driver, or NULL to let SDL pick the optimal driver. |
 
 ## Return Value

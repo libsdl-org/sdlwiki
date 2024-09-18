@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
+bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if events with type >=
-`minType` and <= `maxType` are present, or [SDL_FALSE](SDL_FALSE) if not.
+(bool) Returns true if events with type >= `minType` and <= `maxType` are
+present, or false if not.
 
 ## Remarks
 

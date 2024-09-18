@@ -10,22 +10,21 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_SetJoystickVirtualButton(SDL_Joystick *joystick, int button, SDL_bool down);
+bool SDL_SetJoystickVirtualButton(SDL_Joystick *joystick, int button, bool down);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                                  |
-| ------------------------------ | ------------ | -------------------------------------------------------------------------------- |
-| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.                                      |
-| int                            | **button**   | the index of the button on the virtual joystick to update.                       |
-| [SDL_bool](SDL_bool)           | **down**     | [SDL_TRUE](SDL_TRUE) if the button is pressed, [SDL_FALSE](SDL_FALSE) otherwise. |
+|                                |              |                                                            |
+| ------------------------------ | ------------ | ---------------------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.                |
+| int                            | **button**   | the index of the button on the virtual joystick to update. |
+| bool                           | **down**     | true if the button is pressed, false otherwise.            |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

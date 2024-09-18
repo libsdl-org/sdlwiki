@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_FORCE_INLINE SDL_bool SDL_RectEmpty(const SDL_Rect *r);
+SDL_FORCE_INLINE bool SDL_RectEmpty(const SDL_Rect *r);
 ```
 
 ## Function Parameters
@@ -21,8 +21,7 @@ SDL_FORCE_INLINE SDL_bool SDL_RectEmpty(const SDL_Rect *r);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the rectangle is
-"empty", [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the rectangle is "empty", false otherwise.
 
 ## Remarks
 

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const SDL_bool * SDL_GetKeyboardState(int *numkeys);
+const bool * SDL_GetKeyboardState(int *numkeys);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ const SDL_bool * SDL_GetKeyboardState(int *numkeys);
 
 ## Return Value
 
-(const [SDL_bool](SDL_bool) *) Returns a pointer to an array of key states.
+(const bool *) Returns a pointer to an array of key states.
 
 ## Remarks
 
@@ -29,9 +29,9 @@ The pointer returned is a pointer to an internal SDL array. It will be
 valid for the whole lifetime of the application and should not be freed by
 the caller.
 
-A array element with a value of [SDL_TRUE](SDL_TRUE) means that the key is
-pressed and a value of [SDL_FALSE](SDL_FALSE) means that it is not. Indexes
-into this array are obtained by using [SDL_Scancode](SDL_Scancode) values.
+A array element with a value of true means that the key is pressed and a
+value of false means that it is not. Indexes into this array are obtained
+by using [SDL_Scancode](SDL_Scancode) values.
 
 Use [SDL_PumpEvents](SDL_PumpEvents)() to update the state array.
 

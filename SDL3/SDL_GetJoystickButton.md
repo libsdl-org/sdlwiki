@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_bool SDL_GetJoystickButton(SDL_Joystick *joystick, int button);
+bool SDL_GetJoystickButton(SDL_Joystick *joystick, int button);
 ```
 
 ## Function Parameters
@@ -22,8 +22,7 @@ SDL_bool SDL_GetJoystickButton(SDL_Joystick *joystick, int button);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the button is
-pressed, [SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the button is pressed, false otherwise.
 
 ## Version
 

@@ -10,13 +10,12 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_bool SDL_IsAndroidTV(void);
+bool SDL_IsAndroidTV(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if this is Android TV,
-[SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if this is Android TV, false otherwise.
 
 ## Version
 

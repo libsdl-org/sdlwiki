@@ -10,22 +10,21 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_SetSurfaceColorKey(SDL_Surface *surface, SDL_bool enabled, Uint32 key);
+bool SDL_SetSurfaceColorKey(SDL_Surface *surface, bool enabled, Uint32 key);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                                                        |
-| ---------------------------- | ----------- | -------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update.                                    |
-| [SDL_bool](SDL_bool)         | **enabled** | [SDL_TRUE](SDL_TRUE) to enable color key, [SDL_FALSE](SDL_FALSE) to disable color key. |
-| Uint32                       | **key**     | the transparent pixel.                                                                 |
+|                              |             |                                                       |
+| ---------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update.   |
+| bool                         | **enabled** | true to enable color key, false to disable color key. |
+| Uint32                       | **key**     | the transparent pixel.                                |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

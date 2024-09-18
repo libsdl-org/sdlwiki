@@ -10,21 +10,20 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_PremultiplySurfaceAlpha(SDL_Surface *surface, SDL_bool linear);
+bool SDL_PremultiplySurfaceAlpha(SDL_Surface *surface, bool linear);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                                                                                                                    |
-| ---------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Surface](SDL_Surface) * | **surface** | the surface to modify.                                                                                                                             |
-| [SDL_bool](SDL_bool)         | **linear**  | [SDL_TRUE](SDL_TRUE) to convert from sRGB to linear space for the alpha multiplication, [SDL_FALSE](SDL_FALSE) to do multiplication in sRGB space. |
+|                              |             |                                                                                                                   |
+| ---------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **surface** | the surface to modify.                                                                                            |
+| bool                         | **linear**  | true to convert from sRGB to linear space for the alpha multiplication, false to do multiplication in sRGB space. |
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success or
-[SDL_FALSE](SDL_FALSE) on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

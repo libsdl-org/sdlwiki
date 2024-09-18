@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_bool SDL_SetSurfaceClipRect(SDL_Surface *surface, const SDL_Rect *rect);
+bool SDL_SetSurfaceClipRect(SDL_Surface *surface, const SDL_Rect *rect);
 ```
 
 ## Function Parameters
@@ -22,9 +22,8 @@ SDL_bool SDL_SetSurfaceClipRect(SDL_Surface *surface, const SDL_Rect *rect);
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) if the rectangle
-intersects the surface, otherwise [SDL_FALSE](SDL_FALSE) and blits will be
-completely clipped.
+(bool) Returns true if the rectangle intersects the surface, otherwise
+false and blits will be completely clipped.
 
 ## Remarks
 

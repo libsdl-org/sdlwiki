@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_bool SDL_ClaimWindowForGPUDevice(
+bool SDL_ClaimWindowForGPUDevice(
     SDL_GPUDevice *device,
     SDL_Window *window);
 ```
@@ -24,8 +24,7 @@ SDL_bool SDL_ClaimWindowForGPUDevice(
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [SDL_TRUE](SDL_TRUE) on success, otherwise
-[SDL_FALSE](SDL_FALSE).
+(bool) Returns true on success, otherwise false.
 
 ## Remarks
 

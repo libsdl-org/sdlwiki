@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_bool SDL_GPUTextureSupportsSampleCount(
+bool SDL_GPUTextureSupportsSampleCount(
     SDL_GPUDevice *device,
     SDL_GPUTextureFormat format,
     SDL_GPUSampleCount sample_count);
@@ -26,8 +26,7 @@ SDL_bool SDL_GPUTextureSupportsSampleCount(
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns a hardware-specific version of
-min(preferred, possible).
+(bool) Returns a hardware-specific version of min(preferred, possible).
 
 ## Version
 

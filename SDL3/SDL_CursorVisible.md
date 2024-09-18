@@ -10,13 +10,13 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_CursorVisible(void);
+bool SDL_CursorVisible(void);
 ```
 
 ## Return Value
 
-([SDL_bool](SDL_bool)) Returns [`SDL_TRUE`](SDL_TRUE) if the cursor is
-being shown, or [`SDL_FALSE`](SDL_FALSE) if the cursor is hidden.
+(bool) Returns `true` if the cursor is being shown, or `false` if the
+cursor is hidden.
 
 ## Version
 
