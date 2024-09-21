@@ -62,13 +62,16 @@ typedef union SDL_Event
 ```
 
 ## Remarks
-The [SDL_Event](SDL_Event) structure is the core of all event handling in SDL. [SDL_Event](SDL_Event) is a union of all event structures used in SDL.  Using it is a simple matter of knowing which event type corresponds to which union member. The table below lists these relationships.
 
-The [SDL_Event](SDL_Event) structure has two uses:
-* Reading events from the event queue
-* Placing events on the event queue
+The [SDL_Event](SDL_Event) structure is the core of all event handling in
+SDL. [SDL_Event](SDL_Event) is a union of all event structures used in SDL.
+Using it is a simple matter of knowing which event type corresponds to
+which union member. The table below lists these relationships.
 
-### Reading events from the event queue
+The [SDL_Event](SDL_Event) structure has two uses: * Reading events from
+the event queue * Placing events on the event queue
+
+## Reading events from the event queue
 
 Reading events from the event queue is done with either [SDL_PollEvent](SDL_PollEvent) or [SDL_PeepEvents](SDL_PeepEvents). We'll use [SDL_PollEvent](SDL_PollEvent) and step through an example.
 
@@ -101,7 +104,7 @@ All we need to do now is read the information out of the **motion** member of te
 printf("Event queue empty.\n");
 ```
 
-### Placing events on the event queue
+## Placing events on the event queue
 
 It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [SDL_PushEvent](SDL_PushEvent) and [SDL_PeepEvents](SDL_PeepEvents) allow you to place events onto the event queue. This is usually used to place a SDL_USEREVENT on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the **type** member and filling the appropriate member structure with information.
 ```c
@@ -114,7 +117,7 @@ user_event.user.data2 = NULL;
 SDL_PushEvent(&user_event);
 ```
 
-### Relationships between event types and union members
+## Relationships between event types and union members
 
 | Event Type                                                                           | Event Structure                                        | SDL_Event Field |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------|-----------------|

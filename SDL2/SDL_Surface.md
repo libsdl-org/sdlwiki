@@ -38,6 +38,11 @@ typedef struct SDL_Surface
 } SDL_Surface;
 ```
 
+## Remarks
+
+This structure should be treated as read-only, except for `pixels`, which,
+if not NULL, contains the raw pixel data for the surface.
+
 ## Code examples
 
 ```c
@@ -57,11 +62,6 @@ void WipeSurface(SDL_Surface *surface)
     SDL_UnlockSurface(surface);
 }
 ```
-
-## Remarks
-
-This structure should be treated as read-only, except for `pixels`, which,
-if not NULL, contains the raw pixel data for the surface.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySurface](CategorySurface)
