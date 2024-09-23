@@ -89,7 +89,7 @@ typedef enum SDL_Colorspace
                                  SDL_MATRIX_COEFFICIENTS_BT2020_NCL,
                                  SDL_CHROMA_LOCATION_LEFT), */
 
-    SDL_COLORSPACE_BT2020_FULL = 0x22102609u /**< Equivalent to DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020 */
+    SDL_COLORSPACE_BT2020_FULL = 0x22102609u, /**< Equivalent to DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020 */
         /* SDL_DEFINE_COLORSPACE(SDL_COLOR_TYPE_YCBCR,
                                  SDL_COLOR_RANGE_FULL,
                                  SDL_COLOR_PRIMARIES_BT2020,
@@ -97,6 +97,8 @@ typedef enum SDL_Colorspace
                                  SDL_MATRIX_COEFFICIENTS_BT2020_NCL,
                                  SDL_CHROMA_LOCATION_LEFT), */
 
+    SDL_COLORSPACE_RGB_DEFAULT = SDL_COLORSPACE_SRGB, /**< The default colorspace for RGB surfaces if no colorspace is specified */
+    SDL_COLORSPACE_YUV_DEFAULT = SDL_COLORSPACE_JPEG  /**< The default colorspace for YUV surfaces if no colorspace is specified */
 } SDL_Colorspace;
 ```
 
