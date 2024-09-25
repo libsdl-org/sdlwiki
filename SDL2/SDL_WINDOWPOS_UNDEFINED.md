@@ -1,0 +1,1 @@
+SDL_WINDOWPOS_UNDEFINED is equal to 0.
