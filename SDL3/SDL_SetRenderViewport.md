@@ -25,6 +25,18 @@ bool SDL_SetRenderViewport(SDL_Renderer *renderer, const SDL_Rect *rect);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Drawing will clip to this area (separately from any clipping done with
+[SDL_SetRenderClipRect](SDL_SetRenderClipRect)), and the top left of the
+area will become coordinate (0, 0) for future drawing commands.
+
+The area's width and height must be >= 0.
+
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

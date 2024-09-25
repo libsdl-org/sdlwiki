@@ -44,9 +44,13 @@ overwrite every pixel.
 
 Please note, that in case of rendering to a texture - there is **no need**
 to call [`SDL_RenderPresent`](SDL_RenderPresent) after drawing needed
-objects to a texture, you are only required to change back the rendering
-target to default via `SDL_SetRenderTarget(renderer, NULL)` afterwards, as
-textures by themselves do not have a concept of backbuffers.
+objects to a texture, and should not be done; you are only required to
+change back the rendering target to default via
+`SDL_SetRenderTarget(renderer, NULL)` afterwards, as textures by themselves
+do not have a concept of backbuffers. Calling
+[SDL_RenderPresent](SDL_RenderPresent) while rendering to a texture will
+still update the screen with any current drawing that has been done _to the
+window itself_.
 
 ## Thread Safety
 

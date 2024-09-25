@@ -10,18 +10,17 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-bool SDL_SetRenderLogicalPresentation(SDL_Renderer *renderer, int w, int h, SDL_RendererLogicalPresentation mode, SDL_ScaleMode scale_mode);
+bool SDL_SetRenderLogicalPresentation(SDL_Renderer *renderer, int w, int h, SDL_RendererLogicalPresentation mode);
 ```
 
 ## Function Parameters
 
-|                                                                    |                |                                       |
-| ------------------------------------------------------------------ | -------------- | ------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *                                     | **renderer**   | the rendering context.                |
-| int                                                                | **w**          | the width of the logical resolution.  |
-| int                                                                | **h**          | the height of the logical resolution. |
-| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) | **mode**       | the presentation mode used.           |
-| [SDL_ScaleMode](SDL_ScaleMode)                                     | **scale_mode** | the scale mode used.                  |
+|                                                                    |              |                                       |
+| ------------------------------------------------------------------ | ------------ | ------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *                                     | **renderer** | the rendering context.                |
+| int                                                                | **w**        | the width of the logical resolution.  |
+| int                                                                | **h**        | the height of the logical resolution. |
+| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) | **mode**     | the presentation mode used.           |
 
 ## Return Value
 
@@ -30,13 +29,25 @@ bool SDL_SetRenderLogicalPresentation(SDL_Renderer *renderer, int w, int h, SDL_
 
 ## Remarks
 
-This function sets the width and height of the logical rendering output. A
-render target is created at the specified size and used for rendering and
-then copied to the output during presentation.
+This function sets the width and height of the logical rendering output.
+The renderer will act as if the window is always the requested dimensions,
+scaling to the actual window resolution as necessary.
+
+This can be useful for games that expect a fixed size, but would like to
+scale the output to whatever is available, regardless of how a user resizes
+a window, or if the display is high DPI.
 
 You can disable logical coordinates by setting the mode to
 [SDL_LOGICAL_PRESENTATION_DISABLED](SDL_LOGICAL_PRESENTATION_DISABLED), and
-in that case you get the full pixel resolution of the output window.
+in that case you get the full pixel resolution of the output window; it is
+safe to toggle logical presentation during the rendering of a frame:
+perhaps most of the rendering is done to specific dimensions but to make
+fonts look sharp, the app turns off logical presentation while drawing
+text.
+
+Letterboxing will only happen if logical presentation is enabled during
+[SDL_RenderPresent](SDL_RenderPresent); be sure to reenable it first if you
+were using it.
 
 You can convert coordinates in an event into rendering coordinates using
 [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)().
