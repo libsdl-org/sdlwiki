@@ -36,6 +36,10 @@ The pixel format of the created texture may be different from the pixel
 format of the surface, and can be queried using the
 [SDL_PROP_TEXTURE_FORMAT_NUMBER](SDL_PROP_TEXTURE_FORMAT_NUMBER) property.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

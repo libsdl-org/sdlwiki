@@ -33,6 +33,10 @@ bool SDL_RenderTextureTiled(SDL_Renderer *renderer, SDL_Texture *texture, const 
 The pixels in `srcrect` will be repeated as many times as needed to
 completely fill `dstrect`.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

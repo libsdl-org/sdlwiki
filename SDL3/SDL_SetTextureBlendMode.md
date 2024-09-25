@@ -30,6 +30,10 @@ bool SDL_SetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode blendMode);
 If the blend mode is not supported, the closest supported mode is chosen
 and this function returns false.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

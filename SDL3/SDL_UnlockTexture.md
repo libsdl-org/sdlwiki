@@ -30,6 +30,10 @@ uninitialized memory.
 Which is to say: locking and immediately unlocking a texture can result in
 corrupted textures, depending on the renderer in use.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

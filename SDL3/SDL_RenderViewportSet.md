@@ -30,6 +30,10 @@ This is useful if you're saving and restoring the viewport and want to know
 whether you should restore a specific rectangle or NULL. Note that the
 viewport is always reset when changing rendering targets.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

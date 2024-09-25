@@ -23,6 +23,10 @@ void SDL_DestroyRenderer(SDL_Renderer *renderer);
 
 This should be called before destroying the associated window.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -34,6 +34,10 @@ which might happen if the window is hidden/minimized/offscreen. This
 doesn't apply to command encoders for render targets, just the window's
 backbuffer. Check your return values!
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

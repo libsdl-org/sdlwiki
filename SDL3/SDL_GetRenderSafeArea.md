@@ -34,6 +34,10 @@ viewport which is safe to have interactible content. You should continue
 rendering into the rest of the render target, but it should not contain
 visually important or interactible content.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

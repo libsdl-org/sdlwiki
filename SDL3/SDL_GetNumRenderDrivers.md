@@ -25,6 +25,10 @@ drivers may have several available with different capabilities.
 
 There may be none if SDL was compiled without render support.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

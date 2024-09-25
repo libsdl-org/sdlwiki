@@ -40,6 +40,10 @@ remaining pixels. The corners are then scaled using `scale` and fit into
 the corners of the destination rectangle. The sides and center are then
 stretched into place to cover the remaining destination rectangle.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

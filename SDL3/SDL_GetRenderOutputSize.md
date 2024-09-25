@@ -31,6 +31,10 @@ bool SDL_GetRenderOutputSize(SDL_Renderer *renderer, int *w, int *h);
 This returns the true output size in pixels, ignoring any render targets or
 logical size and presentation.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

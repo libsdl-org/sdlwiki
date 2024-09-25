@@ -42,6 +42,10 @@ late swap tearing (adaptive vsync), or
 disable. Not every value is supported by every driver, so you should check
 the return value to see whether the requested setting is supported.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

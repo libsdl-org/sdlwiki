@@ -34,6 +34,10 @@ more information.
 
 The contents of a texture when first created are not defined.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -32,6 +32,10 @@ presentation, based on the presentation mode and output size. If logical
 presentation is disabled, it will fill the rectangle with the output size,
 in pixels.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

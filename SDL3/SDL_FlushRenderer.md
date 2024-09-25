@@ -46,6 +46,10 @@ the SDL renderer. However, there lots of arbitrary pieces of Direct3D and
 OpenGL state that can confuse things; you should use your best judgment and
 be prepared to make changes if specific state needs to be protected.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

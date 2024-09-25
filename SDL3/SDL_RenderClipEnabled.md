@@ -24,6 +24,10 @@ bool SDL_RenderClipEnabled(SDL_Renderer *renderer);
 (bool) Returns true if clipping is enabled or false if not; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

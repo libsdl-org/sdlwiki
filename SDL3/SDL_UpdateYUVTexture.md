@@ -41,6 +41,10 @@ You can use [SDL_UpdateTexture](SDL_UpdateTexture)() as long as your pixel
 data is a contiguous block of Y and U/V planes in the proper order, but
 this function is available if your pixel data is not contiguous.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

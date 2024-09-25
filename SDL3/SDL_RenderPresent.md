@@ -54,7 +54,7 @@ window itself_.
 
 ## Thread Safety
 
-You may only call this function on the main thread.
+You may only call this function from the main thread.
 
 ## Version
 

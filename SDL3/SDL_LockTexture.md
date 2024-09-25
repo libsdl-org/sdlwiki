@@ -41,6 +41,10 @@ application level.
 You must use [SDL_UnlockTexture](SDL_UnlockTexture)() to unlock the pixels
 and apply any changes.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

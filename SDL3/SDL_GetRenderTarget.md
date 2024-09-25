@@ -29,6 +29,10 @@ for the default render target.
 The default render target is the window for which the renderer was created,
 and is reported a NULL here.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -18,8 +18,8 @@ may also be stretched with linear interpolation.
 
 This API is designed to accelerate simple 2D operations. You may want more
 functionality such as polygons and particle effects and in that case you
-should use SDL's OpenGL/Direct3D support or one of the many good 3D
-engines.
+should use SDL's OpenGL/Direct3D support, the SDL3 GPU API, or one of the
+many good 3D engines.
 
 These functions must be called from the main thread. See this bug for
 details: https://github.com/libsdl-org/SDL/issues/986

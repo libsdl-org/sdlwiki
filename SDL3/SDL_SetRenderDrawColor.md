@@ -33,6 +33,10 @@ bool SDL_SetRenderDrawColor(SDL_Renderer *renderer, Uint8 r, Uint8 g, Uint8 b, U
 Set the color for drawing or filling rectangles, lines, and points, and for
 [SDL_RenderClear](SDL_RenderClear)().
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

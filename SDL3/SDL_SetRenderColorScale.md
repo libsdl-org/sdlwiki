@@ -35,6 +35,10 @@ SDR display.
 The color scale does not affect the alpha channel, only the color
 brightness.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

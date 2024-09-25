@@ -32,6 +32,10 @@ The default texture scale mode is
 
 If the scale mode is not supported, the closest supported mode is chosen.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

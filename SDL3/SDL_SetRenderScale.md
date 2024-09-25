@@ -36,6 +36,10 @@ If this results in scaling or subpixel drawing by the rendering backend, it
 will be handled using the appropriate quality hints. For best results use
 integer scaling factors.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

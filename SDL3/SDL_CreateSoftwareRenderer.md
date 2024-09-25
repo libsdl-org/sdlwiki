@@ -34,6 +34,10 @@ _also_ create a software renderer, but they are intended to be used with an
 [SDL_Window](SDL_Window) as the final destination and not an
 [SDL_Surface](SDL_Surface).
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

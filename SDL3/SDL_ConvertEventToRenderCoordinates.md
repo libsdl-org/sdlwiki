@@ -32,6 +32,10 @@ to non-normalized rendering coordinates.
 
 Once converted, the coordinates may be outside the rendering area.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

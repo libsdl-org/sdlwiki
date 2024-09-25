@@ -52,6 +52,10 @@ were using it.
 You can convert coordinates in an event into rendering coordinates using
 [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)().
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

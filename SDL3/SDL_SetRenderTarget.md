@@ -31,6 +31,10 @@ The default render target is the window for which the renderer was created.
 To stop rendering to a texture and render to the window again, call this
 function with a NULL `texture`.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -33,6 +33,10 @@ target in pixels, otherwise if a logical size is set, it will return the
 logical size, otherwise it will return the value of
 [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)().
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

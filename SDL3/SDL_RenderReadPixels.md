@@ -35,6 +35,10 @@ The returned surface should be freed with
 frequently. If you're using this on the main rendering target, it should be
 called after rendering and before [SDL_RenderPresent](SDL_RenderPresent)().
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

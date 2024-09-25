@@ -38,6 +38,10 @@ following formula:
 Color modulation is not always supported by the renderer; it will return
 false if color modulation is not supported.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -29,6 +29,10 @@ isn't a Metal renderer.
 This function returns `void *`, so SDL doesn't have to include Metal's
 headers, but it can be safely cast to a `CAMetalLayer *`.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

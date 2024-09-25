@@ -131,6 +131,10 @@ With the vulkan renderer:
   the VkImage with layout VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL
   associated with the texture, if you want to wrap an existing texture.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

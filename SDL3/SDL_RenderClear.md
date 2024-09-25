@@ -31,6 +31,10 @@ the clip rectangle. Note, that clearing will also set/fill all pixels of
 the rendering target to current renderer draw color, so make sure to invoke
 [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)() when needed.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

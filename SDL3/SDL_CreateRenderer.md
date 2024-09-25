@@ -40,6 +40,10 @@ can call
 [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)() to
 change the content size and scaling options.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
