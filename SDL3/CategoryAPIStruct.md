@@ -81,6 +81,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_HapticPeriodic](SDL_HapticPeriodic)
 - [SDL_HapticRamp](SDL_HapticRamp)
 - [SDL_hid_device_info](SDL_hid_device_info)
+- [SDL_InitState](SDL_InitState)
 - [SDL_IOStreamInterface](SDL_IOStreamInterface)
 - [SDL_JoyAxisEvent](SDL_JoyAxisEvent)
 - [SDL_JoyBallEvent](SDL_JoyBallEvent)
