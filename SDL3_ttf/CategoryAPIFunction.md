@@ -39,6 +39,7 @@
 - [TTF_OpenFontIndexDPIIO](TTF_OpenFontIndexDPIIO)
 - [TTF_OpenFontIndexIO](TTF_OpenFontIndexIO)
 - [TTF_OpenFontIO](TTF_OpenFontIO)
+- [TTF_OpenFontWithProperties](TTF_OpenFontWithProperties)
 - [TTF_Quit](TTF_Quit)
 - [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
 - [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD)
