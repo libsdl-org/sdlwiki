@@ -15,11 +15,12 @@ bool SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, int *w, int *h, SD
 
 ## Function Parameters
 
-|                                |              |                                      |
-| ------------------------------ | ------------ | ------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.               |
-| int *                          | **w**        | an int to be filled with the width.  |
-| int *                          | **h**        | an int to be filled with the height. |
+|                                                                      |              |                                      |
+| -------------------------------------------------------------------- | ------------ | ------------------------------------ |
+| [SDL_Renderer](SDL_Renderer) *                                       | **renderer** | the rendering context.               |
+| int *                                                                | **w**        | an int to be filled with the width.  |
+| int *                                                                | **h**        | an int to be filled with the height. |
+| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) * | **mode**     | the presentation mode used.          |
 
 ## Return Value
 
