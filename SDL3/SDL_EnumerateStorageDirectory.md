@@ -33,6 +33,10 @@ This function provides every directory entry through an app-provided
 callback, called once for each directory entry, until all results have been
 provided or the callback returns <= 0.
 
+This will return false if there was a system problem in general, or if a
+callback returns -1. A successful return means a callback returned 1 to
+halt enumeration, or all directory entries were enumerated.
+
 ## Version
 
 This function is available since SDL 3.0.0.
