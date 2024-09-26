@@ -15,12 +15,13 @@ SDL_Surface * TTF_RenderText_Solid_Wrapped(TTF_Font *font, const char *text, siz
 
 ## Function Parameters
 
-|                        |            |                                                                  |
-| ---------------------- | ---------- | ---------------------------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**   | the font to render with.                                         |
-| const char *           | **text**   | text to render, in UTF-8 encoding.                               |
-| size_t                 | **length** | the length of the text, in bytes, or 0 for null terminated text. |
-| SDL_Color              | **fg**     | the foreground color for the text.                               |
+|                        |                |                                                                           |
+| ---------------------- | -------------- | ------------------------------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**       | the font to render with.                                                  |
+| const char *           | **text**       | text to render, in UTF-8 encoding.                                        |
+| size_t                 | **length**     | the length of the text, in bytes, or 0 for null terminated text.          |
+| SDL_Color              | **fg**         | the foreground color for the text.                                        |
+| int                    | **wrapLength** | the maximum width of the text surface or 0 to wrap on newline characters. |
 
 ## Return Value
 

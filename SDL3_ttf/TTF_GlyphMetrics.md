@@ -15,10 +15,15 @@ bool TTF_GlyphMetrics(TTF_Font *font, Uint32 ch, int *minx, int *maxx, int *miny
 
 ## Function Parameters
 
-|                        |          |                              |
-| ---------------------- | -------- | ---------------------------- |
-| [TTF_Font](TTF_Font) * | **font** | the font to query.           |
-| Uint32                 | **ch**   | the character code to check. |
+|                        |             |                                                                                                                                      |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [TTF_Font](TTF_Font) * | **font**    | the font to query.                                                                                                                   |
+| Uint32                 | **ch**      | the character code to check.                                                                                                         |
+| int *                  | **minx**    | a pointer filled in with the minimum x coordinate of the glyph from the left edge of its bounding box. This value may be negative.   |
+| int *                  | **maxx**    | a pointer filled in with the maximum x coordinate of the glyph from the left edge of its bounding box.                               |
+| int *                  | **miny**    | a pointer filled in with the minimum y coordinate of the glyph from the bottom edge of its bounding box. This value may be negative. |
+| int *                  | **maxy**    | a pointer filled in with the maximum y coordinate of the glyph from the bottom edge of its bounding box.                             |
+| int *                  | **advance** | a pointer filled in with the distance to the next glyph from the left edge of this glyph's bounding box.                             |
 
 ## Return Value
 
@@ -30,11 +35,6 @@ more information.
 To understand what these metrics mean, here is a useful link:
 
 https://freetype.sourceforge.net/freetype2/docs/tutorial/step2.html
-
-This is the same as [TTF_GlyphMetrics](TTF_GlyphMetrics)(), but takes a
-32-bit character instead of 16-bit, and thus can query a larger range. If
-you are sure you'll have an SDL_ttf that's version 2.0.18 or newer, there's
-no reason not to use this function exclusively.
 
 ## Version
 
