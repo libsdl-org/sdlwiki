@@ -21,7 +21,7 @@ bool TTF_FontFaceIsFixedWidth(const TTF_Font *font);
 
 ## Return Value
 
-(bool) Returns true if fixed-width, false if not.
+(bool) Returns true if the font is fixed-width, false otherwise.
 
 ## Remarks
 

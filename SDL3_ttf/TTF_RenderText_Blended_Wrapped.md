@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_RenderText_Blended_Wrapped
 
-Render word-wrapped Latin1 text at high quality to a new ARGB surface.
+Render word-wrapped UTF-8 text at high quality to a new ARGB surface.
 
 ## Header File
 
@@ -10,17 +10,17 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_Surface * TTF_RenderText_Blended_Wrapped(TTF_Font *font,
-                const char *text, SDL_Color fg, Uint32 wrapLength);
+SDL_Surface * TTF_RenderText_Blended_Wrapped(TTF_Font *font, const char *text, size_t length, SDL_Color fg, int wrapLength);
 ```
 
 ## Function Parameters
 
-|                        |          |                                     |
-| ---------------------- | -------- | ----------------------------------- |
-| [TTF_Font](TTF_Font) * | **font** | the font to render with.            |
-| const char *           | **text** | text to render, in Latin1 encoding. |
-| SDL_Color              | **fg**   | the foreground color for the text.  |
+|                        |            |                                                                  |
+| ---------------------- | ---------- | ---------------------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**   | the font to render with.                                         |
+| const char *           | **text**   | text to render, in UTF-8 encoding.                               |
+| size_t                 | **length** | the length of the text, in bytes, or 0 for null terminated text. |
+| SDL_Color              | **fg**     | the foreground color for the text.                               |
 
 ## Return Value
 
@@ -38,12 +38,6 @@ it extends beyond `wrapLength` in pixels.
 
 If wrapLength is 0, this function will only wrap on newline characters.
 
-You almost certainly want
-[TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped)() unless
-you're sure you have a 1-byte Latin1 encoding. US ASCII characters will
-work with either function, but most other Unicode characters packed into a
-`const char *` will need UTF-8.
-
 You can render at other quality levels with
 [TTF_RenderText_Solid_Wrapped](TTF_RenderText_Solid_Wrapped),
 [TTF_RenderText_Shaded_Wrapped](TTF_RenderText_Shaded_Wrapped), and
@@ -55,8 +49,10 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-- [TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped)
-- [TTF_RenderUNICODE_Blended_Wrapped](TTF_RenderUNICODE_Blended_Wrapped)
+- [TTF_RenderText_Blended](TTF_RenderText_Blended)
+- [TTF_RenderText_LCD_Wrapped](TTF_RenderText_LCD_Wrapped)
+- [TTF_RenderText_Shaded_Wrapped](TTF_RenderText_Shaded_Wrapped)
+- [TTF_RenderText_Solid_Wrapped](TTF_RenderText_Solid_Wrapped)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

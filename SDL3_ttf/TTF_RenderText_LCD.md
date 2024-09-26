@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_RenderText_LCD
 
-Render Latin1 text at LCD subpixel quality to a new ARGB surface.
+Render UTF-8 text at LCD subpixel quality to a new ARGB surface.
 
 ## Header File
 
@@ -10,18 +10,18 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_Surface * TTF_RenderText_LCD(TTF_Font *font,
-                const char *text, SDL_Color fg, SDL_Color bg);
+SDL_Surface * TTF_RenderText_LCD(TTF_Font *font, const char *text, size_t length, SDL_Color fg, SDL_Color bg);
 ```
 
 ## Function Parameters
 
-|                        |          |                                     |
-| ---------------------- | -------- | ----------------------------------- |
-| [TTF_Font](TTF_Font) * | **font** | the font to render with.            |
-| const char *           | **text** | text to render, in Latin1 encoding. |
-| SDL_Color              | **fg**   | the foreground color for the text.  |
-| SDL_Color              | **bg**   | the background color for the text.  |
+|                        |            |                                                                  |
+| ---------------------- | ---------- | ---------------------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**   | the font to render with.                                         |
+| const char *           | **text**   | text to render, in UTF-8 encoding.                               |
+| size_t                 | **length** | the length of the text, in bytes, or 0 for null terminated text. |
+| SDL_Color              | **fg**     | the foreground color for the text.                               |
+| SDL_Color              | **bg**     | the background color for the text.                               |
 
 ## Return Value
 
@@ -41,11 +41,6 @@ need to wrap the output to multiple lines.
 
 This will not wrap on newline characters.
 
-You almost certainly want [TTF_RenderUTF8_LCD](TTF_RenderUTF8_LCD)() unless
-you're sure you have a 1-byte Latin1 encoding. US ASCII characters will
-work with either function, but most other Unicode characters packed into a
-`const char *` will need UTF-8.
-
 You can render at other quality levels with
 [TTF_RenderText_Solid](TTF_RenderText_Solid),
 [TTF_RenderText_Shaded](TTF_RenderText_Shaded), and
@@ -57,8 +52,10 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-- [TTF_RenderUTF8_LCD](TTF_RenderUTF8_LCD)
-- [TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD)
+- [TTF_RenderText_Blended](TTF_RenderText_Blended)
+- [TTF_RenderText_LCD_Wrapped](TTF_RenderText_LCD_Wrapped)
+- [TTF_RenderText_Shaded](TTF_RenderText_Shaded)
+- [TTF_RenderText_Solid](TTF_RenderText_Solid)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

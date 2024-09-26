@@ -23,7 +23,7 @@ TTF_Font * TTF_OpenFont(const char *file, int ptsize);
 ## Return Value
 
 ([TTF_Font](TTF_Font) *) Returns a valid [TTF_Font](TTF_Font), or NULL on
-error.
+failure; call SDL_GetError() for more information.
 
 ## Remarks
 

@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_GlyphIsProvided
 
-Check whether a glyph is provided by the font for a 16-bit codepoint.
+Check whether a glyph is provided by the font for a 32-bit codepoint.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_GlyphIsProvided(TTF_Font *font, Uint16 ch);
+bool TTF_GlyphIsProvided(TTF_Font *font, Uint32 ch);
 ```
 
 ## Function Parameters
@@ -18,7 +18,7 @@ bool TTF_GlyphIsProvided(TTF_Font *font, Uint16 ch);
 |                        |          |                              |
 | ---------------------- | -------- | ---------------------------- |
 | [TTF_Font](TTF_Font) * | **font** | the font to query.           |
-| Uint16                 | **ch**   | the character code to check. |
+| Uint32                 | **ch**   | the character code to check. |
 
 ## Return Value
 
@@ -27,22 +27,14 @@ not.
 
 ## Remarks
 
-Note that this version of the function takes a 16-bit character code, which
-covers the Basic Multilingual Plane, but is insufficient to cover the
-entire set of possible Unicode values, including emoji glyphs. You should
-use [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)() instead, which offers
-the same functionality but takes a 32-bit codepoint instead.
-
-The only reason to use this function is that it was available since the
-beginning of time, more or less.
+This is the same as [TTF_GlyphIsProvided](TTF_GlyphIsProvided)(), but takes
+a 32-bit character instead of 16-bit, and thus can query a larger range. If
+you are sure you'll have an SDL_ttf that's version 2.0.18 or newer, there's
+no reason not to use this function exclusively.
 
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
-
-## See Also
-
-- [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
