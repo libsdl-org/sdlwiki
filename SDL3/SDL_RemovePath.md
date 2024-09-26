@@ -17,12 +17,17 @@ bool SDL_RemovePath(const char *path);
 
 |              |          |                                         |
 | ------------ | -------- | --------------------------------------- |
-| const char * | **path** | the path of the directory to enumerate. |
+| const char * | **path** | the path to remove from the filesystem. |
 
 ## Return Value
 
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+Directories that are not empty will fail; this function will not recursely
+delete directory trees.
 
 ## Version
 

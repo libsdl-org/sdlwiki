@@ -32,9 +32,18 @@ stream and frees the [SDL_IOStream](SDL_IOStream) itself. This returns true
 on success, or false if the stream failed to flush to its output (e.g. to
 disk).
 
-Note that if this fails to flush the stream to disk, this function reports
-an error, but the [SDL_IOStream](SDL_IOStream) is still invalid once this
-function returns.
+Note that if this fails to flush the stream for any reason, this function
+reports an error, but the [SDL_IOStream](SDL_IOStream) is still invalid
+once this function returns.
+
+This call flushes any buffered writes to the operating system, but there
+are no guarantees that those writes have gone to physical media; they might
+be in the OS's file cache, waiting to go to disk later. If it's absolutely
+crucial that writes go to disk immediately, so they are definitely stored
+even if the power fails before the file cache would have caught up, one
+should call [SDL_FlushIO](SDL_FlushIO)() before closing. Note that flushing
+takes time and makes the system and your app operate less efficiently, so
+do so sparingly.
 
 ## Version
 

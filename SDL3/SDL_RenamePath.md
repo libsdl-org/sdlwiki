@@ -25,6 +25,20 @@ bool SDL_RenamePath(const char *oldpath, const char *newpath);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+If the file at `newpath` already exists, it will replaced.
+
+Note that this will not copy files across filesystems/drives/volumes, as
+that is a much more complicated (and possibly time-consuming) operation.
+
+Which is to say, if this function fails, [SDL_CopyFile](SDL_CopyFile)() to
+a temporary file in the same directory as `newpath`, then
+[SDL_RenamePath](SDL_RenamePath)() from the temporary file to `newpath` and
+[SDL_RemovePath](SDL_RemovePath)() on `oldpath` might work for files.
+Renaming a non-empty directory across filesystems is dramatically more
+complex, however.
+
 ## Version
 
 This function is available since SDL 3.0.0.

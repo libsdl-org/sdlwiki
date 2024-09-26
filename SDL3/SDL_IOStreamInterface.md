@@ -68,8 +68,11 @@ typedef struct SDL_IOStreamInterface
     /**
      *  Close and free any allocated resources.
      *
+     *  This does not guarantee file writes will sync to physical media; they
+     *  can be in the system's file cache, waiting to go to disk.
+     *
      *  The SDL_IOStream is still destroyed even if this fails, so clean up anything
-     *  even if flushing to disk returns an error.
+     *  even if flushing buffers, etc, returns an error.
      *
      *  \return true if successful or false on write error when flushing data.
      */
