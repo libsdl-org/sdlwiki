@@ -41,11 +41,6 @@ it extends beyond `wrapLength` in pixels.
 
 If wrapLength is 0, this function will only wrap on newline characters.
 
-You can render at other quality levels with
-[TTF_RenderText_Solid_Wrapped](TTF_RenderText_Solid_Wrapped),
-[TTF_RenderText_Blended_Wrapped](TTF_RenderText_Blended_Wrapped), and
-[TTF_RenderText_LCD_Wrapped](TTF_RenderText_LCD_Wrapped).
-
 ## Thread Safety
 
 This function should be called on the thread that created the font.
@@ -59,7 +54,6 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_RenderText_Blended_Wrapped](TTF_RenderText_Blended_Wrapped)
 - [TTF_RenderText_LCD_Wrapped](TTF_RenderText_LCD_Wrapped)
 - [TTF_RenderText_Shaded](TTF_RenderText_Shaded)
-- [TTF_RenderText_Solid_Wrapped](TTF_RenderText_Solid_Wrapped)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
