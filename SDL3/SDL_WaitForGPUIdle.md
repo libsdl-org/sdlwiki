@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_WaitForGPUIdle(
+bool SDL_WaitForGPUIdle(
     SDL_GPUDevice *device);
 ```
 
@@ -19,6 +19,11 @@ void SDL_WaitForGPUIdle(
 |                                  |            |                |
 | -------------------------------- | ---------- | -------------- |
 | [SDL_GPUDevice](SDL_GPUDevice) * | **device** | a GPU context. |
+
+## Return Value
+
+(bool) Returns true on success, false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

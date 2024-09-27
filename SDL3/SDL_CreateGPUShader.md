@@ -25,7 +25,7 @@ SDL_GPUShader* SDL_CreateGPUShader(
 ## Return Value
 
 ([SDL_GPUShader](SDL_GPUShader) *) Returns a shader object on success, or
-NULL on failure.
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

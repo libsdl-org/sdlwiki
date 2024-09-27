@@ -10,35 +10,35 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUTexture* SDL_AcquireGPUSwapchainTexture(
+bool SDL_AcquireGPUSwapchainTexture(
     SDL_GPUCommandBuffer *command_buffer,
     SDL_Window *window,
-    Uint32 *w,
-    Uint32 *h);
+    SDL_GPUTexture **swapchainTexture);
 ```
 
 ## Function Parameters
 
-|                                                |                    |                                                |
-| ---------------------------------------------- | ------------------ | ---------------------------------------------- |
-| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer.                              |
-| [SDL_Window](SDL_Window) *                     | **window**         | a window that has been claimed.                |
-| Uint32 *                                       | **w**              | a pointer filled in with the swapchain width.  |
-| Uint32 *                                       | **h**              | a pointer filled in with the swapchain height. |
+|                                                |                      |                                                      |
+| ---------------------------------------------- | -------------------- | ---------------------------------------------------- |
+| [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer**   | a command buffer.                                    |
+| [SDL_Window](SDL_Window) *                     | **window**           | a window that has been claimed.                      |
+| [SDL_GPUTexture](SDL_GPUTexture) **            | **swapchainTexture** | a pointer filled in with a swapchain texture handle. |
 
 ## Return Value
 
-([SDL_GPUTexture](SDL_GPUTexture) *) Returns a swapchain texture.
+(bool) Returns true on success, false on error.
 
 ## Remarks
 
 When a swapchain texture is acquired on a command buffer, it will
 automatically be submitted for presentation when the command buffer is
 submitted. The swapchain texture should only be referenced by the command
-buffer used to acquire it. May return NULL under certain conditions. This
-is not necessarily an error. This texture is managed by the implementation
-and must not be freed by the user. You MUST NOT call this function from any
-thread other than the one that created the window.
+buffer used to acquire it. The swapchain texture handle can be NULL under
+certain conditions. This is not necessarily an error. If this function
+returns false then there is an error. This texture is managed by the
+implementation and must not be freed by the user. The texture dimensions
+will be the height and width of the claimed window. You MUST NOT call this
+function from any thread other than the one that created the window.
 
 ## Version
 

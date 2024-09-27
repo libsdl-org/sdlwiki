@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_SubmitGPUCommandBuffer(
+bool SDL_SubmitGPUCommandBuffer(
     SDL_GPUCommandBuffer *command_buffer);
 ```
 
@@ -19,6 +19,11 @@ void SDL_SubmitGPUCommandBuffer(
 |                                                |                    |                   |
 | ---------------------------------------------- | ------------------ | ----------------- |
 | [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer. |
+
+## Return Value
+
+(bool) Returns true on success, false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

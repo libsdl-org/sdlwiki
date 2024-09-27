@@ -27,6 +27,10 @@ SDL_GPUTextureFormat SDL_GetGPUSwapchainTextureFormat(
 ([SDL_GPUTextureFormat](SDL_GPUTextureFormat)) Returns the texture format
 of the swapchain.
 
+## Remarks
+
+Note that this format can change if the swapchain parameters change.
+
 ## Version
 
 This function is available since SDL 3.0.0.

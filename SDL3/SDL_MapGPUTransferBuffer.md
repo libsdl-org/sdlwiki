@@ -26,7 +26,8 @@ void* SDL_MapGPUTransferBuffer(
 
 ## Return Value
 
-(void *) Returns the address of the mapped transfer buffer memory.
+(void *) Returns the address of the mapped transfer buffer memory, or NULL
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -25,7 +25,8 @@ SDL_GPUSampler* SDL_CreateGPUSampler(
 ## Return Value
 
 ([SDL_GPUSampler](SDL_GPUSampler) *) Returns a sampler object on success,
-or NULL on failure.
+or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

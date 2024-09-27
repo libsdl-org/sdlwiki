@@ -25,7 +25,8 @@ SDL_GPUTexture* SDL_CreateGPUTexture(
 ## Return Value
 
 ([SDL_GPUTexture](SDL_GPUTexture) *) Returns a texture object on success,
-or NULL on failure.
+or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

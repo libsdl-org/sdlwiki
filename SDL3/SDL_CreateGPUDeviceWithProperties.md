@@ -23,7 +23,7 @@ SDL_GPUDevice* SDL_CreateGPUDeviceWithProperties(
 ## Return Value
 
 ([SDL_GPUDevice](SDL_GPUDevice) *) Returns a GPU context on success or NULL
-on failure.
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

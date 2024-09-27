@@ -22,7 +22,9 @@ SDL_GPUCommandBuffer* SDL_AcquireGPUCommandBuffer(
 
 ## Return Value
 
-([SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *) Returns a command buffer.
+([SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *) Returns a command buffer,
+or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 

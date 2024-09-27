@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_WaitForGPUFences(
+bool SDL_WaitForGPUFences(
     SDL_GPUDevice *device,
     bool wait_all,
     SDL_GPUFence *const *fences,
@@ -25,6 +25,11 @@ void SDL_WaitForGPUFences(
 | bool                                  | **wait_all**   | if 0, wait for any fence to be signaled, if 1, wait for all fences to be signaled. |
 | [SDL_GPUFence](SDL_GPUFence) *const * | **fences**     | an array of fences to wait on.                                                     |
 | Uint32                                | **num_fences** | the number of fences in the fences array.                                          |
+
+## Return Value
+
+(bool) Returns true on success, false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

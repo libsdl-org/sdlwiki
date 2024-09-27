@@ -23,7 +23,8 @@ SDL_GPUFence* SDL_SubmitGPUCommandBufferAndAcquireFence(
 ## Return Value
 
 ([SDL_GPUFence](SDL_GPUFence) *) Returns a fence associated with the
-command buffer.
+command buffer, or NULL on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Remarks
 

@@ -25,7 +25,8 @@ SDL_GPUComputePipeline* SDL_CreateGPUComputePipeline(
 ## Return Value
 
 ([SDL_GPUComputePipeline](SDL_GPUComputePipeline) *) Returns a compute
-pipeline object on success, or NULL on failure.
+pipeline object on success, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

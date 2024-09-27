@@ -25,7 +25,7 @@ SDL_GPUBuffer* SDL_CreateGPUBuffer(
 ## Return Value
 
 ([SDL_GPUBuffer](SDL_GPUBuffer) *) Returns a buffer object on success, or
-NULL on failure.
+NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

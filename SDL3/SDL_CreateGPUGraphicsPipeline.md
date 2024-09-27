@@ -25,7 +25,8 @@ SDL_GPUGraphicsPipeline* SDL_CreateGPUGraphicsPipeline(
 ## Return Value
 
 ([SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline) *) Returns a graphics
-pipeline object on success, or NULL on failure.
+pipeline object on success, or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

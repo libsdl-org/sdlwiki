@@ -26,7 +26,7 @@ bool SDL_WindowSupportsGPUPresentMode(
 
 ## Return Value
 
-(bool) Returns true if supported, false if unsupported (or on error).
+(bool) Returns true if supported, false if unsupported.
 
 ## Remarks
 

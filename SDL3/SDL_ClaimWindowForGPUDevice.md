@@ -24,7 +24,8 @@ bool SDL_ClaimWindowForGPUDevice(
 
 ## Return Value
 
-(bool) Returns true on success, otherwise false.
+(bool) Returns true on success, or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

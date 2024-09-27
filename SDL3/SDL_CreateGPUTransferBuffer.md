@@ -25,7 +25,8 @@ SDL_GPUTransferBuffer* SDL_CreateGPUTransferBuffer(
 ## Return Value
 
 ([SDL_GPUTransferBuffer](SDL_GPUTransferBuffer) *) Returns a transfer
-buffer on success, or NULL on failure.
+buffer on success, or NULL on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Version
 
