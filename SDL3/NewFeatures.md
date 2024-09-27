@@ -32,6 +32,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - HiDPI support is dramatically improved over SDL2.
 - [App metadata API](SDL_SetAppMetadata) for letting SDL report things about your app correctly (like in the About dialog on macOS, etc).
 - [Read/write thread locks](SDL_CreateRWLock), to let multiple threads access rarely-changing data in parallel.
+- [Init State](SDL_InitState) to help with multiple threads that might need to initialize something on-demand without racing.
 - 64-bit [SDL_GetTicks](SDL_GetTicks): No more worrying about timer wraparound every ~49 days!
 - [SDL_GetTicksNS](SDL_GetTicksNS): when milliseconds won't cut it, you can use nanoseconds!
 - [SDL_DelayNS](SDL_DelayNS): Nanosecond-precision waits, using a mixture of OS-level sleeps and busy-waits.
