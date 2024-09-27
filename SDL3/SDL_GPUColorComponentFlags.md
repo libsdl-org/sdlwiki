@@ -20,7 +20,7 @@ typedef Uint8 SDL_GPUColorComponentFlags;
 
 ## Version
 
-This enum is available since SDL 3.0.0
+This datatype is available since SDL 3.0.0
 
 ## See Also
 

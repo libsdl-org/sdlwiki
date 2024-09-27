@@ -19,8 +19,8 @@ typedef struct SDL_GPUComputePipelineCreateInfo
     Uint32 num_samplers;                    /**< The number of samplers defined in the shader. */
     Uint32 num_readonly_storage_textures;   /**< The number of readonly storage textures defined in the shader. */
     Uint32 num_readonly_storage_buffers;    /**< The number of readonly storage buffers defined in the shader. */
-    Uint32 num_writeonly_storage_textures;  /**< The number of writeonly storage textures defined in the shader. */
-    Uint32 num_writeonly_storage_buffers;   /**< The number of writeonly storage buffers defined in the shader. */
+    Uint32 num_readwrite_storage_textures;  /**< The number of read-write storage textures defined in the shader. */
+    Uint32 num_readwrite_storage_buffers;   /**< The number of read-write storage buffers defined in the shader. */
     Uint32 num_uniform_buffers;             /**< The number of uniform buffers defined in the shader. */
     Uint32 threadcount_x;                   /**< The number of threads in the X dimension. This should match the value in the shader. */
     Uint32 threadcount_y;                   /**< The number of threads in the Y dimension. This should match the value in the shader. */
