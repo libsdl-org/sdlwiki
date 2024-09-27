@@ -34,6 +34,8 @@
 - [TTF_GetGlyphMetrics](TTF_GetGlyphMetrics)
 - [TTF_GetGlyphScript](TTF_GetGlyphScript)
 - [TTF_GetHarfBuzzVersion](TTF_GetHarfBuzzVersion)
+- [TTF_GetTextSize](TTF_GetTextSize)
+- [TTF_GetTextSizeWrapped](TTF_GetTextSizeWrapped)
 - [TTF_GlyphIsProvided](TTF_GlyphIsProvided)
 - [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
 - [TTF_GlyphMetrics](TTF_GlyphMetrics)
