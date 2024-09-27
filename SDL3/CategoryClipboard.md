@@ -13,6 +13,7 @@ This is not just text! SDL apps can access and publish data by mimetype.
 <!-- BEGIN CATEGORY LIST: CategoryClipboard, CategoryAPIFunction -->
 - [SDL_ClearClipboardData](SDL_ClearClipboardData)
 - [SDL_GetClipboardData](SDL_GetClipboardData)
+- [SDL_GetClipboardMimeTypes](SDL_GetClipboardMimeTypes)
 - [SDL_GetClipboardText](SDL_GetClipboardText)
 - [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
 - [SDL_HasClipboardData](SDL_HasClipboardData)

@@ -266,6 +266,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_GetCameras](SDL_GetCameras)
 - [SDL_GetCameraSupportedFormats](SDL_GetCameraSupportedFormats)
 - [SDL_GetClipboardData](SDL_GetClipboardData)
+- [SDL_GetClipboardMimeTypes](SDL_GetClipboardMimeTypes)
 - [SDL_GetClipboardText](SDL_GetClipboardText)
 - [SDL_GetClosestFullscreenDisplayMode](SDL_GetClosestFullscreenDisplayMode)
 - [SDL_GetCPUCacheLineSize](SDL_GetCPUCacheLineSize)
