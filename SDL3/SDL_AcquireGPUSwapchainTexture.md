@@ -35,10 +35,12 @@ automatically be submitted for presentation when the command buffer is
 submitted. The swapchain texture should only be referenced by the command
 buffer used to acquire it. The swapchain texture handle can be NULL under
 certain conditions. This is not necessarily an error. If this function
-returns false then there is an error. This texture is managed by the
-implementation and must not be freed by the user. The texture dimensions
-will be the height and width of the claimed window. You MUST NOT call this
-function from any thread other than the one that created the window.
+returns false then there is an error. The swapchain texture is managed by
+the implementation and must not be freed by the user. The texture
+dimensions will be the width and height of the claimed window. You can
+obtain these dimensions by calling
+[SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels). You MUST NOT call
+this function from any thread other than the one that created the window.
 
 ## Version
 
@@ -49,6 +51,7 @@ This function is available since SDL 3.0.0.
 - [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
+- [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
