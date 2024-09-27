@@ -19,7 +19,7 @@ SDL_FORCE_INLINE bool SDL_size_add_check_overflow(size_t a, size_t b, size_t *re
 | -------- | ------- | -------------------------------------------------------------------- |
 | size_t   | **a**   | the first addend.                                                    |
 | size_t   | **b**   | the second addend.                                                   |
-| size_t * | **ret** | on non-overflow output, stores the addition result. May not be NULL. |
+| size_t * | **ret** | on non-overflow output, stores the addition result, may not be NULL. |
 
 ## Return Value
 

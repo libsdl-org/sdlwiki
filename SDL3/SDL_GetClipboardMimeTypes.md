@@ -17,7 +17,7 @@ char ** SDL_GetClipboardMimeTypes(size_t *num_mime_types);
 
 |          |                    |                                                              |
 | -------- | ------------------ | ------------------------------------------------------------ |
-| size_t * | **num_mime_types** | a pointer filled with the number of mime types. May be NULL. |
+| size_t * | **num_mime_types** | a pointer filled with the number of mime types, may be NULL. |
 
 ## Return Value
 
