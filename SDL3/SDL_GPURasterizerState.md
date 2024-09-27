@@ -19,11 +19,18 @@ typedef struct SDL_GPURasterizerState
     float depth_bias_clamp;            /**< The maximum depth bias of a fragment. */
     float depth_bias_slope_factor;     /**< A scalar factor applied to a fragment's slope in depth calculations. */
     bool enable_depth_bias;        /**< true to bias fragment depth values. */
+    bool enable_depth_clip;        /**< true to enable depth clip, false to enable depth clamp. */
     Uint8 padding1;
     Uint8 padding2;
-    Uint8 padding3;
 } SDL_GPURasterizerState;
 ```
+
+## Remarks
+
+NOTE: Some backend APIs (D3D11/12) will enable depth clamping even if
+enable_depth_clip is true. If you rely on this clamp+clip behavior,
+consider enabling depth clip and then manually clamping depth in your
+fragment shaders on Metal and Vulkan.
 
 ## Version
 
