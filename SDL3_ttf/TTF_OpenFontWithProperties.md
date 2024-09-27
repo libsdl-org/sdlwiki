@@ -15,6 +15,7 @@ TTF_Font * TTF_OpenFontWithProperties(SDL_PropertiesID props);
 
 #define TTF_PROP_FONT_FILENAME_STRING               "SDL_ttf.font.filename"
 #define TTF_PROP_FONT_IOSTREAM_POINTER              "SDL_ttf.font.iostream"
+#define TTF_PROP_FONT_IOSTREAM_OFFSET_NUMBER        "SDL_ttf.font.iostream.offset"
 #define TTF_PROP_FONT_IOSTREAM_AUTOCLOSE_BOOLEAN    "SDL_ttf.font.iostream.autoclose"
 #define TTF_PROP_FONT_SIZE_NUMBER                   "SDL_ttf.font.size"
 #define TTF_PROP_FONT_FACE_NUMBER                   "SDL_ttf.font.face"
@@ -46,6 +47,8 @@ These are the supported properties:
   until the font is closed. This is required if
   [`TTF_PROP_FONT_FILENAME_STRING`](TTF_PROP_FONT_FILENAME_STRING) isn't
   set.
+- [`TTF_PROP_FONT_IOSTREAM_OFFSET_NUMBER`](TTF_PROP_FONT_IOSTREAM_OFFSET_NUMBER):
+  the offset in the iostream for the beginning of the font, defaults to 0.
 - [`TTF_PROP_FONT_IOSTREAM_AUTOCLOSE_BOOLEAN`](TTF_PROP_FONT_IOSTREAM_AUTOCLOSE_BOOLEAN):
   true if closing the font should also close the associated SDL_IOStream.
 - [`TTF_PROP_FONT_SIZE_NUMBER`](TTF_PROP_FONT_SIZE_NUMBER): the point size
@@ -62,6 +65,10 @@ These are the supported properties:
   the vertical DPI to use for font rendering, defaults to
   [`TTF_PROP_FONT_HORIZONTAL_DPI_NUMBER`](TTF_PROP_FONT_HORIZONTAL_DPI_NUMBER)
   if set, or 72 otherwise.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

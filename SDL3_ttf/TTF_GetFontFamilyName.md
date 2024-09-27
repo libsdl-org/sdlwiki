@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetFontKerning
+# TTF_GetFontFamilyName
 
-Query whether or not kerning is enabled for a font.
+Query a font's family name.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_GetFontKerning(const TTF_Font *font);
+const char * TTF_GetFontFamilyName(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,15 @@ bool TTF_GetFontKerning(const TTF_Font *font);
 
 ## Return Value
 
-(bool) Returns true if kerning is enabled, false otherwise.
+(const char *) Returns the font's family name.
+
+## Remarks
+
+This string is dictated by the contents of the font file.
+
+Note that the returned string is to internal storage, and should not be
+modified or free'd by the caller. The string becomes invalid, with the rest
+of the font, when `font` is handed to [TTF_CloseFont](TTF_CloseFont)().
 
 ## Thread Safety
 

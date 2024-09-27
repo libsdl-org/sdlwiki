@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetFontKerning
+# TTF_FontIsFixedWidth
 
-Query whether or not kerning is enabled for a font.
+Query whether a font is fixed-width.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_GetFontKerning(const TTF_Font *font);
+bool TTF_FontIsFixedWidth(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,15 @@ bool TTF_GetFontKerning(const TTF_Font *font);
 
 ## Return Value
 
-(bool) Returns true if kerning is enabled, false otherwise.
+(bool) Returns true if the font is fixed-width, false otherwise.
+
+## Remarks
+
+A "fixed-width" font means all glyphs are the same width across; a
+lowercase 'i' will be the same size across as a capital 'W', for example.
+This is common for terminals and text editors, and other apps that treat
+text as a grid. Most other things (WYSIWYG word processors, web pages, etc)
+are more likely to not be fixed-width in most cases.
 
 ## Thread Safety
 

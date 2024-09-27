@@ -23,6 +23,10 @@ int TTF_GetFontOutline(const TTF_Font *font);
 
 (int) Returns the font's current outline value.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

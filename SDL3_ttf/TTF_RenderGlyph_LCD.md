@@ -41,6 +41,10 @@ You can render at other quality levels with
 [TTF_RenderGlyph_Shaded](TTF_RenderGlyph_Shaded), and
 [TTF_RenderGlyph_Blended](TTF_RenderGlyph_Blended).
 
+## Thread Safety
+
+This function should be called on the thread that created the font.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

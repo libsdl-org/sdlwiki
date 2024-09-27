@@ -38,6 +38,10 @@ closed. Otherwise you should close `src` yourself after closing the font.
 When done with the returned [TTF_Font](TTF_Font), use
 [TTF_CloseFont](TTF_CloseFont)() to dispose of it.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

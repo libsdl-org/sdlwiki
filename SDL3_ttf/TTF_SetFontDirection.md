@@ -34,7 +34,12 @@ Possible direction values are:
 - [`TTF_DIRECTION_TTB`](TTF_DIRECTION_TTB) (Top to Bottom)
 - [`TTF_DIRECTION_BTT`](TTF_DIRECTION_BTT) (Bottom to Top)
 
-If SDL_ttf was not built with HarfBuzz support, this function returns -1.
+If SDL_ttf was not built with HarfBuzz support, this function returns
+false.
+
+## Thread Safety
+
+This function should be called on the thread that created the font.
 
 ## Version
 

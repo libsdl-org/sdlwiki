@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-void TTF_SetFontOutline(TTF_Font *font, int outline);
+bool TTF_SetFontOutline(TTF_Font *font, int outline);
 ```
 
 ## Function Parameters
@@ -19,6 +19,15 @@ void TTF_SetFontOutline(TTF_Font *font, int outline);
 | ---------------------- | ----------- | ------------------------------------- |
 | [TTF_Font](TTF_Font) * | **font**    | the font to set a new outline on.     |
 | int                    | **outline** | positive outline value, 0 to default. |
+
+## Return Value
+
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
+
+## Thread Safety
+
+This function should be called on the thread that created the font.
 
 ## Version
 

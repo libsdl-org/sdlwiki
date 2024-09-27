@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetFontKerning
+# TTF_GetFontWrapAlignment
 
-Query whether or not kerning is enabled for a font.
+Query a font's current wrap alignment option.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_GetFontKerning(const TTF_Font *font);
+TTF_HorizontalAlignment TTF_GetFontWrapAlignment(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,8 @@ bool TTF_GetFontKerning(const TTF_Font *font);
 
 ## Return Value
 
-(bool) Returns true if kerning is enabled, false otherwise.
+([TTF_HorizontalAlignment](TTF_HorizontalAlignment)) Returns the font's
+current wrap alignment option.
 
 ## Thread Safety
 
@@ -30,6 +31,10 @@ It is safe to call this function from any thread.
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_SetFontWrapAlignment](TTF_SetFontWrapAlignment)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

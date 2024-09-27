@@ -30,6 +30,10 @@ and ready to work. If zero, it is not initialized.
 Despite the return value being a signed integer, this function should not
 return a negative number.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

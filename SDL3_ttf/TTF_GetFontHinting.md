@@ -34,6 +34,10 @@ The hinter setting is a single value:
 - [`TTF_HINTING_LIGHT_SUBPIXEL`](TTF_HINTING_LIGHT_SUBPIXEL) (available in
   SDL_ttf 3.0.0 and later)
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

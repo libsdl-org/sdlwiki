@@ -27,9 +27,14 @@ on the result of a failed call to [TTF_OpenFont](TTF_OpenFont)().
 
 The font is not valid after being passed to this function. String pointers
 from functions that return information on this font, such as
-[TTF_FontFaceFamilyName](TTF_FontFaceFamilyName)() and
-[TTF_FontFaceStyleName](TTF_FontFaceStyleName)(), are no longer valid after
+[TTF_GetFontFamilyName](TTF_GetFontFamilyName)() and
+[TTF_GetFontStyleName](TTF_GetFontStyleName)(), are no longer valid after
 this call, as well.
+
+## Thread Safety
+
+This function should not be called while any other thread is using the
+font.
 
 ## Version
 

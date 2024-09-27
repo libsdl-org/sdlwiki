@@ -27,6 +27,10 @@ policy unless you have a strong reason to disable it, as it tends to
 produce better rendering (with kerning disabled, some fonts might render
 the word `kerning` as something that looks like `keming` for example).
 
+## Thread Safety
+
+This function should be called on the thread that created the font.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

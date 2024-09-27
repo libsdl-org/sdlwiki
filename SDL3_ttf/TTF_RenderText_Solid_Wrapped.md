@@ -44,6 +44,10 @@ You can render at other quality levels with
 [TTF_RenderText_Blended_Wrapped](TTF_RenderText_Blended_Wrapped), and
 [TTF_RenderText_LCD_Wrapped](TTF_RenderText_LCD_Wrapped).
 
+## Thread Safety
+
+This function should be called on the thread that created the font.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

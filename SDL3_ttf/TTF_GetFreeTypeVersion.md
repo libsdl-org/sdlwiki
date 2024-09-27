@@ -25,6 +25,10 @@ void TTF_GetFreeTypeVersion(int *major, int *minor, int *patch);
 
 [TTF_Init](TTF_Init)() should be called before calling this function.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

@@ -29,6 +29,10 @@ deal with it. A well-written program should call
 [TTF_CloseFont](TTF_CloseFont)() on any open fonts before calling this
 function!
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

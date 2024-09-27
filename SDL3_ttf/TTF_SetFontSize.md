@@ -29,6 +29,10 @@ more information.
 
 This clears already-generated glyphs, if any, from the cache.
 
+## Thread Safety
+
+This function should be called on the thread that created the font.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

@@ -25,6 +25,10 @@ void TTF_GetHarfBuzzVersion(int *major, int *minor, int *patch);
 
 If HarfBuzz is not available, the version reported is 0.0.0.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

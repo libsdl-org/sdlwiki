@@ -33,6 +33,10 @@ The font styles are a set of bit flags, OR'd together:
 - [`TTF_STYLE_UNDERLINE`](TTF_STYLE_UNDERLINE)
 - [`TTF_STYLE_STRIKETHROUGH`](TTF_STYLE_STRIKETHROUGH)
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

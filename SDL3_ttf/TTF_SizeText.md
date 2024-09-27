@@ -35,6 +35,10 @@ specified string will take to fully render.
 
 This does not need to render the string to do this calculation.
 
+## Thread Safety
+
+This function should be called on the thread that created the font.
+
 ## Version
 
 This function is available since SDL_ttf 3.0.0.

@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_Version
+# TTF_GetFontHeight
 
-This function gets the version of the dynamically linked SDL_ttf library.
+Query the total height of a font.
 
 ## Header File
 
@@ -10,12 +10,22 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_Version(void);
+int TTF_GetFontHeight(const TTF_Font *font);
 ```
+
+## Function Parameters
+
+|                              |          |                    |
+| ---------------------------- | -------- | ------------------ |
+| const [TTF_Font](TTF_Font) * | **font** | the font to query. |
 
 ## Return Value
 
-(int) Returns SDL_ttf version.
+(int) Returns the font's height.
+
+## Remarks
+
+This is usually equal to point size.
 
 ## Thread Safety
 

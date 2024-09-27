@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_Version
+# TTF_GetFontDescent
 
-This function gets the version of the dynamically linked SDL_ttf library.
+Query the offset from the baseline to the bottom of a font.
 
 ## Header File
 
@@ -10,12 +10,22 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_Version(void);
+int TTF_GetFontDescent(const TTF_Font *font);
 ```
+
+## Function Parameters
+
+|                              |          |                    |
+| ---------------------------- | -------- | ------------------ |
+| const [TTF_Font](TTF_Font) * | **font** | the font to query. |
 
 ## Return Value
 
-(int) Returns SDL_ttf version.
+(int) Returns the font's descent.
+
+## Remarks
+
+This is a negative value, relative to the baseline.
 
 ## Thread Safety
 
