@@ -19,6 +19,10 @@ typedef enum TTF_Direction
 } TTF_Direction;
 ```
 
+## Version
+
+This enum is available since SDL_ttf 3.0.0.
+
 ## See Also
 
 - [TTF_SetFontDirection](TTF_SetFontDirection)

@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, bool closeio, int ptsize);
+TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, bool closeio, float ptsize);
 ```
 
 ## Function Parameters
@@ -19,7 +19,7 @@ TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, bool closeio, int ptsize);
 | -------------- | ----------- | -------------------------------------------------------------------- |
 | SDL_IOStream * | **src**     | an SDL_IOStream to provide a font file's data.                       |
 | bool           | **closeio** | true to close `src` when the font is closed, false to leave it open. |
-| int            | **ptsize**  | point size to use for the newly-opened font.                         |
+| float          | **ptsize**  | point size to use for the newly-opened font.                         |
 
 ## Return Value
 

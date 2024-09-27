@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_SetFontSize(TTF_Font *font, int ptsize);
+bool TTF_SetFontSize(TTF_Font *font, float ptsize);
 ```
 
 ## Function Parameters
@@ -18,7 +18,7 @@ bool TTF_SetFontSize(TTF_Font *font, int ptsize);
 |                        |            |                     |
 | ---------------------- | ---------- | ------------------- |
 | [TTF_Font](TTF_Font) * | **font**   | the font to resize. |
-| int                    | **ptsize** | the new point size. |
+| float                  | **ptsize** | the new point size. |
 
 ## Return Value
 

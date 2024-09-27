@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-TTF_Font * TTF_OpenFont(const char *file, int ptsize);
+TTF_Font * TTF_OpenFont(const char *file, float ptsize);
 ```
 
 ## Function Parameters
@@ -18,7 +18,7 @@ TTF_Font * TTF_OpenFont(const char *file, int ptsize);
 |              |            |                                              |
 | ------------ | ---------- | -------------------------------------------- |
 | const char * | **file**   | path to font file.                           |
-| int          | **ptsize** | point size to use for the newly-opened font. |
+| float        | **ptsize** | point size to use for the newly-opened font. |
 
 ## Return Value
 

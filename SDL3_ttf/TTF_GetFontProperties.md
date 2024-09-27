@@ -13,7 +13,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 SDL_PropertiesID TTF_GetFontProperties(TTF_Font *font);
 
 
-#define TTF_PROP_FONT_FACE_POINTER                  "SDL_ttf.font.face"
+#define TTF_PROP_FONT_FACE_POINTER                      "SDL_ttf.font.face"
 ```
 
 ## Function Parameters
@@ -40,7 +40,7 @@ It is safe to call this function from any thread.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
