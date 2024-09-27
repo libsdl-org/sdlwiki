@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateDirectory
 
-Create a directory.
+Create a directory, and any missing parent directories.
 
 ## Header File
 
@@ -23,6 +23,13 @@ bool SDL_CreateDirectory(const char *path);
 
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This reports success if `path` already exists as a directory.
+
+If parent directories are missing, it will also create them. Note that if
+this fails, it will not remove any parent directories it already made.
 
 ## Version
 
