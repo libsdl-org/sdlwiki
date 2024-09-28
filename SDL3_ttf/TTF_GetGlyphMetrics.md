@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_GetGlyphMetrics
 
-Query the metrics (dimensions) of a font's 32-bit glyph.
+Query the metrics (dimensions) of a font's glyph for a UNICODE codepoint.
 
 ## Header File
 
@@ -18,7 +18,7 @@ bool TTF_GetGlyphMetrics(TTF_Font *font, Uint32 ch, int *minx, int *maxx, int *m
 |                        |             |                                                                                                                                      |
 | ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | [TTF_Font](TTF_Font) * | **font**    | the font to query.                                                                                                                   |
-| Uint32                 | **ch**      | the character code to check.                                                                                                         |
+| Uint32                 | **ch**      | the codepoint to check.                                                                                                              |
 | int *                  | **minx**    | a pointer filled in with the minimum x coordinate of the glyph from the left edge of its bounding box. This value may be negative.   |
 | int *                  | **maxx**    | a pointer filled in with the maximum x coordinate of the glyph from the left edge of its bounding box.                               |
 | int *                  | **miny**    | a pointer filled in with the minimum y coordinate of the glyph from the bottom edge of its bounding box. This value may be negative. |

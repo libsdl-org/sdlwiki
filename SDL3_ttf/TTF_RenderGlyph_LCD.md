@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_RenderGlyph_LCD
 
-Render a single 32-bit glyph at LCD subpixel quality to a new ARGB surface.
+Render a single UNICODE codepoint at LCD subpixel quality to a new ARGB surface.
 
 ## Header File
 
@@ -18,7 +18,7 @@ SDL_Surface * TTF_RenderGlyph_LCD(TTF_Font *font, Uint32 ch, SDL_Color fg, SDL_C
 |                        |          |                                    |
 | ---------------------- | -------- | ---------------------------------- |
 | [TTF_Font](TTF_Font) * | **font** | the font to render with.           |
-| Uint32                 | **ch**   | the character to render.           |
+| Uint32                 | **ch**   | the codepoint to render.           |
 | SDL_Color              | **fg**   | the foreground color for the text. |
 | SDL_Color              | **bg**   | the background color for the text. |
 

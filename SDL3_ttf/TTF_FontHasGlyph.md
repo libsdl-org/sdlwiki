@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_FontHasGlyph
 
-Check whether a glyph is provided by the font for a 32-bit codepoint.
+Check whether a glyph is provided by the font for a UNICODE codepoint.
 
 ## Header File
 
@@ -15,10 +15,10 @@ bool TTF_FontHasGlyph(TTF_Font *font, Uint32 ch);
 
 ## Function Parameters
 
-|                        |          |                              |
-| ---------------------- | -------- | ---------------------------- |
-| [TTF_Font](TTF_Font) * | **font** | the font to query.           |
-| Uint32                 | **ch**   | the character code to check. |
+|                        |          |                         |
+| ---------------------- | -------- | ----------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to query.      |
+| Uint32                 | **ch**   | the codepoint to check. |
 
 ## Return Value
 
