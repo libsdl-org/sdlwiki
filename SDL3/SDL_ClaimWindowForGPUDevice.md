@@ -31,7 +31,8 @@ bool SDL_ClaimWindowForGPUDevice(
 
 This must be called before
 [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture) is called
-using the window.
+using the window. You should only call this function from the thread that
+created the window.
 
 The swapchain will be created with
 [SDL_GPU_SWAPCHAINCOMPOSITION_SDR](SDL_GPU_SWAPCHAINCOMPOSITION_SDR) and
