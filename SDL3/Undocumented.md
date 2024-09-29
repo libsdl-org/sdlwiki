@@ -14,6 +14,7 @@
 - [SDL_memcmp](SDL_memcmp)
 - [SDL_memset](SDL_memset)
 - [SDL_memset4](SDL_memset4)
+- [SDL_murmur3_32](SDL_murmur3_32)
 - [SDL_qsort](SDL_qsort)
 - [SDL_qsort_r](SDL_qsort_r)
 - [SDL_snprintf](SDL_snprintf)
