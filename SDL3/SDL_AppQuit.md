@@ -10,14 +10,15 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-void SDL_AppQuit(void *appstate);
+void SDL_AppQuit(void *appstate, SDL_AppResult result);
 ```
 
 ## Function Parameters
 
-|        |              |                                                                         |
-| ------ | ------------ | ----------------------------------------------------------------------- |
-| void * | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
+|                                |              |                                                                         |
+| ------------------------------ | ------------ | ----------------------------------------------------------------------- |
+| void *                         | **appstate** | an optional pointer, provided by the app in [SDL_AppInit](SDL_AppInit). |
+| [SDL_AppResult](SDL_AppResult) | **result**   | the result code that terminated the app (success or failure).           |
 
 ## Remarks
 
