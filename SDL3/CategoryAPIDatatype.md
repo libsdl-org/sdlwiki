@@ -80,6 +80,8 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback)
 - [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback)
 - [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)
+- [SDL_CompareCallback](SDL_CompareCallback)
+- [SDL_CompareCallback_r](SDL_CompareCallback_r)
 - [SDL_Condition](SDL_Condition)
 - [SDL_Cursor](SDL_Cursor)
 - [SDL_DialogFileCallback](SDL_DialogFileCallback)
