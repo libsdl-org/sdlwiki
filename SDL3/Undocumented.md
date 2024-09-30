@@ -4,8 +4,6 @@
 
 - [SDL_abs](SDL_abs)
 - [SDL_asprintf](SDL_asprintf)
-- [SDL_bsearch](SDL_bsearch)
-- [SDL_bsearch_r](SDL_bsearch_r)
 - [SDL_crc16](SDL_crc16)
 - [SDL_crc32](SDL_crc32)
 - [SDL_itoa](SDL_itoa)
@@ -15,8 +13,6 @@
 - [SDL_memset](SDL_memset)
 - [SDL_memset4](SDL_memset4)
 - [SDL_murmur3_32](SDL_murmur3_32)
-- [SDL_qsort](SDL_qsort)
-- [SDL_qsort_r](SDL_qsort_r)
 - [SDL_snprintf](SDL_snprintf)
 - [SDL_sscanf](SDL_sscanf)
 - [SDL_strcasestr](SDL_strcasestr)
