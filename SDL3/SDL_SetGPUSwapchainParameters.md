@@ -28,7 +28,8 @@ bool SDL_SetGPUSwapchainParameters(
 
 ## Return Value
 
-(bool) Returns true if successful, false on error.
+(bool) Returns true if successful, false on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
