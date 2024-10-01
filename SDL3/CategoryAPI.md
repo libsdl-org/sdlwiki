@@ -1390,6 +1390,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_TextEditingCandidatesEvent](SDL_TextEditingCandidatesEvent)
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)
 - [SDL_TextInputEvent](SDL_TextInputEvent)
+- [SDL_Texture](SDL_Texture)
 - [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
 - [SDL_UserEvent](SDL_UserEvent)
 - [SDL_Vertex](SDL_Vertex)

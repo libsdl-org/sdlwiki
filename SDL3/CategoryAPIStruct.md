@@ -118,6 +118,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_TextEditingCandidatesEvent](SDL_TextEditingCandidatesEvent)
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)
 - [SDL_TextInputEvent](SDL_TextInputEvent)
+- [SDL_Texture](SDL_Texture)
 - [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
 - [SDL_UserEvent](SDL_UserEvent)
 - [SDL_Vertex](SDL_Vertex)
