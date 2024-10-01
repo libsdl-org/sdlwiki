@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-typedef SDL_EGLAttrib *(SDLCALL *SDL_EGLAttribArrayCallback)(void);
+typedef SDL_EGLAttrib *(SDLCALL *SDL_EGLAttribArrayCallback)(void *userdata);
 ```
 
 ## Version

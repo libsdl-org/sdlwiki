@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ```c
 void SDL_EGL_SetAttributeCallbacks(SDL_EGLAttribArrayCallback platformAttribCallback,
                                   SDL_EGLIntArrayCallback surfaceAttribCallback,
-                                  SDL_EGLIntArrayCallback contextAttribCallback);
+                                  SDL_EGLIntArrayCallback contextAttribCallback, void *userdata);
 ```
 
 ## Function Parameters
@@ -22,6 +22,7 @@ void SDL_EGL_SetAttributeCallbacks(SDL_EGLAttribArrayCallback platformAttribCall
 | [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback) | **platformAttribCallback** | callback for attributes to pass to eglGetPlatformDisplay. |
 | [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **surfaceAttribCallback**  | callback for attributes to pass to eglCreateSurface.      |
 | [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **contextAttribCallback**  | callback for attributes to pass to eglCreateContext.      |
+| void *                                                   | **userdata**               | a pointer that is passed to the callbacks.                |
 
 ## Remarks
 
