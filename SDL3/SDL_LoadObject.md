@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_loadso.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void * SDL_LoadObject(const char *sofile);
+SDL_SharedObject * SDL_LoadObject(const char *sofile);
 ```
 
 ## Function Parameters
@@ -21,8 +21,13 @@ void * SDL_LoadObject(const char *sofile);
 
 ## Return Value
 
-(void *) Returns an opaque pointer to the object handle or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_SharedObject](SDL_SharedObject) *) Returns an opaque pointer to the
+object handle or NULL on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

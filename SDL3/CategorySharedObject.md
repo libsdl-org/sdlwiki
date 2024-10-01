@@ -2,6 +2,15 @@
 
 System-dependent library loading routines.
 
+Shared objects are code that is programmatically loadable at runtime.
+Windows calls these "DLLs", Linux calls them "shared libraries", etc.
+
+To use them, build such a library, then call
+[SDL_LoadObject](SDL_LoadObject)() on it. Once loaded, you can use
+[SDL_LoadFunction](SDL_LoadFunction)() on that object to find the address
+of its exported symbols. When done with the object, call
+[SDL_UnloadObject](SDL_UnloadObject)() to dispose of it.
+
 Some things to keep in mind:
 
 - These functions only work on C function names. Other languages may have

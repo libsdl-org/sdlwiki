@@ -10,14 +10,23 @@ Defined in [<SDL3/SDL_loadso.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void SDL_UnloadObject(void *handle);
+void SDL_UnloadObject(SDL_SharedObject *handle);
 ```
 
 ## Function Parameters
 
-|        |            |                                                                              |
-| ------ | ---------- | ---------------------------------------------------------------------------- |
-| void * | **handle** | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)(). |
+|                                        |            |                                                                              |
+| -------------------------------------- | ---------- | ---------------------------------------------------------------------------- |
+| [SDL_SharedObject](SDL_SharedObject) * | **handle** | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)(). |
+
+## Remarks
+
+Note that any pointers from this object looked up through
+[SDL_LoadFunction](SDL_LoadFunction)() will no longer be valid.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 
