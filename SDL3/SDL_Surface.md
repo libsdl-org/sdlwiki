@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-typedef struct SDL_Surface
+struct SDL_Surface
 {
     SDL_SurfaceFlags flags;     /**< The flags of the surface, read-only */
     SDL_PixelFormat format;     /**< The format of the surface, read-only */
@@ -21,9 +21,8 @@ typedef struct SDL_Surface
 
     int refcount;               /**< Application reference count, used when freeing surface */
 
-    SDL_SurfaceData *internal;  /**< Private */
-
-} SDL_Surface;
+    void *reserved;             /**< Reserved for internal use */
+};
 ```
 
 ## Remarks
@@ -43,6 +42,11 @@ alignment, and have undefined contents.
 ## Version
 
 This struct is available since SDL 3.0.0.
+
+## See Also
+
+- [SDL_CreateSurface](SDL_CreateSurface)
+- [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySurface](CategorySurface)
