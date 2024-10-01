@@ -23,6 +23,7 @@ Platform-specific SDL API functions.
 - [SDL_IsChromebook](SDL_IsChromebook)
 - [SDL_IsDeXMode](SDL_IsDeXMode)
 - [SDL_IsTablet](SDL_IsTablet)
+- [SDL_IsTV](SDL_IsTV)
 - [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)
 - [SDL_OnApplicationDidEnterBackground](SDL_OnApplicationDidEnterBackground)
 - [SDL_OnApplicationDidEnterForeground](SDL_OnApplicationDidEnterForeground)
