@@ -18,8 +18,8 @@ typedef struct SDL_PenButtonEvent
     SDL_WindowID windowID; /**< The window with mouse focus, if any */
     SDL_PenID which;        /**< The pen instance id */
     SDL_PenInputFlags pen_state;   /**< Complete pen input state at time of event */
-    float x;                /**< X position of pen on tablet */
-    float y;                /**< Y position of pen on tablet */
+    float x;                /**< X coordinate, relative to window */
+    float y;                /**< Y coordinate, relative to window */
     Uint8 button;       /**< The pen button index (first button is 1). */
     bool down;      /**< true if the button is pressed */
 } SDL_PenButtonEvent;
