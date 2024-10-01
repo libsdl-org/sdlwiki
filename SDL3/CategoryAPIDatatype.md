@@ -145,6 +145,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_RWLock](SDL_RWLock)
 - [SDL_Semaphore](SDL_Semaphore)
 - [SDL_SensorID](SDL_SensorID)
+- [SDL_SharedObject](SDL_SharedObject)
 - [SDL_SpinLock](SDL_SpinLock)
 - [SDL_Storage](SDL_Storage)
 - [SDL_SurfaceFlags](SDL_SurfaceFlags)
