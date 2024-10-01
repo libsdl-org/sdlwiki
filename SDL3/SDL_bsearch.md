@@ -23,6 +23,11 @@ void * SDL_bsearch(const void *key, const void *base, size_t nmemb, size_t size,
 | size_t                                     | **size**    | the size of the elements in the array.                      |
 | [SDL_CompareCallback](SDL_CompareCallback) | **compare** | a function used to compare elements in the array.           |
 
+## Return Value
+
+(void *) Returns a pointer to the matching element in the array, or NULL if
+not found.
+
 ## Remarks
 
 For example:
