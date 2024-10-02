@@ -12,9 +12,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ```c
 typedef struct TTF_Text
 {
-    char *label;            /**< A label that you can allocate with SDL_strdup() for debugging purposes, and will be automatically freed in TTF_DestroyText(). */
-    int w;                  /**< The width of this text, in pixels, read-only. */
-    int h;                  /**< The height of this text, in pixels, read-only. */
+    char *text;             /**< A copy of the text used to create this text object, useful for layout and debugging. This will be freed automatically when the object is destroyed. */
     SDL_FColor color;       /**< The color of the text, read-write. You can change this anytime. */
 
     int refcount;           /**< Application reference count, used when freeing surface */

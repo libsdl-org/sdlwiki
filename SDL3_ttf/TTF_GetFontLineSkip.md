@@ -31,6 +31,10 @@ It is safe to call this function from any thread.
 
 This function is available since SDL_ttf 3.0.0.
 
+## See Also
+
+- [TTF_SetFontLineSkip](TTF_SetFontLineSkip)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

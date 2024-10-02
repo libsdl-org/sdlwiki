@@ -27,7 +27,8 @@ more information.
 
 ## Remarks
 
-This clears already-generated glyphs, if any, from the cache.
+This updates any [TTF_Text](TTF_Text) objects using this font, and clears
+already-generated glyphs, if any, from the cache.
 
 ## Thread Safety
 
@@ -36,6 +37,10 @@ This function should be called on the thread that created the font.
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_GetFontSize](TTF_GetFontSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -22,7 +22,8 @@ void TTF_SetFontHinting(TTF_Font *font, int hinting);
 
 ## Remarks
 
-This clears already-generated glyphs, if any, from the cache.
+This updates any [TTF_Text](TTF_Text) objects using this font, and clears
+already-generated glyphs, if any, from the cache.
 
 The hinter setting is a single value:
 

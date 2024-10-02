@@ -20,6 +20,10 @@ void TTF_SetFontLineSkip(TTF_Font *font, int lineskip);
 | [TTF_Font](TTF_Font) * | **font**     | the font to modify.                |
 | int                    | **lineskip** | the new line spacing for the font. |
 
+## Remarks
+
+This updates any [TTF_Text](TTF_Text) objects using this font.
+
 ## Thread Safety
 
 This function should be called on the thread that created the font.
@@ -27,6 +31,10 @@ This function should be called on the thread that created the font.
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_GetFontLineSkip](TTF_GetFontLineSkip)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

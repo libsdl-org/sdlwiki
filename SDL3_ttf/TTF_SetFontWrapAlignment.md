@@ -20,6 +20,10 @@ void TTF_SetFontWrapAlignment(TTF_Font *font, TTF_HorizontalAlignment align);
 | [TTF_Font](TTF_Font) *                             | **font**  | the font to set a new wrap alignment option on. |
 | [TTF_HorizontalAlignment](TTF_HorizontalAlignment) | **align** | the new wrap alignment option.                  |
 
+## Remarks
+
+This updates any [TTF_Text](TTF_Text) objects using this font.
+
 ## Thread Safety
 
 This function should be called on the thread that created the font.

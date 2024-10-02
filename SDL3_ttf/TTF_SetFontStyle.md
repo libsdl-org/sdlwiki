@@ -22,7 +22,8 @@ void TTF_SetFontStyle(TTF_Font *font, int style);
 
 ## Remarks
 
-This clears already-generated glyphs, if any, from the cache.
+This updates any [TTF_Text](TTF_Text) objects using this font, and clears
+already-generated glyphs, if any, from the cache.
 
 The font styles are a set of bit flags, OR'd together:
 

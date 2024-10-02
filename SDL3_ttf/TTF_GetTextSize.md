@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_GetTextSize
 
-Calculate the dimensions of a rendered string of UTF-8 text.
+Get the size of a text object.
 
 ## Header File
 
@@ -10,18 +10,16 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_GetTextSize(TTF_Font *font, const char *text, size_t length, int *w, int *h);
+bool TTF_GetTextSize(TTF_Text *text, int *w, int *h);
 ```
 
 ## Function Parameters
 
-|                        |            |                                                                  |
-| ---------------------- | ---------- | ---------------------------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**   | the font to query.                                               |
-| const char *           | **text**   | text to calculate, in UTF-8 encoding.                            |
-| size_t                 | **length** | the length of the text, in bytes, or 0 for null terminated text. |
-| int *                  | **w**      | will be filled with width, in pixels, on return.                 |
-| int *                  | **h**      | will be filled with height, in pixels, on return.                |
+|                        |          |                                                                          |
+| ---------------------- | -------- | ------------------------------------------------------------------------ |
+| [TTF_Text](TTF_Text) * | **text** | the [TTF_Text](TTF_Text) to query.                                       |
+| int *                  | **w**    | a pointer filled in with the width of the text, in pixels, may be NULL.  |
+| int *                  | **h**    | a pointer filled in with the height of the text, in pixels, may be NULL. |
 
 ## Return Value
 
@@ -30,16 +28,8 @@ more information.
 
 ## Remarks
 
-This will report the width and height, in pixels, of the space that the
-specified string will take to fully render.
-
-## Thread Safety
-
-This function should be called on the thread that created the font.
-
-## Version
-
-This function is available since SDL_ttf 3.0.0.
+The size of the text may change when the font or font style and size
+change.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

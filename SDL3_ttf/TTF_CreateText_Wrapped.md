@@ -17,7 +17,7 @@ TTF_Text * TTF_CreateText_Wrapped(TTF_TextEngine *engine, TTF_Font *font, const 
 
 |                                    |                |                                                                           |
 | ---------------------------------- | -------------- | ------------------------------------------------------------------------- |
-| [TTF_TextEngine](TTF_TextEngine) * | **engine**     | the text engine to use when creating the text object.                     |
+| [TTF_TextEngine](TTF_TextEngine) * | **engine**     | the text engine to use when creating the text object, may be NULL.        |
 | [TTF_Font](TTF_Font) *             | **font**       | the font to render with.                                                  |
 | const char *                       | **text**       | the text to use, in UTF-8 encoding.                                       |
 | size_t                             | **length**     | the length of the text, in bytes, or 0 for null terminated text.          |

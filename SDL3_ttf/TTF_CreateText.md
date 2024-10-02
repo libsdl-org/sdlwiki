@@ -15,12 +15,12 @@ TTF_Text * TTF_CreateText(TTF_TextEngine *engine, TTF_Font *font, const char *te
 
 ## Function Parameters
 
-|                                    |            |                                                                  |
-| ---------------------------------- | ---------- | ---------------------------------------------------------------- |
-| [TTF_TextEngine](TTF_TextEngine) * | **engine** | the text engine to use when creating the text object.            |
-| [TTF_Font](TTF_Font) *             | **font**   | the font to render with.                                         |
-| const char *                       | **text**   | the text to use, in UTF-8 encoding.                              |
-| size_t                             | **length** | the length of the text, in bytes, or 0 for null terminated text. |
+|                                    |            |                                                                    |
+| ---------------------------------- | ---------- | ------------------------------------------------------------------ |
+| [TTF_TextEngine](TTF_TextEngine) * | **engine** | the text engine to use when creating the text object, may be NULL. |
+| [TTF_Font](TTF_Font) *             | **font**   | the font to render with.                                           |
+| const char *                       | **text**   | the text to use, in UTF-8 encoding.                                |
+| size_t                             | **length** | the length of the text, in bytes, or 0 for null terminated text.   |
 
 ## Return Value
 

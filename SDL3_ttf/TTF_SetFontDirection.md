@@ -37,6 +37,8 @@ Possible direction values are:
 If SDL_ttf was not built with HarfBuzz support, this function returns
 false.
 
+This updates any [TTF_Text](TTF_Text) objects using this font.
+
 ## Thread Safety
 
 This function should be called on the thread that created the font.

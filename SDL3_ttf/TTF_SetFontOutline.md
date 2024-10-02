@@ -25,6 +25,11 @@ bool TTF_SetFontOutline(TTF_Font *font, int outline);
 (bool) Returns true on success or false on failure; call SDL_GetError() for
 more information.
 
+## Remarks
+
+This updates any [TTF_Text](TTF_Text) objects using this font, and clears
+already-generated glyphs, if any, from the cache.
+
 ## Thread Safety
 
 This function should be called on the thread that created the font.
