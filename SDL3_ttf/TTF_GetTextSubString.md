@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_GetTextSubString
 
-Get the portion of a text string that surrounds a text offset.
+Get the substring of a text object that surrounds a text offset.
 
 ## Header File
 
@@ -28,10 +28,10 @@ more information.
 
 ## Remarks
 
-If the offset is less than 0, this will return a zero width substring at
-the beginning of the text. If the offset is greater than or equal to the
-length of the text string, this will return a zero width substring at the
-end of the text.
+If `offset` is less than 0, this will return a zero width substring at the
+beginning of the text. If `offset` is greater than or equal to the length
+of the text string, this will return a zero width substring at the end of
+the text.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
