@@ -41,6 +41,13 @@ the stream will not free the original buffer.
 If you need to write to a memory buffer, you should use
 [SDL_IOFromMem](SDL_IOFromMem)() with a writable buffer of memory instead.
 
+The following properties will be set at creation time by SDL:
+
+- [`SDL_PROP_IOSTREAM_MEMORY_POINTER`](SDL_PROP_IOSTREAM_MEMORY_POINTER):
+  this will be the `mem` parameter that was passed to this function.
+- [`SDL_PROP_IOSTREAM_MEMORY_SIZE_NUMBER`](SDL_PROP_IOSTREAM_MEMORY_SIZE_NUMBER):
+  this will be the `size` parameter that was passed to this function.
+
 ## Version
 
 This function is available since SDL 3.0.0.
