@@ -1,0 +1,32 @@
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_SubString
+
+The representation of a substring within text.
+
+## Header File
+
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
+
+## Syntax
+
+```c
+typedef struct TTF_SubString
+{
+    int offset;     /**< The byte offset from the beginning of the text */
+    int length;     /**< The byte length starting at the offset */
+    SDL_Rect rect;  /**< The rectangle, relative to the top left of the text, containing the substring */
+} TTF_SubString;
+```
+
+## Version
+
+This struct is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_GetTextSubString](TTF_GetTextSubString)
+- [TTF_GetTextSubStringAtPoint](TTF_GetTextSubStringAtPoint)
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+
