@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MetalView
 
 A handle to a CAMetalLayer-backed NSView (macOS) or UIView (iOS/tvOS).
@@ -16,6 +16,10 @@ typedef void *SDL_MetalView;
 ## Remarks
 
 This can be cast directly to an NSView or UIView.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMetal](CategoryMetal)

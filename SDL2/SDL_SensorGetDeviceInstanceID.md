@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SensorGetDeviceInstanceID
 
 Get the instance ID of a sensor.
@@ -27,6 +27,10 @@ SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
 ## Version
 
 This function is available since SDL 2.0.9.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySensor](CategorySensor)

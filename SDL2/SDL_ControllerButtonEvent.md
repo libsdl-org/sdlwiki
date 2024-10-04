@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_ControllerButtonEvent
 
 Game controller button event structure (event.cbutton.*)
@@ -21,6 +21,10 @@ typedef struct SDL_ControllerButtonEvent
     Uint8 padding2;
 } SDL_ControllerButtonEvent;
 ```
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

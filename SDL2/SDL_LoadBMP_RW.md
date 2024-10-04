@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_LoadBMP_RW
 
 Load a BMP image from a seekable SDL data stream.
@@ -47,6 +47,11 @@ This function is available since SDL 2.0.0.
 - [SDL_RWFromFile](SDL_RWFromFile)
 - [SDL_LoadBMP](SDL_LoadBMP)
 - [SDL_SaveBMP_RW](SDL_SaveBMP_RW)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

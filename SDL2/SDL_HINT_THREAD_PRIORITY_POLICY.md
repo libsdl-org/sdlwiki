@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_THREAD_PRIORITY_POLICY
 
 A string specifying additional information to use with [SDL_SetThreadPriority](SDL_SetThreadPriority).
@@ -23,6 +23,10 @@ requirements can override SDL's default behavior with this hint.
 
 pthread hint values are "current", "other", "fifo" and "rr". Currently no
 other platform hint values are defined but may be in the future.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

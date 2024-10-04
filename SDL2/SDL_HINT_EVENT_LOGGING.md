@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_EVENT_LOGGING
 
 A variable controlling verbosity of the logging of SDL events pushed onto the internal queue.
@@ -32,6 +32,10 @@ OutputDebugString() on Windows, and can be funneled by the app with
 
 This hint can be toggled on and off at runtime, if you only need to log
 events for a small subset of program execution.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

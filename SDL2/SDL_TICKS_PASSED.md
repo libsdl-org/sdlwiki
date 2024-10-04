@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TICKS_PASSED
 
 Compare 32-bit SDL ticks values, and return true if `A` has passed `B`.
@@ -43,6 +43,10 @@ while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
     /* ... do work until timeout has elapsed */
 }
 ```
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryTimer](CategoryTimer)

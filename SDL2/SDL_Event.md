@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Event
 
 General event structure
@@ -70,6 +70,10 @@ which union member. The table below lists these relationships.
 
 The [SDL_Event](SDL_Event) structure has two uses: * Reading events from
 the event queue * Placing events on the event queue
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ## Reading events from the event queue
 

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Rect
 
 A rectangle, with the origin at the upper left (integer).
@@ -45,6 +45,11 @@ SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 - [SDL_IntersectRectAndLine](SDL_IntersectRectAndLine)
 - [SDL_UnionRect](SDL_UnionRect)
 - [SDL_EnclosePoints](SDL_EnclosePoints)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)

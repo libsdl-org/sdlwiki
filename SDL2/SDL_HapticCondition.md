@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HapticCondition
 
 A structure containing a template for a Condition effect.
@@ -62,6 +62,11 @@ positive and which is negative.
 - [SDL_HAPTIC_INERTIA](SDL_HAPTIC_INERTIA)
 - [SDL_HAPTIC_FRICTION](SDL_HAPTIC_FRICTION)
 - [SDL_HapticEffect](SDL_HapticEffect)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)

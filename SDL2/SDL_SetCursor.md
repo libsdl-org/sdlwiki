@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetCursor
 
 Set the active cursor.
@@ -35,6 +35,11 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_GetCursor](SDL_GetCursor)
 - [SDL_ShowCursor](SDL_ShowCursor)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

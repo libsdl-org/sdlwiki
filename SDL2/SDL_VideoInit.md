@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_VideoInit
 
 Initialize the video subsystem, optionally specifying a video driver.
@@ -53,6 +53,11 @@ This function is available since SDL 2.0.0.
 - [SDL_GetVideoDriver](SDL_GetVideoDriver)
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_VideoQuit](SDL_VideoQuit)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

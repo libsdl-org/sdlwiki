@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_LockAudioDevice
 
 Use this function to lock out the audio callback function for a specified device.
@@ -23,8 +23,7 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev);
 
 The lock manipulated by these functions protects the audio callback
 function specified in [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). During
-a
-[SDL_LockAudioDevice](SDL_LockAudioDevice)()/[SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)()
+a [SDL_LockAudioDevice](SDL_LockAudioDevice)()/SDL_UnlockAudioDevice()
 pair, you can be guaranteed that the callback function for that device is
 not running, even if the device is not paused. While a device is locked,
 any other unpaused, unlocked devices may still run their callbacks.
@@ -56,6 +55,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

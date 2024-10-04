@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GUID
 
 An [SDL_GUID](SDL_GUID) is a 128-bit identifier.
@@ -32,6 +32,10 @@ have the same GUID.
 
 GUIDs may be platform-dependent (i.e., the same device may report different
 GUIDs on different operating systems).
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGUID](CategoryGUID)

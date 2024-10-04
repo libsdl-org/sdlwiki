@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE
 
 A variable controlling whether extended input reports should be used for PS4 controllers when using the HIDAPI driver.
@@ -31,6 +31,10 @@ the introduction of PS5 controller support, this value will also control
 the state of extended reports on PS5 controllers when the
 [SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE](SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE)
 hint is not explicitly set.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

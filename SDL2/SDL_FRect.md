@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FRect
 
 A rectangle, with the origin at the upper left (floating point).
@@ -30,6 +30,11 @@ typedef struct SDL_FRect
 - [SDL_UnionFRect](SDL_UnionFRect)
 - [SDL_EncloseFPoints](SDL_EncloseFPoints)
 - [SDL_PointInFRect](SDL_PointInFRect)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)

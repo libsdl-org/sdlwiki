@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HapticRumbleInit
 
 Initialize a haptic device for simple rumble playback.
@@ -34,6 +34,11 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
 - [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
 - [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

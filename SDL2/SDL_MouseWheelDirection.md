@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MouseWheelDirection
 
 Scroll direction types for the Scroll event
@@ -16,6 +16,10 @@ typedef enum SDL_MouseWheelDirection
     SDL_MOUSEWHEEL_FLIPPED    /**< The scroll direction is flipped / natural */
 } SDL_MouseWheelDirection;
 ```
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryMouse](CategoryMouse)

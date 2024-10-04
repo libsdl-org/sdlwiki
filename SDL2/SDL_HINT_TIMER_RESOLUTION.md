@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_TIMER_RESOLUTION
 
 A variable that controls the timer resolution, in milliseconds.
@@ -25,6 +25,10 @@ http://randomascii.wordpress.com/2013/07/08/windows-timer-resolution-megawatts-w
 If this variable is set to "0", the system timer resolution is not set.
 
 The default value is "1". This hint may be set at any time.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

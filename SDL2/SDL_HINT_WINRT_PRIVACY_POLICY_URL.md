@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINRT_PRIVACY_POLICY_URL
 
 A URL to a WinRT app's privacy policy
@@ -39,6 +39,10 @@ for displaying a privacy policy link, and as such,
 [SDL_HINT_WINRT_PRIVACY_POLICY_URL](SDL_HINT_WINRT_PRIVACY_POLICY_URL) will
 not get used on that platform. Network-enabled phone apps should display
 their privacy policy through some other, in-app means.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

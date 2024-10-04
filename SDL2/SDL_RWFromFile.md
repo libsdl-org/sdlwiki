@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RWFromFile
 
 Use this function to create a new [SDL_RWops](SDL_RWops) structure for reading from and/or writing to a named file.
@@ -84,6 +84,11 @@ This function is available since SDL 2.0.0.
 - [SDL_RWseek](SDL_RWseek)
 - [SDL_RWtell](SDL_RWtell)
 - [SDL_RWwrite](SDL_RWwrite)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

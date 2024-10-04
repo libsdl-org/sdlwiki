@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AudioFormat
 
 Audio format flags.
@@ -43,6 +43,10 @@ if (SDL_AUDIO_ISFLOAT(fmt)) {
 }
 printf("%d bits per sample\n", (int) SDL_AUDIO_BITSIZE(fmt));
 ```
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ## Related Structures
 

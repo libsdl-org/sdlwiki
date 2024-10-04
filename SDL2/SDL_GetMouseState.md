@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetMouseState
 
 Retrieve the current state of the mouse.
@@ -41,6 +41,11 @@ This function is available since SDL 2.0.0.
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
 - [SDL_PumpEvents](SDL_PumpEvents)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

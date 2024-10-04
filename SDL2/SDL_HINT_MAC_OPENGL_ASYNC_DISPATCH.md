@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MAC_OPENGL_ASYNC_DISPATCH
 
 A variable controlling whether dispatching OpenGL context updates should block the dispatching thread until the main thread finishes processing
@@ -30,6 +30,10 @@ waiting for the main thread to do an update, this might fix your issue.
 This hint only applies to macOS.
 
 This hint is available since SDL 2.24.0.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

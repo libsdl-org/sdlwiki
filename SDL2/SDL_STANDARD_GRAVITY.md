@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_STANDARD_GRAVITY
 
 A constant to represent standard gravity for accelerometer sensors.
@@ -19,6 +19,10 @@ The accelerometer returns the current acceleration in SI meters per second
 squared. This measurement includes the force of gravity, so a device at
 rest will have an value of [SDL_STANDARD_GRAVITY](SDL_STANDARD_GRAVITY)
 away from the center of the earth, which is a positive Y value.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySensor](CategorySensor)

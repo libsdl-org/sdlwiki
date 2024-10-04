@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetWindowDisplayMode
 
 Set the display mode to use when a window is visible at fullscreen.
@@ -40,6 +40,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
 - [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

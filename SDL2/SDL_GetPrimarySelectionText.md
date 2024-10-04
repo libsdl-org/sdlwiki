@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetPrimarySelectionText
 
 Get UTF-8 text from the primary selection, which must be freed with [SDL_free](SDL_free)().
@@ -33,6 +33,11 @@ This function is available since SDL 2.26.0.
 
 - [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
 - [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Vulkan_GetDrawableSize
 
 Get the size of the window's underlying drawable dimensions in pixels.
@@ -39,6 +39,11 @@ This function is available since SDL 2.0.6.
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_LoadFunction
 
 Look up the address of the named function in a shared object.
@@ -49,6 +49,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_LoadObject](SDL_LoadObject)
 - [SDL_UnloadObject](SDL_UnloadObject)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLoadSO](CategoryLoadSO)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerGetStringForButton
 
 Convert from an [SDL_GameControllerButton](SDL_GameControllerButton) enum to a string.
@@ -36,6 +36,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_GameControllerGetButtonFromString](SDL_GameControllerGetButtonFromString)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

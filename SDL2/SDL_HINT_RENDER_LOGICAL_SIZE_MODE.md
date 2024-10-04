@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_RENDER_LOGICAL_SIZE_MODE
 
 A variable controlling the scaling policy for [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize).
@@ -22,6 +22,10 @@ screen "1" or "overscan" - Will zoom the rendering so it fills the entire
 screen, allowing edges to be drawn offscreen
 
 By default letterbox is used
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

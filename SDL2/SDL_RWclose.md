@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RWclose
 
 Close and free an allocated [SDL_RWops](SDL_RWops) structure.
@@ -51,6 +51,11 @@ This function is available since SDL 2.0.10.
 - [SDL_RWread](SDL_RWread)
 - [SDL_RWseek](SDL_RWseek)
 - [SDL_RWwrite](SDL_RWwrite)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

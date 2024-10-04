@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerGetStringForAxis
 
 Convert from an [SDL_GameControllerAxis](SDL_GameControllerAxis) enum to a string.
@@ -71,6 +71,11 @@ int main(int argc, char **argv)
 ## See Also
 
 - [SDL_GameControllerGetAxisFromString](SDL_GameControllerGetAxisFromString)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

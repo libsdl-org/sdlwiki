@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_IME_INTERNAL_EDITING
 
 A variable to control whether certain IMEs should handle text editing internally instead of sending [SDL_TEXTEDITING](SDL_TEXTEDITING) events.
@@ -23,6 +23,10 @@ The variable can be set to the following values:
 - "1": If supported by the IME then [SDL_TEXTEDITING](SDL_TEXTEDITING)
   events are not sent, and text that is being composed will be rendered in
   its own UI.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

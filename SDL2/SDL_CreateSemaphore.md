@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_CreateSemaphore
 
 Create a semaphore.
@@ -44,6 +44,11 @@ This function is available since SDL 2.0.0.
 - [SDL_SemValue](SDL_SemValue)
 - [SDL_SemWait](SDL_SemWait)
 - [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

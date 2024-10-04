@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetRenderDrawColor
 
 Set the color used for drawing operations (Rect, Line and Clear).
@@ -51,6 +51,11 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderDrawRects](SDL_RenderDrawRects)
 - [SDL_RenderFillRect](SDL_RenderFillRect)
 - [SDL_RenderFillRects](SDL_RenderFillRects)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

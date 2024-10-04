@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_COMPILEDVERSION
 
 This is the version number macro for the current SDL version.
@@ -22,6 +22,10 @@ not be available in SDL 3.x.
 
 Deprecated, use [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST) or
 [SDL_VERSION](SDL_VERSION) instead.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ## Related Macros
 

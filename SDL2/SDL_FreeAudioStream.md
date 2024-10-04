@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FreeAudioStream
 
 Free an audio stream
@@ -25,6 +25,11 @@ This function is available since SDL 2.0.7.
 - [SDL_AudioStreamAvailable](SDL_AudioStreamAvailable)
 - [SDL_AudioStreamFlush](SDL_AudioStreamFlush)
 - [SDL_AudioStreamClear](SDL_AudioStreamClear)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

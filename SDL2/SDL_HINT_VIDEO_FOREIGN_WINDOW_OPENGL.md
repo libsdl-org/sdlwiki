@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_FOREIGN_WINDOW_OPENGL
 
 When calling [SDL_CreateWindowFrom](SDL_CreateWindowFrom)(), make the window compatible with OpenGL.
@@ -23,6 +23,10 @@ This variable can be set to the following values:
   [SDL_WindowFlags](SDL_WindowFlags)
 
 By default SDL will not make the foreign window compatible with OpenGL.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

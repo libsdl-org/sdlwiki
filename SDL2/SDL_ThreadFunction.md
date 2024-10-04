@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_ThreadFunction
 
 The function passed to [SDL_CreateThread](SDL_CreateThread)().
@@ -23,6 +23,10 @@ typedef int (SDLCALL * SDL_ThreadFunction) (void *data);
 
 Returns a value that can be reported through
 [SDL_WaitThread](SDL_WaitThread)().
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryThread](CategoryThread)

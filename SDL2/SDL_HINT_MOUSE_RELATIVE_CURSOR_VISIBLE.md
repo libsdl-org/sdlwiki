@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MOUSE_RELATIVE_CURSOR_VISIBLE
 
 A variable controlling whether the hardware cursor stays visible when relative mode is active.
@@ -22,6 +22,10 @@ visible while relative mode is active
 Note that for systems without raw hardware inputs, relative mode is
 implemented using warping, so the hardware cursor will visibly warp between
 frames if this is enabled on those systems.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_NO_SIGNAL_HANDLERS
 
 Tell SDL not to catch the SIGINT or SIGTERM signals.
@@ -23,6 +23,10 @@ The variable can be set to the following values:
 - "0": SDL will install a SIGINT and SIGTERM handler, and when it catches a
   signal, convert it into an [SDL_QUIT](SDL_QUIT) event.
 - "1": SDL will not install a signal handler at all.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

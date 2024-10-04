@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_DISPLAY_USABLE_BOUNDS
 
 Override for [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds)()
@@ -23,6 +23,10 @@ paired with a well-behaved application.
 
 The contents of this hint must be 4 comma-separated integers, the first is
 the bounds x, then y, width and height, in that order.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

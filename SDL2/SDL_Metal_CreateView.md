@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Metal_CreateView
 
 Create a CAMetalLayer-backed NSView/UIView and attach it to the specified window.
@@ -29,6 +29,11 @@ This function is available since SDL 2.0.12.
 
 - [SDL_Metal_DestroyView](SDL_Metal_DestroyView)
 - [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SysWMinfo
 
 The custom window manager information structure.
@@ -141,6 +141,10 @@ struct SDL_SysWMinfo
 
 When this structure is returned, it holds information about which low level
 system it is using, and will be one of [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE).
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySYSWM](CategorySYSWM)

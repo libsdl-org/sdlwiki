@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Keysym
 
 The SDL keysym structure, used in key events.
@@ -23,6 +23,10 @@ typedef struct SDL_Keysym
 
 If you are looking for translated character input, see the
 [SDL_TEXTINPUT](SDL_TEXTINPUT) event.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryKeyboard](CategoryKeyboard)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AudioCallback
 
 This function is called when the audio device needs more data.
@@ -20,6 +20,10 @@ typedef void (SDLCALL * SDL_AudioCallback) (void *userdata, Uint8 * stream, int 
 | **userdata** | An application-specific parameter saved in the [SDL_AudioSpec](SDL_AudioSpec) structure. |
 | **stream**   | A pointer to the audio data buffer.                                                      |
 | **len**      | Length of **stream** in bytes.                                                           |
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)

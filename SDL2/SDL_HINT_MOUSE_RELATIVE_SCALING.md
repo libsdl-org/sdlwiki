@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MOUSE_RELATIVE_SCALING
 
 A variable controlling whether relative mouse motion is affected by renderer scaling
@@ -21,6 +21,10 @@ This variable can be set to the following values:
 - "1": Relative motion is scaled according to DPI scaling and logical size
 
 By default relative mouse deltas are affected by DPI and renderer scaling
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

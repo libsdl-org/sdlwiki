@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_HIDAPI_PS3
 
 A variable controlling whether the HIDAPI driver for PS3 controllers should be used.
@@ -27,6 +27,10 @@ other platforms.
 It is not possible to use this driver on Windows, due to limitations in the
 default drivers installed. See https://github.com/ViGEm/DsHidMini for an
 alternative driver on Windows.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

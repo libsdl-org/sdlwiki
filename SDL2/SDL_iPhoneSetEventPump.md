@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_iPhoneSetEventPump
 
 Use this function to enable or disable the SDL event pump on Apple iOS.
@@ -36,6 +36,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
+
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)

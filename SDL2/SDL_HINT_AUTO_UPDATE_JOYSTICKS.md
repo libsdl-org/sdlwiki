@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_AUTO_UPDATE_JOYSTICKS
 
 A variable controlling whether SDL updates joystick state when getting input events
@@ -22,6 +22,10 @@ This variable can be set to the following values:
   [SDL_JoystickUpdate](SDL_JoystickUpdate)() (default)
 
 This hint can be toggled on and off at runtime.
+
+## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
