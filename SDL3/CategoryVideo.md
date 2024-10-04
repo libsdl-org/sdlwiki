@@ -127,6 +127,7 @@ SDL video functions.
 - [SDL_DisplayID](SDL_DisplayID)
 - [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback)
 - [SDL_EGLDisplay](SDL_EGLDisplay)
+- [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_HitTest](SDL_HitTest)
 - [SDL_Window](SDL_Window)
