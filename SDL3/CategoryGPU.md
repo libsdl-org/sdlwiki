@@ -7,7 +7,7 @@ Metal, Vulkan, and Direct3D 12.
 A basic workflow might be something like this:
 
 The app creates a GPU device with
-[SDL_GPUCreateDevice](SDL_GPUCreateDevice)(), and assigns it to a window
+[SDL_CreateGPUDevice](SDL_CreateGPUDevice)(), and assigns it to a window
 with [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)()--although
 strictly speaking you can render offscreen entirely, perhaps for image
 processing, and not use a window at all.
@@ -86,7 +86,7 @@ the downloaded data. Make sure to call
 [SDL_ReleaseGPUFence](SDL_ReleaseGPUFence)() when done with the fence.
 
 The API also has "compute" support. The app calls
-[SDL_GPUBeginComputePass](SDL_GPUBeginComputePass)() with compute-writeable
+[SDL_BeginGPUComputePass](SDL_BeginGPUComputePass)() with compute-writeable
 textures and/or buffers, which can be written to in a compute shader. Then
 it sets states it needs for the compute dispatches:
 
