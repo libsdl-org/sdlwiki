@@ -36,7 +36,7 @@ The variable can be set to the following values:
   a realtime scheduling policy
 
 This hint should be set before calling
-[SDL_SetThreadPriority](SDL_SetThreadPriority)()
+[SDL_SetCurrentThreadPriority](SDL_SetCurrentThreadPriority)()
 
 ## Version
 
