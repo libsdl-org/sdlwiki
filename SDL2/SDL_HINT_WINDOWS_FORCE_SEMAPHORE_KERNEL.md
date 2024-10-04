@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINDOWS_FORCE_SEMAPHORE_KERNEL
 
 Force SDL to use Kernel Semaphores on Windows.
@@ -26,6 +26,10 @@ This variable can be set to the following values:
 - "0": Use Atomics and WaitOnAddress API when available. If not, fall back
   to Kernel Objects. (default)
 - "1": Force the use of Kernel Objects in all cases.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

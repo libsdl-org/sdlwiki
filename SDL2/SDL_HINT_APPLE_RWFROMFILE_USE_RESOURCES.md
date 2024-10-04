@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_APPLE_RWFROMFILE_USE_RESOURCES
 
 Specify if [SDL_RWFromFile](SDL_RWFromFile) should use the resource dir on Apple platforms.
@@ -30,6 +30,10 @@ This variable can be set to the following values:
 - "1": SDL will use the app's resource directory (default).
 
 This hint is available since SDL 2.32.0.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

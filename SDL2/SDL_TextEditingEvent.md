@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TextEditingEvent
 
 Keyboard text editing event structure (event.edit.*)
@@ -20,6 +20,10 @@ typedef struct SDL_TextEditingEvent
     Sint32 length;                              /**< The length of selected editing text */
 } SDL_TextEditingEvent;
 ```
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

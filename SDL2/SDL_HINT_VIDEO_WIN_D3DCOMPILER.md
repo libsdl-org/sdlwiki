@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_WIN_D3DCOMPILER
 
 A variable specifying which shader compiler to preload when using the Chrome ANGLE binaries
@@ -26,6 +26,10 @@ This variable can be set to the following values:
 - "d3dcompiler_43.dll: for XP support.
 - "none": do not load any library, useful if you compiled ANGLE from source
   and included the compiler in your binaries.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

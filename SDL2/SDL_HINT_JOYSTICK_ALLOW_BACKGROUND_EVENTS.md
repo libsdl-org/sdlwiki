@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS
 
 A variable that lets you enable joystick (and gamecontroller) events even when your app is in the background.
@@ -23,6 +23,10 @@ The variable can be set to the following values:
   is in the background.
 
 The default value is "0". This hint may be set at any time.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

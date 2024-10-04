@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_HIDAPI_JOYCON_HOME_LED
 
 A variable controlling whether the Home button LED should be turned on when a Nintendo Switch Joy-Con controller is opened
@@ -23,6 +23,10 @@ This variable can be set to the following values:
 By default the Home button LED state is not changed. This hint can also be
 set to a floating point value between 0.0 and 1.0 which controls the
 brightness of the Home button LED.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

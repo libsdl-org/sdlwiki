@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FreeRW
 
 Use this function to free an [SDL_RWops](SDL_RWops) structure allocated by [SDL_AllocRW](SDL_AllocRW)().
@@ -43,6 +43,10 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_AllocRW](SDL_AllocRW)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

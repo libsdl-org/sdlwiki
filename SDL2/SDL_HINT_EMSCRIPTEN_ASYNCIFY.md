@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_EMSCRIPTEN_ASYNCIFY
 
 Disable giving back control to the browser automatically when running with asyncify
@@ -25,6 +25,10 @@ The variable can be set to the following values:
 - "0": Disable emscripten_sleep calls (if you give back browser control
   manually or use asyncify for other purposes)
 - "1": Enable emscripten_sleep calls (the default)
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

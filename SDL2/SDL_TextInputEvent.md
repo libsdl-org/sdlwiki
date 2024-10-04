@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TextInputEvent
 
 Keyboard text input event structure (event.text.*)
@@ -39,6 +39,10 @@ default on desktop platforms, and disabled by default on mobile platforms!
 
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StopTextInput](SDL_StopTextInput)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

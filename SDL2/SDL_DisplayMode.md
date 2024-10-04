@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_DisplayMode
 
 The structure that defines a display mode
@@ -61,6 +61,10 @@ for (i = 0; i < display_mode_count; ++i) {
 - [SDL_GetClosestDisplayMode](SDL_GetClosestDisplayMode)
 - [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 - [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

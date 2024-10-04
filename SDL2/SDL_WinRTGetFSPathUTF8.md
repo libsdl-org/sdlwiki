@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_WinRTGetFSPathUTF8
 
 Retrieve a WinRT defined path on the local file system.
@@ -44,6 +44,10 @@ This function is available since SDL 2.0.3.
 ## See Also
 
 - [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

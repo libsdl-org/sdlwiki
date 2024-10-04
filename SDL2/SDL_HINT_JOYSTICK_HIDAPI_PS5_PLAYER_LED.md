@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_HIDAPI_PS5_PLAYER_LED
 
 A variable controlling whether the player LEDs should be lit to indicate which player is associated with a PS5 controller.
@@ -19,6 +19,10 @@ This variable can be set to the following values:
 
 - "0": player LEDs are not enabled
 - "1": player LEDs are enabled (the default)
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

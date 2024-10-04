@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetWindowGrab
 
 Set a window's input grab mode.
@@ -40,6 +40,10 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetGrabbedWindow](SDL_GetGrabbedWindow)
 - [SDL_GetWindowGrab](SDL_GetWindowGrab)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

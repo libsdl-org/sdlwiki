@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_DestroyMutex
 
 Destroy a mutex created with [SDL_CreateMutex](SDL_CreateMutex)().
@@ -37,6 +37,10 @@ This function is available since SDL 2.0.0.
 - [SDL_LockMutex](SDL_LockMutex)
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_UnlockMutex](SDL_UnlockMutex)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

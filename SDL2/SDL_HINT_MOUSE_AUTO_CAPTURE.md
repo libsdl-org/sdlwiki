@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MOUSE_AUTO_CAPTURE
 
 A variable controlling whether the mouse is captured while mouse buttons are pressed
@@ -23,6 +23,10 @@ This variable can be set to the following values:
 By default the mouse is captured while mouse buttons are pressed so if the
 mouse is dragged outside the window, the application continues to receive
 mouse events until the button is released.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

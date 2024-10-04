@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_WHEEL_DEVICES_EXCLUDED
 
 A variable containing a list of devices that are not wheel style controllers.
@@ -26,6 +26,10 @@ hexadecimal form, e.g.
 
 The variable can also take the form of @file, in which case the named file
 will be loaded and interpreted as the value of the variable.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

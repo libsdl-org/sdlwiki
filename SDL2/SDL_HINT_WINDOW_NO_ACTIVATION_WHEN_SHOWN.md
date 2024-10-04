@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINDOW_NO_ACTIVATION_WHEN_SHOWN
 
 A variable controlling whether the window is activated when the [SDL_ShowWindow](SDL_ShowWindow) function is called
@@ -24,6 +24,10 @@ This variable can be set to the following values:
 
 By default SDL will activate the window when the
 [SDL_ShowWindow](SDL_ShowWindow) function is called
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

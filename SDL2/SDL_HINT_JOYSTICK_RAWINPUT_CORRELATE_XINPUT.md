@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_RAWINPUT_CORRELATE_XINPUT
 
 A variable controlling whether the RAWINPUT driver should pull correlated data from XInput.
@@ -24,6 +24,10 @@ This variable can be set to the following values:
 
 The default is "1". This hint applies to any joysticks opened after setting
 the hint.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AtomicCAS
 
 Set an atomic variable to a new value if it is currently an old value.
@@ -40,6 +40,10 @@ This function is available since SDL 2.0.0.
 - [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
 - [SDL_AtomicGet](SDL_AtomicGet)
 - [SDL_AtomicSet](SDL_AtomicSet)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

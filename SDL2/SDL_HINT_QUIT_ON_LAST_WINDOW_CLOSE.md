@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_QUIT_ON_LAST_WINDOW_CLOSE
 
 A variable that decides whether to send [SDL_QUIT](SDL_QUIT) when closing the final window.
@@ -33,6 +33,10 @@ The default value is "1". This hint can be changed at any time.
 
 This hint is available since SDL 2.0.22. Before then, you always get an
 [SDL_QUIT](SDL_QUIT) event when closing the final window.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

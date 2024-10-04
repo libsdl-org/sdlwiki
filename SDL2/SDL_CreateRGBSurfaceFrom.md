@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_CreateRGBSurfaceFrom
 
 Allocate a new RGB surface with existing pixel data.
@@ -61,6 +61,10 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
 - [SDL_CreateRGBSurfaceWithFormatFrom](SDL_CreateRGBSurfaceWithFormatFrom)
 - [SDL_FreeSurface](SDL_FreeSurface)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

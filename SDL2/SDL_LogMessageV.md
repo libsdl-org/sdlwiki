@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_LogMessageV
 
 Log a message with the specified category and priority.
@@ -38,6 +38,10 @@ This function is available since SDL 2.0.0.
 - [SDL_LogMessage](SDL_LogMessage)
 - [SDL_LogVerbose](SDL_LogVerbose)
 - [SDL_LogWarn](SDL_LogWarn)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

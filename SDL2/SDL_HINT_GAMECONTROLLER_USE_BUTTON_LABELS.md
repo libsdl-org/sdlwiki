@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_GAMECONTROLLER_USE_BUTTON_LABELS
 
 If set, game controller face buttons report their values according to their labels instead of their positional layout.
@@ -38,6 +38,10 @@ The variable can be set to the following values:
 - "1": Report the face buttons by label instead of position
 
 The default value is "1". This hint may be set at any time.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 

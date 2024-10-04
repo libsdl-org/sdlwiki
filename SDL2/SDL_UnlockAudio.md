@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_UnlockAudio
 
 This function is a legacy means of unlocking the audio device.
@@ -34,6 +34,10 @@ This function is available since SDL 2.0.0.
 
 - [SDL_LockAudio](SDL_LockAudio)
 - [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

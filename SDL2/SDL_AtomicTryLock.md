@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AtomicTryLock
 
 Try to lock a spin lock by setting it to a non-zero value.
@@ -37,6 +37,10 @@ This function is available since SDL 2.0.0.
 
 - [SDL_AtomicLock](SDL_AtomicLock)
 - [SDL_AtomicUnlock](SDL_AtomicUnlock)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

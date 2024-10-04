@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HapticQuery
 
 Get the haptic device's supported features in bitwise manner.
@@ -33,6 +33,10 @@ This function is available since SDL 2.0.0.
 
 - [SDL_HapticEffectSupported](SDL_HapticEffectSupported)
 - [SDL_HapticNumEffects](SDL_HapticNumEffects)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

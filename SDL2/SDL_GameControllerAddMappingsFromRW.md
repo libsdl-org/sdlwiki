@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerAddMappingsFromRW
 
 Load a set of Game Controller mappings from a seekable SDL data stream.
@@ -50,6 +50,10 @@ This function is available since SDL 2.0.2.
 - [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
 - [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
 - [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)

@@ -1,4 +1,4 @@
-###### (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINDOWS_FORCE_MUTEX_CRITICAL_SECTIONS
 
 Force SDL to use Critical Sections for mutexes on Windows.
@@ -25,6 +25,10 @@ This variable can be set to the following values:
 - "0": Use SRW Locks when available. If not, fall back to Critical
   Sections. (default)
 - "1": Force the use of Critical Sections in all cases.
+
+## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 
