@@ -41,31 +41,10 @@ loop.
 
 This datatype is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-#if defined(SDL_PLATFORM_WIN32) || defined(SDL_PLATFORM_GDK)
-bool MyMessageHook(void *userdata, MSG *msg)
-{
-    // do things with userdata and msg...
-
-    return true; // let SDL continue processing the message 
-}
-
-// ...
-SDL_SetWindowsMessageHook(MyMessageHook, NULL);
-#endif
-```
-
 ## See Also
 
 - [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
 - [SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP](SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySystem](CategorySystem)

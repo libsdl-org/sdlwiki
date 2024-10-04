@@ -27,25 +27,9 @@ bool SDL_HapticRumbleSupported(SDL_Haptic *haptic);
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-extern SDL_Haptic* dev;
-if (SDL_HapticRumbleSupported(dev)) {
-    SDL_InitHapticRumble(dev);
-    SDL_PlayHapticRumble(dev, 1.0f, 3000);
-    SDL_Delay(3000);
-}
-```
-
 ## See Also
 
 - [SDL_InitHapticRumble](SDL_InitHapticRumble)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

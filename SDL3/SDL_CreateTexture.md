@@ -106,11 +106,6 @@ int main(int argc, char *argv[])
 - [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

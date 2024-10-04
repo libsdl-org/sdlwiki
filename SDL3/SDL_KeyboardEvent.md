@@ -45,11 +45,6 @@ This struct is available since SDL 3.0.0.
 - [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
 - [SDL_HINT_KEYCODE_OPTIONS](SDL_HINT_KEYCODE_OPTIONS)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

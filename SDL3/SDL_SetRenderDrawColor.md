@@ -41,30 +41,10 @@ You may only call this function from the main thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_Renderer *renderer;
-SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-
-SDL_FRect rectangle;
-rectangle.x =  0.f;
-rectangle.y =  0.f;
-rectangle.w = 50.f;
-rectangle.h = 50.f;
-
-SDL_RenderFillRect(renderer, &rectangle);
-```
-
 ## See Also
 
 - [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
 - [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

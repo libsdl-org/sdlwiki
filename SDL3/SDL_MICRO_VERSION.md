@@ -21,10 +21,6 @@ If this were SDL version 3.2.1, this value would be 1.
 
 This macro is available since SDL 3.0.0.
 
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 

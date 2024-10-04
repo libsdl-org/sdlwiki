@@ -42,24 +42,9 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-int i;
-
-for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
-    printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
-}
-```
-
 ## See Also
 
 - [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

@@ -60,23 +60,9 @@ and fall back to writing to stderr if you can.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
-                         "Missing file",
-                         "File is missing. Please reinstall the program.",
-                         NULL);
-```
-
 ## See Also
 
 - [SDL_ShowMessageBox](SDL_ShowMessageBox)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMessagebox](CategoryMessagebox)

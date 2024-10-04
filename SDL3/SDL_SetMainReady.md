@@ -24,34 +24,9 @@ define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED) before including SDL.h.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-#define SDL_MAIN_HANDLED
-#include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h>
-
-int main(int argc, char *argv[])
-{
-    SDL_SetMainReady();
-    SDL_Init(SDL_INIT_VIDEO);
-
-    /* ... */
-
-    SDL_Quit();
-
-    return 0;
-}
-```
-
 ## See Also
 
 - [SDL_Init](SDL_Init)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)

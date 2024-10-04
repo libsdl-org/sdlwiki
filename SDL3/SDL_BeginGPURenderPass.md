@@ -49,10 +49,6 @@ This function is available since SDL 3.0.0.
 - [SDL_EndGPURenderPass](SDL_EndGPURenderPass)
 
 
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ## D3D12 Warnings
 
 On D3D12 with [debug_mode](SDL_CreateGPUDevice#function-parameters) enabled,

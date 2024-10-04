@@ -50,11 +50,6 @@ This function is available since SDL 3.0.0.
 - [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 - [SDL_Vulkan_DestroySurface](SDL_Vulkan_DestroySurface)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 

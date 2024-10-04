@@ -42,11 +42,6 @@ This function is available since SDL 3.0.0.
 - [SDL_GetMouseNameForID](SDL_GetMouseNameForID)
 - [SDL_HasMouse](SDL_HasMouse)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

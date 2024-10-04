@@ -54,31 +54,9 @@ Windows, '/' on most other platforms).
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-
-const char *data_path = NULL;
-
-void InitializeDataPath(void) {
-    const char *base_path = SDL_GetBasePath();
-    if (base_path) {
-        data_path = base_path;
-    } else {
-        data_path = SDL_strdup("./");
-    }
-}
-
-```
-
 ## See Also
 
 - [SDL_GetPrefPath](SDL_GetPrefPath)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)

@@ -35,10 +35,6 @@ as these, either because they were designed for a specific console, or they
 simply most closely match that console's controllers (does it have A/B/X/Y
 buttons or X/O/Square/Triangle? Does it have a touchpad? etc).
 
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGamepad](CategoryGamepad)
 

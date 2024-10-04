@@ -74,11 +74,6 @@ printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 - [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 - [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

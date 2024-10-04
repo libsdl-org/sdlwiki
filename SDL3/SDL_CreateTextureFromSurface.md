@@ -73,11 +73,6 @@ surface = NULL;
 - [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

@@ -37,31 +37,10 @@ You can pass NULL for either `x` or `y`.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-float x, y;
-Uint32 buttons;
-
-SDL_PumpEvents();  // make sure we have the latest mouse state.
-
-buttons = SDL_GetMouseState(&x, &y);
-
-SDL_Log("Mouse cursor is at %f, %f", x, y);
-if ((buttons & SDL_BUTTON_LMASK) != 0) {
-    SDL_Log("Mouse Button 1 (left) is pressed.");
-}
-```
-
 ## See Also
 
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

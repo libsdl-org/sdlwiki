@@ -90,11 +90,6 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateGPUGraphicsPipeline](SDL_CreateGPUGraphicsPipeline)
 - [SDL_ReleaseGPUShader](SDL_ReleaseGPUShader)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

@@ -74,26 +74,6 @@ calling [SDL_Init](SDL_Init), using either
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-#include <SDL3/SDL.h>
-
-int main(int argc, char* argv[])
-{
-    if (!SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO)) {
-        SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
-        return 1;
-    }
-
-    /* ... */
-
-    SDL_Quit();
-
-    return 0;
-}
-```
-
 ## See Also
 
 - [SDL_SetAppMetadata](SDL_SetAppMetadata)
@@ -102,11 +82,6 @@ int main(int argc, char* argv[])
 - [SDL_Quit](SDL_Quit)
 - [SDL_SetMainReady](SDL_SetMainReady)
 - [SDL_WasInit](SDL_WasInit)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

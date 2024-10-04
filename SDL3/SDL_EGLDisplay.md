@@ -17,10 +17,6 @@ typedef void *SDL_EGLDisplay;
 
 This datatype is available since SDL 3.0.0.
 
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

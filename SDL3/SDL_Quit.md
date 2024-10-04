@@ -27,36 +27,10 @@ other dynamically loaded code.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-#include <SDL3/SDL.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(int argc, char** argv) {
-    if (SDL_Init(SDL_INIT_EVENTS) != 0) {
-        fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
-        return 1;
-    }
-
-    /* ... */
-
-    SDL_Quit();
-
-    return 0;
-}
-```
-
 ## See Also
 
 - [SDL_Init](SDL_Init)
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

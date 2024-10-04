@@ -43,52 +43,12 @@ This function is affected by
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-#include <SDL3/SDL.h> // include SDL header
-
-int main(int argc, char* argv[])
-{
-    SDL_Surface *screen; // even with SDL3, we can still bring ancient code back
-    SDL_Window *window;
-    SDL_Surface *image;
-
-    SDL_Init(SDL_INIT_VIDEO); // init video
-
-    // create the window like normal
-    window = SDL_CreateWindow("SDL3 Surface Example", 640, 480, 0);
-
-    // but instead of creating a renderer, we can draw directly to the screen
-    screen = SDL_GetWindowSurface(window);
-
-    // let's just show some classic code for reference
-    image = SDL_LoadBMP("box.bmp"); // loads image
-    SDL_BlitSurface(image, NULL, screen, NULL); // blit it to the screen
-    SDL_DestroySurface(image);
-
-    // this works just like SDL_Flip() in SDL 1.2
-    SDL_UpdateWindowSurface(window);
-
-    // show image for 2 seconds
-    SDL_Delay(2000);
-    SDL_DestroyWindow(window);
-    SDL_Quit();
-    return 0;
-}
-```
-
 ## See Also
 
 - [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
 - [SDL_WindowHasSurface](SDL_WindowHasSurface)
 - [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
 - [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

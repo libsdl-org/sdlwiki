@@ -65,11 +65,6 @@ SDL_GL_DestroyContext(glcontext);
 - [SDL_GL_DestroyContext](SDL_GL_DestroyContext)
 - [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

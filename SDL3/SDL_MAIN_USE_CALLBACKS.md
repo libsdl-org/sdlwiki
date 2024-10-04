@@ -37,11 +37,6 @@ This macro is used by the headers since SDL 3.0.0.
 - [SDL_AppIterate](SDL_AppIterate)
 - [SDL_AppQuit](SDL_AppQuit)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryMain](CategoryMain)
 

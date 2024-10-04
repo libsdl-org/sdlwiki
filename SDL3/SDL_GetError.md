@@ -46,25 +46,10 @@ if the value is needed after the next SDL API call.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-if (!SDL_Init(SDL_INIT_VIDEO)) {
-    // Unrecoverable error, exit here.
-    printf("SDL_Init failed: %s\n", SDL_GetError());
-}
-```
-Note: Although this example uses [SDL_Init](SDL_Init)(), [SDL_GetError](SDL_GetError)() provides an error message for any failed SDL operation which supports error reporting, see the wiki page for each particular SDL function.
-
 ## See Also
 
 - [SDL_ClearError](SDL_ClearError)
 - [SDL_SetError](SDL_SetError)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

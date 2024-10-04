@@ -76,11 +76,6 @@ SDL_free(extensions);
 
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 

@@ -46,58 +46,10 @@ afterward.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-#include <SDL3/SDL.h>
-
-// Very simple thread - counts 0 to 9 delaying 50ms between increments
-static int TestThread(void *ptr)
-{
-    int cnt;
-
-    for (cnt = 0; cnt < 10; ++cnt) {
-        SDL_Log("Thread counter: %d\n", cnt);
-        SDL_Delay(50);
-    }
-
-    // Return the final value to the SDL_WaitThread function above
-    return cnt;
-}
-
-int main(int argc, char *argv[])
-{
-    SDL_Thread *thread;
-    int         threadReturnValue;
-
-    SDL_Log("Simple SDL_CreateThread test:");
-
-    // Simply create a thread
-    thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
-
-    if (NULL == thread) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_CreateThread failed: %s\n", SDL_GetError());
-    } else {
-        // Wait for the thread to complete. The thread functions return code will
-        //       be placed in the "threadReturnValue" variable when it completes.
-        //
-        SDL_WaitThread(thread, &threadReturnValue);
-        SDL_Log("Thread returned value: %d\n", threadReturnValue);
-    }
-
-    return 0;
-}
-```
-
 ## See Also
 
 - [SDL_CreateThread](SDL_CreateThread)
 - [SDL_DetachThread](SDL_DetachThread)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)

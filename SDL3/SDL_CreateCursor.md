@@ -155,11 +155,6 @@ SDL_Cursor *init_system_cursor(const char *image[])
 - [SDL_DestroyCursor](SDL_DestroyCursor)
 - [SDL_SetCursor](SDL_SetCursor)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

@@ -22,28 +22,10 @@ bool SDL_ShowCursor(void);
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-int main(int argc, char *argv[]) {
-    /* ... */
-    if (!SDL_ShowCursor()) {
-      SDL_Log("Failed to show the cursor");
-    }
-    /* ... */
-    return 0;
-}
-```
-
 ## See Also
 
 - [SDL_CursorVisible](SDL_CursorVisible)
 - [SDL_HideCursor](SDL_HideCursor)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

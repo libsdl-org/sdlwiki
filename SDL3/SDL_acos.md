@@ -47,28 +47,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-/* acos(x) = Pi/2 - asin(x) */
-SDL_Log("acos(0):\t\t%f", SDL_acos(0.));
-SDL_Log("Pi/2 - asin(0):\t%f", SDL_PI_D / 2 - SDL_asin(0));
-
-/* acos(-x) = Pi  - acos(x) */
-SDL_Log("acos(-(-1)):\t%f", SDL_acos(-(-1)));
-SDL_Log("Pi - acos(-1):\t%f", SDL_PI_D - SDL_acos(-1));
-```
-
 ## See Also
 
 - [SDL_acosf](SDL_acosf)
 - [SDL_asin](SDL_asin)
 - [SDL_cos](SDL_cos)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

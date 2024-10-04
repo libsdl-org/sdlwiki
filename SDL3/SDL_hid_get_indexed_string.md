@@ -31,10 +31,6 @@ int SDL_hid_get_indexed_string(SDL_hid_device *dev, int string_index, wchar_t *s
 
 This function is available since SDL 3.0.0.
 
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHIDAPI](CategoryHIDAPI)
 

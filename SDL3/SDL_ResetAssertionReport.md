@@ -25,23 +25,9 @@ trigger_count of zero, and their always_ignore state will be false.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_assert(1+1 == 3);  // trigger an assertion.
-printf("%p\n", SDL_GetAssertionReport());  // not NULL.
-SDL_ResetAssertionReport();
-printf("%p\n", SDL_GetAssertionReport());  // NULL.
-```
-
 ## See Also
 
 - [SDL_GetAssertionReport](SDL_GetAssertionReport)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssert](CategoryAssert)

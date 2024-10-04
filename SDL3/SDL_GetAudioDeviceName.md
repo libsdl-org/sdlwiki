@@ -32,30 +32,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-int count;
-SDL_AudioDeviceID *devices;
-devices = SDL_GetAudioPlaybackDevices(&count);
-
-for (int i = 0; i < count; ++i) {
-    SDL_Log("Audio device %d: %s", i, SDL_GetAudioDeviceName(devices[i]));
-}
-
-SDL_free(devices);
-```
-
 ## See Also
 
 - [SDL_GetAudioPlaybackDevices](SDL_GetAudioPlaybackDevices)
 - [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
 - [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

@@ -54,7 +54,7 @@ This function is available since SDL 3.0.0.
 ```c
 
 /* Variable declaration */
-void* myHandle = NULL;
+SDL_SharedObject* myHandle = NULL;
 const char* myFunctionName = "myFancyFunction";
 void (*myFancyFunction)(int anInt);
 
@@ -78,11 +78,6 @@ if (myFancyFunction != NULL) {
 ## See Also
 
 - [SDL_LoadObject](SDL_LoadObject)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)

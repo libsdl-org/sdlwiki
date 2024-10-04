@@ -59,11 +59,6 @@ SDL_Surface *output = SDL_ConvertSurface(input, SDL_PIXELFORMAT_RGBA32);
 - [SDL_ConvertSurfaceAndColorspace](SDL_ConvertSurfaceAndColorspace)
 - [SDL_DestroySurface](SDL_DestroySurface)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

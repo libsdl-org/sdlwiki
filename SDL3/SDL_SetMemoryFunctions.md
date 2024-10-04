@@ -53,11 +53,6 @@ This function is available since SDL 3.0.0.
 - [SDL_GetMemoryFunctions](SDL_GetMemoryFunctions)
 - [SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

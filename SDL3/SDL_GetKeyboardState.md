@@ -52,11 +52,6 @@ This function is available since SDL 3.0.0.
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_ResetKeyboard](SDL_ResetKeyboard)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

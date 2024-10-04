@@ -46,27 +46,11 @@ You may only call this function from the main thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_Renderer *renderer;
-SDL_Surface *loadedSurface;
-/* ... */
-SDL_Texture* pTexture = SDL_CreateTextureFromSurface( renderer, loadedSurface );
-SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
-/* ... */
-```
-
 ## See Also
 
 - [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
 - [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
 - [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

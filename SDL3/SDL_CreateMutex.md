@@ -60,11 +60,6 @@ SDL_DestroyMutex(mutex);
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_UnlockMutex](SDL_UnlockMutex)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

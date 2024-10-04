@@ -40,33 +40,10 @@ format of the surface will not change.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-void modify_surface(SDL_Surface *surface) {
-
-  /* Make the pixels pointer valid in the surface */
-
-  SDL_LockSurface(surface);
-
-  /* Surface is locked */
-  /* Direct pixel access on surface here */
-
-  SDL_UnlockSurface(surface);
-
-  /* Surface is now unlocked */
-}
-```
-
 ## See Also
 
 - [SDL_MUSTLOCK](SDL_MUSTLOCK)
 - [SDL_UnlockSurface](SDL_UnlockSurface)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

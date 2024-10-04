@@ -34,52 +34,11 @@ If the call is successful it will atomically decrement the semaphore value.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
-
-void add_data_to_queue(void);
-void get_data_from_queue(void);
-int data_available(void);
-void wait_for_threads(void);
-
-SDL_AtomicInt done;
-SDL_Semaphore *sem;
-SDL_SetAtomicInt(&done, 0);
-sem = SDL_CreateSemaphore(0);
-
-Thread_A:
-    while (!SDL_GetAtomicInt(&done)) {
-        add_data_to_queue();
-        SDL_SignalSemaphore(sem);
-    }
-Thread_B:
-    const Uint32 timeout = 1000; /* wake up every second */
-    while (!SDL_GetAtomicInt(&done)) {
-        if (SDL_WaitSemaphoreTimeout(sem, timeout) == 0 && data_available()) {
-            get_data_from_queue();
-        }
-        /* ... do other processing */
-    }
-
-SDL_SetAtomicInt(&done, 1);
-SDL_SignalSemaphore(sem);
-wait_for_threads();
-SDL_DestroySemaphore(sem);
-
-```
-
 ## See Also
 
 - [SDL_SignalSemaphore](SDL_SignalSemaphore)
 - [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
 - [SDL_WaitSemaphore](SDL_WaitSemaphore)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

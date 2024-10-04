@@ -60,10 +60,6 @@ You may only call this function from the main thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-Please refer to the code example in [SDL_RenderClear](SDL_RenderClear).
-
 ## See Also
 
 - [SDL_CreateRenderer](SDL_CreateRenderer)
@@ -78,11 +74,6 @@ Please refer to the code example in [SDL_RenderClear](SDL_RenderClear).
 - [SDL_RenderRects](SDL_RenderRects)
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 - [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

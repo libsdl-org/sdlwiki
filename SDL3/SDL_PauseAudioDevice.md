@@ -49,24 +49,10 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-extern SDL_AudioDeviceID devid;
-SDL_PauseAudioDevice(devid);  // audio callback is stopped when this returns.
-SDL_Delay(5000);  // audio device plays silence for 5 seconds
-SDL_ResumeAudioDevice(devid);  // audio callback starts running again.
-```
-
 ## See Also
 
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

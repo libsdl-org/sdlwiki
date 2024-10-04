@@ -33,45 +33,11 @@ of -1.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-void create_and_wait_threads(void);
-
-#define NB_WAITER 10
-SDL_Semaphore *sem;
-// Increments the semaphore every 2s
-int poster_thread() {
-  for (int i = 0; i < NB_WAITER; i++) {
-    SDL_SignalSemaphore(sem);
-    SDL_Delay(2 * 1000);
-  }
-  return 0;
-}
-int waiter_thread()
-{
-  SDL_WaitSemaphore(sem);
-  SDL_Log("Semaphore was decremented.\n");
-  return 0;
-}
-int main() {
-  sem = SDL_CreateSemaphore(0);
-  create_and_wait_threads(); // 1 poster, 10 waiters
-  SDL_DestroySemaphore(sem);
-}
-
-```
-
 ## See Also
 
 - [SDL_SignalSemaphore](SDL_SignalSemaphore)
 - [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
 - [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

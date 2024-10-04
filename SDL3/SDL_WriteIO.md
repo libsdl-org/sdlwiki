@@ -52,11 +52,6 @@ This function is available since SDL 3.0.0.
 - [SDL_FlushIO](SDL_FlushIO)
 - [SDL_GetIOStatus](SDL_GetIOStatus)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 

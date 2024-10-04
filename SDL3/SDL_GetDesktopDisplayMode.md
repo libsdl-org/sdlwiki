@@ -36,26 +36,10 @@ return the previous native display mode, and not the current display mode.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_DisplayID display_id = SDL_GetPrimaryDisplay();
-const SDL_DisplayMode *display_mode = SDL_GetDesktopDisplayMode(display_id);
-if (display_mode == NULL) {
-    SDL_Log("SDL_GetDesktopDisplayMode failed: %s", SDL_GetError());
-    return 1;
-}
-```
-
 ## See Also
 
 - [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
 - [SDL_GetDisplays](SDL_GetDisplays)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

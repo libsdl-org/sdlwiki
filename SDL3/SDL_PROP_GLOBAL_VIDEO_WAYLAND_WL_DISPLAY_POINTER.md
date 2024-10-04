@@ -24,10 +24,6 @@ uninitialized will either return the user provided value, if one was set
 prior to initialization, or NULL. See docs/README-wayland.md for more
 information.
 
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)
 

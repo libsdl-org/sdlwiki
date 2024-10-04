@@ -167,11 +167,6 @@ int main(int argc, char* argv[]) {
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

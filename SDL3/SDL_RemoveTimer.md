@@ -28,31 +28,9 @@ bool SDL_RemoveTimer(SDL_TimerID id);
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-extern void *my_callback_param;
-extern Uint32 SDLCALL my_callbackfunc(void *userdata, SDL_TimerID timerID, Uint32 interval);
-
-Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
-
-/* ... */
-
-SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
-
-/* ... */
-
-SDL_RemoveTimer(my_timer_id);
-```
-
 ## See Also
 
 - [SDL_AddTimer](SDL_AddTimer)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

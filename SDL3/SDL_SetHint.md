@@ -40,23 +40,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-/* Log most events (other than the really spammy ones) */
-SDL_SetHint(SDL_HINT_LOGGING, "2");
-```
-
 ## See Also
 
 - [SDL_GetHint](SDL_GetHint)
 - [SDL_ResetHint](SDL_ResetHint)
 - [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

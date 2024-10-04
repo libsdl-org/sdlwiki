@@ -41,29 +41,10 @@ if (error_code) {
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_SetError("Something unexpected happened!");
-```
-```c
-int errorCode = 0;
-/* ... */
-errorCode = -37;
-/* ... */
-if (errorCode < 0)
-    SDL_SetError("Something unexpected happened: Error Code %d", errorCode);
-```
-
 ## See Also
 
 - [SDL_ClearError](SDL_ClearError)
 - [SDL_GetError](SDL_GetError)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

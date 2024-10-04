@@ -29,18 +29,6 @@ These are results returned by [SDL_GetPowerInfo](SDL_GetPowerInfo)().
 
 This enum is available since SDL 3.0.0
 
-## Code Examples
-
-```c
-if (SDL_GetPowerInfo(NULL, NULL) == SDL_POWERSTATE_ON_BATTERY) {
-    SDL_Log("You should plug in your laptop before running this update.");
-}
-```
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryPower](CategoryPower)
 

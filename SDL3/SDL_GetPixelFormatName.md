@@ -33,19 +33,6 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_Surface* surface; // a valid surface from wherever.
-const char* surfacePixelFormatName = SDL_GetPixelFormatName(surface->format);
-SDL_Log("The surface's pixelformat is %s", surfacePixelFormatName);
-// prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
-```
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

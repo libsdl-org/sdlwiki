@@ -51,27 +51,11 @@ not conflict with other code that also wants its own custom event types.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-SDL_Event sdlevent;
-SDL_zero(sdlevent);
-sdlevent.type = SDL_EVENT_KEY_DOWN;
-sdlevent.key.key = SDLK_1;
-
-SDL_PushEvent(&sdlevent);
-```
-
 ## See Also
 
 - [SDL_PeepEvents](SDL_PeepEvents)
 - [SDL_PollEvent](SDL_PollEvent)
 - [SDL_RegisterEvents](SDL_RegisterEvents)
-
-
-## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
