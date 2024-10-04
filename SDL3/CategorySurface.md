@@ -8,11 +8,10 @@ various formats, and provides a reasonable toolbox for transforming the
 data, including copying between surfaces, filling rectangles in the image
 data, etc.
 
-There is also a simple .bmp loader,
-[SDL_LoadBMP](SDL_LoadBMP)(). SDL itself does not
-provide loaders for various other file formats, but there are several
-excellent external libraries that do, including it's own satellite library,
-SDL_image: 
+There is also a simple .bmp loader, [SDL_LoadBMP](SDL_LoadBMP)(). SDL
+itself does not provide loaders for various other file formats, but there
+are several excellent external libraries that do, including it's own
+satellite library, [SDL_image](SDL_image):
 
 https://github.com/libsdl-org/SDL_image
 
