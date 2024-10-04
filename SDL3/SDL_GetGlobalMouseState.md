@@ -24,7 +24,7 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 ([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns the current button
 state as a bitmask which can be tested using the
-[SDL_BUTTON](SDL_BUTTON)(X) macros.
+[SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macros.
 
 ## Remarks
 
