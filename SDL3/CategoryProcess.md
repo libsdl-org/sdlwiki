@@ -32,6 +32,7 @@ still running!
 - [SDL_DestroyProcess](SDL_DestroyProcess)
 - [SDL_GetProcessInput](SDL_GetProcessInput)
 - [SDL_GetProcessOutput](SDL_GetProcessOutput)
+- [SDL_GetProcessProperties](SDL_GetProcessProperties)
 - [SDL_KillProcess](SDL_KillProcess)
 - [SDL_ReadProcess](SDL_ReadProcess)
 - [SDL_WaitProcess](SDL_WaitProcess)
