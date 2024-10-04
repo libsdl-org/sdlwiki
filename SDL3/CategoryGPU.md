@@ -129,8 +129,9 @@ ease of portability. It is designed so that the app won't have to branch
 itself by querying feature support. If you need cutting-edge features with
 limited hardware support, this API is probably not for you.
 
-Examples demonstrating proper usage of this API can be found [here]
-(https://github.com/TheSpydog/[SDL_gpu_examples](SDL_gpu_examples)).
+Examples demonstrating proper usage of this API can be found
+[here](https://github.com/TheSpydog/[SDL_gpu_examples](SDL_gpu_examples)
+) .
 
 <!-- END CATEGORY DOCUMENTATION -->
 
