@@ -1,7 +1,5 @@
 # CategoryHints
 
-Official documentation for SDL configuration variables
-
 This file contains functions to set and get configuration hints, as well as
 listing each of them alphabetically.
 
