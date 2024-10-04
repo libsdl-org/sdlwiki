@@ -919,6 +919,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_SetBooleanProperty](SDL_SetBooleanProperty)
 - [SDL_SetClipboardData](SDL_SetClipboardData)
 - [SDL_SetClipboardText](SDL_SetClipboardText)
+- [SDL_SetCurrentThreadPriority](SDL_SetCurrentThreadPriority)
 - [SDL_SetCursor](SDL_SetCursor)
 - [SDL_setenv_unsafe](SDL_setenv_unsafe)
 - [SDL_SetEnvironmentVariable](SDL_SetEnvironmentVariable)
