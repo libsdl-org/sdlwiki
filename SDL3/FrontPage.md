@@ -2,6 +2,16 @@
 
 This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
 
+## Try it right now!
+
+SDL3 has officially stabilized the API and ABI, and a preview release is available at
+[the GitHub page](https://github.com/libsdl-org/SDL/releases/tag/preview-3.1.3).
+We will still be adding things to the API but not changing or removing anything, so it's
+safe to start porting your projects from SDL2.
+
+Need some motivation? Here's a list of [NewFeatures](NewFeatures) that you can
+enjoy today in SDL3!
+
 ## What is it?
 
 Simple DirectMedia Layer is a cross-platform development library designed to
