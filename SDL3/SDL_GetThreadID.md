@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetThreadID
 
 Get the thread identifier for the specified thread.
@@ -83,6 +83,11 @@ int main(int argc, char *argv[])
 ## See Also
 
 - [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)

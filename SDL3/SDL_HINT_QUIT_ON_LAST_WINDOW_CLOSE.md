@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HINT_QUIT_ON_LAST_WINDOW_CLOSE
 
 A variable that decides whether to send [SDL_EVENT_QUIT](SDL_EVENT_QUIT) when closing the last window.
@@ -30,6 +30,10 @@ This hint can be set anytime.
 ## Version
 
 This hint is available since SDL 3.0.0.
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

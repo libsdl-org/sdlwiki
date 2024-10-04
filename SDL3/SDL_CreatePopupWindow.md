@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreatePopupWindow
 
 Create a child popup window of the specified parent window.
@@ -73,6 +73,11 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 - [SDL_GetWindowParent](SDL_GetWindowParent)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

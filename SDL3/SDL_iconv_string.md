@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_iconv_string
 
 Helper function to convert a string's encoding in one call.
@@ -50,6 +50,11 @@ This function is available since SDL 3.0.0.
 - [SDL_iconv_open](SDL_iconv_open)
 - [SDL_iconv_close](SDL_iconv_close)
 - [SDL_iconv](SDL_iconv)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

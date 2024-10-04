@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUBlendFactor
 
 Specifies a blending factor to be used when pixels in a render target are blended with existing pixels in the texture.
@@ -41,6 +41,11 @@ This enum is available since SDL 3.0.0
 ## See Also
 
 - [SDL_CreateGPUGraphicsPipeline](SDL_CreateGPUGraphicsPipeline)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)

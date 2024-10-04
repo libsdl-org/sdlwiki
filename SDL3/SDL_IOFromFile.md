@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_IOFromFile
 
 Use this function to create a new [SDL_IOStream](SDL_IOStream) structure for reading from and/or writing to a named file.
@@ -106,6 +106,11 @@ This function is available since SDL 3.0.0.
 - [SDL_SeekIO](SDL_SeekIO)
 - [SDL_TellIO](SDL_TellIO)
 - [SDL_WriteIO](SDL_WriteIO)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

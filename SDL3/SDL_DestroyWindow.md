@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DestroyWindow
 
 Destroy a window.
@@ -33,6 +33,11 @@ This function is available since SDL 3.0.0.
 - [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

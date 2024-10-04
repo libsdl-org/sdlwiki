@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HapticEffect
 
 The generic template for any haptic effect.
@@ -98,6 +98,11 @@ This struct is available since SDL 3.0.0.
 - [SDL_HapticRamp](SDL_HapticRamp)
 - [SDL_HapticLeftRight](SDL_HapticLeftRight)
 - [SDL_HapticCustom](SDL_HapticCustom)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)

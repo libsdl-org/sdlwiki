@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_LogWarn
 
 Log a message with [SDL_LOG_PRIORITY_WARN](SDL_LOG_PRIORITY_WARN).
@@ -40,6 +40,11 @@ This function is available since SDL 3.0.0.
 - [SDL_LogMessageV](SDL_LogMessageV)
 - [SDL_LogTrace](SDL_LogTrace)
 - [SDL_LogVerbose](SDL_LogVerbose)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)

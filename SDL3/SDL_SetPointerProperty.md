@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetPointerProperty
 
 Set a pointer property in a group of properties.
@@ -43,6 +43,11 @@ This function is available since SDL 3.0.0.
 - [SDL_SetNumberProperty](SDL_SetNumberProperty)
 - [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)
 - [SDL_SetStringProperty](SDL_SetStringProperty)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)

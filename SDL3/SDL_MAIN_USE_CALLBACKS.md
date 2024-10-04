@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MAIN_USE_CALLBACKS
 
 Inform SDL to use the main callbacks instead of main.
@@ -36,6 +36,11 @@ This macro is used by the headers since SDL 3.0.0.
 - [SDL_AppEvent](SDL_AppEvent)
 - [SDL_AppIterate](SDL_AppIterate)
 - [SDL_AppQuit](SDL_AppQuit)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryMain](CategoryMain)

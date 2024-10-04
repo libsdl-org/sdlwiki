@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AtomicU32
 
 A type representing an atomic unsigned 32-bit value.
@@ -42,6 +42,11 @@ This struct is available since SDL 3.0.0.
 - [SDL_GetAtomicU32](SDL_GetAtomicU32)
 - [SDL_SetAtomicU32](SDL_SetAtomicU32)
 - [SDL_AddAtomicU32](SDL_AddAtomicU32)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)

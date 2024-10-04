@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GDKResumeGPU
 
 Call this to resume GPU operation on Xbox when you receive the [SDL_EVENT_WILL_ENTER_FOREGROUND](SDL_EVENT_WILL_ENTER_FOREGROUND) event.
@@ -31,6 +31,11 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_AddEventWatch](SDL_AddEventWatch)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

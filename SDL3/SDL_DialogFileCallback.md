@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DialogFileCallback
 
 Callback used by file dialog functions.
@@ -91,6 +91,11 @@ static void SDLCALL callback(void* userdata, const char* const* filelist, int fi
 - [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
 - [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryDialog](CategoryDialog)

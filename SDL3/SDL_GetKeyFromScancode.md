@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetKeyFromScancode
 
 Get the key code corresponding to the given scancode according to the current keyboard layout.
@@ -42,6 +42,11 @@ This function is available since SDL 3.0.0.
 
 - [SDL_GetKeyName](SDL_GetKeyName)
 - [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GL_CreateContext
 
 Create an OpenGL context for an OpenGL window, and make it current.
@@ -64,6 +64,11 @@ SDL_GL_DestroyContext(glcontext);
 
 - [SDL_GL_DestroyContext](SDL_GL_DestroyContext)
 - [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

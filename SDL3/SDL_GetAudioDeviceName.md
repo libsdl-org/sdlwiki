@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAudioDeviceName
 
 Get the human-readable name of a specific audio device.
@@ -51,6 +51,11 @@ SDL_free(devices);
 - [SDL_GetAudioPlaybackDevices](SDL_GetAudioPlaybackDevices)
 - [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
 - [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HINT_WAVE_CHUNK_LIMIT
 
 A variable controlling the maximum number of chunks in a WAVE file.
@@ -24,6 +24,10 @@ This hint should be set before calling [SDL_LoadWAV](SDL_LoadWAV)() or
 ## Version
 
 This hint is available since SDL 3.0.0.
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

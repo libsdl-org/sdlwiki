@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HasSSE3
 
 Determine whether the CPU has SSE3 features.
@@ -31,6 +31,11 @@ This function is available since SDL 3.0.0.
 - [SDL_HasSSE2](SDL_HasSSE2)
 - [SDL_HasSSE41](SDL_HasSSE41)
 - [SDL_HasSSE42](SDL_HasSSE42)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)

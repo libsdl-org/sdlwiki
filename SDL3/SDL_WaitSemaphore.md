@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_WaitSemaphore
 
 Wait until a semaphore has a positive value and then decrements it.
@@ -67,6 +67,11 @@ int main() {
 - [SDL_SignalSemaphore](SDL_SignalSemaphore)
 - [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
 - [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

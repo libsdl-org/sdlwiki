@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetWindowMaximumSize
 
 Set the maximum size of a window's client area.
@@ -34,6 +34,11 @@ This function is available since SDL 3.0.0.
 
 - [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
 - [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

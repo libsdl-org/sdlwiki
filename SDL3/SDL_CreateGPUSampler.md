@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateGPUSampler
 
 Creates a sampler object to be used when binding textures in a graphics workflow.
@@ -37,6 +37,11 @@ This function is available since SDL 3.0.0.
 - [SDL_BindGPUVertexSamplers](SDL_BindGPUVertexSamplers)
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
 - [SDL_ReleaseSampler](SDL_ReleaseSampler)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

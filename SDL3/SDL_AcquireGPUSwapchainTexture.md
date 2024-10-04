@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AcquireGPUSwapchainTexture
 
 Acquire a texture to use in presentation.
@@ -56,6 +56,11 @@ This function is available since SDL 3.0.0.
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
 - [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

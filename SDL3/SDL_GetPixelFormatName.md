@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetPixelFormatName
 
 Get the human readable name of a pixel format.
@@ -41,6 +41,10 @@ const char* surfacePixelFormatName = SDL_GetPixelFormatName(surface->format);
 SDL_Log("The surface's pixelformat is %s", surfacePixelFormatName);
 // prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
 ```
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)

@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAudioStreamAvailable
 
 Get the number of converted/resampled bytes available.
@@ -48,6 +48,11 @@ This function is available since SDL 3.0.0.
 
 - [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

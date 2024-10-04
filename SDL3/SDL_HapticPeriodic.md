@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HapticPeriodic
 
 A structure containing a template for a Periodic effect.
@@ -104,6 +104,11 @@ This struct is available since SDL 3.0.0.
 - [SDL_HAPTIC_SAWTOOTHUP](SDL_HAPTIC_SAWTOOTHUP)
 - [SDL_HAPTIC_SAWTOOTHDOWN](SDL_HAPTIC_SAWTOOTHDOWN)
 - [SDL_HapticEffect](SDL_HapticEffect)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)

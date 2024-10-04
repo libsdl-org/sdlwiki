@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetError
 
 Retrieve a message about the last error that occurred on the current thread.
@@ -60,6 +60,11 @@ Note: Although this example uses [SDL_Init](SDL_Init)(), [SDL_GetError](SDL_GetE
 
 - [SDL_ClearError](SDL_ClearError)
 - [SDL_SetError](SDL_SetError)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

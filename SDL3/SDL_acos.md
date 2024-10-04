@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_acos
 
 Compute the arc cosine of `x`.
@@ -64,6 +64,11 @@ SDL_Log("Pi - acos(-1):\t%f", SDL_PI_D - SDL_acos(-1));
 - [SDL_acosf](SDL_acosf)
 - [SDL_asin](SDL_asin)
 - [SDL_cos](SDL_cos)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

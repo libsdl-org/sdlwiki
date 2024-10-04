@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Colorspace
 
 Colorspace definitions.
@@ -119,6 +119,11 @@ This enum is available since SDL 3.0.0.
 - [SDL_ColorType](SDL_ColorType)
 - [SDL_MatrixCoefficients](SDL_MatrixCoefficients)
 - [SDL_TransferCharacteristics](SDL_TransferCharacteristics)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryPixels](CategoryPixels)

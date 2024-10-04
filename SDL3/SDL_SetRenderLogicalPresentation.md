@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetRenderLogicalPresentation
 
 Set a device independent resolution and presentation mode for rendering.
@@ -65,6 +65,11 @@ This function is available since SDL 3.0.0.
 - [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
 - [SDL_GetRenderLogicalPresentationRect](SDL_GetRenderLogicalPresentationRect)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

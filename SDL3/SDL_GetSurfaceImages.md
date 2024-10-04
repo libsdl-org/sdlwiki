@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetSurfaceImages
 
 Get an array including all versions of a surface.
@@ -45,6 +45,11 @@ This function is available since SDL 3.0.0.
 - [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)
 - [SDL_RemoveSurfaceAlternateImages](SDL_RemoveSurfaceAlternateImages)
 - [SDL_SurfaceHasAlternateImages](SDL_SurfaceHasAlternateImages)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

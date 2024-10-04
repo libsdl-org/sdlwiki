@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUTextureTransferInfo
 
 A structure specifying parameters related to transferring data to or from a texture.
@@ -27,6 +27,11 @@ This struct is available since SDL 3.0.0
 
 - [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
 - [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)

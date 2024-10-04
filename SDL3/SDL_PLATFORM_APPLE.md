@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_PLATFORM_APPLE
 
 A preprocessor macro that is only defined if compiling for Apple platforms.
@@ -27,6 +27,11 @@ This macro is available since SDL 3.0.0.
 - [SDL_PLATFORM_IOS](SDL_PLATFORM_IOS)
 - [SDL_PLATFORM_TVOS](SDL_PLATFORM_TVOS)
 - [SDL_PLATFORM_VISIONOS](SDL_PLATFORM_VISIONOS)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPlatform](CategoryPlatform)

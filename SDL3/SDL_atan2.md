@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_atan2
 
 Compute the arc tangent of `y / x`, using the signs of x and y to adjust the result's quadrant.
@@ -57,6 +57,11 @@ This function is available since SDL 3.0.0.
 - [SDL_atan2f](SDL_atan2f)
 - [SDL_atan](SDL_atan)
 - [SDL_tan](SDL_tan)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

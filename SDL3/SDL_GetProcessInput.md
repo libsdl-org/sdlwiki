@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetProcessInput
 
 Get the [SDL_IOStream](SDL_IOStream) associated with process standard input.
@@ -51,6 +51,11 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateProcess](SDL_CreateProcess)
 - [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)
 - [SDL_GetProcessOutput](SDL_GetProcessOutput)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProcess](CategoryProcess)

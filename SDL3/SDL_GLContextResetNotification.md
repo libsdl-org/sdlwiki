@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GLContextResetNotification
 
 Possible values to be set [SDL_GL_CONTEXT_RESET_NOTIFICATION](SDL_GL_CONTEXT_RESET_NOTIFICATION) attribute.
@@ -20,6 +20,10 @@ typedef enum SDL_GLContextResetNotification
 ## Version
 
 This enum is available since SDL 3.0.0.
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)

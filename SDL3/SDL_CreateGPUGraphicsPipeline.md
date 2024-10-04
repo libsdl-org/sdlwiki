@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateGPUGraphicsPipeline
 
 Creates a pipeline object to be used in a graphics workflow.
@@ -37,6 +37,11 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateGPUShader](SDL_CreateGPUShader)
 - [SDL_BindGPUGraphicsPipeline](SDL_BindGPUGraphicsPipeline)
 - [SDL_ReleaseGPUGraphicsPipeline](SDL_ReleaseGPUGraphicsPipeline)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

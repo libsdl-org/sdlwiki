@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MaximizeWindow
 
 Request that the window be made as large as possible.
@@ -56,6 +56,11 @@ This function is available since SDL 3.0.0.
 - [SDL_MinimizeWindow](SDL_MinimizeWindow)
 - [SDL_RestoreWindow](SDL_RestoreWindow)
 - [SDL_SyncWindow](SDL_SyncWindow)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

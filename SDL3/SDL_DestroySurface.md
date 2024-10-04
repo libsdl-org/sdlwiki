@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DestroySurface
 
 Free a surface.
@@ -32,6 +32,11 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateStackSurface](SDL_CreateStackSurface)
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

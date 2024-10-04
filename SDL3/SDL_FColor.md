@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_FColor
 
 The bits of this structure can be directly reinterpreted as a float-packed color which uses the [SDL_PIXELFORMAT_RGBA128_FLOAT](SDL_PIXELFORMAT_RGBA128_FLOAT) format
@@ -22,6 +22,10 @@ typedef struct SDL_FColor
 ## Version
 
 This struct is available since SDL 3.0.0.
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryPixels](CategoryPixels)

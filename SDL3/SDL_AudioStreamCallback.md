@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AudioStreamCallback
 
 A callback that fires when data passes through an [SDL_AudioStream](SDL_AudioStream).
@@ -58,6 +58,11 @@ This datatype is available since SDL 3.0.0.
 
 - [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
 - [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)

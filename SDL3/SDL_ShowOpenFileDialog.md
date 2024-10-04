@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ShowOpenFileDialog
 
 Displays a dialog that lets the user select a file on their filesystem.
@@ -56,6 +56,11 @@ This function is available since SDL 3.0.0.
 - [SDL_DialogFileFilter](SDL_DialogFileFilter)
 - [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryDialog](CategoryDialog)

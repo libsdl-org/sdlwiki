@@ -1,4 +1,4 @@
-###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateRenderer
 
 Create a 2D rendering context for a window.
@@ -109,6 +109,11 @@ int main(int argc, char *argv[])
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 - [SDL_GetRenderDriver](SDL_GetRenderDriver)
 - [SDL_GetRendererName](SDL_GetRendererName)
+
+
+## (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
