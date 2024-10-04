@@ -11,28 +11,22 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 void SDL_EGL_SetAttributeCallbacks(SDL_EGLAttribArrayCallback platformAttribCallback,
-                                  SDL_EGLIntArrayCallback surfaceAttribCallback,
-                                  SDL_EGLIntArrayCallback contextAttribCallback, void *userdata);
+                                   SDL_EGLIntArrayCallback surfaceAttribCallback,
+                                   SDL_EGLIntArrayCallback contextAttribCallback, void *userdata);
 ```
 
 ## Function Parameters
 
-|                                                          |                            |                                                           |
-| -------------------------------------------------------- | -------------------------- | --------------------------------------------------------- |
-| [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback) | **platformAttribCallback** | callback for attributes to pass to eglGetPlatformDisplay. |
-| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **surfaceAttribCallback**  | callback for attributes to pass to eglCreateSurface.      |
-| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **contextAttribCallback**  | callback for attributes to pass to eglCreateContext.      |
-| void *                                                   | **userdata**               | a pointer that is passed to the callbacks.                |
+|                                                          |                            |                                                                        |
+| -------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------- |
+| [SDL_EGLAttribArrayCallback](SDL_EGLAttribArrayCallback) | **platformAttribCallback** | callback for attributes to pass to eglGetPlatformDisplay. May be NULL. |
+| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **surfaceAttribCallback**  | callback for attributes to pass to eglCreateSurface. May be NULL.      |
+| [SDL_EGLIntArrayCallback](SDL_EGLIntArrayCallback)       | **contextAttribCallback**  | callback for attributes to pass to eglCreateContext. May be NULL.      |
+| void *                                                   | **userdata**               | a pointer that is passed to the callbacks.                             |
 
 ## Remarks
 
-Each callback should return a pointer to an EGL attribute array terminated
-with EGL_NONE. Callbacks may return NULL pointers to signal an error, which
-will cause the [SDL_CreateWindow](SDL_CreateWindow) process to fail
-gracefully.
-
-The arrays returned by each callback will be appended to the existing
-attribute arrays defined by SDL.
+Callbacks that aren't needed can be set to NULL.
 
 NOTE: These callback pointers will be reset after
 [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes).

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_EGLAttribArrayCallback
+# SDL_EGLIntArrayCallback
 
-EGL platform attribute initialization callback.
+EGL surface/context attribute initialization callback types.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-typedef SDL_EGLAttrib *(SDLCALL *SDL_EGLAttribArrayCallback)(void *userdata);
+typedef SDL_EGLint *(SDLCALL *SDL_EGLIntArrayCallback)(void *userdata, SDL_EGLDisplay display, SDL_EGLConfig config);
 ```
 
 ## Function Parameters
@@ -18,6 +18,8 @@ typedef SDL_EGLAttrib *(SDLCALL *SDL_EGLAttribArrayCallback)(void *userdata);
 |              |                                                           |
 | ------------ | --------------------------------------------------------- |
 | **userdata** | an app-controlled pointer that is passed to the callback. |
+| **display**  | the EGL display to be used.                               |
+| **config**   | the EGL config to be used.                                |
 
 ## Return Value
 
@@ -25,8 +27,12 @@ Returns a newly-allocated array of attributes, terminated with `EGL_NONE`.
 
 ## Remarks
 
-This is called when SDL is attempting to create an EGL context, to let the
-app add extra attributes to its eglGetPlatformDisplay() call.
+This is called when SDL is attempting to create an EGL surface, to let the
+app add extra attributes to its eglCreateWindowSurface() or
+eglCreateContext calls.
+
+For convenience, the EGLDisplay and EGLConfig to use are provided to the
+callback.
 
 The callback should return a pointer to an EGL attribute array terminated
 with `EGL_NONE`. If this function returns NULL, the
