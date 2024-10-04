@@ -137,14 +137,14 @@ SDL3 runs on the PS4 and PS5! There are commercial games shipping with this port
 There are Visual Studio project files for GDK, which can be used to target Xbox consoles. These are in the "VisualC-GDK" directory.
 
 
-### WinRT/UWP/Windows 10
+### Windows 10
 
-There are Visual Studio project files for UWP. These are in the "VisualC-WinRT" directory.
+There are Visual Studio project files in the "VisualC" directory.
 
 
-### Windows 8/WinPhone
+### Windows 8
 
-We no longer have build environments for Windows 8 or Windows Phone. The Win32/Win64 targets still support Windows 8.
+We no longer have build environments for Windows 8. The Win32/Win64 targets still support Windows 8.
 
 
 ### RISC OS
@@ -177,4 +177,5 @@ All of these still work with SDL2, which is an incompatible API, but an option i
 - QNX
 - NaCL
 - Google Stadia
-
+- WinRT/UWP
+- WinPhone
