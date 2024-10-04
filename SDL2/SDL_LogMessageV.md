@@ -11,8 +11,8 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 void SDL_LogMessageV(int category,
-                     SDL_LogPriority priority,
-                     const char *fmt, va_list ap);
+                 SDL_LogPriority priority,
+                 const char *fmt, va_list ap);
 ```
 
 ## Function Parameters
@@ -38,15 +38,6 @@ This function is available since SDL 2.0.0.
 - [SDL_LogMessage](SDL_LogMessage)
 - [SDL_LogVerbose](SDL_LogVerbose)
 - [SDL_LogWarn](SDL_LogWarn)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)

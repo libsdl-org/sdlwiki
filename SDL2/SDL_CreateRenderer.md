@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
-                       int index, Uint32 flags);
+                   int index, Uint32 flags);
 ```
 
 ## Function Parameters
@@ -38,15 +38,6 @@ This function is available since SDL 2.0.0.
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 - [SDL_GetRendererInfo](SDL_GetRendererInfo)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

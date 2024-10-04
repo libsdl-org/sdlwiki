@@ -26,32 +26,10 @@ Returns 1 to permit event to be added to the queue, and 0 to disallow it.
 When used with [SDL_AddEventWatch](SDL_AddEventWatch), the return value is
 ignored.
 
-## Code Examples
-
-```c
-int MyEventFunction(void *userdata, SDL_Event *event) {
-    // Do things with userdata and event
-
-    return 0; // Value will be ignored
-}
-
-// ...
-SDL_AddEventWatch(MyEventFunction, NULL);
-```
-
 ## See Also
 
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_AddEventWatch](SDL_AddEventWatch)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)

@@ -11,11 +11,11 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioDeviceID SDL_OpenAudioDevice(
-                          const char *device,
-                          int iscapture,
-                          const SDL_AudioSpec *desired,
-                          SDL_AudioSpec *obtained,
-                          int allowed_changes);
+                      const char *device,
+                      int iscapture,
+                      const SDL_AudioSpec *desired,
+                      SDL_AudioSpec *obtained,
+                      int allowed_changes);
 ```
 
 ## Function Parameters
@@ -141,15 +141,6 @@ This function is available since SDL 2.0.0.
 - [SDL_OpenAudio](SDL_OpenAudio)
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 - [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

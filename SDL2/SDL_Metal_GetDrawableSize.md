@@ -11,7 +11,7 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
-                               int *h);
+                           int *h);
 ```
 
 ## Function Parameters
@@ -30,15 +30,6 @@ This function is available since SDL 2.0.14.
 
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_CreateWindow](SDL_CreateWindow)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)

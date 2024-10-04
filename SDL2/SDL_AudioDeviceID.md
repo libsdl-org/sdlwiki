@@ -21,14 +21,6 @@ A successful call to [SDL_OpenAudio](SDL_OpenAudio)() is always device id
 >= 2 on success. The legacy calls are good both for backwards compatibility
 and when you don't care about multiple, specific, or capture devices.
 
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)
 

@@ -42,30 +42,9 @@ typedef enum SDL_WindowFlags
 } SDL_WindowFlags;
 ```
 
-## Code Examples
-
-```c
-Uint32 flags = SDL_WINDOW_OPENGL | SDL_WINDOW_FULLSCREEN;
-SDL_Window * window = SDL_CreateWindow(
-    "Window title",
-    SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-    640, 480,
-    flags
-);
-```
-
 ## See Also
 
 - [SDL_GetWindowFlags](SDL_GetWindowFlags)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)

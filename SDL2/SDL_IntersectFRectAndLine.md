@@ -11,9 +11,9 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_IntersectFRectAndLine(const SDL_FRect *
-                                   rect, float *X1,
-                                   float *Y1, float *X2,
-                                   float *Y2);
+                               rect, float *X1,
+                               float *Y1, float *X2,
+                               float *Y2);
 ```
 
 ## Function Parameters
@@ -42,14 +42,6 @@ coordinates saved in `X1`, `Y1`, `X2`, and/or `Y2` as necessary.
 ## Version
 
 This function is available since SDL 2.0.22.
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)

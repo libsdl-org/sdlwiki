@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer,
-                               SDL_BlendMode blendMode);
+                           SDL_BlendMode blendMode);
 ```
 
 ## Function Parameters
@@ -45,15 +45,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderDrawRects](SDL_RenderDrawRects)
 - [SDL_RenderFillRect](SDL_RenderFillRect)
 - [SDL_RenderFillRects](SDL_RenderFillRects)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

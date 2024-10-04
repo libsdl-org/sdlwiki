@@ -11,7 +11,7 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_RWops* SDL_RWFromConstMem(const void *mem,
-                              int size);
+                          int size);
 ```
 
 ## Function Parameters
@@ -56,15 +56,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RWread](SDL_RWread)
 - [SDL_RWseek](SDL_RWseek)
 - [SDL_RWtell](SDL_RWtell)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

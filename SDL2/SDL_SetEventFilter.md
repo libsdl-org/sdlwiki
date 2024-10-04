@@ -11,7 +11,7 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_SetEventFilter(SDL_EventFilter filter,
-                        void *userdata);
+                    void *userdata);
 ```
 
 ## Function Parameters
@@ -61,15 +61,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_PeepEvents](SDL_PeepEvents)
 - [SDL_PushEvent](SDL_PushEvent)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

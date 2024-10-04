@@ -11,8 +11,8 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_TimerID SDL_AddTimer(Uint32 interval,
-                         SDL_TimerCallback callback,
-                         void *param);
+                     SDL_TimerCallback callback,
+                     void *param);
 ```
 
 ## Function Parameters
@@ -57,51 +57,6 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_RemoveTimer](SDL_RemoveTimer)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
-## Example
-
-```c
-// Function to be called after a certain time
-
-Uint32 callback(Uint32 interval, void* name) {
-
-    printf("Hello %s!\n", (const char *)name);
-       
-    return 0;
-}
-
-/* ... */
-
-// Initialize timer
-
-SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER);
-
-/* ... */
-
-// Set timer to 1 second
-
-SDL_TimerID timerID = SDL_AddTimer(1000, callback, "SDL");
-
-// Main loop
-
-SDL_bool quit;
-while (!quit) {
-    /* ... */
-}
-
-// Remove timer after main loop
-
-SDL_RemoveTimer(timerID);
-```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

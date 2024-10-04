@@ -81,28 +81,6 @@ set to
 or
 [SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH](SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH).
 
-## Code Examples
-
-```c
-extern SDL_Window *window;
-
-SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
-SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
-SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
-SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 8);
-SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-
-SDL_GL_CreateContext(window);
-```
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

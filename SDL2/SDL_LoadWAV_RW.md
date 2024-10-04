@@ -11,10 +11,10 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops * src,
-                              int freesrc,
-                              SDL_AudioSpec * spec,
-                              Uint8 ** audio_buf,
-                              Uint32 * audio_len);
+                          int freesrc,
+                          SDL_AudioSpec * spec,
+                          Uint8 ** audio_buf,
+                          Uint32 * audio_len);
 ```
 
 ## Function Parameters
@@ -106,15 +106,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_FreeWAV](SDL_FreeWAV)
 - [SDL_LoadWAV](SDL_LoadWAV)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

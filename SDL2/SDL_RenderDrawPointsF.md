@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawPointsF(SDL_Renderer * renderer,
-                          const SDL_FPoint * points,
-                          int count);
+                      const SDL_FPoint * points,
+                      int count);
 ```
 
 ## Function Parameters
@@ -30,57 +30,6 @@ int SDL_RenderDrawPointsF(SDL_Renderer * renderer,
 ## Version
 
 This function is available since SDL 2.0.10.
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
-## Example
-
-```c
-#define WIDTH  640
-#define HEIGHT 480
-
-// Calculate centre of the screen
-
-double x_centre = WIDTH / 2;
-double y_centre = HEIGHT / 2;
-
-/* ... */
-SDL_Renderer *renderer;
-
-// Initialize three points of triangle
-
-SDL_FPoint a = {x_centre, y_centre};
-SDL_FPoint b = {x_centre, y_centre - 10.5};
-SDL_FPoint c = {x_centre - 10.5, y_centre};
-
-// Initialize array of points
-
-SDL_FPoint triangle[] = {
-    a,
-    b,
-    c
-};
-
-/* ... */
-
-// Set render color to white
-
-SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-SDL_RenderClear(renderer);
-
-// Draw triangle
-
-SDL_RenderDrawPointsF(renderer, triangle, 3);
-
-SDL_RenderPresent(renderer);
-
-```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

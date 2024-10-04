@@ -11,9 +11,9 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_MixAudioFormat(Uint8 * dst,
-                        const Uint8 * src,
-                        SDL_AudioFormat format,
-                        Uint32 len, int volume);
+                    const Uint8 * src,
+                    SDL_AudioFormat format,
+                    Uint32 len, int volume);
 ```
 
 ## Function Parameters
@@ -48,14 +48,6 @@ you're mixing a single audio stream with a volume adjustment.
 ## Version
 
 This function is available since SDL 2.0.0.
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

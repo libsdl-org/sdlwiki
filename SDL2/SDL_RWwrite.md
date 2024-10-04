@@ -11,8 +11,8 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 size_t SDL_RWwrite(SDL_RWops *context,
-                   const void *ptr, size_t size,
-                   size_t num);
+               const void *ptr, size_t size,
+               size_t num);
 ```
 
 ## Function Parameters
@@ -55,15 +55,6 @@ This function is available since SDL 2.0.10.
 - [SDL_RWFromMem](SDL_RWFromMem)
 - [SDL_RWread](SDL_RWread)
 - [SDL_RWseek](SDL_RWseek)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

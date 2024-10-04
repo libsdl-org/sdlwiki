@@ -11,7 +11,7 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_WarpMouseInWindow(SDL_Window * window,
-                           int x, int y);
+                       int x, int y);
 ```
 
 ## Function Parameters
@@ -40,15 +40,6 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

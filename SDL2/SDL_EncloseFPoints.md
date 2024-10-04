@@ -11,9 +11,9 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_EncloseFPoints(const SDL_FPoint * points,
-                            int count,
-                            const SDL_FRect * clip,
-                            SDL_FRect * result);
+                        int count,
+                        const SDL_FRect * clip,
+                        SDL_FRect * result);
 ```
 
 ## Function Parameters
@@ -39,14 +39,6 @@ considered.
 ## Version
 
 This function is available since SDL 2.0.22.
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)

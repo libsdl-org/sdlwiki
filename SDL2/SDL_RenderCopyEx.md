@@ -11,12 +11,12 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderCopyEx(SDL_Renderer * renderer,
-                   SDL_Texture * texture,
-                   const SDL_Rect * srcrect,
-                   const SDL_Rect * dstrect,
-                   const double angle,
-                   const SDL_Point *center,
-                   const SDL_RendererFlip flip);
+               SDL_Texture * texture,
+               const SDL_Rect * srcrect,
+               const SDL_Rect * dstrect,
+               const double angle,
+               const SDL_Point *center,
+               const SDL_RendererFlip flip);
 ```
 
 ## Function Parameters
@@ -61,15 +61,6 @@ This function is available since SDL 2.0.0.
 - [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
 - [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
 - [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

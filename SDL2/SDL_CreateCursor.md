@@ -11,9 +11,9 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
-                             const Uint8 * mask,
-                             int w, int h, int hot_x,
-                             int hot_y);
+                         const Uint8 * mask,
+                         int w, int h, int hot_x,
+                         int hot_y);
 ```
 
 ## Function Parameters
@@ -68,15 +68,6 @@ This function is available since SDL 2.0.0.
 - [SDL_FreeCursor](SDL_FreeCursor)
 - [SDL_SetCursor](SDL_SetCursor)
 - [SDL_ShowCursor](SDL_ShowCursor)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_bool SDL_SetClipRect(SDL_Surface * surface,
-                         const SDL_Rect * rect);
+                     const SDL_Rect * rect);
 ```
 
 ## Function Parameters
@@ -43,15 +43,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_BlitSurface](SDL_BlitSurface)
 - [SDL_GetClipRect](SDL_GetClipRect)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

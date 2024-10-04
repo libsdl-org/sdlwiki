@@ -11,12 +11,12 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
-                       SDL_Texture *texture,
-                       const float *xy, int xy_stride,
-                       const SDL_Color *color, int color_stride,
-                       const float *uv, int uv_stride,
-                       int num_vertices,
-                       const void *indices, int num_indices, int size_indices);
+                   SDL_Texture *texture,
+                   const float *xy, int xy_stride,
+                   const SDL_Color *color, int color_stride,
+                   const float *uv, int uv_stride,
+                   int num_vertices,
+                   const void *indices, int num_indices, int size_indices);
 ```
 
 ## Function Parameters
@@ -48,15 +48,6 @@ This function is available since SDL 2.0.18.
 
 - [SDL_RenderGeometry](SDL_RenderGeometry)
 - [SDL_Vertex](SDL_Vertex)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

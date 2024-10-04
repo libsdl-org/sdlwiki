@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SetSurfaceRLE(SDL_Surface * surface,
-                      int flag);
+                  int flag);
 ```
 
 ## Function Parameters
@@ -40,15 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_BlitSurface](SDL_BlitSurface)
 - [SDL_LockSurface](SDL_LockSurface)
 - [SDL_UnlockSurface](SDL_UnlockSurface)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

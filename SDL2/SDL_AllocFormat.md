@@ -39,34 +39,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_FreeFormat](SDL_FreeFormat)
 
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
-## Example
-
-```c
-SDL_PixelFormat* pixel_format = NULL;
-
-/* ... */
-
-SDL_Init(SDL_INIT_EVERYTHING);
-
-pixel_format = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA32);
-
-if (pixel_format == NULL) printf( "Error: %s\n", SDL_GetError() );
-
-/* ... */
-
-printf("Amount of bytes: %i\n", pixel_format->BytesPerPixel);
-
-```
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

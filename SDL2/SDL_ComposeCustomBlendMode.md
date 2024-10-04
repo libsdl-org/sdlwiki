@@ -11,11 +11,11 @@ Defined in [SDL_blendmode.h](https://github.com/libsdl-org/SDL/blob/SDL2/include
 
 ```c
 SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor,
-                                         SDL_BlendFactor dstColorFactor,
-                                         SDL_BlendOperation colorOperation,
-                                         SDL_BlendFactor srcAlphaFactor,
-                                         SDL_BlendFactor dstAlphaFactor,
-                                         SDL_BlendOperation alphaOperation);
+                                     SDL_BlendFactor dstColorFactor,
+                                     SDL_BlendOperation colorOperation,
+                                     SDL_BlendFactor srcAlphaFactor,
+                                     SDL_BlendFactor dstAlphaFactor,
+                                     SDL_BlendOperation alphaOperation);
 ```
 
 ## Function Parameters
@@ -121,15 +121,6 @@ This function is available since SDL 2.0.6.
 - [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
 - [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
 - [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryBlendmode](CategoryBlendmode)

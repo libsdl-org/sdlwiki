@@ -20,14 +20,6 @@ next timer interval. If the returned value is the same as the one passed
 in, the periodic alarm continues, otherwise a new alarm is scheduled. If
 the callback returns 0, the periodic alarm is cancelled.
 
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)
 

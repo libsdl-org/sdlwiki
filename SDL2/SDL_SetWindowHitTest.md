@@ -11,8 +11,8 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowHitTest(SDL_Window * window,
-                         SDL_HitTest callback,
-                         void *callback_data);
+                     SDL_HitTest callback,
+                     void *callback_data);
 ```
 
 ## Function Parameters
@@ -62,14 +62,6 @@ devoid of allocations, etc.
 ## Version
 
 This function is available since SDL 2.0.4.
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

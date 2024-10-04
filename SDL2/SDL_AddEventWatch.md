@@ -11,7 +11,7 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_AddEventWatch(SDL_EventFilter filter,
-                       void *userdata);
+                   void *userdata);
 ```
 
 ## Function Parameters
@@ -47,29 +47,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_DelEventWatch](SDL_DelEventWatch)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
-## Example
-
-```c
-int MyEventFunction(void *userdata, SDL_Event *event) {
-    // Do things with userdata and event
-
-    return 0; // Value will be ignored
-}
-
-// ...
-SDL_AddEventWatch(MyEventFunction, NULL);
-
-```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

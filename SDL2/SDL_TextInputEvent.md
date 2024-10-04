@@ -40,16 +40,6 @@ default on desktop platforms, and disabled by default on mobile platforms!
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StopTextInput](SDL_StopTextInput)
 
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents), CategoryAPIStruct, CategoryEvents
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

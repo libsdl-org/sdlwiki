@@ -45,16 +45,6 @@ typedef struct SDL_Window SDL_Window;
 - [SDL_SetWindowTitle](SDL_SetWindowTitle)
 - [SDL_ShowWindow](SDL_ShowWindow)
 
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo), [CategoryAPIStruct](CategoryAPIStruct), 
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
 

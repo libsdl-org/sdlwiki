@@ -11,9 +11,9 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderGeometry(SDL_Renderer *renderer,
-                       SDL_Texture *texture,
-                       const SDL_Vertex *vertices, int num_vertices,
-                       const int *indices, int num_indices);
+                   SDL_Texture *texture,
+                   const SDL_Vertex *vertices, int num_vertices,
+                   const int *indices, int num_indices);
 ```
 
 ## Function Parameters
@@ -39,48 +39,6 @@ This function is available since SDL 2.0.18.
 
 - [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 - [SDL_Vertex](SDL_Vertex)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
-## Example
-
-```c
-SDL_Renderer *renderer;
-SDL_Texture *texture;
-
-// Create three vertices to render
-
-SDL_Vertex vertex_1 = {{10.5, 10.5}, {255, 0, 0, 255}, {1, 1}};
-SDL_Vertex vertex_2 = {{20.5, 10.5}, {255, 0, 0, 255}, {1, 1}};
-SDL_Vertex vertex_3 = {{10.5, 20.5}, {255, 0, 0, 255}, {1, 1}};
-
-// Put them into array
-
-SDL_Vertex vertices[] = {
-    vertex_1,
-    vertex_2,
-    vertex_3
-};
-
-// Set renderer color
-
-SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-SDL_RenderClear(renderer);
-
-// Render red triangle
-
-SDL_RenderGeometry(renderer, texture, vertices, 3, NULL, 0);
-
-SDL_RenderPresent(renderer);
-
-```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

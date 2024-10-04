@@ -17,25 +17,6 @@ typedef struct SDL_Rect
 } SDL_Rect;
 ```
 
-## Code Examples
-
-```c
-SDL_Rect srcrect;
-SDL_Rect dstrect;
-
-srcrect.x = 0;
-srcrect.y = 0;
-srcrect.w = 32;
-srcrect.h = 32;
-dstrect.x = 640/2;
-dstrect.y = 480/2;
-dstrect.w = 0;
-dstrect.h = 0;
-
-extern SDL_Surface *src, *dst;
-SDL_BlitSurface(src, &srcrect, dst, &dstrect);
-```
-
 ## See Also
 
 - [SDL_RectEmpty](SDL_RectEmpty)
@@ -45,15 +26,6 @@ SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 - [SDL_IntersectRectAndLine](SDL_IntersectRectAndLine)
 - [SDL_UnionRect](SDL_UnionRect)
 - [SDL_EnclosePoints](SDL_EnclosePoints)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)

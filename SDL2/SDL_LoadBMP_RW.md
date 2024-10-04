@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_Surface* SDL_LoadBMP_RW(SDL_RWops * src,
-                            int freesrc);
+                        int freesrc);
 ```
 
 ## Function Parameters
@@ -47,15 +47,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RWFromFile](SDL_RWFromFile)
 - [SDL_LoadBMP](SDL_LoadBMP)
 - [SDL_SaveBMP_RW](SDL_SaveBMP_RW)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -35,14 +35,6 @@ This variable can be set to the following values:
 - "0": SDL will allow usage of the KMSDRM backend without DRM master
 - "1": SDL Will require DRM master to use the KMSDRM backend (default)
 
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

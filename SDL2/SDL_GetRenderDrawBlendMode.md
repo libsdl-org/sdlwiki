@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GetRenderDrawBlendMode(SDL_Renderer * renderer,
-                               SDL_BlendMode *blendMode);
+                           SDL_BlendMode *blendMode);
 ```
 
 ## Function Parameters
@@ -33,15 +33,6 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

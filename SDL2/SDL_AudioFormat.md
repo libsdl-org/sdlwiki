@@ -32,31 +32,6 @@ mean... (Unspecified bits are always zero).
 
 There are macros in SDL 2.0 and later to query these bits.
 
-## Code Examples
-
-```c++
-extern SDL_AudioFormat fmt;
-if (SDL_AUDIO_ISFLOAT(fmt)) {
-    printf("floating point data\n");
-} else {
-    printf("integer data\n");
-}
-printf("%d bits per sample\n", (int) SDL_AUDIO_BITSIZE(fmt));
-```
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
-## Related Structures
-
-[SDL_AudioCVT](SDL_AudioCVT)
-[SDL_AudioSpec](SDL_AudioSpec)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)
 

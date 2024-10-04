@@ -11,12 +11,12 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
-                      SDL_AudioFormat src_format,
-                      Uint8 src_channels,
-                      int src_rate,
-                      SDL_AudioFormat dst_format,
-                      Uint8 dst_channels,
-                      int dst_rate);
+                  SDL_AudioFormat src_format,
+                  Uint8 src_channels,
+                  int src_rate,
+                  SDL_AudioFormat dst_format,
+                  Uint8 dst_channels,
+                  int dst_rate);
 ```
 
 ## Function Parameters
@@ -59,15 +59,6 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_ConvertAudio](SDL_ConvertAudio)
-
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

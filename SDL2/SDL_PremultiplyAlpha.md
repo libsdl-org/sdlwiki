@@ -11,10 +11,10 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_PremultiplyAlpha(int width, int height,
-                         Uint32 src_format,
-                         const void * src, int src_pitch,
-                         Uint32 dst_format,
-                         void * dst, int dst_pitch);
+                     Uint32 src_format,
+                     const void * src, int src_pitch,
+                     Uint32 dst_format,
+                     void * dst, int dst_pitch);
 ```
 
 ## Function Parameters
@@ -45,14 +45,6 @@ This function is currently only implemented for
 ## Version
 
 This function is available since SDL 2.0.18.
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

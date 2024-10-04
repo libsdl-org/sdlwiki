@@ -44,15 +44,6 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 - [SDL_VERSION](SDL_VERSION)
 - [SDL_GetVersion](SDL_GetVersion)
 
-
-## (This is the legacy documentation for stable SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
-
-
-
-## (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVersion](CategoryVersion)
 
