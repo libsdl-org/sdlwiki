@@ -114,8 +114,9 @@ explaining this situation.
 
 It is optimal for apps to pre-compile the shader formats they might use,
 but for ease of use SDL provides a
-[satellite single-header library](https://github.com/libsdl-org/[SDL_gpu_shadercross](SDL_gpu_shadercross)
-) for performing runtime shader cross-compilation.
+[satellite single-header library](https://github.com/libsdl-org/SDL_gpu_shadercross
+)
+for performing runtime shader cross-compilation.
 
 This is an extremely quick overview that leaves out several important
 details. Already, though, one can see that GPU programming can be quite
@@ -131,8 +132,8 @@ itself by querying feature support. If you need cutting-edge features with
 limited hardware support, this API is probably not for you.
 
 Examples demonstrating proper usage of this API can be found
-[here](https://github.com/TheSpydog/[SDL_gpu_examples](SDL_gpu_examples)
-) .
+[here](https://github.com/TheSpydog/SDL_gpu_examples)
+.
 
 <!-- END CATEGORY DOCUMENTATION -->
 
