@@ -21,7 +21,6 @@ need locks to manage thread safety. Those pieces are in [CategoryMutex](Category
 - [SDL_GetThreadName](SDL_GetThreadName)
 - [SDL_GetTLS](SDL_GetTLS)
 - [SDL_SetCurrentThreadPriority](SDL_SetCurrentThreadPriority)
-- [SDL_SetThreadPriority](SDL_SetThreadPriority)
 - [SDL_SetTLS](SDL_SetTLS)
 - [SDL_WaitThread](SDL_WaitThread)
 <!-- END CATEGORY LIST -->

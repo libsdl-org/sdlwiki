@@ -69,7 +69,6 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 <!-- BEGIN CATEGORY LIST: CategoryAPIDatatype -->
 - [SDL_AssertionHandler](SDL_AssertionHandler)
 - [SDL_AudioDeviceID](SDL_AudioDeviceID)
-- [SDL_AudioFormat](SDL_AudioFormat)
 - [SDL_AudioPostmixCallback](SDL_AudioPostmixCallback)
 - [SDL_AudioStream](SDL_AudioStream)
 - [SDL_AudioStreamCallback](SDL_AudioStreamCallback)
@@ -150,7 +149,6 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_SpinLock](SDL_SpinLock)
 - [SDL_Storage](SDL_Storage)
 - [SDL_SurfaceFlags](SDL_SurfaceFlags)
-- [SDL_Texture](SDL_Texture)
 - [SDL_Thread](SDL_Thread)
 - [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_ThreadID](SDL_ThreadID)

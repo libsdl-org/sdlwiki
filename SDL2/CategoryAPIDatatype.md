@@ -25,6 +25,5 @@
 - [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TimerID](SDL_TimerID)
-- [SDL_Window](SDL_Window)
 <!-- END CATEGORY LIST -->
 

@@ -123,7 +123,6 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 - [SDL_SetWindowMaximumSize](SDL_SetWindowMaximumSize)
 - [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
 - [SDL_SetWindowModal](SDL_SetWindowModal)
-- [SDL_SetWindowModalFor](SDL_SetWindowModalFor)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
 - [SDL_SetWindowOpacity](SDL_SetWindowOpacity)

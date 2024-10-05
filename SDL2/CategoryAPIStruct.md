@@ -82,9 +82,5 @@
 - [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc)
 - [SDL_Window](SDL_Window)
 - [SDL_WindowEvent](SDL_WindowEvent)
-- [SDLTest_SurfaceImage_s](SDLTest_SurfaceImage_s)
-- [SDLTest_TestCaseReference](SDLTest_TestCaseReference)
-- [SDLTest_TestSuiteReference](SDLTest_TestSuiteReference)
-- [SDLTest_TextWindow](SDLTest_TextWindow)
 <!-- END CATEGORY LIST -->
 

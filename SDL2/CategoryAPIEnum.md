@@ -26,7 +26,6 @@
 - [SDL_HitTestResult](SDL_HitTestResult)
 - [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel)
 - [SDL_Keymod](SDL_Keymod)
-- [SDL_LOG_CATEGORY](SDL_LOG_CATEGORY)
 - [SDL_LogCategory](SDL_LogCategory)
 - [SDL_LogPriority](SDL_LogPriority)
 - [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)

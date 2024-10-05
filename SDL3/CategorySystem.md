@@ -19,7 +19,6 @@ Platform-specific SDL API functions.
 - [SDL_GetDXGIOutputInfo](SDL_GetDXGIOutputInfo)
 - [SDL_GetGDKDefaultUser](SDL_GetGDKDefaultUser)
 - [SDL_GetGDKTaskQueue](SDL_GetGDKTaskQueue)
-- [SDL_IsAndroidTV](SDL_IsAndroidTV)
 - [SDL_IsChromebook](SDL_IsChromebook)
 - [SDL_IsDeXMode](SDL_IsDeXMode)
 - [SDL_IsTablet](SDL_IsTablet)

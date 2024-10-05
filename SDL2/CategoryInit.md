@@ -10,9 +10,7 @@
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_Quit](SDL_Quit)
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
-- [SDL_SetMainReady](SDL_SetMainReady)
 - [SDL_WasInit](SDL_WasInit)
-- [SDL_WinRTRunApp](SDL_WinRTRunApp)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
