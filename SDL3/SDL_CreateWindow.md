@@ -100,7 +100,7 @@ corresponding UnloadLibrary function is called by
 [SDL_DestroyWindow](SDL_DestroyWindow)().
 
 If [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) is specified and there isn't a
-working Vulkan driver, [SDL_CreateWindow](SDL_CreateWindow)() will fail
+working Vulkan driver, [SDL_CreateWindow](SDL_CreateWindow)() will fail,
 because [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() will fail.
 
 If [SDL_WINDOW_METAL](SDL_WINDOW_METAL) is specified on an OS that does not
