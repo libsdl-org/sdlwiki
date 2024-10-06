@@ -163,6 +163,7 @@ int main(int argc, char* argv[]) {
 
 ## See Also
 
+- [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
 - [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
