@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
-# SDL_HINT_MAC_BACKGROUND_APP
+# SDL_HINT_MAC_SCROLL_MOMENTUM
 
-A variable controlling whether to force the application to become the foreground process when launched on macOS.
+A variable controlling whether [SDL_EVENT_MOUSE_WHEEL](SDL_EVENT_MOUSE_WHEEL) event values will have momentum on macOS.
 
 ## Header File
 
@@ -10,16 +10,15 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-#define SDL_HINT_MAC_BACKGROUND_APP "SDL_MAC_BACKGROUND_APP"
+#define SDL_HINT_MAC_SCROLL_MOMENTUM "SDL_HINT_MAC_SCROLL_MOMENTUM"
 ```
 
 ## Remarks
 
 The variable can be set to the following values:
 
-- "0": The application is brought to the foreground when launched.
-  (default)
-- "1": The application may remain in the background when launched.
+- "0": The mouse wheel events will have no momentum. (default)
+- "1": The mouse wheel events will have momentum.
 
 This hint needs to be set before [SDL_Init](SDL_Init)().
 
