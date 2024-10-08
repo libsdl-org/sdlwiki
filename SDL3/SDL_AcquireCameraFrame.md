@@ -54,8 +54,8 @@ some platforms require, this will return NULL (no frames available); you
 should either wait for an
 [SDL_EVENT_CAMERA_DEVICE_APPROVED](SDL_EVENT_CAMERA_DEVICE_APPROVED) (or
 [SDL_EVENT_CAMERA_DEVICE_DENIED](SDL_EVENT_CAMERA_DEVICE_DENIED)) event, or
-poll [SDL_GetCameraPermissionState](SDL_GetCameraPermissionState)() occasionally until it
-returns non-zero.
+poll [SDL_GetCameraPermissionState](SDL_GetCameraPermissionState)()
+occasionally until it returns non-zero.
 
 ## Thread Safety
 

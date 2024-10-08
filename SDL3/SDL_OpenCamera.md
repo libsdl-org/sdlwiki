@@ -54,11 +54,11 @@ the camera, and they can choose Yes or No at that point. Until they do, the
 camera will not be usable. The app should either wait for an
 [SDL_EVENT_CAMERA_DEVICE_APPROVED](SDL_EVENT_CAMERA_DEVICE_APPROVED) (or
 [SDL_EVENT_CAMERA_DEVICE_DENIED](SDL_EVENT_CAMERA_DEVICE_DENIED)) event, or
-poll [SDL_GetCameraPermissionState](SDL_GetCameraPermissionState)() occasionally until it
-returns non-zero. On platforms that don't require explicit user approval
-(and perhaps in places where the user previously permitted access), the
-approval event might come immediately, but it might come seconds, minutes,
-or hours later!
+poll [SDL_GetCameraPermissionState](SDL_GetCameraPermissionState)()
+occasionally until it returns non-zero. On platforms that don't require
+explicit user approval (and perhaps in places where the user previously
+permitted access), the approval event might come immediately, but it might
+come seconds, minutes, or hours later!
 
 ## Thread Safety
 
