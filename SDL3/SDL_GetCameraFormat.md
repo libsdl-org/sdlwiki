@@ -35,7 +35,7 @@ some platforms require, this will return false, but this isn't necessarily
 a fatal error; you should either wait for an
 [SDL_EVENT_CAMERA_DEVICE_APPROVED](SDL_EVENT_CAMERA_DEVICE_APPROVED) (or
 [SDL_EVENT_CAMERA_DEVICE_DENIED](SDL_EVENT_CAMERA_DEVICE_DENIED)) event, or
-poll [SDL_IsCameraApproved](SDL_IsCameraApproved)() occasionally until it
+poll [SDL_GetCameraPermissionState](SDL_GetCameraPermissionState)() occasionally until it
 returns non-zero.
 
 ## Thread Safety
