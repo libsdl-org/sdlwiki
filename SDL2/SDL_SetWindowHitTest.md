@@ -11,8 +11,8 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowHitTest(SDL_Window * window,
-                     SDL_HitTest callback,
-                     void *callback_data);
+                         SDL_HitTest callback,
+                         void *callback_data);
 ```
 
 ## Function Parameters

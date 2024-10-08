@@ -11,8 +11,8 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_Window * SDL_CreateWindow(const char *title,
-                          int x, int y, int w,
-                          int h, Uint32 flags);
+                              int x, int y, int w,
+                              int h, Uint32 flags);
 ```
 
 ## Function Parameters

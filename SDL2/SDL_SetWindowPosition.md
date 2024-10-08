@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowPosition(SDL_Window * window,
-                       int x, int y);
+                           int x, int y);
 ```
 
 ## Function Parameters

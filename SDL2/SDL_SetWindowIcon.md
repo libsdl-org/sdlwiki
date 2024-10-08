@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowIcon(SDL_Window * window,
-                   SDL_Surface * icon);
+                       SDL_Surface * icon);
 ```
 
 ## Function Parameters

@@ -11,11 +11,11 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioStream * SDL_NewAudioStream(const SDL_AudioFormat src_format,
-               const Uint8 src_channels,
-               const int src_rate,
-               const SDL_AudioFormat dst_format,
-               const Uint8 dst_channels,
-               const int dst_rate);
+                   const Uint8 src_channels,
+                   const int src_rate,
+                   const SDL_AudioFormat dst_format,
+                   const Uint8 dst_channels,
+                   const int dst_rate);
 ```
 
 ## Function Parameters

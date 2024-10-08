@@ -11,7 +11,7 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 Sint16 SDL_JoystickGetAxis(SDL_Joystick *joystick,
-                       int axis);
+                           int axis);
 ```
 
 ## Function Parameters

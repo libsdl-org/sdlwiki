@@ -11,7 +11,7 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_GetEventFilter(SDL_EventFilter * filter,
-                        void **userdata);
+                            void **userdata);
 ```
 
 ## Function Parameters

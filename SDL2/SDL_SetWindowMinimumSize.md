@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowMinimumSize(SDL_Window * window,
-                          int min_w, int min_h);
+                              int min_w, int min_h);
 ```
 
 ## Function Parameters

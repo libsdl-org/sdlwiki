@@ -11,7 +11,7 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 ```c
 SDL_bool SDL_GameControllerHasButton(SDL_GameController *gamecontroller,
-                                 SDL_GameControllerButton button);
+                                     SDL_GameControllerButton button);
 ```
 
 ## Function Parameters

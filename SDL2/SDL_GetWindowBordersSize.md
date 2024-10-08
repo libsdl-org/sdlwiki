@@ -11,8 +11,8 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetWindowBordersSize(SDL_Window * window,
-                         int *top, int *left,
-                         int *bottom, int *right);
+                             int *top, int *left,
+                             int *bottom, int *right);
 ```
 
 ## Function Parameters

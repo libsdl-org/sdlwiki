@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderWindowToLogical(SDL_Renderer * renderer, 
-                                int windowX, int windowY, 
-                                float *logicalX, float *logicalY);
+                                    int windowX, int windowY, 
+                                    float *logicalX, float *logicalY);
 ```
 
 ## Function Parameters

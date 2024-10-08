@@ -11,8 +11,8 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_HapticRunEffect(SDL_Haptic * haptic,
-                    int effect,
-                    Uint32 iterations);
+                        int effect,
+                        Uint32 iterations);
 ```
 
 ## Function Parameters

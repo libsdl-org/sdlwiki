@@ -11,9 +11,9 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_IntersectFRectAndLine(const SDL_FRect *
-                               rect, float *X1,
-                               float *Y1, float *X2,
-                               float *Y2);
+                                   rect, float *X1,
+                                   float *Y1, float *X2,
+                                   float *Y2);
 ```
 
 ## Function Parameters

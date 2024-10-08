@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GetTextureColorMod(SDL_Texture * texture,
-                       Uint8 * r, Uint8 * g,
-                       Uint8 * b);
+                           Uint8 * r, Uint8 * g,
+                           Uint8 * b);
 ```
 
 ## Function Parameters

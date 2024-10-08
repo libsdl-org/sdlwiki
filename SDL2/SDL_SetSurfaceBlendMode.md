@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SetSurfaceBlendMode(SDL_Surface * surface,
-                        SDL_BlendMode blendMode);
+                            SDL_BlendMode blendMode);
 ```
 
 ## Function Parameters

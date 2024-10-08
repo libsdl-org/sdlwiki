@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawRects(SDL_Renderer * renderer,
-                    const SDL_Rect * rects,
-                    int count);
+                        const SDL_Rect * rects,
+                        int count);
 ```
 
 ## Function Parameters

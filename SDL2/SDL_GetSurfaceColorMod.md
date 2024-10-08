@@ -11,8 +11,8 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_GetSurfaceColorMod(SDL_Surface * surface,
-                       Uint8 * r, Uint8 * g,
-                       Uint8 * b);
+                           Uint8 * r, Uint8 * g,
+                           Uint8 * b);
 ```
 
 ## Function Parameters

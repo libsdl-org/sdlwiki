@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_UpdateTexture(SDL_Texture * texture,
-                  const SDL_Rect * rect,
-                  const void *pixels, int pitch);
+                      const SDL_Rect * rect,
+                      const void *pixels, int pitch);
 ```
 
 ## Function Parameters

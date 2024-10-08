@@ -11,7 +11,7 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_CondWaitTimeout(SDL_cond * cond,
-                    SDL_mutex * mutex, Uint32 ms);
+                        SDL_mutex * mutex, Uint32 ms);
 ```
 
 ## Function Parameters

@@ -11,8 +11,8 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_TimerID SDL_AddTimer(Uint32 interval,
-                     SDL_TimerCallback callback,
-                     void *param);
+                         SDL_TimerCallback callback,
+                         void *param);
 ```
 
 ## Function Parameters

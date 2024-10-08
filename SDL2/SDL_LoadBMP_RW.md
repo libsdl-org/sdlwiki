@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 SDL_Surface* SDL_LoadBMP_RW(SDL_RWops * src,
-                        int freesrc);
+                            int freesrc);
 ```
 
 ## Function Parameters

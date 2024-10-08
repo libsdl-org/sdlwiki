@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GetDisplayMode(int displayIndex, int modeIndex,
-                   SDL_DisplayMode * mode);
+                       SDL_DisplayMode * mode);
 ```
 
 ## Function Parameters

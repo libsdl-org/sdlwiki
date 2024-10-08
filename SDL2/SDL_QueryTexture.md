@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_QueryTexture(SDL_Texture * texture,
-                 Uint32 * format, int *access,
-                 int *w, int *h);
+                     Uint32 * format, int *access,
+                     int *w, int *h);
 ```
 
 ## Function Parameters

@@ -11,8 +11,8 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_UpdateWindowSurfaceRects(SDL_Window * window,
-                             const SDL_Rect * rects,
-                             int numrects);
+                                 const SDL_Rect * rects,
+                                 int numrects);
 ```
 
 ## Function Parameters

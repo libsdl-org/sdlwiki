@@ -11,7 +11,7 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 const char* SDL_GetAudioDeviceName(int index,
-                               int iscapture);
+                                   int iscapture);
 ```
 
 ## Function Parameters

@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_SetWindowDisplayMode(SDL_Window * window,
-                         const SDL_DisplayMode * mode);
+                             const SDL_DisplayMode * mode);
 ```
 
 ## Function Parameters

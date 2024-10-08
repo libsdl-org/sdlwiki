@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderGetViewport(SDL_Renderer * renderer,
-                       SDL_Rect * rect);
+                           SDL_Rect * rect);
 ```
 
 ## Function Parameters

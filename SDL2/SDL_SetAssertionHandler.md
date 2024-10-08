@@ -11,8 +11,8 @@ Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_SetAssertionHandler(
-                SDL_AssertionHandler handler,
-                void *userdata);
+                    SDL_AssertionHandler handler,
+                    void *userdata);
 ```
 
 ## Function Parameters

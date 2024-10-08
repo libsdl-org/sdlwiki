@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowTitle(SDL_Window * window,
-                    const char *title);
+                        const char *title);
 ```
 
 ## Function Parameters

@@ -11,9 +11,9 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderReadPixels(SDL_Renderer * renderer,
-                     const SDL_Rect * rect,
-                     Uint32 format,
-                     void *pixels, int pitch);
+                         const SDL_Rect * rect,
+                         Uint32 format,
+                         void *pixels, int pitch);
 ```
 
 ## Function Parameters

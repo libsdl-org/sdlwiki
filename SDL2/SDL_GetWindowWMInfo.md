@@ -11,7 +11,7 @@ Defined in [SDL_syswm.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_GetWindowWMInfo(SDL_Window * window,
-                         SDL_SysWMinfo * info);
+                             SDL_SysWMinfo * info);
 ```
 
 ## Function Parameters

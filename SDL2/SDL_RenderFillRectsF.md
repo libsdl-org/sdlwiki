@@ -11,8 +11,8 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderFillRectsF(SDL_Renderer * renderer,
-                     const SDL_FRect * rects,
-                     int count);
+                         const SDL_FRect * rects,
+                         int count);
 ```
 
 ## Function Parameters

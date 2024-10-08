@@ -11,7 +11,7 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_l
 
 ```c
 void SDL_LogSetPriority(int category,
-                    SDL_LogPriority priority);
+                        SDL_LogPriority priority);
 ```
 
 ## Function Parameters

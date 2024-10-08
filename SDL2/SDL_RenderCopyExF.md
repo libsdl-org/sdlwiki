@@ -11,12 +11,12 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderCopyExF(SDL_Renderer * renderer,
-                SDL_Texture * texture,
-                const SDL_Rect * srcrect,
-                const SDL_FRect * dstrect,
-                const double angle,
-                const SDL_FPoint *center,
-                const SDL_RendererFlip flip);
+                    SDL_Texture * texture,
+                    const SDL_Rect * srcrect,
+                    const SDL_FRect * dstrect,
+                    const double angle,
+                    const SDL_FPoint *center,
+                    const SDL_RendererFlip flip);
 ```
 
 ## Function Parameters

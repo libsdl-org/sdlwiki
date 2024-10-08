@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 void SDL_RenderGetScale(SDL_Renderer * renderer,
-                   float *scaleX, float *scaleY);
+                       float *scaleX, float *scaleY);
 ```
 
 ## Function Parameters

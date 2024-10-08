@@ -11,7 +11,7 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_OpenAudio(SDL_AudioSpec * desired,
-              SDL_AudioSpec * obtained);
+                  SDL_AudioSpec * obtained);
 ```
 
 ## Function Parameters

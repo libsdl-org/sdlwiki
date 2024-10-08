@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void SDL_SetWindowAlwaysOnTop(SDL_Window * window,
-                          SDL_bool on_top);
+                              SDL_bool on_top);
 ```
 
 ## Function Parameters

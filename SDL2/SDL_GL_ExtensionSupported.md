@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_bool SDL_GL_ExtensionSupported(const char
-                               *extension);
+                                   *extension);
 ```
 
 ## Function Parameters

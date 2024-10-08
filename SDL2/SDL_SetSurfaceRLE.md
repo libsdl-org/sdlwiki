@@ -11,7 +11,7 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 int SDL_SetSurfaceRLE(SDL_Surface * surface,
-                  int flag);
+                      int flag);
 ```
 
 ## Function Parameters

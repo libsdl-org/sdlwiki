@@ -11,9 +11,9 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 
 ```c
 SDL_bool SDL_EncloseFPoints(const SDL_FPoint * points,
-                        int count,
-                        const SDL_FRect * clip,
-                        SDL_FRect * result);
+                            int count,
+                            const SDL_FRect * clip,
+                            SDL_FRect * result);
 ```
 
 ## Function Parameters

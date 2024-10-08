@@ -11,8 +11,8 @@ Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 void* SDL_LoadFile_RW(SDL_RWops *src,
-                  size_t *datasize,
-                  int freesrc);
+                      size_t *datasize,
+                      int freesrc);
 ```
 
 ## Function Parameters

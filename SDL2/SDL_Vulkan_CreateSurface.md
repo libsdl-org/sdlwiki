@@ -11,8 +11,8 @@ Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
-                              VkInstance instance,
-                              VkSurfaceKHR* surface);
+                                  VkInstance instance,
+                                  VkSurfaceKHR* surface);
 ```
 
 ## Function Parameters

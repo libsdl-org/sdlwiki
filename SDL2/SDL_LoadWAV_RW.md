@@ -11,10 +11,10 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops * src,
-                          int freesrc,
-                          SDL_AudioSpec * spec,
-                          Uint8 ** audio_buf,
-                          Uint32 * audio_len);
+                              int freesrc,
+                              SDL_AudioSpec * spec,
+                              Uint8 ** audio_buf,
+                              Uint32 * audio_len);
 ```
 
 ## Function Parameters

@@ -11,9 +11,9 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderCopyF(SDL_Renderer * renderer,
-                SDL_Texture * texture,
-                const SDL_Rect * srcrect,
-                const SDL_FRect * dstrect);
+                    SDL_Texture * texture,
+                    const SDL_Rect * srcrect,
+                    const SDL_FRect * dstrect);
 ```
 
 ## Function Parameters

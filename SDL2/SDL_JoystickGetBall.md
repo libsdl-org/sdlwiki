@@ -11,7 +11,7 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 int SDL_JoystickGetBall(SDL_Joystick *joystick,
-                    int ball, int *dx, int *dy);
+                        int ball, int *dx, int *dy);
 ```
 
 ## Function Parameters

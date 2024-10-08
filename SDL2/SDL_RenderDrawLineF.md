@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_RenderDrawLineF(SDL_Renderer * renderer,
-                    float x1, float y1, float x2, float y2);
+                        float x1, float y1, float x2, float y2);
 ```
 
 ## Function Parameters

@@ -11,7 +11,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ```c
 int SDL_GL_MakeCurrent(SDL_Window * window,
-                   SDL_GLContext context);
+                       SDL_GLContext context);
 ```
 
 ## Function Parameters

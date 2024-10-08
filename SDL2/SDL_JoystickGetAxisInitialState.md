@@ -11,7 +11,7 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 
 ```c
 SDL_bool SDL_JoystickGetAxisInitialState(SDL_Joystick *joystick,
-                       int axis, Sint16 *state);
+                           int axis, Sint16 *state);
 ```
 
 ## Function Parameters

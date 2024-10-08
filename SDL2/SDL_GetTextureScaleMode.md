@@ -11,7 +11,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 int SDL_GetTextureScaleMode(SDL_Texture * texture,
-                        SDL_ScaleMode *scaleMode);
+                            SDL_ScaleMode *scaleMode);
 ```
 
 ## Function Parameters
