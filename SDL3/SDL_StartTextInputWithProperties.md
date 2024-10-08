@@ -35,7 +35,9 @@ window. Please use this function paired with
 
 Text input events are not received by default.
 
-On some platforms using this function shows the screen keyboard.
+On some platforms using this function shows the screen keyboard and/or
+activates an IME, which can prevent some key press events from being passed
+through.
 
 These are the supported properties:
 
