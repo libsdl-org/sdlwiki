@@ -28,10 +28,12 @@ more information.
 
 ## Remarks
 
-If `offset` is less than 0, this will return a zero width substring at the
-beginning of the text. If `offset` is greater than or equal to the length
-of the text string, this will return a zero width substring at the end of
-the text.
+If `offset` is less than 0, this will return a zero length substring at the
+beginning of the text with the
+[TTF_SUBSTRING_TEXT_START](TTF_SUBSTRING_TEXT_START) flag set. If `offset`
+is greater than or equal to the length of the text string, this will return
+a zero length substring at the end of the text with the
+[TTF_SUBSTRING_TEXT_END](TTF_SUBSTRING_TEXT_END) flag set.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
