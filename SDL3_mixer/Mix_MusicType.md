@@ -12,7 +12,6 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ```c
 typedef enum Mix_MusicType {
     MUS_NONE,
-    MUS_CMD,
     MUS_WAV,
     MUS_MOD,
     MUS_MID,
