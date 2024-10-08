@@ -30,7 +30,7 @@ bool SDL_GetWindowSafeArea(SDL_Window *window, SDL_Rect *rect);
 Some devices have portions of the screen which are partially obscured or
 not interactive, possibly due to on-screen controls, curved edges, camera
 notches, TV overscan, etc. This function provides the area of the window
-which is safe to have interactible content. You should continue rendering
+which is safe to have interactable content. You should continue rendering
 into the rest of the window, but it should not contain visually important
 or interactible content.
 

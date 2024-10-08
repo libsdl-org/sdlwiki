@@ -63,7 +63,7 @@ On iOS:
 - [`SDL_PROP_WINDOW_UIKIT_WINDOW_POINTER`](SDL_PROP_WINDOW_UIKIT_WINDOW_POINTER):
   the `(__unsafe_unretained)` UIWindow associated with the window
 - [`SDL_PROP_WINDOW_UIKIT_METAL_VIEW_TAG_NUMBER`](SDL_PROP_WINDOW_UIKIT_METAL_VIEW_TAG_NUMBER):
-  the NSInteger tag assocated with metal views on the window
+  the NSInteger tag associated with metal views on the window
 - [`SDL_PROP_WINDOW_UIKIT_OPENGL_FRAMEBUFFER_NUMBER`](SDL_PROP_WINDOW_UIKIT_OPENGL_FRAMEBUFFER_NUMBER):
   the OpenGL view's framebuffer object. It must be bound when rendering to
   the screen using OpenGL.

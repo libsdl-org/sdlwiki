@@ -31,37 +31,42 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-'flags' **must** contain exactly one of the following: -
-'[SDL_WINDOW_TOOLTIP](SDL_WINDOW_TOOLTIP)': The popup window is a tooltip
-and will not pass any input events. -
-'[SDL_WINDOW_POPUP_MENU](SDL_WINDOW_POPUP_MENU)': The popup window is a
-popup menu. The topmost popup menu will implicitly gain the keyboard focus.
+The flags parameter **must** contain at least one of the following:
+
+- [`SDL_WINDOW_TOOLTIP`](SDL_WINDOW_TOOLTIP): The popup window is a tooltip
+  and will not pass any input events.
+- [`SDL_WINDOW_POPUP_MENU`](SDL_WINDOW_POPUP_MENU): The popup window is a
+  popup menu. The topmost popup menu will implicitly gain the keyboard
+  focus.
 
 The following flags are not relevant to popup window creation and will be
 ignored:
 
-- '[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED)'
-- '[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED)'
-- '[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)'
-- '[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS)'
+- [`SDL_WINDOW_MINIMIZED`](SDL_WINDOW_MINIMIZED)
+- [`SDL_WINDOW_MAXIMIZED`](SDL_WINDOW_MAXIMIZED)
+- [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN)
+- [`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS)
+
+The following flags are incompatible with popup window creation and will
+cause it to fail:
+
+- [`SDL_WINDOW_UTILITY`](SDL_WINDOW_UTILITY)
+- [`SDL_WINDOW_MODAL`](SDL_WINDOW_MODAL)
 
 The parent parameter **must** be non-null and a valid window. The parent of
 a popup window can be either a regular, toplevel window, or another popup
 window.
 
 Popup windows cannot be minimized, maximized, made fullscreen, raised,
-flash, be made a modal window, be the parent of a modal window, or grab the
-mouse and/or keyboard. Attempts to do so will fail.
+flash, be made a modal window, be the parent of a toplevel window, or grab
+the mouse and/or keyboard. Attempts to do so will fail.
 
 Popup windows implicitly do not have a border/decorations and do not appear
 on the taskbar/dock or in lists of windows such as alt-tab menus.
 
-If a parent window is hidden, any child popup windows will be recursively
-hidden as well. Child popup windows not explicitly hidden will be restored
-when the parent is shown.
-
-If the parent window is destroyed, any child popup windows will be
-recursively destroyed as well.
+If a parent window is hidden or destroyed, any child popup windows will be
+recursively hidden or destroyed as well. Child popup windows not explicitly
+hidden will be restored when the parent is shown.
 
 ## Version
 

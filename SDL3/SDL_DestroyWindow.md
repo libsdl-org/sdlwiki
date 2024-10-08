@@ -21,8 +21,8 @@ void SDL_DestroyWindow(SDL_Window *window);
 
 ## Remarks
 
-Any popups or modal windows owned by the window will be recursively
-destroyed as well.
+Any child windows owned by the window will be recursively destroyed as
+well.
 
 ## Version
 

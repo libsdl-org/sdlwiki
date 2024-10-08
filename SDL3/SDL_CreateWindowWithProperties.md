@@ -61,7 +61,7 @@ These are the supported properties:
   true if the window will be used with OpenGL rendering
 - [`SDL_PROP_WINDOW_CREATE_PARENT_POINTER`](SDL_PROP_WINDOW_CREATE_PARENT_POINTER):
   an [SDL_Window](SDL_Window) that will be the parent of this window,
-  required for windows with the "toolip", "menu", and "modal" properties
+  required for windows with the "tooltip", "menu", and "modal" properties
 - [`SDL_PROP_WINDOW_CREATE_RESIZABLE_BOOLEAN`](SDL_PROP_WINDOW_CREATE_RESIZABLE_BOOLEAN):
   true if the window should be resizable
 - [`SDL_PROP_WINDOW_CREATE_TITLE_STRING`](SDL_PROP_WINDOW_CREATE_TITLE_STRING):
@@ -106,8 +106,8 @@ These are additional supported properties on Wayland:
   surfaces.
 - [`SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN`](SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN)
   - true if the application wants an associated `wl_egl_window` object to
-  be created, even if the window does not have the OpenGL property or flag
-  set.
+  be created and attached to the window, even if the window does not have
+  the OpenGL property or [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL) flag set.
 - [`SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER`](SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER)
   - the wl_surface associated with the window, if you want to wrap an
   existing window. See [README/wayland](README/wayland) for more

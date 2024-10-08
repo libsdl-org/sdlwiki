@@ -31,9 +31,16 @@ If the window is already the child of an existing window, it will be
 reparented to the new owner. Setting the parent window to NULL unparents
 the window and removes child window status.
 
+If a parent window is hidden or destroyed, the operation will be
+recursively applied to child windows. Child windows hidden with the parent
+that did not have their hidden status explicitly set will be restored when
+the parent is shown.
+
 Attempting to set the parent of a window that is currently in the modal
-state will fail. Use [SDL_SetWindowModalFor](SDL_SetWindowModalFor)() to
-cancel the modal status before attempting to change the parent.
+state will fail. Use [SDL_SetWindowModal](SDL_SetWindowModal)() to cancel
+the modal status before attempting to change the parent.
+
+Popup windows cannot change parents and attempts to do so will fail.
 
 Setting a parent window that is currently the sibling or descendent of the
 child window results in undefined behavior.
