@@ -51,6 +51,8 @@
 - [TTF_GetGlyphMetrics](TTF_GetGlyphMetrics)
 - [TTF_GetGlyphScript](TTF_GetGlyphScript)
 - [TTF_GetHarfBuzzVersion](TTF_GetHarfBuzzVersion)
+- [TTF_GetNextTextSubString](TTF_GetNextTextSubString)
+- [TTF_GetPreviousTextSubString](TTF_GetPreviousTextSubString)
 - [TTF_GetStringSize](TTF_GetStringSize)
 - [TTF_GetStringSizeWrapped](TTF_GetStringSizeWrapped)
 - [TTF_GetTextEngine](TTF_GetTextEngine)
