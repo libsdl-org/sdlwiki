@@ -108,6 +108,7 @@ in doubt, consult the documentation for details.
 - [SDL_sqrt](SDL_sqrt)
 - [SDL_sqrtf](SDL_sqrtf)
 - [SDL_srand](SDL_srand)
+- [SDL_StepBackUTF8](SDL_StepBackUTF8)
 - [SDL_StepUTF8](SDL_StepUTF8)
 - [SDL_strcasecmp](SDL_strcasecmp)
 - [SDL_strcmp](SDL_strcmp)

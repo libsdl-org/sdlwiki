@@ -1042,6 +1042,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_srand](SDL_srand)
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StartTextInputWithProperties](SDL_StartTextInputWithProperties)
+- [SDL_StepBackUTF8](SDL_StepBackUTF8)
 - [SDL_StepUTF8](SDL_StepUTF8)
 - [SDL_StopHapticEffect](SDL_StopHapticEffect)
 - [SDL_StopHapticEffects](SDL_StopHapticEffects)
