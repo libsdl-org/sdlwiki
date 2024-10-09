@@ -15,8 +15,9 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Remarks
 
-[SDL_StepUTF8](SDL_StepUTF8)() reports this codepoint when it encounters a
-UTF-8 string with encoding errors.
+[SDL_StepUTF8](SDL_StepUTF8)() and [SDL_StepBackUTF8](SDL_StepBackUTF8)()
+report this codepoint when they encounter a UTF-8 string with encoding
+errors.
 
 This tends to render as something like a question mark in most places.
 
@@ -26,6 +27,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_StepBackUTF8](SDL_StepBackUTF8)
 - [SDL_StepUTF8](SDL_StepUTF8)
 
 ----
