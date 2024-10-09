@@ -11,9 +11,6 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 
 ```c
 SDL_PropertiesID TTF_GetFontProperties(TTF_Font *font);
-
-
-#define TTF_PROP_FONT_FACE_POINTER                      "SDL_ttf.font.face"
 ```
 
 ## Function Parameters
@@ -26,13 +23,6 @@ SDL_PropertiesID TTF_GetFontProperties(TTF_Font *font);
 
 (SDL_PropertiesID) Returns a valid property ID on success or 0 on failure;
 call SDL_GetError() for more information.
-
-## Remarks
-
-The following read-only properties are provided by SDL:
-
-- [`TTF_PROP_FONT_FACE_POINTER`](TTF_PROP_FONT_FACE_POINTER): the FT_Face
-  associated with the font.
 
 ## Thread Safety
 
