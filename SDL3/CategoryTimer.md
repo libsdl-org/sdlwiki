@@ -12,6 +12,7 @@ SDL time management routines.
 - [SDL_AddTimerNS](SDL_AddTimerNS)
 - [SDL_Delay](SDL_Delay)
 - [SDL_DelayNS](SDL_DelayNS)
+- [SDL_DelayPrecise](SDL_DelayPrecise)
 - [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 - [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
 - [SDL_GetTicks](SDL_GetTicks)
