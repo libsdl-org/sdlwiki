@@ -27,7 +27,7 @@ bool SDL_MinimizeWindow(SDL_Window *window);
 ## Remarks
 
 On some windowing systems this request is asynchronous and the new window
-state may not have have been applied immediately upon the return of this
+state may not have been applied immediately upon the return of this
 function. If an immediate change is required, call
 [SDL_SyncWindow](SDL_SyncWindow)() to block until the changes have taken
 effect.
