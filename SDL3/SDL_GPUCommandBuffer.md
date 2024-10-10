@@ -26,9 +26,7 @@ Command buffers are executed in submission order. If you submit command
 buffer A and then command buffer B all commands in A will begin executing
 before any command in B begins executing.
 
-In multi-threading scenarios, you should acquire and submit a command
-buffer on the same thread. As long as you satisfy this requirement, all
-functionality related to command buffers is thread-safe.
+In multi-threading scenarios, you should only access a command buffer on the thread you acquired it from.
 
 ## Version
 
