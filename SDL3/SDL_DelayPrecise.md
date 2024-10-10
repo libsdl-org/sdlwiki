@@ -1,5 +1,5 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
-# SDL_DelayNS
+# SDL_DelayPrecise
 
 Wait a specified number of nanoseconds before returning.
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void SDL_DelayNS(Uint64 ns);
+void SDL_DelayPrecise(Uint64 ns);
 ```
 
 ## Function Parameters
@@ -22,12 +22,12 @@ void SDL_DelayNS(Uint64 ns);
 ## Remarks
 
 This function waits a specified number of nanoseconds before returning. It
-waits at least the specified time, but possibly longer due to OS
-scheduling.
+will attempt to wait as close to the requested time as possible, busy
+waiting if necessary, but could return later due to OS scheduling.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.5.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
