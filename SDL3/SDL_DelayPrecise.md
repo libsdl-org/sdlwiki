@@ -27,7 +27,7 @@ waiting if necessary, but could return later due to OS scheduling.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.4.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
