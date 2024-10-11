@@ -41,6 +41,42 @@ halt enumeration, or all directory entries were enumerated.
 
 This function is available since SDL 3.0.0.
 
+## Code Examples
+
+```c
+// Example program
+// Use SDL3 to enumerate all directories in title storage
+
+#include <SDL3/SDL_log.h>
+#include <SDL3/SDL_main.h>
+#include <SDL3/SDL_storage.h>
+
+
+SDL_EnumerationResult
+my_enumerate_dir_callback(void *userdata, const char* dirname, const char* fname)
+{
+    SDL_Log("dirname: %s | fname: %s");
+    return SDL_ENUM_CONTINUE;
+}
+
+int
+main(int argc, char** argv)
+{
+    SDL_Storage *storage = SDL_OpenTitleStorage("", 0);
+    if(storage == NULL) {
+        SDL_Log("Unable to open storage %s", SDL_GetError());
+    }
+
+    if(!SDL_EnumerateStorageDirectory(storage, ".", my_enumerate_dir_callback, NULL)) {
+        SDL_Log("There was a system problem or the callback indicated failure.");
+    } else {
+        SDL_Log("All directories enumerated or the callback halted enumeration.");
+    }
+
+    return 0;
+}
+```
+
 ## See Also
 
 - [SDL_StorageReady](SDL_StorageReady)
