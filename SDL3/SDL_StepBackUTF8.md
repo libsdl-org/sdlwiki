@@ -29,7 +29,7 @@ Uint32 SDL_StepBackUTF8(const char *start, const char **pstr);
 This will go to the start of the previous Unicode codepoint in the string,
 move `*pstr` to that location and return that codepoint.
 
-If `*pstr` is already at the start of the string, it will not advance 
+If `*pstr` is already at the start of the string), it will not advance
 `*pstr` at all.
 
 Generally this function is called in a loop until it returns zero,
