@@ -63,9 +63,12 @@ reports an error to the platform. If it returns
 [SDL_APP_SUCCESS](SDL_APP_SUCCESS), SDL calls [SDL_AppQuit](SDL_AppQuit)
 and terminates with an exit code that reports success to the platform.
 
+This function is called by SDL on the main thread.
+
 ## Thread Safety
 
-This function is not thread safe.
+This function may get called concurrently with
+[SDL_AppEvent](SDL_AppEvent)() for events not pushed on the main thread.
 
 ## Version
 

@@ -41,7 +41,8 @@ from; whatever thread pushes an event onto SDL's queue will trigger this
 function. SDL is responsible for pumping the event queue between each call
 to [SDL_AppIterate](SDL_AppIterate), so in normal operation one should only
 get events in a serial fashion, but be careful if you have a thread that
-explicitly calls [SDL_PushEvent](SDL_PushEvent).
+explicitly calls [SDL_PushEvent](SDL_PushEvent). SDL itself will push
+events to the queue on the main thread.
 
 Events sent to this function are not owned by the app; if you need to save
 the data, you should copy it.
@@ -65,7 +66,9 @@ and terminates with an exit code that reports success to the platform.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function may get called concurrently with
+[SDL_AppIterate](SDL_AppIterate)() or [SDL_AppQuit](SDL_AppQuit)() for
+events not pushed from the main thread.
 
 ## Version
 

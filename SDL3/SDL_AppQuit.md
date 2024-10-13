@@ -44,9 +44,12 @@ The `appstate` parameter is an optional pointer provided by the app during
 will be NULL. This function call is the last time this pointer will be
 provided, so any resources to it should be cleaned up here.
 
+This function is called by SDL on the main thread.
+
 ## Thread Safety
 
-This function is not thread safe.
+[SDL_AppEvent](SDL_AppEvent)() may get called concurrently with this
+function if other threads that push events are still active.
 
 ## Version
 
