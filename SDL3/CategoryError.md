@@ -34,6 +34,7 @@ through.
 - [SDL_GetError](SDL_GetError)
 - [SDL_OutOfMemory](SDL_OutOfMemory)
 - [SDL_SetError](SDL_SetError)
+- [SDL_SetErrorV](SDL_SetErrorV)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes

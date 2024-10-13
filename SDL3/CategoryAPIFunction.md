@@ -925,6 +925,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_setenv_unsafe](SDL_setenv_unsafe)
 - [SDL_SetEnvironmentVariable](SDL_SetEnvironmentVariable)
 - [SDL_SetError](SDL_SetError)
+- [SDL_SetErrorV](SDL_SetErrorV)
 - [SDL_SetEventEnabled](SDL_SetEventEnabled)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_SetFloatProperty](SDL_SetFloatProperty)
