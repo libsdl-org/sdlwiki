@@ -30,7 +30,7 @@ Calling this function will replace any previous error message that was set.
 
 ## Version
 
-This function is available since SDL 3.1.6.
+This function is available since SDL 3.1.4.
 
 ## See Also
 
