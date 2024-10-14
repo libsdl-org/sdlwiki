@@ -56,6 +56,7 @@ to look at the Macros section [in a specific category](APIByCategory) instead.
 - [SDL_CompilerBarrier](SDL_CompilerBarrier)
 - [SDL_const_cast](SDL_const_cast)
 - [SDL_CPUPauseInstruction](SDL_CPUPauseInstruction)
+- [SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE](SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE)
 - [SDL_FLT_EPSILON](SDL_FLT_EPSILON)
 - [SDL_FOURCC](SDL_FOURCC)
 - [SDL_FUNCTION_POINTER_IS_VOID_POINTER](SDL_FUNCTION_POINTER_IS_VOID_POINTER)
