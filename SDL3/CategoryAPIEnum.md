@@ -87,6 +87,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_ProcessIO](SDL_ProcessIO)
 - [SDL_PropertyType](SDL_PropertyType)
 - [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation)
+- [SDL_Sandbox](SDL_Sandbox)
 - [SDL_ScaleMode](SDL_ScaleMode)
 - [SDL_Scancode](SDL_Scancode)
 - [SDL_SensorType](SDL_SensorType)

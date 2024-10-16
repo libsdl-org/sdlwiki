@@ -495,6 +495,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetRevision](SDL_GetRevision)
 - [SDL_GetRGB](SDL_GetRGB)
 - [SDL_GetRGBA](SDL_GetRGBA)
+- [SDL_GetSandbox](SDL_GetSandbox)
 - [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 - [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 - [SDL_GetScancodeName](SDL_GetScancodeName)
