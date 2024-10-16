@@ -18,6 +18,8 @@ Pixel management.
 - [SDL_GetRGBA](SDL_GetRGBA)
 - [SDL_MapRGB](SDL_MapRGB)
 - [SDL_MapRGBA](SDL_MapRGBA)
+- [SDL_MapSurfaceRGB](SDL_MapSurfaceRGB)
+- [SDL_MapSurfaceRGBA](SDL_MapSurfaceRGBA)
 - [SDL_SetPaletteColors](SDL_SetPaletteColors)
 <!-- END CATEGORY LIST -->
 
