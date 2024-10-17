@@ -10,12 +10,12 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-void * SDL_GetAndroidJNIEnv(void);
+JNIEnv * SDL_GetAndroidJNIEnv(void);
 ```
 
 ## Return Value
 
-(void *) Returns a pointer to Java native interface object (JNIEnv) to
+(JNIEnv *) Returns a pointer to Java native interface object (JNIEnv) to
 which the current thread is attached, or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
