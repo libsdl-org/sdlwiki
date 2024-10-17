@@ -110,7 +110,7 @@ See [README/android](README/android) for details on building.
 If you want to build SDL on your Raspberry Pi directly, just build it "the Unix way," as the RPi is, more or less, a standard Linux system. It can be built with X11 support, Wayland support, and also can do OpenGL ES rendering directly to the screen without an display server, via kmsdrm, to save resources.
 
 
-### Emscripten ===
+### Emscripten
 
 SDL3 can be built with [Emscripten](https://emscripten.org/), so you can compile your SDL3-based C/C++ application to WebAssembly, and render with OpenGL ES (which becomes WebGL calls in the end).
 
