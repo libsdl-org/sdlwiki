@@ -62,7 +62,7 @@ Thread_A:
     bool done = false;
     while (!done) {
         SDL_LockMutex(lock);
-        while (!condition && SDL_WaitConditionTimeout(cond, lock, timeout) == 0) {
+        while (!condition && !SDL_WaitConditionTimeout(cond, lock, timeout)) {
             continue;
         }
         SDL_UnlockMutex(lock);
