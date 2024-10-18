@@ -90,6 +90,11 @@ On macOS:
 - [`SDL_PROP_WINDOW_COCOA_METAL_VIEW_TAG_NUMBER`](SDL_PROP_WINDOW_COCOA_METAL_VIEW_TAG_NUMBER):
   the NSInteger tag assocated with metal views on the window
 
+On OpenVR:
+
+- [`SDL_PROP_WINDOW_OPENVR_OVERLAY_ID`](SDL_PROP_WINDOW_OPENVR_OVERLAY_ID):
+  the OpenVR Overlay Handle ID for the associated overlay window.
+
 On Vivante:
 
 - [`SDL_PROP_WINDOW_VIVANTE_DISPLAY_POINTER`](SDL_PROP_WINDOW_VIVANTE_DISPLAY_POINTER):
