@@ -29,12 +29,8 @@ failure; call SDL_GetError() for more information.
 
 ## Remarks
 
-This will not word-wrap the string; you'll get a surface with a single line
-of text, as long as the string requires. You can use
-[TTF_CreateText_Wrapped](TTF_CreateText_Wrapped)() instead if you need to
-wrap the output to multiple lines.
-
-This will not wrap on newline characters.
+This function is equivalent to `TTF_CreateText_Wrapped(engine, font, text,
+0)` and will wrap on newline characters.
 
 ## Thread Safety
 

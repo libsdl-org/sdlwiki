@@ -26,6 +26,14 @@ When a text object has a font, any changes to the font will automatically
 regenerate the text. If you set the font to NULL, the text will continue to
 render but changes to the font will no longer affect the text.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

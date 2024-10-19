@@ -31,6 +31,14 @@ more information.
 
 This will return the closest substring of text to the given point.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

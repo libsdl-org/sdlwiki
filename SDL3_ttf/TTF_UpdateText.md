@@ -30,6 +30,14 @@ This is automatically done when the layout is requested or the text is
 rendered, but you can call this if you need more control over the timing of
 when the layout and text engine representation are updated.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

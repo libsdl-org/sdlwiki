@@ -29,6 +29,14 @@ substring pointers or NULL on failure; call SDL_GetError() for more
 information. This is a single allocation that should be freed with
 SDL_free() when it is no longer needed.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

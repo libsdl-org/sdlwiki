@@ -24,9 +24,13 @@ SDL_PropertiesID TTF_GetTextProperties(TTF_Text *text);
 (SDL_PropertiesID) Returns a valid property ID on success or 0 on failure;
 call SDL_GetError() for more information.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

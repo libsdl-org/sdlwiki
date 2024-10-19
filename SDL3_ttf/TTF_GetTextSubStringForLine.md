@@ -35,6 +35,14 @@ greater than or equal to `text->num_lines` this will return a zero length
 substring at the end of the text with the
 [TTF_SUBSTRING_TEXT_END](TTF_SUBSTRING_TEXT_END) flag set.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

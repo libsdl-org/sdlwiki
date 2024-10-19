@@ -24,6 +24,14 @@ TTF_Font * TTF_GetTextFont(TTF_Text *text);
 ([TTF_Font](TTF_Font) *) Returns the [TTF_Font](TTF_Font) used by the text
 on success or NULL on failure; call SDL_GetError() for more information.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -31,6 +31,14 @@ more information.
 If called at the end of the text, this will return a zero length substring
 with the [TTF_SUBSTRING_TEXT_END](TTF_SUBSTRING_TEXT_END) flag set.
 
+## Thread Safety
+
+This function should be called on the thread that created the text.
+
+## Version
+
+This function is available since SDL_ttf 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
