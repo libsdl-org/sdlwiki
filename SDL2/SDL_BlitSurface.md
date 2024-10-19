@@ -2,6 +2,7 @@
 # SDL_BlitSurface
 
 Performs a fast blit from the source surface to the destination surface.
+This is defined as a macro to [SDL_UpperBlit](SDL_UpperBlit) to be less confusing.
 
 ## Header File
 
@@ -11,6 +12,12 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 #define SDL_BlitSurface SDL_UpperBlit
+```
+Processes to:
+```c
+int SDL_UpperBlit
+    (SDL_Surface * src, const SDL_Rect * srcrect,
+     SDL_Surface * dst, SDL_Rect * dstrect);
 ```
 
 ## Return Value
@@ -29,45 +36,43 @@ The blit function should not be called on a locked surface.
 The blit semantics for surfaces with and without blending and colorkey are
 defined as follows:
 
-```
-  RGBA->RGB:
-    Source surface blend mode set to SDL_BLENDMODE_BLEND:
-      alpha-blend (using the source alpha-channel and per-surface alpha)
-      SDL_SRCCOLORKEY ignored.
-    Source surface blend mode set to SDL_BLENDMODE_NONE:
-      copy RGB.
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
-      RGB values of the source color key, ignoring alpha in the
-      comparison.
+## RGBA to RGB:
+- Source surface blend mode set to SDL_BLENDMODE_BLEND:
+  * alpha-blend (using the source alpha-channel and per-surface alpha)
+SDL_SRCCOLORKEY ignored.
+- Source surface blend mode set to SDL_BLENDMODE_NONE:
+  * copy RGB.
+  * if SDL_SRCCOLORKEY set, only copy the pixels matching the
+RGB values of the source color key, ignoring alpha in the
+comparison.
 
-  RGB->RGBA:
-    Source surface blend mode set to SDL_BLENDMODE_BLEND:
-      alpha-blend (using the source per-surface alpha)
-    Source surface blend mode set to SDL_BLENDMODE_NONE:
-      copy RGB, set destination alpha to source per-surface alpha value.
-    both:
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
-      source color key.
+## RGB to RGBA:
+- Source surface blend mode set to SDL_BLENDMODE_BLEND:
+  * alpha-blend (using the source per-surface alpha)
+- Source surface blend mode set to SDL_BLENDMODE_NONE:
+  * copy RGB, set destination alpha to source per-surface alpha value.
+- both:
+  * if SDL_SRCCOLORKEY set, only copy the pixels matching the
+source color key.
 
-  RGBA->RGBA:
-    Source surface blend mode set to SDL_BLENDMODE_BLEND:
-      alpha-blend (using the source alpha-channel and per-surface alpha)
-      SDL_SRCCOLORKEY ignored.
-    Source surface blend mode set to SDL_BLENDMODE_NONE:
-      copy all of RGBA to the destination.
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
-      RGB values of the source color key, ignoring alpha in the
-      comparison.
+## RGBA to RGBA:
+- Source surface blend mode set to SDL_BLENDMODE_BLEND:
+  * alpha-blend (using the source alpha-channel and per-surface alpha)
+  * SDL_SRCCOLORKEY ignored.
+- Source surface blend mode set to SDL_BLENDMODE_NONE:
+  * copy all of RGBA to the destination.
+  * if SDL_SRCCOLORKEY set, only copy the pixels matching the
+RGB values of the source color key, ignoring alpha in the
+comparison.
 
-  RGB->RGB:
-    Source surface blend mode set to SDL_BLENDMODE_BLEND:
-      alpha-blend (using the source per-surface alpha)
-    Source surface blend mode set to SDL_BLENDMODE_NONE:
-      copy RGB.
-    both:
-      if SDL_SRCCOLORKEY set, only copy the pixels matching the
-      source color key.
-```
+## RGB to RGB:
+- Source surface blend mode set to SDL_BLENDMODE_BLEND:
+  * alpha-blend (using the source per-surface alpha)
+- Source surface blend mode set to SDL_BLENDMODE_NONE:
+  * copy RGB.
+- both:
+  * if SDL_SRCCOLORKEY set, only copy the pixels matching the
+source color key.
 
 You should call [SDL_BlitSurface](SDL_BlitSurface)() unless you know
 exactly how SDL blitting works internally and how to use the other blit
