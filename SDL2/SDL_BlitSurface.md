@@ -2,7 +2,6 @@
 # SDL_BlitSurface
 
 Performs a fast blit from the source surface to the destination surface.
-This is defined as a macro to [SDL_UpperBlit](SDL_UpperBlit) to be less confusing.
 
 ## Header File
 
@@ -13,12 +12,6 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 ```c
 #define SDL_BlitSurface SDL_UpperBlit
 ```
-Processes to:
-```c
-int SDL_UpperBlit
-    (SDL_Surface * src, const SDL_Rect * srcrect,
-     SDL_Surface * dst, SDL_Rect * dstrect);
-```
 
 ## Return Value
 
@@ -26,10 +19,11 @@ Returns 0 if the blit is successful, otherwise it returns -1.
 
 ## Remarks
 
-This assumes that the source and destination rectangles are the same size.
-If either `srcrect` or `dstrect` are NULL, the entire surface (`src` or
-`dst`) is copied. The final blit rectangles are saved in `srcrect` and
-`dstrect` after all clipping is performed.
+This is defined as a macro to [SDL_UpperBlit](SDL_UpperBlit) to be less
+confusing.This assumes that the source and destination rectangles are the
+same size. If either `srcrect` or `dstrect` are NULL, the entire surface
+(`src` or `dst`) is copied. The final blit rectangles are saved in
+`srcrect` and `dstrect` after all clipping is performed.
 
 The blit function should not be called on a locked surface.
 
@@ -37,6 +31,7 @@ The blit semantics for surfaces with and without blending and colorkey are
 defined as follows:
 
 ## RGBA to RGB:
+
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source alpha-channel and per-surface alpha)
 SDL_SRCCOLORKEY ignored.
@@ -47,6 +42,7 @@ RGB values of the source color key, ignoring alpha in the
 comparison.
 
 ## RGB to RGBA:
+
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source per-surface alpha)
 - Source surface blend mode set to SDL_BLENDMODE_NONE:
@@ -56,6 +52,7 @@ comparison.
 source color key.
 
 ## RGBA to RGBA:
+
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source alpha-channel and per-surface alpha)
   * SDL_SRCCOLORKEY ignored.
@@ -66,6 +63,7 @@ RGB values of the source color key, ignoring alpha in the
 comparison.
 
 ## RGB to RGB:
+
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source per-surface alpha)
 - Source surface blend mode set to SDL_BLENDMODE_NONE:
