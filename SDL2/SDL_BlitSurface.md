@@ -30,7 +30,7 @@ The blit function should not be called on a locked surface.
 The blit semantics for surfaces with and without blending and colorkey are
 defined as follows:
 
-## RGBA to RGB:
+RGBA to RGB:
 
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source alpha-channel and per-surface alpha)
@@ -41,7 +41,7 @@ SDL_SRCCOLORKEY ignored.
 RGB values of the source color key, ignoring alpha in the
 comparison.
 
-## RGB to RGBA:
+RGB to RGBA:
 
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source per-surface alpha)
@@ -51,7 +51,7 @@ comparison.
   * if SDL_SRCCOLORKEY set, only copy the pixels matching the
 source color key.
 
-## RGBA to RGBA:
+RGBA to RGBA:
 
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source alpha-channel and per-surface alpha)
@@ -62,7 +62,7 @@ source color key.
 RGB values of the source color key, ignoring alpha in the
 comparison.
 
-## RGB to RGB:
+RGB to RGB:
 
 - Source surface blend mode set to SDL_BLENDMODE_BLEND:
   * alpha-blend (using the source per-surface alpha)
