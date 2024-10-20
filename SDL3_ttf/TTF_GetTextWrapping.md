@@ -33,6 +33,10 @@ This function should be called on the thread that created the text.
 
 This function is available since SDL_ttf 3.0.0.
 
+## See Also
+
+- [TTF_SetTextWrapping](TTF_SetTextWrapping)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

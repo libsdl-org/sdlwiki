@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetTextEngine
+# TTF_TextWrapWhitespaceVisible
 
-Get the text engine used by a text object.
+Return whether whitespace is shown when wrapping a text object.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-TTF_TextEngine * TTF_GetTextEngine(TTF_Text *text);
+bool TTF_TextWrapWhitespaceVisible(TTF_Text *text);
 ```
 
 ## Function Parameters
@@ -21,9 +21,8 @@ TTF_TextEngine * TTF_GetTextEngine(TTF_Text *text);
 
 ## Return Value
 
-([TTF_TextEngine](TTF_TextEngine) *) Returns the
-[TTF_TextEngine](TTF_TextEngine) used by the text on success or NULL on
-failure; call SDL_GetError() for more information.
+(bool) Returns true if whitespace is shown when wrapping text, or false
+otherwise.
 
 ## Thread Safety
 
@@ -35,7 +34,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-- [TTF_SetTextEngine](TTF_SetTextEngine)
+- [TTF_SetTextWrapWhitespaceVisible](TTF_SetTextWrapWhitespaceVisible)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -35,6 +35,12 @@ This function should be called on the thread that created the text.
 
 This function is available since SDL_ttf 3.0.0.
 
+## See Also
+
+- [TTF_AppendTextString](TTF_AppendTextString)
+- [TTF_DeleteTextString](TTF_DeleteTextString)
+- [TTF_SetTextString](TTF_SetTextString)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
