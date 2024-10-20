@@ -34,6 +34,11 @@ https://developer.android.com/reference/android/content/Context#getCacheDir()
 
 This function is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_GetAndroidInternalStoragePath](SDL_GetAndroidInternalStoragePath)
+- [SDL_GetAndroidExternalStoragePath](SDL_GetAndroidExternalStoragePath)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 
