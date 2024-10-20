@@ -42,7 +42,7 @@ extern void *significant_data;
 extern void *some_other_data;
 
 const Uint32 myEventType = SDL_RegisterEvents(1);
-if (myEventType != ((Uint32)-1)) {
+if (myEventType != 0) {
     SDL_Event event;
     SDL_zero(event);
     event.type = myEventType;
