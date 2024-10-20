@@ -15,10 +15,10 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name);
 
 ## Function Parameters
 
-|                            |            |                                                                                                                     |
-| -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window where rendering is displayed.                                                                            |
-| const char *               | **name**   | the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags. |
+|                            |            |                                                                                |
+| -------------------------- | ---------- | ------------------------------------------------------------------------------ |
+| [SDL_Window](SDL_Window) * | **window** | the window where rendering is displayed.                                       |
+| const char *               | **name**   | the name of the rendering driver to initialize, or NULL to let SDL choose one. |
 
 ## Return Value
 
@@ -30,7 +30,7 @@ information.
 
 If you want a specific renderer, you can specify its name here. A list of
 available renderers can be obtained by calling
-[SDL_GetRenderDriver](SDL_GetRenderDriver) multiple times, with indices
+[SDL_GetRenderDriver](SDL_GetRenderDriver)() multiple times, with indices
 from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)()-1. If you
 don't need a specific renderer, specify NULL and SDL will attempt to choose
 the best option for you, based on what is available on the user's system.
