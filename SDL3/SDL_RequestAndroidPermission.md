@@ -45,6 +45,10 @@ will NOT be called, but this should only happen in catastrophic conditions,
 like memory running out. Normally there will be a yes or no to the request
 through the callback.
 
+For the `permission` parameter, choose a value from here:
+
+https://developer.android.com/reference/android/Manifest.permission
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
