@@ -27,11 +27,6 @@ TTF_Text * TTF_CreateText(TTF_TextEngine *engine, TTF_Font *font, const char *te
 ([TTF_Text](TTF_Text) *) Returns a [TTF_Text](TTF_Text) object or NULL on
 failure; call SDL_GetError() for more information.
 
-## Remarks
-
-This function is equivalent to `TTF_CreateText_Wrapped(engine, font, text,
-0)` and will wrap on newline characters.
-
 ## Thread Safety
 
 This function should be called on the thread that created the font and text
@@ -43,7 +38,6 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-- [TTF_CreateText_Wrapped](TTF_CreateText_Wrapped)
 - [TTF_DestroyText](TTF_DestroyText)
 
 ----

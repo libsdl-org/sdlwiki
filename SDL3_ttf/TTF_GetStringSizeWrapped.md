@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_GetStringSizeWrapped(TTF_Font *font, const char *text, size_t length, int wrapLength, int *w, int *h);
+bool TTF_GetStringSizeWrapped(TTF_Font *font, const char *text, size_t length, int wrap_width, int *w, int *h);
 ```
 
 ## Function Parameters
@@ -20,7 +20,7 @@ bool TTF_GetStringSizeWrapped(TTF_Font *font, const char *text, size_t length, i
 | [TTF_Font](TTF_Font) * | **font**       | the font to query.                                               |
 | const char *           | **text**       | text to calculate, in UTF-8 encoding.                            |
 | size_t                 | **length**     | the length of the text, in bytes, or 0 for null terminated text. |
-| int                    | **wrapLength** | the maximum width or 0 to wrap on newline characters.            |
+| int                    | **wrap_width** | the maximum width or 0 to wrap on newline characters.            |
 | int *                  | **w**          | will be filled with width, in pixels, on return.                 |
 | int *                  | **h**          | will be filled with height, in pixels, on return.                |
 
@@ -35,9 +35,9 @@ This will report the width and height, in pixels, of the space that the
 specified string will take to fully render.
 
 Text is wrapped to multiple lines on line endings and on word boundaries if
-it extends beyond `wrapLength` in pixels.
+it extends beyond `wrap_width` in pixels.
 
-If wrapLength is 0, this function will only wrap on newline characters.
+If wrap_width is 0, this function will only wrap on newline characters.
 
 ## Thread Safety
 

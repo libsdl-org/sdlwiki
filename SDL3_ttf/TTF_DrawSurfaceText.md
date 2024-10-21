@@ -44,7 +44,6 @@ This function is available since SDL_ttf 3.0.0.
 
 - [TTF_CreateSurfaceTextEngine](TTF_CreateSurfaceTextEngine)
 - [TTF_CreateText](TTF_CreateText)
-- [TTF_CreateText_Wrapped](TTF_CreateText_Wrapped)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
