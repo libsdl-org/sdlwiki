@@ -39,6 +39,9 @@ covers all XInput devices. The mapping format for joystick is:
 
 Buttons can be used as a gamepad axes and vice versa.
 
+If a device with this GUID is already plugged in, SDL will generate an
+[SDL_EVENT_GAMEPAD_ADDED](SDL_EVENT_GAMEPAD_ADDED) event.
+
 This string shows an example of a valid mapping for a gamepad:
 
 ```c
@@ -55,8 +58,13 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
+- [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
+- [SDL_AddGamepadMappingsFromIO](SDL_AddGamepadMappingsFromIO)
 - [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
 - [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
+- [SDL_HINT_GAMECONTROLLERCONFIG](SDL_HINT_GAMECONTROLLERCONFIG)
+- [SDL_HINT_GAMECONTROLLERCONFIG_FILE](SDL_HINT_GAMECONTROLLERCONFIG_FILE)
+- [SDL_EVENT_GAMEPAD_ADDED](SDL_EVENT_GAMEPAD_ADDED)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

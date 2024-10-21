@@ -33,6 +33,9 @@ database files.
 If a new mapping is loaded for an already known gamepad GUID, the later
 version will overwrite the one currently loaded.
 
+Any new mappings for already plugged in controllers will generate
+[SDL_EVENT_GAMEPAD_ADDED](SDL_EVENT_GAMEPAD_ADDED) events.
+
 Mappings not belonging to the current platform or with no platform field
 specified will be ignored (i.e. mappings for Linux will be ignored in
 Windows, etc).
@@ -55,6 +58,9 @@ This function is available since SDL 3.0.0.
 - [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
 - [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
 - [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
+- [SDL_HINT_GAMECONTROLLERCONFIG](SDL_HINT_GAMECONTROLLERCONFIG)
+- [SDL_HINT_GAMECONTROLLERCONFIG_FILE](SDL_HINT_GAMECONTROLLERCONFIG_FILE)
+- [SDL_EVENT_GAMEPAD_ADDED](SDL_EVENT_GAMEPAD_ADDED)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
