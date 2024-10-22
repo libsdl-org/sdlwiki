@@ -19,6 +19,10 @@ int SDL_GetNumLogicalCPUCores(void);
 technologies such as hyperthreading, the number of logical cores may be
 more than the number of physical cores.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -50,9 +50,9 @@ int SDLCALL compare(const void *userdata, const void *a, const void *b)
     const data *A = (const data *)a;
     const data *B = (const data *)b;
 
-    if (A->n < B->n) {
+    if (A->key < B->key) {
         return (method == sort_increasing) ? -1 : 1;
-    } else if (B->n < A->n) {
+    } else if (B->key < A->key) {
         return (method == sort_increasing) ? 1 : -1;
     } else {
         return 0;
@@ -66,6 +66,10 @@ data key = { 2, NULL };
 
 data *result = SDL_bsearch_r(&key, values, SDL_arraysize(values), sizeof(values[0]), compare, (const void *)(uintptr_t)sort_increasing);
 ```
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

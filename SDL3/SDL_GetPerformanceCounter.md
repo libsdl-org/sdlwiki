@@ -25,6 +25,10 @@ The counter values are only meaningful relative to each other. Differences
 between values can be converted to times by using
 [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)().
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

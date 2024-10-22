@@ -23,6 +23,10 @@ This is different from ARM NEON, which is a different instruction set.
 
 This always returns false on CPUs that aren't using ARM instruction sets.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

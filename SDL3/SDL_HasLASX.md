@@ -22,6 +22,10 @@ bool SDL_HasLASX(void);
 This always returns false on CPUs that aren't using LOONGARCH instruction
 sets.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

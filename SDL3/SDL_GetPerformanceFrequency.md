@@ -17,6 +17,10 @@ Uint64 SDL_GetPerformanceFrequency(void);
 
 (Uint64) Returns a platform-specific count per second.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

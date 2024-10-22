@@ -25,6 +25,10 @@ This function waits a specified number of nanoseconds before returning. It
 will attempt to wait as close to the requested time as possible, busy
 waiting if necessary, but could return later due to OS scheduling.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.4.

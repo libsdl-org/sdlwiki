@@ -60,6 +60,10 @@ data key = { 2, NULL };
 data *result = SDL_bsearch(&key, values, SDL_arraysize(values), sizeof(values[0]), compare);
 ```
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

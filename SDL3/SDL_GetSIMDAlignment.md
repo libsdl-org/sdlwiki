@@ -29,6 +29,10 @@ instruction sets SDL knows about, so if your SDL build doesn't have
 support it sees and not 64 for the AVX-512 instructions that exist but SDL
 doesn't know about. Plan accordingly.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

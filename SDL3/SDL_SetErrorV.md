@@ -28,6 +28,10 @@ bool SDL_SetErrorV(const char *fmt, va_list ap);
 
 Calling this function will replace any previous error message that was set.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.4.

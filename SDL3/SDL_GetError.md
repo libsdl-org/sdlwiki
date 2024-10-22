@@ -42,6 +42,10 @@ The returned value is a thread-local string which will remain valid until
 the current thread's error string is changed. The caller should make a copy
 if the value is needed after the next SDL API call.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

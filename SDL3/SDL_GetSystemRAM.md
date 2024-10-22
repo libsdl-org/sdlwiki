@@ -17,6 +17,10 @@ int SDL_GetSystemRAM(void);
 
 (int) Returns the amount of RAM configured in the system in MiB.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

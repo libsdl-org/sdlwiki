@@ -18,6 +18,10 @@ Uint64 SDL_GetTicks(void);
 (Uint64) Returns an unsigned 64-bit value representing the number of
 milliseconds since the SDL library initialized.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

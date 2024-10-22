@@ -22,6 +22,10 @@ int SDL_GetCPUCacheLineSize(void);
 This is useful for determining multi-threaded structure padding or SIMD
 prefetch sizes.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

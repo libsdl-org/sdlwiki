@@ -53,6 +53,10 @@ data values[] = {
 SDL_qsort(values, SDL_arraysize(values), sizeof(values[0]), compare);
 ```
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
