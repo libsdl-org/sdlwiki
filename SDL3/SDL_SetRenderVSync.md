@@ -36,11 +36,11 @@ When a renderer is created, vsync defaults to
 
 The `vsync` parameter can be 1 to synchronize present with every vertical
 refresh, 2 to synchronize present with every second vertical refresh, etc.,
-[SDL_WINDOW_SURFACE_VSYNC_ADAPTIVE](SDL_WINDOW_SURFACE_VSYNC_ADAPTIVE) for
-late swap tearing (adaptive vsync), or
-[SDL_WINDOW_SURFACE_VSYNC_DISABLED](SDL_WINDOW_SURFACE_VSYNC_DISABLED) to
-disable. Not every value is supported by every driver, so you should check
-the return value to see whether the requested setting is supported.
+[SDL_RENDERER_VSYNC_ADAPTIVE](SDL_RENDERER_VSYNC_ADAPTIVE) for late swap
+tearing (adaptive vsync), or
+[SDL_RENDERER_VSYNC_DISABLED](SDL_RENDERER_VSYNC_DISABLED) to disable. Not
+every value is supported by every driver, so you should check the return
+value to see whether the requested setting is supported.
 
 ## Thread Safety
 
