@@ -28,6 +28,11 @@ SDL_GPUTransferBuffer* SDL_CreateGPUTransferBuffer(
 buffer on success, or NULL on failure; call [SDL_GetError](SDL_GetError)()
 for more information.
 
+## Remarks
+
+Download buffers can be particularly expensive to create, so it is good
+practice to reuse them if data will be downloaded regularly.
+
 ## Version
 
 This function is available since SDL 3.1.3.
