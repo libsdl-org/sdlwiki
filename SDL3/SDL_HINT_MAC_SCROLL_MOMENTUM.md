@@ -24,7 +24,7 @@ This hint needs to be set before [SDL_Init](SDL_Init)().
 
 ## Version
 
-This hint is available since SDL 3.1.4.
+This hint is available since SDL 3.1.6.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

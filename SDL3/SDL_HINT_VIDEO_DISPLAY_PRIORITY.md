@@ -35,7 +35,7 @@ This hint should be set before SDL is initialized.
 
 ## Version
 
-This hint is available since SDL 3.1.5.
+This hint is available since SDL 3.1.6.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

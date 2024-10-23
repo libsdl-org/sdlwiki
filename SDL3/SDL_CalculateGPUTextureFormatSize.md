@@ -32,7 +32,7 @@ Uint32 SDL_CalculateGPUTextureFormatSize(
 
 ## Version
 
-This function is available since SDL 3.1.4.
+This function is available since SDL 3.1.6.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
