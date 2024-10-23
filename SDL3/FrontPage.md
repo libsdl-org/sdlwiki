@@ -73,6 +73,8 @@ information about the functions, structures, enumerations and macros.
 
 ## Other stuff
 
+Still testing ghwikipp, disregard. --ryan.
+
 We hope you find everything you are looking for and enjoy using SDL!
 
 If anything is not addressed somewhere here, feel free to
