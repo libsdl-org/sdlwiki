@@ -18,6 +18,10 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 This macro is available since SDL 3.1.3.
 
+## See Also
+
+- [SDL_GetVersion](SDL_GetVersion)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 
