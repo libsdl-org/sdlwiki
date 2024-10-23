@@ -9,6 +9,8 @@ SDL3 has officially stabilized the API and ABI, and a preview release is availab
 We will still be adding things to the API but not changing or removing anything, so it's
 safe to start porting your projects from SDL2.
 
+Just testing, ignore me.  --ryan.
+
 Need some motivation? Here's a list of [New Features](NewFeatures) that you can
 enjoy today in SDL3!
 
