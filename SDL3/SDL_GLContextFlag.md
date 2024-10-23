@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
-# SDL_GLContextResetNotification
+# SDL_GLContextFlag
 
-Possible values to be set [SDL_GL_CONTEXT_RESET_NOTIFICATION](SDL_GL_CONTEXT_RESET_NOTIFICATION) attribute.
+Possible flags to be set for the [SDL_GL_CONTEXT_FLAGS](SDL_GL_CONTEXT_FLAGS) attribute.
 
 ## Header File
 
@@ -10,10 +10,12 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-typedef Uint32 SDL_GLContextResetNotification;
+typedef Uint32 SDL_GLContextFlag;
 
-#define SDL_GL_CONTEXT_RESET_NO_NOTIFICATION  0x0000
-#define SDL_GL_CONTEXT_RESET_LOSE_CONTEXT     0x0001
+#define SDL_GL_CONTEXT_DEBUG_FLAG              0x0001
+#define SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG 0x0002
+#define SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG      0x0004
+#define SDL_GL_CONTEXT_RESET_ISOLATION_FLAG    0x0008
 ```
 
 ## Version

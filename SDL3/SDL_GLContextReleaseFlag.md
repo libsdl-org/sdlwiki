@@ -1,5 +1,5 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
-# SDL_GLcontextReleaseFlag
+# SDL_GLContextReleaseFlag
 
 Possible values to be set for the [SDL_GL_CONTEXT_RELEASE_BEHAVIOR](SDL_GL_CONTEXT_RELEASE_BEHAVIOR) attribute.
 
@@ -10,17 +10,16 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-typedef enum SDL_GLcontextReleaseFlag
-{
-    SDL_GL_CONTEXT_RELEASE_BEHAVIOR_NONE   = 0x0000,
-    SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH  = 0x0001
-} SDL_GLcontextReleaseFlag;
+typedef Uint32 SDL_GLContextReleaseFlag;
+
+#define SDL_GL_CONTEXT_RELEASE_BEHAVIOR_NONE   0x0000
+#define SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH  0x0001
 ```
 
 ## Version
 
-This enum is available since SDL 3.1.3.
+This datatype is available since SDL 3.1.3.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

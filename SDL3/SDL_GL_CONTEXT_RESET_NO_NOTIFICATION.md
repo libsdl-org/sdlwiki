@@ -4,5 +4,5 @@
 Please refer to [SDL_GLContextResetNotification](SDL_GLContextResetNotification) for details.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnumerators](CategoryAPIEnumerators)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 
