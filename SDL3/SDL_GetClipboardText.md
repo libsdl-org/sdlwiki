@@ -21,8 +21,8 @@ should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 
-This functions returns empty string if there was not enough memory left for
-a copy of the clipboard's content.
+This functions returns an empty string if there was not enough memory left
+for a copy of the clipboard's content.
 
 ## Version
 
