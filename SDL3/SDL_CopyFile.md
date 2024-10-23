@@ -38,7 +38,7 @@ paths, and read from one and write to the other.
 Note that this is not an atomic operation! If something tries to read from
 `newpath` while the copy is in progress, it will see an incomplete copy of
 the data, and if the calling thread terminates (or the power goes out)
-during the copy, `oldpath`'s previous contents will be gone, replaced with
+during the copy, `newpath`'s previous contents will be gone, replaced with
 an incomplete copy of the data. To avoid this risk, it is recommended that
 the app copy to a temporary file in the same directory as `newpath`, and if
 the copy is successful, use [SDL_RenamePath](SDL_RenamePath)() to replace
