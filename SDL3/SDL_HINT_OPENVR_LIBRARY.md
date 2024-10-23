@@ -20,6 +20,10 @@ library in the current folder. But, if you wish to use a system API you can
 specify that by using this hint. This should be the full or relative path
 to a .dll on Windows or .so on Linux.
 
+## Version
+
+This hint is available since SDL 3.2.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 
