@@ -71,6 +71,8 @@ information about the functions, structures, enumerations and macros.
   [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
 
+Testing, disregard this line, --ryan.
+
 ## Other stuff
 
 We hope you find everything you are looking for and enjoy using SDL!
