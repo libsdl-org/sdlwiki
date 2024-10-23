@@ -75,10 +75,6 @@ information about the functions, structures, enumerations and macros.
 
 We hope you find everything you are looking for and enjoy using SDL!
 
-
-(This is me just testing out some changes to ghwikipp, disregard this.  --ryan.)
-
-
 If anything is not addressed somewhere here, feel free to
 [open an issue](https://github.com/libsdl-org/SDL/issues) or
 [submit a pull request](https://github.com/libsdl-org/SDL/pulls).
