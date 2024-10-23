@@ -10,7 +10,7 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-int SDLNet_WriteToStreamSocket(SDLNet_StreamSocket *sock, const void *buf, int buflen);
+bool SDLNet_WriteToStreamSocket(SDLNet_StreamSocket *sock, const void *buf, int buflen);
 ```
 
 ## Function Parameters
@@ -23,8 +23,8 @@ int SDLNet_WriteToStreamSocket(SDLNet_StreamSocket *sock, const void *buf, int b
 
 ## Return Value
 
-(int) Returns 0 if data sent or queued for transmission, -1 on failure;
-call SDL_GetError() for details.
+(bool) Returns true if data sent or queued for transmission, false on
+failure; call SDL_GetError() for details.
 
 ## Remarks
 
@@ -50,7 +50,7 @@ to block until all pending data has been sent.
 
 If the connection has failed (remote side dropped us, or one of a million
 other networking failures occurred), this function will report failure by
-returning -1. Stream sockets only report failure for unrecoverable
+returning false. Stream sockets only report failure for unrecoverable
 conditions; once a stream socket fails, you should assume it is no longer
 usable and should destroy it with SDL_DestroyStreamSocket().
 

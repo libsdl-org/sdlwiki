@@ -10,12 +10,13 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-int SDLNet_Init(void);
+bool SDLNet_Init(void);
 ```
 
 ## Return Value
 
-(int) Returns 0 on success, -1 on error; call SDL_GetError() for details.
+(bool) Returns true on success, false on error; call SDL_GetError() for
+details.
 
 ## Remarks
 

@@ -10,7 +10,7 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-int SDLNet_AcceptClient(SDLNet_Server *server, SDLNet_StreamSocket **client_stream);
+bool SDLNet_AcceptClient(SDLNet_Server *server, SDLNet_StreamSocket **client_stream);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ int SDLNet_AcceptClient(SDLNet_Server *server, SDLNet_StreamSocket **client_stre
 
 ## Return Value
 
-(int) Returns 0 on success (even if no new connections were pending), -1 on
-error; call SDL_GetError() for details.
+(bool) Returns true on success (even if no new connections were pending),
+false on error; call SDL_GetError() for details.
 
 ## Remarks
 
@@ -38,7 +38,7 @@ connection to complete, as server acceptance is the final step of
 connecting.
 
 This function does not block. If there are no new connections pending, this
-function will return 0 (for success, but `*client_stream` will be set to
+function will return true (for success, but `*client_stream` will be set to
 NULL. This is not an error and a common condition the app should expect. In
 fact, this function should be called in a loop until this condition occurs,
 so all pending connections are accepted in a single batch.

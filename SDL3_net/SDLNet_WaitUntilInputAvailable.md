@@ -21,6 +21,10 @@ int SDLNet_WaitUntilInputAvailable(void **vsockets, int numsockets, Sint32 timeo
 | int     | **numsockets** | the number of pointers in the `vsockets` array.                                                                             |
 | Sint32  | **timeout**    | Number of milliseconds to wait for new input to become available. -1 to wait indefinitely, 0 to check once without waiting. |
 
+## Return Value
+
+(int) Returns the number of items that have new input, or -1 on error.
+
 ## Remarks
 
 This is a complex function that most apps won't need, but it could be used

@@ -10,7 +10,7 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-int SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram);
+bool SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram);
 ```
 
 ## Function Parameters
@@ -22,8 +22,8 @@ int SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram)
 
 ## Return Value
 
-(int) Returns 0 if data sent or queued for transmission, -1 on failure;
-call SDL_GetError() for details.
+(bool) Returns true if data sent or queued for transmission, false on
+failure; call SDL_GetError() for details.
 
 ## Remarks
 
@@ -52,7 +52,7 @@ function, and this is the only way to know who to reply to. Even if you
 aren't acting as a "server," packets can still arrive at your socket if
 someone sends one.
 
-If there's a fatal error, this function will return -1. Datagram sockets
+If there's a fatal error, this function will return false. Datagram sockets
 generally won't report failures, because there is no state like a
 "connection" to fail at this level, but may report failure for
 unrecoverable system-level conditions; once a datagram socket fails, you
