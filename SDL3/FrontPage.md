@@ -23,6 +23,8 @@ software, emulators, and popular games including
 [Valve](https://valvesoftware.com)'s award winning catalog and many
 [Humble Bundle](https://www.humblebundle.com) games.
 
+I'm adding more stuff.  --ryan.
+
 SDL officially supports Windows, macOS, Linux, iOS, and Android, and several
 other platforms.
 
@@ -82,5 +84,4 @@ If anything is not addressed somewhere here, feel free to
 [submit a pull request](https://github.com/libsdl-org/SDL/pulls).
 
 **Enjoy!**
-
 
