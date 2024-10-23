@@ -27,10 +27,6 @@ way.
 
 This macro is available since SDL 3.1.3.
 
-## See Also
-
-- [SDL_GetRevision](SDL_GetRevision)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 
