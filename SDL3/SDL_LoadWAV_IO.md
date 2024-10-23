@@ -78,7 +78,7 @@ It is required that the data source supports seeking.
 Example:
 
 ```c
-SDL_LoadWAV_IO(SDL_IOFromFile("sample.wav", "rb"), 1, &spec, &buf, &len);
+SDL_LoadWAV_IO(SDL_IOFromFile("sample.wav", "rb"), true, &spec, &buf, &len);
 ```
 
 Note that the [SDL_LoadWAV](SDL_LoadWAV) function does this same thing for
