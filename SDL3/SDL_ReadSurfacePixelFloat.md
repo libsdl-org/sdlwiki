@@ -37,7 +37,7 @@ tests, but is not intended for use in a game engine.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

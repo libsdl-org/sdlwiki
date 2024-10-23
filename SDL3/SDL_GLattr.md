@@ -60,7 +60,7 @@ you should check to see exactly what you got.
 
 ## Version
 
-This enum is available since SDL 3.0.0.
+This enum is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)

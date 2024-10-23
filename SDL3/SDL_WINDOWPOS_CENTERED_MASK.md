@@ -15,7 +15,7 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Version
 
-This macro is available since SDL 3.0.0.
+This macro is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)

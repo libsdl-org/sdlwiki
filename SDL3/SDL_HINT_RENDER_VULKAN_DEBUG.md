@@ -24,7 +24,7 @@ By default, SDL does not use Vulkan Validation Layers.
 
 ## Version
 
-This hint is available since SDL 3.0.0.
+This hint is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

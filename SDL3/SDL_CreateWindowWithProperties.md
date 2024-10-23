@@ -148,7 +148,7 @@ property set to true, then create the renderer, then show the window with
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

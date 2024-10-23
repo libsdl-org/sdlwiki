@@ -21,7 +21,7 @@ typedef enum SDL_GPUStoreOp
 
 ## Version
 
-This enum is available since SDL 3.0.0
+This enum is available since SDL 3.1.3
 
 ## See Also
 

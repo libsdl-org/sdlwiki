@@ -22,7 +22,7 @@ typedef enum SDL_Sandbox
 
 ## Version
 
-This enum is available since SDL 3.1.6.
+This enum is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySystem](CategorySystem)

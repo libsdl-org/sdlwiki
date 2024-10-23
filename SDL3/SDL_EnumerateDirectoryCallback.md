@@ -39,7 +39,7 @@ and dictate the return value of the enumeration function itself.
 
 ## Version
 
-This datatype is available since SDL 3.0.0.
+This datatype is available since SDL 3.1.3.
 
 ## See Also
 

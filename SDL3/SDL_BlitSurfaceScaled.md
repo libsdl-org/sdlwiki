@@ -35,7 +35,7 @@ It is safe to use the same source surface from multiple threads.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

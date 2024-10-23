@@ -19,7 +19,7 @@ This function will generate key up events for all pressed keys.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

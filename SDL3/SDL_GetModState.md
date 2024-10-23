@@ -20,7 +20,7 @@ for the keyboard. See [SDL_Keymod](SDL_Keymod) for details.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

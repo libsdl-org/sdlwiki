@@ -19,7 +19,7 @@ The font is monospaced and square, so this applies to all characters.
 
 ## Version
 
-This macro is available since SDL 3.1.6.
+This macro is available since SDL 3.1.3.
 
 ## See Also
 

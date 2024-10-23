@@ -27,7 +27,7 @@ bool SDL_ReadU8(SDL_IOStream *src, Uint8 *value);
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

@@ -29,7 +29,7 @@ It should be safe to call this callback from any thread.
 
 ## Version
 
-This datatype is available since SDL 3.0.0.
+This datatype is available since SDL 3.1.3.
 
 ## See Also
 

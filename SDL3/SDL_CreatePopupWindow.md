@@ -70,7 +70,7 @@ hidden will be restored when the parent is shown.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

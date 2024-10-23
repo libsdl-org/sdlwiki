@@ -219,7 +219,7 @@ D24/D32 is supported before creating a depth-stencil texture!
 
 ## Version
 
-This enum is available since SDL 3.0.0
+This enum is available since SDL 3.1.3
 
 ## See Also
 

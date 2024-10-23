@@ -18,7 +18,7 @@ typedef struct SDL_MessageBoxColor
 
 ## Version
 
-This struct is available since SDL 3.0.0.
+This struct is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryMessagebox](CategoryMessagebox)

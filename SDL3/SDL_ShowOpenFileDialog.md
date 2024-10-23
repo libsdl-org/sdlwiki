@@ -48,7 +48,7 @@ should add a call to [SDL_PumpEvents](SDL_PumpEvents) in their main loop.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

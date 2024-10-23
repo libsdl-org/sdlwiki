@@ -28,7 +28,7 @@ bool SDL_SetWindowMaximumSize(SDL_Window *window, int max_w, int max_h);
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

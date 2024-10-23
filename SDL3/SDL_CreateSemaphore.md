@@ -34,7 +34,7 @@ wake waiting threads and allow them to retry the wait operation.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## Code Examples
 

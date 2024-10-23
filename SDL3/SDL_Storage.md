@@ -22,7 +22,7 @@ custom implementation using [SDL_OpenStorage](SDL_OpenStorage).
 
 ## Version
 
-This struct is available since SDL 3.0.0.
+This struct is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStorage](CategoryStorage)

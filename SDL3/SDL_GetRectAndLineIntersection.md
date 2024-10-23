@@ -37,7 +37,7 @@ coordinates saved in `X1`, `Y1`, `X2`, and/or `Y2` as necessary.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)

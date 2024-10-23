@@ -36,7 +36,7 @@ to [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) instead.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

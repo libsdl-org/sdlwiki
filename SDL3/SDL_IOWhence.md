@@ -25,7 +25,7 @@ standard C runtime.
 
 ## Version
 
-This enum is available since SDL 3.0.0.
+This enum is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryIOStream](CategoryIOStream)

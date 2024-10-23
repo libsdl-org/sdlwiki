@@ -52,7 +52,7 @@ this is just a request, it can be denied by the windowing system.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

@@ -49,7 +49,7 @@ not conflict with other code that also wants its own custom event types.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

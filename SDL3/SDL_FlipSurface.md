@@ -27,7 +27,7 @@ bool SDL_FlipSurface(SDL_Surface *surface, SDL_FlipMode flip);
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -29,7 +29,7 @@ This function may be called safely at any time, even before
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## Code Examples
 

@@ -27,7 +27,7 @@ program completion, and small non-zero values are considered errors.
 
 ## Version
 
-This datatype is available since SDL 3.0.0.
+This datatype is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMain](CategoryMain)

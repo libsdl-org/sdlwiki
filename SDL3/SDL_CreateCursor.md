@@ -60,7 +60,7 @@ which provides several readily-available system cursors to pick from.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## Code Examples
 

@@ -33,7 +33,7 @@ This function is equivalent to the SDL 1.2 API [SDL_Flip](SDL_Flip)().
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

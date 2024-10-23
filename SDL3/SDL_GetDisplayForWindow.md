@@ -27,7 +27,7 @@ containing the center of the window on success or 0 on failure; call
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

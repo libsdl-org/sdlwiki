@@ -25,7 +25,7 @@ Uint32 SDL_GetSemaphoreValue(SDL_Semaphore *sem);
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

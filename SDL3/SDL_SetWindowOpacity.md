@@ -34,7 +34,7 @@ This function also returns false if setting the opacity isn't supported.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

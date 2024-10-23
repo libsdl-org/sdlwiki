@@ -116,7 +116,7 @@ from the south means the user will have to pull the stick to counteract):
 
 ## Version
 
-This struct is available since SDL 3.0.0.
+This struct is available since SDL 3.1.3.
 
 ## See Also
 

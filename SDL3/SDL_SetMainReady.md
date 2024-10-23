@@ -22,7 +22,7 @@ define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED) before including SDL.h.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 

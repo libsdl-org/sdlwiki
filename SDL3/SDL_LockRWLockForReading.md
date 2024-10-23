@@ -47,7 +47,7 @@ block until it can lock the mutex, and return with it locked.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.1.3.
 
 ## See Also
 
