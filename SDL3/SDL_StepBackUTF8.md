@@ -50,7 +50,7 @@ It is safe to call this function from any thread.
 
 ## Version
 
-This function is available since SDL 3.1.6.
+This function is available since SDL 3.1.4.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
