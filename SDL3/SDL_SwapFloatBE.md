@@ -29,6 +29,10 @@ If this is running on a bigendian system, `x` is returned unchanged.
 
 This macro never references `x` more than once, avoiding side effects.
 
+## Thread Safety
+
+It is safe to call this macro from any thread.
+
 ## Version
 
 This macro is available since SDL 3.1.3.

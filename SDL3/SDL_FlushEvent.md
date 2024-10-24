@@ -37,6 +37,10 @@ If you have user events with custom data that needs to be freed, you should
 use [SDL_PeepEvents](SDL_PeepEvents)() to remove and clean up those events
 before calling this function.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

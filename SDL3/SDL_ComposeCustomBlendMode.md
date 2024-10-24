@@ -102,6 +102,10 @@ target. The [`SDL_BLENDFACTOR_DST_ALPHA`](SDL_BLENDFACTOR_DST_ALPHA) and
 [`SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA`](SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA)
 factors do not have an effect in this case.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

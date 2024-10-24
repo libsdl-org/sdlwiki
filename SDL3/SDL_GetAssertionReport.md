@@ -17,7 +17,9 @@ const SDL_AssertData * SDL_GetAssertionReport(void);
 
 (const [SDL_AssertData](SDL_AssertData) *) Returns a list of all failed
 assertions or NULL if the list is empty. This memory should not be modified
-or freed by the application.
+or freed by the application. This pointer remains valid until the next call
+to [SDL_Quit](SDL_Quit)() or
+[SDL_ResetAssertionReport](SDL_ResetAssertionReport)().
 
 ## Remarks
 
@@ -37,6 +39,12 @@ while (item) {
    item = item->next;
 }
 ```
+
+## Thread Safety
+
+This function is not thread safe. Other threads calling
+[SDL_ResetAssertionReport](SDL_ResetAssertionReport)() simultaneously, may
+render the returned pointer invalid.
 
 ## Version
 

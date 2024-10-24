@@ -31,6 +31,10 @@ with [SDL_free](SDL_free)() when it is no longer needed.
 The size of text data does not include the terminator, but the text is
 guaranteed to be null terminated.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

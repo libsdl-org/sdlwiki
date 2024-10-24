@@ -26,6 +26,10 @@ NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 This should be freed with [SDL_free](SDL_free)() when it is no longer
 needed.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

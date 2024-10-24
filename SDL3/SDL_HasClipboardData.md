@@ -24,6 +24,10 @@ bool SDL_HasClipboardData(const char *mime_type);
 (bool) Returns true if there exists data in clipboard for the provided mime
 type, false if it does not.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

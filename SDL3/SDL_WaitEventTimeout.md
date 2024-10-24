@@ -37,6 +37,12 @@ subsystem.
 The timeout is not guaranteed, the actual wait time could be longer due to
 system scheduling.
 
+## Thread Safety
+
+This should only be run in the thread that initialized the video subsystem,
+and for extra safety, you should consider only doing those things on the
+main thread in any case.
+
 ## Version
 
 This function is available since SDL 3.1.3.

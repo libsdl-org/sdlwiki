@@ -24,6 +24,10 @@ should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 This functions returns an empty string if there was not enough memory left
 for a copy of the clipboard's content.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -18,6 +18,10 @@ bool SDL_HasPrimarySelectionText(void);
 (bool) Returns true if the primary selection has text, or false if it does
 not.
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

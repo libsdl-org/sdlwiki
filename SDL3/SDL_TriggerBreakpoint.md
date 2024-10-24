@@ -30,7 +30,7 @@ doesn't know how to trigger a breakpoint), this macro does nothing.
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+It is safe to call this macro from any thread.
 
 ## Version
 

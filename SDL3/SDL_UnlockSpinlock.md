@@ -26,6 +26,10 @@ Always returns immediately.
 ***Please note that spinlocks are dangerous if you don't know what you're
 doing. Please be careful using any sort of spinlock!***
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

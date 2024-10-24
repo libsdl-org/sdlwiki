@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_assert_always
 
-An assertion test that always performed.
+An assertion test that is always performed.
 
 ## Header File
 
@@ -34,6 +34,10 @@ you're debugging an assertion in a background thread, it might be desirable
 to set this to "break" so that your debugger takes control as soon as
 assert is triggered, instead of risking a bad UI interaction (deadlock,
 etc) in the application.
+
+## Thread Safety
+
+It is safe to call this macro from any thread.
 
 ## Version
 

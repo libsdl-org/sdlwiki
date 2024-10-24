@@ -27,6 +27,10 @@ See [SDL_SetEventFilter](SDL_SetEventFilter)() for more information. Unlike
 the filter permanently, it only uses the supplied filter until this
 function returns.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -35,6 +35,10 @@ it will only fire from one thread at a time.
 This callback is NOT reset to SDL's internal handler upon
 [SDL_Quit](SDL_Quit)()!
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

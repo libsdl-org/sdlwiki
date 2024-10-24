@@ -27,6 +27,10 @@ is used for assertions when
 [SDL_SetAssertionHandler](SDL_SetAssertionHandler)() hasn't been used to
 provide a different function.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -39,6 +39,10 @@ The size of text data does not include any terminator, and the text does
 not need to be null terminated (e.g. you can directly copy a portion of a
 document)
 
+## Thread Safety
+
+You may only call this function from the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -25,6 +25,11 @@ typedef SDL_AssertState (SDLCALL *SDL_AssertionHandler)( const SDL_AssertData *d
 Returns an [SDL_AssertState](SDL_AssertState) value indicating how to
 handle the failure.
 
+## Thread Safety
+
+This callback may be called from any thread that triggers an assert at any
+time.
+
 ## Version
 
 This datatype is available since SDL 3.1.3.

@@ -20,6 +20,10 @@ void SDL_SetEventEnabled(Uint32 type, bool enabled);
 | Uint32 | **type**    | the type of event; see [SDL_EventType](SDL_EventType) for details. |
 | bool   | **enabled** | whether to process the event or not.                               |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

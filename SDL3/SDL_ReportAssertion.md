@@ -32,6 +32,10 @@ SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
 
 Use the [SDL_assert](SDL_assert)* macros instead.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

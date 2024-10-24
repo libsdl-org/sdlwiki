@@ -24,6 +24,10 @@ SDL_Window * SDL_GetWindowFromEvent(const SDL_Event *event);
 ([SDL_Window](SDL_Window) *) Returns the associated window on success or
 NULL if there is none.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -47,7 +47,9 @@ You may have to call [SDL_PumpEvents](SDL_PumpEvents)() before calling this
 function. Otherwise, the events may not be ready to be filtered when you
 call [SDL_PeepEvents](SDL_PeepEvents)().
 
-This function is thread-safe.
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

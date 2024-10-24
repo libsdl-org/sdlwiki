@@ -37,8 +37,6 @@ caller may dispose of the memory pointed to after
 Note: Pushing device input events onto the queue doesn't modify the state
 of the device within SDL.
 
-This function is thread-safe, and can be called from other threads safely.
-
 Note: Events pushed onto the queue with [SDL_PushEvent](SDL_PushEvent)()
 get passed through the event filter but events added with
 [SDL_PeepEvents](SDL_PeepEvents)() do not.
@@ -46,6 +44,10 @@ get passed through the event filter but events added with
 For pushing application-specific events, please use
 [SDL_RegisterEvents](SDL_RegisterEvents)() to get an event type that does
 not conflict with other code that also wants its own custom event types.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

@@ -21,6 +21,11 @@ point. Immediately following this call,
 addition, any previously-triggered assertions will be reset to a
 trigger_count of zero, and their always_ignore state will be false.
 
+## Thread Safety
+
+This function is not thread safe. Other threads triggering an assertion, or
+simultaneously calling this function may cause memory leaks or crashes.
+
 ## Version
 
 This function is available since SDL 3.1.3.

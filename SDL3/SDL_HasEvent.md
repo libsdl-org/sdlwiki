@@ -29,6 +29,10 @@ events matching `type` are not present.
 If you need to check for a range of event types, use
 [SDL_HasEvents](SDL_HasEvents)() instead.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

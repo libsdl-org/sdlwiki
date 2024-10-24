@@ -27,6 +27,10 @@ Returns the previous value of the atomic variable.
 
 ***Note: If you don't know what this macro is for, you shouldn't use it!***
 
+## Thread Safety
+
+It is safe to call this macro from any thread.
+
 ## Version
 
 This macro is available since SDL 3.1.3.

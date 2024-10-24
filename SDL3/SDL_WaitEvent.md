@@ -33,6 +33,12 @@ As this function may implicitly call [SDL_PumpEvents](SDL_PumpEvents)(),
 you can only call this function in the thread that initialized the video
 subsystem.
 
+## Thread Safety
+
+This should only be run in the thread that initialized the video subsystem,
+and for extra safety, you should consider only doing those things on the
+main thread in any case.
+
 ## Version
 
 This function is available since SDL 3.1.3.

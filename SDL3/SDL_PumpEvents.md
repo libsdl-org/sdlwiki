@@ -17,10 +17,6 @@ void SDL_PumpEvents(void);
 
 This function updates the event queue and internal input device state.
 
-**WARNING**: This should only be run in the thread that initialized the
-video subsystem, and for extra safety, you should consider only doing those
-things on the main thread in any case.
-
 [SDL_PumpEvents](SDL_PumpEvents)() gathers all the pending input
 information from devices and places it in the event queue. Without calls to
 [SDL_PumpEvents](SDL_PumpEvents)() no events would ever be placed on the
@@ -30,6 +26,12 @@ hidden from the user since [SDL_PollEvent](SDL_PollEvent)() and
 [SDL_PumpEvents](SDL_PumpEvents)(). However, if you are not polling or
 waiting for events (e.g. you are filtering them), then you must call
 [SDL_PumpEvents](SDL_PumpEvents)() to force an event queue update.
+
+## Thread Safety
+
+This should only be run in the thread that initialized the video subsystem,
+and for extra safety, you should consider only doing those things on the
+main thread in any case.
 
 ## Version
 

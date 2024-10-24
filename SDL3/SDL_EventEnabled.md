@@ -23,6 +23,10 @@ bool SDL_EventEnabled(Uint32 type);
 
 (bool) Returns true if the event is being processed, false otherwise.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

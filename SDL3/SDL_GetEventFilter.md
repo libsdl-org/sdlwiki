@@ -29,6 +29,10 @@ bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);
 This function can be used to "chain" filters, by saving the existing filter
 before replacing it with a function that will call that saved filter.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

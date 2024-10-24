@@ -39,6 +39,10 @@ The parameter `puserdata` is a pointer to a void*, which will store the
 always be NULL for the default handler. If you don't care about this data,
 it is safe to pass a NULL pointer to this function to ignore it.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

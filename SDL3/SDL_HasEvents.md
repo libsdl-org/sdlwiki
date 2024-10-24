@@ -30,6 +30,10 @@ present, or false if not.
 If you need to check for a single event type, use
 [SDL_HasEvent](SDL_HasEvent)() instead.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

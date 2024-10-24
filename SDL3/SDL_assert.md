@@ -44,6 +44,10 @@ to set this to "break" so that your debugger takes control as soon as
 assert is triggered, instead of risking a bad UI interaction (deadlock,
 etc) in the application.
 
+## Thread Safety
+
+It is safe to call this macro from any thread.
+
 ## Version
 
 This macro is available since SDL 3.1.3.

@@ -24,6 +24,10 @@ Uint32 SDL_RegisterEvents(int numevents);
 (Uint32) Returns the beginning event number, or 0 if numevents is invalid
 or if there are not enough user-defined events left.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.
