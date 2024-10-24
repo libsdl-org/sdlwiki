@@ -40,6 +40,11 @@ if you need to wrap the output to multiple lines.
 
 This will not wrap on newline characters.
 
+You can render at other quality levels with
+[TTF_RenderText_Solid](TTF_RenderText_Solid),
+[TTF_RenderText_Shaded](TTF_RenderText_Shaded), and
+[TTF_RenderText_LCD](TTF_RenderText_LCD).
+
 ## Thread Safety
 
 This function should be called on the thread that created the font.
@@ -53,6 +58,7 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_RenderText_Blended_Wrapped](TTF_RenderText_Blended_Wrapped)
 - [TTF_RenderText_LCD](TTF_RenderText_LCD)
 - [TTF_RenderText_Shaded](TTF_RenderText_Shaded)
+- [TTF_RenderText_Solid](TTF_RenderText_Solid)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

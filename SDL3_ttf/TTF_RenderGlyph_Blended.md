@@ -35,6 +35,11 @@ new surface, or NULL if there was an error.
 The glyph is rendered without any padding or centering in the X direction,
 and aligned normally in the Y direction.
 
+You can render at other quality levels with
+[TTF_RenderGlyph_Solid](TTF_RenderGlyph_Solid),
+[TTF_RenderGlyph_Shaded](TTF_RenderGlyph_Shaded), and
+[TTF_RenderGlyph_LCD](TTF_RenderGlyph_LCD).
+
 ## Thread Safety
 
 This function should be called on the thread that created the font.
@@ -47,6 +52,7 @@ This function is available since SDL_ttf 3.0.0.
 
 - [TTF_RenderGlyph_LCD](TTF_RenderGlyph_LCD)
 - [TTF_RenderGlyph_Shaded](TTF_RenderGlyph_Shaded)
+- [TTF_RenderGlyph_Solid](TTF_RenderGlyph_Solid)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
