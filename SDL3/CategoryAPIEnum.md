@@ -37,7 +37,6 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_GamepadButtonLabel](SDL_GamepadButtonLabel)
 - [SDL_GamepadType](SDL_GamepadType)
 - [SDL_GLAttr](SDL_GLAttr)
-- [SDL_GLattr](SDL_GLattr)
 - [SDL_GPUBlendFactor](SDL_GPUBlendFactor)
 - [SDL_GPUBlendOp](SDL_GPUBlendOp)
 - [SDL_GPUCompareOp](SDL_GPUCompareOp)

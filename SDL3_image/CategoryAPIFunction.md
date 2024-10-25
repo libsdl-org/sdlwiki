@@ -24,7 +24,6 @@
 - [IMG_isXCF](IMG_isXCF)
 - [IMG_isXPM](IMG_isXPM)
 - [IMG_isXV](IMG_isXV)
-- [IMG_Linked_Version](IMG_Linked_Version)
 - [IMG_Load](IMG_Load)
 - [IMG_Load_IO](IMG_Load_IO)
 - [IMG_LoadAnimation](IMG_LoadAnimation)

@@ -173,7 +173,6 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 <!-- BEGIN CATEGORY LIST: CategoryVideo, CategoryAPIEnum -->
 - [SDL_DisplayOrientation](SDL_DisplayOrientation)
 - [SDL_FlashOperation](SDL_FlashOperation)
-- [SDL_GLattr](SDL_GLattr)
 - [SDL_GLAttr](SDL_GLAttr)
 - [SDL_HitTestResult](SDL_HitTestResult)
 - [SDL_SystemTheme](SDL_SystemTheme)
