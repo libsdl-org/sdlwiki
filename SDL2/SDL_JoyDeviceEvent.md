@@ -18,6 +18,15 @@ typedef struct SDL_JoyDeviceEvent
 } SDL_JoyDeviceEvent;
 ```
 
+## Remarks
+
+SDL will send JOYSTICK_ADDED events for devices that are already plugged in
+during [SDL_Init](SDL_Init).
+
+## See Also
+
+- [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

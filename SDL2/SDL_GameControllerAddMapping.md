@@ -42,6 +42,11 @@ This string shows an example of a valid mapping for a controller:
 "341a3608000000000000504944564944,Afterglow PS3 Controller,a:b1,b:b2,y:b3,x:b0,start:b9,guide:b12,back:b8,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,leftshoulder:b4,rightshoulder:b5,leftstick:b10,rightstick:b11,leftx:a0,lefty:a1,rightx:a2,righty:a3,lefttrigger:b6,righttrigger:b7"
 ```
 
+If this function is called before [SDL_Init](SDL_Init), SDL will generate
+an [SDL_CONTROLLERDEVICEADDED](SDL_CONTROLLERDEVICEADDED) event for
+matching controllers that are plugged in at the time that
+[SDL_Init](SDL_Init) is called.
+
 ## Version
 
 This function is available since SDL 2.0.0.
@@ -50,6 +55,7 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GameControllerMapping](SDL_GameControllerMapping)
 - [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+- [SDL_CONTROLLERDEVICEADDED](SDL_CONTROLLERDEVICEADDED)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

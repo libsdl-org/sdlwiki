@@ -33,6 +33,11 @@ database files.
 If a new mapping is loaded for an already known controller GUID, the later
 version will overwrite the one currently loaded.
 
+If this function is called before [SDL_Init](SDL_Init), SDL will generate
+an [SDL_CONTROLLERDEVICEADDED](SDL_CONTROLLERDEVICEADDED) event for
+matching controllers that are plugged in at the time that
+[SDL_Init](SDL_Init) is called.
+
 Mappings not belonging to the current platform or with no platform field
 specified will be ignored (i.e. mappings for Linux will be ignored in
 Windows, etc).
@@ -50,6 +55,7 @@ This function is available since SDL 2.0.2.
 - [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
 - [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
 - [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+- [SDL_CONTROLLERDEVICEADDED](SDL_CONTROLLERDEVICEADDED)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

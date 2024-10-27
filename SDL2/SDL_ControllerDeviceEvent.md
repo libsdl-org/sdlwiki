@@ -18,6 +18,16 @@ typedef struct SDL_ControllerDeviceEvent
 } SDL_ControllerDeviceEvent;
 ```
 
+## Remarks
+
+Joysticks that are supported game controllers receive both an
+[SDL_JoyDeviceEvent](SDL_JoyDeviceEvent) and an
+[SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent).
+
+SDL will send CONTROLLERDEVICEADDED events for joysticks that are already
+plugged in during [SDL_Init](SDL_Init)() and are recognized as game
+controllers.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 
