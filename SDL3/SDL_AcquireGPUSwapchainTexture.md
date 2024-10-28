@@ -40,7 +40,11 @@ automatically be submitted for presentation when the command buffer is
 submitted. The swapchain texture should only be referenced by the command
 buffer used to acquire it. The swapchain texture handle can be filled in
 with NULL under certain conditions. This is not necessarily an error. If
-this function returns false then there is an error.
+this function returns false then there is an error. However, the texture
+handle being NULL does mean that the swapchain is not available currently.
+Thus, this NULL pointer should not be passed back into SDL. Instead, it
+should be considered as an indication to wait until the swapchain is 
+available.
 
 The swapchain texture is managed by the implementation and must not be
 freed by the user. You MUST NOT call this function from any thread other
