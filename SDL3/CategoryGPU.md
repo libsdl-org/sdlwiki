@@ -160,6 +160,7 @@ Examples demonstrating proper usage of this API can be found
 - [SDL_BindGPUVertexStorageTextures](SDL_BindGPUVertexStorageTextures)
 - [SDL_BlitGPUTexture](SDL_BlitGPUTexture)
 - [SDL_CalculateGPUTextureFormatSize](SDL_CalculateGPUTextureFormatSize)
+- [SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer)
 - [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)
 - [SDL_CopyGPUBufferToBuffer](SDL_CopyGPUBufferToBuffer)
 - [SDL_CopyGPUTextureToTexture](SDL_CopyGPUTextureToTexture)

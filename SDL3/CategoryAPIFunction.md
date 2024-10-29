@@ -71,6 +71,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_bsearch_r](SDL_bsearch_r)
 - [SDL_CalculateGPUTextureFormatSize](SDL_CalculateGPUTextureFormatSize)
 - [SDL_calloc](SDL_calloc)
+- [SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer)
 - [SDL_CaptureMouse](SDL_CaptureMouse)
 - [SDL_ceil](SDL_ceil)
 - [SDL_ceilf](SDL_ceilf)
