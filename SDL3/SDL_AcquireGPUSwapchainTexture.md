@@ -46,15 +46,24 @@ The swapchain texture is managed by the implementation and must not be
 freed by the user. You MUST NOT call this function from any thread other
 than the one that created the window.
 
+When using [SDL_GPU_PRESENTMODE_VSYNC](SDL_GPU_PRESENTMODE_VSYNC), this
+function will block if too many frames are in flight. Otherwise, this
+function will fill the swapchain texture handle with NULL if too many
+frames are in flight. The best practice is to call
+[SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer) if the swapchain
+texture handle is NULL to avoid enqueuing needless work on the GPU.
+
 ## Version
 
 This function is available since SDL 3.1.3.
 
 ## See Also
 
+- [SDL_GPUPresentMode](SDL_GPUPresentMode)
 - [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
+- [SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer)
 - [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
 
 ----
