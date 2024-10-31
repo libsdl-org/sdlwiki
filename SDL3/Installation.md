@@ -16,13 +16,15 @@ Several other platforms will be built "the Unix way," so we'll describe this pla
 
 SDL supports most popular flavors of Unix: Linux, the various BSDs (FreeBSD, NetBSD, OpenBSD), Solaris, and other things like them.
 
-First! Do you need to compile SDL yourself? It's possible your distribution's package manager already did it for you!
+(Package notes are crossed out until distros start shipping SDL3. --editor.)
 
-Debian-based systems (including Ubuntu) can simply do `sudo apt-get install libsdl3-3.0-0` to get the library installed system-wide, and all sorts of other useful dependencies, too. `sudo apt-get install libsdl3-dev` will install everything necessary to build programs that use SDL. Please see [README/linux](README/linux) for a more complete discussion of packages involved.
+~~First! Do you need to compile SDL yourself? It's possible your distribution's package manager already did it for you!~~
 
-Red Hat-based systems (including Fedora) can simply do `sudo dnf install SDL3` to get the library installed system-wide, or `sudo dnf install SDL3-devel` to get headers and other build requirements ready for compiling your own SDL programs.
+~~Debian-based systems (including Ubuntu) can simply do `sudo apt-get install libsdl3-3.0-0` to get the library installed system-wide, and all sorts of other useful dependencies, too. `sudo apt-get install libsdl3-dev` will install everything necessary to build programs that use SDL. Please see [README/linux](README/linux) for a more complete discussion of packages involved.~~
 
-Gentoo users can `sudo emerge libsdl3` to get everything they need.
+~~Red Hat-based systems (including Fedora) can simply do `sudo dnf install SDL3` to get the library installed system-wide, or `sudo dnf install SDL3-devel` to get headers and other build requirements ready for compiling your own SDL programs.~~
+
+~~Gentoo users can `sudo emerge libsdl3` to get everything they need.~~
 
 If you're compiling SDL yourself, here's what we refer to as "the Unix way" of building:
 
@@ -171,7 +173,7 @@ The PlayStation Vita is supported using a homebrew toolkit. You can build for th
 
 If your favorite system is listed below, we aren't working on it. If you send reasonable patches, we are happy to take a look, though!
 
-All of these still work with SDL2, which is an incompatible API, but an option if you need to support these platforms still.
+All of these still work with [SDL2](/SDL2), which is an incompatible API, but an option if you need to support these platforms still.
 
 - OS/2
 - QNX
@@ -179,3 +181,4 @@ All of these still work with SDL2, which is an incompatible API, but an option i
 - Google Stadia
 - WinRT/UWP
 - WinPhone
+- Nokia N-Gage
