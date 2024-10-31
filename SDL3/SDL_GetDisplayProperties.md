@@ -46,6 +46,44 @@ On KMS/DRM:
 
 This function is available since SDL 3.1.3.
 
+## Code Examples
+
+```c
+// Example program
+// Use SDL3 to check whether displays have HDR enabled
+
+#include <SDL3/SDL_log.h>
+#include <SDL3/SDL_main.h>
+#include <SDL3/SDL_stdinc.h>
+#include <SDL3/SDL_video.h>
+
+int
+main(int argc, char** argv)
+{
+  if (!SDL_Init(SDL_INIT_VIDEO)) {
+    SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
+    return 0;
+  }
+
+  SDL_Log("SDL initialized");
+
+  int num_displays;
+  SDL_DisplayID *displays = SDL_GetDisplays(&num_displays);
+
+  for(int i = 0; i < num_displays; i++) {
+    SDL_PropertiesID prop_id = SDL_GetDisplayProperties(displays[i]);
+
+    if(!SDL_GetBooleanProperty(prop_id, SDL_PROP_DISPLAY_HDR_ENABLED_BOOLEAN, false)) {
+      SDL_Log("Display with ID %"SDL_PRIu32 " does not have HDR enabled.", displays[i]);
+    } else {
+      SDL_Log("Display with ID %"SDL_PRIu32 " has HDR enabled.", displays[i]);
+    }
+  }
+
+  return 0;
+}
+```
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
