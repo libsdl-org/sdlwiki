@@ -131,31 +131,31 @@ SDL_PushEvent(&user_event);
 
 | Event Type                                                                           | Event Structure                                        | SDL_Event Field |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------|-----------------|
-| SDL_AUDIODEVICEADDED, SDL_AUDIODEVICEREMOVED                                         | [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)           | **adevice**     |
-| SDL_CONTROLLERAXISMOTION                                                             | [SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)     | **caxis**       |
-| SDL_CONTROLLERBUTTONDOWN, SDL_CONTROLLERBUTTONUP                                     | [SDL_ControllerButtonEvent](SDL_ControllerButtonEvent) | **cbutton**     |
-| SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED, SDL_CONTROLLERDEVICEREMAPPED | [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent) | **cdevice**     |
-| SDL_DOLLARGESTURE, SDL_DOLLARRECORD                                                  | [SDL_DollarGestureEvent](SDL_DollarGestureEvent)       | **dgesture**    |
-| SDL_DROPFILE, SDL_DROPTEXT, SDL_DROPBEGIN, SDL_DROPCOMPLETE                          | [SDL_DropEvent](SDL_DropEvent)                         | **drop**        |
-| SDL_FINGERMOTION, SDL_FINGERDOWN, SDL_FINGERUP                                       | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)           | **tfinger**     |
-| SDL_KEYDOWN, SDL_KEYUP                                                               | [SDL_KeyboardEvent](SDL_KeyboardEvent)                 | **key**         |
-| SDL_JOYAXISMOTION                                                                    | [SDL_JoyAxisEvent](SDL_JoyAxisEvent)                   | **jaxis**       |
-| SDL_JOYBALLMOTION                                                                    | [SDL_JoyBallEvent](SDL_JoyBallEvent)                   | **jball**       |
-| SDL_JOYHATMOTION                                                                     | [SDL_JoyHatEvent](SDL_JoyHatEvent)                     | **jhat**        |
-| SDL_JOYBUTTONDOWN, SDL_JOYBUTTONUP                                                   | [SDL_JoyButtonEvent](SDL_JoyButtonEvent)               | **jbutton**     |
-| SDL_JOYDEVICEADDED, SDL_JOYDEVICEREMOVED                                             | [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)               | **jdevice**     |
-| SDL_MOUSEMOTION                                                                      | [SDL_MouseMotionEvent](SDL_MouseMotionEvent)           | **motion**      |
-| SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONUP                                               | [SDL_MouseButtonEvent](SDL_MouseButtonEvent)           | **button**      |
-| SDL_MOUSEWHEEL                                                                       | [SDL_MouseWheelEvent](SDL_MouseWheelEvent)             | **wheel**       |
-| SDL_MULTIGESTURE                                                                     | [SDL_MultiGestureEvent](SDL_MultiGestureEvent)         | **mgesture**    |
-| SDL_QUIT                                                                             | [SDL_QuitEvent](SDL_QuitEvent)                         | **quit**        |
-| SDL_SYSWMEVENT                                                                       | [SDL_SysWMEvent](SDL_SysWMEvent)                       | **syswm**       |
-| SDL_TEXTEDITING                                                                      | [SDL_TextEditingEvent](SDL_TextEditingEvent)           | **edit**        |
-| SDL_TEXTEDITING_EXT                                                                  | [SDL_TextEditingExtEvent](SDL_TextEditingExtEvent)     | **editExt**     |
-| SDL_TEXTINPUT                                                                        | [SDL_TextInputEvent](SDL_TextInputEvent)               | **text**        |
-| SDL_USEREVENT                                                                        | [SDL_UserEvent](SDL_UserEvent)                         | **user**        |
-| SDL_WINDOWEVENT                                                                      | [SDL_WindowEvent](SDL_WindowEvent)                     | **window**      |
-| Other events                                                                         | [SDL_CommonEvent](SDL_CommonEvent)                     | **common**      |
+| SDL_AUDIODEVICEADDED, SDL_AUDIODEVICEREMOVED                                         | [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)           | `adevice`       |
+| SDL_CONTROLLERAXISMOTION                                                             | [SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)     | `caxis`         |
+| SDL_CONTROLLERBUTTONDOWN, SDL_CONTROLLERBUTTONUP                                     | [SDL_ControllerButtonEvent](SDL_ControllerButtonEvent) | `cbutton`       |
+| SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED, SDL_CONTROLLERDEVICEREMAPPED | [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent) | `cdevice`       |
+| SDL_DOLLARGESTURE, SDL_DOLLARRECORD                                                  | [SDL_DollarGestureEvent](SDL_DollarGestureEvent)       | `dgesture`      |
+| SDL_DROPFILE, SDL_DROPTEXT, SDL_DROPBEGIN, SDL_DROPCOMPLETE                          | [SDL_DropEvent](SDL_DropEvent)                         | `drop`          |
+| SDL_FINGERMOTION, SDL_FINGERDOWN, SDL_FINGERUP                                       | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)           | `tfinger`       |
+| SDL_KEYDOWN, SDL_KEYUP                                                               | [SDL_KeyboardEvent](SDL_KeyboardEvent)                 | `key`           |
+| SDL_JOYAXISMOTION                                                                    | [SDL_JoyAxisEvent](SDL_JoyAxisEvent)                   | `jaxis`         |
+| SDL_JOYBALLMOTION                                                                    | [SDL_JoyBallEvent](SDL_JoyBallEvent)                   | `jball`         |
+| SDL_JOYHATMOTION                                                                     | [SDL_JoyHatEvent](SDL_JoyHatEvent)                     | `jhat`          |
+| SDL_JOYBUTTONDOWN, SDL_JOYBUTTONUP                                                   | [SDL_JoyButtonEvent](SDL_JoyButtonEvent)               | `jbutton`       |
+| SDL_JOYDEVICEADDED, SDL_JOYDEVICEREMOVED                                             | [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)               | `jdevice`       |
+| SDL_MOUSEMOTION                                                                      | [SDL_MouseMotionEvent](SDL_MouseMotionEvent)           | `motion`        |
+| SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONUP                                               | [SDL_MouseButtonEvent](SDL_MouseButtonEvent)           | `button`        |
+| SDL_MOUSEWHEEL                                                                       | [SDL_MouseWheelEvent](SDL_MouseWheelEvent)             | `wheel`         |
+| SDL_MULTIGESTURE                                                                     | [SDL_MultiGestureEvent](SDL_MultiGestureEvent)         | `mgesture`      |
+| SDL_QUIT                                                                             | [SDL_QuitEvent](SDL_QuitEvent)                         | `quit`          |
+| SDL_SYSWMEVENT                                                                       | [SDL_SysWMEvent](SDL_SysWMEvent)                       | `syswm`         |
+| SDL_TEXTEDITING                                                                      | [SDL_TextEditingEvent](SDL_TextEditingEvent)           | `edit`          |
+| SDL_TEXTEDITING_EXT                                                                  | [SDL_TextEditingExtEvent](SDL_TextEditingExtEvent)     | `editExt`       |
+| SDL_TEXTINPUT                                                                        | [SDL_TextInputEvent](SDL_TextInputEvent)               | `text`          |
+| SDL_USEREVENT                                                                        | [SDL_UserEvent](SDL_UserEvent)                         | `user`          |
+| SDL_WINDOWEVENT                                                                      | [SDL_WindowEvent](SDL_WindowEvent)                     | `window`        |
+| Other events                                                                         | [SDL_CommonEvent](SDL_CommonEvent)                     | `common`        |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
