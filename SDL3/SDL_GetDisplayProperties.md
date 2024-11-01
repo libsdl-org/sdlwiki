@@ -80,10 +80,11 @@ main(int argc, char** argv)
     }
   }
 
+  SDL_free(displays);
+
   return 0;
 }
 ```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
