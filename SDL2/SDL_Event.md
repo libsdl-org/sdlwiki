@@ -127,6 +127,10 @@ user_event.user.data2 = NULL;
 SDL_PushEvent(&user_event);
 ```
 
+Note that SDL_USEREVENT is just a starting point for event numbers that SDL
+won't claim for itself, and you should use [SDL_RegisterEvents](SDL_RegisterEvents)
+to claim a unique number that other parts of your app won't also claim.
+
 ## Relationships between event types and union members
 
 | Event Type                                                                           | Event Structure                                        | SDL_Event Field |

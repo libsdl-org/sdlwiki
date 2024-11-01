@@ -107,7 +107,7 @@ The [SDL_PollEvent](SDL_PollEvent) function takes a pointer to an [SDL_Event](SD
 We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_MOUSEMOTION is, more than likely, the event we're looking for. Looking at the table below tells us that SDL_MOUSEMOTION events are handled within the [SDL_MouseMotionEvent](SDL_MouseMotionEvent) structure which is the **motion** member of [SDL_Event](SDL_Event). We can check for the SDL_MOUSEMOTION event **type** within our ```switch``` statement like so:
 
 ```c
-    case SDL_MOUSEMOTION:
+    case SDL_EVENT_MOUSE_MOTION:
 ```
 
 All we need to do now is read the information out of the **motion** member of test_event.
@@ -130,12 +130,16 @@ It is also possible to push events onto the event queue and so use it as a two-w
 
 ```c
 SDL_Event user_event;
-user_event.type = SDL_USEREVENT;
+user_event.type = SDL_EVENT_USER;
 user_event.user.code = 2;
 user_event.user.data1 = NULL;
 user_event.user.data2 = NULL;
 SDL_PushEvent(&user_event);
 ```
+
+Note that SDL_EVENT_USER is just a starting point for event numbers that SDL
+won't claim for itself, and you should use [SDL_RegisterEvents](SDL_RegisterEvents)
+to claim a unique number that other parts of your app won't also claim.
 
 ## Relationships between event types and union members
 
