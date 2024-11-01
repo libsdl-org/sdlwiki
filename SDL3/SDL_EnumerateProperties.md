@@ -64,7 +64,7 @@ my_enumerate_properties_callback(void *userdata, SDL_PropertiesID props, const c
         "%s is a string property with value %s", name, SDL_GetStringProperty(props, name, ""));
       break;
     case SDL_PROPERTY_TYPE_NUMBER:
-      SDL_Log("%s is a number property with value %lld", name, SDL_GetNumberProperty(props, name, 0));
+      SDL_Log("%s is a number property with value %"SDL_PRIs64, name, SDL_GetNumberProperty(props, name, 0));
       break;
     case SDL_PROPERTY_TYPE_FLOAT:
       SDL_Log("%s is a float property with value %f", name, SDL_GetFloatProperty(props, name, 0.0f));
@@ -104,10 +104,11 @@ main(int argc, char** argv)
     }
   }
 
+  SDL_free(displays);
+
   return 0;
 }
 ```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
-
