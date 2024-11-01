@@ -66,14 +66,12 @@ typedef union SDL_Event
 The [SDL_Event](SDL_Event) structure is the core of all event handling in
 SDL. [SDL_Event](SDL_Event) is a union of all event structures used in SDL.
 
-
 ## Using events
 
 The [SDL_Event](SDL_Event) structure has two uses:
 
 - Reading events from the event queue
 - Placing events on the event queue
-
 
 ## Reading events from the event queue
 
@@ -158,7 +156,6 @@ SDL_PushEvent(&user_event);
 | SDL_USEREVENT                                                                        | [SDL_UserEvent](SDL_UserEvent)                         | **user**        |
 | SDL_WINDOWEVENT                                                                      | [SDL_WindowEvent](SDL_WindowEvent)                     | **window**      |
 | Other events                                                                         | [SDL_CommonEvent](SDL_CommonEvent)                     | **common**      |
-
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
