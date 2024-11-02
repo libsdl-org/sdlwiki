@@ -1,18 +1,8 @@
 ###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MAX_UINT8
 
-An unsigned 8-bit integer type.
-
-## Header File
-
-Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_stdinc.h)
-
-## Syntax
-
-```c
-#define SDL_MAX_UINT8   ((Uint8)0xFF)           /* 255 */
-```
+Please refer to [Uint8](Uint8) for details.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdInc](CategoryStdInc)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

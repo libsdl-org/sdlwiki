@@ -1,18 +1,8 @@
 ###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MAX_UINT16
 
-An unsigned 16-bit integer type.
-
-## Header File
-
-Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_stdinc.h)
-
-## Syntax
-
-```c
-#define SDL_MAX_UINT16  ((Uint16)0xFFFF)        /* 65535 */
-```
+Please refer to [Uint16](Uint16) for details.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdInc](CategoryStdInc)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 
