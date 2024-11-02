@@ -18,9 +18,9 @@ bool SDL_AddVulkanRenderSemaphores(SDL_Renderer *renderer, Uint32 wait_stage_mas
 |                                |                      |                                                                                                          |
 | ------------------------------ | -------------------- | -------------------------------------------------------------------------------------------------------- |
 | [SDL_Renderer](SDL_Renderer) * | **renderer**         | the rendering context.                                                                                   |
-| Uint32                         | **wait_stage_mask**  | the VkPipelineStageFlags for the wait.                                                                   |
-| Sint64                         | **wait_semaphore**   | a VkSempahore to wait on before rendering the current frame, or 0 if not needed.                         |
-| Sint64                         | **signal_semaphore** | a VkSempahore that SDL will signal when rendering for the current frame is complete, or 0 if not needed. |
+| [Uint32](Uint32)               | **wait_stage_mask**  | the VkPipelineStageFlags for the wait.                                                                   |
+| [Sint64](Sint64)               | **wait_semaphore**   | a VkSempahore to wait on before rendering the current frame, or 0 if not needed.                         |
+| [Sint64](Sint64)               | **signal_semaphore** | a VkSempahore that SDL will signal when rendering for the current frame is complete, or 0 if not needed. |
 
 ## Return Value
 

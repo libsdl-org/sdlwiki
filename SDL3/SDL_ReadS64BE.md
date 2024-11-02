@@ -18,7 +18,7 @@ bool SDL_ReadS64BE(SDL_IOStream *src, Sint64 *value);
 |                                |           |                                         |
 | ------------------------------ | --------- | --------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
-| Sint64 *                       | **value** | a pointer filled in with the data read. |
+| [Sint64](Sint64) *             | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

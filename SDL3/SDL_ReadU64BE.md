@@ -18,7 +18,7 @@ bool SDL_ReadU64BE(SDL_IOStream *src, Uint64 *value);
 |                                |           |                                         |
 | ------------------------------ | --------- | --------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
-| Uint64 *                       | **value** | a pointer filled in with the data read. |
+| [Uint64](Uint64) *             | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

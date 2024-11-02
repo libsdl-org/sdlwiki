@@ -15,8 +15,8 @@ Uint32 SDL_GetAndroidExternalStorageState(void);
 
 ## Return Value
 
-(Uint32) Returns the current state of external storage, or 0 if external
-storage is currently unavailable.
+([Uint32](Uint32)) Returns the current state of external storage, or 0 if
+external storage is currently unavailable.
 
 ## Remarks
 

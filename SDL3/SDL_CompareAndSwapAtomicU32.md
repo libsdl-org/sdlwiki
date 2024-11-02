@@ -18,8 +18,8 @@ bool SDL_CompareAndSwapAtomicU32(SDL_AtomicU32 *a, Uint32 oldval, Uint32 newval)
 |                                  |            |                                                                         |
 | -------------------------------- | ---------- | ----------------------------------------------------------------------- |
 | [SDL_AtomicU32](SDL_AtomicU32) * | **a**      | a pointer to an [SDL_AtomicU32](SDL_AtomicU32) variable to be modified. |
-| Uint32                           | **oldval** | the old value.                                                          |
-| Uint32                           | **newval** | the new value.                                                          |
+| [Uint32](Uint32)                 | **oldval** | the old value.                                                          |
+| [Uint32](Uint32)                 | **newval** | the new value.                                                          |
 
 ## Return Value
 

@@ -15,13 +15,14 @@ SDL_FORCE_INLINE Uint32 SDL_Swap32(Uint32 x);
 
 ## Function Parameters
 
-|        |       |                         |
-| ------ | ----- | ----------------------- |
-| Uint32 | **x** | the value to byte-swap. |
+|                  |       |                         |
+| ---------------- | ----- | ----------------------- |
+| [Uint32](Uint32) | **x** | the value to byte-swap. |
 
 ## Return Value
 
-(Uint32) Returns `x`, with its bytes in the opposite endian order.
+([Uint32](Uint32)) Returns `x`, with its bytes in the opposite endian
+order.
 
 ## Remarks
 

@@ -24,7 +24,7 @@ bool SDL_WaitForGPUFences(
 | [SDL_GPUDevice](SDL_GPUDevice) *      | **device**     | a GPU context.                                                                     |
 | bool                                  | **wait_all**   | if 0, wait for any fence to be signaled, if 1, wait for all fences to be signaled. |
 | [SDL_GPUFence](SDL_GPUFence) *const * | **fences**     | an array of fences to wait on.                                                     |
-| Uint32                                | **num_fences** | the number of fences in the fences array.                                          |
+| [Uint32](Uint32)                      | **num_fences** | the number of fences in the fences array.                                          |
 
 ## Return Value
 

@@ -18,7 +18,7 @@ bool SDL_ReadU16LE(SDL_IOStream *src, Uint16 *value);
 |                                |           |                                         |
 | ------------------------------ | --------- | --------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
-| Uint16 *                       | **value** | a pointer filled in with the data read. |
+| [Uint16](Uint16) *             | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

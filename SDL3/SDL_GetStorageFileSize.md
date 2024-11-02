@@ -19,7 +19,7 @@ bool SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *leng
 | ---------------------------- | ----------- | ---------------------------------------------- |
 | [SDL_Storage](SDL_Storage) * | **storage** | a storage container to query.                  |
 | const char *                 | **path**    | the relative path of the file to query.        |
-| Uint64 *                     | **length**  | a pointer to be filled with the file's length. |
+| [Uint64](Uint64) *           | **length**  | a pointer to be filled with the file's length. |
 
 ## Return Value
 

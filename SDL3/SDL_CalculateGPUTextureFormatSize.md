@@ -22,13 +22,14 @@ Uint32 SDL_CalculateGPUTextureFormatSize(
 |                                              |                          |                                                 |
 | -------------------------------------------- | ------------------------ | ----------------------------------------------- |
 | [SDL_GPUTextureFormat](SDL_GPUTextureFormat) | **format**               | a texture format.                               |
-| Uint32                                       | **width**                | width in pixels.                                |
-| Uint32                                       | **height**               | height in pixels.                               |
-| Uint32                                       | **depth_or_layer_count** | depth for 3D textures or layer count otherwise. |
+| [Uint32](Uint32)                             | **width**                | width in pixels.                                |
+| [Uint32](Uint32)                             | **height**               | height in pixels.                               |
+| [Uint32](Uint32)                             | **depth_or_layer_count** | depth for 3D textures or layer count otherwise. |
 
 ## Return Value
 
-(Uint32) Returns the size of a texture with this format and dimensions.
+([Uint32](Uint32)) Returns the size of a texture with this format and
+dimensions.
 
 ## Version
 

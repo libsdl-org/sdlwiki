@@ -24,9 +24,9 @@ SDL_GPUComputePass* SDL_BeginGPUComputePass(
 | -------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------------ |
 | [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *                                         | **command_buffer**               | a command buffer.                                      |
 | const [SDL_GPUStorageTextureReadWriteBinding](SDL_GPUStorageTextureReadWriteBinding) * | **storage_texture_bindings**     | an array of writeable storage texture binding structs. |
-| Uint32                                                                                 | **num_storage_texture_bindings** | the number of storage textures to bind from the array. |
+| [Uint32](Uint32)                                                                       | **num_storage_texture_bindings** | the number of storage textures to bind from the array. |
 | const [SDL_GPUStorageBufferReadWriteBinding](SDL_GPUStorageBufferReadWriteBinding) *   | **storage_buffer_bindings**      | an array of writeable storage buffer binding structs.  |
-| Uint32                                                                                 | **num_storage_buffer_bindings**  | the number of storage buffers to bind from the array.  |
+| [Uint32](Uint32)                                                                       | **num_storage_buffer_bindings**  | the number of storage buffers to bind from the array.  |
 
 ## Return Value
 

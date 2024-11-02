@@ -15,13 +15,13 @@ Uint32 SDL_rand_bits_r(Uint64 *state);
 
 ## Function Parameters
 
-|          |           |                                                                     |
-| -------- | --------- | ------------------------------------------------------------------- |
-| Uint64 * | **state** | a pointer to the current random number state, this may not be NULL. |
+|                    |           |                                                                     |
+| ------------------ | --------- | ------------------------------------------------------------------- |
+| [Uint64](Uint64) * | **state** | a pointer to the current random number state, this may not be NULL. |
 
 ## Return Value
 
-(Uint32) Returns a random value in the range of
+([Uint32](Uint32)) Returns a random value in the range of
 [0-[SDL_MAX_UINT32](SDL_MAX_UINT32)].
 
 ## Remarks

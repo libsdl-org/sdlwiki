@@ -21,8 +21,8 @@ Uint16 SDL_GetJoystickProductForID(SDL_JoystickID instance_id);
 
 ## Return Value
 
-(Uint16) Returns the USB product ID of the selected joystick. If called
-with an invalid instance_id, this function returns 0.
+([Uint16](Uint16)) Returns the USB product ID of the selected joystick. If
+called with an invalid instance_id, this function returns 0.
 
 ## Remarks
 

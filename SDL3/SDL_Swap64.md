@@ -15,13 +15,14 @@ SDL_FORCE_INLINE Uint32 SDL_Swap64(Uint64 x);
 
 ## Function Parameters
 
-|        |       |                         |
-| ------ | ----- | ----------------------- |
-| Uint64 | **x** | the value to byte-swap. |
+|                  |       |                         |
+| ---------------- | ----- | ----------------------- |
+| [Uint64](Uint64) | **x** | the value to byte-swap. |
 
 ## Return Value
 
-(Uint32) Returns `x`, with its bytes in the opposite endian order.
+([Uint32](Uint32)) Returns `x`, with its bytes in the opposite endian
+order.
 
 ## Remarks
 

@@ -19,7 +19,7 @@ bool SDL_SetJoystickVirtualAxis(SDL_Joystick *joystick, int axis, Sint16 value);
 | ------------------------------ | ------------ | -------------------------------------------------------- |
 | [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.              |
 | int                            | **axis**     | the index of the axis on the virtual joystick to update. |
-| Sint16                         | **value**    | the new value for the specified axis.                    |
+| [Sint16](Sint16)               | **value**    | the new value for the specified axis.                    |
 
 ## Return Value
 
@@ -37,8 +37,8 @@ including, but not limited to the following:
 [SDL_WaitEvent](SDL_WaitEvent).
 
 Note that when sending trigger axes, you should scale the value to the full
-range of Sint16. For example, a trigger at rest would have the value of
-[`SDL_JOYSTICK_AXIS_MIN`](SDL_JOYSTICK_AXIS_MIN).
+range of [Sint16](Sint16). For example, a trigger at rest would have the
+value of [`SDL_JOYSTICK_AXIS_MIN`](SDL_JOYSTICK_AXIS_MIN).
 
 ## Version
 

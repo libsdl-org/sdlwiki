@@ -18,7 +18,7 @@ bool SDL_WaitSemaphoreTimeout(SDL_Semaphore *sem, Sint32 timeoutMS);
 |                                  |               |                                                                         |
 | -------------------------------- | ------------- | ----------------------------------------------------------------------- |
 | [SDL_Semaphore](SDL_Semaphore) * | **sem**       | the semaphore to wait on.                                               |
-| Sint32                           | **timeoutMS** | the length of the timeout, in milliseconds, or -1 to wait indefinitely. |
+| [Sint32](Sint32)                 | **timeoutMS** | the length of the timeout, in milliseconds, or -1 to wait indefinitely. |
 
 ## Return Value
 

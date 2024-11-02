@@ -22,9 +22,9 @@ void SDL_BindGPUComputeSamplers(
 |                                                                      |                              |                                                                |
 | -------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------- |
 | [SDL_GPUComputePass](SDL_GPUComputePass) *                           | **compute_pass**             | a compute pass handle.                                         |
-| Uint32                                                               | **first_slot**               | the compute sampler slot to begin binding from.                |
+| [Uint32](Uint32)                                                     | **first_slot**               | the compute sampler slot to begin binding from.                |
 | const [SDL_GPUTextureSamplerBinding](SDL_GPUTextureSamplerBinding) * | **texture_sampler_bindings** | an array of texture-sampler binding structs.                   |
-| Uint32                                                               | **num_bindings**             | the number of texture-sampler bindings to bind from the array. |
+| [Uint32](Uint32)                                                     | **num_bindings**             | the number of texture-sampler bindings to bind from the array. |
 
 ## Remarks
 

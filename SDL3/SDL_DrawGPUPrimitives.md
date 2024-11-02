@@ -23,10 +23,10 @@ void SDL_DrawGPUPrimitives(
 |                                          |                    |                                             |
 | ---------------------------------------- | ------------------ | ------------------------------------------- |
 | [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass**    | a render pass handle.                       |
-| Uint32                                   | **num_vertices**   | the number of vertices to draw.             |
-| Uint32                                   | **num_instances**  | the number of instances that will be drawn. |
-| Uint32                                   | **first_vertex**   | the index of the first vertex to draw.      |
-| Uint32                                   | **first_instance** | the ID of the first instance to draw.       |
+| [Uint32](Uint32)                         | **num_vertices**   | the number of vertices to draw.             |
+| [Uint32](Uint32)                         | **num_instances**  | the number of instances that will be drawn. |
+| [Uint32](Uint32)                         | **first_vertex**   | the index of the first vertex to draw.      |
+| [Uint32](Uint32)                         | **first_instance** | the ID of the first instance to draw.       |
 
 ## Remarks
 

@@ -18,7 +18,7 @@ bool SDL_ReadS32BE(SDL_IOStream *src, Sint32 *value);
 |                                |           |                                         |
 | ------------------------------ | --------- | --------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
-| Sint32 *                       | **value** | a pointer filled in with the data read. |
+| [Sint32](Sint32) *             | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

@@ -21,7 +21,7 @@ bool SDL_Vulkan_GetPresentationSupport(VkInstance instance,
 | ---------------- | -------------------- | --------------------------------------------------------- |
 | VkInstance       | **instance**         | the Vulkan instance handle.                               |
 | VkPhysicalDevice | **physicalDevice**   | a valid Vulkan physical device handle.                    |
-| Uint32           | **queueFamilyIndex** | a valid queue family index for the given physical device. |
+| [Uint32](Uint32) | **queueFamilyIndex** | a valid queue family index for the given physical device. |
 
 ## Return Value
 

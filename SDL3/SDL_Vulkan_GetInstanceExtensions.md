@@ -15,9 +15,9 @@ char const * const * SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
 
 ## Function Parameters
 
-|          |           |                                                             |
-| -------- | --------- | ----------------------------------------------------------- |
-| Uint32 * | **count** | a pointer filled in with the number of extensions returned. |
+|                    |           |                                                             |
+| ------------------ | --------- | ----------------------------------------------------------- |
+| [Uint32](Uint32) * | **count** | a pointer filled in with the number of extensions returned. |
 
 ## Return Value
 

@@ -18,7 +18,7 @@ bool SDL_WriteU64BE(SDL_IOStream *dst, Uint64 value);
 |                                |           |                                           |
 | ------------------------------ | --------- | ----------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written. |
-| Uint64                         | **value** | the data to be written, in native format. |
+| [Uint64](Uint64)               | **value** | the data to be written, in native format. |
 
 ## Return Value
 

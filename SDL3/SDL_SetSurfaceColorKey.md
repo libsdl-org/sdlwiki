@@ -19,7 +19,7 @@ bool SDL_SetSurfaceColorKey(SDL_Surface *surface, bool enabled, Uint32 key);
 | ---------------------------- | ----------- | ----------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to update.   |
 | bool                         | **enabled** | true to enable color key, false to disable color key. |
-| Uint32                       | **key**     | the transparent pixel.                                |
+| [Uint32](Uint32)             | **key**     | the transparent pixel.                                |
 
 ## Return Value
 

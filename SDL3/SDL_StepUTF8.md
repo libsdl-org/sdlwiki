@@ -22,7 +22,7 @@ Uint32 SDL_StepUTF8(const char **pstr, size_t *pslen);
 
 ## Return Value
 
-(Uint32) Returns the first Unicode codepoint in the string.
+([Uint32](Uint32)) Returns the first Unicode codepoint in the string.
 
 ## Remarks
 

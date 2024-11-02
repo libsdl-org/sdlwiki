@@ -21,9 +21,9 @@ Uint32 SDL_GetHapticFeatures(SDL_Haptic *haptic);
 
 ## Return Value
 
-(Uint32) Returns a list of supported haptic features in bitwise manner
-(OR'd), or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([Uint32](Uint32)) Returns a list of supported haptic features in bitwise
+manner (OR'd), or 0 on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
 ## Version
 

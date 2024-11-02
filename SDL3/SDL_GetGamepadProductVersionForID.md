@@ -21,8 +21,8 @@ Uint16 SDL_GetGamepadProductVersionForID(SDL_JoystickID instance_id);
 
 ## Return Value
 
-(Uint16) Returns the product version of the selected gamepad. If called on
-an invalid index, this function returns zero.
+([Uint16](Uint16)) Returns the product version of the selected gamepad. If
+called on an invalid index, this function returns zero.
 
 ## Remarks
 

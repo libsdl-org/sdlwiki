@@ -19,8 +19,8 @@ bool SDL_SetJoystickVirtualBall(SDL_Joystick *joystick, int ball, Sint16 xrel, S
 | ------------------------------ | ------------ | -------------------------------------------------------- |
 | [SDL_Joystick](SDL_Joystick) * | **joystick** | the virtual joystick on which to set state.              |
 | int                            | **ball**     | the index of the ball on the virtual joystick to update. |
-| Sint16                         | **xrel**     | the relative motion on the X axis.                       |
-| Sint16                         | **yrel**     | the relative motion on the Y axis.                       |
+| [Sint16](Sint16)               | **xrel**     | the relative motion on the X axis.                       |
+| [Sint16](Sint16)               | **yrel**     | the relative motion on the Y axis.                       |
 
 ## Return Value
 

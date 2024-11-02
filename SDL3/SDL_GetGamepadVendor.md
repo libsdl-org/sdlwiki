@@ -21,7 +21,7 @@ Uint16 SDL_GetGamepadVendor(SDL_Gamepad *gamepad);
 
 ## Return Value
 
-(Uint16) Returns the USB vendor ID, or zero if unavailable.
+([Uint16](Uint16)) Returns the USB vendor ID, or zero if unavailable.
 
 ## Remarks
 

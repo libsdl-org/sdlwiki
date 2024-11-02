@@ -21,8 +21,8 @@ Uint16 SDL_GetGamepadProductForID(SDL_JoystickID instance_id);
 
 ## Return Value
 
-(Uint16) Returns the USB product ID of the selected gamepad. If called on
-an invalid index, this function returns zero.
+([Uint16](Uint16)) Returns the USB product ID of the selected gamepad. If
+called on an invalid index, this function returns zero.
 
 ## Remarks
 

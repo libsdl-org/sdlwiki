@@ -20,7 +20,7 @@ bool SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destinati
 | [SDL_Storage](SDL_Storage) * | **storage**     | a storage container to read from.               |
 | const char *                 | **path**        | the relative path of the file to read.          |
 | void *                       | **destination** | a client-provided buffer to read the file into. |
-| Uint64                       | **length**      | the length of the destination buffer.           |
+| [Uint64](Uint64)             | **length**      | the length of the destination buffer.           |
 
 ## Return Value
 

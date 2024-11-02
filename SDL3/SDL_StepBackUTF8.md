@@ -22,7 +22,7 @@ Uint32 SDL_StepBackUTF8(const char *start, const char **pstr);
 
 ## Return Value
 
-(Uint32) Returns the previous Unicode codepoint in the string.
+([Uint32](Uint32)) Returns the previous Unicode codepoint in the string.
 
 ## Remarks
 

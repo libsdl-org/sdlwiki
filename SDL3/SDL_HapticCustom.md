@@ -45,7 +45,8 @@ effect.
 
 A custom force feedback effect is much like a periodic effect, where the
 application can define its exact shape. You will have to allocate the data
-yourself. Data should consist of channels * samples Uint16 samples.
+yourself. Data should consist of channels * samples [Uint16](Uint16)
+samples.
 
 If channels is one, the effect is rotated using the defined direction.
 Otherwise it uses the samples in data for the different axes.

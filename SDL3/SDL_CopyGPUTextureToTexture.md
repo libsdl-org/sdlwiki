@@ -27,9 +27,9 @@ void SDL_CopyGPUTextureToTexture(
 | [SDL_GPUCopyPass](SDL_GPUCopyPass) *                     | **copy_pass**   | a copy pass handle.                                                                                         |
 | const [SDL_GPUTextureLocation](SDL_GPUTextureLocation) * | **source**      | a source texture region.                                                                                    |
 | const [SDL_GPUTextureLocation](SDL_GPUTextureLocation) * | **destination** | a destination texture region.                                                                               |
-| Uint32                                                   | **w**           | the width of the region to copy.                                                                            |
-| Uint32                                                   | **h**           | the height of the region to copy.                                                                           |
-| Uint32                                                   | **d**           | the depth of the region to copy.                                                                            |
+| [Uint32](Uint32)                                         | **w**           | the width of the region to copy.                                                                            |
+| [Uint32](Uint32)                                         | **h**           | the height of the region to copy.                                                                           |
+| [Uint32](Uint32)                                         | **d**           | the depth of the region to copy.                                                                            |
 | bool                                                     | **cycle**       | if true, cycles the destination texture if the destination texture is bound, otherwise overwrites the data. |
 
 ## Remarks

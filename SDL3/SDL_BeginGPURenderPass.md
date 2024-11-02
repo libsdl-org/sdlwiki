@@ -23,7 +23,7 @@ SDL_GPURenderPass* SDL_BeginGPURenderPass(
 | ---------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------- |
 | [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) *                         | **command_buffer**            | a command buffer.                                                                     |
 | const [SDL_GPUColorTargetInfo](SDL_GPUColorTargetInfo) *               | **color_target_infos**        | an array of texture subresources with corresponding clear values and load/store ops.  |
-| Uint32                                                                 | **num_color_targets**         | the number of color targets in the color_target_infos array.                          |
+| [Uint32](Uint32)                                                       | **num_color_targets**         | the number of color targets in the color_target_infos array.                          |
 | const [SDL_GPUDepthStencilTargetInfo](SDL_GPUDepthStencilTargetInfo) * | **depth_stencil_target_info** | a texture subresource with corresponding clear value and load/store ops, may be NULL. |
 
 ## Return Value

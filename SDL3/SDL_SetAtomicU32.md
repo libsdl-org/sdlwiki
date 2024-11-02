@@ -18,11 +18,11 @@ Uint32 SDL_SetAtomicU32(SDL_AtomicU32 *a, Uint32 v);
 |                                  |       |                                                                         |
 | -------------------------------- | ----- | ----------------------------------------------------------------------- |
 | [SDL_AtomicU32](SDL_AtomicU32) * | **a** | a pointer to an [SDL_AtomicU32](SDL_AtomicU32) variable to be modified. |
-| Uint32                           | **v** | the desired value.                                                      |
+| [Uint32](Uint32)                 | **v** | the desired value.                                                      |
 
 ## Return Value
 
-(Uint32) Returns the previous value of the atomic variable.
+([Uint32](Uint32)) Returns the previous value of the atomic variable.
 
 ## Remarks
 

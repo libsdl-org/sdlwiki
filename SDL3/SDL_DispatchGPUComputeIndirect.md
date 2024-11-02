@@ -22,7 +22,7 @@ void SDL_DispatchGPUComputeIndirect(
 | ------------------------------------------ | ---------------- | ----------------------------------------------------- |
 | [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass** | a compute pass handle.                                |
 | [SDL_GPUBuffer](SDL_GPUBuffer) *           | **buffer**       | a buffer containing dispatch parameters.              |
-| Uint32                                     | **offset**       | the offset to start reading from the dispatch buffer. |
+| [Uint32](Uint32)                           | **offset**       | the offset to start reading from the dispatch buffer. |
 
 ## Remarks
 

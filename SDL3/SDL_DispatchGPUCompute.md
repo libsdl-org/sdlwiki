@@ -22,9 +22,9 @@ void SDL_DispatchGPUCompute(
 |                                            |                  |                                                            |
 | ------------------------------------------ | ---------------- | ---------------------------------------------------------- |
 | [SDL_GPUComputePass](SDL_GPUComputePass) * | **compute_pass** | a compute pass handle.                                     |
-| Uint32                                     | **groupcount_x** | number of local workgroups to dispatch in the X dimension. |
-| Uint32                                     | **groupcount_y** | number of local workgroups to dispatch in the Y dimension. |
-| Uint32                                     | **groupcount_z** | number of local workgroups to dispatch in the Z dimension. |
+| [Uint32](Uint32)                           | **groupcount_x** | number of local workgroups to dispatch in the X dimension. |
+| [Uint32](Uint32)                           | **groupcount_y** | number of local workgroups to dispatch in the Y dimension. |
+| [Uint32](Uint32)                           | **groupcount_z** | number of local workgroups to dispatch in the Z dimension. |
 
 ## Remarks
 

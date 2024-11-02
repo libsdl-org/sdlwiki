@@ -22,9 +22,9 @@ void SDL_BindGPUFragmentStorageBuffers(
 |                                          |                     |                                                         |
 | ---------------------------------------- | ------------------- | ------------------------------------------------------- |
 | [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass**     | a render pass handle.                                   |
-| Uint32                                   | **first_slot**      | the fragment storage buffer slot to begin binding from. |
+| [Uint32](Uint32)                         | **first_slot**      | the fragment storage buffer slot to begin binding from. |
 | [SDL_GPUBuffer](SDL_GPUBuffer) *const *  | **storage_buffers** | an array of storage buffers.                            |
-| Uint32                                   | **num_bindings**    | the number of storage buffers to bind from the array.   |
+| [Uint32](Uint32)                         | **num_bindings**    | the number of storage buffers to bind from the array.   |
 
 ## Remarks
 

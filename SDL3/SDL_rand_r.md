@@ -15,14 +15,14 @@ Sint32 SDL_rand_r(Uint64 *state, Sint32 n);
 
 ## Function Parameters
 
-|          |           |                                                                     |
-| -------- | --------- | ------------------------------------------------------------------- |
-| Uint64 * | **state** | a pointer to the current random number state, this may not be NULL. |
-| Sint32   | **n**     | the number of possible outcomes. n must be positive.                |
+|                    |           |                                                                     |
+| ------------------ | --------- | ------------------------------------------------------------------- |
+| [Uint64](Uint64) * | **state** | a pointer to the current random number state, this may not be NULL. |
+| [Sint32](Sint32)   | **n**     | the number of possible outcomes. n must be positive.                |
 
 ## Return Value
 
-(Sint32) Returns a random value in the range of [0 .. n-1].
+([Sint32](Sint32)) Returns a random value in the range of [0 .. n-1].
 
 ## Remarks
 
@@ -33,8 +33,9 @@ much worse as n gets bigger.
 Example: to simulate a d6 use `SDL_rand_r(state, 6) + 1` The +1 converts
 0..5 to 1..6
 
-If you want to generate a pseudo-random number in the full range of Sint32,
-you should use: (Sint32)[SDL_rand_bits_r](SDL_rand_bits_r)(state)
+If you want to generate a pseudo-random number in the full range of
+[Sint32](Sint32), you should use:
+([Sint32](Sint32))[SDL_rand_bits_r](SDL_rand_bits_r)(state)
 
 There are no guarantees as to the quality of the random sequence produced,
 and this should not be used for security (cryptography, passwords) or where

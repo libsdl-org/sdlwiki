@@ -15,9 +15,9 @@ void SDL_srand(Uint64 seed);
 
 ## Function Parameters
 
-|        |          |                                                                                                                 |
-| ------ | -------- | --------------------------------------------------------------------------------------------------------------- |
-| Uint64 | **seed** | the value to use as a random number seed, or 0 to use [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)(). |
+|                  |          |                                                                                                                 |
+| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
+| [Uint64](Uint64) | **seed** | the value to use as a random number seed, or 0 to use [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)(). |
 
 ## Remarks
 

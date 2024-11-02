@@ -26,7 +26,7 @@ Uint32 SDL_MapRGBA(const SDL_PixelFormatDetails *format, const SDL_Palette *pale
 
 ## Return Value
 
-(Uint32) Returns a pixel value.
+([Uint32](Uint32)) Returns a pixel value.
 
 ## Remarks
 
@@ -42,8 +42,8 @@ in the palette will be returned.
 
 If the pixel format bpp (color depth) is less than 32-bpp then the unused
 upper bits of the return value can safely be ignored (e.g., with a 16-bpp
-format the return value can be assigned to a Uint16, and similarly a Uint8
-for an 8-bpp format).
+format the return value can be assigned to a [Uint16](Uint16), and
+similarly a Uint8 for an 8-bpp format).
 
 ## Thread Safety
 

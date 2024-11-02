@@ -22,9 +22,9 @@ void SDL_PushGPUVertexUniformData(
 |                                                |                    |                                          |
 | ---------------------------------------------- | ------------------ | ---------------------------------------- |
 | [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer** | a command buffer.                        |
-| Uint32                                         | **slot_index**     | the vertex uniform slot to push data to. |
+| [Uint32](Uint32)                               | **slot_index**     | the vertex uniform slot to push data to. |
 | const void *                                   | **data**           | client data to write.                    |
-| Uint32                                         | **length**         | the length of the data to write.         |
+| [Uint32](Uint32)                               | **length**         | the length of the data to write.         |
 
 ## Remarks
 

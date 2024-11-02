@@ -21,7 +21,7 @@ Uint64 SDL_GetStorageSpaceRemaining(SDL_Storage *storage);
 
 ## Return Value
 
-(Uint64) Returns the amount of remaining space, in bytes.
+([Uint64](Uint64)) Returns the amount of remaining space, in bytes.
 
 ## Version
 

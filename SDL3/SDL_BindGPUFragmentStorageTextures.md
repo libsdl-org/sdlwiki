@@ -22,9 +22,9 @@ void SDL_BindGPUFragmentStorageTextures(
 |                                           |                      |                                                          |
 | ----------------------------------------- | -------------------- | -------------------------------------------------------- |
 | [SDL_GPURenderPass](SDL_GPURenderPass) *  | **render_pass**      | a render pass handle.                                    |
-| Uint32                                    | **first_slot**       | the fragment storage texture slot to begin binding from. |
+| [Uint32](Uint32)                          | **first_slot**       | the fragment storage texture slot to begin binding from. |
 | [SDL_GPUTexture](SDL_GPUTexture) *const * | **storage_textures** | an array of storage textures.                            |
-| Uint32                                    | **num_bindings**     | the number of storage textures to bind from the array.   |
+| [Uint32](Uint32)                          | **num_bindings**     | the number of storage textures to bind from the array.   |
 
 ## Remarks
 

@@ -20,7 +20,7 @@ bool SDL_WriteStorageFile(SDL_Storage *storage, const char *path, const void *so
 | [SDL_Storage](SDL_Storage) * | **storage** | a storage container to write to.        |
 | const char *                 | **path**    | the relative path of the file to write. |
 | const void *                 | **source**  | a client-provided buffer to write from. |
-| Uint64                       | **length**  | the length of the source buffer.        |
+| [Uint64](Uint64)             | **length**  | the length of the source buffer.        |
 
 ## Return Value
 

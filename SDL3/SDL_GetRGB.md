@@ -17,7 +17,7 @@ void SDL_GetRGB(Uint32 pixel, const SDL_PixelFormatDetails *format, const SDL_Pa
 
 |                                                          |             |                                                                                            |
 | -------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------ |
-| Uint32                                                   | **pixel**   | a pixel value.                                                                             |
+| [Uint32](Uint32)                                         | **pixel**   | a pixel value.                                                                             |
 | const [SDL_PixelFormatDetails](SDL_PixelFormatDetails) * | **format**  | a pointer to [SDL_PixelFormatDetails](SDL_PixelFormatDetails) describing the pixel format. |
 | const [SDL_Palette](SDL_Palette) *                       | **palette** | an optional palette for indexed formats, may be NULL.                                      |
 | Uint8 *                                                  | **r**       | a pointer filled in with the red component, may be NULL.                                   |

@@ -22,8 +22,8 @@ Sint16 SDL_GetGamepadAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
 
 ## Return Value
 
-(Sint16) Returns axis state (including 0) on success or 0 (also) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([Sint16](Sint16)) Returns axis state (including 0) on success or 0 (also)
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

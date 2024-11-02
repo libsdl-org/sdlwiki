@@ -19,7 +19,7 @@ bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick, int axis, Sint16 *s
 | ------------------------------ | ------------ | -------------------------------------------------------------------------- |
 | [SDL_Joystick](SDL_Joystick) * | **joystick** | an [SDL_Joystick](SDL_Joystick) structure containing joystick information. |
 | int                            | **axis**     | the axis to query; the axis indices start at index 0.                      |
-| Sint16 *                       | **state**    | upon return, the initial value is supplied here.                           |
+| [Sint16](Sint16) *             | **state**    | upon return, the initial value is supplied here.                           |
 
 ## Return Value
 

@@ -18,7 +18,7 @@ bool SDL_WriteS32LE(SDL_IOStream *dst, Sint32 value);
 |                                |           |                                           |
 | ------------------------------ | --------- | ----------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written. |
-| Sint32                         | **value** | the data to be written, in native format. |
+| [Sint32](Sint32)               | **value** | the data to be written, in native format. |
 
 ## Return Value
 

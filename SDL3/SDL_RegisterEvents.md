@@ -21,8 +21,8 @@ Uint32 SDL_RegisterEvents(int numevents);
 
 ## Return Value
 
-(Uint32) Returns the beginning event number, or 0 if numevents is invalid
-or if there are not enough user-defined events left.
+([Uint32](Uint32)) Returns the beginning event number, or 0 if numevents is
+invalid or if there are not enough user-defined events left.
 
 ## Thread Safety
 

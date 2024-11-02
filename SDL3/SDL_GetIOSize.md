@@ -21,7 +21,7 @@ Sint64 SDL_GetIOSize(SDL_IOStream *context);
 
 ## Return Value
 
-(Sint64) Returns the size of the data stream in the
+([Sint64](Sint64)) Returns the size of the data stream in the
 [SDL_IOStream](SDL_IOStream) on success or a negative error code on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 

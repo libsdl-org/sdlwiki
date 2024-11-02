@@ -21,7 +21,8 @@ Uint16 SDL_GetGamepadFirmwareVersion(SDL_Gamepad *gamepad);
 
 ## Return Value
 
-(Uint16) Returns the gamepad firmware version, or zero if unavailable.
+([Uint16](Uint16)) Returns the gamepad firmware version, or zero if
+unavailable.
 
 ## Remarks
 

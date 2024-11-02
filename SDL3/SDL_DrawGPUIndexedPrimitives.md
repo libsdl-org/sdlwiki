@@ -24,11 +24,11 @@ void SDL_DrawGPUIndexedPrimitives(
 |                                          |                    |                                                                     |
 | ---------------------------------------- | ------------------ | ------------------------------------------------------------------- |
 | [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass**    | a render pass handle.                                               |
-| Uint32                                   | **num_indices**    | the number of indices to draw per instance.                         |
-| Uint32                                   | **num_instances**  | the number of instances to draw.                                    |
-| Uint32                                   | **first_index**    | the starting index within the index buffer.                         |
-| Sint32                                   | **vertex_offset**  | value added to vertex index before indexing into the vertex buffer. |
-| Uint32                                   | **first_instance** | the ID of the first instance to draw.                               |
+| [Uint32](Uint32)                         | **num_indices**    | the number of indices to draw per instance.                         |
+| [Uint32](Uint32)                         | **num_instances**  | the number of instances to draw.                                    |
+| [Uint32](Uint32)                         | **first_index**    | the starting index within the index buffer.                         |
+| [Sint32](Sint32)                         | **vertex_offset**  | value added to vertex index before indexing into the vertex buffer. |
+| [Uint32](Uint32)                         | **first_instance** | the ID of the first instance to draw.                               |
 
 ## Remarks
 

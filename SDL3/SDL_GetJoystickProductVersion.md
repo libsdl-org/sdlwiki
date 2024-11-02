@@ -21,8 +21,8 @@ Uint16 SDL_GetJoystickProductVersion(SDL_Joystick *joystick);
 
 ## Return Value
 
-(Uint16) Returns the product version of the selected joystick, or 0 if
-unavailable.
+([Uint16](Uint16)) Returns the product version of the selected joystick, or
+0 if unavailable.
 
 ## Remarks
 

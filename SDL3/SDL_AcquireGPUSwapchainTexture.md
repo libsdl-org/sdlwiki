@@ -25,8 +25,8 @@ bool SDL_AcquireGPUSwapchainTexture(
 | [SDL_GPUCommandBuffer](SDL_GPUCommandBuffer) * | **command_buffer**           | a command buffer.                                                   |
 | [SDL_Window](SDL_Window) *                     | **window**                   | a window that has been claimed.                                     |
 | [SDL_GPUTexture](SDL_GPUTexture) **            | **swapchain_texture**        | a pointer filled in with a swapchain texture handle.                |
-| Uint32 *                                       | **swapchain_texture_width**  | a pointer filled in with the swapchain texture width, may be NULL.  |
-| Uint32 *                                       | **swapchain_texture_height** | a pointer filled in with the swapchain texture height, may be NULL. |
+| [Uint32](Uint32) *                             | **swapchain_texture_width**  | a pointer filled in with the swapchain texture width, may be NULL.  |
+| [Uint32](Uint32) *                             | **swapchain_texture_height** | a pointer filled in with the swapchain texture height, may be NULL. |
 
 ## Return Value
 

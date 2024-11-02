@@ -23,8 +23,8 @@ void SDL_DrawGPUIndexedPrimitivesIndirect(
 | ---------------------------------------- | --------------- | --------------------------------------------------------------------------- |
 | [SDL_GPURenderPass](SDL_GPURenderPass) * | **render_pass** | a render pass handle.                                                       |
 | [SDL_GPUBuffer](SDL_GPUBuffer) *         | **buffer**      | a buffer containing draw parameters.                                        |
-| Uint32                                   | **offset**      | the offset to start reading from the draw buffer.                           |
-| Uint32                                   | **draw_count**  | the number of draw parameter sets that should be read from the draw buffer. |
+| [Uint32](Uint32)                         | **offset**      | the offset to start reading from the draw buffer.                           |
+| [Uint32](Uint32)                         | **draw_count**  | the number of draw parameter sets that should be read from the draw buffer. |
 
 ## Remarks
 

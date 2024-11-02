@@ -19,12 +19,12 @@ Sint64 SDL_GetNumberProperty(SDL_PropertiesID props, const char *name, Sint64 de
 | ------------------------------------ | ----------------- | ---------------------------------- |
 | [SDL_PropertiesID](SDL_PropertiesID) | **props**         | the properties to query.           |
 | const char *                         | **name**          | the name of the property to query. |
-| Sint64                               | **default_value** | the default value of the property. |
+| [Sint64](Sint64)                     | **default_value** | the default value of the property. |
 
 ## Return Value
 
-(Sint64) Returns the value of the property, or `default_value` if it is not
-set or not a number property.
+([Sint64](Sint64)) Returns the value of the property, or `default_value` if
+it is not set or not a number property.
 
 ## Remarks
 

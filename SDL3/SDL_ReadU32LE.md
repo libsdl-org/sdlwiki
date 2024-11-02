@@ -18,7 +18,7 @@ bool SDL_ReadU32LE(SDL_IOStream *src, Uint32 *value);
 |                                |           |                                         |
 | ------------------------------ | --------- | --------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
-| Uint32 *                       | **value** | a pointer filled in with the data read. |
+| [Uint32](Uint32) *             | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

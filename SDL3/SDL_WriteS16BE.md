@@ -18,7 +18,7 @@ bool SDL_WriteS16BE(SDL_IOStream *dst, Sint16 value);
 |                                |           |                                           |
 | ------------------------------ | --------- | ----------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **dst**   | the stream to which data will be written. |
-| Sint16                         | **value** | the data to be written, in native format. |
+| [Sint16](Sint16)               | **value** | the data to be written, in native format. |
 
 ## Return Value
 

@@ -21,7 +21,7 @@ bool SDL_LoadWAV_IO(SDL_IOStream *src, bool closeio, SDL_AudioSpec *spec, Uint8 
 | bool                             | **closeio**   | if true, calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error.                    |
 | [SDL_AudioSpec](SDL_AudioSpec) * | **spec**      | a pointer to an [SDL_AudioSpec](SDL_AudioSpec) that will be set to the WAVE data's format details on successful return. |
 | Uint8 **                         | **audio_buf** | a pointer filled with the audio data, allocated by the function.                                                        |
-| Uint32 *                         | **audio_len** | a pointer filled with the length of the audio data buffer in bytes.                                                     |
+| [Uint32](Uint32) *               | **audio_len** | a pointer filled with the length of the audio data buffer in bytes.                                                     |
 
 ## Return Value
 

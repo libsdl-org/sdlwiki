@@ -22,7 +22,7 @@ Uint32 SDL_GPUTextureFormatTexelBlockSize(
 
 ## Return Value
 
-(Uint32) Returns the texel block size of the texture format.
+([Uint32](Uint32)) Returns the texel block size of the texture format.
 
 ## Version
 

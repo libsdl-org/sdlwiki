@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_FOURCC
 
-Define a four character code as a Uint32.
+Define a four character code as a [Uint32](Uint32).
 
 ## Header File
 
@@ -28,8 +28,8 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Return Value
 
-Returns the four characters converted into a Uint32, one character
-per-byte.
+Returns the four characters converted into a [Uint32](Uint32), one
+character per-byte.
 
 ## Thread Safety
 

@@ -18,7 +18,7 @@ bool SDL_ReadS16BE(SDL_IOStream *src, Sint16 *value);
 |                                |           |                                         |
 | ------------------------------ | --------- | --------------------------------------- |
 | [SDL_IOStream](SDL_IOStream) * | **src**   | the stream from which to read data.     |
-| Sint16 *                       | **value** | a pointer filled in with the data read. |
+| [Sint16](Sint16) *             | **value** | a pointer filled in with the data read. |
 
 ## Return Value
 

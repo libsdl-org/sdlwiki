@@ -15,7 +15,7 @@ Uint32 SDL_rand_bits(void);
 
 ## Return Value
 
-(Uint32) Returns a random value in the range of
+([Uint32](Uint32)) Returns a random value in the range of
 [0-[SDL_MAX_UINT32](SDL_MAX_UINT32)].
 
 ## Remarks

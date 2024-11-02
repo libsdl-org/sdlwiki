@@ -21,7 +21,7 @@ Uint32 SDL_GetAtomicU32(SDL_AtomicU32 *a);
 
 ## Return Value
 
-(Uint32) Returns the current value of an atomic variable.
+([Uint32](Uint32)) Returns the current value of an atomic variable.
 
 ## Remarks
 

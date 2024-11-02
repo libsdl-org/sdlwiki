@@ -15,10 +15,10 @@ char * SDL_UCS4ToUTF8(Uint32 codepoint, char *dst);
 
 ## Function Parameters
 
-|        |               |                                                                          |
-| ------ | ------------- | ------------------------------------------------------------------------ |
-| Uint32 | **codepoint** | a Unicode codepoint to convert to UTF-8.                                 |
-| char * | **dst**       | the location to write the encoded UTF-8. Must point to at least 4 bytes! |
+|                  |               |                                                                          |
+| ---------------- | ------------- | ------------------------------------------------------------------------ |
+| [Uint32](Uint32) | **codepoint** | a Unicode codepoint to convert to UTF-8.                                 |
+| char *           | **dst**       | the location to write the encoded UTF-8. Must point to at least 4 bytes! |
 
 ## Return Value
 

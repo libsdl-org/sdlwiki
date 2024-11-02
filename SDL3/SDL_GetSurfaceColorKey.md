@@ -18,7 +18,7 @@ bool SDL_GetSurfaceColorKey(SDL_Surface *surface, Uint32 *key);
 |                              |             |                                                    |
 | ---------------------------- | ----------- | -------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to query. |
-| Uint32 *                     | **key**     | a pointer filled in with the transparent pixel.    |
+| [Uint32](Uint32) *           | **key**     | a pointer filled in with the transparent pixel.    |
 
 ## Return Value
 

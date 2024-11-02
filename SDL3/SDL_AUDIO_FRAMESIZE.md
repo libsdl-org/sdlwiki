@@ -25,8 +25,8 @@ Returns the number of bytes used per sample frame.
 
 ## Remarks
 
-This reports on the size of an audio sample frame: stereo Sint16 data (2
-channels of 2 bytes each) would be 4 bytes per frame, for example.
+This reports on the size of an audio sample frame: stereo [Sint16](Sint16)
+data (2 channels of 2 bytes each) would be 4 bytes per frame, for example.
 
 ## Thread Safety
 

@@ -15,9 +15,9 @@ float SDL_randf_r(Uint64 *state);
 
 ## Function Parameters
 
-|          |           |                                                                     |
-| -------- | --------- | ------------------------------------------------------------------- |
-| Uint64 * | **state** | a pointer to the current random number state, this may not be NULL. |
+|                    |           |                                                                     |
+| ------------------ | --------- | ------------------------------------------------------------------- |
+| [Uint64](Uint64) * | **state** | a pointer to the current random number state, this may not be NULL. |
 
 ## Return Value
 

@@ -18,8 +18,8 @@ void SDL_TimeToWindows(SDL_Time ticks, Uint32 *dwLowDateTime, Uint32 *dwHighDate
 |                      |                    |                                                                          |
 | -------------------- | ------------------ | ------------------------------------------------------------------------ |
 | [SDL_Time](SDL_Time) | **ticks**          | the time to convert.                                                     |
-| Uint32 *             | **dwLowDateTime**  | a pointer filled in with the low portion of the Windows FILETIME value.  |
-| Uint32 *             | **dwHighDateTime** | a pointer filled in with the high portion of the Windows FILETIME value. |
+| [Uint32](Uint32) *   | **dwLowDateTime**  | a pointer filled in with the low portion of the Windows FILETIME value.  |
+| [Uint32](Uint32) *   | **dwHighDateTime** | a pointer filled in with the high portion of the Windows FILETIME value. |
 
 ## Remarks
 

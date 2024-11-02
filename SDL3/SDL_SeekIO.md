@@ -18,13 +18,14 @@ Sint64 SDL_SeekIO(SDL_IOStream *context, Sint64 offset, SDL_IOWhence whence);
 |                                |             |                                                                                                                          |
 | ------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [SDL_IOStream](SDL_IOStream) * | **context** | a pointer to an [SDL_IOStream](SDL_IOStream) structure.                                                                  |
-| Sint64                         | **offset**  | an offset in bytes, relative to `whence` location; can be negative.                                                      |
+| [Sint64](Sint64)               | **offset**  | an offset in bytes, relative to `whence` location; can be negative.                                                      |
 | [SDL_IOWhence](SDL_IOWhence)   | **whence**  | any of [`SDL_IO_SEEK_SET`](SDL_IO_SEEK_SET), [`SDL_IO_SEEK_CUR`](SDL_IO_SEEK_CUR), [`SDL_IO_SEEK_END`](SDL_IO_SEEK_END). |
 
 ## Return Value
 
-(Sint64) Returns the final offset in the data stream after the seek or -1
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+([Sint64](Sint64)) Returns the final offset in the data stream after the
+seek or -1 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 
