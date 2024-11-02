@@ -120,6 +120,7 @@ It is also possible to push events onto the event queue and so use it as a two-w
 
 ```c
 SDL_Event user_event;
+SDL_zero(user_event);  /* SDL will copy this entire struct! Initialize to keep memory checkers happy. */
 user_event.type = SDL_USEREVENT;
 user_event.user.code = 2;
 user_event.user.data1 = NULL;
