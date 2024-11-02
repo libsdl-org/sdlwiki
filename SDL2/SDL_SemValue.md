@@ -21,7 +21,7 @@ Uint32 SDL_SemValue(SDL_sem * sem);
 
 ## Return Value
 
-(Uint32) Returns the current value of the semaphore.
+([Uint32](Uint32)) Returns the current value of the semaphore.
 
 ## Version
 

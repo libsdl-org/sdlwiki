@@ -17,7 +17,7 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 
 |                            |             |                                                      |
 | -------------------------- | ----------- | ---------------------------------------------------- |
-| Uint32                     | **flags**   | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value. |
+| [Uint32](Uint32)           | **flags**   | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value. |
 | const char *               | **title**   | UTF-8 title text.                                    |
 | const char *               | **message** | UTF-8 message text.                                  |
 | [SDL_Window](SDL_Window) * | **window**  | the parent window, or NULL for no parent.            |

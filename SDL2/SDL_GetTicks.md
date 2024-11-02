@@ -15,8 +15,8 @@ Uint32 SDL_GetTicks(void);
 
 ## Return Value
 
-(Uint32) Returns an unsigned 32-bit value representing the number of
-milliseconds since the SDL library initialized.
+([Uint32](Uint32)) Returns an unsigned 32-bit value representing the number
+of milliseconds since the SDL library initialized.
 
 ## Remarks
 

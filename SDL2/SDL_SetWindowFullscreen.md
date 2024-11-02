@@ -19,7 +19,7 @@ int SDL_SetWindowFullscreen(SDL_Window * window,
 |                            |            |                                                                                                                          |
 | -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [SDL_Window](SDL_Window) * | **window** | the window to change.                                                                                                    |
-| Uint32                     | **flags**  | [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN), [`SDL_WINDOW_FULLSCREEN_DESKTOP`](SDL_WINDOW_FULLSCREEN_DESKTOP) or 0. |
+| [Uint32](Uint32)           | **flags**  | [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN), [`SDL_WINDOW_FULLSCREEN_DESKTOP`](SDL_WINDOW_FULLSCREEN_DESKTOP) or 0. |
 
 ## Return Value
 

@@ -15,8 +15,8 @@ Uint64 SDL_GetTicks64(void);
 
 ## Return Value
 
-(Uint64) Returns an unsigned 64-bit value representing the number of
-milliseconds since the SDL library initialized.
+([Uint64](Uint64)) Returns an unsigned 64-bit value representing the number
+of milliseconds since the SDL library initialized.
 
 ## Remarks
 

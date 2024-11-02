@@ -20,7 +20,7 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
 | -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------ |
 | [SDL_Window](SDL_Window) * | **window** | the window where rendering is displayed.                                                                           |
 | int                        | **index**  | the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags. |
-| Uint32                     | **flags**  | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together.                                            |
+| [Uint32](Uint32)           | **flags**  | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together.                                            |
 
 ## Return Value
 

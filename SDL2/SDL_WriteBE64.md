@@ -18,7 +18,7 @@ size_t SDL_WriteBE64(SDL_RWops * dst, Uint64 value);
 |                          |           |                                           |
 | ------------------------ | --------- | ----------------------------------------- |
 | [SDL_RWops](SDL_RWops) * | **dst**   | the stream to which data will be written. |
-| Uint64                   | **value** | the data to be written, in native format. |
+| [Uint64](Uint64)         | **value** | the data to be written, in native format. |
 
 ## Return Value
 

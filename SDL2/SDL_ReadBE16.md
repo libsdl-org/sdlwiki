@@ -21,7 +21,8 @@ Uint16 SDL_ReadBE16(SDL_RWops * src);
 
 ## Return Value
 
-(Uint16) Returns 16 bits of data in the native byte order of the platform.
+([Uint16](Uint16)) Returns 16 bits of data in the native byte order of the
+platform.
 
 ## Remarks
 

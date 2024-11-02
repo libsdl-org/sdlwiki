@@ -21,8 +21,8 @@ Sint64 SDL_RWtell(SDL_RWops *context);
 
 ## Return Value
 
-(Sint64) Returns the current offset in the stream, or -1 if the information
-can not be determined.
+([Sint64](Sint64)) Returns the current offset in the stream, or -1 if the
+information can not be determined.
 
 ## Remarks
 

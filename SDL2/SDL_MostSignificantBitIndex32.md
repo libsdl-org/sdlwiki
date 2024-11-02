@@ -15,9 +15,9 @@ SDL_FORCE_INLINE int SDL_MostSignificantBitIndex32(Uint32 x);
 
 ## Function Parameters
 
-|        |       |                                |
-| ------ | ----- | ------------------------------ |
-| Uint32 | **x** | the number to find the MSB of. |
+|                  |       |                                |
+| ---------------- | ----- | ------------------------------ |
+| [Uint32](Uint32) | **x** | the number to find the MSB of. |
 
 ## Return Value
 

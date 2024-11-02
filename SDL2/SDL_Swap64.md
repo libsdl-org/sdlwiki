@@ -15,13 +15,13 @@ SDL_FORCE_INLINE Uint64 SDL_Swap64(Uint64 x);
 
 ## Function Parameters
 
-|        |       |                          |
-| ------ | ----- | ------------------------ |
-| Uint64 | **x** | the value to be swapped. |
+|                  |       |                          |
+| ---------------- | ----- | ------------------------ |
+| [Uint64](Uint64) | **x** | the value to be swapped. |
 
 ## Return Value
 
-(Uint64) Returns the swapped value.
+([Uint64](Uint64)) Returns the swapped value.
 
 ## See Also
 

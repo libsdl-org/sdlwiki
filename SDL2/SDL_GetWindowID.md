@@ -21,8 +21,8 @@ Uint32 SDL_GetWindowID(SDL_Window * window);
 
 ## Return Value
 
-(Uint32) Returns the ID of the window on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([Uint32](Uint32)) Returns the ID of the window on success or 0 on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

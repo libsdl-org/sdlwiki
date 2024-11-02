@@ -21,8 +21,8 @@ Uint16 SDL_JoystickGetDeviceProductVersion(int device_index);
 
 ## Return Value
 
-(Uint16) Returns the product version of the selected joystick. If called on
-an invalid index, this function returns zero.
+([Uint16](Uint16)) Returns the product version of the selected joystick. If
+called on an invalid index, this function returns zero.
 
 ## Remarks
 

@@ -21,9 +21,9 @@ Sint64 SDL_RWsize(SDL_RWops *context);
 
 ## Return Value
 
-(Sint64) Returns the size of the data stream in the [SDL_RWops](SDL_RWops)
-on success, -1 if unknown or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([Sint64](Sint64)) Returns the size of the data stream in the
+[SDL_RWops](SDL_RWops) on success, -1 if unknown or a negative error code
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

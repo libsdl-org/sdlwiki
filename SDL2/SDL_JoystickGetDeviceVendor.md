@@ -21,8 +21,8 @@ Uint16 SDL_JoystickGetDeviceVendor(int device_index);
 
 ## Return Value
 
-(Uint16) Returns the USB vendor ID of the selected joystick. If called on
-an invalid index, this function returns zero.
+([Uint16](Uint16)) Returns the USB vendor ID of the selected joystick. If
+called on an invalid index, this function returns zero.
 
 ## Remarks
 

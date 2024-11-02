@@ -19,7 +19,7 @@ int SDL_QueueAudio(SDL_AudioDeviceID dev, const void *data, Uint32 len);
 | -------------------------------------- | -------- | ---------------------------------------------------------- |
 | [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev**  | the device ID to which we will queue audio.                |
 | const void *                           | **data** | the data to queue to the device for later playback.        |
-| Uint32                                 | **len**  | the number of bytes (not samples!) to which `data` points. |
+| [Uint32](Uint32)                       | **len**  | the number of bytes (not samples!) to which `data` points. |
 
 ## Return Value
 

@@ -23,9 +23,9 @@ Sint16 SDL_JoystickGetAxis(SDL_Joystick *joystick,
 
 ## Return Value
 
-(Sint16) Returns a 16-bit signed integer representing the current position
-of the axis or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
-information.
+([Sint16](Sint16)) Returns a 16-bit signed integer representing the current
+position of the axis or 0 on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Remarks
 

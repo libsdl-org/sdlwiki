@@ -20,7 +20,7 @@ SDL_Surface* SDL_ConvertSurface
 | ------------------------------------------ | --------- | --------------------------------------------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) *               | **src**   | the existing [SDL_Surface](SDL_Surface) structure to convert.                           |
 | const [SDL_PixelFormat](SDL_PixelFormat) * | **fmt**   | the [SDL_PixelFormat](SDL_PixelFormat) structure that the new surface is optimized for. |
-| Uint32                                     | **flags** | the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API.     |
+| [Uint32](Uint32)                           | **flags** | the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API.     |
 
 ## Return Value
 

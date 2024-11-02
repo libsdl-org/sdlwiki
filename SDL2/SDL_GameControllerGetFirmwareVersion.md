@@ -21,7 +21,8 @@ Uint16 SDL_GameControllerGetFirmwareVersion(SDL_GameController *gamecontroller);
 
 ## Return Value
 
-(Uint16) Return the controller firmware version, or zero if unavailable.
+([Uint16](Uint16)) Return the controller firmware version, or zero if
+unavailable.
 
 ## Remarks
 

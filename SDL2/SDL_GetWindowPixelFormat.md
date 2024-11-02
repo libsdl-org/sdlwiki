@@ -21,7 +21,7 @@ Uint32 SDL_GetWindowPixelFormat(SDL_Window * window);
 
 ## Return Value
 
-(Uint32) Returns the pixel format of the window on success or
+([Uint32](Uint32)) Returns the pixel format of the window on success or
 [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 

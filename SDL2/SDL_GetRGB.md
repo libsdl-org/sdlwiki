@@ -19,7 +19,7 @@ void SDL_GetRGB(Uint32 pixel,
 
 |                                            |            |                                                                                     |
 | ------------------------------------------ | ---------- | ----------------------------------------------------------------------------------- |
-| Uint32                                     | **pixel**  | a pixel value.                                                                      |
+| [Uint32](Uint32)                           | **pixel**  | a pixel value.                                                                      |
 | const [SDL_PixelFormat](SDL_PixelFormat) * | **format** | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the format of the pixel. |
 | Uint8 *                                    | **r**      | a pointer filled in with the red component.                                         |
 | Uint8 *                                    | **g**      | a pointer filled in with the green component.                                       |

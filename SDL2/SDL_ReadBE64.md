@@ -21,7 +21,8 @@ Uint64 SDL_ReadBE64(SDL_RWops * src);
 
 ## Return Value
 
-(Uint64) Returns 64 bits of data in the native byte order of the platform.
+([Uint64](Uint64)) Returns 64 bits of data in the native byte order of the
+platform.
 
 ## Remarks
 

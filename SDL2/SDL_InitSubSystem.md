@@ -15,9 +15,9 @@ int SDL_InitSubSystem(Uint32 flags);
 
 ## Function Parameters
 
-|        |           |                                                                                        |
-| ------ | --------- | -------------------------------------------------------------------------------------- |
-| Uint32 | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+|                  |           |                                                                                        |
+| ---------------- | --------- | -------------------------------------------------------------------------------------- |
+| [Uint32](Uint32) | **flags** | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
 
 ## Return Value
 

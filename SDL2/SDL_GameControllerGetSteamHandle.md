@@ -21,7 +21,7 @@ Uint64 SDL_GameControllerGetSteamHandle(SDL_GameController *gamecontroller);
 
 ## Return Value
 
-(Uint64) Returns the gamepad handle, or 0 if unavailable.
+([Uint64](Uint64)) Returns the gamepad handle, or 0 if unavailable.
 
 ## Remarks
 

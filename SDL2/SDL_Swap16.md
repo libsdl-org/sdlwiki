@@ -15,13 +15,13 @@ SDL_FORCE_INLINE Uint16 SDL_Swap16(Uint16 x);
 
 ## Function Parameters
 
-|        |       |                          |
-| ------ | ----- | ------------------------ |
-| Uint16 | **x** | the value to be swapped. |
+|                  |       |                          |
+| ---------------- | ----- | ------------------------ |
+| [Uint16](Uint16) | **x** | the value to be swapped. |
 
 ## Return Value
 
-(Uint16) Returns the swapped value.
+([Uint16](Uint16)) Returns the swapped value.
 
 ## See Also
 

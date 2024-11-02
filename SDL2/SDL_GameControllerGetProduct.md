@@ -21,7 +21,7 @@ Uint16 SDL_GameControllerGetProduct(SDL_GameController *gamecontroller);
 
 ## Return Value
 
-(Uint16) Return the USB product ID, or zero if unavailable.
+([Uint16](Uint16)) Return the USB product ID, or zero if unavailable.
 
 ## Remarks
 

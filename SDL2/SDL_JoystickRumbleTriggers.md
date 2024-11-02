@@ -18,9 +18,9 @@ int SDL_JoystickRumbleTriggers(SDL_Joystick *joystick, Uint16 left_rumble, Uint1
 |                                |                  |                                                                    |
 | ------------------------------ | ---------------- | ------------------------------------------------------------------ |
 | [SDL_Joystick](SDL_Joystick) * | **joystick**     | The joystick to vibrate.                                           |
-| Uint16                         | **left_rumble**  | The intensity of the left trigger rumble motor, from 0 to 0xFFFF.  |
-| Uint16                         | **right_rumble** | The intensity of the right trigger rumble motor, from 0 to 0xFFFF. |
-| Uint32                         | **duration_ms**  | The duration of the rumble effect, in milliseconds.                |
+| [Uint16](Uint16)               | **left_rumble**  | The intensity of the left trigger rumble motor, from 0 to 0xFFFF.  |
+| [Uint16](Uint16)               | **right_rumble** | The intensity of the right trigger rumble motor, from 0 to 0xFFFF. |
+| [Uint32](Uint32)               | **duration_ms**  | The duration of the rumble effect, in milliseconds.                |
 
 ## Return Value
 

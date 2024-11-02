@@ -18,9 +18,9 @@ int SDL_GameControllerRumble(SDL_GameController *gamecontroller, Uint16 low_freq
 |                                            |                           |                                                                             |
 | ------------------------------------------ | ------------------------- | --------------------------------------------------------------------------- |
 | [SDL_GameController](SDL_GameController) * | **gamecontroller**        | The controller to vibrate.                                                  |
-| Uint16                                     | **low_frequency_rumble**  | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF.   |
-| Uint16                                     | **high_frequency_rumble** | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF. |
-| Uint32                                     | **duration_ms**           | The duration of the rumble effect, in milliseconds.                         |
+| [Uint16](Uint16)                           | **low_frequency_rumble**  | The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF.   |
+| [Uint16](Uint16)                           | **high_frequency_rumble** | The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF. |
+| [Uint32](Uint32)                           | **duration_ms**           | The duration of the rumble effect, in milliseconds.                         |
 
 ## Return Value
 

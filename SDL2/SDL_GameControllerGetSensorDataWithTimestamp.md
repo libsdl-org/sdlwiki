@@ -19,7 +19,7 @@ int SDL_GameControllerGetSensorDataWithTimestamp(SDL_GameController *gamecontrol
 | ------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------------ |
 | [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to query.                                                                                     |
 | [SDL_SensorType](SDL_SensorType)           | **type**           | The type of sensor to query.                                                                                 |
-| Uint64 *                                   | **timestamp**      | A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not. |
+| [Uint64](Uint64) *                         | **timestamp**      | A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not. |
 | float *                                    | **data**           | A pointer filled with the current sensor state.                                                              |
 | int                                        | **num_values**     | The number of values to write to data.                                                                       |
 

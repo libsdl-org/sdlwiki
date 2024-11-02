@@ -21,8 +21,8 @@ Uint16 SDL_JoystickGetFirmwareVersion(SDL_Joystick *joystick);
 
 ## Return Value
 
-(Uint16) Returns the firmware version of the selected joystick, or 0 if
-unavailable.
+([Uint16](Uint16)) Returns the firmware version of the selected joystick,
+or 0 if unavailable.
 
 ## Remarks
 

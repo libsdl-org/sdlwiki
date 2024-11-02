@@ -18,9 +18,9 @@ int SDL_GameControllerRumbleTriggers(SDL_GameController *gamecontroller, Uint16 
 |                                            |                    |                                                                    |
 | ------------------------------------------ | ------------------ | ------------------------------------------------------------------ |
 | [SDL_GameController](SDL_GameController) * | **gamecontroller** | The controller to vibrate.                                         |
-| Uint16                                     | **left_rumble**    | The intensity of the left trigger rumble motor, from 0 to 0xFFFF.  |
-| Uint16                                     | **right_rumble**   | The intensity of the right trigger rumble motor, from 0 to 0xFFFF. |
-| Uint32                                     | **duration_ms**    | The duration of the rumble effect, in milliseconds.                |
+| [Uint16](Uint16)                           | **left_rumble**    | The intensity of the left trigger rumble motor, from 0 to 0xFFFF.  |
+| [Uint16](Uint16)                           | **right_rumble**   | The intensity of the right trigger rumble motor, from 0 to 0xFFFF. |
+| [Uint32](Uint32)                           | **duration_ms**    | The duration of the rumble effect, in milliseconds.                |
 
 ## Return Value
 

@@ -21,7 +21,8 @@ Uint32 SDL_ReadBE32(SDL_RWops * src);
 
 ## Return Value
 
-(Uint32) Returns 32 bits of data in the native byte order of the platform.
+([Uint32](Uint32)) Returns 32 bits of data in the native byte order of the
+platform.
 
 ## Remarks
 

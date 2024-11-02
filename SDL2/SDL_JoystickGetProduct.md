@@ -21,8 +21,8 @@ Uint16 SDL_JoystickGetProduct(SDL_Joystick *joystick);
 
 ## Return Value
 
-(Uint16) Returns the USB product ID of the selected joystick, or 0 if
-unavailable.
+([Uint16](Uint16)) Returns the USB product ID of the selected joystick, or
+0 if unavailable.
 
 ## Remarks
 

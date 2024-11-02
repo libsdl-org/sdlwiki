@@ -21,7 +21,7 @@ Uint32 SDL_GetWindowFlags(SDL_Window * window);
 
 ## Return Value
 
-(Uint32) Returns a mask of the [SDL_WindowFlags](SDL_WindowFlags)
+([Uint32](Uint32)) Returns a mask of the [SDL_WindowFlags](SDL_WindowFlags)
 associated with `window`.
 
 ## Version

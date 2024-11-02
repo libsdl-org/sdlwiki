@@ -20,7 +20,7 @@ int SDL_CondWaitTimeout(SDL_cond * cond,
 | ------------------------ | --------- | ------------------------------------------------------------------------------------------------------------ |
 | [SDL_cond](SDL_cond) *   | **cond**  | the condition variable to wait on.                                                                           |
 | [SDL_mutex](SDL_mutex) * | **mutex** | the mutex used to coordinate thread access.                                                                  |
-| Uint32                   | **ms**    | the maximum time to wait, in milliseconds, or [`SDL_MUTEX_MAXWAIT`](SDL_MUTEX_MAXWAIT) to wait indefinitely. |
+| [Uint32](Uint32)         | **ms**    | the maximum time to wait, in milliseconds, or [`SDL_MUTEX_MAXWAIT`](SDL_MUTEX_MAXWAIT) to wait indefinitely. |
 
 ## Return Value
 

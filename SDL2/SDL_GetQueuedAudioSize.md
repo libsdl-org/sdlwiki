@@ -21,7 +21,8 @@ Uint32 SDL_GetQueuedAudioSize(SDL_AudioDeviceID dev);
 
 ## Return Value
 
-(Uint32) Returns the number of bytes (not samples!) of queued audio.
+([Uint32](Uint32)) Returns the number of bytes (not samples!) of queued
+audio.
 
 ## Remarks
 

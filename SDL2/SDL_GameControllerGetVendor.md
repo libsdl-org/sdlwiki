@@ -21,7 +21,7 @@ Uint16 SDL_GameControllerGetVendor(SDL_GameController *gamecontroller);
 
 ## Return Value
 
-(Uint16) Return the USB vendor ID, or zero if unavailable.
+([Uint16](Uint16)) Return the USB vendor ID, or zero if unavailable.
 
 ## Remarks
 

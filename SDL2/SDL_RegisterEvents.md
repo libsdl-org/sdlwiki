@@ -21,16 +21,16 @@ Uint32 SDL_RegisterEvents(int numevents);
 
 ## Return Value
 
-(Uint32) Returns the beginning event number, or (Uint32)-1 if there are not
-enough user-defined events left.
+([Uint32](Uint32)) Returns the beginning event number, or
+([Uint32](Uint32))-1 if there are not enough user-defined events left.
 
 ## Remarks
 
 Calling this function with `numevents` <= 0 is an error and will return
-(Uint32)-1.
+([Uint32](Uint32))-1.
 
-Note, (Uint32)-1 means the maximum unsigned 32-bit integer value (or
-0xFFFFFFFF), but is clearer to write.
+Note, ([Uint32](Uint32))-1 means the maximum unsigned 32-bit integer value
+(or 0xFFFFFFFF), but is clearer to write.
 
 ## Version
 

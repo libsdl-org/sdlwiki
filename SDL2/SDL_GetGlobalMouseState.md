@@ -22,8 +22,8 @@ Uint32 SDL_GetGlobalMouseState(int *x, int *y);
 
 ## Return Value
 
-(Uint32) Returns the current button state as a bitmask which can be tested
-using the [SDL_BUTTON](SDL_BUTTON)(X) macros.
+([Uint32](Uint32)) Returns the current button state as a bitmask which can
+be tested using the [SDL_BUTTON](SDL_BUTTON)(X) macros.
 
 ## Remarks
 

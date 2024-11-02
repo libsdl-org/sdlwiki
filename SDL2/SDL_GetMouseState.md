@@ -22,7 +22,8 @@ Uint32 SDL_GetMouseState(int *x, int *y);
 
 ## Return Value
 
-(Uint32) Returns a 32-bit button bitmask of the current button state.
+([Uint32](Uint32)) Returns a 32-bit button bitmask of the current button
+state.
 
 ## Remarks
 

@@ -15,13 +15,13 @@ SDL_FORCE_INLINE Uint32 SDL_Swap32(Uint32 x);
 
 ## Function Parameters
 
-|        |       |                          |
-| ------ | ----- | ------------------------ |
-| Uint32 | **x** | the value to be swapped. |
+|                  |       |                          |
+| ---------------- | ----- | ------------------------ |
+| [Uint32](Uint32) | **x** | the value to be swapped. |
 
 ## Return Value
 
-(Uint32) Returns the swapped value.
+([Uint32](Uint32)) Returns the swapped value.
 
 ## See Also
 
