@@ -26,5 +26,13 @@
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TimerID](SDL_TimerID)
 - [SDL_Window](SDL_Window)
+- [Sint16](Sint16)
+- [Sint32](Sint32)
+- [Sint64](Sint64)
+- [Sint8](Sint8)
+- [Uint16](Uint16)
+- [Uint32](Uint32)
+- [Uint64](Uint64)
+- [Uint8](Uint8)
 <!-- END CATEGORY LIST -->
 
