@@ -59,7 +59,7 @@ You may only call this function from the main thread.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.1.6.
 
 ## See Also
 
