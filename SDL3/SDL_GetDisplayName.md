@@ -28,6 +28,37 @@ const char * SDL_GetDisplayName(SDL_DisplayID displayID);
 
 This function is available since SDL 3.1.3.
 
+## Code Examples
+
+```c
+// Example program
+// Use SDL3 to log the name of every display found
+
+#include <SDL3/SDL_log.h>
+#include <SDL3/SDL_main.h>
+#include <SDL3/SDL_video.h>
+
+int
+main(int argc, char** argv)
+{
+  if (!SDL_Init(SDL_INIT_VIDEO)) {
+    SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
+    return 0;
+  }
+
+  int num_displays;
+  SDL_DisplayID *displays = SDL_GetDisplays(&num_displays);
+
+  for(int i = 0; i < num_displays; i++) {
+    SDL_Log("Found display named '%s'", SDL_GetDisplayName(displays[i]));
+  }
+
+  SDL_free(displays);
+
+  return 0;
+}
+```
+
 ## See Also
 
 - [SDL_GetDisplays](SDL_GetDisplays)
