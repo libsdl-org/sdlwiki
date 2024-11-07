@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetRelativeMouseState
 
-Query SDL's internal buffer for the synchronous mouse button state and accumulated mouse delta since last call.
+Query SDL's cache for the synchronous mouse button state and accumulated mouse delta since last call.
 
 ## Header File
 
@@ -26,7 +26,7 @@ SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);
 
 ## Remarks
 
-This function returns the buffered synchronous state as SDL understands it from the last pump of the event queue. 
+This function returns the cached synchronous state as SDL understands it from the last pump of the event queue. 
 
 To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
 
