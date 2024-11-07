@@ -26,7 +26,7 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 ## Remarks
 
-This function immediately queries the platform for the most recent asynchronous state, which is slower than the cached state of [SDL_GetMouseState](SDL_GetMouseState)().
+This function immediately queries the platform for the most recent asynchronous state, which may be more costly than retrieving the cached state of [SDL_GetMouseState](SDL_GetMouseState)().
 
 Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y coordinates relative to the desktop.
 
