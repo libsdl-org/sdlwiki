@@ -22,15 +22,13 @@ SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);
 
 ## Return Value
 
-([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state that can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro.
 
 ## Remarks
 
 This function returns the cached synchronous state as SDL understands it from the last pump of the event queue. 
 
 To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
-
-The button bitmask can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro (where `X` is generally 1 for the left, 2 for middle, 3 for the right button).
 
 Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y deltas accumulated since the last call to this function (or since event initialization).
 
