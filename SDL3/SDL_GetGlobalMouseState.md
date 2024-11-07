@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGlobalMouseState
 
-Get the current state of the mouse in relation to the desktop.
+Query the platform for the asynchronous mouse button state and the desktop-relative cursor position.
 
 ## Header File
 
@@ -15,33 +15,28 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|         |       |                                                                          |
-| ------- | ----- | ------------------------------------------------------------------------ |
-| float * | **x** | filled in with the current X coord relative to the desktop; can be NULL. |
-| float * | **y** | filled in with the current Y coord relative to the desktop; can be NULL. |
+|         |       |                                                                                                         |
+| ------- | ----- | ------------------------------------------------------------------------------------------------------- |
+| float * | **x** | a pointer to receive the cursor's x-position from the desktop's top left corner, can be NULL if unused. |
+| float * | **y** | a pointer to receive the cursor's y-position from the desktop's top left corner, can be NULL if unused. |
 
 ## Return Value
 
-([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns the current button
-state as a bitmask which can be tested using the
-[SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macros.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state that can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro.
 
 ## Remarks
 
-This works similarly to [SDL_GetMouseState](SDL_GetMouseState)(), but the
-coordinates will be reported relative to the top-left of the desktop. This
-can be useful if you need to track the mouse outside of a specific window
+This function immediately queries the platform for the most recent asynchronous state, which is slower than the cached state of [SDL_GetMouseState](SDL_GetMouseState)().
+
+Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y cursor position relative to the desktop as reported by the platform.
+
+In Relative Mode, the reported position usually contradict what you would manually calculated from [SDL_GetMouseState](SDL_GetMouseState)() and [SDL_GetWindowPosition](SDL_GetWindowPosition).
+
+This function can be useful if you need to track the mouse outside of a specific window
 and [SDL_CaptureMouse](SDL_CaptureMouse)() doesn't fit your needs. For
 example, it could be useful if you need to track the mouse while dragging a
 window, where coordinates relative to a window might not be in sync at all
 times.
-
-Note: [SDL_GetMouseState](SDL_GetMouseState)() returns the mouse position
-as SDL understands it from the last pump of the event queue. This function,
-however, queries the OS for the current mouse position, and as such, might
-be a slightly less efficient function. Unless you know what you're doing
-and have a good reason to use this function, you probably want
-[SDL_GetMouseState](SDL_GetMouseState)() instead.
 
 ## Version
 
@@ -51,6 +46,7 @@ This function is available since SDL 3.1.3.
 
 - [SDL_CaptureMouse](SDL_CaptureMouse)
 - [SDL_GetMouseState](SDL_GetMouseState)
+- [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
