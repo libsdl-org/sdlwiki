@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetMouseState
 
-Query SDL's internal buffor for the synchronous mouse button state and the window-relative cursor position.
+Query SDL's internal buffer for the synchronous mouse button state and the window-relative cursor position.
 
 ## Header File
 
