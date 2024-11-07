@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetRelativeMouseState
 
-Retrieve the relative state of the mouse.
+Query SDL's internal buffor for the synchronous mouse button state and accumulated cursor motion since last call.
 
 ## Header File
 
@@ -15,24 +15,27 @@ SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|         |       |                                                                    |
-| ------- | ----- | ------------------------------------------------------------------ |
-| float * | **x** | a pointer filled with the last recorded x coordinate of the mouse. |
-| float * | **y** | a pointer filled with the last recorded y coordinate of the mouse. |
+|         |       |                                                                                            |
+| ------- | ----- | ------------------------------------------------------------------------------------------ |
+| float * | **x** | a pointer to receive the x mouse delta accumulated since last call, can be NULL if unused. |
+| float * | **y** | a pointer to receive the y mouse delta accumulated since last call, can be NULL if unused. |
 
 ## Return Value
 
-([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns a 32-bit button
-bitmask of the relative button state.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state.
 
 ## Remarks
 
-The current button state is returned as a button bitmask, which can be
-tested using the `SDL_BUTTON_MASK(X)` macros (where `X` is generally 1 for
-the left, 2 for middle, 3 for the right button), and `x` and `y` are set to
-the mouse deltas since the last call to
-[SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)() or since event
-initialization. You can pass NULL for either `x` or `y`.
+This function returns the buffered synchronous state as SDL understands it from the last pump of the event queue. 
+
+To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
+
+The button bitmask can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro (where `X` is generally 1 for the left, 2 for middle, 3 for the right button).
+
+Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y deltas accumulated since the last call to this function (or since event initialization).
+
+This function is useful for reducing overhead by processing relative mouse inputs in one go per-frame instead of individually per-event, 
+at the expense of losing the order between events within the frame (e.g. quickly pressing and releasing a button within the same frame).
 
 ## Version
 
