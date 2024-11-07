@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGlobalMouseState
 
-Query the platform for the asynchronous mouse button state and the desktop-relative cursor position.
+Query the platform for the asynchronous mouse button state and the desktop-relative platform-cursor position.
 
 ## Header File
 
@@ -17,8 +17,8 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 |         |       |                                                                                                         |
 | ------- | ----- | ------------------------------------------------------------------------------------------------------- |
-| float * | **x** | a pointer to receive the cursor's x-position from the desktop's top left corner, can be NULL if unused. |
-| float * | **y** | a pointer to receive the cursor's y-position from the desktop's top left corner, can be NULL if unused. |
+| float * | **x** | a pointer to receive the platform-cursor's x-position from the desktop's top left corner, can be NULL if unused. |
+| float * | **y** | a pointer to receive the platform-cursor's y-position from the desktop's top left corner, can be NULL if unused. |
 
 ## Return Value
 
@@ -28,9 +28,9 @@ SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);
 
 This function immediately queries the platform for the most recent asynchronous state, which is slower than the cached state of [SDL_GetMouseState](SDL_GetMouseState)().
 
-Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y cursor position relative to the desktop as reported by the platform.
+Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y coordinates relative to the desktop.
 
-In Relative Mode, the reported position usually contradict what you would manually calculated from [SDL_GetMouseState](SDL_GetMouseState)() and [SDL_GetWindowPosition](SDL_GetWindowPosition).
+In Relative Mode, the platform-cursor's position usually contradicts the SDL-cursor's position as manually calculated from [SDL_GetMouseState](SDL_GetMouseState)() and [SDL_GetWindowPosition](SDL_GetWindowPosition).
 
 This function can be useful if you need to track the mouse outside of a specific window
 and [SDL_CaptureMouse](SDL_CaptureMouse)() doesn't fit your needs. For
