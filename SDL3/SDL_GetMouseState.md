@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetMouseState
 
-Query SDL's cache for the synchronous mouse button state and the window-relative cursor position.
+Query SDL's cache for the synchronous mouse button state and the window-relative SDL-cursor position.
 
 ## Header File
 
@@ -17,8 +17,8 @@ SDL_MouseButtonFlags SDL_GetMouseState(float *x, float *y);
 
 |         |       |                                                                                                                |
 | ------- | ----- | -------------------------------------------------------------------------------------------------------------- |
-| float * | **x** | a pointer to receive the cursor's x-position from the focused window's top left corner, can be NULL if unused. |
-| float * | **y** | a pointer to receive the cursor's y-position from the focused window's top left corner, can be NULL if unused. |
+| float * | **x** | a pointer to receive the SDL-cursor's x-position from the focused window's top left corner, can be NULL if unused. |
+| float * | **y** | a pointer to receive the SDL-cursor's y-position from the focused window's top left corner, can be NULL if unused. |
 
 ## Return Value
 
@@ -33,6 +33,8 @@ To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseS
 The button bitmask can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro (where `X` is generally 1 for the left, 2 for middle, 3 for the right button).
 
 Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y cursor position relative to the focused window.
+
+In Relative Mode, the SDL-cursor's position usually contradicts the platform-cursor's position as manually calculated from SDL_GetMouseGlobalState and SDL_GetWindowPosition.
 
 ## Version
 
