@@ -34,7 +34,7 @@ The button bitmask can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUT
 
 Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y cursor position relative to the focused window.
 
-In Relative Mode, the SDL-cursor's position usually contradicts the platform-cursor's position as manually calculated from SDL_GetMouseGlobalState and SDL_GetWindowPosition.
+In Relative Mode, the SDL-cursor's position usually contradicts the platform-cursor's position as manually calculated from [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)() and [SDL_GetWindowPosition](SDL_GetWindowPosition).
 
 ## Version
 
