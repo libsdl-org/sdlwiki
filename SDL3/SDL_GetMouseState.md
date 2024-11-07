@@ -30,7 +30,7 @@ This function returns the cached synchronous state as SDL understands it from th
 
 To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
 
-Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y cursor position relative to the focused window.
+Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y coordinates relative to the focused window.
 
 In Relative Mode, the SDL-cursor's position usually contradicts the platform-cursor's position as manually calculated from [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)() and [SDL_GetWindowPosition](SDL_GetWindowPosition).
 
