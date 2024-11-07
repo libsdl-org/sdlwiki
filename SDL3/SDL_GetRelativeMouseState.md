@@ -44,6 +44,7 @@ This function is available since SDL 3.1.3.
 ## See Also
 
 - [SDL_GetMouseState](SDL_GetMouseState)
+- [SDL_GetGlobalMouseState](SDL_GetMouseState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
