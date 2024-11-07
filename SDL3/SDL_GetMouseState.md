@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetMouseState
 
-Retrieve the current state of the mouse.
+Query SDL's internal buffor for the synchronous mouse button state and the window-relative cursor position.
 
 ## Header File
 
@@ -15,23 +15,24 @@ SDL_MouseButtonFlags SDL_GetMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|         |       |                                                                             |
-| ------- | ----- | --------------------------------------------------------------------------- |
-| float * | **x** | the x coordinate of the mouse cursor position relative to the focus window. |
-| float * | **y** | the y coordinate of the mouse cursor position relative to the focus window. |
+|         |       |                                                                                                                |
+| ------- | ----- | -------------------------------------------------------------------------------------------------------------- |
+| float * | **x** | a pointer to receive the cursor's x-position from the focused window's top left corner, can be NULL if unused. |
+| float * | **y** | a pointer to receive the cursor's y-position from the focused window's top left corner, can be NULL if unused. |
 
 ## Return Value
 
-([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns a 32-bit button
-bitmask of the current button state.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state.
 
 ## Remarks
 
-The current button state is returned as a button bitmask, which can be
-tested using the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro (where `X` is
-generally 1 for the left, 2 for middle, 3 for the right button), and `x`
-and `y` are set to the mouse cursor position relative to the focus window.
-You can pass NULL for either `x` or `y`.
+This function returns the buffered synchronous state as SDL understands it from the last pump of the event queue. 
+
+To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
+
+The button bitmask can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro (where `X` is generally 1 for the left, 2 for middle, 3 for the right button).
+
+Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y cursor position relative to the focused window.
 
 ## Version
 
