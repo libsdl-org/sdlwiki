@@ -40,6 +40,7 @@ This function is available since SDL 3.1.3.
 ## See Also
 
 - [SDL_LoadFile_IO](SDL_LoadFile_IO)
+- [SDL_SaveFile](SDL_SaveFile)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
