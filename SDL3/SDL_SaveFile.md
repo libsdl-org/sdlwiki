@@ -28,7 +28,7 @@ bool SDL_SaveFile(const char *file, const void *data, size_t datasize);
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

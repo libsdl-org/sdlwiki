@@ -29,7 +29,7 @@ bool SDL_SaveFile_IO(SDL_IOStream *src, const void *data, size_t datasize, bool 
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 
