@@ -42,6 +42,8 @@ class, other than both are abstract interfaces to read/write data.
 - [SDL_ReadU64BE](SDL_ReadU64BE)
 - [SDL_ReadU64LE](SDL_ReadU64LE)
 - [SDL_ReadU8](SDL_ReadU8)
+- [SDL_SaveFile](SDL_SaveFile)
+- [SDL_SaveFile_IO](SDL_SaveFile_IO)
 - [SDL_SeekIO](SDL_SeekIO)
 - [SDL_TellIO](SDL_TellIO)
 - [SDL_WriteIO](SDL_WriteIO)

@@ -895,6 +895,8 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_RunHapticEffect](SDL_RunHapticEffect)
 - [SDL_SaveBMP](SDL_SaveBMP)
 - [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
+- [SDL_SaveFile](SDL_SaveFile)
+- [SDL_SaveFile_IO](SDL_SaveFile_IO)
 - [SDL_scalbn](SDL_scalbn)
 - [SDL_scalbnf](SDL_scalbnf)
 - [SDL_ScaleSurface](SDL_ScaleSurface)
