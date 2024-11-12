@@ -46,14 +46,7 @@ For fragment shaders:
   buffers
 - 3: Uniform buffers
 
-For DXBC Shader Model 5_0 shaders, use the following register order:
-
-- t registers: Sampled textures, followed by storage textures, followed by
-  storage buffers
-- s registers: Samplers with indices corresponding to the sampled textures
-- b registers: Uniform buffers
-
-For DXIL shaders, use the following register order:
+For DXBC and DXIL shaders, use the following register order:
 
 For vertex shaders:
 
