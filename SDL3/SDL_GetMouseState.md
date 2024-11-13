@@ -15,24 +15,32 @@ SDL_MouseButtonFlags SDL_GetMouseState(float *x, float *y);
 
 ## Function Parameters
 
-|         |       |                                                                                                                |
-| ------- | ----- | -------------------------------------------------------------------------------------------------------------- |
+|         |       |                                                                                                                    |
+| ------- | ----- | ------------------------------------------------------------------------------------------------------------------ |
 | float * | **x** | a pointer to receive the SDL-cursor's x-position from the focused window's top left corner, can be NULL if unused. |
 | float * | **y** | a pointer to receive the SDL-cursor's y-position from the focused window's top left corner, can be NULL if unused. |
 
 ## Return Value
 
-([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state that can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns a 32-bit bitmask of
+the button state that can be bitwise-compared against the
+[SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro.
 
 ## Remarks
 
-This function returns the cached synchronous state as SDL understands it from the last pump of the event queue. 
+This function returns the cached synchronous state as SDL understands it
+from the last pump of the event queue.
 
-To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
+To query the platform for immediate asynchronous state, use
+[SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
 
-Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y coordinates relative to the focused window.
+Passing non-NULL pointers to `x` or `y` will write the destination with
+respective x or y coordinates relative to the focused window.
 
-In Relative Mode, the SDL-cursor's position usually contradicts the platform-cursor's position as manually calculated from [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)() and [SDL_GetWindowPosition](SDL_GetWindowPosition).
+In Relative Mode, the SDL-cursor's position usually contradicts the
+platform-cursor's position as manually calculated from
+[SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)() and
+[SDL_GetWindowPosition](SDL_GetWindowPosition).
 
 ## Version
 

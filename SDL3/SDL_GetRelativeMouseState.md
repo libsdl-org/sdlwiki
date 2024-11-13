@@ -22,18 +22,26 @@ SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);
 
 ## Return Value
 
-([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) a 32-bit bitmask of the button state that can be bitwise-compared against the [SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro.
+([SDL_MouseButtonFlags](SDL_MouseButtonFlags)) Returns a 32-bit bitmask of
+the button state that can be bitwise-compared against the
+[SDL_BUTTON_MASK](SDL_BUTTON_MASK)(X) macro.
 
 ## Remarks
 
-This function returns the cached synchronous state as SDL understands it from the last pump of the event queue. 
+This function returns the cached synchronous state as SDL understands it
+from the last pump of the event queue.
 
-To query the platform for immediate asynchronous state, use [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
+To query the platform for immediate asynchronous state, use
+[SDL_GetGlobalMouseState](SDL_GetGlobalMouseState).
 
-Passing non-NULL pointers to `x` or `y` will write the destination with respective x or y deltas accumulated since the last call to this function (or since event initialization).
+Passing non-NULL pointers to `x` or `y` will write the destination with
+respective x or y deltas accumulated since the last call to this function
+(or since event initialization).
 
-This function is useful for reducing overhead by processing relative mouse inputs in one go per-frame instead of individually per-event, 
-at the expense of losing the order between events within the frame (e.g. quickly pressing and releasing a button within the same frame).
+This function is useful for reducing overhead by processing relative mouse
+inputs in one go per-frame instead of individually per-event, at the
+expense of losing the order between events within the frame (e.g. quickly
+pressing and releasing a button within the same frame).
 
 ## Version
 
