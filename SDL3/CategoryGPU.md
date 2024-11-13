@@ -79,10 +79,11 @@ efficient way of doing this, provided that the app is willing to tolerate
 some latency. When the app uses
 [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture)() or
 [SDL_DownloadFromGPUBuffer](SDL_DownloadFromGPUBuffer)(), submitting the
-command buffer with [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)() will return a
-fence handle that the app can poll or wait on in a thread. Once the fence
-indicates that the command buffer is done processing, it is safe to read
-the downloaded data. Make sure to call
+command buffer with
+[SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)()
+will return a fence handle that the app can poll or wait on in a thread.
+Once the fence indicates that the command buffer is done processing, it is
+safe to read the downloaded data. Make sure to call
 [SDL_ReleaseGPUFence](SDL_ReleaseGPUFence)() when done with the fence.
 
 The API also has "compute" support. The app calls
