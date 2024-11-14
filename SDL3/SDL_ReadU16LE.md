@@ -30,6 +30,13 @@ bool SDL_ReadU16LE(SDL_IOStream *src, Uint16 *value);
 SDL byteswaps the data only if necessary, so the data returned will be in
 the native byte order.
 
+This function will return false when the data stream is completely read,
+and [SDL_GetIOStatus](SDL_GetIOStatus)() will return
+[SDL_IO_STATUS_EOF](SDL_IO_STATUS_EOF). If false is returned and the stream
+is not at EOF, [SDL_GetIOStatus](SDL_GetIOStatus)() will return a different
+error value and [SDL_GetError](SDL_GetError)() will offer a human-readable
+message.
+
 ## Version
 
 This function is available since SDL 3.1.3.
