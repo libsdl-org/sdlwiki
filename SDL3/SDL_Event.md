@@ -157,7 +157,7 @@ to claim a unique number that other parts of your app won't also claim.
 | SDL_EVENT_GAMEPAD_SENSOR_UPDATE                                                          | [SDL_GamepadSensorEvent](SDL_GamepadSensorEvent)       | `gsensor`         |
 | SDL_EVENT_DROP_BEGIN, SDL_EVENT_DROP_FILE, SDL_EVENT_DROP_TEXT,  etc                     | [SDL_DropEvent](SDL_DropEvent)                         | `drop`            |
 | SDL_EVENT_FINGER_MOTION, SDL_EVENT_FINGER_DOWN, SDL_EVENT_FINGER_UP                      | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)           | `tfinger`         |
-| SDL_EVENT_KEYBOARD_ADDED, SDL_EVENT_KEYBOARD_REMOVED                                     | [SDL_KeyboardDeviceEvent(SDL_KeyboardDeviceEvent)      | `kdevice`         |
+| SDL_EVENT_KEYBOARD_ADDED, SDL_EVENT_KEYBOARD_REMOVED                                     | [SDL_KeyboardDeviceEvent](SDL_KeyboardDeviceEvent)      | `kdevice`         |
 | SDL_EVENT_KEY_DOWN, SDL_EVENT_KEY_UP                                                     | [SDL_KeyboardEvent](SDL_KeyboardEvent)                 | `key`             |
 | SDL_EVENT_JOYSTICK_ADDED, SDL_EVENT_JOYSTICK_REMOVED, SDL_EVENT_JOYSTICK_UPDATE_COMPLETE | [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)               | `jdevice`         |
 | SDL_EVENT_JOYSTICK_AXIS_MOTION                                                           | [SDL_JoyAxisEvent](SDL_JoyAxisEvent)                   | `jaxis`           |
