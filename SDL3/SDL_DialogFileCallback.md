@@ -35,8 +35,8 @@ If `filelist` is:
   is a null-terminated list of pointers to C strings, each containing a
   path.
 
-The filelist argument does not need to be freed; it will automatically be
-freed when the callback returns.
+The filelist argument should not be freed; it will automatically be freed
+when the callback returns.
 
 The filter argument is the index of the filter that was selected, or -1 if
 no filter was selected or if the platform or method doesn't support
