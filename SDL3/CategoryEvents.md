@@ -70,6 +70,7 @@ Event queue management.
 - [SDL_PenProximityEvent](SDL_PenProximityEvent)
 - [SDL_PenTouchEvent](SDL_PenTouchEvent)
 - [SDL_QuitEvent](SDL_QuitEvent)
+- [SDL_RenderEvent](SDL_RenderEvent)
 - [SDL_SensorEvent](SDL_SensorEvent)
 - [SDL_TextEditingCandidatesEvent](SDL_TextEditingCandidatesEvent)
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)

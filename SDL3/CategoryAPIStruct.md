@@ -109,6 +109,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_Point](SDL_Point)
 - [SDL_QuitEvent](SDL_QuitEvent)
 - [SDL_Rect](SDL_Rect)
+- [SDL_RenderEvent](SDL_RenderEvent)
 - [SDL_SensorEvent](SDL_SensorEvent)
 - [SDL_StorageInterface](SDL_StorageInterface)
 - [SDL_Surface](SDL_Surface)
