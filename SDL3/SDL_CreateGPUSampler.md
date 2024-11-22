@@ -36,7 +36,7 @@ This function is available since SDL 3.1.3.
 
 - [SDL_BindGPUVertexSamplers](SDL_BindGPUVertexSamplers)
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
-- [SDL_ReleaseSampler](SDL_ReleaseSampler)
+- [SDL_ReleaseGPUSampler](SDL_ReleaseGPUSampler)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

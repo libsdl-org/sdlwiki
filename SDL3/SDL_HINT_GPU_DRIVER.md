@@ -20,8 +20,7 @@ until it finds one that can work, but this hint allows the app or user to
 force a specific target, such as "direct3d11" if, say, your hardware
 supports D3D12 but want to try using D3D11 instead.
 
-This hint should be set before
-[SDL_GPUSelectBackend](SDL_GPUSelectBackend)() is called.
+This hint should be set before any GPU functions are called.
 
 ## Version
 

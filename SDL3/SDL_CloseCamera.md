@@ -30,7 +30,6 @@ This function is available since SDL 3.1.3.
 
 ## See Also
 
-- [SDL_OpenCameraWithSpec](SDL_OpenCameraWithSpec)
 - [SDL_OpenCamera](SDL_OpenCamera)
 
 ----

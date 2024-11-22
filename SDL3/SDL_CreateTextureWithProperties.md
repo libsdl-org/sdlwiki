@@ -32,7 +32,7 @@ more information.
 These are the supported properties:
 
 - [`SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER):
-  an [SDL_ColorSpace](SDL_ColorSpace) value describing the texture
+  an [SDL_Colorspace](SDL_Colorspace) value describing the texture
   colorspace, defaults to
   [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) for floating
   point textures, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for 10-bit

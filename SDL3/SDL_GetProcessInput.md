@@ -35,8 +35,8 @@ set to [`SDL_PROCESS_STDIO_APP`](SDL_PROCESS_STDIO_APP).
 
 Writing to this stream can return less data than expected if the process
 hasn't read its input. It may be blocked waiting for its output to be read,
-so if you may need to call [SDL_GetOutputStream](SDL_GetOutputStream)() and
-read the output in parallel with writing input.
+if so you may need to call [SDL_GetProcessOutput](SDL_GetProcessOutput)()
+and read the output in parallel with writing input.
 
 ## Thread Safety
 

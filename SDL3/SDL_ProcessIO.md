@@ -22,8 +22,8 @@ typedef enum SDL_ProcessIO
 ## Remarks
 
 If a standard I/O stream is set to
-[SDL_PROCESS_STDIO_INHERIT](SDL_PROCESS_STDIO_INHERIT), it will go to the
-same place as the application's I/O stream. This is the default for
+[SDL_PROCESS_STDIO_INHERITED](SDL_PROCESS_STDIO_INHERITED), it will go to
+the same place as the application's I/O stream. This is the default for
 standard output and standard error.
 
 If a standard I/O stream is set to

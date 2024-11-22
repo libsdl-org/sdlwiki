@@ -29,7 +29,6 @@ This function is available since SDL 3.1.3.
 
 ## See Also
 
-- [SDL_CreateStackSurface](SDL_CreateStackSurface)
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
 

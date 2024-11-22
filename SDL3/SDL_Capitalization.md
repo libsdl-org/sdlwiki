@@ -22,7 +22,7 @@ typedef enum SDL_Capitalization
 ## Remarks
 
 These are the valid values for
-[SDL_PROP_TEXTINPUT_AUTOCAPITALIZATION_NUMBER](SDL_PROP_TEXTINPUT_AUTOCAPITALIZATION_NUMBER).
+[SDL_PROP_TEXTINPUT_CAPITALIZATION_NUMBER](SDL_PROP_TEXTINPUT_CAPITALIZATION_NUMBER).
 Not every value is valid on every platform, but where a value isn't
 supported, a reasonable fallback will be used.
 

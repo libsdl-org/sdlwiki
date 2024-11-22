@@ -72,7 +72,7 @@ For MSL/metallib, use the following order:
   is bound at [[buffer(14)]], vertex buffer 1 at [[buffer(15)]], and so on.
   Rather than manually authoring vertex buffer indices, use the
   [[stage_in]] attribute which will automatically use the vertex input
-  information from the [SDL_GPUPipeline](SDL_GPUPipeline).
+  information from the [SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline).
 
 ## Version
 

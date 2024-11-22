@@ -41,7 +41,6 @@ This struct is available since SDL 3.1.3.
 - [SDL_CompareAndSwapAtomicU32](SDL_CompareAndSwapAtomicU32)
 - [SDL_GetAtomicU32](SDL_GetAtomicU32)
 - [SDL_SetAtomicU32](SDL_SetAtomicU32)
-- [SDL_AddAtomicU32](SDL_AddAtomicU32)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)

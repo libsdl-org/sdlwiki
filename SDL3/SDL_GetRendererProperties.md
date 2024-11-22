@@ -45,7 +45,7 @@ The following read-only properties are provided by SDL:
   terminated with [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN),
   representing the available texture formats for this renderer.
 - [`SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER):
-  an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
+  an [SDL_Colorspace](SDL_Colorspace) value describing the colorspace for
   output to the display, defaults to
   [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB).
 - [`SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN`](SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN):
@@ -53,20 +53,20 @@ The following read-only properties are provided by SDL:
   [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) and the renderer
   is showing on a display with HDR enabled. This property can change
   dynamically when
-  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
+  [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
   is sent.
 - [`SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT`](SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT):
   the value of SDR white in the
   [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) colorspace. When
   HDR is enabled, this value is automatically multiplied into the color
   scale. This property can change dynamically when
-  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
+  [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
   is sent.
 - [`SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT`](SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT):
   the additional high dynamic range that can be displayed, in terms of the
   SDR white point. When HDR is not enabled, this will be 1.0. This property
   can change dynamically when
-  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
+  [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
   is sent.
 
 With the direct3d renderer:

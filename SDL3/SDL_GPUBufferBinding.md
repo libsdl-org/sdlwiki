@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef struct SDL_GPUBufferBinding
 {
-    SDL_GPUBuffer *buffer;  /**< The buffer to bind. Must have been created with SDL_GPU_BUFFERUSAGE_VERTEX for SDL_BindGPUVertexBuffers, or SDL_GPU_BUFFERUSAGE_INDEX for SDL_BindGPUIndexBuffers. */
+    SDL_GPUBuffer *buffer;  /**< The buffer to bind. Must have been created with SDL_GPU_BUFFERUSAGE_VERTEX for SDL_BindGPUVertexBuffers, or SDL_GPU_BUFFERUSAGE_INDEX for SDL_BindGPUIndexBuffer. */
     Uint32 offset;          /**< The starting byte of the data to bind in the buffer. */
 } SDL_GPUBufferBinding;
 ```
@@ -24,7 +24,7 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_BindGPUVertexBuffers](SDL_BindGPUVertexBuffers)
-- [SDL_BindGPUIndexBuffers](SDL_BindGPUIndexBuffers)
+- [SDL_BindGPUIndexBuffer](SDL_BindGPUIndexBuffer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)

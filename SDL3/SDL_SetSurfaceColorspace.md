@@ -18,7 +18,7 @@ bool SDL_SetSurfaceColorspace(SDL_Surface *surface, SDL_Colorspace colorspace);
 |                                  |                |                                                                              |
 | -------------------------------- | -------------- | ---------------------------------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) *     | **surface**    | the [SDL_Surface](SDL_Surface) structure to update.                          |
-| [SDL_Colorspace](SDL_Colorspace) | **colorspace** | an [SDL_ColorSpace](SDL_ColorSpace) value describing the surface colorspace. |
+| [SDL_Colorspace](SDL_Colorspace) | **colorspace** | an [SDL_Colorspace](SDL_Colorspace) value describing the surface colorspace. |
 
 ## Return Value
 

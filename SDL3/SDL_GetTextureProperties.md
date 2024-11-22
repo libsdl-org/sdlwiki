@@ -30,7 +30,7 @@ information.
 The following read-only properties are provided by SDL:
 
 - [`SDL_PROP_TEXTURE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_COLORSPACE_NUMBER):
-  an [SDL_ColorSpace](SDL_ColorSpace) value describing the texture
+  an [SDL_Colorspace](SDL_Colorspace) value describing the texture
   colorspace.
 - [`SDL_PROP_TEXTURE_FORMAT_NUMBER`](SDL_PROP_TEXTURE_FORMAT_NUMBER): one
   of the enumerated values in [SDL_PixelFormat](SDL_PixelFormat).
@@ -73,14 +73,8 @@ With the direct3d12 renderer:
 
 With the vulkan renderer:
 
-- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_POINTER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_POINTER):
+- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER):
   the VkImage associated with the texture
-- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_U_POINTER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_U_POINTER):
-  the VkImage associated with the U plane of a YUV texture
-- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_V_POINTER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_V_POINTER):
-  the VkImage associated with the V plane of a YUV texture
-- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_UV_POINTER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_UV_POINTER):
-  the VkImage associated with the UV plane of a NV12/NV21 texture
 
 With the opengl renderer:
 
@@ -113,11 +107,6 @@ With the opengles2 renderer:
 - [`SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_TARGET_NUMBER`](SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_TARGET_NUMBER):
   the GLenum for the texture target (`GL_TEXTURE_2D`,
   `GL_TEXTURE_EXTERNAL_OES`, etc)
-
-With the vulkan renderer:
-
-- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER):
-  the VkImage associated with the texture
 
 ## Thread Safety
 
