@@ -137,10 +137,10 @@ Examples demonstrating proper usage of this API can be found
 
 ## FAQ
 
-- Q: When are you adding more advanced features, like ray tracing or mesh
-  shaders?
+**Question: When are you adding more advanced features, like ray tracing or mesh
+shaders?**
 
-A: We don't have immediate plans to add more bleeding-edge features, but we
+Answer: We don't have immediate plans to add more bleeding-edge features, but we
 certainly might in the future, when these features prove worthwhile, and
 reasonable to implement across several platforms and underlying APIs. So
 while these things are not in the "never" category, they are definitely not
