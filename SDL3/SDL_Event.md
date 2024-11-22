@@ -47,6 +47,7 @@ typedef union SDL_Event
     SDL_PenMotionEvent pmotion;             /**< Pen motion event data */
     SDL_PenButtonEvent pbutton;             /**< Pen button event data */
     SDL_PenAxisEvent paxis;                 /**< Pen axis event data */
+    SDL_RenderEvent render;                 /**< Render event data */
     SDL_DropEvent drop;                     /**< Drag and drop event data */
     SDL_ClipboardEvent clipboard;           /**< Clipboard event data */
 
