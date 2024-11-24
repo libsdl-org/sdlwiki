@@ -52,6 +52,7 @@ This function is available since SDL 3.1.3.
 - [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_SyncWindow](SDL_SyncWindow)
+- [SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
