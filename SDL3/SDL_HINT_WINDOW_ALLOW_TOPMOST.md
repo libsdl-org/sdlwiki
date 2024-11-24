@@ -29,6 +29,10 @@ This hint can be set anytime.
 
 This hint is available since SDL 3.1.3.
 
+## See also
+
+- [SDL_WINDOW_ALWAYS_ON_TOP](SDL_WINDOW_ALWAYS_ON_TOP)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 
