@@ -41,6 +41,10 @@ smaller image will be upscaled and be used instead.
 
 This function is available since SDL 3.1.3.
 
+## See Also
+
+- [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
