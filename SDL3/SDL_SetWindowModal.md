@@ -37,6 +37,7 @@ This function is available since SDL 3.1.3.
 ## See Also
 
 - [SDL_SetWindowParent](SDL_SetWindowParent)
+- [SDL_WINDOW_MODAL](SDL_WINDOW_MODAL)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
