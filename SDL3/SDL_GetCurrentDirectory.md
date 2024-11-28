@@ -28,6 +28,10 @@ SDL does not provide a means to _change_ the current working directory; for
 platforms without this concept, this would cause surprises with file access
 outside of SDL.
 
+## Version
+
+This function is available since SDL 3.2.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 
