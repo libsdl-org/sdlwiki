@@ -55,7 +55,7 @@ SDL will copy the channel map; the caller does not have to save this array
 after this call.
 
 If `count` is not equal to the current number of channels in the audio
-stream's format, this will fail. This is a safety measure to make sure a a
+stream's format, this will fail. This is a safety measure to make sure a
 race condition hasn't changed the format while this call is setting the
 channel map.
 
