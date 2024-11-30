@@ -140,6 +140,8 @@ scenarios.
 - [SDL_GetCurrentAudioDriver](SDL_GetCurrentAudioDriver)
 - [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
 - [SDL_GetSilenceValueForFormat](SDL_GetSilenceValueForFormat)
+- [SDL_IsAudioDevicePhysical](SDL_IsAudioDevicePhysical)
+- [SDL_IsAudioDevicePlayback](SDL_IsAudioDevicePlayback)
 - [SDL_LoadWAV](SDL_LoadWAV)
 - [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
 - [SDL_LockAudioStream](SDL_LockAudioStream)

@@ -672,6 +672,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_IOvprintf](SDL_IOvprintf)
 - [SDL_isalnum](SDL_isalnum)
 - [SDL_isalpha](SDL_isalpha)
+- [SDL_IsAudioDevicePhysical](SDL_IsAudioDevicePhysical)
+- [SDL_IsAudioDevicePlayback](SDL_IsAudioDevicePlayback)
 - [SDL_isblank](SDL_isblank)
 - [SDL_IsChromebook](SDL_IsChromebook)
 - [SDL_iscntrl](SDL_iscntrl)
