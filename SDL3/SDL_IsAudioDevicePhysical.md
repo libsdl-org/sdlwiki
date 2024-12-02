@@ -25,7 +25,7 @@ bool SDL_IsAudioDevicePhysical(SDL_AudioDeviceID devid);
 
 ## Remarks
 
-An [SDL_AudioDeviceID](SDL_AudioDeviceID) that represents physical hardare
+An [SDL_AudioDeviceID](SDL_AudioDeviceID) that represents physical hardware
 is a physical device; there is one for each piece of hardware that SDL can
 see. Logical devices are created by calling
 [SDL_OpenAudioDevice](SDL_OpenAudioDevice) or
