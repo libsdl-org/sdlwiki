@@ -29,6 +29,7 @@ This variable is case insensitive and can be set to the following values:
 - "opengles"
 - "metal"
 - "vulkan"
+- "gpu"
 - "software"
 
 The default varies by platform, but it's the first one in the list that is
