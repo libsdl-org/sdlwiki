@@ -21,7 +21,7 @@ bool SDL_SurfaceHasAlternateImages(SDL_Surface *surface);
 
 ## Return Value
 
-(bool) Returns true if alternate versions are available or true otherwise.
+(bool) Returns true if alternate versions are available or false otherwise.
 
 ## Version
 
