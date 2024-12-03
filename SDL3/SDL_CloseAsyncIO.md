@@ -68,7 +68,7 @@ not attempt to close the same object.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAsyncIO](CategoryAsyncIO)
