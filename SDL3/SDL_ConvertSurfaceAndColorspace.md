@@ -45,7 +45,6 @@ This function is available since SDL 3.1.3.
 ## See Also
 
 - [SDL_ConvertSurface](SDL_ConvertSurface)
-- [SDL_ConvertSurface](SDL_ConvertSurface)
 - [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
