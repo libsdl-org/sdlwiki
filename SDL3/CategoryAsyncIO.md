@@ -7,7 +7,7 @@ that request I/O never block while the request is fulfilled.
 Instead, the data moves in the background and the app can check for results
 at their leisure.
 
-This is more complicated that just reading and writing files in a
+This is more complicated than just reading and writing files in a
 synchronous way, but it can allow for more efficiency, and never having
 framerate drops as the hard drive catches up, etc.
 
@@ -37,7 +37,7 @@ on a queue in a background thread, sleeping until new results have arrived:
 And, of course, to match the synchronous [SDL_LoadFile](SDL_LoadFile), we
 offer [SDL_LoadFileAsync](SDL_LoadFileAsync) as a convenience function.
 This will handle allocating a buffer, slurping in the file data, and
-null-terminating it; you still get a task handle to check later.
+null-terminating it; you still check for results later.
 
 <!-- END CATEGORY DOCUMENTATION -->
 
