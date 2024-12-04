@@ -18,6 +18,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Logical audio devices](SDL_OpenAudioDevice): different parts of an app can get their own unique audio device to use.
 - [Audio streams](SDL_CreateAudioStream): handle buffering, converting, resampling, mixing, channel mapping, pitch, and gain. Bind to an audio device and go!
 - [Default audio devices](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK): SDL3 will automatically manage migrating to new physical hardware as devices are plugged in, ripped out, or changed.
+- [Asynchronous I/O](CategoryAsyncIO): Start file reads/writes, come back later to get the results. Can use Windows IoRing and Linux io_uring behind the scenes!
 - [Time API](CategoryTime): date and time functionality beyond ticks and performance counters.
 - [Properties API](CategoryProperties): fast, flexible dictionaries of name/value pairs.
 - [Process API](CategoryProcess): Spawn child processes and communicate with them in various ways.
