@@ -1044,6 +1044,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_ShouldQuit](SDL_ShouldQuit)
 - [SDL_ShowAndroidToast](SDL_ShowAndroidToast)
 - [SDL_ShowCursor](SDL_ShowCursor)
+- [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
 - [SDL_ShowMessageBox](SDL_ShowMessageBox)
 - [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
