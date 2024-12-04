@@ -12,6 +12,8 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_AppResult](SDL_AppResult)
 - [SDL_ArrayOrder](SDL_ArrayOrder)
 - [SDL_AssertState](SDL_AssertState)
+- [SDL_AsyncIOResult](SDL_AsyncIOResult)
+- [SDL_AsyncIOTaskType](SDL_AsyncIOTaskType)
 - [SDL_AudioFormat](SDL_AudioFormat)
 - [SDL_BitmapOrder](SDL_BitmapOrder)
 - [SDL_BlendFactor](SDL_BlendFactor)
