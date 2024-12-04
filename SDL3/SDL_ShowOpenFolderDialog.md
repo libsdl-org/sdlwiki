@@ -25,8 +25,6 @@ void SDL_ShowOpenFolderDialog(SDL_DialogFileCallback callback, void *userdata, S
 
 ## Remarks
 
-This function should only be invoked from the main thread.
-
 This is an asynchronous function; it will return immediately, and the
 result will be passed to the callback.
 
@@ -44,6 +42,12 @@ On Linux, dialogs may require XDG Portals, which requires DBus, which
 requires an event-handling loop. Apps that do not use SDL to handle events
 should add a call to [SDL_PumpEvents](SDL_PumpEvents) in their main loop.
 
+## Thread Safety
+
+This function should be called only from the main thread. The callback may
+be invoked from the same thread or from a different one, depending on the
+OS's constraints.
+
 ## Version
 
 This function is available since SDL 3.1.3.
@@ -53,6 +57,7 @@ This function is available since SDL 3.1.3.
 - [SDL_DialogFileCallback](SDL_DialogFileCallback)
 - [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
 - [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
+- [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryDialog](CategoryDialog)

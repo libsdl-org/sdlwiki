@@ -15,18 +15,16 @@ void SDL_ShowSaveFileDialog(SDL_DialogFileCallback callback, void *userdata, SDL
 
 ## Function Parameters
 
-|                                                      |                      |                                                                                                                                                   |
-| ---------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDL_DialogFileCallback](SDL_DialogFileCallback)     | **callback**         | a function pointer to be invoked when the user selects a file and accepts, or cancels the dialog, or an error occurs.                             |
-| void *                                               | **userdata**         | an optional pointer to pass extra data to the callback when it will be invoked.                                                                   |
-| [SDL_Window](SDL_Window) *                           | **window**           | the window that the dialog should be modal for, may be NULL. Not all platforms support this option.                                               |
-| const [SDL_DialogFileFilter](SDL_DialogFileFilter) * | **filters**          | a list of filters, may be NULL. Not all platforms support this option, and platforms that do support it may allow the user to ignore the filters. |
-| int                                                  | **nfilters**         | the number of filters. Ignored if filters is NULL.                                                                                                |
-| const char *                                         | **default_location** | the default folder or file to start the dialog at, may be NULL. Not all platforms support this option.                                            |
+|                                                      |                      |                                                                                                                                                                                                                             |
+| ---------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_DialogFileCallback](SDL_DialogFileCallback)     | **callback**         | a function pointer to be invoked when the user selects a file and accepts, or cancels the dialog, or an error occurs.                                                                                                       |
+| void *                                               | **userdata**         | an optional pointer to pass extra data to the callback when it will be invoked.                                                                                                                                             |
+| [SDL_Window](SDL_Window) *                           | **window**           | the window that the dialog should be modal for, may be NULL. Not all platforms support this option.                                                                                                                         |
+| const [SDL_DialogFileFilter](SDL_DialogFileFilter) * | **filters**          | a list of filters, may be NULL. Not all platforms support this option, and platforms that do support it may allow the user to ignore the filters. If non-NULL, it must remain valid at least until the callback is invoked. |
+| int                                                  | **nfilters**         | the number of filters. Ignored if filters is NULL.                                                                                                                                                                          |
+| const char *                                         | **default_location** | the default folder or file to start the dialog at, may be NULL. Not all platforms support this option.                                                                                                                      |
 
 ## Remarks
-
-This function should only be invoked from the main thread.
 
 This is an asynchronous function; it will return immediately, and the
 result will be passed to the callback.
@@ -44,6 +42,12 @@ On Linux, dialogs may require XDG Portals, which requires DBus, which
 requires an event-handling loop. Apps that do not use SDL to handle events
 should add a call to [SDL_PumpEvents](SDL_PumpEvents) in their main loop.
 
+## Thread Safety
+
+This function should be called only from the main thread. The callback may
+be invoked from the same thread or from a different one, depending on the
+OS's constraints.
+
 ## Version
 
 This function is available since SDL 3.1.3.
@@ -54,6 +58,7 @@ This function is available since SDL 3.1.3.
 - [SDL_DialogFileFilter](SDL_DialogFileFilter)
 - [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+- [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryDialog](CategoryDialog)
