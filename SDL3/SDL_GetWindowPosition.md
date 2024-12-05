@@ -34,6 +34,10 @@ windowing system.
 If you do not need the value for one of the positions a NULL may be passed
 in the `x` or `y` parameter.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

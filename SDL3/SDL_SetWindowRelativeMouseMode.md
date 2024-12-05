@@ -34,6 +34,10 @@ the window.
 
 This function will flush any pending mouse motion for this window.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -31,6 +31,10 @@ cursor is currently visible, the change will be immediately represented on
 the display. [SDL_SetCursor](SDL_SetCursor)(NULL) can be used to force
 cursor redraw, if this is desired for any reason.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

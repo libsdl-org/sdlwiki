@@ -27,7 +27,7 @@ bool SDL_GetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode *blendMode);
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

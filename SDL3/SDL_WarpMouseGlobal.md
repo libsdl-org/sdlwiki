@@ -35,6 +35,10 @@ platform.
 Note that this function will appear to succeed, but not actually move the
 mouse when used over Microsoft Remote Desktop.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

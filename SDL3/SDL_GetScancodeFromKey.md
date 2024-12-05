@@ -30,6 +30,10 @@ that corresponds to the given [SDL_Keycode](SDL_Keycode).
 Note that there may be multiple scancode+modifier states that can generate
 this keycode, this will just return the first one found.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

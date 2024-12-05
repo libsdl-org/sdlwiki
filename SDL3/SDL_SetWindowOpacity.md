@@ -32,6 +32,10 @@ The parameter `opacity` will be clamped internally between 0.0f
 
 This function also returns false if setting the opacity isn't supported.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

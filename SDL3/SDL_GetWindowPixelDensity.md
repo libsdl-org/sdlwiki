@@ -30,6 +30,10 @@ This is a ratio of pixel size to window size. For example, if the window is
 1920x1080 and it has a high density back buffer of 3840x2160 pixels, it
 would have a pixel density of 2.0.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

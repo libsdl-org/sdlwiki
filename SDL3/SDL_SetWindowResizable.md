@@ -34,6 +34,10 @@ already matches the requested state.
 
 You can't change the resizable state of a fullscreen window.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

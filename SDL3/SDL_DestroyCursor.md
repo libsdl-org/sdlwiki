@@ -26,6 +26,10 @@ Use this function to free cursor resources created with
 [SDL_CreateColorCursor](SDL_CreateColorCursor)() or
 [SDL_CreateSystemCursor](SDL_CreateSystemCursor)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

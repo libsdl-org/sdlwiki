@@ -24,6 +24,10 @@ This function returns a pointer to the current cursor which is owned by the
 library. It is not necessary to free the cursor with
 [SDL_DestroyCursor](SDL_DestroyCursor)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

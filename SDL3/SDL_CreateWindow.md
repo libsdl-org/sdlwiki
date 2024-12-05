@@ -114,6 +114,10 @@ On non-Apple devices, SDL requires you to either not link to the Vulkan
 loader or link to a dynamic library version. This limitation may be removed
 in a future version of SDL.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

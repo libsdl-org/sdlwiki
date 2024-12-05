@@ -31,6 +31,10 @@ settings of the display. For example, a 4K display might have a 2.0 (200%)
 display scale, which means that the user expects UI elements to be twice as
 big on this display, to aid in readability.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

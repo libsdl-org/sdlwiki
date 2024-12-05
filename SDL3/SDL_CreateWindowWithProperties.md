@@ -146,6 +146,10 @@ The correct approach to this is to create the window with the
 property set to true, then create the renderer, then show the window with
 [SDL_ShowWindow](SDL_ShowWindow)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

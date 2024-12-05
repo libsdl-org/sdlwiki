@@ -37,6 +37,10 @@ available, the closest larger size image will be downscaled to the
 appropriate size and be used instead, if available. Otherwise, the closest
 smaller image will be upscaled and be used instead.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

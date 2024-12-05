@@ -57,6 +57,10 @@ when the mouse isn't actually at the location it is testing_). Since this
 can fire at any time, you should try to keep your callback efficient,
 devoid of allocations, etc.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

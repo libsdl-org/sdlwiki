@@ -28,7 +28,7 @@ bool SDL_RenderPoint(SDL_Renderer *renderer, float x, float y);
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

@@ -29,7 +29,7 @@ bool SDL_GetTextureColorMod(SDL_Texture *texture, Uint8 *r, Uint8 *g, Uint8 *b);
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

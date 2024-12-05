@@ -50,6 +50,10 @@ the window size in certain scenarios (e.g. constraining the size of the
 content area to remain within the usable desktop bounds). Additionally, as
 this is just a request, it can be denied by the windowing system.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

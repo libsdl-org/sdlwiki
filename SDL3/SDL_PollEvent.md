@@ -57,9 +57,7 @@ while (game_is_still_running) {
 
 ## Thread Safety
 
-This should only be run in the thread that initialized the video subsystem,
-and for extra safety, you should consider only doing those things on the
-main thread in any case.
+This function should only be called on the main thread.
 
 ## Version
 

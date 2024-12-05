@@ -43,6 +43,10 @@ inputs in one go per-frame instead of individually per-event, at the
 expense of losing the order between events within the frame (e.g. quickly
 pressing and releasing a button within the same frame).
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

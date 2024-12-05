@@ -31,6 +31,10 @@ screen.
 
 This function is equivalent to the SDL 1.2 API [SDL_Flip](SDL_Flip)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

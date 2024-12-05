@@ -34,6 +34,10 @@ window is on a high pixel density display. Use
 [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)() to get the real client
 area size in pixels.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -33,6 +33,10 @@ The names of drivers are all simple, low-ASCII identifiers, like "cocoa",
 "x11" or "windows". These never have Unicode characters, and are not meant
 to be proper names.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

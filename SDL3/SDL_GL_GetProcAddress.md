@@ -68,6 +68,10 @@ these quirks without any platform-specific code, though:
   code. This will ensure the proper calling convention is followed on
   platforms where this matters (Win32) thereby avoiding stack corruption.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

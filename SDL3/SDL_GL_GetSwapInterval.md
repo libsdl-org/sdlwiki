@@ -29,6 +29,10 @@ bool SDL_GL_GetSwapInterval(int *interval);
 If the system can't determine the swap interval, or there isn't a valid
 current context, this function will set *interval to 0 as a safe default.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

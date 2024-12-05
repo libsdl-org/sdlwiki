@@ -25,6 +25,10 @@ SDL_PixelFormat SDL_GetWindowPixelFormat(SDL_Window *window);
 on success or [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

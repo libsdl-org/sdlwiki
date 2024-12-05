@@ -31,6 +31,10 @@ bool SDL_SetTextInputArea(SDL_Window *window, const SDL_Rect *rect, int cursor);
 Native input methods may place a window with word suggestions near the
 cursor, without covering the text being entered.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -30,7 +30,7 @@ bool SDL_GetRenderDrawColorFloat(SDL_Renderer *renderer, float *r, float *g, flo
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

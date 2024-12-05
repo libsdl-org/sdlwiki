@@ -18,6 +18,10 @@ SDL_Window * SDL_GetGrabbedWindow(void);
 ([SDL_Window](SDL_Window) *) Returns the window if input is grabbed or NULL
 otherwise.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

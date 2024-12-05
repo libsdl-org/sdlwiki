@@ -34,6 +34,10 @@ input focus, an
 be emitted, and the window will have the
 [SDL_WINDOW_INPUT_FOCUS](SDL_WINDOW_INPUT_FOCUS) flag set.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

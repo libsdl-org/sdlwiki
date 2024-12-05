@@ -68,6 +68,10 @@ If a parent window is hidden or destroyed, any child popup windows will be
 recursively hidden or destroyed as well. Child popup windows not explicitly
 hidden will be restored when the parent is shown.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -30,7 +30,7 @@ bool SDL_RenderLine(SDL_Renderer *renderer, float x1, float y1, float x2, float 
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

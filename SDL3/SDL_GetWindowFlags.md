@@ -24,6 +24,10 @@ SDL_WindowFlags SDL_GetWindowFlags(SDL_Window *window);
 ([SDL_WindowFlags](SDL_WindowFlags)) Returns a mask of the
 [SDL_WindowFlags](SDL_WindowFlags) associated with `window`.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -26,6 +26,10 @@ quits.
 The screensaver is disabled by default, but this may by changed by
 [SDL_HINT_VIDEO_ALLOW_SCREENSAVER](SDL_HINT_VIDEO_ALLOW_SCREENSAVER).
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

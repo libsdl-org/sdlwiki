@@ -23,6 +23,10 @@ on failuree; call [SDL_GetError](SDL_GetError)() for more information.
 You do not have to call [SDL_DestroyCursor](SDL_DestroyCursor)() on the
 return value, but it is safe to do so.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

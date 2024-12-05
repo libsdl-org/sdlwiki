@@ -30,6 +30,10 @@ states on your application. Simply pass your desired modifier states into
 This does not change the keyboard state, only the key modifier flags that
 SDL reports.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

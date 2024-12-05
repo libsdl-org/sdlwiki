@@ -26,6 +26,10 @@ bool SDL_SetWindowMinimumSize(SDL_Window *window, int min_w, int min_h);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

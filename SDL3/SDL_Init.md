@@ -47,7 +47,8 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 - [`SDL_INIT_AUDIO`](SDL_INIT_AUDIO): audio subsystem; automatically
   initializes the events subsystem
 - [`SDL_INIT_VIDEO`](SDL_INIT_VIDEO): video subsystem; automatically
-  initializes the events subsystem
+  initializes the events subsystem, should be initialized on the main
+  thread.
 - [`SDL_INIT_JOYSTICK`](SDL_INIT_JOYSTICK): joystick subsystem;
   automatically initializes the events subsystem
 - [`SDL_INIT_HAPTIC`](SDL_INIT_HAPTIC): haptic (force feedback) subsystem

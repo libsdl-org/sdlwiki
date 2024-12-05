@@ -24,6 +24,10 @@ SDL_Window * SDL_GetWindowParent(SDL_Window *window);
 ([SDL_Window](SDL_Window) *) Returns the parent of the window on success or
 NULL if the window has no parent.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

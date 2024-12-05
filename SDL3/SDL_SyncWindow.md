@@ -35,6 +35,10 @@ that must complete before the window is in its final requested state.
 
 On windowing systems where changes are immediate, this does nothing.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

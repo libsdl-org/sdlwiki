@@ -24,6 +24,10 @@ bool SDL_WindowHasSurface(SDL_Window *window);
 (bool) Returns true if there is a surface associated with the window, or
 false otherwise.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

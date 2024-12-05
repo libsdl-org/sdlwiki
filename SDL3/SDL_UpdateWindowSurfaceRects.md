@@ -39,6 +39,10 @@ but this is only intended as an optimization; in practice, this might
 update more of the screen (or all of the screen!), depending on what method
 SDL uses to send pixels to the system.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

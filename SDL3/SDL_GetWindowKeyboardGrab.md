@@ -23,6 +23,10 @@ bool SDL_GetWindowKeyboardGrab(SDL_Window *window);
 
 (bool) Returns true if keyboard is grabbed, and false otherwise.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

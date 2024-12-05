@@ -44,6 +44,10 @@ dimensions to SDL.
 This function also returns false if getting the information is not
 supported.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

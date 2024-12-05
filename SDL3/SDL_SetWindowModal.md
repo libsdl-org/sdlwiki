@@ -30,6 +30,10 @@ bool SDL_SetWindowModal(SDL_Window *window, bool modal);
 To enable modal status on a window, the window must currently be the child
 window of a parent, or toggling modal status on will fail.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

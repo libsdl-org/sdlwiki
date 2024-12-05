@@ -45,6 +45,10 @@ Popup windows cannot change parents and attempts to do so will fail.
 Setting a parent window that is currently the sibling or descendent of the
 child window results in undefined behavior.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

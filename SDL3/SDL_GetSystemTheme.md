@@ -18,6 +18,10 @@ SDL_SystemTheme SDL_GetSystemTheme(void);
 ([SDL_SystemTheme](SDL_SystemTheme)) Returns the current system theme,
 light, dark, or unknown.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

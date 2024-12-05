@@ -25,6 +25,10 @@ const SDL_DisplayMode * SDL_GetWindowFullscreenMode(SDL_Window *window);
 exclusive fullscreen mode to use or NULL for borderless fullscreen desktop
 mode.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

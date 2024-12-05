@@ -29,6 +29,10 @@ bool SDL_GetDisplayBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 
 The primary display is always located at (0,0).
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

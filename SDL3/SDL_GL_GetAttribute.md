@@ -25,6 +25,10 @@ bool SDL_GL_GetAttribute(SDL_GLAttr attr, int *value);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

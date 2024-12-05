@@ -38,6 +38,10 @@ On some platforms using this function shows the screen keyboard and/or
 activates an IME, which can prevent some key press events from being passed
 through.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

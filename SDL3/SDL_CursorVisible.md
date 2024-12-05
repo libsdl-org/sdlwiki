@@ -18,6 +18,10 @@ bool SDL_CursorVisible(void);
 (bool) Returns `true` if the cursor is being shown, or `false` if the
 cursor is hidden.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

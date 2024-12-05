@@ -147,6 +147,10 @@ On X11:
 - [`SDL_PROP_WINDOW_X11_WINDOW_NUMBER`](SDL_PROP_WINDOW_X11_WINDOW_NUMBER):
   the X11 Window associated with the window
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

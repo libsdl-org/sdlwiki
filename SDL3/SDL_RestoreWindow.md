@@ -37,6 +37,10 @@ When the window state changes, an
 emitted. Note that, as this is just a request, the windowing system can
 deny the state change.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

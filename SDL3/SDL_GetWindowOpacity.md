@@ -29,6 +29,10 @@ on failure; call [SDL_GetError](SDL_GetError)() for more information.
 If transparency isn't supported on this platform, opacity will be returned
 as 1.0f without error.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -25,6 +25,10 @@ SDL_Keycode SDL_GetKeyFromName(const char *name);
 [`SDLK_UNKNOWN`](SDLK_UNKNOWN) if the name wasn't recognized; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -28,7 +28,7 @@ bool SDL_RenderFillRects(SDL_Renderer *renderer, const SDL_FRect *rects, int cou
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

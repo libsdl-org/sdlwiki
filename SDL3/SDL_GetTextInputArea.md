@@ -31,6 +31,10 @@ bool SDL_GetTextInputArea(SDL_Window *window, SDL_Rect *rect, int *cursor);
 This returns the values previously set by
 [SDL_SetTextInputArea](SDL_SetTextInputArea)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

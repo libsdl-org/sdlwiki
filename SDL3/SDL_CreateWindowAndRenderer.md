@@ -31,7 +31,7 @@ bool SDL_CreateWindowAndRenderer(const char *title, int width, int height, SDL_W
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

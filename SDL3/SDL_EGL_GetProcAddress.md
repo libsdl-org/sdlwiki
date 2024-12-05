@@ -31,6 +31,10 @@ If an EGL library is loaded, this function allows applications to get entry
 points for EGL functions. This is useful to provide to an EGL API and
 extension loader.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

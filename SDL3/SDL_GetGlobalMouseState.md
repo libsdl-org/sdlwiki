@@ -46,6 +46,10 @@ needs. For example, it could be useful if you need to track the mouse while
 dragging a window, where coordinates relative to a window might not be in
 sync at all times.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

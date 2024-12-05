@@ -33,6 +33,10 @@ window, otherwise nothing will happen. If you aren't using
 glBindFramebuffer(), this is the default and you won't have to do anything
 extra.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

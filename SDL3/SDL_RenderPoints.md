@@ -28,7 +28,7 @@ bool SDL_RenderPoints(SDL_Renderer *renderer, const SDL_FPoint *points, int coun
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

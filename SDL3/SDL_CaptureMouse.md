@@ -61,6 +61,10 @@ situation, you do not have to (although it is safe to do so). If this
 causes problems for your app, you can disable auto capture by setting the
 [`SDL_HINT_MOUSE_AUTO_CAPTURE`](SDL_HINT_MOUSE_AUTO_CAPTURE) hint to zero.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

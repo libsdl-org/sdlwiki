@@ -29,6 +29,10 @@ bool SDL_GL_MakeCurrent(SDL_Window *window, SDL_GLContext context);
 
 The context must have been created with a compatible window.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

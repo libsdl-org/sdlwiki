@@ -24,6 +24,10 @@ const char * SDL_GetWindowTitle(SDL_Window *window);
 (const char *) Returns the title of the window in UTF-8 format or "" if
 there is no title.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

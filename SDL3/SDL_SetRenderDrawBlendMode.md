@@ -31,7 +31,7 @@ If the blend mode is not supported, the closest supported mode is chosen.
 
 ## Thread Safety
 
-You may only call this function from the main thread.
+This function should only be called on the main thread.
 
 ## Version
 

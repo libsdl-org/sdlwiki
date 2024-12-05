@@ -34,6 +34,10 @@ including options specified in
 `key_event` as true. Otherwise this function simply translates the scancode
 based on the given modifier state.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

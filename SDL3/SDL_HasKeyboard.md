@@ -17,6 +17,10 @@ bool SDL_HasKeyboard(void);
 
 (bool) Returns true if a keyboard is connected, false otherwise.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

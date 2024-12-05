@@ -27,6 +27,10 @@ const char * SDL_GetKeyName(SDL_Keycode key);
 
 If the key doesn't have a name, this function returns an empty string ("").
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

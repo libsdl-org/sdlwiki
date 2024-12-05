@@ -47,6 +47,10 @@ on the policy of the window manager. Win32 and macOS enforce the
 constraints when maximizing, while X11 and Wayland window managers may
 vary.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

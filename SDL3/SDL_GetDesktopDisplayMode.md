@@ -32,6 +32,10 @@ There's a difference between this function and
 fullscreen and has changed the resolution. In that case this function will
 return the previous native display mode, and not the current display mode.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

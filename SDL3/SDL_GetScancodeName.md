@@ -36,6 +36,10 @@ have any name at all. There are even scancodes that share names, e.g.
 function is therefore unsuitable for creating a stable cross-platform
 two-way mapping between strings and scancodes.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

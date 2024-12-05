@@ -19,6 +19,10 @@ SDL_DisplayID SDL_GetPrimaryDisplay(void);
 display on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for
 more information.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

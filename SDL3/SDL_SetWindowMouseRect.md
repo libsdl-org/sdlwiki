@@ -30,6 +30,10 @@ bool SDL_SetWindowMouseRect(SDL_Window *window, const SDL_Rect *rect);
 Note that this does NOT grab the cursor, it only defines the area a cursor
 is restricted to when the window has mouse focus.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

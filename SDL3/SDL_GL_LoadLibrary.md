@@ -34,6 +34,10 @@ If you do this, you need to retrieve all of the GL functions used in your
 program from the dynamic library using
 [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

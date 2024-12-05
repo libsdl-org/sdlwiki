@@ -36,6 +36,10 @@ operation. Check the extensions you care about after creating the GL
 context and save that information somewhere instead of calling the function
 every time you need to know.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -25,6 +25,10 @@ typedef enum SDL_HitTestResult
 } SDL_HitTestResult;
 ```
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This enum is available since SDL 3.1.3.

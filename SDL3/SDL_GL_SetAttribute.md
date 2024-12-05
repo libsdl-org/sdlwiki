@@ -33,6 +33,10 @@ attributes should be set before creating an OpenGL window. You should use
 creating the OpenGL context, since the values obtained can differ from the
 requested ones.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

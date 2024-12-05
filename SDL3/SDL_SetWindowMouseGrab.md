@@ -29,6 +29,10 @@ bool SDL_SetWindowMouseGrab(SDL_Window *window, bool grabbed);
 
 Mouse grab confines the mouse cursor to the window.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

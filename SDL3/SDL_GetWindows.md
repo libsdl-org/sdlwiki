@@ -27,6 +27,10 @@ SDL_Window ** SDL_GetWindows(int *count);
 allocation that should be freed with [SDL_free](SDL_free)() when it is no
 longer needed.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

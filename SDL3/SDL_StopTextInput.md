@@ -29,6 +29,10 @@ bool SDL_StopTextInput(SDL_Window *window);
 If [SDL_StartTextInput](SDL_StartTextInput)() showed the screen keyboard,
 this function will hide it.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

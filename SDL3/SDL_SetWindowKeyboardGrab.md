@@ -43,6 +43,10 @@ mode, you may suppress this behavior with
 If the caller enables a grab while another window is currently grabbed, the
 other window loses its grab in favor of the caller's window.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

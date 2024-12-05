@@ -31,6 +31,10 @@ The numeric ID is what [SDL_WindowEvent](SDL_WindowEvent) references, and
 is necessary to map these events to specific [SDL_Window](SDL_Window)
 objects.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

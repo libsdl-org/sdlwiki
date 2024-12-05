@@ -18,6 +18,10 @@ SDL_EGLConfig SDL_EGL_GetCurrentConfig(void);
 ([SDL_EGLConfig](SDL_EGLConfig)) Returns the currently active EGL config or
 NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.
