@@ -227,6 +227,7 @@ not "near future" items either.
 - [SDL_ReleaseGPUTexture](SDL_ReleaseGPUTexture)
 - [SDL_ReleaseGPUTransferBuffer](SDL_ReleaseGPUTransferBuffer)
 - [SDL_ReleaseWindowFromGPUDevice](SDL_ReleaseWindowFromGPUDevice)
+- [SDL_SetGPUAllowedFramesInFlight](SDL_SetGPUAllowedFramesInFlight)
 - [SDL_SetGPUBlendConstants](SDL_SetGPUBlendConstants)
 - [SDL_SetGPUBufferName](SDL_SetGPUBufferName)
 - [SDL_SetGPUScissor](SDL_SetGPUScissor)
