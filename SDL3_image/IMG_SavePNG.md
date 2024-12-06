@@ -22,7 +22,8 @@ bool IMG_SavePNG(SDL_Surface *surface, const char *file);
 
 ## Return Value
 
-(bool) Returns 0 if successful, -1 on error.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 

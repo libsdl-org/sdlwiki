@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-bool IMG_SaveAVIF_IO(SDL_Surface *surface, SDL_IOStream *dst, int closeio, int quality);
+bool IMG_SaveAVIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);
 ```
 
 ## Function Parameters
@@ -19,12 +19,13 @@ bool IMG_SaveAVIF_IO(SDL_Surface *surface, SDL_IOStream *dst, int closeio, int q
 | -------------- | ----------- | ----------------------------------------------------------------------------- |
 | SDL_Surface *  | **surface** | the SDL surface to save.                                                      |
 | SDL_IOStream * | **dst**     | the SDL_IOStream to save the image data to.                                   |
-| int            | **closeio** | true to close/free the SDL_IOStream before returning, false to leave it open. |
+| bool           | **closeio** | true to close/free the SDL_IOStream before returning, false to leave it open. |
 | int            | **quality** | the desired quality, ranging between 0 (lowest) and 100 (highest).            |
 
 ## Return Value
 
-(bool) Returns 0 if successful, -1 on error.
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
 
 ## Remarks
 
