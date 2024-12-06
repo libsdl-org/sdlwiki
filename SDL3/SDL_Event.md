@@ -115,7 +115,7 @@ All we need to do now is read the information out of the **motion** member of te
 
 ```c
       SDL_Log("We got a motion event.");
-      SDL_Log("Current mouse position is: (%d, %d)", test_event.motion.x, test_event.motion.y);
+      SDL_Log("Current mouse position is: (%f, %f)", test_event.motion.x, test_event.motion.y);
       break;
     default:
       SDL_Log("Unhandled Event!");
