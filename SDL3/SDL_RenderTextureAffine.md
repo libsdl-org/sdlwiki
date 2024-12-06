@@ -37,7 +37,7 @@ You may only call this function from the main thread.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.2.0.
 
 ## See Also
 
