@@ -136,6 +136,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_Keymod](SDL_Keymod)
 - [SDL_LogOutputFunction](SDL_LogOutputFunction)
 - [SDL_main_func](SDL_main_func)
+- [SDL_MainThreadCallback](SDL_MainThreadCallback)
 - [SDL_malloc_func](SDL_malloc_func)
 - [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)
 - [SDL_MessageBoxFlags](SDL_MessageBoxFlags)
