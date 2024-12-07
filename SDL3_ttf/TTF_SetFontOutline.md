@@ -27,6 +27,13 @@ more information.
 
 ## Remarks
 
+This uses the font properties
+[`TTF_PROP_FONT_OUTLINE_LINE_CAP_NUMBER`](TTF_PROP_FONT_OUTLINE_LINE_CAP_NUMBER),
+[`TTF_PROP_FONT_OUTLINE_LINE_JOIN_NUMBER`](TTF_PROP_FONT_OUTLINE_LINE_JOIN_NUMBER),
+and
+[`TTF_PROP_FONT_OUTLINE_MITER_LIMIT_NUMBER`](TTF_PROP_FONT_OUTLINE_MITER_LIMIT_NUMBER)
+when setting the font outline.
+
 This updates any [TTF_Text](TTF_Text) objects using this font, and clears
 already-generated glyphs, if any, from the cache.
 
