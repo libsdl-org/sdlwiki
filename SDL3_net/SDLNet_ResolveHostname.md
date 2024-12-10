@@ -66,5 +66,5 @@ This function is available since SDL_Net 3.0.0.
 - [SDLNet_UnrefAddress](SDLNet_UnrefAddress)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLNet](CategorySDLNet)
 

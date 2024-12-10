@@ -38,5 +38,5 @@ This function is available since SDL_Net 3.0.0.
 - [SDLNet_Quit](SDLNet_Quit)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLNet](CategorySDLNet)
 

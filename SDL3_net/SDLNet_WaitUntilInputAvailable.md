@@ -73,5 +73,5 @@ This function is available since SDL_Net 3.0.0.
 - [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLNet](CategorySDLNet)
 
