@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_arraysize
 
-The number of elements in an array.
+The number of elements in a static array.
 
 ## Header File
 
@@ -14,6 +14,9 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```
 
 ## Remarks
+
+This will compile but return incorrect results for a pointer to an array;
+it has to be an array the compiler knows the size of.
 
 This macro looks like it double-evaluates the argument, but it does so
 inside of `sizeof`, so there are no side-effects here, as expressions do
