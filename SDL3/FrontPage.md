@@ -53,6 +53,7 @@ information about the functions, structures, enumerations and macros.
 - [All structures/unions](CategoryAPIStruct)
 - [All enums](CategoryAPIEnum)
 - [All macros](CategoryAPIMacro)
+- [API Quick Reference](QuickReference)
 
 ## Other sources of information
 
