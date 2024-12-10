@@ -38,5 +38,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_SetTextWrapWidth](TTF_SetTextWrapWidth)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 

@@ -42,5 +42,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_SetTextColor](TTF_SetTextColor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 

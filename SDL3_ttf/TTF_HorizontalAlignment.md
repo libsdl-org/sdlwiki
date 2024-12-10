@@ -24,5 +24,5 @@ typedef enum TTF_HorizontalAlignment
 This enum is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySDLTTF](CategorySDLTTF)
 

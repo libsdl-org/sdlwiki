@@ -34,5 +34,5 @@ This struct is available since SDL_ttf 3.0.0.
 - [TTF_GetGPUTextDrawData](TTF_GetGPUTextDrawData)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySDLTTF](CategorySDLTTF)
 

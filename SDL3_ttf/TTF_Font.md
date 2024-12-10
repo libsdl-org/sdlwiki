@@ -18,5 +18,5 @@ typedef struct TTF_Font TTF_Font;
 Opaque data!
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLTTF](CategorySDLTTF)
 

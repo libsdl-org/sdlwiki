@@ -37,5 +37,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_CreateGPUTextEngine](TTF_CreateGPUTextEngine)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 

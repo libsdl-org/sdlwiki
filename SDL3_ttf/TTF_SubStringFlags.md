@@ -27,5 +27,5 @@ This datatype is available since SDL_ttf 3.0.0.
 - [TTF_SubString](TTF_SubString)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLTTF](CategorySDLTTF)
 

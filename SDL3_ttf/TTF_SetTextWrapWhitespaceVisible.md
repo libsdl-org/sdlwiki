@@ -45,5 +45,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_TextWrapWhitespaceVisible](TTF_TextWrapWhitespaceVisible)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 

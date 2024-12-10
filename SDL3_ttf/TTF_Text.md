@@ -33,5 +33,5 @@ This struct is available since SDL_ttf 3.0.0.
 - [TTF_DestroyText](TTF_DestroyText)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySDLTTF](CategorySDLTTF)
 

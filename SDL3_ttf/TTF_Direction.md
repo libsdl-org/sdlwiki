@@ -28,5 +28,5 @@ This enum is available since SDL_ttf 3.0.0.
 - [TTF_SetFontDirection](TTF_SetFontDirection)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySDLTTF](CategorySDLTTF)
 

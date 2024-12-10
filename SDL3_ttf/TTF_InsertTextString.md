@@ -42,5 +42,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_SetTextString](TTF_SetTextString)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 

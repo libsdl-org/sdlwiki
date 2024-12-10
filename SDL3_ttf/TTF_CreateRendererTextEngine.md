@@ -38,5 +38,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_DestroyRendererTextEngine](TTF_DestroyRendererTextEngine)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 

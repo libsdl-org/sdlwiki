@@ -39,5 +39,5 @@ This function is available since SDL_ttf 3.0.0.
 - [TTF_GetTextFont](TTF_GetTextFont)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
 
