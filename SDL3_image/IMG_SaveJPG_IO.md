@@ -44,5 +44,5 @@ This function is available since SDL_image 3.0.0.
 - [IMG_SaveJPG](IMG_SaveJPG)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)
 

@@ -56,5 +56,5 @@ This function is available since SDL_image 3.0.0.
 - [IMG_LoadXV_IO](IMG_LoadXV_IO)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)
 

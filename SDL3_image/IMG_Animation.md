@@ -20,5 +20,5 @@ typedef struct IMG_Animation
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySDLImage](CategorySDLImage)
 

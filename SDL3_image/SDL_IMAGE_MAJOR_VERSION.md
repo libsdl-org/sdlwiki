@@ -14,5 +14,5 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySDLImage](CategorySDLImage)
 

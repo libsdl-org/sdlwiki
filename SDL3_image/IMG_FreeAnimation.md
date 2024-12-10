@@ -34,5 +34,5 @@ This function is available since SDL_image 3.0.0.
 - [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)
 
