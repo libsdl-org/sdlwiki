@@ -23,5 +23,5 @@ while it's still playing.
 DO NOT EVER call SDL_LockAudio() from your callback function!
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLMixer](CategorySDLMixer)
 

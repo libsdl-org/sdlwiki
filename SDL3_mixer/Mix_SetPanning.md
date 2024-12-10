@@ -67,5 +67,5 @@ This function is available since SDL_mixer 3.0.0.
 - [Mix_SetDistance](Mix_SetDistance)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

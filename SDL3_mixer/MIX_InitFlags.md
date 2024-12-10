@@ -22,6 +22,6 @@ typedef Uint32 MIX_InitFlags;
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLMixer](CategorySDLMixer), [CategoryAPIEnum](CategoryAPIEnum)
 
 

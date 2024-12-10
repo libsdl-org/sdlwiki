@@ -60,5 +60,5 @@ To convert from milliseconds, divide by 1000.0.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

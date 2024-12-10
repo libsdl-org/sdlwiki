@@ -43,5 +43,5 @@ This function is available since SDL_mixer 3.0.0.
 - [Mix_OpenAudio](Mix_OpenAudio)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

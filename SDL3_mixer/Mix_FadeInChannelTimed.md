@@ -61,5 +61,5 @@ shouldn't call [Mix_Volume](Mix_Volume)() on a fading channel).
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

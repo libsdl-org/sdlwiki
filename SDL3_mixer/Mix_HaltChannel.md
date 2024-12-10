@@ -38,5 +38,5 @@ You may not specify MAX_CHANNEL_POST for a channel.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

@@ -18,5 +18,5 @@ typedef enum Mix_Fading {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySDLMixer](CategorySDLMixer)
 

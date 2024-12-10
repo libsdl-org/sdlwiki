@@ -15,5 +15,5 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySDLMixer](CategorySDLMixer)
 

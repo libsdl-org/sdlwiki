@@ -27,5 +27,5 @@ typedef enum Mix_MusicType {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySDLMixer](CategorySDLMixer)
 

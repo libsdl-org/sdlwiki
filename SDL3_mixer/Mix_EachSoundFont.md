@@ -50,5 +50,5 @@ This function is available since SDL_mixer 3.0.0.
 - [Mix_GetSoundFonts](Mix_GetSoundFonts)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

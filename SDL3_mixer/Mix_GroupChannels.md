@@ -47,5 +47,5 @@ Note that this returns success and failure in the _opposite_ way from
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 

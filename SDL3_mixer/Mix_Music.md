@@ -14,5 +14,5 @@ typedef struct Mix_Music Mix_Music;
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLMixer](CategorySDLMixer)
 
