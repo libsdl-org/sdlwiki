@@ -1254,7 +1254,6 @@ void * SDL_Metal_GetLayer(SDL_MetalView view);           // Get a pointer to the
 #define SDL_PLATFORM_IRIX        // A preprocessor macro that is only defined if compiling for IRIX.
 #define SDL_PLATFORM_LINUX       // A preprocessor macro that is only defined if compiling for Linux.
 #define SDL_PLATFORM_ANDROID     // A preprocessor macro that is only defined if compiling for Android.
-#define SDL_PLATFORM_NGAGE       // A preprocessor macro that is only defined if compiling for Nokia N-Gage.
 #define SDL_PLATFORM_UNIX        // A preprocessor macro that is only defined if compiling for a Unix-like system.
 #define SDL_PLATFORM_APPLE       // A preprocessor macro that is only defined if compiling for Apple platforms.
 #define SDL_PLATFORM_TVOS        // A preprocessor macro that is only defined if compiling for tvOS.
