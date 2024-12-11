@@ -17,10 +17,10 @@ bool SDL_SetGPUAllowedFramesInFlight(
 
 ## Function Parameters
 
-|                                  |                              |                                                                                                                     |
-| -------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_GPUDevice](SDL_GPUDevice) * | **device**                   | a GPU context.                                                                                                      |
-| [Uint32](Uint32)                 | **allowed_frames_in_flight** | the maximum number of frames that can be pending on the GPU before AcquireSwapchainTexture blocks or returns false. |
+|                                  |                              |                                                              |
+| -------------------------------- | ---------------------------- | ------------------------------------------------------------ |
+| [SDL_GPUDevice](SDL_GPUDevice) * | **device**                   | a GPU context.                                               |
+| [Uint32](Uint32)                 | **allowed_frames_in_flight** | the maximum number of frames that can be pending on the GPU. |
 
 ## Return Value
 
@@ -33,7 +33,9 @@ The default value when the device is created is 2. This means that after
 you have submitted 2 frames for presentation, if the GPU has not finished
 working on the first frame,
 [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)() will
-block or return false depending on the present mode.
+fill the swapchain texture pointer with NULL, and
+[SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)()
+will block.
 
 Higher values increase throughput at the expense of visual latency. Lower
 values decrease visual latency at the expense of throughput.

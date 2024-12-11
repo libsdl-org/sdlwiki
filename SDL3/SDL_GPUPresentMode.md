@@ -20,9 +20,7 @@ typedef enum SDL_GPUPresentMode
 
 ## Remarks
 
-Note that this value affects the behavior of
-[SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture). VSYNC
-mode will always be supported. IMMEDIATE and MAILBOX modes may not be
+VSYNC mode will always be supported. IMMEDIATE and MAILBOX modes may not be
 supported on certain systems.
 
 It is recommended to query
@@ -32,17 +30,12 @@ MAILBOX.
 
 - VSYNC: Waits for vblank before presenting. No tearing is possible. If
   there is a pending image to present, the new image is enqueued for
-  presentation. Disallows tearing at the cost of visual latency. When using
-  this present mode, AcquireGPUSwapchainTexture will block if too many
-  frames are in flight.
+  presentation. Disallows tearing at the cost of visual latency.
 - IMMEDIATE: Immediately presents. Lowest latency option, but tearing may
-  occur. When using this mode, AcquireGPUSwapchainTexture will fill the
-  swapchain texture pointer with NULL if too many frames are in flight.
+  occur.
 - MAILBOX: Waits for vblank before presenting. No tearing is possible. If
   there is a pending image to present, the pending image is replaced by the
-  new image. Similar to VSYNC, but with reduced visual latency. When using
-  this mode, AcquireGPUSwapchainTexture will fill the swapchain texture
-  pointer with NULL if too many frames are in flight.
+  new image. Similar to VSYNC, but with reduced visual latency.
 
 ## Version
 

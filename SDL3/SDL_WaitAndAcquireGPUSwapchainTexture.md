@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
-# SDL_AcquireGPUSwapchainTexture
+# SDL_WaitAndAcquireGPUSwapchainTexture
 
-Acquire a texture to use in presentation.
+Blocks the thread until a swapchain texture is available to be acquired, and then acquires it.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-bool SDL_AcquireGPUSwapchainTexture(
+bool SDL_WaitAndAcquireGPUSwapchainTexture(
     SDL_GPUCommandBuffer *command_buffer,
     SDL_Window *window,
     SDL_GPUTexture **swapchain_texture,
@@ -38,12 +38,9 @@ bool SDL_AcquireGPUSwapchainTexture(
 When a swapchain texture is acquired on a command buffer, it will
 automatically be submitted for presentation when the command buffer is
 submitted. The swapchain texture should only be referenced by the command
-buffer used to acquire it.
-
-This function will fill the swapchain texture handle with NULL if too many
-frames are in flight. This is not an error. The best practice is to call
-[SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer) if the swapchain
-texture handle is NULL to avoid enqueuing needless work on the GPU.
+buffer used to acquire it. It is an error to call
+[SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer)() after a
+swapchain texture is acquired.
 
 The swapchain texture is managed by the implementation and must not be
 freed by the user. You MUST NOT call this function from any thread other
@@ -56,17 +53,12 @@ window.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
-- [SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer)
-- [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
-- [SDL_WaitForGPUSwapchain](SDL_WaitForGPUSwapchain)
-- [SDL_SetGPUAllowedFramesInFlight](SDL_SetGPUAllowedFramesInFlight)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
