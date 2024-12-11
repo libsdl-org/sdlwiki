@@ -240,8 +240,10 @@ not "near future" items either.
 - [SDL_UnmapGPUTransferBuffer](SDL_UnmapGPUTransferBuffer)
 - [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)
 - [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_WaitForGPUFences](SDL_WaitForGPUFences)
 - [SDL_WaitForGPUIdle](SDL_WaitForGPUIdle)
+- [SDL_WaitForGPUSwapchain](SDL_WaitForGPUSwapchain)
 - [SDL_WindowSupportsGPUPresentMode](SDL_WindowSupportsGPUPresentMode)
 - [SDL_WindowSupportsGPUSwapchainComposition](SDL_WindowSupportsGPUSwapchainComposition)
 <!-- END CATEGORY LIST -->
