@@ -51,7 +51,7 @@
 
 | **View information and functions related to...** | **View the header**                                                                     |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| [Force Feedback Support](CategoryHaptic)  | [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)   |
+| [Force Feedback Support](CategoryHaptic)  | [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)          |
 
 
 ## Audio
@@ -65,7 +65,7 @@
 
 | **View information and functions related to...**  | **View the header**                                                                     |
 | ------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [3D Rendering and GPU Compute](CategoryGPU)       | [SDL_gpu.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gpu.h)     |
+| [3D Rendering and GPU Compute](CategoryGPU)       | [SDL_gpu.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gpu.h)         |
 
 
 ## Threads
@@ -82,7 +82,7 @@
 | **View information and functions related to...** | **View the header**                                                                     |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | [Timer Support](CategoryTimer)                   | [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_timer.h)     |
-| [Date and Time](CategoryTime)                    | [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
+| [Date and Time](CategoryTime)                    | [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)       |
 
 
 ## File and I/O Abstractions
@@ -92,6 +92,7 @@
 | [Filesystem Access](CategoryFilesystem)          | [SDL_filesystem.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_filesystem.h) |
 | [Storage Abstraction](CategoryStorage)           | [SDL_storage.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_storage.h)       |
 | [I/O Streams](CategoryIOStream)                  | [SDL_iostream.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)     |
+| [Async I/O](CategoryAsyncIO)                     | [SDL_asyncio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_asyncio.h)       |
 
 
 ## Platform and CPU Information
@@ -108,7 +109,8 @@
 
 | **View information and functions related to...**     | **View the header**                                                                           |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [Shared Object/DLL Management](CategorySharedObject) | [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h) |
+| [Shared Object/DLL Management](CategorySharedObject) | [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h)         |
+| [Process Control](CategoryProcess)                   | [SDL_process.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_process.h)       |
 | [Power Management Status](CategoryPower)             | [SDL_power.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h)           |
 | [Message Boxes](CategoryMessagebox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h) |
 | [File Dialogs](CategoryDialog)                       | [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)         |
