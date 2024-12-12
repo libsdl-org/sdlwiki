@@ -8,8 +8,7 @@ The drivers available depend on the platform and SDL compile-time options.
 - For video: set `SDL_VIDEO_DRIVER`. Some possible options are "x11", "wayland",
   "cocoa", etc.
 - For audio: set `SDL_AUDIO_DRIVER`. Some possible options are "pipewire",
-  "pulseaudio", "directsound", "wasapi".
-  "cocoa", etc.
+  "pulseaudio", "directsound", "wasapi", "cocoa", etc.
 - For render: `SDL_RENDER_DRIVER`. Some possible options are "opengl",
   "direct3d", "software".
 
