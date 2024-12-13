@@ -1,0 +1,1 @@
+03008fe54c050000cc0900000001680013562508dc0c2d8a419e,PS4 Controller,platform:Windows,a:b0,b:b1,leftshoulder:b9,leftstick:b7,leftx:a0,lefty:a1,lefttrigger:a4,dpup:b11,dpleft:b13,dpdown:b12,dpright:b14
