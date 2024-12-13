@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_FontLineSkip
 
-Query the recommended spacing between lines of text for a font.
+Query the spacing between lines of text for a font.
 
 ## Header File
 
@@ -21,7 +21,7 @@ int TTF_FontLineSkip(const TTF_Font *font);
 
 ## Return Value
 
-(int) Returns the font's recommended spacing.
+(int) Returns the font's line spacing.
 
 ## Version
 
