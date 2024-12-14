@@ -75,6 +75,7 @@
 - [TTF_SetFontDirection](TTF_SetFontDirection)
 - [TTF_SetFontHinting](TTF_SetFontHinting)
 - [TTF_SetFontKerning](TTF_SetFontKerning)
+- [TTF_SetFontLineSkip](TTF_SetFontLineSkip)
 - [TTF_SetFontOutline](TTF_SetFontOutline)
 - [TTF_SetFontScriptName](TTF_SetFontScriptName)
 - [TTF_SetFontSize](TTF_SetFontSize)
