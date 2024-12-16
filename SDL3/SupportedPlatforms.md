@@ -1,3 +1,5 @@
+## Supported Platforms
+
 SDL3 has been known to work on the following platforms at some point, in no specific order:
 
 - Windows XP and later.
@@ -24,6 +26,8 @@ SDL3 has been known to work on the following platforms at some point, in no spec
 - Sony PlayStation 5 (separate NDA-only fork)
 
 Note that the SDL maintainers do not test on all these platforms; if a less-common system breaks, [please let us know](https://github.com/libsdl-org/issues/new) and send patches if you can.
+
+If you'd like to port SDL to a new platform, feel free to get in touch! [A guide to porting SDL2](https://discourse.libsdl.org/t/port-sdl-2-0-to-bios/25453/2) was written a while ago, and most of it still applies to SDL3.
 
 ## Removed Platforms
 
