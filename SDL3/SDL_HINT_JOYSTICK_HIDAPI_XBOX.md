@@ -23,7 +23,7 @@ The variable can be set to the following values:
 The default is "0" on Windows, otherwise the value of
 [SDL_HINT_JOYSTICK_HIDAPI](SDL_HINT_JOYSTICK_HIDAPI)
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 

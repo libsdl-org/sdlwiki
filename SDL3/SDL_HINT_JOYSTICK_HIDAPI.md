@@ -23,7 +23,7 @@ The variable can be set to the following values:
 This variable is the default for all drivers, but can be overridden by the
 hints for specific drivers below.
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 

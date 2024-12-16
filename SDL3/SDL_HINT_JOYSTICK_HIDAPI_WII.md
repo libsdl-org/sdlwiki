@@ -23,7 +23,7 @@ The variable can be set to the following values:
 This driver doesn't work with the dolphinbar, so the default is false for
 now.
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 

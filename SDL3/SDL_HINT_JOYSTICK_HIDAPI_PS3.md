@@ -29,7 +29,7 @@ For official Sony driver (sixaxis.sys) use
 See https://github.com/ViGEm/DsHidMini for an alternative driver on
 Windows.
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 

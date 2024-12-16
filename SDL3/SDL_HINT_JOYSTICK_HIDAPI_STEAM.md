@@ -22,7 +22,7 @@ The variable can be set to the following values:
   Bluetooth access and may prompt the user for permission on iOS and
   Android.
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 

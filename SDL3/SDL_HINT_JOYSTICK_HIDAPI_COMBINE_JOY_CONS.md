@@ -22,7 +22,7 @@ The variable can be set to the following values:
 - "1": Left and right Joy-Con controllers will be combined into a single
   controller. (default)
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 

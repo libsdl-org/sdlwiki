@@ -22,7 +22,7 @@ The variable can be set to the following values:
 
 The default value is 0.
 
-This hint should be set before enumerating controllers.
+This hint should be set before initializing joysticks and gamepads.
 
 ## Version
 
