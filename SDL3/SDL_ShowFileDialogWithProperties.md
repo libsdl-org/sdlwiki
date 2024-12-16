@@ -27,10 +27,10 @@ void SDL_ShowFileDialogWithProperties(SDL_FileDialogType type, SDL_DialogFileCal
 These are the supported properties:
 
 - [`SDL_PROP_FILE_DIALOG_FILTERS_POINTER`](SDL_PROP_FILE_DIALOG_FILTERS_POINTER):
-  a pointer to a list of [SDL_DialogFileFilter](SDL_DialogFileFilter)'s,
-  which will be used as filters for file-based selections. Ignored if the
-  dialog is an "Open Folder" dialog. If non-NULL, the array of filters must
-  remain valid at least until the callback is invoked.
+  a pointer to a list of [SDL_DialogFileFilter](SDL_DialogFileFilter)
+  structs, which will be used as filters for file-based selections. Ignored
+  if the dialog is an "Open Folder" dialog. If non-NULL, the array of
+  filters must remain valid at least until the callback is invoked.
 - [`SDL_PROP_FILE_DIALOG_NFILTERS_NUMBER`](SDL_PROP_FILE_DIALOG_NFILTERS_NUMBER):
   the number of filters in the array of filters, if it exists.
 - [`SDL_PROP_FILE_DIALOG_WINDOW_POINTER`](SDL_PROP_FILE_DIALOG_WINDOW_POINTER):

@@ -31,13 +31,13 @@ bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardClean
 ## Remarks
 
 Tell the operating system that the application is offering clipboard data
-for each of the proivded mime-types. Once another application requests the
-data the callback function will be called allowing it to generate and
+for each of the provided mime-types. Once another application requests the
+data the callback function will be called, allowing it to generate and
 respond with the data for the requested mime-type.
 
 The size of text data does not include any terminator, and the text does
 not need to be null terminated (e.g. you can directly copy a portion of a
-document)
+document).
 
 ## Thread Safety
 
