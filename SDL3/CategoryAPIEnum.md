@@ -30,6 +30,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_EnumerationResult](SDL_EnumerationResult)
 - [SDL_EventAction](SDL_EventAction)
 - [SDL_EventType](SDL_EventType)
+- [SDL_FileDialogType](SDL_FileDialogType)
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_FlipMode](SDL_FlipMode)
 - [SDL_Folder](SDL_Folder)
