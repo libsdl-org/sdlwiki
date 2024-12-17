@@ -28,13 +28,12 @@ bool SDL_SetWindowPosition(SDL_Window *window, int x, int y);
 
 ## Remarks
 
-If, at the time of this request, the window is in a fixed-size state such
-as maximized, this request may be deferred until the window returns to a
-resizable state.
+If the window is in an exclusive fullscreen or maximized state, this
+request has no effect.
 
 This can be used to reposition fullscreen-desktop windows onto a different
-display, however, exclusive fullscreen windows are locked to a specific
-display and can only be repositioned programmatically via
+display, however, as exclusive fullscreen windows are locked to a specific
+display, they can only be repositioned programmatically via
 [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)().
 
 On some windowing systems this request is asynchronous and the new

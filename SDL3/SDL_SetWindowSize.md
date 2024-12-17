@@ -28,12 +28,11 @@ bool SDL_SetWindowSize(SDL_Window *window, int w, int h);
 
 ## Remarks
 
-If, at the time of this request, the window in a fixed-size state, such as
-maximized or fullscreen, the request will be deferred until the window
-exits this state and becomes resizable again.
+If the window is in a fullscreen or maximized state, this request has no
+effect.
 
-To change the fullscreen mode of a window, use
-[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)()
+To change the exclusive fullscreen mode of a window, use
+[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)().
 
 On some windowing systems, this request is asynchronous and the new window
 size may not have have been applied immediately upon the return of this

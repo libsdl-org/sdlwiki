@@ -26,6 +26,9 @@ bool SDL_MinimizeWindow(SDL_Window *window);
 
 ## Remarks
 
+If the window is in a fullscreen state, this request has no direct effect.
+It may alter the state the window is returned to when leaving fullscreen.
+
 On some windowing systems this request is asynchronous and the new window
 state may not have been applied immediately upon the return of this
 function. If an immediate change is required, call
