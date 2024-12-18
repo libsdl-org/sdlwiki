@@ -15,7 +15,7 @@ typedef struct SDL_PenMotionEvent
     SDL_EventType type; /**< SDL_EVENT_PEN_MOTION */
     Uint32 reserved;
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
-    SDL_WindowID windowID; /**< The window with mouse focus, if any */
+    SDL_WindowID windowID; /**< The window with pen focus, if any */
     SDL_PenID which;        /**< The pen instance id */
     SDL_PenInputFlags pen_state;   /**< Complete pen input state at time of event */
     float x;                /**< X coordinate, relative to window */
