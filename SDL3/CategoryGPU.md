@@ -36,7 +36,7 @@ correct order, but many apps will just need one command buffer per frame.
 Rendering can happen to a texture (what other APIs call a "render target")
 or it can happen to the swapchain texture (which is just a special texture
 that represents a window's contents). The app can use
-[SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)() to
+[SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)() to
 render to the window.
 
 Rendering actually happens in a Render Pass, which is encoded into a
