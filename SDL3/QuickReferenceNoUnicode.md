@@ -1352,6 +1352,26 @@ bool SDL_HasLASX(void);               // Determine whether the CPU has LASX (LOO
 int SDL_GetSystemRAM(void);           // Get the amount of RAM configured in the system.
 size_t SDL_GetSIMDAlignment(void);    // Report the alignment this system needs for SIMD allocations.
 
+// XX  XXX    XX  XXXXXXXX  XXXXXX   XX  XXX    XX   XXXXXX  XX   XXXXXX   XXXXXX 
+// XX  XXXX   XX     XX     XX   XX  XX  XXXX   XX  XX       XX  XX       XX      
+// XX  XX XX  XX     XX     XXXXXX   XX  XX XX  XX  XXXXXXX  XX  XX       XXXXXXX 
+// XX  XX  XX XX     XX     XX   XX  XX  XX  XX XX       XX  XX  XX            XX 
+// XX  XX   XXXX     XX     XX   XX  XX  XX   XXXX  XXXXXX   XX   XXXXXX  XXXXXX  
+
+#define SDL_LSX_INTRINSICS      // Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
+#define SDL_LASX_INTRINSICS     // Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
+#define SDL_NEON_INTRINSICS     // Defined if (and only if) the compiler supports ARM NEON intrinsics.
+#define SDL_ALTIVEC_INTRINSICS  // Defined if (and only if) the compiler supports PowerPC Altivec intrinsics.
+#define SDL_MMX_INTRINSICS      // Defined if (and only if) the compiler supports Intel MMX intrinsics.
+#define SDL_SSE_INTRINSICS      // Defined if (and only if) the compiler supports Intel SSE intrinsics.
+#define SDL_SSE2_INTRINSICS     // Defined if (and only if) the compiler supports Intel SSE2 intrinsics.
+#define SDL_SSE3_INTRINSICS     // Defined if (and only if) the compiler supports Intel SSE3 intrinsics.
+#define SDL_SSE4_1_INTRINSICS   // Defined if (and only if) the compiler supports Intel SSE4.1 intrinsics.
+#define SDL_SSE4_2_INTRINSICS   // Defined if (and only if) the compiler supports Intel SSE4.2 intrinsics.
+#define SDL_AVX_INTRINSICS      // Defined if (and only if) the compiler supports Intel AVX intrinsics.
+#define SDL_AVX2_INTRINSICS     // Defined if (and only if) the compiler supports Intel AVX2 intrinsics.
+#define SDL_AVX512F_INTRINSICS  // Defined if (and only if) the compiler supports Intel AVX-512F intrinsics.
+
 // XX        XXXXXX    XXXXXX   XXXXX   XX       XXXXXXX 
 // XX       XX    XX  XX       XX   XX  XX       XX      
 // XX       XX    XX  XX       XXXXXXX  XX       XXXXX   
