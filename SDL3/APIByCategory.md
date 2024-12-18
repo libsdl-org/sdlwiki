@@ -97,12 +97,13 @@
 
 ## Platform and CPU Information
 
-| **View information and functions related to...** | **View the header**                                                                       |
-| ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| [Platform Detection](CategoryPlatform)           | [SDL_platform.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_platform.h) |
-| [CPU Feature Detection](CategoryCPUInfo)         | [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h)   |
-| [Byte Order and Byte Swapping](CategoryEndian)   | [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)     |
-| [Bit Manipulation](CategoryBits)                 | [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h)         |
+| **View information and functions related to...**    | **View the header**                                                                       |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [Platform Detection](CategoryPlatform)              | [SDL_platform.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_platform.h) |
+| [CPU Feature Detection](CategoryCPUInfo)            | [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h)   |
+| [Compiler Intrinsics Detection](CategoryIntrinsics) | [SDL_intrin.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_intrin.h)   |
+| [Byte Order and Byte Swapping](CategoryEndian)      | [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)     |
+| [Bit Manipulation](CategoryBits)                    | [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h)         |
 
 
 ## Additional Functionality
