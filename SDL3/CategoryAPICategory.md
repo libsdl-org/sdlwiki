@@ -29,6 +29,7 @@ A more human-friendly version is over in [APIByCategory](APIByCategory), if you 
 - [CategoryHIDAPI](CategoryHIDAPI)
 - [CategoryHints](CategoryHints)
 - [CategoryInit](CategoryInit)
+- [CategoryIntrinsics](CategoryIntrinsics)
 - [CategoryIOStream](CategoryIOStream)
 - [CategoryJoystick](CategoryJoystick)
 - [CategoryKeyboard](CategoryKeyboard)

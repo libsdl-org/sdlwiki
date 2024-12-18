@@ -28,6 +28,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [CategoryHIDAPI](CategoryHIDAPI)
 - [CategoryHints](CategoryHints)
 - [CategoryInit](CategoryInit)
+- [CategoryIntrinsics](CategoryIntrinsics)
 - [CategoryIOStream](CategoryIOStream)
 - [CategoryJoystick](CategoryJoystick)
 - [CategoryKeyboard](CategoryKeyboard)
