@@ -32,7 +32,7 @@ bool SDL_ConvertPixelsAndColorspace(int width, int height, SDL_PixelFormat src_f
 
 ## Return Value
 
-(bool) Returns false on success or false on failure; call
+(bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
