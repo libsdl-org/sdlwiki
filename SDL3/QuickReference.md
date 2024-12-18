@@ -1512,6 +1512,7 @@ void SDL_GDKSuspendComplete(void);                                              
 // ██████╔╝    ██║    ██████╔╝ ██║ ██║ ╚████║ ╚██████╗
 // ╚═════╝     ╚═╝    ╚═════╝  ╚═╝ ╚═╝  ╚═══╝  ╚═════╝
 
+#define SDL_COMPILE_TIME_ASSERT(name, x)                                                                                                                    // A compile-time assertion.
 #define SDL_arraysize(array)                                                                                                                                // The number of elements in a static array.
 #define SDL_reinterpret_cast(type, expression)                                                                                                              // Handle a Reinterpret Cast properly whether using C or C++.
 #define SDL_static_cast(type, expression)                                                                                                                   // Handle a Static Cast properly whether using C or C++.
