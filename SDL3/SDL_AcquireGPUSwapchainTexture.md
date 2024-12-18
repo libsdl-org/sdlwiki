@@ -41,9 +41,13 @@ submitted. The swapchain texture should only be referenced by the command
 buffer used to acquire it.
 
 This function will fill the swapchain texture handle with NULL if too many
-frames are in flight. This is not an error. The best practice is to call
-[SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer) if the swapchain
-texture handle is NULL to avoid enqueuing needless work on the GPU.
+frames are in flight. This is not an error.
+
+If you use this function, it is possible to create a situation where many
+command buffers are allocated while the rendering context waits for the GPU
+to catch up, which will cause memory usage to grow. You should use
+[SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)()
+unless you know what you are doing with timing.
 
 The swapchain texture is managed by the implementation and must not be
 freed by the user. You MUST NOT call this function from any thread other
@@ -66,6 +70,7 @@ This function is available since SDL 3.1.3.
 - [SDL_CancelGPUCommandBuffer](SDL_CancelGPUCommandBuffer)
 - [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
 - [SDL_WaitForGPUSwapchain](SDL_WaitForGPUSwapchain)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_SetGPUAllowedFramesInFlight](SDL_SetGPUAllowedFramesInFlight)
 
 ----

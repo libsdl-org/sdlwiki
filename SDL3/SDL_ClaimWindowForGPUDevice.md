@@ -52,7 +52,7 @@ This function is available since SDL 3.1.3.
 
 ## See Also
 
-- [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_ReleaseWindowFromGPUDevice](SDL_ReleaseWindowFromGPUDevice)
 - [SDL_WindowSupportsGPUPresentMode](SDL_WindowSupportsGPUPresentMode)
 - [SDL_WindowSupportsGPUSwapchainComposition](SDL_WindowSupportsGPUSwapchainComposition)

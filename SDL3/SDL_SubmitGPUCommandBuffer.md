@@ -41,6 +41,7 @@ This function is available since SDL 3.1.3.
 ## See Also
 
 - [SDL_AcquireGPUCommandBuffer](SDL_AcquireGPUCommandBuffer)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
 - [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
 

@@ -29,11 +29,12 @@ bool SDL_CancelGPUCommandBuffer(
 
 None of the enqueued commands are executed.
 
+It is an error to call this function after a swapchain texture has been
+acquired.
+
 This must be called from the thread the command buffer was acquired on.
 
-You must not reference the command buffer after calling this function. It
-is an error to call this function after a swapchain texture has been
-acquired.
+You must not reference the command buffer after calling this function.
 
 ## Version
 
@@ -41,6 +42,7 @@ This function is available since SDL 3.1.6.
 
 ## See Also
 
+- [SDL_WaitAndAcquireSwapchainTexture](SDL_WaitAndAcquireSwapchainTexture)
 - [SDL_AcquireGPUCommandBuffer](SDL_AcquireGPUCommandBuffer)
 - [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
 

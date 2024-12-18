@@ -45,7 +45,7 @@ This enum is available since SDL 3.1.3
 
 - [SDL_SetGPUSwapchainParameters](SDL_SetGPUSwapchainParameters)
 - [SDL_WindowSupportsGPUPresentMode](SDL_WindowSupportsGPUPresentMode)
-- [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)

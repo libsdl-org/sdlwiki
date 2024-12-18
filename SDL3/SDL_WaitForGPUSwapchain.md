@@ -39,6 +39,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_SetGPUAllowedFramesInFlight](SDL_SetGPUAllowedFramesInFlight)
 
 ----
