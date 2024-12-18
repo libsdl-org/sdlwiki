@@ -869,6 +869,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_RenderCoordinatesFromWindow](SDL_RenderCoordinatesFromWindow)
 - [SDL_RenderCoordinatesToWindow](SDL_RenderCoordinatesToWindow)
 - [SDL_RenderDebugText](SDL_RenderDebugText)
+- [SDL_RenderDebugTextFormat](SDL_RenderDebugTextFormat)
 - [SDL_RenderFillRect](SDL_RenderFillRect)
 - [SDL_RenderFillRects](SDL_RenderFillRects)
 - [SDL_RenderGeometry](SDL_RenderGeometry)
