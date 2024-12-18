@@ -63,6 +63,7 @@ This function is available since SDL 3.1.6.
 
 ## See Also
 
+- [SDL_RenderDebugTextFormat](SDL_RenderDebugTextFormat)
 - [SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE](SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE)
 
 ----

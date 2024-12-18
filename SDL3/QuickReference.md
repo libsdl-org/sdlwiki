@@ -719,6 +719,7 @@ bool SDL_AddVulkanRenderSemaphores(SDL_Renderer *renderer, Uint32 wait_stage_mas
 bool SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);                                                                                                                                                                                                     // Toggle VSync of the given renderer.
 bool SDL_GetRenderVSync(SDL_Renderer *renderer, int *vsync);                                                                                                                                                                                                    // Get VSync of the given renderer.
 bool SDL_RenderDebugText(SDL_Renderer *renderer, float x, float y, const char *str);                                                                                                                                                                            // Draw debug text to an SDL_Renderer.
+bool SDL_RenderDebugTextFormat(SDL_Renderer *renderer, float x, float y, const char *fmt, ... ...);                                                                                                                                                             // Draw debug text to an SDL_Renderer.
 
 //  ██████╗ ██╗  ██╗  █████╗  ██████╗  ███████╗ ██████╗   ██████╗  ██████╗       ██╗ ███████╗  ██████╗ ████████╗
 // ██╔════╝ ██║  ██║ ██╔══██╗ ██╔══██╗ ██╔════╝ ██╔══██╗ ██╔═══██╗ ██╔══██╗      ██║ ██╔════╝ ██╔════╝ ╚══██╔══╝
