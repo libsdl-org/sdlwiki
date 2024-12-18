@@ -42,7 +42,7 @@ This function is available since SDL 3.1.6.
 
 ## See Also
 
-- [SDL_WaitAndAcquireSwapchainTexture](SDL_WaitAndAcquireSwapchainTexture)
+- [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_AcquireGPUCommandBuffer](SDL_AcquireGPUCommandBuffer)
 - [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
 
