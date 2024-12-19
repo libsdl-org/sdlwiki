@@ -21,7 +21,7 @@ typedef struct SDL_Finger
 
 ## Remarks
 
-Each touch even is a collection of fingers that are simultaneously in
+Each touch event is a collection of fingers that are simultaneously in
 contact with the touch device (so a "touch" can be a "multitouch," in
 reality), and this struct reports details of the specific fingers.
 
