@@ -91,6 +91,8 @@ system.
 - [SDL_MouseButtonEvent](SDL_MouseButtonEvent)
 - [SDL_MouseDeviceEvent](SDL_MouseDeviceEvent)
 - [SDL_MouseMotionEvent](SDL_MouseMotionEvent)
+- [SDL_MouseRawAxisEvent](SDL_MouseRawAxisEvent)
+- [SDL_MouseRawButtonEvent](SDL_MouseRawButtonEvent)
 - [SDL_MouseWheelEvent](SDL_MouseWheelEvent)
 - [SDL_PenAxisEvent](SDL_PenAxisEvent)
 - [SDL_PenButtonEvent](SDL_PenButtonEvent)
