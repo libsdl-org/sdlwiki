@@ -111,6 +111,9 @@ typedef enum SDL_EventType
     SDL_EVENT_MOUSE_WHEEL,             /**< Mouse wheel motion */
     SDL_EVENT_MOUSE_ADDED,             /**< A new mouse has been inserted into the system */
     SDL_EVENT_MOUSE_REMOVED,           /**< A mouse has been removed */
+    SDL_EVENT_MOUSE_RAW_MOTION,        /**< Mouse moved (raw motion deltas) */
+    SDL_EVENT_MOUSE_RAW_BUTTON,        /**< Mouse click (raw button delta) */
+    SDL_EVENT_MOUSE_RAW_SCROLL,         /**< Mouse wheel (raw scroll deltas) */
 
     /* Joystick events */
     SDL_EVENT_JOYSTICK_AXIS_MOTION  = 0x600, /**< Joystick axis motion */
