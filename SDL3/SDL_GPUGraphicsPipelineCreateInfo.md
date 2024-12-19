@@ -32,6 +32,12 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_CreateGPUGraphicsPipeline](SDL_CreateGPUGraphicsPipeline)
+- [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
+- [SDL_GPUPrimitiveType](SDL_GPUPrimitiveType)
+- [SDL_GPURasterizerState](SDL_GPURasterizerState)
+- [SDL_GPUMultisampleState](SDL_GPUMultisampleState)
+- [SDL_GPUDepthStencilState](SDL_GPUDepthStencilState)
+- [SDL_GPUGraphicsPipelineTargetInfo](SDL_GPUGraphicsPipelineTargetInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
