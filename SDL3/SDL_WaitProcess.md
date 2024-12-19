@@ -33,6 +33,12 @@ The exit code will be the exit code of the process if it terminates
 normally, a negative signal if it terminated due to a signal, or -255
 otherwise. It will not be changed if the process is still running.
 
+If you create a process with standard output piped to the application
+(`pipe_stdio` being true) then you should read all of the process output
+before calling [SDL_WaitProcess](SDL_WaitProcess)(). If you don't do this
+the process might be blocked indefinitely waiting for output to be read and
+[SDL_WaitProcess](SDL_WaitProcess)() will never return true;
+
 ## Thread Safety
 
 This function is not thread safe.
