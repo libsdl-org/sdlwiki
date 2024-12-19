@@ -21,7 +21,7 @@ Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Return Value
 
-Return MS, expressed in nanoseconds.
+Returns MS, expressed in nanoseconds.
 
 ## Remarks
 
