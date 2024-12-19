@@ -96,6 +96,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_TextureAccess](SDL_TextureAccess)
 - [SDL_ThreadPriority](SDL_ThreadPriority)
 - [SDL_TimeFormat](SDL_TimeFormat)
+- [SDL_TouchDeviceType](SDL_TouchDeviceType)
 - [SDL_TransferCharacteristics](SDL_TransferCharacteristics)
 <!-- END CATEGORY LIST -->
 
