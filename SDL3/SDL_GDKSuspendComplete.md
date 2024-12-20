@@ -13,6 +13,11 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 void SDL_GDKSuspendComplete(void);
 ```
 
+## Remarks
+
+This function is only needed for Xbox GDK support; all other platforms will
+do nothing and set an "unsupported" error message.
+
 ## Version
 
 This function is available since SDL 3.1.3.
