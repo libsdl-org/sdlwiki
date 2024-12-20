@@ -79,6 +79,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_MouseWheelDirection](SDL_MouseWheelDirection)
 - [SDL_PackedLayout](SDL_PackedLayout)
 - [SDL_PackedOrder](SDL_PackedOrder)
+- [SDL_PathType](SDL_PathType)
 - [SDL_PenAxis](SDL_PenAxis)
 - [SDL_PixelFormat](SDL_PixelFormat)
 - [SDL_PixelType](SDL_PixelType)
