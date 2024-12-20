@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
-# SDL_STRINGIFY_ARG
+# SDL_PRILL_PREFIX
 
-Macro useful for building other macros with strings in them.
+A printf-formatting string prefix for a `long long` value.
 
 ## Header File
 
@@ -10,21 +10,19 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_STRINGIFY_ARG(arg)  #arg
+#define SDL_PRILL_PREFIX "ll"
 ```
-
-## Macro Parameters
-
-|         |                                         |
-| ------- | --------------------------------------- |
-| **arg** | the text to turn into a string literal. |
 
 ## Remarks
 
-For example:
+This is just the prefix! You probably actually want
+[SDL_PRILLd](SDL_PRILLd), [SDL_PRILLu](SDL_PRILLu),
+[SDL_PRILLx](SDL_PRILLx), or [SDL_PRILLX](SDL_PRILLX) instead.
+
+Use it like this:
 
 ```c
-#define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(__FUNCTION__) ": " X "\n")`
+SDL_Log("There are %" SDL_PRILL_PREFIX "d bottles of beer on the wall.", bottles);
 ```
 
 ## Version

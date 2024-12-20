@@ -1492,7 +1492,7 @@ void SDL_qsort(void *base, size_t nmemb, size_t size, SDL_CompareCallback compar
 void * SDL_bsearch(const void *key, const void *base, size_t nmemb, size_t size, SDL_CompareCallback compare);                                              // Perform a binary search on a previously sorted array.
 void SDL_qsort_r(void *base, size_t nmemb, size_t size, SDL_CompareCallback_r compare, void *userdata);                                                     // Sort an array, passing a userdata pointer to the compare function.
 void * SDL_bsearch_r(const void *key, const void *base, size_t nmemb, size_t size, SDL_CompareCallback_r compare, void *userdata);                          // Perform a binary search on a previously sorted array, passing a userdata pointer to the compare function.
-int SDL_abs(int x);
+int SDL_abs(int x);                                                                                                                                         // Compute the absolute value of `x`.
 int SDL_isalpha(int x);                                                                                                                                     // Query if a character is alphabetic (a letter).
 int SDL_isalnum(int x);                                                                                                                                     // Query if a character is alphabetic (a letter) or a number.
 int SDL_isblank(int x);                                                                                                                                     // Report if a character is blank (a space or tab).
@@ -1507,13 +1507,13 @@ int SDL_isprint(int x);                                                         
 int SDL_isgraph(int x);                                                                                                                                     // Report if a character is any "printable" except space.
 int SDL_toupper(int x);                                                                                                                                     // Convert low-ASCII English letters to uppercase.
 int SDL_tolower(int x);                                                                                                                                     // Convert low-ASCII English letters to lowercase.
-Uint16 SDL_crc16(Uint16 crc, const void *data, size_t len);
-Uint32 SDL_crc32(Uint32 crc, const void *data, size_t len);
-Uint32 SDL_murmur3_32(const void *data, size_t len, Uint32 seed);
+Uint16 SDL_crc16(Uint16 crc, const void *data, size_t len);                                                                                                 // Calculate a CRC-16 value.
+Uint32 SDL_crc32(Uint32 crc, const void *data, size_t len);                                                                                                 // Calculate a CRC-32 value.
+Uint32 SDL_murmur3_32(const void *data, size_t len, Uint32 seed);                                                                                           // Calculate a 32-bit MurmurHash3 value for a block of data.
 void * SDL_memcpy(void *dst, const void *src, size_t len);                                                                                                  // Copy non-overlapping memory.
-void * SDL_memmove(void *dst, const void *src, size_t len);                                                                                                 // Copy memory.
-void * SDL_memset(void *dst, int c, size_t len);
-void * SDL_memset4(void *dst, Uint32 val, size_t dwords);
+void * SDL_memmove(void *dst, const void *src, size_t len);                                                                                                 // Copy memory ranges that might overlap.
+void * SDL_memset(void *dst, int c, size_t len);                                                                                                            // Initialize all bytes of buffer of memory to a specific value.
+void * SDL_memset4(void *dst, Uint32 val, size_t dwords);                                                                                                   // Initialize all 32-bit words of buffer of memory to a specific value.
 int SDL_memcmp(const void *s1, const void *s2, size_t len);
 size_t SDL_wcslen(const wchar_t *wstr);
 size_t SDL_wcsnlen(const wchar_t *wstr, size_t maxlen);
@@ -1537,20 +1537,20 @@ char * SDL_strndup(const char *str, size_t maxlen);
 char * SDL_strrev(char *str);
 char * SDL_strupr(char *str);                                                                                                                               // Convert a string to uppercase.
 char * SDL_strlwr(char *str);                                                                                                                               // Convert a string to lowercase.
-char * SDL_strchr(const char *str, int c);
-char * SDL_strrchr(const char *str, int c);
-char * SDL_strstr(const char *haystack, const char *needle);
-char * SDL_strnstr(const char *haystack, const char *needle, size_t maxlen);
-char * SDL_strcasestr(const char *haystack, const char *needle);
-char * SDL_strtok_r(char *s1, const char *s2, char **saveptr);
-size_t SDL_utf8strlen(const char *str);
-size_t SDL_utf8strnlen(const char *str, size_t bytes);
-char * SDL_itoa(int value, char *str, int radix);
-char * SDL_uitoa(unsigned int value, char *str, int radix);
-char * SDL_ltoa(long value, char *str, int radix);
-char * SDL_ultoa(unsigned long value, char *str, int radix);
-char * SDL_lltoa(long long value, char *str, int radix);
-char * SDL_ulltoa(unsigned long long value, char *str, int radix);
+char * SDL_strchr(const char *str, int c);                                                                                                                  // Search a string for the first instance of a specific byte.
+char * SDL_strrchr(const char *str, int c);                                                                                                                 // Search a string for the last instance of a specific byte.
+char * SDL_strstr(const char *haystack, const char *needle);                                                                                                // Search a string for the first instance of a specific substring.
+char * SDL_strnstr(const char *haystack, const char *needle, size_t maxlen);                                                                                // Search a string, up to n bytes, for the first instance of a specific substring.
+char * SDL_strcasestr(const char *haystack, const char *needle);                                                                                            // Search a UTF-8 string for the first instance of a specific substring, case-insensitively.
+char * SDL_strtok_r(char *str, const char *delim, char **saveptr);                                                                                          // This works exactly like strtok_r() but doesn't require access to a C runtime.
+size_t SDL_utf8strlen(const char *str);                                                                                                                     // Count the number of codepoints in a UTF-8 string.
+size_t SDL_utf8strnlen(const char *str, size_t bytes);                                                                                                      // Count the number of codepoints in a UTF-8 string, up to n bytes.
+char * SDL_itoa(int value, char *str, int radix);                                                                                                           // Convert an integer into a string.
+char * SDL_uitoa(unsigned int value, char *str, int radix);                                                                                                 // Convert an unsigned integer into a string.
+char * SDL_ltoa(long value, char *str, int radix);                                                                                                          // Convert a long integer into a string.
+char * SDL_ultoa(unsigned long value, char *str, int radix);                                                                                                // Convert an unsigned long integer into a string.
+char * SDL_lltoa(long long value, char *str, int radix);                                                                                                    // Convert a long long integer into a string.
+char * SDL_ulltoa(unsigned long long value, char *str, int radix);                                                                                          // Convert an unsigned long long integer into a string.
 int SDL_atoi(const char *str);                                                                                                                              // Parse an `int` from a string.
 double SDL_atof(const char *str);                                                                                                                           // Parse a `double` from a string.
 long SDL_strtol(const char *str, char **endp, int base);                                                                                                    // Parse a `long` from a string.
