@@ -128,6 +128,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_hid_device](SDL_hid_device)
 - [SDL_HintCallback](SDL_HintCallback)
 - [SDL_HitTest](SDL_HitTest)
+- [SDL_iconv_t](SDL_iconv_t)
 - [SDL_InitFlags](SDL_InitFlags)
 - [SDL_iOSAnimationCallback](SDL_iOSAnimationCallback)
 - [SDL_IOStream](SDL_IOStream)
