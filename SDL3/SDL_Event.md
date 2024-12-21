@@ -25,8 +25,6 @@ typedef union SDL_Event
     SDL_MouseMotionEvent motion;            /**< Mouse motion event data */
     SDL_MouseButtonEvent button;            /**< Mouse button event data */
     SDL_MouseWheelEvent wheel;              /**< Mouse wheel event data */
-    SDL_MouseRawAxisEvent maxis;            /**< Mouse raw axis event data (motion or wheel deltas) */
-    SDL_MouseRawButtonEvent mbutton;        /**< Mouse raw button event data */
     SDL_JoyDeviceEvent jdevice;             /**< Joystick device change event data */
     SDL_JoyAxisEvent jaxis;                 /**< Joystick axis event data */
     SDL_JoyBallEvent jball;                 /**< Joystick ball event data */
