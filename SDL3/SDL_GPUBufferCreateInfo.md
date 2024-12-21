@@ -31,7 +31,6 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer)
-- [SDL_GPUBufferUsageFlags](SDL_GPUBufferUsageFlags)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
