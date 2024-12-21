@@ -1,5 +1,7 @@
 <!-- DO NOT EDIT THIS PAGE ON THE WIKI. IT WILL BE OVERWRITTEN BY WIKIHEADERS AND CHANGES WILL BE LOST! -->
 
+# QuickReferenceNoUnicode
+
 If you want to paste this into a text editor that can handle
 fancy Unicode section headers, try using
 [QuickReference](QuickReference) instead.
