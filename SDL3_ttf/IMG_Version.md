@@ -1,5 +1,5 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# IMG_Version
+# TTF_Version
 
 This function gets the version of the dynamically linked SDL_ttf library.
 
@@ -10,7 +10,7 @@ Defined in SDL_ttf.h
 ## Syntax
 
 ```c
-int IMG_Version(void);
+int TTF_Version(void);
 
 ```
 
