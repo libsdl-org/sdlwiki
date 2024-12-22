@@ -21,7 +21,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Return Value
 
-Returns true if BT709, false otherwise.
+Returns true if BT2020_NCL, false otherwise.
 
 ## Thread Safety
 
