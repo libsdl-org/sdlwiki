@@ -21,7 +21,7 @@ int SDL_atoi(const char *str);
 
 ## Return Value
 
-(int) Returns The parsed `int`.
+(int) Returns the parsed `int`.
 
 ## Remarks
 

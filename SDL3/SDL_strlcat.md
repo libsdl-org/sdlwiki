@@ -23,7 +23,7 @@ size_t SDL_strlcat(char *dst, const char *src, size_t maxlen);
 
 ## Return Value
 
-(size_t) Returns The length (in characters, excluding the null terminator)
+(size_t) Returns the length (in characters, excluding the null terminator)
 of the string in `dst` plus the length of `src`.
 
 ## Remarks

@@ -21,7 +21,7 @@ size_t SDL_strlen(const char *str);
 
 ## Return Value
 
-(size_t) Returns The length (in bytes, excluding the null terminator) of
+(size_t) Returns the length (in bytes, excluding the null terminator) of
 `src`.
 
 ## Remarks

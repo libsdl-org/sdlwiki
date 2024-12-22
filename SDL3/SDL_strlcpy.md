@@ -23,7 +23,7 @@ size_t SDL_strlcpy(char *dst, const char *src, size_t maxlen);
 
 ## Return Value
 
-(size_t) Returns The length (in characters, excluding the null terminator)
+(size_t) Returns the length (in characters, excluding the null terminator)
 of `src`.
 
 ## Remarks

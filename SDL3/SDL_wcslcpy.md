@@ -23,7 +23,7 @@ size_t SDL_wcslcpy(wchar_t *dst, const wchar_t *src, size_t maxlen);
 
 ## Return Value
 
-(size_t) Returns The length (in wide characters, excluding the null
+(size_t) Returns the length (in wide characters, excluding the null
 terminator) of `src`.
 
 ## Remarks

@@ -23,7 +23,7 @@ unsigned long SDL_strtoul(const char *str, char **endp, int base);
 
 ## Return Value
 
-(unsigned long) Returns The parsed `unsigned long`, or 0 if no number could
+(unsigned long) Returns the parsed `unsigned long`, or 0 if no number could
 be parsed.
 
 ## Remarks

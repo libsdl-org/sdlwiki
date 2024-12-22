@@ -21,7 +21,7 @@ double SDL_atof(const char *str);
 
 ## Return Value
 
-(double) Returns The parsed `double`.
+(double) Returns the parsed `double`.
 
 ## Remarks
 

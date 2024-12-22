@@ -23,7 +23,7 @@ long long SDL_strtoll(const char *str, char **endp, int base);
 
 ## Return Value
 
-(long long) Returns The parsed `long long`, or 0 if no number could be
+(long long) Returns the parsed `long long`, or 0 if no number could be
 parsed.
 
 ## Remarks

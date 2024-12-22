@@ -23,7 +23,7 @@ size_t SDL_utf8strlcpy(char *dst, const char *src, size_t dst_bytes);
 
 ## Return Value
 
-(size_t) Returns The number of bytes written, excluding the null
+(size_t) Returns the number of bytes written, excluding the null
 terminator.
 
 ## Remarks

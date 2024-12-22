@@ -30,7 +30,7 @@ SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
 
 ## Remarks
 
-Use the [SDL_assert](SDL_assert)* macros instead.
+Use the [SDL_assert](SDL_assert) macros instead.
 
 ## Thread Safety
 

@@ -797,8 +797,8 @@ void SDL_SetInitialized(SDL_InitState *state, bool initialized);                
 bool SDL_TryLockSpinlock(SDL_SpinLock *lock);                                      // Try to lock a spin lock by setting it to a non-zero value.
 void SDL_LockSpinlock(SDL_SpinLock *lock);                                         // Lock a spin lock by setting it to a non-zero value.
 void SDL_UnlockSpinlock(SDL_SpinLock *lock);                                       // Unlock a spin lock by setting it to 0.
-void SDL_MemoryBarrierReleaseFunction(void);                                       // Insert a memory release barrier.
-void SDL_MemoryBarrierAcquireFunction(void);                                       // Insert a memory acquire barrier.
+void SDL_MemoryBarrierReleaseFunction(void);                                       // Insert a memory release barrier (function version).
+void SDL_MemoryBarrierAcquireFunction(void);                                       // Insert a memory acquire barrier (function version).
 bool SDL_CompareAndSwapAtomicInt(SDL_AtomicInt *a, int oldval, int newval);        // Set an atomic variable to a new value if it is currently an old value.
 int SDL_SetAtomicInt(SDL_AtomicInt *a, int v);                                     // Set an atomic variable to a value.
 int SDL_GetAtomicInt(SDL_AtomicInt *a);                                            // Get the value of an atomic variable.
@@ -1565,14 +1565,14 @@ void * SDL_memcpy(void *dst, const void *src, size_t len);                      
 void * SDL_memmove(void *dst, const void *src, size_t len);                                                                                                 // Copy memory ranges that might overlap.
 void * SDL_memset(void *dst, int c, size_t len);                                                                                                            // Initialize all bytes of buffer of memory to a specific value.
 void * SDL_memset4(void *dst, Uint32 val, size_t dwords);                                                                                                   // Initialize all 32-bit words of buffer of memory to a specific value.
-int SDL_memcmp(const void *s1, const void *s2, size_t len);
-size_t SDL_wcslen(const wchar_t *wstr);
-size_t SDL_wcsnlen(const wchar_t *wstr, size_t maxlen);
+int SDL_memcmp(const void *s1, const void *s2, size_t len);                                                                                                 // Compare two buffers of memory.
+size_t SDL_wcslen(const wchar_t *wstr);                                                                                                                     // This works exactly like wcslen() but doesn't require access to a C runtime.
+size_t SDL_wcsnlen(const wchar_t *wstr, size_t maxlen);                                                                                                     // This works exactly like wcsnlen() but doesn't require access to a C runtime.
 size_t SDL_wcslcpy(wchar_t *dst, const wchar_t *src, size_t maxlen);                                                                                        // Copy a wide string.
 size_t SDL_wcslcat(wchar_t *dst, const wchar_t *src, size_t maxlen);                                                                                        // Concatenate wide strings.
-wchar_t * SDL_wcsdup(const wchar_t *wstr);
-wchar_t * SDL_wcsstr(const wchar_t *haystack, const wchar_t *needle);
-wchar_t * SDL_wcsnstr(const wchar_t *haystack, const wchar_t *needle, size_t maxlen);
+wchar_t * SDL_wcsdup(const wchar_t *wstr);                                                                                                                  // Allocate a copy of a wide string.
+wchar_t * SDL_wcsstr(const wchar_t *haystack, const wchar_t *needle);                                                                                       // Search a wide string for the first instance of a specific substring.
+wchar_t * SDL_wcsnstr(const wchar_t *haystack, const wchar_t *needle, size_t maxlen);                                                                       // Search a wide string, up to n wide chars, for the first instance of a specific substring.
 int SDL_wcscmp(const wchar_t *str1, const wchar_t *str2);                                                                                                   // Compare two null-terminated wide strings.
 int SDL_wcsncmp(const wchar_t *str1, const wchar_t *str2, size_t maxlen);                                                                                   // Compare two wide strings up to a number of wchar_t values.
 int SDL_wcscasecmp(const wchar_t *str1, const wchar_t *str2);                                                                                               // Compare two null-terminated wide strings, case-insensitively.
@@ -1583,9 +1583,9 @@ size_t SDL_strnlen(const char *str, size_t maxlen);                             
 size_t SDL_strlcpy(char *dst, const char *src, size_t maxlen);                                                                                              // Copy a string.
 size_t SDL_utf8strlcpy(char *dst, const char *src, size_t dst_bytes);                                                                                       // Copy an UTF-8 string.
 size_t SDL_strlcat(char *dst, const char *src, size_t maxlen);                                                                                              // Concatenate strings.
-char * SDL_strdup(const char *str);
-char * SDL_strndup(const char *str, size_t maxlen);
-char * SDL_strrev(char *str);
+char * SDL_strdup(const char *str);                                                                                                                         // Allocate a copy of a string.
+char * SDL_strndup(const char *str, size_t maxlen);                                                                                                         // Allocate a copy of a string, up to n characters.
+char * SDL_strrev(char *str);                                                                                                                               // Reverse a string's contents.
 char * SDL_strupr(char *str);                                                                                                                               // Convert a string to uppercase.
 char * SDL_strlwr(char *str);                                                                                                                               // Convert a string to lowercase.
 char * SDL_strchr(const char *str, int c);                                                                                                                  // Search a string for the first instance of a specific byte.
@@ -1617,14 +1617,14 @@ char * SDL_strpbrk(const char *str, const char *breakset);                      
 Uint32 SDL_StepUTF8(const char **pstr, size_t *pslen);                                                                                                      // Decode a UTF-8 string, one Unicode codepoint at a time.
 Uint32 SDL_StepBackUTF8(const char *start, const char **pstr);                                                                                              // Decode a UTF-8 string in reverse, one Unicode codepoint at a time.
 char * SDL_UCS4ToUTF8(Uint32 codepoint, char *dst);                                                                                                         // Convert a single Unicode codepoint to UTF-8.
-int SDL_sscanf(const char *text, const char *fmt, ... ...);
-int SDL_vsscanf(const char *text, const char *fmt, va_list ap);
-int SDL_snprintf(char *text, size_t maxlen, const char *fmt, ... ...);
-int SDL_swprintf(wchar_t *text, size_t maxlen, const wchar_t *fmt, ... ...);
-int SDL_vsnprintf(char *text, size_t maxlen, const char *fmt, va_list ap);
-int SDL_vswprintf(wchar_t *text, size_t maxlen, const wchar_t *fmt, va_list ap);
-int SDL_asprintf(char **strp, const char *fmt, ... ...);
-int SDL_vasprintf(char **strp, const char *fmt, va_list ap);
+int SDL_sscanf(const char *text, const char *fmt, ... ...);                                                                                                 // This works exactly like sscanf() but doesn't require access to a C runtime.
+int SDL_vsscanf(const char *text, const char *fmt, va_list ap);                                                                                             // This works exactly like vsscanf() but doesn't require access to a C runtime.
+int SDL_snprintf(char *text, size_t maxlen, const char *fmt, ... ...);                                                                                      // This works exactly like snprintf() but doesn't require access to a C runtime.
+int SDL_swprintf(wchar_t *text, size_t maxlen, const wchar_t *fmt, ... ...);                                                                                // This works exactly like swprintf() but doesn't require access to a C runtime.
+int SDL_vsnprintf(char *text, size_t maxlen, const char *fmt, va_list ap);                                                                                  // This works exactly like vsnprintf() but doesn't require access to a C runtime.
+int SDL_vswprintf(wchar_t *text, size_t maxlen, const wchar_t *fmt, va_list ap);                                                                            // This works exactly like vswprintf() but doesn't require access to a C runtime.
+int SDL_asprintf(char **strp, const char *fmt, ... ...);                                                                                                    // This works exactly like asprintf() but doesn't require access to a C runtime.
+int SDL_vasprintf(char **strp, const char *fmt, va_list ap);                                                                                                // This works exactly like vasprintf() but doesn't require access to a C runtime.
 void SDL_srand(Uint64 seed);                                                                                                                                // Seeds the pseudo-random number generator.
 Sint32 SDL_rand(Sint32 n);                                                                                                                                  // Generate a pseudo-random number less than n for positive n
 float SDL_randf(void);                                                                                                                                      // Generate a uniform pseudo-random floating point number less than 1.0

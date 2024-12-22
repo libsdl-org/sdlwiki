@@ -17,12 +17,12 @@ double SDL_strtod(const char *str, char **endp);
 
 |              |          |                                                                                                                                            |
 | ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| const char * | **str**  | The null-terminated string to read. Must not be NULL.                                                                                      |
-| char **      | **endp** | If not NULL, the address of the first invalid character (i.e. the next character after the parsed number) will be written to this pointer. |
+| const char * | **str**  | the null-terminated string to read. Must not be NULL.                                                                                      |
+| char **      | **endp** | if not NULL, the address of the first invalid character (i.e. the next character after the parsed number) will be written to this pointer. |
 
 ## Return Value
 
-(double) Returns The parsed `double`, or 0 if no number could be parsed.
+(double) Returns the parsed `double`, or 0 if no number could be parsed.
 
 ## Remarks
 

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MemoryBarrierAcquireFunction
 
-Insert a memory acquire barrier.
+Insert a memory acquire barrier (function version).
 
 ## Header File
 
@@ -15,9 +15,12 @@ void SDL_MemoryBarrierAcquireFunction(void);
 
 ## Remarks
 
-Please refer to
-[SDL_MemoryBarrierReleaseFunction](SDL_MemoryBarrierReleaseFunction) for
-the details!
+Please refer to [SDL_MemoryBarrierRelease](SDL_MemoryBarrierRelease) for
+details. This is a function version, which might be useful if you need to
+use this functionality from a scripting language, etc. Also, some of the
+macro versions call this function behind the scenes, where more heavy
+lifting can happen inside of SDL. Generally, though, an app written in
+C/C++/etc should use the macro version, as it will be more efficient.
 
 ## Thread Safety
 
@@ -31,7 +34,7 @@ This function is available since SDL 3.1.3.
 
 ## See Also
 
-- [SDL_MemoryBarrierReleaseFunction](SDL_MemoryBarrierReleaseFunction)
+- [SDL_MemoryBarrierAcquire](SDL_MemoryBarrierAcquire)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
