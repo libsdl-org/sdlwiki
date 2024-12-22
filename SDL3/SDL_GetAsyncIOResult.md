@@ -30,8 +30,8 @@ If a task assigned to this queue has finished, this will return true and
 fill in `outcome` with the details of the task. If no task in the queue has
 finished, this function will return false. This function does not block.
 
-If a task has completed, this function will free its resources. The task
-will be removed from the queue.
+If a task has completed, this function will free its resources and the task
+pointer will no longer be valid. The task will be removed from the queue.
 
 It is safe for multiple threads to call this function on the same queue at
 once; a completed task will only go to one of the threads.
