@@ -49,11 +49,11 @@ tasks to `asyncio`, so it's safe to open a file, start several operations,
 close the file immediately, then check for all results later. This function
 will not block until the tasks have completed.
 
-Once this function returns true, `asyncio` is no longer valid,
-regardless of any future outcomes. Any completed tasks might still contain
-this pointer in their [SDL_AsyncIOOutcome](SDL_AsyncIOOutcome) data, in
-case the app was using this value to track information, but it should not
-be used again.
+Once this function returns true, `asyncio` is no longer valid, regardless
+of any future outcomes. Any completed tasks might still contain this
+pointer in their [SDL_AsyncIOOutcome](SDL_AsyncIOOutcome) data, in case the
+app was using this value to track information, but it should not be used
+again.
 
 If this function returns false, the close wasn't started at all, and it's
 safe to attempt to close again later.
