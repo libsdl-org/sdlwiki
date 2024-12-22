@@ -15,7 +15,8 @@ int SDL_GetNumAllocations(void);
 
 ## Return Value
 
-(int) Returns the number of allocations.
+(int) Returns the number of allocations or -1 if allocation counting is
+disabled.
 
 ## Thread Safety
 
