@@ -84,6 +84,13 @@ your code!
 - [SDL_ASSERT_LEVEL](SDL_ASSERT_LEVEL)
 - [SDL_assert_paranoid](SDL_assert_paranoid)
 - [SDL_assert_release](SDL_assert_release)
+- [SDL_AssertBreakpoint](SDL_AssertBreakpoint)
+- [SDL_disabled_assert](SDL_disabled_assert)
+- [SDL_enabled_assert](SDL_enabled_assert)
+- [SDL_FILE](SDL_FILE)
+- [SDL_FUNCTION](SDL_FUNCTION)
+- [SDL_LINE](SDL_LINE)
+- [SDL_NULL_WHILE_LOOP_CONDITION](SDL_NULL_WHILE_LOOP_CONDITION)
 - [SDL_TriggerBreakpoint](SDL_TriggerBreakpoint)
 <!-- END CATEGORY LIST -->
 

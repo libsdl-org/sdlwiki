@@ -77,6 +77,8 @@ All of the atomic operations that modify memory are full memory barriers.
 - [SDL_AtomicIncRef](SDL_AtomicIncRef)
 - [SDL_CompilerBarrier](SDL_CompilerBarrier)
 - [SDL_CPUPauseInstruction](SDL_CPUPauseInstruction)
+- [SDL_MemoryBarrierAcquire](SDL_MemoryBarrierAcquire)
+- [SDL_MemoryBarrierRelease](SDL_MemoryBarrierRelease)
 <!-- END CATEGORY LIST -->
 
 
