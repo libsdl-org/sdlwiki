@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StopTextInput](SDL_StopTextInput)
-- [SDL_SetTextInputArea](https://wiki.libsdl.org/SDL3/SDL_SetTextInputArea)
+- [SDL_SetTextInputArea](SDL_SetTextInputArea)
 - [SDL_TextInputActive](SDL_TextInputActive)
 - [SDL_ScreenKeyboardShown](SDL_ScreenKeyboardShown)
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)
 - [SDL_TextInputEvent](SDL_TextInputEvent)
 
-One important thing to notice is that the application can enable and disable text input arbitrarily with [SDL_StartTextInput](SDL_StartTextInput)() and [SDL_StopTextInput](SDL_StopTextInput)(). [SDL_SetTextInputArea](https://wiki.libsdl.org/SDL3/SDL_SetTextInputArea)() controls where the Candidate List will open, if supported.
+One important thing to notice is that the application can enable and disable text input arbitrarily with [SDL_StartTextInput](SDL_StartTextInput)() and [SDL_StopTextInput](SDL_StopTextInput)(). [SDL_SetTextInputArea](SDL_SetTextInputArea)() controls where the Candidate List will open, if supported.
 
 The application will receive an [SDL_TextEditingEvent](SDL_TextEditingEvent) when a composition is changed (or started). This event contains the composition text as well as the cursor position within the composition. It also contains a length member that determines the length of the text selection, if any.
 
