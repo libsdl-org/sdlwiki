@@ -22,7 +22,7 @@ bool SDL_GetAsyncIOResult(SDL_AsyncIOQueue *queue, SDL_AsyncIOOutcome *outcome);
 
 ## Return Value
 
-(bool) Returns true if task has completed, false otherwise.
+(bool) Returns true if a task has completed, false otherwise.
 
 ## Remarks
 
