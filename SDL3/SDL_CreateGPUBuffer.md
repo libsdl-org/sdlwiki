@@ -35,7 +35,10 @@ buffer.
 Note that certain combinations of usage flags are invalid. For example, a
 buffer cannot have both the VERTEX and INDEX flags.
 
-For better understanding of underlying concepts and memory management with SDL GPU API, you may refer [this blog post](https://moonside.games/posts/sdl-gpu-concepts-cycling/).
+For better understanding of underlying concepts and memory management with
+SDL GPU API, you may refer
+[this blog post](https://moonside.games/posts/sdl-gpu-concepts-cycling/)
+.
 
 ## Version
 
