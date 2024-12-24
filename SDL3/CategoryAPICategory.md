@@ -61,6 +61,7 @@ A more human-friendly version is over in [APIByCategory](APIByCategory), if you 
 - [CategoryTime](CategoryTime)
 - [CategoryTimer](CategoryTimer)
 - [CategoryTouch](CategoryTouch)
+- [CategoryTray](CategoryTray)
 - [CategoryVersion](CategoryVersion)
 - [CategoryVideo](CategoryVideo)
 - [CategoryVulkan](CategoryVulkan)
