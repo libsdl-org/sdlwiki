@@ -109,6 +109,11 @@ With the vulkan renderer:
   the number of swapchain images, or potential frames in flight, used by
   the Vulkan renderer
 
+With the gpu renderer:
+
+- [`SDL_PROP_RENDERER_GPU_DEVICE_POINTER`](SDL_PROP_RENDERER_GPU_DEVICE_POINTER):
+  the [SDL_GPUDevice](SDL_GPUDevice) associated with the renderer
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
