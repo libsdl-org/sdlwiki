@@ -29,7 +29,7 @@ If the returned value is NULL, the entry is a separator.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

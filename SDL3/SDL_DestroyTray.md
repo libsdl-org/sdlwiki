@@ -25,7 +25,7 @@ This also destroys all associated menus and entries.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

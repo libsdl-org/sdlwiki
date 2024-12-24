@@ -29,7 +29,7 @@ label. The function will silently fail if that happens.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

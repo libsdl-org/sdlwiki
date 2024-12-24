@@ -22,7 +22,7 @@ void SDL_SetTrayIcon(SDL_Tray *tray, SDL_Surface *icon);
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This function is available since SDL 3.2.0.
 
 ## See Also
 
