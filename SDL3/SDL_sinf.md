@@ -30,7 +30,7 @@ Domain: `-INF <= x <= INF`
 Range: `-1 <= y <= 1`
 
 This function operates on single-precision floating point values, use
-[SDL_sinf](SDL_sinf) for double-precision floats.
+[SDL_sin](SDL_sin) for double-precision floats.
 
 This function may use a different approximation across different versions,
 platforms and configurations. i.e, it can return a different value given
