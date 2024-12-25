@@ -727,6 +727,7 @@ SDL_ThreadID SDL_GetCurrentThreadID(void);                                      
 SDL_ThreadID SDL_GetThreadID(SDL_Thread *thread);                                         // Get the thread identifier for the specified thread.
 bool SDL_SetCurrentThreadPriority(SDL_ThreadPriority priority);                           // Set the priority for the current thread.
 void SDL_WaitThread(SDL_Thread *thread, int *status);                                     // Wait for a thread to finish.
+SDL_ThreadState SDL_GetThreadState(SDL_Thread *thread);                                   // Get the current state of a thread.
 void SDL_DetachThread(SDL_Thread *thread);                                                // Let a thread clean up on exit without intervention.
 void * SDL_GetTLS(SDL_TLSID *id);                                                         // Get the current thread's value associated with a thread local storage ID.
 bool SDL_SetTLS(SDL_TLSID *id, const void *value, SDL_TLSDestructorCallback destructor);  // Set the current thread's value associated with a thread local storage ID.
