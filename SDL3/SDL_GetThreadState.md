@@ -15,14 +15,14 @@ SDL_ThreadState SDL_GetThreadState(SDL_Thread *thread);
 
 ## Function Parameters
 
-|                            |            |                                            |
-| -------------------------- | ---------- | ------------------------------------------ |
-| [SDL_Thread](SDL_Thread) * | **thread** | the thread whose status you want to check. |
+|                            |            |                      |
+| -------------------------- | ---------- | -------------------- |
+| [SDL_Thread](SDL_Thread) * | **thread** | the thread to query. |
 
 ## Return Value
 
-([SDL_ThreadState](SDL_ThreadState)) Returns the current state of a thread
-as defined in the [SDL_ThreadState](SDL_ThreadState) enum.
+([SDL_ThreadState](SDL_ThreadState)) Returns the current state of a thread,
+or [SDL_THREAD_UNKNOWN](SDL_THREAD_UNKNOWN) if the thread isn't valid.
 
 ## Version
 

@@ -12,17 +12,16 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 typedef enum SDL_ThreadState
 {
-    SDL_THREAD_STATE_ALIVE,
-    SDL_THREAD_STATE_DETACHED,
-    SDL_THREAD_STATE_ZOMBIE,
-    SDL_THREAD_STATE_CLEANED,
+    SDL_THREAD_UNKNOWN,     /**< The thread is not valid */
+    SDL_THREAD_ALIVE,       /**< The thread is currently running */
+    SDL_THREAD_DETACHED,    /**< The thread is detached and can't be waited on */
+    SDL_THREAD_COMPLETE,    /**< The thread has finished and should be cleaned up with SDL_WaitThread() */
 } SDL_ThreadState;
 ```
 
 ## Remarks
 
-SDL stores the current state of a thread in an atomic int. The current
-state of a thread can be checked by calling
+The current state of a thread can be checked by calling
 [SDL_GetThreadState](SDL_GetThreadState).
 
 ## Version
