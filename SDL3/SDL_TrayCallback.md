@@ -20,6 +20,10 @@ typedef void (SDLCALL *SDL_TrayCallback)(void *userdata, SDL_TrayEntry *entry);
 | **userdata** | an optional pointer to pass extra data to the callback when it will be invoked. |
 | **entry**    | the tray entry that was selected.                                               |
 
+## Version
+
+This datatype is available since SDL 3.2.0.
+
 ## See Also
 
 - [SDL_SetTrayEntryCallback](SDL_SetTrayEntryCallback)

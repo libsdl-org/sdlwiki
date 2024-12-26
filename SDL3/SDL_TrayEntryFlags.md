@@ -27,7 +27,7 @@ those can be OR'ed together with the required flag.
 
 ## Version
 
-This datatype is available since SDL 3.0.0.
+This datatype is available since SDL 3.2.0.
 
 ## See Also
 
