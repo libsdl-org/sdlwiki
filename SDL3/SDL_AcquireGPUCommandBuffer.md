@@ -33,6 +33,13 @@ freed by the user. The command buffer may only be used on the thread it was
 acquired on. The command buffer should be submitted on the thread it was
 acquired on.
 
+It is valid to acquire multiple command buffers on the same thread at once.
+In fact a common design pattern is to acquire two command buffers per frame
+where one is dedicated to render and compute passes and the other is
+dedicated to copy passes and other preparatory work such as generating
+mipmaps. Interleaving commands between the two command buffers reduces the
+total amount of passes overall which improves rendering performance.
+
 ## Version
 
 This function is available since SDL 3.1.3.

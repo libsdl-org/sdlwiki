@@ -15,7 +15,7 @@ typedef enum SDL_GPUSwapchainComposition
     SDL_GPU_SWAPCHAINCOMPOSITION_SDR,
     SDL_GPU_SWAPCHAINCOMPOSITION_SDR_LINEAR,
     SDL_GPU_SWAPCHAINCOMPOSITION_HDR_EXTENDED_LINEAR,
-    SDL_GPU_SWAPCHAINCOMPOSITION_HDR10_ST2048
+    SDL_GPU_SWAPCHAINCOMPOSITION_HDR10_ST2084
 } SDL_GPUSwapchainComposition;
 ```
 
@@ -29,14 +29,15 @@ It is recommended to query
 after claiming the window if you wish to change the swapchain composition
 from SDR.
 
-- SDR: B8G8R8A8 or R8G8B8A8 swapchain. Pixel values are in nonlinear sRGB
-  encoding.
-- SDR_LINEAR: B8G8R8A8_SRGB or R8G8B8A8_SRGB swapchain. Pixel values are in
-  nonlinear sRGB encoding.
+- SDR: B8G8R8A8 or R8G8B8A8 swapchain. Pixel values are in sRGB encoding.
+- SDR_LINEAR: B8G8R8A8_SRGB or R8G8B8A8_SRGB swapchain. Pixel values are
+  stored in memory in sRGB encoding but accessed in shaders in "linear
+  sRGB" encoding which is sRGB but with a linear transfer function.
 - HDR_EXTENDED_LINEAR: R16G16B16A16_SFLOAT swapchain. Pixel values are in
-  extended linear encoding.
-- HDR10_ST2048: A2R10G10B10 or A2B10G10R10 swapchain. Pixel values are in
-  PQ ST2048 encoding.
+  extended linear sRGB encoding and permits values outside of the [0, 1]
+  range.
+- HDR10_ST2084: A2R10G10B10 or A2B10G10R10 swapchain. Pixel values are in
+  BT.2020 ST2084 (PQ) encoding.
 
 ## Version
 

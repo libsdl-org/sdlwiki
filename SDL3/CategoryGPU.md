@@ -146,12 +146,34 @@ and reasonable to implement across several platforms and underlying APIs.
 So while these things are not in the "never" category, they are definitely
 not "near future" items either.
 
+**Question: Why is my shader not working?**
+
+Answer: A common oversight when using shaders is not properly laying out
+the shader resources/registers correctly. The GPU API is very strict with
+how it wants resources to be laid out and it's difficult for the API to
+automatically validate shaders to see if they have a compatible layout. See
+the documentation for [SDL_CreateGPUShader](SDL_CreateGPUShader)() and
+[SDL_CreateGPUComputePipeline](SDL_CreateGPUComputePipeline)() for
+information on the expected layout.
+
+Another common issue is not setting the correct number of samplers,
+textures, and buffers in
+[SDL_GPUShaderCreateInfo](SDL_GPUShaderCreateInfo). If possible use shader
+reflection to extract the required information from the shader
+automatically instead of manually filling in the struct's values.
+
 ## System Requirements
 
 **Vulkan:** Supported on Windows, Linux, Nintendo Switch, and certain
 Android devices. Requires Vulkan 1.0 with the following extensions and
-device features: - `VK_KHR_swapchain` - `VK_KHR_maintenance1` -
-`independentBlend` - `imageCubeArray` - `depthClamp` - `shaderClipDistance`
+device features:
+
+- `VK_KHR_swapchain`
+- `VK_KHR_maintenance1`
+- `independentBlend`
+- `imageCubeArray`
+- `depthClamp`
+- `shaderClipDistance`
 - `drawIndirectFirstInstance`
 
 **D3D12:** Supported on Windows 10 or newer, Xbox One (GDK), and Xbox
@@ -159,10 +181,83 @@ Series X|S (GDK). Requires a GPU that supports DirectX 12 Feature Level
 11_1.
 
 **Metal:** Supported on macOS 10.14+ and iOS/tvOS 13.0+. Hardware
-requirements vary by operating system: - macOS requires an Apple Silicon or
-[Intel Mac2 family](https://developer.apple.com/documentation/metal/mtlfeatureset/mtlfeatureset_macos_gpufamily2_v1?language=objc)
-GPU - iOS/tvOS requires an A9 GPU or newer - iOS Simulator and tvOS
-Simulator are unsupported
+requirements vary by operating system:
+
+- macOS requires an Apple Silicon or
+  [Intel Mac2 family](https://developer.apple.com/documentation/metal/mtlfeatureset/mtlfeatureset_macos_gpufamily2_v1?language=objc)
+  GPU
+- iOS/tvOS requires an A9 GPU or newer
+- iOS Simulator and tvOS Simulator are unsupported
+
+## Uniform Data
+
+Uniforms are for passing data to shaders. The uniform data will be constant
+across all executions of the shader.
+
+There are 4 available uniform slots per shader stage (where the stages are
+vertex, fragment, and compute). Uniform data pushed to a slot on a stage
+keeps its value throughout the command buffer until you call the relevant
+Push function on that slot again.
+
+For example, you could write your vertex shaders to read a camera matrix
+from uniform binding slot 0, push the camera matrix at the start of the
+command buffer, and that data will be used for every subsequent draw call.
+
+It is valid to push uniform data during a render or compute pass.
+
+Uniforms are best for pushing small amounts of data. If you are pushing
+more than a matrix or two per call you should consider using a storage
+buffer instead.
+
+## A Note On Cycling
+
+When using a command buffer, operations do not occur immediately - they
+occur some time after the command buffer is submitted.
+
+When a resource is used in a pending or active command buffer, it is
+considered to be "bound". When a resource is no longer used in any pending
+or active command buffers, it is considered to be "unbound".
+
+If data resources are bound, it is unspecified when that data will be
+unbound unless you acquire a fence when submitting the command buffer and
+wait on it. However, this doesn't mean you need to track resource usage
+manually.
+
+All of the functions and structs that involve writing to a resource have a
+"cycle" bool. [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer),
+[SDL_GPUBuffer](SDL_GPUBuffer), and [SDL_GPUTexture](SDL_GPUTexture) all
+effectively function as ring buffers on internal resources. When cycle is
+true, if the resource is bound, the cycle rotates to the next unbound
+internal resource, or if none are available, a new one is created. This
+means you don't have to worry about complex state tracking and
+synchronization as long as cycling is correctly employed.
+
+For example: you can call
+[SDL_MapGPUTransferBuffer](SDL_MapGPUTransferBuffer)(), write texture data,
+[SDL_UnmapGPUTransferBuffer](SDL_UnmapGPUTransferBuffer)(), and then
+[SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)(). The next time you write
+texture data to the transfer buffer, if you set the cycle param to true,
+you don't have to worry about overwriting any data that is not yet
+uploaded.
+
+Another example: If you are using a texture in a render pass every frame,
+this can cause a data dependency between frames. If you set cycle to true
+in the [SDL_GPUColorTargetInfo](SDL_GPUColorTargetInfo) struct, you can
+prevent this data dependency.
+
+Cycling will never undefine already bound data. When cycling, all data in
+the resource is considered to be undefined for subsequent commands until
+that data is written again. You must take care not to read undefined data.
+
+Note that when cycling a texture, the entire texture will be cycled, even
+if only part of the texture is used in the call, so you must consider the
+entire texture to contain undefined data after cycling.
+
+You must also take care not to overwrite a section of data that has been
+referenced in a command without cycling first. It is OK to overwrite
+unreferenced data in a bound resource without cycling, but overwriting a
+section of data that has already been referenced will produce unexpected
+results.
 
 <!-- END CATEGORY DOCUMENTATION -->
 
