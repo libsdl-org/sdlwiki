@@ -26,6 +26,8 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_GPUGraphicsPipelineCreateInfo](SDL_GPUGraphicsPipelineCreateInfo)
+- [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
+- [SDL_GPUVertexAttribute](SDL_GPUVertexAttribute)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
