@@ -25,10 +25,8 @@ SDL_Texture * SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormat format, 
 
 ## Return Value
 
-([SDL_Texture](SDL_Texture) *) Returns a pointer to the created texture or
-NULL if no rendering context was active, the format was unsupported, or the
-width or height were out of range; call [SDL_GetError](SDL_GetError)() for
-more information.
+([SDL_Texture](SDL_Texture) *) Returns the created texture or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
