@@ -77,9 +77,6 @@ After all these effects have finished processing, the callback registered
 through [Mix_SetPostMix](Mix_SetPostMix)() runs, and then the stream goes
 to the audio device.
 
-DO NOT EVER call SDL_LockAudio() from your callback function! You are
-already running in the audio thread and the lock is already held!
-
 Note that unlike most SDL and SDL_mixer functions, this function returns
 zero if there's an error, not on success. We apologize for the API design
 inconsistency here.

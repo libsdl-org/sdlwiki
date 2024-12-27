@@ -27,10 +27,6 @@ called as a result of [Mix_HaltChannel](Mix_HaltChannel)(), etc.
 The callback has a single parameter, `channel`, which says what mixer
 channel has just stopped.
 
-Do not call SDL_LockAudio() from this callback; you will either be inside
-the audio callback, or SDL_mixer will explicitly lock the audio before
-calling your callback.
-
 A NULL pointer will disable the callback.
 
 ## Version

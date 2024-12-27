@@ -20,8 +20,6 @@ This gets called if the buffer plays out normally, or if you call
 [Mix_AllocateChannels](Mix_AllocateChannels)(), or unregister a callback
 while it's still playing.
 
-DO NOT EVER call SDL_LockAudio() from your callback function!
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLMixer](CategorySDLMixer)
 

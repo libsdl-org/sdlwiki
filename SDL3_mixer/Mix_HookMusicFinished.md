@@ -31,10 +31,6 @@ It is legal to start a new music object playing in this callback (or
 restart the one that just stopped). If the music finished normally, this
 can be used to loop the music without a gap in the audio playback.
 
-Do not call SDL_LockAudio() from this callback; you will either be inside
-the audio callback, or SDL_mixer will explicitly lock the audio before
-calling your callback.
-
 A NULL pointer will disable the callback.
 
 ## Version

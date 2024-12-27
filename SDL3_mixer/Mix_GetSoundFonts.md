@@ -25,7 +25,7 @@ function:
 - If the boolean _SDL hint_ `"SDL_FORCE_SOUNDFONTS"` is set, AND the
   `"SDL_SOUNDFONTS"` _environment variable_ is also set, this function will
   return that environment variable regardless of whether
-  [Mix_SetSoundFounts](Mix_SetSoundFounts)() was ever called.
+  [Mix_SetSoundFonts](Mix_SetSoundFonts)() was ever called.
 - Otherwise, if [Mix_SetSoundFonts](Mix_SetSoundFonts)() was successfully
   called with a non-NULL path, this function will return the string passed
   to that function.

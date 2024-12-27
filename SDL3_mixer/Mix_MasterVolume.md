@@ -41,7 +41,7 @@ this function returns the previous (in this case, still-current) value.
 
 Note that the master volume does not affect any playing music; it is only
 applied when mixing chunks. Use [Mix_VolumeMusic](Mix_VolumeMusic)() for
-that.\
+that.
 
 ## Version
 

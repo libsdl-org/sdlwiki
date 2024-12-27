@@ -28,8 +28,6 @@ its changed state down the mixing pipeline, through any other effect
 functions, then finally to be mixed with the rest of the channels and music
 for the final output stream.
 
-DO NOT EVER call SDL_LockAudio() from your callback function!
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySDLMixer](CategorySDLMixer)
 

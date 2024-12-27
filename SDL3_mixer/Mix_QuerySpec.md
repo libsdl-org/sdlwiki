@@ -23,7 +23,7 @@ bool Mix_QuerySpec(int *frequency, SDL_AudioFormat *format, int *channels);
 
 ## Return Value
 
-(bool) Returns true if the audio device has been opened, true otherwise.
+(bool) Returns true if the audio device has been opened, false otherwise.
 
 ## Remarks
 
