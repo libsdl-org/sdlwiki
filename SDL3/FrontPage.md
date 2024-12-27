@@ -57,6 +57,7 @@ information about the functions, structures, enumerations and macros.
 
 ## Other sources of information
 
+- A bunch of uncategorized, deep-dive information is in the [README](README) section.
 - Want to learn about a feature in SDL you haven't used before?
   Our [tutorials](Tutorials) are great place to get started!
 - Here is a collection of [articles](Articles) that have been written
