@@ -25,6 +25,10 @@ The variable can be set to the following values:
 - "1": SDL will send a quit event when the last window is requesting to
   close. (default)
 
+If there is at least one active system tray icon,
+[SDL_EVENT_QUIT](SDL_EVENT_QUIT) will instead be sent when both the last
+window will be closed and the last tray icon will be destroyed.
+
 This hint can be set anytime.
 
 ## Version
