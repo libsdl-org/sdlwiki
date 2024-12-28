@@ -52,11 +52,10 @@ These are the supported properties:
   the offset in the iostream for the beginning of the font, defaults to 0.
 - [`TTF_PROP_FONT_CREATE_IOSTREAM_AUTOCLOSE_BOOLEAN`](TTF_PROP_FONT_CREATE_IOSTREAM_AUTOCLOSE_BOOLEAN):
   true if closing the font should also close the associated SDL_IOStream.
-- [`TTF_PROP_FONT_CREATE_SIZE_NUMBER`](TTF_PROP_FONT_CREATE_SIZE_NUMBER):
-  the point size of the font. Some .fon fonts will have several sizes
-  embedded in the file, so the point size becomes the index of choosing
-  which size. If the value is too high, the last indexed size will be the
-  default.
+- [`TTF_PROP_FONT_CREATE_SIZE_FLOAT`](TTF_PROP_FONT_CREATE_SIZE_FLOAT): the
+  point size of the font. Some .fon fonts will have several sizes embedded
+  in the file, so the point size becomes the index of choosing which size.
+  If the value is too high, the last indexed size will be the default.
 - [`TTF_PROP_FONT_CREATE_FACE_NUMBER`](TTF_PROP_FONT_CREATE_FACE_NUMBER):
   the face index of the font, if the font contains multiple font faces.
 - [`TTF_PROP_FONT_CREATE_HORIZONTAL_DPI_NUMBER`](TTF_PROP_FONT_CREATE_HORIZONTAL_DPI_NUMBER):
