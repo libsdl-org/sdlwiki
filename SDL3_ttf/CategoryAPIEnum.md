@@ -6,6 +6,7 @@
 <!-- BEGIN CATEGORY LIST -->
 - [TTF_Direction](TTF_Direction)
 - [TTF_GPUTextEngineWinding](TTF_GPUTextEngineWinding)
+- [TTF_HintingFlags](TTF_HintingFlags)
 - [TTF_HorizontalAlignment](TTF_HorizontalAlignment)
 <!-- END CATEGORY LIST -->
 
