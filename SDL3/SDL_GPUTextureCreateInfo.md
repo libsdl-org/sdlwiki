@@ -38,6 +38,10 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
+- [SDL_GPUTextureType](SDL_GPUTextureType)
+- [SDL_GPUTextureFormat](SDL_GPUTextureFormat)
+- [SDL_GPUTextureUsageFlags](SDL_GPUTextureUsageFlags)
+- [SDL_GPUSampleCount](SDL_GPUSampleCount)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
