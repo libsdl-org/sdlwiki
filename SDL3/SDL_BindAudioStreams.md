@@ -10,16 +10,16 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-bool SDL_BindAudioStreams(SDL_AudioDeviceID devid, SDL_AudioStream **streams, int num_streams);
+bool SDL_BindAudioStreams(SDL_AudioDeviceID devid, SDL_AudioStream * const *streams, int num_streams);
 ```
 
 ## Function Parameters
 
-|                                        |                 |                                               |
-| -------------------------------------- | --------------- | --------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid**       | an audio device to bind a stream to.          |
-| [SDL_AudioStream](SDL_AudioStream) **  | **streams**     | an array of audio streams to bind.            |
-| int                                    | **num_streams** | number streams listed in the `streams` array. |
+|                                              |                 |                                               |
+| -------------------------------------------- | --------------- | --------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID)       | **devid**       | an audio device to bind a stream to.          |
+| [SDL_AudioStream](SDL_AudioStream) * const * | **streams**     | an array of audio streams to bind.            |
+| int                                          | **num_streams** | number streams listed in the `streams` array. |
 
 ## Return Value
 

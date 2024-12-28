@@ -10,15 +10,15 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void SDL_UnbindAudioStreams(SDL_AudioStream **streams, int num_streams);
+void SDL_UnbindAudioStreams(SDL_AudioStream * const *streams, int num_streams);
 ```
 
 ## Function Parameters
 
-|                                       |                 |                                               |
-| ------------------------------------- | --------------- | --------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) ** | **streams**     | an array of audio streams to unbind.          |
-| int                                   | **num_streams** | number streams listed in the `streams` array. |
+|                                              |                 |                                                                   |
+| -------------------------------------------- | --------------- | ----------------------------------------------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * const * | **streams**     | an array of audio streams to unbind. Can be NULL or contain NULL. |
+| int                                          | **num_streams** | number streams listed in the `streams` array.                     |
 
 ## Remarks
 
