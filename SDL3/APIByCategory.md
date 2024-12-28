@@ -115,6 +115,7 @@
 | [Power Management Status](CategoryPower)             | [SDL_power.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h)           |
 | [Message Boxes](CategoryMessagebox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h) |
 | [File Dialogs](CategoryDialog)                       | [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)         |
+| [System Tray](CategoryTray)                          | [SDL_tray.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_tray.h)         |
 | [Locale Info](CategoryLocale)                        | [SDL_locale.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_locale.h)         |
 | [Platform-specific Functionality](CategorySystem)    | [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)         |
 | [Standard Library Functionality](CategoryStdinc)     | [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)         |
