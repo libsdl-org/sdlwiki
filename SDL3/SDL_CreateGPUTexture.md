@@ -36,6 +36,8 @@ texture.
 Note that certain combinations of usage flags are invalid. For example, a
 texture cannot have both the SAMPLER and GRAPHICS_STORAGE_READ flags.
 
+Some texture types may impose additional requirements on create parameters - for example, cube textures require same `width` and `height`, and `layer_count_or_depth` to be set to 6.
+
 If you request a sample count higher than the hardware supports, the
 implementation will automatically fall back to the highest available sample
 count.
