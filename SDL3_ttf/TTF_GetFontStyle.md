@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_GetFontStyle(const TTF_Font *font);
+TTF_FontStyleFlags TTF_GetFontStyle(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,8 @@ int TTF_GetFontStyle(const TTF_Font *font);
 
 ## Return Value
 
-(int) Returns the current font style, as a set of bit flags.
+([TTF_FontStyleFlags](TTF_FontStyleFlags)) Returns the current font style,
+as a set of bit flags.
 
 ## Remarks
 

@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-int TTF_GetFontHinting(const TTF_Font *font);
+TTF_HintingFlags TTF_GetFontHinting(const TTF_Font *font);
 ```
 
 ## Function Parameters
@@ -21,7 +21,8 @@ int TTF_GetFontHinting(const TTF_Font *font);
 
 ## Return Value
 
-(int) Returns the font's current hinter value.
+([TTF_HintingFlags](TTF_HintingFlags)) Returns the font's current hinter
+value.
 
 ## Remarks
 

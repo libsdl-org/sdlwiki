@@ -10,15 +10,15 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-void TTF_SetFontStyle(TTF_Font *font, int style);
+void TTF_SetFontStyle(TTF_Font *font, TTF_FontStyleFlags style);
 ```
 
 ## Function Parameters
 
-|                        |           |                                             |
-| ---------------------- | --------- | ------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**  | the font to set a new style on.             |
-| int                    | **style** | the new style values to set, OR'd together. |
+|                                          |           |                                             |
+| ---------------------------------------- | --------- | ------------------------------------------- |
+| [TTF_Font](TTF_Font) *                   | **font**  | the font to set a new style on.             |
+| [TTF_FontStyleFlags](TTF_FontStyleFlags) | **style** | the new style values to set, OR'd together. |
 
 ## Remarks
 

@@ -43,14 +43,12 @@ bool TTF_SetFontSize(TTF_Font *font, float ptsize);                             
 bool TTF_SetFontSizeDPI(TTF_Font *font, float ptsize, int hdpi, int vdpi);                                                                 // Set font size dynamically with target resolutions, in dots per inch.
 float TTF_GetFontSize(TTF_Font *font);                                                                                                     // Get the size of a font.
 bool TTF_GetFontDPI(TTF_Font *font, int *hdpi, int *vdpi);                                                                                 // Get font target resolutions, in dots per inch.
-#define TTF_STYLE_NORMAL                                                                                                                   // Font style flags
-void TTF_SetFontStyle(TTF_Font *font, int style);                                                                                          // Set a font's current style.
-int TTF_GetFontStyle(const TTF_Font *font);                                                                                                // Query a font's current style.
+void TTF_SetFontStyle(TTF_Font *font, TTF_FontStyleFlags style);                                                                           // Set a font's current style.
+TTF_FontStyleFlags TTF_GetFontStyle(const TTF_Font *font);                                                                                 // Query a font's current style.
 bool TTF_SetFontOutline(TTF_Font *font, int outline);                                                                                      // Set a font's current outline.
 int TTF_GetFontOutline(const TTF_Font *font);                                                                                              // Query a font's current outline.
-#define TTF_HINTING_NORMAL                                                                                                                 // Hinting flags
-void TTF_SetFontHinting(TTF_Font *font, int hinting);                                                                                      // Set a font's current hinter setting.
-int TTF_GetFontHinting(const TTF_Font *font);                                                                                              // Query a font's current FreeType hinter setting.
+void TTF_SetFontHinting(TTF_Font *font, TTF_HintingFlags hinting);                                                                         // Set a font's current hinter setting.
+TTF_HintingFlags TTF_GetFontHinting(const TTF_Font *font);                                                                                 // Query a font's current FreeType hinter setting.
 void TTF_SetFontWrapAlignment(TTF_Font *font, TTF_HorizontalAlignment align);                                                              // Set a font's current wrap alignment option.
 TTF_HorizontalAlignment TTF_GetFontWrapAlignment(const TTF_Font *font);                                                                    // Query a font's current wrap alignment option.
 int TTF_GetFontHeight(const TTF_Font *font);                                                                                               // Query the total height of a font.
