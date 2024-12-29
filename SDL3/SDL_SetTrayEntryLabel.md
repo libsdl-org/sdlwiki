@@ -15,10 +15,10 @@ void SDL_SetTrayEntryLabel(SDL_TrayEntry *entry, const char *label);
 
 ## Function Parameters
 
-|                                  |           |                              |
-| -------------------------------- | --------- | ---------------------------- |
-| [SDL_TrayEntry](SDL_TrayEntry) * | **entry** | the entry to be updated.     |
-| const char *                     | **label** | the new label for the entry. |
+|                                  |           |                                                |
+| -------------------------------- | --------- | ---------------------------------------------- |
+| [SDL_TrayEntry](SDL_TrayEntry) * | **entry** | the entry to be updated.                       |
+| const char *                     | **label** | the new label for the entry in UTF-8 encoding. |
 
 ## Remarks
 

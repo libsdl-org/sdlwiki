@@ -15,10 +15,10 @@ void SDL_SetTrayTooltip(SDL_Tray *tray, const char *tooltip);
 
 ## Function Parameters
 
-|                        |             |                               |
-| ---------------------- | ----------- | ----------------------------- |
-| [SDL_Tray](SDL_Tray) * | **tray**    | the tray icon to be updated.  |
-| const char *           | **tooltip** | the new tooltip. May be NULL. |
+|                        |             |                                                 |
+| ---------------------- | ----------- | ----------------------------------------------- |
+| [SDL_Tray](SDL_Tray) * | **tray**    | the tray icon to be updated.                    |
+| const char *           | **tooltip** | the new tooltip in UTF-8 encoding. May be NULL. |
 
 ## Version
 

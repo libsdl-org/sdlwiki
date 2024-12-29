@@ -19,7 +19,7 @@ SDL_TrayEntry* SDL_InsertTrayEntryAt(SDL_TrayMenu *menu, int pos, const char *la
 | ---------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | [SDL_TrayMenu](SDL_TrayMenu) *           | **menu**  | the menu to append the entry to.                                                                                               |
 | int                                      | **pos**   | the desired position for the new entry. Entries at or following this place will be moved. If pos is -1, the entry is appended. |
-| const char *                             | **label** | the text to be displayed on the entry, or NULL for a separator.                                                                |
+| const char *                             | **label** | the text to be displayed on the entry, in UTF-8 encoding, or NULL for a separator.                                             |
 | [SDL_TrayEntryFlags](SDL_TrayEntryFlags) | **flags** | a combination of flags, some of which are mandatory.                                                                           |
 
 ## Return Value

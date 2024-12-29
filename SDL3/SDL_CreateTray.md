@@ -15,10 +15,10 @@ SDL_Tray* SDL_CreateTray(SDL_Surface *icon, const char *tooltip);
 
 ## Function Parameters
 
-|                              |             |                                                                                                        |
-| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------ |
-| [SDL_Surface](SDL_Surface) * | **icon**    | a surface to be used as icon. May be NULL.                                                             |
-| const char *                 | **tooltip** | a tooltip to be displayed when the mouse hovers the icon. Not supported on all platforms. May be NULL. |
+|                              |             |                                                                                                                          |
+| ---------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [SDL_Surface](SDL_Surface) * | **icon**    | a surface to be used as icon. May be NULL.                                                                               |
+| const char *                 | **tooltip** | a tooltip to be displayed when the mouse hovers the icon in UTF-8 encoding. Not supported on all platforms. May be NULL. |
 
 ## Return Value
 

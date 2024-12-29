@@ -21,7 +21,7 @@ const char* SDL_GetTrayEntryLabel(SDL_TrayEntry *entry);
 
 ## Return Value
 
-(const char *) Returns the label of the entry.
+(const char *) Returns the label of the entry in UTF-8 encoding.
 
 ## Remarks
 
