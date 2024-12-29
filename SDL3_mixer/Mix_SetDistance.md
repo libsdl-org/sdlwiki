@@ -48,10 +48,6 @@ mixed stream before passing it on to the audio device.
 
 This uses the [Mix_RegisterEffect](Mix_RegisterEffect)() API internally.
 
-Note that unlike most SDL and SDL_mixer functions, this function returns
-zero if there's an error, not on success. We apologize for the API design
-inconsistency here.
-
 ## Version
 
 This function is available since SDL_mixer 3.0.0.

@@ -33,10 +33,6 @@ This function replaces any previously-specified paths.
 
 Passing a NULL path will remove any previously-specified paths.
 
-Note that unlike most SDL and SDL_mixer functions, this function returns
-zero if there's an error, not on success. We apologize for the API design
-inconsistency here.
-
 ## Version
 
 This function is available since SDL_mixer 3.0.0.

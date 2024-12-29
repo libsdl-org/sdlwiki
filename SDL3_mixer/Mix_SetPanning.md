@@ -53,10 +53,6 @@ Note that an audio device in mono mode is a no-op, but this call will
 return successful in that case. Error messages can be retrieved from
 [Mix_GetError](Mix_GetError)().
 
-Note that unlike most SDL and SDL_mixer functions, this function returns
-zero if there's an error, not on success. We apologize for the API design
-inconsistency here.
-
 ## Version
 
 This function is available since SDL_mixer 3.0.0.

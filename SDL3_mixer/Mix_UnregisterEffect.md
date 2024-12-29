@@ -35,10 +35,6 @@ the output stream does not have an end), but they may be explicitly
 unregistered through this function by specifying
 [MIX_CHANNEL_POST](MIX_CHANNEL_POST) for a channel.
 
-Note that unlike most SDL and SDL_mixer functions, this function returns
-zero if there's an error, not on success. We apologize for the API design
-inconsistency here.
-
 ## Version
 
 This function is available since SDL_mixer 3.0.0.

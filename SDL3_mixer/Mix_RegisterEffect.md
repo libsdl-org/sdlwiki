@@ -77,10 +77,6 @@ After all these effects have finished processing, the callback registered
 through [Mix_SetPostMix](Mix_SetPostMix)() runs, and then the stream goes
 to the audio device.
 
-Note that unlike most SDL and SDL_mixer functions, this function returns
-zero if there's an error, not on success. We apologize for the API design
-inconsistency here.
-
 ## Version
 
 This function is available since SDL_mixer 3.0.0.
