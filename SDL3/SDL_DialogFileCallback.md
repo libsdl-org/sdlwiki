@@ -42,6 +42,10 @@ The filter argument is the index of the filter that was selected, or -1 if
 no filter was selected or if the platform or method doesn't support
 fetching the selected filter.
 
+In Android, the `filelist` are `content://` URIs. They should be opened
+using [SDL_IOFromFile](SDL_IOFromFile)() with appropriate modes. This
+applies both to open and save file dialog.
+
 ## Version
 
 This datatype is available since SDL 3.1.3.
