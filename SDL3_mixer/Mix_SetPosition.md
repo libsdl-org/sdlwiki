@@ -61,10 +61,6 @@ before passing it on to the audio device.
 This is a convenience wrapper over [Mix_SetDistance](Mix_SetDistance)() and
 [Mix_SetPanning](Mix_SetPanning)().
 
-Note that unlike most SDL and SDL_mixer functions, this function returns
-zero if there's an error, not on success. We apologize for the API design
-inconsistency here.
-
 ## Version
 
 This function is available since SDL_mixer 3.0.0.
