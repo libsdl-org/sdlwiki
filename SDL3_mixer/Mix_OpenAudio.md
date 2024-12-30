@@ -17,8 +17,8 @@ bool Mix_OpenAudio(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec);
 
 |                       |           |                                                         |
 | --------------------- | --------- | ------------------------------------------------------- |
-| SDL_AudioDeviceID     | **devid** | the device name to open, or 0 for a reasonable default. |
-| const SDL_AudioSpec * | **spec**  | the audio format you'd like SDL_mixer to work in.       |
+| [SDL_AudioDeviceID](/SDL3/SDL_AudioDeviceID)     | **devid** | the device name to open, or 0 for a reasonable default. |
+| const [SDL_AudioSpec](/SDL3/SDL_AudioSpec) * | **spec**  | the audio format you'd like SDL_mixer to work in.       |
 
 ## Return Value
 
