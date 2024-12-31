@@ -27,6 +27,10 @@ bool SDL_WriteStorageFile(SDL_Storage *storage, const char *path, const void *so
 (bool) Returns true if the file was written or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+If the destination file size does not exactly match the size of the source buffer for any reason, this function will return false.
+
 ## Version
 
 This function is available since SDL 3.1.3.
