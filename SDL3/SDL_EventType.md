@@ -141,6 +141,7 @@ typedef enum SDL_EventType
     SDL_EVENT_FINGER_DOWN      = 0x700,
     SDL_EVENT_FINGER_UP,
     SDL_EVENT_FINGER_MOTION,
+    SDL_EVENT_FINGER_CANCELED,
 
     /* 0x800, 0x801, and 0x802 were the Gesture events from SDL2. Do not reuse these values! sdl2-compat needs them! */
 
