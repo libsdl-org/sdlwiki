@@ -27,6 +27,10 @@ bool SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destinati
 (bool) Returns true if the file was read or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The value of `length` must match the length of the file exactly; call [SDL_GetStorageFileSize](SDL_GetStorageFileSize)() to get this value. This behavior may be related in a future release.
+
 ## Version
 
 This function is available since SDL 3.1.3.
