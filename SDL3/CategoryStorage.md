@@ -49,7 +49,7 @@ void WriteSave(void)
 
 Going over the bullet points again:
 
-1. **What to Access:** This code accesses a global filesystem; game data and saves are all presumed to be in the game's installation folder.
+1. **What to Access:** This code accesses a global filesystem; game data and saves are all presumed to be in the current working directory (which may or may not be the game's installation folder!).
 2. **How to Access:** This code assumes that content paths are writeable, and that save data is also writeable despite being in the same location as the game data.
 3. **When to Access:** This code assumes that they can be called at any time, since the filesystem is always accessible and has no limits on how long the filesystem is being accessed.
 
