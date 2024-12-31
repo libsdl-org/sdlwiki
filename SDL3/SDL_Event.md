@@ -178,7 +178,7 @@ to claim a unique number that other parts of your app won't also claim.
 | SDL_EVENT_QUIT                                                                           | [SDL_QuitEvent](SDL_QuitEvent)                         | `quit`            |
 | SDL_EVENT_SENSOR_UPDATE                                                                  | [SDL_SensorEvent](SDL_SensorEvent)                     | `sensor`          |
 | SDL_EVENT_TEXT_EDITING                                                                   | [SDL_TextEditingEvent](SDL_TextEditingEvent)           | `edit`            |
-| SDL_EVENT_TEXT_EDITING_CANDIDATES                                                        | [SDL_TextEditingCandidatesEvent](SDL_TextEditingEvent) | `edit_candidates` |
+| SDL_EVENT_TEXT_EDITING_CANDIDATES                                                        | [SDL_TextEditingCandidatesEvent](SDL_TextEditingCandidatesEvent) | `edit_candidates` |
 | SDL_EVENT_TEXT_INPUT                                                                     | [SDL_TextInputEvent](SDL_TextInputEvent)               | `text`            |
 | SDL_EVENT_USER                                                                           | [SDL_UserEvent](SDL_UserEvent)                         | `user`            |
 | SDL_EVENT_WINDOW_RESIZED, SDL_EVENT_WINDOW_MOVED, etc                                    | [SDL_WindowEvent](SDL_WindowEvent)                     | `window`          |
