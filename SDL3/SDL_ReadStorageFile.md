@@ -29,7 +29,7 @@ bool SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destinati
 
 ## Remarks
 
-The value of `length` must match the length of the file exactly; call [SDL_GetStorageFileSize](SDL_GetStorageFileSize)() to get this value. This behavior may be related in a future release.
+The value of `length` must match the length of the file exactly; call [SDL_GetStorageFileSize](SDL_GetStorageFileSize)() to get this value. This behavior may be relaxed in a future release.
 
 ## Version
 
