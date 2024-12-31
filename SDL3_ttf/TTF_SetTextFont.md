@@ -20,6 +20,11 @@ bool TTF_SetTextFont(TTF_Text *text, TTF_Font *font);
 | [TTF_Text](TTF_Text) * | **text** | the [TTF_Text](TTF_Text) to modify. |
 | [TTF_Font](TTF_Font) * | **font** | the font to use, may be NULL.       |
 
+## Return Value
+
+(bool) Returns false if the text pointer is null; otherwise, true. call
+SDL_GetError() for more information.
+
 ## Remarks
 
 When a text object has a font, any changes to the font will automatically
