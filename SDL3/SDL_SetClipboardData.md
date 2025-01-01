@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 ## Syntax
 
 ```c
-bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardCleanupCallback cleanup, void *userdata, const char **mime_types, size_t num_mime_types);
+bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardCleanupCallback cleanup, void *userdata, const char * const *mime_types, size_t num_mime_types);
 ```
 
 ## Function Parameters
@@ -20,7 +20,7 @@ bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardClean
 | [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)       | **callback**       | a function pointer to the function that provides the clipboard data.  |
 | [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback) | **cleanup**        | a function pointer to the function that cleans up the clipboard data. |
 | void *                                                       | **userdata**       | an opaque pointer that will be forwarded to the callbacks.            |
-| const char **                                                | **mime_types**     | a list of mime-types that are being offered.                          |
+| const char * const *                                         | **mime_types**     | a list of mime-types that are being offered.                          |
 | size_t                                                       | **num_mime_types** | the number of mime-types in the mime_types list.                      |
 
 ## Return Value
