@@ -10,6 +10,8 @@ And, of course, all of the examples are included in SDL's source tree, [in the "
 
 We cleaned this page out for SDL3, so if you come across good content on the Internet, please click the `[edit]` link at the bottom of the page and add it!
 
+- [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
+
 ## Videos
 
 - [Porting ioquake3 from SDL2 to SDL3](https://youtu.be/i3yVqWYFbCE): Covers a basic port from SDL2.
