@@ -90,8 +90,8 @@ under these common scenarios:
   validated, so an error occurring elsewhere in the program may result in
   missing/corrupted save data
 
-When using, [SDL_Storage](SDL_Storage), these types of problems are
-virtually impossible to trip over:
+When using the Storage API, these types of problems are virtually impossible to
+trip over:
 
 ```
 void ReadGameData(void)
@@ -173,7 +173,7 @@ void WriteSave(void)
 }
 ```
 
-Note the improvements that [SDL_Storage](SDL_Storage) makes:
+Note the improvements that the Storage API makes:
 
 1. **What to Access:** This code explicitly reads from a title or user
 storage device based on the context of the function.
@@ -187,8 +187,7 @@ to, and closes it when it is finished working with the filesystem.
 The result is an application that is significantly more robust against the
 increasing demands of platforms and their filesystems!
 
-A publicly available example of an
-[SDL_Storage](SDL_Storage) backend is the
+A publicly available example of a Storage backend is the
 [Steam Cloud](https://partner.steamgames.com/doc/features/cloud)
 backend - you can initialize Steamworks when starting the program, and then
 SDL will recognize that Steamworks is initialized and automatically use
