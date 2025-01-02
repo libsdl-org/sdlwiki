@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_BlitSurface
 
-Performs a fast blit from the source surface to the destination surface.
+Performs a fast blit from the source surface to the destination surface with clipping.
 
 ## Header File
 
@@ -29,9 +29,10 @@ bool SDL_BlitSurface(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst
 
 ## Remarks
 
-This assumes that the source and destination rectangles are the same size.
 If either `srcrect` or `dstrect` are NULL, the entire surface (`src` or
-`dst`) is copied. The final blit rectangles are saved in `srcrect` and
+`dst`) is copied while ensuring clipping to `dst->clip_rect`.
+
+The final blit rectangles are saved in `srcrect` and
 `dstrect` after all clipping is performed.
 
 The blit function should not be called on a locked surface.
