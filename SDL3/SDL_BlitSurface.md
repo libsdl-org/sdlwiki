@@ -32,8 +32,8 @@ bool SDL_BlitSurface(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst
 If either `srcrect` or `dstrect` are NULL, the entire surface (`src` or
 `dst`) is copied while ensuring clipping to `dst->clip_rect`.
 
-The final blit rectangles are saved in `srcrect` and
-`dstrect` after all clipping is performed.
+The final blit rectangles are saved in `srcrect` and `dstrect` after all
+clipping is performed.
 
 The blit function should not be called on a locked surface.
 

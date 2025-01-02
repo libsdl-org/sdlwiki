@@ -16,7 +16,7 @@ struct SDL_Surface
     SDL_PixelFormat format;     /**< The format of the surface, read-only */
     int w;                      /**< The width of the surface, read-only. */
     int h;                      /**< The height of the surface, read-only. */
-    int pitch;                  /**< The distance in bytes between rows of pixels, sometimes called stride, read-only */
+    int pitch;                  /**< The distance in bytes between rows of pixels, read-only */
     void *pixels;               /**< A pointer to the pixels of the surface, the pixels are writeable if non-NULL */
 
     int refcount;               /**< Application reference count, used when freeing surface */
