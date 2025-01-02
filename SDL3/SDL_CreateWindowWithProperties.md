@@ -81,12 +81,12 @@ These are the supported properties:
   x position of the window, or
   [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), defaults to
   [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED). This is relative to
-  the parent for windows with the "parent" property set.
+  the parent for windows with the "tooltip" or "menu" property set.
 - [`SDL_PROP_WINDOW_CREATE_Y_NUMBER`](SDL_PROP_WINDOW_CREATE_Y_NUMBER): the
   y position of the window, or
   [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), defaults to
   [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED). This is relative to
-  the parent for windows with the "parent" property set.
+  the parent for windows with the "tooltip" or "menu" property set.
 
 These are additional supported properties on macOS:
 
