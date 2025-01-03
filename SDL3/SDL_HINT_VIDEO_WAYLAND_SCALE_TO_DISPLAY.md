@@ -27,6 +27,8 @@ desktops were not designed to accommodate:
 
 - Rounding errors can result with odd window sizes and/or desktop scales,
   which can cause the window contents to appear slightly blurry.
+- Positioning the window may be imprecise due to unit conversions and
+  rounding.
 - The window may be unusably small on scaled desktops.
 - The window may jump in size when moving between displays of different
   scale factors.
