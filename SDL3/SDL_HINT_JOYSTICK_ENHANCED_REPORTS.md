@@ -34,7 +34,7 @@ This hint can be enabled anytime.
 
 ## Version
 
-This hint is available since SDL 3.1.3.
+This hint is available since SDL 3.1.8.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
