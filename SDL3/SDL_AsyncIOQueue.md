@@ -22,7 +22,7 @@ order they complete.
 
 ## Version
 
-This struct is available since SDL 3.0.0.
+This struct is available since SDL 3.2.0.
 
 ## See Also
 
