@@ -38,3 +38,4 @@ This struct is available since SDL 3.1.3.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents), [CategoryPen](CategoryPen)
 
+
