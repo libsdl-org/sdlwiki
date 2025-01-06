@@ -159,3 +159,4 @@ while (!quit_the_app) {
 }
 ```
 
+Note that [SDL_GetKeyName](SDL_GetKeyName) only returns uppercase characters, which is appropriate for showing a user a "press the button with this symbol on it" message.
