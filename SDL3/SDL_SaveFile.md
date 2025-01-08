@@ -17,7 +17,7 @@ bool SDL_SaveFile(const char *file, const void *data, size_t datasize);
 
 |              |              |                                                                             |
 | ------------ | ------------ | --------------------------------------------------------------------------- |
-| const char * | **file**     | the path to read all available data from.                                   |
+| const char * | **file**     | the path to write all available data into.                                  |
 | const void * | **data**     | the data to be written. If datasize is 0, may be NULL or a invalid pointer. |
 | size_t       | **datasize** | the number of bytes to be written.                                          |
 
