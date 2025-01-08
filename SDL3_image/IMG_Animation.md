@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_Animation
 
-Animated image support Currently only animated GIFs are supported.
+Animated image support
 
 ## Header File
 
@@ -18,6 +18,10 @@ typedef struct IMG_Animation
 	int *delays;
 } IMG_Animation;
 ```
+
+## Remarks
+
+Currently only animated GIFs and WEBP images are supported.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySDLImage](CategorySDLImage)
