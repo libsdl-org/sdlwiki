@@ -30,7 +30,7 @@ outside of SDL.
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.1.8.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)

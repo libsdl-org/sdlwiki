@@ -47,7 +47,7 @@ The minimum value of allowed frames in flight is 1, and the maximum is 3.
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.1.8.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

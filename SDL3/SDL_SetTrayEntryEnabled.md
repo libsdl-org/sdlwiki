@@ -22,7 +22,7 @@ void SDL_SetTrayEntryEnabled(SDL_TrayEntry *entry, bool enabled);
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.1.8.
 
 ## See Also
 

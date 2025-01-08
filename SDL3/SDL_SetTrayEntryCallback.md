@@ -23,7 +23,7 @@ void SDL_SetTrayEntryCallback(SDL_TrayEntry *entry, SDL_TrayCallback callback, v
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.1.8.
 
 ## See Also
 

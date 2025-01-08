@@ -26,7 +26,7 @@ or [SDL_THREAD_UNKNOWN](SDL_THREAD_UNKNOWN) if the thread isn't valid.
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.1.8.
 
 ## See Also
 

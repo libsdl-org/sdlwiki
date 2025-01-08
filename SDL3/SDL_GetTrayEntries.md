@@ -28,7 +28,7 @@ function that inserts or deletes entries in the menu is called.
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.1.8.
 
 ## See Also
 
