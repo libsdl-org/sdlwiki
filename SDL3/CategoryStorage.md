@@ -25,7 +25,7 @@ limits to how long you have access to a particular device.
 
 Consider the following example:
 
-```
+```c
 void ReadGameData(void)
 {
     extern char** fileNames;
@@ -93,7 +93,7 @@ under these common scenarios:
 When using, [SDL_Storage](SDL_Storage), these types of problems are
 virtually impossible to trip over:
 
-```
+```c
 void ReadGameData(void)
 {
     extern char** fileNames;
