@@ -128,7 +128,7 @@ The Android archive allows use of SDL3 in your Android project, without needing 
 For integration with CMake/ndk-build, it uses [prefab](https://google.github.io/prefab/).
 
 Copy the archive to a `app/libs` directory in your project and add the following to `app/gradle.build`:
-```gradle
+```
 android {
     /* ... */
     buildFeatures {
@@ -142,17 +142,17 @@ dependencies {
 ```
 
 If you use CMake, add the following to your CMakeLists.txt:
-```cmake
+```
 find_package(SDL3 REQUIRED CONFIG)
 target_link_libraries(yourgame PRIVATE SDL3::SDL3)
 ```
 
 If you use ndk-build, add the following before `include $(BUILD_SHARED_LIBRARY)` to your `Android.mk`:
-```mk
+```
 LOCAL_SHARED_LIBARARIES := SDL3 SDL3-Headers
 ```
 And add the following at the bottom:
-```mk
+```
 # https://google.github.io/prefab/build-systems.html
 # Add the prefab modules to the import path.
 $(call import-add-path,/out)
@@ -178,17 +178,18 @@ under src matching your package, e.g.
 
 Here's an example of a minimal class file:
 
-```java
-package com.gamemaker.game;
+    --- MyGame.java --------------------------
+    package com.gamemaker.game;
 
-import org.libsdl.app.SDLActivity;
+    import org.libsdl.app.SDLActivity;
 
-/**
- * A sample wrapper class that just calls SDLActivity
- */
+    /**
+     * A sample wrapper class that just calls SDLActivity
+     */
 
-public class MyGame extends SDLActivity { }
-```
+    public class MyGame extends SDLActivity { }
+
+    ------------------------------------------
 
 Then replace "SDLActivity" in AndroidManifest.xml with the name of your
 class, .e.g. "MyGame"
@@ -241,64 +242,63 @@ not give you any processing time after the events are delivered.
 
 e.g.
 
-```c
-int HandleAppEvents(void *userdata, SDL_Event *event)
-{
-	switch (event->type)
-	{
-	case SDL_EVENT_TERMINATING:
-		/* Terminate the app.
-		   Shut everything down before returning from this function.
-		*/
-		return 0;
-	case SDL_EVENT_LOW_MEMORY:
-		/* You will get this when your app is paused and iOS wants more memory.
-		   Release as much memory as possible.
-		*/
-		return 0;
-	case SDL_EVENT_WILL_ENTER_BACKGROUND:
-		/* Prepare your app to go into the background.  Stop loops, etc.
-		   This gets called when the user hits the home button, or gets a call.
+    int HandleAppEvents(void *userdata, SDL_Event *event)
+    {
+        switch (event->type)
+        {
+        case SDL_EVENT_TERMINATING:
+            /* Terminate the app.
+               Shut everything down before returning from this function.
+            */
+            return 0;
+        case SDL_EVENT_LOW_MEMORY:
+            /* You will get this when your app is paused and iOS wants more memory.
+               Release as much memory as possible.
+            */
+            return 0;
+        case SDL_EVENT_WILL_ENTER_BACKGROUND:
+            /* Prepare your app to go into the background.  Stop loops, etc.
+               This gets called when the user hits the home button, or gets a call.
 
-		   You should not make any OpenGL graphics calls or use the rendering API,
-		   in addition, you should set the render target to NULL, if you're using
-		   it, e.g. call SDL_SetRenderTarget(renderer, NULL).
-		*/
-		return 0;
-	case SDL_EVENT_DID_ENTER_BACKGROUND:
-		/* Your app is NOT active at this point. */
-		return 0;
-	case SDL_EVENT_WILL_ENTER_FOREGROUND:
-		/* This call happens when your app is coming back to the foreground.
-		   Restore all your state here.
-		*/
-		return 0;
-	case SDL_EVENT_DID_ENTER_FOREGROUND:
-		/* Restart your loops here.
-		   Your app is interactive and getting CPU again.
+               You should not make any OpenGL graphics calls or use the rendering API,
+               in addition, you should set the render target to NULL, if you're using
+               it, e.g. call SDL_SetRenderTarget(renderer, NULL).
+            */
+            return 0;
+        case SDL_EVENT_DID_ENTER_BACKGROUND:
+            /* Your app is NOT active at this point. */
+            return 0;
+        case SDL_EVENT_WILL_ENTER_FOREGROUND:
+            /* This call happens when your app is coming back to the foreground.
+               Restore all your state here.
+            */
+            return 0;
+        case SDL_EVENT_DID_ENTER_FOREGROUND:
+            /* Restart your loops here.
+               Your app is interactive and getting CPU again.
 
-		   You have access to the OpenGL context or rendering API at this point.
-		   However, there's a chance (on older hardware, or on systems under heavy load),
-		   where the graphics context can not be restored. You should listen for the
-		   event SDL_EVENT_RENDER_DEVICE_RESET and recreate your OpenGL context and
-		   restore your textures when you get it, or quit the app.
-		*/
-		return 0;
-	default:
-		/* No special processing, add it to the event queue */
-		return 1;
-	}
-}
+               You have access to the OpenGL context or rendering API at this point.
+               However, there's a chance (on older hardware, or on systems under heavy load),
+               where the graphics context can not be restored. You should listen for the
+               event SDL_EVENT_RENDER_DEVICE_RESET and recreate your OpenGL context and
+               restore your textures when you get it, or quit the app.
+            */
+            return 0;
+        default:
+            /* No special processing, add it to the event queue */
+            return 1;
+        }
+    }
 
-int main(int argc, char *argv[])
-{
-	SDL_SetEventFilter(HandleAppEvents, NULL);
+    int main(int argc, char *argv[])
+    {
+        SDL_SetEventFilter(HandleAppEvents, NULL);
 
-	... run your main loop
+        ... run your main loop
 
-	return 0;
-}
-```
+        return 0;
+    }
+
 
 Note that if you are using main callbacks instead of a standard C main() function,
 your SDL_AppEvent() callback will run as these events arrive and you do not need to
