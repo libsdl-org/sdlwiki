@@ -43,6 +43,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_atoi](SDL_atoi)
 - [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)
 - [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
+- [SDL_AudioStreamDevicePaused](SDL_AudioStreamDevicePaused)
 - [SDL_BeginGPUComputePass](SDL_BeginGPUComputePass)
 - [SDL_BeginGPUCopyPass](SDL_BeginGPUCopyPass)
 - [SDL_BeginGPURenderPass](SDL_BeginGPURenderPass)
