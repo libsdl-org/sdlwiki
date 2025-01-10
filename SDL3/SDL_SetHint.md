@@ -40,6 +40,27 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.1.3.
 
+## Code Examples
+
+```c
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
+
+int main(int argc, char* argv[])
+{
+    // Each hint describes when it should be set, this one should be set before SDL is initialized.
+    SDL_SetHint(SDL_HINT_APP_NAME, "My Game 2: The Revenge");
+
+    SDL_Init(SDL_INIT_VIDEO);
+
+    // ...
+
+    SDL_Quit();
+    return 0;
+}
+
+```
+
 ## See Also
 
 - [SDL_GetHint](SDL_GetHint)
