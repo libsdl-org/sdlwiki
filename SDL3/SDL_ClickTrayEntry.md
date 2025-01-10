@@ -21,7 +21,7 @@ void SDL_ClickTrayEntry(SDL_TrayEntry *entry);
 
 ## Version
 
-This function is available since SDL 3.1.9.
+This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)
