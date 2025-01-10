@@ -87,6 +87,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_ClearError](SDL_ClearError)
 - [SDL_ClearProperty](SDL_ClearProperty)
 - [SDL_ClearSurface](SDL_ClearSurface)
+- [SDL_ClickTrayEntry](SDL_ClickTrayEntry)
 - [SDL_CloseAsyncIO](SDL_CloseAsyncIO)
 - [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
 - [SDL_CloseCamera](SDL_CloseCamera)
