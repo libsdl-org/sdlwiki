@@ -4,7 +4,7 @@ The best place to find simple SDL3 tutorials at the moment is [examples.libsdl.o
 
 The examples website runs each program directly in the web browser, and has a popup tab to show their source code, with all symbols linked to their wiki pages for easy research.
 
-And, of course, all of the examples are included in SDL's source tree, [in the "examples" directory](https://github.com/libsdl-org/SDL/tree/main/examples), for you to tinker with and explore.
+And, of course, all of the examples are included in SDL's source tree, in the [examples directory](https://github.com/libsdl-org/SDL/tree/main/examples), for you to tinker with and explore.
 
 ## Links welcome!
 
