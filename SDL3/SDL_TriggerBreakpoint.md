@@ -25,8 +25,8 @@ the same reason.
 
 If the program is not running under a debugger,
 [SDL_TriggerBreakpoint](SDL_TriggerBreakpoint) will likely terminate the
-app, possibly without warning. If the current platform isn't supported (SDL
-doesn't know how to trigger a breakpoint), this macro does nothing.
+app, possibly without warning. If the current platform isn't supported,
+this macro is left undefined.
 
 ## Thread Safety
 
