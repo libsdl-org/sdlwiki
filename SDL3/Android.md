@@ -50,7 +50,7 @@ cd /usr/src/SDL3/build-scripts/
 ```bash
 cd /usr/src/SDL3/build/org.libsdl.testgles/
 ./gradlew installDebug
-```bash
+```
 
 Notes:
 
