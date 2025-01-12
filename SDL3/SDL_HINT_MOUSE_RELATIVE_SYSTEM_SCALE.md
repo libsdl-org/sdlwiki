@@ -23,7 +23,7 @@ The variable can be set to the following values:
 
 If
 [SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE](SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE)
-is set, that will apply before the system speed scale.
+is set, that will be applied after system speed scale.
 
 This hint can be set anytime.
 
