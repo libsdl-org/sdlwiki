@@ -28,6 +28,11 @@ void SDL_SetGPUTextureName(
 
 Useful for debugging.
 
+## Thread Safety
+
+This function is not thread safe, you must synchronize calls to this
+function.
+
 ## Version
 
 This function is available since SDL 3.1.3.
