@@ -16,3 +16,7 @@ We cleaned this page out for SDL3, so if you come across good content on the Int
 
 - [Porting ioquake3 from SDL2 to SDL3](https://youtu.be/i3yVqWYFbCE): Covers a basic port from SDL2.
 - [Porting DirkSimple from SDL2 to SDL3](https://youtu.be/V_MWXDr3Nu4): Basic port, new audio subsystem features, SDL_EnumerateDirectory, main callbacks, emscripten port.
+
+## Tutorials
+
+- [LazyFoo SDL3 Tutorials](https://lazyfoo.net/tutorials/SDL3/index.php): Tutorial series on SDL3. ( Tutorials may be updated after SDL3 stable release)
