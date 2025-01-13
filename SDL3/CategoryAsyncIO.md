@@ -46,7 +46,7 @@ pool that will manage otherwise-synchronous loads without blocking the app.
 
 ## Best Practices
 
-Simple non-blocking i/o--for an app that just wants to pick up data
+Simple non-blocking I/O--for an app that just wants to pick up data
 whenever it's ready without losing framerate waiting on disks to spin--can
 use whatever pattern works well for the program. In this case, simply call
 [SDL_ReadAsyncIO](SDL_ReadAsyncIO), or maybe
@@ -54,7 +54,7 @@ use whatever pattern works well for the program. In this case, simply call
 [SDL_GetAsyncIOResult](SDL_GetAsyncIOResult) to check for any completed
 tasks and deal with the data as it arrives.
 
-If two separate pieces of the same program need their own i/o, it is legal
+If two separate pieces of the same program need their own I/O, it is legal
 for each to create their own queue. This will prevent either piece from
 accidentally consuming the other's completed tasks. Each queue does require
 some amount of resources, but it is not an overwhelming cost. Do not make a
@@ -63,7 +63,7 @@ queue. They will be reported in order of completion, not in the order they
 were submitted, so it doesn't generally matter what order tasks are
 started.
 
-One async i/o queue can be shared by multiple threads, or one thread can
+One async I/O queue can be shared by multiple threads, or one thread can
 have more than one queue, but the most efficient way--if ruthless
 efficiency is the goal--is to have one queue per thread, with multiple
 threads working in parallel, and attempt to keep each queue loaded with
