@@ -90,7 +90,7 @@ under these common scenarios:
   validated, so an error occurring elsewhere in the program may result in
   missing/corrupted save data
 
-When using, [SDL_Storage](SDL_Storage), these types of problems are
+When using [SDL_Storage](SDL_Storage), these types of problems are
 virtually impossible to trip over:
 
 ```c
