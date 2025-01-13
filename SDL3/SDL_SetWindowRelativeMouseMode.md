@@ -32,6 +32,12 @@ is hidden, the mouse position is constrained to the window, and SDL will
 report continuous relative mouse motion even if the mouse is at the edge of
 the window.
 
+If you'd like to keep the mouse position fixed while in relative mode you
+can use [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)(). If you'd like
+the cursor to be at a specific location when relative mode ends, you should
+use [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)() before disabling
+relative mode.
+
 This function will flush any pending mouse motion for this window.
 
 ## Thread Safety
