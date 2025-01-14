@@ -15,10 +15,10 @@ void SDL_SetTrayEntryEnabled(SDL_TrayEntry *entry, bool enabled);
 
 ## Function Parameters
 
-|                                  |             |                                                                                        |
-| -------------------------------- | ----------- | -------------------------------------------------------------------------------------- |
-| [SDL_TrayEntry](SDL_TrayEntry) * | **entry**   | the entry to be updated.                                                               |
-| bool                             | **enabled** | [SDL_TRUE](SDL_TRUE) if the entry should be enabled; [SDL_FALSE](SDL_FALSE) otherwise. |
+|                                  |             |                                                       |
+| -------------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_TrayEntry](SDL_TrayEntry) * | **entry**   | the entry to be updated.                              |
+| bool                             | **enabled** | true if the entry should be enabled; false otherwise. |
 
 ## Version
 

@@ -21,8 +21,7 @@ bool SDL_GetTrayEntryChecked(SDL_TrayEntry *entry);
 
 ## Return Value
 
-(bool) Returns [SDL_TRUE](SDL_TRUE) if the entry is checked;
-[SDL_FALSE](SDL_FALSE) otherwise.
+(bool) Returns true if the entry is checked; false otherwise.
 
 ## Remarks
 

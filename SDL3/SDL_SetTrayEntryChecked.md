@@ -15,10 +15,10 @@ void SDL_SetTrayEntryChecked(SDL_TrayEntry *entry, bool checked);
 
 ## Function Parameters
 
-|                                  |             |                                                                                        |
-| -------------------------------- | ----------- | -------------------------------------------------------------------------------------- |
-| [SDL_TrayEntry](SDL_TrayEntry) * | **entry**   | the entry to be updated.                                                               |
-| bool                             | **checked** | [SDL_TRUE](SDL_TRUE) if the entry should be checked; [SDL_FALSE](SDL_FALSE) otherwise. |
+|                                  |             |                                                       |
+| -------------------------------- | ----------- | ----------------------------------------------------- |
+| [SDL_TrayEntry](SDL_TrayEntry) * | **entry**   | the entry to be updated.                              |
+| bool                             | **checked** | true if the entry should be checked; false otherwise. |
 
 ## Remarks
 

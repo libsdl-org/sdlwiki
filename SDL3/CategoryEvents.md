@@ -18,7 +18,7 @@ using the main callbacks, events are provided one at a time in calls to
 
 There is other forms of control, too: [SDL_PeepEvents](SDL_PeepEvents)()
 has more functionality at the cost of more complexity, and
-[SDL_WaitEvents](SDL_WaitEvents)() can block the process until something
+[SDL_WaitEvent](SDL_WaitEvent)() can block the process until something
 interesting happens, which might be beneficial for certain types of
 programs on low-power hardware. One may also call
 [SDL_AddEventWatch](SDL_AddEventWatch)() to set a callback when new events

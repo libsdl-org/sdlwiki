@@ -25,7 +25,7 @@ SDL_TrayMenu* SDL_GetTraySubmenu(SDL_TrayEntry *entry);
 
 ## Remarks
 
-You should have called [SDL_CreateTraySubenu](SDL_CreateTraySubenu)() on
+You should have called [SDL_CreateTraySubmenu](SDL_CreateTraySubmenu)() on
 the entry object. This function allows you to fetch it again later.
 
 This function does the same thing as [SDL_GetTrayMenu](SDL_GetTrayMenu)(),
