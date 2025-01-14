@@ -42,6 +42,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.1.3.
 
+## See Also
+
+- [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+
+
 ## Code examples
 
 ```c
@@ -52,10 +57,6 @@ for (int i = 0; i < SDL_GetNumRenderDrivers(); i++) {
     SDL_Log("%d. %s", i + 1, SDL_GetRenderDriver(i));
 }
 ```
-
-## See Also
-
-- [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
