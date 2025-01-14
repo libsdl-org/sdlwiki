@@ -40,13 +40,18 @@ SDL GPU API, you may refer
 [this blog post](https://moonside.games/posts/sdl-gpu-concepts-cycling/)
 .
 
+There are optional properties that can be provided through `props`. These
+are the supported properties:
+
+- [`SDL_PROP_GPU_BUFFER_CREATE_NAME_STRING`](SDL_PROP_GPU_BUFFER_CREATE_NAME_STRING):
+  a name that can be displayed in debugging tools.
+
 ## Version
 
 This function is available since SDL 3.1.3.
 
 ## See Also
 
-- [SDL_SetGPUBufferName](SDL_SetGPUBufferName)
 - [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)
 - [SDL_DownloadFromGPUBuffer](SDL_DownloadFromGPUBuffer)
 - [SDL_CopyGPUBufferToBuffer](SDL_CopyGPUBufferToBuffer)

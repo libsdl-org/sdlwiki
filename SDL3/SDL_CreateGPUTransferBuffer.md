@@ -33,6 +33,12 @@ for more information.
 Download buffers can be particularly expensive to create, so it is good
 practice to reuse them if data will be downloaded regularly.
 
+There are optional properties that can be provided through `props`. These
+are the supported properties:
+
+- [`SDL_PROP_GPU_TRANSFERBUFFER_CREATE_NAME_STRING`](SDL_PROP_GPU_TRANSFERBUFFER_CREATE_NAME_STRING):
+  a name that can be displayed in debugging tools.
+
 ## Version
 
 This function is available since SDL 3.1.3.

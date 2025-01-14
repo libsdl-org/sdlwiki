@@ -20,7 +20,6 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
-- [SDL_SetGPUTextureName](SDL_SetGPUTextureName)
 - [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
 - [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture)
 - [SDL_CopyGPUTextureToTexture](SDL_CopyGPUTextureToTexture)

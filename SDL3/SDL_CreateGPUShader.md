@@ -84,6 +84,12 @@ prefix to something other than TEXCOORD you can use
 with
 [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)().
 
+There are optional properties that can be provided through `props`. These
+are the supported properties:
+
+- [`SDL_PROP_GPU_SHADER_CREATE_NAME_STRING`](SDL_PROP_GPU_SHADER_CREATE_NAME_STRING):
+  a name that can be displayed in debugging tools.
+
 ## Version
 
 This function is available since SDL 3.1.3.

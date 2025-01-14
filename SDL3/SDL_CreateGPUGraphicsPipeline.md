@@ -28,6 +28,14 @@ SDL_GPUGraphicsPipeline* SDL_CreateGPUGraphicsPipeline(
 pipeline object on success, or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+There are optional properties that can be provided through `props`. These
+are the supported properties:
+
+- [`SDL_PROP_GPU_GRAPHICSPIPELINE_CREATE_NAME_STRING`](SDL_PROP_GPU_GRAPHICSPIPELINE_CREATE_NAME_STRING):
+  a name that can be displayed in debugging tools.
+
 ## Version
 
 This function is available since SDL 3.1.3.

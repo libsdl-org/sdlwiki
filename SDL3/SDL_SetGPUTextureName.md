@@ -26,16 +26,23 @@ void SDL_SetGPUTextureName(
 
 ## Remarks
 
-Useful for debugging.
+You should use
+[SDL_PROP_GPU_TEXTURE_CREATE_NAME_STRING](SDL_PROP_GPU_TEXTURE_CREATE_NAME_STRING)
+with [SDL_CreateGPUTexture](SDL_CreateGPUTexture) instead of this function
+to avoid thread safety issues.
 
 ## Thread Safety
 
-This function is not thread safe, you must synchronize calls to this
-function.
+This function is not thread safe, you must make sure the texture is not
+simultaneously used by any other thread.
 
 ## Version
 
 This function is available since SDL 3.1.3.
+
+## See Also
+
+- [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

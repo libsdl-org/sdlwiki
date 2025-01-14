@@ -25,7 +25,6 @@ This struct is available since SDL 3.1.3
 ## See Also
 
 - [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer)
-- [SDL_SetGPUBufferName](SDL_SetGPUBufferName)
 - [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)
 - [SDL_DownloadFromGPUBuffer](SDL_DownloadFromGPUBuffer)
 - [SDL_CopyGPUBufferToBuffer](SDL_CopyGPUBufferToBuffer)

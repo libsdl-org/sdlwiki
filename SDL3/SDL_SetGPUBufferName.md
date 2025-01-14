@@ -26,16 +26,23 @@ void SDL_SetGPUBufferName(
 
 ## Remarks
 
-Useful for debugging.
+You should use
+[SDL_PROP_GPU_BUFFER_CREATE_NAME_STRING](SDL_PROP_GPU_BUFFER_CREATE_NAME_STRING)
+with [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer) instead of this function to
+avoid thread safety issues.
 
 ## Thread Safety
 
-This function is not thread safe, you must synchronize calls to this
-function.
+This function is not thread safe, you must make sure the buffer is not
+simultaneously used by any other thread.
 
 ## Version
 
 This function is available since SDL 3.1.3.
+
+## See Also
+
+- [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
