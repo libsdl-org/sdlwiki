@@ -59,6 +59,13 @@ stream's format, this will fail. This is a safety measure to make sure a
 race condition hasn't changed the format while this call is setting the
 channel map.
 
+Unlike attempting to change the stream's format, the output channel map on
+a stream bound to a recording device is permitted to change at any time;
+any data added to the stream after this call will have the new mapping, but
+previously-added data will still have the prior mapping. When the channel
+map doesn't match the hardware's channel layout, SDL will convert the data
+before feeding it to the device for playback.
+
 ## Thread Safety
 
 It is safe to call this function from any thread, as it holds a

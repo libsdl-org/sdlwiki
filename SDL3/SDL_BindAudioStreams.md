@@ -44,7 +44,8 @@ unbound first.
 Binding a stream to a device will set its output format for playback
 devices, and its input format for recording devices, so they match the
 device's settings. The caller is welcome to change the other end of the
-stream's format at any time.
+stream's format at any time with
+[SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)().
 
 ## Thread Safety
 

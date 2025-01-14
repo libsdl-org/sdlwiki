@@ -41,6 +41,12 @@ the end of a sound file in one format to a stream, change formats for the
 next sound file, and start putting that new data while the previous sound
 file is still queued, and everything will still play back correctly.
 
+If a stream is bound to a device, then the format of the side of the stream
+bound to a device cannot be changed (src_spec for recording devices,
+dst_spec for playback devices). Attempts to make a change to this side will
+be ignored, but this will not report an error. The other side's format can
+be changed.
+
 ## Thread Safety
 
 It is safe to call this function from any thread, as it holds a
