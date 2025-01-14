@@ -39,6 +39,10 @@ This function seeks to byte `offset`, relative to `whence`.
 
 If this stream can not seek, it will return -1.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

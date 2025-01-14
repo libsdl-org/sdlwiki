@@ -94,6 +94,10 @@ The following properties may be set at creation time by SDL:
   used some other method to access the filesystem, this property will not
   be set.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

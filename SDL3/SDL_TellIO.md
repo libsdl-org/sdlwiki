@@ -31,6 +31,10 @@ information can not be determined.
 from [`SDL_IO_SEEK_CUR`](SDL_IO_SEEK_CUR), to simplify application
 development.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

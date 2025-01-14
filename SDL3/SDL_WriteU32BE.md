@@ -30,6 +30,10 @@ bool SDL_WriteU32BE(SDL_IOStream *dst, Uint32 value);
 SDL byteswaps the data only if necessary, so the application always
 specifies native format, and the data written will be in big-endian format.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

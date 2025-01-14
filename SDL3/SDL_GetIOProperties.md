@@ -25,6 +25,10 @@ SDL_PropertiesID SDL_GetIOProperties(SDL_IOStream *context);
 success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
 information.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

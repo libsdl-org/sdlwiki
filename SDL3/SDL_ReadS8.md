@@ -34,6 +34,10 @@ is not at EOF, [SDL_GetIOStatus](SDL_GetIOStatus)() will return a different
 error value and [SDL_GetError](SDL_GetError)() will offer a human-readable
 message.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

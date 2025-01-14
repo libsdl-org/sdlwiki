@@ -38,6 +38,10 @@ etc.
 This function makes a copy of `iface` and the caller does not need to keep
 it around after this call.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

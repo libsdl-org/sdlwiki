@@ -25,6 +25,10 @@ Sint64 SDL_GetIOSize(SDL_IOStream *context);
 [SDL_IOStream](SDL_IOStream) on success or a negative error code on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

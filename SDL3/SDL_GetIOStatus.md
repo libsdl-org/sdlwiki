@@ -36,8 +36,7 @@ it to change if you just call this query function in a tight loop.
 
 ## Thread Safety
 
-This function should not be called at the same time that another thread is
-operating on the same [SDL_IOStream](SDL_IOStream).
+This function is not thread safe.
 
 ## Version
 

@@ -45,6 +45,10 @@ should call [SDL_FlushIO](SDL_FlushIO)() before closing. Note that flushing
 takes time and makes the system and your app operate less efficiently, so
 do so sparingly.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

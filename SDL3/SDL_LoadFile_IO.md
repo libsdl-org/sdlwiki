@@ -34,6 +34,10 @@ convenience. This extra byte is not included in the value reported via
 
 The data should be freed with [SDL_free](SDL_free)().
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

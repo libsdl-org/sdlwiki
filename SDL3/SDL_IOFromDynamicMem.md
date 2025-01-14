@@ -32,6 +32,10 @@ control over allocations:
 - [`SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER`](SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER):
   memory will be allocated in multiples of this size, defaulting to 1024.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.1.3.

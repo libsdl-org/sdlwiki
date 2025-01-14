@@ -30,6 +30,10 @@ size_t SDL_IOprintf(SDL_IOStream *context, const char *fmt, ...);
 
 This function does formatted printing to the stream.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

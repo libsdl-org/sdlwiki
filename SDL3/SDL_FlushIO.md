@@ -30,6 +30,10 @@ This function makes sure that any buffered data is written to the stream.
 Normally this isn't necessary but if the stream is a pipe or socket it
 guarantees that any pending data is sent.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

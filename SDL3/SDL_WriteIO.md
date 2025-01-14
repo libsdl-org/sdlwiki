@@ -40,6 +40,10 @@ The caller can use [SDL_GetIOStatus](SDL_GetIOStatus)() to determine if the
 problem is recoverable, such as a non-blocking write that can simply be
 retried later, or a fatal error.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.

@@ -25,6 +25,10 @@ bool SDL_WriteS8(SDL_IOStream *dst, Sint8 value);
 (bool) Returns true on successful write or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.1.3.
