@@ -42,6 +42,17 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.1.3.
 
+## Code examples
+
+```c
+// Log drivers that are available, in the order of priority SDL chooses them.
+// Useful for e.g. debugging which ones a particular build of SDL contains.
+SDL_Log("Available renderer drivers:");
+for (int i = 0; i < SDL_GetNumRenderDrivers(); i++) {
+    SDL_Log("%d. %s", i + 1, SDL_GetRenderDriver(i));
+}
+```
+
 ## See Also
 
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
