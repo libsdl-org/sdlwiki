@@ -256,7 +256,7 @@ bool SDL_PollEvent(SDL_Event *event);                                           
 bool SDL_WaitEvent(SDL_Event *event);                                                                          // Wait indefinitely for the next available event.
 bool SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);                                                 // Wait until the specified timeout (in milliseconds) for the next available event.
 bool SDL_PushEvent(SDL_Event *event);                                                                          // Add an event to the event queue.
-void SDL_SetEventFilter(SDL_EventFilter filter, void *userdata);                                               // Set up a filter to process all events before they change internal state and are posted to the internal event queue.
+void SDL_SetEventFilter(SDL_EventFilter filter, void *userdata);                                               // Set up a filter to process all events before they are added to the internal event queue.
 bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);                                             // Query the current event filter.
 bool SDL_AddEventWatch(SDL_EventFilter filter, void *userdata);                                                // Add a callback to be triggered when an event is added to the event queue.
 void SDL_RemoveEventWatch(SDL_EventFilter filter, void *userdata);                                             // Remove an event watch callback added with SDL_AddEventWatch().
