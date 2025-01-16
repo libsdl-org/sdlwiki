@@ -60,3 +60,8 @@ SDL_net works with SDL3 and we have some more polish work to do for a 3.0 releas
 - [Git Repository](https://github.com/libsdl-org/SDL_net)
 - [Wiki](https://wiki.libsdl.org/SDL3_net)
 
+## SDL_shadercross
+
+A library for translating shaders to different formats. Intended for use with the [GPU API](https://wiki.libsdl.org/SDL3/CategoryGPU).
+
+- [Git Repository](https://github.com/libsdl-org/SDL_shadercross)
