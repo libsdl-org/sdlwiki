@@ -31,4 +31,4 @@ Yes, code from the test directory and from the examples in the documentation is 
 
 ## Which license is the SDL3 Wiki is released under?
 
-The wiki content is under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+The wiki content is under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
