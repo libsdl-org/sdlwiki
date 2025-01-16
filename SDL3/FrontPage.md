@@ -48,12 +48,10 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 ## Other sources of information
 
 - [Tutorials](Tutorials)
-- [Examples](https://examples.libsdl.org/SDL3)
 - [Articles](Articles)
+- [Frequently Asked Questions](FAQs)
 - [README](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) files covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
-- A few of the most commonly asked questions about using SDL are answered
-  in the [FAQs](FAQs) section.
 - We have [forums/mailing lists](https://discourse.libsdl.org/) for talking
   with other humans, and of course,
   [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
