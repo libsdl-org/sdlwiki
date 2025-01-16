@@ -9,27 +9,23 @@ Both may be used in both free and commercial applications.
 You can read the detailed license text at http://www.libsdl.org/license.php
 
 ## Can I use SDL in a commercial application?
+
 Yes!
 
-SDL 2.0 and later can be freely embedded either as static library or as linked .dll (or .so or other sorts of dynamic libraries).
-
-For SDL 1.2, the GNU LGPL license requires you to adhere to this additional restriction:
-
-- If you link dynamically (via .dll's, .so's or using other dynamic linking devices) then you do not need to do anything.
-- If you link statically (include the SDL source inside your project when you compile) you have to provide some way for your customer to relink your application with a custom version of SDL.
+SDL can be freely embedded either as a static library or as a shared library (recommended!)
 
 The details are available at: http://www.libsdl.org/license.php
 
 ## Can I use SDL in an embedded application?
-Yes! However, for SDL 1.2 you will either need to publish the source code of your program if you're statically linking, or provide tools and object files required to link against another version of SDL.
 
-The details are available at: http://www.libsdl.org/license.php
+Yes! There are no restrictions on using SDL in an embedded environment.
 
 ## If I use SDL, do I owe any licensing fees or royalties?
-No!
-You may use SDL completely free of charge.
+
+No! You may use SDL completely free of charge.
 
 ## Can I use code from the test directory? From the examples?
+
 Yes, code from the test directory and from the examples in the documentation is placed in the public domain. Anyone can use it for any purpose.
 
 ## Which license is the SDL3 Wiki is released under?
