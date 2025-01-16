@@ -5,7 +5,7 @@ This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
 ## Try it right now!
 
 SDL3 has officially stabilized the API and ABI, and a preview release is available at
-[the GitHub page](https://github.com/libsdl-org/SDL/releases/tag/preview-3.1.8).
+[the GitHub page](https://github.com/libsdl-org/SDL/releases/tag/prerelease-3.1.10).
 We will still be adding things to the API but not changing or removing anything, so it's
 safe to start porting your projects from SDL2.
 
