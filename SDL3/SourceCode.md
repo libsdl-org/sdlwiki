@@ -3,7 +3,7 @@
 
 ## Building and installation
 
-Building and installing SDL for your platform (including how to obtain prebuilt binaries in some cases) is covered in [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md).
+Building SDL and using it in your project is covered in [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md).
 
 ## SDL 3.0
 
