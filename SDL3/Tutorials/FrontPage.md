@@ -9,6 +9,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 ## Introduction
 
 - [How to setup SDL3 as a git submodule with Modern CMake](https://www.youtube.com/watch?v=Mi47TQ4Tsr8)
+- [Vulkan Dev Starter Pack with SDL3, CMake, C23 and more!](https://www.youtube.com/watch?v=WLjuV9_fQfw)
 - [HOWTO: Use Clion for Raylib | SDL2 | SDL3 Using CMake](https://www.youtube.com/watch?v=_i4wRjcp8eU)
 - [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
 
