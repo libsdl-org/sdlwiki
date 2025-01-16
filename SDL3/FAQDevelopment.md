@@ -12,7 +12,7 @@ This is new in SDL3! Previously, in SDL2, we recommended `#include "SDL.h"`, but
 
 ## Can I call SDL video functions from multiple threads?
 
-No, most graphics back ends are not thread-safe, so you should only call SDL video functions from the main thread of your application.
+No, most graphics back ends are not thread-safe, so you should only call SDL video functions from the main thread of your application. [SDL_RunOnMainThread()](SDL_RunOnMainThread) can be used to dispatch code that needs to run on the main thread.
 
 ## Can I call SDL event functions from multiple threads?
 
