@@ -6,13 +6,10 @@ The examples website runs each program directly in the web browser, and has a po
 
 And, of course, all of the examples are included in SDL's source tree, in the [examples directory](https://github.com/libsdl-org/SDL/tree/main/examples), for you to tinker with and explore.
 
-## Links welcome!
-
-We cleaned this page out for SDL3, so if you come across good content on the Internet, please click the `[edit]` link at the bottom of the page and add it!
-
-- [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
-
-## Videos
+## Tutorials
 
 - [Porting ioquake3 from SDL2 to SDL3](https://youtu.be/i3yVqWYFbCE): Covers a basic port from SDL2.
 - [Porting DirkSimple from SDL2 to SDL3](https://youtu.be/V_MWXDr3Nu4): Basic port, new audio subsystem features, SDL_EnumerateDirectory, main callbacks, emscripten port.
+- [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
+
+If you come across good tutorials, please click the `[edit]` link below and add it!
