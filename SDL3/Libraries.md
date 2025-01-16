@@ -11,7 +11,7 @@ Dear ImGui is a bloat-free graphical user interface library for C++. It outputs 
 - [Dear ImGui website](https://github.com/ocornut/imgui)
 
 
-## RmlUI (fork of libRocket):
+## RmlUI:
 
 RmlUi is the C++ user interface package based on the HTML and CSS standards, designed as a complete solution for any project's interface needs. It is a fork of the libRocket project, introducing new features, bug fixes, and performance improvements.
 
