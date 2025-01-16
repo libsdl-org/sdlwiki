@@ -18,11 +18,15 @@ The details are available at: http://www.libsdl.org/license.php
 
 ## Can I use SDL in an embedded application?
 
-Yes! There are no restrictions on using SDL in an embedded environment.
+Yes!
+
+There are no restrictions on using SDL in an embedded environment.
 
 ## If I use SDL, do I owe any licensing fees or royalties?
 
-No! You may use SDL completely free of charge.
+No!
+
+You may use SDL completely free of charge.
 
 ## Can I use code from the test directory? From the examples?
 
