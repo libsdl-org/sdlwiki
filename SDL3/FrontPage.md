@@ -46,8 +46,8 @@ This wiki is your portal to documentation and other resources for SDL 3.0.
 The official documentation for the API.  Look here to find detailed
 information about the functions, structures, enumerations and macros.
 
-- [API Quick Reference](QuickReference)
 - [API by category](APIByCategory)
+- [API quick reference](QuickReference)
 - [Complete API index](CategoryAPI)
 
 ## Other sources of information
