@@ -24,6 +24,8 @@ RmlUi is the C++ user interface package based on the HTML and CSS standards, des
 Loads images as SDL surfaces and textures, and supports the following formats:
 BMP, GIF, JPEG, LBM, PCX, PNG, PNM, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and more!)
 
+SDL_image works with SDL3 and has a 3.0 [preview release](https://github.com/libsdl-org/SDL_image/releases/tag/preview-3.1.0) available.
+
 - [Project Page](https://www.libsdl.org/projects/SDL_image/)
 - [Git Repository](https://github.com/libsdl-org/SDL_image)
 - [Wiki](https://wiki.libsdl.org/SDL3_image)
@@ -35,6 +37,8 @@ of simultaneously playing channels of 16 bit stereo audio, plus a single
 channel of music, mixed by the popular FLAC, MikMod MOD, Timidity MIDI, Ogg
 Vorbis, and SMPEG MP3 libraries.
 
+SDL_mixer works with SDL3 but we intend to update the API significantly for a 3.0 release.
+
 - [Project Page](https://www.libsdl.org/projects/SDL_mixer/)
 - [Git Repository](https://github.com/libsdl-org/SDL_mixer)
 - [Wiki](https://wiki.libsdl.org/SDL3_mixer)
@@ -45,6 +49,8 @@ A library which allows you to use TrueType fonts in your SDL applications. It
 comes with an example program "showfont" which displays an example string for a
 given TrueType font file.
 
+SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 release.
+
 - [Project Page](https://www.libsdl.org/projects/SDL_ttf/)
 - [Git Repository](https://github.com/libsdl-org/SDL_ttf)
 - [Wiki](https://wiki.libsdl.org/SDL3_ttf)
@@ -52,6 +58,8 @@ given TrueType font file.
 ## SDL_net
 
 A small cross-platform networking library.
+
+SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 release.
 
 - [Project Page](https://www.libsdl.org/projects/SDL_net/)
 - [Git Repository](https://github.com/libsdl-org/SDL_net)
