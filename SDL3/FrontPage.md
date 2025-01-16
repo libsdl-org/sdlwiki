@@ -49,11 +49,6 @@ information about the functions, structures, enumerations and macros.
 - [API Quick Reference](QuickReference)
 - [API by category](APIByCategory)
 - [Complete API index](CategoryAPI)
-- [All functions](CategoryAPIFunction)
-- [All datatypes](CategoryAPIDatatype)
-- [All structures/unions](CategoryAPIStruct)
-- [All enums](CategoryAPIEnum)
-- [All macros](CategoryAPIMacro)
 
 ## Other sources of information
 
