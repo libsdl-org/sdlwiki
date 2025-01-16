@@ -55,7 +55,7 @@ SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 releas
 
 A small cross-platform networking library.
 
-SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 release.
+SDL_net works with SDL3 and we have some more polish work to do for a 3.0 release.
 
 - [Git Repository](https://github.com/libsdl-org/SDL_net)
 - [Wiki](https://wiki.libsdl.org/SDL3_net)
