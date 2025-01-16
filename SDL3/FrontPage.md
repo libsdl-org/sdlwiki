@@ -5,7 +5,7 @@ This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
 ## Try it right now!
 
 SDL3 has officially stabilized the API and ABI, and a preview release is available at
-[the GitHub page](https://github.com/libsdl-org/SDL/releases/tag/preview-3.1.6).
+[the GitHub page](https://github.com/libsdl-org/SDL/releases/tag/preview-3.1.8).
 We will still be adding things to the API but not changing or removing anything, so it's
 safe to start porting your projects from SDL2.
 
@@ -31,19 +31,15 @@ SDL 3.0 (often shortened to "SDL3") is distributed under the
 [zlib license](https://www.libsdl.org/license.php). This license allows you
 to use SDL freely in any software.
 
-This is the SDL wiki; SDL's main website is [libsdl.org](https://libsdl.org/).
+This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
-This wiki is your portal to documentation and other resources for SDL 3.0.
-
-## Using the SDL documentation Wiki
+## Getting and installing SDL
 
 - [Source Code](SourceCode): How to download the source code to SDL.
 - [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md): How to install SDL on your platform of choice
   and link your program against it.
 
-## API references
-
-The official documentation for the API:
+## API Documentation
 
 - [API by category](APIByCategory)
 - [API quick reference](QuickReference)
@@ -51,15 +47,11 @@ The official documentation for the API:
 
 ## Other sources of information
 
-- A bunch of uncategorized, deep-dive information is in the [README](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) section.
-- Want to learn about a feature in SDL you haven't used before?
-  Our [tutorials](Tutorials) are great place to get started!
-- Here is a collection of [articles](Articles) that have been written
-  about SDL3.
-- Here is a collection of external [libraries](Libraries), to extend SDL
-  functionality.
-- Looking for more information than you can get online?
-  Check out the [books](Books) list.
+- [Tutorials](Tutorials)
+- [Examples](https://examples.libsdl.org/SDL3)
+- [Articles](Articles)
+- [README](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) files covering more advanced topics
+- [Libraries](Libraries) to extend SDL functionality
 - A few of the most commonly asked questions about using SDL are answered
   in the [FAQs](FAQs) section.
 - We have [forums/mailing lists](https://discourse.libsdl.org/) for talking
