@@ -20,4 +20,4 @@ The main event handling should be done on the main thread, though you can use [S
 
 ## How do I load images, sounds, display UI, etc?
 
-SDL provides the lower level of functionality that a cross-platform game engine needs, and leaves higher level tasks to other libraries. The [libraries page](Libraries) has a non-exhaustive list of libraries that are known to work well with SDL.
+SDL provides the lower level of functionality that a cross-platform game engine needs, leaving higher level tasks to other libraries. The [libraries page](Libraries) has a non-exhaustive list of libraries that are known to work well with SDL.
