@@ -11,7 +11,7 @@ You can read the detailed license text at http://www.libsdl.org/license.php
 
 Yes!
 
-SDL can be freely embedded either as a static library or as a shared library (recommended!)
+SDL can be freely used in commercial applications either as a static library or as a shared library (recommended!)
 
 ## Can I use SDL in an embedded application?
 
