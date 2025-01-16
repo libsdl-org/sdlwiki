@@ -50,7 +50,7 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 - [Tutorials](Tutorials)
 - [Articles](Articles)
 - [Frequently Asked Questions](FAQs)
-- [README](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) files covering more advanced topics
+- [READMEs](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
 - We have [forums/mailing lists](https://discourse.libsdl.org/) for talking
   with other humans, and of course,
