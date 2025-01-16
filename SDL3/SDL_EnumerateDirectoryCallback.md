@@ -37,6 +37,9 @@ proceed, calling the callback with further entries.
 [SDL_ENUM_FAILURE](SDL_ENUM_FAILURE) will terminate the enumeration early,
 and dictate the return value of the enumeration function itself.
 
+`dirname` is guaranteed to end with a path separator ('\\' on Windows, '/'
+on most other platforms).
+
 ## Version
 
 This datatype is available since SDL 3.1.3.

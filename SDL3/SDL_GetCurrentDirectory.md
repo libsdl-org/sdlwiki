@@ -28,6 +28,9 @@ SDL does not provide a means to _change_ the current working directory; for
 platforms without this concept, this would cause surprises with file access
 outside of SDL.
 
+The returned path is guaranteed to end with a path separator ('\\' on
+Windows, '/' on most other platforms).
+
 ## Version
 
 This function is available since SDL 3.1.8.
