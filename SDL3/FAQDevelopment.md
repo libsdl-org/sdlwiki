@@ -10,7 +10,7 @@ The most portable way to include SDL headers is to use angular quotes around the
 
 This is new in SDL3! Previously, in SDL2, we recommended `#include "SDL.h"`, but this proved to be unfriendly to macOS frameworks and having the API version in the include line is useful for making dependency requirements clear.
 
-## How do I load images, sounds, display UI, etc?
+## How do I load images, sounds, show UI, etc?
 
 SDL provides the lower level of functionality that a cross-platform game engine needs, leaving higher level tasks to other libraries. The [libraries page](Libraries) has a non-exhaustive list of libraries that are known to work well with SDL.
 
