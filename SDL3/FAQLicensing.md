@@ -2,9 +2,8 @@
 
 
 ## What license does SDL use?
-As of SDL 2.0, the software is freely available under the terms of the zlib license. Before 2.0, SDL 1.x is freely available under the GNU LGPL license.
 
-Both may be used in both free and commercial applications.
+As of SDL 2.0, the software is freely available under the terms of the zlib license.
 
 You can read the detailed license text at http://www.libsdl.org/license.php
 
@@ -13,8 +12,6 @@ You can read the detailed license text at http://www.libsdl.org/license.php
 Yes!
 
 SDL can be freely embedded either as a static library or as a shared library (recommended!)
-
-The details are available at: http://www.libsdl.org/license.php
 
 ## Can I use SDL in an embedded application?
 
