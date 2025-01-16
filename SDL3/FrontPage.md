@@ -52,9 +52,7 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 - [Frequently Asked Questions](FAQs)
 - [READMEs](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
-- We have [forums/mailing lists](https://discourse.libsdl.org/) for talking
-  with other humans, and of course,
-  [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
+- [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
 
 ## Other stuff
