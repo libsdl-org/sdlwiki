@@ -9,7 +9,6 @@ Please note that several of these have names that start with "SDL_", but none of
 Dear ImGui is a bloat-free graphical user interface library for C++. It outputs optimized vertex buffers that you can render anytime in your 3D-pipeline-enabled application. It is fast, portable, renderer agnostic, and self-contained (no external dependencies).
 
 - [Dear ImGui website](https://github.com/ocornut/imgui)
-- [Example source code](https://github.com/ocornut/imgui/tree/master/examples/example_sdl_sdlrenderer)
 
 
 ## RmlUI (fork of libRocket):
@@ -26,7 +25,6 @@ BMP, GIF, JPEG, LBM, PCX, PNG, PNM, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and more
 
 SDL_image works with SDL3 and has a 3.0 [preview release](https://github.com/libsdl-org/SDL_image/releases/tag/preview-3.1.0) available.
 
-- [Project Page](https://www.libsdl.org/projects/SDL_image/)
 - [Git Repository](https://github.com/libsdl-org/SDL_image)
 - [Wiki](https://wiki.libsdl.org/SDL3_image)
 
@@ -39,7 +37,6 @@ Vorbis, and SMPEG MP3 libraries.
 
 SDL_mixer works with SDL3 but we intend to update the API significantly for a 3.0 release.
 
-- [Project Page](https://www.libsdl.org/projects/SDL_mixer/)
 - [Git Repository](https://github.com/libsdl-org/SDL_mixer)
 - [Wiki](https://wiki.libsdl.org/SDL3_mixer)
 
@@ -51,7 +48,6 @@ given TrueType font file.
 
 SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 release.
 
-- [Project Page](https://www.libsdl.org/projects/SDL_ttf/)
 - [Git Repository](https://github.com/libsdl-org/SDL_ttf)
 - [Wiki](https://wiki.libsdl.org/SDL3_ttf)
 
@@ -61,7 +57,6 @@ A small cross-platform networking library.
 
 SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 release.
 
-- [Project Page](https://www.libsdl.org/projects/SDL_net/)
 - [Git Repository](https://github.com/libsdl-org/SDL_net)
 - [Wiki](https://wiki.libsdl.org/SDL3_net)
 
