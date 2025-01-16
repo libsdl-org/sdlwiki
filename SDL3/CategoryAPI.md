@@ -3,12 +3,12 @@
 This is a list of _every_ public symbol in SDL, in alphabetic order. You
 probably want to look at the [API by category](APIByCategory) instead.
 
-- [Categories](#markdown-header-categories)
-- [Functions](#markdown-header-functions)
-- [Datatypes](#markdown-header-datatypes)
-- [Structs](#markdown-header-structs)
-- [Enums](#markdown-header-enums)
-- [Macros](#markdown-header-macros)
+- [Categories](CategoryAPI#markdown-header-categories)
+- [Functions](CategoryAPI#markdown-header-functions)
+- [Datatypes](CategoryAPI#markdown-header-datatypes)
+- [Structs](CategoryAPI#markdown-header-structs)
+- [Enums](CategoryAPI#markdown-header-enums)
+- [Macros](CategoryAPI#markdown-header-macros)
 
 <!-- END CATEGORY DOCUMENTATION -->
 
