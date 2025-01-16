@@ -12,4 +12,4 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [Porting DirkSimple from SDL2 to SDL3](https://youtu.be/V_MWXDr3Nu4): Basic port, new audio subsystem features, SDL_EnumerateDirectory, main callbacks, emscripten port.
 - [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
 
-If you come across good tutorials, please click [edit](https://wiki.libsdl.org/SDL3/Tutorials/FrontPage/edit) and add it!
+If you come across good tutorials, please click [edit](https://wiki.libsdl.org/SDL3/Tutorials/FrontPage/edit) and add them!
