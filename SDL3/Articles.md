@@ -1,4 +1,4 @@
-# Articles Related to SDL3
+# SDL Articles
 
 - [Best Keyboard Practices](BestKeyboardPractices): How to do keyboard input _perfectly_ with SDL3.
 
