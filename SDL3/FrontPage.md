@@ -51,7 +51,7 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 - [Articles](Articles)
 - [SDL 2.0 Migration Guide](https://github.com/libsdl-org/SDL/blob/main/docs/README-migration.md)
 - [Frequently Asked Questions](FAQs)
-- [READMEs](https://github.com/libsdl-org/SDL/blob/main/docs/README.md) covering more advanced topics
+- [READMEs](https://github.com/libsdl-org/SDL/blob/main/docs) covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
 - [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
