@@ -27,7 +27,8 @@ bool SDL_GetDisplayBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 
 ## Remarks
 
-The primary display is always located at (0,0).
+The primary display is often located at (0,0), but may be placed at a
+different location depending on monitor layout.
 
 ## Thread Safety
 
