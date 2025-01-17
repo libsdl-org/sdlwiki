@@ -23,19 +23,18 @@ typedef enum SDL_GPUPrimitiveType
 ## Remarks
 
 If you are using POINTLIST you must include a point size output in the
-vertex shader. 
+vertex shader.
 
-- For HLSL compiling to SPIRV you must decorate a float output
-with [[vk::builtin("PointSize")]]. 
-- For GLSL you must set the gl_PointSize
-builtin. 
+- For HLSL compiling to SPIRV you must decorate a float output with
+  [[vk::builtin("PointSize")]].
+- For GLSL you must set the gl_PointSize builtin.
 - For MSL you must include a float output with the [[point_size]]
-decorator. 
+  decorator.
 
-Note that sized point topology is totally unsupported on D3D12.
-Any size other than 1 will be ignored. In general, you should avoid using
-point topology for both compatibility and performance reasons. You WILL
-regret using it.
+Note that sized point topology is totally unsupported on D3D12. Any size
+other than 1 will be ignored. In general, you should avoid using point
+topology for both compatibility and performance reasons. You WILL regret
+using it.
 
 ## Version
 
