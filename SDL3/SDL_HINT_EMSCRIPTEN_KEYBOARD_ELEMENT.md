@@ -23,6 +23,7 @@ The variable can be one of:
 - "#document": the javascript document object
 - "#screen": the javascript window.screen object
 - "#canvas": the WebGL canvas element
+- "": Don't bind anything at all
 - any other string without a leading # sign applies to the element on the
   page with that ID.
 
