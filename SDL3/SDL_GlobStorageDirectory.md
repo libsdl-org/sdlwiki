@@ -18,7 +18,7 @@ char ** SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const c
 |                                |             |                                                                                   |
 | ------------------------------ | ----------- | --------------------------------------------------------------------------------- |
 | [SDL_Storage](SDL_Storage) *   | **storage** | a storage container.                                                              |
-| const char *                   | **path**    | the path of the directory to enumerate.                                           |
+| const char *                   | **path**    | the path of the directory to enumerate, or NULL for the root.                     |
 | const char *                   | **pattern** | the pattern that files in the directory must match. Can be NULL.                  |
 | [SDL_GlobFlags](SDL_GlobFlags) | **flags**   | `SDL_GLOB_*` bitflags that affect this search.                                    |
 | int *                          | **count**   | on return, will be set to the number of items in the returned array. Can be NULL. |
@@ -46,6 +46,9 @@ to make the pattern matching case-insensitive.
 The returned array is always NULL-terminated, for your iterating
 convenience, but if `count` is non-NULL, on return it will contain the
 number of items in the array, not counting the NULL terminator.
+
+If `path` is NULL, this is treated as a request to enumerate the root of
+the storage container's tree. An empty string also works for this.
 
 ## Thread Safety
 

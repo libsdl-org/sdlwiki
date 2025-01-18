@@ -15,12 +15,12 @@ bool SDL_EnumerateStorageDirectory(SDL_Storage *storage, const char *path, SDL_E
 
 ## Function Parameters
 
-|                                                                  |              |                                                            |
-| ---------------------------------------------------------------- | ------------ | ---------------------------------------------------------- |
-| [SDL_Storage](SDL_Storage) *                                     | **storage**  | a storage container.                                       |
-| const char *                                                     | **path**     | the path of the directory to enumerate.                    |
-| [SDL_EnumerateDirectoryCallback](SDL_EnumerateDirectoryCallback) | **callback** | a function that is called for each entry in the directory. |
-| void *                                                           | **userdata** | a pointer that is passed to `callback`.                    |
+|                                                                  |              |                                                               |
+| ---------------------------------------------------------------- | ------------ | ------------------------------------------------------------- |
+| [SDL_Storage](SDL_Storage) *                                     | **storage**  | a storage container.                                          |
+| const char *                                                     | **path**     | the path of the directory to enumerate, or NULL for the root. |
+| [SDL_EnumerateDirectoryCallback](SDL_EnumerateDirectoryCallback) | **callback** | a function that is called for each entry in the directory.    |
+| void *                                                           | **userdata** | a pointer that is passed to `callback`.                       |
 
 ## Return Value
 
@@ -39,6 +39,9 @@ This will return false if there was a system problem in general, or if a
 callback returns [SDL_ENUM_FAILURE](SDL_ENUM_FAILURE). A successful return
 means a callback returned [SDL_ENUM_SUCCESS](SDL_ENUM_SUCCESS) to halt
 enumeration, or all directory entries were enumerated.
+
+If `path` is NULL, this is treated as a request to enumerate the root of
+the storage container's tree. An empty string also works for this.
 
 ## Version
 
