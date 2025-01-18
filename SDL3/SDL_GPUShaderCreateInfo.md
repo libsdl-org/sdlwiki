@@ -15,8 +15,8 @@ typedef struct SDL_GPUShaderCreateInfo
     size_t code_size;             /**< The size in bytes of the code pointed to. */
     const Uint8 *code;            /**< A pointer to shader code. */
     const char *entrypoint;       /**< A pointer to a null-terminated UTF-8 string specifying the entry point function name for the shader. */
-    SDL_GPUShaderFormat format;   /**< The format of the shader code. */
-    SDL_GPUShaderStage stage;     /**< The stage the shader program corresponds to. */
+    [SDL_GPUShaderFormat](SDL_GPUShaderFormat) format;   /**< The format of the shader code. */
+    [SDL_GPUShaderStage](SDL_GPUShaderStage) stage;     /**< The stage the shader program corresponds to. */
     Uint32 num_samplers;          /**< The number of samplers defined in the shader. */
     Uint32 num_storage_textures;  /**< The number of storage textures defined in the shader. */
     Uint32 num_storage_buffers;   /**< The number of storage buffers defined in the shader. */
