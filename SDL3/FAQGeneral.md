@@ -4,7 +4,8 @@
 Very simply, Simple DirectMedia Layer, or SDL for short, is a library that allows you low level access to a video framebuffer, audio output, mouse, keyboard, and joysticks across a wide variety of operating systems.
 
 ## What platforms are supported?
-The current version supports Windows, macOS, Linux, iOS, and Android.  SDL includes code for many other operating systems but they are not officially supported.  See [the page about Installation](Installation) for the most recent list.
+
+The full list of supported platforms is available in [README-platforms.md](https://github.com/libsdl-org/SDL/blob/main/docs/README-platforms.md)
 
 ## What is the latest version?
 The latest stable version is SDL3. You can always get the very latest bleeding edge Git snapshot, which may be broken at any given time, from [the GitHub project page](https://github.com/libsdl-org/SDL).
