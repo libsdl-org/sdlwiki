@@ -33,6 +33,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.1.6.
 
+## See Also
+
+- [SDL_Delay](SDL_Delay)
+- [SDL_DelayNS](SDL_DelayNS)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
