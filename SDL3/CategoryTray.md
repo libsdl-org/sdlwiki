@@ -34,6 +34,7 @@ these pieces.
 - [SDL_SetTrayEntryLabel](SDL_SetTrayEntryLabel)
 - [SDL_SetTrayIcon](SDL_SetTrayIcon)
 - [SDL_SetTrayTooltip](SDL_SetTrayTooltip)
+- [SDL_UpdateTrays](SDL_UpdateTrays)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes

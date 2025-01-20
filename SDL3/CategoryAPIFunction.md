@@ -1191,6 +1191,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
 - [SDL_UpdateSensors](SDL_UpdateSensors)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
+- [SDL_UpdateTrays](SDL_UpdateTrays)
 - [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
 - [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 - [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
