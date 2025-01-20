@@ -33,6 +33,10 @@ This function does the same thing as
 
 A menu does not need to be destroyed; it will be destroyed with the tray.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

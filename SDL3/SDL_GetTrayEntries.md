@@ -26,6 +26,10 @@ extern SDL_DECLSPEC const SDL_TrayEntry **SDLCALL SDL_GetTrayEntries(SDL_TrayMen
 entries within the given menu. The pointer becomes invalid when any
 function that inserts or deletes entries in the menu is called.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

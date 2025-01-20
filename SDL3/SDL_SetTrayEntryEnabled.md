@@ -20,6 +20,10 @@ void SDL_SetTrayEntryEnabled(SDL_TrayEntry *entry, bool enabled);
 | [SDL_TrayEntry](SDL_TrayEntry) * | **entry**   | the entry to be updated.                              |
 | bool                             | **enabled** | true if the entry should be enabled; false otherwise. |
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

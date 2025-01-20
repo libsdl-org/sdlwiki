@@ -20,6 +20,10 @@ void SDL_SetTrayIcon(SDL_Tray *tray, SDL_Surface *icon);
 | [SDL_Tray](SDL_Tray) *       | **tray** | the tray icon to be updated. |
 | [SDL_Surface](SDL_Surface) * | **icon** | the new icon. May be NULL.   |
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

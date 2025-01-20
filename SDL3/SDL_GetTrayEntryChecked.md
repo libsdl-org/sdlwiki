@@ -28,6 +28,10 @@ bool SDL_GetTrayEntryChecked(SDL_TrayEntry *entry);
 The entry must have been created with the
 [SDL_TRAYENTRY_CHECKBOX](SDL_TRAYENTRY_CHECKBOX) flag.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

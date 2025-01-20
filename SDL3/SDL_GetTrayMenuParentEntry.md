@@ -30,6 +30,10 @@ Either this function or
 [SDL_GetTrayMenuParentTray](SDL_GetTrayMenuParentTray)() will return
 non-NULL for any given menu.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

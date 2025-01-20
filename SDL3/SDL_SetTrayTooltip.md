@@ -20,6 +20,10 @@ void SDL_SetTrayTooltip(SDL_Tray *tray, const char *tooltip);
 | [SDL_Tray](SDL_Tray) * | **tray**    | the tray icon to be updated.                    |
 | const char *           | **tooltip** | the new tooltip in UTF-8 encoding. May be NULL. |
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

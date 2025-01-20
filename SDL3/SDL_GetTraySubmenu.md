@@ -34,6 +34,10 @@ except that it takes a [SDL_TrayEntry](SDL_TrayEntry) instead of a
 
 A menu does not need to be destroyed; it will be destroyed with the tray.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

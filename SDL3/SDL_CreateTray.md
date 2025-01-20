@@ -32,6 +32,10 @@ feel like it clutters their interface.
 
 Using tray icons require the video subsystem.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.1.8.

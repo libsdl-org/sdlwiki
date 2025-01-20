@@ -23,6 +23,10 @@ void SDL_DestroyTray(SDL_Tray *tray);
 
 This also destroys all associated menus and entries.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

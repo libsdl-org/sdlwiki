@@ -27,6 +27,10 @@ it is not possible to set a non-NULL label on an entry that has a NULL
 label (separators), or to set a NULL label to an entry that has a non-NULL
 label. The function will silently fail if that happens.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

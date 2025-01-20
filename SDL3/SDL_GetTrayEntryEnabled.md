@@ -23,6 +23,10 @@ bool SDL_GetTrayEntryEnabled(SDL_TrayEntry *entry);
 
 (bool) Returns true if the entry is enabled; false otherwise.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

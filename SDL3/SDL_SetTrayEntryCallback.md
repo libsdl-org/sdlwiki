@@ -21,6 +21,10 @@ void SDL_SetTrayEntryCallback(SDL_TrayEntry *entry, SDL_TrayCallback callback, v
 | [SDL_TrayCallback](SDL_TrayCallback) | **callback** | a callback to be invoked when the entry is selected.                            |
 | void *                               | **userdata** | an optional pointer to pass extra data to the callback when it will be invoked. |
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

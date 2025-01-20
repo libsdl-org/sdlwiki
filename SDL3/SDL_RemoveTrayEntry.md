@@ -19,6 +19,10 @@ void SDL_RemoveTrayEntry(SDL_TrayEntry *entry);
 | -------------------------------- | --------- | ------------------------ |
 | [SDL_TrayEntry](SDL_TrayEntry) * | **entry** | The entry to be deleted. |
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.

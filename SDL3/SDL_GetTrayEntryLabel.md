@@ -27,6 +27,10 @@ const char* SDL_GetTrayEntryLabel(SDL_TrayEntry *entry);
 
 If the returned value is NULL, the entry is a separator.
 
+## Thread Safety
+
+This function should be called on the thread that created the tray.
+
 ## Version
 
 This function is available since SDL 3.1.8.
