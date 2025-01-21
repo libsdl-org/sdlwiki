@@ -20,6 +20,10 @@ until it finds one that can work, but this hint allows the app or user to
 force a specific target, such as "x11" if, say, you are on Wayland but want
 to try talking to the X server instead.
 
+This hint accepts a comma-separated list of driver names, and each will be
+tried in the order listed during init, until one succeeds or all of them
+fail.
+
 This hint should be set before SDL is initialized.
 
 ## Version

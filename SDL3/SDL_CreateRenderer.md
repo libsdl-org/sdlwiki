@@ -35,6 +35,9 @@ from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)()-1. If you
 don't need a specific renderer, specify NULL and SDL will attempt to choose
 the best option for you, based on what is available on the user's system.
 
+If `name` is a comma-separated list, SDL will try each name, in the order
+listed, until one succeeds or all of them fail.
+
 By default the rendering size matches the window size in pixels, but you
 can call
 [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)() to

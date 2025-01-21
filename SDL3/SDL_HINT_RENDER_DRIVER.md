@@ -32,6 +32,10 @@ This variable is case insensitive and can be set to the following values:
 - "gpu"
 - "software"
 
+This hint accepts a comma-separated list of driver names, and each will be
+tried in the order listed when creating a renderer until one succeeds or
+all of them fail.
+
 The default varies by platform, but it's the first one in the list that is
 available on the current platform.
 
