@@ -30,7 +30,7 @@ usage. The same data synchronization concerns as textures apply.
 
 ## Version
 
-This datatype is available since SDL 3.2.0
+This datatype is available since SDL 3.2.0.
 
 ## See Also
 

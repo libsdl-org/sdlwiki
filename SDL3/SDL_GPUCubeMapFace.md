@@ -27,7 +27,7 @@ Can be passed in as the layer field in texture-related structs.
 
 ## Version
 
-This enum is available since SDL 3.2.0
+This enum is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)

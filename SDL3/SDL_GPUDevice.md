@@ -15,7 +15,7 @@ typedef struct SDL_GPUDevice SDL_GPUDevice;
 
 ## Version
 
-This struct is available since SDL 3.2.0
+This struct is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)

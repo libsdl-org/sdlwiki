@@ -28,7 +28,7 @@ typedef struct SDL_GPUDepthStencilState
 
 ## Version
 
-This struct is available since SDL 3.2.0
+This struct is available since SDL 3.2.0.
 
 ## See Also
 

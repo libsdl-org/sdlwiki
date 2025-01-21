@@ -20,7 +20,7 @@ If this macro is defined, SDL will have already included `<armintr.h>`
 
 ## Version
 
-This macro is available since 3.1.3.
+This macro is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryIntrinsics](CategoryIntrinsics)

@@ -39,7 +39,7 @@ MAILBOX.
 
 ## Version
 
-This enum is available since SDL 3.2.0
+This enum is available since SDL 3.2.0.
 
 ## See Also
 
