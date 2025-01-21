@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-#define SDL_MICRO_VERSION   0
+#define SDL_MICRO_VERSION   1
 ```
 
 ## Remarks
