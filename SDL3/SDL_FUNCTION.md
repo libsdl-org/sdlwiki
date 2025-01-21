@@ -19,7 +19,7 @@ If SDL can't figure how the compiler reports this, it will use "???".
 
 ## Version
 
-This macro is available since SDL 3.1.3.
+This macro is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAssert](CategoryAssert)

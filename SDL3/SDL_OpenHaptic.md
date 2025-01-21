@@ -36,7 +36,7 @@ autocenter will be disabled. To modify these values use
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

@@ -25,7 +25,7 @@ This function should be called on the thread that created the tray.
 
 ## Version
 
-This function is available since SDL 3.1.10.
+This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)

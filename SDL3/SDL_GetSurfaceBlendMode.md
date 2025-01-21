@@ -27,7 +27,7 @@ bool SDL_GetSurfaceBlendMode(SDL_Surface *surface, SDL_BlendMode *blendMode);
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

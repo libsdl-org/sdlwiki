@@ -37,7 +37,7 @@ bool SDL_ConvertPixelsAndColorspace(int width, int height, SDL_PixelFormat src_f
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

@@ -21,7 +21,7 @@ typedef struct SDL_RenderEvent
 
 ## Version
 
-This struct is available since SDL 3.1.7.
+This struct is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

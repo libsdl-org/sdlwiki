@@ -42,7 +42,7 @@ You should not free the returned array; it is owned by SDL.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## Code Examples
 

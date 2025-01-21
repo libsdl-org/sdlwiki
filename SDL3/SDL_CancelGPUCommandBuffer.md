@@ -38,7 +38,7 @@ You must not reference the command buffer after calling this function.
 
 ## Version
 
-This function is available since SDL 3.1.6.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

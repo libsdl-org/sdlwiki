@@ -32,7 +32,7 @@ otherwise it is safe if no other threads are calling setenv() or unsetenv()
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

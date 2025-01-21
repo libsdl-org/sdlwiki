@@ -28,7 +28,7 @@ bool SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *leng
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

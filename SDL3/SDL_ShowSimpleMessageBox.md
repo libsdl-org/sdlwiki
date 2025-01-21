@@ -58,7 +58,7 @@ and fall back to writing to stderr if you can.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

@@ -35,7 +35,7 @@ is high frequency, and the large (left) motor is low frequency.
 
 ## Version
 
-This struct is available since SDL 3.1.3.
+This struct is available since SDL 3.2.0.
 
 ## See Also
 

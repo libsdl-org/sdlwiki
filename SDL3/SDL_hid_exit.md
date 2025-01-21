@@ -25,7 +25,7 @@ should be called at the end of execution to avoid memory leaks.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

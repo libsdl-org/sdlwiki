@@ -66,7 +66,7 @@ set. This is true for streams representing files and process I/O.
 
 ## Version
 
-This enum is available since SDL 3.1.3.
+This enum is available since SDL 3.2.0.
 
 ## See Also
 

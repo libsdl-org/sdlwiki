@@ -24,7 +24,7 @@ These are generally considered read-only.
 
 ## Version
 
-This datatype is available since SDL 3.1.3.
+This datatype is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySurface](CategorySurface)

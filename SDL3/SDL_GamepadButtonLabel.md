@@ -34,7 +34,7 @@ a set of symbols that work well with your art style.
 
 ## Version
 
-This enum is available since SDL 3.1.3.
+This enum is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGamepad](CategoryGamepad)

@@ -19,7 +19,7 @@ The value 0 is an invalid ID.
 
 ## Version
 
-This datatype is available since SDL 3.1.3.
+This datatype is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)

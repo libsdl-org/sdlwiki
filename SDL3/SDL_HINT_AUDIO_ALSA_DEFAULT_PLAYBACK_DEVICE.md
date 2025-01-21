@@ -26,7 +26,7 @@ This hint should be set before an audio device is opened.
 
 ## Version
 
-This hint is available since SDL 3.1.7.
+This hint is available since SDL 3.2.0.
 
 ## See Also
 

@@ -30,7 +30,7 @@ Used when transferring data to or from a texture.
 
 ## Version
 
-This struct is available since SDL 3.1.3
+This struct is available since SDL 3.2.0
 
 ## See Also
 

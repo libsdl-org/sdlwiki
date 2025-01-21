@@ -19,7 +19,7 @@ If this were SDL version 3.2.1, this value would be 3.
 
 ## Version
 
-This macro is available since SDL 3.1.3.
+This macro is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)

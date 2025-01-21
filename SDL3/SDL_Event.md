@@ -75,7 +75,7 @@ SDL. [SDL_Event](SDL_Event) is a union of all event structures used in SDL.
 
 ## Version
 
-This struct is available since SDL 3.1.3.
+This struct is available since SDL 3.2.0.
 
 ## Using events
 

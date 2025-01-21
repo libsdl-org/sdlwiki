@@ -25,7 +25,7 @@ values with [SDL_TimeToWindows](SDL_TimeToWindows)() and
 
 ## Version
 
-This macro is available since SDL 3.1.3.
+This macro is available since SDL 3.2.0.
 
 ## See Also
 

@@ -51,7 +51,7 @@ reads and writes to the opened file will be async, however.
 
 ## Version
 
-This function is available since SDL 3.1.8.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

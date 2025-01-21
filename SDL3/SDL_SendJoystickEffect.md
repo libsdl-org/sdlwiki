@@ -28,7 +28,7 @@ bool SDL_SendJoystickEffect(SDL_Joystick *joystick, const void *data, int size);
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

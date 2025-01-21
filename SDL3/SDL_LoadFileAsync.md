@@ -46,7 +46,7 @@ newly-created task will be added to it when it completes its work.
 
 ## Version
 
-This function is available since SDL 3.1.8.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

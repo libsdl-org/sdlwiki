@@ -27,7 +27,7 @@ This should be called before [SDL_DestroyWindow](SDL_DestroyWindow), if
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

@@ -27,7 +27,7 @@ reality), and this struct reports details of the specific fingers.
 
 ## Version
 
-This struct is available since SDL 3.1.3.
+This struct is available since SDL 3.2.0.
 
 ## See Also
 

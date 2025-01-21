@@ -28,7 +28,7 @@ gamepad. This enum is used as part of
 
 ## Version
 
-This enum is available since SDL 3.1.3.
+This enum is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGamepad](CategoryGamepad)

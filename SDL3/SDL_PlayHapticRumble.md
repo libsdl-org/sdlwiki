@@ -28,7 +28,7 @@ bool SDL_PlayHapticRumble(SDL_Haptic *haptic, float strength, Uint32 length);
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

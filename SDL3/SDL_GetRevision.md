@@ -36,7 +36,7 @@ purposes. The string is not intended to be reliable in any way.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

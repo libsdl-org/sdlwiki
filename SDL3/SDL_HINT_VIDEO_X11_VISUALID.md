@@ -19,7 +19,7 @@ This hint should be set before initializing the video subsystem.
 
 ## Version
 
-This hint is available since SDL 3.1.3.
+This hint is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

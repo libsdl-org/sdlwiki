@@ -26,7 +26,7 @@ or NULL if there is no name or the identifier passed is invalid.
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

@@ -74,7 +74,7 @@ The gyroscope axis data is not changed when the device is rotated.
 
 ## Version
 
-This enum is available since SDL 3.1.3.
+This enum is available since SDL 3.2.0.
 
 ## See Also
 

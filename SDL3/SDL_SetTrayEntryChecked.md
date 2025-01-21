@@ -31,7 +31,7 @@ This function should be called on the thread that created the tray.
 
 ## Version
 
-This function is available since SDL 3.1.8.
+This function is available since SDL 3.2.0.
 
 ## See Also
 

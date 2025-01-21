@@ -32,7 +32,7 @@ https://developer.android.com/reference/android/content/Context#getFilesDir()
 
 ## Version
 
-This function is available since SDL 3.1.3.
+This function is available since SDL 3.2.0.
 
 ## See Also
 
