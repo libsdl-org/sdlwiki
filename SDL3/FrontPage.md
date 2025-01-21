@@ -4,7 +4,7 @@ This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
 
 ## Try it right now!
 
-SDL3 has [officially released](https://github.com/libsdl-org/SDL/releases) and is ready for you to start developing with and porting your projects from SDL2.
+SDL3 has [officially released](https://github.com/libsdl-org/SDL/releases) and is ready for you to start using now.
 
 Need some motivation? Here's a list of [New Features](NewFeatures) that you can
 enjoy today in SDL3!
