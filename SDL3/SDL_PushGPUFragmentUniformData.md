@@ -30,6 +30,9 @@ void SDL_PushGPUFragmentUniformData(
 
 Subsequent draw calls will use this uniform data.
 
+The data being pushed must respect std140 layout conventions. 
+In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned.
+
 ## Version
 
 This function is available since SDL 3.2.0.
