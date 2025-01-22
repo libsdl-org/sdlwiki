@@ -12,6 +12,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [Vulkan Dev Starter Pack with SDL3, CMake, C23 and more!](https://www.youtube.com/watch?v=WLjuV9_fQfw)
 - [How to setup SDL 3, SDL_image, SQL and Flecs using Modern CMake on Windows](https://www.youtube.com/watch?v=T32B7nf6B-8)
 - [HOWTO: Use Clion for Raylib | SDL2 | SDL3 Using CMake](https://www.youtube.com/watch?v=_i4wRjcp8eU)
+- [Sol's Graphics Tutorial](http://iki.fi/sol/gp2/)
 - [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
 
 ## SDL GPU
