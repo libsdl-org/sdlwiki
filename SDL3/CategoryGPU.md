@@ -115,7 +115,9 @@ explaining this situation.
 
 It is optimal for apps to pre-compile the shader formats they might use,
 but for ease of use SDL provides a separate project,
-[SDL_shadercross](https://github.com/libsdl-org/SDL_shadercross), for performing runtime shader cross-compilation. It also has a CLI interface for offline precompilation as well.
+[[SDL_shadercross](SDL_shadercross)](https://github.com/libsdl-org/SDL_shadercross)
+, for performing runtime shader cross-compilation. It also has a CLI
+interface for offline precompilation as well.
 
 This is an extremely quick overview that leaves out several important
 details. Already, though, one can see that GPU programming can be quite
