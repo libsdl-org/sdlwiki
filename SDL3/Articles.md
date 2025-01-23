@@ -7,7 +7,8 @@
 ## SDL GPU
 
 - [Introducing: SDL_shadercross](https://moonside.games/posts/introducing-sdl-shadercross/): A tool for shader workflow for the SDL GPU API
-- [SDL_GPU Concepts: Data Transfer and Cycling](https://moonside.games/posts/sdl-gpu-concepts-cycling/)
+- [SDL GPU API Concepts: Data Transfer and Cycling](https://moonside.games/posts/sdl-gpu-concepts-cycling/)
+- [SDL GPU API Concepts: Sprite Batcher](https://moonside.games/posts/sdl-gpu-sprite-batcher/)
 
 ## Input
 
