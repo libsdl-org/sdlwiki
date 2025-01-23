@@ -17,6 +17,8 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 
 ## SDL GPU
 
+- [Examples Repo](https://github.com/TheSpydog/SDL_gpu_examples)
+- [SDL GPU API Concepts: Sprite Batcher](https://moonside.games/posts/sdl-gpu-sprite-batcher/)
 - [SDL 3 GPU tutorial with C++23 and Modern CMake (Part 1)](https://www.youtube.com/watch?v=UFuWGECc8w0)
 - [SDL 3 GPU tutorial with C++23 and Modern CMake (Part 2)](https://www.youtube.com/watch?v=HYb753diRYA)
 - [SDL 3 GPU tutorial with C++23 and Modern CMake (Part 3)](https://www.youtube.com/watch?v=ddi7V0CDkLQ)
