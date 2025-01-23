@@ -31,7 +31,7 @@ on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-You must unmap the transfer buffer before encoding upload commands.
+You must unmap the transfer buffer before encoding upload commands. The memory is owned by the graphics driver - do NOT call SDL_free() on the returned pointer. 
 
 ## Version
 
