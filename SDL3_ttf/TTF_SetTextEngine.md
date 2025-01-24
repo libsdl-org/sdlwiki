@@ -25,6 +25,10 @@ bool TTF_SetTextEngine(TTF_Text *text, TTF_TextEngine *engine);
 (bool) Returns true on success or false on failure; call SDL_GetError() for
 more information.
 
+## Remarks
+
+This function may cause the internal text representation to be rebuilt.
+
 ## Thread Safety
 
 This function should be called on the thread that created the text.

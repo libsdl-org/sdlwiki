@@ -32,6 +32,8 @@ alignment and wrapping. This is good for editing, but looks better when
 centered or aligned if whitespace around line wrapping is hidden. This
 defaults false.
 
+This function may cause the internal text representation to be rebuilt.
+
 ## Thread Safety
 
 This function should be called on the thread that created the text.

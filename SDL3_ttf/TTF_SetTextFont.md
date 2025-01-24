@@ -31,6 +31,8 @@ When a text object has a font, any changes to the font will automatically
 regenerate the text. If you set the font to NULL, the text will continue to
 render but changes to the font will no longer affect the text.
 
+This function may cause the internal text representation to be rebuilt.
+
 ## Thread Safety
 
 This function should be called on the thread that created the text.

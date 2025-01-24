@@ -26,6 +26,8 @@ bool TTF_SetTextPosition(TTF_Text *text, int x, int y);
 This can be used to position multiple text objects within a single wrapping
 text area.
 
+This function may cause the internal text representation to be rebuilt.
+
 ## Thread Safety
 
 This function should be called on the thread that created the text.
