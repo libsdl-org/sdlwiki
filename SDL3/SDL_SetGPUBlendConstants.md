@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetGPUBlendConstants
 
 Sets the current blend constants on a command buffer.
@@ -30,6 +29,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GPU_BLENDFACTOR_CONSTANT_COLOR](SDL_GPU_BLENDFACTOR_CONSTANT_COLOR)
 - [SDL_GPU_BLENDFACTOR_ONE_MINUS_CONSTANT_COLOR](SDL_GPU_BLENDFACTOR_ONE_MINUS_CONSTANT_COLOR)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

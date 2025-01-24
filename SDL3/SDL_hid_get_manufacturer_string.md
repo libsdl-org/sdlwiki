@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_hid_get_manufacturer_string
 
 Get The Manufacturer String from a HID device.
@@ -29,6 +28,10 @@ int SDL_hid_get_manufacturer_string(SDL_hid_device *dev, wchar_t *string, size_t
 ## Version
 
 This function is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHIDAPI](CategoryHIDAPI)

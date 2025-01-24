@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_PauseAudioDevice
 
 Use this function to pause audio playback on a specified device.
@@ -53,6 +52,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

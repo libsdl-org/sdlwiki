@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUSwapchainComposition
 
 Specifies the texture format and colorspace of the swapchain textures.
@@ -48,6 +47,11 @@ This enum is available since SDL 3.2.0.
 - [SDL_SetGPUSwapchainParameters](SDL_SetGPUSwapchainParameters)
 - [SDL_WindowSupportsGPUSwapchainComposition](SDL_WindowSupportsGPUSwapchainComposition)
 - [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)

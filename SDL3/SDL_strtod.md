@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_strtod
 
 Parse a `double` from a string.
@@ -49,6 +48,11 @@ This function is available since SDL 3.2.0.
 - [SDL_strtoll](SDL_strtoll)
 - [SDL_strtoul](SDL_strtoul)
 - [SDL_strtoull](SDL_strtoull)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

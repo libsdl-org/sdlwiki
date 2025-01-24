@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_OpenTitleStorage
 
 Opens up a read-only container for the application's filesystem.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
 - [SDL_OpenUserStorage](SDL_OpenUserStorage)
 - [SDL_ReadStorageFile](SDL_ReadStorageFile)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)

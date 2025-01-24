@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetGamepadSensorEnabled
 
 Set whether data reporting for a gamepad sensor is enabled.
@@ -34,6 +33,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GamepadHasSensor](SDL_GamepadHasSensor)
 - [SDL_GamepadSensorEnabled](SDL_GamepadSensorEnabled)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

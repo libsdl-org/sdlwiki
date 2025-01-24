@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetAtomicPointer
 
 Set a pointer to a value atomically.
@@ -41,6 +40,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CompareAndSwapAtomicPointer](SDL_CompareAndSwapAtomicPointer)
 - [SDL_GetAtomicPointer](SDL_GetAtomicPointer)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)

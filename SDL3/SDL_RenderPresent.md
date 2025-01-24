@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_RenderPresent
 
 Update the screen with any rendering performed since the previous call.
@@ -74,6 +73,11 @@ This function is available since SDL 3.2.0.
 - [SDL_RenderRects](SDL_RenderRects)
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 - [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_RenderFillRects
 
 Fill some number of rectangles on the current rendering target with the drawing color at subpixel precision.
@@ -37,6 +36,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_RenderFillRect](SDL_RenderFillRect)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetPrimarySelectionText
 
 Put UTF-8 text into the primary selection.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
 - [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)

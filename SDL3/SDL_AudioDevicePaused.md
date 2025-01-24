@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AudioDevicePaused
 
 Use this function to query if an audio device is paused.
@@ -44,6 +43,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

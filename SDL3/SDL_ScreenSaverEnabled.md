@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ScreenSaverEnabled
 
 Check whether the screensaver is currently enabled.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_DisableScreenSaver](SDL_DisableScreenSaver)
 - [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

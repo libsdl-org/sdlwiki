@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_const_cast
 
 Handle a Const Cast properly whether using C or C++.
@@ -44,6 +43,11 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_reinterpret_cast](SDL_reinterpret_cast)
 - [SDL_static_cast](SDL_static_cast)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AsyncIOQueue
 
 A queue of completed asynchronous I/O tasks.
@@ -31,6 +30,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_WriteAsyncIO](SDL_WriteAsyncIO)
 - [SDL_GetAsyncIOResult](SDL_GetAsyncIOResult)
 - [SDL_WaitAsyncIOResult](SDL_WaitAsyncIOResult)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAsyncIO](CategoryAsyncIO)

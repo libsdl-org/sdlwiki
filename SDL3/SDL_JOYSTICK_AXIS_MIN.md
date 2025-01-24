@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_JOYSTICK_AXIS_MIN
 
 The smallest value an [SDL_Joystick](SDL_Joystick)'s axis can report.
@@ -24,6 +23,11 @@ This macro is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_JOYSTICK_AXIS_MAX](SDL_JOYSTICK_AXIS_MAX)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryJoystick](CategoryJoystick)

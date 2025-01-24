@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GLContextReleaseFlag
 
 Possible values to be set for the [SDL_GL_CONTEXT_RELEASE_BEHAVIOR](SDL_GL_CONTEXT_RELEASE_BEHAVIOR) attribute.
@@ -19,6 +18,10 @@ typedef Uint32 SDL_GLContextReleaseFlag;
 ## Version
 
 This datatype is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)

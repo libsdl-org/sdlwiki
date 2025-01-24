@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_aligned_alloc
 
 Allocate memory aligned to a specific alignment.
@@ -47,6 +46,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_aligned_free](SDL_aligned_free)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

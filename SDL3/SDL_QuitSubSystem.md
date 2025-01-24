@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_QuitSubSystem
 
 Shut down specific SDL subsystems.
@@ -32,6 +31,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_Quit](SDL_Quit)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

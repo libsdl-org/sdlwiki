@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUBuffer
 
 An opaque handle representing a buffer.
@@ -37,6 +36,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_BindGPUComputeStorageBuffers](SDL_BindGPUComputeStorageBuffers)
 - [SDL_DispatchGPUComputeIndirect](SDL_DispatchGPUComputeIndirect)
 - [SDL_ReleaseGPUBuffer](SDL_ReleaseGPUBuffer)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)

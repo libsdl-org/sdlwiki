@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetErrorV
 
 Set the SDL error message for the current thread.
@@ -41,6 +40,11 @@ This function is available since SDL 3.2.0.
 - [SDL_ClearError](SDL_ClearError)
 - [SDL_GetError](SDL_GetError)
 - [SDL_SetError](SDL_SetError)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

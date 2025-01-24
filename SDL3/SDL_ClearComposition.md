@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ClearComposition
 
 Dismiss the composition window/IME without disabling the subsystem.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StopTextInput](SDL_StopTextInput)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

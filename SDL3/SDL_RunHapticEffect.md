@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_RunHapticEffect
 
 Run the haptic effect on its associated haptic device.
@@ -43,6 +42,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetHapticEffectStatus](SDL_GetHapticEffectStatus)
 - [SDL_StopHapticEffect](SDL_StopHapticEffect)
 - [SDL_StopHapticEffects](SDL_StopHapticEffects)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

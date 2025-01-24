@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_EnumerationResult
 
 Possible results from an enumeration callback.
@@ -25,6 +24,11 @@ This enum is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_EnumerateDirectoryCallback](SDL_EnumerateDirectoryCallback)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryFilesystem](CategoryFilesystem)

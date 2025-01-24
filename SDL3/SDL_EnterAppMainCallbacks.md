@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_EnterAppMainCallbacks
 
 An entry point for SDL's use in [SDL_MAIN_USE_CALLBACKS](SDL_MAIN_USE_CALLBACKS).
@@ -47,6 +46,10 @@ It is not safe to call this anywhere except as the only function call in
 ## Version
 
 This function is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)

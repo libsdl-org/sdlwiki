@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetWindowSize
 
 Get the size of a window's client area.
@@ -47,6 +46,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
 - [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
 - [SDL_SetWindowSize](SDL_SetWindowSize)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

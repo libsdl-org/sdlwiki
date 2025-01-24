@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CloseIO
 
 Close and free an allocated [SDL_IOStream](SDL_IOStream) structure.
@@ -56,6 +55,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_OpenIO](SDL_OpenIO)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

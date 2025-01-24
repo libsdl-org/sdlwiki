@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_WriteStorageFile
 
 Synchronously write a file from client memory into a storage container.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)
 - [SDL_ReadStorageFile](SDL_ReadStorageFile)
 - [SDL_StorageReady](SDL_StorageReady)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)

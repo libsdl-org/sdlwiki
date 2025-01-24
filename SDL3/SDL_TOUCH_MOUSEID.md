@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_TOUCH_MOUSEID
 
 The [SDL_MouseID](SDL_MouseID) for mouse events simulated with touch input.
@@ -16,6 +15,10 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Version
 
 This macro is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryTouch](CategoryTouch), [CategoryMouse](CategoryMouse), 

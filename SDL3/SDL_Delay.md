@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Delay
 
 Wait a specified number of milliseconds before returning.
@@ -37,6 +36,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_DelayNS](SDL_DelayNS)
 - [SDL_DelayPrecise](SDL_DelayPrecise)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HapticLeftRight
 
 A structure containing a template for a Left/Right effect.
@@ -41,6 +40,11 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_HAPTIC_LEFTRIGHT](SDL_HAPTIC_LEFTRIGHT)
 - [SDL_HapticEffect](SDL_HapticEffect)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)

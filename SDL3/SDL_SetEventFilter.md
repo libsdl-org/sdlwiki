@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetEventFilter
 
 Set up a filter to process all events before they are added to the internal event queue.
@@ -131,6 +130,11 @@ int main(int argc, char **argv)
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_PeepEvents](SDL_PeepEvents)
 - [SDL_PushEvent](SDL_PushEvent)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

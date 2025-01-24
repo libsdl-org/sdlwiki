@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetLogPriorityPrefix
 
 Set the text prepended to log messages of a given priority.
@@ -43,6 +42,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetLogPriorities](SDL_SetLogPriorities)
 - [SDL_SetLogPriority](SDL_SetLogPriority)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)

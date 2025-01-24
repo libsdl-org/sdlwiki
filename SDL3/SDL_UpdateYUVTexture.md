@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_UpdateYUVTexture
 
 Update a rectangle within a planar YV12 or IYUV texture with new pixel data.
@@ -53,6 +52,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

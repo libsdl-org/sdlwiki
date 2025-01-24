@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AtomicInt
 
 A type representing an atomic integer value.
@@ -42,6 +41,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_GetAtomicInt](SDL_GetAtomicInt)
 - [SDL_SetAtomicInt](SDL_SetAtomicInt)
 - [SDL_AddAtomicInt](SDL_AddAtomicInt)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)

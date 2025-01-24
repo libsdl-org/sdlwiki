@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUTextureFormat
 
 Specifies the pixel format of a texture.
@@ -224,6 +223,11 @@ This enum is available since SDL 3.2.0.
 
 - [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
 - [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)

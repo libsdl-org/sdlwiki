@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetTraySubmenu
 
 Gets a previously created tray entry submenu.
@@ -46,6 +45,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_InsertTrayEntryAt](SDL_InsertTrayEntryAt)
 - [SDL_CreateTraySubmenu](SDL_CreateTraySubmenu)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)

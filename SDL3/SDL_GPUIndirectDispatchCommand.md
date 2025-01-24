@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUIndirectDispatchCommand
 
 A structure specifying the parameters of an indexed dispatch command.
@@ -25,6 +24,11 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_DispatchGPUComputeIndirect](SDL_DispatchGPUComputeIndirect)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateGPUTransferBuffer
 
 Creates a transfer buffer to be used when uploading to or downloading from graphics resources.
@@ -50,6 +49,11 @@ This function is available since SDL 3.2.0.
 - [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
 - [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture)
 - [SDL_ReleaseGPUTransferBuffer](SDL_ReleaseGPUTransferBuffer)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

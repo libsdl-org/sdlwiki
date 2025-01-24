@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_InitSubSystem
 
 Compatibility function to initialize the SDL library.
@@ -37,6 +36,11 @@ This function is available since SDL 3.2.0.
 - [SDL_Init](SDL_Init)
 - [SDL_Quit](SDL_Quit)
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

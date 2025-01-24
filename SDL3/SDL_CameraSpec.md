@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CameraSpec
 
 The details of an output format for a camera device.
@@ -34,6 +33,11 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_GetCameraSupportedFormats](SDL_GetCameraSupportedFormats)
 - [SDL_GetCameraFormat](SDL_GetCameraFormat)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryCamera](CategoryCamera)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_FilterEvents
 
 Run a specific filter function on the current event queue, removing any events for which the filter returns false.
@@ -39,6 +38,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

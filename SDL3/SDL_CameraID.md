@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CameraID
 
 This is a unique ID for a camera device for the time it is connected to the system, and is never reused for the lifetime of the application.
@@ -26,6 +25,11 @@ This datatype is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetCameras](SDL_GetCameras)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryCamera](CategoryCamera)

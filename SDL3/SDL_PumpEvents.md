@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_PumpEvents
 
 Pump the event loop, gathering events from the input devices.
@@ -39,6 +38,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_PollEvent](SDL_PollEvent)
 - [SDL_WaitEvent](SDL_WaitEvent)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

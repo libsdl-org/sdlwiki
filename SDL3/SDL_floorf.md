@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_floorf
 
 Compute the floor of `x`.
@@ -50,6 +49,11 @@ This function is available since SDL 3.2.0.
 - [SDL_truncf](SDL_truncf)
 - [SDL_roundf](SDL_roundf)
 - [SDL_lroundf](SDL_lroundf)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGamepadMappingForGUID
 
 Get the gamepad mapping string for a given GUID.
@@ -33,6 +32,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetJoystickGUIDForID](SDL_GetJoystickGUIDForID)
 - [SDL_GetJoystickGUID](SDL_GetJoystickGUID)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

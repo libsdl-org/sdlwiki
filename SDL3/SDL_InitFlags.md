@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_InitFlags
 
 Initialization flags for [SDL_Init](SDL_Init) and/or [SDL_InitSubSystem](SDL_InitSubSystem)
@@ -38,6 +37,11 @@ This datatype is available since SDL 3.2.0.
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
 - [SDL_WasInit](SDL_WasInit)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryInit](CategoryInit)

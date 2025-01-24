@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetFloatProperty
 
 Set a floating point property in a group of properties.
@@ -37,6 +36,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetFloatProperty](SDL_GetFloatProperty)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)

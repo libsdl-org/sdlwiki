@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetJoystickFromPlayerIndex
 
 Get the [SDL_Joystick](SDL_Joystick) associated with a player index.
@@ -33,6 +32,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetJoystickPlayerIndex](SDL_GetJoystickPlayerIndex)
 - [SDL_SetJoystickPlayerIndex](SDL_SetJoystickPlayerIndex)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

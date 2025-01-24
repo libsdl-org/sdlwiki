@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DisplayMode
 
 The structure that defines a display mode.
@@ -37,6 +36,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)

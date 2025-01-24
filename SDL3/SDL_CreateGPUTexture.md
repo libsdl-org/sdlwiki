@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateGPUTexture
 
 Creates a texture object to be used in graphics or compute workflows.
@@ -87,6 +86,11 @@ This function is available since SDL 3.2.0.
 - [SDL_BlitGPUTexture](SDL_BlitGPUTexture)
 - [SDL_ReleaseGPUTexture](SDL_ReleaseGPUTexture)
 - [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

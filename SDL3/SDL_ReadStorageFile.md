@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ReadStorageFile
 
 Synchronously read a file from a storage container into a client-provided buffer.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
 - [SDL_StorageReady](SDL_StorageReady)
 - [SDL_WriteStorageFile](SDL_WriteStorageFile)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)

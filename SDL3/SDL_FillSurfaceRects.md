@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_FillSurfaceRects
 
 Perform a fast fill of a set of rectangles with a specific color.
@@ -45,6 +44,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_FillSurfaceRect](SDL_FillSurfaceRect)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DestroyCursor
 
 Free a previously-created cursor.
@@ -39,6 +38,11 @@ This function is available since SDL 3.2.0.
 - [SDL_CreateColorCursor](SDL_CreateColorCursor)
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

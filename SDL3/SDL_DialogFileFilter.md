@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DialogFileFilter
 
 An entry for filters for file dialogs.
@@ -51,6 +50,11 @@ const SDL_DialogFileFilter filters[] = {
 - [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 - [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryDialog](CategoryDialog)

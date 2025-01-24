@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAudioPlaybackDevices
 
 Get a list of currently-connected audio playback devices.
@@ -51,6 +50,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 - [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

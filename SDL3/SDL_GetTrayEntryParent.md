@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetTrayEntryParent
 
 Gets the menu containing a certain tray entry.
@@ -34,6 +33,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_InsertTrayEntryAt](SDL_InsertTrayEntryAt)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)

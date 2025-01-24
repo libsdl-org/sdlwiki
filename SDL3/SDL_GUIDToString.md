@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GUIDToString
 
 Get an ASCII string representation for a given [SDL_GUID](SDL_GUID).
@@ -28,6 +27,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_StringToGUID](SDL_StringToGUID)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGUID](CategoryGUID)

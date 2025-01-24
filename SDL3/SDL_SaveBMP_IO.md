@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SaveBMP_IO
 
 Save a surface to a seekable SDL data stream in BMP format.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_LoadBMP_IO](SDL_LoadBMP_IO)
 - [SDL_SaveBMP](SDL_SaveBMP)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

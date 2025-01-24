@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_WriteIO
 
 Write to an [SDL_IOStream](SDL_IOStream) data stream.
@@ -55,6 +54,11 @@ This function is available since SDL 3.2.0.
 - [SDL_SeekIO](SDL_SeekIO)
 - [SDL_FlushIO](SDL_FlushIO)
 - [SDL_GetIOStatus](SDL_GetIOStatus)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

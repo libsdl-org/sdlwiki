@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_randf_r
 
 Generate a uniform pseudo-random floating point number less than 1.0
@@ -48,6 +47,11 @@ This function is available since SDL 3.2.0.
 - [SDL_rand_bits_r](SDL_rand_bits_r)
 - [SDL_rand_r](SDL_rand_r)
 - [SDL_randf](SDL_randf)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

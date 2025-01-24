@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetSurfaceAlphaMod
 
 Get the additional alpha value used in blit operations.
@@ -33,6 +32,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod)
 - [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

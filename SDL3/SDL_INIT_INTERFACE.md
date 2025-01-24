@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_INIT_INTERFACE
 
 A macro to initialize an SDL interface.
@@ -59,6 +58,11 @@ This macro is available since SDL 3.2.0.
 - [SDL_IOStreamInterface](SDL_IOStreamInterface)
 - [SDL_StorageInterface](SDL_StorageInterface)
 - [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)

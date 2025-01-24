@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateRendererWithProperties
 
 Create a 2D rendering context for a window, with the specified properties.
@@ -82,6 +81,11 @@ This function is available since SDL 3.2.0.
 - [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 - [SDL_GetRendererName](SDL_GetRendererName)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

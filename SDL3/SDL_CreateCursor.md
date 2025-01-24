@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateCursor
 
 Create a cursor using the specified bitmap data and mask (in MSB format).
@@ -158,6 +157,11 @@ SDL_Cursor *init_system_cursor(const char *image[])
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 - [SDL_DestroyCursor](SDL_DestroyCursor)
 - [SDL_SetCursor](SDL_SetCursor)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

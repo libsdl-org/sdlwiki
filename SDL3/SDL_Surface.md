@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Surface
 
 A collection of pixels used in software blitting.
@@ -52,6 +51,11 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_DestroySurface](SDL_DestroySurface)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySurface](CategorySurface)

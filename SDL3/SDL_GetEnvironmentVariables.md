@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetEnvironmentVariables
 
 Get all variables in the environment.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetEnvironmentVariables](SDL_GetEnvironmentVariables)
 - [SDL_SetEnvironmentVariable](SDL_SetEnvironmentVariable)
 - [SDL_UnsetEnvironmentVariable](SDL_UnsetEnvironmentVariable)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetRealGamepadTypeForID
 
 Get the type of a gamepad, ignoring any mapping override.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetGamepadTypeForID](SDL_GetGamepadTypeForID)
 - [SDL_GetGamepads](SDL_GetGamepads)
 - [SDL_GetRealGamepadType](SDL_GetRealGamepadType)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

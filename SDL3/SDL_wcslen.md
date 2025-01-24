@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_wcslen
 
 This works exactly like wcslen() but doesn't require access to a C runtime.
@@ -49,6 +48,11 @@ This function is available since SDL 3.2.0.
 - [SDL_wcsnlen](SDL_wcsnlen)
 - [SDL_utf8strlen](SDL_utf8strlen)
 - [SDL_utf8strnlen](SDL_utf8strnlen)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

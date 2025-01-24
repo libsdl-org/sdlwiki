@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGamepadAxisFromString
 
 Convert a string into [SDL_GamepadAxis](SDL_GamepadAxis) enum.
@@ -46,6 +45,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetGamepadStringForAxis](SDL_GetGamepadStringForAxis)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

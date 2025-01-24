@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUPresentMode
 
 Specifies the timing that will be used to present swapchain textures to the OS.
@@ -46,6 +45,11 @@ This enum is available since SDL 3.2.0.
 - [SDL_SetGPUSwapchainParameters](SDL_SetGPUSwapchainParameters)
 - [SDL_WindowSupportsGPUPresentMode](SDL_WindowSupportsGPUPresentMode)
 - [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)

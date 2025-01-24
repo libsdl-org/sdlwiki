@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetStorageFileSize
 
 Query the size of a file within a storage container.
@@ -34,6 +33,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_ReadStorageFile](SDL_ReadStorageFile)
 - [SDL_StorageReady](SDL_StorageReady)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)

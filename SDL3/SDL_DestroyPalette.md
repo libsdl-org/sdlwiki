@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DestroyPalette
 
 Free a palette created with [SDL_CreatePalette](SDL_CreatePalette)().
@@ -31,6 +30,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_CreatePalette](SDL_CreatePalette)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)

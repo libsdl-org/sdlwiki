@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GL_GetProcAddress
 
 Get an OpenGL function by name.
@@ -94,6 +93,11 @@ glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
 - [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)
 - [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

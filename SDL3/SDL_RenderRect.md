@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_RenderRect
 
 Draw a rectangle on the current rendering target at subpixel precision.
@@ -36,6 +35,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_RenderRects](SDL_RenderRects)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

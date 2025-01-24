@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetSurfaceRLE
 
 Set the RLE acceleration hint for a surface.
@@ -39,6 +38,11 @@ This function is available since SDL 3.2.0.
 - [SDL_BlitSurface](SDL_BlitSurface)
 - [SDL_LockSurface](SDL_LockSurface)
 - [SDL_UnlockSurface](SDL_UnlockSurface)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

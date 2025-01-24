@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_OpenAudioDevice
 
 Open a specific audio device.
@@ -120,6 +119,11 @@ if (dev == 0) {
 
 - [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
 - [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_bsearch_r
 
 Perform a binary search on a previously sorted array, passing a userdata pointer to the compare function.
@@ -79,6 +78,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_bsearch](SDL_bsearch)
 - [SDL_qsort_r](SDL_qsort_r)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

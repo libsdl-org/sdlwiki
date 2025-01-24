@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_LockRWLockForReading
 
 Lock the read/write lock for _read only_ operations.
@@ -54,6 +53,11 @@ This function is available since SDL 3.2.0.
 - [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
 - [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
 - [SDL_UnlockRWLock](SDL_UnlockRWLock)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

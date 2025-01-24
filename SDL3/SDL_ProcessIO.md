@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ProcessIO
 
 Description of where standard I/O should be directed when creating a process.
@@ -75,6 +74,11 @@ This enum is available since SDL 3.2.0.
 - [SDL_ReadProcess](SDL_ReadProcess)
 - [SDL_GetProcessInput](SDL_GetProcessInput)
 - [SDL_GetProcessOutput](SDL_GetProcessOutput)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryProcess](CategoryProcess)

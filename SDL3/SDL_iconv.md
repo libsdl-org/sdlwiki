@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_iconv
 
 This function converts text between encodings, reading from and writing to a buffer.
@@ -65,6 +64,11 @@ This function is available since SDL 3.2.0.
 - [SDL_iconv_open](SDL_iconv_open)
 - [SDL_iconv_close](SDL_iconv_close)
 - [SDL_iconv_string](SDL_iconv_string)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ShowFileDialogWithProperties
 
 Create and launch a file dialog with the specified properties.
@@ -66,6 +65,11 @@ This function is available since SDL 3.2.0.
 - [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
 - [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryDialog](CategoryDialog)

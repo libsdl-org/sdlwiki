@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SubmitGPUCommandBufferAndAcquireFence
 
 Submits a command buffer so its commands can be processed on the GPU, and acquires a fence associated with the command buffer.
@@ -47,6 +46,11 @@ This function is available since SDL 3.2.0.
 - [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_ReleaseGPUFence](SDL_ReleaseGPUFence)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

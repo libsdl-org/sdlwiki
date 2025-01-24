@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HINT_MAC_BACKGROUND_APP
 
 A variable controlling whether to force the application to become the foreground process when launched on macOS.
@@ -26,6 +25,10 @@ This hint needs to be set before [SDL_Init](SDL_Init)().
 ## Version
 
 This hint is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

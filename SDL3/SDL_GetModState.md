@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetModState
 
 Get the current key modifier state for the keyboard.
@@ -30,6 +29,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetKeyboardState](SDL_GetKeyboardState)
 - [SDL_SetModState](SDL_SetModState)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetPointerProperty
 
 Get a pointer property from a group of properties.
@@ -56,6 +55,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetStringProperty](SDL_GetStringProperty)
 - [SDL_HasProperty](SDL_HasProperty)
 - [SDL_SetPointerProperty](SDL_SetPointerProperty)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)

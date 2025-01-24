@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_acosf
 
 Compute the arc cosine of `x`.
@@ -52,6 +51,11 @@ This function is available since SDL 3.2.0.
 - [SDL_acos](SDL_acos)
 - [SDL_asinf](SDL_asinf)
 - [SDL_cosf](SDL_cosf)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

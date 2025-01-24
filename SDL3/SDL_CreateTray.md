@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateTray
 
 Create an icon to be placed in the operating system's tray, or equivalent.
@@ -45,6 +44,11 @@ This function is available since SDL 3.2.0.
 - [SDL_CreateTrayMenu](SDL_CreateTrayMenu)
 - [SDL_GetTrayMenu](SDL_GetTrayMenu)
 - [SDL_DestroyTray](SDL_DestroyTray)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateWindow
 
 Create a window with the specified dimensions and flags.
@@ -171,6 +170,11 @@ int main(int argc, char* argv[]) {
 - [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

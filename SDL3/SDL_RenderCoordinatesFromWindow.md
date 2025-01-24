@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_RenderCoordinatesFromWindow
 
 Get a point in render coordinates when given a point in window coordinates.
@@ -50,6 +49,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 - [SDL_SetRenderScale](SDL_SetRenderScale)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

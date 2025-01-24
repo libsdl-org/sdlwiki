@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateAudioStream
 
 Create a new audio stream.
@@ -43,6 +42,11 @@ This function is available since SDL 3.2.0.
 - [SDL_ClearAudioStream](SDL_ClearAudioStream)
 - [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
 - [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

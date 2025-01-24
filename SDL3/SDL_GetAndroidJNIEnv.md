@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAndroidJNIEnv
 
 Get the Android Java Native Interface Environment of the current thread.
@@ -77,6 +76,11 @@ void showHome(void)
 ## See Also
 
 - [SDL_GetAndroidActivity](SDL_GetAndroidActivity)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)

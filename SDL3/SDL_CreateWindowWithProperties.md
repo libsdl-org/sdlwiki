@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateWindowWithProperties
 
 Create a window with the specified properties.
@@ -204,6 +203,11 @@ main(int argc, char** argv)
 - [SDL_CreateProperties](SDL_CreateProperties)
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_UINT64_C
 
 Append the 64 bit integer suffix to an unsigned integer literal.
@@ -26,6 +25,11 @@ This macro is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SINT64_C](SDL_SINT64_C)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)

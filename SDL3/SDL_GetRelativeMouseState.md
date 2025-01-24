@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetRelativeMouseState
 
 Query SDL's cache for the synchronous mouse button state and accumulated mouse delta since last call.
@@ -55,6 +54,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetMouseState](SDL_GetMouseState)
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

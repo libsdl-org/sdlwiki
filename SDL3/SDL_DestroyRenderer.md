@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_DestroyRenderer
 
 Destroy the rendering context for a window and free all associated textures.
@@ -34,6 +33,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_CreateRenderer](SDL_CreateRenderer)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

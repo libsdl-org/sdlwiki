@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetTextureColorMod
 
 Set an additional color value multiplied into render copy operations.
@@ -51,6 +50,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
 - [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
 - [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

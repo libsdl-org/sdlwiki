@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Vulkan_GetInstanceExtensions
 
 Get the Vulkan instance extensions needed for vkCreateInstance.
@@ -75,6 +74,11 @@ SDL_free(extensions);
 ## See Also
 
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAndroidExternalStoragePath
 
 Get the path used for external storage for this Android application.
@@ -40,6 +39,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAndroidExternalStorageState](SDL_GetAndroidExternalStorageState)
 - [SDL_GetAndroidInternalStoragePath](SDL_GetAndroidInternalStoragePath)
 - [SDL_GetAndroidCachePath](SDL_GetAndroidCachePath)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)

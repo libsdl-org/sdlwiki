@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_TrayEntry
 
 An opaque handle representing an entry on a system tray object.
@@ -16,6 +15,10 @@ typedef struct SDL_TrayEntry SDL_TrayEntry;
 ## Version
 
 This struct is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTray](CategoryTray)

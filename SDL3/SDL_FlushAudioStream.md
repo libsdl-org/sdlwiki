@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_FlushAudioStream
 
 Tell the stream that you're done sending data, and anything being buffered should be converted/resampled and made available immediately.
@@ -41,6 +40,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

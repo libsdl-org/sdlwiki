@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateSemaphore
 
 Create a semaphore.
@@ -83,6 +82,11 @@ SDL_DestroySemaphore(sem);
 - [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
 - [SDL_WaitSemaphore](SDL_WaitSemaphore)
 - [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetHint
 
 Set a hint with normal priority.
@@ -66,6 +65,11 @@ int main(int argc, char* argv[])
 - [SDL_GetHint](SDL_GetHint)
 - [SDL_ResetHint](SDL_ResetHint)
 - [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_StorageInterface
 
 Function interface for [SDL_Storage](SDL_Storage).
@@ -71,6 +70,11 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStorage](CategoryStorage)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_UnlockTexture
 
 Unlock a texture, uploading the changes to video memory, if needed.
@@ -41,6 +40,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_LockTexture](SDL_LockTexture)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

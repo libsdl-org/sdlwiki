@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_BlitSurface
 
 Performs a fast blit from the source surface to the destination surface with clipping.
@@ -102,6 +101,11 @@ SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 ## See Also
 
 - [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

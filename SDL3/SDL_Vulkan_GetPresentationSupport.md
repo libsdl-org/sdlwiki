@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Vulkan_GetPresentationSupport
 
 Query support for presentation via a given physical device and queue family.
@@ -41,6 +40,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)

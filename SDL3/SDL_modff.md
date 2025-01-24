@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_modff
 
 Split `x` into integer and fractional parts
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 - [SDL_modf](SDL_modf)
 - [SDL_truncf](SDL_truncf)
 - [SDL_fmodf](SDL_fmodf)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

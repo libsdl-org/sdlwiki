@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_TrayCallback
 
 A callback that is invoked when a tray entry is selected.
@@ -27,6 +26,11 @@ This datatype is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SetTrayEntryCallback](SDL_SetTrayEntryCallback)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTray](CategoryTray)

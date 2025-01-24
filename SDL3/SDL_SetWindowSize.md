@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetWindowSize
 
 Request that the size of a window's client area be set.
@@ -61,6 +60,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_SyncWindow](SDL_SyncWindow)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

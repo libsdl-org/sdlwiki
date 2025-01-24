@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUComputePipeline
 
 An opaque handle representing a compute pipeline.
@@ -26,6 +25,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_CreateGPUComputePipeline](SDL_CreateGPUComputePipeline)
 - [SDL_BindGPUComputePipeline](SDL_BindGPUComputePipeline)
 - [SDL_ReleaseGPUComputePipeline](SDL_ReleaseGPUComputePipeline)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)

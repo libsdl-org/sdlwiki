@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_OpenAudioDeviceStream
 
 Convenience function for straightforward audio init for the common case.
@@ -85,6 +84,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
 - [SDL_ResumeAudioStreamDevice](SDL_ResumeAudioStreamDevice)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

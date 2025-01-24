@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MemoryBarrierAcquire
 
 Insert a memory acquire barrier (macro version).
@@ -39,6 +38,11 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_MemoryBarrierRelease](SDL_MemoryBarrierRelease)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAtomic](CategoryAtomic)

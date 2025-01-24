@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateTextureWithProperties
 
 Create a texture for a rendering context with the specified properties.
@@ -145,6 +144,11 @@ This function is available since SDL 3.2.0.
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 - [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

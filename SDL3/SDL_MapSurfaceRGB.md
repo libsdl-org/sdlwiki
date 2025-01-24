@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MapSurfaceRGB
 
 Map an RGB triple to an opaque pixel value for a surface.
@@ -50,6 +49,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_MapSurfaceRGBA](SDL_MapSurfaceRGBA)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface), [CategoryPixels](CategoryPixels)

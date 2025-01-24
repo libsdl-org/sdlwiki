@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_PROP_GLOBAL_VIDEO_WAYLAND_WL_DISPLAY_POINTER
 
 The pointer to the global `wl_display` object used by the Wayland video backend.
@@ -23,6 +22,10 @@ initialized has no effect, and reading it when the video subsystem is
 uninitialized will either return the user provided value, if one was set
 prior to initialization, or NULL. See docs/README-wayland.md for more
 information.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)

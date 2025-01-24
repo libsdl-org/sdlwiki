@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GL_MakeCurrent
 
 Set up an OpenGL context for rendering into an OpenGL window.
@@ -40,6 +39,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GL_CreateContext](SDL_GL_CreateContext)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

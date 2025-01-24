@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_rand
 
 Generate a pseudo-random number less than n for positive n
@@ -57,6 +56,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_srand](SDL_srand)
 - [SDL_randf](SDL_randf)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

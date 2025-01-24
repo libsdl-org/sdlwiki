@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HasARMSIMD
 
 Determine whether the CPU has ARM SIMD (ARMv6) features.
@@ -34,6 +33,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_HasNEON](SDL_HasNEON)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)

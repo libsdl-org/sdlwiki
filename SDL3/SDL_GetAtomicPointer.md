@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAtomicPointer
 
 Get the value of a pointer atomically.
@@ -40,6 +39,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CompareAndSwapAtomicPointer](SDL_CompareAndSwapAtomicPointer)
 - [SDL_SetAtomicPointer](SDL_SetAtomicPointer)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)

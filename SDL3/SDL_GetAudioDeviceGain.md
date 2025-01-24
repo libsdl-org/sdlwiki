@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetAudioDeviceGain
 
 Get the gain of an audio device.
@@ -45,6 +44,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SetAudioDeviceGain](SDL_SetAudioDeviceGain)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

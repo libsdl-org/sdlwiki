@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_LockAudioStream
 
 Lock an audio stream for serialized access.
@@ -52,6 +51,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_UnlockAudioStream](SDL_UnlockAudioStream)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

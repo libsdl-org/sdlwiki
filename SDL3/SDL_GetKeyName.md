@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetKeyName
 
 Get a human-readable name for a key.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetKeyFromName](SDL_GetKeyFromName)
 - [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
 - [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetTrayMenuParentEntry
 
 Gets the entry for which the menu is a submenu, if the current menu is a submenu.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateTraySubmenu](SDL_CreateTraySubmenu)
 - [SDL_GetTrayMenuParentTray](SDL_GetTrayMenuParentTray)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)

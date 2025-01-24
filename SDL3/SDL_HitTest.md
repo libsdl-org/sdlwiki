@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HitTest
 
 Callback used for hit-testing.
@@ -28,6 +27,11 @@ Returns an [SDL_HitTestResult](SDL_HitTestResult) value.
 ## See Also
 
 - [SDL_SetWindowHitTest](SDL_SetWindowHitTest)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)

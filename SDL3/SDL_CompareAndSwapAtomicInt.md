@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CompareAndSwapAtomicInt
 
 Set an atomic variable to a new value if it is currently an old value.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetAtomicInt](SDL_GetAtomicInt)
 - [SDL_SetAtomicInt](SDL_SetAtomicInt)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AsyncIOFromFile
 
 Use this function to create a new [SDL_AsyncIO](SDL_AsyncIO) object for reading from and/or writing to a named file.
@@ -58,6 +57,11 @@ This function is available since SDL 3.2.0.
 - [SDL_CloseAsyncIO](SDL_CloseAsyncIO)
 - [SDL_ReadAsyncIO](SDL_ReadAsyncIO)
 - [SDL_WriteAsyncIO](SDL_WriteAsyncIO)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAsyncIO](CategoryAsyncIO)

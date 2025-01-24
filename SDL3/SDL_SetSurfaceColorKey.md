@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetSurfaceColorKey
 
 Set the color key (transparent pixel) in a surface.
@@ -44,6 +43,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetSurfaceColorKey](SDL_GetSurfaceColorKey)
 - [SDL_SetSurfaceRLE](SDL_SetSurfaceRLE)
 - [SDL_SurfaceHasColorKey](SDL_SurfaceHasColorKey)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

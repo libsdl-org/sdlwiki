@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_UnlockSurface
 
 Release a surface after directly accessing the pixels.
@@ -26,6 +25,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_LockSurface](SDL_LockSurface)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

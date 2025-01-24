@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MouseButtonFlags
 
 A bitmask of pressed mouse buttons, as reported by [SDL_GetMouseState](SDL_GetMouseState), etc.
@@ -43,6 +42,11 @@ This datatype is available since SDL 3.2.0.
 - [SDL_GetMouseState](SDL_GetMouseState)
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMouse](CategoryMouse)

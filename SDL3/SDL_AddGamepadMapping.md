@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AddGamepadMapping
 
 Add support for gamepads that SDL is unaware of or change the binding of an existing gamepad.
@@ -65,6 +64,11 @@ This function is available since SDL 3.2.0.
 - [SDL_HINT_GAMECONTROLLERCONFIG](SDL_HINT_GAMECONTROLLERCONFIG)
 - [SDL_HINT_GAMECONTROLLERCONFIG_FILE](SDL_HINT_GAMECONTROLLERCONFIG_FILE)
 - [SDL_EVENT_GAMEPAD_ADDED](SDL_EVENT_GAMEPAD_ADDED)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

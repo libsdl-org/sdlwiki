@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Environment
 
 A thread-safe set of environment variables
@@ -26,6 +25,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_SetEnvironmentVariable](SDL_SetEnvironmentVariable)
 - [SDL_UnsetEnvironmentVariable](SDL_UnsetEnvironmentVariable)
 - [SDL_DestroyEnvironment](SDL_DestroyEnvironment)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdinc](CategoryStdinc)

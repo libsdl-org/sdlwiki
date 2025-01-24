@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_TLSDestructorCallback
 
 The callback used to cleanup data passed to [SDL_SetTLS](SDL_SetTLS).
@@ -30,6 +29,11 @@ This datatype is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SetTLS](SDL_SetTLS)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryThread](CategoryThread)

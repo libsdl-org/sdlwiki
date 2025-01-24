@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUGraphicsPipelineCreateInfo
 
 A structure specifying the parameters of a graphics pipeline state.
@@ -38,6 +37,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_GPUMultisampleState](SDL_GPUMultisampleState)
 - [SDL_GPUDepthStencilState](SDL_GPUDepthStencilState)
 - [SDL_GPUGraphicsPipelineTargetInfo](SDL_GPUGraphicsPipelineTargetInfo)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)

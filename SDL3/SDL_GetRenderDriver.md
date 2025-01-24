@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetRenderDriver
 
 Use this function to get the name of a built in 2D rendering driver.
@@ -45,6 +44,10 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 ## Code examples

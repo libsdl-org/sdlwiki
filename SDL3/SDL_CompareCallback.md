@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CompareCallback
 
 A callback used with SDL sorting and binary search functions.
@@ -34,6 +33,11 @@ This callback is available since SDL 3.2.0.
 
 - [SDL_bsearch](SDL_bsearch)
 - [SDL_qsort](SDL_qsort)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdinc](CategoryStdinc)

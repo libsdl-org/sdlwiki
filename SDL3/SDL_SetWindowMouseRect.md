@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetWindowMouseRect
 
 Confines the cursor to the specified area of a window.
@@ -43,6 +42,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
 - [SDL_GetWindowMouseGrab](SDL_GetWindowMouseGrab)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryMouse](CategoryMouse), 

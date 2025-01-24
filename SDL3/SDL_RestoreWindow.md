@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_RestoreWindow
 
 Request that the size and position of a minimized or maximized window be restored.
@@ -53,6 +52,11 @@ This function is available since SDL 3.2.0.
 - [SDL_MaximizeWindow](SDL_MaximizeWindow)
 - [SDL_MinimizeWindow](SDL_MinimizeWindow)
 - [SDL_SyncWindow](SDL_SyncWindow)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

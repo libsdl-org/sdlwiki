@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GL_ResetAttributes
 
 Reset all previously set OpenGL context attributes to their default values.
@@ -25,6 +24,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 - [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

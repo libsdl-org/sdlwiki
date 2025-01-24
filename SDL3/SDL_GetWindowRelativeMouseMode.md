@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetWindowRelativeMouseMode
 
 Query whether relative mouse mode is enabled for a window.
@@ -35,6 +34,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SetWindowRelativeMouseMode](SDL_SetWindowRelativeMouseMode)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGamepadStringForButton
 
 Convert from an [SDL_GamepadButton](SDL_GamepadButton) enum to a string.
@@ -32,6 +31,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetGamepadButtonFromString](SDL_GetGamepadButtonFromString)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

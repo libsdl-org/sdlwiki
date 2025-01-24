@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_free
 
 Free allocated memory.
@@ -39,6 +38,11 @@ This function is available since SDL 3.2.0.
 - [SDL_malloc](SDL_malloc)
 - [SDL_calloc](SDL_calloc)
 - [SDL_realloc](SDL_realloc)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

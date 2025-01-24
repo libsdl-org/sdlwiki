@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_PLATFORM_IOS
 
 A preprocessor macro that is only defined if compiling for iOS.
@@ -20,6 +19,11 @@ This macro is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_PLATFORM_APPLE](SDL_PLATFORM_APPLE)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPlatform](CategoryPlatform)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetLogOutputFunction
 
 Replace the default log output function with one of your own.
@@ -32,6 +31,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetDefaultLogOutputFunction](SDL_GetDefaultLogOutputFunction)
 - [SDL_GetLogOutputFunction](SDL_GetLogOutputFunction)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)

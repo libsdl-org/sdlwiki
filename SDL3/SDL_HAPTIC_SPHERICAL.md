@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_HAPTIC_SPHERICAL
 
 Uses spherical coordinates for the direction.
@@ -20,6 +19,11 @@ This macro is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_HapticDirection](SDL_HapticDirection)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)

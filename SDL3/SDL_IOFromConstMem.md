@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_IOFromConstMem
 
 Use this function to prepare a read-only memory buffer for use with [SDL_IOStream](SDL_IOStream).
@@ -63,6 +62,11 @@ This function is available since SDL 3.2.0.
 - [SDL_ReadIO](SDL_ReadIO)
 - [SDL_SeekIO](SDL_SeekIO)
 - [SDL_TellIO](SDL_TellIO)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

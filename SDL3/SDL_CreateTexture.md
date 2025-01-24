@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_CreateTexture
 
 Create a texture for a rendering context.
@@ -103,6 +102,11 @@ int main(int argc, char *argv[])
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 - [SDL_GetTextureSize](SDL_GetTextureSize)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AddTimer
 
 Call a callback function at a future time.
@@ -58,6 +57,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_AddTimerNS](SDL_AddTimerNS)
 - [SDL_RemoveTimer](SDL_RemoveTimer)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

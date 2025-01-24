@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetWindowFullscreen
 
 Request that the window's fullscreen state be changed.
@@ -57,6 +56,11 @@ This function is available since SDL 3.2.0.
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_SyncWindow](SDL_SyncWindow)
 - [SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

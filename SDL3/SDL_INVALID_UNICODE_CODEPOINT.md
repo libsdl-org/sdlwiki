@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_INVALID_UNICODE_CODEPOINT
 
 The Unicode REPLACEMENT CHARACTER codepoint.
@@ -29,6 +28,11 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_StepBackUTF8](SDL_StepBackUTF8)
 - [SDL_StepUTF8](SDL_StepUTF8)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)

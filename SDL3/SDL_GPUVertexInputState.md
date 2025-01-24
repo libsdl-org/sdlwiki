@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPUVertexInputState
 
 A structure specifying the parameters of a graphics pipeline vertex input state.
@@ -28,6 +27,11 @@ This struct is available since SDL 3.2.0.
 - [SDL_GPUGraphicsPipelineCreateInfo](SDL_GPUGraphicsPipelineCreateInfo)
 - [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexAttribute](SDL_GPUVertexAttribute)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)

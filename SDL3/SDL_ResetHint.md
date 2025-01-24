@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ResetHint
 
 Reset a hint to the default value.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetHint](SDL_SetHint)
 - [SDL_ResetHints](SDL_ResetHints)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_BroadcastCondition
 
 Restart all threads that are waiting on the condition variable.
@@ -68,6 +67,11 @@ SDL_DestroyMutex(lock);
 - [SDL_SignalCondition](SDL_SignalCondition)
 - [SDL_WaitCondition](SDL_WaitCondition)
 - [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

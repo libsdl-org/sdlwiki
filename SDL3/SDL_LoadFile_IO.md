@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_LoadFile_IO
 
 Load all the data from an SDL data stream.
@@ -46,6 +45,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_LoadFile](SDL_LoadFile)
 - [SDL_SaveFile_IO](SDL_SaveFile_IO)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AudioPostmixCallback
 
 A callback that fires when data is about to be fed to an audio device.
@@ -53,6 +52,11 @@ This datatype is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SetAudioPostmixCallback](SDL_SetAudioPostmixCallback)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)

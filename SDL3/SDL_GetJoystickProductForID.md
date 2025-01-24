@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetJoystickProductForID
 
 Get the USB product ID of a joystick, if available.
@@ -37,6 +36,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetJoystickProduct](SDL_GetJoystickProduct)
 - [SDL_GetJoysticks](SDL_GetJoysticks)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

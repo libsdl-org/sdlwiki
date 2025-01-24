@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetLogPriorities
 
 Set the priority of all log categories.
@@ -31,6 +30,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_ResetLogPriorities](SDL_ResetLogPriorities)
 - [SDL_SetLogPriority](SDL_SetLogPriority)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MinimizeWindow
 
 Request that the window be minimized to an iconic representation.
@@ -53,6 +52,11 @@ This function is available since SDL 3.2.0.
 - [SDL_MaximizeWindow](SDL_MaximizeWindow)
 - [SDL_RestoreWindow](SDL_RestoreWindow)
 - [SDL_SyncWindow](SDL_SyncWindow)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_WaitEvent
 
 Wait indefinitely for the next available event.
@@ -46,6 +45,11 @@ This function is available since SDL 3.2.0.
 - [SDL_PollEvent](SDL_PollEvent)
 - [SDL_PushEvent](SDL_PushEvent)
 - [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

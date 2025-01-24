@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_MapRGBA
 
 Map an RGBA quadruple to a pixel value for a given pixel format.
@@ -60,6 +59,11 @@ This function is available since SDL 3.2.0.
 - [SDL_GetRGBA](SDL_GetRGBA)
 - [SDL_MapRGB](SDL_MapRGB)
 - [SDL_MapSurfaceRGBA](SDL_MapSurfaceRGBA)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)

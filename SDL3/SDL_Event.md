@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_Event
 
 The structure for all events in SDL.
@@ -76,6 +75,10 @@ SDL. [SDL_Event](SDL_Event) is a union of all event structures used in SDL.
 ## Version
 
 This struct is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ## Using events
 

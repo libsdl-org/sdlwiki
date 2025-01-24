@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ReleaseCameraFrame
 
 Release a frame of video acquired from a camera.
@@ -47,6 +46,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_AcquireCameraFrame](SDL_AcquireCameraFrame)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCamera](CategoryCamera)

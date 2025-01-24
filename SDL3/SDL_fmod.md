@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_fmod
 
 Return the floating-point remainder of `x / y`
@@ -52,6 +51,11 @@ This function is available since SDL 3.2.0.
 - [SDL_floor](SDL_floor)
 - [SDL_round](SDL_round)
 - [SDL_lround](SDL_lround)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_IOWhence
 
 Possible `whence` values for [SDL_IOStream](SDL_IOStream) seeking.
@@ -26,6 +25,10 @@ standard C runtime.
 ## Version
 
 This enum is available since SDL 3.2.0.
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryIOStream](CategoryIOStream)

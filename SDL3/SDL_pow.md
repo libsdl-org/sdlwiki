@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_pow
 
 Raise `x` to the power `y`
@@ -54,6 +53,11 @@ This function is available since SDL 3.2.0.
 - [SDL_powf](SDL_powf)
 - [SDL_exp](SDL_exp)
 - [SDL_log](SDL_log)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

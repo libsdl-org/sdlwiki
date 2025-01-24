@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGlobalMouseState
 
 Query the platform for the asynchronous mouse button state and the desktop-relative platform-cursor position.
@@ -59,6 +58,11 @@ This function is available since SDL 3.2.0.
 - [SDL_CaptureMouse](SDL_CaptureMouse)
 - [SDL_GetMouseState](SDL_GetMouseState)
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

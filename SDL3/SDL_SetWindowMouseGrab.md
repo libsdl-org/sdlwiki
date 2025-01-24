@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetWindowMouseGrab
 
 Set a window's mouse grab mode.
@@ -43,6 +42,11 @@ This function is available since SDL 3.2.0.
 - [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryMouse](CategoryMouse), 

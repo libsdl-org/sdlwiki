@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetGamepadStringForType
 
 Convert from an [SDL_GamepadType](SDL_GamepadType) enum to a string.
@@ -32,6 +31,11 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetGamepadTypeFromString](SDL_GetGamepadTypeFromString)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)

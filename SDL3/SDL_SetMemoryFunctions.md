@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_SetMemoryFunctions
 
 Replace SDL's memory allocation functions with a custom set.
@@ -52,6 +51,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetMemoryFunctions](SDL_GetMemoryFunctions)
 - [SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)

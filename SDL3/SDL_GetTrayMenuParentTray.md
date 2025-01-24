@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GetTrayMenuParentTray
 
 Gets the tray for which this menu is the first-level menu, if the current menu isn't a submenu.
@@ -42,6 +41,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateTrayMenu](SDL_CreateTrayMenu)
 - [SDL_GetTrayMenuParentEntry](SDL_GetTrayMenuParentEntry)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)

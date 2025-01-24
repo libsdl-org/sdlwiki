@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_ReadIO
 
 Read from a data source.
@@ -50,6 +49,11 @@ This function is available since SDL 3.2.0.
 
 - [SDL_WriteIO](SDL_WriteIO)
 - [SDL_GetIOStatus](SDL_GetIOStatus)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)

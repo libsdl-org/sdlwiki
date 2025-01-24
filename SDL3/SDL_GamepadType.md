@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GamepadType
 
 Standard gamepad types.
@@ -34,6 +33,10 @@ Microsoft/Sony/Nintendo; in many cases, third-party controllers can report
 as these, either because they were designed for a specific console, or they
 simply most closely match that console's controllers (does it have A/B/X/Y
 buttons or X/O/Square/Triangle? Does it have a touchpad? etc).
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGamepad](CategoryGamepad)

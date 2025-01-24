@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_AVX512F_INTRINSICS
 
 Defined if (and only if) the compiler supports Intel AVX-512F intrinsics.
@@ -27,6 +26,11 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_AVX_INTRINSICS](SDL_AVX_INTRINSICS)
 - [SDL_AVX2_INTRINSICS](SDL_AVX2_INTRINSICS)
+
+
+## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryIntrinsics](CategoryIntrinsics)
