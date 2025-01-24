@@ -37,10 +37,6 @@ callbacks. Apps that want to use this should just implement
 
 This datatype is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryInit](CategoryInit)
 

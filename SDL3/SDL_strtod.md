@@ -49,11 +49,6 @@ This function is available since SDL 3.2.0.
 - [SDL_strtoul](SDL_strtoul)
 - [SDL_strtoull](SDL_strtoull)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

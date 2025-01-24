@@ -35,11 +35,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetSurfaceColorKey](SDL_SetSurfaceColorKey)
 - [SDL_GetSurfaceColorKey](SDL_GetSurfaceColorKey)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

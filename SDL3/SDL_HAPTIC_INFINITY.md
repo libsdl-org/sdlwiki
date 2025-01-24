@@ -20,11 +20,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_RunHapticEffect](SDL_RunHapticEffect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

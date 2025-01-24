@@ -22,10 +22,6 @@ Generally this macro isn't used directly, but rather through
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)
 

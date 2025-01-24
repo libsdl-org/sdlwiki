@@ -33,10 +33,6 @@ On compilers without this annotation mechanism, this is defined to nothing.
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

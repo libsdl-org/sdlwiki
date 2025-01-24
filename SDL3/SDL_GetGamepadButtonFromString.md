@@ -41,11 +41,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetGamepadStringForButton](SDL_GetGamepadStringForButton)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

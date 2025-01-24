@@ -42,10 +42,6 @@ enumeration, or all directory entries were enumerated.
 
 This function is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 

@@ -43,11 +43,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

@@ -31,11 +31,6 @@ This function is available since SDL 3.2.0.
 - [SDL_StorageReady](SDL_StorageReady)
 - [SDL_WriteStorageFile](SDL_WriteStorageFile)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)
 

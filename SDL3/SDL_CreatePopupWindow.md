@@ -82,11 +82,6 @@ This function is available since SDL 3.2.0.
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 - [SDL_GetWindowParent](SDL_GetWindowParent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

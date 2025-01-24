@@ -60,11 +60,6 @@ This function is available since SDL 3.2.0.
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_PushEvent](SDL_PushEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

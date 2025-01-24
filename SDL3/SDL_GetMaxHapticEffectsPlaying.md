@@ -37,11 +37,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetMaxHapticEffects](SDL_GetMaxHapticEffects)
 - [SDL_GetHapticFeatures](SDL_GetHapticFeatures)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

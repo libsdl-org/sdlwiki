@@ -24,11 +24,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_HapticRamp](SDL_HapticRamp)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

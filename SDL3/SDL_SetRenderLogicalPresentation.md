@@ -65,11 +65,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
 - [SDL_GetRenderLogicalPresentationRect](SDL_GetRenderLogicalPresentationRect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

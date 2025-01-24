@@ -171,11 +171,6 @@ int main(int argc, char* argv[]) {
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -28,10 +28,6 @@ available.
 SDL's own source code cannot be built with a compiler that has this
 defined, for various technical reasons.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

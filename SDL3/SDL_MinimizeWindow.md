@@ -53,11 +53,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RestoreWindow](SDL_RestoreWindow)
 - [SDL_SyncWindow](SDL_SyncWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -204,11 +204,6 @@ main(int argc, char** argv)
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

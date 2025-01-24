@@ -27,11 +27,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_PLATFORM_TVOS](SDL_PLATFORM_TVOS)
 - [SDL_PLATFORM_VISIONOS](SDL_PLATFORM_VISIONOS)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPlatform](CategoryPlatform)
 

@@ -83,11 +83,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetMainReady](SDL_SetMainReady)
 - [SDL_WasInit](SDL_WasInit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

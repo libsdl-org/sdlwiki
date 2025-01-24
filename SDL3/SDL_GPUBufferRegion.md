@@ -30,11 +30,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)
 - [SDL_DownloadFromGPUBuffer](SDL_DownloadFromGPUBuffer)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
 

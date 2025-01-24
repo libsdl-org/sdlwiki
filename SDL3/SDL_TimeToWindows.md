@@ -28,10 +28,6 @@ This function fills in the two 32-bit values of the FILETIME structure.
 
 This function is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTime](CategoryTime)
 

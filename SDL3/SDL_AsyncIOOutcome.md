@@ -26,10 +26,6 @@ typedef struct SDL_AsyncIOOutcome
 
 This struct is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAsyncIO](CategoryAsyncIO)
 

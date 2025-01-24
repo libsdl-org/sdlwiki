@@ -51,11 +51,6 @@ This function is available since SDL 3.2.0.
 - [SDL_CreateProcessWithProperties](SDL_CreateProcessWithProperties)
 - [SDL_GetProcessInput](SDL_GetProcessInput)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProcess](CategoryProcess)
 

@@ -23,10 +23,6 @@ export CC=clang
 export CFLAGS="-DSDL_THREAD_SAFETY_ANALYSIS -Wthread-safety"
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryMutex](CategoryMutex)
 

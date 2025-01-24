@@ -36,11 +36,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ShowWindow](SDL_ShowWindow)
 - [SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

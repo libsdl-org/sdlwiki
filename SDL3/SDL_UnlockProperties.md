@@ -30,11 +30,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_LockProperties](SDL_LockProperties)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
 

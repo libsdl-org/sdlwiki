@@ -36,10 +36,6 @@ and using a deprecated function will not generate a warning.
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryBeginCode](CategoryBeginCode)
 

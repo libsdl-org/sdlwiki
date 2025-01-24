@@ -20,10 +20,6 @@ This hint should be set before initializing the video subsystem.
 
 This hint is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

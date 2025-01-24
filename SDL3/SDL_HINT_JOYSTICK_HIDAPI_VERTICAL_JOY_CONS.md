@@ -26,10 +26,6 @@ This hint should be set before opening a Joy-Con controller.
 
 This hint is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

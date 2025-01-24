@@ -60,11 +60,6 @@ This function is available since SDL 3.2.0.
 - [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
 - [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

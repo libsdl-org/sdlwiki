@@ -29,10 +29,6 @@ bool SDL_SendGamepadEffect(SDL_Gamepad *gamepad, const void *data, int size);
 
 This function is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

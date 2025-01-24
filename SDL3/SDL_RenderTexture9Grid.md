@@ -51,11 +51,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_RenderTexture](SDL_RenderTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

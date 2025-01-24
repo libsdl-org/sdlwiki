@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 - [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 - [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

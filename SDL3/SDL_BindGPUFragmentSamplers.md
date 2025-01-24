@@ -30,13 +30,16 @@ void SDL_BindGPUFragmentSamplers(
 The textures must have been created with
 [SDL_GPU_TEXTUREUSAGE_SAMPLER](SDL_GPU_TEXTUREUSAGE_SAMPLER).
 
+Be sure your shader is set up according to the requirements documented in
+[SDL_CreateGPUShader](SDL_CreateGPUShader)().
+
 ## Version
 
 This function is available since SDL 3.2.0.
 
+## See Also
 
-
-
+- [SDL_CreateGPUShader](SDL_CreateGPUShader)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)

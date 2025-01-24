@@ -44,11 +44,6 @@ This function is available since SDL 3.2.0.
 - [SDL_HasProperty](SDL_HasProperty)
 - [SDL_SetNumberProperty](SDL_SetNumberProperty)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
 

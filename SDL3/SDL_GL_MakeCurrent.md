@@ -40,11 +40,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GL_CreateContext](SDL_GL_CreateContext)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

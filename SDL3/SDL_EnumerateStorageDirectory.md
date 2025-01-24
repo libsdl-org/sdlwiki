@@ -86,11 +86,6 @@ main(int argc, char** argv)
 
 - [SDL_StorageReady](SDL_StorageReady)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)
 

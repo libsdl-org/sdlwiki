@@ -112,11 +112,6 @@ int main(int argc, char *argv[])
 - [SDL_CreateThreadWithProperties](SDL_CreateThreadWithProperties)
 - [SDL_WaitThread](SDL_WaitThread)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

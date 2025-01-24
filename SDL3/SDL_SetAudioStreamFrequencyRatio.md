@@ -49,11 +49,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAudioStreamFrequencyRatio](SDL_GetAudioStreamFrequencyRatio)
 - [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

@@ -74,11 +74,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetBasePath](SDL_GetBasePath)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 

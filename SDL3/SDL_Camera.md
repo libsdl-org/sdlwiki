@@ -16,10 +16,6 @@ typedef struct SDL_Camera SDL_Camera;
 
 This struct is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryCamera](CategoryCamera)
 

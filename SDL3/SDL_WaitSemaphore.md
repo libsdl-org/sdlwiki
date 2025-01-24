@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 - [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
 - [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

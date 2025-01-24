@@ -57,11 +57,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SyncWindow](SDL_SyncWindow)
 - [SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

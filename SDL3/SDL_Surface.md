@@ -52,11 +52,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_DestroySurface](SDL_DestroySurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySurface](CategorySurface)
 

@@ -46,11 +46,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

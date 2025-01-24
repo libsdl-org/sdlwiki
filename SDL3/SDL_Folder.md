@@ -58,11 +58,6 @@ This enum is available since SDL 3.2.0.
 
 - [SDL_GetUserFolder](SDL_GetUserFolder)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryFilesystem](CategoryFilesystem)
 

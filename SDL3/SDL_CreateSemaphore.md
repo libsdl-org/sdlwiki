@@ -83,11 +83,6 @@ SDL_DestroySemaphore(sem);
 - [SDL_WaitSemaphore](SDL_WaitSemaphore)
 - [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

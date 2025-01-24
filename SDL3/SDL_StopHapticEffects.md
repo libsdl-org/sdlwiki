@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RunHapticEffect](SDL_RunHapticEffect)
 - [SDL_StopHapticEffects](SDL_StopHapticEffects)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GamepadHasAxis](SDL_GamepadHasAxis)
 - [SDL_GetGamepadButton](SDL_GetGamepadButton)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

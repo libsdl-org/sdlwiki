@@ -25,10 +25,6 @@ This hint should be set before any GPU functions are called.
 
 This hint is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

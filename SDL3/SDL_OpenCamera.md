@@ -72,11 +72,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetCameras](SDL_GetCameras)
 - [SDL_GetCameraFormat](SDL_GetCameraFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCamera](CategoryCamera)
 

@@ -60,11 +60,6 @@ This function is available since SDL 3.2.0.
 - [SDL_MapRGB](SDL_MapRGB)
 - [SDL_MapSurfaceRGBA](SDL_MapSurfaceRGBA)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

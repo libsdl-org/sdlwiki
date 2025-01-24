@@ -24,11 +24,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_LASX_INTRINSICS](SDL_LASX_INTRINSICS)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryIntrinsics](CategoryIntrinsics)
 

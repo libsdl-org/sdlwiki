@@ -94,11 +94,6 @@ glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
 - [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

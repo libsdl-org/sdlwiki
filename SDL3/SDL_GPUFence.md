@@ -23,11 +23,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_WaitForGPUFences](SDL_WaitForGPUFences)
 - [SDL_ReleaseGPUFence](SDL_ReleaseGPUFence)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

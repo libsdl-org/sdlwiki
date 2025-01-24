@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_WaitForGPUFences](SDL_WaitForGPUFences)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

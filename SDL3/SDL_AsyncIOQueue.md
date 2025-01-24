@@ -31,11 +31,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_GetAsyncIOResult](SDL_GetAsyncIOResult)
 - [SDL_WaitAsyncIOResult](SDL_WaitAsyncIOResult)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAsyncIO](CategoryAsyncIO)
 

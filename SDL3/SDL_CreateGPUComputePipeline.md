@@ -69,11 +69,6 @@ This function is available since SDL 3.2.0.
 - [SDL_BindGPUComputePipeline](SDL_BindGPUComputePipeline)
 - [SDL_ReleaseGPUComputePipeline](SDL_ReleaseGPUComputePipeline)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

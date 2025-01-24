@@ -47,11 +47,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_ReleaseGPUFence](SDL_ReleaseGPUFence)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

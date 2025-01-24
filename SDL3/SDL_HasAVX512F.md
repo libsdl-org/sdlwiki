@@ -33,11 +33,6 @@ This function is available since SDL 3.2.0.
 - [SDL_HasAVX](SDL_HasAVX)
 - [SDL_HasAVX2](SDL_HasAVX2)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

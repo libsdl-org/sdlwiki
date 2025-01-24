@@ -39,11 +39,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

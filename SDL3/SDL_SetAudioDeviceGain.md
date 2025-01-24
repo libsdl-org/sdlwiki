@@ -57,11 +57,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetAudioDeviceGain](SDL_GetAudioDeviceGain)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

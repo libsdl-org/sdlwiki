@@ -35,11 +35,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_BindAudioStream](SDL_BindAudioStream)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

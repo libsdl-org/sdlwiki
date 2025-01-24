@@ -27,10 +27,6 @@ Most apps don't need to, and should not, use this directly.
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryBeginCode](CategoryBeginCode)
 

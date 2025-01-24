@@ -25,11 +25,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 - [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

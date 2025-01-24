@@ -33,11 +33,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetJoystickGUIDForID](SDL_GetJoystickGUIDForID)
 - [SDL_GetJoystickGUID](SDL_GetJoystickGUID)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

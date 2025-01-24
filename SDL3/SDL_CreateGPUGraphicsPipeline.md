@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_BindGPUGraphicsPipeline](SDL_BindGPUGraphicsPipeline)
 - [SDL_ReleaseGPUGraphicsPipeline](SDL_ReleaseGPUGraphicsPipeline)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

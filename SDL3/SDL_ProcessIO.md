@@ -75,11 +75,6 @@ This enum is available since SDL 3.2.0.
 - [SDL_GetProcessInput](SDL_GetProcessInput)
 - [SDL_GetProcessOutput](SDL_GetProcessOutput)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryProcess](CategoryProcess)
 

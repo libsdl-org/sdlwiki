@@ -100,11 +100,6 @@ This function is available since SDL 3.2.0.
 - [SDL_free](SDL_free)
 - [SDL_LoadWAV](SDL_LoadWAV)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

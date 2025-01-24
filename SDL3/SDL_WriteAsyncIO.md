@@ -58,11 +58,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ReadAsyncIO](SDL_ReadAsyncIO)
 - [SDL_CreateAsyncIOQueue](SDL_CreateAsyncIOQueue)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAsyncIO](CategoryAsyncIO)
 

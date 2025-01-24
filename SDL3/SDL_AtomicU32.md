@@ -41,11 +41,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_GetAtomicU32](SDL_GetAtomicU32)
 - [SDL_SetAtomicU32](SDL_SetAtomicU32)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)
 

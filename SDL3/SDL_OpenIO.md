@@ -53,11 +53,6 @@ This function is available since SDL 3.2.0.
 - [SDL_IOFromFile](SDL_IOFromFile)
 - [SDL_IOFromMem](SDL_IOFromMem)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 

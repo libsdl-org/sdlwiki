@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetInitialized](SDL_SetInitialized)
 - [SDL_ShouldInit](SDL_ShouldInit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

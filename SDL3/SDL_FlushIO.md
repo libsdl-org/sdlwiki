@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 - [SDL_OpenIO](SDL_OpenIO)
 - [SDL_WriteIO](SDL_WriteIO)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 

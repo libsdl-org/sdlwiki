@@ -51,11 +51,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_EGL_SetAttributeCallbacks](SDL_EGL_SetAttributeCallbacks)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

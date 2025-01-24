@@ -65,11 +65,6 @@ This function is available since SDL 3.2.0.
 - [SDL_iconv_close](SDL_iconv_close)
 - [SDL_iconv_string](SDL_iconv_string)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

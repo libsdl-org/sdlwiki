@@ -44,11 +44,6 @@ This function is available since SDL 3.2.0.
 - [SDL_HasProperty](SDL_HasProperty)
 - [SDL_SetFloatProperty](SDL_SetFloatProperty)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
 

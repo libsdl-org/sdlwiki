@@ -20,11 +20,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_ALPHA_TRANSPARENT_FLOAT](SDL_ALPHA_TRANSPARENT_FLOAT)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPixels](CategoryPixels)
 

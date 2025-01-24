@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetCurrentRenderOutputSize](SDL_GetCurrentRenderOutputSize)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

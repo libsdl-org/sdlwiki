@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAtomicInt](SDL_GetAtomicInt)
 - [SDL_SetAtomicInt](SDL_SetAtomicInt)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 

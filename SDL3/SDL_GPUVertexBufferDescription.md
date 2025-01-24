@@ -40,11 +40,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_GPUVertexAttribute](SDL_GPUVertexAttribute)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
 

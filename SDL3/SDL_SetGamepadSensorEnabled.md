@@ -34,11 +34,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GamepadHasSensor](SDL_GamepadHasSensor)
 - [SDL_GamepadSensorEnabled](SDL_GamepadSensorEnabled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

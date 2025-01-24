@@ -39,11 +39,6 @@ This function is available since SDL 3.2.0.
 - [SDL_DestroyGPUDevice](SDL_DestroyGPUDevice)
 - [SDL_GPUSupportsShaderFormats](SDL_GPUSupportsShaderFormats)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

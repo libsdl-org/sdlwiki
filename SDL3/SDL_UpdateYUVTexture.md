@@ -53,11 +53,6 @@ This function is available since SDL 3.2.0.
 - [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

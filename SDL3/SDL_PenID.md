@@ -24,10 +24,6 @@ pen physically leaves the area and returns, it might get a new ID.
 
 This datatype is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryPen](CategoryPen)
 

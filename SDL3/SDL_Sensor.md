@@ -16,10 +16,6 @@ typedef struct SDL_Sensor SDL_Sensor;
 
 This struct is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySensor](CategorySensor)
 

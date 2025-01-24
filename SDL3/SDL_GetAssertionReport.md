@@ -67,11 +67,6 @@ while (item) {
 
 - [SDL_ResetAssertionReport](SDL_ResetAssertionReport)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssert](CategoryAssert)
 

@@ -27,10 +27,6 @@ bool SDL_GetCurrentTime(SDL_Time *ticks);
 
 This function is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTime](CategoryTime)
 

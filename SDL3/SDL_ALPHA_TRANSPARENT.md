@@ -20,11 +20,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_ALPHA_OPAQUE](SDL_ALPHA_OPAQUE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPixels](CategoryPixels)
 

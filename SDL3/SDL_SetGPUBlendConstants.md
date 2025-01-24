@@ -30,11 +30,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GPU_BLENDFACTOR_CONSTANT_COLOR](SDL_GPU_BLENDFACTOR_CONSTANT_COLOR)
 - [SDL_GPU_BLENDFACTOR_ONE_MINUS_CONSTANT_COLOR](SDL_GPU_BLENDFACTOR_ONE_MINUS_CONSTANT_COLOR)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

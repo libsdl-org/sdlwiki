@@ -31,10 +31,6 @@ do { SomethingOnce(); } while (SDL_NULL_WHILE_LOOP_CONDITION (0));
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAssert](CategoryAssert)
 

@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetTextInputArea](SDL_SetTextInputArea)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

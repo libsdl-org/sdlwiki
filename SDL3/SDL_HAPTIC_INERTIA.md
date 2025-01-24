@@ -25,11 +25,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_HapticCondition](SDL_HapticCondition)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

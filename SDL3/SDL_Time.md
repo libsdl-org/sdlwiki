@@ -31,11 +31,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_MAX_SINT64](SDL_MAX_SINT64)
 - [SDL_MIN_SINT64](SDL_MIN_SINT64)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdinc](CategoryStdinc)
 

@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetJoystickType](SDL_GetJoystickType)
 - [SDL_GetJoysticks](SDL_GetJoysticks)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

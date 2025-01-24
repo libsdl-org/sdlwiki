@@ -51,11 +51,6 @@ SDL_Log("But we are linking against SDL version %d.%d.%d.\n",
 
 - [SDL_GetRevision](SDL_GetRevision)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVersion](CategoryVersion)
 

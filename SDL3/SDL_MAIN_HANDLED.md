@@ -27,10 +27,6 @@ explanation.
 
 This macro is used by the headers since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryMain](CategoryMain)
 

@@ -23,10 +23,6 @@ typedef enum SDL_DisplayOrientation
 
 This enum is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

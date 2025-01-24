@@ -26,10 +26,6 @@ bool SDL_IsJoystickVirtual(SDL_JoystickID instance_id);
 
 This function is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

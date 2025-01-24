@@ -68,11 +68,6 @@ SDL_GL_DestroyContext(glcontext);
 - [SDL_GL_DestroyContext](SDL_GL_DestroyContext)
 - [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

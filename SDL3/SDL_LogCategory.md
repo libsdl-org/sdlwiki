@@ -55,10 +55,6 @@ the VERBOSE level and all other categories are enabled at the ERROR level.
 
 This enum is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryLog](CategoryLog)
 

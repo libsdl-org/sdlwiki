@@ -55,11 +55,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RemoveEventWatch](SDL_RemoveEventWatch)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

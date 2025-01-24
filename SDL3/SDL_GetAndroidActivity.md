@@ -80,11 +80,6 @@ void showHome(void)
 
 - [SDL_GetAndroidJNIEnv](SDL_GetAndroidJNIEnv)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

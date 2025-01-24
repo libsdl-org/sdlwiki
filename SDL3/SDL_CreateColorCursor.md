@@ -120,11 +120,6 @@ exit:
 - [SDL_DestroyCursor](SDL_DestroyCursor)
 - [SDL_SetCursor](SDL_SetCursor)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

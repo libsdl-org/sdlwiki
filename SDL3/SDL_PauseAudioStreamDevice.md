@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_ResumeAudioStreamDevice](SDL_ResumeAudioStreamDevice)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

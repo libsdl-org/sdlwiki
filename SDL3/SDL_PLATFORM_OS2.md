@@ -16,10 +16,6 @@ Defined in [<SDL3/SDL_platform_defines.h>](https://github.com/libsdl-org/SDL/blo
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPlatform](CategoryPlatform)
 

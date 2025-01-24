@@ -40,11 +40,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetWindowTitle](SDL_GetWindowTitle)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

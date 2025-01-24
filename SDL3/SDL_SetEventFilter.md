@@ -131,11 +131,6 @@ int main(int argc, char **argv)
 - [SDL_PeepEvents](SDL_PeepEvents)
 - [SDL_PushEvent](SDL_PushEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

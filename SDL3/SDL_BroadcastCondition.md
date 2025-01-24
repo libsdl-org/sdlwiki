@@ -68,11 +68,6 @@ SDL_DestroyMutex(lock);
 - [SDL_WaitCondition](SDL_WaitCondition)
 - [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

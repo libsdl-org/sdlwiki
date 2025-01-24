@@ -49,11 +49,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RenderDebugText](SDL_RenderDebugText)
 - [SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE](SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

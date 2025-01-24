@@ -39,11 +39,6 @@ if (*error) {
 - [SDL_GetError](SDL_GetError)
 - [SDL_SetError](SDL_SetError)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)
 

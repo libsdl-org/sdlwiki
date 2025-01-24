@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 - [SDL_copysignf](SDL_copysignf)
 - [SDL_fabsf](SDL_fabsf)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

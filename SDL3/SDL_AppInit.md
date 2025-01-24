@@ -68,11 +68,6 @@ This function is available since SDL 3.2.0.
 - [SDL_AppEvent](SDL_AppEvent)
 - [SDL_AppQuit](SDL_AppQuit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
 

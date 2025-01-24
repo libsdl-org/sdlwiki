@@ -90,11 +90,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAppMetadataProperty](SDL_GetAppMetadataProperty)
 - [SDL_SetAppMetadata](SDL_SetAppMetadata)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

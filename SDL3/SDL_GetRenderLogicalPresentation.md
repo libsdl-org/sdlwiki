@@ -43,11 +43,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

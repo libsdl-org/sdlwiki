@@ -25,11 +25,6 @@ This datatype is available since SDL 3.2.0.
 - [SDL_CreateThread](SDL_CreateThread)
 - [SDL_WaitThread](SDL_WaitThread)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryThread](CategoryThread)
 

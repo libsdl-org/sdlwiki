@@ -47,11 +47,6 @@ This function is available since SDL 3.2.0.
 - [SDL_scalbnf](SDL_scalbnf)
 - [SDL_pow](SDL_pow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ResetHint](SDL_ResetHint)
 - [SDL_SetHint](SDL_SetHint)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 

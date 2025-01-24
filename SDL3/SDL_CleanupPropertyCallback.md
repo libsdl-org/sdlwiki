@@ -44,11 +44,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryProperties](CategoryProperties)
 

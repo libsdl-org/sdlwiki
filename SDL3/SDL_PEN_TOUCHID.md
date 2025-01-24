@@ -16,10 +16,6 @@ Defined in [<SDL3/SDL_pen.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPen](CategoryPen)
 

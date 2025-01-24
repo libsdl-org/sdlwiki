@@ -50,11 +50,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetDisplays](SDL_GetDisplays)
 - [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

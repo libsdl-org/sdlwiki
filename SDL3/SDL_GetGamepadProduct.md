@@ -34,11 +34,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetGamepadProductForID](SDL_GetGamepadProductForID)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

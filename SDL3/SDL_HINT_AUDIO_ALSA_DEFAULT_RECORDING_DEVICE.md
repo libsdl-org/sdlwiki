@@ -32,11 +32,6 @@ This hint is available since SDL 3.2.0.
 - [SDL_HINT_AUDIO_ALSA_DEFAULT_PLAYBACK_DEVICE](SDL_HINT_AUDIO_ALSA_DEFAULT_PLAYBACK_DEVICE)
 - [SDL_HINT_AUDIO_ALSA_DEFAULT_DEVICE](SDL_HINT_AUDIO_ALSA_DEFAULT_DEVICE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

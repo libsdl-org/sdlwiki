@@ -37,11 +37,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_RenderPoint](SDL_RenderPoint)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

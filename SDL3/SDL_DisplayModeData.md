@@ -25,11 +25,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_DisplayMode](SDL_DisplayMode)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

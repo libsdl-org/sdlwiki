@@ -29,11 +29,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_PLATFORM_WINGDK](SDL_PLATFORM_WINGDK)
 - [SDL_PLATFORM_GDK](SDL_PLATFORM_GDK)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPlatform](CategoryPlatform)
 

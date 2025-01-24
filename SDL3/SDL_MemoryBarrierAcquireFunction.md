@@ -35,11 +35,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_MemoryBarrierAcquire](SDL_MemoryBarrierAcquire)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 

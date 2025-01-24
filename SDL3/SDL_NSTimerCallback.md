@@ -47,11 +47,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_AddTimerNS](SDL_AddTimerNS)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)
 

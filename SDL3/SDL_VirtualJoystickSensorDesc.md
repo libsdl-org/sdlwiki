@@ -24,11 +24,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryJoystick](CategoryJoystick)
 

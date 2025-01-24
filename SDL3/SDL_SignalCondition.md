@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 - [SDL_WaitCondition](SDL_WaitCondition)
 - [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

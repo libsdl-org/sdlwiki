@@ -30,11 +30,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetKeyboardState](SDL_GetKeyboardState)
 - [SDL_SetModState](SDL_SetModState)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

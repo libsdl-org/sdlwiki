@@ -23,11 +23,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
 - [SDL_ReleaseGPUSampler](SDL_ReleaseGPUSampler)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

@@ -224,11 +224,6 @@ This enum is available since SDL 3.2.0.
 - [SDL_CreateGPUTexture](SDL_CreateGPUTexture)
 - [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)
 

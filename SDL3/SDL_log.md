@@ -52,11 +52,6 @@ This function is available since SDL 3.2.0.
 - [SDL_log10](SDL_log10)
 - [SDL_exp](SDL_exp)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

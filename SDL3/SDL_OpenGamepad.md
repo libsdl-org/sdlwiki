@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 - [SDL_CloseGamepad](SDL_CloseGamepad)
 - [SDL_IsGamepad](SDL_IsGamepad)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

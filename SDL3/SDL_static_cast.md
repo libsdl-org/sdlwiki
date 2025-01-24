@@ -44,11 +44,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_reinterpret_cast](SDL_reinterpret_cast)
 - [SDL_const_cast](SDL_const_cast)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

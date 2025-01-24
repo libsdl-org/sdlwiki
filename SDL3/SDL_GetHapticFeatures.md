@@ -33,11 +33,6 @@ This function is available since SDL 3.2.0.
 - [SDL_HapticEffectSupported](SDL_HapticEffectSupported)
 - [SDL_GetMaxHapticEffects](SDL_GetMaxHapticEffects)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

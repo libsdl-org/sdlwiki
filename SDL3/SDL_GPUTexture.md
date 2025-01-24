@@ -31,11 +31,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_BlitGPUTexture](SDL_BlitGPUTexture)
 - [SDL_ReleaseGPUTexture](SDL_ReleaseGPUTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

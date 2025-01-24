@@ -30,11 +30,6 @@ This function is available since SDL 3.2.0.
 - [SDL_CursorVisible](SDL_CursorVisible)
 - [SDL_ShowCursor](SDL_ShowCursor)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

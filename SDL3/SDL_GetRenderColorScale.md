@@ -36,11 +36,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetRenderColorScale](SDL_SetRenderColorScale)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

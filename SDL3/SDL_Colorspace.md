@@ -119,11 +119,6 @@ This enum is available since SDL 3.2.0.
 - [SDL_MatrixCoefficients](SDL_MatrixCoefficients)
 - [SDL_TransferCharacteristics](SDL_TransferCharacteristics)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryPixels](CategoryPixels)
 

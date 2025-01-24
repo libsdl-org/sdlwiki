@@ -23,10 +23,6 @@ to a .dll on Windows or .so on Linux.
 
 This hint is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

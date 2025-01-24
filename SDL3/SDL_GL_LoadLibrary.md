@@ -46,11 +46,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

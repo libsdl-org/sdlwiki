@@ -34,11 +34,6 @@ This function is available since SDL 3.2.0.
 - [SDL_InitHapticRumble](SDL_InitHapticRumble)
 - [SDL_StopHapticRumble](SDL_StopHapticRumble)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

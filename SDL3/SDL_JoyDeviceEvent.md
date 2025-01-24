@@ -31,11 +31,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -16,10 +16,6 @@ typedef struct SDL_hid_device SDL_hid_device;
 
 This struct is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryHIDAPI](CategoryHIDAPI)
 

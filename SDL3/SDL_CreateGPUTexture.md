@@ -87,11 +87,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ReleaseGPUTexture](SDL_ReleaseGPUTexture)
 - [SDL_GPUTextureSupportsFormat](SDL_GPUTextureSupportsFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

@@ -40,11 +40,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetRenderMetalCommandEncoder](SDL_GetRenderMetalCommandEncoder)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

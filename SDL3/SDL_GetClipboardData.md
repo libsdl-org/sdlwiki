@@ -43,11 +43,6 @@ This function is available since SDL 3.2.0.
 - [SDL_HasClipboardData](SDL_HasClipboardData)
 - [SDL_SetClipboardData](SDL_SetClipboardData)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)
 

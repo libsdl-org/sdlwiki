@@ -23,11 +23,6 @@ This datatype is available since SDL 3.2.0.
 - [SDL_GlobDirectory](SDL_GlobDirectory)
 - [SDL_GlobStorageDirectory](SDL_GlobStorageDirectory)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryFilesystem](CategoryFilesystem)
 

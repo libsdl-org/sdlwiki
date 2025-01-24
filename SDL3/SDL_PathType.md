@@ -32,11 +32,6 @@ This enum is available since SDL 3.2.0.
 
 - [SDL_PathInfo](SDL_PathInfo)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryFilesystem](CategoryFilesystem)
 

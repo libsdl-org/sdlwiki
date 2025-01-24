@@ -37,11 +37,6 @@ This function is available since SDL 3.2.0.
 - [SDL_LoadFunction](SDL_LoadFunction)
 - [SDL_UnloadObject](SDL_UnloadObject)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
 

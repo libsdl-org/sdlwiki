@@ -36,11 +36,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetRenderVSync](SDL_SetRenderVSync)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

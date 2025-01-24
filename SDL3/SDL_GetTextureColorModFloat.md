@@ -40,11 +40,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
 - [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

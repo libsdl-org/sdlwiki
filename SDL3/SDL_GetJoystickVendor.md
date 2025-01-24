@@ -35,11 +35,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetJoystickVendorForID](SDL_GetJoystickVendorForID)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

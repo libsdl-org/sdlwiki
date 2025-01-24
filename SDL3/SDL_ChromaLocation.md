@@ -22,10 +22,6 @@ typedef enum SDL_ChromaLocation
 
 This enum is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryPixels](CategoryPixels)
 

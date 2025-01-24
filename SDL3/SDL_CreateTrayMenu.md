@@ -46,11 +46,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetTrayMenu](SDL_GetTrayMenu)
 - [SDL_GetTrayMenuParentTray](SDL_GetTrayMenuParentTray)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)
 

@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 - [SDL_InsertTrayEntryAt](SDL_InsertTrayEntryAt)
 - [SDL_GetTrayEntryChecked](SDL_GetTrayEntryChecked)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)
 

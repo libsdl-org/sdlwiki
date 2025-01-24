@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetTrayMenu](SDL_GetTrayMenu)
 - [SDL_DestroyTray](SDL_DestroyTray)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)
 

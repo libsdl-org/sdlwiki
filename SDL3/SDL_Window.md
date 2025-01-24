@@ -20,11 +20,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_CreateWindow](SDL_CreateWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

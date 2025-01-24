@@ -35,10 +35,6 @@ the component order red, green, blue, and alpha.
 
 This enum is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryBlendmode](CategoryBlendmode)
 

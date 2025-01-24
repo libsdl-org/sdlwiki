@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

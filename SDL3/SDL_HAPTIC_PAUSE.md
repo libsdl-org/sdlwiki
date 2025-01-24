@@ -25,11 +25,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_PauseHaptic](SDL_PauseHaptic)
 - [SDL_ResumeHaptic](SDL_ResumeHaptic)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

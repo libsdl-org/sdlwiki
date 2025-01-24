@@ -55,11 +55,6 @@ This function is available since SDL 3.2.0.
 - [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
 - [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

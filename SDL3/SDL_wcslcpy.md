@@ -47,11 +47,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_wcslcat](SDL_wcslcat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

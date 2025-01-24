@@ -48,11 +48,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_stack_free](SDL_stack_free)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

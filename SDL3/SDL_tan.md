@@ -52,11 +52,6 @@ This function is available since SDL 3.2.0.
 - [SDL_atan](SDL_atan)
 - [SDL_atan2](SDL_atan2)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

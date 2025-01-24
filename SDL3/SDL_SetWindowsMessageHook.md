@@ -33,11 +33,6 @@ This function is available since SDL 3.2.0.
 - [SDL_WindowsMessageHook](SDL_WindowsMessageHook)
 - [SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP](SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

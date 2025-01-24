@@ -27,11 +27,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_SSE4_1_INTRINSICS](SDL_SSE4_1_INTRINSICS)
 - [SDL_SSE4_2_INTRINSICS](SDL_SSE4_2_INTRINSICS)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryIntrinsics](CategoryIntrinsics)
 

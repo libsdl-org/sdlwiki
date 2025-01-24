@@ -99,11 +99,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_INIT_INTERFACE](SDL_INIT_INTERFACE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryIOStream](CategoryIOStream)
 

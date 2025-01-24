@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetRenderViewport](SDL_GetRenderViewport)
 - [SDL_RenderViewportSet](SDL_RenderViewportSet)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

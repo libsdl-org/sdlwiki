@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetJoysticks](SDL_GetJoysticks)
 - [SDL_OpenGamepad](SDL_OpenGamepad)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

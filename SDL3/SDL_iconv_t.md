@@ -20,11 +20,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_iconv_open](SDL_iconv_open)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdinc](CategoryStdinc)
 

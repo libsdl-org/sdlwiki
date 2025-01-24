@@ -34,11 +34,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetEventEnabled](SDL_SetEventEnabled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

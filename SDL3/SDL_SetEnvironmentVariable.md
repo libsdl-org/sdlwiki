@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetEnvironmentVariables](SDL_GetEnvironmentVariables)
 - [SDL_UnsetEnvironmentVariable](SDL_UnsetEnvironmentVariable)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

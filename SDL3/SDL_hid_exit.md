@@ -30,11 +30,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_hid_init](SDL_hid_init)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHIDAPI](CategoryHIDAPI)
 

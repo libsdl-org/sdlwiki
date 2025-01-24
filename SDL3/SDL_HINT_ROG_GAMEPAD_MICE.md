@@ -32,11 +32,6 @@ This hint is available since SDL 3.2.0.
 
 - [SDL_HINT_ROG_GAMEPAD_MICE_EXCLUDED](SDL_HINT_ROG_GAMEPAD_MICE_EXCLUDED)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

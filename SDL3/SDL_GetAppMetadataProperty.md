@@ -47,11 +47,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetAppMetadata](SDL_SetAppMetadata)
 - [SDL_SetAppMetadataProperty](SDL_SetAppMetadataProperty)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

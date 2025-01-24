@@ -34,11 +34,6 @@ This callback is available since SDL 3.2.0.
 - [SDL_bsearch](SDL_bsearch)
 - [SDL_qsort](SDL_qsort)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdinc](CategoryStdinc)
 

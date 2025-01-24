@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAndroidInternalStoragePath](SDL_GetAndroidInternalStoragePath)
 - [SDL_GetAndroidExternalStoragePath](SDL_GetAndroidExternalStoragePath)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

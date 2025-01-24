@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RemoveTrayEntry](SDL_RemoveTrayEntry)
 - [SDL_InsertTrayEntryAt](SDL_InsertTrayEntryAt)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)
 

@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 - [SDL_realloc](SDL_realloc)
 - [SDL_aligned_alloc](SDL_aligned_alloc)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

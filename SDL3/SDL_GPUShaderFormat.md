@@ -32,11 +32,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_CreateGPUShader](SDL_CreateGPUShader)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

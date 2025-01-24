@@ -36,11 +36,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAudioPlaybackDevices](SDL_GetAudioPlaybackDevices)
 - [SDL_GetAudioRecordingDevices](SDL_GetAudioRecordingDevices)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

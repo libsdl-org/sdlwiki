@@ -28,10 +28,6 @@ SDL_Log("There are %" SDL_PRILL_PREFIX "d bottles of beer on the wall.", bottles
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

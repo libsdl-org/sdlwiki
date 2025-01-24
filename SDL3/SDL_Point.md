@@ -25,11 +25,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_GetRectEnclosingPoints](SDL_GetRectEnclosingPoints)
 - [SDL_PointInRect](SDL_PointInRect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)
 

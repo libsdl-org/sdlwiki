@@ -39,11 +39,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RenderTextureRotated](SDL_RenderTextureRotated)
 - [SDL_RenderTextureTiled](SDL_RenderTextureTiled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

@@ -51,11 +51,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetWindowRelativeMouseMode](SDL_GetWindowRelativeMouseMode)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

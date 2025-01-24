@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_FlushEvents](SDL_FlushEvents)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

@@ -403,10 +403,6 @@ https://usb.org/sites/default/files/hut1_5.pdf
 
 This enum is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryScancode](CategoryScancode)
 

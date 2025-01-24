@@ -39,11 +39,6 @@ This function is available since SDL 3.2.0.
 - [SDL_PollEvent](SDL_PollEvent)
 - [SDL_WaitEvent](SDL_WaitEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

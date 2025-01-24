@@ -37,11 +37,6 @@ This function is available since SDL 3.2.0.
 - [SDL_CreatePalette](SDL_CreatePalette)
 - [SDL_GetSurfacePalette](SDL_GetSurfacePalette)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

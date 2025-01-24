@@ -51,11 +51,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetRenderScale](SDL_SetRenderScale)
 - [SDL_SetRenderViewport](SDL_SetRenderViewport)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

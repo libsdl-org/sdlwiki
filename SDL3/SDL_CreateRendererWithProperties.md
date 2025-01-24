@@ -82,11 +82,6 @@ This function is available since SDL 3.2.0.
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 - [SDL_GetRendererName](SDL_GetRendererName)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

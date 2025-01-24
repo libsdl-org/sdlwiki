@@ -25,10 +25,6 @@ https://en.wikipedia.org/wiki/Mutex
 
 This struct is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMutex](CategoryMutex)
 

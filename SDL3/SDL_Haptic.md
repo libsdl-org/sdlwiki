@@ -22,11 +22,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_OpenHapticFromJoystick](SDL_OpenHapticFromJoystick)
 - [SDL_CloseHaptic](SDL_CloseHaptic)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryHaptic](CategoryHaptic)
 

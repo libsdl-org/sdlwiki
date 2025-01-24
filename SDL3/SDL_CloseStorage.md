@@ -36,11 +36,6 @@ This function is available since SDL 3.2.0.
 - [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
 - [SDL_OpenUserStorage](SDL_OpenUserStorage)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStorage](CategoryStorage)
 

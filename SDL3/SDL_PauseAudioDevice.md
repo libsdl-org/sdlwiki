@@ -53,11 +53,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

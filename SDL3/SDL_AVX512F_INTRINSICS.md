@@ -27,11 +27,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_AVX_INTRINSICS](SDL_AVX_INTRINSICS)
 - [SDL_AVX2_INTRINSICS](SDL_AVX2_INTRINSICS)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryIntrinsics](CategoryIntrinsics)
 

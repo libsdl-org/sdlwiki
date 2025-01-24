@@ -53,11 +53,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_GetWindowFlags](SDL_GetWindowFlags)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

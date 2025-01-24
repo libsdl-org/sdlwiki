@@ -66,11 +66,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SignalAsyncIOQueue](SDL_SignalAsyncIOQueue)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAsyncIO](CategoryAsyncIO)
 

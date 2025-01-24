@@ -31,11 +31,6 @@ This function is available since SDL 3.2.0.
 - [SDL_CreateSurface](SDL_CreateSurface)
 - [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

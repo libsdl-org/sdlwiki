@@ -43,11 +43,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryMouse](CategoryMouse), 
 

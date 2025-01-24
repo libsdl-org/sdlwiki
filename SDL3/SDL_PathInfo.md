@@ -28,11 +28,6 @@ This datatype is available since SDL 3.2.0.
 - [SDL_GetPathInfo](SDL_GetPathInfo)
 - [SDL_GetStoragePathInfo](SDL_GetStoragePathInfo)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryFilesystem](CategoryFilesystem)
 

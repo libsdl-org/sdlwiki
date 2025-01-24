@@ -60,11 +60,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_VirtualJoystickSensorDesc](SDL_VirtualJoystickSensorDesc)
 - [SDL_VirtualJoystickTouchpadDesc](SDL_VirtualJoystickTouchpadDesc)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryJoystick](CategoryJoystick)
 

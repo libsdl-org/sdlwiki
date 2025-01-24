@@ -65,11 +65,6 @@ This function is available since SDL 3.2.0.
 - [SDL_bsearch](SDL_bsearch)
 - [SDL_qsort_r](SDL_qsort_r)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

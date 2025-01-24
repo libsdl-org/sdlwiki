@@ -66,11 +66,6 @@ int main(int argc, char* argv[])
 - [SDL_ResetHint](SDL_ResetHint)
 - [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 

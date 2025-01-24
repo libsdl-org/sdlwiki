@@ -46,11 +46,6 @@ This function is available since SDL 3.2.0.
 - [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
 - [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

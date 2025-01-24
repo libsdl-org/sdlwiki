@@ -31,11 +31,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture)
 - [SDL_ReleaseGPUTransferBuffer](SDL_ReleaseGPUTransferBuffer)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

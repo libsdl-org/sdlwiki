@@ -33,10 +33,6 @@ time.
 
 This datatype is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAssert](CategoryAssert)
 

@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetGamepadTypeFromString](SDL_GetGamepadTypeFromString)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

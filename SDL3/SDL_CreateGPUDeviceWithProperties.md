@@ -67,11 +67,6 @@ This function is available since SDL 3.2.0.
 - [SDL_DestroyGPUDevice](SDL_DestroyGPUDevice)
 - [SDL_GPUSupportsProperties](SDL_GPUSupportsProperties)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

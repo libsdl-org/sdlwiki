@@ -38,11 +38,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_RunOnMainThread](SDL_RunOnMainThread)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

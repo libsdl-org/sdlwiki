@@ -31,11 +31,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateEnvironment](SDL_CreateEnvironment)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

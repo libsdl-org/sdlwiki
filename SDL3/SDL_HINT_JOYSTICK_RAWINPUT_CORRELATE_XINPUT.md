@@ -27,10 +27,6 @@ This hint should be set before a gamepad is opened.
 
 This hint is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

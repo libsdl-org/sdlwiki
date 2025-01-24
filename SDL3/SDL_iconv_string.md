@@ -50,11 +50,6 @@ This function is available since SDL 3.2.0.
 - [SDL_iconv_close](SDL_iconv_close)
 - [SDL_iconv](SDL_iconv)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

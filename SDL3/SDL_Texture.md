@@ -30,11 +30,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRender](CategoryRender)
 

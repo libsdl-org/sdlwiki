@@ -35,11 +35,6 @@ This function is available since SDL 3.2.0.
 - [SDL_HasSSE3](SDL_HasSSE3)
 - [SDL_HasSSE42](SDL_HasSSE42)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

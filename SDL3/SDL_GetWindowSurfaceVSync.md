@@ -36,11 +36,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetWindowSurfaceVSync](SDL_SetWindowSurfaceVSync)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

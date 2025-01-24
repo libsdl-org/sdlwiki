@@ -41,11 +41,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_ShowWindow](SDL_ShowWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

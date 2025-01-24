@@ -50,11 +50,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ltoa](SDL_ltoa)
 - [SDL_lltoa](SDL_lltoa)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

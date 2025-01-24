@@ -52,11 +52,6 @@ This function is available since SDL 3.2.0.
 - [SDL_acosf](SDL_acosf)
 - [SDL_sinf](SDL_sinf)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

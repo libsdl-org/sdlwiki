@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 - [SDL_rand_r](SDL_rand_r)
 - [SDL_randf_r](SDL_randf_r)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

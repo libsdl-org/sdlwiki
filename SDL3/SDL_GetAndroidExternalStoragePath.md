@@ -40,11 +40,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAndroidInternalStoragePath](SDL_GetAndroidInternalStoragePath)
 - [SDL_GetAndroidCachePath](SDL_GetAndroidCachePath)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

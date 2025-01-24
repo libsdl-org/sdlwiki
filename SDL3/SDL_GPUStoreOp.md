@@ -26,11 +26,6 @@ This enum is available since SDL 3.2.0.
 
 - [SDL_BeginGPURenderPass](SDL_BeginGPURenderPass)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGPU](CategoryGPU)
 

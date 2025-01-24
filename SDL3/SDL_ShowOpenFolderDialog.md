@@ -58,11 +58,6 @@ This function is available since SDL 3.2.0.
 - [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 - [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryDialog](CategoryDialog)
 

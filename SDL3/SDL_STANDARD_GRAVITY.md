@@ -23,10 +23,6 @@ away from the center of the earth, which is a positive Y value.
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySensor](CategorySensor)
 

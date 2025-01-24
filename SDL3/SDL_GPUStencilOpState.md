@@ -26,11 +26,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_GPUDepthStencilState](SDL_GPUDepthStencilState)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
 

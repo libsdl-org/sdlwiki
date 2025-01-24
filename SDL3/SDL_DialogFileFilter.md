@@ -51,11 +51,6 @@ const SDL_DialogFileFilter filters[] = {
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 - [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryDialog](CategoryDialog)
 

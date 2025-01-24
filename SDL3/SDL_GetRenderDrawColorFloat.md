@@ -40,11 +40,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
 - [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

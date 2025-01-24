@@ -112,11 +112,6 @@ int main(int argc, char *argv[])
 - [SDL_GetRenderDriver](SDL_GetRenderDriver)
 - [SDL_GetRendererName](SDL_GetRendererName)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

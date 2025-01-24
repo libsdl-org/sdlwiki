@@ -34,11 +34,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateRWLock](SDL_CreateRWLock)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

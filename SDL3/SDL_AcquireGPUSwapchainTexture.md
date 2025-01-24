@@ -72,11 +72,6 @@ This function is available since SDL 3.2.0.
 - [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)
 - [SDL_SetGPUAllowedFramesInFlight](SDL_SetGPUAllowedFramesInFlight)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

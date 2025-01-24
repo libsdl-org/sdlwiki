@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_RectsEqualEpsilon](SDL_RectsEqualEpsilon)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)
 

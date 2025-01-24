@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

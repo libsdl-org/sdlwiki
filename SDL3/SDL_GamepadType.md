@@ -34,10 +34,6 @@ as these, either because they were designed for a specific console, or they
 simply most closely match that console's controllers (does it have A/B/X/Y
 buttons or X/O/Square/Triangle? Does it have a touchpad? etc).
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGamepad](CategoryGamepad)
 

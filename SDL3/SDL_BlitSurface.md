@@ -102,11 +102,6 @@ SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 
 - [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_Quit](SDL_Quit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

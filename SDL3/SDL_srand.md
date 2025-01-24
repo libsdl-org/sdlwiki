@@ -37,11 +37,6 @@ This function is available since SDL 3.2.0.
 - [SDL_rand_bits](SDL_rand_bits)
 - [SDL_randf](SDL_randf)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

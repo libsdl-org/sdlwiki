@@ -31,11 +31,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

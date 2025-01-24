@@ -41,11 +41,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_PauseAudioStreamDevice](SDL_PauseAudioStreamDevice)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

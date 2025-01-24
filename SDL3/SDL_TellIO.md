@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SeekIO](SDL_SeekIO)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 

@@ -43,11 +43,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_BYTESPERPIXEL](SDL_BYTESPERPIXEL)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPixels](CategoryPixels)
 

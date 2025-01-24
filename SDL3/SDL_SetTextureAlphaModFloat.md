@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
 - [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

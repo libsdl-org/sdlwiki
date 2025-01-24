@@ -32,11 +32,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
 

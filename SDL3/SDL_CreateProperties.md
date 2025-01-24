@@ -35,11 +35,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_DestroyProperties](SDL_DestroyProperties)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
 

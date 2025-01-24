@@ -20,11 +20,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_PI_F](SDL_PI_F)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

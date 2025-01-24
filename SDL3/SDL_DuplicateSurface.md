@@ -39,11 +39,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_DestroySurface](SDL_DestroySurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

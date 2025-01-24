@@ -72,11 +72,6 @@ surface = NULL;
 - [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

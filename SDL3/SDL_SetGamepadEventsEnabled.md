@@ -33,11 +33,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GamepadEventsEnabled](SDL_GamepadEventsEnabled)
 - [SDL_UpdateGamepads](SDL_UpdateGamepads)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
 

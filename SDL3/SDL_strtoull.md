@@ -51,11 +51,6 @@ This function is available since SDL 3.2.0.
 - [SDL_strtod](SDL_strtod)
 - [SDL_ulltoa](SDL_ulltoa)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

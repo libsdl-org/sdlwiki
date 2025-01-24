@@ -48,10 +48,6 @@ test it on every platform you target.
 
 This function is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMisc](CategoryMisc)
 

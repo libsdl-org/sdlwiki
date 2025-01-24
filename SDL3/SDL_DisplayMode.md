@@ -37,11 +37,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
 

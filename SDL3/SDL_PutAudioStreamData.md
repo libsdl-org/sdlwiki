@@ -51,11 +51,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
 - [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

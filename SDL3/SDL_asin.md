@@ -52,11 +52,6 @@ This function is available since SDL 3.2.0.
 - [SDL_acos](SDL_acos)
 - [SDL_sin](SDL_sin)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

@@ -20,11 +20,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_JOYSTICK_AXIS_MIN](SDL_JOYSTICK_AXIS_MIN)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryJoystick](CategoryJoystick)
 

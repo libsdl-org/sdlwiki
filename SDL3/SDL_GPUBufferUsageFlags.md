@@ -39,11 +39,6 @@ This datatype is available since SDL 3.2.0.
 
 - [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

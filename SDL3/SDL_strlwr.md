@@ -43,11 +43,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_strupr](SDL_strupr)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

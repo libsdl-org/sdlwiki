@@ -98,11 +98,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_HapticLeftRight](SDL_HapticLeftRight)
 - [SDL_HapticCustom](SDL_HapticCustom)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

@@ -31,11 +31,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

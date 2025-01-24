@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

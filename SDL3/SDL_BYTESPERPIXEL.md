@@ -47,11 +47,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_BITSPERPIXEL](SDL_BITSPERPIXEL)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryPixels](CategoryPixels)
 

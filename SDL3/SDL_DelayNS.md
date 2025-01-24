@@ -37,11 +37,6 @@ This function is available since SDL 3.2.0.
 - [SDL_Delay](SDL_Delay)
 - [SDL_DelayPrecise](SDL_DelayPrecise)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 

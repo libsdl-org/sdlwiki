@@ -45,11 +45,6 @@ This datatype is available since SDL 3.2.0.
 - [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
 - [SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP](SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategorySystem](CategorySystem)
 

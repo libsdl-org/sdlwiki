@@ -57,11 +57,6 @@ This enum is available since SDL 3.2.0.
 - [SDL_AUDIO_ISSIGNED](SDL_AUDIO_ISSIGNED)
 - [SDL_AUDIO_ISUNSIGNED](SDL_AUDIO_ISUNSIGNED)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryAudio](CategoryAudio)
 

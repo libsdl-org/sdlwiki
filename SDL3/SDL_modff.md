@@ -42,11 +42,6 @@ This function is available since SDL 3.2.0.
 - [SDL_truncf](SDL_truncf)
 - [SDL_fmodf](SDL_fmodf)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

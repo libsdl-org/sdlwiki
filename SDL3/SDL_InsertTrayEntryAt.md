@@ -48,11 +48,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RemoveTrayEntry](SDL_RemoveTrayEntry)
 - [SDL_GetTrayEntryParent](SDL_GetTrayEntryParent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTray](CategoryTray)
 

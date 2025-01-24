@@ -43,11 +43,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetPointerPropertyWithCleanup](SDL_SetPointerPropertyWithCleanup)
 - [SDL_SetStringProperty](SDL_SetStringProperty)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
 

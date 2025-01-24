@@ -50,11 +50,6 @@ This function is available since SDL 3.2.0.
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 - [SDL_SetRenderScale](SDL_SetRenderScale)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

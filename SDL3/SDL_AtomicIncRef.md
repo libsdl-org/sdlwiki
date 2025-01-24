@@ -38,11 +38,6 @@ This macro is available since SDL 3.2.0.
 
 - [SDL_AtomicDecRef](SDL_AtomicDecRef)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAtomic](CategoryAtomic)
 

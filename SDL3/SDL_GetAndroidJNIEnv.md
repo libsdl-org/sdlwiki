@@ -77,11 +77,6 @@ void showHome(void)
 
 - [SDL_GetAndroidActivity](SDL_GetAndroidActivity)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

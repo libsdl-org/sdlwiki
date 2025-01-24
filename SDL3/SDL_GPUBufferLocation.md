@@ -28,11 +28,6 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_CopyGPUBufferToBuffer](SDL_CopyGPUBufferToBuffer)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
 

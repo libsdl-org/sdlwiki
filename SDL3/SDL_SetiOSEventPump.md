@@ -30,11 +30,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SetiOSAnimationCallback](SDL_SetiOSAnimationCallback)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

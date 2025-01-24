@@ -23,10 +23,6 @@ uninitialized will either return the user provided value, if one was set
 prior to initialization, or NULL. See docs/README-wayland.md for more
 information.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)
 

@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_GetKeyboardNameForID](SDL_GetKeyboardNameForID)
 - [SDL_HasKeyboard](SDL_HasKeyboard)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

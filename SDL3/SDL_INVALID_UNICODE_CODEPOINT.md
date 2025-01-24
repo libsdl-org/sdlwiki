@@ -29,11 +29,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_StepBackUTF8](SDL_StepBackUTF8)
 - [SDL_StepUTF8](SDL_StepUTF8)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

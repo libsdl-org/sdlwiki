@@ -50,11 +50,6 @@ This function is available since SDL 3.2.0.
 - [SDL_WriteIO](SDL_WriteIO)
 - [SDL_GetIOStatus](SDL_GetIOStatus)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 

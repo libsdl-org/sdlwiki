@@ -37,10 +37,6 @@ and [SDL_EVENT_PEN_UP](SDL_EVENT_PEN_UP).
 
 This struct is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents), [CategoryPen](CategoryPen)
 

@@ -45,11 +45,6 @@ This function is available since SDL 3.2.0.
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
 - [SDL_ReleaseGPUSampler](SDL_ReleaseGPUSampler)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 

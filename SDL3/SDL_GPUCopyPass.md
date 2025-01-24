@@ -26,11 +26,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_BeginGPUCopyPass](SDL_BeginGPUCopyPass)
 - [SDL_EndGPUCopyPass](SDL_EndGPUCopyPass)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryGPU](CategoryGPU)
 

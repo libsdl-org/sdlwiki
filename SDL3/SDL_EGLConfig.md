@@ -16,10 +16,6 @@ typedef void *SDL_EGLConfig;
 
 This datatype is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

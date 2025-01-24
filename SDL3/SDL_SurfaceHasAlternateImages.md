@@ -32,11 +32,6 @@ This function is available since SDL 3.2.0.
 - [SDL_RemoveSurfaceAlternateImages](SDL_RemoveSurfaceAlternateImages)
 - [SDL_GetSurfaceImages](SDL_GetSurfaceImages)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

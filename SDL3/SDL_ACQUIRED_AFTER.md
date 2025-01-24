@@ -21,10 +21,6 @@ Please see https://clang.llvm.org/docs/ThreadSafetyAnalysis.html#mutex-h
 
 This macro is available since SDL 3.2.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryMutex](CategoryMutex)
 

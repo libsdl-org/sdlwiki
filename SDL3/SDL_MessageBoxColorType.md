@@ -20,10 +20,6 @@ typedef enum SDL_MessageBoxColorType
 } SDL_MessageBoxColorType;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryMessagebox](CategoryMessagebox)
 

@@ -42,11 +42,6 @@ This struct is available since SDL 3.2.0.
 - [SDL_SetAtomicInt](SDL_SetAtomicInt)
 - [SDL_AddAtomicInt](SDL_AddAtomicInt)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)
 

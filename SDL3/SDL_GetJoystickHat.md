@@ -46,11 +46,6 @@ This function is available since SDL 3.2.0.
 
 - [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

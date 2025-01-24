@@ -54,11 +54,6 @@ This macro is available since SDL 3.2.0.
 - [SDL_MemoryBarrierAcquire](SDL_MemoryBarrierAcquire)
 - [SDL_MemoryBarrierReleaseFunction](SDL_MemoryBarrierReleaseFunction)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAtomic](CategoryAtomic)
 
