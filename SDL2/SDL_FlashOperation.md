@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FlashOperation
 
 Window flash operation
@@ -17,6 +16,10 @@ typedef enum SDL_FlashOperation
     SDL_FLASH_UNTIL_FOCUSED             /**< Flash the window until it gets focus */
 } SDL_FlashOperation;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)

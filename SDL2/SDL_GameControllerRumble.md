@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerRumble
 
 Start a rumble effect on a game controller.
@@ -38,6 +37,11 @@ This function is available since SDL 2.0.9.
 ## See Also
 
 - [SDL_GameControllerHasRumble](SDL_GameControllerHasRumble)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

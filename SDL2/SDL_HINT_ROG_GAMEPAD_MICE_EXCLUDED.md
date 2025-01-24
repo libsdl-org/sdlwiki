@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_ROG_GAMEPAD_MICE_EXCLUDED
 
 A variable containing a list of devices that are not ROG gamepad capable mice.
@@ -25,6 +24,10 @@ hexadecimal form, e.g.
 
 The variable can also take the form of @file, in which case the named file
 will be loaded and interpreted as the value of the variable.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

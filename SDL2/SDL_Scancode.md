@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Scancode
 
 The SDL keyboard scancode representation.
@@ -412,6 +411,10 @@ in the [SDL_Keysym](SDL_Keysym)::scancode key.keysym.scancode field of the
 
 The values in this enumeration are based on the USB usage page standard:
 https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryScancode](CategoryScancode)

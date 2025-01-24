@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINDOWS_USE_D3D9EX
 
 Use the D3D9Ex API introduced in Windows Vista, instead of normal D3D9.
@@ -32,6 +31,10 @@ This variable can be set to the following values:
 - "0": Use the original Direct3D 9 API (default)
 - "1": Use the Direct3D 9Ex API on Vista and later (and fall back if D3D9Ex
   is unavailable)
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

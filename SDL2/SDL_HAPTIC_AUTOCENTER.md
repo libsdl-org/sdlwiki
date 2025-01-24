@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HAPTIC_AUTOCENTER
 
 Device can set autocenter.
@@ -20,6 +19,11 @@ Device supports setting autocenter.
 ## See Also
 
 - [SDL_HapticSetAutocenter](SDL_HapticSetAutocenter)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)

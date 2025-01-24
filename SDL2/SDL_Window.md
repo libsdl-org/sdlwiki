@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Window
 
 The opaque type used to identify a window.
@@ -44,6 +43,11 @@ typedef struct SDL_Window SDL_Window;
 - [SDL_SetWindowResizable](SDL_SetWindowResizable)
 - [SDL_SetWindowTitle](SDL_SetWindowTitle)
 - [SDL_ShowWindow](SDL_ShowWindow)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo), [CategoryAPIStruct](CategoryAPIStruct), 

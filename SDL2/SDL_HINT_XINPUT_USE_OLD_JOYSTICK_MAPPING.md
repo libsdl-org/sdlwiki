@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING
 
 A variable that causes SDL to use the old axis and button mapping for XInput devices.
@@ -20,6 +19,10 @@ This hint is for backwards compatibility only and will be removed in SDL
 
 The default value is "0". This hint must be set before
 [SDL_Init](SDL_Init)()
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

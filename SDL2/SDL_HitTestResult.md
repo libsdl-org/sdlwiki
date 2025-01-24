@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HitTestResult
 
 Possible return values from the [SDL_HitTest](SDL_HitTest) callback.
@@ -28,6 +27,11 @@ typedef enum SDL_HitTestResult
 ## See Also
 
 - [SDL_HitTest](SDL_HitTest)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)

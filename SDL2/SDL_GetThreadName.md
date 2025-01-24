@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetThreadName
 
 Get the thread name as it was specified in [SDL_CreateThread](SDL_CreateThread)().
@@ -37,6 +36,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_CreateThread](SDL_CreateThread)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)

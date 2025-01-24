@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AllocRW
 
 Use this function to allocate an empty, unpopulated [SDL_RWops](SDL_RWops) structure.
@@ -44,6 +43,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_FreeRW](SDL_FreeRW)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

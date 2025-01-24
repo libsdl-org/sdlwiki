@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MouseWheelEvent
 
 Mouse wheel event structure (event.wheel.*)
@@ -25,6 +24,10 @@ typedef struct SDL_MouseWheelEvent
     Sint32 mouseY;      /**< Y coordinate, relative to window (added in 2.26.0) */
 } SDL_MouseWheelEvent;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_JoystickNumBalls
 
 Get the number of trackballs on a joystick.
@@ -38,6 +37,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_JoystickGetBall](SDL_JoystickGetBall)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

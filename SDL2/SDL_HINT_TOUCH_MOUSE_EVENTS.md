@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_TOUCH_MOUSE_EVENTS
 
 A variable controlling whether touch events should generate synthetic mouse events
@@ -21,6 +20,10 @@ This variable can be set to the following values:
 - "1": Touch events will generate mouse events
 
 By default SDL will generate mouse events for touch events
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

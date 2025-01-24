@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_TRACKPAD_IS_TOUCH_ONLY
 
 A variable that treats trackpads as touch devices.
@@ -31,6 +30,10 @@ This hint is checked during [SDL_Init](SDL_Init) and can not be changed
 after.
 
 This hint is available since SDL 2.24.0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

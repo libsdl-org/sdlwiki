@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_StartTextInput
 
 Start accepting Unicode text input events.
@@ -37,6 +36,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_SetTextInputRect](SDL_SetTextInputRect)
 - [SDL_StopTextInput](SDL_StopTextInput)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

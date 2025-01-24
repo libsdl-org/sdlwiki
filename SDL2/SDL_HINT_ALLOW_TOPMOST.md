@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_ALLOW_TOPMOST
 
 If set to "0" then never set the top most bit on a SDL Window, even if the video mode expects it.
@@ -22,6 +21,10 @@ This variable can be set to the following values:
 
 - "0": don't allow topmost
 - "1": allow topmost
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_JOYSTICK_ROG_CHAKRAM
 
 A variable controlling whether the ROG Chakram mice should show up as joysticks
@@ -19,6 +18,10 @@ This variable can be set to the following values:
 
 - "0": ROG Chakram mice do not show up as joysticks (the default)
 - "1": ROG Chakram mice show up as joysticks
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HAPTIC_PAUSE
 
 Device can be paused.
@@ -21,6 +20,11 @@ Devices supports being paused.
 
 - [SDL_HapticPause](SDL_HapticPause)
 - [SDL_HapticUnpause](SDL_HapticUnpause)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_GRAB_KEYBOARD
 
 A variable controlling whether grabbing input grabs the keyboard
@@ -21,6 +20,10 @@ This variable can be set to the following values:
 - "1": Grab will affect mouse and keyboard
 
 By default SDL will not grab the keyboard so system shortcuts still work.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerAddMapping
 
 Add support for controllers that SDL is unaware of or to cause an existing controller to have a different binding.
@@ -56,6 +55,11 @@ This function is available since SDL 2.0.0.
 - [SDL_GameControllerMapping](SDL_GameControllerMapping)
 - [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 - [SDL_CONTROLLERDEVICEADDED](SDL_CONTROLLERDEVICEADDED)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

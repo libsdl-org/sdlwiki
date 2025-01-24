@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_FORCE_RAISEWINDOW
 
 A variable controlling whether raising the window should be done more forcefully
@@ -24,6 +23,10 @@ At present, this is only an issue under MS Windows, which makes it nearly
 impossible to programmatically move a window to the foreground, for
 "security" reasons. See http://stackoverflow.com/a/34414846 for a
 discussion.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

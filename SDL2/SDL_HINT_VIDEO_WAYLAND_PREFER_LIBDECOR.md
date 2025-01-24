@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_WAYLAND_PREFER_LIBDECOR
 
 A variable controlling whether the libdecor Wayland backend is preferred over native decorations.
@@ -26,6 +25,10 @@ This variable can be set to the following values:
 
 libdecor is used over xdg-shell when xdg-decoration protocol is
 unavailable.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

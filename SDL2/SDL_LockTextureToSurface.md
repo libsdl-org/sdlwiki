@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_LockTextureToSurface
 
 Lock a portion of the texture for **write-only** pixel access, and expose it as a SDL surface.
@@ -53,6 +52,11 @@ This function is available since SDL 2.0.12.
 
 - [SDL_LockTexture](SDL_LockTexture)
 - [SDL_UnlockTexture](SDL_UnlockTexture)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

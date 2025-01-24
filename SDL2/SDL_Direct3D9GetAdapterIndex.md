@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Direct3D9GetAdapterIndex
 
 Get the D3D9 adapter index that matches the specified display index.
@@ -32,6 +31,10 @@ controls on which monitor a full screen application will appear.
 ## Version
 
 This function is available since SDL 2.0.1.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FreePalette
 
 Free a palette created with [SDL_AllocPalette](SDL_AllocPalette)().
@@ -26,6 +25,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_AllocPalette](SDL_AllocPalette)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)

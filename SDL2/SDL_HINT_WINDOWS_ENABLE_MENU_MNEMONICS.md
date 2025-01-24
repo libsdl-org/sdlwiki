@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINDOWS_ENABLE_MENU_MNEMONICS
 
 Controls whether menus can be opened with their keyboard shortcut (Alt+mnemonic).
@@ -33,6 +32,10 @@ This variable can be set to the following values:
 
 - "0": Alt+mnemonic does nothing, no beeping. (default)
 - "1": Alt+mnemonic opens menus, invalid mnemonics produce a beep.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

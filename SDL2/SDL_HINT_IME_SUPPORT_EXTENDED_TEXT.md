@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_IME_SUPPORT_EXTENDED_TEXT
 
 A variable to control if extended IME text support is enabled.
@@ -25,6 +24,10 @@ The variable can be set to the following values:
 - "0": Legacy behavior. Text can be truncated, no heap allocations.
   (default)
 - "1": Modern behavior.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

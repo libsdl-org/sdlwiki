@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_SHUTDOWN_DBUS_ON_QUIT
 
 Cause SDL to call dbus_shutdown() on quit.
@@ -26,6 +25,10 @@ This variable can be set to the following values:
 - "1": SDL will call dbus_shutdown() on quit
 
 This hint is available since SDL 2.30.0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

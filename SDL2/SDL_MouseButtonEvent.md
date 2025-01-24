@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MouseButtonEvent
 
 Mouse button event structure (event.button.*)
@@ -24,6 +23,10 @@ typedef struct SDL_MouseButtonEvent
     Sint32 y;           /**< Y coordinate, relative to window */
 } SDL_MouseButtonEvent;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

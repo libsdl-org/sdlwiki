@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HintCallback
 
 Type definition of the hint callback function.
@@ -21,6 +20,10 @@ typedef void (SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const
 | **name**     | what was passed as `name` to [SDL_AddHintCallback](SDL_AddHintCallback)().     |
 | **oldValue** | the previous hint value.                                                       |
 | **newValue** | the new value hint is to be set to.                                            |
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryHints](CategoryHints)

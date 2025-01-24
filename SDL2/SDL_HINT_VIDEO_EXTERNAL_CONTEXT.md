@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_EXTERNAL_CONTEXT
 
 A variable controlling whether the graphics context is externally managed.
@@ -27,6 +26,10 @@ usage of OpenGL if Vulkan isn't used. Setting this to "1" will prevent this
 behavior, which is desireable when the application manages the graphics
 context, such as an externally managed OpenGL context or attaching a Vulkan
 surface to the window.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

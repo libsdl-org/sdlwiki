@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_PauseAudio
 
 This function is a legacy means of pausing the audio device.
@@ -40,6 +39,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetAudioStatus](SDL_GetAudioStatus)
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

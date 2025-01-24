@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_FRAMEBUFFER_ACCELERATION
 
 A variable controlling how 3D acceleration is used to accelerate the SDL screen surface.
@@ -28,6 +27,10 @@ This variable can be set to the following values:
 
 By default SDL tries to make a best guess for each platform whether to use
 acceleration or not.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

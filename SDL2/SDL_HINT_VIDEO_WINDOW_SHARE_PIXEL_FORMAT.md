@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT
 
 A variable that is the address of another [SDL_Window](SDL_Window)* (as a hex string formatted with "%p").
@@ -32,6 +31,10 @@ This variable can be set to the following values: The address (as a string
 "%p") of the [SDL_Window](SDL_Window)* that new windows created with
 [SDL_CreateWindowFrom](SDL_CreateWindowFrom)() should share a pixel format
 with.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

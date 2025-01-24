@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WAVE_RIFF_CHUNK_SIZE
 
 Controls how the size of the RIFF chunk affects the loading of a WAVE file.
@@ -33,6 +32,10 @@ This variable can be set to the following values:
   (default)
 - "ignore": Ignore the RIFF chunk size and always search up to 4 GiB
 - "maximum": Search for chunks until the end of file (not recommended)
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

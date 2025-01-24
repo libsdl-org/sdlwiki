@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_ShowMessageBox
 
 Create a modal message box.
@@ -54,6 +53,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMessagebox](CategoryMessagebox)

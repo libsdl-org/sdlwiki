@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RenderSetVSync
 
 Toggle VSync of the given renderer.
@@ -27,6 +26,10 @@ int SDL_RenderSetVSync(SDL_Renderer* renderer, int vsync);
 ## Version
 
 This function is available since SDL 2.0.18.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

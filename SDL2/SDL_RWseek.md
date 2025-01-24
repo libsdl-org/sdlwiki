@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RWseek
 
 Seek within an [SDL_RWops](SDL_RWops) data stream.
@@ -59,6 +58,11 @@ This function is available since SDL 2.0.10.
 - [SDL_RWread](SDL_RWread)
 - [SDL_RWtell](SDL_RWtell)
 - [SDL_RWwrite](SDL_RWwrite)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

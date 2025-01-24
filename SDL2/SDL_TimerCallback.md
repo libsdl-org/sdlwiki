@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TimerCallback
 
 Function prototype for the timer callback function.
@@ -19,6 +18,10 @@ The callback function is passed the current timer interval and returns the
 next timer interval. If the returned value is the same as the one passed
 in, the periodic alarm continues, otherwise a new alarm is scheduled. If
 the callback returns 0, the periodic alarm is cancelled.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)

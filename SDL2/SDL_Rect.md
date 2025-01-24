@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Rect
 
 A rectangle, with the origin at the upper left (integer).
@@ -26,6 +25,11 @@ typedef struct SDL_Rect
 - [SDL_IntersectRectAndLine](SDL_IntersectRectAndLine)
 - [SDL_UnionRect](SDL_UnionRect)
 - [SDL_EnclosePoints](SDL_EnclosePoints)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)

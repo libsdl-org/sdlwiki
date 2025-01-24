@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HasWindowSurface
 
 Return whether the window has a surface associated with it.
@@ -25,6 +24,11 @@ This function is available since SDL 2.28.0.
 ## See Also
 
 - [SDL_GetWindowSurface](SDL_GetWindowSurface)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

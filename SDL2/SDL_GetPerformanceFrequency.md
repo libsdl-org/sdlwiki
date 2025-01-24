@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetPerformanceFrequency
 
 Get the count per second of the high resolution counter.
@@ -24,6 +23,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

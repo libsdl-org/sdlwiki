@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_PREFERRED_LOCALES
 
 Override for [SDL_GetPreferredLocales](SDL_GetPreferredLocales)()
@@ -23,6 +22,10 @@ hint, you can push your own event, if you want).
 The format of this hint is a comma-separated list of language and locale,
 combined with an underscore, as is a common format: "en_GB". Locale is
 optional: "en". So you might have a list like this: "en_GB,jp,es_PT"
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

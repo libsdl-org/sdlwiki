@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_DestroyWindowSurface
 
 Destroy the surface associated with the window.
@@ -32,6 +31,11 @@ This function is available since SDL 2.28.0.
 
 - [SDL_GetWindowSurface](SDL_GetWindowSurface)
 - [SDL_HasWindowSurface](SDL_HasWindowSurface)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

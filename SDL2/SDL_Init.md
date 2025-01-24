@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Init
 
 Initialize the SDL library.
@@ -74,6 +73,11 @@ This function is available since SDL 2.0.0.
 - [SDL_Quit](SDL_Quit)
 - [SDL_SetMainReady](SDL_SetMainReady)
 - [SDL_WasInit](SDL_WasInit)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

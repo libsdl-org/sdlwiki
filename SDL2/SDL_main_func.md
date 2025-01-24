@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_main_func
 
 The prototype for the application's main() function
@@ -12,6 +11,10 @@ Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 ```c
 typedef int (*SDL_main_func)(int argc, char *argv[]);
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMain](CategoryMain)

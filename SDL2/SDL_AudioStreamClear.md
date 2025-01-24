@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AudioStreamClear
 
 Clear any pending data in the stream without converting it
@@ -25,6 +24,11 @@ This function is available since SDL 2.0.7.
 - [SDL_AudioStreamAvailable](SDL_AudioStreamAvailable)
 - [SDL_AudioStreamFlush](SDL_AudioStreamFlush)
 - [SDL_FreeAudioStream](SDL_FreeAudioStream)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

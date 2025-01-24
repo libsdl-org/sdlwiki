@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_JoystickGetGUIDString
 
 Get an ASCII string representation for a given [SDL_JoystickGUID](SDL_JoystickGUID).
@@ -34,6 +33,11 @@ This function is available since SDL 2.0.0.
 - [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
 - [SDL_JoystickGetGUID](SDL_JoystickGetGUID)
 - [SDL_JoystickGetGUIDFromString](SDL_JoystickGetGUIDFromString)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

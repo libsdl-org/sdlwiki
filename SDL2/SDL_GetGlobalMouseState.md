@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetGlobalMouseState
 
 Get the current state of the mouse in relation to the desktop.
@@ -49,6 +48,11 @@ This function is available since SDL 2.0.4.
 ## See Also
 
 - [SDL_CaptureMouse](SDL_CaptureMouse)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

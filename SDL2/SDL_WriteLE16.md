@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_WriteLE16
 
 Use this function to write 16 bits in native format to a [SDL_RWops](SDL_RWops) as little-endian data.
@@ -37,6 +36,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_WriteBE16](SDL_WriteBE16)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

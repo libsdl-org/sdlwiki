@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_VERSIONNUM
 
 This macro turns the version numbers into a numeric value:
@@ -27,6 +26,10 @@ thousands digit: for example, 2.23.0 is encoded as 4300, and 2.255.99 would
 be encoded as 25799.
 
 This macro will not be available in SDL 3.x.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)

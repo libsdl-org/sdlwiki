@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RenderSetIntegerScale
 
 Set whether to force integer scales for resolution-independent rendering.
@@ -40,6 +39,11 @@ This function is available since SDL 2.0.5.
 
 - [SDL_RenderGetIntegerScale](SDL_RenderGetIntegerScale)
 - [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

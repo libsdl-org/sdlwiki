@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_LINUX_HAT_DEADZONES
 
 A variable controlling whether digital hats on Linux will apply deadzones to their underlying input axes or use unfiltered values.
@@ -20,6 +19,10 @@ This variable can be set to the following values:
 - "0": Return digital hat values based on unfiltered input axis values
 - "1": Return digital hat values with deadzones on the input axes taken
   into account (the default)
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

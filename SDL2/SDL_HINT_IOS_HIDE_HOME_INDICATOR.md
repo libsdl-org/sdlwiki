@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_IOS_HIDE_HOME_INDICATOR
 
 A variable controlling whether the home indicator bar on iPhone X should be hidden.
@@ -23,6 +22,10 @@ This variable can be set to the following values:
 - "2": The indicator bar is dim and the first swipe makes it visible and
   the second swipe performs the "home" action (default for fullscreen
   applications)
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

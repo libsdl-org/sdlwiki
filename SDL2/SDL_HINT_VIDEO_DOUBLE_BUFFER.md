@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_DOUBLE_BUFFER
 
 Tell the video driver that we only want a double buffer.
@@ -29,6 +28,10 @@ implemented. Currently supported the following drivers:
 - Wayland (wayland)
 - KMSDRM (kmsdrm)
 - Raspberry Pi (raspberrypi)
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

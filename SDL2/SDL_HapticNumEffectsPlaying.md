@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HapticNumEffectsPlaying
 
 Get the number of effects a haptic device can play at the same time.
@@ -37,6 +36,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_HapticNumEffects](SDL_HapticNumEffects)
 - [SDL_HapticQuery](SDL_HapticQuery)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_KMSDRM_DEVICE_INDEX
 
 A variable that decides what KMSDRM device to use.
@@ -22,6 +21,10 @@ SDL makes a guess at the best index to use (usually zero), but the app or
 user can set this hint to a number between 0 and 99 to force selection.
 
 This hint is available since SDL 2.24.0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

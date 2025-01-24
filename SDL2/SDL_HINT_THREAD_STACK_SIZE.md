@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_THREAD_STACK_SIZE
 
 A string specifying SDL's threads stack size in bytes or "0" for the backend's default size
@@ -25,6 +24,10 @@ and PSP backend.
 Instead of this hint, in 2.0.9 and later, you can use
 [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)(). This hint
 only works with the classic [SDL_CreateThread](SDL_CreateThread)().
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_WaitThread
 
 Wait for a thread to finish.
@@ -50,6 +49,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_CreateThread](SDL_CreateThread)
 - [SDL_DetachThread](SDL_DetachThread)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RenderLogicalToWindow
 
 Get real coordinates of point in window when given logical coordinates of point in renderer.
@@ -40,6 +39,11 @@ This function is available since SDL 2.0.18.
 - [SDL_RenderSetScale](SDL_RenderSetScale)
 - [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
 - [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

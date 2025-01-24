@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_DropEvent
 
 An event used to request a file open by the system (event.drop.*)
@@ -25,6 +24,10 @@ This event is enabled by default, you can disable it with
 [SDL_EventState](SDL_EventState)().
 
 If this event is enabled, you must free the filename in the event.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

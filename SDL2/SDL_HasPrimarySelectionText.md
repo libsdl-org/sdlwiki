@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HasPrimarySelectionText
 
 Query whether the primary selection exists and contains a non-empty text string.
@@ -26,6 +25,11 @@ This function is available since SDL 2.26.0.
 
 - [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
 - [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)

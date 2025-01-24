@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SIMDRealloc
 
 Reallocate memory obtained from [SDL_SIMDAlloc](SDL_SIMDAlloc)
@@ -40,6 +39,11 @@ This function is available since SDL 2.0.14.
 - [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
 - [SDL_SIMDAlloc](SDL_SIMDAlloc)
 - [SDL_SIMDFree](SDL_SIMDFree)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)

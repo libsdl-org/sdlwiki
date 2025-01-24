@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_DisplayMode
 
 The structure that defines a display mode
@@ -29,6 +28,11 @@ typedef struct SDL_DisplayMode
 - [SDL_GetClosestDisplayMode](SDL_GetClosestDisplayMode)
 - [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 - [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)

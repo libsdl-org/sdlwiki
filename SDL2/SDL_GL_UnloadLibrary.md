@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GL_UnloadLibrary
 
 Unload the OpenGL library previously loaded by [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)().
@@ -20,6 +19,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

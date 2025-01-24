@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_JoystickIsHaptic
 
 Query if a joystick has haptic features.
@@ -32,6 +31,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_HapticOpenFromJoystick](SDL_HapticOpenFromJoystick)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)

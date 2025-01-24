@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetTouchFinger
 
 Get the finger object for specified touch device ID and finger index.
@@ -37,6 +36,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_RecordGesture](SDL_RecordGesture)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTouch](CategoryTouch)

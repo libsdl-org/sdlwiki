@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_RENDER_BATCHING
 
 A variable controlling whether the 2D render API is compatible or efficient.
@@ -35,6 +34,10 @@ graphics API directly, or if you do, you will call
 [SDL_RenderFlush](SDL_RenderFlush)() before you do so any current batch
 goes to the GPU before your work begins. Not following this contract will
 result in undefined behavior.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

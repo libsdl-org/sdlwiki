@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RenderCopyF
 
 Copy a portion of the texture to the current rendering target at subpixel precision.
@@ -32,6 +31,10 @@ int SDL_RenderCopyF(SDL_Renderer * renderer,
 ## Version
 
 This function is available since SDL 2.0.10.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MOUSE_RELATIVE_WARP_MOTION
 
 A variable controlling whether a motion event should be generated for mouse warping in relative mode.
@@ -23,6 +22,10 @@ This variable can be set to the following values:
 By default warping the mouse will not generate motion events in relative
 mode. This avoids the application having to filter out large relative
 motion due to warping.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RegisterEvents
 
 Allocate a set of user-defined events, and return the beginning event number for that set of events.
@@ -39,6 +38,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_PushEvent](SDL_PushEvent)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

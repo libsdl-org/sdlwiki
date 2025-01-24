@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FlashWindow
 
 Request a window to demand attention from the user.
@@ -28,6 +27,10 @@ int SDL_FlashWindow(SDL_Window * window, SDL_FlashOperation operation);
 ## Version
 
 This function is available since SDL 2.0.16.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

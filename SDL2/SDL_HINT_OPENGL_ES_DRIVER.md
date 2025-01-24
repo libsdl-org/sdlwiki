@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_OPENGL_ES_DRIVER
 
 A variable controlling what driver to use for OpenGL ES contexts.
@@ -39,6 +38,10 @@ This variable can be set to the following values:
 
 - "0": Use ES profile of OpenGL, if available. (Default when not set.)
 - "1": Load OpenGL ES library using the default library names.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerGetBindForButton
 
 Get the SDL joystick layer binding for a controller button mapping.
@@ -37,6 +36,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_GameControllerGetBindForAxis](SDL_GameControllerGetBindForAxis)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

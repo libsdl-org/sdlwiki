@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_FreeCursor
 
 Free a previously-created cursor.
@@ -35,6 +34,11 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateColorCursor](SDL_CreateColorCursor)
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

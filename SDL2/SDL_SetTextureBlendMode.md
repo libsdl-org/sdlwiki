@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetTextureBlendMode
 
 Set the blend mode for a texture, used by [SDL_RenderCopy](SDL_RenderCopy)().
@@ -39,6 +38,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 - [SDL_RenderCopy](SDL_RenderCopy)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

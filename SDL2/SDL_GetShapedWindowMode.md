@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetShapedWindowMode
 
 Get the shape parameters of a shaped window.
@@ -38,6 +37,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_WindowShapeMode](SDL_WindowShapeMode)
 - [SDL_SetWindowShape](SDL_SetWindowShape)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryShape](CategoryShape)

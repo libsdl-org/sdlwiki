@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TICKS_PASSED
 
 Compare 32-bit SDL ticks values, and return true if `A` has passed `B`.
@@ -33,6 +32,10 @@ while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
 Note that this does not handle tick differences greater than 2^31 so take
 care when using the above kind of code with large timeout delays (tens of
 days).
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryTimer](CategoryTimer)

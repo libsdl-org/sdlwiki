@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetOriginalMemoryFunctions
 
 Get the original set of SDL memory functions
@@ -19,6 +18,10 @@ void SDL_GetOriginalMemoryFunctions(SDL_malloc_func *malloc_func,
 ## Version
 
 This function is available since SDL 2.24.0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdInc](CategoryStdInc)

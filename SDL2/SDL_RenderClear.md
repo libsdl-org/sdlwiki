@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_RenderClear
 
 Clear the current rendering target with the drawing color.
@@ -36,6 +35,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

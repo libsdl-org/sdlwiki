@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_PollEvent
 
 Poll for currently pending events.
@@ -67,6 +66,11 @@ This function is available since SDL 2.0.0.
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_WaitEvent](SDL_WaitEvent)
 - [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_SCREENSAVER_INHIBIT_ACTIVITY_NAME
 
 Specify an "activity name" for screensaver inhibition.
@@ -29,6 +28,10 @@ Setting this to "" or leaving it unset will have SDL use a reasonable
 default: "Playing a game" or something similar.
 
 On targets where this is not supported, this hint does nothing.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

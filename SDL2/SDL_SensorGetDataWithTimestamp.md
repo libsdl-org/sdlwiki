@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SensorGetDataWithTimestamp
 
 Get the current state of an opened sensor with the timestamp of the last update.
@@ -33,6 +32,10 @@ The number of values and interpretation of the data is sensor dependent.
 ## Version
 
 This function is available since SDL 2.26.0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySensor](CategorySensor)

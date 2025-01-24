@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_JoystickCurrentPowerLevel
 
 Get the battery level of a joystick as [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel).
@@ -29,6 +28,10 @@ is unknown.
 ## Version
 
 This function is available since SDL 2.0.4.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

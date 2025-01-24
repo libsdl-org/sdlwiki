@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Vulkan_UnloadLibrary
 
 Unload the Vulkan library previously loaded by [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)()
@@ -20,6 +19,11 @@ This function is available since SDL 2.0.6.
 ## See Also
 
 - [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)

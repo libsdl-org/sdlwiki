@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetSurfaceAlphaMod
 
 Set an additional alpha value used in blit operations.
@@ -41,6 +40,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
 - [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

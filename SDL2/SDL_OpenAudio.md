@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_OpenAudio
 
 This function is a legacy means of opening the audio device.
@@ -67,6 +66,11 @@ This function is available since SDL 2.0.0.
 - [SDL_LockAudio](SDL_LockAudio)
 - [SDL_PauseAudio](SDL_PauseAudio)
 - [SDL_UnlockAudio](SDL_UnlockAudio)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

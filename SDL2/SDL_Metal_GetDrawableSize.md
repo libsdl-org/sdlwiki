@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Metal_GetDrawableSize
 
 Get the size of a window's underlying drawable in pixels (for use with setting viewport, scissor & etc).
@@ -30,6 +29,11 @@ This function is available since SDL 2.0.14.
 
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_CreateWindow](SDL_CreateWindow)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)

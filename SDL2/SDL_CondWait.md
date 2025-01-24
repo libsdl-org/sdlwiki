@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_CondWait
 
 Wait until a condition variable is signaled.
@@ -50,6 +49,11 @@ This function is available since SDL 2.0.0.
 - [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
 - [SDL_CreateCond](SDL_CreateCond)
 - [SDL_DestroyCond](SDL_DestroyCond)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

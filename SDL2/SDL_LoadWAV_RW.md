@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_LoadWAV_RW
 
 Load the audio data of a WAVE file into memory.
@@ -106,6 +105,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_FreeWAV](SDL_FreeWAV)
 - [SDL_LoadWAV](SDL_LoadWAV)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

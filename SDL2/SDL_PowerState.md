@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_PowerState
 
 The basic state for the system's power supply.
@@ -19,6 +18,10 @@ typedef enum SDL_PowerState
     SDL_POWERSTATE_CHARGED       /**< Plugged in, battery charged */
 } SDL_PowerState;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryPower](CategoryPower)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerAxis
 
 The list of axes available from a controller
@@ -36,6 +35,10 @@ Trigger axis values range from 0 (released) to
 reported by [SDL_GameControllerGetAxis](SDL_GameControllerGetAxis)(). Note
 that this is not the same range that will be reported by the lower-level
 [SDL_GetJoystickAxis](SDL_GetJoystickAxis)().
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGameController](CategoryGameController)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetNumAudioDevices
 
 Get the number of built-in audio devices.
@@ -65,6 +64,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
 - [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

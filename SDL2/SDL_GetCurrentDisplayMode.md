@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetCurrentDisplayMode
 
 Get information about the current display mode.
@@ -42,6 +41,11 @@ This function is available since SDL 2.0.0.
 - [SDL_GetDisplayMode](SDL_GetDisplayMode)
 - [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 - [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

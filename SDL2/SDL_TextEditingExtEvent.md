@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TextEditingExtEvent
 
 Extended keyboard text editing event structure (event.editExt.*) when text would be truncated if stored in the text buffer [SDL_TextEditingEvent](SDL_TextEditingEvent)
@@ -20,6 +19,10 @@ typedef struct SDL_TextEditingExtEvent
     Sint32 length;                              /**< The length of selected editing text */
 } SDL_TextEditingExtEvent;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

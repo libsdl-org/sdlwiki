@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_ControllerTouchpadEvent
 
 Game controller touchpad event structure (event.ctouchpad.*)
@@ -22,6 +21,10 @@ typedef struct SDL_ControllerTouchpadEvent
     float pressure;     /**< Normalized in the range 0...1 */
 } SDL_ControllerTouchpadEvent;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

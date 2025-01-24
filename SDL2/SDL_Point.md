@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Point
 
 The structure that defines a point (integer)
@@ -21,6 +20,11 @@ typedef struct SDL_Point
 
 - [SDL_EnclosePoints](SDL_EnclosePoints)
 - [SDL_PointInRect](SDL_PointInRect)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)

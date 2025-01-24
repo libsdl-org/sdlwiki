@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR
 
 A variable controlling whether the X11 _NET_WM_BYPASS_COMPOSITOR hint should be used.
@@ -21,6 +20,10 @@ This variable can be set to the following values:
 - "1": Enable _NET_WM_BYPASS_COMPOSITOR
 
 By default SDL will use _NET_WM_BYPASS_COMPOSITOR
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

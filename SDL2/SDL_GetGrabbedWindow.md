@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GetGrabbedWindow
 
 Get the window that currently has an input grab enabled.
@@ -26,6 +25,11 @@ This function is available since SDL 2.0.4.
 
 - [SDL_GetWindowGrab](SDL_GetWindowGrab)
 - [SDL_SetWindowGrab](SDL_SetWindowGrab)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

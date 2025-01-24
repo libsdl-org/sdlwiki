@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SetTextureAlphaMod
 
 Set an additional alpha value multiplied into render copy operations.
@@ -44,6 +43,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 - [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

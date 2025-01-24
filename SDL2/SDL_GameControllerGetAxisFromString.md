@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerGetAxisFromString
 
 Convert a string into [SDL_GameControllerAxis](SDL_GameControllerAxis) enum.
@@ -48,6 +47,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_GameControllerGetStringForAxis](SDL_GameControllerGetStringForAxis)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

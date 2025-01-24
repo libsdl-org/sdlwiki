@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES
 
 A variable that dictates policy for fullscreen Spaces on Mac OS X.
@@ -28,6 +27,10 @@ The variable can be set to the following values:
 
 The default value is "1". This hint must be set before any windows are
 created.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

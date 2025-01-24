@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_IntersectRectAndLine
 
 Calculate the intersection of a rectangle and line segment.
@@ -42,6 +41,10 @@ coordinates saved in `X1`, `Y1`, `X2`, and/or `Y2` as necessary.
 ## Version
 
 This function is available since SDL 2.0.0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AudioSpec
 
 The calculated values in this structure are calculated by [SDL_OpenAudio](SDL_OpenAudio)().
@@ -37,6 +36,10 @@ For multi-channel audio, the default SDL channel mapping is:
 7:  FL  FR  FC LFE  BC  SL  SR      (6.1 surround)
 8:  FL  FR  FC LFE  BL  BR  SL  SR  (7.1 surround)
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAudio](CategoryAudio)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_WriteBE64
 
 Use this function to write 64 bits in native format to a [SDL_RWops](SDL_RWops) as big-endian data.
@@ -36,6 +35,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_WriteLE64](SDL_WriteLE64)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

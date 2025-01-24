@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GL_BindTexture
 
 Bind an OpenGL/ES/ES2 texture to the current context.
@@ -56,6 +55,11 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 - [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

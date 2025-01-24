@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_RENDER_DIRECT3D11_DEBUG
 
 A variable controlling whether to enable Direct3D 11+'s Debug Layer.
@@ -23,6 +22,10 @@ This variable can be set to the following values:
 - "1": Enable Debug Layer use
 
 By default, SDL does not use Direct3D Debug Layer.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

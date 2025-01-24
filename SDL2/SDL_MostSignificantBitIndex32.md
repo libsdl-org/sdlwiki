@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_MostSignificantBitIndex32
 
 Use this function to get the index of the most significant (set) bit in a
@@ -22,6 +21,10 @@ SDL_FORCE_INLINE int SDL_MostSignificantBitIndex32(Uint32 x);
 ## Return Value
 
 (int) Returns the index of the most significant bit of x, or -1 if x is 0.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryBits](CategoryBits)

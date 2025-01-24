@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerIsSensorEnabled
 
 Query whether sensor data reporting is enabled for a game controller.
@@ -28,6 +27,10 @@ enabled, [SDL_FALSE](SDL_FALSE) otherwise.
 ## Version
 
 This function is available since SDL 2.0.14.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_WarpMouseGlobal
 
 Move the mouse to the given position in global screen space.
@@ -42,6 +41,11 @@ This function is available since SDL 2.0.4.
 ## See Also
 
 - [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)

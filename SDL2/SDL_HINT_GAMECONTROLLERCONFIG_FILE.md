@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_GAMECONTROLLERCONFIG_FILE
 
 A variable that lets you provide a file with extra gamecontroller db entries.
@@ -23,6 +22,10 @@ This hint must be set before calling
 You can update mappings after the system is initialized with
 [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)() and
 [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)()
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SemTryWait
 
 See if a semaphore has a positive value and decrement it if it does.
@@ -45,6 +44,11 @@ This function is available since SDL 2.0.0.
 - [SDL_SemValue](SDL_SemValue)
 - [SDL_SemWait](SDL_SemWait)
 - [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

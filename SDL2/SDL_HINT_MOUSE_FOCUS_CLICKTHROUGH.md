@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH
 
 Allow mouse click events when clicking to focus an SDL window
@@ -21,6 +20,10 @@ This variable can be set to the following values:
 - "1": Generate events for mouse clicks that activate a window
 
 By default SDL will ignore mouse clicks that activate a window
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

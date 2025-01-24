@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_SensorType
 
 The different sensors defined by SDL.
@@ -75,6 +74,11 @@ The gyroscope axis data is not changed when the device is rotated.
 ## See Also
 
 - [SDL_GetDisplayOrientation](SDL_GetDisplayOrientation)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySensor](CategorySensor)

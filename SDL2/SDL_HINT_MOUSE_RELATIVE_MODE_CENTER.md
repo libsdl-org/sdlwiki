@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_MOUSE_RELATIVE_MODE_CENTER
 
 A variable controlling whether relative mouse mode constrains the mouse to the center of the window
@@ -26,6 +25,10 @@ works better for 2D games and increases the chance that the mouse will be
 in the correct position when using high DPI mice.
 
 By default SDL will constrain the mouse to the center of the window
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

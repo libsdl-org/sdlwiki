@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_BMP_SAVE_LEGACY_FORMAT
 
 Prevent SDL from using version 4 of the bitmap header when saving BMPs.
@@ -30,6 +29,10 @@ The variable can be set to the following values:
   file, but applications are going to ignore it.
 
 The default value is "0".
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

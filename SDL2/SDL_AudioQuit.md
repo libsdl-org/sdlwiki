@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_AudioQuit
 
 Use this function to shut down audio if you initialized it with [SDL_AudioInit](SDL_AudioInit)().
@@ -27,6 +26,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_AudioInit](SDL_AudioInit)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

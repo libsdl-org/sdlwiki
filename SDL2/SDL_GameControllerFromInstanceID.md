@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GameControllerFromInstanceID
 
 Get the [SDL_GameController](SDL_GameController) associated with an instance id.
@@ -28,6 +27,10 @@ call [SDL_GetError](SDL_GetError)() for more information.
 ## Version
 
 This function is available since SDL 2.0.4.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)

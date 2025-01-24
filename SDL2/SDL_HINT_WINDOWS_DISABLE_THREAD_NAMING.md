@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING
 
 Tell SDL not to name threads on Windows with the 0x406D1388 Exception.
@@ -28,6 +27,10 @@ The variable can be set to the following values:
 - "1": SDL will not raise this exception, and threads will be unnamed.
   (default) This is necessary with .NET languages or debuggers that aren't
   Visual Studio.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_BuildAudioCVT
 
 Initialize an [SDL_AudioCVT](SDL_AudioCVT) structure for conversion.
@@ -59,6 +58,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_ConvertAudio](SDL_ConvertAudio)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

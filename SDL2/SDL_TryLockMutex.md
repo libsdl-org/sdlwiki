@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_TryLockMutex
 
 Try to lock a mutex without blocking.
@@ -43,6 +42,11 @@ This function is available since SDL 2.0.0.
 - [SDL_DestroyMutex](SDL_DestroyMutex)
 - [SDL_LockMutex](SDL_LockMutex)
 - [SDL_UnlockMutex](SDL_UnlockMutex)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

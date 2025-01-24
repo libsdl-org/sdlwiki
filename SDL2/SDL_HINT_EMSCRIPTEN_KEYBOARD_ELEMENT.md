@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT
 
 override the binding element for keyboard inputs for Emscripten builds
@@ -26,6 +25,10 @@ The variable can be one of:
 
 Any other string without a leading # sign applies to the element on the
 page with that ID.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)

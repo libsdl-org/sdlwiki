@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_GLattr
 
 OpenGL configuration attributes.
@@ -80,6 +79,10 @@ set to
 [SDL_GL_CONTEXT_RELEASE_BEHAVIOR_NONE](SDL_GL_CONTEXT_RELEASE_BEHAVIOR_NONE)
 or
 [SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH](SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH).
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)

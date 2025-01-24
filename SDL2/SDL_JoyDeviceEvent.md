@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_JoyDeviceEvent
 
 Joystick device event structure (event.jdevice.*)
@@ -26,6 +25,11 @@ during [SDL_Init](SDL_Init).
 ## See Also
 
 - [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)

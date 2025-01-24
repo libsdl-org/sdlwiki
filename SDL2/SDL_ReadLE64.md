@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_ReadLE64
 
 Use this function to read 64 bits of little-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
@@ -36,6 +35,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_ReadBE64](SDL_ReadBE64)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)

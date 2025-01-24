@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_IsScreenKeyboardShown
 
 Check whether the screen keyboard is shown for given window.
@@ -31,6 +30,11 @@ This function is available since SDL 2.0.0.
 ## See Also
 
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)

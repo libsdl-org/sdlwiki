@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_UIKitRunApp
 
 Initializes and launches an SDL application.
@@ -28,6 +27,10 @@ int SDL_UIKitRunApp(int argc, char *argv[], SDL_main_func mainFunction);
 ## Version
 
 This function is available since SDL 2.0.10.
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)

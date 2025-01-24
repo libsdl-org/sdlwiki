@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_HintPriority
 
 An enumeration of hint priorities
@@ -17,6 +16,10 @@ typedef enum SDL_HintPriority
     SDL_HINT_OVERRIDE
 } SDL_HintPriority;
 ```
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryHints](CategoryHints)

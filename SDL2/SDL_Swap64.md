@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Swap64
 
 Use this function to swap the byte order of a 64-bit value.
@@ -27,6 +26,11 @@ SDL_FORCE_INLINE Uint64 SDL_Swap64(Uint64 x);
 
 - [SDL_SwapBE64](SDL_SwapBE64)
 - [SDL_SwapLE64](SDL_SwapLE64)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEndian](CategoryEndian)

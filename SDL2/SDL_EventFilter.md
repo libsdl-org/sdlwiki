@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_EventFilter
 
 A function pointer used for callbacks that watch the event queue.
@@ -30,6 +29,11 @@ ignored.
 
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_AddEventWatch](SDL_AddEventWatch)
+
+
+## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
+
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)
