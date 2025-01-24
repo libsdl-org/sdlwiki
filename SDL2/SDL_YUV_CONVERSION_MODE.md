@@ -18,7 +18,7 @@ typedef enum SDL_YUV_CONVERSION_MODE
 } SDL_YUV_CONVERSION_MODE;
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

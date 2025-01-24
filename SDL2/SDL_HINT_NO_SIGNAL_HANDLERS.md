@@ -23,7 +23,7 @@ The variable can be set to the following values:
   signal, convert it into an [SDL_QUIT](SDL_QUIT) event.
 - "1": SDL will not install a signal handler at all.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

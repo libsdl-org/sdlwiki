@@ -23,7 +23,7 @@ paired with a well-behaved application.
 The contents of this hint must be 4 comma-separated integers, the first is
 the bounds x, then y, width and height, in that order.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

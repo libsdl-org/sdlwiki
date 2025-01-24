@@ -26,7 +26,7 @@ The variable can be one of:
 Any other string without a leading # sign applies to the element on the
 page with that ID.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

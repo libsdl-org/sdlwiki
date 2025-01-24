@@ -17,7 +17,7 @@ typedef enum SDL_HintPriority
 } SDL_HintPriority;
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

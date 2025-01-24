@@ -22,7 +22,7 @@ Devices supports being paused.
 - [SDL_HapticUnpause](SDL_HapticUnpause)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

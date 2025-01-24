@@ -16,7 +16,7 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 This variable is currently only used by the Linux joystick driver.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

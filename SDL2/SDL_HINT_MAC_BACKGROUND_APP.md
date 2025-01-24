@@ -16,7 +16,7 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 This hint only applies to Mac OS X.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

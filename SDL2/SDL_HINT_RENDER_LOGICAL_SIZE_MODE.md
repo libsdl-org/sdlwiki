@@ -22,7 +22,7 @@ screen, allowing edges to be drawn offscreen
 
 By default letterbox is used
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

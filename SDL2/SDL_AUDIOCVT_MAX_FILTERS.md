@@ -19,7 +19,7 @@ The maximum number of [SDL_AudioFilter](SDL_AudioFilter) functions in
 [SDL_AudioCVT](SDL_AudioCVT).filters array has 10 pointers, one of which is
 the terminating NULL pointer.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -52,7 +52,7 @@ const SDL_DialogFileFilter filters[] = {
 - [SDL_ShowFileDialogWithProperties](SDL_ShowFileDialogWithProperties)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

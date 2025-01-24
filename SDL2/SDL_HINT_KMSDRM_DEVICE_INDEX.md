@@ -22,7 +22,7 @@ user can set this hint to a number between 0 and 99 to force selection.
 
 This hint is available since SDL 2.24.0.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

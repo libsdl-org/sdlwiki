@@ -27,7 +27,7 @@ SDL will send CONTROLLERDEVICEADDED events for joysticks that are already
 plugged in during [SDL_Init](SDL_Init)() and are recognized as game
 controllers.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

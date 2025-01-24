@@ -27,7 +27,7 @@ This variable can be set to the following values:
 - "0": Controller input does not generate UI events (the default).
 - "1": Controller input generates UI events.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

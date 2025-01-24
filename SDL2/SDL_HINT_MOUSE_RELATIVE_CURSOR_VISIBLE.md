@@ -22,7 +22,7 @@ Note that for systems without raw hardware inputs, relative mode is
 implemented using warping, so the hardware cursor will visibly warp between
 frames if this is enabled on those systems.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

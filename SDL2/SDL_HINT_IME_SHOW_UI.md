@@ -19,7 +19,7 @@ The variable can be set to the following values:
 - "0": Native UI components are not display. (default)
 - "1": Native UI components are displayed.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -12,7 +12,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 #define SDL_WINDOWPOS_UNDEFINED_MASK    0x1FFF0000u
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

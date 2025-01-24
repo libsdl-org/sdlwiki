@@ -28,7 +28,7 @@ SDL_FORCE_INLINE float SDL_SwapFloat(float x);
 - [SDL_SwapFloatLE](SDL_SwapFloatLE)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

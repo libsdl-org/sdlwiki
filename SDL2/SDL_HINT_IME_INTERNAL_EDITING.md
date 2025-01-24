@@ -23,7 +23,7 @@ The variable can be set to the following values:
   events are not sent, and text that is being composed will be rendered in
   its own UI.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

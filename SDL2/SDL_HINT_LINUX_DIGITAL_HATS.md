@@ -21,7 +21,7 @@ This variable can be set to the following values:
 - "1": Always handle the input axes numbered ABS_HAT0X to ABS_HAT3Y as
   digital hats
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

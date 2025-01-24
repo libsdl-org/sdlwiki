@@ -30,7 +30,7 @@ The atomic locks are not safe to lock recursively.
 Porting Note: The spin lock functions and type are required and can not be
 emulated because they are used in the atomic emulation code.
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

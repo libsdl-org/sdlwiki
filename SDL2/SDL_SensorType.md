@@ -76,7 +76,7 @@ The gyroscope axis data is not changed when the device is rotated.
 - [SDL_GetDisplayOrientation](SDL_GetDisplayOrientation)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

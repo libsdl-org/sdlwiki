@@ -23,7 +23,7 @@ export CC=clang
 export CFLAGS="-DSDL_THREAD_SAFETY_ANALYSIS -Wthread-safety"
 ```
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

@@ -19,7 +19,7 @@ If the joystick is disconnected and reconnected, it will get a new ID.
 The ID value starts at 0 and increments from there. The value -1 is an
 invalid ID.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

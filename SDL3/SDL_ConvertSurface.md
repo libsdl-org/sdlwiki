@@ -59,7 +59,7 @@ SDL_Surface *output = SDL_ConvertSurface(input, SDL_PIXELFORMAT_RGBA32);
 - [SDL_DestroySurface](SDL_DestroySurface)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

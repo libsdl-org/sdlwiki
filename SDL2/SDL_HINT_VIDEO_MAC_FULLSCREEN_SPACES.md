@@ -28,7 +28,7 @@ The variable can be set to the following values:
 The default value is "1". This hint must be set before any windows are
 created.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

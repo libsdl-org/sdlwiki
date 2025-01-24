@@ -65,7 +65,7 @@ typedef union SDL_Event
 The [SDL_Event](SDL_Event) structure is the core of all event handling in
 SDL. [SDL_Event](SDL_Event) is a union of all event structures used in SDL.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

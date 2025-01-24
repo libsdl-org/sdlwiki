@@ -23,7 +23,7 @@ uninitialized will either return the user provided value, if one was set
 prior to initialization, or NULL. See docs/README-wayland.md for more
 information.
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

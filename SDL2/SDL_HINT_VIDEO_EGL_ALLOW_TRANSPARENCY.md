@@ -19,7 +19,7 @@ format has an alpha channel. This is not always true, however, so by
 default SDL will try to enforce opaque composition. To override this
 behavior, you can set this hint to "1".
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -31,7 +31,7 @@ mean... (Unspecified bits are always zero).
 
 There are macros in SDL 2.0 and later to query these bits.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -42,7 +42,7 @@ typedef struct SDL_Surface
 This structure should be treated as read-only, except for `pixels`, which,
 if not NULL, contains the raw pixel data for the surface.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

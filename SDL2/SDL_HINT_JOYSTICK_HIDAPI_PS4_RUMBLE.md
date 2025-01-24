@@ -31,7 +31,7 @@ the state of extended reports on PS5 controllers when the
 [SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE](SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE)
 hint is not explicitly set.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

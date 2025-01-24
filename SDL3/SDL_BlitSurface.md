@@ -103,7 +103,7 @@ SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 - [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

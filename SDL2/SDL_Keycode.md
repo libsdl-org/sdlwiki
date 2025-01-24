@@ -25,7 +25,7 @@ SDLK_* constant for those keys that do not generate characters.
 A special exception is the number keys at the top of the keyboard which map
 to [SDLK_0](SDLK_0)...[SDLK_9](SDLK_9) on AZERTY layouts.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

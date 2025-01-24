@@ -33,7 +33,7 @@ Note that this does not handle tick differences greater than 2^31 so take
 care when using the above kind of code with large timeout delays (tens of
 days).
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

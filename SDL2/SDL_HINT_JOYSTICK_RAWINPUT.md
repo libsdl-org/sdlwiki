@@ -19,7 +19,7 @@ This variable can be set to the following values:
 - "0": RAWINPUT drivers are not used
 - "1": RAWINPUT drivers are used (the default)
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

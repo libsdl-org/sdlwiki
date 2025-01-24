@@ -45,7 +45,7 @@ typedef struct SDL_Window SDL_Window;
 - [SDL_ShowWindow](SDL_ShowWindow)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -15,7 +15,7 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
      (SDL_MAJOR_VERSION > X || SDL_MINOR_VERSION > Y || SDL_PATCHLEVEL >= Z))
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

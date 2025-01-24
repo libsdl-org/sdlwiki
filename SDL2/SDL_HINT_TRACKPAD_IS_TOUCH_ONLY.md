@@ -31,7 +31,7 @@ after.
 
 This hint is available since SDL 2.24.0.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

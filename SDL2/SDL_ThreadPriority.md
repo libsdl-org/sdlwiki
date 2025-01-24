@@ -29,7 +29,7 @@ used to control aspects of this behavior.
 On many systems you require special privileges to set high or time critical
 priority.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

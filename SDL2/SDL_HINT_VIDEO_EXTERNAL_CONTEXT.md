@@ -27,7 +27,7 @@ behavior, which is desireable when the application manages the graphics
 context, such as an externally managed OpenGL context or attaching a Vulkan
 surface to the window.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

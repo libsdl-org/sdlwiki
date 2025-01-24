@@ -17,7 +17,7 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 If present, holding ctrl while left clicking will generate a right click
 event when on Mac.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

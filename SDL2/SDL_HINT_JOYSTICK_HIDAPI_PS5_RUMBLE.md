@@ -30,7 +30,7 @@ the introduction of PS5 controller support, this value defaults to the
 value of
 [SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE](SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE).
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

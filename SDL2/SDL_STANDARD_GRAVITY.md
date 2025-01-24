@@ -19,7 +19,7 @@ squared. This measurement includes the force of gravity, so a device at
 rest will have an value of [SDL_STANDARD_GRAVITY](SDL_STANDARD_GRAVITY)
 away from the center of the earth, which is a positive Y value.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

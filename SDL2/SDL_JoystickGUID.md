@@ -16,7 +16,7 @@ typedef SDL_GUID SDL_JoystickGUID;
 
 This is just a standard [SDL_GUID](SDL_GUID) by a different name.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

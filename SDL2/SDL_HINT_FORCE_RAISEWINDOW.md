@@ -24,7 +24,7 @@ impossible to programmatically move a window to the foreground, for
 "security" reasons. See http://stackoverflow.com/a/34414846 for a
 discussion.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -78,7 +78,7 @@ printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 - [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

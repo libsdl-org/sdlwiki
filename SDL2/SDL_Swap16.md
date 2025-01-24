@@ -28,7 +28,7 @@ SDL_FORCE_INLINE Uint16 SDL_Swap16(Uint16 x);
 - [SDL_SwapLE16](SDL_SwapLE16)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -40,7 +40,7 @@ This hint should be set before calling [SDL_LoadWAV](SDL_LoadWAV)() or
 
 This hint is available since SDL 3.2.0.
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

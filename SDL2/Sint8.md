@@ -14,7 +14,7 @@ typedef int8_t Sint8;
 #define SDL_MIN_SINT8   ((Sint8)(~0x7F))        /* -128 */
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

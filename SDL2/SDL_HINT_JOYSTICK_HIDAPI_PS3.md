@@ -27,7 +27,7 @@ It is not possible to use this driver on Windows, due to limitations in the
 default drivers installed. See https://github.com/ViGEm/DsHidMini for an
 alternative driver on Windows.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

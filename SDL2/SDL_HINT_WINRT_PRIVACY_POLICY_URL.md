@@ -39,7 +39,7 @@ for displaying a privacy policy link, and as such,
 not get used on that platform. Network-enabled phone apps should display
 their privacy policy through some other, in-app means.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

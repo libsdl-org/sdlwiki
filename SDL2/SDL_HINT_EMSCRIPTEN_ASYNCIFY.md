@@ -25,7 +25,7 @@ The variable can be set to the following values:
   manually or use asyncify for other purposes)
 - "1": Enable emscripten_sleep calls (the default)
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

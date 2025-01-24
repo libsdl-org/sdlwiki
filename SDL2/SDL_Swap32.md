@@ -28,7 +28,7 @@ SDL_FORCE_INLINE Uint32 SDL_Swap32(Uint32 x);
 - [SDL_SwapLE32](SDL_SwapLE32)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

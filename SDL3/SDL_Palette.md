@@ -27,7 +27,7 @@ This struct is available since SDL 3.2.0.
 - [SDL_SetPaletteColors](SDL_SetPaletteColors)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

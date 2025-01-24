@@ -42,7 +42,7 @@ This variable can be set to the following values:
 If the requested DPI awareness is not available on the currently running
 OS, SDL will try to request the best available match.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

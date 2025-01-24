@@ -40,7 +40,7 @@ not the same range that will be reported by the lower-level
 
 This enum is available since SDL 3.2.0.
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

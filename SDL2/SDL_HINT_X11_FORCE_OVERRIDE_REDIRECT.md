@@ -21,7 +21,7 @@ manager at all.
 You should probably only use this for fullscreen windows, and you probably
 shouldn't even use it for that. But it's here if you want to try!
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

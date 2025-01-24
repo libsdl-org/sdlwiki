@@ -22,7 +22,7 @@ This variable can be set to the following values:
 The default is the value of
 [SDL_HINT_JOYSTICK_HIDAPI_XBOX_360](SDL_HINT_JOYSTICK_HIDAPI_XBOX_360)
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

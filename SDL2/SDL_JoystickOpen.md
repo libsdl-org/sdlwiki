@@ -45,7 +45,7 @@ This function is available since SDL 2.0.0.
 - [SDL_JoystickInstanceID](SDL_JoystickInstanceID)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

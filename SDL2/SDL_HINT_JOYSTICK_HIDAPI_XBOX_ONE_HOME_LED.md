@@ -23,7 +23,7 @@ By default the Home button LED state is not changed. This hint can also be
 set to a floating point value between 0.0 and 1.0 which controls the
 brightness of the Home button LED. The default brightness is 0.4.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

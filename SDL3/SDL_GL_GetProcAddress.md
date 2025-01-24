@@ -95,7 +95,7 @@ glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

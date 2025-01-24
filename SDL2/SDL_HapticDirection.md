@@ -123,7 +123,7 @@ from the south means the user will have to pull the stick to counteract):
 - [SDL_HapticNumAxes](SDL_HapticNumAxes)
 
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -24,7 +24,7 @@ The variable can be set to the following values:
   handling Alt+Tab while the keyboard is grabbed.
 - "1": SDL will minimize your window when Alt+Tab is pressed (default)
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

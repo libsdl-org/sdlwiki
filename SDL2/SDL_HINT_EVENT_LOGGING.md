@@ -32,7 +32,7 @@ OutputDebugString() on Windows, and can be funneled by the app with
 This hint can be toggled on and off at runtime, if you only need to log
 events for a small subset of program execution.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

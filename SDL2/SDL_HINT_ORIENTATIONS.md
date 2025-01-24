@@ -24,7 +24,7 @@ This variable is a space delimited list of the following values:
 - "Portrait"
 - "PortraitUpsideDown"
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

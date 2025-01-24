@@ -37,7 +37,7 @@ For multi-channel audio, the default SDL channel mapping is:
 8:  FL  FR  FC LFE  BL  BR  SL  SR  (7.1 surround)
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

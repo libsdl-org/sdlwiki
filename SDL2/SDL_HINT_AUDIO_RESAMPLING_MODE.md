@@ -34,7 +34,7 @@ This variable can be set to the following values:
 - "2" or "medium": Use medium quality resampling, if available
 - "3" or "best": Use high quality resampling, if available
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

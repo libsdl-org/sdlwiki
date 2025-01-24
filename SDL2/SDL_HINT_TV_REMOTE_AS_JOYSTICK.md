@@ -19,7 +19,7 @@ This variable can be set to the following values:
 - "0": Remotes send enter/escape/arrow key events
 - "1": Remotes are available as 2 axis, 2 button joysticks (the default).
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

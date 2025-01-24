@@ -18,7 +18,7 @@ typedef struct SDL_atomic_t {
 
 It is a struct so people don't accidentally use numeric operations on it.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

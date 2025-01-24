@@ -23,7 +23,7 @@ You can update mappings after the system is initialized with
 [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)() and
 [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)()
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

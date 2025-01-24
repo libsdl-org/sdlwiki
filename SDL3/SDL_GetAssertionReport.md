@@ -68,7 +68,7 @@ while (item) {
 - [SDL_ResetAssertionReport](SDL_ResetAssertionReport)
 
 
-## (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
+
 
 
 

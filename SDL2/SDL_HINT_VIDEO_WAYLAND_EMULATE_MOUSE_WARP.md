@@ -29,7 +29,7 @@ This variable can be set to the following values:
 If not set, this is automatically enabled unless an application uses
 relative mouse mode directly.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -21,7 +21,7 @@ This variable can be set to the following values:
 
 By default SDL will ignore mouse clicks that activate a window
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -35,7 +35,7 @@ This variable can be set to the following values:
 - "1": SDL coordinates are in DPI-scaled points. Automatically resize
   windows as needed on displays with non-100% scale factors.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

@@ -35,7 +35,7 @@ This variable can be one of the following values:
 Since SDL 2.0.22 this variable accepts a comma-separated list of values
 above.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

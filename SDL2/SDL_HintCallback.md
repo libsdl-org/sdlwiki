@@ -21,7 +21,7 @@ typedef void (SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const
 | **oldValue** | the previous hint value.                                                       |
 | **newValue** | the new value hint is to be set to.                                            |
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

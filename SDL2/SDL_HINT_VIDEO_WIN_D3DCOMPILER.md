@@ -26,7 +26,7 @@ This variable can be set to the following values:
 - "none": do not load any library, useful if you compiled ANGLE from source
   and included the compiler in your binaries.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

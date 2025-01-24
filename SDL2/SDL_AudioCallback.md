@@ -20,7 +20,7 @@ typedef void (SDLCALL * SDL_AudioCallback) (void *userdata, Uint8 * stream, int 
 | **stream**   | A pointer to the audio data buffer.                                                      |
 | **len**      | Length of **stream** in bytes.                                                           |
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

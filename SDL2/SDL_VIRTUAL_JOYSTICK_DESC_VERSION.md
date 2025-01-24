@@ -12,7 +12,7 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 #define SDL_VIRTUAL_JOYSTICK_DESC_VERSION   1
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

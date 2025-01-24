@@ -22,7 +22,7 @@ This variable can be set to the following values:
 This driver doesn't work with the dolphinbar, so the default is
 [SDL_FALSE](SDL_FALSE) for now.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

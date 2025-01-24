@@ -23,7 +23,7 @@ The variable can be set to the following values:
 
 The default value is "0". This hint may be set at any time.
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 

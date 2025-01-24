@@ -14,7 +14,7 @@ typedef uint32_t Uint32;
 #define SDL_MIN_UINT32  ((Uint32)0x00000000)    /* 0 */
 ```
 
-## (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
+
 
 
 
