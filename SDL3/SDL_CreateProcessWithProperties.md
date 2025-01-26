@@ -45,7 +45,7 @@ These are the supported properties:
   is set to [`SDL_PROCESS_STDIO_REDIRECT`](SDL_PROCESS_STDIO_REDIRECT).
 - [`SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER`](SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER):
   an [SDL_ProcessIO](SDL_ProcessIO) value describing where standard output
-  for the process goes go, defaults to
+  for the process goes to, defaults to
   [`SDL_PROCESS_STDIO_INHERITED`](SDL_PROCESS_STDIO_INHERITED).
 - [`SDL_PROP_PROCESS_CREATE_STDOUT_POINTER`](SDL_PROP_PROCESS_CREATE_STDOUT_POINTER):
   an [SDL_IOStream](SDL_IOStream) pointer used for standard output when
@@ -53,7 +53,7 @@ These are the supported properties:
   is set to [`SDL_PROCESS_STDIO_REDIRECT`](SDL_PROCESS_STDIO_REDIRECT).
 - [`SDL_PROP_PROCESS_CREATE_STDERR_NUMBER`](SDL_PROP_PROCESS_CREATE_STDERR_NUMBER):
   an [SDL_ProcessIO](SDL_ProcessIO) value describing where standard error
-  for the process goes go, defaults to
+  for the process goes to, defaults to
   [`SDL_PROCESS_STDIO_INHERITED`](SDL_PROCESS_STDIO_INHERITED).
 - [`SDL_PROP_PROCESS_CREATE_STDERR_POINTER`](SDL_PROP_PROCESS_CREATE_STDERR_POINTER):
   an [SDL_IOStream](SDL_IOStream) pointer used for standard error when
