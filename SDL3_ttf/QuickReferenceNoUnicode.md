@@ -38,6 +38,9 @@ TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, bool closeio, float ptsize);       
 TTF_Font * TTF_OpenFontWithProperties(SDL_PropertiesID props);                                                                             // Create a font with the specified properties.
 SDL_PropertiesID TTF_GetFontProperties(TTF_Font *font);                                                                                    // Get the properties associated with a font.
 Uint32 TTF_GetFontGeneration(TTF_Font *font);                                                                                              // Get the font generation.
+bool TTF_AddFallbackFont(TTF_Font *font, TTF_Font *fallback);                                                                              // Add a fallback font.
+void TTF_RemoveFallbackFont(TTF_Font *font, TTF_Font *fallback);                                                                           // Remove a fallback font.
+void TTF_ClearFallbackFonts(TTF_Font *font);                                                                                               // Remove all fallback fonts.
 bool TTF_SetFontSize(TTF_Font *font, float ptsize);                                                                                        // Set a font's size dynamically.
 bool TTF_SetFontSizeDPI(TTF_Font *font, float ptsize, int hdpi, int vdpi);                                                                 // Set font size dynamically with target resolutions, in dots per inch.
 float TTF_GetFontSize(TTF_Font *font);                                                                                                     // Get the size of a font.
@@ -60,9 +63,6 @@ bool TTF_GetFontKerning(const TTF_Font *font);                                  
 bool TTF_FontIsFixedWidth(const TTF_Font *font);                                                                                           // Query whether a font is fixed-width.
 const char * TTF_GetFontFamilyName(const TTF_Font *font);                                                                                  // Query a font's family name.
 const char * TTF_GetFontStyleName(const TTF_Font *font);                                                                                   // Query a font's style name.
-SDL_Surface * TTF_RenderText_Solid(TTF_Font *font, const char *text, size_t length, SDL_Color fg);                                         // Render UTF-8 text at fast quality to a new 8-bit surface.
-SDL_Surface * TTF_RenderText_Solid_Wrapped(TTF_Font *font, const char *text, size_t length, SDL_Color fg, int wrapLength);                 // Render word-wrapped UTF-8 text at fast quality to a new 8-bit surface.
-SDL_Surface * TTF_RenderGlyph_Solid(TTF_Font *font, Uint32 ch, SDL_Color fg);                                                              // Render a single 32-bit glyph at fast quality to a new 8-bit surface.
 bool TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);                                                                        // Set direction to be used for text shaping by a font.
 TTF_Direction TTF_GetFontDirection(TTF_Font *font);                                                                                        // Get direction to be used for text shaping by a font.
 bool TTF_SetFontScript(TTF_Font *font, const char *script);                                                                                // Set script to be used for text shaping by a font.
@@ -74,6 +74,9 @@ bool TTF_GetGlyphMetrics(TTF_Font *font, Uint32 ch, int *minx, int *maxx, int *m
 bool TTF_GetStringSize(TTF_Font *font, const char *text, size_t length, int *w, int *h);                                                   // Calculate the dimensions of a rendered string of UTF-8 text.
 bool TTF_GetStringSizeWrapped(TTF_Font *font, const char *text, size_t length, int wrap_width, int *w, int *h);                            // Calculate the dimensions of a rendered string of UTF-8 text.
 bool TTF_MeasureString(TTF_Font *font, const char *text, size_t length, int max_width, int *measured_width, size_t *measured_length);      // Calculate how much of a UTF-8 string will fit in a given width.
+SDL_Surface * TTF_RenderText_Solid(TTF_Font *font, const char *text, size_t length, SDL_Color fg);                                         // Render UTF-8 text at fast quality to a new 8-bit surface.
+SDL_Surface * TTF_RenderText_Solid_Wrapped(TTF_Font *font, const char *text, size_t length, SDL_Color fg, int wrapLength);                 // Render word-wrapped UTF-8 text at fast quality to a new 8-bit surface.
+SDL_Surface * TTF_RenderGlyph_Solid(TTF_Font *font, Uint32 ch, SDL_Color fg);                                                              // Render a single 32-bit glyph at fast quality to a new 8-bit surface.
 SDL_Surface * TTF_RenderText_Shaded(TTF_Font *font, const char *text, size_t length, SDL_Color fg, SDL_Color bg);                          // Render UTF-8 text at high quality to a new 8-bit surface.
 SDL_Surface * TTF_RenderText_Shaded_Wrapped(TTF_Font *font, const char *text, size_t length, SDL_Color fg, SDL_Color bg, int wrap_width);  // Render word-wrapped UTF-8 text at high quality to a new 8-bit surface.
 SDL_Surface * TTF_RenderGlyph_Shaded(TTF_Font *font, Uint32 ch, SDL_Color fg, SDL_Color bg);                                               // Render a single UNICODE codepoint at high quality to a new 8-bit surface.
