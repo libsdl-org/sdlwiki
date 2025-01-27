@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetFontDirection
+# TTF_GetTextDirection
 
-Get the direction to be used for text shaping by a font.
+Get the direction to be used for text shaping a text object.
 
 ## Header File
 
@@ -10,14 +10,14 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-TTF_Direction TTF_GetFontDirection(TTF_Font *font);
+TTF_Direction TTF_GetTextDirection(TTF_Text *text);
 ```
 
 ## Function Parameters
 
 |                        |          |                    |
 | ---------------------- | -------- | ------------------ |
-| [TTF_Font](TTF_Font) * | **font** | the font to query. |
+| [TTF_Text](TTF_Text) * | **text** | the text to query. |
 
 ## Return Value
 
@@ -26,12 +26,11 @@ shaping.
 
 ## Remarks
 
-This defaults to [TTF_DIRECTION_INVALID](TTF_DIRECTION_INVALID) if it
-hasn't been set.
+This defaults to the direction of the font used by the text object.
 
 ## Thread Safety
 
-This function should be called on the thread that created the font.
+This function should be called on the thread that created the text.
 
 ## Version
 

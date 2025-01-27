@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_SetFontScript
+# TTF_SetTextScript
 
-Set the script to be used for text shaping by a font.
+Set the script to be used for text shaping a text object.
 
 ## Header File
 
@@ -10,14 +10,14 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_SetFontScript(TTF_Font *font, Uint32 script);
+bool TTF_SetTextScript(TTF_Text *text, Uint32 script);
 ```
 
 ## Function Parameters
 
 |                        |            |                                              |
 | ---------------------- | ---------- | -------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**   | the font to modify.                          |
+| [TTF_Text](TTF_Text) * | **text**   | the text to modify.                          |
 | Uint32                 | **script** | a script tag in the format used by HarfBuzz. |
 
 ## Return Value
@@ -29,11 +29,9 @@ more information.
 
 This returns false if SDL_ttf isn't build with HarfBuzz support.
 
-This updates any [TTF_Text](TTF_Text) objects using this font.
-
 ## Thread Safety
 
-This function should be called on the thread that created the font.
+This function should be called on the thread that created the text.
 
 ## Version
 

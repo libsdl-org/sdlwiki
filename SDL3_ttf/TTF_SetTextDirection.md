@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_SetFontDirection
+# TTF_SetTextDirection
 
-Set the direction to be used for text shaping by a font.
+Set the direction to be used for text shaping a text object.
 
 ## Header File
 
@@ -10,14 +10,14 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-bool TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);
+bool TTF_SetTextDirection(TTF_Text *text, TTF_Direction direction);
 ```
 
 ## Function Parameters
 
 |                                |               |                                     |
 | ------------------------------ | ------------- | ----------------------------------- |
-| [TTF_Font](TTF_Font) *         | **font**      | the font to modify.                 |
+| [TTF_Text](TTF_Text) *         | **text**      | the text to modify.                 |
 | [TTF_Direction](TTF_Direction) | **direction** | the new direction for text to flow. |
 
 ## Return Value
@@ -30,11 +30,9 @@ more information.
 This function only supports left-to-right text shaping if SDL_ttf was not
 built with HarfBuzz support.
 
-This updates any [TTF_Text](TTF_Text) objects using this font.
-
 ## Thread Safety
 
-This function should be called on the thread that created the font.
+This function should be called on the thread that created the text.
 
 ## Version
 

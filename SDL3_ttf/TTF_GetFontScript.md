@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetGlyphScript
+# TTF_GetFontScript
 
-Get the script used by a 32-bit codepoint.
+Get the script used for text shaping a font.
 
 ## Header File
 
@@ -10,23 +10,22 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-Uint32 TTF_GetGlyphScript(Uint32 ch);
+Uint32 TTF_GetFontScript(TTF_Font *font);
 ```
 
 ## Function Parameters
 
-|        |        |                              |
-| ------ | ------ | ---------------------------- |
-| Uint32 | **ch** | the character code to check. |
+|                        |          |                    |
+| ---------------------- | -------- | ------------------ |
+| [TTF_Font](TTF_Font) * | **font** | the font to query. |
 
 ## Return Value
 
-(Uint32) Returns a script tag in the format used by HarfBuzz on success, or
-0 on failure; call SDL_GetError() for more information.
+(Uint32) Returns a script tag in the format used by HarfBuzz.
 
 ## Thread Safety
 
-This function is thread-safe.
+This function should be called on the thread that created the font.
 
 ## Version
 

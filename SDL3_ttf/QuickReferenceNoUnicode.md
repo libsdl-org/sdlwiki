@@ -63,10 +63,11 @@ bool TTF_GetFontKerning(const TTF_Font *font);                                  
 bool TTF_FontIsFixedWidth(const TTF_Font *font);                                                                                           // Query whether a font is fixed-width.
 const char * TTF_GetFontFamilyName(const TTF_Font *font);                                                                                  // Query a font's family name.
 const char * TTF_GetFontStyleName(const TTF_Font *font);                                                                                   // Query a font's style name.
-bool TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);                                                                        // Set direction to be used for text shaping by a font.
-TTF_Direction TTF_GetFontDirection(TTF_Font *font);                                                                                        // Get direction to be used for text shaping by a font.
-bool TTF_SetFontScript(TTF_Font *font, const char *script);                                                                                // Set script to be used for text shaping by a font.
-bool TTF_GetGlyphScript(Uint32 ch, char *script, size_t script_size);                                                                      // Get the script used by a 32-bit codepoint.
+bool TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);                                                                        // Set the direction to be used for text shaping by a font.
+TTF_Direction TTF_GetFontDirection(TTF_Font *font);                                                                                        // Get the direction to be used for text shaping by a font.
+bool TTF_SetFontScript(TTF_Font *font, Uint32 script);                                                                                     // Set the script to be used for text shaping by a font.
+Uint32 TTF_GetFontScript(TTF_Font *font);                                                                                                  // Get the script used for text shaping a font.
+Uint32 TTF_GetGlyphScript(Uint32 ch);                                                                                                      // Get the script used by a 32-bit codepoint.
 bool TTF_FontHasGlyph(TTF_Font *font, Uint32 ch);                                                                                          // Check whether a glyph is provided by the font for a UNICODE codepoint.
 SDL_Surface * TTF_GetGlyphImage(TTF_Font *font, Uint32 ch);                                                                                // Get the pixel image for a UNICODE codepoint.
 SDL_Surface * TTF_GetGlyphImageForIndex(TTF_Font *font, Uint32 glyph_index);                                                               // Get the pixel image for a character index.
@@ -103,6 +104,10 @@ bool TTF_SetTextEngine(TTF_Text *text, TTF_TextEngine *engine);                 
 TTF_TextEngine * TTF_GetTextEngine(TTF_Text *text);                                                                                        // Get the text engine used by a text object.
 bool TTF_SetTextFont(TTF_Text *text, TTF_Font *font);                                                                                      // Set the font used by a text object.
 TTF_Font * TTF_GetTextFont(TTF_Text *text);                                                                                                // Get the font used by a text object.
+bool TTF_SetTextDirection(TTF_Text *text, TTF_Direction direction);                                                                        // Set the direction to be used for text shaping a text object.
+TTF_Direction TTF_GetTextDirection(TTF_Text *text);                                                                                        // Get the direction to be used for text shaping a text object.
+bool TTF_SetTextScript(TTF_Text *text, Uint32 script);                                                                                     // Set the script to be used for text shaping a text object.
+Uint32 TTF_GetTextScript(TTF_Text *text);                                                                                                  // Get the script used for text shaping a text object.
 bool TTF_SetTextColor(TTF_Text *text, Uint8 r, Uint8 g, Uint8 b, Uint8 a);                                                                 // Set the color of a text object.
 bool TTF_SetTextColorFloat(TTF_Text *text, float r, float g, float b, float a);                                                            // Set the color of a text object.
 bool TTF_GetTextColor(TTF_Text *text, Uint8 *r, Uint8 *g, Uint8 *b, Uint8 *a);                                                             // Get the color of a text object.
