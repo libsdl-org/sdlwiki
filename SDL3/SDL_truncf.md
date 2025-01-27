@@ -32,7 +32,7 @@ Domain: `-INF <= x <= INF`
 Range: `-INF <= y <= INF`, y integer
 
 This function operates on single-precision floating point values, use
-[SDL_truncf](SDL_truncf) for double-precision floats.
+[SDL_trunc](SDL_trunc) for double-precision floats.
 
 ## Thread Safety
 

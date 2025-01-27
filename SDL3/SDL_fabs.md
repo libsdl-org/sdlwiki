@@ -29,7 +29,7 @@ Domain: `-INF <= x <= INF`
 Range: `0 <= y <= INF`
 
 This function operates on double-precision floating point values, use
-[SDL_copysignf](SDL_copysignf) for single-precision floats.
+[SDL_fabsf](SDL_fabsf) for single-precision floats.
 
 ## Thread Safety
 

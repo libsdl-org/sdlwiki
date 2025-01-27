@@ -32,7 +32,7 @@ Domain: `-INF <= x <= INF`
 Range: `-INF <= y <= INF`, y integer
 
 This function operates on single-precision floating point values, use
-[SDL_floorf](SDL_floorf) for double-precision floats.
+[SDL_floor](SDL_floor) for double-precision floats.
 
 ## Thread Safety
 

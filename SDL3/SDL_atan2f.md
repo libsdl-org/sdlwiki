@@ -53,7 +53,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_atan2f](SDL_atan2f)
+- [SDL_atan2](SDL_atan2)
 - [SDL_atan](SDL_atan)
 - [SDL_tan](SDL_tan)
 

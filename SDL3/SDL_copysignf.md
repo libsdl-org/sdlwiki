@@ -45,7 +45,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_copysignf](SDL_copysignf)
+- [SDL_copysign](SDL_copysign)
 - [SDL_fabsf](SDL_fabsf)
 
 ----

@@ -32,7 +32,7 @@ Domain: `-INF <= x <= INF`, `-INF <= y <= INF`, `y != 0`
 Range: `-y <= z <= y`
 
 This function operates on single-precision floating point values, use
-[SDL_fmod](SDL_fmod) for single-precision floats.
+[SDL_fmod](SDL_fmod) for double-precision floats.
 
 ## Thread Safety
 

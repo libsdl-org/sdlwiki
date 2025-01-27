@@ -32,8 +32,8 @@ Domain: `-INF <= x <= INF`
 Range: `MIN_LONG <= y <= MAX_LONG`
 
 This function operates on single-precision floating point values, use
-[SDL_lroundf](SDL_lroundf) for double-precision floats. To get the result
-as a floating-point type, use [SDL_roundf](SDL_roundf),
+[SDL_lround](SDL_lround) for double-precision floats. To get the result as
+a floating-point type, use [SDL_roundf](SDL_roundf).
 
 ## Thread Safety
 

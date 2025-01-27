@@ -31,9 +31,9 @@ Domain: `-INF <= x <= INF`
 
 Range: `-INF <= y <= INF`, y integer
 
-This function operates on double-precision floating point values, use
-[SDL_roundf](SDL_roundf) for single-precision floats. To get the result as
-an integer type, use [SDL_lroundf](SDL_lroundf).
+This function operates on single-precision floating point values, use
+[SDL_round](SDL_round) for double-precision floats. To get the result as an
+integer type, use [SDL_lroundf](SDL_lroundf).
 
 ## Thread Safety
 

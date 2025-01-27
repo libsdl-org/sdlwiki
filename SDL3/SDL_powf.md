@@ -33,7 +33,7 @@ If `y` is the base of the natural logarithm (e), consider using
 [SDL_exp](SDL_exp) instead.
 
 This function operates on single-precision floating point values, use
-[SDL_powf](SDL_powf) for double-precision floats.
+[SDL_pow](SDL_pow) for double-precision floats.
 
 This function may use a different approximation across different versions,
 platforms and configurations. i.e, it can return a different value given
