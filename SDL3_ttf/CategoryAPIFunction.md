@@ -47,6 +47,7 @@
 - [TTF_GetGPUTextEngineWinding](TTF_GetGPUTextEngineWinding)
 - [TTF_GetHarfBuzzVersion](TTF_GetHarfBuzzVersion)
 - [TTF_GetNextTextSubString](TTF_GetNextTextSubString)
+- [TTF_GetNumFontFaces](TTF_GetNumFontFaces)
 - [TTF_GetPreviousTextSubString](TTF_GetPreviousTextSubString)
 - [TTF_GetStringSize](TTF_GetStringSize)
 - [TTF_GetStringSizeWrapped](TTF_GetStringSizeWrapped)
