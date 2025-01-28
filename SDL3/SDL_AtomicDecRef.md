@@ -16,7 +16,7 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 |       |                                                              |
 | ----- | ------------------------------------------------------------ |
-| **a** | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) to increment. |
+| **a** | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) to decrement. |
 
 ## Return Value
 
