@@ -50,6 +50,7 @@ TTF_FontStyleFlags TTF_GetFontStyle(const TTF_Font *font);                      
 bool TTF_SetFontOutline(TTF_Font *font, int outline);                                                                                      // Set a font's current outline.
 int TTF_GetFontOutline(const TTF_Font *font);                                                                                              // Query a font's current outline.
 void TTF_SetFontHinting(TTF_Font *font, TTF_HintingFlags hinting);                                                                         // Set a font's current hinter setting.
+int TTF_GetNumFontFaces(const TTF_Font *font);                                                                                             // Query the number of faces of a font.
 TTF_HintingFlags TTF_GetFontHinting(const TTF_Font *font);                                                                                 // Query a font's current FreeType hinter setting.
 void TTF_SetFontWrapAlignment(TTF_Font *font, TTF_HorizontalAlignment align);                                                              // Set a font's current wrap alignment option.
 TTF_HorizontalAlignment TTF_GetFontWrapAlignment(const TTF_Font *font);                                                                    // Query a font's current wrap alignment option.
