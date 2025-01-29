@@ -159,6 +159,8 @@
 - [TTF_SUBSTRING_TEXT_START](TTF_SUBSTRING_TEXT_START)
 - [TTF_SubStringFlags](TTF_SubStringFlags)
 - [TTF_Text](TTF_Text)
+- [TTF_TextData](TTF_TextData)
+- [TTF_TextEngine](TTF_TextEngine)
 - [TTF_TextWrapWhitespaceVisible](TTF_TextWrapWhitespaceVisible)
 - [TTF_UpdateText](TTF_UpdateText)
 - [TTF_Version](TTF_Version)

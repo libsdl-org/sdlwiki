@@ -5,5 +5,7 @@
 - [TTF_Font](TTF_Font)
 - [TTF_FontStyleFlags](TTF_FontStyleFlags)
 - [TTF_SubStringFlags](TTF_SubStringFlags)
+- [TTF_TextData](TTF_TextData)
+- [TTF_TextEngine](TTF_TextEngine)
 <!-- END CATEGORY LIST -->
 
