@@ -9,14 +9,14 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-bool SDL_PauseAudioDevice(SDL_AudioDeviceID dev);
+bool SDL_PauseAudioDevice(SDL_AudioDeviceID devid);
 ```
 
 ## Function Parameters
 
-|                                        |         |                                                                  |
-| -------------------------------------- | ------- | ---------------------------------------------------------------- |
-| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **dev** | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). |
+|                                        |           |                                                                  |
+| -------------------------------------- | --------- | ---------------------------------------------------------------- |
+| [SDL_AudioDeviceID](SDL_AudioDeviceID) | **devid** | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). |
 
 ## Return Value
 
