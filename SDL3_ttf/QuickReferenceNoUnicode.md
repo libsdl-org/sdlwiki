@@ -92,9 +92,11 @@ TTF_TextEngine * TTF_CreateSurfaceTextEngine(void);                             
 bool TTF_DrawSurfaceText(TTF_Text *text, int x, int y, SDL_Surface *surface);                                                              // Draw text to an SDL surface.
 void TTF_DestroySurfaceTextEngine(TTF_TextEngine *engine);                                                                                 // Destroy a text engine created for drawing text on SDL surfaces.
 TTF_TextEngine * TTF_CreateRendererTextEngine(SDL_Renderer *renderer);                                                                     // Create a text engine for drawing text on an SDL renderer.
+TTF_TextEngine * TTF_CreateRendererTextEngineWithProperties(SDL_PropertiesID props);                                                       // Create a text engine for drawing text on an SDL renderer, with the specified properties.
 bool TTF_DrawRendererText(TTF_Text *text, float x, float y);                                                                               // Draw text to an SDL renderer.
 void TTF_DestroyRendererTextEngine(TTF_TextEngine *engine);                                                                                // Destroy a text engine created for drawing text on an SDL renderer.
 TTF_TextEngine * TTF_CreateGPUTextEngine(SDL_GPUDevice *device);                                                                           // Create a text engine for drawing text with the SDL GPU API.
+TTF_TextEngine * TTF_CreateGPUTextEngineWithProperties(SDL_PropertiesID props);                                                            // Create a text engine for drawing text with the SDL GPU API, with the specified properties.
 TTF_GPUAtlasDrawSequence * TTF_GetGPUTextDrawData(TTF_Text *text);                                                                         // Get the geometry data needed for drawing the text.
 void TTF_DestroyGPUTextEngine(TTF_TextEngine *engine);                                                                                     // Destroy a text engine created for drawing text with the SDL GPU API.
 void TTF_SetGPUTextEngineWinding(TTF_TextEngine *engine, TTF_GPUTextEngineWinding winding);                                                // Sets the winding order of the vertices returned by TTF_GetGPUTextDrawData for a particular GPU text engine.
