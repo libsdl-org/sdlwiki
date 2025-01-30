@@ -8,6 +8,7 @@
 - [SDL_NET_VERSION](SDL_NET_VERSION)
 - [SDL_NET_VERSION_ATLEAST](SDL_NET_VERSION_ATLEAST)
 - [SDLNet_AcceptClient](SDLNet_AcceptClient)
+- [SDLNet_Address](SDLNet_Address)
 - [SDLNet_CompareAddresses](SDLNet_CompareAddresses)
 - [SDLNet_CreateClient](SDLNet_CreateClient)
 - [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket)
