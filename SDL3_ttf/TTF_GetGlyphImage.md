@@ -10,15 +10,16 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_Surface * TTF_GetGlyphImage(TTF_Font *font, Uint32 ch);
+SDL_Surface * TTF_GetGlyphImage(TTF_Font *font, Uint32 ch, TTF_ImageType *image_type);
 ```
 
 ## Function Parameters
 
-|                        |          |                         |
-| ---------------------- | -------- | ----------------------- |
-| [TTF_Font](TTF_Font) * | **font** | the font to query.      |
-| Uint32                 | **ch**   | the codepoint to check. |
+|                                  |                |                                                             |
+| -------------------------------- | -------------- | ----------------------------------------------------------- |
+| [TTF_Font](TTF_Font) *           | **font**       | the font to query.                                          |
+| Uint32                           | **ch**         | the codepoint to check.                                     |
+| [TTF_ImageType](TTF_ImageType) * | **image_type** | a pointer filled in with the glyph image type, may be NULL. |
 
 ## Return Value
 

@@ -70,8 +70,8 @@ bool TTF_SetFontScript(TTF_Font *font, Uint32 script);                          
 Uint32 TTF_GetFontScript(TTF_Font *font);                                                                                                  // Get the script used for text shaping a font.
 Uint32 TTF_GetGlyphScript(Uint32 ch);                                                                                                      // Get the script used by a 32-bit codepoint.
 bool TTF_FontHasGlyph(TTF_Font *font, Uint32 ch);                                                                                          // Check whether a glyph is provided by the font for a UNICODE codepoint.
-SDL_Surface * TTF_GetGlyphImage(TTF_Font *font, Uint32 ch);                                                                                // Get the pixel image for a UNICODE codepoint.
-SDL_Surface * TTF_GetGlyphImageForIndex(TTF_Font *font, Uint32 glyph_index);                                                               // Get the pixel image for a character index.
+SDL_Surface * TTF_GetGlyphImage(TTF_Font *font, Uint32 ch, TTF_ImageType *image_type);                                                     // Get the pixel image for a UNICODE codepoint.
+SDL_Surface * TTF_GetGlyphImageForIndex(TTF_Font *font, Uint32 glyph_index, TTF_ImageType *image_type);                                    // Get the pixel image for a character index.
 bool TTF_GetGlyphMetrics(TTF_Font *font, Uint32 ch, int *minx, int *maxx, int *miny, int *maxy, int *advance);                             // Query the metrics (dimensions) of a font's glyph for a UNICODE codepoint.
 bool TTF_GetStringSize(TTF_Font *font, const char *text, size_t length, int *w, int *h);                                                   // Calculate the dimensions of a rendered string of UTF-8 text.
 bool TTF_GetStringSizeWrapped(TTF_Font *font, const char *text, size_t length, int wrap_width, int *w, int *h);                            // Calculate the dimensions of a rendered string of UTF-8 text.

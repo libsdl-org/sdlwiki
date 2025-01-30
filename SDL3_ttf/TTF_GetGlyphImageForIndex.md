@@ -10,15 +10,16 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-SDL_Surface * TTF_GetGlyphImageForIndex(TTF_Font *font, Uint32 glyph_index);
+SDL_Surface * TTF_GetGlyphImageForIndex(TTF_Font *font, Uint32 glyph_index, TTF_ImageType *image_type);
 ```
 
 ## Function Parameters
 
-|                        |                 |                                   |
-| ---------------------- | --------------- | --------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**        | the font to query.                |
-| Uint32                 | **glyph_index** | the index of the glyph to return. |
+|                                  |                 |                                                             |
+| -------------------------------- | --------------- | ----------------------------------------------------------- |
+| [TTF_Font](TTF_Font) *           | **font**        | the font to query.                                          |
+| Uint32                           | **glyph_index** | the index of the glyph to return.                           |
+| [TTF_ImageType](TTF_ImageType) * | **image_type**  | a pointer filled in with the glyph image type, may be NULL. |
 
 ## Return Value
 
