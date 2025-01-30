@@ -1029,21 +1029,21 @@ bool SDL_GetRectAndLineIntersectionFloat(const SDL_FRect *rect, float *X1, float
 // XX       XX   XX  XX  XX  XX  XX       XX   XX  XX   XX 
 //  XXXXXX  XX   XX  XX      XX  XXXXXXX  XX   XX  XX   XX 
 
-int SDL_GetNumCameraDrivers(void);                                                  // Use this function to get the number of built-in camera drivers.
-const char * SDL_GetCameraDriver(int index);                                        // Use this function to get the name of a built in camera driver.
-const char * SDL_GetCurrentCameraDriver(void);                                      // Get the name of the current camera driver.
-SDL_CameraID * SDL_GetCameras(int *count);                                          // Get a list of currently connected camera devices.
-SDL_CameraSpec ** SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);    // Get the list of native formats/sizes a camera supports.
-const char * SDL_GetCameraName(SDL_CameraID instance_id);                           // Get the human-readable device name for a camera.
-SDL_CameraPosition SDL_GetCameraPosition(SDL_CameraID instance_id);                 // Get the position of the camera in relation to the system.
-SDL_Camera * SDL_OpenCamera(SDL_CameraID instance_id, const SDL_CameraSpec *spec);  // Open a video recording device (a "camera").
-int SDL_GetCameraPermissionState(SDL_Camera *camera);                               // Query if camera access has been approved by the user.
-SDL_CameraID SDL_GetCameraID(SDL_Camera *camera);                                   // Get the instance ID of an opened camera.
-SDL_PropertiesID SDL_GetCameraProperties(SDL_Camera *camera);                       // Get the properties associated with an opened camera.
-bool SDL_GetCameraFormat(SDL_Camera *camera, SDL_CameraSpec *spec);                 // Get the spec that a camera is using when generating images.
-SDL_Surface * SDL_AcquireCameraFrame(SDL_Camera *camera, Uint64 *timestampNS);      // Acquire a frame.
-void SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);                // Release a frame of video acquired from a camera.
-void SDL_CloseCamera(SDL_Camera *camera);                                           // Use this function to shut down camera processing and close the camera device.
+int SDL_GetNumCameraDrivers(void);                                                      // Use this function to get the number of built-in camera drivers.
+const char * SDL_GetCameraDriver(int index);                                            // Use this function to get the name of a built in camera driver.
+const char * SDL_GetCurrentCameraDriver(void);                                          // Get the name of the current camera driver.
+SDL_CameraID * SDL_GetCameras(int *count);                                              // Get a list of currently connected camera devices.
+SDL_CameraSpec ** SDL_GetCameraSupportedFormats(SDL_CameraID instance_id, int *count);  // Get the list of native formats/sizes a camera supports.
+const char * SDL_GetCameraName(SDL_CameraID instance_id);                               // Get the human-readable device name for a camera.
+SDL_CameraPosition SDL_GetCameraPosition(SDL_CameraID instance_id);                     // Get the position of the camera in relation to the system.
+SDL_Camera * SDL_OpenCamera(SDL_CameraID instance_id, const SDL_CameraSpec *spec);      // Open a video recording device (a "camera").
+int SDL_GetCameraPermissionState(SDL_Camera *camera);                                   // Query if camera access has been approved by the user.
+SDL_CameraID SDL_GetCameraID(SDL_Camera *camera);                                       // Get the instance ID of an opened camera.
+SDL_PropertiesID SDL_GetCameraProperties(SDL_Camera *camera);                           // Get the properties associated with an opened camera.
+bool SDL_GetCameraFormat(SDL_Camera *camera, SDL_CameraSpec *spec);                     // Get the spec that a camera is using when generating images.
+SDL_Surface * SDL_AcquireCameraFrame(SDL_Camera *camera, Uint64 *timestampNS);          // Acquire a frame.
+void SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);                    // Release a frame of video acquired from a camera.
+void SDL_CloseCamera(SDL_Camera *camera);                                               // Use this function to shut down camera processing and close the camera device.
 
 //  XXXXXX  XX       XX  XXXXXX   XXXXXX    XXXXXX    XXXXX   XXXXXX   XXXXXX  
 // XX       XX       XX  XX   XX  XX   XX  XX    XX  XX   XX  XX   XX  XX   XX 

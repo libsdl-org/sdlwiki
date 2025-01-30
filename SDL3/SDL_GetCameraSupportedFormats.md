@@ -9,15 +9,15 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_CameraSpec ** SDL_GetCameraSupportedFormats(SDL_CameraID devid, int *count);
+SDL_CameraSpec ** SDL_GetCameraSupportedFormats(SDL_CameraID instance_id, int *count);
 ```
 
 ## Function Parameters
 
-|                              |           |                                                                           |
-| ---------------------------- | --------- | ------------------------------------------------------------------------- |
-| [SDL_CameraID](SDL_CameraID) | **devid** | the camera device instance ID to query.                                   |
-| int *                        | **count** | a pointer filled in with the number of elements in the list, may be NULL. |
+|                              |                 |                                                                           |
+| ---------------------------- | --------------- | ------------------------------------------------------------------------- |
+| [SDL_CameraID](SDL_CameraID) | **instance_id** | the camera device instance ID.                                            |
+| int *                        | **count**       | a pointer filled in with the number of elements in the list, may be NULL. |
 
 ## Return Value
 
