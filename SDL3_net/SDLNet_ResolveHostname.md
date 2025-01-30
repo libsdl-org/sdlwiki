@@ -27,9 +27,10 @@ SDL_GetError() for details.
 
 ## Remarks
 
-SDL_net doesn't operate on human-readable hostnames (like "[www.libsdl.org](https://libsdl.org)")
-but on computer-readable addresses. This function converts from one to the
-other. This process is known as "resolving" an address.
+SDL_net doesn't operate on human-readable hostnames (like "
+[www.libsdl.org](https://libsdl.org)
+") but on computer-readable addresses. This function converts from one to
+the other. This process is known as "resolving" an address.
 
 You can also use this to turn IP address strings (like "159.203.69.7") into
 [SDLNet_Address](SDLNet_Address) objects.
