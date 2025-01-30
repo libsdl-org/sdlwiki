@@ -150,6 +150,7 @@ available at: https://www.freetype.org/
 - [TTF_GPUTextEngineWinding](TTF_GPUTextEngineWinding)
 - [TTF_HintingFlags](TTF_HintingFlags)
 - [TTF_HorizontalAlignment](TTF_HorizontalAlignment)
+- [TTF_ImageType](TTF_ImageType)
 <!-- END CATEGORY LIST -->
 
 ## Macros
