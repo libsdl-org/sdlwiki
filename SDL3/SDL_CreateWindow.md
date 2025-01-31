@@ -132,6 +132,7 @@ This function is available since SDL 3.2.0.
 int main(int argc, char* argv[]) {
 
     SDL_Window *window;                    // Declare a pointer
+    bool done = false;
 
     SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL3
 
@@ -150,9 +151,17 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // The window is open: could enter program loop here (see SDL_PollEvent())
+    while (!done) {
+        SDL_Event event;
 
-    SDL_Delay(3000);  // Pause execution for 3000 milliseconds, for example
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_EVENT_QUIT) {
+                done = true;
+            }
+        }
+
+        // Do game logic, present a frame, etc.
+    }
 
     // Close and destroy the window
     SDL_DestroyWindow(window);
