@@ -25,7 +25,6 @@
 - [SDLNet_GetStreamSocketAddress](SDLNet_GetStreamSocketAddress)
 - [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
 - [SDLNet_Init](SDLNet_Init)
-- [SDLNet_LinkedVersion](SDLNet_LinkedVersion)
 - [SDLNet_Quit](SDLNet_Quit)
 - [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket)
 - [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
