@@ -36,6 +36,7 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_CreateGPUComputePipeline](SDL_CreateGPUComputePipeline)
+- [SDL_GPUShaderFormat](SDL_GPUShaderFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
