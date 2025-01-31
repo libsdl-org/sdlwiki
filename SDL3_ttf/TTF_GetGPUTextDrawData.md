@@ -32,6 +32,11 @@ information.
 `text` must have been created using a [TTF_TextEngine](TTF_TextEngine) from
 [TTF_CreateGPUTextEngine](TTF_CreateGPUTextEngine)().
 
+The positive X-axis is taken towards the right and the positive Y-axis is taken upwards 
+for both the vertex and the texture coordinates, i.e, it follows the same convention used
+by the SDL_GPU API. If you want to use a different coordinate system you will need
+to transform the vertices yourself.
+
 If the text looks blocky use linear filtering.
 
 ## Thread Safety
@@ -49,4 +54,3 @@ This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
-
