@@ -31,6 +31,7 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_CreateGPUGraphicsPipeline](SDL_CreateGPUGraphicsPipeline)
+- [SDL_GPUShader](SDL_GPUShader)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 - [SDL_GPUPrimitiveType](SDL_GPUPrimitiveType)
 - [SDL_GPURasterizerState](SDL_GPURasterizerState)
