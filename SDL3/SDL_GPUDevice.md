@@ -1,6 +1,6 @@
 # SDL_GPUDevice
 
-An opaque handle representing the [SDL_GPU](SDL_GPU) context.
+An opaque handle representing the [SDL_GPU](CategoryGPU) context.
 
 ## Header File
 
