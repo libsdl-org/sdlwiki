@@ -19,7 +19,7 @@ This page is more walkthrough-oriented.
 * Install minimal Java environment. For instance, in Debian/Ubuntu:
 
 ```bash
-sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
+sudo apt install openjdk-17-jdk ant android-sdk-platform-tools-common
 ```
 
 * Install NDK (tested with [https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip r10e])
@@ -59,7 +59,7 @@ Notes:
 
 #### Troubleshooting
 
-* use OpenJDK 8: execute `sudo update-alternatives --config java` and select jdk-8 as default; or use `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew`
+* use OpenJDK 17: execute `sudo update-alternatives --config java` and select jdk-17 as default; or use `JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 ./gradlew`
 * `javax/xml/bind/annotation/XmlSchema, Could not initialize class com.android.sdklib.repository.AndroidSdkHandler`: check the Android Gradle Plugin version in `/android-project/build.gradle`, e.g.
 ` classpath 'com.android.tools.build:gradle:3.1.0' `
 * You can customize the Gradle version in `/android-project/gradle/wrapper/gradle-wrapper.properties`:
