@@ -31,5 +31,5 @@ You should not create or modify this struct directly, but rather use respective 
 
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySDLNet](CategorySDLNet)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySDLNet](CategorySDLNet) 
 
