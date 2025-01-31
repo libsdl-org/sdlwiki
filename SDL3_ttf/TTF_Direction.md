@@ -22,7 +22,7 @@ typedef enum TTF_Direction
 
 ## Remarks
 
-The values here are chosen to match hb_direction_t.
+The values here are chosen to match [hb_direction_t](https://harfbuzz.github.io/harfbuzz-hb-common.html#hb-direction-t).
 
 ## Version
 
