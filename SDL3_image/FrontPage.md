@@ -1,6 +1,6 @@
 # SDL_image 3.0
 
-This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
+This is the SDL3 wiki. SDL2 is [over here](/SDL2_image)!
 
 ## What is it?
 
