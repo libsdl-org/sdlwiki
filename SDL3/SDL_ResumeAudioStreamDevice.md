@@ -30,7 +30,7 @@ previously been paused. Once unpaused, any bound audio streams will begin
 to progress again, and audio can be generated.
 
 Remember, [SDL_OpenAudioDeviceStream](SDL_OpenAudioDeviceStream) opens
-device in an unpaused state, so this function call is required for audio
+device in a paused state, so this function call is required for audio
 playback to begin on such device.
 
 ## Thread Safety
