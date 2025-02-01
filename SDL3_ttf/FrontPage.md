@@ -14,7 +14,7 @@ This library also uses the following libraries:
 - PlutoSVG, licensed under the [MIT license](https://github.com/sammycage/plutosvg/blob/master/LICENSE)
 - PlutoVG, licensed under the [MIT license](https://github.com/sammycage/plutovg/blob/master/LICENSE)
 
-Please follow the licenses of any fonts you include in your application, as many of them are copyrighted. The Microsoft fonts, for example, are not freely redistributable and even the free "web" fonts they provide are only redistributable in their special executable installer form (May 1998).
+Please follow the licenses of any fonts you include in your application, as many of them are copyrighted. The Microsoft fonts, for example, are not freely redistributable.
 
 ## Getting and installing SDL_ttf
 
