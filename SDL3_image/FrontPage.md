@@ -7,9 +7,7 @@ This is the SDL3 wiki. SDL2 is [over here](/SDL2_image)!
 This is a simple library to load images of various formats as SDL surfaces.
 It can load BMP, GIF, JPEG, LBM, PCX, PNG, PNM (PPM/PGM/PBM), QOI, TGA, XCF, XPM, and simple SVG format images. It can also load AVIF, JPEG-XL, TIFF, and WebP images, depending on build options.
 
-This library is distributed under the
-[zlib license](https://www.libsdl.org/license.php). This license allows you
-to use it freely in any software.
+This library is distributed under the [zlib license](https://www.libsdl.org/license.php). This license allows you to use it freely in any software.
 
 ## Getting and installing SDL_image
 
