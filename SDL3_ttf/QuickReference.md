@@ -37,6 +37,7 @@ bool TTF_Init(void);                                                            
 TTF_Font * TTF_OpenFont(const char *file, float ptsize);                                                                                   // Create a font from a file, using a specified point size.
 TTF_Font * TTF_OpenFontIO(SDL_IOStream *src, bool closeio, float ptsize);                                                                  // Create a font from an SDL_IOStream, using a specified point size.
 TTF_Font * TTF_OpenFontWithProperties(SDL_PropertiesID props);                                                                             // Create a font with the specified properties.
+TTF_Font * TTF_CopyFont(TTF_Font *existing_font);                                                                                          // Create a copy of an existing font.
 SDL_PropertiesID TTF_GetFontProperties(TTF_Font *font);                                                                                    // Get the properties associated with a font.
 Uint32 TTF_GetFontGeneration(TTF_Font *font);                                                                                              // Get the font generation.
 bool TTF_AddFallbackFont(TTF_Font *font, TTF_Font *fallback);                                                                              // Add a fallback font.
