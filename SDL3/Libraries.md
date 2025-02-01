@@ -21,7 +21,7 @@ RmlUi is the C++ user interface package based on the HTML and CSS standards, des
 ## SDL_image
 
 Loads images as SDL surfaces and textures, and supports the following formats:
-BMP, GIF, JPEG, LBM, PCX, PNG, PNM, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and more!)
+BMP, GIF, JPEG, LBM, PCX, PNG, PNM, QOI, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and more!)
 
 - [Latest Release](https://github.com/libsdl-org/SDL_image/releases/latest)
 - [Git Repository](https://github.com/libsdl-org/SDL_image)
