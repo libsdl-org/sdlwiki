@@ -31,7 +31,7 @@ to use SDL_image freely in any software.
 
 ## Other stuff
 
-We hope you find everything you are looking for and enjoy using SDL!
+We hope you find everything you are looking for and enjoy using SDL_image!
 
 If anything is not addressed somewhere here, feel free to
 [open an issue](https://github.com/libsdl-org/SDL_image/issues) or
