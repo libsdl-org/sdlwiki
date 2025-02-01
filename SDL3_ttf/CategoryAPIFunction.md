@@ -8,6 +8,7 @@
 - [TTF_AppendTextString](TTF_AppendTextString)
 - [TTF_ClearFallbackFonts](TTF_ClearFallbackFonts)
 - [TTF_CloseFont](TTF_CloseFont)
+- [TTF_CopyFont](TTF_CopyFont)
 - [TTF_CreateGPUTextEngine](TTF_CreateGPUTextEngine)
 - [TTF_CreateGPUTextEngineWithProperties](TTF_CreateGPUTextEngineWithProperties)
 - [TTF_CreateRendererTextEngine](TTF_CreateRendererTextEngine)
