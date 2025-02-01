@@ -1,19 +1,41 @@
-= SDL_image 3.0 =
+# SDL_image 3.0
 
-The latest version of this library is available from [https://github.com/libsdl-org/SDL_image/releases GitHub].
+This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
+
+## What is it?
 
 This is a simple library to load images of various formats as SDL surfaces.
+It can load BMP, GIF, JPEG, LBM, PCX, PNG, PNM (PPM/PGM/PBM), QOI, TGA, XCF, XPM, and simple SVG format images. It can also load AVIF, JPEG-XL, TIFF, and WebP images, depending on build options.
 
-It can load BMP, GIF, JPEG, LBM, PCX, PNG, PNM (PPM/PGM/PBM), QOI, TGA, XCF, XPM, and simple SVG format images. It can also load AVIF, JPEG-XL, TIFF, and WebP images, depending on build options (see the note below for details.)
+SDL_image 3.0 (often shortened to "SDL3_image") is distributed under the
+[zlib license](https://www.libsdl.org/license.php). This license allows you
+to use SDL_image freely in any software.
 
-Refer to [[CategoryAPI]] for a list of functions, and the examples [https://github.com/libsdl-org/SDL_image/blob/main/examples/showimage.c showimage.c] for documentation on this library.
+## Getting and installing SDL_image
 
-This library is under the zlib License, see the file [https://github.com/libsdl-org/SDL_image/blob/main/LICENSE.txt LICENSE.txt] for details.
+- The latest release is available on [GitHub](https://github.com/libsdl-org/SDL_image/releases).
+- [Installation](https://github.com/libsdl-org/SDL_image/blob/main/INSTALL.md): How to install SDL_image on your platform of choice
+  and link your program against it.
 
-Note:
-* Support for AVIF, JPEG-XL, TIFF, and WebP are not included by default because of the size of the decode libraries, but you can get them by running external/download.sh
-* When building with CMake, you can enable the appropriate SUPPORT_* options defined in CMakeLists.txt.
-* When building with configure/make, you can build and install them normally and the configure script will detect and use them.
-* When building with Visual Studio, you will need to build the libraries and then add the appropriate LOAD_* preprocessor define to the Visual Studio project.
-* When building with Xcode, you can edit the config at the top of the project to enable them, and you will need to include the appropriate framework in your application.
-* For Android, you can edit the config at the top of Android.mk to enable them.
+## API Documentation
+
+- [API by category](APIByCategory)
+- [API quick reference](QuickReference)
+- [Complete API index](CategoryAPI)
+- [Hello World](https://github.com/libsdl-org/SDL_image/blob/main/docs/hello.c) example, with build instructions for your development environment in the [installation instructions](https://github.com/libsdl-org/SDL_image/blob/main/INSTALL.md)
+
+## Other sources of information
+
+- [SDL 2.0 Migration Guide](https://github.com/libsdl-org/SDL_image/blob/main/docs/README-migration.md)
+- [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
+  to keep up with the latest news, help other users out, and ask questions.
+
+## Other stuff
+
+We hope you find everything you are looking for and enjoy using SDL!
+
+If anything is not addressed somewhere here, feel free to
+[open an issue](https://github.com/libsdl-org/SDL_image/issues) or
+[submit a pull request](https://github.com/libsdl-org/SDL_image/pulls).
+
+**Enjoy!**
