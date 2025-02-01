@@ -10,7 +10,7 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-TTF_GPUAtlasDrawSequence* TTF_GetGPUTextDrawData(TTF_Text *text);
+TTF_GPUAtlasDrawSequence * TTF_GetGPUTextDrawData(TTF_Text *text);
 ```
 
 ## Function Parameters

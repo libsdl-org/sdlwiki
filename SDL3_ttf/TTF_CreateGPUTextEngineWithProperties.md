@@ -48,7 +48,9 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
+- [TTF_CreateGPUTextEngine](TTF_CreateGPUTextEngine)
 - [TTF_DestroyGPUTextEngine](TTF_DestroyGPUTextEngine)
+- [TTF_GetGPUTextDrawData](TTF_GetGPUTextDrawData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)

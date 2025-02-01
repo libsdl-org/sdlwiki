@@ -36,6 +36,8 @@ This function is available since SDL_ttf 3.0.0.
 ## See Also
 
 - [TTF_DestroyRendererTextEngine](TTF_DestroyRendererTextEngine)
+- [TTF_DrawRendererText](TTF_DrawRendererText)
+- [TTF_CreateRendererTextEngineWithProperties](TTF_CreateRendererTextEngineWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
