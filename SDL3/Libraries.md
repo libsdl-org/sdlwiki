@@ -23,8 +23,7 @@ RmlUi is the C++ user interface package based on the HTML and CSS standards, des
 Loads images as SDL surfaces and textures, and supports the following formats:
 BMP, GIF, JPEG, LBM, PCX, PNG, PNM, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and more!)
 
-SDL_image works with SDL3 and has a 3.0 [preview release](https://github.com/libsdl-org/SDL_image/releases/tag/preview-3.1.0) available.
-
+- [Latest Release](https://github.com/libsdl-org/SDL_image/releases/latest)
 - [Git Repository](https://github.com/libsdl-org/SDL_image)
 - [Wiki](https://wiki.libsdl.org/SDL3_image)
 
@@ -46,7 +45,7 @@ A library which allows you to use TrueType fonts in your SDL applications. It
 comes with an example program "showfont" which displays an example string for a
 given TrueType font file.
 
-SDL_ttf works with SDL3 and we have some more polish work to do for a 3.0 release.
+SDL_ttf works with SDL3 and has a 3.0 [preview release](https://github.com/libsdl-org/SDL_ttf/releases/tag/preview-3.1.0) available.
 
 - [Git Repository](https://github.com/libsdl-org/SDL_ttf)
 - [Wiki](https://wiki.libsdl.org/SDL3_ttf)
