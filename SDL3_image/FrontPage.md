@@ -19,7 +19,6 @@ to use SDL_image freely in any software.
 
 ## API Documentation
 
-- [API by category](APIByCategory)
 - [API quick reference](QuickReference)
 - [Complete API index](CategoryAPI)
 - [Hello World](https://github.com/libsdl-org/SDL_image/blob/main/docs/hello.c) example, with build instructions for your development environment in the [installation instructions](https://github.com/libsdl-org/SDL_image/blob/main/INSTALL.md)
