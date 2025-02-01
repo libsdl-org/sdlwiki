@@ -7,7 +7,7 @@ Building SDL and using it in your project is covered in [Installation](https://g
 
 ## SDL 3.0
 
-There are no official releases of SDL3 yet, but when there are, the source code to the latest official release of SDL3 will be [here](https://github.com/libsdl-org/SDL/releases).
+The latest official release of SDL3 is on [GitHub](https://github.com/libsdl-org/SDL/releases).
 
 If you want up to the minute bug fixes and improvements, you can track our work in SDL's [Git](https://git-scm.com) repository, [here](https://github.com/libsdl-org/SDL). To clone the repo:
 
