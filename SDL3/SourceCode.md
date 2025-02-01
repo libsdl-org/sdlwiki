@@ -17,7 +17,7 @@ git clone https://github.com/libsdl-org/SDL
 
 SDL3 is currently the "main" branch in git.
 
-We intend official releases to be reasonably stable, and don't promise anything about the quality level of the Git repo from moment to moment, but as official releases tend to happen months apart, you might find a bug that's bothering you is fixed in revision control long before it makes it to a release.
+We intend official releases to be reasonably stable, and don't promise anything about the quality level of the Git repo from moment to moment, but as major releases tend to happen months apart, you might find a bug that's bothering you is fixed in revision control long before it makes it to a release.
 
 
 ## SDL 2.0 (legacy)
