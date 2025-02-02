@@ -21,6 +21,10 @@ void SDL_ReleaseGPUFence(
 | [SDL_GPUDevice](SDL_GPUDevice) * | **device** | a GPU context. |
 | [SDL_GPUFence](SDL_GPUFence) *   | **fence**  | a fence.       |
 
+## Remarks
+
+You must not reference the fence after calling this function.
+
 ## Version
 
 This function is available since SDL 3.2.0.
