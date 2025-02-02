@@ -1170,6 +1170,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_size_add_check_overflow](SDL_size_add_check_overflow)
 - [SDL_size_mul_check_overflow](SDL_size_mul_check_overflow)
 - [SDL_snprintf](SDL_snprintf)
+- [SDL_SoftStretch](SDL_SoftStretch)
 - [SDL_sqrt](SDL_sqrt)
 - [SDL_sqrtf](SDL_sqrtf)
 - [SDL_srand](SDL_srand)
