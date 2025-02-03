@@ -73,6 +73,7 @@ https://github.com/libsdl-org/SDL_image
 - [SDL_SetSurfacePalette](SDL_SetSurfacePalette)
 - [SDL_SetSurfaceRLE](SDL_SetSurfaceRLE)
 - [SDL_SoftStretch](SDL_SoftStretch)
+- [SDL_StretchSurface](SDL_StretchSurface)
 - [SDL_SurfaceHasAlternateImages](SDL_SurfaceHasAlternateImages)
 - [SDL_SurfaceHasColorKey](SDL_SurfaceHasColorKey)
 - [SDL_SurfaceHasRLE](SDL_SurfaceHasRLE)

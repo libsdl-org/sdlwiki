@@ -1119,6 +1119,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_strchr](SDL_strchr)
 - [SDL_strcmp](SDL_strcmp)
 - [SDL_strdup](SDL_strdup)
+- [SDL_StretchSurface](SDL_StretchSurface)
 - [SDL_StringToGUID](SDL_StringToGUID)
 - [SDL_strlcat](SDL_strlcat)
 - [SDL_strlcpy](SDL_strlcpy)
