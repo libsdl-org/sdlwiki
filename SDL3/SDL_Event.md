@@ -104,7 +104,7 @@ The [SDL_PollEvent](SDL_PollEvent) function takes a pointer to an [SDL_Event](SD
   switch (test_event.type) {
 ```
 
-We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_MOUSEMOTION is, more than likely, the event we're looking for. Looking at the table below tells us that SDL_MOUSEMOTION events are handled within the [SDL_MouseMotionEvent](SDL_MouseMotionEvent) structure which is the **motion** member of [SDL_Event](SDL_Event). We can check for the SDL_MOUSEMOTION event **type** within our ```switch``` statement like so:
+We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_EVENT_MOUSE_MOTION is, more than likely, the event we're looking for. Looking at the table below tells us that SDL_EVENT_MOUSE_MOTION events are handled within the [SDL_MouseMotionEvent](SDL_MouseMotionEvent) structure which is the **motion** member of [SDL_Event](SDL_Event). We can check for the SDL_EVENT_MOUSE_MOTION event **type** within our ```switch``` statement like so:
 
 ```c
     case SDL_EVENT_MOUSE_MOTION:
@@ -126,7 +126,7 @@ SDL_Log("Event queue empty.");
 
 ## Placing events on the event queue
 
-It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [SDL_PushEvent](SDL_PushEvent) and [SDL_PeepEvents](SDL_PeepEvents) allow you to place events onto the event queue. This is usually used to place a SDL_USEREVENT on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the **type** member and filling the appropriate member structure with information.
+It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [SDL_PushEvent](SDL_PushEvent) and [SDL_PeepEvents](SDL_PeepEvents) allow you to place events onto the event queue. This is usually used to place a SDL_EVENT_USER on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the **type** member and filling the appropriate member structure with information.
 
 ```c
 SDL_Event user_event;
