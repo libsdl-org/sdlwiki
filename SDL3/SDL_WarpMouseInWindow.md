@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void SDL_WarpMouseInWindow(SDL_Window * window,
+void SDL_WarpMouseInWindow(SDL_Window *window,
                        float x, float y);
 ```
 

@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-typedef int (SDLCALL * SDL_ThreadFunction) (void *data);
+typedef int (SDLCALL *SDL_ThreadFunction) (void *data);
 ```
 
 ## Function Parameters

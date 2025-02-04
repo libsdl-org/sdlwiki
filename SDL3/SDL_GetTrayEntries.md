@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_tray.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-extern SDL_DECLSPEC const SDL_TrayEntry **SDLCALL SDL_GetTrayEntries(SDL_TrayMenu *menu, int *size);
+const SDL_TrayEntry ** SDL_GetTrayEntries(SDL_TrayMenu *menu, int *size);
 ```
 
 ## Function Parameters

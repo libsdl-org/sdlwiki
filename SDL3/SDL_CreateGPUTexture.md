@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUTexture* SDL_CreateGPUTexture(
+SDL_GPUTexture * SDL_CreateGPUTexture(
     SDL_GPUDevice *device,
     const SDL_GPUTextureCreateInfo *createinfo);
 ```

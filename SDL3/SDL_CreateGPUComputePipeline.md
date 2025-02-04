@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUComputePipeline* SDL_CreateGPUComputePipeline(
+SDL_GPUComputePipeline * SDL_CreateGPUComputePipeline(
     SDL_GPUDevice *device,
     const SDL_GPUComputePipelineCreateInfo *createinfo);
 ```

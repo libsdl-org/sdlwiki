@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_process.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_IOStream* SDL_GetProcessInput(SDL_Process *process);
+SDL_IOStream * SDL_GetProcessInput(SDL_Process *process);
 ```
 
 ## Function Parameters

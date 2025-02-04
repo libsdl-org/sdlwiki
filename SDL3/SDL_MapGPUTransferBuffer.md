@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void* SDL_MapGPUTransferBuffer(
+void * SDL_MapGPUTransferBuffer(
     SDL_GPUDevice *device,
     SDL_GPUTransferBuffer *transfer_buffer,
     bool cycle);

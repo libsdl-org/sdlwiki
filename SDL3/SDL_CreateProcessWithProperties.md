@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_process.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Process* SDL_CreateProcessWithProperties(SDL_PropertiesID props);
+SDL_Process * SDL_CreateProcessWithProperties(SDL_PropertiesID props);
 ```
 
 ## Function Parameters

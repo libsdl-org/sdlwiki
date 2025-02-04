@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUDevice* SDL_CreateGPUDevice(
+SDL_GPUDevice * SDL_CreateGPUDevice(
     SDL_GPUShaderFormat format_flags,
     bool debug_mode,
     const char *name);

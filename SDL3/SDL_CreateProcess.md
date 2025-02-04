@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_process.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Process* SDL_CreateProcess(const char * const *args, bool pipe_stdio);
+SDL_Process * SDL_CreateProcess(const char * const *args, bool pipe_stdio);
 ```
 
 ## Function Parameters

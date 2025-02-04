@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPURenderPass* SDL_BeginGPURenderPass(
+SDL_GPURenderPass * SDL_BeginGPURenderPass(
     SDL_GPUCommandBuffer *command_buffer,
     const SDL_GPUColorTargetInfo *color_target_infos,
     Uint32 num_color_targets,

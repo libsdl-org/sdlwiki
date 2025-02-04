@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUCopyPass* SDL_BeginGPUCopyPass(
+SDL_GPUCopyPass * SDL_BeginGPUCopyPass(
     SDL_GPUCommandBuffer *command_buffer);
 ```
 

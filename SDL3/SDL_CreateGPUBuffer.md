@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUBuffer* SDL_CreateGPUBuffer(
+SDL_GPUBuffer * SDL_CreateGPUBuffer(
     SDL_GPUDevice *device,
     const SDL_GPUBufferCreateInfo *createinfo);
 ```

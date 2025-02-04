@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUShader* SDL_CreateGPUShader(
+SDL_GPUShader * SDL_CreateGPUShader(
     SDL_GPUDevice *device,
     const SDL_GPUShaderCreateInfo *createinfo);
 ```

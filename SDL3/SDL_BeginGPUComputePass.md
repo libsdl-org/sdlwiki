@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-SDL_GPUComputePass* SDL_BeginGPUComputePass(
+SDL_GPUComputePass * SDL_BeginGPUComputePass(
     SDL_GPUCommandBuffer *command_buffer,
     const SDL_GPUStorageTextureReadWriteBinding *storage_texture_bindings,
     Uint32 num_storage_texture_bindings,

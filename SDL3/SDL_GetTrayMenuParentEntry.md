@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_tray.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_TrayEntry* SDL_GetTrayMenuParentEntry(SDL_TrayMenu *menu);
+SDL_TrayEntry * SDL_GetTrayMenuParentEntry(SDL_TrayMenu *menu);
 ```
 
 ## Function Parameters

@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 bool SDL_Vulkan_CreateSurface(SDL_Window *window,
                                   VkInstance instance,
                                   const struct VkAllocationCallbacks *allocator,
-                                  VkSurfaceKHR* surface);
+                                  VkSurfaceKHR *surface);
 ```
 
 ## Function Parameters

@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_tray.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-const char* SDL_GetTrayEntryLabel(SDL_TrayEntry *entry);
+const char * SDL_GetTrayEntryLabel(SDL_TrayEntry *entry);
 ```
 
 ## Function Parameters
