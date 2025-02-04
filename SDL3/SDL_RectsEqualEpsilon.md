@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-SDL_FORCE_INLINE bool SDL_RectsEqualEpsilon(const SDL_FRect *a, const SDL_FRect *b, const float epsilon);
+SDL_FORCE_INLINE bool SDL_RectsEqualEpsilon(const SDL_FRect *a, const SDL_FRect *b, float epsilon);
 ```
 
 ## Function Parameters
@@ -18,7 +18,7 @@ SDL_FORCE_INLINE bool SDL_RectsEqualEpsilon(const SDL_FRect *a, const SDL_FRect 
 | ------------------------------ | ----------- | --------------------------------- |
 | const [SDL_FRect](SDL_FRect) * | **a**       | the first rectangle to test.      |
 | const [SDL_FRect](SDL_FRect) * | **b**       | the second rectangle to test.     |
-| const float                    | **epsilon** | the epsilon value for comparison. |
+| float                          | **epsilon** | the epsilon value for comparison. |
 
 ## Return Value
 

@@ -1045,7 +1045,7 @@ bool SDL_GetRectEnclosingPoints(const SDL_Point *points, int count, const SDL_Re
 bool SDL_GetRectAndLineIntersection(const SDL_Rect *rect, int *X1, int *Y1, int *X2, int *Y2);                        // Calculate the intersection of a rectangle and line segment.
 bool SDL_PointInRectFloat(const SDL_FPoint *p, const SDL_FRect *r);                                                   // Determine whether a point resides inside a floating point rectangle.
 bool SDL_RectEmptyFloat(const SDL_FRect *r);                                                                          // Determine whether a floating point rectangle can contain any point.
-bool SDL_RectsEqualEpsilon(const SDL_FRect *a, const SDL_FRect *b, const float epsilon);                              // Determine whether two floating point rectangles are equal, within some given epsilon.
+bool SDL_RectsEqualEpsilon(const SDL_FRect *a, const SDL_FRect *b, float epsilon);                                    // Determine whether two floating point rectangles are equal, within some given epsilon.
 bool SDL_RectsEqualFloat(const SDL_FRect *a, const SDL_FRect *b);                                                     // Determine whether two floating point rectangles are equal, within a default epsilon.
 bool SDL_HasRectIntersectionFloat(const SDL_FRect *A, const SDL_FRect *B);                                            // Determine whether two rectangles intersect with float precision.
 bool SDL_GetRectIntersectionFloat(const SDL_FRect *A, const SDL_FRect *B, SDL_FRect *result);                         // Calculate the intersection of two rectangles with float precision.
