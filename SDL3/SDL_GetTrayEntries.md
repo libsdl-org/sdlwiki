@@ -9,15 +9,15 @@ Defined in [<SDL3/SDL_tray.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-const SDL_TrayEntry ** SDL_GetTrayEntries(SDL_TrayMenu *menu, int *size);
+const SDL_TrayEntry ** SDL_GetTrayEntries(SDL_TrayMenu *menu, int *count);
 ```
 
 ## Function Parameters
 
-|                                |          |                                                                  |
-| ------------------------------ | -------- | ---------------------------------------------------------------- |
-| [SDL_TrayMenu](SDL_TrayMenu) * | **menu** | The menu to get entries from.                                    |
-| int *                          | **size** | An optional pointer to obtain the number of entries in the menu. |
+|                                |           |                                                                  |
+| ------------------------------ | --------- | ---------------------------------------------------------------- |
+| [SDL_TrayMenu](SDL_TrayMenu) * | **menu**  | The menu to get entries from.                                    |
+| int *                          | **count** | An optional pointer to obtain the number of entries in the menu. |
 
 ## Return Value
 
