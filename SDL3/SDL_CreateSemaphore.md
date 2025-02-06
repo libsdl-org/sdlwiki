@@ -41,7 +41,6 @@ Typical use of semaphores:
 
 ```c
 void add_data_to_queue(void);
-void get_data_to_queue(void);
 void get_data_from_queue(void);
 int data_available(void);
 void wait_for_threads(void);
