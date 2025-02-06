@@ -1,6 +1,6 @@
 # SDL_HINT_MAC_OPTION_AS_ALT
 
-A variable controlling whether the Option (⌥) key on macOS should be remapped to act as the Alt key.
+A variable controlling whether the Option key on macOS should be remapped to act as the Alt key.
 
 ## Header File
 
