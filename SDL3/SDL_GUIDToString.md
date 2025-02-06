@@ -20,6 +20,10 @@ void SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
 | char *               | **pszGUID** | buffer in which to write the ASCII string.              |
 | int                  | **cbGUID**  | the size of pszGUID, should be at least 33 bytes.       |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

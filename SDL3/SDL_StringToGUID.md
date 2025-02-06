@@ -28,6 +28,10 @@ Performs no error checking. If this function is given a string containing
 an invalid GUID, the function will silently succeed, but the GUID generated
 will not be useful.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.
