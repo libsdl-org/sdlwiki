@@ -109,6 +109,8 @@
 - [TTF_SetTextString](TTF_SetTextString)
 - [TTF_SetTextWrapWhitespaceVisible](TTF_SetTextWrapWhitespaceVisible)
 - [TTF_SetTextWrapWidth](TTF_SetTextWrapWidth)
+- [TTF_StringToTag](TTF_StringToTag)
+- [TTF_TagToString](TTF_TagToString)
 - [TTF_TextWrapWhitespaceVisible](TTF_TextWrapWhitespaceVisible)
 - [TTF_UpdateText](TTF_UpdateText)
 - [TTF_Version](TTF_Version)
