@@ -67,6 +67,8 @@ const char * TTF_GetFontFamilyName(const TTF_Font *font);                       
 const char * TTF_GetFontStyleName(const TTF_Font *font);                                                                                   // Query a font's style name.
 bool TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);                                                                        // Set the direction to be used for text shaping by a font.
 TTF_Direction TTF_GetFontDirection(TTF_Font *font);                                                                                        // Get the direction to be used for text shaping by a font.
+Uint32 TTF_StringToTag(const char *string);                                                                                                // Convert from a 4 character string to a 32-bit tag.
+void TTF_TagToString(Uint32 tag, char *string, size_t size);                                                                               // Convert from a 32-bit tag to a 4 character string.
 bool TTF_SetFontScript(TTF_Font *font, Uint32 script);                                                                                     // Set the script to be used for text shaping by a font.
 Uint32 TTF_GetFontScript(TTF_Font *font);                                                                                                  // Get the script used for text shaping a font.
 Uint32 TTF_GetGlyphScript(Uint32 ch);                                                                                                      // Get the script used by a 32-bit codepoint.

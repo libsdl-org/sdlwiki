@@ -15,10 +15,10 @@ bool TTF_SetTextScript(TTF_Text *text, Uint32 script);
 
 ## Function Parameters
 
-|                        |            |                                              |
-| ---------------------- | ---------- | -------------------------------------------- |
-| [TTF_Text](TTF_Text) * | **text**   | the text to modify.                          |
-| Uint32                 | **script** | a script tag in the format used by HarfBuzz. |
+|                        |            |                                                                         |
+| ---------------------- | ---------- | ----------------------------------------------------------------------- |
+| [TTF_Text](TTF_Text) * | **text**   | the text to modify.                                                     |
+| Uint32                 | **script** | an [ISO 15924 code](https://unicode.org/iso15924/iso15924-codes.html) . |
 
 ## Return Value
 
@@ -27,7 +27,7 @@ more information.
 
 ## Remarks
 
-This returns false if SDL_ttf isn't build with HarfBuzz support.
+This returns false if SDL_ttf isn't built with HarfBuzz support.
 
 ## Thread Safety
 
@@ -36,6 +36,10 @@ This function should be called on the thread that created the text.
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_StringToTag](TTF_StringToTag)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)

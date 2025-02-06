@@ -15,10 +15,10 @@ bool TTF_SetFontScript(TTF_Font *font, Uint32 script);
 
 ## Function Parameters
 
-|                        |            |                                              |
-| ---------------------- | ---------- | -------------------------------------------- |
-| [TTF_Font](TTF_Font) * | **font**   | the font to modify.                          |
-| Uint32                 | **script** | a script tag in the format used by HarfBuzz. |
+|                        |            |                                                                         |
+| ---------------------- | ---------- | ----------------------------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**   | the font to modify.                                                     |
+| Uint32                 | **script** | an [ISO 15924 code](https://unicode.org/iso15924/iso15924-codes.html) . |
 
 ## Return Value
 
@@ -27,7 +27,7 @@ more information.
 
 ## Remarks
 
-This returns false if SDL_ttf isn't build with HarfBuzz support.
+This returns false if SDL_ttf isn't built with HarfBuzz support.
 
 This updates any [TTF_Text](TTF_Text) objects using this font.
 
@@ -38,6 +38,10 @@ This function should be called on the thread that created the font.
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_StringToTag](TTF_StringToTag)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)

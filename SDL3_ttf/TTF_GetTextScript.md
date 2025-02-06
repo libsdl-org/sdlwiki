@@ -21,7 +21,9 @@ Uint32 TTF_GetTextScript(TTF_Text *text);
 
 ## Return Value
 
-(Uint32) Returns a script tag in the format used by HarfBuzz.
+(Uint32) Returns an
+[ISO 15924 code](https://unicode.org/iso15924/iso15924-codes.html)
+or 0 if a script hasn't been set on either the text object or the font.
 
 ## Remarks
 
@@ -34,6 +36,10 @@ This function should be called on the thread that created the text.
 ## Version
 
 This function is available since SDL_ttf 3.0.0.
+
+## See Also
+
+- [TTF_TagToString](TTF_TagToString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)

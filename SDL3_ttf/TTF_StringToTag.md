@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
-# TTF_GetGlyphScript
+# TTF_StringToTag
 
-Get the script used by a 32-bit codepoint.
+Convert from a 4 character string to a 32-bit tag.
 
 ## Header File
 
@@ -10,24 +10,22 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ## Syntax
 
 ```c
-Uint32 TTF_GetGlyphScript(Uint32 ch);
+Uint32 TTF_StringToTag(const char *string);
 ```
 
 ## Function Parameters
 
-|        |        |                              |
-| ------ | ------ | ---------------------------- |
-| Uint32 | **ch** | the character code to check. |
+|              |            |                                    |
+| ------------ | ---------- | ---------------------------------- |
+| const char * | **string** | the 4 character string to convert. |
 
 ## Return Value
 
-(Uint32) Returns an
-[ISO 15924 code](https://unicode.org/iso15924/iso15924-codes.html)
-on success, or 0 on failure; call SDL_GetError() for more information.
+(Uint32) Returns the 32-bit representation of the string.
 
 ## Thread Safety
 
-This function is thread-safe.
+It is safe to call this function from any thread.
 
 ## Version
 
