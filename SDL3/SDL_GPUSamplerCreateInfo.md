@@ -38,6 +38,10 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_CreateGPUSampler](SDL_CreateGPUSampler)
+- [SDL_GPUFilter](SDL_GPUFilter)
+- [SDL_GPUSamplerMipmapMode](SDL_GPUSamplerMipmapMode)
+- [SDL_GPUSamplerAddressMode](SDL_GPUSamplerAddressMode)
+- [SDL_GPUCompareOp](SDL_GPUCompareOp)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
