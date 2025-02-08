@@ -12,10 +12,6 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 #define SDL_WINDOWPOS_CENTERED_MASK    0x2FFF0000u
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)
 

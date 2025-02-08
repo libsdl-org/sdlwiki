@@ -36,11 +36,6 @@ This function is available since SDL 2.0.14.
 
 - [SDL_SetSurfaceRLE](SDL_SetSurfaceRLE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

@@ -61,11 +61,6 @@ This function is available since SDL 2.0.0.
 - [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
 - [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

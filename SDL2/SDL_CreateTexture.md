@@ -49,11 +49,6 @@ This function is available since SDL 2.0.0.
 - [SDL_QueryTexture](SDL_QueryTexture)
 - [SDL_UpdateTexture](SDL_UpdateTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

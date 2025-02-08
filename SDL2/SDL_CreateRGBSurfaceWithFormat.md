@@ -46,11 +46,6 @@ This function is available since SDL 2.0.5.
 - [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
 - [SDL_FreeSurface](SDL_FreeSurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

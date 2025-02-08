@@ -23,10 +23,6 @@ typedef struct SDL_MessageBoxData
 } SDL_MessageBoxData;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryMessagebox](CategoryMessagebox)
 

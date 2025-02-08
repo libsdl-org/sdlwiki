@@ -43,11 +43,6 @@ This function is available since SDL 2.0.14.
 
 - [SDL_JoystickHasRumbleTriggers](SDL_JoystickHasRumbleTriggers)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

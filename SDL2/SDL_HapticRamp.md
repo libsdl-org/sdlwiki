@@ -50,11 +50,6 @@ instead of linear.
 - [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP)
 - [SDL_HapticEffect](SDL_HapticEffect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

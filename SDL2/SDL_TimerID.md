@@ -12,10 +12,6 @@ Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 typedef int SDL_TimerID;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)
 

@@ -29,11 +29,6 @@ This function is available since SDL 2.0.0.
 - [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
 - [SDL_IsScreenSaverEnabled](SDL_IsScreenSaverEnabled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

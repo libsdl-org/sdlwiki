@@ -94,11 +94,6 @@ effect level.
 - [SDL_HapticLeftRight](SDL_HapticLeftRight)
 - [SDL_HapticCustom](SDL_HapticCustom)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

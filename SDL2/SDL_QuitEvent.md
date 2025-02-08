@@ -16,10 +16,6 @@ typedef struct SDL_QuitEvent
 } SDL_QuitEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -30,10 +30,6 @@ the introduction of PS5 controller support, this value defaults to the
 value of
 [SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE](SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE).
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

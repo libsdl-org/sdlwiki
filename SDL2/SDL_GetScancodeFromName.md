@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 - [SDL_GetScancodeName](SDL_GetScancodeName)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

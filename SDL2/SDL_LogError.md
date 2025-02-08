@@ -35,11 +35,6 @@ This function is available since SDL 2.0.0.
 - [SDL_LogVerbose](SDL_LogVerbose)
 - [SDL_LogWarn](SDL_LogWarn)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
 

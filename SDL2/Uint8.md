@@ -14,10 +14,6 @@ typedef uint8_t Uint8;
 #define SDL_MIN_UINT8   ((Uint8)0x00)           /* 0 */
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdInc](CategoryStdInc)
 

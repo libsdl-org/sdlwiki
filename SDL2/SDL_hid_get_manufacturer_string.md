@@ -28,10 +28,6 @@ int SDL_hid_get_manufacturer_string(SDL_hid_device *dev, wchar_t *string, size_t
 
 This function is available since SDL 2.0.18.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHIDAPI](CategoryHIDAPI)
 

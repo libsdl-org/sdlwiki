@@ -31,11 +31,6 @@ This function is available since SDL 2.0.0.
 - [SDL_TLSGet](SDL_TLSGet)
 - [SDL_TLSSet](SDL_TLSSet)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

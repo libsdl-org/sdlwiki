@@ -19,10 +19,6 @@ The variable can be set to the following values:
 - "0": Native UI components are not display. (default)
 - "1": Native UI components are displayed.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

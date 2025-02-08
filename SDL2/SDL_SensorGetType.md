@@ -28,10 +28,6 @@ SDL_SensorType SDL_SensorGetType(SDL_Sensor *sensor);
 
 This function is available since SDL 2.0.9.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySensor](CategorySensor)
 

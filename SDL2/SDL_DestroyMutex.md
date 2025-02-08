@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_UnlockMutex](SDL_UnlockMutex)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

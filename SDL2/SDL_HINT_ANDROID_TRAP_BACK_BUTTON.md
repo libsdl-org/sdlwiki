@@ -30,10 +30,6 @@ The variable can be set to the following values:
 The value of this hint is used at runtime, so it can be changed at any
 time.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

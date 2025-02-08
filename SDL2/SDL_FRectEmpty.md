@@ -12,10 +12,6 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 SDL_FORCE_INLINE SDL_bool SDL_FRectEmpty(const SDL_FRect *r);
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)
 

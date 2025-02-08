@@ -61,11 +61,6 @@ This function is available since SDL 2.0.0.
 - [SDL_PeepEvents](SDL_PeepEvents)
 - [SDL_PushEvent](SDL_PushEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

@@ -23,10 +23,6 @@ typedef struct SDL_JoyBallEvent
 } SDL_JoyBallEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -48,11 +48,6 @@ This function is available since SDL 2.0.1.
 
 - [SDL_UpdateTexture](SDL_UpdateTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

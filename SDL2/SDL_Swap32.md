@@ -27,11 +27,6 @@ SDL_FORCE_INLINE Uint32 SDL_Swap32(Uint32 x);
 - [SDL_SwapBE32](SDL_SwapBE32)
 - [SDL_SwapLE32](SDL_SwapLE32)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEndian](CategoryEndian)
 

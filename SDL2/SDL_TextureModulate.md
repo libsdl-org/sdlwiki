@@ -17,10 +17,6 @@ typedef enum SDL_TextureModulate
 } SDL_TextureModulate;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryRender](CategoryRender)
 

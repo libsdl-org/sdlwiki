@@ -66,11 +66,6 @@ This function is available since SDL 2.0.9.
 
 - [SDL_WaitThread](SDL_WaitThread)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

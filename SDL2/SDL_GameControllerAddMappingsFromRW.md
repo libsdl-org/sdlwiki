@@ -56,11 +56,6 @@ This function is available since SDL 2.0.2.
 - [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 - [SDL_CONTROLLERDEVICEADDED](SDL_CONTROLLERDEVICEADDED)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

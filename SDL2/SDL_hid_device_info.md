@@ -51,10 +51,6 @@ typedef struct SDL_hid_device_info
 } SDL_hid_device_info;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHIDAPI](CategoryHIDAPI)
 

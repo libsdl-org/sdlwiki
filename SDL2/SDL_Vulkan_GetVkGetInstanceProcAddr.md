@@ -28,10 +28,6 @@ flag.
 
 This function is available since SDL 2.0.6.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 

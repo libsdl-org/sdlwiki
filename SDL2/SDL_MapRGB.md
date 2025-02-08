@@ -53,11 +53,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetRGBA](SDL_GetRGBA)
 - [SDL_MapRGBA](SDL_MapRGBA)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

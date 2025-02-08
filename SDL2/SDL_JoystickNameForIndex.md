@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 - [SDL_JoystickName](SDL_JoystickName)
 - [SDL_JoystickOpen](SDL_JoystickOpen)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

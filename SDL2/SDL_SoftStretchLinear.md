@@ -19,10 +19,6 @@ int SDL_SoftStretchLinear(SDL_Surface * src,
 
 This function is available since SDL 2.0.16.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

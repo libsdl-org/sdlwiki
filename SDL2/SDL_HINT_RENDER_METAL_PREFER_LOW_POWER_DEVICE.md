@@ -21,10 +21,6 @@ This variable can be set to the following values:
 
 By default the prefered OS device is used.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -19,10 +19,6 @@ typedef enum SDL_PowerState
 } SDL_PowerState;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryPower](CategoryPower)
 

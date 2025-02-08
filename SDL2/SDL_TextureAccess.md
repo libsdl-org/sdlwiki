@@ -17,10 +17,6 @@ typedef enum SDL_TextureAccess
 } SDL_TextureAccess;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryRender](CategoryRender)
 

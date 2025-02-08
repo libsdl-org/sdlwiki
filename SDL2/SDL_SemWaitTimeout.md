@@ -46,11 +46,6 @@ This function is available since SDL 2.0.0.
 - [SDL_SemValue](SDL_SemValue)
 - [SDL_SemWait](SDL_SemWait)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

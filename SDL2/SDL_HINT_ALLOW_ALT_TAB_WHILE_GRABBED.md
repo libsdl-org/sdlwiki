@@ -24,10 +24,6 @@ The variable can be set to the following values:
   handling Alt+Tab while the keyboard is grabbed.
 - "1": SDL will minimize your window when Alt+Tab is pressed (default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

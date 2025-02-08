@@ -23,10 +23,6 @@ void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int pl
 
 This function is available since SDL 2.0.12.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

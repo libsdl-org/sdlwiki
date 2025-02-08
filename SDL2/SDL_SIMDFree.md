@@ -41,11 +41,6 @@ This function is available since SDL 2.0.10.
 - [SDL_SIMDAlloc](SDL_SIMDAlloc)
 - [SDL_SIMDRealloc](SDL_SIMDRealloc)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

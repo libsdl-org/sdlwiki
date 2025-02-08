@@ -12,10 +12,6 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 #define SDL_ANDROID_EXTERNAL_STORAGE_READ   0x01
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySystem](CategorySystem)
 

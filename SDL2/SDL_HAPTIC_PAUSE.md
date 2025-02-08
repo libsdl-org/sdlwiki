@@ -21,11 +21,6 @@ Devices supports being paused.
 - [SDL_HapticPause](SDL_HapticPause)
 - [SDL_HapticUnpause](SDL_HapticUnpause)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

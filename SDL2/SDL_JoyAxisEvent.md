@@ -23,10 +23,6 @@ typedef struct SDL_JoyAxisEvent
 } SDL_JoyAxisEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

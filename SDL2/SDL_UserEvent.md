@@ -20,10 +20,6 @@ typedef struct SDL_UserEvent
 } SDL_UserEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

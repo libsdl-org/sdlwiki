@@ -24,10 +24,6 @@ typedef SDL_AssertState (SDLCALL *SDL_AssertionHandler)( const SDL_AssertData* d
 Returns an [SDL_AssertState](SDL_AssertState) value indicating how to
 handle the failure.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAssert](CategoryAssert)
 

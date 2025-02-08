@@ -28,11 +28,6 @@ typedef enum SDL_HitTestResult
 
 - [SDL_HitTest](SDL_HitTest)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

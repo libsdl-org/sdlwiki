@@ -33,11 +33,6 @@ This function is available since SDL 2.0.5.
 - [SDL_GetHint](SDL_GetHint)
 - [SDL_SetHint](SDL_SetHint)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 

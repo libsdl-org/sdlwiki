@@ -12,10 +12,6 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 #define SDL_HINT_MOUSE_NORMAL_SPEED_SCALE    "SDL_MOUSE_NORMAL_SPEED_SCALE"
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

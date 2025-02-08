@@ -20,10 +20,6 @@ int SDL_JoystickAttachVirtualEx(const SDL_VirtualJoystickDesc *desc);
 
 This function is available since SDL 2.24.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

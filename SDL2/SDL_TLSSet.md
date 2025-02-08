@@ -45,11 +45,6 @@ This function is available since SDL 2.0.0.
 - [SDL_TLSCreate](SDL_TLSCreate)
 - [SDL_TLSGet](SDL_TLSGet)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

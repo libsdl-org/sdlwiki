@@ -48,11 +48,6 @@ This function is available since SDL 2.0.16.
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

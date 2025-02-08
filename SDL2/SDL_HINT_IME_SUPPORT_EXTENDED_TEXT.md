@@ -25,10 +25,6 @@ The variable can be set to the following values:
   (default)
 - "1": Modern behavior.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

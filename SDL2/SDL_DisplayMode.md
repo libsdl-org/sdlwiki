@@ -29,11 +29,6 @@ typedef struct SDL_DisplayMode
 - [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 - [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
 

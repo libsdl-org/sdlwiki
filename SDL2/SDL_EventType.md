@@ -136,10 +136,6 @@ typedef enum SDL_EventType
 } SDL_EventType;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEvents](CategoryEvents)
 

@@ -21,11 +21,6 @@ typedef struct SDL_Point
 - [SDL_EnclosePoints](SDL_EnclosePoints)
 - [SDL_PointInRect](SDL_PointInRect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)
 

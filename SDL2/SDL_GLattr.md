@@ -80,10 +80,6 @@ set to
 or
 [SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH](SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH).
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

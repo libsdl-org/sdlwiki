@@ -45,11 +45,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
 - [SDL_HapticStopEffect](SDL_HapticStopEffect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

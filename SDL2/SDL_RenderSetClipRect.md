@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderGetClipRect](SDL_RenderGetClipRect)
 - [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

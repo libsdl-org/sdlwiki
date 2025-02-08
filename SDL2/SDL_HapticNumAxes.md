@@ -32,10 +32,6 @@ The number of haptic axes might be useful if working with the
 
 This function is available since SDL 2.0.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

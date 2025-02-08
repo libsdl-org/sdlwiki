@@ -14,10 +14,6 @@ typedef uint64_t Uint64;
 #define SDL_MIN_UINT64  ((Uint64)(0x0000000000000000ull))   /* 0 */
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdInc](CategoryStdInc)
 

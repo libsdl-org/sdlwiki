@@ -38,11 +38,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_FreeFormat](SDL_FreeFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

@@ -21,10 +21,6 @@ typedef struct SDL_JoyButtonEvent
 } SDL_JoyButtonEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

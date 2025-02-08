@@ -25,10 +25,6 @@ flags):
 - "StaysOnTop"
 - "BypassWindowManager"
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

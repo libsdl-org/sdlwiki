@@ -16,10 +16,6 @@ void SDL_SetYUVConversionMode(SDL_YUV_CONVERSION_MODE mode);
 
 This function is available since SDL 2.0.8.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

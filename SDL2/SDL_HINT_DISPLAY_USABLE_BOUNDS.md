@@ -23,10 +23,6 @@ paired with a well-behaved application.
 The contents of this hint must be 4 comma-separated integers, the first is
 the bounds x, then y, width and height, in that order.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

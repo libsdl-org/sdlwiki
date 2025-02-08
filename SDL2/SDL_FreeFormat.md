@@ -26,11 +26,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_AllocFormat](SDL_AllocFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

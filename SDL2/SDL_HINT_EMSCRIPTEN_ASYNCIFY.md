@@ -25,10 +25,6 @@ The variable can be set to the following values:
   manually or use asyncify for other purposes)
 - "1": Enable emscripten_sleep calls (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

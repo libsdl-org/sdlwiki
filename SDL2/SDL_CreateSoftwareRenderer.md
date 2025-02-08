@@ -43,11 +43,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

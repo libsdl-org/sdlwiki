@@ -32,10 +32,6 @@ OutputDebugString() on Windows, and can be funneled by the app with
 This hint can be toggled on and off at runtime, if you only need to log
 events for a small subset of program execution.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

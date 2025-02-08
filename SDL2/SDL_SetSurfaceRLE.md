@@ -40,11 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_LockSurface](SDL_LockSurface)
 - [SDL_UnlockSurface](SDL_UnlockSurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

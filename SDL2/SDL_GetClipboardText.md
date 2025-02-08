@@ -33,11 +33,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HasClipboardText](SDL_HasClipboardText)
 - [SDL_SetClipboardText](SDL_SetClipboardText)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)
 

@@ -36,11 +36,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_WriteLE64](SDL_WriteLE64)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

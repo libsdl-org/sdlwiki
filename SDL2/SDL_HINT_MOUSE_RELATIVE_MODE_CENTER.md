@@ -26,10 +26,6 @@ in the correct position when using high DPI mice.
 
 By default SDL will constrain the mouse to the center of the window
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -23,10 +23,6 @@ The variable can be set to the following values:
   events are not sent, and text that is being composed will be rendered in
   its own UI.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

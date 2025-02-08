@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 - [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

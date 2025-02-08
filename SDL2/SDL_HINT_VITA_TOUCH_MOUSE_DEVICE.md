@@ -22,10 +22,6 @@ This variable can be set to the following values:
 
 By default SDL will generate mouse events for all touch devices
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

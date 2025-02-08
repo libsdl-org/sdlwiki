@@ -29,11 +29,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
 - [SDL_DestroyCond](SDL_DestroyCond)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

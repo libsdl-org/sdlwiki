@@ -26,10 +26,6 @@ hexadecimal form, e.g.
 The variable can also take the form of @file, in which case the named file
 will be loaded and interpreted as the value of the variable.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

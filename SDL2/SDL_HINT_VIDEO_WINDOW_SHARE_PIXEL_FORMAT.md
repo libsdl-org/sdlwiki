@@ -32,10 +32,6 @@ This variable can be set to the following values: The address (as a string
 [SDL_CreateWindowFrom](SDL_CreateWindowFrom)() should share a pixel format
 with.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

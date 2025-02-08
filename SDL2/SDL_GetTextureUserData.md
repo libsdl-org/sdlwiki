@@ -31,11 +31,6 @@ This function is available since SDL 2.0.18.
 
 - [SDL_SetTextureUserData](SDL_SetTextureUserData)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

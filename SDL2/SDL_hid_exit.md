@@ -29,11 +29,6 @@ This function is available since SDL 2.0.18.
 
 - [SDL_hid_init](SDL_hid_init)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHIDAPI](CategoryHIDAPI)
 

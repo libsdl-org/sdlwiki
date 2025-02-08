@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
 - [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

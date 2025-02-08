@@ -29,10 +29,6 @@ implemented. Currently supported the following drivers:
 - KMSDRM (kmsdrm)
 - Raspberry Pi (raspberrypi)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

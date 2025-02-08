@@ -107,11 +107,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

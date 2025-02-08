@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": The accelerometer is not listed as a joystick
 - "1": The accelerometer is available as a 3 axis joystick (the default).
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

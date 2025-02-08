@@ -26,10 +26,6 @@ void SDL_UnionFRect(const SDL_FRect * A,
 
 This function is available since SDL 2.0.22.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)
 

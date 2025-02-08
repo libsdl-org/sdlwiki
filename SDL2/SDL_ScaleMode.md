@@ -17,10 +17,6 @@ typedef enum SDL_ScaleMode
 } SDL_ScaleMode;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryRender](CategoryRender)
 

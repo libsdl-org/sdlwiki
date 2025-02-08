@@ -27,10 +27,6 @@ SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
 
 This function is available since SDL 2.0.9.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySensor](CategorySensor)
 

@@ -25,10 +25,6 @@ This variable can be set to the following values:
   Sections. (default)
 - "1": Force the use of Critical Sections in all cases.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -47,10 +47,6 @@ Bitmap data pads all rows to multiples of 4 bytes).
 
 This function is available since SDL 2.0.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

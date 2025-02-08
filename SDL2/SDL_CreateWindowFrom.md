@@ -40,11 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

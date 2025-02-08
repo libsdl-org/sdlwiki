@@ -21,10 +21,6 @@ SDL_bool SDL_IsAndroidTV(void);
 
 This function is available since SDL 2.0.8.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

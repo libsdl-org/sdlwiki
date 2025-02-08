@@ -31,11 +31,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_LockAudioDevice](SDL_LockAudioDevice)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

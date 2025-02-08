@@ -19,10 +19,6 @@ int SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
 
 This function is available since SDL 2.0.7.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdInc](CategoryStdInc)
 

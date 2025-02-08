@@ -28,11 +28,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetAssertionReport](SDL_GetAssertionReport)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssert](CategoryAssert)
 

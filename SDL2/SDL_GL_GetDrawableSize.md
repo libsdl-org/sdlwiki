@@ -40,11 +40,6 @@ This function is available since SDL 2.0.1.
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

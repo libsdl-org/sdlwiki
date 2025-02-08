@@ -24,10 +24,6 @@ impossible to programmatically move a window to the foreground, for
 "security" reasons. See http://stackoverflow.com/a/34414846 for a
 discussion.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

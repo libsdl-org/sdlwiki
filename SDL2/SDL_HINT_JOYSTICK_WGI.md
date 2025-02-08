@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": WGI is not used
 - "1": WGI is used (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

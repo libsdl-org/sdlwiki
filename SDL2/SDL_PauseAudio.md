@@ -40,11 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetAudioStatus](SDL_GetAudioStatus)
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

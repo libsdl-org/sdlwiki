@@ -23,10 +23,6 @@ This variable can be set to the following values:
 
 By default, SDL does not use Direct3D Debug Layer.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

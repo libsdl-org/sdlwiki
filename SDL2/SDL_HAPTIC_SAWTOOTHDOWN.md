@@ -20,11 +20,6 @@ Periodic haptic effect that simulates saw tooth down waves.
 
 - [SDL_HapticPeriodic](SDL_HapticPeriodic)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

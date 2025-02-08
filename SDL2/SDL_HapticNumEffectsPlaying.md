@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticNumEffects](SDL_HapticNumEffects)
 - [SDL_HapticQuery](SDL_HapticQuery)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

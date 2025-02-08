@@ -36,11 +36,6 @@ This function is available since SDL 2.0.2.
 - [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
 - [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 

@@ -21,10 +21,6 @@ This variable can be set to the following values:
 
 By default SDL will use XRandR.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

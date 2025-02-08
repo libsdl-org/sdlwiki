@@ -29,10 +29,6 @@ used to control aspects of this behavior.
 On many systems you require special privileges to set high or time critical
 priority.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryThread](CategoryThread)
 

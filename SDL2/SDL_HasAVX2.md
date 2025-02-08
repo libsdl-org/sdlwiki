@@ -38,11 +38,6 @@ This function is available since SDL 2.0.4.
 - [SDL_HasSSE41](SDL_HasSSE41)
 - [SDL_HasSSE42](SDL_HasSSE42)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

@@ -20,10 +20,6 @@ typedef struct SDL_TextEditingEvent
 } SDL_TextEditingEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

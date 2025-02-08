@@ -29,10 +29,6 @@ typedef enum SDL_SYSWM_TYPE
 } SDL_SYSWM_TYPE;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySYSWM](CategorySYSWM)
 

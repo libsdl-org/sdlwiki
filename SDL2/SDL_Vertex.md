@@ -17,10 +17,6 @@ typedef struct SDL_Vertex
 } SDL_Vertex;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRender](CategoryRender)
 

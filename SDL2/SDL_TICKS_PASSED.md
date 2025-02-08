@@ -33,10 +33,6 @@ Note that this does not handle tick differences greater than 2^31 so take
 care when using the above kind of code with large timeout delays (tens of
 days).
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryTimer](CategoryTimer)
 

@@ -58,11 +58,6 @@ This function is available since SDL 2.0.0.
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_PushEvent](SDL_PushEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

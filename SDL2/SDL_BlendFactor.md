@@ -24,10 +24,6 @@ typedef enum SDL_BlendFactor
 } SDL_BlendFactor;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryBlendmode](CategoryBlendmode)
 

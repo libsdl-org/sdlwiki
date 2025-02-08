@@ -21,10 +21,6 @@ typedef void (SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const
 | **oldValue** | the previous hint value.                                                       |
 | **newValue** | the new value hint is to be set to.                                            |
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryHints](CategoryHints)
 

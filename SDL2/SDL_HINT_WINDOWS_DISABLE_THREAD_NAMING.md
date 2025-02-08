@@ -28,10 +28,6 @@ The variable can be set to the following values:
   (default) This is necessary with .NET languages or debuggers that aren't
   Visual Studio.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

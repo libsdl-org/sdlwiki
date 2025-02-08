@@ -32,11 +32,6 @@ This function is available since SDL 2.28.0.
 - [SDL_GetWindowSurface](SDL_GetWindowSurface)
 - [SDL_HasWindowSurface](SDL_HasWindowSurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

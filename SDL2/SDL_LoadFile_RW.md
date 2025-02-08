@@ -38,10 +38,6 @@ The data should be freed with [SDL_free](SDL_free)().
 
 This function is available since SDL 2.0.6.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

@@ -36,11 +36,6 @@ This function is available since SDL 2.0.0.
 - [SDL_Init](SDL_Init)
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

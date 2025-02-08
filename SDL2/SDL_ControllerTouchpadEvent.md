@@ -22,10 +22,6 @@ typedef struct SDL_ControllerTouchpadEvent
 } SDL_ControllerTouchpadEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -38,11 +38,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_JoystickGetBall](SDL_JoystickGetBall)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

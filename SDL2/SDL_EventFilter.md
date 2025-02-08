@@ -30,11 +30,6 @@ ignored.
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)
 

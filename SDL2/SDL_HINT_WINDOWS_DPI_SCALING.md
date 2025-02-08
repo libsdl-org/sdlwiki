@@ -35,10 +35,6 @@ This variable can be set to the following values:
 - "1": SDL coordinates are in DPI-scaled points. Automatically resize
   windows as needed on displays with non-100% scale factors.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

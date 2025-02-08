@@ -17,10 +17,6 @@ typedef enum SDL_RendererFlip
 } SDL_RendererFlip;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryRender](CategoryRender)
 

@@ -43,11 +43,6 @@ This function is available since SDL 2.0.0.
 - [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
 - [SDL_SaveBMP](SDL_SaveBMP)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

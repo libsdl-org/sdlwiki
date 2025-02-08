@@ -32,11 +32,6 @@ This function is available since SDL 2.24.0.
 
 - [SDL_JoystickPathForIndex](SDL_JoystickPathForIndex)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

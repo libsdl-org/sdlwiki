@@ -15,10 +15,6 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
      (SDL_MAJOR_VERSION > X || SDL_MINOR_VERSION > Y || SDL_PATCHLEVEL >= Z))
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 

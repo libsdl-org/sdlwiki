@@ -23,10 +23,6 @@ int SDL_JoystickAttachVirtual(SDL_JoystickType type,
 
 This function is available since SDL 2.0.14.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

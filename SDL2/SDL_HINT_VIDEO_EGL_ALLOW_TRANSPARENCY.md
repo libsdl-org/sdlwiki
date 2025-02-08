@@ -19,10 +19,6 @@ format has an alpha channel. This is not always true, however, so by
 default SDL will try to enforce opaque composition. To override this
 behavior, you can set this hint to "1".
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

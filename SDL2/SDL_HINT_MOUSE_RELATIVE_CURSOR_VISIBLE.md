@@ -22,10 +22,6 @@ Note that for systems without raw hardware inputs, relative mode is
 implemented using warping, so the hardware cursor will visibly warp between
 frames if this is enabled on those systems.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -26,11 +26,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_HapticOpen](SDL_HapticOpen)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

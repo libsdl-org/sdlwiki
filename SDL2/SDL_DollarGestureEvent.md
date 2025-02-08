@@ -22,10 +22,6 @@ typedef struct SDL_DollarGestureEvent
 } SDL_DollarGestureEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

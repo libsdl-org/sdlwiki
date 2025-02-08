@@ -18,10 +18,6 @@ typedef struct SDL_atomic_t {
 
 It is a struct so people don't accidentally use numeric operations on it.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAtomic](CategoryAtomic)
 

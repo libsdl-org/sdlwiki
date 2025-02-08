@@ -23,10 +23,6 @@ By default the mouse is captured while mouse buttons are pressed so if the
 mouse is dragged outside the window, the application continues to receive
 mouse events until the button is released.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

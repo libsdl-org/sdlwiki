@@ -44,11 +44,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
 - [SDL_IsGameController](SDL_IsGameController)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

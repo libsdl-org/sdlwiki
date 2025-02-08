@@ -24,10 +24,6 @@ typedef struct SDL_TouchFingerEvent
 } SDL_TouchFingerEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -22,10 +22,6 @@ This variable can be set to the following values:
 
 This hint can be toggled on and off at runtime.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

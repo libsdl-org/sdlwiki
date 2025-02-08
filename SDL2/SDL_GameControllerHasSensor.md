@@ -28,10 +28,6 @@ SDL_bool SDL_GameControllerHasSensor(SDL_GameController *gamecontroller, SDL_Sen
 
 This function is available since SDL 2.0.14.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

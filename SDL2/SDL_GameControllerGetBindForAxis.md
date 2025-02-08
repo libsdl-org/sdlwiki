@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GameControllerGetBindForButton](SDL_GameControllerGetBindForButton)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

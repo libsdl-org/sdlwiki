@@ -41,11 +41,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_FlushEvent](SDL_FlushEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

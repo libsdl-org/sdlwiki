@@ -28,10 +28,6 @@ int SDL_FlashWindow(SDL_Window * window, SDL_FlashOperation operation);
 
 This function is available since SDL 2.0.16.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

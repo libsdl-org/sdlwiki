@@ -31,11 +31,6 @@ This function is available since SDL 2.0.18.
 
 - [SDL_GameControllerRumble](SDL_GameControllerRumble)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

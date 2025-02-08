@@ -30,11 +30,6 @@ This function is available since SDL 2.0.14.
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_CreateWindow](SDL_CreateWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)
 

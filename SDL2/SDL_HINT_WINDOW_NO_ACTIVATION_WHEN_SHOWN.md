@@ -24,10 +24,6 @@ This variable can be set to the following values:
 By default SDL will activate the window when the
 [SDL_ShowWindow](SDL_ShowWindow) function is called
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

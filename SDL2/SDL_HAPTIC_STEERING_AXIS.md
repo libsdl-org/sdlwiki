@@ -21,11 +21,6 @@ guess the correct axis.
 
 - [SDL_HapticDirection](SDL_HapticDirection)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

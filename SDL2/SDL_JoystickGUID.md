@@ -16,10 +16,6 @@ typedef SDL_GUID SDL_JoystickGUID;
 
 This is just a standard [SDL_GUID](SDL_GUID) by a different name.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryJoystick](CategoryJoystick)
 

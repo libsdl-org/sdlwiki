@@ -25,10 +25,6 @@ This event is enabled by default, you can disable it with
 
 If this event is enabled, you must free the filename in the event.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

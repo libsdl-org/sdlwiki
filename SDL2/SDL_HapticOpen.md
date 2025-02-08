@@ -48,11 +48,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticSetGain](SDL_HapticSetGain)
 - [SDL_HapticStopAll](SDL_HapticStopAll)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

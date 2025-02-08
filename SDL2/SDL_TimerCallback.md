@@ -19,10 +19,6 @@ next timer interval. If the returned value is the same as the one passed
 in, the periodic alarm continues, otherwise a new alarm is scheduled. If
 the callback returns 0, the periodic alarm is cancelled.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)
 

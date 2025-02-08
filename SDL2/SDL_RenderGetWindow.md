@@ -27,10 +27,6 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.22.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

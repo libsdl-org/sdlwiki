@@ -36,10 +36,6 @@ reported by [SDL_GameControllerGetAxis](SDL_GameControllerGetAxis)(). Note
 that this is not the same range that will be reported by the lower-level
 [SDL_GetJoystickAxis](SDL_GetJoystickAxis)().
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGameController](CategoryGameController)
 

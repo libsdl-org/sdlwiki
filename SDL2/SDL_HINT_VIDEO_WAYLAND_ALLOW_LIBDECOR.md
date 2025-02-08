@@ -22,10 +22,6 @@ This variable can be set to the following values:
 libdecor is used over xdg-shell when xdg-decoration protocol is
 unavailable.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

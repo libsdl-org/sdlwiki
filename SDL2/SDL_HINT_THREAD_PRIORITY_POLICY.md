@@ -23,10 +23,6 @@ requirements can override SDL's default behavior with this hint.
 pthread hint values are "current", "other", "fifo" and "rr". Currently no
 other platform hint values are defined but may be in the future.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

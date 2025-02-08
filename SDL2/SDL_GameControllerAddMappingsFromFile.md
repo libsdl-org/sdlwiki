@@ -16,10 +16,6 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 
 Convenience macro.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryGameController](CategoryGameController)
 

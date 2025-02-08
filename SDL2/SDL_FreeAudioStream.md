@@ -25,11 +25,6 @@ This function is available since SDL 2.0.7.
 - [SDL_AudioStreamFlush](SDL_AudioStreamFlush)
 - [SDL_AudioStreamClear](SDL_AudioStreamClear)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

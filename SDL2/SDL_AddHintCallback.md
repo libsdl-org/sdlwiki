@@ -30,11 +30,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_DelHintCallback](SDL_DelHintCallback)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 

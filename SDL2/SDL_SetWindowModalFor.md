@@ -28,10 +28,6 @@ int SDL_SetWindowModalFor(SDL_Window * modal_window, SDL_Window * parent_window)
 
 This function is available since SDL 2.0.5.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": IOKit is not used
 - "1": IOKit is used (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

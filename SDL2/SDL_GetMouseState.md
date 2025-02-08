@@ -42,11 +42,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
 - [SDL_PumpEvents](SDL_PumpEvents)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

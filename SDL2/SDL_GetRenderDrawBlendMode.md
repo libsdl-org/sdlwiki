@@ -33,11 +33,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

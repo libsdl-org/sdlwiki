@@ -27,11 +27,6 @@ This function is available since SDL 2.0.0.
 - [SDL_MaximizeWindow](SDL_MaximizeWindow)
 - [SDL_RestoreWindow](SDL_RestoreWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

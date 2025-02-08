@@ -39,11 +39,6 @@ default on desktop platforms, and disabled by default on mobile platforms!
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_StopTextInput](SDL_StopTextInput)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

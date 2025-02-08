@@ -27,10 +27,6 @@ SDL_JoystickType SDL_JoystickGetType(SDL_Joystick *joystick);
 
 This function is available since SDL 2.0.6.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

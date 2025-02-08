@@ -57,11 +57,6 @@ This function is available since SDL 2.0.2.
 - [SDL_CreateThread](SDL_CreateThread)
 - [SDL_WaitThread](SDL_WaitThread)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

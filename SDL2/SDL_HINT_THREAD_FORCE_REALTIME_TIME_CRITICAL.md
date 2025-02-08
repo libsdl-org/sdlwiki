@@ -36,10 +36,6 @@ This variable can be set to the following values:
   [SDL_THREAD_PRIORITY_TIME_CRITICAL](SDL_THREAD_PRIORITY_TIME_CRITICAL) to
   a realtime scheduling policy
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -44,11 +44,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

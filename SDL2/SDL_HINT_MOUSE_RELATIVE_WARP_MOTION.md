@@ -23,10 +23,6 @@ By default warping the mouse will not generate motion events in relative
 mode. This avoids the application having to filter out large relative
 motion due to warping.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

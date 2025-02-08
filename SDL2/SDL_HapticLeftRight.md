@@ -37,11 +37,6 @@ is high frequency, and the large (left) motor is low frequency.
 - [SDL_HAPTIC_LEFTRIGHT](SDL_HAPTIC_LEFTRIGHT)
 - [SDL_HapticEffect](SDL_HapticEffect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

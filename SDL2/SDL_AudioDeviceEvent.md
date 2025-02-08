@@ -21,10 +21,6 @@ typedef struct SDL_AudioDeviceEvent
 } SDL_AudioDeviceEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

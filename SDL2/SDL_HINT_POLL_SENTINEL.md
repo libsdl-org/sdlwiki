@@ -27,10 +27,6 @@ frequency mouse.
 
 By default, poll sentinels are enabled.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

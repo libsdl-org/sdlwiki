@@ -12,10 +12,6 @@ Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_
 typedef int (*SDL_main_func)(int argc, char *argv[]);
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMain](CategoryMain)
 

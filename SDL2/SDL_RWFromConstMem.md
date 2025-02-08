@@ -56,11 +56,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RWseek](SDL_RWseek)
 - [SDL_RWtell](SDL_RWtell)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

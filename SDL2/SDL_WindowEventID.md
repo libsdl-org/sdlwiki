@@ -38,10 +38,6 @@ typedef enum SDL_WindowEventID
 } SDL_WindowEventID;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

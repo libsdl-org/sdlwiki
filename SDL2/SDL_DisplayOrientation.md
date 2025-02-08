@@ -19,10 +19,6 @@ typedef enum SDL_DisplayOrientation
 } SDL_DisplayOrientation;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

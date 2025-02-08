@@ -19,10 +19,6 @@ The variable can be set to the following values:
 - "0": Disable XInput detection (only uses direct input)
 - "1": Enable XInput detection (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

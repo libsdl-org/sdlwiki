@@ -27,11 +27,6 @@ SDL_FORCE_INLINE float SDL_SwapFloat(float x);
 - [SDL_SwapFloatBE](SDL_SwapFloatBE)
 - [SDL_SwapFloatLE](SDL_SwapFloatLE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEndian](CategoryEndian)
 

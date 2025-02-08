@@ -44,11 +44,6 @@ This function is available since SDL 2.0.3.
 
 - [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

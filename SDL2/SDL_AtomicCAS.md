@@ -40,11 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_AtomicGet](SDL_AtomicGet)
 - [SDL_AtomicSet](SDL_AtomicSet)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 

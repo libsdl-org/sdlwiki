@@ -39,11 +39,6 @@ This function is available since SDL 2.0.18.
 - [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 - [SDL_Vertex](SDL_Vertex)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

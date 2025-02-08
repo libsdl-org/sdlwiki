@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_ThreadID](SDL_ThreadID)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

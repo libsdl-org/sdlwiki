@@ -19,10 +19,6 @@ The maximum number of [SDL_AudioFilter](SDL_AudioFilter) functions in
 [SDL_AudioCVT](SDL_AudioCVT).filters array has 10 pointers, one of which is
 the terminating NULL pointer.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAudio](CategoryAudio)
 

@@ -24,10 +24,6 @@ This variable is a space delimited list of the following values:
 - "Portrait"
 - "PortraitUpsideDown"
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

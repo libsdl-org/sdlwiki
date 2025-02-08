@@ -67,11 +67,6 @@ This function is available since SDL 2.0.0.
 - [SDL_PauseAudio](SDL_PauseAudio)
 - [SDL_UnlockAudio](SDL_UnlockAudio)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

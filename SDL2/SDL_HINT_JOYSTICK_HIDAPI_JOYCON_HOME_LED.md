@@ -23,10 +23,6 @@ By default the Home button LED state is not changed. This hint can also be
 set to a floating point value between 0.0 and 1.0 which controls the
 brightness of the Home button LED.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

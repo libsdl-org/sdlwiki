@@ -27,11 +27,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_AudioInit](SDL_AudioInit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

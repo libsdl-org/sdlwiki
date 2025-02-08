@@ -32,11 +32,6 @@ This function is available since SDL 2.0.5.
 
 - [SDL_RenderSetIntegerScale](SDL_RenderSetIntegerScale)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

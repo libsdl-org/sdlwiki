@@ -16,10 +16,6 @@ typedef enum SDL_MouseWheelDirection
 } SDL_MouseWheelDirection;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryMouse](CategoryMouse)
 

@@ -30,10 +30,6 @@ This variable can be set to the following values:
 
 This hint is available since SDL 2.32.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -27,11 +27,6 @@ SDL_FORCE_INLINE Uint64 SDL_Swap64(Uint64 x);
 - [SDL_SwapBE64](SDL_SwapBE64)
 - [SDL_SwapLE64](SDL_SwapLE64)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEndian](CategoryEndian)
 

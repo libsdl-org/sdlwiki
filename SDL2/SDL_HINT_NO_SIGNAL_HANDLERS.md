@@ -23,10 +23,6 @@ The variable can be set to the following values:
   signal, convert it into an [SDL_QUIT](SDL_QUIT) event.
 - "1": SDL will not install a signal handler at all.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

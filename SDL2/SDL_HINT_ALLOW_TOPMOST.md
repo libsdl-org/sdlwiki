@@ -22,10 +22,6 @@ This variable can be set to the following values:
 - "0": don't allow topmost
 - "1": allow topmost
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

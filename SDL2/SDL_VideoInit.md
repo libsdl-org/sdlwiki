@@ -53,11 +53,6 @@ This function is available since SDL 2.0.0.
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 - [SDL_VideoQuit](SDL_VideoQuit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

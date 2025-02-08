@@ -26,11 +26,6 @@ typedef struct SDL_Rect
 - [SDL_UnionRect](SDL_UnionRect)
 - [SDL_EnclosePoints](SDL_EnclosePoints)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)
 

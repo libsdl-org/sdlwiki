@@ -37,10 +37,6 @@ For multi-channel audio, the default SDL channel mapping is:
 8:  FL  FR  FC LFE  BL  BR  SL  SR  (7.1 surround)
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAudio](CategoryAudio)
 

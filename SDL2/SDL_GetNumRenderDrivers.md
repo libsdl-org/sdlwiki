@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_GetRenderDriverInfo](SDL_GetRenderDriverInfo)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

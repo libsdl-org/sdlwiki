@@ -28,11 +28,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_BlitSurface](SDL_BlitSurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

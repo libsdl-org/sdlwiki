@@ -51,10 +51,6 @@ By default the application category is enabled at the INFO level, the
 assert category is enabled at the WARN level, test is enabled at the
 VERBOSE level and all other categories are enabled at the ERROR level.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryLog](CategoryLog)
 

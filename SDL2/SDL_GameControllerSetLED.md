@@ -29,10 +29,6 @@ int SDL_GameControllerSetLED(SDL_GameController *gamecontroller, Uint8 red, Uint
 
 This function is available since SDL 2.0.14.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

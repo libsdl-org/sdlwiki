@@ -35,11 +35,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetCursor](SDL_GetCursor)
 - [SDL_ShowCursor](SDL_ShowCursor)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

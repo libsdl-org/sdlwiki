@@ -45,11 +45,6 @@ This function is available since SDL 2.0.0.
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 - [SDL_QueryTexture](SDL_QueryTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

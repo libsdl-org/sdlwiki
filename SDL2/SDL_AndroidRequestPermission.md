@@ -31,10 +31,6 @@ This blocks the calling thread until the permission is granted or denied.
 
 This function is available since SDL 2.0.14.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

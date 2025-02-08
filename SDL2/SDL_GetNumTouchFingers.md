@@ -32,11 +32,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetTouchFinger](SDL_GetTouchFinger)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTouch](CategoryTouch)
 

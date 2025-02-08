@@ -27,11 +27,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HideWindow](SDL_HideWindow)
 - [SDL_RaiseWindow](SDL_RaiseWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

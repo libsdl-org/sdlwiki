@@ -28,10 +28,6 @@ int SDL_GDKRunApp(SDL_main_func mainFunction, void *reserved);
 
 This function is available since SDL 2.24.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
 

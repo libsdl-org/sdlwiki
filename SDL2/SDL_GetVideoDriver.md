@@ -36,11 +36,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

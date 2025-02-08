@@ -45,11 +45,6 @@ This function is available since SDL 2.0.0.
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_WaitEvent](SDL_WaitEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

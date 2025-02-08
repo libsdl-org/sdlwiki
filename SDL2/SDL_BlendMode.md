@@ -32,10 +32,6 @@ typedef enum SDL_BlendMode
 } SDL_BlendMode;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryBlendmode](CategoryBlendmode)
 

@@ -32,11 +32,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_ReadU8](SDL_ReadU8)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

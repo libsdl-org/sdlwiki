@@ -20,10 +20,6 @@ typedef void (SDLCALL * SDL_AudioCallback) (void *userdata, Uint8 * stream, int 
 | **stream**   | A pointer to the audio data buffer.                                                      |
 | **len**      | Length of **stream** in bytes.                                                           |
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)
 

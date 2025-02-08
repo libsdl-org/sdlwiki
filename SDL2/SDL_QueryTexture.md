@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_CreateTexture](SDL_CreateTexture)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

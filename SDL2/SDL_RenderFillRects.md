@@ -42,11 +42,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderFillRect](SDL_RenderFillRect)
 - [SDL_RenderPresent](SDL_RenderPresent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

@@ -28,10 +28,6 @@ int SDL_UIKitRunApp(int argc, char *argv[], SDL_main_func mainFunction);
 
 This function is available since SDL 2.0.10.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
 

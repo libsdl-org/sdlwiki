@@ -14,10 +14,6 @@ typedef uint32_t Uint32;
 #define SDL_MIN_UINT32  ((Uint32)0x00000000)    /* 0 */
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdInc](CategoryStdInc)
 

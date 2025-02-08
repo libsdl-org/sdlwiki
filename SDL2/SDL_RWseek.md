@@ -59,11 +59,6 @@ This function is available since SDL 2.0.10.
 - [SDL_RWtell](SDL_RWtell)
 - [SDL_RWwrite](SDL_RWwrite)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

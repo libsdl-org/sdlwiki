@@ -63,11 +63,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_ShowMessageBox](SDL_ShowMessageBox)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMessagebox](CategoryMessagebox)
 

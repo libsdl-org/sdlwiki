@@ -26,11 +26,6 @@ during [SDL_Init](SDL_Init).
 
 - [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

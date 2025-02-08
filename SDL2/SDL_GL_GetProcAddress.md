@@ -76,11 +76,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

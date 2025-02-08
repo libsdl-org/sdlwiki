@@ -122,11 +122,6 @@ from the south means the user will have to pull the stick to counteract):
 - [SDL_HapticEffect](SDL_HapticEffect)
 - [SDL_HapticNumAxes](SDL_HapticNumAxes)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

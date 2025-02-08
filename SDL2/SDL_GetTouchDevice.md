@@ -32,11 +32,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTouch](CategoryTouch)
 

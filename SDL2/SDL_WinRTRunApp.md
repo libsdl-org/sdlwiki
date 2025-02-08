@@ -28,10 +28,6 @@ int SDL_WinRTRunApp(SDL_main_func mainFunction, void * reserved);
 
 This function is available since SDL 2.0.3.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
 

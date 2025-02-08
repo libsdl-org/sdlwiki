@@ -25,10 +25,6 @@ This variable can be set to the following values:
 - "dropframe": Decode until the first incomplete sample frame
 - "dropblock": Decode until the first incomplete block (default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

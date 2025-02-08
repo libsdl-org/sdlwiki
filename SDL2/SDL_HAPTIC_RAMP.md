@@ -20,11 +20,6 @@ Ramp haptic effect.
 
 - [SDL_HapticRamp](SDL_HapticRamp)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

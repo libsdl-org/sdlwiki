@@ -38,11 +38,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_CreateWindow](SDL_CreateWindow)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

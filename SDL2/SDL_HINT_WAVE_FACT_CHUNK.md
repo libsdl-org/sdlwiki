@@ -36,10 +36,6 @@ This variable can be set to the following values:
   samples is zero
 - "ignore": Ignore fact chunk entirely (default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

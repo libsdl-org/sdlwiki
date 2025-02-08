@@ -23,10 +23,6 @@ typedef struct SDL_MultiGestureEvent
 } SDL_MultiGestureEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -39,11 +39,6 @@ This function is available since SDL 2.0.5.
 
 - [SDL_GetWindowOpacity](SDL_GetWindowOpacity)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

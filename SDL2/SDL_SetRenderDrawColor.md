@@ -51,11 +51,6 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderFillRect](SDL_RenderFillRect)
 - [SDL_RenderFillRects](SDL_RenderFillRects)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

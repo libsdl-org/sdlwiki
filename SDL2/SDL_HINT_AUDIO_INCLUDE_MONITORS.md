@@ -29,10 +29,6 @@ The default value is "0". This hint must be set before
 This hint is available since SDL 2.0.16. Before then, virtual devices are
 always ignored.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

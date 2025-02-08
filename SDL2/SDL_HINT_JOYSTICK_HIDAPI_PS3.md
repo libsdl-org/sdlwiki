@@ -27,10 +27,6 @@ It is not possible to use this driver on Windows, due to limitations in the
 default drivers installed. See https://github.com/ViGEm/DsHidMini for an
 alternative driver on Windows.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

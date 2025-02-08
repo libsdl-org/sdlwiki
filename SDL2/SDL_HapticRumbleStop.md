@@ -33,11 +33,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
 - [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

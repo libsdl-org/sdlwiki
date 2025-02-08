@@ -23,10 +23,6 @@ The type should be one of: Xbox360 XboxOne PS3 PS4 PS5 SwitchPro
 This hint affects what driver is used, and must be set before calling
 [SDL_Init](SDL_Init)([SDL_INIT_GAMECONTROLLER](SDL_INIT_GAMECONTROLLER))
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

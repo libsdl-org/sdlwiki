@@ -42,10 +42,6 @@ value of [`SDL_JOYSTICK_AXIS_MIN`](SDL_JOYSTICK_AXIS_MIN).
 
 This function is available since SDL 2.0.14.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

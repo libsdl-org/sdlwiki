@@ -23,10 +23,6 @@ typedef struct SDL_WindowEvent
 } SDL_WindowEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -22,10 +22,6 @@ This variable can be set to the following values:
 The default is the value of
 [SDL_HINT_JOYSTICK_HIDAPI_XBOX_360](SDL_HINT_JOYSTICK_HIDAPI_XBOX_360)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -38,11 +38,6 @@ This function is available since SDL 2.0.18.
 - [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -51,11 +51,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateCond](SDL_CreateCond)
 - [SDL_DestroyCond](SDL_DestroyCond)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

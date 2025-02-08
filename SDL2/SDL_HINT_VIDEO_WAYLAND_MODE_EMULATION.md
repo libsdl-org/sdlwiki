@@ -26,10 +26,6 @@ This variable can be set to the following values:
 
 By default video mode emulation is enabled.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

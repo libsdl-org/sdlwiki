@@ -23,10 +23,6 @@ typedef struct SDL_MouseMotionEvent
 } SDL_MouseMotionEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

@@ -18,10 +18,6 @@ typedef enum SDL_YUV_CONVERSION_MODE
 } SDL_YUV_CONVERSION_MODE;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySurface](CategorySurface)
 

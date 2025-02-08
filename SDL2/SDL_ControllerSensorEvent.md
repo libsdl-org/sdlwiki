@@ -20,10 +20,6 @@ typedef struct SDL_ControllerSensorEvent
 } SDL_ControllerSensorEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

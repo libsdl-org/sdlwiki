@@ -19,10 +19,6 @@ The variable can be set to the following values:
 - "0": SDL will generate a window-close event when it sees Alt+F4.
 - "1": SDL will only do normal key handling for Alt+F4.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

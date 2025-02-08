@@ -37,10 +37,6 @@ typedef enum SDL_GameControllerButton
 } SDL_GameControllerButton;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGameController](CategoryGameController)
 

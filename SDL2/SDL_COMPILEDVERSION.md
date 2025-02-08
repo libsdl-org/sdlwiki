@@ -22,10 +22,6 @@ not be available in SDL 3.x.
 Deprecated, use [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST) or
 [SDL_VERSION](SDL_VERSION) instead.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 

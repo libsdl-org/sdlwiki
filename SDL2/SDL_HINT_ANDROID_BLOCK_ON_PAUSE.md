@@ -21,10 +21,6 @@ The variable can be set to the following values:
 
 The value should be set before SDL is initialized.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

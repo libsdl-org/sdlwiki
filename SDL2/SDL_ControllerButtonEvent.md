@@ -21,10 +21,6 @@ typedef struct SDL_ControllerButtonEvent
 } SDL_ControllerButtonEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

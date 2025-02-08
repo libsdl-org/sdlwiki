@@ -20,10 +20,6 @@ Otherwise store a * b via ret and return 0.
 
 This function is available since SDL 2.24.0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdInc](CategoryStdInc)
 

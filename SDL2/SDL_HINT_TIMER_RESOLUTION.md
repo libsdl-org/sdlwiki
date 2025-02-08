@@ -25,10 +25,6 @@ If this variable is set to "0", the system timer resolution is not set.
 
 The default value is "1". This hint may be set at any time.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

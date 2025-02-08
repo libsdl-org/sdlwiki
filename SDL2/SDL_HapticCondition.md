@@ -62,11 +62,6 @@ positive and which is negative.
 - [SDL_HAPTIC_FRICTION](SDL_HAPTIC_FRICTION)
 - [SDL_HapticEffect](SDL_HapticEffect)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

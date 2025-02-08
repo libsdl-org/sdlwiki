@@ -22,10 +22,6 @@ typedef struct SDL_DisplayEvent
 } SDL_DisplayEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

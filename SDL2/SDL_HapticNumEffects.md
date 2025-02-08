@@ -40,11 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticNumEffectsPlaying](SDL_HapticNumEffectsPlaying)
 - [SDL_HapticQuery](SDL_HapticQuery)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

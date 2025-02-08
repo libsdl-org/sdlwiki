@@ -21,10 +21,6 @@ This variable can be set to the following values:
 - "1": Mouse events will generate touch events (default for mobile
   platforms, such as Android and iOS)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

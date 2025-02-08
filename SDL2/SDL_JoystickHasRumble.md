@@ -31,11 +31,6 @@ This function is available since SDL 2.0.18.
 
 - [SDL_JoystickRumble](SDL_JoystickRumble)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

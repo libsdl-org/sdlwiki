@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": player LEDs are not enabled
 - "1": player LEDs are enabled (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

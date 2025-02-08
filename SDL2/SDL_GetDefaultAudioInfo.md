@@ -53,11 +53,6 @@ This function is available since SDL 2.24.0.
 - [SDL_GetAudioDeviceSpec](SDL_GetAudioDeviceSpec)
 - [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

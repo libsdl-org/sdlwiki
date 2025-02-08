@@ -23,10 +23,6 @@ This variable can be set to the following values:
 By default SDL will allow interaction with the window frame when the cursor
 is hidden
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 - [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

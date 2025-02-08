@@ -12,10 +12,6 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 #define SDL_arraysize(array)    (sizeof(array)/sizeof(array[0]))
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdInc](CategoryStdInc)
 

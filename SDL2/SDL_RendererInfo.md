@@ -20,10 +20,6 @@ typedef struct SDL_RendererInfo
 } SDL_RendererInfo;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRender](CategoryRender)
 

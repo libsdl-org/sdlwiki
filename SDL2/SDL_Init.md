@@ -74,11 +74,6 @@ This function is available since SDL 2.0.0.
 - [SDL_SetMainReady](SDL_SetMainReady)
 - [SDL_WasInit](SDL_WasInit)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

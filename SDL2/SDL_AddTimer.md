@@ -57,11 +57,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_RemoveTimer](SDL_RemoveTimer)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 

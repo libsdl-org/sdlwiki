@@ -14,10 +14,6 @@ typedef int8_t Sint8;
 #define SDL_MIN_SINT8   ((Sint8)(~0x7F))        /* -128 */
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdInc](CategoryStdInc)
 

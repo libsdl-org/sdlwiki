@@ -28,10 +28,6 @@ The variable can be set to the following values:
 The default value is "1". This hint must be set before any windows are
 created.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

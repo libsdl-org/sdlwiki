@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": Remote orientation does not affect joystick axes (the default).
 - "1": Joystick axes are based on the orientation of the remote.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

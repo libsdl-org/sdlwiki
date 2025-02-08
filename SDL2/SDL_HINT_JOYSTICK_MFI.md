@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": GCController is not used
 - "1": GCController is used (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

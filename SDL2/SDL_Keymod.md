@@ -34,10 +34,6 @@ typedef enum SDL_Keymod
 } SDL_Keymod;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryKeycode](CategoryKeycode)
 

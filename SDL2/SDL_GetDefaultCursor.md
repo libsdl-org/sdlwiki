@@ -30,11 +30,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

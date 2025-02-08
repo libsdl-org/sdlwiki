@@ -30,11 +30,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 

@@ -39,11 +39,6 @@ This function is available since SDL 2.0.2.
 - [SDL_AtomicDecRef](SDL_AtomicDecRef)
 - [SDL_AtomicIncRef](SDL_AtomicIncRef)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 

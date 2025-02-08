@@ -23,10 +23,6 @@ typedef struct SDL_ControllerAxisEvent
 } SDL_ControllerAxisEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

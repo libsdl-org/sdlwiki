@@ -38,11 +38,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 - [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

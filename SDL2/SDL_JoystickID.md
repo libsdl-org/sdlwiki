@@ -19,10 +19,6 @@ If the joystick is disconnected and reconnected, it will get a new ID.
 The ID value starts at 0 and increments from there. The value -1 is an
 invalid ID.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryJoystick](CategoryJoystick)
 

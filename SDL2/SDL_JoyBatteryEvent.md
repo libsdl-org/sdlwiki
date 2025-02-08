@@ -18,10 +18,6 @@ typedef struct SDL_JoyBatteryEvent
 } SDL_JoyBatteryEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

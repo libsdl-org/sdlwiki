@@ -40,11 +40,6 @@ This function is available since SDL 2.0.0.
 - [SDL_GetGrabbedWindow](SDL_GetGrabbedWindow)
 - [SDL_GetWindowGrab](SDL_GetWindowGrab)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

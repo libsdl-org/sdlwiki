@@ -22,10 +22,6 @@ This variable can be set to the following values:
 This driver doesn't work with the dolphinbar, so the default is
 [SDL_FALSE](SDL_FALSE) for now.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

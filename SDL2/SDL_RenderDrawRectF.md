@@ -28,10 +28,6 @@ int SDL_RenderDrawRectF(SDL_Renderer * renderer,
 
 This function is available since SDL 2.0.10.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

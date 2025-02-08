@@ -16,10 +16,6 @@ SDL_TouchDeviceType SDL_GetTouchDeviceType(SDL_TouchID touchID);
 
 This function is available since SDL 2.0.10.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTouch](CategoryTouch)
 

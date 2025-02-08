@@ -27,10 +27,6 @@ SDL will send CONTROLLERDEVICEADDED events for joysticks that are already
 plugged in during [SDL_Init](SDL_Init)() and are recognized as game
 controllers.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

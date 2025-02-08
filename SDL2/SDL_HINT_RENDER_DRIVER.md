@@ -32,10 +32,6 @@ This variable is case insensitive and can be set to the following values:
 The default varies by platform, but it's the first one in the list that is
 available on the current platform.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

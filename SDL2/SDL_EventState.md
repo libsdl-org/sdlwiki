@@ -44,11 +44,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GetEventState](SDL_GetEventState)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

@@ -23,10 +23,6 @@ void SDL_JoystickSetPlayerIndex(SDL_Joystick *joystick, int player_index);
 
 This function is available since SDL 2.0.12.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

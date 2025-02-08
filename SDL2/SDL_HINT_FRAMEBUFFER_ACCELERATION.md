@@ -28,10 +28,6 @@ This variable can be set to the following values:
 By default SDL tries to make a best guess for each platform whether to use
 acceleration or not.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

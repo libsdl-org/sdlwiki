@@ -27,10 +27,6 @@ behavior, which is desireable when the application manages the graphics
 context, such as an externally managed OpenGL context or attaching a Vulkan
 surface to the window.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

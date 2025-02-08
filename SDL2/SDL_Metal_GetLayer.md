@@ -20,11 +20,6 @@ This function is available since SDL 2.0.14.
 
 - [SDL_Metal_CreateView](SDL_Metal_CreateView)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)
 

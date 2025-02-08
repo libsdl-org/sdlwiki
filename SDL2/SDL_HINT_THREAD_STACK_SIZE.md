@@ -25,10 +25,6 @@ Instead of this hint, in 2.0.9 and later, you can use
 [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)(). This hint
 only works with the classic [SDL_CreateThread](SDL_CreateThread)().
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

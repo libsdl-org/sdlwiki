@@ -37,11 +37,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_GameControllerGetBindForAxis](SDL_GameControllerGetBindForAxis)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

@@ -33,11 +33,6 @@ This function is available since SDL 2.26.0.
 - [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
 - [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)
 

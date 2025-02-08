@@ -12,10 +12,6 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 #define SDL_TEXTINPUTEVENT_TEXT_SIZE (32)
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryEvents](CategoryEvents)
 

@@ -18,10 +18,6 @@ Before SDL 2.0.24, this would let apps and users disable XVidMode support
 on X11. Now SDL never uses XVidMode, and does not check for this hint at
 all. The preprocessor define is left here for source compatibility.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

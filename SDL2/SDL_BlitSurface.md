@@ -72,10 +72,6 @@ You should call [SDL_BlitSurface](SDL_BlitSurface)() unless you know
 exactly how SDL blitting works internally and how to use the other blit
 functions.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySurface](CategorySurface)
 

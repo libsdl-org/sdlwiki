@@ -35,10 +35,6 @@ This variable can be one of the following values:
 Since SDL 2.0.22 this variable accepts a comma-separated list of values
 above.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

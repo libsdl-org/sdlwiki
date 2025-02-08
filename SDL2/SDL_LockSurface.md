@@ -44,11 +44,6 @@ This function is available since SDL 2.0.0.
 - [SDL_MUSTLOCK](SDL_MUSTLOCK)
 - [SDL_UnlockSurface](SDL_UnlockSurface)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

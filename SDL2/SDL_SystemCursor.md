@@ -27,10 +27,6 @@ typedef enum SDL_SystemCursor
 } SDL_SystemCursor;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryMouse](CategoryMouse)
 

@@ -17,10 +17,6 @@ typedef enum SDL_FlashOperation
 } SDL_FlashOperation;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

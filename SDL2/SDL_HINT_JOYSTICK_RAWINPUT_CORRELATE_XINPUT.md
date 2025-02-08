@@ -24,10 +24,6 @@ This variable can be set to the following values:
 The default is "1". This hint applies to any joysticks opened after setting
 the hint.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

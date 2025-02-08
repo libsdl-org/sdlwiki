@@ -45,11 +45,6 @@ typedef enum SDL_WindowFlags
 
 - [SDL_GetWindowFlags](SDL_GetWindowFlags)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

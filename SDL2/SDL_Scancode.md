@@ -412,10 +412,6 @@ in the [SDL_Keysym](SDL_Keysym)::scancode key.keysym.scancode field of the
 The values in this enumeration are based on the USB usage page standard:
 https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryScancode](CategoryScancode)
 

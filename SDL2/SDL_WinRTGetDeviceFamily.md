@@ -21,10 +21,6 @@ SDL_WinRT_DeviceFamily SDL_WinRTGetDeviceFamily();
 
 This function is available since SDL 2.0.8.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

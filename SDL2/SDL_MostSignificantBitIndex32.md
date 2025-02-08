@@ -22,10 +22,6 @@ SDL_FORCE_INLINE int SDL_MostSignificantBitIndex32(Uint32 x);
 
 (int) Returns the index of the most significant bit of x, or -1 if x is 0.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryBits](CategoryBits)
 

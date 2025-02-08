@@ -31,10 +31,6 @@ the state of extended reports on PS5 controllers when the
 [SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE](SDL_HINT_JOYSTICK_HIDAPI_PS5_RUMBLE)
 hint is not explicitly set.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -20,10 +20,6 @@ This variable can be set to the following values:
 - "1": Return digital hat values with deadzones on the input axes taken
   into account (the default)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

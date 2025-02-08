@@ -22,10 +22,6 @@ typedef struct SDL_KeyboardEvent
 } SDL_KeyboardEvent;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

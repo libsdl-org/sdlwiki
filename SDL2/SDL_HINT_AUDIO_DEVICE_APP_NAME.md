@@ -31,10 +31,6 @@ have any better information.
 
 On targets where this is not supported, this hint does nothing.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

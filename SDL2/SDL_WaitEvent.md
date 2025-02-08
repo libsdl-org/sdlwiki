@@ -42,11 +42,6 @@ This function is available since SDL 2.0.0.
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

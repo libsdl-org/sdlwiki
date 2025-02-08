@@ -36,11 +36,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_FreeCursor](SDL_FreeCursor)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

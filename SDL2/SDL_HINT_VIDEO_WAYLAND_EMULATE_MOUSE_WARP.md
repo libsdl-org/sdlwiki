@@ -29,10 +29,6 @@ This variable can be set to the following values:
 If not set, this is automatically enabled unless an application uses
 relative mouse mode directly.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

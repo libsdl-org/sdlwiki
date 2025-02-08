@@ -40,11 +40,6 @@ This function is available since SDL 2.0.5.
 - [SDL_RenderGetIntegerScale](SDL_RenderGetIntegerScale)
 - [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

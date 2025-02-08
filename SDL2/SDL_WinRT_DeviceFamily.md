@@ -25,10 +25,6 @@ typedef enum SDL_WinRT_DeviceFamily
 } SDL_WinRT_DeviceFamily;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySystem](CategorySystem)
 

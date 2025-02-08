@@ -32,10 +32,6 @@ This variable can be set to the following values:
 - "1": Use the Direct3D 9Ex API on Vista and later (and fall back if D3D9Ex
   is unavailable)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

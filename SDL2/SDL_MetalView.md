@@ -16,10 +16,6 @@ typedef void *SDL_MetalView;
 
 This can be cast directly to an NSView or UIView.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMetal](CategoryMetal)
 

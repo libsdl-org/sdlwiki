@@ -26,11 +26,6 @@ This function is available since SDL 2.0.0.
 - [SDL_StartTextInput](SDL_StartTextInput)
 - [SDL_IsScreenKeyboardShown](SDL_IsScreenKeyboardShown)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

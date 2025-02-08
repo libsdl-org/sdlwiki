@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates)
 - [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGesture](CategoryGesture)
 

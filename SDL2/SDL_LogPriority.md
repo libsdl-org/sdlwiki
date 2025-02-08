@@ -21,10 +21,6 @@ typedef enum SDL_LogPriority
 } SDL_LogPriority;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryLog](CategoryLog)
 

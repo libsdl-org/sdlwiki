@@ -24,10 +24,6 @@ This event is disabled by default, you can enable it with
 
 If you want to use this event, you should include [SDL_syswm](SDL_syswm).h.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

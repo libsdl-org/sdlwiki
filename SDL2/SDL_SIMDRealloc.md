@@ -40,11 +40,6 @@ This function is available since SDL 2.0.14.
 - [SDL_SIMDAlloc](SDL_SIMDAlloc)
 - [SDL_SIMDFree](SDL_SIMDFree)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

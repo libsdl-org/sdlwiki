@@ -21,10 +21,6 @@ This variable can be set to the following values:
 
 By default shaders are used if OpenGL supports them.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

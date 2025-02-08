@@ -21,10 +21,6 @@ This variable can be set to the following values:
 - "1": Always handle the input axes numbered ABS_HAT0X to ABS_HAT3Y as
   digital hats
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

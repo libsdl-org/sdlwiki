@@ -23,10 +23,6 @@ This variable can be set to the following values:
   the second swipe performs the "home" action (default for fullscreen
   applications)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

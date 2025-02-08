@@ -21,11 +21,6 @@ acceleration.
 
 - [SDL_HapticCondition](SDL_HapticCondition)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

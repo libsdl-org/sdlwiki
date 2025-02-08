@@ -18,10 +18,6 @@ typedef struct SDL_Color
 } SDL_Color;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryPixels](CategoryPixels)
 

@@ -30,11 +30,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
 - [SDL_CreateCond](SDL_CreateCond)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

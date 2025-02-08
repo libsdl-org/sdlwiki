@@ -27,11 +27,6 @@ SDL_FORCE_INLINE Uint16 SDL_Swap16(Uint16 x);
 - [SDL_SwapBE16](SDL_SwapBE16)
 - [SDL_SwapLE16](SDL_SwapLE16)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEndian](CategoryEndian)
 

@@ -40,11 +40,6 @@ This function is available since SDL 2.0.18.
 - [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
 - [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

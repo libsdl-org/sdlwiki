@@ -34,11 +34,6 @@ This function is available since SDL 2.0.0.
 - [SDL_AllocPalette](SDL_AllocPalette)
 - [SDL_FreePalette](SDL_FreePalette)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
 

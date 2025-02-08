@@ -41,11 +41,6 @@ This function is available since SDL 2.0.0.
 
 - [SDL_MixAudioFormat](SDL_MixAudioFormat)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

@@ -33,10 +33,6 @@ This variable can be set to the following values:
 - "ignore": Ignore the RIFF chunk size and always search up to 4 GiB
 - "maximum": Search for chunks until the end of file (not recommended)
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

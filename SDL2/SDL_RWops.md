@@ -95,10 +95,6 @@ typedef struct SDL_RWops
 } SDL_RWops;
 ```
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRWOPS](CategoryRWOPS)
 

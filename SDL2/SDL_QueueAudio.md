@@ -69,11 +69,6 @@ This function is available since SDL 2.0.4.
 - [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 - [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

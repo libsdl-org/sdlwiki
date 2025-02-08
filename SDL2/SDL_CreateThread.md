@@ -44,11 +44,6 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
 - [SDL_WaitThread](SDL_WaitThread)
 
-
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

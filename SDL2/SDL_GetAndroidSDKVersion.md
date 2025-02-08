@@ -45,10 +45,6 @@ int SDL_GetAndroidSDKVersion(void);
 
 This function is available since SDL 2.0.12.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

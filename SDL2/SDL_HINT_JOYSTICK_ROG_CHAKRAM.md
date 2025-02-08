@@ -19,10 +19,6 @@ This variable can be set to the following values:
 - "0": ROG Chakram mice do not show up as joysticks (the default)
 - "1": ROG Chakram mice show up as joysticks
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

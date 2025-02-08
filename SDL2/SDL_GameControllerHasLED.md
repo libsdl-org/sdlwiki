@@ -27,10 +27,6 @@ SDL_bool SDL_GameControllerHasLED(SDL_GameController *gamecontroller);
 
 This function is available since SDL 2.0.14.
 
-
-
-
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 
