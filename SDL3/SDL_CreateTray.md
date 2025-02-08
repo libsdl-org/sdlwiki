@@ -35,6 +35,61 @@ Using tray icons require the video subsystem.
 
 This function should only be called on the main thread.
 
+## Code Examples
+
+A simple program that creates a system tray with a single button that quits the
+program:
+
+```c
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
+
+void callback_quit(void *userdata, SDL_TrayEntry *invoker)
+{
+    SDL_Event e;
+    e.type = SDL_EVENT_QUIT;
+    SDL_PushEvent(&e);
+}
+
+int main(int argc, char *argv[])
+{
+    SDL_Tray *tray;
+    SDL_TrayMenu *menu;
+    SDL_TrayEntry *entry;
+    SDL_Event e;
+
+    SDL_Init(SDL_INIT_VIDEO);
+
+    // Create the entry in the system tray. A regular app will want to provide
+    // an SDL_Surface instead of NULL.
+    tray = SDL_CreateTray(NULL, "My tray");
+
+    // Create a context menu for the tray.
+    menu = SDL_CreateTrayMenu(tray);
+
+    // Create a button in the comtext menu.
+    entry = SDL_InsertTrayEntryAt(menu, -1, "Quit", SDL_TRAYENTRY_BUTTON);
+
+    // Set the callback for the button
+    SDL_SetTrayEntryCallback(entry, callback_quit, NULL);
+
+    // Run the main loop...
+    while (SDL_WaitEvent(&e)) {
+        if (e.type == SDL_EVENT_QUIT) {
+            break;
+        }
+    }
+
+    // No need to destroy anything other than the tray itself - the rest is
+    // destroyed automatically.
+    SDL_DestroyTray(tray);
+
+    SDL_Quit();
+
+    return 0;
+}
+```
+
 ## Version
 
 This function is available since SDL 3.2.0.
