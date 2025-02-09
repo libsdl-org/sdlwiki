@@ -45,6 +45,26 @@ For fragment shaders:
   buffers
 - 3: Uniform buffers
 
+Example glsl fragment shader:
+```glsl
+//test.frag.glsl
+# version 450 core
+/*
+ Notice the "set = 2" in the layout in the line below.
+ This is necessary to assign the sampler to resource
+ set 2. Otherwise, you will not be able to use the
+ sampler!
+*/
+layout(set = 2, binding = 0) uniform sampler2D myTexture;
+
+layout(location = 0) in vec2 texCoords;
+layout(location = 0) out vec4 color;
+void main(){
+  color = texture(myTexture,texCoords);
+}
+
+```
+
 For DXBC and DXIL shaders, use the following register order:
 
 For vertex shaders:
