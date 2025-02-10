@@ -35,6 +35,10 @@ Using tray icons require the video subsystem.
 
 This function should only be called on the main thread.
 
+## Version
+
+This function is available since SDL 3.2.0.
+
 ## Code Examples
 
 A simple program that creates a system tray with a single button that quits the
@@ -89,10 +93,6 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
-
-## Version
-
-This function is available since SDL 3.2.0.
 
 ## See Also
 
