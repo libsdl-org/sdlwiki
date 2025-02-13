@@ -20,12 +20,12 @@ void SDL_srand(Uint64 seed);
 
 ## Remarks
 
-Reusing the seed number will cause [SDL_rand_](SDL_rand_)*() to repeat the
+Reusing the seed number will cause [SDL_rand](SDL_rand)() to repeat the
 same stream of 'random' numbers.
 
 ## Thread Safety
 
-This should be called on the same thread that calls [SDL_rand](SDL_rand)*()
+This should be called on the same thread that calls [SDL_rand](SDL_rand)()
 
 ## Version
 
