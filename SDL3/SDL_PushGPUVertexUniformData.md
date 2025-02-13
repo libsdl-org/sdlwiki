@@ -27,7 +27,7 @@ void SDL_PushGPUVertexUniformData(
 
 ## Remarks
 
-Subsequent draw calls will use this uniform data.
+Subsequent draw calls will use this uniform data. For information about accessing uniform data from shader, please refer to [SDL_CreateGPUShader](SDL_CreateGPUShader#remarks) remarks section.
 
 The data being pushed must respect std140 layout conventions. In practical
 terms this means you must ensure that vec3 and vec4 fields are 16-byte
