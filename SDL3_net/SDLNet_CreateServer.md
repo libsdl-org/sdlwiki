@@ -23,8 +23,8 @@ SDLNet_Server * SDLNet_CreateServer(SDLNet_Address *addr, Uint16 port);
 ## Return Value
 
 ([SDLNet_Server](SDLNet_Server) *) Returns a new
-[SDLNet_Server](SDLNet_Server), or NULL on
-error; call SDL_GetError() for details.
+[SDLNet_Server](SDLNet_Server), or NULL on error; call SDL_GetError() for
+details.
 
 ## Remarks
 
