@@ -53,6 +53,8 @@ int TTF_GetFontOutline(const TTF_Font *font);                                   
 void TTF_SetFontHinting(TTF_Font *font, TTF_HintingFlags hinting);                                                                         // Set a font's current hinter setting.
 int TTF_GetNumFontFaces(const TTF_Font *font);                                                                                             // Query the number of faces of a font.
 TTF_HintingFlags TTF_GetFontHinting(const TTF_Font *font);                                                                                 // Query a font's current FreeType hinter setting.
+bool TTF_SetFontSDF(TTF_Font *font, bool enabled);                                                                                         // Enable Signed Distance Field rendering for a font.
+bool TTF_GetFontSDF(const TTF_Font *font);                                                                                                 // Query whether Signed Distance Field rendering is enabled for a font.
 void TTF_SetFontWrapAlignment(TTF_Font *font, TTF_HorizontalAlignment align);                                                              // Set a font's current wrap alignment option.
 TTF_HorizontalAlignment TTF_GetFontWrapAlignment(const TTF_Font *font);                                                                    // Query a font's current wrap alignment option.
 int TTF_GetFontHeight(const TTF_Font *font);                                                                                               // Query the total height of a font.
@@ -63,6 +65,7 @@ int TTF_GetFontLineSkip(const TTF_Font *font);                                  
 void TTF_SetFontKerning(TTF_Font *font, bool enabled);                                                                                     // Set if kerning is enabled for a font.
 bool TTF_GetFontKerning(const TTF_Font *font);                                                                                             // Query whether or not kerning is enabled for a font.
 bool TTF_FontIsFixedWidth(const TTF_Font *font);                                                                                           // Query whether a font is fixed-width.
+bool TTF_FontIsScalable(const TTF_Font *font);                                                                                             // Query whether a font is scalable or not.
 const char * TTF_GetFontFamilyName(const TTF_Font *font);                                                                                  // Query a font's family name.
 const char * TTF_GetFontStyleName(const TTF_Font *font);                                                                                   // Query a font's style name.
 bool TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);                                                                        // Set the direction to be used for text shaping by a font.
@@ -72,10 +75,12 @@ void TTF_TagToString(Uint32 tag, char *string, size_t size);                    
 bool TTF_SetFontScript(TTF_Font *font, Uint32 script);                                                                                     // Set the script to be used for text shaping by a font.
 Uint32 TTF_GetFontScript(TTF_Font *font);                                                                                                  // Get the script used for text shaping a font.
 Uint32 TTF_GetGlyphScript(Uint32 ch);                                                                                                      // Get the script used by a 32-bit codepoint.
+bool TTF_SetFontLanguage(TTF_Font *font, const char *language_bcp47);                                                                      // Set language to be used for text shaping by a font.
 bool TTF_FontHasGlyph(TTF_Font *font, Uint32 ch);                                                                                          // Check whether a glyph is provided by the font for a UNICODE codepoint.
 SDL_Surface * TTF_GetGlyphImage(TTF_Font *font, Uint32 ch, TTF_ImageType *image_type);                                                     // Get the pixel image for a UNICODE codepoint.
 SDL_Surface * TTF_GetGlyphImageForIndex(TTF_Font *font, Uint32 glyph_index, TTF_ImageType *image_type);                                    // Get the pixel image for a character index.
 bool TTF_GetGlyphMetrics(TTF_Font *font, Uint32 ch, int *minx, int *maxx, int *miny, int *maxy, int *advance);                             // Query the metrics (dimensions) of a font's glyph for a UNICODE codepoint.
+bool TTF_GetGlyphKerning(TTF_Font *font, Uint32 previous_ch, Uint32 ch, int *kerning);                                                     // Query the kerning size between the glyphs of two UNICODE codepoints.
 bool TTF_GetStringSize(TTF_Font *font, const char *text, size_t length, int *w, int *h);                                                   // Calculate the dimensions of a rendered string of UTF-8 text.
 bool TTF_GetStringSizeWrapped(TTF_Font *font, const char *text, size_t length, int wrap_width, int *w, int *h);                            // Calculate the dimensions of a rendered string of UTF-8 text.
 bool TTF_MeasureString(TTF_Font *font, const char *text, size_t length, int max_width, int *measured_width, size_t *measured_length);      // Calculate how much of a UTF-8 string will fit in a given width.
