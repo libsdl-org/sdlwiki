@@ -50,7 +50,8 @@ The swapchain texture is managed by the implementation and must not be
 freed by the user. You MUST NOT call this function from any thread other
 than the one that created the window.
 
-The swapchain texture is write-only and cannot be used as a sampler or for another reading operation.
+The swapchain texture is write-only and cannot be used as a sampler or for
+another reading operation.
 
 ## Thread Safety
 
