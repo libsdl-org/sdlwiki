@@ -50,6 +50,8 @@ The swapchain texture is managed by the implementation and must not be
 freed by the user. You MUST NOT call this function from any thread other
 than the one that created the window.
 
+The swapchain texture is write-only and cannot be used as a sampler or for another reading operation.
+
 ## Thread Safety
 
 This function should only be called from the thread that created the
@@ -63,6 +65,7 @@ This function is available since SDL 3.2.0.
 
 - [SDL_SubmitGPUCommandBuffer](SDL_SubmitGPUCommandBuffer)
 - [SDL_SubmitGPUCommandBufferAndAcquireFence](SDL_SubmitGPUCommandBufferAndAcquireFence)
+- [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
