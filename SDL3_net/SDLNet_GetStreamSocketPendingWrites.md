@@ -37,8 +37,7 @@ If the connection has failed (remote side dropped us, or one of a million
 other networking failures occurred), this function will report failure by
 returning -1. Stream sockets only report failure for unrecoverable
 conditions; once a stream socket fails, you should assume it is no longer
-usable and should destroy it with
-[[SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)()]([SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)).
+usable and should destroy it with SDL_DestroyStreamSocket().
 
 ## Thread Safety
 
