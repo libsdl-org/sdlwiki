@@ -28,4 +28,8 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [Porting ioquake3 from SDL2 to SDL3](https://youtu.be/i3yVqWYFbCE): Covers a basic port from SDL2.
 - [Porting DirkSimple from SDL2 to SDL3](https://youtu.be/V_MWXDr3Nu4): Basic port, new audio subsystem features, SDL_EnumerateDirectory, main callbacks, emscripten port.
 
+## Multi-Subject
+
+- [Glusoft's SDL3 Tutorials](https://glusoft.com/sdl3-tutorials/)
+
 If you come across good tutorials, please click [edit](https://wiki.libsdl.org/SDL3/Tutorials/FrontPage/edit) and add them!
