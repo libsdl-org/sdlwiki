@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
     SDL_Surface *surface;
 
     /* Initialize SDL */
-    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+    if (!SDL_Init(SDL_INIT_VIDEO)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_Init fail : %s\n", SDL_GetError());
         return 1;
     }
