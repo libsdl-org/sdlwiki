@@ -42,11 +42,11 @@ if (!mutex) {
   return 1;
 }
 
-if (SDL_TryLockMutex(mutex) == 0) {
+if (SDL_TryLockMutex(mutex)) {
   /* Do stuff while mutex is locked */
   SDL_UnlockMutex(mutex);
 } else {
-  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't lock mutex\n");
+  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Mutex is locked on another thread\n");
 }
 
 SDL_DestroyMutex(mutex);
