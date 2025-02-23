@@ -31,6 +31,11 @@ typedef struct SDL_GPUSamplerCreateInfo
 } SDL_GPUSamplerCreateInfo;
 ```
 
+## Remarks
+
+Note that mip_lod_bias is a no-op for the Metal driver. For Metal, LOD bias
+must be applied via shader instead.
+
 ## Version
 
 This function is available since SDL 3.2.0.
