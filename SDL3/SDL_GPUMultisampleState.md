@@ -12,8 +12,8 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 typedef struct SDL_GPUMultisampleState
 {
     SDL_GPUSampleCount sample_count;  /**< The number of samples to be used in rasterization. */
-    Uint32 sample_mask;               /**< Ignored, reserved for future use. */
-    bool enable_mask;             /**< Ignored, reserved for future use. */
+    Uint32 sample_mask;               /**< Reserved for future use. Must be set to 0. */
+    bool enable_mask;             /**< Reserved for future use. Must be set to false. */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;
