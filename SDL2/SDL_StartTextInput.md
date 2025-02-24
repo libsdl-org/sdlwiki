@@ -24,7 +24,7 @@ pair with [SDL_StopTextInput](SDL_StopTextInput)().
 On some platforms using this function activates the screen keyboard.
 
 On desktop platforms, [SDL_StartTextInput](SDL_StartTextInput)() is
-implicitly called on SDL window creation which will cause events
+implicitly called on SDL video subsystem initialization which will cause
 [SDL_TextInputEvent](SDL_TextInputEvent) and
 [SDL_TextEditingEvent](SDL_TextEditingEvent) to begin emitting.
 
