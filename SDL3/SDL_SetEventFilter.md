@@ -56,7 +56,7 @@ This function is available since SDL 3.2.0.
 
 ```c
 #include <SDL3/SDL.h>
-
+#include <SDL3/SDL_main.h>
 
 // Just a quick warning: this is a silly way to do things, but it
 //  illustrates how event filters work. In real life, you'd just

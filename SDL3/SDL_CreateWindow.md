@@ -128,6 +128,7 @@ This function is available since SDL 3.2.0.
 // Using SDL3 to create an application window
 
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 
 int main(int argc, char* argv[]) {
 

@@ -43,8 +43,7 @@ This function is available since SDL 3.2.0.
 
 ```c
 #include <SDL3/SDL.h>
-
-#include <stdlib.h>
+#include <SDL3/SDL_main.h>
 
 /* Moving Rectangle */
 int main(int argc, char *argv[])
@@ -75,8 +74,8 @@ int main(int argc, char *argv[])
                 SDL_PollEvent(&event);
                 if(event.type == SDL_EVENT_QUIT)
                         break;
-                r.x=rand()%500;
-                r.y=rand()%500;
+                r.x = SDL_rand(500);
+                r.y = SDL_rand(500);
 
                 SDL_SetRenderTarget(renderer, texture);
                 SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);

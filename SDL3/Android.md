@@ -90,6 +90,7 @@ Let's modify `SDL3_image/showimage.c` to show a simple embedded image (e.g. XPM)
 
 ```c
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 #include <SDL3/SDL_image.h>
 
 /* XPM */

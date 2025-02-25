@@ -37,7 +37,7 @@ This function is available since SDL 3.2.0.
 
 ```c
 #include <SDL3/SDL.h>
-#include <stdlib.h>
+#include <SDL3/SDL_main.h>
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
 int TestThread(void *ptr)
@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
     /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
-    if (NULL == thread) {
+    if (!thread) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_CreateThread failed: %s\n", SDL_GetError());
-        exit(-1);
+        return -1;
     }
 
     /* Retrieve the ID for the newly launched thread */
