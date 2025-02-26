@@ -38,7 +38,7 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GPUVertexAttribute](SDL_GPUVertexAttribute)
-- [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
+- [SDL_GPUVertexInputRate](SDL_GPUVertexInputRate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
