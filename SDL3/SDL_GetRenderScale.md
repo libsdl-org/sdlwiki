@@ -25,6 +25,11 @@ bool SDL_GetRenderScale(SDL_Renderer *renderer, float *scaleX, float *scaleY);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Each render target has its own scale. This function gets the scale for the
+current render target.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

@@ -31,6 +31,9 @@ bool SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, int *w, int *h, SD
 This function gets the width and height of the logical rendering output, or
 the output size in pixels if a logical resolution is not enabled.
 
+Each render target has its own logical presentation state. This function
+gets the state for the current render target.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

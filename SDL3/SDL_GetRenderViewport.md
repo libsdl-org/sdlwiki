@@ -24,6 +24,11 @@ bool SDL_GetRenderViewport(SDL_Renderer *renderer, SDL_Rect *rect);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Each render target has its own viewport. This function gets the viewport
+for the current render target.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

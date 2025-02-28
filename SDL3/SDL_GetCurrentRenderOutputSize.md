@@ -28,9 +28,12 @@ bool SDL_GetCurrentRenderOutputSize(SDL_Renderer *renderer, int *w, int *h);
 ## Remarks
 
 If a rendering target is active, this will return the size of the rendering
-target in pixels, otherwise if a logical size is set, it will return the
-logical size, otherwise it will return the value of
+target in pixels, otherwise return the value of
 [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)().
+
+Rendering target or not, the output will be adjusted by the current logical
+presentation state, dictated by
+[SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)().
 
 ## Thread Safety
 

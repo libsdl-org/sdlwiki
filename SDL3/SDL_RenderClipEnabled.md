@@ -1,6 +1,6 @@
 # SDL_RenderClipEnabled
 
-Get whether clipping is enabled on the given renderer.
+Get whether clipping is enabled on the given render target.
 
 ## Header File
 
@@ -22,6 +22,11 @@ bool SDL_RenderClipEnabled(SDL_Renderer *renderer);
 
 (bool) Returns true if clipping is enabled or false if not; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+Each render target has its own clip rectangle. This function checks the
+cliprect for the current render target.
 
 ## Thread Safety
 

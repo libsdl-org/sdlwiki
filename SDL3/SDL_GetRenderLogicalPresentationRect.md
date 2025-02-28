@@ -31,6 +31,9 @@ presentation, based on the presentation mode and output size. If logical
 presentation is disabled, it will fill the rectangle with the output size,
 in pixels.
 
+Each render target has its own logical presentation state. This function
+gets the rectangle for the current render target.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

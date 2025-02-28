@@ -35,6 +35,9 @@ If this results in scaling or subpixel drawing by the rendering backend, it
 will be handled using the appropriate quality hints. For best results use
 integer scaling factors.
 
+Each render target has its own scale. This function sets the scale for the
+current render target.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

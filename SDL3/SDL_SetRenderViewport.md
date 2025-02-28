@@ -32,6 +32,9 @@ area will become coordinate (0, 0) for future drawing commands.
 
 The area's width and height must be >= 0.
 
+Each render target has its own viewport. This function sets the viewport
+for the current render target.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

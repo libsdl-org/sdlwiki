@@ -30,6 +30,11 @@ The default render target is the window for which the renderer was created.
 To stop rendering to a texture and render to the window again, call this
 function with a NULL `texture`.
 
+Viewport, cliprect, scale, and logical presentation are unique to each
+render target. Get and set functions for these states apply to the current
+render target set by this function, and those states persist on each target
+when the current render target changes.
+
 ## Thread Safety
 
 This function should only be called on the main thread.
