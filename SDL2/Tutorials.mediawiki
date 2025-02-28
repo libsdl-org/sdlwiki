@@ -25,6 +25,9 @@ There are a number of SDL tutorials available from different sources.
 * [https://www.youtube.com/watch?v=ETvApbD5xRo&list=PLNOBk_id22bw6LXhrGfhVwqQIa-M2MsLa Remaking Cavestory in C++]
 : Video tutorial series on recreating Cave Story using SDL
 
+* [https://www.youtube.com/watch?v=ibVihn77SY4&list=PLO02jwa2ZaiCgilk8EEVnfnGWA0LNu4As&index=1 Beginners Guide to SDL2 in C]
+: Great starting point as long as you know C basics
+
 * [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2%2e Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
 : An example of a project upgrade from SDL 1.2 to SDL 2.0
 
