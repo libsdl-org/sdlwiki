@@ -18,9 +18,10 @@ over and over). For example:
 - Shaders (programs that run on the GPU): use
   [SDL_CreateGPUShader](SDL_CreateGPUShader)().
 - Vertex buffers (arrays of geometry data) and other rendering data: use
-  [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer)() and [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)().
-- Textures (images): use
-  [SDL_CreateGPUTexture](SDL_CreateGPUTexture)() and [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)().
+  [SDL_CreateGPUBuffer](SDL_CreateGPUBuffer)() and
+  [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)().
+- Textures (images): use [SDL_CreateGPUTexture](SDL_CreateGPUTexture)() and
+  [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)().
 - Samplers (how textures should be read from): use
   [SDL_CreateGPUSampler](SDL_CreateGPUSampler)().
 - Render pipelines (precalculated rendering state): use
