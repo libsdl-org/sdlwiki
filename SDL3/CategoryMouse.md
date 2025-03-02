@@ -66,6 +66,7 @@ with a `which` field of
 - [SDL_HasMouse](SDL_HasMouse)
 - [SDL_HideCursor](SDL_HideCursor)
 - [SDL_SetCursor](SDL_SetCursor)
+- [SDL_SetRelativeMouseTransform](SDL_SetRelativeMouseTransform)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 - [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
 - [SDL_SetWindowRelativeMouseMode](SDL_SetWindowRelativeMouseMode)
@@ -81,6 +82,7 @@ with a `which` field of
 - [SDL_Cursor](SDL_Cursor)
 - [SDL_MouseButtonFlags](SDL_MouseButtonFlags)
 - [SDL_MouseID](SDL_MouseID)
+- [SDL_MouseMotionTransformCallback](SDL_MouseMotionTransformCallback)
 <!-- END CATEGORY LIST -->
 
 ## Structs

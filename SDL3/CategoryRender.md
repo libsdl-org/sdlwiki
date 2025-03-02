@@ -96,6 +96,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_RenderRects](SDL_RenderRects)
 - [SDL_RenderTexture](SDL_RenderTexture)
 - [SDL_RenderTexture9Grid](SDL_RenderTexture9Grid)
+- [SDL_RenderTexture9GridTiled](SDL_RenderTexture9GridTiled)
 - [SDL_RenderTextureAffine](SDL_RenderTextureAffine)
 - [SDL_RenderTextureRotated](SDL_RenderTextureRotated)
 - [SDL_RenderTextureTiled](SDL_RenderTextureTiled)
