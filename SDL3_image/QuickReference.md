@@ -12,7 +12,7 @@ the fancy Unicode section headers, try using
 // https://libsdl.org/
 //
 // The latest version of this document can be found at https://wiki.libsdl.org/SDL3_image/QuickReference
-// Based on SDL_image version 3.2.2
+// Based on SDL_image version 3.2.3
 //
 // This can be useful in an IDE with search and syntax highlighting.
 //
