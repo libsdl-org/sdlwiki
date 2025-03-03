@@ -52,9 +52,8 @@ This function is available since SDL 3.2.0.
 // Example program
 // Use SDL3 to enumerate all directories in title storage
 
-#include <SDL3/SDL_log.h>
+#include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
-#include <SDL3/SDL_storage.h>
 
 
 SDL_EnumerationResult
@@ -72,7 +71,7 @@ main(int argc, char** argv)
         SDL_Log("Unable to open storage %s", SDL_GetError());
     }
 
-    if(!SDL_EnumerateStorageDirectory(storage, ".", my_enumerate_dir_callback, NULL)) {
+    if(!SDL_EnumerateStorageDirectory(storage, NULL, my_enumerate_dir_callback, NULL)) {
         SDL_Log("There was a system problem or the callback indicated failure.");
     } else {
         SDL_Log("All directories enumerated or the callback halted enumeration.");
