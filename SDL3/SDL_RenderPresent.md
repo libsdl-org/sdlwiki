@@ -48,8 +48,7 @@ change back the rendering target to default via
 `SDL_SetRenderTarget(renderer, NULL)` afterwards, as textures by themselves
 do not have a concept of backbuffers. Calling
 [SDL_RenderPresent](SDL_RenderPresent) while rendering to a texture will
-still update the screen with any current drawing that has been done _to the
-window itself_.
+fail.
 
 ## Thread Safety
 
