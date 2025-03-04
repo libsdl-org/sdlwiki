@@ -17,10 +17,15 @@ typedef struct SDL_GPUTextureTransferInfo
     Uint32 rows_per_layer;                   /**< The number of rows from one layer/depth-slice to the next. */
 } SDL_GPUTextureTransferInfo;
 ```
+
 ## Remarks
 
-If either of `pixels_per_row` or `rows_per_layer` is zero, then width and height of passed [SDL_GPUTextureRegion](SDL_GPUTextureRegion) to [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture) 
- / [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture) are used as default values respectively and data is considered to be tightly packed.
+If either of `pixels_per_row` or `rows_per_layer` is zero, then width and
+height of passed [SDL_GPUTextureRegion](SDL_GPUTextureRegion) to
+[SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
+
+/ [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture) are used as
+default values respectively and data is considered to be tightly packed.
 
 ## Version
 
