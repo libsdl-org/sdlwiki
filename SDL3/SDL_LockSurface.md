@@ -35,6 +35,11 @@ Not all surfaces require locking. If `SDL_MUSTLOCK(surface)` evaluates to
 0, then you can read and write to the surface at any time, and the pixel
 format of the surface will not change.
 
+## Thread Safety
+
+This function is not thread safe. The locking referred to by this function
+is making the pixels available for direct access, not thread-safe locking.
+
 ## Version
 
 This function is available since SDL 3.2.0.

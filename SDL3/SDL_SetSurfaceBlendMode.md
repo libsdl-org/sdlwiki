@@ -30,6 +30,10 @@ To copy a surface to another surface (or texture) without blending with the
 existing data, the blendmode of the SOURCE surface should be set to
 [`SDL_BLENDMODE_NONE`](SDL_BLENDMODE_NONE).
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

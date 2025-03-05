@@ -30,6 +30,10 @@ structure that is created or NULL on failure; call
 
 The pixels of the new surface are initialized to zero.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

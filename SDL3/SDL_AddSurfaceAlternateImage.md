@@ -34,6 +34,10 @@ alternate versions will not be updated when the original surface changes.
 This function adds a reference to the alternate version, so you should call
 [SDL_DestroySurface](SDL_DestroySurface)() on the image after this call.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

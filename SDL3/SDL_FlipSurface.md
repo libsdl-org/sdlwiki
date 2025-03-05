@@ -24,6 +24,10 @@ bool SDL_FlipSurface(SDL_Surface *surface, SDL_FlipMode flip);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

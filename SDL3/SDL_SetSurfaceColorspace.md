@@ -29,6 +29,10 @@ bool SDL_SetSurfaceColorspace(SDL_Surface *surface, SDL_Colorspace colorspace);
 Setting the colorspace doesn't change the pixels, only how they are
 interpreted in color operations.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

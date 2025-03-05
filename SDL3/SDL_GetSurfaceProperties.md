@@ -51,6 +51,10 @@ The following properties are understood by SDL:
   the hotspot pixel offset from the top edge of the image, if this surface
   is being used as a cursor.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -31,6 +31,10 @@ The new surface should be freed with
 [SDL_DestroySurface](SDL_DestroySurface)(). Not doing so will result in a
 memory leak.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

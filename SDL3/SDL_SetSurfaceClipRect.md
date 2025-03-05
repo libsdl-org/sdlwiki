@@ -32,6 +32,10 @@ rectangle is drawn into.
 Note that blits are automatically clipped to the edges of the source and
 destination surfaces.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

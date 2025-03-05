@@ -22,6 +22,10 @@ bool SDL_SurfaceHasAlternateImages(SDL_Surface *surface);
 
 (bool) Returns true if alternate versions are available or false otherwise.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

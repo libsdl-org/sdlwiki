@@ -40,6 +40,10 @@ instead.
 If the original surface has alternate images, the new surface will have a
 reference to them as well.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

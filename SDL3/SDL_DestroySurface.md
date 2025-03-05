@@ -22,6 +22,10 @@ void SDL_DestroySurface(SDL_Surface *surface);
 
 It is safe to pass NULL to this function.
 
+## Thread Safety
+
+No other thread should be using the surface when it is freed.
+
 ## Version
 
 This function is available since SDL 3.2.0.

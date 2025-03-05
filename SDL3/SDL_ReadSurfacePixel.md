@@ -38,6 +38,10 @@ Like [SDL_GetRGBA](SDL_GetRGBA), this uses the entire 0..255 range when
 converting color components from pixel formats with less than 8 bits per
 RGB component.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -29,8 +29,8 @@ bool SDL_BlitSurfaceScaled(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surfac
 
 ## Thread Safety
 
-The same destination surface should not be used from two threads at once.
-It is safe to use the same source surface from multiple threads.
+Only one thread should be using the `src` and `dst` surfaces at any given
+time.
 
 ## Version
 

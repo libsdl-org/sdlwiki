@@ -32,6 +32,10 @@ formats, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for 10-bit formats,
 [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB surfaces and
 [SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for YUV textures.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -34,6 +34,11 @@ bool SDL_ConvertPixelsAndColorspace(int width, int height, SDL_PixelFormat src_f
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+The same destination pixels should not be used from two threads at once. It
+is safe to use the same source pixels from multiple threads.
+
 ## Version
 
 This function is available since SDL 3.2.0.

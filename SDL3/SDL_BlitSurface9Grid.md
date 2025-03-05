@@ -42,8 +42,8 @@ then stretched into place to cover the remaining destination rectangle.
 
 ## Thread Safety
 
-The same destination surface should not be used from two threads at once.
-It is safe to use the same source surface from multiple threads.
+Only one thread should be using the `src` and `dst` surfaces at any given
+time.
 
 ## Version
 

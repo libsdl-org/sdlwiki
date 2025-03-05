@@ -35,6 +35,10 @@ Freeing the array of surfaces does not affect the surfaces in the array.
 They are still referenced by the surface being queried and will be cleaned
 up normally.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

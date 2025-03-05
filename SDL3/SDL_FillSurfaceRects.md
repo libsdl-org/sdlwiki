@@ -37,6 +37,10 @@ If there is a clip rectangle set on the destination (set via
 [SDL_SetSurfaceClipRect](SDL_SetSurfaceClipRect)()), then this function
 will fill based on the intersection of the clip rectangle and `rect`.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -18,6 +18,11 @@ void SDL_UnlockSurface(SDL_Surface *surface);
 | ---------------------------- | ----------- | -------------------------------------------------------- |
 | [SDL_Surface](SDL_Surface) * | **surface** | the [SDL_Surface](SDL_Surface) structure to be unlocked. |
 
+## Thread Safety
+
+This function is not thread safe. The locking referred to by this function
+is making the pixels available for direct access, not thread-safe locking.
+
 ## Version
 
 This function is available since SDL 3.2.0.

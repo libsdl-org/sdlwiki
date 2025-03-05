@@ -23,6 +23,10 @@ void SDL_RemoveSurfaceAlternateImages(SDL_Surface *surface);
 This function removes a reference from all the alternative versions,
 destroying them if this is the last reference to them.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

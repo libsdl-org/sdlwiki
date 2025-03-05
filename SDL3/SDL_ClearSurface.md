@@ -34,6 +34,10 @@ This function handles all surface formats, and ignores any clip rectangle.
 If the surface is YUV, the color is assumed to be in the sRGB colorspace,
 otherwise the color is assumed to be in the colorspace of the suface.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

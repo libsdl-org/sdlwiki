@@ -42,6 +42,10 @@ upper bits of the return value can safely be ignored (e.g., with a 16-bpp
 format the return value can be assigned to a [Uint16](Uint16), and
 similarly a Uint8 for an 8-bpp format).
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -28,6 +28,10 @@ bool SDL_SetSurfacePalette(SDL_Surface *surface, SDL_Palette *palette);
 
 A single palette can be shared with many surfaces.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

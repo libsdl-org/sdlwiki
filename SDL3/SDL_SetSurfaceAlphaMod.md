@@ -31,6 +31,10 @@ value is modulated by this alpha value according to the following formula:
 
 `srcA = srcA * (alpha / 255)`
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

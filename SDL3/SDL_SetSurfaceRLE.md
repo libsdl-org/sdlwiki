@@ -29,6 +29,10 @@ bool SDL_SetSurfaceRLE(SDL_Surface *surface, bool enabled);
 If RLE is enabled, color key and alpha blending blits are much faster, but
 the surface must be locked before directly accessing the pixels.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

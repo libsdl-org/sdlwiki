@@ -32,6 +32,10 @@ BMP directly. Other RGB formats with 8-bit or higher get converted to a
 surface before they are saved. YUV and paletted 1-bit and 4-bit formats are
 not supported.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

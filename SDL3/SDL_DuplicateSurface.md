@@ -31,6 +31,10 @@ reference to them as well.
 The returned surface should be freed with
 [SDL_DestroySurface](SDL_DestroySurface)().
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

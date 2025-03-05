@@ -34,6 +34,10 @@ bool SDL_WriteSurfacePixelFloat(SDL_Surface *surface, int x, int y, float r, flo
 This function prioritizes correctness over speed: it is suitable for unit
 tests, but is not intended for use in a game engine.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -29,6 +29,10 @@ bool SDL_GetSurfaceClipRect(SDL_Surface *surface, SDL_Rect *rect);
 When `surface` is the destination of a blit, only the area within the clip
 rectangle is drawn into.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -26,6 +26,10 @@ bool SDL_SurfaceHasColorKey(SDL_Surface *surface);
 
 It is safe to pass a NULL `surface` here; it will return false.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

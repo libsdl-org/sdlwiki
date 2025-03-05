@@ -35,6 +35,11 @@ bool SDL_PremultiplyAlpha(int width, int height, SDL_PixelFormat src_format, con
 
 This is safe to use with src == dst, but not for other overlapping areas.
 
+## Thread Safety
+
+The same destination pixels should not be used from two threads at once. It
+is safe to use the same source pixels from multiple threads.
+
 ## Version
 
 This function is available since SDL 3.2.0.

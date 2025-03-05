@@ -41,6 +41,10 @@ a palette initialized with white in every entry.
 If this function is called for a surface that already has a palette, a new
 palette will be created to replace it.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -28,6 +28,10 @@ bool SDL_PremultiplySurfaceAlpha(SDL_Surface *surface, bool linear);
 
 This is safe to use with src == dst, but not for other overlapping areas.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

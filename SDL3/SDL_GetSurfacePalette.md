@@ -23,6 +23,10 @@ SDL_Palette * SDL_GetSurfacePalette(SDL_Surface *surface);
 ([SDL_Palette](SDL_Palette) *) Returns a pointer to the palette used by the
 surface, or NULL if there is no palette used.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.
