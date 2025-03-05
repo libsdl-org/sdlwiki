@@ -21,8 +21,7 @@ Sint16 SDL_GetGamepadAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
 
 ## Return Value
 
-([Sint16](Sint16)) Returns axis state (including 0) on success or 0 (also)
-on failure; call [SDL_GetError](SDL_GetError)() for more information.
+([Sint16](Sint16)) Returns axis state.
 
 ## Remarks
 
@@ -35,6 +34,9 @@ Triggers range from 0 when released to 32767 when fully pressed, and never
 return a negative value. Note that this differs from the value reported by
 the lower-level [SDL_GetJoystickAxis](SDL_GetJoystickAxis)(), which
 normally uses the full range.
+
+Note that for invalid gamepads or axes, this will return 0. Zero is also
+a valid value in normal operation; usually it means a centered axis.
 
 ## Version
 
