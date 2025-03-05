@@ -35,8 +35,8 @@ return a negative value. Note that this differs from the value reported by
 the lower-level [SDL_GetJoystickAxis](SDL_GetJoystickAxis)(), which
 normally uses the full range.
 
-Note that for invalid gamepads or axes, this will return 0. Zero is also
-a valid value in normal operation; usually it means a centered axis.
+Note that for invalid gamepads or axes, this will return 0. Zero is also a
+valid value in normal operation; usually it means a centered axis.
 
 ## Version
 
