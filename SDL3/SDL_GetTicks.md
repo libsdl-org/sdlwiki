@@ -1,6 +1,6 @@
 # SDL_GetTicks
 
-Get the number of milliseconds since SDL library initialization.
+Get the number of milliseconds that have elapsed since the SDL library initialization. This timer is based on a monotonic clock.
 
 ## Header File
 
@@ -14,8 +14,7 @@ Uint64 SDL_GetTicks(void);
 
 ## Return Value
 
-([Uint64](Uint64)) Returns an unsigned 64-bit value representing the number
-of milliseconds since the SDL library initialized.
+([Uint64](Uint64)) Returns an unsigned 64‑bit integer that represents the number of milliseconds that have elapsed since the SDL library was initialized (typically via a call to SDL_Init).
 
 ## Thread Safety
 
