@@ -615,7 +615,7 @@ int SDL_GetDayOfWeek(int year, int month, int day);                             
 //    ██║    ██║ ██║ ╚═╝ ██║ ███████╗ ██║  ██║
 //    ╚═╝    ╚═╝ ╚═╝     ╚═╝ ╚══════╝ ╚═╝  ╚═╝
 
-Uint64 SDL_GetTicks(void);                                                                  // Get the number of milliseconds since SDL library initialization.
+Uint64 SDL_GetTicks(void);                                                                  // Get the number of milliseconds that have elapsed since the SDL library initialization.
 Uint64 SDL_GetTicksNS(void);                                                                // Get the number of nanoseconds since SDL library initialization.
 Uint64 SDL_GetPerformanceCounter(void);                                                     // Get the current value of the high resolution counter.
 Uint64 SDL_GetPerformanceFrequency(void);                                                   // Get the count per second of the high resolution counter.
