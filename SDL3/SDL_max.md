@@ -21,7 +21,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Return Value
 
-Returns the lesser of `x` and `y`.
+Returns the greater of `x` and `y`.
 
 ## Remarks
 
