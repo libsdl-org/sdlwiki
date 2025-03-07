@@ -26,7 +26,7 @@ for the default render target.
 ## Remarks
 
 The default render target is the window for which the renderer was created,
-and is reported a NULL here.
+and is reported as NULL here.
 
 ## Version
 
