@@ -29,7 +29,7 @@ more information.
 To convert from milliseconds, divide by 1000.0.
 
 This function is only implemented for MOD music formats (set pattern order
-number) and for WAV, OGG, FLAC, MP3, and MODPLUG music at the moment.
+number) and for WAV, OGG, FLAC, MP3, and MOD music at the moment.
 
 ## Version
 
