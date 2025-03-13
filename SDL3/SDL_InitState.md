@@ -22,7 +22,7 @@ typedef struct SDL_InitState
 Here is an example of using this:
 
 ```c
-   static SDL_AtomicInitState init;
+   static SDL_InitState init;
 
    bool InitSystem(void)
    {
