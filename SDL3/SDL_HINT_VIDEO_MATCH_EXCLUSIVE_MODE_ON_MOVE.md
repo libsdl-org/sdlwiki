@@ -27,7 +27,7 @@ This hint can be set anytime.
 
 ## Version
 
-This hint is available since SDL 3.2.10.
+This hint is available since SDL 3.4.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
