@@ -55,6 +55,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GPUIndirectDrawCommand](SDL_GPUIndirectDrawCommand)
 - [SDL_GPUMultisampleState](SDL_GPUMultisampleState)
 - [SDL_GPURasterizerState](SDL_GPURasterizerState)
+- [SDL_GPURenderStateDesc](SDL_GPURenderStateDesc)
 - [SDL_GPUSamplerCreateInfo](SDL_GPUSamplerCreateInfo)
 - [SDL_GPUShaderCreateInfo](SDL_GPUShaderCreateInfo)
 - [SDL_GPUStencilOpState](SDL_GPUStencilOpState)

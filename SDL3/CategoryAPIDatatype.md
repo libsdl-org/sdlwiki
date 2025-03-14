@@ -127,6 +127,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_GPUFence](SDL_GPUFence)
 - [SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline)
 - [SDL_GPURenderPass](SDL_GPURenderPass)
+- [SDL_GPURenderState](SDL_GPURenderState)
 - [SDL_GPUSampler](SDL_GPUSampler)
 - [SDL_GPUShader](SDL_GPUShader)
 - [SDL_GPUShaderFormat](SDL_GPUShaderFormat)
