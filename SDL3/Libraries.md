@@ -18,6 +18,12 @@ RmlUi is the C++ user interface package based on the HTML and CSS standards, des
 - [RmlUI website](https://github.com/mikke89/RmlUi)
 - [Example source code](https://github.com/mikke89/RmlUi/tree/master/Backends)
 
+## SDL_gfx
+
+Provides the basic drawing functions such as lines, circles or polygons.
+
+- [Git Repository](https://github.com/sabdul-khabir/SDL3_gfx)
+
 ## SDL_image
 
 Loads images as SDL surfaces and textures, and supports the following formats:
