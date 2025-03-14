@@ -129,9 +129,22 @@ These are additional supported properties with X11:
 
 The window is implicitly shown if the "hidden" property is not set.
 
-Windows with the "tooltip" and "menu" properties are popup windows and have
-the behaviors and guidelines outlined in
-[SDL_CreatePopupWindow](SDL_CreatePopupWindow)().
+These are additional supported properties with Emscripten:
+
+- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID):
+  the id given to the canvas element. This should start with a '#' sign
+- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT):
+  override the binding element for keyboard inputs for this canvas. The
+  variable can be one of:
+- "#window": the javascript window object (default)
+- "#document": the javascript document object
+- "#screen": the javascript window.screen object
+- "#canvas": the WebGL canvas element
+- "#none": Don't bind anything at all
+- any other string without a leading # sign applies to the element on the
+  page with that ID. Windows with the "tooltip" and "menu" properties are
+  popup windows and have the behaviors and guidelines outlined in
+  [SDL_CreatePopupWindow](SDL_CreatePopupWindow)().
 
 If this window is being created to be used with an
 [SDL_Renderer](SDL_Renderer), you should not add a graphics API specific

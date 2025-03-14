@@ -18,7 +18,7 @@ This hint only applies to the emscripten platform.
 
 The variable can be one of:
 
-- "#window": the javascript window object (default)
+- "#window": the javascript window object
 - "#document": the javascript document object
 - "#screen": the javascript window.screen object
 - "#canvas": the WebGL canvas element

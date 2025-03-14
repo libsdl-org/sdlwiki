@@ -25,7 +25,8 @@ bool SDL_GPUTextureSupportsSampleCount(
 
 ## Return Value
 
-(bool) Returns a hardware-specific version of min(preferred, possible).
+(bool) Returns whether the sample count is supported for this texture
+format.
 
 ## Version
 

@@ -16,8 +16,6 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 This hint only applies to the emscripten platform.
 
-The default value is "#canvas"
-
 This hint should be set before creating a window.
 
 ## Version
