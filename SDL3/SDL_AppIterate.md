@@ -31,9 +31,9 @@ Apps implement this function when using
 "main" function, you should not supply this.
 
 This function is called repeatedly by SDL after [SDL_AppInit](SDL_AppInit)
-returns [SDL_APP_CONTINUE](SDL_APP_CONTINUE). The function should operate as a single iteration the program's
-primary loop; it should update whatever state it needs and draw a new frame
-of video, usually.
+returns [SDL_APP_CONTINUE](SDL_APP_CONTINUE). The function should operate
+as a single iteration the program's primary loop; it should update whatever
+state it needs and draw a new frame of video, usually.
 
 On some platforms, this function will be called at the refresh rate of the
 display (which might change during the life of your app!). There are no
