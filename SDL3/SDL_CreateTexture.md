@@ -78,10 +78,10 @@ int main(int argc, char *argv[])
                 r.y = SDL_rand(500);
 
                 SDL_SetRenderTarget(renderer, texture);
-                SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
+                SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF);
                 SDL_RenderClear(renderer);
                 SDL_RenderRect(renderer,&r);
-                SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0x00);
+                SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
                 SDL_RenderFillRect(renderer, &r);
                 SDL_SetRenderTarget(renderer, NULL);
                 SDL_RenderTexture(renderer, texture, NULL, NULL);
