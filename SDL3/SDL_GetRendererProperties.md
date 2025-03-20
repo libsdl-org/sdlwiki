@@ -116,6 +116,7 @@ With the gpu renderer:
 ## Code Examples
 
 ```c
+SDL_Renderer *renderer;
 SDL_PropertiesID RPID = SDL_GetRendererProperties( renderer );
 Sint64 max_texture_size = SDL_GetNumberProperty( RPID, SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER, 0);
 ```
@@ -130,4 +131,3 @@ This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
