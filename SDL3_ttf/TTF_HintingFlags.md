@@ -12,7 +12,8 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ```c
 typedef enum TTF_HintingFlags
 {
-    TTF_HINTING_NORMAL = 0,     /**< Normal hinting applies standard grid-fitting. */
+    TTF_HINTING_INVALID = -1,
+    TTF_HINTING_NORMAL,         /**< Normal hinting applies standard grid-fitting. */
     TTF_HINTING_LIGHT,          /**< Light hinting applies subtle adjustments to improve rendering. */
     TTF_HINTING_MONO,           /**< Monochrome hinting adjusts the font for better rendering at lower resolutions. */
     TTF_HINTING_NONE,           /**< No hinting, the font is rendered without any grid-fitting. */

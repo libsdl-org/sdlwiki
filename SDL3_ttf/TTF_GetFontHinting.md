@@ -22,7 +22,8 @@ TTF_HintingFlags TTF_GetFontHinting(const TTF_Font *font);
 ## Return Value
 
 ([TTF_HintingFlags](TTF_HintingFlags)) Returns the font's current hinter
-value.
+value, or [TTF_HINTING_INVALID](TTF_HINTING_INVALID) if the font is
+invalid.
 
 ## Remarks
 
