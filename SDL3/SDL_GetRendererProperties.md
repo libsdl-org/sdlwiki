@@ -131,3 +131,4 @@ int max_texture_size = (int)SDL_GetNumberProperty(props, SDL_PROP_RENDERER_MAX_T
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
+
