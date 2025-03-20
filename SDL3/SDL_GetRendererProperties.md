@@ -113,6 +113,13 @@ With the gpu renderer:
 - [`SDL_PROP_RENDERER_GPU_DEVICE_POINTER`](SDL_PROP_RENDERER_GPU_DEVICE_POINTER):
   the [SDL_GPUDevice](SDL_GPUDevice) associated with the renderer
 
+## Code Examples
+
+```c
+SDL_PropertiesID RPID = SDL_GetRendererProperties( renderer );
+Sint64 max_texture_size = SDL_GetNumberProperty( RPID, SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER, 0);
+```
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
