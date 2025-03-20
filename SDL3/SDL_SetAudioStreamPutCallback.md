@@ -35,13 +35,13 @@ The callback can (optionally) call
 [SDL_GetAudioStreamData](SDL_GetAudioStreamData)() to obtain audio from the
 stream during this call.
 
-The callback's `approx_request` argument is how many bytes of _converted_
-data (in the stream's output format) was provided by the caller, although
-this may underestimate a little for safety. This value might be less than
-what is currently available in the stream, if data was already there, and
-might be less than the caller provided if the stream needs to keep a buffer
-to aid in resampling. Which means the callback may be provided with zero
-bytes, and a different amount on each call.
+The callback's `additional_amount` argument is how many bytes of
+_converted_ data (in the stream's output format) was provided by the
+caller, although this may underestimate a little for safety. This value
+might be less than what is currently available in the stream, if data was
+already there, and might be less than the caller provided if the stream
+needs to keep a buffer to aid in resampling. Which means the callback may
+be provided with zero bytes, and a different amount on each call.
 
 The callback may call
 [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable) to see the total
