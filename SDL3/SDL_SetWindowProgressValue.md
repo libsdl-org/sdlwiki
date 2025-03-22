@@ -30,7 +30,7 @@ This function should only be called on the main thread.
 
 ## Version
 
-This function is available since SDL 3.2.8.
+This function is available since SDL 3.4.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
