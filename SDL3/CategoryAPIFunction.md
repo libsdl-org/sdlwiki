@@ -1080,6 +1080,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_SetWindowOpacity](SDL_SetWindowOpacity)
 - [SDL_SetWindowParent](SDL_SetWindowParent)
 - [SDL_SetWindowPosition](SDL_SetWindowPosition)
+- [SDL_SetWindowProgressState](SDL_SetWindowProgressState)
+- [SDL_SetWindowProgressValue](SDL_SetWindowProgressValue)
 - [SDL_SetWindowRelativeMouseMode](SDL_SetWindowRelativeMouseMode)
 - [SDL_SetWindowResizable](SDL_SetWindowResizable)
 - [SDL_SetWindowShape](SDL_SetWindowShape)

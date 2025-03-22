@@ -128,6 +128,8 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 - [SDL_SetWindowOpacity](SDL_SetWindowOpacity)
 - [SDL_SetWindowParent](SDL_SetWindowParent)
 - [SDL_SetWindowPosition](SDL_SetWindowPosition)
+- [SDL_SetWindowProgressState](SDL_SetWindowProgressState)
+- [SDL_SetWindowProgressValue](SDL_SetWindowProgressValue)
 - [SDL_SetWindowResizable](SDL_SetWindowResizable)
 - [SDL_SetWindowShape](SDL_SetWindowShape)
 - [SDL_SetWindowSize](SDL_SetWindowSize)
@@ -180,6 +182,7 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_GLAttr](SDL_GLAttr)
 - [SDL_HitTestResult](SDL_HitTestResult)
+- [SDL_ProgressState](SDL_ProgressState)
 - [SDL_SystemTheme](SDL_SystemTheme)
 <!-- END CATEGORY LIST -->
 

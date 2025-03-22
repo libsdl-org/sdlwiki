@@ -85,6 +85,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_PixelType](SDL_PixelType)
 - [SDL_PowerState](SDL_PowerState)
 - [SDL_ProcessIO](SDL_ProcessIO)
+- [SDL_ProgressState](SDL_ProgressState)
 - [SDL_PropertyType](SDL_PropertyType)
 - [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation)
 - [SDL_Sandbox](SDL_Sandbox)
