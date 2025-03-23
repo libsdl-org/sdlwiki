@@ -14,10 +14,10 @@ bool SDL_SetWindowProgressState(SDL_Window *window, SDL_ProgressState state);
 
 ## Function Parameters
 
-|                                        |            |                                                    |
-| -------------------------------------- | ---------- | -------------------------------------------------- |
-| [SDL_Window](SDL_Window) *             | **window** | the window whose progress state is to be modified. |
-| [SDL_ProgressState](SDL_ProgressState) | **state**  | the progress state.                                |
+|                                        |            |                                                                                                             |
+| -------------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) *             | **window** | the window whose progress state is to be modified.                                                          |
+| [SDL_ProgressState](SDL_ProgressState) | **state**  | the progress state. [`SDL_PROGRESS_STATE_NONE`](SDL_PROGRESS_STATE_NONE) stops displaying the progress bar. |
 
 ## Return Value
 
