@@ -24,12 +24,6 @@ bool SDL_SetWindowProgressValue(SDL_Window *window, float value);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-If the state is [`SDL_PROGRESS_STATE_NONE`](SDL_PROGRESS_STATE_NONE) or
-[`SDL_PROGRESS_STATE_INDETERMINATE`](SDL_PROGRESS_STATE_INDETERMINATE), it
-gets changed to [`SDL_PROGRESS_STATE_NORMAL`](SDL_PROGRESS_STATE_NORMAL).
-
 ## Thread Safety
 
 This function should only be called on the main thread.
