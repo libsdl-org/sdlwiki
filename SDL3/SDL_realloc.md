@@ -44,6 +44,11 @@ possible outcomes:
 - If it returns NULL (indicating failure), then `mem` will remain valid and
   must still be freed with [SDL_free](SDL_free)().
 
+If the allocation is successfully resized, the returned pointer is
+guaranteed to be aligned to either the *fundamental alignment*
+(`alignof(max_align_t)` in C11 and later) or `2 * sizeof(void *)`,
+whichever is smaller.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
