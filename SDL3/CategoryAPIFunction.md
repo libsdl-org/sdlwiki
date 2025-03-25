@@ -599,6 +599,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetWindowPixelDensity](SDL_GetWindowPixelDensity)
 - [SDL_GetWindowPixelFormat](SDL_GetWindowPixelFormat)
 - [SDL_GetWindowPosition](SDL_GetWindowPosition)
+- [SDL_GetWindowProgressState](SDL_GetWindowProgressState)
+- [SDL_GetWindowProgressValue](SDL_GetWindowProgressValue)
 - [SDL_GetWindowProperties](SDL_GetWindowProperties)
 - [SDL_GetWindowRelativeMouseMode](SDL_GetWindowRelativeMouseMode)
 - [SDL_GetWindows](SDL_GetWindows)

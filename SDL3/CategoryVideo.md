@@ -82,6 +82,8 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 - [SDL_GetWindowPixelDensity](SDL_GetWindowPixelDensity)
 - [SDL_GetWindowPixelFormat](SDL_GetWindowPixelFormat)
 - [SDL_GetWindowPosition](SDL_GetWindowPosition)
+- [SDL_GetWindowProgressState](SDL_GetWindowProgressState)
+- [SDL_GetWindowProgressValue](SDL_GetWindowProgressValue)
 - [SDL_GetWindowProperties](SDL_GetWindowProperties)
 - [SDL_GetWindows](SDL_GetWindows)
 - [SDL_GetWindowSafeArea](SDL_GetWindowSafeArea)
