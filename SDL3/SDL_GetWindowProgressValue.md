@@ -20,8 +20,8 @@ float SDL_GetWindowProgressValue(SDL_Window *window);
 
 ## Return Value
 
-(float) Returns the progress value in the range of [0.0 - 1.0], or -1 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+(float) Returns the progress value in the range of [0.0f - 1.0f], or -1.0f
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 

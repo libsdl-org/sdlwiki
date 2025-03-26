@@ -14,10 +14,10 @@ bool SDL_SetWindowProgressValue(SDL_Window *window, float value);
 
 ## Function Parameters
 
-|                            |            |                                                                                                          |
-| -------------------------- | ---------- | -------------------------------------------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) * | **window** | the window whose progress value is to be modified.                                                       |
-| float                      | **value**  | the progress value (0.0f - start, 1.0f - end). If the value is outside the valid range, it gets clamped. |
+|                            |            |                                                                                                             |
+| -------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------- |
+| [SDL_Window](SDL_Window) * | **window** | the window whose progress value is to be modified.                                                          |
+| float                      | **value**  | the progress value in the range of [0.0f - 1.0f]. If the value is outside the valid range, it gets clamped. |
 
 ## Return Value
 

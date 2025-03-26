@@ -21,7 +21,7 @@ SDL_ProgressState SDL_GetWindowProgressState(SDL_Window *window);
 ## Return Value
 
 ([SDL_ProgressState](SDL_ProgressState)) Returns the progress state, or
-[SDL_PROGRESS_STATE_INVALID](SDL_PROGRESS_STATE_INVALID) on failure; call
+[`SDL_PROGRESS_STATE_INVALID`](SDL_PROGRESS_STATE_INVALID) on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
