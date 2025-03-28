@@ -51,6 +51,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_RenderGeometry](SDL_RenderGeometry)
+- [SDL_SetRenderTextureAddressMode](SDL_SetRenderTextureAddressMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
