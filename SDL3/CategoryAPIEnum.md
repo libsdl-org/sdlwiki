@@ -96,6 +96,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_SystemTheme](SDL_SystemTheme)
 - [SDL_TextInputType](SDL_TextInputType)
 - [SDL_TextureAccess](SDL_TextureAccess)
+- [SDL_TextureAddressMode](SDL_TextureAddressMode)
 - [SDL_ThreadPriority](SDL_ThreadPriority)
 - [SDL_ThreadState](SDL_ThreadState)
 - [SDL_TimeFormat](SDL_TimeFormat)

@@ -65,6 +65,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_GetRenderSafeArea](SDL_GetRenderSafeArea)
 - [SDL_GetRenderScale](SDL_GetRenderScale)
 - [SDL_GetRenderTarget](SDL_GetRenderTarget)
+- [SDL_GetRenderTextureAddressMode](SDL_GetRenderTextureAddressMode)
 - [SDL_GetRenderViewport](SDL_GetRenderViewport)
 - [SDL_GetRenderVSync](SDL_GetRenderVSync)
 - [SDL_GetRenderWindow](SDL_GetRenderWindow)
@@ -114,6 +115,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 - [SDL_SetRenderScale](SDL_SetRenderScale)
 - [SDL_SetRenderTarget](SDL_SetRenderTarget)
+- [SDL_SetRenderTextureAddressMode](SDL_SetRenderTextureAddressMode)
 - [SDL_SetRenderViewport](SDL_SetRenderViewport)
 - [SDL_SetRenderVSync](SDL_SetRenderVSync)
 - [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
@@ -151,6 +153,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 <!-- BEGIN CATEGORY LIST: CategoryRender, CategoryAPIEnum -->
 - [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation)
 - [SDL_TextureAccess](SDL_TextureAccess)
+- [SDL_TextureAddressMode](SDL_TextureAddressMode)
 <!-- END CATEGORY LIST -->
 
 ## Macros
