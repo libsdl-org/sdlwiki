@@ -49,6 +49,7 @@ available at: https://www.freetype.org/
 - [TTF_GetFontSize](TTF_GetFontSize)
 - [TTF_GetFontStyle](TTF_GetFontStyle)
 - [TTF_GetFontStyleName](TTF_GetFontStyleName)
+- [TTF_GetFontWeight](TTF_GetFontWeight)
 - [TTF_GetFontWrapAlignment](TTF_GetFontWrapAlignment)
 - [TTF_GetFreeTypeVersion](TTF_GetFreeTypeVersion)
 - [TTF_GetGlyphImage](TTF_GetGlyphImage)
