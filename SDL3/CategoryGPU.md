@@ -1,15 +1,15 @@
 # CategoryGPU
 
 The GPU API offers a cross-platform way for apps to talk to modern graphics
-hardware. It offers both 3D graphics and compute support, in the style of
-Metal, Vulkan, and Direct3D 12.
+hardware. It offers both 3D graphics and compute support, by utilizing the
+Metal, Vulkan, or Direct3D 12 APIs.
 
 A basic workflow might be something like this:
 
 The app creates a GPU device with
 [SDL_CreateGPUDevice](SDL_CreateGPUDevice)(), and assigns it to a window
 with [SDL_ClaimWindowForGPUDevice](SDL_ClaimWindowForGPUDevice)()--although
-strictly speaking you can render offscreen entirely, perhaps for image
+strictly speaking you can render offscreen entirely, for things like image
 processing, and not use a window at all.
 
 Next, the app prepares static data (things that are created once and used
@@ -32,7 +32,7 @@ To render, the app creates one or more command buffers, with
 buffers collect rendering instructions that will be submitted to the GPU in
 batch. Complex scenes can use multiple command buffers, maybe configured
 across multiple threads in parallel, as long as they are submitted in the
-correct order, but many apps will just need one command buffer per frame.
+correct order, but most apps will just need one command buffer per frame.
 
 Rendering can happen to a texture (what other APIs call a "render target")
 or it can happen to the swapchain texture (which is just a special texture
@@ -42,10 +42,10 @@ to render to the window.
 
 Rendering actually happens in a Render Pass, which is encoded into a
 command buffer. One can encode multiple render passes (or alternate between
-render and compute passes) in a single command buffer, but many apps might
+render and compute passes) in a single command buffer, but most apps might
 simply need a single render pass in a single command buffer. Render Passes
 can render to up to four color textures and one depth texture
-simultaneously. If the set of textures being rendered to needs to change,
+simultaneously. If the textures being rendered need to change,
 the Render Pass must be ended and a new one must be begun.
 
 The app calls [SDL_BeginGPURenderPass](SDL_BeginGPURenderPass)(). Then it
@@ -66,7 +66,7 @@ Then, make the actual draw commands with these states:
 
 After all the drawing commands for a pass are complete, the app should call
 [SDL_EndGPURenderPass](SDL_EndGPURenderPass)(). Once a render pass ends all
-render-related state is reset.
+render-related states are reset.
 
 The app can begin new Render Passes and make new draws in the same command
 buffer until the entire scene is rendered.
