@@ -27,23 +27,22 @@ over and over). For example:
 - Render pipelines (precalculated rendering state): use
   [SDL_CreateGPUGraphicsPipeline](SDL_CreateGPUGraphicsPipeline)()
 
-To render, the app creates one or more command buffers, with
+To render, the app creates one or more command buffer, with
 [SDL_AcquireGPUCommandBuffer](SDL_AcquireGPUCommandBuffer)(). Command
-buffers collect rendering instructions that will be submitted to the GPU in
-batch. Complex scenes can use multiple command buffers, maybe configured
-across multiple threads in parallel, as long as they are submitted in the
+buffers collect rendering instructions that will be submitted to the GPU in batches. Complex scenes can use multiple command buffers, configured
+across multiple threads in parallel or just on the main thread, as long as they are submitted in the
 correct order, but most apps will just need one command buffer per frame.
 
 Rendering is applied to a texture (what other APIs call a "render target")
-or it can happen to the swapchain texture (which is just a special texture
+or it can be done to a swapchain texture (which is just a special texture
 that represents a window's contents). The app can use
 [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)()
 to render to the window.
 
 Rendering actually happens in a Render Pass, which is encoded into a
 command buffer. One can encode multiple render passes (or alternate between
-render and compute passes) in a single command buffer, but most apps might
-simply need a single render pass in a single command buffer. Render Passes
+render and compute passes) in a single command buffer, but most apps 
+simply need a single render pass for a single command buffer. Render Passes
 can render to up to four color textures and one depth texture
 simultaneously. If the textures being rendered need to change,
 the Render Pass must be ended and a new one must be begun.
