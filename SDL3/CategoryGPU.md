@@ -34,7 +34,7 @@ batch. Complex scenes can use multiple command buffers, maybe configured
 across multiple threads in parallel, as long as they are submitted in the
 correct order, but most apps will just need one command buffer per frame.
 
-Rendering can happen to a texture (what other APIs call a "render target")
+Rendering is applied to a texture (what other APIs call a "render target")
 or it can happen to the swapchain texture (which is just a special texture
 that represents a window's contents). The app can use
 [SDL_WaitAndAcquireGPUSwapchainTexture](SDL_WaitAndAcquireGPUSwapchainTexture)()
@@ -497,7 +497,4 @@ results.
 <!-- BEGIN CATEGORY LIST: CategoryGPU, CategoryAPIMacro -->
 - (none.)
 <!-- END CATEGORY LIST -->
-
-----
 [CategoryAPICategory](CategoryAPICategory)
-
