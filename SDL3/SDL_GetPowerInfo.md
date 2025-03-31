@@ -40,6 +40,10 @@ until they seem to be stable for a few seconds.
 It's possible a platform can only report battery percentage or time left
 but not both.
 
+On some platforms, retrieving power supply details might be expensive. If
+you want to display continuous status you could call this function every
+minute or so.
+
 ## Version
 
 This function is available since SDL 3.2.0.
