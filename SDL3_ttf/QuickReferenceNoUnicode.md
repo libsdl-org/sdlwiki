@@ -55,6 +55,7 @@ int TTF_GetNumFontFaces(const TTF_Font *font);                                  
 TTF_HintingFlags TTF_GetFontHinting(const TTF_Font *font);                                                                                 // Query a font's current FreeType hinter setting.
 bool TTF_SetFontSDF(TTF_Font *font, bool enabled);                                                                                         // Enable Signed Distance Field rendering for a font.
 bool TTF_GetFontSDF(const TTF_Font *font);                                                                                                 // Query whether Signed Distance Field rendering is enabled for a font.
+int TTF_GetFontWeight(const TTF_Font *font);                                                                                               // Query a font's weight, in terms of the lightness/heaviness of the strokes.
 void TTF_SetFontWrapAlignment(TTF_Font *font, TTF_HorizontalAlignment align);                                                              // Set a font's current wrap alignment option.
 TTF_HorizontalAlignment TTF_GetFontWrapAlignment(const TTF_Font *font);                                                                    // Query a font's current wrap alignment option.
 int TTF_GetFontHeight(const TTF_Font *font);                                                                                               // Query the total height of a font.

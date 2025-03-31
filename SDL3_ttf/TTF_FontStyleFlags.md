@@ -28,7 +28,7 @@ or query font style, such as [TTF_SetFontStyle](TTF_SetFontStyle) or
 
 ## Version
 
-This function is available since SDL_ttf 3.0.0.
+This datatype is available since SDL_ttf 3.0.0.
 
 ## See Also
 
