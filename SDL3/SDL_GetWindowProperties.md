@@ -146,11 +146,12 @@ On X11:
 - [`SDL_PROP_WINDOW_X11_WINDOW_NUMBER`](SDL_PROP_WINDOW_X11_WINDOW_NUMBER):
   the X11 Window associated with the window
 
-On Emscripten: -
-[`SDL_PROP_WINDOW_EMSCRIPTEN_CANVAS_ID`](SDL_PROP_WINDOW_EMSCRIPTEN_CANVAS_ID):
-the id the canvas element will have -
-[`SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT`](SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT):
-the keyboard element that associates keyboard events to this window
+On Emscripten:
+
+- [`SDL_PROP_WINDOW_EMSCRIPTEN_CANVAS_ID`](SDL_PROP_WINDOW_EMSCRIPTEN_CANVAS_ID):
+  the id the canvas element will have
+- [`SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT`](SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT):
+  the keyboard element that associates keyboard events to this window
 
 ## Thread Safety
 
