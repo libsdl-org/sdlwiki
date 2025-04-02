@@ -41,7 +41,7 @@ This function should be called on the thread that created the font.
 
 ## Version
 
-This function is available since SDL_ttf 3.4.0.
+This function is available since SDL_ttf 3.2.2.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
