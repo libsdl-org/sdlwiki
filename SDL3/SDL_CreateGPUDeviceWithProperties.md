@@ -33,6 +33,9 @@ These are the supported properties:
 - [`SDL_PROP_GPU_DEVICE_CREATE_PREFERLOWPOWER_BOOLEAN`](SDL_PROP_GPU_DEVICE_CREATE_PREFERLOWPOWER_BOOLEAN):
   enable to prefer energy efficiency over maximum GPU performance, defaults
   to false.
+- [`SDL_PROP_GPU_DEVICE_CREATE_VERBOSE_BOOLEAN`](SDL_PROP_GPU_DEVICE_CREATE_VERBOSE_BOOLEAN):
+  enable to automatically log useful debug information on device creation,
+  defaults to true.
 - [`SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING`](SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING):
   the name of the GPU driver to use, if a specific one is desired.
 
