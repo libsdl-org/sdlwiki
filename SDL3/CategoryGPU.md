@@ -351,6 +351,7 @@ results.
 - [SDL_GenerateMipmapsForGPUTexture](SDL_GenerateMipmapsForGPUTexture)
 - [SDL_GetGPUDeviceDebugProperties](SDL_GetGPUDeviceDebugProperties)
 - [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
+- [SDL_GetGPUDeviceProperties](SDL_GetGPUDeviceProperties)
 - [SDL_GetGPUDriver](SDL_GetGPUDriver)
 - [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
 - [SDL_GetGPUSwapchainTextureFormat](SDL_GetGPUSwapchainTextureFormat)
