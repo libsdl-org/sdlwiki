@@ -25,6 +25,10 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
+The window size is a request and may be different than expected based on
+the desktop layout and window manager policies. Your application should be
+prepared to handle a window of any size.
+
 These are the supported properties:
 
 - [`SDL_PROP_WINDOW_CREATE_ALWAYS_ON_TOP_BOOLEAN`](SDL_PROP_WINDOW_CREATE_ALWAYS_ON_TOP_BOOLEAN):

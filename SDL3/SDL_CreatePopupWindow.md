@@ -30,6 +30,10 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
+The window size is a request and may be different than expected based on
+the desktop layout and window manager policies. Your application should be
+prepared to handle a window of any size.
+
 The flags parameter **must** contain at least one of the following:
 
 - [`SDL_WINDOW_TOOLTIP`](SDL_WINDOW_TOOLTIP): The popup window is a tooltip
