@@ -135,9 +135,9 @@ The window is implicitly shown if the "hidden" property is not set.
 
 These are additional supported properties with Emscripten:
 
-- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID):
+- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID_STRING`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID_STRING):
   the id given to the canvas element. This should start with a '#' sign
-- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT):
+- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING):
   override the binding element for keyboard inputs for this canvas. The
   variable can be one of:
 - "#window": the javascript window object (default)
