@@ -349,7 +349,6 @@ results.
 - [SDL_GDKResumeGPU](SDL_GDKResumeGPU)
 - [SDL_GDKSuspendGPU](SDL_GDKSuspendGPU)
 - [SDL_GenerateMipmapsForGPUTexture](SDL_GenerateMipmapsForGPUTexture)
-- [SDL_GetGPUDeviceDebugProperties](SDL_GetGPUDeviceDebugProperties)
 - [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
 - [SDL_GetGPUDeviceProperties](SDL_GetGPUDeviceProperties)
 - [SDL_GetGPUDriver](SDL_GetGPUDriver)

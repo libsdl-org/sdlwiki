@@ -381,7 +381,6 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetGDKTaskQueue](SDL_GetGDKTaskQueue)
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 - [SDL_GetGlobalProperties](SDL_GetGlobalProperties)
-- [SDL_GetGPUDeviceDebugProperties](SDL_GetGPUDeviceDebugProperties)
 - [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
 - [SDL_GetGPUDeviceProperties](SDL_GetGPUDeviceProperties)
 - [SDL_GetGPUDriver](SDL_GetGPUDriver)
