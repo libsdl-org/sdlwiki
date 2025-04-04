@@ -119,6 +119,10 @@ Compiler Version: EV031.31.04.01
 Driver Branch: promo490_3_Google
 ```
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.4.0.
