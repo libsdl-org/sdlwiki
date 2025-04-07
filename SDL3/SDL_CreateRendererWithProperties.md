@@ -51,6 +51,18 @@ These are the supported properties:
   property can take any value that is supported by
   [SDL_SetRenderVSync](SDL_SetRenderVSync)() for the renderer.
 
+With the SDL GPU renderer:
+
+- [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_SPIRV_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_SPIRV_BOOLEAN):
+  the app is able to provide SPIR-V shaders to
+  [SDL_GPURenderState](SDL_GPURenderState), optional.
+- [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_DXIL_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_DXIL_BOOLEAN):
+  the app is able to provide DXIL shaders to
+  [SDL_GPURenderState](SDL_GPURenderState), optional.
+- [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_MSL_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_MSL_BOOLEAN):
+  the app is able to provide MSL shaders to
+  [SDL_GPURenderState](SDL_GPURenderState), optional.
+
 With the vulkan renderer:
 
 - [`SDL_PROP_RENDERER_CREATE_VULKAN_INSTANCE_POINTER`](SDL_PROP_RENDERER_CREATE_VULKAN_INSTANCE_POINTER):
