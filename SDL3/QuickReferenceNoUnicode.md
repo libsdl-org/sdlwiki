@@ -929,17 +929,17 @@ char ** SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const c
 // XX       XX   XX XX   XX       XX            XX 
 // XX       XX  XX   XX  XXXXXXX  XXXXXXX  XXXXXX  
 
-const char * SDL_GetPixelFormatName(SDL_PixelFormat format);                                                                               // Get the human readable name of a pixel format.
-bool SDL_GetMasksForPixelFormat(SDL_PixelFormat format, int *bpp, Uint32 *Rmask, Uint32 *Gmask, Uint32 *Bmask, Uint32 *Amask);             // Convert one of the enumerated pixel formats to a bpp value and RGBA masks.
-SDL_PixelFormat SDL_GetPixelFormatForMasks(int bpp, Uint32 Rmask, Uint32 Gmask, Uint32 Bmask, Uint32 Amask);                               // Convert a bpp value and RGBA masks to an enumerated pixel format.
-const SDL_PixelFormatDetails * SDL_GetPixelFormatDetails(SDL_PixelFormat format);                                                          // Create an SDL_PixelFormatDetails structure corresponding to a pixel format.
-SDL_Palette * SDL_CreatePalette(int ncolors);                                                                                              // Create a palette structure with the specified number of color entries.
-bool SDL_SetPaletteColors(SDL_Palette *palette, const SDL_Color *colors, int firstcolor, int ncolors);                                     // Set a range of colors in a palette.
-void SDL_DestroyPalette(SDL_Palette *palette);                                                                                             // Free a palette created with SDL_CreatePalette().
-Uint32 SDL_MapRGB(const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 r, Uint8 g, Uint8 b);                            // Map an RGB triple to an opaque pixel value for a given pixel format.
-Uint32 SDL_MapRGBA(const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 r, Uint8 g, Uint8 b, Uint8 a);                  // Map an RGBA quadruple to a pixel value for a given pixel format.
-void SDL_GetRGB(Uint32 pixel, const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 *r, Uint8 *g, Uint8 *b);             // Get RGB values from a pixel in the specified format.
-void SDL_GetRGBA(Uint32 pixel, const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 *r, Uint8 *g, Uint8 *b, Uint8 *a);  // Get RGBA values from a pixel in the specified format.
+const char * SDL_GetPixelFormatName(SDL_PixelFormat format);                                                                                    // Get the human readable name of a pixel format.
+bool SDL_GetMasksForPixelFormat(SDL_PixelFormat format, int *bpp, Uint32 *Rmask, Uint32 *Gmask, Uint32 *Bmask, Uint32 *Amask);                  // Convert one of the enumerated pixel formats to a bpp value and RGBA masks.
+SDL_PixelFormat SDL_GetPixelFormatForMasks(int bpp, Uint32 Rmask, Uint32 Gmask, Uint32 Bmask, Uint32 Amask);                                    // Convert a bpp value and RGBA masks to an enumerated pixel format.
+const SDL_PixelFormatDetails * SDL_GetPixelFormatDetails(SDL_PixelFormat format);                                                               // Create an SDL_PixelFormatDetails structure corresponding to a pixel format.
+SDL_Palette * SDL_CreatePalette(int ncolors);                                                                                                   // Create a palette structure with the specified number of color entries.
+bool SDL_SetPaletteColors(SDL_Palette *palette, const SDL_Color *colors, int firstcolor, int ncolors);                                          // Set a range of colors in a palette.
+void SDL_DestroyPalette(SDL_Palette *palette);                                                                                                  // Free a palette created with SDL_CreatePalette().
+Uint32 SDL_MapRGB(const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 r, Uint8 g, Uint8 b);                                 // Map an RGB triple to an opaque pixel value for a given pixel format.
+Uint32 SDL_MapRGBA(const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 r, Uint8 g, Uint8 b, Uint8 a);                       // Map an RGBA quadruple to a pixel value for a given pixel format.
+void SDL_GetRGB(Uint32 pixelvalue, const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 *r, Uint8 *g, Uint8 *b);             // Get RGB values from a pixel in the specified format.
+void SDL_GetRGBA(Uint32 pixelvalue, const SDL_PixelFormatDetails *format, const SDL_Palette *palette, Uint8 *r, Uint8 *g, Uint8 *b, Uint8 *a);  // Get RGBA values from a pixel in the specified format.
 
 //  XXXXXX  XX    XX  XXXXXX   XXXXXXX   XXXXX    XXXXXX  XXXXXXX 
 // XX       XX    XX  XX   XX  XX       XX   XX  XX       XX      
