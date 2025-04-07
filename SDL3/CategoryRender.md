@@ -32,6 +32,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 <!-- BEGIN CATEGORY LIST: CategoryRender, CategoryAPIFunction -->
 - [SDL_AddVulkanRenderSemaphores](SDL_AddVulkanRenderSemaphores)
 - [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
+- [SDL_CreateGPURenderer](SDL_CreateGPURenderer)
 - [SDL_CreateGPURenderState](SDL_CreateGPURenderState)
 - [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)

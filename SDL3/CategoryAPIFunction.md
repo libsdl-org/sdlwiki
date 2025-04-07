@@ -130,6 +130,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_CreateGPUDevice](SDL_CreateGPUDevice)
 - [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
 - [SDL_CreateGPUGraphicsPipeline](SDL_CreateGPUGraphicsPipeline)
+- [SDL_CreateGPURenderer](SDL_CreateGPURenderer)
 - [SDL_CreateGPURenderState](SDL_CreateGPURenderState)
 - [SDL_CreateGPUSampler](SDL_CreateGPUSampler)
 - [SDL_CreateGPUShader](SDL_CreateGPUShader)
