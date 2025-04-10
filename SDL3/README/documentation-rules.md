@@ -397,7 +397,7 @@ To put a symbol in a specific category, we use three approaches in SDL:
   ```
   ...then all symbols below that will land in the "Blah" category. We use this
   at the top of a few headers where the simple
-  chop-off-SDL_-and-captialize-the-first-letter trick doesn't work well, but
+  chop-off-SDL_-and-capitalize-the-first-letter trick doesn't work well, but
   one could theoretically use this for headers that have some overlap in
   category.
 
