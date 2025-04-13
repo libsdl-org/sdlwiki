@@ -1,6 +1,6 @@
 # SDL_RectEmptyFloat
 
-Determine whether a floating point rectangle has no area.
+Determine whether a floating point rectangle takes no space.
 
 ## Header File
 
