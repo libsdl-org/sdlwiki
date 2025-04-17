@@ -14,7 +14,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [HOWTO: Use Clion for Raylib | SDL2 | SDL3 Using CMake](https://www.youtube.com/watch?v=_i4wRjcp8eU)
 - [Sol's Graphics Tutorial](http://iki.fi/sol/gp2/)
 - [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
-- [Vulkan HPP RAII + SDL3 Made Easy – A Live Guide for Beginners!] (https://www.youtube.com/live/43sDPSSG0-U)
+- [Vulkan HPP RAII + SDL3 Made Easy – A Live Guide for Beginners!](https://www.youtube.com/live/43sDPSSG0-U)
 
 ## SDL GPU
 
