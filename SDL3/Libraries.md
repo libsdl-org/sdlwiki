@@ -45,6 +45,21 @@ SDL_mixer works with SDL3 but we intend to update the API significantly for a 3.
 - [Git Repository](https://github.com/libsdl-org/SDL_mixer)
 - [Wiki](https://wiki.libsdl.org/SDL3_mixer)
 
+## SDL_sound
+
+If you don't need the fancy mixing capabilities of [SDL_mixer](#sdl_mixer) and
+just want to load some more sound file formats, SDL_sound might be for you!
+
+SDL_sound is a library that handles the decoding of several popular sound file formats,
+such as .WAV and .MP3. It is meant to make the programmer's sound playback tasks simpler.
+The programmer gives SDL_sound a filename, or feeds it data directly from one of many sources,
+and then reads the decoded waveform data back at her leisure.
+
+- [Latest Release](https://github.com/icculus/SDL_sound/releases/latest)
+- [Git Repository](https://github.com/icculus/SDL_sound)
+- [Website](https://icculus.org/SDL_sound/)
+- [API Docs](https://icculus.org/SDL_sound/docs/html/)
+
 ## SDL_ttf
 
 A library which allows you to use TrueType fonts in your SDL applications. It
