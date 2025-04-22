@@ -63,10 +63,10 @@ the supported properties:
   (Direct3D 12 only) if the texture usage is
   [SDL_GPU_TEXTUREUSAGE_DEPTH_STENCIL_TARGET](SDL_GPU_TEXTUREUSAGE_DEPTH_STENCIL_TARGET),
   clear the texture to a depth of this value. Defaults to zero.
-- [`SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_STENCIL_UINT8`](SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_STENCIL_UINT8):
+- [`SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_STENCIL_NUMBER`](SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_STENCIL_NUMBER):
   (Direct3D 12 only) if the texture usage is
   [SDL_GPU_TEXTUREUSAGE_DEPTH_STENCIL_TARGET](SDL_GPU_TEXTUREUSAGE_DEPTH_STENCIL_TARGET),
-  clear the texture to a stencil of this value. Defaults to zero.
+  clear the texture to a stencil of this Uint8 value. Defaults to zero.
 - [`SDL_PROP_GPU_TEXTURE_CREATE_NAME_STRING`](SDL_PROP_GPU_TEXTURE_CREATE_NAME_STRING):
   a name that can be displayed in debugging tools.
 
