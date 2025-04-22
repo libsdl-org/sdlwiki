@@ -12,10 +12,11 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ```c
 typedef struct IMG_Animation
 {
-	int w, h;
-	int count;
-	SDL_Surface **frames;
-	int *delays;
+    int w;                  /**< The width of the frames */
+    int h;                  /**< The height of the frames */
+    int count;              /**< The number of frames */
+    SDL_Surface **frames;   /**< An array of frames */
+    int *delays;            /**< An array of frame delays, in milliseconds */
 } IMG_Animation;
 ```
 
