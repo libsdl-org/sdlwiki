@@ -37,7 +37,7 @@ These are the supported properties:
   enable to automatically log useful debug information on device creation,
   defaults to true.
 - [`SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING`](SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING):
-  the name of the GPU driver to use, if a specific one is desired.
+  the name of the GPU driver to use, if a specific one is desired. See the [GPU API overview](CategoryGPU#system-requirements) for possible values.
 
 These are the current shader format properties:
 
@@ -65,6 +65,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_CreateGPUDevice](SDL_CreateGPUDevice)
 - [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
 - [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
 - [SDL_DestroyGPUDevice](SDL_DestroyGPUDevice)
