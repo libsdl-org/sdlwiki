@@ -26,8 +26,7 @@ false if it was set to NULL (the entire target).
 ## Remarks
 
 This is useful if you're saving and restoring the viewport and want to know
-whether you should restore a specific rectangle or NULL. Note that the
-viewport is always reset when changing rendering targets.
+whether you should restore a specific rectangle or NULL.
 
 Each render target has its own viewport. This function checks the viewport
 for the current render target.
