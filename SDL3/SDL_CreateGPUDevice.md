@@ -28,12 +28,22 @@ SDL_GPUDevice * SDL_CreateGPUDevice(
 ([SDL_GPUDevice](SDL_GPUDevice) *) Returns a GPU context on success or NULL
 on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The GPU driver name can be one of the following:
+
+- "vulkan": [Vulkan](CategoryGPU#vulkan)
+- "direct3d12": [D3D12](CategoryGPU#d3d12)
+- "metal": [Metal](CategoryGPU#metal)
+- NULL: let SDL pick the optimal driver
+
 ## Version
 
 This function is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
 - [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
 - [SDL_GetGPUDeviceDriver](SDL_GetGPUDeviceDriver)
 - [SDL_DestroyGPUDevice](SDL_DestroyGPUDevice)
