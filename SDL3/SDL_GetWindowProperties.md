@@ -91,7 +91,7 @@ On macOS:
 
 On OpenVR:
 
-- [`SDL_PROP_WINDOW_OPENVR_OVERLAY_ID`](SDL_PROP_WINDOW_OPENVR_OVERLAY_ID):
+- [`SDL_PROP_WINDOW_OPENVR_OVERLAY_ID_NUMBER`](SDL_PROP_WINDOW_OPENVR_OVERLAY_ID_NUMBER):
   the OpenVR Overlay Handle ID for the associated overlay window.
 
 On Vivante:
