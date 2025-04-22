@@ -58,7 +58,6 @@ and then reads the decoded waveform data back at her leisure.
 - [Latest Release](https://github.com/icculus/SDL_sound/releases/latest)
 - [Git Repository](https://github.com/icculus/SDL_sound)
 - [Website](https://icculus.org/SDL_sound/)
-- [API Docs](https://icculus.org/SDL_sound/docs/html/)
 
 ## SDL_ttf
 
@@ -66,8 +65,7 @@ A library which allows you to use TrueType fonts in your SDL applications. It
 comes with an example program "showfont" which displays an example string for a
 given TrueType font file.
 
-SDL_ttf works with SDL3 and has a 3.0 [preview release](https://github.com/libsdl-org/SDL_ttf/releases/tag/preview-3.1.0) available.
-
+- [Latest Release](https://github.com/libsdl-org/SDL_ttf/releases/latest)
 - [Git Repository](https://github.com/libsdl-org/SDL_ttf)
 - [Wiki](https://wiki.libsdl.org/SDL3_ttf)
 
