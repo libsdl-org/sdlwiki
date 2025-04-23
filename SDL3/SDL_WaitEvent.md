@@ -32,6 +32,22 @@ As this function may implicitly call [SDL_PumpEvents](SDL_PumpEvents)(),
 you can only call this function in the thread that initialized the video
 subsystem.
 
+An application with no pending animations can conserve system resources and battery life by waiting for events between frames.
+Then it is common practice to processes all events in a [SDL_PollEvent](SDL_PollEvent) loop before the next frame:
+
+```c
+while (app_is_running) {
+
+    // draw and present the current frame
+
+    SDL_WaitEvent(NULL);  // sleep until events are queued
+    SDL_Event event;
+    while (SDL_PollEvent(&event)) {  // poll until all events are handled
+        // decide what to do with this event
+    }
+}
+```
+
 ## Thread Safety
 
 This function should only be called on the main thread.
