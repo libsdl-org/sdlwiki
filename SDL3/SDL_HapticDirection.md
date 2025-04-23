@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 typedef struct SDL_HapticDirection
 {
-    Uint8 type;         /**< The type of encoding. */
-    Sint32 dir[3];      /**< The encoded direction. */
+    SDL_HapticDirectionType type;  /**< The type of encoding. */
+    Sint32 dir[3];                 /**< The encoded direction. */
 } SDL_HapticDirection;
 ```
 

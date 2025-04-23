@@ -12,9 +12,9 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 typedef struct SDL_HapticPeriodic
 {
     /* Header */
-    Uint16 type;        /**< SDL_HAPTIC_SINE, SDL_HAPTIC_SQUARE
-                             SDL_HAPTIC_TRIANGLE, SDL_HAPTIC_SAWTOOTHUP or
-                             SDL_HAPTIC_SAWTOOTHDOWN */
+    SDL_HapticEffectType type;      /**< SDL_HAPTIC_SINE, SDL_HAPTIC_SQUARE
+                                         SDL_HAPTIC_TRIANGLE, SDL_HAPTIC_SAWTOOTHUP or
+                                         SDL_HAPTIC_SAWTOOTHDOWN */
     SDL_HapticDirection direction;  /**< Direction of the effect. */
 
     /* Replay */

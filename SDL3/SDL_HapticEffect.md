@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 typedef union SDL_HapticEffect
 {
     /* Common for all force feedback effects */
-    Uint16 type;                    /**< Effect type. */
+    SDL_HapticEffectType type;      /**< Effect type. */
     SDL_HapticConstant constant;    /**< Constant effect. */
     SDL_HapticPeriodic periodic;    /**< Periodic effect. */
     SDL_HapticCondition condition;  /**< Condition effect. */

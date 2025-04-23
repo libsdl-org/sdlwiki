@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 typedef struct SDL_HapticConstant
 {
     /* Header */
-    Uint16 type;            /**< SDL_HAPTIC_CONSTANT */
+    SDL_HapticEffectType type;      /**< SDL_HAPTIC_CONSTANT */
     SDL_HapticDirection direction;  /**< Direction of the effect. */
 
     /* Replay */

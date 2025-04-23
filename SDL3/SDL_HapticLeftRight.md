@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 typedef struct SDL_HapticLeftRight
 {
     /* Header */
-    Uint16 type;            /**< SDL_HAPTIC_LEFTRIGHT */
+    SDL_HapticEffectType type;  /**< SDL_HAPTIC_LEFTRIGHT */
 
     /* Replay */
     Uint32 length;          /**< Duration of the effect in milliseconds. */
