@@ -152,6 +152,7 @@ scenarios.
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 - [SDL_PauseAudioStreamDevice](SDL_PauseAudioStreamDevice)
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+- [SDL_PutAudioStreamPlanarData](SDL_PutAudioStreamPlanarData)
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_ResumeAudioStreamDevice](SDL_ResumeAudioStreamDevice)
 - [SDL_SetAudioDeviceGain](SDL_SetAudioDeviceGain)
