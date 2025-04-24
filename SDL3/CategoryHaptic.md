@@ -51,7 +51,7 @@ bool test_haptic(SDL_Joystick *joystick)
 {
    SDL_Haptic *haptic;
    SDL_HapticEffect effect;
-   int effect_id;
+   SDL_HapticEffectID effect_id;
 
    // Open the device
    haptic = SDL_OpenHapticFromJoystick(joystick);

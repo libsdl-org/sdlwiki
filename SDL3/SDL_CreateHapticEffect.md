@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
+SDL_HapticEffectID SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 ```
 
 ## Function Parameters
@@ -21,8 +21,9 @@ int SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 
 ## Return Value
 
-(int) Returns the ID of the effect on success or -1 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+([SDL_HapticEffectID](SDL_HapticEffectID)) Returns the ID of the effect on
+success or -1 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Version
 

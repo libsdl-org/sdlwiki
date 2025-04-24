@@ -9,16 +9,16 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-bool SDL_RunHapticEffect(SDL_Haptic *haptic, int effect, Uint32 iterations);
+bool SDL_RunHapticEffect(SDL_Haptic *haptic, SDL_HapticEffectID effect, Uint32 iterations);
 ```
 
 ## Function Parameters
 
-|                            |                |                                                                                                                 |
-| -------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic**     | the [SDL_Haptic](SDL_Haptic) device to run the effect on.                                                       |
-| int                        | **effect**     | the ID of the haptic effect to run.                                                                             |
-| [Uint32](Uint32)           | **iterations** | the number of iterations to run the effect; use [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) to repeat forever. |
+|                                          |                |                                                                                                                 |
+| ---------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *               | **haptic**     | the [SDL_Haptic](SDL_Haptic) device to run the effect on.                                                       |
+| [SDL_HapticEffectID](SDL_HapticEffectID) | **effect**     | the ID of the haptic effect to run.                                                                             |
+| [Uint32](Uint32)                         | **iterations** | the number of iterations to run the effect; use [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) to repeat forever. |
 
 ## Return Value
 

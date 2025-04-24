@@ -9,15 +9,15 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);
+bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, SDL_HapticEffectID effect);
 ```
 
 ## Function Parameters
 
-|                            |            |                                                                        |
-| -------------------------- | ---------- | ---------------------------------------------------------------------- |
-| [SDL_Haptic](SDL_Haptic) * | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query for the effect status on. |
-| int                        | **effect** | the ID of the haptic effect to query its status.                       |
+|                                          |            |                                                                        |
+| ---------------------------------------- | ---------- | ---------------------------------------------------------------------- |
+| [SDL_Haptic](SDL_Haptic) *               | **haptic** | the [SDL_Haptic](SDL_Haptic) device to query for the effect status on. |
+| [SDL_HapticEffectID](SDL_HapticEffectID) | **effect** | the ID of the haptic effect to query its status.                       |
 
 ## Return Value
 

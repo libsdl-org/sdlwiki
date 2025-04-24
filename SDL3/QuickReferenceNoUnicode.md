@@ -486,37 +486,37 @@ SDL_PowerState SDL_GetJoystickPowerInfo(SDL_Joystick *joystick, int *percent);  
 // XX   XX  XX   XX  XX          XX     XX  XX      
 // XX   XX  XX   XX  XX          XX     XX   XXXXXX 
 
-SDL_HapticID * SDL_GetHaptics(int *count);                                                  // Get a list of currently connected haptic devices.
-const char * SDL_GetHapticNameForID(SDL_HapticID instance_id);                              // Get the implementation dependent name of a haptic device.
-SDL_Haptic * SDL_OpenHaptic(SDL_HapticID instance_id);                                      // Open a haptic device for use.
-SDL_Haptic * SDL_GetHapticFromID(SDL_HapticID instance_id);                                 // Get the SDL_Haptic associated with an instance ID, if it has been opened.
-SDL_HapticID SDL_GetHapticID(SDL_Haptic *haptic);                                           // Get the instance ID of an opened haptic device.
-const char * SDL_GetHapticName(SDL_Haptic *haptic);                                         // Get the implementation dependent name of a haptic device.
-bool SDL_IsMouseHaptic(void);                                                               // Query whether or not the current mouse has haptic capabilities.
-SDL_Haptic * SDL_OpenHapticFromMouse(void);                                                 // Try to open a haptic device from the current mouse.
-bool SDL_IsJoystickHaptic(SDL_Joystick *joystick);                                          // Query if a joystick has haptic features.
-SDL_Haptic * SDL_OpenHapticFromJoystick(SDL_Joystick *joystick);                            // Open a haptic device for use from a joystick device.
-void SDL_CloseHaptic(SDL_Haptic *haptic);                                                   // Close a haptic device previously opened with SDL_OpenHaptic().
-int SDL_GetMaxHapticEffects(SDL_Haptic *haptic);                                            // Get the number of effects a haptic device can store.
-int SDL_GetMaxHapticEffectsPlaying(SDL_Haptic *haptic);                                     // Get the number of effects a haptic device can play at the same time.
-Uint32 SDL_GetHapticFeatures(SDL_Haptic *haptic);                                           // Get the haptic device's supported features in bitwise manner.
-int SDL_GetNumHapticAxes(SDL_Haptic *haptic);                                               // Get the number of haptic axes the device has.
-bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *effect);         // Check to see if an effect is supported by a haptic device.
-int SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);             // Create a new haptic effect on a specified device.
-bool SDL_UpdateHapticEffect(SDL_Haptic *haptic, int effect, const SDL_HapticEffect *data);  // Update the properties of an effect.
-bool SDL_RunHapticEffect(SDL_Haptic *haptic, int effect, Uint32 iterations);                // Run the haptic effect on its associated haptic device.
-bool SDL_StopHapticEffect(SDL_Haptic *haptic, int effect);                                  // Stop the haptic effect on its associated haptic device.
-void SDL_DestroyHapticEffect(SDL_Haptic *haptic, int effect);                               // Destroy a haptic effect on the device.
-bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, int effect);                             // Get the status of the current effect on the specified haptic device.
-bool SDL_SetHapticGain(SDL_Haptic *haptic, int gain);                                       // Set the global gain of the specified haptic device.
-bool SDL_SetHapticAutocenter(SDL_Haptic *haptic, int autocenter);                           // Set the global autocenter of the device.
-bool SDL_PauseHaptic(SDL_Haptic *haptic);                                                   // Pause a haptic device.
-bool SDL_ResumeHaptic(SDL_Haptic *haptic);                                                  // Resume a haptic device.
-bool SDL_StopHapticEffects(SDL_Haptic *haptic);                                             // Stop all the currently playing effects on a haptic device.
-bool SDL_HapticRumbleSupported(SDL_Haptic *haptic);                                         // Check whether rumble is supported on a haptic device.
-bool SDL_InitHapticRumble(SDL_Haptic *haptic);                                              // Initialize a haptic device for simple rumble playback.
-bool SDL_PlayHapticRumble(SDL_Haptic *haptic, float strength, Uint32 length);               // Run a simple rumble effect on a haptic device.
-bool SDL_StopHapticRumble(SDL_Haptic *haptic);                                              // Stop the simple rumble on a haptic device.
+SDL_HapticID * SDL_GetHaptics(int *count);                                                                 // Get a list of currently connected haptic devices.
+const char * SDL_GetHapticNameForID(SDL_HapticID instance_id);                                             // Get the implementation dependent name of a haptic device.
+SDL_Haptic * SDL_OpenHaptic(SDL_HapticID instance_id);                                                     // Open a haptic device for use.
+SDL_Haptic * SDL_GetHapticFromID(SDL_HapticID instance_id);                                                // Get the SDL_Haptic associated with an instance ID, if it has been opened.
+SDL_HapticID SDL_GetHapticID(SDL_Haptic *haptic);                                                          // Get the instance ID of an opened haptic device.
+const char * SDL_GetHapticName(SDL_Haptic *haptic);                                                        // Get the implementation dependent name of a haptic device.
+bool SDL_IsMouseHaptic(void);                                                                              // Query whether or not the current mouse has haptic capabilities.
+SDL_Haptic * SDL_OpenHapticFromMouse(void);                                                                // Try to open a haptic device from the current mouse.
+bool SDL_IsJoystickHaptic(SDL_Joystick *joystick);                                                         // Query if a joystick has haptic features.
+SDL_Haptic * SDL_OpenHapticFromJoystick(SDL_Joystick *joystick);                                           // Open a haptic device for use from a joystick device.
+void SDL_CloseHaptic(SDL_Haptic *haptic);                                                                  // Close a haptic device previously opened with SDL_OpenHaptic().
+int SDL_GetMaxHapticEffects(SDL_Haptic *haptic);                                                           // Get the number of effects a haptic device can store.
+int SDL_GetMaxHapticEffectsPlaying(SDL_Haptic *haptic);                                                    // Get the number of effects a haptic device can play at the same time.
+Uint32 SDL_GetHapticFeatures(SDL_Haptic *haptic);                                                          // Get the haptic device's supported features in bitwise manner.
+int SDL_GetNumHapticAxes(SDL_Haptic *haptic);                                                              // Get the number of haptic axes the device has.
+bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *effect);                        // Check to see if an effect is supported by a haptic device.
+SDL_HapticEffectID SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);             // Create a new haptic effect on a specified device.
+bool SDL_UpdateHapticEffect(SDL_Haptic *haptic, SDL_HapticEffectID effect, const SDL_HapticEffect *data);  // Update the properties of an effect.
+bool SDL_RunHapticEffect(SDL_Haptic *haptic, SDL_HapticEffectID effect, Uint32 iterations);                // Run the haptic effect on its associated haptic device.
+bool SDL_StopHapticEffect(SDL_Haptic *haptic, SDL_HapticEffectID effect);                                  // Stop the haptic effect on its associated haptic device.
+void SDL_DestroyHapticEffect(SDL_Haptic *haptic, SDL_HapticEffectID effect);                               // Destroy a haptic effect on the device.
+bool SDL_GetHapticEffectStatus(SDL_Haptic *haptic, SDL_HapticEffectID effect);                             // Get the status of the current effect on the specified haptic device.
+bool SDL_SetHapticGain(SDL_Haptic *haptic, int gain);                                                      // Set the global gain of the specified haptic device.
+bool SDL_SetHapticAutocenter(SDL_Haptic *haptic, int autocenter);                                          // Set the global autocenter of the device.
+bool SDL_PauseHaptic(SDL_Haptic *haptic);                                                                  // Pause a haptic device.
+bool SDL_ResumeHaptic(SDL_Haptic *haptic);                                                                 // Resume a haptic device.
+bool SDL_StopHapticEffects(SDL_Haptic *haptic);                                                            // Stop all the currently playing effects on a haptic device.
+bool SDL_HapticRumbleSupported(SDL_Haptic *haptic);                                                        // Check whether rumble is supported on a haptic device.
+bool SDL_InitHapticRumble(SDL_Haptic *haptic);                                                             // Initialize a haptic device for simple rumble playback.
+bool SDL_PlayHapticRumble(SDL_Haptic *haptic, float strength, Uint32 length);                              // Run a simple rumble effect on a haptic device.
+bool SDL_StopHapticRumble(SDL_Haptic *haptic);                                                             // Stop the simple rumble on a haptic device.
 
 //  XXXXX   XX    XX  XXXXXX   XX   XXXXXX  
 // XX   XX  XX    XX  XX   XX  XX  XX    XX 

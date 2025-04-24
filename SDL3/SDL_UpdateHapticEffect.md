@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-bool SDL_UpdateHapticEffect(SDL_Haptic *haptic, int effect, const SDL_HapticEffect *data);
+bool SDL_UpdateHapticEffect(SDL_Haptic *haptic, SDL_HapticEffectID effect, const SDL_HapticEffect *data);
 ```
 
 ## Function Parameters
@@ -17,7 +17,7 @@ bool SDL_UpdateHapticEffect(SDL_Haptic *haptic, int effect, const SDL_HapticEffe
 |                                              |            |                                                                                                |
 | -------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------- |
 | [SDL_Haptic](SDL_Haptic) *                   | **haptic** | the [SDL_Haptic](SDL_Haptic) device that has the effect.                                       |
-| int                                          | **effect** | the identifier of the effect to update.                                                        |
+| [SDL_HapticEffectID](SDL_HapticEffectID)     | **effect** | the identifier of the effect to update.                                                        |
 | const [SDL_HapticEffect](SDL_HapticEffect) * | **data**   | an [SDL_HapticEffect](SDL_HapticEffect) structure containing the new effect properties to use. |
 
 ## Return Value
