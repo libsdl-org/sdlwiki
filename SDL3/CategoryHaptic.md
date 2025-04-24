@@ -138,6 +138,7 @@ Note that the SDL haptic subsystem is not thread-safe.
 <!-- BEGIN CATEGORY LIST: CategoryHaptic, CategoryAPIDatatype -->
 - [SDL_Haptic](SDL_Haptic)
 - [SDL_HapticDirectionType](SDL_HapticDirectionType)
+- [SDL_HapticEffectID](SDL_HapticEffectID)
 - [SDL_HapticEffectType](SDL_HapticEffectType)
 - [SDL_HapticID](SDL_HapticID)
 <!-- END CATEGORY LIST -->

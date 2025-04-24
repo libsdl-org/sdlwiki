@@ -136,6 +136,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_GPUTransferBuffer](SDL_GPUTransferBuffer)
 - [SDL_Haptic](SDL_Haptic)
 - [SDL_HapticDirectionType](SDL_HapticDirectionType)
+- [SDL_HapticEffectID](SDL_HapticEffectID)
 - [SDL_HapticEffectType](SDL_HapticEffectType)
 - [SDL_HapticID](SDL_HapticID)
 - [SDL_hid_device](SDL_hid_device)
