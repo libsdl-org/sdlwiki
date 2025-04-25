@@ -262,6 +262,7 @@ void SDL_SetEventEnabled(Uint32 type, bool enabled);                            
 bool SDL_EventEnabled(Uint32 type);                                                                            // Query the state of processing events by type.
 Uint32 SDL_RegisterEvents(int numevents);                                                                      // Allocate a set of user-defined events, and return the beginning event number for that set of events.
 SDL_Window * SDL_GetWindowFromEvent(const SDL_Event *event);                                                   // Get window associated with an event.
+int SDL_GetEventDescription(const SDL_Event *event, char *buf, int buflen);                                    // Generate a human-readable description of an event.
 
 // XX   XX  XXXXXXX  XX    XX  XXXXXX    XXXXXX    XXXXX   XXXXXX   XXXXXX  
 // XX  XX   XX        XX  XX   XX   XX  XX    XX  XX   XX  XX   XX  XX   XX 
