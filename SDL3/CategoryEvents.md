@@ -41,6 +41,7 @@ system.
 - [SDL_FilterEvents](SDL_FilterEvents)
 - [SDL_FlushEvent](SDL_FlushEvent)
 - [SDL_FlushEvents](SDL_FlushEvents)
+- [SDL_GetEventDescription](SDL_GetEventDescription)
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_GetWindowFromEvent](SDL_GetWindowFromEvent)
 - [SDL_HasEvent](SDL_HasEvent)

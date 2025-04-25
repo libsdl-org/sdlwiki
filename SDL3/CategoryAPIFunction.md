@@ -329,6 +329,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetEnvironmentVariable](SDL_GetEnvironmentVariable)
 - [SDL_GetEnvironmentVariables](SDL_GetEnvironmentVariables)
 - [SDL_GetError](SDL_GetError)
+- [SDL_GetEventDescription](SDL_GetEventDescription)
 - [SDL_GetEventFilter](SDL_GetEventFilter)
 - [SDL_GetFloatProperty](SDL_GetFloatProperty)
 - [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)
