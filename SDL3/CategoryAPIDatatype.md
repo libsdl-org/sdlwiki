@@ -78,6 +78,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_AsyncIO](SDL_AsyncIO)
 - [SDL_AsyncIOQueue](SDL_AsyncIOQueue)
 - [SDL_AudioDeviceID](SDL_AudioDeviceID)
+- [SDL_AudioIterationCallback](SDL_AudioIterationCallback)
 - [SDL_AudioPostmixCallback](SDL_AudioPostmixCallback)
 - [SDL_AudioStream](SDL_AudioStream)
 - [SDL_AudioStreamCallback](SDL_AudioStreamCallback)
