@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-bool SDL_PutAudioStreamPlanarData(SDL_AudioStream *stream, const void * const *channel_buffers, int num_samples);
+bool SDL_PutAudioStreamPlanarData(SDL_AudioStream *stream, const void * const *channel_buffers, int num_channels, int num_samples);
 ```
 
 ## Function Parameters
@@ -18,6 +18,7 @@ bool SDL_PutAudioStreamPlanarData(SDL_AudioStream *stream, const void * const *c
 | ------------------------------------ | ------------------- | --------------------------------------------------------- |
 | [SDL_AudioStream](SDL_AudioStream) * | **stream**          | the stream the audio data is being added to.              |
 | const void * const *                 | **channel_buffers** | a pointer to an array of arrays, one array per channel.   |
+| int                                  | **num_channels**    | the number of arrays in `channel_buffers` or -1.          |
 | int                                  | **num_samples**     | the number of _samples_ per array to write to the stream. |
 
 ## Return Value
@@ -41,6 +42,14 @@ The arrays in `channel_buffers` are ordered as they are to be interleaved;
 the first array will be the first sample in the interleaved data. Any
 individual array may be NULL; in this case, silence will be interleaved for
 that channel.
+
+`num_channels` specifies how many arrays are in `channel_buffers`. This can
+be used as a safety to prevent overflow, in case the stream format has
+changed elsewhere. If more channels are specified than the current input
+spec, they are ignored. If less channels are specified, the missing arrays
+are treated as if they are NULL (silence is written to those channels). If
+the count is -1, SDL will assume the array count matches the current input
+spec.
 
 Note that `num_samples` is the number of _samples per array_. This can also
 be thought of as the number of _sample frames_ to be queued. A value of 1
