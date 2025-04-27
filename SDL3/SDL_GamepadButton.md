@@ -47,8 +47,9 @@ typedef enum SDL_GamepadButton
 For controllers that use a diamond pattern for the face buttons, the
 south/east/west/north buttons below correspond to the locations in the
 diamond pattern. For Xbox controllers, this would be A/B/X/Y, for Nintendo
-Switch controllers, this would be B/A/Y/X, for PlayStation controllers this
-would be Cross/Circle/Square/Triangle.
+Switch controllers, this would be B/A/Y/X, for GameCube controllers this
+would be A/X/B/Y, for PlayStation controllers this would be
+Cross/Circle/Square/Triangle.
 
 For controllers that don't use a diamond pattern for the face buttons, the
 south/east/west/north buttons indicate the buttons labeled A, B, C, D, or
