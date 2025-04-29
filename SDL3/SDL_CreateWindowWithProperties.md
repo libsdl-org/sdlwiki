@@ -35,6 +35,10 @@ These are the supported properties:
   true if the window should be always on top
 - [`SDL_PROP_WINDOW_CREATE_BORDERLESS_BOOLEAN`](SDL_PROP_WINDOW_CREATE_BORDERLESS_BOOLEAN):
   true if the window has no window decoration
+- [`SDL_PROP_WINDOW_CREATE_CONSTRAIN_POPUP_BOOLEAN`](SDL_PROP_WINDOW_CREATE_CONSTRAIN_POPUP_BOOLEAN):
+  true if the "tooltip" and "menu" window types should be automatically
+  constrained to be entirely within display bounds (default), false if no
+  constraints on the position are desired.
 - [`SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT_BOOLEAN`](SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT_BOOLEAN):
   true if the window will be used with an externally managed graphics
   context.
