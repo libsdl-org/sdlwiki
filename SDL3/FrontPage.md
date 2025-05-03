@@ -18,8 +18,7 @@ software, emulators, and popular games including
 [Valve](https://valvesoftware.com)'s award winning catalog and many
 [Humble Bundle](https://www.humblebundle.com) games.
 
-SDL officially supports Windows, macOS, Linux, iOS, and Android, and several
-other platforms.
+SDL officially supports Windows, macOS, Linux, iOS, and Android, and [several other platforms](https://github.com/libsdl-org/SDL/blob/main/docs/README-platforms.md).
 
 SDL is written in C, works natively with C++, and has bindings available for
 several other languages, including C#, Python, and [Rust](https://crates.io/crates/sdl3).
