@@ -1,4 +1,4 @@
-We are no longer hosted in Mercurial. Please see README-git.md for details.
+# Moved
 
-Thanks!
+This page has moved to [/SDL2/README-hg](/SDL2/README-hg).
 
