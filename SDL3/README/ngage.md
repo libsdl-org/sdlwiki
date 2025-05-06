@@ -1,5 +1,4 @@
-Support for the Nokia N-Gage has been removed from SDL3 (but will make a
-comeback when newer compilers are available for the platform).
+# Moved
 
-SDL2 still supports this platform.
+This page has moved to [/SDL3/README-ngage](/SDL3/README-ngage).
 

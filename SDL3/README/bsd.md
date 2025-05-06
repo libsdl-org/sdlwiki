@@ -1,6 +1,4 @@
-# FreeBSD / OpenBSD / NetBSD
+# Moved
 
-SDL is fully supported on BSD platforms, and is built using [CMake](README-cmake.md).
-
-If you want to run on the console, you can take a look at [KMSDRM support on BSD](README-kmsbsd.md)
+This page has moved to [/SDL3/README-bsd](/SDL3/README-bsd).
 

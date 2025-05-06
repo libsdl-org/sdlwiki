@@ -1,4 +1,4 @@
-# Haiku OS
+# Moved
 
-SDL is fully supported on Haiku OS, and is built using [CMake](README-cmake.md).
+This page has moved to [/SDL3/README-haiku](/SDL3/README-haiku).
 

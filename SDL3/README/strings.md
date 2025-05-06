@@ -1,7 +1,4 @@
-# String policies in SDL3.
+# Moved
 
-## Encoding.
-
-Unless otherwise specified, all strings in SDL, across all platforms, are
-UTF-8 encoded and can represent the full range of [Unicode](https://unicode.org).
+This page has moved to [/SDL3/README-strings](/SDL3/README-strings).
 
