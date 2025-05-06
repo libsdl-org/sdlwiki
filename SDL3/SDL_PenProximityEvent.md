@@ -1,6 +1,6 @@
 # SDL_PenProximityEvent
 
-Pressure-sensitive pen proximity event structure (event.pmotion.*)
+Pressure-sensitive pen proximity event structure (event.pproximity.*)
 
 ## Header File
 
