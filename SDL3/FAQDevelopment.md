@@ -24,4 +24,4 @@ The main event handling should be done on the main thread, though you can use [S
 
 ## Can I use shaders with the SDL 2D render API?
 
-No, there are many different ways to use shaders, and rather than restrict you to a subset of shader functionality, we recommend using a full 3D API like [SDL GPU](https://wiki.libsdl.org/SDL3/CategoryGPU). You can look at how SDL uses the GPU API for 2D rendering if you'd like to expand on that: [SDL_render_gpu.c](https://github.com/libsdl-org/SDL/blob/main/src/render/gpu/SDL_render_gpu.c)
+No, there are many different ways to use shaders, and rather than restrict you to a subset of shader functionality, we recommend using a full 3D API like [SDL GPU](CategoryGPU). You can look at how SDL uses the GPU API for 2D rendering if you'd like to expand on that: [SDL_render_gpu.c](https://github.com/libsdl-org/SDL/blob/main/src/render/gpu/SDL_render_gpu.c)

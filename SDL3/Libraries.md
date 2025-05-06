@@ -80,6 +80,6 @@ SDL_net works with SDL3 and we have some more polish work to do for a 3.0 releas
 
 ## SDL_shadercross
 
-A library for translating shaders to different formats. Intended for use with the [GPU API](https://wiki.libsdl.org/SDL3/CategoryGPU).
+A library for translating shaders to different formats. Intended for use with the [GPU API](CategoryGPU).
 
 - [Git Repository](https://github.com/libsdl-org/SDL_shadercross)
