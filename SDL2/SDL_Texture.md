@@ -1,4 +1,3 @@
-###### (This is the legacy documentation for SDL2, the previous stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current stable version.)
 # SDL_Texture
 
 An efficient driver-specific representation of pixel data

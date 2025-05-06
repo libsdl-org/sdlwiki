@@ -1,4 +1,3 @@
-###### (This is the documentation for SDL3, which is the current stable version. [SDL2](https://wiki.libsdl.org/SDL2/) was the previous version!)
 # SDL_GPU_TEXTUREFORMAT_R16G16B16A16_INT
 
 Please refer to [SDL_GPUTextureFormat](SDL_GPUTextureFormat) for details.
