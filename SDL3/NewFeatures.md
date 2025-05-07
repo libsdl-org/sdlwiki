@@ -7,7 +7,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Extremely good documentation](APIByCategory): We've spent a _ton_ of effort writing and revising the API reference.
 - [Example programs](https://github.com/libsdl-org/SDL/tree/main/examples) to get you started, [running in your web browser](https://examples.libsdl.org/)!
 - More consistent API naming conventions. Everything is named consistently across the API now, instead of different subsystems taking different approaches. Also, we've tended toward more descriptive names for things in SDL3.
-- [Main Callbacks](README/main-functions#main-callbacks-in-sdl3): _optionally_ run your program from callbacks instead of `main()`.
+- [Main Callbacks](README-main-functions#main-callbacks-in-sdl3): _optionally_ run your program from callbacks instead of `main()`.
 - [GPU API](CategoryGPU): access to modern 3D rendering and GPU compute in a cross-platform way.
 - [Dialog API](CategoryDialog): access to system file dialogs (file and folder selection UI for opening/saving).
 - [Filesystem API](CategoryFilesystem): simple directory management and globbing, access to topic-specific user folders.
@@ -41,5 +41,5 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Async windowing](SDL_SyncWindow)
 - (More new features are still coming to SDL3, so check back here later!)
 
-If you are looking to move to SDL3 so you can start using these new features, you should take a look at [README/migration](README/migration) for all the details.
+If you are looking to move to SDL3 so you can start using these new features, you should take a look at [README-migration](README-migration) for all the details.
 

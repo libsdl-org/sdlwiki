@@ -41,7 +41,7 @@ This function is only provided by the app if it isn't using
 [SDL_MAIN_USE_CALLBACKS](SDL_MAIN_USE_CALLBACKS).
 
 Program startup is a surprisingly complex topic. Please see
-[README/main-functions](README/main-functions), (or
+[README-main-functions](README-main-functions), (or
 docs/README-main-functions.md in the source tree) for a more detailed
 explanation.
 

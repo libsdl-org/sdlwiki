@@ -26,7 +26,7 @@ automatically.
 
 For more information, see:
 
-https://wiki.libsdl.org/SDL3/README/main-functions
+https://wiki.libsdl.org/SDL3/README-main-functions
 
 <!-- END CATEGORY DOCUMENTATION -->
 

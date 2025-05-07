@@ -21,7 +21,7 @@ several functions: [SDL_AppInit](SDL_AppInit),
 [SDL_AppQuit](SDL_AppQuit). The app should not provide a `main` function in
 this case, and doing so will likely cause the build to fail.
 
-Please see [README/main-functions](README/main-functions), (or
+Please see [README-main-functions](README-main-functions), (or
 docs/README-main-functions.md in the source tree) for a more detailed
 explanation.
 

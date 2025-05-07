@@ -32,7 +32,7 @@ Returning [SDL_APP_CONTINUE](SDL_APP_CONTINUE) from these functions will
 let the app continue to run.
 
 See
-[Main callbacks in SDL3](https://wiki.libsdl.org/SDL3/README/main-functions#main-callbacks-in-sdl3)
+[Main callbacks in SDL3](https://wiki.libsdl.org/SDL3/README-main-functions#main-callbacks-in-sdl3)
 for complete details.
 
 ## Version

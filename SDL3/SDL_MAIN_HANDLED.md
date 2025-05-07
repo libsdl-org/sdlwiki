@@ -19,7 +19,7 @@ including `SDL_main.h`. If defined, SDL will expect the app to provide the
 proper entry point for the platform, and all the other magic details
 needed, like manually calling [SDL_SetMainReady](SDL_SetMainReady).
 
-Please see [README/main-functions](README/main-functions), (or
+Please see [README-main-functions](README-main-functions), (or
 docs/README-main-functions.md in the source tree) for a more detailed
 explanation.
 

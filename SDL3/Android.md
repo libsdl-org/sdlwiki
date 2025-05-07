@@ -9,7 +9,7 @@ still, too. Read this page with some skepticism for now.
 
 ## Existing documentation
 
-A lot of information can be found in [README/android](README/android).
+A lot of information can be found in [README-android](README-android).
 
 This page is more walkthrough-oriented.
 
