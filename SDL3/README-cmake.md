@@ -30,7 +30,7 @@ cmake --install build --config RelWithDebInfo --prefix C:/SDL
 
 ## Building SDL on UNIX
 
-SDL will build with very few dependencies, but for full functionality you should install the packages detailed in [README-linux](README-linux).
+SDL will build with very few dependencies, but for full functionality you should install the packages detailed in [README-linux.md](README-linux.md).
 
 Assuming you're in the SDL source directory, building and installing to /usr/local can be done with:
 ```sh
