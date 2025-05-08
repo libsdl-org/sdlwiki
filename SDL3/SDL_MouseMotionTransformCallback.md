@@ -39,7 +39,7 @@ mutation of the x and y values.
 
 ## Version
 
-This datatype is available since SDL 3.2.6.
+This datatype is available since SDL 3.4.0.
 
 ## See Also
 
