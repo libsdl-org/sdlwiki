@@ -47,7 +47,8 @@ If you want the server to sleep until there's a new connection, you can use
 [NET_WaitUntilInputAvailable](NET_WaitUntilInputAvailable)().
 
 When done with the newly-accepted client, you can disconnect and dispose of
-the stream socket by calling NET_DestroyStreamSocket().
+the stream socket by calling
+[NET_DestroyStreamSocket](NET_DestroyStreamSocket)().
 
 ## Thread Safety
 
