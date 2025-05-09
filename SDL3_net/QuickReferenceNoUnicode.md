@@ -26,41 +26,41 @@ fancy Unicode section headers, try using
 //      XX  XX   XX  XX       XX  XX XX  XX          XX    
 // XXXXXX   XXXXXX   XXXXXXX  XX   XXXX  XXXXXXX     XX    
 
-#define SDL_NET_MAJOR_VERSION                                                                                              // Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
-#define SDL_NET_VERSION                                                                                                    // This is the version number macro for the current SDL_net version.
-#define SDL_NET_VERSION_ATLEAST(X, Y, Z)                                                                                   // This macro will evaluate to true if compiled with SDL_net at least X.Y.Z.
-int SDLNet_Version(void);                                                                                                  // This function gets the version of the dynamically linked SDL_net library.
-bool SDLNet_Init(void);                                                                                                    // Initialize the SDL_net library.
-void SDLNet_Quit(void);                                                                                                    // Deinitialize the SDL_net library.
-SDLNet_Address * SDLNet_ResolveHostname(const char *host);                                                                 // Resolve a human-readable hostname.
-int SDLNet_WaitUntilResolved(SDLNet_Address *address, Sint32 timeout);                                                     // Block until an address is resolved.
-int SDLNet_GetAddressStatus(SDLNet_Address *address);                                                                      // Check if an address is resolved, without blocking.
-const char * SDLNet_GetAddressString(SDLNet_Address *address);                                                             // Get a human-readable string from a resolved address.
-SDLNet_Address * SDLNet_RefAddress(SDLNet_Address *address);                                                               // Add a reference to an SDLNet_Address.
-void SDLNet_UnrefAddress(SDLNet_Address *address);                                                                         // Drop a reference to an SDLNet_Address.
-void SDLNet_SimulateAddressResolutionLoss(int percent_loss);                                                               // Enable simulated address resolution failures.
-int SDLNet_CompareAddresses(const SDLNet_Address *a, const SDLNet_Address *b);                                             // Compare two SDLNet_Address objects.
-SDLNet_Address ** SDLNet_GetLocalAddresses(int *num_addresses);                                                            // Obtain a list of local addresses on the system.
-void SDLNet_FreeLocalAddresses(SDLNet_Address **addresses);                                                                // Free the results from SDLNet_GetLocalAddresses.
-SDLNet_StreamSocket * SDLNet_CreateClient(SDLNet_Address *address, Uint16 port);                                           // Begin connecting a socket as a client to a remote server.
-int SDLNet_WaitUntilConnected(SDLNet_StreamSocket *sock, Sint32 timeout);                                                  // Block until a stream socket has connected to a server.
-SDLNet_Server * SDLNet_CreateServer(SDLNet_Address *addr, Uint16 port);                                                    // Create a server, which listens for connections to accept.
-bool SDLNet_AcceptClient(SDLNet_Server *server, SDLNet_StreamSocket **client_stream);                                      // Create a stream socket for the next pending client connection.
-void SDLNet_DestroyServer(SDLNet_Server *server);                                                                          // Dispose of a previously-created server.
-SDLNet_Address * SDLNet_GetStreamSocketAddress(SDLNet_StreamSocket *sock);                                                 // Get the remote address of a stream socket.
-int SDLNet_GetConnectionStatus(SDLNet_StreamSocket *sock);                                                                 // Check if a stream socket is connected, without blocking.
-bool SDLNet_WriteToStreamSocket(SDLNet_StreamSocket *sock, const void *buf, int buflen);                                   // Send bytes over a stream socket to a remote system.
-int SDLNet_GetStreamSocketPendingWrites(SDLNet_StreamSocket *sock);                                                        // Query bytes still pending transmission on a stream socket.
-int SDLNet_WaitUntilStreamSocketDrained(SDLNet_StreamSocket *sock, Sint32 timeout);                                        // Block until all of a stream socket's pending data is sent.
-int SDLNet_ReadFromStreamSocket(SDLNet_StreamSocket *sock, void *buf, int buflen);                                         // Receive bytes that a remote system sent to a stream socket.
-void SDLNet_SimulateStreamPacketLoss(SDLNet_StreamSocket *sock, int percent_loss);                                         // Enable simulated stream socket failures.
-void SDLNet_DestroyStreamSocket(SDLNet_StreamSocket *sock);                                                                // Dispose of a previously-created stream socket.
-SDLNet_DatagramSocket * SDLNet_CreateDatagramSocket(SDLNet_Address *addr, Uint16 port);                                    // Create and bind a new datagram socket.
-bool SDLNet_SendDatagram(SDLNet_DatagramSocket *sock, SDLNet_Address *address, Uint16 port, const void *buf, int buflen);  // Send a new packet over a datagram socket to a remote system.
-bool SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram);                                         // Receive a new packet that a remote system sent to a datagram socket.
-void SDLNet_DestroyDatagram(SDLNet_Datagram *dgram);                                                                       // Dispose of a datagram packet previously received.
-void SDLNet_SimulateDatagramPacketLoss(SDLNet_DatagramSocket *sock, int percent_loss);                                     // Enable simulated datagram socket failures.
-void SDLNet_DestroyDatagramSocket(SDLNet_DatagramSocket *sock);                                                            // Dispose of a previously-created datagram socket.
-int SDLNet_WaitUntilInputAvailable(void **vsockets, int numsockets, Sint32 timeout);                                       // Block on multiple sockets until at least one has data available.
+#define SDL_NET_MAJOR_VERSION                                                                                     // Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
+#define SDL_NET_VERSION                                                                                           // This is the version number macro for the current SDL_net version.
+#define SDL_NET_VERSION_ATLEAST(X, Y, Z)                                                                          // This macro will evaluate to true if compiled with SDL_net at least X.Y.Z.
+int NET_Version(void);                                                                                            // This function gets the version of the dynamically linked SDL_net library.
+bool NET_Init(void);                                                                                              // Initialize the SDL_net library.
+void NET_Quit(void);                                                                                              // Deinitialize the SDL_net library.
+NET_Address * NET_ResolveHostname(const char *host);                                                              // Resolve a human-readable hostname.
+int NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);                                                  // Block until an address is resolved.
+int NET_GetAddressStatus(NET_Address *address);                                                                   // Check if an address is resolved, without blocking.
+const char * NET_GetAddressString(NET_Address *address);                                                          // Get a human-readable string from a resolved address.
+NET_Address * NET_RefAddress(NET_Address *address);                                                               // Add a reference to an NET_Address.
+void NET_UnrefAddress(NET_Address *address);                                                                      // Drop a reference to an NET_Address.
+void NET_SimulateAddressResolutionLoss(int percent_loss);                                                         // Enable simulated address resolution failures.
+int NET_CompareAddresses(const NET_Address *a, const NET_Address *b);                                             // Compare two NET_Address objects.
+NET_Address ** NET_GetLocalAddresses(int *num_addresses);                                                         // Obtain a list of local addresses on the system.
+void NET_FreeLocalAddresses(NET_Address **addresses);                                                             // Free the results from NET_GetLocalAddresses.
+NET_StreamSocket * NET_CreateClient(NET_Address *address, Uint16 port);                                           // Begin connecting a socket as a client to a remote server.
+int NET_WaitUntilConnected(NET_StreamSocket *sock, Sint32 timeout);                                               // Block until a stream socket has connected to a server.
+NET_Server * NET_CreateServer(NET_Address *addr, Uint16 port);                                                    // Create a server, which listens for connections to accept.
+bool NET_AcceptClient(NET_Server *server, NET_StreamSocket **client_stream);                                      // Create a stream socket for the next pending client connection.
+void NET_DestroyServer(NET_Server *server);                                                                       // Dispose of a previously-created server.
+NET_Address * NET_GetStreamSocketAddress(NET_StreamSocket *sock);                                                 // Get the remote address of a stream socket.
+int NET_GetConnectionStatus(NET_StreamSocket *sock);                                                              // Check if a stream socket is connected, without blocking.
+bool NET_WriteToStreamSocket(NET_StreamSocket *sock, const void *buf, int buflen);                                // Send bytes over a stream socket to a remote system.
+int NET_GetStreamSocketPendingWrites(NET_StreamSocket *sock);                                                     // Query bytes still pending transmission on a stream socket.
+int NET_WaitUntilStreamSocketDrained(NET_StreamSocket *sock, Sint32 timeout);                                     // Block until all of a stream socket's pending data is sent.
+int NET_ReadFromStreamSocket(NET_StreamSocket *sock, void *buf, int buflen);                                      // Receive bytes that a remote system sent to a stream socket.
+void NET_SimulateStreamPacketLoss(NET_StreamSocket *sock, int percent_loss);                                      // Enable simulated stream socket failures.
+void NET_DestroyStreamSocket(NET_StreamSocket *sock);                                                             // Dispose of a previously-created stream socket.
+NET_DatagramSocket * NET_CreateDatagramSocket(NET_Address *addr, Uint16 port);                                    // Create and bind a new datagram socket.
+bool NET_SendDatagram(NET_DatagramSocket *sock, NET_Address *address, Uint16 port, const void *buf, int buflen);  // Send a new packet over a datagram socket to a remote system.
+bool NET_ReceiveDatagram(NET_DatagramSocket *sock, NET_Datagram **dgram);                                         // Receive a new packet that a remote system sent to a datagram socket.
+void NET_DestroyDatagram(NET_Datagram *dgram);                                                                    // Dispose of a datagram packet previously received.
+void NET_SimulateDatagramPacketLoss(NET_DatagramSocket *sock, int percent_loss);                                  // Enable simulated datagram socket failures.
+void NET_DestroyDatagramSocket(NET_DatagramSocket *sock);                                                         // Dispose of a previously-created datagram socket.
+int NET_WaitUntilInputAvailable(void **vsockets, int numsockets, Sint32 timeout);                                 // Block on multiple sockets until at least one has data available.
 ```
 
