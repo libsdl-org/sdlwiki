@@ -29,8 +29,8 @@ SDL_GetError() for details.
 ## Remarks
 
 The [NET_StreamSocket](NET_StreamSocket) objects returned by
-[NET_CreateClient](NET_CreateClient) take time to do their work, so it is
-does so _asynchronously_ instead of making your program wait an indefinite
+[NET_CreateClient](NET_CreateClient) take time to do their work, so it does
+so _asynchronously_ instead of making your program wait an indefinite
 amount of time.
 
 However, if you want your program to sleep until the connection is

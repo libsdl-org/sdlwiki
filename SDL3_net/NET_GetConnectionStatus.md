@@ -28,8 +28,8 @@ still connecting; if -1, call SDL_GetError() for details.
 
 The [NET_StreamSocket](NET_StreamSocket) objects returned by
 [NET_CreateClient](NET_CreateClient) take time to do negotiate a connection
-to a server, so it is does so _asynchronously_ instead of making your
-program wait an indefinite amount of time.
+to a server, so it does so _asynchronously_ instead of making your program
+wait an indefinite amount of time.
 
 This function allows you to check the progress of that work without
 blocking.

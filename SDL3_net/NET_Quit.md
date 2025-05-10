@@ -35,7 +35,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-- [NET_Quit](NET_Quit)
+- [NET_Init](NET_Init)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLNet](CategorySDLNet)

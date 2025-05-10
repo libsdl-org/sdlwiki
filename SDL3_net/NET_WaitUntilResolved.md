@@ -30,7 +30,7 @@ SDL_GetError() for details.
 
 The [NET_Address](NET_Address) objects returned by
 [NET_ResolveHostname](NET_ResolveHostname) take time to do their work, so
-it is does so _asynchronously_ instead of making your program wait an
+it does so _asynchronously_ instead of making your program wait an
 indefinite amount of time.
 
 However, if you want your program to sleep until the address resolution is

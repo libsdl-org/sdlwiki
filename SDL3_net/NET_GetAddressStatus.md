@@ -28,7 +28,7 @@ still resolving; if -1, call SDL_GetError() for details.
 
 The [NET_Address](NET_Address) objects returned by
 [NET_ResolveHostname](NET_ResolveHostname) take time to do their work, so
-it is does so _asynchronously_ instead of making your program wait an
+it does so _asynchronously_ instead of making your program wait an
 indefinite amount of time.
 
 This function allows you to check the progress of that work without
