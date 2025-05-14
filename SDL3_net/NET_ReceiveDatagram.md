@@ -33,7 +33,7 @@ packets or they don't arrive at all, so you'll never receive half a packet.
 This call never blocks; if no new data isn't available at the time of the
 call, it returns true immediately. The caller can try again later.
 
-On a successful call to this function, it returns zero, even if no new
+On a successful call to this function, it returns true, even if no new
 packets are available, so you should check for a successful return and a
 non-NULL value in `*dgram` to decide if a new packet is available.
 

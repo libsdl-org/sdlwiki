@@ -14,6 +14,14 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
     SDL_VERSIONNUM(SDL_NET_MAJOR_VERSION, SDL_NET_MINOR_VERSION, SDL_NET_MICRO_VERSION)
 ```
 
+## Version
+
+This macro is available since SDL_net 3.0.0.
+
+## See Also
+
+- [NET_Version](NET_Version)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySDLNet](CategorySDLNet)
 

@@ -27,7 +27,9 @@ the fancy Unicode section headers, try using
 // ██████╔╝ ██████╔╝ ███████╗ ██║ ╚████║ ███████╗    ██║   
 // ╚═════╝  ╚═════╝  ╚══════╝ ╚═╝  ╚═══╝ ╚══════╝    ╚═╝   
 
-#define SDL_NET_MAJOR_VERSION                                                                                     // Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
+#define SDL_NET_MAJOR_VERSION                                                                                     // The current major version of SDL_net headers.
+#define SDL_NET_MINOR_VERSION                                                                                     // The current minor version of the SDL_net headers.
+#define SDL_NET_MICRO_VERSION                                                                                     // The current micro (or patchlevel) version of the SDL_net headers.
 #define SDL_NET_VERSION                                                                                           // This is the version number macro for the current SDL_net version.
 #define SDL_NET_VERSION_ATLEAST(X, Y, Z)                                                                          // This macro will evaluate to true if compiled with SDL_net at least X.Y.Z.
 int NET_Version(void);                                                                                            // This function gets the version of the dynamically linked SDL_net library.
