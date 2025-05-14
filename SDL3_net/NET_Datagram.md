@@ -21,7 +21,7 @@ typedef struct NET_Datagram
 
 ## Version
 
-This datatype is available since SDL_Net 3.0.0.
+This datatype is available since SDL_net 3.0.0.
 
 ## See Also
 

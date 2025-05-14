@@ -22,12 +22,12 @@ remote machine, and you use them to find out who connected to you. They are
 also used to decide what network interface to use when creating a server.
 
 These are intended to be protocol-independent; a given address might be for
-IPv4, IPv6, or something more esoteric. SDL_Net attempts to hide the
+IPv4, IPv6, or something more esoteric. SDL_net attempts to hide the
 differences.
 
 ## Version
 
-This datatype is available since SDL_Net 3.0.0.
+This datatype is available since SDL_net 3.0.0.
 
 ## See Also
 

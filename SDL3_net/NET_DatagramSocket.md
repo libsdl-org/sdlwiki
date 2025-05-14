@@ -31,7 +31,7 @@ there at all, and you don't know when anything of this happens by default.
 
 ## Version
 
-This datatype is available since SDL_Net 3.0.0.
+This datatype is available since SDL_net 3.0.0.
 
 ## See Also
 
