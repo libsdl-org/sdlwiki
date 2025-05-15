@@ -29,6 +29,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [SDL 3 GPU tutorial with C++23 and Modern CMake (Part 3)](https://www.youtube.com/watch?v=ddi7V0CDkLQ)
 - [Odin SDL3 GPU Tutorial (Playlist)](https://www.youtube.com/playlist?list=PLI3kBEQ3yd-CbQfRchF70BPLF9G1HEzhy)
   This tutorial series is in the programming language Odin, not C or C++, but it can still be followed along with from other languages!
+- [SDL GPU Triangle Tutorial](https://hamdy-elzanqali.medium.com/let-there-be-triangles-sdl-gpu-edition-bd82cf2ef615)
 
 ## Porting from SDL 2.0
 
