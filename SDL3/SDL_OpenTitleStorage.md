@@ -25,6 +25,10 @@ SDL_Storage * SDL_OpenTitleStorage(const char *override, SDL_PropertiesID props)
 or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
 information.
 
+## Remarks
+
+By default, SDL_OpenTitleStorage uses the generic storage implementation. When the path override is not provided, the generic implementation will use the output of [SDL_GetBasePath](SDL_GetBasePath) as the base path.
+
 ## Version
 
 This function is available since SDL 3.2.0.
