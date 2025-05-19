@@ -13,8 +13,8 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 TTF_TextEngine * TTF_CreateGPUTextEngineWithProperties(SDL_PropertiesID props);
 
 
-#define TTF_PROP_GPU_TEXT_ENGINE_DEVICE                   "SDL_ttf.gpu_text_engine.create.device"
-#define TTF_PROP_GPU_TEXT_ENGINE_ATLAS_TEXTURE_SIZE       "SDL_ttf.gpu_text_engine.create.atlas_texture_size"
+#define TTF_PROP_GPU_TEXT_ENGINE_DEVICE_POINTER            "SDL_ttf.gpu_text_engine.create.device"
+#define TTF_PROP_GPU_TEXT_ENGINE_ATLAS_TEXTURE_SIZE_NUMBER "SDL_ttf.gpu_text_engine.create.atlas_texture_size"
 ```
 
 ## Function Parameters
@@ -33,9 +33,9 @@ SDL_GetError() for more information.
 
 These are the supported properties:
 
-- [`TTF_PROP_GPU_TEXT_ENGINE_DEVICE`](TTF_PROP_GPU_TEXT_ENGINE_DEVICE): the
-  SDL_GPUDevice to use for creating textures and drawing text.
-- [`TTF_PROP_GPU_TEXT_ENGINE_ATLAS_TEXTURE_SIZE`](TTF_PROP_GPU_TEXT_ENGINE_ATLAS_TEXTURE_SIZE):
+- [`TTF_PROP_GPU_TEXT_ENGINE_DEVICE_POINTER`](TTF_PROP_GPU_TEXT_ENGINE_DEVICE_POINTER):
+  the SDL_GPUDevice to use for creating textures and drawing text.
+- [`TTF_PROP_GPU_TEXT_ENGINE_ATLAS_TEXTURE_SIZE_NUMBER`](TTF_PROP_GPU_TEXT_ENGINE_ATLAS_TEXTURE_SIZE_NUMBER):
   the size of the texture atlas
 
 ## Thread Safety

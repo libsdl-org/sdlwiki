@@ -13,8 +13,8 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 TTF_TextEngine * TTF_CreateRendererTextEngineWithProperties(SDL_PropertiesID props);
 
 
-#define TTF_PROP_RENDERER_TEXT_ENGINE_RENDERER                 "SDL_ttf.renderer_text_engine.create.renderer"
-#define TTF_PROP_RENDERER_TEXT_ENGINE_ATLAS_TEXTURE_SIZE       "SDL_ttf.renderer_text_engine.create.atlas_texture_size"
+#define TTF_PROP_RENDERER_TEXT_ENGINE_RENDERER_POINTER          "SDL_ttf.renderer_text_engine.create.renderer"
+#define TTF_PROP_RENDERER_TEXT_ENGINE_ATLAS_TEXTURE_SIZE_NUMBER "SDL_ttf.renderer_text_engine.create.atlas_texture_size"
 ```
 
 ## Function Parameters
@@ -33,9 +33,9 @@ SDL_GetError() for more information.
 
 These are the supported properties:
 
-- [`TTF_PROP_RENDERER_TEXT_ENGINE_RENDERER`](TTF_PROP_RENDERER_TEXT_ENGINE_RENDERER):
+- [`TTF_PROP_RENDERER_TEXT_ENGINE_RENDERER_POINTER`](TTF_PROP_RENDERER_TEXT_ENGINE_RENDERER_POINTER):
   the renderer to use for creating textures and drawing text
-- [`TTF_PROP_RENDERER_TEXT_ENGINE_ATLAS_TEXTURE_SIZE`](TTF_PROP_RENDERER_TEXT_ENGINE_ATLAS_TEXTURE_SIZE):
+- [`TTF_PROP_RENDERER_TEXT_ENGINE_ATLAS_TEXTURE_SIZE_NUMBER`](TTF_PROP_RENDERER_TEXT_ENGINE_ATLAS_TEXTURE_SIZE_NUMBER):
   the size of the texture atlas
 
 ## Thread Safety
