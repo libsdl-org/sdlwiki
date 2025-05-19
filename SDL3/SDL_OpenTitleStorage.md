@@ -27,7 +27,10 @@ information.
 
 ## Remarks
 
-By default, SDL_OpenTitleStorage uses the generic storage implementation. When the path override is not provided, the generic implementation will use the output of [SDL_GetBasePath](SDL_GetBasePath) as the base path.
+By default, [SDL_OpenTitleStorage](SDL_OpenTitleStorage) uses the generic
+storage implementation. When the path override is not provided, the generic
+implementation will use the output of [SDL_GetBasePath](SDL_GetBasePath) as
+the base path.
 
 ## Version
 
