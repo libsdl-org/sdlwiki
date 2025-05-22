@@ -32,6 +32,8 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_CreateGPUShader](SDL_CreateGPUShader)
+- [SDL_GPUShaderFormat](SDL_GPUShaderFormat)
+- [SDL_GPUShaderStage](SDL_GPUShaderStage)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
