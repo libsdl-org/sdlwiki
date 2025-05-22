@@ -45,7 +45,7 @@ audio playback.
 Also unlike other functions, the audio device begins paused. This is to map
 more closely to SDL2-style behavior, since there is no extra step here to
 bind a stream to begin audio flowing. The audio device should be resumed
-with `SDL_ResumeAudioStreamDevice(stream);`
+with [SDL_ResumeAudioStreamDevice](SDL_ResumeAudioStreamDevice)().
 
 This function works with both playback and recording devices.
 
