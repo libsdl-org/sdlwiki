@@ -31,7 +31,7 @@ of z is determined based on the signs of x and y.
 
 Domain: `-INF <= x <= INF`, `-INF <= y <= INF`
 
-Range: `-Pi/2 <= y <= Pi/2`
+Range: `-Pi <= y <= Pi`
 
 This function operates on double-precision floating point values, use
 [SDL_atan2f](SDL_atan2f) for single-precision floats.
