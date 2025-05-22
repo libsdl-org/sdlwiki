@@ -18,7 +18,7 @@ software, emulators, and popular games including
 [Valve](https://valvesoftware.com)'s award winning catalog and many
 [Humble Bundle](https://www.humblebundle.com) games.
 
-SDL officially supports Windows, macOS, Linux, iOS, and Android, and [several other platforms](https://github.com/libsdl-org/SDL/blob/main/docs/README-platforms.md).
+SDL officially supports Windows, macOS, Linux, iOS, and Android, and [several other platforms](README-platforms.md).
 
 SDL is written in C, works natively with C++, and has bindings available for
 several other languages, including C#, Python, and [Rust](https://crates.io/crates/sdl3).
@@ -45,9 +45,9 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
 - [Tutorials](Tutorials)
 - [Articles](Articles)
-- [SDL 2.0 Migration Guide](https://github.com/libsdl-org/SDL/blob/main/docs/README-migration.md)
+- [SDL 2.0 Migration Guide](README-migration)
 - [Frequently Asked Questions](FAQs)
-- [READMEs](https://github.com/libsdl-org/SDL/blob/main/docs) covering more advanced topics
+- [READMEs](READMEs) covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
 - [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
