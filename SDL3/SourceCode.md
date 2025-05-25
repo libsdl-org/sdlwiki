@@ -28,6 +28,15 @@ It is still possible, for the time being, for there to be minor bugfix releases 
 
 However, we offer [sdl2-compat](https://github.com/libsdl-org/sdl2-compat), a small library that provides the SDL2 API, using SDL3 behind the scenes. This is the recommended way forward for SDL2 apps that can't directly migrate to something newer at this point; it can even be used with existing binaries, by replacing the SDL2 shared library with sdl2-compat, or just setting the SDL_DYNAMIC_API environment variable to point to a copy of sdl2-compat.
 
+If you still want the real SDL2 source code, it is available from git:
+
+
+```bash
+git clone https://github.com/libsdl-org/SDL
+```
+
+SDL2 can be found in the "SDL2" branch in git.
+
 
 ## SDL 1.2 (obsolete!)
 
