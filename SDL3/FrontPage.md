@@ -32,7 +32,7 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 ## Getting and installing SDL
 
 - [Source Code](SourceCode): How to download the source code to SDL.
-- [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md): How to install SDL on your platform of choice
+- [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL%2Emd): How to install SDL on your platform of choice
   and link your program against it.
 
 ## API Documentation
