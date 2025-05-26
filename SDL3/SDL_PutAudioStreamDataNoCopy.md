@@ -43,7 +43,8 @@ specified when creating the stream if it hasn't been changed.
 
 An optional callback may be provided, which is called when the stream no
 longer needs the data. Once this callback fires, the stream will not access
-the data again.
+the data again. This callback will fire for any reason the data is no
+longer needed, including clearing or destroying the stream.
 
 Note that there is still an allocation to store tracking information, so
 this function is more efficient for larger blocks of data. If you're
