@@ -841,6 +841,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_PushGPUFragmentUniformData](SDL_PushGPUFragmentUniformData)
 - [SDL_PushGPUVertexUniformData](SDL_PushGPUVertexUniformData)
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+- [SDL_PutAudioStreamDataNoCopy](SDL_PutAudioStreamDataNoCopy)
 - [SDL_PutAudioStreamPlanarData](SDL_PutAudioStreamPlanarData)
 - [SDL_qsort](SDL_qsort)
 - [SDL_qsort_r](SDL_qsort_r)

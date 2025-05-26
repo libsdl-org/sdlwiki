@@ -152,6 +152,7 @@ scenarios.
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 - [SDL_PauseAudioStreamDevice](SDL_PauseAudioStreamDevice)
 - [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+- [SDL_PutAudioStreamDataNoCopy](SDL_PutAudioStreamDataNoCopy)
 - [SDL_PutAudioStreamPlanarData](SDL_PutAudioStreamPlanarData)
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_ResumeAudioStreamDevice](SDL_ResumeAudioStreamDevice)
@@ -179,6 +180,7 @@ scenarios.
 - [SDL_AudioPostmixCallback](SDL_AudioPostmixCallback)
 - [SDL_AudioStream](SDL_AudioStream)
 - [SDL_AudioStreamCallback](SDL_AudioStreamCallback)
+- [SDL_AudioStreamDataCompleteCallback](SDL_AudioStreamDataCompleteCallback)
 <!-- END CATEGORY LIST -->
 
 ## Structs
