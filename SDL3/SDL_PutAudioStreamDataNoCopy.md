@@ -1,6 +1,6 @@
 # SDL_PutAudioStreamDataNoCopy
 
-Add constant data to the stream.
+Add external data to an audio stream without copying it.
 
 ## Header File
 
