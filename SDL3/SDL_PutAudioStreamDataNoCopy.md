@@ -18,7 +18,7 @@ bool SDL_PutAudioStreamDataNoCopy(SDL_AudioStream *stream, const void *buf, int 
 | -------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------- |
 | [SDL_AudioStream](SDL_AudioStream) *                                       | **stream**   | the stream the audio data is being added to.                                                |
 | const void *                                                               | **buf**      | a pointer to the audio data to add.                                                         |
-| int                                                                        | **len**      | the number of bytes to write to the stream.                                                 |
+| int                                                                        | **len**      | the number of bytes to add to the stream.                                                 |
 | [SDL_AudioStreamDataCompleteCallback](SDL_AudioStreamDataCompleteCallback) | **callback** | the callback function to call when the data is no longer needed by the stream. May be NULL. |
 | void *                                                                     | **userdata** | an opaque pointer provided to the callback for its own personal use.                        |
 
