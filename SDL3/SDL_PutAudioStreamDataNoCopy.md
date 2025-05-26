@@ -18,7 +18,7 @@ bool SDL_PutAudioStreamDataNoCopy(SDL_AudioStream *stream, const void *buf, int 
 | -------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------- |
 | [SDL_AudioStream](SDL_AudioStream) *                                       | **stream**   | the stream the audio data is being added to.                                                |
 | const void *                                                               | **buf**      | a pointer to the audio data to add.                                                         |
-| int                                                                        | **len**      | the number of bytes to add to the stream.                                                 |
+| int                                                                        | **len**      | the number of bytes to write to the stream.                                                 |
 | [SDL_AudioStreamDataCompleteCallback](SDL_AudioStreamDataCompleteCallback) | **callback** | the callback function to call when the data is no longer needed by the stream. May be NULL. |
 | void *                                                                     | **userdata** | an opaque pointer provided to the callback for its own personal use.                        |
 
@@ -43,8 +43,7 @@ specified when creating the stream if it hasn't been changed.
 
 An optional callback may be provided, which is called when the stream no
 longer needs the data. Once this callback fires, the stream will not access
-the data again. This callback will fire for any reason the data is no
-longer needed, including clearing or destroying the stream.
+the data again.
 
 Note that there is still an allocation to store tracking information, so
 this function is more efficient for larger blocks of data. If you're
