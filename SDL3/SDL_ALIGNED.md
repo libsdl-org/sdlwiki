@@ -31,7 +31,6 @@ typedef struct {
    float x, y, z, w;
 } SDL_ALIGNED(16) MySIMDAlignedData;
 
-
 // make sure this one field in a struct is aligned to 16 bytes for SIMD access.
 typedef struct {
    SomeStuff stuff;
