@@ -15,10 +15,11 @@ bool TTF_GetPreviousTextSubString(TTF_Text *text, const TTF_SubString *substring
 
 ## Function Parameters
 
-|                                        |               |                                              |
-| -------------------------------------- | ------------- | -------------------------------------------- |
-| [TTF_Text](TTF_Text) *                 | **text**      | the [TTF_Text](TTF_Text) to query.           |
-| const [TTF_SubString](TTF_SubString) * | **substring** | the [TTF_SubString](TTF_SubString) to query. |
+|                                        |               |                                                                     |
+| -------------------------------------- | ------------- | ------------------------------------------------------------------- |
+| [TTF_Text](TTF_Text) *                 | **text**      | the [TTF_Text](TTF_Text) to query.                                  |
+| const [TTF_SubString](TTF_SubString) * | **substring** | the [TTF_SubString](TTF_SubString) to query.                        |
+| [TTF_SubString](TTF_SubString) *       | **previous**  | a pointer filled in with the previous substring in the text object. |
 
 ## Return Value
 
