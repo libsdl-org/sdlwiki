@@ -174,7 +174,7 @@ SDL's pixel formats have the following naming convention:
   ABGR32, define a platform-independent encoding into bytes in the order
   specified. For example, in RGB24 data, each pixel is encoded in 3 bytes
   (red, green, blue) in that order, and in ABGR32 data, each pixel is
-  encoded in 4 bytes alpha, blue, green, red) in that order. Use these
+  encoded in 4 bytes (alpha, blue, green, red) in that order. Use these
   names if the property of a format that is important to you is the order
   of the bytes in memory or on disk.
 - Names with a bit count per component, such as ARGB8888 and XRGB1555, are
