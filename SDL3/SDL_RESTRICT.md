@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_begin_code.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-#define SDL_RESTRICT __restrict__
+#define SDL_RESTRICT __restrict
 ```
 
 ## Remarks
@@ -22,7 +22,7 @@ On compilers without restrict support, this is defined to nothing.
 
 ## Version
 
-This macro is available since SDL 3.2.0.
+This macro is available since SDL 3.4.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryBeginCode](CategoryBeginCode)
