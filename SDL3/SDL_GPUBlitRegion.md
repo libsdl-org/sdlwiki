@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_gpu.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ```c
 typedef struct SDL_GPUBlitRegion
 {
-    SDL_GPUTexture *texture;  /**< The texture. */
+    SDL_GPUTexture *texture;      /**< The texture. */
     Uint32 mip_level;             /**< The mip level index of the region. */
     Uint32 layer_or_depth_plane;  /**< The layer index or depth plane of the region. This value is treated as a layer index on 2D array and cube textures, and as a depth plane on 3D textures. */
     Uint32 x;                     /**< The left offset of the region. */

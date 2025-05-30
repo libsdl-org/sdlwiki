@@ -14,7 +14,7 @@ typedef struct SDL_GPUGraphicsPipelineTargetInfo
     const SDL_GPUColorTargetDescription *color_target_descriptions;  /**< A pointer to an array of color target descriptions. */
     Uint32 num_color_targets;                                        /**< The number of color target descriptions in the above array. */
     SDL_GPUTextureFormat depth_stencil_format;                       /**< The pixel format of the depth-stencil target. Ignored if has_depth_stencil_target is false. */
-    bool has_depth_stencil_target;                               /**< true specifies that the pipeline uses a depth-stencil target. */
+    bool has_depth_stencil_target;                                   /**< true specifies that the pipeline uses a depth-stencil target. */
     Uint8 padding1;
     Uint8 padding2;
     Uint8 padding3;

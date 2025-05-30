@@ -22,8 +22,8 @@ typedef struct SDL_GPUSamplerCreateInfo
     SDL_GPUCompareOp compare_op;               /**< The comparison operator to apply to fetched data before filtering. */
     float min_lod;                             /**< Clamps the minimum of the computed LOD value. */
     float max_lod;                             /**< Clamps the maximum of the computed LOD value. */
-    bool enable_anisotropy;                /**< true to enable anisotropic filtering. */
-    bool enable_compare;                   /**< true to enable comparison against a reference value during lookups. */
+    bool enable_anisotropy;                    /**< true to enable anisotropic filtering. */
+    bool enable_compare;                       /**< true to enable comparison against a reference value during lookups. */
     Uint8 padding1;
     Uint8 padding2;
 

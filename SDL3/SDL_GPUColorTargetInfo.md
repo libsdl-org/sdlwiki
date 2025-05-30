@@ -20,8 +20,8 @@ typedef struct SDL_GPUColorTargetInfo
     SDL_GPUTexture *resolve_texture; /**< The texture that will receive the results of a multisample resolve operation. Ignored if a RESOLVE* store_op is not used. */
     Uint32 resolve_mip_level;        /**< The mip level of the resolve texture to use for the resolve operation. Ignored if a RESOLVE* store_op is not used. */
     Uint32 resolve_layer;            /**< The layer index of the resolve texture to use for the resolve operation. Ignored if a RESOLVE* store_op is not used. */
-    bool cycle;                  /**< true cycles the texture if the texture is bound and load_op is not LOAD */
-    bool cycle_resolve_texture;  /**< true cycles the resolve texture if the resolve texture is bound. Ignored if a RESOLVE* store_op is not used. */
+    bool cycle;                      /**< true cycles the texture if the texture is bound and load_op is not LOAD */
+    bool cycle_resolve_texture;      /**< true cycles the resolve texture if the resolve texture is bound. Ignored if a RESOLVE* store_op is not used. */
     Uint8 padding1;
     Uint8 padding2;
 } SDL_GPUColorTargetInfo;

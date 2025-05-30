@@ -13,7 +13,7 @@ typedef struct SDL_GPUMultisampleState
 {
     SDL_GPUSampleCount sample_count;  /**< The number of samples to be used in rasterization. */
     Uint32 sample_mask;               /**< Reserved for future use. Must be set to 0. */
-    bool enable_mask;             /**< Reserved for future use. Must be set to false. */
+    bool enable_mask;                 /**< Reserved for future use. Must be set to false. */
     bool enable_alpha_to_coverage;    /**< true enables the alpha-to-coverage feature. */
     Uint8 padding2;
     Uint8 padding3;

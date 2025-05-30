@@ -17,7 +17,7 @@ typedef struct SDL_GPUDepthStencilTargetInfo
     SDL_GPUStoreOp store_op;               /**< What is done with the depth results of the render pass. */
     SDL_GPULoadOp stencil_load_op;         /**< What is done with the stencil contents at the beginning of the render pass. */
     SDL_GPUStoreOp stencil_store_op;       /**< What is done with the stencil results of the render pass. */
-    bool cycle;                        /**< true cycles the texture if the texture is bound and any load ops are not LOAD */
+    bool cycle;                            /**< true cycles the texture if the texture is bound and any load ops are not LOAD */
     Uint8 clear_stencil;                   /**< The value to clear the stencil component to at the beginning of the render pass. Ignored if SDL_GPU_LOADOP_CLEAR is not used. */
     Uint8 padding1;
     Uint8 padding2;
