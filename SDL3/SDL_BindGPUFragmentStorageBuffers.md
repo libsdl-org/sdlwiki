@@ -33,6 +33,12 @@ These buffers must have been created with
 Be sure your shader is set up according to the requirements documented in
 [SDL_CreateGPUShader](SDL_CreateGPUShader)().
 
+first_slot != binding number. 
+Even if binding=2 for your first frag storage buffer, you should still use first_slot=0.
+Use first_slot as a way to skip binding the first X frag storage buffers, then in that case, set first_slot=X.
+If you instead use the binding number, and go out of bounds due to this, 
+you will incur a seg fault in any subsequent draw calls, at least in Vulkan.
+
 ## Version
 
 This function is available since SDL 3.2.0.
