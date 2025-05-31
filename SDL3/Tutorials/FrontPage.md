@@ -20,6 +20,10 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 
 - [C Programming and SDL3 - accessing webcam, show webcam video, take screenshots](https://www.youtube.com/watch?v=nvDLBM0l7nA)
 
+## SDL Input
+
+- [How to properly handle text input in SDL3](./TextInput.md)
+
 ## SDL GPU
 
 - [Examples Repo](https://github.com/TheSpydog/SDL_gpu_examples)
