@@ -22,10 +22,10 @@ the fancy Unicode section headers, try using
 
 // ██╗ ███╗   ██╗ ██╗ ████████╗
 // ██║ ████╗  ██║ ██║ ╚══██╔══╝
-// ██║ ██╔██╗ ██║ ██║    ██║   
-// ██║ ██║╚██╗██║ ██║    ██║   
-// ██║ ██║ ╚████║ ██║    ██║   
-// ╚═╝ ╚═╝  ╚═══╝ ╚═╝    ╚═╝   
+// ██║ ██╔██╗ ██║ ██║    ██║
+// ██║ ██║╚██╗██║ ██║    ██║
+// ██║ ██║ ╚████║ ██║    ██║
+// ╚═╝ ╚═╝  ╚═══╝ ╚═╝    ╚═╝
 
 bool SDL_Init(SDL_InitFlags flags);                                                               // Initialize the SDL library.
 bool SDL_InitSubSystem(SDL_InitFlags flags);                                                      // Compatibility function to initialize the SDL library.
@@ -43,7 +43,7 @@ const char * SDL_GetAppMetadataProperty(const char *name);                      
 // ███████║ ██║ ██╔██╗ ██║    ██║    ███████╗
 // ██╔══██║ ██║ ██║╚██╗██║    ██║    ╚════██║
 // ██║  ██║ ██║ ██║ ╚████║    ██║    ██████╔╝
-// ╚═╝  ╚═╝ ╚═╝ ╚═╝  ╚═══╝    ╚═╝    ╚═════╝ 
+// ╚═╝  ╚═╝ ╚═╝ ╚═╝  ╚═══╝    ╚═╝    ╚═════╝
 
 bool SDL_SetHintWithPriority(const char *name, const char *value, SDL_HintPriority priority);  // Set a hint with a specific priority.
 bool SDL_SetHint(const char *name, const char *value);                                         // Set a hint with normal priority.
@@ -54,7 +54,7 @@ bool SDL_GetHintBoolean(const char *name, bool default_value);                  
 bool SDL_AddHintCallback(const char *name, SDL_HintCallback callback, void *userdata);         // Add a function to watch a particular hint.
 void SDL_RemoveHintCallback(const char *name, SDL_HintCallback callback, void *userdata);      // Remove a function watching a particular hint.
 
-// ███████╗ ██████╗  ██████╗   ██████╗  ██████╗ 
+// ███████╗ ██████╗  ██████╗   ██████╗  ██████╗
 // ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔═══██╗ ██╔══██╗
 // █████╗   ██████╔╝ ██████╔╝ ██║   ██║ ██████╔╝
 // ██╔══╝   ██╔══██╗ ██╔══██╗ ██║   ██║ ██╔══██╗
@@ -72,7 +72,7 @@ bool SDL_ClearError(void);                        // Clear any previous error me
 // ██████╔╝ ██████╔╝ ██║   ██║ ██████╔╝ █████╗   ██████╔╝    ██║    ██║ █████╗   ███████╗
 // ██╔═══╝  ██╔══██╗ ██║   ██║ ██╔═══╝  ██╔══╝   ██╔══██╗    ██║    ██║ ██╔══╝   ╚════██║
 // ██║      ██║  ██║ ╚██████╔╝ ██║      ███████╗ ██║  ██║    ██║    ██║ ███████╗ ██████╔╝
-// ╚═╝      ╚═╝  ╚═╝  ╚═════╝  ╚═╝      ╚══════╝ ╚═╝  ╚═╝    ╚═╝    ╚═╝ ╚══════╝ ╚═════╝ 
+// ╚═╝      ╚═╝  ╚═╝  ╚═════╝  ╚═╝      ╚══════╝ ╚═╝  ╚═╝    ╚═╝    ╚═╝ ╚══════╝ ╚═════╝
 
 SDL_PropertiesID SDL_GetGlobalProperties(void);                                                                                                      // Get the global SDL properties.
 SDL_PropertiesID SDL_CreateProperties(void);                                                                                                         // Create a group of properties.
@@ -96,12 +96,12 @@ bool SDL_ClearProperty(SDL_PropertiesID props, const char *name);               
 bool SDL_EnumerateProperties(SDL_PropertiesID props, SDL_EnumeratePropertiesCallback callback, void *userdata);                                      // Enumerate the properties contained in a group of properties.
 void SDL_DestroyProperties(SDL_PropertiesID props);                                                                                                  // Destroy a group of properties.
 
-// ██╗       ██████╗   ██████╗ 
-// ██║      ██╔═══██╗ ██╔════╝ 
+// ██╗       ██████╗   ██████╗
+// ██║      ██╔═══██╗ ██╔════╝
 // ██║      ██║   ██║ ██║  ███╗
 // ██║      ██║   ██║ ██║   ██║
 // ███████╗ ╚██████╔╝ ╚██████╔╝
-// ╚══════╝  ╚═════╝   ╚═════╝ 
+// ╚══════╝  ╚═════╝   ╚═════╝
 
 void SDL_SetLogPriorities(SDL_LogPriority priority);                                        // Set the priority of all log categories.
 void SDL_SetLogPriority(int category, SDL_LogPriority priority);                            // Set the priority of a particular log category.
@@ -122,12 +122,12 @@ SDL_LogOutputFunction SDL_GetDefaultLogOutputFunction(void);                    
 void SDL_GetLogOutputFunction(SDL_LogOutputFunction *callback, void **userdata);            // Get the current log output function.
 void SDL_SetLogOutputFunction(SDL_LogOutputFunction callback, void *userdata);              // Replace the default log output function with one of your own.
 
-// ██╗   ██╗ ██╗ ██████╗  ███████╗  ██████╗ 
+// ██╗   ██╗ ██╗ ██████╗  ███████╗  ██████╗
 // ██║   ██║ ██║ ██╔══██╗ ██╔════╝ ██╔═══██╗
 // ██║   ██║ ██║ ██║  ██║ █████╗   ██║   ██║
 // ╚██╗ ██╔╝ ██║ ██║  ██║ ██╔══╝   ██║   ██║
 //  ╚████╔╝  ██║ ██████╔╝ ███████╗ ╚██████╔╝
-//   ╚═══╝   ╚═╝ ╚═════╝  ╚══════╝  ╚═════╝ 
+//   ╚═══╝   ╚═╝ ╚═════╝  ╚══════╝  ╚═════╝
 
 int SDL_GetNumVideoDrivers(void);                                                                                                                                                                     // Get the number of video drivers compiled into SDL.
 const char * SDL_GetVideoDriver(int index);                                                                                                                                                           // Get the name of a built in video driver.
@@ -248,7 +248,7 @@ bool SDL_GL_DestroyContext(SDL_GLContext context);                              
 // █████╗   ██║   ██║ █████╗   ██╔██╗ ██║    ██║    ███████╗
 // ██╔══╝   ╚██╗ ██╔╝ ██╔══╝   ██║╚██╗██║    ██║    ╚════██║
 // ███████╗  ╚████╔╝  ███████╗ ██║ ╚████║    ██║    ██████╔╝
-// ╚══════╝   ╚═══╝   ╚══════╝ ╚═╝  ╚═══╝    ╚═╝    ╚═════╝ 
+// ╚══════╝   ╚═══╝   ╚══════╝ ╚═╝  ╚═══╝    ╚═╝    ╚═════╝
 
 void SDL_PumpEvents(void);                                                                                     // Pump the event loop, gathering events from the input devices.
 int SDL_PeepEvents(SDL_Event *events, int numevents, SDL_EventAction action, Uint32 minType, Uint32 maxType);  // Check the event queue for messages and optionally return them.
@@ -271,12 +271,12 @@ Uint32 SDL_RegisterEvents(int numevents);                                       
 SDL_Window * SDL_GetWindowFromEvent(const SDL_Event *event);                                                   // Get window associated with an event.
 int SDL_GetEventDescription(const SDL_Event *event, char *buf, int buflen);                                    // Generate a human-readable description of an event.
 
-// ██╗  ██╗ ███████╗ ██╗   ██╗ ██████╗   ██████╗   █████╗  ██████╗  ██████╗ 
+// ██╗  ██╗ ███████╗ ██╗   ██╗ ██████╗   ██████╗   █████╗  ██████╗  ██████╗
 // ██║ ██╔╝ ██╔════╝ ╚██╗ ██╔╝ ██╔══██╗ ██╔═══██╗ ██╔══██╗ ██╔══██╗ ██╔══██╗
 // █████╔╝  █████╗    ╚████╔╝  ██████╔╝ ██║   ██║ ███████║ ██████╔╝ ██║  ██║
 // ██╔═██╗  ██╔══╝     ╚██╔╝   ██╔══██╗ ██║   ██║ ██╔══██║ ██╔══██╗ ██║  ██║
 // ██║  ██╗ ███████╗    ██║    ██████╔╝ ╚██████╔╝ ██║  ██║ ██║  ██║ ██████╔╝
-// ╚═╝  ╚═╝ ╚══════╝    ╚═╝    ╚═════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝ 
+// ╚═╝  ╚═╝ ╚══════╝    ╚═╝    ╚═════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝
 
 bool SDL_HasKeyboard(void);                                                                      // Return whether a keyboard is currently connected.
 SDL_KeyboardID * SDL_GetKeyboards(int *count);                                                   // Get a list of currently connected keyboards.
@@ -305,8 +305,8 @@ bool SDL_ScreenKeyboardShown(SDL_Window *window);                               
 
 // ███╗   ███╗  ██████╗  ██╗   ██╗  ██████╗ ███████╗
 // ████╗ ████║ ██╔═══██╗ ██║   ██║ ██╔════╝ ██╔════╝
-// ██╔████╔██║ ██║   ██║ ██║   ██║ ███████╗ █████╗  
-// ██║╚██╔╝██║ ██║   ██║ ██║   ██║ ╚════██║ ██╔══╝  
+// ██╔████╔██║ ██║   ██║ ██║   ██║ ███████╗ █████╗
+// ██║╚██╔╝██║ ██║   ██║ ██║   ██║ ╚════██║ ██╔══╝
 // ██║ ╚═╝ ██║ ╚██████╔╝ ╚██████╔╝ ██████╔╝ ███████╗
 // ╚═╝     ╚═╝  ╚═════╝   ╚═════╝  ╚═════╝  ╚══════╝
 
@@ -346,12 +346,12 @@ const char * SDL_GetTouchDeviceName(SDL_TouchID touchID);            // Get the 
 SDL_TouchDeviceType SDL_GetTouchDeviceType(SDL_TouchID touchID);     // Get the type of the given touch device.
 SDL_Finger ** SDL_GetTouchFingers(SDL_TouchID touchID, int *count);  // Get a list of active fingers for a given touch device.
 
-//  ██████╗   █████╗  ███╗   ███╗ ███████╗ ██████╗   █████╗  ██████╗ 
+//  ██████╗   █████╗  ███╗   ███╗ ███████╗ ██████╗   █████╗  ██████╗
 // ██╔════╝  ██╔══██╗ ████╗ ████║ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗
 // ██║  ███╗ ███████║ ██╔████╔██║ █████╗   ██████╔╝ ███████║ ██║  ██║
 // ██║   ██║ ██╔══██║ ██║╚██╔╝██║ ██╔══╝   ██╔═══╝  ██╔══██║ ██║  ██║
 // ╚██████╔╝ ██║  ██║ ██║ ╚═╝ ██║ ███████╗ ██║      ██║  ██║ ██████╔╝
-//  ╚═════╝  ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚══════╝ ╚═╝      ╚═╝  ╚═╝ ╚═════╝ 
+//  ╚═════╝  ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚══════╝ ╚═╝      ╚═╝  ╚═╝ ╚═════╝
 
 int SDL_AddGamepadMapping(const char *mapping);                                                                                      // Add support for gamepads that SDL is unaware of or change the binding of an existing gamepad.
 int SDL_AddGamepadMappingsFromIO(SDL_IOStream *src, bool closeio);                                                                   // Load a set of gamepad mappings from an SDL_IOStream.
@@ -429,8 +429,8 @@ const char * SDL_GetGamepadAppleSFSymbolsNameForAxis(SDL_Gamepad *gamepad, SDL_G
 
 //      ██╗  ██████╗  ██╗   ██╗  ██████╗ ████████╗ ██╗  ██████╗ ██╗  ██╗
 //      ██║ ██╔═══██╗ ╚██╗ ██╔╝ ██╔════╝ ╚══██╔══╝ ██║ ██╔════╝ ██║ ██╔╝
-//      ██║ ██║   ██║  ╚████╔╝  ███████╗    ██║    ██║ ██║      █████╔╝ 
-// ██   ██║ ██║   ██║   ╚██╔╝   ╚════██║    ██║    ██║ ██║      ██╔═██╗ 
+//      ██║ ██║   ██║  ╚████╔╝  ███████╗    ██║    ██║ ██║      █████╔╝
+// ██   ██║ ██║   ██║   ╚██╔╝   ╚════██║    ██║    ██║ ██║      ██╔═██╗
 // ╚█████╔╝ ╚██████╔╝    ██║    ██████╔╝    ██║    ██║ ╚██████╗ ██║  ██╗
 //  ╚════╝   ╚═════╝     ╚═╝    ╚═════╝     ╚═╝    ╚═╝  ╚═════╝ ╚═╝  ╚═╝
 
@@ -495,8 +495,8 @@ SDL_PowerState SDL_GetJoystickPowerInfo(SDL_Joystick *joystick, int *percent);  
 
 // ██╗  ██╗  █████╗  ██████╗  ████████╗ ██╗  ██████╗
 // ██║  ██║ ██╔══██╗ ██╔══██╗ ╚══██╔══╝ ██║ ██╔════╝
-// ███████║ ███████║ ██████╔╝    ██║    ██║ ██║     
-// ██╔══██║ ██╔══██║ ██╔═══╝     ██║    ██║ ██║     
+// ███████║ ███████║ ██████╔╝    ██║    ██║ ██║
+// ██╔══██║ ██╔══██║ ██╔═══╝     ██║    ██║ ██║
 // ██║  ██║ ██║  ██║ ██║         ██║    ██║ ╚██████╗
 // ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝         ╚═╝    ╚═╝  ╚═════╝
 
@@ -532,12 +532,12 @@ bool SDL_InitHapticRumble(SDL_Haptic *haptic);                                  
 bool SDL_PlayHapticRumble(SDL_Haptic *haptic, float strength, Uint32 length);                              // Run a simple rumble effect on a haptic device.
 bool SDL_StopHapticRumble(SDL_Haptic *haptic);                                                             // Stop the simple rumble on a haptic device.
 
-//  █████╗  ██╗   ██╗ ██████╗  ██╗  ██████╗ 
+//  █████╗  ██╗   ██╗ ██████╗  ██╗  ██████╗
 // ██╔══██╗ ██║   ██║ ██╔══██╗ ██║ ██╔═══██╗
 // ███████║ ██║   ██║ ██║  ██║ ██║ ██║   ██║
 // ██╔══██║ ██║   ██║ ██║  ██║ ██║ ██║   ██║
 // ██║  ██║ ╚██████╔╝ ██████╔╝ ██║ ╚██████╔╝
-// ╚═╝  ╚═╝  ╚═════╝  ╚═════╝  ╚═╝  ╚═════╝ 
+// ╚═╝  ╚═╝  ╚═════╝  ╚═════╝  ╚═╝  ╚═════╝
 
 int SDL_GetNumAudioDrivers(void);                                                                                                                                // Use this function to get the number of built-in audio drivers.
 const char * SDL_GetAudioDriver(int index);                                                                                                                      // Use this function to get the name of a built in audio driver.
@@ -601,8 +601,8 @@ int SDL_GetSilenceValueForFormat(SDL_AudioFormat format);                       
 
 // ████████╗ ██╗ ███╗   ███╗ ███████╗
 // ╚══██╔══╝ ██║ ████╗ ████║ ██╔════╝
-//    ██║    ██║ ██╔████╔██║ █████╗  
-//    ██║    ██║ ██║╚██╔╝██║ ██╔══╝  
+//    ██║    ██║ ██╔████╔██║ █████╗
+//    ██║    ██║ ██║╚██╔╝██║ ██╔══╝
 //    ██║    ██║ ██║ ╚═╝ ██║ ███████╗
 //    ╚═╝    ╚═╝ ╚═╝     ╚═╝ ╚══════╝
 
@@ -616,7 +616,7 @@ int SDL_GetDaysInMonth(int year, int month);                                    
 int SDL_GetDayOfYear(int year, int month, int day);                                             // Get the day of year for a calendar date.
 int SDL_GetDayOfWeek(int year, int month, int day);                                             // Get the day of week for a calendar date.
 
-// ████████╗ ██╗ ███╗   ███╗ ███████╗ ██████╗ 
+// ████████╗ ██╗ ███╗   ███╗ ███████╗ ██████╗
 // ╚══██╔══╝ ██║ ████╗ ████║ ██╔════╝ ██╔══██╗
 //    ██║    ██║ ██╔████╔██║ █████╗   ██████╔╝
 //    ██║    ██║ ██║╚██╔╝██║ ██╔══╝   ██╔══██╗
@@ -634,7 +634,7 @@ SDL_TimerID SDL_AddTimer(Uint32 interval, SDL_TimerCallback callback, void *user
 SDL_TimerID SDL_AddTimerNS(Uint64 interval, SDL_NSTimerCallback callback, void *userdata);  // Call a callback function at a future time.
 bool SDL_RemoveTimer(SDL_TimerID id);                                                       // Remove a timer created with SDL_AddTimer().
 
-// ██████╗  ███████╗ ███╗   ██╗ ██████╗  ███████╗ ██████╗ 
+// ██████╗  ███████╗ ███╗   ██╗ ██████╗  ███████╗ ██████╗
 // ██╔══██╗ ██╔════╝ ████╗  ██║ ██╔══██╗ ██╔════╝ ██╔══██╗
 // ██████╔╝ █████╗   ██╔██╗ ██║ ██║  ██║ █████╗   ██████╔╝
 // ██╔══██╗ ██╔══╝   ██║╚██╗██║ ██║  ██║ ██╔══╝   ██╔══██╗
@@ -743,21 +743,21 @@ void SDL_DestroyGPURenderState(SDL_GPURenderState *state);                      
 
 //  ██████╗ ██╗  ██╗  █████╗  ██████╗  ███████╗ ██████╗   ██████╗  ██████╗       ██╗ ███████╗  ██████╗ ████████╗
 // ██╔════╝ ██║  ██║ ██╔══██╗ ██╔══██╗ ██╔════╝ ██╔══██╗ ██╔═══██╗ ██╔══██╗      ██║ ██╔════╝ ██╔════╝ ╚══██╔══╝
-// ███████╗ ███████║ ███████║ ██████╔╝ █████╗   ██║  ██║ ██║   ██║ ██████╔╝      ██║ █████╗   ██║         ██║   
-// ╚════██║ ██╔══██║ ██╔══██║ ██╔══██╗ ██╔══╝   ██║  ██║ ██║   ██║ ██╔══██╗ ██   ██║ ██╔══╝   ██║         ██║   
-// ██████╔╝ ██║  ██║ ██║  ██║ ██║  ██║ ███████╗ ██████╔╝ ╚██████╔╝ ██████╔╝ ╚█████╔╝ ███████╗ ╚██████╗    ██║   
-// ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚═════╝   ╚═════╝  ╚═════╝   ╚════╝  ╚══════╝  ╚═════╝    ╚═╝   
+// ███████╗ ███████║ ███████║ ██████╔╝ █████╗   ██║  ██║ ██║   ██║ ██████╔╝      ██║ █████╗   ██║         ██║
+// ╚════██║ ██╔══██║ ██╔══██║ ██╔══██╗ ██╔══╝   ██║  ██║ ██║   ██║ ██╔══██╗ ██   ██║ ██╔══╝   ██║         ██║
+// ██████╔╝ ██║  ██║ ██║  ██║ ██║  ██║ ███████╗ ██████╔╝ ╚██████╔╝ ██████╔╝ ╚█████╔╝ ███████╗ ╚██████╗    ██║
+// ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚═════╝   ╚═════╝  ╚═════╝   ╚════╝  ╚══════╝  ╚═════╝    ╚═╝
 
 SDL_SharedObject * SDL_LoadObject(const char *sofile);                             // Dynamically load a shared object.
 SDL_FunctionPointer SDL_LoadFunction(SDL_SharedObject *handle, const char *name);  // Look up the address of the named function in a shared object.
 void SDL_UnloadObject(SDL_SharedObject *handle);                                   // Unload a shared object from memory.
 
-// ████████╗ ██╗  ██╗ ██████╗  ███████╗  █████╗  ██████╗ 
+// ████████╗ ██╗  ██╗ ██████╗  ███████╗  █████╗  ██████╗
 // ╚══██╔══╝ ██║  ██║ ██╔══██╗ ██╔════╝ ██╔══██╗ ██╔══██╗
 //    ██║    ███████║ ██████╔╝ █████╗   ███████║ ██║  ██║
 //    ██║    ██╔══██║ ██╔══██╗ ██╔══╝   ██╔══██║ ██║  ██║
 //    ██║    ██║  ██║ ██║  ██║ ███████╗ ██║  ██║ ██████╔╝
-//    ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚═╝  ╚═╝ ╚═════╝ 
+//    ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚═╝  ╚═╝ ╚═════╝
 
 SDL_Thread * SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);       // Create a new thread with a default stack size.
 SDL_Thread * SDL_CreateThreadWithProperties(SDL_PropertiesID props);                      // Create a new thread with with the specified properties.
@@ -774,8 +774,8 @@ void SDL_CleanupTLS(void);                                                      
 
 // ███╗   ███╗ ██╗   ██╗ ████████╗ ███████╗ ██╗  ██╗
 // ████╗ ████║ ██║   ██║ ╚══██╔══╝ ██╔════╝ ╚██╗██╔╝
-// ██╔████╔██║ ██║   ██║    ██║    █████╗    ╚███╔╝ 
-// ██║╚██╔╝██║ ██║   ██║    ██║    ██╔══╝    ██╔██╗ 
+// ██╔████╔██║ ██║   ██║    ██║    █████╗    ╚███╔╝
+// ██║╚██╔╝██║ ██║   ██║    ██║    ██╔══╝    ██╔██╗
 // ██║ ╚═╝ ██║ ╚██████╔╝    ██║    ███████╗ ██╔╝ ██╗
 // ╚═╝     ╚═╝  ╚═════╝     ╚═╝    ╚══════╝ ╚═╝  ╚═╝
 
@@ -810,8 +810,8 @@ void SDL_SetInitialized(SDL_InitState *state, bool initialized);                
 
 //  █████╗  ████████╗  ██████╗  ███╗   ███╗ ██╗  ██████╗
 // ██╔══██╗ ╚══██╔══╝ ██╔═══██╗ ████╗ ████║ ██║ ██╔════╝
-// ███████║    ██║    ██║   ██║ ██╔████╔██║ ██║ ██║     
-// ██╔══██║    ██║    ██║   ██║ ██║╚██╔╝██║ ██║ ██║     
+// ███████║    ██║    ██║   ██║ ██╔████╔██║ ██║ ██║
+// ██╔══██║    ██║    ██║   ██║ ██║╚██╔╝██║ ██║ ██║
 // ██║  ██║    ██║    ╚██████╔╝ ██║ ╚═╝ ██║ ██║ ╚██████╗
 // ╚═╝  ╚═╝    ╚═╝     ╚═════╝  ╚═╝     ╚═╝ ╚═╝  ╚═════╝
 
@@ -908,12 +908,12 @@ bool SDL_WriteS64LE(SDL_IOStream *dst, Sint64 value);                           
 bool SDL_WriteU64BE(SDL_IOStream *dst, Uint64 value);                                      // Use this function to write 64 bits in native format to an SDL_IOStream as big-endian data.
 bool SDL_WriteS64BE(SDL_IOStream *dst, Sint64 value);                                      // Use this function to write 64 bits in native format to an SDL_IOStream as big-endian data.
 
-//  █████╗   ██████╗ ██╗   ██╗ ███╗   ██╗  ██████╗ ██╗  ██████╗ 
+//  █████╗   ██████╗ ██╗   ██╗ ███╗   ██╗  ██████╗ ██╗  ██████╗
 // ██╔══██╗ ██╔════╝ ╚██╗ ██╔╝ ████╗  ██║ ██╔════╝ ██║ ██╔═══██╗
 // ███████║ ███████╗  ╚████╔╝  ██╔██╗ ██║ ██║      ██║ ██║   ██║
 // ██╔══██║ ╚════██║   ╚██╔╝   ██║╚██╗██║ ██║      ██║ ██║   ██║
 // ██║  ██║ ██████╔╝    ██║    ██║ ╚████║ ╚██████╗ ██║ ╚██████╔╝
-// ╚═╝  ╚═╝ ╚═════╝     ╚═╝    ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═════╝ 
+// ╚═╝  ╚═╝ ╚═════╝     ╚═╝    ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═════╝
 
 SDL_AsyncIO * SDL_AsyncIOFromFile(const char *file, const char *mode);                                                        // Use this function to create a new SDL_AsyncIO object for reading from and/or writing to a named file.
 Sint64 SDL_GetAsyncIOSize(SDL_AsyncIO *asyncio);                                                                              // Use this function to get the size of the data stream in an SDL_AsyncIO.
@@ -929,8 +929,8 @@ bool SDL_LoadFileAsync(const char *file, SDL_AsyncIOQueue *queue, void *userdata
 
 //  ██████╗ ████████╗  ██████╗  ██████╗   █████╗   ██████╗  ███████╗
 // ██╔════╝ ╚══██╔══╝ ██╔═══██╗ ██╔══██╗ ██╔══██╗ ██╔════╝  ██╔════╝
-// ███████╗    ██║    ██║   ██║ ██████╔╝ ███████║ ██║  ███╗ █████╗  
-// ╚════██║    ██║    ██║   ██║ ██╔══██╗ ██╔══██║ ██║   ██║ ██╔══╝  
+// ███████╗    ██║    ██║   ██║ ██████╔╝ ███████║ ██║  ███╗ █████╗
+// ╚════██║    ██║    ██║   ██║ ██╔══██╗ ██╔══██║ ██║   ██║ ██╔══╝
 // ██████╔╝    ██║    ╚██████╔╝ ██║  ██║ ██║  ██║ ╚██████╔╝ ███████╗
 // ╚═════╝     ╚═╝     ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝  ╚═════╝  ╚══════╝
 
@@ -957,7 +957,7 @@ char ** SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const c
 // ██████╔╝ ██║  ╚███╔╝  █████╗   ██║      ███████╗
 // ██╔═══╝  ██║  ██╔██╗  ██╔══╝   ██║      ╚════██║
 // ██║      ██║ ██╔╝ ██╗ ███████╗ ███████╗ ██████╔╝
-// ╚═╝      ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚══════╝ ╚═════╝ 
+// ╚═╝      ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚══════╝ ╚═════╝
 
 const char * SDL_GetPixelFormatName(SDL_PixelFormat format);                                                                                    // Get the human readable name of a pixel format.
 bool SDL_GetMasksForPixelFormat(SDL_PixelFormat format, int *bpp, Uint32 *Rmask, Uint32 *Gmask, Uint32 *Bmask, Uint32 *Amask);                  // Convert one of the enumerated pixel formats to a bpp value and RGBA masks.
@@ -973,8 +973,8 @@ void SDL_GetRGBA(Uint32 pixelvalue, const SDL_PixelFormatDetails *format, const 
 
 //  ██████╗ ██╗   ██╗ ██████╗  ███████╗  █████╗   ██████╗ ███████╗
 // ██╔════╝ ██║   ██║ ██╔══██╗ ██╔════╝ ██╔══██╗ ██╔════╝ ██╔════╝
-// ███████╗ ██║   ██║ ██████╔╝ █████╗   ███████║ ██║      █████╗  
-// ╚════██║ ██║   ██║ ██╔══██╗ ██╔══╝   ██╔══██║ ██║      ██╔══╝  
+// ███████╗ ██║   ██║ ██████╔╝ █████╗   ███████║ ██║      █████╗
+// ╚════██║ ██║   ██║ ██╔══██╗ ██╔══╝   ██╔══██║ ██║      ██╔══╝
 // ██████╔╝ ╚██████╔╝ ██║  ██║ ██║      ██║  ██║ ╚██████╗ ███████╗
 // ╚═════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═╝      ╚═╝  ╚═╝  ╚═════╝ ╚══════╝
 
@@ -1039,8 +1039,8 @@ bool SDL_WriteSurfacePixelFloat(SDL_Surface *surface, int x, int y, float r, flo
 
 // ██████╗  ██╗      ███████╗ ███╗   ██╗ ██████╗  ███╗   ███╗  ██████╗  ██████╗  ███████╗
 // ██╔══██╗ ██║      ██╔════╝ ████╗  ██║ ██╔══██╗ ████╗ ████║ ██╔═══██╗ ██╔══██╗ ██╔════╝
-// ██████╔╝ ██║      █████╗   ██╔██╗ ██║ ██║  ██║ ██╔████╔██║ ██║   ██║ ██║  ██║ █████╗  
-// ██╔══██╗ ██║      ██╔══╝   ██║╚██╗██║ ██║  ██║ ██║╚██╔╝██║ ██║   ██║ ██║  ██║ ██╔══╝  
+// ██████╔╝ ██║      █████╗   ██╔██╗ ██║ ██║  ██║ ██╔████╔██║ ██║   ██║ ██║  ██║ █████╗
+// ██╔══██╗ ██║      ██╔══╝   ██║╚██╗██║ ██║  ██║ ██║╚██╔╝██║ ██║   ██║ ██║  ██║ ██╔══╝
 // ██████╔╝ ███████╗ ███████╗ ██║ ╚████║ ██████╔╝ ██║ ╚═╝ ██║ ╚██████╔╝ ██████╔╝ ███████╗
 // ╚═════╝  ╚══════╝ ╚══════╝ ╚═╝  ╚═══╝ ╚═════╝  ╚═╝     ╚═╝  ╚═════╝  ╚═════╝  ╚══════╝
 
@@ -1048,10 +1048,10 @@ SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor, SDL_Ble
 
 // ██████╗  ███████╗  ██████╗ ████████╗
 // ██╔══██╗ ██╔════╝ ██╔════╝ ╚══██╔══╝
-// ██████╔╝ █████╗   ██║         ██║   
-// ██╔══██╗ ██╔══╝   ██║         ██║   
-// ██║  ██║ ███████╗ ╚██████╗    ██║   
-// ╚═╝  ╚═╝ ╚══════╝  ╚═════╝    ╚═╝   
+// ██████╔╝ █████╗   ██║         ██║
+// ██╔══██╗ ██╔══╝   ██║         ██║
+// ██║  ██║ ███████╗ ╚██████╗    ██║
+// ╚═╝  ╚═╝ ╚══════╝  ╚═════╝    ╚═╝
 
 void SDL_RectToFRect(const SDL_Rect *rect, SDL_FRect *frect);                                                         // Convert an SDL_Rect to SDL_FRect
 bool SDL_PointInRect(const SDL_Point *p, const SDL_Rect *r);                                                          // Determine whether a point resides inside a rectangle.
@@ -1072,7 +1072,7 @@ bool SDL_GetRectUnionFloat(const SDL_FRect *A, const SDL_FRect *B, SDL_FRect *re
 bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint *points, int count, const SDL_FRect *clip, SDL_FRect *result);  // Calculate a minimal rectangle enclosing a set of points with float precision.
 bool SDL_GetRectAndLineIntersectionFloat(const SDL_FRect *rect, float *X1, float *Y1, float *X2, float *Y2);          // Calculate the intersection of a rectangle and line segment with float precision.
 
-//  ██████╗  █████╗  ███╗   ███╗ ███████╗ ██████╗   █████╗ 
+//  ██████╗  █████╗  ███╗   ███╗ ███████╗ ██████╗   █████╗
 // ██╔════╝ ██╔══██╗ ████╗ ████║ ██╔════╝ ██╔══██╗ ██╔══██╗
 // ██║      ███████║ ██╔████╔██║ █████╗   ██████╔╝ ███████║
 // ██║      ██╔══██║ ██║╚██╔╝██║ ██╔══╝   ██╔══██╗ ██╔══██║
@@ -1095,12 +1095,12 @@ SDL_Surface * SDL_AcquireCameraFrame(SDL_Camera *camera, Uint64 *timestampNS);  
 void SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);                    // Release a frame of video acquired from a camera.
 void SDL_CloseCamera(SDL_Camera *camera);                                               // Use this function to shut down camera processing and close the camera device.
 
-//  ██████╗ ██╗      ██╗ ██████╗  ██████╗   ██████╗   █████╗  ██████╗  ██████╗ 
+//  ██████╗ ██╗      ██╗ ██████╗  ██████╗   ██████╗   █████╗  ██████╗  ██████╗
 // ██╔════╝ ██║      ██║ ██╔══██╗ ██╔══██╗ ██╔═══██╗ ██╔══██╗ ██╔══██╗ ██╔══██╗
 // ██║      ██║      ██║ ██████╔╝ ██████╔╝ ██║   ██║ ███████║ ██████╔╝ ██║  ██║
 // ██║      ██║      ██║ ██╔═══╝  ██╔══██╗ ██║   ██║ ██╔══██║ ██╔══██╗ ██║  ██║
 // ╚██████╗ ███████╗ ██║ ██║      ██████╔╝ ╚██████╔╝ ██║  ██║ ██║  ██║ ██████╔╝
-//  ╚═════╝ ╚══════╝ ╚═╝ ╚═╝      ╚═════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝ 
+//  ╚═════╝ ╚══════╝ ╚═╝ ╚═╝      ╚═════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝
 
 bool SDL_SetClipboardText(const char *text);                                                                                                                          // Put UTF-8 text into the clipboard.
 char * SDL_GetClipboardText(void);                                                                                                                                    // Get UTF-8 text from the clipboard.
@@ -1114,12 +1114,12 @@ void * SDL_GetClipboardData(const char *mime_type, size_t *size);               
 bool SDL_HasClipboardData(const char *mime_type);                                                                                                                     // Query whether there is data in the clipboard for the provided mime type.
 char ** SDL_GetClipboardMimeTypes(size_t *num_mime_types);                                                                                                            // Retrieve the list of mime types available in the clipboard.
 
-// ██████╗  ██╗  █████╗  ██╗       ██████╗   ██████╗ 
-// ██╔══██╗ ██║ ██╔══██╗ ██║      ██╔═══██╗ ██╔════╝ 
+// ██████╗  ██╗  █████╗  ██╗       ██████╗   ██████╗
+// ██╔══██╗ ██║ ██╔══██╗ ██║      ██╔═══██╗ ██╔════╝
 // ██║  ██║ ██║ ███████║ ██║      ██║   ██║ ██║  ███╗
 // ██║  ██║ ██║ ██╔══██║ ██║      ██║   ██║ ██║   ██║
 // ██████╔╝ ██║ ██║  ██║ ███████╗ ╚██████╔╝ ╚██████╔╝
-// ╚═════╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝  ╚═════╝   ╚═════╝ 
+// ╚═════╝  ╚═╝ ╚═╝  ╚═╝ ╚══════╝  ╚═════╝   ╚═════╝
 
 void SDL_ShowOpenFileDialog(SDL_DialogFileCallback callback, void *userdata, SDL_Window *window, const SDL_DialogFileFilter *filters, int nfilters, const char *default_location, bool allow_many);  // Displays a dialog that lets the user select a file on their filesystem.
 void SDL_ShowSaveFileDialog(SDL_DialogFileCallback callback, void *userdata, SDL_Window *window, const SDL_DialogFileFilter *filters, int nfilters, const char *default_location);                   // Displays a dialog that lets the user choose a new or existing file on their filesystem.
@@ -1131,7 +1131,7 @@ void SDL_ShowFileDialogWithProperties(SDL_FileDialogType type, SDL_DialogFileCal
 // ██║  ███╗ ██████╔╝ ██║   ██║
 // ██║   ██║ ██╔═══╝  ██║   ██║
 // ╚██████╔╝ ██║      ╚██████╔╝
-//  ╚═════╝  ╚═╝       ╚═════╝ 
+//  ╚═════╝  ╚═╝       ╚═════╝
 
 bool SDL_GPUSupportsShaderFormats(SDL_GPUShaderFormat format_flags, const char *name);                                                                                                                                                                                                                    // Checks for GPU runtime support.
 bool SDL_GPUSupportsProperties(SDL_PropertiesID props);                                                                                                                                                                                                                                                   // Checks for GPU runtime support.
@@ -1231,8 +1231,8 @@ void SDL_GDKResumeGPU(SDL_GPUDevice *device);                                   
 
 // ███╗   ███╗ ███████╗  ██████╗  ██████╗  █████╗   ██████╗  ███████╗ ██████╗   ██████╗  ██╗  ██╗
 // ████╗ ████║ ██╔════╝ ██╔════╝ ██╔════╝ ██╔══██╗ ██╔════╝  ██╔════╝ ██╔══██╗ ██╔═══██╗ ╚██╗██╔╝
-// ██╔████╔██║ █████╗   ███████╗ ███████╗ ███████║ ██║  ███╗ █████╗   ██████╔╝ ██║   ██║  ╚███╔╝ 
-// ██║╚██╔╝██║ ██╔══╝   ╚════██║ ╚════██║ ██╔══██║ ██║   ██║ ██╔══╝   ██╔══██╗ ██║   ██║  ██╔██╗ 
+// ██╔████╔██║ █████╗   ███████╗ ███████╗ ███████║ ██║  ███╗ █████╗   ██████╔╝ ██║   ██║  ╚███╔╝
+// ██║╚██╔╝██║ ██╔══╝   ╚════██║ ╚════██║ ██╔══██║ ██║   ██║ ██╔══╝   ██╔══██╗ ██║   ██║  ██╔██╗
 // ██║ ╚═╝ ██║ ███████╗ ██████╔╝ ██████╔╝ ██║  ██║ ╚██████╔╝ ███████╗ ██████╔╝ ╚██████╔╝ ██╔╝ ██╗
 // ╚═╝     ╚═╝ ╚══════╝ ╚═════╝  ╚═════╝  ╚═╝  ╚═╝  ╚═════╝  ╚══════╝ ╚═════╝   ╚═════╝  ╚═╝  ╚═╝
 
@@ -1254,10 +1254,10 @@ bool SDL_Vulkan_CreateSurface(SDL_Window *window, VkInstance instance, const str
 void SDL_Vulkan_DestroySurface(VkInstance instance, VkSurfaceKHR surface, const struct VkAllocationCallbacks *allocator);                      // Destroy the Vulkan rendering surface of a window.
 bool SDL_Vulkan_GetPresentationSupport(VkInstance instance, VkPhysicalDevice physicalDevice, Uint32 queueFamilyIndex);                         // Query support for presentation via a given physical device and queue family.
 
-// ███╗   ███╗ ███████╗ ████████╗  █████╗  ██╗     
-// ████╗ ████║ ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║     
-// ██╔████╔██║ █████╗      ██║    ███████║ ██║     
-// ██║╚██╔╝██║ ██╔══╝      ██║    ██╔══██║ ██║     
+// ███╗   ███╗ ███████╗ ████████╗  █████╗  ██╗
+// ████╗ ████║ ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║
+// ██╔████╔██║ █████╗      ██║    ███████║ ██║
+// ██║╚██╔╝██║ ██╔══╝      ██║    ██╔══██║ ██║
 // ██║ ╚═╝ ██║ ███████╗    ██║    ██║  ██║ ███████╗
 // ╚═╝     ╚═╝ ╚══════╝    ╚═╝    ╚═╝  ╚═╝ ╚══════╝
 
@@ -1307,7 +1307,7 @@ void * SDL_Metal_GetLayer(SDL_MetalView view);           // Get a pointer to the
 #define SDL_PLATFORM_3DS         // A preprocessor macro that is only defined if compiling for Nintendo 3DS.
 #define SDL_PLATFORM_NGAGE       // A preprocessor macro that is only defined if compiling for the Nokia N-Gage.
 
-// ██████╗   ██████╗  ██╗    ██╗ ███████╗ ██████╗ 
+// ██████╗   ██████╗  ██╗    ██╗ ███████╗ ██████╗
 // ██╔══██╗ ██╔═══██╗ ██║    ██║ ██╔════╝ ██╔══██╗
 // ██████╔╝ ██║   ██║ ██║ █╗ ██║ █████╗   ██████╔╝
 // ██╔═══╝  ██║   ██║ ██║███╗██║ ██╔══╝   ██╔══██╗
@@ -1316,7 +1316,7 @@ void * SDL_Metal_GetLayer(SDL_MetalView view);           // Get a pointer to the
 
 SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);  // Get the current power supply details.
 
-//  ██████╗ ███████╗ ███╗   ██╗  ██████╗  ██████╗  ██████╗ 
+//  ██████╗ ███████╗ ███╗   ██╗  ██████╗  ██████╗  ██████╗
 // ██╔════╝ ██╔════╝ ████╗  ██║ ██╔════╝ ██╔═══██╗ ██╔══██╗
 // ███████╗ █████╗   ██╔██╗ ██║ ███████╗ ██║   ██║ ██████╔╝
 // ╚════██║ ██╔══╝   ██║╚██╗██║ ╚════██║ ██║   ██║ ██╔══██╗
@@ -1343,7 +1343,7 @@ void SDL_UpdateSensors(void);                                             // Upd
 // ██████╔╝ ██████╔╝ ██║   ██║ ██║      █████╗   ███████╗ ███████╗
 // ██╔═══╝  ██╔══██╗ ██║   ██║ ██║      ██╔══╝   ╚════██║ ╚════██║
 // ██║      ██║  ██║ ╚██████╔╝ ╚██████╗ ███████╗ ██████╔╝ ██████╔╝
-// ╚═╝      ╚═╝  ╚═╝  ╚═════╝   ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ 
+// ╚═╝      ╚═╝  ╚═╝  ╚═════╝   ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝
 
 SDL_Process * SDL_CreateProcess(const char * const *args, bool pipe_stdio);     // Create a new process.
 SDL_Process * SDL_CreateProcessWithProperties(SDL_PropertiesID props);          // Create a new process with the specified properties.
@@ -1360,7 +1360,7 @@ void SDL_DestroyProcess(SDL_Process *process);                                  
 // ██████╔╝ ██║    ██║    ███████╗
 // ██╔══██╗ ██║    ██║    ╚════██║
 // ██████╔╝ ██║    ██║    ██████╔╝
-// ╚═════╝  ╚═╝    ╚═╝    ╚═════╝ 
+// ╚═════╝  ╚═╝    ╚═╝    ╚═════╝
 
 int SDL_MostSignificantBitIndex32(Uint32 x);  // Get the index of the most significant (set) bit in a 32-bit number.
 bool SDL_HasExactlyOneBitSet32(Uint32 x);     // Determine if a unsigned 32-bit value has exactly one bit set.
@@ -1379,10 +1379,10 @@ Uint32 SDL_Swap64(Uint64 x);   // Byte-swap an unsigned 64-bit number.
 
 //  █████╗   ██████╗  ██████╗ ███████╗ ██████╗  ████████╗
 // ██╔══██╗ ██╔════╝ ██╔════╝ ██╔════╝ ██╔══██╗ ╚══██╔══╝
-// ███████║ ███████╗ ███████╗ █████╗   ██████╔╝    ██║   
-// ██╔══██║ ╚════██║ ╚════██║ ██╔══╝   ██╔══██╗    ██║   
-// ██║  ██║ ██████╔╝ ██████╔╝ ███████╗ ██║  ██║    ██║   
-// ╚═╝  ╚═╝ ╚═════╝  ╚═════╝  ╚══════╝ ╚═╝  ╚═╝    ╚═╝   
+// ███████║ ███████╗ ███████╗ █████╗   ██████╔╝    ██║
+// ██╔══██║ ╚════██║ ╚════██║ ██╔══╝   ██╔══██╗    ██║
+// ██║  ██║ ██████╔╝ ██████╔╝ ███████╗ ██║  ██║    ██║
+// ╚═╝  ╚═╝ ╚═════╝  ╚═════╝  ╚══════╝ ╚═╝  ╚═╝    ╚═╝
 
 SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data, const char *func, const char *file, int line);  // Never call this directly.
 #define SDL_assert(condition)                                                                             // An assertion test that is normally performed only in debug builds.
@@ -1395,12 +1395,12 @@ SDL_AssertionHandler SDL_GetAssertionHandler(void **puserdata);                 
 const SDL_AssertData * SDL_GetAssertionReport(void);                                                      // Get a list of all assertion failures.
 void SDL_ResetAssertionReport(void);                                                                      // Clear the list of all assertion failures.
 
-//  ██████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ██╗ ███████╗  ██████╗ 
+//  ██████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ██╗ ███████╗  ██████╗
 // ██╔════╝ ██╔══██╗ ██║   ██║ ██║ ████╗  ██║ ██╔════╝ ██╔═══██╗
 // ██║      ██████╔╝ ██║   ██║ ██║ ██╔██╗ ██║ █████╗   ██║   ██║
 // ██║      ██╔═══╝  ██║   ██║ ██║ ██║╚██╗██║ ██╔══╝   ██║   ██║
 // ╚██████╗ ██║      ╚██████╔╝ ██║ ██║ ╚████║ ██║      ╚██████╔╝
-//  ╚═════╝ ╚═╝       ╚═════╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝       ╚═════╝ 
+//  ╚═════╝ ╚═╝       ╚═════╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝       ╚═════╝
 
 int SDL_GetNumLogicalCPUCores(void);  // Get the number of logical CPU cores available.
 int SDL_GetCPUCacheLineSize(void);    // Determine the L1 cache line size of the CPU.
@@ -1426,7 +1426,7 @@ size_t SDL_GetSIMDAlignment(void);    // Report the alignment this system needs 
 // ██║ ██╔██╗ ██║    ██║    ██████╔╝ ██║ ██╔██╗ ██║ ███████╗ ██║ ██║      ███████╗
 // ██║ ██║╚██╗██║    ██║    ██╔══██╗ ██║ ██║╚██╗██║ ╚════██║ ██║ ██║      ╚════██║
 // ██║ ██║ ╚████║    ██║    ██║  ██║ ██║ ██║ ╚████║ ██████╔╝ ██║ ╚██████╗ ██████╔╝
-// ╚═╝ ╚═╝  ╚═══╝    ╚═╝    ╚═╝  ╚═╝ ╚═╝ ╚═╝  ╚═══╝ ╚═════╝  ╚═╝  ╚═════╝ ╚═════╝ 
+// ╚═╝ ╚═╝  ╚═══╝    ╚═╝    ╚═╝  ╚═╝ ╚═╝ ╚═╝  ╚═══╝ ╚═════╝  ╚═╝  ╚═════╝ ╚═════╝
 
 #define SDL_LSX_INTRINSICS      // Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
 #define SDL_LASX_INTRINSICS     // Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
@@ -1444,8 +1444,8 @@ size_t SDL_GetSIMDAlignment(void);    // Report the alignment this system needs 
 
 // ██╗       ██████╗   ██████╗  █████╗  ██╗      ███████╗
 // ██║      ██╔═══██╗ ██╔════╝ ██╔══██╗ ██║      ██╔════╝
-// ██║      ██║   ██║ ██║      ███████║ ██║      █████╗  
-// ██║      ██║   ██║ ██║      ██╔══██║ ██║      ██╔══╝  
+// ██║      ██║   ██║ ██║      ███████║ ██║      █████╗
+// ██║      ██║   ██║ ██║      ██╔══██║ ██║      ██╔══╝
 // ███████╗ ╚██████╔╝ ╚██████╗ ██║  ██║ ███████╗ ███████╗
 // ╚══════╝  ╚═════╝   ╚═════╝ ╚═╝  ╚═╝ ╚══════╝ ╚══════╝
 
@@ -1494,19 +1494,19 @@ bool SDL_GetGDKDefaultUser(XUserHandle *outUserHandle);                         
 
 // ███╗   ███╗ ██╗  ██████╗  ██████╗
 // ████╗ ████║ ██║ ██╔════╝ ██╔════╝
-// ██╔████╔██║ ██║ ███████╗ ██║     
-// ██║╚██╔╝██║ ██║ ╚════██║ ██║     
+// ██╔████╔██║ ██║ ███████╗ ██║
+// ██║╚██╔╝██║ ██║ ╚════██║ ██║
 // ██║ ╚═╝ ██║ ██║ ██████╔╝ ╚██████╗
 // ╚═╝     ╚═╝ ╚═╝ ╚═════╝   ╚═════╝
 
 bool SDL_OpenURL(const char *url);  // Open a URL/URI in the browser or other appropriate external application.
 
-//  ██████╗  ██╗   ██╗ ██╗ ██████╗ 
+//  ██████╗  ██╗   ██╗ ██╗ ██████╗
 // ██╔════╝  ██║   ██║ ██║ ██╔══██╗
 // ██║  ███╗ ██║   ██║ ██║ ██║  ██║
 // ██║   ██║ ██║   ██║ ██║ ██║  ██║
 // ╚██████╔╝ ╚██████╔╝ ██║ ██████╔╝
-//  ╚═════╝   ╚═════╝  ╚═╝ ╚═════╝ 
+//  ╚═════╝   ╚═════╝  ╚═╝ ╚═════╝
 
 void SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);  // Get an ASCII string representation for a given SDL_GUID.
 SDL_GUID SDL_StringToGUID(const char *pchGUID);                   // Convert a GUID string into a SDL_GUID structure.
@@ -1532,8 +1532,8 @@ void SDL_GDKSuspendComplete(void);                                              
 
 //  ██████╗ ████████╗ ██████╗  ██╗ ███╗   ██╗  ██████╗
 // ██╔════╝ ╚══██╔══╝ ██╔══██╗ ██║ ████╗  ██║ ██╔════╝
-// ███████╗    ██║    ██║  ██║ ██║ ██╔██╗ ██║ ██║     
-// ╚════██║    ██║    ██║  ██║ ██║ ██║╚██╗██║ ██║     
+// ███████╗    ██║    ██║  ██║ ██║ ██╔██╗ ██║ ██║
+// ╚════██║    ██║    ██║  ██║ ██║ ██║╚██╗██║ ██║
 // ██████╔╝    ██║    ██████╔╝ ██║ ██║ ╚████║ ╚██████╗
 // ╚═════╝     ╚═╝    ╚═════╝  ╚═╝ ╚═╝  ╚═══╝  ╚═════╝
 
