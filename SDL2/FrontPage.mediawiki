@@ -39,7 +39,7 @@ This wiki is your portal to documentation and other resources for SDL 2.0.
 *: Feel free to ask questions and talk with other developers using SDL2 via discord.
 * [https://discourse.libsdl.org/ Forums]
 *: A great place to keep up with the latest news, help other users out, and ask questions.
-* [[Contributing]]
+* [https://wiki.libsdl.org/SDL3/README-documentation-rules Contributing]
 *: Users wishing to contribute content to the wiki should follow the guidelines provided in this guide.
 
 == API References ==
