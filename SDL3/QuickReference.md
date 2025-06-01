@@ -1126,6 +1126,47 @@ void SDL_ShowSaveFileDialog(SDL_DialogFileCallback callback, void *userdata, SDL
 void SDL_ShowOpenFolderDialog(SDL_DialogFileCallback callback, void *userdata, SDL_Window *window, const char *default_location, bool allow_many);                                                   // Displays a dialog that lets the user select a folder on their filesystem.
 void SDL_ShowFileDialogWithProperties(SDL_FileDialogType type, SDL_DialogFileCallback callback, void *userdata, SDL_PropertiesID props);                                                             // Create and launch a file dialog with the specified properties.
 
+// ████████╗ ██████╗   █████╗  ██╗   ██╗
+// ╚══██╔══╝ ██╔══██╗ ██╔══██╗ ╚██╗ ██╔╝
+//    ██║    ██████╔╝ ███████║  ╚████╔╝
+//    ██║    ██╔══██╗ ██╔══██║   ╚██╔╝
+//    ██║    ██║  ██║ ██║  ██║    ██║
+//    ╚═╝    ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝
+
+SDL_Tray * SDL_CreateTray(SDL_Surface *icon, const char *tooltip);                                                // Create an icon to be placed in the operating system's tray, or equivalent.
+void SDL_SetTrayIcon(SDL_Tray *tray, SDL_Surface *icon);                                                          // Updates the system tray icon's icon.
+void SDL_SetTrayTooltip(SDL_Tray *tray, const char *tooltip);                                                     // Updates the system tray icon's tooltip.
+SDL_TrayMenu * SDL_CreateTrayMenu(SDL_Tray *tray);                                                                // Create a menu for a system tray.
+SDL_TrayMenu * SDL_CreateTraySubmenu(SDL_TrayEntry *entry);                                                       // Create a submenu for a system tray entry.
+SDL_TrayMenu * SDL_GetTrayMenu(SDL_Tray *tray);                                                                   // Gets a previously created tray menu.
+SDL_TrayMenu * SDL_GetTraySubmenu(SDL_TrayEntry *entry);                                                          // Gets a previously created tray entry submenu.
+const SDL_TrayEntry ** SDL_GetTrayEntries(SDL_TrayMenu *menu, int *count);                                        // Returns a list of entries in the menu, in order.
+void SDL_RemoveTrayEntry(SDL_TrayEntry *entry);                                                                   // Removes a tray entry.
+SDL_TrayEntry * SDL_InsertTrayEntryAt(SDL_TrayMenu *menu, int pos, const char *label, SDL_TrayEntryFlags flags);  // Insert a tray entry at a given position.
+void SDL_SetTrayEntryLabel(SDL_TrayEntry *entry, const char *label);                                              // Sets the label of an entry.
+const char * SDL_GetTrayEntryLabel(SDL_TrayEntry *entry);                                                         // Gets the label of an entry.
+void SDL_SetTrayEntryChecked(SDL_TrayEntry *entry, bool checked);                                                 // Sets whether or not an entry is checked.
+bool SDL_GetTrayEntryChecked(SDL_TrayEntry *entry);                                                               // Gets whether or not an entry is checked.
+void SDL_SetTrayEntryEnabled(SDL_TrayEntry *entry, bool enabled);                                                 // Sets whether or not an entry is enabled.
+bool SDL_GetTrayEntryEnabled(SDL_TrayEntry *entry);                                                               // Gets whether or not an entry is enabled.
+void SDL_SetTrayEntryCallback(SDL_TrayEntry *entry, SDL_TrayCallback callback, void *userdata);                   // Sets a callback to be invoked when the entry is selected.
+void SDL_ClickTrayEntry(SDL_TrayEntry *entry);                                                                    // Simulate a click on a tray entry.
+void SDL_DestroyTray(SDL_Tray *tray);                                                                             // Destroys a tray object.
+SDL_TrayMenu * SDL_GetTrayEntryParent(SDL_TrayEntry *entry);                                                      // Gets the menu containing a certain tray entry.
+SDL_TrayEntry * SDL_GetTrayMenuParentEntry(SDL_TrayMenu *menu);                                                   // Gets the entry for which the menu is a submenu, if the current menu is a submenu.
+SDL_Tray * SDL_GetTrayMenuParentTray(SDL_TrayMenu *menu);                                                         // Gets the tray for which this menu is the first-level menu, if the current menu isn't a submenu.
+void SDL_UpdateTrays(void);                                                                                       // Update the trays.
+
+// ███╗   ███╗ ███████╗  ██████╗  ██████╗  █████╗   ██████╗  ███████╗ ██████╗   ██████╗  ██╗  ██╗
+// ████╗ ████║ ██╔════╝ ██╔════╝ ██╔════╝ ██╔══██╗ ██╔════╝  ██╔════╝ ██╔══██╗ ██╔═══██╗ ╚██╗██╔╝
+// ██╔████╔██║ █████╗   ███████╗ ███████╗ ███████║ ██║  ███╗ █████╗   ██████╔╝ ██║   ██║  ╚███╔╝
+// ██║╚██╔╝██║ ██╔══╝   ╚════██║ ╚════██║ ██╔══██║ ██║   ██║ ██╔══╝   ██╔══██╗ ██║   ██║  ██╔██╗
+// ██║ ╚═╝ ██║ ███████╗ ██████╔╝ ██████╔╝ ██║  ██║ ╚██████╔╝ ███████╗ ██████╔╝ ╚██████╔╝ ██╔╝ ██╗
+// ╚═╝     ╚═╝ ╚══════╝ ╚═════╝  ╚═════╝  ╚═╝  ╚═╝  ╚═════╝  ╚══════╝ ╚═════╝   ╚═════╝  ╚═╝  ╚═╝
+
+bool SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);                                      // Create a modal message box.
+bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const char *message, SDL_Window *window);  // Display a simple modal message box.
+
 //  ██████╗  ██████╗  ██╗   ██╗
 // ██╔════╝  ██╔══██╗ ██║   ██║
 // ██║  ███╗ ██████╔╝ ██║   ██║
@@ -1228,16 +1269,6 @@ bool SDL_GPUTextureSupportsSampleCount(SDL_GPUDevice *device, SDL_GPUTextureForm
 Uint32 SDL_CalculateGPUTextureFormatSize(SDL_GPUTextureFormat format, Uint32 width, Uint32 height, Uint32 depth_or_layer_count);                                                                                                                                                                          // Calculate the size in bytes of a texture format with dimensions.
 void SDL_GDKSuspendGPU(SDL_GPUDevice *device);                                                                                                                                                                                                                                                            // Call this to suspend GPU operation on Xbox when you receive the SDL_EVENT_DID_ENTER_BACKGROUND event.
 void SDL_GDKResumeGPU(SDL_GPUDevice *device);                                                                                                                                                                                                                                                             // Call this to resume GPU operation on Xbox when you receive the SDL_EVENT_WILL_ENTER_FOREGROUND event.
-
-// ███╗   ███╗ ███████╗  ██████╗  ██████╗  █████╗   ██████╗  ███████╗ ██████╗   ██████╗  ██╗  ██╗
-// ████╗ ████║ ██╔════╝ ██╔════╝ ██╔════╝ ██╔══██╗ ██╔════╝  ██╔════╝ ██╔══██╗ ██╔═══██╗ ╚██╗██╔╝
-// ██╔████╔██║ █████╗   ███████╗ ███████╗ ███████║ ██║  ███╗ █████╗   ██████╔╝ ██║   ██║  ╚███╔╝
-// ██║╚██╔╝██║ ██╔══╝   ╚════██║ ╚════██║ ██╔══██║ ██║   ██║ ██╔══╝   ██╔══██╗ ██║   ██║  ██╔██╗
-// ██║ ╚═╝ ██║ ███████╗ ██████╔╝ ██████╔╝ ██║  ██║ ╚██████╔╝ ███████╗ ██████╔╝ ╚██████╔╝ ██╔╝ ██╗
-// ╚═╝     ╚═╝ ╚══════╝ ╚═════╝  ╚═════╝  ╚═╝  ╚═╝  ╚═════╝  ╚══════╝ ╚═════╝   ╚═════╝  ╚═╝  ╚═╝
-
-bool SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);                                      // Create a modal message box.
-bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const char *message, SDL_Window *window);  // Display a simple modal message box.
 
 // ██╗   ██╗ ██╗   ██╗ ██╗      ██╗  ██╗  █████╗  ███╗   ██╗
 // ██║   ██║ ██║   ██║ ██║      ██║ ██╔╝ ██╔══██╗ ████╗  ██║
