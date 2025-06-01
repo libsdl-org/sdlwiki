@@ -30,8 +30,8 @@ By default [SDL_LOG_PRIORITY_INFO](SDL_LOG_PRIORITY_INFO) and below have no
 prefix, and [SDL_LOG_PRIORITY_WARN](SDL_LOG_PRIORITY_WARN) and higher have
 a prefix showing their priority, e.g. "WARNING: ".
 
-This function makes a copy of its string argument, **prefix**, so it is
-not necessary to keep the value of **prefix** alive after the call returns.
+This function makes a copy of its string argument, **prefix**, so it is not
+necessary to keep the value of **prefix** alive after the call returns.
 
 ## Thread Safety
 
