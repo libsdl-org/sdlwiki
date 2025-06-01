@@ -42,7 +42,7 @@ RTF file using an [[SDL_ttf]] font engine.
 
 == Others libraries == 
 
-SDL2, through [https://wiki.libsdl.org/SDL_RenderGeometry SDL_RenderGeometry], can be used as a back-end with other GUI/Animation libraries:
+SDL2, through [https://wiki.libsdl.org/SDL2/SDL_RenderGeometry SDL_RenderGeometry], can be used as a back-end with other GUI/Animation libraries:
 
 Dear ImGUI:
 : [https://github.com/ocornut/imgui Dear ImGui website] 
