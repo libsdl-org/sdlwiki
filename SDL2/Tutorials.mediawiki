@@ -72,7 +72,7 @@ There are a number of SDL tutorials available from different sources.
 
 * [http://rainwarrior.ca/dragon/sdl_glsl.html Using GLSL with SDL]
 : A tutorial on enabling and using GLSL extensions with SDL
-: Check out http://hg.libsdl.org/SDL/file/default/test/testshader.c also
+: Check out https://github.com/libsdl-org/SDL/blob/SDL2/test/testshader.c also
 
 === OpenGL ===
 * [http://www.g-truc.net/post-0204.html OpenGL 3 Samples Pack]
