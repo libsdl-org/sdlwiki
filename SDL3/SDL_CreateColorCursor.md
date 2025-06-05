@@ -29,7 +29,8 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-If this function is passed a surface with alternate representations, the
+If this function is passed a surface with alternate representations added
+with [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)(), the
 surface will be interpreted as the content to be used for 100% display
 scale, and the alternate representations will be used for high DPI
 situations. For example, if the original surface is 32x32, then on a 2x
@@ -115,6 +116,7 @@ exit:
 
 ## See Also
 
+- [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 - [SDL_DestroyCursor](SDL_DestroyCursor)

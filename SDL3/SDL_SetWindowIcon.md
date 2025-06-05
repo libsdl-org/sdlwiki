@@ -26,7 +26,8 @@ bool SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
 
 ## Remarks
 
-If this function is passed a surface with alternate representations, the
+If this function is passed a surface with alternate representations added
+using [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)(), the
 surface will be interpreted as the content to be used for 100% display
 scale, and the alternate representations will be used for high DPI
 situations. For example, if the original surface is 32x32, then on a 2x
@@ -43,6 +44,10 @@ This function should only be called on the main thread.
 ## Version
 
 This function is available since SDL 3.2.0.
+
+## See Also
+
+- [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
