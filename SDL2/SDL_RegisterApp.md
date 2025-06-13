@@ -14,11 +14,11 @@ int SDL_RegisterApp(const char *name, Uint32 style, void *hInst);
 
 ## Function Parameters
 
-|                  |           |                                                                                                                                                      |
-| ---------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| const char *     | **name**  | the window class name, in UTF-8 encoding. If NULL, SDL currently uses "[SDL_app](SDL_app)" but this isn't guaranteed.                                |
+|                  |           |                                                                                                                                                       |
+| ---------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| const char *     | **name**  | the window class name, in UTF-8 encoding. If NULL, SDL currently uses "[SDL_app](SDL_app)" but this isn't guaranteed.                                 |
 | [Uint32](Uint32) | **style** | the value to use in WNDCLASSEX::style. If `name` is NULL, SDL currently uses `(CS_BYTEALIGNCLIENT \| CS_OWNDC)` regardless of what is specified here. |
-| void *           | **hInst** | the HINSTANCE to use in WNDCLASSEX::hInstance. If zero, SDL will use `GetModuleHandle(NULL)` instead.                                                |
+| void *           | **hInst** | the HINSTANCE to use in WNDCLASSEX::hInstance. If zero, SDL will use `GetModuleHandle(NULL)` instead.                                                 |
 
 ## Return Value
 
