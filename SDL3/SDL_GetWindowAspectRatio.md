@@ -1,6 +1,6 @@
 # SDL_GetWindowAspectRatio
 
-Get the size of a window's client area.
+Get the aspect ratio of a window's client area.
 
 ## Header File
 
