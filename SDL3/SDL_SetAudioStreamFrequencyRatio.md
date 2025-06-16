@@ -16,7 +16,7 @@ bool SDL_SetAudioStreamFrequencyRatio(SDL_AudioStream *stream, float ratio);
 
 |                                      |            |                                                                         |
 | ------------------------------------ | ---------- | ----------------------------------------------------------------------- |
-| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the stream the frequency ratio is being changed.                        |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the stream on which the frequency ratio is being changed.               |
 | float                                | **ratio**  | the frequency ratio. 1.0 is normal speed. Must be between 0.01 and 100. |
 
 ## Return Value
@@ -28,9 +28,9 @@ bool SDL_SetAudioStreamFrequencyRatio(SDL_AudioStream *stream, float ratio);
 
 The frequency ratio is used to adjust the rate at which input data is
 consumed. Changing this effectively modifies the speed and pitch of the
-audio. A value greater than 1.0 will play the audio faster, and at a higher
-pitch. A value less than 1.0 will play the audio slower, and at a lower
-pitch.
+audio. A value greater than 1.0f will play the audio faster, and at a
+higher pitch. A value less than 1.0f will play the audio slower, and at a
+lower pitch. 1.0f means play at normal speed.
 
 This is applied during [SDL_GetAudioStreamData](SDL_GetAudioStreamData),
 and can be continuously changed to create various effects.

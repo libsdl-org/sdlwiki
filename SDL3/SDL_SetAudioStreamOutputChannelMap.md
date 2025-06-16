@@ -30,7 +30,7 @@ bool SDL_SetAudioStreamOutputChannelMap(SDL_AudioStream *stream, const int *chma
 Channel maps are optional; most things do not need them, instead passing
 data in the [order that SDL expects](CategoryAudio#channel-layouts).
 
-The output channel map reorders data that leaving a stream via
+The output channel map reorders data that is leaving a stream via
 [SDL_GetAudioStreamData](SDL_GetAudioStreamData).
 
 Each item in the array represents an input channel, and its value is the
