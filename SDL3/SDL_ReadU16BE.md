@@ -21,7 +21,7 @@ bool SDL_ReadU16BE(SDL_IOStream *src, Uint16 *value);
 
 ## Return Value
 
-(bool) Returns true on successful write or false on failure; call
+(bool) Returns true on successful read or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
