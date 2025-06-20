@@ -25,7 +25,8 @@ SDL_AudioDeviceID SDL_GetAudioStreamDevice(SDL_AudioStream *stream);
 
 ## Remarks
 
-This reports the audio device that an audio stream is currently bound to.
+This reports the logical audio device that an audio stream is currently
+bound to.
 
 If not bound, or invalid, this returns zero, which is not a valid device
 ID.
