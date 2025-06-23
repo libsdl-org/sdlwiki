@@ -24,6 +24,18 @@ SDL_PropertiesID SDL_GetAudioStreamProperties(SDL_AudioStream *stream);
 success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
 information.
 
+## Remarks
+
+The application can hang any data it wants here, but the following
+properties are understood by SDL:
+
+- [`SDL_PROP_AUDIOSTREAM_KEEP_ON_SHUTDOWN_BOOLEAN`](SDL_PROP_AUDIOSTREAM_KEEP_ON_SHUTDOWN_BOOLEAN):
+  if true, the stream will not be automatically destroyed during
+  [SDL_Quit](SDL_Quit)(). This property is ignored for streams created
+  through [SDL_OpenAudioDeviceStream](SDL_OpenAudioDeviceStream)(). Streams
+  bound to devices that aren't destroyed will still be unbound. Default
+  false. (since SDL 3.4.0)
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
