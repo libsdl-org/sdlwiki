@@ -45,6 +45,10 @@ while (!quit) {
 }
 ```
 
+## See Also
+
+- [SDL_GetTicksNS](SDL_GetTicksNS)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
