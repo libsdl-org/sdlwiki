@@ -25,10 +25,6 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.2.0.
 
-## See Also
-
-- [SDL_GetTicks](SDL_GetTicks)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
