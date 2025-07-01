@@ -21,7 +21,7 @@ const char * SDL_GetVideoDriver(int index);
 ## Return Value
 
 (const char *) Returns the name of the video driver with the given
-**index**.
+**index**, or NULL if index is out of bounds.
 
 ## Remarks
 
