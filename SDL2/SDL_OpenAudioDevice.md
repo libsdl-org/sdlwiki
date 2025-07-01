@@ -29,9 +29,9 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(
 
 ## Return Value
 
-([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns a valid device ID that is
-> 0 on success or 0 on failure; call [SDL_GetError](SDL_GetError)() for
-more information.
+([SDL_AudioDeviceID](SDL_AudioDeviceID)) Returns a valid device ID > 0 on
+success or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 For compatibility with SDL 1.2, this will never return 1, since SDL
 reserves that ID for the legacy [SDL_OpenAudio](SDL_OpenAudio)() function.
