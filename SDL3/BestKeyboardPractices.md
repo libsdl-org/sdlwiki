@@ -1,4 +1,4 @@
-# Best keyboard practices in SDL3.
+# Best keyboard practices in SDL3
 
 ## First things first
 
