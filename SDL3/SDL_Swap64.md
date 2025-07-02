@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_endian.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_FORCE_INLINE Uint32 SDL_Swap64(Uint64 x);
+SDL_FORCE_INLINE Uint64 SDL_Swap64(Uint64 x);
 ```
 
 ## Function Parameters
@@ -20,7 +20,7 @@ SDL_FORCE_INLINE Uint32 SDL_Swap64(Uint64 x);
 
 ## Return Value
 
-([Uint32](Uint32)) Returns `x`, with its bytes in the opposite endian
+([Uint64](Uint64)) Returns `x`, with its bytes in the opposite endian
 order.
 
 ## Remarks

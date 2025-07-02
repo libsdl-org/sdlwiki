@@ -1406,7 +1406,7 @@ bool SDL_HasExactlyOneBitSet32(Uint32 x);     // Determine if a unsigned 32-bit 
 float SDL_SwapFloat(float x);  // Byte-swap a floating point number.
 Uint16 SDL_Swap16(Uint16 x);   // Byte-swap an unsigned 16-bit number.
 Uint32 SDL_Swap32(Uint32 x);   // Byte-swap an unsigned 32-bit number.
-Uint32 SDL_Swap64(Uint64 x);   // Byte-swap an unsigned 64-bit number.
+Uint64 SDL_Swap64(Uint64 x);   // Byte-swap an unsigned 64-bit number.
 
 //  █████╗   ██████╗  ██████╗ ███████╗ ██████╗  ████████╗
 // ██╔══██╗ ██╔════╝ ██╔════╝ ██╔════╝ ██╔══██╗ ╚══██╔══╝
