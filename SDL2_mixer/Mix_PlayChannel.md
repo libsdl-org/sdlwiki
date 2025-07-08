@@ -26,6 +26,13 @@ int Mix_PlayChannel(int channel, Mix_Chunk *chunk, int loops);
 (int) Returns which channel was used to play the sound, or -1 if sound
 could not be played.
 
+## Example
+
+```c
+// play a sound one time on the first free channel
+Mix_PlayChannel(-1, chunk, 0);
+```
+
 ## Remarks
 
 If the specified channel is -1, play on the first free channel (and return
