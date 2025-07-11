@@ -24,7 +24,7 @@ values with [SDL_TimeToWindows](SDL_TimeToWindows)() and
 
 ## Version
 
-This macro is available since SDL 3.2.0.
+This datatype is available since SDL 3.2.0.
 
 ## See Also
 
