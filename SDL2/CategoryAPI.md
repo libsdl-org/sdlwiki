@@ -901,6 +901,7 @@
 - [SDL_HintPriority](SDL_HintPriority)
 - [SDL_HitTestResult](SDL_HitTestResult)
 - [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel)
+- [SDL_KeyCode](SDL_KeyCode)
 - [SDL_Keymod](SDL_Keymod)
 - [SDL_LogCategory](SDL_LogCategory)
 - [SDL_LogPriority](SDL_LogPriority)
