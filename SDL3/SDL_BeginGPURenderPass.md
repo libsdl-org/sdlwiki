@@ -39,6 +39,9 @@ pass. A default viewport and scissor state are automatically set when this
 is called. You cannot begin another render pass, or begin a compute pass or
 copy pass until you have ended the render pass.
 
+Using [SDL_GPU_LOADOP_LOAD](SDL_GPU_LOADOP_LOAD) before any contents have been written to the texture subresource will result in undefined behavior. [SDL_GPU_LOADOP_CLEAR](SDL_GPU_LOADOP_CLEAR) will set the contents of the texture subresource to a single value before any rendering is performed.
+It's fine to do an empty render pass using [SDL_GPU_STOREOP_STORE](SDL_GPU_STOREOP_STORE) to clear a texture, but in general it's better to think of clearing not as an independent operation but as something that's done as the beginning of a render pass. 
+
 ## Version
 
 This function is available since SDL 3.2.0.
