@@ -34,8 +34,7 @@ Attempting to write to this [SDL_IOStream](SDL_IOStream) stream will report
 an error without writing to the memory buffer.
 
 This memory buffer is not copied by the [SDL_IOStream](SDL_IOStream); the
-pointer you provide must remain valid until you close the stream. Closing
-the stream will not free the original buffer.
+pointer you provide must remain valid until you close the stream.
 
 If you need to write to a memory buffer, you should use
 [SDL_IOFromMem](SDL_IOFromMem)() with a writable buffer of memory instead.
@@ -46,6 +45,14 @@ The following properties will be set at creation time by SDL:
   this will be the `mem` parameter that was passed to this function.
 - [`SDL_PROP_IOSTREAM_MEMORY_SIZE_NUMBER`](SDL_PROP_IOSTREAM_MEMORY_SIZE_NUMBER):
   this will be the `size` parameter that was passed to this function.
+
+Additionally, the following properties are recognized:
+
+- [`SDL_PROP_IOSTREAM_MEMORY_FREE_FUNC`](SDL_PROP_IOSTREAM_MEMORY_FREE_FUNC):
+  if this property is set to a non-NULL value it will be interpreted as a
+  function of [SDL_free_func](SDL_free_func) type and called with the
+  passed `mem` pointer when closing the stream. By default it is unset,
+  i.e., the memory will not be freed.
 
 ## Thread Safety
 
