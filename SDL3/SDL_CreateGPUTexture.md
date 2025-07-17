@@ -30,7 +30,7 @@ information.
 ## Remarks
 
 The contents of this texture are undefined until data is written to the
-texture.
+texture, either via SDL_UploadToGPUTexture or by performing a render or compute pass with this texture as a target.
 
 Note that certain combinations of usage flags are invalid. For example, a
 texture cannot have both the SAMPLER and GRAPHICS_STORAGE_READ flags.
@@ -78,6 +78,8 @@ This function is available since SDL 3.2.0.
 
 - [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
 - [SDL_DownloadFromGPUTexture](SDL_DownloadFromGPUTexture)
+- [SDL_BeginGPURenderPass](SDL_BeginGPURenderPass)
+- [SDL_BeginGPUComputePass](SDL_BeginGPUComputePass)
 - [SDL_BindGPUVertexSamplers](SDL_BindGPUVertexSamplers)
 - [SDL_BindGPUVertexStorageTextures](SDL_BindGPUVertexStorageTextures)
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
