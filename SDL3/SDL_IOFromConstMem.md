@@ -48,7 +48,7 @@ The following properties will be set at creation time by SDL:
 
 Additionally, the following properties are recognized:
 
-- [`SDL_PROP_IOSTREAM_MEMORY_FREE_FUNC`](SDL_PROP_IOSTREAM_MEMORY_FREE_FUNC):
+- [`SDL_PROP_IOSTREAM_MEMORY_FREE_FUNC_POINTER`](SDL_PROP_IOSTREAM_MEMORY_FREE_FUNC_POINTER):
   if this property is set to a non-NULL value it will be interpreted as a
   function of [SDL_free_func](SDL_free_func) type and called with the
   passed `mem` pointer when closing the stream. By default it is unset,
