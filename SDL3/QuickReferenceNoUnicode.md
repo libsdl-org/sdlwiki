@@ -1100,6 +1100,7 @@ void SDL_ShowFileDialogWithProperties(SDL_FileDialogType type, SDL_DialogFileCal
 //    XX     XX   XX  XX   XX     XX
 //    XX     XX   XX  XX   XX     XX
 
+bool SDL_IsTraySupported(void);                                                                                   // Check whether or not tray icons can be created.
 SDL_Tray * SDL_CreateTray(SDL_Surface *icon, const char *tooltip);                                                // Create an icon to be placed in the operating system's tray, or equivalent.
 void SDL_SetTrayIcon(SDL_Tray *tray, SDL_Surface *icon);                                                          // Updates the system tray icon's icon.
 void SDL_SetTrayTooltip(SDL_Tray *tray, const char *tooltip);                                                     // Updates the system tray icon's tooltip.
