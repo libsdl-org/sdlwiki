@@ -800,6 +800,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_ispunct](SDL_ispunct)
 - [SDL_isspace](SDL_isspace)
 - [SDL_IsTablet](SDL_IsTablet)
+- [SDL_IsTraySupported](SDL_IsTraySupported)
 - [SDL_IsTV](SDL_IsTV)
 - [SDL_isupper](SDL_isupper)
 - [SDL_isxdigit](SDL_isxdigit)
