@@ -63,6 +63,12 @@ follow these rules:
 - ...only use letters, numbers, and spaces. Avoid punctuation like "Game
   Name 2: Bad Guy's Revenge!" ... "Game Name 2" is sufficient.
 
+Due to historical mistakes, `org` is allowed to be NULL or "". In such
+cases, SDL will omit the org subdirectory, including on platforms where it
+shouldn't, and including on platforms where this would make your app fail
+certification for an app store. New apps should definitely specify a real
+string for `org`.
+
 The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
