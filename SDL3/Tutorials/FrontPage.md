@@ -20,6 +20,10 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 
 - [C Programming and SDL3 - accessing webcam, show webcam video, take screenshots](https://www.youtube.com/watch?v=nvDLBM0l7nA)
 
+## SDL Audio
+
+- [The SDL3 Audio Subsystem!](https://www.youtube.com/watch?v=MLau3hWJBeE): Quick overview of SDL3's audio model, no code.
+
 ## SDL GPU
 
 - [Examples Repo](https://github.com/TheSpydog/SDL_gpu_examples)
