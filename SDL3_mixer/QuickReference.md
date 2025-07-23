@@ -12,7 +12,7 @@ the fancy Unicode section headers, try using
 // https://libsdl.org/
 //
 // The latest version of this document can be found at https://wiki.libsdl.org/SDL3_mixer/QuickReference
-// Based on SDL_mixer version 3.0.0
+// Based on SDL_mixer version 0.0.0
 //
 // This can be useful in an IDE with search and syntax highlighting.
 //
@@ -27,105 +27,93 @@ the fancy Unicode section headers, try using
 // ██████╔╝ ██████╔╝ ███████╗ ██║ ╚═╝ ██║ ██║ ██╔╝ ██╗ ███████╗ ██║  ██║
 // ╚═════╝  ╚═════╝  ╚══════╝ ╚═╝     ╚═╝ ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚═╝  ╚═╝
 
-#define SDL_MIXER_MAJOR_VERSION                                                           // Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
-#define SDL_MIXER_VERSION                                                                 // This is the version number macro for the current SDL_mixer version.
-#define SDL_MIXER_VERSION_ATLEAST(X, Y, Z)                                                // This macro will evaluate to true if compiled with SDL_mixer at least X.Y.Z.
-int Mix_Version(void);                                                                    // This function gets the version of the dynamically linked SDL_mixer library.
-MIX_InitFlags Mix_Init(MIX_InitFlags flags);                                              // Initialize SDL_mixer.
-void Mix_Quit(void);                                                                      // Deinitialize SDL_mixer.
-bool Mix_OpenAudio(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec);                   // Open an audio device for playback.
-void Mix_PauseAudio(int pause_on);                                                        // Suspend or resume the whole audio output.
-bool Mix_QuerySpec(int *frequency, SDL_AudioFormat *format, int *channels);               // Find out what the actual audio device parameters are.
-int Mix_AllocateChannels(int numchans);                                                   // Dynamically change the number of channels managed by the mixer.
-Mix_Chunk * Mix_LoadWAV_IO(SDL_IOStream *src, bool closeio);                              // Load a supported audio format into a chunk.
-Mix_Chunk * Mix_LoadWAV(const char *file);                                                // Load a supported audio format into a chunk.
-Mix_Music * Mix_LoadMUS(const char *file);                                                // Load a supported audio format into a music object.
-Mix_Music * Mix_LoadMUS_IO(SDL_IOStream *src, bool closeio);                              // Load a supported audio format into a music object.
-Mix_Music * Mix_LoadMUSType_IO(SDL_IOStream *src, Mix_MusicType type, bool closeio);      // Load an audio format into a music object, assuming a specific format.
-Mix_Chunk * Mix_QuickLoad_WAV(Uint8 *mem);                                                // Load a WAV file from memory as quickly as possible.
-Mix_Chunk * Mix_QuickLoad_RAW(Uint8 *mem, Uint32 len);                                    // Load a raw audio data from memory as quickly as possible.
-void Mix_FreeChunk(Mix_Chunk *chunk);                                                     // Free an audio chunk.
-void Mix_FreeMusic(Mix_Music *music);                                                     // Free a music object.
-int Mix_GetNumChunkDecoders(void);                                                        // Get a list of chunk decoders that this build of SDL_mixer provides.
-const char * Mix_GetChunkDecoder(int index);                                              // Get a chunk decoder's name.
-bool Mix_HasChunkDecoder(const char *name);                                               // Check if a chunk decoder is available by name.
-int Mix_GetNumMusicDecoders(void);                                                        // Get a list of music decoders that this build of SDL_mixer provides.
-const char * Mix_GetMusicDecoder(int index);                                              // Get a music decoder's name.
-bool Mix_HasMusicDecoder(const char *name);                                               // Check if a music decoder is available by name.
-Mix_MusicType Mix_GetMusicType(const Mix_Music *music);                                   // Find out the format of a mixer music.
-const char * Mix_GetMusicTitle(const Mix_Music *music);                                   // Get the title for a music object, or its filename.
-const char * Mix_GetMusicTitleTag(const Mix_Music *music);                                // Get the title for a music object.
-const char * Mix_GetMusicArtistTag(const Mix_Music *music);                               // Get the artist name for a music object.
-const char * Mix_GetMusicAlbumTag(const Mix_Music *music);                                // Get the album name for a music object.
-const char * Mix_GetMusicCopyrightTag(const Mix_Music *music);                            // Get the copyright text for a music object.
-void Mix_SetPostMix(Mix_MixCallback mix_func, void *arg);                                 // Set a function that is called after all mixing is performed.
-void Mix_HookMusic(Mix_MixCallback mix_func, void *arg);                                  // Add your own music player or additional mixer function.
-void Mix_HookMusicFinished(Mix_MusicFinishedCallback music_finished);                     // Set a callback that runs when a music object has stopped playing.
-void * Mix_GetMusicHookData(void);                                                        // Get a pointer to the user data for the current music hook.
-void Mix_ChannelFinished(Mix_ChannelFinishedCallback channel_finished);                   // Set a callback that runs when a channel has finished playing.
-#define MIX_CHANNEL_POST                                                                  // Magic number for effects to operate on the postmix instead of a channel.
-bool Mix_RegisterEffect(int chan, Mix_EffectFunc_t f, Mix_EffectDone_t d, void *arg);     // Register a special effect function.
-bool Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);                               // Explicitly unregister a special effect function.
-bool Mix_UnregisterAllEffects(int channel);                                               // Explicitly unregister all special effect functions.
-#define MIX_EFFECTSMAXSPEED                                                               // Environment variable that makes some mixing effects favor speed over quality.
-bool Mix_SetPanning(int channel, Uint8 left, Uint8 right);                                // Set the panning of a channel.
-bool Mix_SetPosition(int channel, Sint16 angle, Uint8 distance);                          // Set the position of a channel.
-bool Mix_SetDistance(int channel, Uint8 distance);                                        // Set the "distance" of a channel.
-bool Mix_SetReverseStereo(int channel, int flip);                                         // Cause a channel to reverse its stereo.
-int Mix_ReserveChannels(int num);                                                         // Reserve the first channels for the application.
-bool Mix_GroupChannel(int which, int tag);                                                // Assign a tag to a channel.
-bool Mix_GroupChannels(int from, int to, int tag);                                        // Assign several consecutive channels to the same tag.
-int Mix_GroupAvailable(int tag);                                                          // Finds the first available channel in a group of channels.
-int Mix_GroupCount(int tag);                                                              // Returns the number of channels in a group.
-int Mix_GroupOldest(int tag);                                                             // Find the "oldest" sample playing in a group of channels.
-int Mix_GroupNewer(int tag);                                                              // Find the "most recent" sample playing in a group of channels.
-int Mix_PlayChannel(int channel, Mix_Chunk *chunk, int loops);                            // Play an audio chunk on a specific channel.
-int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);            // Play an audio chunk on a specific channel for a maximum time.
-bool Mix_PlayMusic(Mix_Music *music, int loops);                                          // Play a new music object.
-bool Mix_FadeInMusic(Mix_Music *music, int loops, int ms);                                // Play a new music object, fading in the audio.
-bool Mix_FadeInMusicPos(Mix_Music *music, int loops, int ms, double position);            // Play a new music object, fading in the audio, from a starting position.
-int Mix_FadeInChannel(int channel, Mix_Chunk *chunk, int loops, int ms);                  // Play an audio chunk on a specific channel, fading in the audio.
-int Mix_FadeInChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ms, int ticks);  // Play an audio chunk on a specific channel, fading in the audio, for a maximum time.
-int Mix_Volume(int channel, int volume);                                                  // Set the volume for a specific channel.
-int Mix_VolumeChunk(Mix_Chunk *chunk, int volume);                                        // Set the volume for a specific chunk.
-int Mix_VolumeMusic(int volume);                                                          // Set the volume for the music channel.
-int Mix_GetMusicVolume(Mix_Music *music);                                                 // Query the current volume value for a music object.
-int Mix_MasterVolume(int volume);                                                         // Set the master volume for all channels.
-void Mix_HaltChannel(int channel);                                                        // Halt playing of a particular channel.
-void Mix_HaltGroup(int tag);                                                              // Halt playing of a group of channels by arbitrary tag.
-void Mix_HaltMusic(void);                                                                 // Halt playing of the music stream.
-int Mix_ExpireChannel(int channel, int ticks);                                            // Change the expiration delay for a particular channel.
-int Mix_FadeOutChannel(int which, int ms);                                                // Halt a channel after fading it out for a specified time.
-int Mix_FadeOutGroup(int tag, int ms);                                                    // Halt a playing group of channels by arbitrary tag, after fading them out for a specified time.
-bool Mix_FadeOutMusic(int ms);                                                            // Halt the music stream after fading it out for a specified time.
-Mix_Fading Mix_FadingMusic(void);                                                         // Query the fading status of the music stream.
-Mix_Fading Mix_FadingChannel(int which);                                                  // Query the fading status of a channel.
-void Mix_Pause(int channel);                                                              // Pause a particular channel.
-void Mix_PauseGroup(int tag);                                                             // Pause playing of a group of channels by arbitrary tag.
-void Mix_Resume(int channel);                                                             // Resume a particular channel.
-void Mix_ResumeGroup(int tag);                                                            // Resume playing of a group of channels by arbitrary tag.
-int Mix_Paused(int channel);                                                              // Query whether a particular channel is paused.
-void Mix_PauseMusic(void);                                                                // Pause the music stream.
-void Mix_ResumeMusic(void);                                                               // Resume the music stream.
-void Mix_RewindMusic(void);                                                               // Rewind the music stream.
-bool Mix_PausedMusic(void);                                                               // Query whether the music stream is paused.
-bool Mix_ModMusicJumpToOrder(int order);                                                  // Jump to a given order in mod music.
-bool Mix_StartTrack(Mix_Music *music, int track);                                         // Start a track in music object.
-int Mix_GetNumTracks(Mix_Music *music);                                                   // Get number of tracks in music object.
-bool Mix_SetMusicPosition(double position);                                               // Set the current position in the music stream, in seconds.
-double Mix_GetMusicPosition(Mix_Music *music);                                            // Get the time current position of music stream, in seconds.
-double Mix_MusicDuration(Mix_Music *music);                                               // Get a music object's duration, in seconds.
-double Mix_GetMusicLoopStartTime(Mix_Music *music);                                       // Get the loop start time position of music stream, in seconds.
-double Mix_GetMusicLoopEndTime(Mix_Music *music);                                         // Get the loop end time position of music stream, in seconds.
-double Mix_GetMusicLoopLengthTime(Mix_Music *music);                                      // Get the loop time length of music stream, in seconds.
-int Mix_Playing(int channel);                                                             // Check the playing status of a specific channel.
-bool Mix_PlayingMusic(void);                                                              // Check the playing status of the music stream.
-bool Mix_SetSoundFonts(const char *paths);                                                // Set SoundFonts paths to use by supported MIDI backends.
-const char * Mix_GetSoundFonts(void);                                                     // Get SoundFonts paths to use by supported MIDI backends.
-bool Mix_EachSoundFont(Mix_EachSoundFontCallback function, void *data);                   // Iterate SoundFonts paths to use by supported MIDI backends.
-bool Mix_SetTimidityCfg(const char *path);                                                // Set full path of the Timidity config file.
-const char * Mix_GetTimidityCfg(void);                                                    // Get full path of a previously-specified Timidity config file.
-Mix_Chunk * Mix_GetChunk(int channel);                                                    // Get the Mix_Chunk currently associated with a mixer channel.
-void Mix_CloseAudio(void);                                                                // Close the mixer, halting all playing audio.
+#define MIX_MAJOR_VERSION                                                                                                                // The current major version of SDL_mixer headers.
+#define MIX_MINOR_VERSION                                                                                                                // The current minor version of the SDL headers.
+#define MIX_MICRO_VERSION                                                                                                                // The current micro (or patchlevel) version of the SDL headers.
+#define MIX_VERSION                                                                                                                      // This is the version number macro for the current SDL_mixer version.
+int MIX_GetVersion(void);                                                                                                                // Get the version of SDL_mixer that is linked against your program.
+bool MIX_Init(void);                                                                                                                     // Initialize the SDL_mixer library.
+void MIX_Quit(void);                                                                                                                     // Deinitialize the SDL_mixer library.
+int MIX_GetNumAudioDecoders(void);                                                                                                       // Report the number of audio decoders available for use.
+const char * MIX_GetAudioDecoder(int index);                                                                                             // Report the name of a specific audio decoders.
+MIX_Mixer * MIX_CreateMixerDevice(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec);                                                   // Create a mixer that plays sound directly to an audio device.
+MIX_Mixer * MIX_CreateMixer(const SDL_AudioSpec *spec);                                                                                  // Create a mixer that generates audio to a memory buffer.
+void MIX_DestroyMixer(MIX_Mixer *mixer);                                                                                                 // Free a mixer.
+SDL_PropertiesID MIX_GetMixerProperties(MIX_Mixer *mixer);                                                                               // Get the properties associated with a mixer.
+bool MIX_GetMixerFormat(MIX_Mixer *mixer, SDL_AudioSpec *spec);                                                                          // Get the audio format a mixer is generating.
+MIX_Audio * MIX_LoadAudio_IO(MIX_Mixer *mixer, SDL_IOStream *io, bool predecode, bool closeio);                                          // Load audio for playback from an SDL_IOStream.
+MIX_Audio * MIX_LoadAudio(MIX_Mixer *mixer, const char *path, bool predecode);                                                           // Load audio for playback from a file.
+MIX_Audio * MIX_LoadAudioWithProperties(SDL_PropertiesID props);                                                                         // Load audio for playback through a collection of properties.
+MIX_Audio * MIX_LoadRawAudio_IO(MIX_Mixer *mixer, SDL_IOStream *io, const SDL_AudioSpec *spec, bool closeio);                            // Load raw PCM data from an SDL_IOStream.
+MIX_Audio * MIX_LoadRawAudio(MIX_Mixer *mixer, const void *data, size_t datalen, const SDL_AudioSpec *spec);                             // Load raw PCM data from a memory buffer.
+MIX_Audio * MIX_LoadRawAudioNoCopy(MIX_Mixer *mixer, const void *data, size_t datalen, const SDL_AudioSpec *spec, bool free_when_done);  // Load raw PCM data from a memory buffer without making a copy.
+MIX_Audio * MIX_CreateSineWaveAudio(MIX_Mixer *mixer, int hz, float amplitude);                                                          // Create a MIX_Audio that generates a sinewave.
+SDL_PropertiesID MIX_GetAudioProperties(MIX_Audio *audio);                                                                               // Get the properties associated with a MIX_Audio.
+Sint64 MIX_GetAudioDuration(MIX_Audio *audio);                                                                                           // Get the length of a MIX_Audio's playback in sample frames.
+bool MIX_GetAudioFormat(MIX_Audio *audio, SDL_AudioSpec *spec);                                                                          // Query the initial audio format of a MIX_Audio.
+void MIX_DestroyAudio(MIX_Audio *audio);                                                                                                 // Destroy the specified audio.
+MIX_Track * MIX_CreateTrack(MIX_Mixer *mixer);                                                                                           // Create a new track on a mixer.
+void MIX_DestroyTrack(MIX_Track *track);                                                                                                 // Destroy the specified track.
+SDL_PropertiesID MIX_GetTrackProperties(MIX_Track *track);                                                                               // Get the properties associated with a track.
+MIX_Mixer * MIX_GetTrackMixer(MIX_Track *track);                                                                                         // Get the MIX_Mixer that owns a MIX_Track.
+bool MIX_SetTrackAudio(MIX_Track *track, MIX_Audio *audio);                                                                              // Set a MIX_Track's input to a MIX_Audio.
+bool MIX_SetTrackAudioStream(MIX_Track *track, SDL_AudioStream *stream);                                                                 // Set a MIX_Track's input to an SDL_AudioStream.
+bool MIX_SetTrackIOStream(MIX_Track *track, SDL_IOStream *io, bool closeio);                                                             // Set a MIX_Track's input to an SDL_IOStream.
+bool MIX_TagTrack(MIX_Track *track, const char *tag);                                                                                    // Assign an arbitrary tag to a track.
+void MIX_UntagTrack(MIX_Track *track, const char *tag);                                                                                  // Remove an arbitrary tag from a track.
+bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Uint64 frames);                                                                      // Seek a playing track to a new position in its input.
+Sint64 MIX_GetTrackPlaybackPosition(MIX_Track *track);                                                                                   // Get the current input position of a playing track.
+bool MIX_TrackLooping(MIX_Track *track);                                                                                                 // Query whether a given track is looping.
+MIX_Audio * MIX_GetTrackAudio(MIX_Track *track);                                                                                         // Query the MIX_Audio assigned to a track.
+SDL_AudioStream * MIX_GetTrackAudioStream(MIX_Track *track);                                                                             // Query the SDL_AudioStream assigned to a track.
+Sint64 MIX_GetTrackRemaining(MIX_Track *track);                                                                                          // Return the number of sample frames remaining to be mixed in a track.
+Uint64 MIX_TrackMSToFrames(MIX_Track *track, Uint64 ms);                                                                                 // Convert milliseconds to sample frames for a track's current format.
+Uint64 MIX_TrackFramesToMS(MIX_Track *track, Uint64 frames);                                                                             // Convert sample frames for a track's current format to milliseconds.
+Uint64 MIX_AudioMSToFrames(MIX_Audio *audio, Uint64 ms);                                                                                 // Convert milliseconds to sample frames for a MIX_Audio's format.
+Uint64 MIX_AudioFramesToMS(MIX_Audio *audio, Uint64 frames);                                                                             // Convert sample frames for a MIX_Audio's format to milliseconds.
+Uint64 MIX_MSToFrames(int sample_rate, Uint64 ms);                                                                                       // Convert milliseconds to sample frames at a specific sample rate.
+Uint64 MIX_FramesToMS(int sample_rate, Uint64 frames);                                                                                   // Convert sample frames, at a specific sample rate, to milliseconds.
+bool MIX_PlayTrack(MIX_Track *track, SDL_PropertiesID options);                                                                          // Start (or restart) mixing a track for playback.
+bool MIX_PlayTag(MIX_Mixer *mixer, const char *tag, SDL_PropertiesID options);                                                           // Start (or restart) mixing all tracks with a specific tag for playback.
+bool MIX_PlayAudio(MIX_Mixer *mixer, MIX_Audio *audio);                                                                                  // Play a MIX_Audio from start to finish without any management.
+bool MIX_StopTrack(MIX_Track *track, Sint64 fade_out_frames);                                                                            // Halt a currently-playing track, possibly fading out over time.
+bool MIX_StopAllTracks(MIX_Mixer *mixer, Sint64 fade_out_ms);                                                                            // Halt all currently-playing tracks, possibly fading out over time.
+bool MIX_StopTag(MIX_Mixer *mixer, const char *tag, Sint64 fade_out_ms);                                                                 // Halt all tracks with a specific tag, possibly fading out over time.
+bool MIX_PauseTrack(MIX_Track *track);                                                                                                   // Pause a currently-playing track.
+bool MIX_PauseAllTracks(MIX_Mixer *mixer);                                                                                               // Pause all currently-playing tracks.
+bool MIX_PauseTag(MIX_Mixer *mixer, const char *tag);                                                                                    // Pause all tracks with a specific tag.
+bool MIX_ResumeTrack(MIX_Track *track);                                                                                                  // Resume a currently-paused track.
+bool MIX_ResumeAllTracks(MIX_Mixer *mixer);                                                                                              // Resume all currently-paused tracks.
+bool MIX_ResumeTag(MIX_Mixer *mixer, const char *tag);                                                                                   // Resume all tracks with a specific tag.
+bool MIX_TrackPlaying(MIX_Track *track);                                                                                                 // Query if a track is currently playing.
+bool MIX_TrackPaused(MIX_Track *track);                                                                                                  // Query if a track is currently paused.
+bool MIX_SetMasterGain(MIX_Mixer *mixer, float gain);                                                                                    // Set a mixer's master gain control.
+float MIX_GetMasterGain(MIX_Mixer *mixer);                                                                                               // Get a mixer's master gain control.
+bool MIX_SetTrackGain(MIX_Track *track, float gain);                                                                                     // Set a track's gain control.
+float MIX_GetTrackGain(MIX_Track *track);                                                                                                // Get a track's gain control.
+bool MIX_SetTagGain(MIX_Mixer *mixer, const char *tag, float gain);                                                                      // Set the gain control of all tracks with a specific tag.
+bool MIX_SetTrackFrequencyRatio(MIX_Track *track, float ratio);                                                                          // Change the frequency ratio of a track.
+float MIX_GetTrackFrequencyRatio(MIX_Track *track);                                                                                      // Query the frequency ratio of a track.
+bool MIX_SetTrackOutputChannelMap(MIX_Track *track, const int *chmap, int count);                                                        // Set the current output channel map of a track.
+bool MIX_SetTrackStereo(MIX_Track *track, const MIX_StereoGains *gains);                                                                 // Force a track to stereo output, with optionally left/right panning.
+bool MIX_SetTrack3DPosition(MIX_Track *track, const MIX_Point3D *position);                                                              // Set a track's position in 3D space.
+bool MIX_GetTrack3DPosition(MIX_Track *track, MIX_Point3D *position);                                                                    // Get a track's current position in 3D space.
+MIX_Group * MIX_CreateGroup(MIX_Mixer *mixer);                                                                                           // Create a mixing group.
+void MIX_DestroyGroup(MIX_Group *group);                                                                                                 // Destroy a mixing group.
+SDL_PropertiesID MIX_GetGroupProperties(MIX_Group *group);                                                                               // Get the properties associated with a group.
+MIX_Mixer * MIX_GetGroupMixer(MIX_Group *group);                                                                                         // Get the MIX_Mixer that owns a MIX_Group.
+bool MIX_SetTrackGroup(MIX_Track *track, MIX_Group *group);                                                                              // Assign a track to a mixing group.
+bool MIX_SetTrackStoppedCallback(MIX_Track *track, MIX_TrackStoppedCallback cb, void *userdata);                                         // Set a callback that fires when a MIX_Track is stopped.
+bool MIX_SetTrackRawCallback(MIX_Track *track, MIX_TrackMixCallback cb, void *userdata);                                                 // Set a callback that fires when a MIX_Track has initial decoded audio.
+bool MIX_SetTrackCookedCallback(MIX_Track *track, MIX_TrackMixCallback cb, void *userdata);                                              // Set a callback that fires when the mixer has transformed a track's audio.
+bool MIX_SetGroupPostMixCallback(MIX_Group *group, MIX_GroupMixCallback cb, void *userdata);                                             // Set a callback that fires when a mixer group has completed mixing.
+bool MIX_SetPostMixCallback(MIX_Mixer *mixer, MIX_PostMixCallback cb, void *userdata);                                                   // Set a callback that fires when all mixing has completed.
+bool MIX_Generate(MIX_Mixer *mixer, void *buffer, int buflen);                                                                           // Generate mixer output when not driving an audio device.
+MIX_AudioDecoder * MIX_CreateAudioDecoder(const char *path, SDL_PropertiesID props);                                                     // Create a MIX_AudioDecoder from a path on the filesystem.
+MIX_AudioDecoder * MIX_CreateAudioDecoder_IO(SDL_IOStream *io, bool closeio, SDL_PropertiesID props);                                    // Create a MIX_AudioDecoder from an SDL_IOStream.
+void MIX_DestroyAudioDecoder(MIX_AudioDecoder *audiodecoder);                                                                            // Destroy the specified audio decoder.
+SDL_PropertiesID MIX_GetAudioDecoderProperties(MIX_AudioDecoder *audiodecoder);                                                          // Get the properties associated with a MIX_AudioDecoder.
+bool MIX_GetAudioDecoderFormat(MIX_AudioDecoder *audiodecoder, SDL_AudioSpec *spec);                                                     // Query the initial audio format of a MIX_AudioDecoder.
+int MIX_DecodeAudio(MIX_AudioDecoder *audiodecoder, void *buffer, int buflen, const SDL_AudioSpec *spec);                                // Decode more audio from a MIX_AudioDecoder.
 ```
 
