@@ -6,7 +6,7 @@ SDL_mixer 3.0 (aka "SDL3_mixer") is a dramatically different library than
 previous versions. The API has been completely redesigned. There is no
 compatibility layer. If you want to use it, you have to migrate to it.
 
-SDL3_mixer requires SDL3. It relies on many features that are new to SDL3, 
+SDL3_mixer requires SDL3. It relies on many features that are new to SDL3,
 both internally and in the public API, so if your project is on SDL 1.2 or
 SDL2, you'll have to move your project to SDL3 at the same time.
 
@@ -158,7 +158,7 @@ These properties offer both low-level tag information and a standard property
 for well-known metadata types. For example, if your MP3 has an ID3v2 tag, you
 might end up with a property named "SDL_mixer.metadata.id3v2.TIT2" and the
 same info in a standard "SDL_mixer.metadata.title" property (which there's a
-standard symbol for: `MIX_PROP_METADATA_TITLE_STRING`). This allows SDL3_mixer
+standard symbol for: `MIX_PROP_METADATA_TITLE_STRING`. This allows SDL3_mixer
 to expose non-standard information, but also offer easy lookup of the most
 common, and most important, metadata.
 
