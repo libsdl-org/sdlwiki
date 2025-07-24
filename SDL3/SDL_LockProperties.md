@@ -29,8 +29,8 @@ Obtain a multi-threaded lock for these properties. Other threads will wait
 while trying to lock these properties until they are unlocked. Properties
 must be unlocked before they are destroyed.
 
-The lock is automatically taken when getting and setting individual properties; this
-function is only needed when you want to get and/or set several properties atomically
+The lock is automatically taken when setting individual properties, this
+function is only needed when you want to set several properties atomically
 or want to guarantee that properties being queried aren't freed in another
 thread.
 

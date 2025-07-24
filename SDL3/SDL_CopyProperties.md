@@ -34,7 +34,7 @@ overwritten.
 
 ## Thread Safety
 
-It is safe to call this function from any thread.  This function acquires
+It is safe to call this function from any thread. This function acquires
 simultaneous mutex locks on both the source and destination property sets.
 
 ## Version
