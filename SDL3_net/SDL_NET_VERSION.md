@@ -20,7 +20,7 @@ This macro is available since SDL_net 3.0.0.
 
 ## See Also
 
-- [NET_GetVersion](NET_GetVersion)
+- [NET_Version](NET_Version)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySDLNet](CategorySDLNet)
