@@ -190,6 +190,7 @@ consider a proper 3D library like OpenAL.
 - [MIX_TrackPaused](MIX_TrackPaused)
 - [MIX_TrackPlaying](MIX_TrackPlaying)
 - [MIX_UntagTrack](MIX_UntagTrack)
+- [MIX_Version](MIX_Version)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
@@ -230,6 +231,10 @@ consider a proper 3D library like OpenAL.
 - [MIX_MICRO_VERSION](MIX_MICRO_VERSION)
 - [MIX_MINOR_VERSION](MIX_MINOR_VERSION)
 - [MIX_VERSION](MIX_VERSION)
+- [SDL_MIXER_MAJOR_VERSION](SDL_MIXER_MAJOR_VERSION)
+- [SDL_MIXER_MICRO_VERSION](SDL_MIXER_MICRO_VERSION)
+- [SDL_MIXER_MINOR_VERSION](SDL_MIXER_MINOR_VERSION)
+- [SDL_MIXER_VERSION](SDL_MIXER_VERSION)
 <!-- END CATEGORY LIST -->
 
 ----

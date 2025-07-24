@@ -86,5 +86,6 @@
 - [MIX_TrackPaused](MIX_TrackPaused)
 - [MIX_TrackPlaying](MIX_TrackPlaying)
 - [MIX_UntagTrack](MIX_UntagTrack)
+- [MIX_Version](MIX_Version)
 <!-- END CATEGORY LIST -->
 
