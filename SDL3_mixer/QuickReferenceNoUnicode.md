@@ -30,6 +30,7 @@ fancy Unicode section headers, try using
 #define SDL_MIXER_MINOR_VERSION                                                                                                          // The current minor version of the SDL_mixer headers.
 #define SDL_MIXER_MICRO_VERSION                                                                                                          // The current micro (or patchlevel) version of the SDL_mixer headers.
 #define SDL_MIXER_VERSION                                                                                                                // This is the current version number macro of the SDL_mixer headers.
+#define SDL_MIXER_VERSION_ATLEAST(X, Y, Z)                                                                                               // This macro will evaluate to true if compiled with SDL_mixer at least X.Y.Z.
 int MIX_Version(void);                                                                                                                   // Get the version of SDL_mixer that is linked against your program.
 bool MIX_Init(void);                                                                                                                     // Initialize the SDL_mixer library.
 void MIX_Quit(void);                                                                                                                     // Deinitialize the SDL_mixer library.
