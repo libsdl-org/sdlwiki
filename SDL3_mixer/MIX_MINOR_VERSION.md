@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_mixer, a separate library from SDL.)
 # MIX_MINOR_VERSION
 
-The current minor version of the SDL headers.
+The current minor version of the SDL_mixer headers.
 
 ## Header File
 

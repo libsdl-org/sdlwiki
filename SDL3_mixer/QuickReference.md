@@ -28,8 +28,8 @@ the fancy Unicode section headers, try using
 // ╚═════╝  ╚═════╝  ╚══════╝ ╚═╝     ╚═╝ ╚═╝ ╚═╝  ╚═╝ ╚══════╝ ╚═╝  ╚═╝
 
 #define MIX_MAJOR_VERSION                                                                                                                // The current major version of SDL_mixer headers.
-#define MIX_MINOR_VERSION                                                                                                                // The current minor version of the SDL headers.
-#define MIX_MICRO_VERSION                                                                                                                // The current micro (or patchlevel) version of the SDL headers.
+#define MIX_MINOR_VERSION                                                                                                                // The current minor version of the SDL_mixer headers.
+#define MIX_MICRO_VERSION                                                                                                                // The current micro (or patchlevel) version of the SDL_mixer headers.
 #define MIX_VERSION                                                                                                                      // This is the version number macro for the current SDL_mixer version.
 int MIX_GetVersion(void);                                                                                                                // Get the version of SDL_mixer that is linked against your program.
 bool MIX_Init(void);                                                                                                                     // Initialize the SDL_mixer library.
