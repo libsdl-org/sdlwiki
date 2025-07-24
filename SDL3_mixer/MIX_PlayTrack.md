@@ -11,19 +11,6 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 
 ```c
 bool MIX_PlayTrack(MIX_Track *track, SDL_PropertiesID options);
-
-
-#define MIX_PROP_PLAY_LOOPS_NUMBER "SDL_mixer.play.loops"
-#define MIX_PROP_PLAY_MAX_FRAME_NUMBER "SDL_mixer.play.max_frame"
-#define MIX_PROP_PLAY_MAX_MILLISECONDS_NUMBER "SDL_mixer.play.max_milliseconds"
-#define MIX_PROP_PLAY_START_FRAME_NUMBER "SDL_mixer.play.start_frame"
-#define MIX_PROP_PLAY_START_MILLISECOND_NUMBER "SDL_mixer.play.start_millisecond"
-#define MIX_PROP_PLAY_LOOP_START_FRAME_NUMBER "SDL_mixer.play.loop_start_frame"
-#define MIX_PROP_PLAY_LOOP_START_MILLISECOND_NUMBER "SDL_mixer.play.loop_start_millisecond"
-#define MIX_PROP_PLAY_FADE_IN_FRAMES_NUMBER "SDL_mixer.play.fade_in_frames"
-#define MIX_PROP_PLAY_FADE_IN_MILLISECONDS_NUMBER "SDL_mixer.play.fade_in_milliseconds"
-#define MIX_PROP_PLAY_APPEND_SILENCE_FRAMES_NUMBER "SDL_mixer.play.append_silence_frames"
-#define MIX_PROP_PLAY_APPEND_SILENCE_MILLISECONDS_NUMBER "SDL_mixer.play.append_silence_milliseconds"
 ```
 
 ## Function Parameters

@@ -11,17 +11,6 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 
 ```c
 SDL_PropertiesID MIX_GetAudioProperties(MIX_Audio *audio);
-
-
-#define MIX_PROP_METADATA_TITLE_STRING "SDL_mixer.metadata.title"
-#define MIX_PROP_METADATA_ARTIST_STRING "SDL_mixer.metadata.artist"
-#define MIX_PROP_METADATA_ALBUM_STRING "SDL_mixer.metadata.album"
-#define MIX_PROP_METADATA_COPYRIGHT_STRING "SDL_mixer.metadata.copyright"
-#define MIX_PROP_METADATA_TRACK_NUMBER "SDL_mixer.metadata.track"
-#define MIX_PROP_METADATA_TOTAL_TRACKS_NUMBER "SDL_mixer.metadata.total_tracks"
-#define MIX_PROP_METADATA_YEAR_NUMBER "SDL_mixer.metadata.year"
-#define MIX_PROP_METADATA_DURATION_FRAMES_NUMBER "SDL_mixer.metadata.duration_frames"
-#define MIX_PROP_METADATA_DURATION_INFINITE_BOOLEAN "SDL_mixer.metadata.duration_infinite"
 ```
 
 ## Function Parameters
