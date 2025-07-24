@@ -12,7 +12,7 @@ fancy Unicode section headers, try using
 // https://libsdl.org/projects/SDL_mixer/
 //
 // The latest version of this document can be found at https://wiki.libsdl.org/SDL3_mixer/QuickReference
-// Based on SDL_mixer version 3.0.0
+// Based on SDL_mixer version 0.0.0
 //
 // This can be useful in an IDE with search and syntax highlighting.
 //
@@ -26,11 +26,11 @@ fancy Unicode section headers, try using
 //      XX  XX   XX  XX       XX  XX  XX  XX   XX XX   XX       XX   XX
 // XXXXXX   XXXXXX   XXXXXXX  XX      XX  XX  XX   XX  XXXXXXX  XX   XX
 
-#define MIX_MAJOR_VERSION                                                                                                                // The current major version of SDL_mixer headers.
-#define MIX_MINOR_VERSION                                                                                                                // The current minor version of the SDL_mixer headers.
-#define MIX_MICRO_VERSION                                                                                                                // The current micro (or patchlevel) version of the SDL_mixer headers.
-#define MIX_VERSION                                                                                                                      // This is the version number macro for the current SDL_mixer version.
-int MIX_GetVersion(void);                                                                                                                // Get the version of SDL_mixer that is linked against your program.
+#define SDL_MIXER_MAJOR_VERSION                                                                                                          // The current major version of SDL_mixer headers.
+#define SDL_MIXER_MINOR_VERSION                                                                                                          // The current minor version of the SDL_mixer headers.
+#define SDL_MIXER_MICRO_VERSION                                                                                                          // The current micro (or patchlevel) version of the SDL_mixer headers.
+#define SDL_MIXER_VERSION                                                                                                                // This is the current version number macro of the SDL_mixer headers.
+int MIX_Version(void);                                                                                                                   // Get the version of SDL_mixer that is linked against your program.
 bool MIX_Init(void);                                                                                                                     // Initialize the SDL_mixer library.
 void MIX_Quit(void);                                                                                                                     // Deinitialize the SDL_mixer library.
 int MIX_GetNumAudioDecoders(void);                                                                                                       // Report the number of audio decoders available for use.
