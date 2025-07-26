@@ -30,18 +30,22 @@ This function is called once by SDL before terminating the program.
 This function will be called in all cases, even if
 [SDL_AppInit](SDL_AppInit) requests termination at startup.
 
-This function should not go into an infinite mainloop; it should
-deinitialize any resources necessary, perform whatever shutdown activities,
-and return.
+This function should not go into an infinite loop; it should deinitialize
+any resources necessary, perform any shutdown tasks, and return.
 
 You do not need to call [SDL_Quit](SDL_Quit)() in this function, as SDL
-will call it after this function returns and before the process terminates,
-but it is safe to do so.
+will call it after this function returns and before the process terminates.
+However, it is safe to do so.
 
 The `appstate` parameter is an optional pointer provided by the app during
 [SDL_AppInit](SDL_AppInit)(). If the app never provided a pointer, this
 will be NULL. This function call is the last time this pointer will be
-provided, so any resources to it should be cleaned up here.
+provided, so any resources associated with it should be cleaned up here.
+
+Unlike the other app-provided main callback functions, this function 
+returns `void` and can not change the process exit code; that decision has
+already been made at this point, and the only task remaining here is
+process cleanup.
 
 This function is called by SDL on the main thread.
 
