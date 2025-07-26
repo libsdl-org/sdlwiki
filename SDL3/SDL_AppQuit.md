@@ -27,8 +27,8 @@ Apps implement this function when using
 
 This function is called once by SDL before terminating the program.
 
-This function will be called no matter what, even if
-[SDL_AppInit](SDL_AppInit) requests termination.
+This function will be called in all cases, even if
+[SDL_AppInit](SDL_AppInit) requests termination at startup.
 
 This function should not go into an infinite mainloop; it should
 deinitialize any resources necessary, perform whatever shutdown activities,
