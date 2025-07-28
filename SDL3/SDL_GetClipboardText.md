@@ -20,7 +20,7 @@ should be freed with [SDL_free](SDL_free)() when it is no longer needed.
 
 ## Remarks
 
-This functions returns an empty string if there was not enough memory left
+This function returns an empty string if there is not enough memory left
 for a copy of the clipboard's content.
 
 ## Thread Safety

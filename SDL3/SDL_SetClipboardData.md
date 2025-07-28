@@ -14,13 +14,13 @@ bool SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardClean
 
 ## Function Parameters
 
-|                                                              |                    |                                                                       |
-| ------------------------------------------------------------ | ------------------ | --------------------------------------------------------------------- |
-| [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)       | **callback**       | a function pointer to the function that provides the clipboard data.  |
-| [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback) | **cleanup**        | a function pointer to the function that cleans up the clipboard data. |
-| void *                                                       | **userdata**       | an opaque pointer that will be forwarded to the callbacks.            |
-| const char **                                                | **mime_types**     | a list of mime-types that are being offered.                          |
-| size_t                                                       | **num_mime_types** | the number of mime-types in the mime_types list.                      |
+|                                                              |                    |                                                                         |
+| ------------------------------------------------------------ | ------------------ | ----------------------------------------------------------------------- |
+| [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)       | **callback**       | a function pointer to the function that provides the clipboard data.    |
+| [SDL_ClipboardCleanupCallback](SDL_ClipboardCleanupCallback) | **cleanup**        | a function pointer to the function that cleans up the clipboard data.   |
+| void *                                                       | **userdata**       | an opaque pointer that will be forwarded to the callbacks.              |
+| const char **                                                | **mime_types**     | a list of mime-types that are being offered. SDL copies the given list. |
+| size_t                                                       | **num_mime_types** | the number of mime-types in the mime_types list.                        |
 
 ## Return Value
 
@@ -35,7 +35,7 @@ data the callback function will be called, allowing it to generate and
 respond with the data for the requested mime-type.
 
 The size of text data does not include any terminator, and the text does
-not need to be null terminated (e.g. you can directly copy a portion of a
+not need to be null-terminated (e.g., you can directly copy a portion of a
 document).
 
 ## Thread Safety

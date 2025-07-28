@@ -1,6 +1,6 @@
 # SDL_ClipboardCleanupCallback
 
-Callback function that will be called when the clipboard is cleared, or new data is set.
+Callback function that will be called when the clipboard is cleared, or when new data is set.
 
 ## Header File
 
@@ -14,9 +14,9 @@ typedef void (SDLCALL *SDL_ClipboardCleanupCallback)(void *userdata);
 
 ## Function Parameters
 
-|              |                                  |
-| ------------ | -------------------------------- |
-| **userdata** | a pointer to provided user data. |
+|              |                                      |
+| ------------ | ------------------------------------ |
+| **userdata** | a pointer to the provided user data. |
 
 ## Version
 

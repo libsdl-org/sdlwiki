@@ -20,7 +20,7 @@ char ** SDL_GetClipboardMimeTypes(size_t *num_mime_types);
 
 ## Return Value
 
-(char **) Returns a null terminated array of strings with mime types, or
+(char **) Returns a null-terminated array of strings with mime types, or
 NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 This should be freed with [SDL_free](SDL_free)() when it is no longer
 needed.

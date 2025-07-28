@@ -1,6 +1,6 @@
 # SDL_GetClipboardData
 
-Get the data from clipboard for a given mime type.
+Get the data from the clipboard for a given mime type.
 
 ## Header File
 
@@ -28,7 +28,7 @@ with [SDL_free](SDL_free)() when it is no longer needed.
 ## Remarks
 
 The size of text data does not include the terminator, but the text is
-guaranteed to be null terminated.
+guaranteed to be null-terminated.
 
 ## Thread Safety
 

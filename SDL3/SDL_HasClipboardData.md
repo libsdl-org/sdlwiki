@@ -14,13 +14,13 @@ bool SDL_HasClipboardData(const char *mime_type);
 
 ## Function Parameters
 
-|              |               |                                      |
-| ------------ | ------------- | ------------------------------------ |
-| const char * | **mime_type** | the mime type to check for data for. |
+|              |               |                                  |
+| ------------ | ------------- | -------------------------------- |
+| const char * | **mime_type** | the mime type to check for data. |
 
 ## Return Value
 
-(bool) Returns true if there exists data in clipboard for the provided mime
+(bool) Returns true if data exists in the clipboard for the provided mime
 type, false if it does not.
 
 ## Thread Safety
