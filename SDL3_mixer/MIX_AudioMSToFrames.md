@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-Uint64 MIX_AudioMSToFrames(MIX_Audio *audio, Uint64 ms);
+Sint64 MIX_AudioMSToFrames(MIX_Audio *audio, Sint64 ms);
 ```
 
 ## Function Parameters
@@ -18,17 +18,19 @@ Uint64 MIX_AudioMSToFrames(MIX_Audio *audio, Uint64 ms);
 |                          |           |                                                              |
 | ------------------------ | --------- | ------------------------------------------------------------ |
 | [MIX_Audio](MIX_Audio) * | **audio** | the audio to query.                                          |
-| Uint64                   | **ms**    | the milliseconds to convert to audio-specific sample frames. |
+| Sint64                   | **ms**    | the milliseconds to convert to audio-specific sample frames. |
 
 ## Return Value
 
-(Uint64) Returns Converted number of sample frames, or zero for errors/no
-input.
+(Sint64) Returns Converted number of sample frames, or -1 for errors/no
+input; call SDL_GetError() for details.
 
 ## Remarks
 
 This calculates time based on the audio's initial format, even if the
 format would change mid-stream.
+
+If `ms` is < 0, this returns -1.
 
 ## Thread Safety
 

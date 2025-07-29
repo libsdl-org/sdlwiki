@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-Uint64 MIX_FramesToMS(int sample_rate, Uint64 frames);
+Sint64 MIX_FramesToMS(int sample_rate, Sint64 frames);
 ```
 
 ## Function Parameters
@@ -18,18 +18,20 @@ Uint64 MIX_FramesToMS(int sample_rate, Uint64 frames);
 |        |                 |                                                             |
 | ------ | --------------- | ----------------------------------------------------------- |
 | int    | **sample_rate** | the sample rate to use for conversion.                      |
-| Uint64 | **frames**      | the rate-specific sample frames to convert to milliseconds. |
+| Sint64 | **frames**      | the rate-specific sample frames to convert to milliseconds. |
 
 ## Return Value
 
-(Uint64) Returns Converted number of milliseconds, or zero for errors.
+(Sint64) Returns Converted number of milliseconds, or -1 for errors; call
+SDL_GetError() for details.
 
 ## Remarks
 
-If `sample_rate` is <= 0, this returns 0. No error is set.
-
 Sample frames are more precise than milliseconds, so out of necessity, this
 function will approximate by rounding down to the closest full millisecond.
+
+If `sample_rate` is <= 0, this returns -1. If `frames` is < 0, this returns
+-1.
 
 ## Thread Safety
 

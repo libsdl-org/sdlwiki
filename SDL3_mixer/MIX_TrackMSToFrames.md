@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-Uint64 MIX_TrackMSToFrames(MIX_Track *track, Uint64 ms);
+Sint64 MIX_TrackMSToFrames(MIX_Track *track, Sint64 ms);
 ```
 
 ## Function Parameters
@@ -18,12 +18,12 @@ Uint64 MIX_TrackMSToFrames(MIX_Track *track, Uint64 ms);
 |                          |           |                                                              |
 | ------------------------ | --------- | ------------------------------------------------------------ |
 | [MIX_Track](MIX_Track) * | **track** | the track to query.                                          |
-| Uint64                   | **ms**    | the milliseconds to convert to track-specific sample frames. |
+| Sint64                   | **ms**    | the milliseconds to convert to track-specific sample frames. |
 
 ## Return Value
 
-(Uint64) Returns Converted number of sample frames, or zero for errors/no
-input.
+(Sint64) Returns Converted number of sample frames, or -1 for errors/no
+input; call SDL_GetError() for details.
 
 ## Remarks
 
@@ -32,11 +32,9 @@ change when its input does, and also if that input changes formats
 mid-stream (for example, if decoding a file that is two MP3s concatenated
 together).
 
-If the track has no input, this returns 0.
-
 On various errors ([MIX_Init](MIX_Init)() was not called, the track is
-NULL), this returns 0, but there is no mechanism to distinguish errors from
-tracks without a valid input.
+NULL), this returns -1. If the track has no input, this returns -1. If `ms`
+is < 0, this returns -1.
 
 ## Thread Safety
 

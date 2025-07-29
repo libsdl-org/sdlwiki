@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Uint64 frames);
+bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Sint64 frames);
 ```
 
 ## Function Parameters
@@ -18,7 +18,7 @@ bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Uint64 frames);
 |                          |            |                                       |
 | ------------------------ | ---------- | ------------------------------------- |
 | [MIX_Track](MIX_Track) * | **track**  | the track to change.                  |
-| Uint64                   | **frames** | the sample frame position to seek to. |
+| Sint64                   | **frames** | the sample frame position to seek to. |
 
 ## Return Value
 

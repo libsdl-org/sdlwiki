@@ -61,18 +61,18 @@ bool MIX_SetTrackAudioStream(MIX_Track *track, SDL_AudioStream *stream);        
 bool MIX_SetTrackIOStream(MIX_Track *track, SDL_IOStream *io, bool closeio);                                                             // Set a MIX_Track's input to an SDL_IOStream.
 bool MIX_TagTrack(MIX_Track *track, const char *tag);                                                                                    // Assign an arbitrary tag to a track.
 void MIX_UntagTrack(MIX_Track *track, const char *tag);                                                                                  // Remove an arbitrary tag from a track.
-bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Uint64 frames);                                                                      // Seek a playing track to a new position in its input.
+bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Sint64 frames);                                                                      // Seek a playing track to a new position in its input.
 Sint64 MIX_GetTrackPlaybackPosition(MIX_Track *track);                                                                                   // Get the current input position of a playing track.
 bool MIX_TrackLooping(MIX_Track *track);                                                                                                 // Query whether a given track is looping.
 MIX_Audio * MIX_GetTrackAudio(MIX_Track *track);                                                                                         // Query the MIX_Audio assigned to a track.
 SDL_AudioStream * MIX_GetTrackAudioStream(MIX_Track *track);                                                                             // Query the SDL_AudioStream assigned to a track.
 Sint64 MIX_GetTrackRemaining(MIX_Track *track);                                                                                          // Return the number of sample frames remaining to be mixed in a track.
-Uint64 MIX_TrackMSToFrames(MIX_Track *track, Uint64 ms);                                                                                 // Convert milliseconds to sample frames for a track's current format.
-Uint64 MIX_TrackFramesToMS(MIX_Track *track, Uint64 frames);                                                                             // Convert sample frames for a track's current format to milliseconds.
-Uint64 MIX_AudioMSToFrames(MIX_Audio *audio, Uint64 ms);                                                                                 // Convert milliseconds to sample frames for a MIX_Audio's format.
-Uint64 MIX_AudioFramesToMS(MIX_Audio *audio, Uint64 frames);                                                                             // Convert sample frames for a MIX_Audio's format to milliseconds.
-Uint64 MIX_MSToFrames(int sample_rate, Uint64 ms);                                                                                       // Convert milliseconds to sample frames at a specific sample rate.
-Uint64 MIX_FramesToMS(int sample_rate, Uint64 frames);                                                                                   // Convert sample frames, at a specific sample rate, to milliseconds.
+Sint64 MIX_TrackMSToFrames(MIX_Track *track, Sint64 ms);                                                                                 // Convert milliseconds to sample frames for a track's current format.
+Sint64 MIX_TrackFramesToMS(MIX_Track *track, Sint64 frames);                                                                             // Convert sample frames for a track's current format to milliseconds.
+Sint64 MIX_AudioMSToFrames(MIX_Audio *audio, Sint64 ms);                                                                                 // Convert milliseconds to sample frames for a MIX_Audio's format.
+Sint64 MIX_AudioFramesToMS(MIX_Audio *audio, Sint64 frames);                                                                             // Convert sample frames for a MIX_Audio's format to milliseconds.
+Sint64 MIX_MSToFrames(int sample_rate, Sint64 ms);                                                                                       // Convert milliseconds to sample frames at a specific sample rate.
+Sint64 MIX_FramesToMS(int sample_rate, Sint64 frames);                                                                                   // Convert sample frames, at a specific sample rate, to milliseconds.
 bool MIX_PlayTrack(MIX_Track *track, SDL_PropertiesID options);                                                                          // Start (or restart) mixing a track for playback.
 bool MIX_PlayTag(MIX_Mixer *mixer, const char *tag, SDL_PropertiesID options);                                                           // Start (or restart) mixing all tracks with a specific tag for playback.
 bool MIX_PlayAudio(MIX_Mixer *mixer, MIX_Audio *audio);                                                                                  // Play a MIX_Audio from start to finish without any management.
