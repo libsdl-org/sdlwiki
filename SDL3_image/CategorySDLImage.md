@@ -68,6 +68,8 @@ A simple library to load images of various formats as SDL surfaces
 - [IMG_SaveJPG_IO](IMG_SaveJPG_IO)
 - [IMG_SavePNG](IMG_SavePNG)
 - [IMG_SavePNG_IO](IMG_SavePNG_IO)
+- [IMG_SaveWEBP](IMG_SaveWEBP)
+- [IMG_SaveWEBP_IO](IMG_SaveWEBP_IO)
 - [IMG_Version](IMG_Version)
 <!-- END CATEGORY LIST -->
 
