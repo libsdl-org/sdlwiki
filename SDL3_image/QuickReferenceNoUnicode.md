@@ -82,6 +82,8 @@ bool IMG_SavePNG(SDL_Surface *surface, const char *file);                       
 bool IMG_SavePNG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into PNG image data, via an SDL_IOStream.
 bool IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);                                             // Save an SDL_Surface into a JPEG image file.
 bool IMG_SaveJPG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                           // Save an SDL_Surface into JPEG image data, via an SDL_IOStream.
+bool IMG_SaveWEBP_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, float quality);                        // Save an SDL_Surface into WEBP image data, via an SDL_IOStream.
+bool IMG_SaveWEBP(SDL_Surface *surface, const char *file, float quality);                                          // Save an SDL_Surface into a WEBP image file.
 IMG_Animation * IMG_LoadAnimation(const char *file);                                                               // Load an animation from a file.
 IMG_Animation * IMG_LoadAnimation_IO(SDL_IOStream *src, bool closeio);                                             // Load an animation from an SDL_IOStream.
 IMG_Animation * IMG_LoadAnimationTyped_IO(SDL_IOStream *src, bool closeio, const char *type);                      // Load an animation from an SDL datasource
