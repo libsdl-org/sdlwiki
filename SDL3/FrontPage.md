@@ -54,6 +54,15 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 - [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
 
+## Satellite libraries
+
+There are other libraries that are developed by the SDL team, but aren't part of SDL itself. They are also documented on this wiki:
+
+- [SDL_image](/SDL3_image): Load image files (bmp, gif, jpg, many others) into an SDL_Surface or SDL_Texture.
+- [SDL_ttf](/SDL3_ttf): Load font files (ttf, etc) and render text with them.
+- [SDL_mixer](/SDL3_mixer): Load audio files (wav, mp3, ogg, many others), mix multiple sounds, apply effects to them.
+- [SDL_net](/SDL3_net): A fairly low-level wrapper over common networking tasks.
+
 ## Other stuff
 
 We hope you find everything you are looking for and enjoy using SDL!
