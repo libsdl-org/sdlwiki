@@ -45,6 +45,8 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
 - [Tutorials](Tutorials)
 - [Articles](Articles)
+- [Examples](https://examples.libsdl.org/SDL3/) small programs that each demonstrate one feature of the library
+- [Demos](https://examples.libsdl.org/SDL3/demo/) simple-but-complete games and apps
 - [SDL 2.0 Migration Guide](README-migration)
 - [Frequently Asked Questions](FAQs)
 - [READMEs](READMEs) covering more advanced topics
