@@ -23,6 +23,20 @@ SDL_JoystickID SDL_AttachVirtualJoystick(const SDL_VirtualJoystickDesc *desc);
 ([SDL_JoystickID](SDL_JoystickID)) Returns the joystick instance ID, or 0
 on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Apps can create virtual joysticks, that exist without hardware directly
+backing them, and have program-supplied inputs. Once attached, a virtual
+joystick looks like any other joystick that SDL can access. These can be
+used to make other things look like joysticks, or provide pre-recorded
+input, etc.
+
+Once attached, the app can send joystick inputs to the new virtual joystick
+using [SDL_SetJoystickVirtualAxis](SDL_SetJoystickVirtualAxis)(), etc.
+
+When no longer needed, the virtual joystick can be removed by calling
+[SDL_DetachVirtualJoystick](SDL_DetachVirtualJoystick)().
+
 ## Version
 
 This function is available since SDL 3.2.0.
@@ -30,6 +44,12 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_DetachVirtualJoystick](SDL_DetachVirtualJoystick)
+- [SDL_SetJoystickVirtualAxis](SDL_SetJoystickVirtualAxis)
+- [SDL_SetJoystickVirtualButton](SDL_SetJoystickVirtualButton)
+- [SDL_SetJoystickVirtualBall](SDL_SetJoystickVirtualBall)
+- [SDL_SetJoystickVirtualHat](SDL_SetJoystickVirtualHat)
+- [SDL_SetJoystickVirtualTouchpad](SDL_SetJoystickVirtualTouchpad)
+- [SDL_SetJoystickVirtualSensorData](SDL_SetJoystickVirtualSensorData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)

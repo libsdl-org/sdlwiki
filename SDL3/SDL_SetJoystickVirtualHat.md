@@ -39,6 +39,14 @@ including, but not limited to the following:
 
 This function is available since SDL 3.2.0.
 
+## See Also
+
+- [SDL_SetJoystickVirtualAxis](SDL_SetJoystickVirtualAxis)
+- [SDL_SetJoystickVirtualButton](SDL_SetJoystickVirtualButton)
+- [SDL_SetJoystickVirtualBall](SDL_SetJoystickVirtualBall)
+- [SDL_SetJoystickVirtualTouchpad](SDL_SetJoystickVirtualTouchpad)
+- [SDL_SetJoystickVirtualSensorData](SDL_SetJoystickVirtualSensorData)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 
