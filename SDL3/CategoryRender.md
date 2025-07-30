@@ -9,6 +9,7 @@ This API supports the following features:
 - filled rectangles
 - texture images
 - 2D polygons
+- simple text output for debugging.
 
 The primitives may be drawn in opaque, blended, or additive modes.
 
