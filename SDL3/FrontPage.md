@@ -7,7 +7,7 @@ This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
 SDL3 has [officially released](https://github.com/libsdl-org/SDL/releases) and is ready for you to start using now.
 
 Need some motivation? Here's a list of [New Features](NewFeatures) that you can
-enjoy today in SDL3!
+enjoy today in SDL3! If you're coming from SDL2 check out the [2 to 3 Migration Guide](README-migration).
 
 ## What is it?
 
@@ -29,11 +29,25 @@ to use SDL freely in any software.
 
 This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
-## Getting and installing SDL
+## Getting Started
 
-- [Source Code](SourceCode): How to download the source code to SDL.
-- [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md): How to install SDL on your platform of choice
-  and link your program against it.
+|                               |                                             |
+| ----------------------------- | --------------------------------------------|
+| [Source Code](SourceCode)     | How to download the source code to SDL.     |
+| [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md) | How to install SDL on your platform of choice and link your program against it. |
+| [API by Category](APIByCategory) | Reference documentation for all of SDLs Subsystems can be found here. |
+| [Tutorials](Tutorials)        | Take a look at some tutorials to guide you through learning SDL. |
+| [Frequently Asked Questions](FAQDevelopment) | Questions developers often ask when using SDL. |
+
+
+## SDL FAQs
+
+|                               |                                             |
+| ----------------------------- | --------------------------------------------|
+| [General](FAQGeneral)         | General questions about SDL                 |
+| [Using SDL](FAQUsingSDL)      | Questions for people using SDL applications |
+| [Licensing](FAQLicensing)     | Questions about licensing SDL with products |
+| [Development](FAQDevelopment) | General questions about developing with SDL |
 
 ## API Documentation
 
@@ -43,12 +57,10 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
 ## Other sources of information
 
-- [Tutorials](Tutorials)
 - [Articles](Articles)
 - [Examples](https://examples.libsdl.org/SDL3/) small programs that each demonstrate one feature of the library
 - [Demos](https://examples.libsdl.org/SDL3/demo/) simple-but-complete games and apps
 - [SDL 2.0 Migration Guide](README-migration)
-- [Frequently Asked Questions](FAQs)
 - [READMEs](READMEs) covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
 - [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
