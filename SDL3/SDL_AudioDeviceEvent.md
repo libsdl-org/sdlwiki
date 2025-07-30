@@ -22,6 +22,13 @@ typedef struct SDL_AudioDeviceEvent
 } SDL_AudioDeviceEvent;
 ```
 
+## Remarks
+
+Note that SDL will send a
+[SDL_EVENT_AUDIO_DEVICE_ADDED](SDL_EVENT_AUDIO_DEVICE_ADDED) event for
+every device it discovers during initialization. After that, this event
+will only arrive when a device is hotplugged during the program's run.
+
 ## Version
 
 This struct is available since SDL 3.2.0.
