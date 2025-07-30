@@ -8,11 +8,19 @@ tablet devices.
 
 To get started with pens, simply handle pen events:
 
-- SDL_EVENT_PEN_PROXIMITY_IN, SDL_EVENT_PEN_PROXIMITY_OUT (SDL_PenProximityEvent)
-- SDL_EVENT_PEN_DOWN, SDL_EVENT_PEN_UP (SDL_PenTouchEvent)
-- SDL_EVENT_PEN_MOTION (SDL_PenMotionEvent)
-- SDL_EVENT_PEN_BUTTON_DOWN, SDL_EVENT_PEN_BUTTON_UP (SDL_PenButtonEvent)
-- SDL_EVENT_PEN_AXIS (SDL_PenAxisEvent)
+- [SDL_EVENT_PEN_PROXIMITY_IN](SDL_EVENT_PEN_PROXIMITY_IN),
+  [SDL_EVENT_PEN_PROXIMITY_OUT](SDL_EVENT_PEN_PROXIMITY_OUT)
+  ([SDL_PenProximityEvent](SDL_PenProximityEvent))
+- [SDL_EVENT_PEN_DOWN](SDL_EVENT_PEN_DOWN),
+  [SDL_EVENT_PEN_UP](SDL_EVENT_PEN_UP)
+  ([SDL_PenTouchEvent](SDL_PenTouchEvent))
+- [SDL_EVENT_PEN_MOTION](SDL_EVENT_PEN_MOTION)
+  ([SDL_PenMotionEvent](SDL_PenMotionEvent))
+- [SDL_EVENT_PEN_BUTTON_DOWN](SDL_EVENT_PEN_BUTTON_DOWN),
+  [SDL_EVENT_PEN_BUTTON_UP](SDL_EVENT_PEN_BUTTON_UP)
+  ([SDL_PenButtonEvent](SDL_PenButtonEvent))
+- [SDL_EVENT_PEN_AXIS](SDL_EVENT_PEN_AXIS)
+  ([SDL_PenAxisEvent](SDL_PenAxisEvent))
 
 When a pen starts providing input, SDL will assign it a unique
 [SDL_PenID](SDL_PenID), which will remain for the life of the process, as
