@@ -1,6 +1,6 @@
 # Simple DirectMedia Layer 3.0
 
-This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
+> This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
 
 ## Try it right now!
 
@@ -37,17 +37,9 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 | [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md) | How to install SDL on your platform of choice and link your program against it. |
 | [API by Category](APIByCategory) | Reference documentation for all of SDLs Subsystems can be found here. |
 | [Tutorials](Tutorials)        | Take a look at some tutorials to guide you through learning SDL. |
+| [Examples](https://examples.libsdl.org/SDL3/) | Small programs that each demonstrate a feature of the library. |
+| [Demos](https://examples.libsdl.org/SDL3/demo/) | Simple but complete games and apps. |
 | [Frequently Asked Questions](FAQDevelopment) | Questions developers often ask when using SDL. |
-
-
-## SDL FAQs
-
-|                               |                                             |
-| ----------------------------- | --------------------------------------------|
-| [General](FAQGeneral)         | General questions about SDL                 |
-| [Using SDL](FAQUsingSDL)      | Questions for people using SDL applications |
-| [Licensing](FAQLicensing)     | Questions about licensing SDL with products |
-| [Development](FAQDevelopment) | General questions about developing with SDL |
 
 ## API Documentation
 
@@ -57,9 +49,7 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
 ## Other sources of information
 
-- [Articles](Articles)
-- [Examples](https://examples.libsdl.org/SDL3/) small programs that each demonstrate one feature of the library
-- [Demos](https://examples.libsdl.org/SDL3/demo/) simple-but-complete games and apps
+- [Articles and Videos](Articles)
 - [SDL 2.0 Migration Guide](README-migration)
 - [READMEs](READMEs) covering more advanced topics
 - [Libraries](Libraries) to extend SDL functionality
