@@ -77,7 +77,7 @@ It's _most_ likely you have `#include <SDL3/SDL_main.h>` included in the file wi
 `int main(int argc, char *argv[])`
 
 If you see an error about "a previous definition of `SDL_main`", there's pretty much two possibilities:
- - You've implemented `main`/`SDL_main` twice in one file yourself. Pretty unlikely, but it can happen!
+ - You've implemented `main` twice in one file yourself. Pretty unlikely, but it can happen!
  - More likely you have `#define SDL_MAIN_USE_CALLBACKS` somewhere, or have `SDL_MAIN_USE_CALLBACKS` defined through your build system as a switch to the compiler, but you're implementing `main`/`SDL_main` instead of the callbacks.
 
 The last common issue here is you've placed `#include "SDL3/SDL_main.h"` in two Translation Units (c/cpp files).
