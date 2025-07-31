@@ -63,6 +63,8 @@
 - [IMG_SaveJPG_IO](IMG_SaveJPG_IO)
 - [IMG_SavePNG](IMG_SavePNG)
 - [IMG_SavePNG_IO](IMG_SavePNG_IO)
+- [IMG_SaveTGA](IMG_SaveTGA)
+- [IMG_SaveTGA_IO](IMG_SaveTGA_IO)
 - [IMG_SaveWEBP](IMG_SaveWEBP)
 - [IMG_SaveWEBP_IO](IMG_SaveWEBP_IO)
 - [IMG_Version](IMG_Version)
