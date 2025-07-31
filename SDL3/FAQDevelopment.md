@@ -182,12 +182,6 @@ Yes, but to get wide support, you'll need to give up on some features. Each Vulk
 
 We recommend using SDL_shadercross, a shader compiler that tries to make it easy to go from HLSL to all the shader formats SDL_GPU needs for each backend. That said, we recommend not building it yourself, as the build process is complex and has large dependencies. You can find builds on the [actions page](https://github.com/libsdl-org/SDL_shadercross/actions?query=branch%3Amain), just be signed into GitHub, and select the latest build from main.
 
-### I'm trying to use SDL_shadercross as an online (runtime) compiler. <a name="shadercross_runtime" id="shadercross_runtime"></a>
-
-Unfortunately there's not a lot of help we can provide here. If you're stepping outside of how the GitHub Actions builds things, you're bound to run into issues. There's some rather large and complicated dependencies underpinning SDL_shadercross and they complicate things significantly.
-
-We hope to be able to update this answer in the near term with some better documentation around this!
-
 ### I'm on Linux and trying to run my SDL_GPU application under RenderDoc and don't get a Device, what's going on? <a name="renderdoc" id="renderdoc"></a>
 It's likely that you're running Wayland. RenderDoc doesn't support Wayland, please force XWayland and give that a try!
 
