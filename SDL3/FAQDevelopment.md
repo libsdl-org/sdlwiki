@@ -94,7 +94,7 @@ SDL provides two ways to get called during these blocking operations.
 
 For further context, even when blocked the OS gives your application time slices during these operations, but they do so through callbacks themselves, not by returning back to user code. So the only solution is for SDL or similar to give you a callback as well.
 
-There's also an asterisk in that there's still often some minor issues with this where a Window still may look imperfect during resizing. There are bugs open to hopefully figure this out and address it, that said, it's more of a perfectionist issue at this point.
+This doesn't guarantee perfectly smooth resizing but greatly improves the situation.
 
 Here's a program that demonstrates the callbacks still allowing user code to run during Window resize and move operations:
 
