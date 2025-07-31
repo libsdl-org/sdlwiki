@@ -64,7 +64,7 @@ Take a look at these blogs for an in-depth understanding of the problems of timi
  - https://blog.bearcats.nl/accurate-sleep-function/ (Recentlyish Updated)
  - https://blog.bearcats.nl/perfect-sleep-function/ (Part 2, even better Sleeps!)
 
-In SDL3 you should be using [`SDL_DelayPrecise`](SDL_DelayPrecise)  (which is similar, albeit not currently perfect to the above) or [`SDL_DelayNS`](SDL_DelayNS) (More precise than SDL_Delay)
+In SDL3 you should be using [`SDL_DelayPrecise`](SDL_DelayPrecise)  (which uses an algorithm similar to above) or [`SDL_DelayNS`](SDL_DelayNS) (More precise than SDL_Delay, but doesn't busy-wait)
 
 On a similar note, when doing timing, prefer using [`SDL_GetPerformanceCounter`](SDL_GetPerformanceCounter)  and [`SDL_GetPerformanceFrequency`](SDL_GetPerformanceFrequency) , or [`SDL_GetTicksNS`](SDL_GetTicksNS) , over using [`SDL_GetTicks`](SDL_GetTicks) . Beyond just sleep inaccuracy, milliseconds isn't precise enough to do timing work.
 
