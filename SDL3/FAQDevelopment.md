@@ -145,7 +145,7 @@ void SDL_AppQuit(void* appstate, SDL_AppResult result) { }
 
 ### Can I use shaders with the SDL 2D render API?  <a name="renderer_shaders" id="renderer_shaders"></a>
 
-No, unless you're using SDL 3.4 (as of yet unreleased). On SDL 3.4 you can get fragment shaders, take a look into [`SDL_CreateGPURenderState`](https://wiki.libsdl.org/SDL3/SDL_CreateGPURenderState).
+Once SDL 3.4.0 is available, you can get fragment shaders, take a look at [`SDL_CreateGPURenderer`](https://wiki.libsdl.org/SDL3/SDL_CreateGPURenderer) and [`SDL_CreateGPURenderState`](https://wiki.libsdl.org/SDL3/SDL_CreateGPURenderState). Until then you can try out this function using the main branch on [GitHub](https://github.com/libsdl-org/SDL)
 
 That said, there are many different ways to use shaders, and if you need more than the subset of shader functionality we expose there, we recommend using a full 3D API like [SDL GPU](CategoryGPU). You can look at how SDL uses the GPU API for 2D rendering if you'd like to expand on that: [SDL_render_gpu.c](https://github.com/libsdl-org/SDL/blob/main/src/render/gpu/SDL_render_gpu.c)
 
