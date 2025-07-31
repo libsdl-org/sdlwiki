@@ -180,7 +180,7 @@ Yes, but to get wide support, you'll need to give up on some features. Each Vulk
 
 ### What should I do for shaders for SDL_GPU or SDL_Renderer with the GPU backend? <a name="shader_choices" id="shader_choices"></a>
 
-We recommend using SDL_shadercross, a WIP shader compiler that tries to make it easy to go from HLSL to all the shader formats SDL_GPU needs for each backend. That said, we recommend not building it yourself, it 's still a bit temperamental. You can find builds on the [actions page](https://github.com/libsdl-org/SDL_shadercross/actions?query=branch%3Amain), just be signed into GitHub, and select the latest build from main.
+We recommend using SDL_shadercross, a shader compiler that tries to make it easy to go from HLSL to all the shader formats SDL_GPU needs for each backend. That said, we recommend not building it yourself, as the build process is complex and has large dependencies. You can find builds on the [actions page](https://github.com/libsdl-org/SDL_shadercross/actions?query=branch%3Amain), just be signed into GitHub, and select the latest build from main.
 
 ### I'm trying to use SDL_shadercross as an online (runtime) compiler. <a name="shadercross_runtime" id="shadercross_runtime"></a>
 
