@@ -167,7 +167,7 @@ Now that we're through both positives and negatives of GPU, we'll try to give a 
   - If you're targetting only Windows 10 or 11, and the Xbox platform, DirectX might be worth considering. There's less boilerplate than Vulkan, but it's still quite explicit. It also tends to trade with Metal on bleeding edge features, but they're obviously mututally exclusive unless you're writing your own RHI (Render Hardware Interface) like GPU.
 - Metal
   - The native API of Apples platforms, Graphics developers tend to be very happy with this API. It's got the least boilerplate of the 3 modern native APIs, tends to have excellent feature support and implementations, but is still very explicit so you're not leaving performance on the table.
-  - The obvious main downside is it's only availible on Apple platforms, and it can be somewhat difficult to use from non-Apple languages (Objective-C, Swift).
+  - The obvious main downside is it's only available on Apple platforms, and it can be somewhat difficult to use from languages besides Objective-C and Swift.
 
 ### Can SDL_GPU run on OpenGL? <a name="gpu_on_gl" id="gpu_on_gl"></a>
 
