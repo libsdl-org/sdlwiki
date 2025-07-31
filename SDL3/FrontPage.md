@@ -31,15 +31,16 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 
 ## Getting Started
 
-|                               |                                             |
-| ----------------------------- | --------------------------------------------|
-| [Source Code](SourceCode)     | How to download the source code to SDL.     |
+|                                                 |                                             |
+| ------------------------------------------------| --------------------------------------------|
+| [Source Code](SourceCode)                       | How to download the source code to SDL.     |
 | [Installation](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md) | How to install SDL on your platform of choice and link your program against it. |
-| [API by Category](APIByCategory) | Reference documentation for all of SDLs Subsystems can be found here. |
-| [Tutorials](Tutorials)        | Take a look at some tutorials to guide you through learning SDL. |
-| [Examples](https://examples.libsdl.org/SDL3/) | Small programs that each demonstrate a feature of the library. |
+| [API by Category](APIByCategory)                | Reference documentation for all of SDLs Subsystems can be found here. |
+| [Tutorials](Tutorials)                          | Take a look at some tutorials to guide you through learning SDL. |
+| [Examples](https://examples.libsdl.org/SDL3/)   | Small programs that each demonstrate a feature of the library. |
 | [Demos](https://examples.libsdl.org/SDL3/demo/) | Simple but complete games and apps. |
-| [Frequently Asked Questions](FAQDevelopment) | Questions developers often ask when using SDL. |
+| [Frequently Asked Questions](FAQDevelopment)    | Questions developers often ask when using SDL. |
+| [SDL Communities](FAQCommunitiesd)              | Communities you can follow to help and get help with SDL |
 
 ## API Documentation
 
