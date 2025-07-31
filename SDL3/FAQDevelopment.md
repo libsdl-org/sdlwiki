@@ -66,7 +66,7 @@ Take a look at these blogs for an in-depth understanding of the problems of timi
 
 In SDL3 you should be using [`SDL_DelayPrecise`](SDL_DelayPrecise)  (which uses an algorithm similar to above) or [`SDL_DelayNS`](SDL_DelayNS) (More precise than SDL_Delay, but doesn't busy-wait)
 
-On a similar note, when doing timing, prefer using [`SDL_GetPerformanceCounter`](SDL_GetPerformanceCounter)  and [`SDL_GetPerformanceFrequency`](SDL_GetPerformanceFrequency) , or [`SDL_GetTicksNS`](SDL_GetTicksNS) , over using [`SDL_GetTicks`](SDL_GetTicks) . Beyond just sleep inaccuracy, milliseconds isn't precise enough to do timing work.
+On a similar note, when doing timing, prefer using [`SDL_GetPerformanceCounter`](SDL_GetPerformanceCounter)  and [`SDL_GetPerformanceFrequency`](SDL_GetPerformanceFrequency) , or [`SDL_GetTicksNS`](SDL_GetTicksNS) , over using [`SDL_GetTicks`](SDL_GetTicks), which has only has millisecond precision. [`SDL_GetTicksNS`](SDL_GetTicksNS) uses [`SDL_GetPerformanceCounter`](SDL_GetPerformanceCounter) under the hood, but converted to nanoseconds for convenience.
 
 
 ## I'm getting an error about SDL_main, WinMain, main, etc: <a name="main" id="main"></a>
