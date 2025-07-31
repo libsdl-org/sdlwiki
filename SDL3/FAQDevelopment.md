@@ -155,7 +155,7 @@ This is a _very_ difficult question to give a good answer to. We'll try to give 
 
 We're quite proud of the new GPU api that was added in SDL3, and are confident it can handle the majority of use cases of users of SDL. FNA has already shipped games on console using SDL3 and the GPU api for rendering. That said, it's still early days of the API in terms of supplementary material. If you're intending to _learn_ graphics, we don't have a great story for ramping you up currently. In addition, while it has fairly wide platform support (note the big 3 console platforms), some important platforms are missing (Web) or degraded (Android). And if you need to target hardware more than about 10-13 years old, then you might be out of luck, there's not a ton of hardware DirectX12, Metal, or Vulkan support going that far back. And finally if you want newer features, like Work Groups, Mesh Shaders, Bindless Textures, then GPU won't be able to help there.
 
-Now that we're through both positives and negatives of GPU, we'll try to give a rundown of some of the other options that might work for you.
+In addition to the GPU API, here are some other alternatives that may work for you, depending on your needs.
 
 - OpenGL and it's versions and variants
   - GL has it's problems, but if you're willing to put in the work, it's greatest strength is _wide_ platform support. Between desktop OpenGL and it's extensions, OpenGL ES, and WebGL, you can hit essentially every desktop going back 15 years or more, phones and various embedded devices, the web browser, and even the Nintendo Switch. It wouldn't be easy, you'd need to do a lot of version checking and changing depending on exactly which version and variant of GL you're targetting, but it is possible. 
