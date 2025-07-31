@@ -73,7 +73,8 @@ On a similar note, when doing timing, prefer using [`SDL_GetPerformanceCounter`]
 
 > NOTE: This answer is written for brevity, but this is a complex topic! For a full understanding of what's happening, please look over our [main functions README](README-main-functions).
 
-It's _most_ likely you have `#include "SDL3/SDL_main.h"` somewhere in your code, but your `main` function doesn't look like [what SDL expects](SDL_main), although note, you need not name it `SDL_main`.
+It's _most_ likely you have `#include <SDL3/SDL_main.h>` included in the file with your `main` function, but your `main` function doesn't have the expected signature:
+`int main(int argc, char *argv[])`
 
 If you see an error about "a previous definition of `SDL_main`", there's pretty much two possibilities:
  - You've implemented `main`/`SDL_main` twice in one file yourself. Pretty unlikely, but it can happen!
