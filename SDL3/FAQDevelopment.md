@@ -186,5 +186,5 @@ We recommend using SDL_shadercross, a shader compiler that tries to make it easy
 It's likely that you're running Wayland. RenderDoc doesn't support Wayland, please force XWayland and give that a try!
 
 You can set this before calling `SDL_Init` to get that behavior if your system is set up as expected:
-`SDL_SetHint("SDL_HINT_VIDEO_DRIVER", "x11");`
+`SDL_SetHint(SDL_HINT_VIDEO_DRIVER, "x11");`
 
