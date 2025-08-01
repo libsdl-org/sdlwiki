@@ -40,7 +40,7 @@ This is the SDL wiki. SDL's main website is [libsdl.org](https://libsdl.org/).
 | [Examples](https://examples.libsdl.org/SDL3/)   | Small programs that each demonstrate a feature of the library. |
 | [Demos](https://examples.libsdl.org/SDL3/demo/) | Simple but complete games and apps. |
 | [Frequently Asked Questions](FAQDevelopment)    | Questions developers often ask when using SDL. |
-| [SDL Communities](FAQCommunitiesd)              | Communities you can follow to help and get help with SDL |
+| [SDL Communities](FAQCommunities)               | Communities you can follow to help and get help with SDL |
 
 ## API Documentation
 
