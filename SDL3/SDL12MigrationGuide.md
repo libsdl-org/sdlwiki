@@ -79,7 +79,7 @@ Now we need a rendering context.
 SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, NULL);
 ```
 
-A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, Metal, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can use `SDL_RENDERER_PRESENTVSYNC` instead of zero for the third parameter. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer)() decides it wants to use OpenGL, it'll update the window appropriately for you.
+A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, Metal, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can call `SDL_SetRenderVSync` after creating the renderer. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer)() decides it wants to use OpenGL, it'll update the window appropriately for you.
 
 Now that you understand how this works, you can also do this all in one step with [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)(), if you don't want anything fancy:
 
@@ -218,7 +218,7 @@ You can do some simple effects with the render API without having to get down in
 * Color alpha: [SDL_Color](SDL_Color) now contains a fourth, '''alpha''' component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named `unused`). In SDL3, you should.
 * Alpha blending: use [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) instead of `SDL_SetAlpha()`. Alpha-blending on surfaces can be disabled via [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)() and on textures with [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)().
 * Colorkey: When calling [SDL_SetSurfaceColorKey](SDL_SetSurfaceColorKey)(), you should pass `true` instead of `SDL_SRCCOLORKEY`.
-* Color modulation: Some renderers now support a global color alteration (`srcC = srcC * color`), check [SDL_SetTextureColorMod](SDL_SetTextureColorMod)() for details.
+* Color modulation: Renderers now support a global color alteration (`srcC = srcC * color`), check [SDL_SetTextureColorMod](SDL_SetTextureColorMod)() for details.
 
 ### OpenGL
 
@@ -247,7 +247,7 @@ Scancodes are meant to be layout-independent. Think of this as "the user pressed
 
 Keycodes are meant to be layout-dependent. Think of this as "the user pressed the key that is labelled 'Q' on their specific keyboard."
 
-As an example, if you pressed the key that's two keys to the right of CAPS LOCK on a US QWERTY keyboard, it'll report a scancode of `SDL_SCANCODE_S` and a keycode of `SDLK_s`. The same key on a Dvorak keyboard, will report a scancode of `SDL_SCANCODE_S` and a keycode of `SDLK_o`.
+As an example, if you pressed the key that's two keys to the right of CAPS LOCK on a US QWERTY keyboard, it'll report a scancode of `SDL_SCANCODE_S` and a keycode of `SDLK_S`. The same key on a Dvorak keyboard, will report a scancode of `SDL_SCANCODE_S` and a keycode of `SDLK_O`.
 
 Note that both keycodes and scancodes are now 32 bits, and use a wide range of numbers. There's no `SDLK_LAST` anymore. If your program had a lookup table of `SDLK_LAST` elements, to map between SDL keys and whatever your application wanted internally, that's no longer feasible. Use a hash table instead. A `std::map` will do in C++. If you're mapping scancodes instead of keycodes, there's `SDL_NUM_SCANCODES`, which you can use for array bounds. It's 512 at the moment.
 
@@ -270,7 +270,7 @@ SDL_WM_GrabInput(SDL_GRAB_ON);
 In SDL3, this works slightly differently. You call...
 
 ```c
-SDL_SetRelativeMouseMode(true);
+SDL_SetWindowRelativeMouseMode(window, true);
 ```
 
 ...and SDL does the rest.
@@ -278,7 +278,7 @@ SDL_SetRelativeMouseMode(true);
 
 ### Events
 
-[SDL_PushEvent](SDL_PushEvent)() now returns 1 on success instead of 0.
+[SDL_PushEvent](SDL_PushEvent)() now returns true on success instead of 0.
 
 Events mask are now specified using ranges:
 
