@@ -1,6 +1,7 @@
 # Frequently Asked Questions
 
 Check these out if your questions aren't directly about using the library as a developer.
+
 |                               |                                             |
 | ----------------------------- | --------------------------------------------|
 | [General](FAQGeneral)         | General questions about SDL                 |
