@@ -27,9 +27,10 @@ information.
 
 ## Remarks
 
-Please see SDL_LoadAudio_IO() for a description of what the various
-LoadAudio functions do. This function uses properties to dictate how it
-operates, and exposes functionality the other functions don't provide.
+Please see [MIX_LoadAudio_IO](MIX_LoadAudio_IO)() for a description of what
+the various LoadAudio functions do. This function uses properties to
+dictate how it operates, and exposes functionality the other functions
+don't provide.
 
 These are the supported properties:
 
