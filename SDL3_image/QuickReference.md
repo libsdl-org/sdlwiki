@@ -93,5 +93,10 @@ IMG_Animation * IMG_LoadAnimationTyped_IO(SDL_IOStream *src, bool closeio, const
 void IMG_FreeAnimation(IMG_Animation *anim);                                                                       // Dispose of an IMG_Animation and free its resources.
 IMG_Animation * IMG_LoadGIFAnimation_IO(SDL_IOStream *src);                                                        // Load a GIF animation directly.
 IMG_Animation * IMG_LoadWEBPAnimation_IO(SDL_IOStream *src);                                                       // Load a WEBP animation directly.
+IMG_AnimationStream * IMG_CreateAnimationStream(const char *file);                                                 // Create an animation stream and save it to a file.
+IMG_AnimationStream * IMG_CreateAnimationStream_IO(SDL_IOStream *dst, bool closeio, const char *type);             // Create an animation stream and save it to an IOStream.
+IMG_AnimationStream * IMG_CreateAnimationStreamWithProperties(SDL_PropertiesID props);                             // Create an animation stream with the specified properties.
+bool IMG_AddAnimationFrame(IMG_AnimationStream *stream, SDL_Surface *surface, Uint64 pts);                         // Add a frame to a stream of images being saved.
+bool IMG_CloseAnimationStream(IMG_AnimationStream *stream);                                                        // Close an animation stream, finishing any encoding.
 ```
 
