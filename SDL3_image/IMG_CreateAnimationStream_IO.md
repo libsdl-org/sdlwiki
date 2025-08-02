@@ -15,11 +15,11 @@ IMG_AnimationStream * IMG_CreateAnimationStream_IO(SDL_IOStream *dst, bool close
 
 ## Function Parameters
 
-|                |             |                                                                        |
-| -------------- | ----------- | ---------------------------------------------------------------------- |
-| SDL_IOStream * | **dst**     | an SDL_IOStream that will be used to save the stream.                  |
-| bool           | **closeio** | true to close/free the SDL_IOStream when done, false to leave it open. |
-| const char *   | **type**    | a filename extension that represent this data ("WEBP", etc).           |
+|                |             |                                                                   |
+| -------------- | ----------- | ----------------------------------------------------------------- |
+| SDL_IOStream * | **dst**     | an SDL_IOStream that will be used to save the stream.             |
+| bool           | **closeio** | true to close the SDL_IOStream when done, false to leave it open. |
+| const char *   | **type**    | a filename extension that represent this data ("WEBP", etc).      |
 
 ## Return Value
 
@@ -29,8 +29,8 @@ SDL_GetError() for more information.
 
 ## Remarks
 
-If `closeio` is true, `src` will be closed before returning, if this
-function fails, or when the animation stream is closed, if this function
+If `closeio` is true, `dst` will be closed before returning if this
+function fails, or when the animation stream is closed if this function
 succeeds.
 
 ## Version

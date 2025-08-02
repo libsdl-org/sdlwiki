@@ -36,6 +36,8 @@ This function is available since SDL_image 3.4.0.
 ## See Also
 
 - [IMG_CreateAnimationStream](IMG_CreateAnimationStream)
+- [IMG_CreateAnimationStream_IO](IMG_CreateAnimationStream_IO)
+- [IMG_CreateAnimationStreamWithProperties](IMG_CreateAnimationStreamWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)
