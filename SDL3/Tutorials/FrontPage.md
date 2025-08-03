@@ -46,5 +46,6 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 
 - [Glusoft's SDL3 Tutorials](https://glusoft.com/sdl3-tutorials/): Covers setup of SDL3 and a variety of basic and advanced tutorials.
 - [Mike Shah's SDL3 Tutorial Video Playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-RZSmGbLkZvkgec6lJ0BfX): Covers setup of SDL3 and programming tutorials demonstrating the SDL3 API.
+- [DarkCybernetics](https://darkcybernetics.com ): creates comprehensive 2D/3D game tutorials using SDL2 and SDL3 also advanced Computer Science courses.
 
 If you come across good tutorials, please click [edit](https://wiki.libsdl.org/SDL3/Tutorials/FrontPage/edit) and add them!
