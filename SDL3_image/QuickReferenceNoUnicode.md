@@ -97,5 +97,6 @@ IMG_AnimationStream * IMG_CreateAnimationStream_IO(SDL_IOStream *dst, bool close
 IMG_AnimationStream * IMG_CreateAnimationStreamWithProperties(SDL_PropertiesID props);                             // Create an animation stream with the specified properties.
 bool IMG_AddAnimationFrame(IMG_AnimationStream *stream, SDL_Surface *surface, Uint64 pts);                         // Add a frame to a stream of images being saved.
 bool IMG_CloseAnimationStream(IMG_AnimationStream *stream);                                                        // Close an animation stream, finishing any encoding.
+IMG_Animation * IMG_LoadAPNGAnimation_IO(SDL_IOStream *src);                                                       // Load an APNG animation directly from an SDL_IOStream.
 ```
 
