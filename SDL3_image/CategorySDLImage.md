@@ -39,6 +39,7 @@ A simple library to load images of various formats as SDL surfaces
 - [IMG_LoadAnimation](IMG_LoadAnimation)
 - [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
 - [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
+- [IMG_LoadAPNGAnimation_IO](IMG_LoadAPNGAnimation_IO)
 - [IMG_LoadAVIF_IO](IMG_LoadAVIF_IO)
 - [IMG_LoadBMP_IO](IMG_LoadBMP_IO)
 - [IMG_LoadCUR_IO](IMG_LoadCUR_IO)
