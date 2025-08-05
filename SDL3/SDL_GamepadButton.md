@@ -31,7 +31,7 @@ typedef enum SDL_GamepadButton
     SDL_GAMEPAD_BUTTON_RIGHT_PADDLE1,   /**< Upper or primary paddle, under your right hand (e.g. Xbox Elite paddle P1, PS5 DualSense Edge RB button, Nintendo Switch Joy-Con (L) SR, Steam Deck L4) */
     SDL_GAMEPAD_BUTTON_LEFT_PADDLE1,    /**< Upper or primary paddle, under your left hand (e.g. Xbox Elite paddle P3, PS5 DualSense Edge LB button, Nintendo Switch Joy-Con (L) SL, Steam Deck L5) */
     SDL_GAMEPAD_BUTTON_RIGHT_PADDLE2,   /**< Lower or secondary paddle, under your right hand (e.g. Xbox Elite paddle P2, Nintendo Switch Joy-Con R SR, Steam Deck R4) */
-    SDL_GAMEPAD_BUTTON_LEFT_PADDLE2,    /**<  Lower or secondary paddle, under your left hand (e.g. Xbox Elite paddle P4, Nintendo Switch Joy-Con R SR, Steam Deck R5 */
+    SDL_GAMEPAD_BUTTON_LEFT_PADDLE2,    /**< Lower or secondary paddle, under your left hand (e.g. Xbox Elite paddle P4, Nintendo Switch Joy-Con R SR, Steam Deck R5 */
     SDL_GAMEPAD_BUTTON_TOUCHPAD,        /**< PS4/PS5 touchpad button */
     SDL_GAMEPAD_BUTTON_MISC2,           /**< Additional button */
     SDL_GAMEPAD_BUTTON_MISC3,           /**< Additional button (e.g. Nintendo GameCube right trigger click) */
