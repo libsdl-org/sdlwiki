@@ -32,7 +32,7 @@ If the file already exists, it will be overwritten.
 
 ## Version
 
-This function is available since SDL_image 3.2.18.
+This function is available since SDL_image 3.4.0.
 
 ## See Also
 
