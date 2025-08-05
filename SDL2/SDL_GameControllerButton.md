@@ -28,10 +28,10 @@ typedef enum SDL_GameControllerButton
     SDL_CONTROLLER_BUTTON_DPAD_LEFT,
     SDL_CONTROLLER_BUTTON_DPAD_RIGHT,
     SDL_CONTROLLER_BUTTON_MISC1,    /* Xbox Series X share button, PS5 microphone button, Nintendo Switch Pro capture button, Amazon Luna microphone button */
-    SDL_CONTROLLER_BUTTON_PADDLE1,  /* Xbox Elite paddle P1 (upper left, facing the back) */
-    SDL_CONTROLLER_BUTTON_PADDLE2,  /* Xbox Elite paddle P3 (upper right, facing the back) */
-    SDL_CONTROLLER_BUTTON_PADDLE3,  /* Xbox Elite paddle P2 (lower left, facing the back) */
-    SDL_CONTROLLER_BUTTON_PADDLE4,  /* Xbox Elite paddle P4 (lower right, facing the back) */
+    SDL_CONTROLLER_BUTTON_PADDLE1,  /* Xbox Elite paddle P1, PS5 DualSense Edge RB button, Nintendo Switch Joy-Con (L) SR, Steam Deck L4 button (upper left, facing the back) */
+    SDL_CONTROLLER_BUTTON_PADDLE2,  /* Xbox Elite paddle P3, PS5 DualSense Edge LB button, Nintendo Switch Joy-Con (L) SL, Steam Deck L5 button (upper right, facing the back) */
+    SDL_CONTROLLER_BUTTON_PADDLE3,  /* Xbox Elite paddle P2, Nintendo Switch Joy-Con (R) SR button, Steam Deck R4 button (lower left, facing the back) */
+    SDL_CONTROLLER_BUTTON_PADDLE4,  /* Xbox Elite paddle P4, Nintendo Switch Joy-Con (R) SR button, Steam Deck R5 button (lower right, facing the back) */
     SDL_CONTROLLER_BUTTON_TOUCHPAD, /* PS4/PS5 touchpad button */
     SDL_CONTROLLER_BUTTON_MAX
 } SDL_GameControllerButton;
