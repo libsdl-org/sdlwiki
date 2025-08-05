@@ -64,6 +64,8 @@
 - [IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888)
 - [IMG_SaveAVIF](IMG_SaveAVIF)
 - [IMG_SaveAVIF_IO](IMG_SaveAVIF_IO)
+- [IMG_SaveGIF](IMG_SaveGIF)
+- [IMG_SaveGIF_IO](IMG_SaveGIF_IO)
 - [IMG_SaveJPG](IMG_SaveJPG)
 - [IMG_SaveJPG_IO](IMG_SaveJPG_IO)
 - [IMG_SavePNG](IMG_SavePNG)
