@@ -35,6 +35,7 @@
 - [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
 - [IMG_LoadAPNGAnimation_IO](IMG_LoadAPNGAnimation_IO)
 - [IMG_LoadAVIF_IO](IMG_LoadAVIF_IO)
+- [IMG_LoadAVIFAnimation_IO](IMG_LoadAVIFAnimation_IO)
 - [IMG_LoadBMP_IO](IMG_LoadBMP_IO)
 - [IMG_LoadCUR_IO](IMG_LoadCUR_IO)
 - [IMG_LoadGIF_IO](IMG_LoadGIF_IO)
