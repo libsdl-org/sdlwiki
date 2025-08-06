@@ -20,10 +20,6 @@ typedef struct IMG_Animation
 } IMG_Animation;
 ```
 
-## Remarks
-
-Currently only animated GIFs and WEBP images are supported.
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySDLImage](CategorySDLImage)
 

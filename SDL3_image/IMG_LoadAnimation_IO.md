@@ -40,6 +40,12 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
+- [IMG_LoadAnimation](IMG_LoadAnimation)
+- [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
+- [IMG_LoadAPNGAnimation_IO](IMG_LoadAPNGAnimation_IO)
+- [IMG_LoadAVIFAnimation_IO](IMG_LoadAVIFAnimation_IO)
+- [IMG_LoadGIFAnimation_IO](IMG_LoadGIFAnimation_IO)
+- [IMG_LoadWEBPAnimation_IO](IMG_LoadWEBPAnimation_IO)
 - [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----

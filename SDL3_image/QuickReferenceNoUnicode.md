@@ -78,20 +78,22 @@ SDL_Surface * IMG_ReadXPMFromArray(char **xpm);                                 
 SDL_Surface * IMG_ReadXPMFromArrayToRGB888(char **xpm);                                                            // Load an XPM image from a memory array.
 bool IMG_SaveAVIF(SDL_Surface *surface, const char *file, int quality);                                            // Save an SDL_Surface into a AVIF image file.
 bool IMG_SaveAVIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                          // Save an SDL_Surface into AVIF image data, via an SDL_IOStream.
-bool IMG_SavePNG(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a PNG image file.
-bool IMG_SavePNG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into PNG image data, via an SDL_IOStream.
-bool IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);                                             // Save an SDL_Surface into a JPEG image file.
-bool IMG_SaveJPG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                           // Save an SDL_Surface into JPEG image data, via an SDL_IOStream.
-bool IMG_SaveWEBP_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, float quality);                        // Save an SDL_Surface into WEBP image data, via an SDL_IOStream.
-bool IMG_SaveWEBP(SDL_Surface *surface, const char *file, float quality);                                          // Save an SDL_Surface into a WEBP image file.
-bool IMG_SaveTGA_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into TGA image data, via an SDL_IOStream.
-bool IMG_SaveTGA(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a TGA image file.
 bool IMG_SaveGIF(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a GIF image file.
 bool IMG_SaveGIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into GIF image data, via an SDL_IOStream.
+bool IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);                                             // Save an SDL_Surface into a JPEG image file.
+bool IMG_SaveJPG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                           // Save an SDL_Surface into JPEG image data, via an SDL_IOStream.
+bool IMG_SavePNG(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a PNG image file.
+bool IMG_SavePNG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into PNG image data, via an SDL_IOStream.
+bool IMG_SaveTGA(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a TGA image file.
+bool IMG_SaveTGA_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into TGA image data, via an SDL_IOStream.
+bool IMG_SaveWEBP(SDL_Surface *surface, const char *file, float quality);                                          // Save an SDL_Surface into a WEBP image file.
+bool IMG_SaveWEBP_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, float quality);                        // Save an SDL_Surface into WEBP image data, via an SDL_IOStream.
 IMG_Animation * IMG_LoadAnimation(const char *file);                                                               // Load an animation from a file.
 IMG_Animation * IMG_LoadAnimation_IO(SDL_IOStream *src, bool closeio);                                             // Load an animation from an SDL_IOStream.
 IMG_Animation * IMG_LoadAnimationTyped_IO(SDL_IOStream *src, bool closeio, const char *type);                      // Load an animation from an SDL datasource
 void IMG_FreeAnimation(IMG_Animation *anim);                                                                       // Dispose of an IMG_Animation and free its resources.
+IMG_Animation * IMG_LoadAPNGAnimation_IO(SDL_IOStream *src);                                                       // Load an APNG animation directly from an SDL_IOStream.
+IMG_Animation * IMG_LoadAVIFAnimation_IO(SDL_IOStream *src);                                                       // Load an AVIF animation directly from an SDL_IOStream.
 IMG_Animation * IMG_LoadGIFAnimation_IO(SDL_IOStream *src);                                                        // Load a GIF animation directly.
 IMG_Animation * IMG_LoadWEBPAnimation_IO(SDL_IOStream *src);                                                       // Load a WEBP animation directly.
 IMG_AnimationStream * IMG_CreateAnimationStream(const char *file);                                                 // Create an animation stream and save it to a file.
@@ -99,7 +101,5 @@ IMG_AnimationStream * IMG_CreateAnimationStream_IO(SDL_IOStream *dst, bool close
 IMG_AnimationStream * IMG_CreateAnimationStreamWithProperties(SDL_PropertiesID props);                             // Create an animation stream with the specified properties.
 bool IMG_AddAnimationFrame(IMG_AnimationStream *stream, SDL_Surface *surface, Uint64 pts);                         // Add a frame to a stream of images being saved.
 bool IMG_CloseAnimationStream(IMG_AnimationStream *stream);                                                        // Close an animation stream, finishing any encoding.
-IMG_Animation * IMG_LoadAPNGAnimation_IO(SDL_IOStream *src);                                                       // Load an APNG animation directly from an SDL_IOStream.
-IMG_Animation * IMG_LoadAVIFAnimation_IO(SDL_IOStream *src);                                                       // Load an AVIF animation directly from an SDL_IOStream.
 ```
 
