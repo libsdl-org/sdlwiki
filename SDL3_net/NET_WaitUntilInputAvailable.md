@@ -41,7 +41,8 @@ The following things can be specified in the `vsockets` array, cast to
   be accepted with [NET_AcceptClient](NET_AcceptClient)())
 - [NET_StreamSocket](NET_StreamSocket) (reports new input when the remote
   end has sent more bytes of data to be read with
-  [NET_ReadFromStreamSocket](NET_ReadFromStreamSocket)).
+  [NET_ReadFromStreamSocket](NET_ReadFromStreamSocket), or if the socket
+  finished making its initial connection).
 - [NET_DatagramSocket](NET_DatagramSocket) (reports new input when a new
   packet arrives that can be read with
   [NET_ReceiveDatagram](NET_ReceiveDatagram)).
