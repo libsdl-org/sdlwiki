@@ -18,7 +18,7 @@ typedef enum SDL_GPUCompareOp
     SDL_GPU_COMPAREOP_LESS_OR_EQUAL,     /**< The comparison evaluates reference <= test. */
     SDL_GPU_COMPAREOP_GREATER,           /**< The comparison evaluates reference > test. */
     SDL_GPU_COMPAREOP_NOT_EQUAL,         /**< The comparison evaluates reference != test. */
-    SDL_GPU_COMPAREOP_GREATER_OR_EQUAL,  /**< The comparison evalutes reference >= test. */
+    SDL_GPU_COMPAREOP_GREATER_OR_EQUAL,  /**< The comparison evaluates reference >= test. */
     SDL_GPU_COMPAREOP_ALWAYS             /**< The comparison always evaluates true. */
 } SDL_GPUCompareOp;
 ```

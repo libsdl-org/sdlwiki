@@ -37,7 +37,7 @@ code.
 
 ## Remarks
 
-It returns the number of succesful conversions on success. On error,
+It returns the number of successful conversions on success. On error,
 [SDL_ICONV_E2BIG](SDL_ICONV_E2BIG) is returned when the output buffer is
 too small, or [SDL_ICONV_EILSEQ](SDL_ICONV_EILSEQ) is returned when an
 invalid input sequence is encountered, or

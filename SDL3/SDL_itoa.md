@@ -27,7 +27,7 @@ char * SDL_itoa(int value, char *str, int radix);
 ## Remarks
 
 This requires a radix to specified for string format. Specifying 10
-produces a decimal number, 16 hexidecimal, etc. Must be in the range of 2
+produces a decimal number, 16 hexadecimal, etc. Must be in the range of 2
 to 36.
 
 Note that this function will overflow a buffer if `str` is not large enough

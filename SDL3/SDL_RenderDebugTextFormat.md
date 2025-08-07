@@ -30,7 +30,7 @@ bool SDL_RenderDebugTextFormat(SDL_Renderer *renderer, float x, float y, const c
 ## Remarks
 
 This function will render a printf()-style format string to a renderer.
-Note that this is a convinence function for debugging, with severe
+Note that this is a convenience function for debugging, with severe
 limitations, and is not intended to be used for production apps and games.
 
 For the full list of limitations and other useful information, see

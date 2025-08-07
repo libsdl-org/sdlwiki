@@ -1,6 +1,6 @@
 # SDL_PushGPUDebugGroup
 
-Begins a debug group with an arbitary name.
+Begins a debug group with an arbitrary name.
 
 ## Header File
 

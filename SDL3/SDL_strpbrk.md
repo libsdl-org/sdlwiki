@@ -1,6 +1,6 @@
 # SDL_strpbrk
 
-Searches a string for the first occurence of any character contained in a breakset, and returns a pointer from the string to that character.
+Searches a string for the first occurrence of any character contained in a breakset, and returns a pointer from the string to that character.
 
 ## Header File
 
@@ -21,7 +21,7 @@ char * SDL_strpbrk(const char *str, const char *breakset);
 
 ## Return Value
 
-(char *) Returns A pointer to the location, in str, of the first occurence
+(char *) Returns A pointer to the location, in str, of the first occurrence
 of a character present in the breakset, or NULL if none is found.
 
 ## Thread Safety
