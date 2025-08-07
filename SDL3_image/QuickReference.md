@@ -77,8 +77,12 @@ SDL_Surface * IMG_LoadWEBP_IO(SDL_IOStream *src);                               
 SDL_Surface * IMG_LoadSizedSVG_IO(SDL_IOStream *src, int width, int height);                                       // Load an SVG image, scaled to a specific size.
 SDL_Surface * IMG_ReadXPMFromArray(char **xpm);                                                                    // Load an XPM image from a memory array.
 SDL_Surface * IMG_ReadXPMFromArrayToRGB888(char **xpm);                                                            // Load an XPM image from a memory array.
+bool IMG_Save(SDL_Surface *surface, const char *file);                                                             // Save an SDL_Surface into an image file.
+bool IMG_SaveTyped_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, const char *type);                    // Save an SDL_Surface into formatted image data, via an SDL_IOStream.
 bool IMG_SaveAVIF(SDL_Surface *surface, const char *file, int quality);                                            // Save an SDL_Surface into a AVIF image file.
 bool IMG_SaveAVIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                          // Save an SDL_Surface into AVIF image data, via an SDL_IOStream.
+bool IMG_SaveBMP(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a BMP image file.
+bool IMG_SaveBMP_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into BMP image data, via an SDL_IOStream.
 bool IMG_SaveGIF(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a GIF image file.
 bool IMG_SaveGIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into GIF image data, via an SDL_IOStream.
 bool IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);                                             // Save an SDL_Surface into a JPEG image file.
