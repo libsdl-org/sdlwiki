@@ -1336,6 +1336,7 @@ void * SDL_Metal_GetLayer(SDL_MetalView view);           // Get a pointer to the
 #define SDL_PLATFORM_VITA        // A preprocessor macro that is only defined if compiling for Sony Vita.
 #define SDL_PLATFORM_3DS         // A preprocessor macro that is only defined if compiling for Nintendo 3DS.
 #define SDL_PLATFORM_NGAGE       // A preprocessor macro that is only defined if compiling for the Nokia N-Gage.
+#define SDL_PLATFORM_HURD        // A preprocessor macro that is only defined if compiling for GNU/Hurd.
 
 // ██████╗   ██████╗  ██╗    ██╗ ███████╗ ██████╗
 // ██╔══██╗ ██╔═══██╗ ██║    ██║ ██╔════╝ ██╔══██╗
