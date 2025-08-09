@@ -1,6 +1,9 @@
 # SDL_FRect
 
-A rectangle, with the origin at the upper left (using floating point values).
+A rectangle stored using floating point values.
+
+The origin of the coordinate space is in the top-left, with increasing values moving down and right.
+The properties `x` and `y` represent the coordinates of the top-left corner of the rectangle.
 
 ## Header File
 
@@ -12,9 +15,9 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 typedef struct SDL_FRect
 {
     float x;
-    float y;
+    float y; 
     float w;
-    float h;
+    float h; 
 } SDL_FRect;
 ```
 
