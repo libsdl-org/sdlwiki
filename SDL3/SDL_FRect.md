@@ -2,9 +2,6 @@
 
 A rectangle stored using floating point values.
 
-The origin of the coordinate space is in the top-left, with increasing values moving down and right.
-The properties `x` and `y` represent the coordinates of the top-left corner of the rectangle.
-
 ## Header File
 
 Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h)
