@@ -15,7 +15,7 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 typedef struct SDL_FRect
 {
     float x;
-    float y; 
+    float y;
     float w;
     float h; 
 } SDL_FRect;
