@@ -17,6 +17,10 @@ int NET_Version(void);
 
 (int) Returns SDL_net version.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL_net 3.0.0.

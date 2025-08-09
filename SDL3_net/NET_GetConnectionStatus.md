@@ -10,7 +10,7 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-int NET_GetConnectionStatus(NET_StreamSocket *sock);
+NET_Status NET_GetConnectionStatus(NET_StreamSocket *sock);
 ```
 
 ## Function Parameters
@@ -21,8 +21,10 @@ int NET_GetConnectionStatus(NET_StreamSocket *sock);
 
 ## Return Value
 
-(int) Returns 1 if successfully connected, -1 if connection failed, 0 if
-still connecting; if -1, call SDL_GetError() for details.
+([NET_Status](NET_Status)) Returns [NET_SUCCESS](NET_SUCCESS) if
+successfully connected, [NET_FAILURE](NET_FAILURE) if connection failed,
+[NET_WAITING](NET_WAITING) if still connecting; if
+[NET_FAILURE](NET_FAILURE), call SDL_GetError() for details.
 
 ## Remarks
 

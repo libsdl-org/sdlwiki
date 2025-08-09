@@ -36,8 +36,8 @@ int NET_Version(void);                                                          
 bool NET_Init(void);                                                                                              // Initialize the SDL_net library.
 void NET_Quit(void);                                                                                              // Deinitialize the SDL_net library.
 NET_Address * NET_ResolveHostname(const char *host);                                                              // Resolve a human-readable hostname.
-int NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);                                                  // Block until an address is resolved.
-int NET_GetAddressStatus(NET_Address *address);                                                                   // Check if an address is resolved, without blocking.
+NET_Status NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);                                           // Block until an address is resolved.
+NET_Status NET_GetAddressStatus(NET_Address *address);                                                            // Check if an address is resolved, without blocking.
 const char * NET_GetAddressString(NET_Address *address);                                                          // Get a human-readable string from a resolved address.
 NET_Address * NET_RefAddress(NET_Address *address);                                                               // Add a reference to an NET_Address.
 void NET_UnrefAddress(NET_Address *address);                                                                      // Drop a reference to an NET_Address.
@@ -46,12 +46,12 @@ int NET_CompareAddresses(const NET_Address *a, const NET_Address *b);           
 NET_Address ** NET_GetLocalAddresses(int *num_addresses);                                                         // Obtain a list of local addresses on the system.
 void NET_FreeLocalAddresses(NET_Address **addresses);                                                             // Free the results from NET_GetLocalAddresses.
 NET_StreamSocket * NET_CreateClient(NET_Address *address, Uint16 port);                                           // Begin connecting a socket as a client to a remote server.
-int NET_WaitUntilConnected(NET_StreamSocket *sock, Sint32 timeout);                                               // Block until a stream socket has connected to a server.
+NET_Status NET_WaitUntilConnected(NET_StreamSocket *sock, Sint32 timeout);                                        // Block until a stream socket has connected to a server.
 NET_Server * NET_CreateServer(NET_Address *addr, Uint16 port);                                                    // Create a server, which listens for connections to accept.
 bool NET_AcceptClient(NET_Server *server, NET_StreamSocket **client_stream);                                      // Create a stream socket for the next pending client connection.
 void NET_DestroyServer(NET_Server *server);                                                                       // Dispose of a previously-created server.
 NET_Address * NET_GetStreamSocketAddress(NET_StreamSocket *sock);                                                 // Get the remote address of a stream socket.
-int NET_GetConnectionStatus(NET_StreamSocket *sock);                                                              // Check if a stream socket is connected, without blocking.
+NET_Status NET_GetConnectionStatus(NET_StreamSocket *sock);                                                       // Check if a stream socket is connected, without blocking.
 bool NET_WriteToStreamSocket(NET_StreamSocket *sock, const void *buf, int buflen);                                // Send bytes over a stream socket to a remote system.
 int NET_GetStreamSocketPendingWrites(NET_StreamSocket *sock);                                                     // Query bytes still pending transmission on a stream socket.
 int NET_WaitUntilStreamSocketDrained(NET_StreamSocket *sock, Sint32 timeout);                                     // Block until all of a stream socket's pending data is sent.

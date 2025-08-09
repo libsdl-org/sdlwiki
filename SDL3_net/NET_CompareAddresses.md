@@ -22,8 +22,8 @@ int NET_CompareAddresses(const NET_Address *a, const NET_Address *b);
 
 ## Return Value
 
-(int) Returns -1 if `a` is "less than" `b`, 1 if "greater than", 0 if
-equal.
+(int) Returns a value less than zero if `a` is "less than" `b`, a value
+greater than zero if "greater than", zero if equal.
 
 ## Remarks
 

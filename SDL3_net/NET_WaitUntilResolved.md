@@ -10,7 +10,7 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-int NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);
+NET_Status NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);
 ```
 
 ## Function Parameters
@@ -22,9 +22,11 @@ int NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);
 
 ## Return Value
 
-(int) Returns 1 if successfully resolved, -1 if resolution failed, 0 if
-still resolving (this function timed out without resolution); if -1, call
-SDL_GetError() for details.
+([NET_Status](NET_Status)) Returns [NET_SUCCESS](NET_SUCCESS) if
+successfully resolved, [NET_FAILURE](NET_FAILURE) if resolution failed,
+[NET_WAITING](NET_WAITING) if still resolving (this function timed out
+without resolution); if [NET_FAILURE](NET_FAILURE), call SDL_GetError() for
+details.
 
 ## Remarks
 
