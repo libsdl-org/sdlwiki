@@ -17,7 +17,7 @@ typedef struct SDL_FRect
     float x;
     float y;
     float w;
-    float h; 
+    float h;
 } SDL_FRect;
 ```
 
