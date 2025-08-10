@@ -26,7 +26,7 @@ bool SDL_RenamePath(const char *oldpath, const char *newpath);
 
 ## Remarks
 
-If the file at `newpath` already exists, it will replaced.
+If the file at `newpath` already exists, it will be replaced.
 
 Note that this will not copy files across filesystems/drives/volumes, as
 that is a much more complicated (and possibly time-consuming) operation.
