@@ -15,9 +15,9 @@ IMG_AnimationDecoder * IMG_CreateAnimationDecoder(const char *file);
 
 ## Function Parameters
 
-|              |          |                                             |
-| ------------ | -------- | ------------------------------------------- |
-| const char * | **file** | the file where the animation will be saved. |
+|              |          |                                         |
+| ------------ | -------- | --------------------------------------- |
+| const char * | **file** | the file containing a series of images. |
 
 ## Return Value
 
@@ -38,6 +38,8 @@ This function is available since SDL_image 3.4.0.
 
 - [IMG_CreateAnimationDecoder_IO](IMG_CreateAnimationDecoder_IO)
 - [IMG_CreateAnimationDecoderWithProperties](IMG_CreateAnimationDecoderWithProperties)
+- [IMG_GetAnimationDecoderFrame](IMG_GetAnimationDecoderFrame)
+- [IMG_ResetAnimationDecoder](IMG_ResetAnimationDecoder)
 - [IMG_CloseAnimationDecoder](IMG_CloseAnimationDecoder)
 
 ----

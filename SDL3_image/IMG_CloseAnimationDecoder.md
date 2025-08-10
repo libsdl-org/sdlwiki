@@ -38,7 +38,6 @@ This function is available since SDL_image 3.4.0.
 - [IMG_CreateAnimationDecoder](IMG_CreateAnimationDecoder)
 - [IMG_CreateAnimationDecoder_IO](IMG_CreateAnimationDecoder_IO)
 - [IMG_CreateAnimationDecoderWithProperties](IMG_CreateAnimationDecoderWithProperties)
-- [IMG_CreateAnimationDecoderWithProperties](IMG_CreateAnimationDecoderWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)

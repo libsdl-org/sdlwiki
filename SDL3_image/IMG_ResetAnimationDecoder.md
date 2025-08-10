@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_ResetAnimationDecoder
 
-Reset the animation decoder.
+Reset an animation decoder.
 
 ## Header File
 
@@ -36,7 +36,11 @@ This function is available since SDL_image 3.4.0.
 
 ## See Also
 
-- [IMG_GetNextAnimationDecoderFrame](IMG_GetNextAnimationDecoderFrame)
+- [IMG_CreateAnimationDecoder](IMG_CreateAnimationDecoder)
+- [IMG_CreateAnimationDecoder_IO](IMG_CreateAnimationDecoder_IO)
+- [IMG_CreateAnimationDecoderWithProperties](IMG_CreateAnimationDecoderWithProperties)
+- [IMG_GetAnimationDecoderFrame](IMG_GetAnimationDecoderFrame)
+- [IMG_CloseAnimationDecoder](IMG_CloseAnimationDecoder)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)

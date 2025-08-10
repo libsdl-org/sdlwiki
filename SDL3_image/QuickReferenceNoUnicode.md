@@ -108,10 +108,8 @@ bool IMG_CloseAnimationEncoder(IMG_AnimationEncoder *encoder);                  
 IMG_AnimationDecoder * IMG_CreateAnimationDecoder(const char *file);                                               // Create a decoder to read a series of images from a file.
 IMG_AnimationDecoder * IMG_CreateAnimationDecoder_IO(SDL_IOStream *src, bool closeio, const char *type);           // Create a decoder to read a series of images from an IOStream.
 IMG_AnimationDecoder * IMG_CreateAnimationDecoderWithProperties(SDL_PropertiesID props);                           // Create an animation decoder with the specified properties.
-SDL_PropertiesID IMG_GetAnimationDecoderMetadata(IMG_AnimationDecoder *decoder);                                   // Get the metadata of an animation decoder.
-bool IMG_GetNextAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **frame, Sint64 *pts);            // Get the next frame in an animation decoder.
+bool IMG_GetAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **frame, Uint64 *pts);                // Get the next frame in an animation decoder.
+bool IMG_ResetAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Reset an animation decoder.
 bool IMG_CloseAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Close an animation decoder, finishing any decoding.
-bool IMG_ResetAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Reset the animation decoder.
-int IMG_GetAnimationDecoderPresentationTimestampMS(IMG_AnimationDecoder *decoder, Sint64 pts);                     // Get the presentation timestamp of a frame in milliseconds.
 ```
 

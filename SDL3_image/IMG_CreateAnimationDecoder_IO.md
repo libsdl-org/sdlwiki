@@ -17,7 +17,7 @@ IMG_AnimationDecoder * IMG_CreateAnimationDecoder_IO(SDL_IOStream *src, bool clo
 
 |                |             |                                                                   |
 | -------------- | ----------- | ----------------------------------------------------------------- |
-| SDL_IOStream * | **src**     | an SDL_IOStream that will be used to decode binary from.          |
+| SDL_IOStream * | **src**     | an SDL_IOStream containing a series of images.                    |
 | bool           | **closeio** | true to close the SDL_IOStream when done, false to leave it open. |
 | const char *   | **type**    | a filename extension that represent this data ("WEBP", etc).      |
 
@@ -41,6 +41,8 @@ This function is available since SDL_image 3.4.0.
 
 - [IMG_CreateAnimationDecoder](IMG_CreateAnimationDecoder)
 - [IMG_CreateAnimationDecoderWithProperties](IMG_CreateAnimationDecoderWithProperties)
+- [IMG_GetAnimationDecoderFrame](IMG_GetAnimationDecoderFrame)
+- [IMG_ResetAnimationDecoder](IMG_ResetAnimationDecoder)
 - [IMG_CloseAnimationDecoder](IMG_CloseAnimationDecoder)
 
 ----
