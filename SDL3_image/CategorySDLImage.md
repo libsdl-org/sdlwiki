@@ -25,6 +25,7 @@ A simple library to load images of various formats as SDL surfaces
 - [IMG_CreateAnimationStream_IO](IMG_CreateAnimationStream_IO)
 - [IMG_CreateAnimationStreamWithProperties](IMG_CreateAnimationStreamWithProperties)
 - [IMG_FreeAnimation](IMG_FreeAnimation)
+- [IMG_GetAnimationDecoderFrame](IMG_GetAnimationDecoderFrame)
 - [IMG_GetAnimationDecoderMetadata](IMG_GetAnimationDecoderMetadata)
 - [IMG_GetAnimationDecoderPresentationTimestampMS](IMG_GetAnimationDecoderPresentationTimestampMS)
 - [IMG_GetNextAnimationDecoderFrame](IMG_GetNextAnimationDecoderFrame)
