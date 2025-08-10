@@ -18,6 +18,12 @@ typedef struct SDL_FRect
 } SDL_FRect;
 ```
 
+## Remarks
+
+The origin of the coordinate space is in the top-left, with increasing
+values moving down and right. The properties `x` and `y` represent the
+coordinates of the top-left corner of the rectangle.
+
 ## Version
 
 This struct is available since SDL 3.2.0.
