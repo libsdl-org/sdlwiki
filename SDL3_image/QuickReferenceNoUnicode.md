@@ -100,10 +100,18 @@ IMG_Animation * IMG_LoadAPNGAnimation_IO(SDL_IOStream *src);                    
 IMG_Animation * IMG_LoadAVIFAnimation_IO(SDL_IOStream *src);                                                       // Load an AVIF animation directly from an SDL_IOStream.
 IMG_Animation * IMG_LoadGIFAnimation_IO(SDL_IOStream *src);                                                        // Load a GIF animation directly.
 IMG_Animation * IMG_LoadWEBPAnimation_IO(SDL_IOStream *src);                                                       // Load a WEBP animation directly.
-IMG_AnimationStream * IMG_CreateAnimationStream(const char *file);                                                 // Create an animation stream and save it to a file.
-IMG_AnimationStream * IMG_CreateAnimationStream_IO(SDL_IOStream *dst, bool closeio, const char *type);             // Create an animation stream and save it to an IOStream.
-IMG_AnimationStream * IMG_CreateAnimationStreamWithProperties(SDL_PropertiesID props);                             // Create an animation stream with the specified properties.
-bool IMG_AddAnimationFrame(IMG_AnimationStream *stream, SDL_Surface *surface, Uint64 pts);                         // Add a frame to a stream of images being saved.
-bool IMG_CloseAnimationStream(IMG_AnimationStream *stream);                                                        // Close an animation stream, finishing any encoding.
+IMG_AnimationEncoder * IMG_CreateAnimationEncoder(const char *file);                                               // Create an encoder to save a series of images to a file.
+IMG_AnimationEncoder * IMG_CreateAnimationEncoder_IO(SDL_IOStream *dst, bool closeio, const char *type);           // Create an encoder to save a series of images to an IOStream.
+IMG_AnimationEncoder * IMG_CreateAnimationEncoderWithProperties(SDL_PropertiesID props);                           // Create an animation encoder with the specified properties.
+bool IMG_AddAnimationEncoderFrame(IMG_AnimationEncoder *encoder, SDL_Surface *surface, Uint64 pts);                // Add a frame to an animation encoder.
+bool IMG_CloseAnimationEncoder(IMG_AnimationEncoder *encoder);                                                     // Close an animation encoder, finishing any encoding.
+IMG_AnimationDecoder * IMG_CreateAnimationDecoder(const char *file);                                               // Create a decoder to read a series of images from a file.
+IMG_AnimationDecoder * IMG_CreateAnimationDecoder_IO(SDL_IOStream *src, bool closeio, const char *type);           // Create a decoder to read a series of images from an IOStream.
+IMG_AnimationDecoder * IMG_CreateAnimationDecoderWithProperties(SDL_PropertiesID props);                           // Create an animation decoder with the specified properties.
+SDL_PropertiesID IMG_GetAnimationDecoderMetadata(IMG_AnimationDecoder *decoder);                                   // Get the metadata of an animation decoder.
+bool IMG_GetNextAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **frame, Sint64 *pts);            // Get the next frame in an animation decoder.
+bool IMG_CloseAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Close an animation decoder, finishing any decoding.
+bool IMG_ResetAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Reset the animation decoder.
+int IMG_GetAnimationDecoderPresentationTimestampMS(IMG_AnimationDecoder *decoder, Sint64 pts);                     // Get the presentation timestamp of a frame in milliseconds.
 ```
 
