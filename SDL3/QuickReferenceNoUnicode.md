@@ -64,6 +64,15 @@ bool SDL_OutOfMemory(void);                       // Set an error indicating tha
 const char * SDL_GetError(void);                  // Retrieve a message about the last error that occurred on the current thread.
 bool SDL_ClearError(void);                        // Clear any previous error message for this thread.
 
+// XX    XX  XXXXXXX  XXXXXX    XXXXXX  XX   XXXXXX   XXX    XX
+// XX    XX  XX       XX   XX  XX       XX  XX    XX  XXXX   XX
+// XX    XX  XXXXX    XXXXXX   XXXXXXX  XX  XX    XX  XX XX  XX
+//  XX  XX   XX       XX   XX       XX  XX  XX    XX  XX  XX XX
+//   XXXX    XXXXXXX  XX   XX  XXXXXX   XX   XXXXXX   XX   XXXX
+
+int SDL_GetVersion(void);            // Get the version of SDL that is linked against your program.
+const char * SDL_GetRevision(void);  // Get the code revision of the SDL library that is linked against your program.
+
 // XXXXXX   XXXXXX    XXXXXX   XXXXXX   XXXXXXX  XXXXXX   XXXXXXXX  XX  XXXXXXX   XXXXXX
 // XX   XX  XX   XX  XX    XX  XX   XX  XX       XX   XX     XX     XX  XX       XX
 // XXXXXX   XXXXXX   XX    XX  XXXXXX   XXXXX    XXXXXX      XX     XX  XXXXX    XXXXXXX
@@ -1491,24 +1500,6 @@ bool SDL_OpenURL(const char *url);  // Open a URL/URI in the browser or other ap
 
 void SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);  // Get an ASCII string representation for a given SDL_GUID.
 SDL_GUID SDL_StringToGUID(const char *pchGUID);                   // Convert a GUID string into a SDL_GUID structure.
-
-// XXX    XXX   XXXXX   XX  XXX    XX
-// XXXX  XXXX  XX   XX  XX  XXXX   XX
-// XX XXXX XX  XXXXXXX  XX  XX XX  XX
-// XX  XX  XX  XX   XX  XX  XX  XX XX
-// XX      XX  XX   XX  XX  XX   XXXX
-
-SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv);                                                                                                  // App-implemented initial entry point for SDL_MAIN_USE_CALLBACKS apps.
-SDL_AppResult SDL_AppIterate(void *appstate);                                                                                                                       // App-implemented iteration entry point for SDL_MAIN_USE_CALLBACKS apps.
-SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event);                                                                                                       // App-implemented event entry point for SDL_MAIN_USE_CALLBACKS apps.
-void SDL_AppQuit(void *appstate, SDL_AppResult result);                                                                                                             // App-implemented deinit entry point for SDL_MAIN_USE_CALLBACKS apps.
-int SDL_main(int argc, char **argv);                                                                                                                                // An app-supplied function for program entry.
-void SDL_SetMainReady(void);                                                                                                                                        // Circumvent failure of SDL_Init() when not using SDL_main() as an entry point.
-int SDL_RunApp(int argc, char **argv, SDL_main_func mainFunction, void *reserved);                                                                                  // Initializes and launches an SDL application, by doing platform-specific initialization before calling your mainFunction and cleanups after it returns, if that is needed for a specific platform, otherwise it just calls mainFunction.
-int SDL_EnterAppMainCallbacks(int argc, char **argv, SDL_AppInit_func appinit, SDL_AppIterate_func appiter, SDL_AppEvent_func appevent, SDL_AppQuit_func appquit);  // An entry point for SDL's use in SDL_MAIN_USE_CALLBACKS.
-bool SDL_RegisterApp(const char *name, Uint32 style, void *hInst);                                                                                                  // Register a win32 window class for SDL's use.
-void SDL_UnregisterApp(void);                                                                                                                                       // Deregister the win32 window class from an SDL_RegisterApp call.
-void SDL_GDKSuspendComplete(void);                                                                                                                                  // Callback from the application to let the suspend continue.
 
 //  XXXXXX  XXXXXXXX  XXXXXX   XX  XXX    XX   XXXXXX
 // XX          XX     XX   XX  XX  XXXX   XX  XX

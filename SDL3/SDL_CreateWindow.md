@@ -78,8 +78,8 @@ prepared to handle a window of any size.
   be focusable
 
 The [SDL_Window](SDL_Window) will be shown if
-[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN) is not set. If hidden at creation 
-time, SDL_ShowWindow() can be used to show it later.
+[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN) is not set. If hidden at creation
+time, [SDL_ShowWindow](SDL_ShowWindow)() can be used to show it later.
 
 On Apple's macOS, you **must** set the NSHighResolutionCapable Info.plist
 property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
