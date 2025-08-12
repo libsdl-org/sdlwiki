@@ -38,8 +38,6 @@ prepared to handle a window of any size.
   desktop resolution
 - [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL): window usable with an OpenGL
   context
-- [`SDL_WINDOW_OCCLUDED`](SDL_WINDOW_OCCLUDED): window partially or
-  completely obscured by another window
 - [`SDL_WINDOW_HIDDEN`](SDL_WINDOW_HIDDEN): window is not visible
 - [`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS): no window decoration
 - [`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE): window can be resized
