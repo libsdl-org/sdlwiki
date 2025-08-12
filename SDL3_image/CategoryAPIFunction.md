@@ -22,6 +22,7 @@
 - [IMG_GetAnimationDecoderFrame](IMG_GetAnimationDecoderFrame)
 - [IMG_GetAnimationDecoderMetadata](IMG_GetAnimationDecoderMetadata)
 - [IMG_GetAnimationDecoderPresentationTimestampMS](IMG_GetAnimationDecoderPresentationTimestampMS)
+- [IMG_GetAnimationDecoderProperties](IMG_GetAnimationDecoderProperties)
 - [IMG_GetNextAnimationDecoderFrame](IMG_GetNextAnimationDecoderFrame)
 - [IMG_isAVIF](IMG_isAVIF)
 - [IMG_isBMP](IMG_isBMP)
