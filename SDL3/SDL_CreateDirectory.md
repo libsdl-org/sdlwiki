@@ -30,6 +30,10 @@ This reports success if `path` already exists as a directory.
 If parent directories are missing, it will also create them. Note that if
 this fails, it will not remove any parent directories it already made.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

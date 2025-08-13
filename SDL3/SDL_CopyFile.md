@@ -55,6 +55,12 @@ If the copy fails for any reason, the state of `newpath` is undefined. It
 might be half a copy, it might be the untouched data of what was already
 there, or it might be a zero-byte file, etc.
 
+## Thread Safety
+
+It is safe to call this function from any thread, but this operation is not
+atomic, so the app might need to protect access to specific paths from
+other threads if appropriate.
+
 ## Version
 
 This function is available since SDL 3.2.0.

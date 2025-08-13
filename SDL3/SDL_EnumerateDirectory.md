@@ -38,6 +38,10 @@ callback returns [SDL_ENUM_FAILURE](SDL_ENUM_FAILURE). A successful return
 means a callback returned [SDL_ENUM_SUCCESS](SDL_ENUM_SUCCESS) to halt
 enumeration, or all directory entries were enumerated.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

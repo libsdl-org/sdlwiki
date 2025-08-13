@@ -38,6 +38,10 @@ a temporary file in the same directory as `newpath`, then
 Renaming a non-empty directory across filesystems is dramatically more
 complex, however.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

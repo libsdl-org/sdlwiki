@@ -49,6 +49,10 @@ the executable. As such it is not a writable directory.
 The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.
