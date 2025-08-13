@@ -104,13 +104,13 @@ IMG_Animation * IMG_LoadWEBPAnimation_IO(SDL_IOStream *src);                    
 IMG_AnimationEncoder * IMG_CreateAnimationEncoder(const char *file);                                               // Create an encoder to save a series of images to a file.
 IMG_AnimationEncoder * IMG_CreateAnimationEncoder_IO(SDL_IOStream *dst, bool closeio, const char *type);           // Create an encoder to save a series of images to an IOStream.
 IMG_AnimationEncoder * IMG_CreateAnimationEncoderWithProperties(SDL_PropertiesID props);                           // Create an animation encoder with the specified properties.
-bool IMG_AddAnimationEncoderFrame(IMG_AnimationEncoder *encoder, SDL_Surface *surface, Uint64 pts);                // Add a frame to an animation encoder.
+bool IMG_AddAnimationEncoderFrame(IMG_AnimationEncoder *encoder, SDL_Surface *surface, Uint64 duration);           // Add a frame to an animation encoder.
 bool IMG_CloseAnimationEncoder(IMG_AnimationEncoder *encoder);                                                     // Close an animation encoder, finishing any encoding.
 IMG_AnimationDecoder * IMG_CreateAnimationDecoder(const char *file);                                               // Create a decoder to read a series of images from a file.
 IMG_AnimationDecoder * IMG_CreateAnimationDecoder_IO(SDL_IOStream *src, bool closeio, const char *type);           // Create a decoder to read a series of images from an IOStream.
 IMG_AnimationDecoder * IMG_CreateAnimationDecoderWithProperties(SDL_PropertiesID props);                           // Create an animation decoder with the specified properties.
 SDL_PropertiesID IMG_GetAnimationDecoderProperties(IMG_AnimationDecoder *decoder);                                 // Get the properties of an animation decoder.
-bool IMG_GetAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **frame, Uint64 *pts);                // Get the next frame in an animation decoder.
+bool IMG_GetAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **frame, Uint64 *duration);           // Get the next frame in an animation decoder.
 bool IMG_ResetAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Reset an animation decoder.
 bool IMG_CloseAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Close an animation decoder, finishing any decoding.
 ```

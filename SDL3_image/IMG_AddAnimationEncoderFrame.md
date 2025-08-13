@@ -10,16 +10,16 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-bool IMG_AddAnimationEncoderFrame(IMG_AnimationEncoder *encoder, SDL_Surface *surface, Uint64 pts);
+bool IMG_AddAnimationEncoderFrame(IMG_AnimationEncoder *encoder, SDL_Surface *surface, Uint64 duration);
 ```
 
 ## Function Parameters
 
-|                                                |             |                                                                                                                                                                                                                                                                            |
-| ---------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [IMG_AnimationEncoder](IMG_AnimationEncoder) * | **encoder** | the receiving images.                                                                                                                                                                                                                                                      |
-| SDL_Surface *                                  | **surface** | the surface to add as the next frame in the animation.                                                                                                                                                                                                                     |
-| Uint64                                         | **pts**     | the presentation timestamp of the frame, usually in milliseconds but can be other units if the [`IMG_PROP_ANIMATION_ENCODER_CREATE_TIMEBASE_DENOMINATOR_NUMBER`](IMG_PROP_ANIMATION_ENCODER_CREATE_TIMEBASE_DENOMINATOR_NUMBER) property is set when creating the encoder. |
+|                                                |              |                                                                                                                                                                                                                                                              |
+| ---------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [IMG_AnimationEncoder](IMG_AnimationEncoder) * | **encoder**  | the receiving images.                                                                                                                                                                                                                                        |
+| SDL_Surface *                                  | **surface**  | the surface to add as the next frame in the animation.                                                                                                                                                                                                       |
+| Uint64                                         | **duration** | the duration of the frame, usually in milliseconds but can be other units if the [`IMG_PROP_ANIMATION_ENCODER_CREATE_TIMEBASE_DENOMINATOR_NUMBER`](IMG_PROP_ANIMATION_ENCODER_CREATE_TIMEBASE_DENOMINATOR_NUMBER) property is set when creating the encoder. |
 
 ## Return Value
 
