@@ -34,7 +34,7 @@ All right, yeah, and so kind of to build on that a little bit, I think. So to re
 
 So I'm talking a little bit about, so what is SDL? So a few of you said you use it at work, and Mike referenced it a little bit, but SDL is basically a platform library for games. So let's say you didn't use something like SDL, and let's say you wanted to make that basic hello triangle OpenGL program. Well, the first problem is, okay, I need to make a window, right? And then it's like, well, if I make a window on Windows, I have to use Win32 API, or something like that. If I want to make a window on Mac, I may have to write some Objective-C and be very sad about that.
 
-Everyone: *laughter*
+***Everyone:*** *laughter*
 
 ***Sanjay:***
 Yeah. And if I'm on Linux, it's going to be like X11 or or Wayland, and then you think about, what about other platforms? I want to do a PS5 game or a Switch game or iOS and all these platforms. And it's like, I don't want to write like eight different, "I create a window" code, but that's what you have to do if you don't use a library. There are other options like GLUT or something like that, but that's not really supported anymore. So the great thing about SDL is it’s platform layer, specifically designed to be high performance, specifically designed for games. So as Mike referenced for a long time, they've had a 2D rendering API that you can use if you will make sprite based games. It's really simple to just render some textures and do your sprite based games. But it's not only graphics, right? It's like platform stuff, it's like file IO, it's audio, it's controller, joystick, threading, input, you know, So all the stuff that like, it makes it so that you, especially as an independent developer, you don't have to write all this code yourself, right? And actually, like, I don't know if this is still the case, but at least in earlier versions of Unreal 5, the Linux port of Unreal 5 actually used SDL.
@@ -406,7 +406,7 @@ I saw that you have a limit of 4 uniform buffers. Is that like, a Vulkan thing?
 ***Evan:***
 So yeah, we have a we have a max of four per stage, so you can have four in the vertex shader and four in the fragment shader. So the reason for that is, I mean, I guess just getting into like the design of the API, I guess, so the way that you interact with uniform or constant buffers is we have a call for that called like Push GPU Vertex Uniforms, Push GPU Fragment Uniforms, etc. So kind of treat it like a push style API. I wanted to use actual Vulkan push commands, but they have some really weird restrictions. Like, you can't have more than like four kilobytes of data in the buffer. It'll crash.
 
-***sAudience member:***
+***Audience member:***
 Do you support push constants?
 
 ***Evan:***
