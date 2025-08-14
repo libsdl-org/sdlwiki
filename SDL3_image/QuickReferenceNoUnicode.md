@@ -110,6 +110,7 @@ IMG_AnimationDecoder * IMG_CreateAnimationDecoder_IO(SDL_IOStream *src, bool clo
 IMG_AnimationDecoder * IMG_CreateAnimationDecoderWithProperties(SDL_PropertiesID props);                           // Create an animation decoder with the specified properties.
 SDL_PropertiesID IMG_GetAnimationDecoderProperties(IMG_AnimationDecoder *decoder);                                 // Get the properties of an animation decoder.
 bool IMG_GetAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **frame, Uint64 *duration);           // Get the next frame in an animation decoder.
+IMG_AnimationDecoderStatus IMG_GetAnimationDecoderStatus(IMG_AnimationDecoder *decoder);                           // Get the decoder status indicating the current state of the decoder.
 bool IMG_ResetAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Reset an animation decoder.
 bool IMG_CloseAnimationDecoder(IMG_AnimationDecoder *decoder);                                                     // Close an animation decoder, finishing any decoding.
 ```
