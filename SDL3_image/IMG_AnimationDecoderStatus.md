@@ -12,13 +12,17 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ```c
 typedef enum IMG_AnimationDecoderStatus
 {
-	IMG_DECODER_STATUS_OK, 	            /**< Decoded the frame successfully. */
-	IMG_DECODER_STATUS_FAILED,           /**< Decoding the frame failed. Call SDL_GetError for more information. */
-	IMG_DECODER_STATUS_COMPLETE, 	    /**< No more frames available. */
+    IMG_DECODER_STATUS_OK,          /**< Decoded the frame successfully. */
+    IMG_DECODER_STATUS_FAILED,      /**< Decoding the frame failed. Call SDL_GetError for more information. */
+    IMG_DECODER_STATUS_COMPLETE,    /**< No more frames available. */
 
-    IMG_DECODER_STATUS_INVALID,          /**< Invalid decoder status that does not represent any valid status. */
+    IMG_DECODER_STATUS_INVALID      /**< Invalid decoder status that does not represent any valid status. */
 } IMG_AnimationDecoderStatus;
 ```
+
+## Version
+
+This enum is available since SDL_image 3.4.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategorySDLImage](CategorySDLImage)
