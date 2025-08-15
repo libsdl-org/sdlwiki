@@ -24,7 +24,9 @@ bool IMG_GetAnimationDecoderFrame(IMG_AnimationDecoder *decoder, SDL_Surface **f
 ## Return Value
 
 (bool) Returns true on success or false on failure and when no more frames
-are available; call SDL_GetError() for more information.
+are available; call
+[IMG_GetAnimationDecoderStatus](IMG_GetAnimationDecoderStatus)() or
+SDL_GetError() for more information.
 
 ## Remarks
 
@@ -47,6 +49,7 @@ This function is available since SDL_image 3.4.0.
 - [IMG_CreateAnimationDecoder](IMG_CreateAnimationDecoder)
 - [IMG_CreateAnimationDecoder_IO](IMG_CreateAnimationDecoder_IO)
 - [IMG_CreateAnimationDecoderWithProperties](IMG_CreateAnimationDecoderWithProperties)
+- [IMG_GetAnimationDecoderStatus](IMG_GetAnimationDecoderStatus)
 - [IMG_ResetAnimationDecoder](IMG_ResetAnimationDecoder)
 - [IMG_CloseAnimationDecoder](IMG_CloseAnimationDecoder)
 
