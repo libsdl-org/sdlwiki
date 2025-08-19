@@ -33,6 +33,10 @@ or compute pass before ending the copy pass.
 
 This function is available since SDL 3.2.0.
 
+## See Also
+
+- [SDL_EndGPUCopyPass](SDL_EndGPUCopyPass)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 
