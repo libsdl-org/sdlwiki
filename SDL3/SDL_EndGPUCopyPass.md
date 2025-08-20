@@ -23,10 +23,6 @@ void SDL_EndGPUCopyPass(
 
 This function is available since SDL 3.2.0.
 
-## See Also
-
-- [SDL_BeginGPUCopyPass](SDL_BeginGPUCopyPass)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
 
