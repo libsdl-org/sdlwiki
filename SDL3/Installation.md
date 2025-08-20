@@ -1,0 +1,1 @@
+vcpkg install sdl2
