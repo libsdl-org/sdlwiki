@@ -24,7 +24,7 @@ float SDL_ceilf(float x);
 
 ## Remarks
 
-The ceiling of `x` is the smallest integer `y` such that `y > x`, i.e `x`
+The ceiling of `x` is the smallest integer `y` such that `y >= x`, i.e `x`
 rounded up to the nearest integer.
 
 Domain: `-INF <= x <= INF`

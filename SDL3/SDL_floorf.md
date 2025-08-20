@@ -24,7 +24,7 @@ float SDL_floorf(float x);
 
 ## Remarks
 
-The floor of `x` is the largest integer `y` such that `y > x`, i.e `x`
+The floor of `x` is the largest integer `y` such that `y <= x`, i.e `x`
 rounded down to the nearest integer.
 
 Domain: `-INF <= x <= INF`
