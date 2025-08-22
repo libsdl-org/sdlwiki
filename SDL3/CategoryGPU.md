@@ -224,7 +224,8 @@ Requires Vulkan 1.0 with the following extensions and device features:
 SDL driver name: "direct3d12"
 
 Supported on Windows 10 or newer, Xbox One (GDK), and Xbox Series X|S
-(GDK). Requires a GPU that supports DirectX 12 Feature Level 11_1.
+(GDK). Requires a GPU that supports DirectX 12 Feature Level 11_0 and
+Resource Binding Tier 2 or above.
 
 ### Metal
 
