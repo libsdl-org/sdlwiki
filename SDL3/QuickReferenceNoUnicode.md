@@ -1065,7 +1065,7 @@ SDL_CameraSpec ** SDL_GetCameraSupportedFormats(SDL_CameraID instance_id, int *c
 const char * SDL_GetCameraName(SDL_CameraID instance_id);                               // Get the human-readable device name for a camera.
 SDL_CameraPosition SDL_GetCameraPosition(SDL_CameraID instance_id);                     // Get the position of the camera in relation to the system.
 SDL_Camera * SDL_OpenCamera(SDL_CameraID instance_id, const SDL_CameraSpec *spec);      // Open a video recording device (a "camera").
-int SDL_GetCameraPermissionState(SDL_Camera *camera);                                   // Query if camera access has been approved by the user.
+SDL_CameraPermissionState SDL_GetCameraPermissionState(SDL_Camera *camera);             // Query if camera access has been approved by the user.
 SDL_CameraID SDL_GetCameraID(SDL_Camera *camera);                                       // Get the instance ID of an opened camera.
 SDL_PropertiesID SDL_GetCameraProperties(SDL_Camera *camera);                           // Get the properties associated with an opened camera.
 bool SDL_GetCameraFormat(SDL_Camera *camera, SDL_CameraSpec *spec);                     // Get the spec that a camera is using when generating images.

@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_GetCameraPermissionState(SDL_Camera *camera);
+SDL_CameraPermissionState SDL_GetCameraPermissionState(SDL_Camera *camera);
 ```
 
 ## Function Parameters
@@ -20,8 +20,9 @@ int SDL_GetCameraPermissionState(SDL_Camera *camera);
 
 ## Return Value
 
-(int) Returns -1 if user denied access to the camera, 1 if user approved
-access, 0 if no decision has been made yet.
+([SDL_CameraPermissionState](SDL_CameraPermissionState)) Returns -1 if user
+denied access to the camera, 1 if user approved access, 0 if no decision
+has been made yet.
 
 ## Remarks
 
