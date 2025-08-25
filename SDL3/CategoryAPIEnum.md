@@ -18,6 +18,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_BitmapOrder](SDL_BitmapOrder)
 - [SDL_BlendFactor](SDL_BlendFactor)
 - [SDL_BlendOperation](SDL_BlendOperation)
+- [SDL_CameraPermissionState](SDL_CameraPermissionState)
 - [SDL_CameraPosition](SDL_CameraPosition)
 - [SDL_Capitalization](SDL_Capitalization)
 - [SDL_ChromaLocation](SDL_ChromaLocation)

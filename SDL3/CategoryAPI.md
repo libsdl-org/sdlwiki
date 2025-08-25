@@ -1635,6 +1635,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_BitmapOrder](SDL_BitmapOrder)
 - [SDL_BlendFactor](SDL_BlendFactor)
 - [SDL_BlendOperation](SDL_BlendOperation)
+- [SDL_CameraPermissionState](SDL_CameraPermissionState)
 - [SDL_CameraPosition](SDL_CameraPosition)
 - [SDL_Capitalization](SDL_Capitalization)
 - [SDL_ChromaLocation](SDL_ChromaLocation)
