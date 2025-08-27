@@ -16,6 +16,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_AcquireGPUCommandBuffer](SDL_AcquireGPUCommandBuffer)
 - [SDL_AcquireGPUSwapchainTexture](SDL_AcquireGPUSwapchainTexture)
 - [SDL_AddAtomicInt](SDL_AddAtomicInt)
+- [SDL_AddAtomicU32](SDL_AddAtomicU32)
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 - [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 - [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
