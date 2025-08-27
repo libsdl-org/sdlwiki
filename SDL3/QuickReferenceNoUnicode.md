@@ -816,6 +816,7 @@ int SDL_AddAtomicInt(SDL_AtomicInt *a, int v);                                  
 bool SDL_CompareAndSwapAtomicU32(SDL_AtomicU32 *a, Uint32 oldval, Uint32 newval);  // Set an atomic variable to a new value if it is currently an old value.
 Uint32 SDL_SetAtomicU32(SDL_AtomicU32 *a, Uint32 v);                               // Set an atomic variable to a value.
 Uint32 SDL_GetAtomicU32(SDL_AtomicU32 *a);                                         // Get the value of an atomic variable.
+Uint32 SDL_AddAtomicU32(SDL_AtomicU32 *a, int v);                                  // Add to an atomic variable.
 bool SDL_CompareAndSwapAtomicPointer(void **a, void *oldval, void *newval);        // Set a pointer to a new value if it is currently an old value.
 void * SDL_SetAtomicPointer(void **a, void *v);                                    // Set a pointer to a value atomically.
 void * SDL_GetAtomicPointer(void **a);                                             // Get the value of a pointer atomically.
