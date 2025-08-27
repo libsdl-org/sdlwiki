@@ -82,7 +82,7 @@ This function is available since SDL_mixer 3.0.0.
 
 - [MIX_DestroyAudio](MIX_DestroyAudio)
 - [MIX_SetTrackAudio](MIX_SetTrackAudio)
-- [MIX_LoadAudio_IO](MIX_LoadAudio_IO)
+- [MIX_LoadAudio](MIX_LoadAudio)
 - [MIX_LoadAudioWithProperties](MIX_LoadAudioWithProperties)
 
 ----
