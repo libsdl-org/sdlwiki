@@ -28,7 +28,7 @@ bool SDL_SaveFile_IO(SDL_IOStream *src, const void *data, size_t datasize, bool 
 
 ## Thread Safety
 
-This function is not thread safe.
+Do not use the same [SDL_IOStream](SDL_IOStream) from two threads at once.
 
 ## Version
 

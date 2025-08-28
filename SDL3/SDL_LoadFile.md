@@ -34,7 +34,7 @@ The data should be freed with [SDL_free](SDL_free)().
 
 ## Thread Safety
 
-This function is not thread safe.
+It is safe to call this function from any thread.
 
 ## Version
 

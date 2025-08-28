@@ -31,7 +31,7 @@ This function does formatted printing to the stream.
 
 ## Thread Safety
 
-This function is not thread safe.
+Do not use the same [SDL_IOStream](SDL_IOStream) from two threads at once.
 
 ## Version
 

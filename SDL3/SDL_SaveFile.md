@@ -27,7 +27,7 @@ bool SDL_SaveFile(const char *file, const void *data, size_t datasize);
 
 ## Thread Safety
 
-This function is not thread safe.
+It is safe to call this function from any thread.
 
 ## Version
 

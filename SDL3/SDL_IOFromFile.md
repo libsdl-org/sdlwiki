@@ -95,7 +95,7 @@ The following properties may be set at creation time by SDL:
 
 ## Thread Safety
 
-This function is not thread safe.
+It is safe to call this function from any thread.
 
 ## Version
 

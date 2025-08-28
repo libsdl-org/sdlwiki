@@ -40,7 +40,7 @@ If this stream can not seek, it will return -1.
 
 ## Thread Safety
 
-This function is not thread safe.
+Do not use the same [SDL_IOStream](SDL_IOStream) from two threads at once.
 
 ## Version
 
