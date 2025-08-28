@@ -680,6 +680,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_hid_get_input_report](SDL_hid_get_input_report)
 - [SDL_hid_get_manufacturer_string](SDL_hid_get_manufacturer_string)
 - [SDL_hid_get_product_string](SDL_hid_get_product_string)
+- [SDL_hid_get_properties](SDL_hid_get_properties)
 - [SDL_hid_get_report_descriptor](SDL_hid_get_report_descriptor)
 - [SDL_hid_get_serial_number_string](SDL_hid_get_serial_number_string)
 - [SDL_hid_init](SDL_hid_init)
