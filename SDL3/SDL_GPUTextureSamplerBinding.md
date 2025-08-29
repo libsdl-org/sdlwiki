@@ -24,6 +24,8 @@ This struct is available since SDL 3.2.0.
 
 - [SDL_BindGPUVertexSamplers](SDL_BindGPUVertexSamplers)
 - [SDL_BindGPUFragmentSamplers](SDL_BindGPUFragmentSamplers)
+- [SDL_GPUTexture](SDL_GPUTexture)
+- [SDL_GPUSampler](SDL_GPUSampler)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
