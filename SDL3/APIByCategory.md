@@ -26,8 +26,8 @@
 | [Surface Creation and Simple Drawing](CategorySurface)  | [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)     |
 | [Clipboard Handling](CategoryClipboard)                 | [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h) |
 | [Vulkan Support](CategoryVulkan)                        | [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h)       |
-| [Metal Support](CategoryMetal)                          | [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL_metal.h)              |
-| [Camera Support](CategoryCamera)                        | [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL_camera.h)            |
+| [Metal Support](CategoryMetal)                          | [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_metal.h)              |
+| [Camera Support](CategoryCamera)                        | [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h)            |
 
 
 ## Input Events
