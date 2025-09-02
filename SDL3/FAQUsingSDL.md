@@ -2,7 +2,9 @@
 
 # What environment variables are used by SDL?
 
-A complete list is available in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h).
+A complete list is available on the [EnvironmentVariables](EnvironmentVariables) page.
+
+You can also browse [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h).
 These can be set programmatically with SDL_SetHint, or specified as environment
 variables by the end-user.
 
