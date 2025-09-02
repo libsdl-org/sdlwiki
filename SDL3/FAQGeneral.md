@@ -46,4 +46,4 @@ Yes, the official SDL logo was created by Arne Claus, and is available [here](ht
 
 ## Is this wiki available offline?
 
-Yes, you can click the ["offline html"](https://wiki.libsdl.org/static_files/offline/sdlwiki.zip) link at the bottom of any wiki page to get a zipfile archive of the entire wiki in HTML format. If you like Unix manpages, we generate manpages from each API function's wiki page. The latest archives for each supported project, as zipfiles, are always [here](https://wiki.libsdl.org/static_files/offline/manpages/).
+Yes, you can click the ["offline html"](https://wiki.libsdl.org/static_files/offline/sdlwiki.zip) link at the top right corner of any wiki page to get a zipfile archive of the entire wiki in HTML format. If you like Unix manpages, we generate manpages from each API function's wiki page. The latest archives for each supported project, as zipfiles, are always [here](https://wiki.libsdl.org/static_files/offline/manpages/).
