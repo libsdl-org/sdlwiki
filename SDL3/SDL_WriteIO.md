@@ -39,6 +39,10 @@ The caller can use [SDL_GetIOStatus](SDL_GetIOStatus)() to determine if the
 problem is recoverable, such as a non-blocking write that can simply be
 retried later, or a fatal error.
 
+A request for zero bytes on a valid stream will return zero immediately
+without accessing the stream, so the stream status (EOF, err, etc) will not
+change.
+
 ## Thread Safety
 
 Do not use the same [SDL_IOStream](SDL_IOStream) from two threads at once.

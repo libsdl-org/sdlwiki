@@ -37,6 +37,10 @@ is not at EOF, [SDL_GetIOStatus](SDL_GetIOStatus)() will return a different
 error value and [SDL_GetError](SDL_GetError)() will offer a human-readable
 message.
 
+A request for zero bytes on a valid stream will return zero immediately
+without accessing the stream, so the stream status (EOF, err, etc) will not
+change.
+
 ## Thread Safety
 
 Do not use the same [SDL_IOStream](SDL_IOStream) from two threads at once.

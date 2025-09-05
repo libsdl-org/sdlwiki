@@ -31,7 +31,7 @@ typedef struct SDL_IOStreamInterface
 
     /**
      *  Read up to `size` bytes from the data stream to the area pointed
-     *  at by `ptr`.
+     *  at by `ptr`. `size` will always be > 0.
      *
      *  On an incomplete read, you should set `*status` to a value from the
      *  SDL_IOStatus enum. You do not have to explicitly set this on
@@ -43,7 +43,7 @@ typedef struct SDL_IOStreamInterface
 
     /**
      *  Write exactly `size` bytes from the area pointed at by `ptr`
-     *  to data stream.
+     *  to data stream. `size` will always be > 0.
      *
      *  On an incomplete write, you should set `*status` to a value from the
      *  SDL_IOStatus enum. You do not have to explicitly set this on
