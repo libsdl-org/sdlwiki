@@ -14,12 +14,12 @@ bool SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, int *w, int *h, SD
 
 ## Function Parameters
 
-|                                                                      |              |                                      |
-| -------------------------------------------------------------------- | ------------ | ------------------------------------ |
-| [SDL_Renderer](SDL_Renderer) *                                       | **renderer** | the rendering context.               |
-| int *                                                                | **w**        | an int to be filled with the width.  |
-| int *                                                                | **h**        | an int to be filled with the height. |
-| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) * | **mode**     | the presentation mode used.          |
+|                                                                      |              |                                                                  |
+| -------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *                                       | **renderer** | the rendering context.                                           |
+| int *                                                                | **w**        | an int filled with the logical presentation width.               |
+| int *                                                                | **h**        | an int filled with the logical presentation height.              |
+| [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation) * | **mode**     | a variable filled with the logical presentation mode being used. |
 
 ## Return Value
 
@@ -29,7 +29,7 @@ bool SDL_GetRenderLogicalPresentation(SDL_Renderer *renderer, int *w, int *h, SD
 ## Remarks
 
 This function gets the width and height of the logical rendering output, or
-the output size in pixels if a logical resolution is not enabled.
+0 if a logical resolution is not enabled.
 
 Each render target has its own logical presentation state. This function
 gets the state for the current render target.
