@@ -53,15 +53,6 @@ perhaps most of the rendering is done to specific dimensions but to make
 fonts look sharp, the app turns off logical presentation while drawing
 text, for example.
 
-For the renderer's window, letterboxing is drawn into the framebuffer if
-logical presentation is enabled during
-[SDL_RenderPresent](SDL_RenderPresent); be sure to reenable it before
-presenting if you were toggling it, otherwise the letterbox areas might
-have artifacts from previous frames (or artifacts from external overlays,
-etc). Letterboxing is never drawn into texture render targets; be sure to
-call [SDL_RenderClear](SDL_RenderClear)() before drawing into the texture
-so the letterboxing areas are cleared, if appropriate.
-
 You can convert coordinates in an event into rendering coordinates using
 [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)().
 
