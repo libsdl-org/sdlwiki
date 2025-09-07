@@ -31,6 +31,11 @@ If this hint isn't set, the default log levels are equivalent to:
 
 `app=info,assert=warn,test=verbose,*=error`
 
+If the `DEBUG_INVOCATION` environment variable is set to "1", the default
+log levels are equivalent to:
+
+`assert=warn,test=verbose,*=debug`
+
 This hint can be set anytime.
 
 ## Version
