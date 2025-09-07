@@ -175,6 +175,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_PREFERRED_LOCALES](SDL_HINT_PREFERRED_LOCALES): Override for SDL_GetPreferredLocales().
 - [SDL_QUIT_ON_LAST_WINDOW_CLOSE](SDL_HINT_QUIT_ON_LAST_WINDOW_CLOSE): A variable that decides whether to send SDL_EVENT_QUIT when closing the last window.
 - [SDL_RENDER_DIRECT3D11_DEBUG](SDL_HINT_RENDER_DIRECT3D11_DEBUG): A variable controlling whether to enable Direct3D 11+'s Debug Layer.
+- [SDL_RENDER_DIRECT3D11_WARP](SDL_HINT_RENDER_DIRECT3D11_WARP): A variable controlling whether to use the Direct3D 11 WARP software rasterizer.
 - [SDL_RENDER_DIRECT3D_THREADSAFE](SDL_HINT_RENDER_DIRECT3D_THREADSAFE): A variable controlling whether the Direct3D device is initialized for thread-safe operations.
 - [SDL_RENDER_DRIVER](SDL_HINT_RENDER_DRIVER): A variable specifying which render driver to use.
 - [SDL_RENDER_GPU_DEBUG](SDL_HINT_RENDER_GPU_DEBUG): A variable controlling whether to create the GPU device in debug mode.
