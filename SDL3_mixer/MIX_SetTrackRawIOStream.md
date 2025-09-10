@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_mixer, a separate library from SDL.)
-# MIX_SetTrackIOStream
+# MIX_SetTrackRawIOStream
 
-Set a [MIX_Track](MIX_Track)'s input to an SDL_IOStream.
+Set a [MIX_Track](MIX_Track)'s input to an SDL_IOStream providing raw PCM data.
 
 ## Header File
 
@@ -10,16 +10,17 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-bool MIX_SetTrackIOStream(MIX_Track *track, SDL_IOStream *io, bool closeio);
+bool MIX_SetTrackRawIOStream(MIX_Track *track, SDL_IOStream *io, const SDL_AudioSpec *spec, bool closeio);
 ```
 
 ## Function Parameters
 
-|                          |             |                                                 |
-| ------------------------ | ----------- | ----------------------------------------------- |
-| [MIX_Track](MIX_Track) * | **track**   | the track on which to set a new audio input.    |
-| SDL_IOStream *           | **io**      | the new i/o stream to use as the track's input. |
-| bool                     | **closeio** | if true, close the stream when done with it.    |
+|                          |             |                                                                |
+| ------------------------ | ----------- | -------------------------------------------------------------- |
+| [MIX_Track](MIX_Track) * | **track**   | the track on which to set a new audio input.                   |
+| SDL_IOStream *           | **io**      | the new i/o stream to use as the track's input.                |
+| const SDL_AudioSpec *    | **spec**    | the format of the PCM data that the SDL_IOStream will provide. |
+| bool                     | **closeio** | if true, close the stream when done with it.                   |
 
 ## Return Value
 
@@ -34,18 +35,16 @@ must be read from disk in small chunks as needed. In most cases, however,
 it is preferable to create a [MIX_Audio](MIX_Audio) ahead of time and use
 [MIX_SetTrackAudio](MIX_SetTrackAudio)() instead.
 
-The stream supplied here should provide an audio file in a supported
-format. SDL_mixer will parse it during this call to make sure it's valid,
-and then will read file data from the stream as it needs to decode more
-during mixing.
+Also, an [MIX_SetTrackAudioStream](MIX_SetTrackAudioStream)() can _also_
+provide raw PCM audio to a track, via an SDL_AudioStream, which might be
+preferable unless the data is already coming directly from an SDL_IOStream.
 
-The stream must be able to seek through the complete set of data, or this
-function will fail.
+The stream supplied here should provide an audio in raw PCM format.
 
 A given IOStream may only be assigned to a single track at a time;
 duplicate assignments won't return an error, but assigning a stream to
 multiple tracks will cause each track to read from the stream arbitrarily,
-causing confusion, incorrect mixing, or failure to decode.
+causing confusion and incorrect mixing.
 
 Once a track has a valid input, it can start mixing sound by calling
 [MIX_PlayTrack](MIX_PlayTrack)(), or possibly [MIX_PlayTag](MIX_PlayTag)().
@@ -73,7 +72,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-- [MIX_SetTrackRawIOStream](MIX_SetTrackRawIOStream)
+- [MIX_SetTrackAudioStream](MIX_SetTrackAudioStream)
+- [MIX_SetTrackIOStream](MIX_SetTrackIOStream)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)

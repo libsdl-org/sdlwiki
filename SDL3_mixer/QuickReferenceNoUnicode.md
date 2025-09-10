@@ -59,6 +59,7 @@ MIX_Mixer * MIX_GetTrackMixer(MIX_Track *track);                                
 bool MIX_SetTrackAudio(MIX_Track *track, MIX_Audio *audio);                                                                              // Set a MIX_Track's input to a MIX_Audio.
 bool MIX_SetTrackAudioStream(MIX_Track *track, SDL_AudioStream *stream);                                                                 // Set a MIX_Track's input to an SDL_AudioStream.
 bool MIX_SetTrackIOStream(MIX_Track *track, SDL_IOStream *io, bool closeio);                                                             // Set a MIX_Track's input to an SDL_IOStream.
+bool MIX_SetTrackRawIOStream(MIX_Track *track, SDL_IOStream *io, const SDL_AudioSpec *spec, bool closeio);                               // Set a MIX_Track's input to an SDL_IOStream providing raw PCM data.
 bool MIX_TagTrack(MIX_Track *track, const char *tag);                                                                                    // Assign an arbitrary tag to a track.
 void MIX_UntagTrack(MIX_Track *track, const char *tag);                                                                                  // Remove an arbitrary tag from a track.
 bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Sint64 frames);                                                                      // Seek a playing track to a new position in its input.
