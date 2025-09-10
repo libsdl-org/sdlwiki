@@ -177,6 +177,7 @@ consider a proper 3D library like OpenAL.
 - [MIX_SetTrackOutputChannelMap](MIX_SetTrackOutputChannelMap)
 - [MIX_SetTrackPlaybackPosition](MIX_SetTrackPlaybackPosition)
 - [MIX_SetTrackRawCallback](MIX_SetTrackRawCallback)
+- [MIX_SetTrackRawIOStream](MIX_SetTrackRawIOStream)
 - [MIX_SetTrackStereo](MIX_SetTrackStereo)
 - [MIX_SetTrackStoppedCallback](MIX_SetTrackStoppedCallback)
 - [MIX_StopAllTracks](MIX_StopAllTracks)
