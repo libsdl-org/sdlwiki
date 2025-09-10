@@ -107,6 +107,11 @@ With the opengles2 renderer:
   the GLenum for the texture target (`GL_TEXTURE_2D`,
   `GL_TEXTURE_EXTERNAL_OES`, etc)
 
+With the gpu renderer:
+
+- [`SDL_PROP_TEXTURE_GPU_TEXTURE_POINTER`](SDL_PROP_TEXTURE_GPU_TEXTURE_POINTER):
+  the [SDL_GPUTexture](SDL_GPUTexture) associated with the texture
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
