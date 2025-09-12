@@ -56,7 +56,7 @@ This function is available since SDL_image 2.0.0.
 
 - [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
 - [IMG_LoadTexture_RW](IMG_LoadTexture_RW)
-- [SDL_DestroyTexture](SDL_DestroyTexture)
+- [SDL_DestroyTexture](../SDL2/SDL_DestroyTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
