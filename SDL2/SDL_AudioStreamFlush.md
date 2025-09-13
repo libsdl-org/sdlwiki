@@ -12,6 +12,16 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 int SDL_AudioStreamFlush(SDL_AudioStream *stream);
 ```
 
+## Function Parameters
+
+|                                      |            |                            |
+| ------------------------------------ | ---------- | -------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to flush. |
+
+## Return Value
+
+(int) Returns 0 on success, otherwise -1.
+
 ## Remarks
 
 It is legal to add more data to a stream after flushing, but there will be

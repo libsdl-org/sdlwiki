@@ -14,6 +14,20 @@ int SDL_UpperBlit
      SDL_Surface * dst, SDL_Rect * dstrect);
 ```
 
+## Function Parameters
+
+|                              |             |                                                                                                                                                                                                                                                                                  |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Surface](SDL_Surface) * | **src**     | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                                                                                                                                                                      |
+| const [SDL_Rect](SDL_Rect) * | **srcrect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface.                                                                                                                                                                  |
+| [SDL_Surface](SDL_Surface) * | **dst**     | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                                                                                                                                                                |
+| [SDL_Rect](SDL_Rect) *       | **dstrect** | the [SDL_Rect](SDL_Rect) structure representing the x and y position in the destination surface, or NULL for (0,0). The width and height are ignored, and are copied from `srcrect`. If you want a specific width and height, you should use [SDL_BlitScaled](SDL_BlitScaled)(). |
+
+## Return Value
+
+(int) Returns 0 if the blit is successful or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
+
 ## Remarks
 
 [SDL_UpperBlit](SDL_UpperBlit)() has been replaced by

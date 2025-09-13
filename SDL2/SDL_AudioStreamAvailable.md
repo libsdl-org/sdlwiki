@@ -12,6 +12,16 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 int SDL_AudioStreamAvailable(SDL_AudioStream *stream);
 ```
 
+## Function Parameters
+
+|                                      |            |                            |
+| ------------------------------------ | ---------- | -------------------------- |
+| [SDL_AudioStream](SDL_AudioStream) * | **stream** | the audio stream to query. |
+
+## Return Value
+
+(int) Returns the number of bytes available.
+
 ## Remarks
 
 The stream may be buffering data behind the scenes until it has enough to

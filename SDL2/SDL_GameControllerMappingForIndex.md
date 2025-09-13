@@ -12,6 +12,12 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 char * SDL_GameControllerMappingForIndex(int mapping_index);
 ```
 
+## Function Parameters
+
+|     |                   |                |
+| --- | ----------------- | -------------- |
+| int | **mapping_index** | mapping index. |
+
 ## Return Value
 
 (char *) Returns the mapping string. Must be freed with

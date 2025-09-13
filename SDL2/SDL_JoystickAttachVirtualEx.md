@@ -12,6 +12,12 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 int SDL_JoystickAttachVirtualEx(const SDL_VirtualJoystickDesc *desc);
 ```
 
+## Function Parameters
+
+|                                                            |          |                       |
+| ---------------------------------------------------------- | -------- | --------------------- |
+| const [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc) * | **desc** | joystick description. |
+
 ## Return Value
 
 (int) Returns the joystick's device index, or -1 if an error occurred.

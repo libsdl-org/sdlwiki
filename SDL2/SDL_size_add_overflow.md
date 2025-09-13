@@ -12,6 +12,18 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 SDL_FORCE_INLINE int SDL_size_add_overflow (size_t a, size_t b, size_t *ret);
 ```
 
+## Function Parameters
+
+|          |         |                                                     |
+| -------- | ------- | --------------------------------------------------- |
+| size_t   | **a**   | the first addend.                                   |
+| size_t   | **b**   | the second addend.                                  |
+| size_t * | **ret** | on non-overflow output, stores the addition result. |
+
+## Return Value
+
+(int) Returns false on overflow, true if result is added without overflow.
+
 ## Remarks
 
 Otherwise store a + b via ret and return 0.

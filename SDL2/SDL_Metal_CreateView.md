@@ -12,6 +12,16 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 SDL_MetalView SDL_Metal_CreateView(SDL_Window * window);
 ```
 
+## Function Parameters
+
+|                            |            |             |
+| -------------------------- | ---------- | ----------- |
+| [SDL_Window](SDL_Window) * | **window** | the window. |
+
+## Return Value
+
+([SDL_MetalView](SDL_MetalView)) Returns handle NSView or UIView.
+
 ## Remarks
 
 On macOS, this does *not* associate a MTLDevice with the CAMetalLayer on

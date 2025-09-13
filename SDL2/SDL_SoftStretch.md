@@ -15,6 +15,20 @@ int SDL_SoftStretch(SDL_Surface * src,
                     const SDL_Rect * dstrect);
 ```
 
+## Function Parameters
+
+|                              |             |                                      |
+| ---------------------------- | ----------- | ------------------------------------ |
+| [SDL_Surface](SDL_Surface) * | **src**     | the surface to be copied from.       |
+| const [SDL_Rect](SDL_Rect) * | **srcrect** | the rectangle to be copied.          |
+| [SDL_Surface](SDL_Surface) * | **dst**     | the surface that is the blit target. |
+| const [SDL_Rect](SDL_Rect) * | **dstrect** | the rectangle that is copied into.   |
+
+## Return Value
+
+(int) Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
 ## Remarks
 
 Please use [SDL_BlitScaled](SDL_BlitScaled)() instead.

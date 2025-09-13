@@ -15,6 +15,20 @@ char* SDL_iconv_string(const char *tocode,
                        size_t inbytesleft);
 ```
 
+## Function Parameters
+
+|              |                 |                                                |
+| ------------ | --------------- | ---------------------------------------------- |
+| const char * | **tocode**      | the character encoding of the output string.   |
+| const char * | **fromcode**    | the character encoding of data in `inbuf`.     |
+| const char * | **inbuf**       | the string to convert to a different encoding. |
+| size_t       | **inbytesleft** | the size of the input string _in bytes_.       |
+
+## Return Value
+
+(char *) Returns a new string, converted to the new encoding, or NULL on
+error.
+
 ## Version
 
 This function is available since SDL 2.0.0.

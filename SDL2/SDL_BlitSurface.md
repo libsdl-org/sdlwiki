@@ -12,15 +12,26 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 #define SDL_BlitSurface SDL_UpperBlit
 ```
 
+## Macro Parameters
+
+|             |                                                                                                                                                                                                                                                                                  |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **src**     | the [SDL_Surface](SDL_Surface) structure to be copied from.                                                                                                                                                                                                                      |
+| **srcrect** | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface.                                                                                                                                                                  |
+| **dst**     | the [SDL_Surface](SDL_Surface) structure that is the blit target.                                                                                                                                                                                                                |
+| **dstrect** | the [SDL_Rect](SDL_Rect) structure representing the x and y position in the destination surface, or NULL for (0,0). The width and height are ignored, and are copied from `srcrect`. If you want a specific width and height, you should use [SDL_BlitScaled](SDL_BlitScaled)(). |
+
 ## Return Value
 
-Returns 0 if the blit is successful, otherwise it returns -1.
+Returns 0 if the blit is successful or a negative error code on failure;
+call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 This assumes that the source and destination rectangles are the same size.
-If either `srcrect` or `dstrect` are NULL, the entire surface (`src` or
-`dst`) is copied. The final blit rectangle is saved in `dstrect` after all
+`dstrect`'s width and height are ignored, only its position is used. If
+either `srcrect` or `dstrect` are NULL, the entire surface (`src` or `dst`)
+is copied. The final blit rectangle is saved in `dstrect` after all
 clipping is performed.
 
 The blit function should not be called on a locked surface.

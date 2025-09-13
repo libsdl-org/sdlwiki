@@ -15,6 +15,15 @@ int SDL_JoystickAttachVirtual(SDL_JoystickType type,
                               int nhats);
 ```
 
+## Function Parameters
+
+|                                      |              |                    |
+| ------------------------------------ | ------------ | ------------------ |
+| [SDL_JoystickType](SDL_JoystickType) | **type**     | joystick type.     |
+| int                                  | **naxes**    | number of axes.    |
+| int                                  | **nbuttons** | number of buttons. |
+| int                                  | **nhats**    | number of hats.    |
+
 ## Return Value
 
 (int) Returns the joystick's device index, or -1 if an error occurred.

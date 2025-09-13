@@ -12,6 +12,12 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 void SDL_Metal_DestroyView(SDL_MetalView view);
 ```
 
+## Function Parameters
+
+|                                |          |                                            |
+| ------------------------------ | -------- | ------------------------------------------ |
+| [SDL_MetalView](SDL_MetalView) | **view** | the [SDL_MetalView](SDL_MetalView) object. |
+
 ## Remarks
 
 This should be called before [SDL_DestroyWindow](SDL_DestroyWindow), if

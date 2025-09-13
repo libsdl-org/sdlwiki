@@ -12,6 +12,12 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 void SDL_SetYUVConversionMode(SDL_YUV_CONVERSION_MODE mode);
 ```
 
+## Function Parameters
+
+|                                                    |          |                          |
+| -------------------------------------------------- | -------- | ------------------------ |
+| [SDL_YUV_CONVERSION_MODE](SDL_YUV_CONVERSION_MODE) | **mode** | the YUV conversion mode. |
+
 ## Version
 
 This function is available since SDL 2.0.8.

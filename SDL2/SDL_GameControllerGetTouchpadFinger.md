@@ -12,6 +12,22 @@ Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/in
 int SDL_GameControllerGetTouchpadFinger(SDL_GameController *gamecontroller, int touchpad, int finger, Uint8 *state, float *x, float *y, float *pressure);
 ```
 
+## Function Parameters
+
+|                                            |                    |                                         |
+| ------------------------------------------ | ------------------ | --------------------------------------- |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | a controller.                           |
+| int                                        | **touchpad**       | a touchpad.                             |
+| int                                        | **finger**         | a finger.                               |
+| Uint8 *                                    | **state**          | a pointer filled with the finger state. |
+| float *                                    | **x**              | a pointer filled with the x position.   |
+| float *                                    | **y**              | a pointer filled with the y position.   |
+| float *                                    | **pressure**       | a pointer filled with pressure value.   |
+
+## Return Value
+
+(int) Returns 0 on success or negative on failure.
+
 ## Version
 
 This function is available since SDL 2.0.14.

@@ -14,13 +14,10 @@ void SDL_Log(const char *fmt, ...);
 
 ## Function Parameters
 
-|     |         |                                                                      |
-| --- | ------- | -------------------------------------------------------------------- |
-| ... | **...** | additional parameters matching % tokens in the `fmt` string, if any. |
-
-## Remarks
-
-= * \param fmt a printf() style message format string
+|              |         |                                                                      |
+| ------------ | ------- | -------------------------------------------------------------------- |
+| const char * | **fmt** | a printf() style message format string.                              |
+| ...          | **...** | additional parameters matching % tokens in the `fmt` string, if any. |
 
 ## Version
 

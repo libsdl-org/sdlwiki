@@ -12,6 +12,10 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 int SDL_GetNumAllocations(void);
 ```
 
+## Return Value
+
+(int) Returns number of unfreed allocations.
+
 ## Version
 
 This function is available since SDL 2.0.7.
