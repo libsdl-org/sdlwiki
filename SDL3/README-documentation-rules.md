@@ -287,7 +287,7 @@ you should call SDL_GetError() to get more information. The documentation
 is so saturated with this that it's just the standard now.)
 
 Convention at the moment is that pointer params that are permitted to
-be NULL, which is somewhat uncommon, end with a terse "May be NULL." sentence
+be NULL, which is somewhat uncommon, end with terse "May be NULL." sentence
 at the end, and pointers that must be non-NULL (most of them) say nothing.
 This is fine.
 
