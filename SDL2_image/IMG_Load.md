@@ -61,7 +61,6 @@ This function is available since SDL_image 2.0.0.
 
 - [IMG_LoadTyped_RW](IMG_LoadTyped_RW)
 - [IMG_Load_RW](IMG_Load_RW)
-- [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
