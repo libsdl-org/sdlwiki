@@ -25,11 +25,7 @@ set.
 
 ## Thread Safety
 
-It is safe to call this function from any thread, however the return value
-only remains valid until the hint is changed; if another thread might do
-so, the app should supply locks and/or make a copy of the string. Note that
-using a hint callback instead is always thread-safe, as SDL holds a lock on
-the thread subsystem during the callback.
+It is safe to call this function from any thread.
 
 ## Version
 
