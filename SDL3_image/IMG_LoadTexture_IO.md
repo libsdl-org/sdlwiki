@@ -65,7 +65,6 @@ This function is available since SDL_image 3.0.0.
 
 - [IMG_LoadTexture](IMG_LoadTexture)
 - [IMG_LoadTextureTyped_IO](IMG_LoadTextureTyped_IO)
-- [SDL_DestroyTexture](SDL_DestroyTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)

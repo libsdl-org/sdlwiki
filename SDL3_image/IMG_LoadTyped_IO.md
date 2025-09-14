@@ -80,7 +80,6 @@ This function is available since SDL_image 3.0.0.
 
 - [IMG_Load](IMG_Load)
 - [IMG_Load_IO](IMG_Load_IO)
-- [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)
