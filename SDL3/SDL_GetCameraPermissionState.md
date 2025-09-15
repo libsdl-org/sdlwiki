@@ -20,9 +20,11 @@ SDL_CameraPermissionState SDL_GetCameraPermissionState(SDL_Camera *camera);
 
 ## Return Value
 
-([SDL_CameraPermissionState](SDL_CameraPermissionState)) Returns -1 if user
-denied access to the camera, 1 if user approved access, 0 if no decision
-has been made yet.
+([SDL_CameraPermissionState](SDL_CameraPermissionState)) Returns an
+[SDL_CameraPermissionState](SDL_CameraPermissionState) value indicating if
+access is granted, or
+[`SDL_CAMERA_PERMISSION_STATE_PENDING`](SDL_CAMERA_PERMISSION_STATE_PENDING)
+if the decision is still pending.
 
 ## Remarks
 
@@ -32,8 +34,13 @@ presents as a popup dialog where the user has to explicitly approve access;
 on others the approval might be implicit and not alert the user at all.
 
 This function can be used to check the status of that approval. It will
-return 0 if still waiting for user response, 1 if the camera is approved
-for use, and -1 if the user denied access.
+return
+[SDL_CAMERA_PERMISSION_STATE_PENDING](SDL_CAMERA_PERMISSION_STATE_PENDING)
+if waiting for user response,
+[SDL_CAMERA_PERMISSION_STATE_APPROVED](SDL_CAMERA_PERMISSION_STATE_APPROVED)
+if the camera is approved for use, and
+[SDL_CAMERA_PERMISSION_STATE_DENIED](SDL_CAMERA_PERMISSION_STATE_DENIED) if
+the user denied access.
 
 Instead of polling with this function, you can wait for a
 [SDL_EVENT_CAMERA_DEVICE_APPROVED](SDL_EVENT_CAMERA_DEVICE_APPROVED) (or
