@@ -70,6 +70,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_HIDAPI_LIBUSB_WHITELIST](SDL_HINT_HIDAPI_LIBUSB_WHITELIST): A variable to control whether HIDAPI uses libusb only for whitelisted devices.
 - [SDL_HIDAPI_UDEV](SDL_HINT_HIDAPI_UDEV): A variable to control whether HIDAPI uses udev for device detection.
 - [SDL_IME_IMPLEMENTED_UI](SDL_HINT_IME_IMPLEMENTED_UI): A variable describing what IME UI elements the application can display.
+- [SDL_INVALID_PARAM_CHECKS](SDL_HINT_INVALID_PARAM_CHECKS): Set the level of checking for invalid parameters passed to SDL functions.
 - [SDL_IOS_HIDE_HOME_INDICATOR](SDL_HINT_IOS_HIDE_HOME_INDICATOR): A variable controlling whether the home indicator bar on iPhone X should be hidden.
 - [SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS](SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS): A variable that lets you enable joystick (and gamecontroller) events even when your app is in the background.
 - [SDL_JOYSTICK_ARCADESTICK_DEVICES](SDL_HINT_JOYSTICK_ARCADESTICK_DEVICES): A variable containing a list of arcade stick style controllers.
