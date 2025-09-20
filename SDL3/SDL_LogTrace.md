@@ -37,7 +37,6 @@ This function is available since SDL 3.2.0.
 - [SDL_LogInfo](SDL_LogInfo)
 - [SDL_LogMessage](SDL_LogMessage)
 - [SDL_LogMessageV](SDL_LogMessageV)
-- [SDL_LogTrace](SDL_LogTrace)
 - [SDL_LogVerbose](SDL_LogVerbose)
 - [SDL_LogWarn](SDL_LogWarn)
 
