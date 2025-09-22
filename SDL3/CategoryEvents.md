@@ -8,7 +8,7 @@ flow through here: the user interacting with the computer and app, hardware
 coming and going, the system changing in some way, etc.
 
 An app generally takes a moment, perhaps at the start of a new frame, to
-examine any events that have occured since the last time and process or
+examine any events that have occurred since the last time and process or
 ignore them. This is generally done by calling
 [SDL_PollEvent](SDL_PollEvent)() in a loop until it returns false (or, if
 using the main callbacks, events are provided one at a time in calls to

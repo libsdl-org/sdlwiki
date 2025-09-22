@@ -11,7 +11,7 @@ This category covers measuring time elapsed
 [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)()), putting a thread
 to sleep for a certain amount of time ([SDL_Delay](SDL_Delay)(),
 [SDL_DelayNS](SDL_DelayNS)(), [SDL_DelayPrecise](SDL_DelayPrecise)()), and
-firing a callback function after a certain amount of time has elasped
+firing a callback function after a certain amount of time has elapsed
 ([SDL_AddTimer](SDL_AddTimer)(), etc).
 
 There are also useful macros to convert between time units, like
