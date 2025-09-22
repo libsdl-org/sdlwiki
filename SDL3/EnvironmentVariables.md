@@ -125,6 +125,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_HIDAPI_XBOX_360_WIRELESS](SDL_HINT_JOYSTICK_HIDAPI_XBOX_360_WIRELESS): A variable controlling whether the HIDAPI driver for XBox 360 wireless controllers should be used.
 - [SDL_JOYSTICK_HIDAPI_XBOX_ONE](SDL_HINT_JOYSTICK_HIDAPI_XBOX_ONE): A variable controlling whether the HIDAPI driver for XBox One controllers should be used.
 - [SDL_JOYSTICK_HIDAPI_XBOX_ONE_HOME_LED](SDL_HINT_JOYSTICK_HIDAPI_XBOX_ONE_HOME_LED): A variable controlling whether the Home button LED should be turned on when an Xbox One controller is opened.
+- [SDL_JOYSTICK_HIDAPI_ZUIKI](SDL_HINT_JOYSTICK_HIDAPI_ZUIKI): A variable controlling whether the HIDAPI driver for ZUIKI controllers should be used.
 - [SDL_JOYSTICK_IOKIT](SDL_HINT_JOYSTICK_IOKIT): A variable controlling whether IOKit should be used for controller handling.
 - [SDL_JOYSTICK_LINUX_CLASSIC](SDL_HINT_JOYSTICK_LINUX_CLASSIC): A variable controlling whether to use the classic /dev/input/js* joystick interface or the newer /dev/input/event* joystick interface on Linux.
 - [SDL_JOYSTICK_LINUX_DEADZONES](SDL_HINT_JOYSTICK_LINUX_DEADZONES): A variable controlling whether joysticks on Linux adhere to their HID-defined deadzones or return unfiltered values.
