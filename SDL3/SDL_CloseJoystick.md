@@ -18,6 +18,10 @@ void SDL_CloseJoystick(SDL_Joystick *joystick);
 | ------------------------------ | ------------ | ----------------------------- |
 | [SDL_Joystick](SDL_Joystick) * | **joystick** | the joystick device to close. |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

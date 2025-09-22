@@ -23,6 +23,10 @@ SDL_JoystickType SDL_GetJoystickType(SDL_Joystick *joystick);
 ([SDL_JoystickType](SDL_JoystickType)) Returns the
 [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

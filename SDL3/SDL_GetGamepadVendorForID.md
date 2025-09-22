@@ -28,6 +28,10 @@ called on an invalid index, this function returns zero.
 This can be called before any gamepads are opened. If the vendor ID isn't
 available this function returns 0.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

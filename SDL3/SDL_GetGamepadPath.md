@@ -23,6 +23,10 @@ const char * SDL_GetGamepadPath(SDL_Gamepad *gamepad);
 (const char *) Returns the implementation dependent path for the gamepad,
 or NULL if there is no path or the identifier passed is invalid.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

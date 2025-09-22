@@ -27,6 +27,10 @@ Uint64 SDL_GetGamepadSteamHandle(SDL_Gamepad *gamepad);
 Returns an InputHandle_t for the gamepad that can be used with Steam Input
 API: https://partner.steamgames.com/doc/api/ISteamInput
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

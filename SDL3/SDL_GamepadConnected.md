@@ -23,6 +23,10 @@ bool SDL_GamepadConnected(SDL_Gamepad *gamepad);
 (bool) Returns true if the gamepad has been opened and is currently
 connected, or false if not.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

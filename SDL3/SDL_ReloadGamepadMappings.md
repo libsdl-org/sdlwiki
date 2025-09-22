@@ -21,6 +21,10 @@ bool SDL_ReloadGamepadMappings(void);
 
 This will generate gamepad events as needed if device mappings change.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

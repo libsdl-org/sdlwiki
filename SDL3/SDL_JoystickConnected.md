@@ -23,6 +23,10 @@ bool SDL_JoystickConnected(SDL_Joystick *joystick);
 (bool) Returns true if the joystick has been opened, false if it has not;
 call [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -25,6 +25,10 @@ on failure; call [SDL_GetError](SDL_GetError)() for more information. This
 is a single allocation that should be freed with [SDL_free](SDL_free)()
 when it is no longer needed.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -27,6 +27,10 @@ int SDL_GetJoystickPlayerIndex(SDL_Joystick *joystick);
 For XInput controllers this returns the XInput user index. Many joysticks
 will not be able to supply this information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

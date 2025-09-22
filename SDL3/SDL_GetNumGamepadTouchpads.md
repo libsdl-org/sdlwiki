@@ -22,6 +22,10 @@ int SDL_GetNumGamepadTouchpads(SDL_Gamepad *gamepad);
 
 (int) Returns number of touchpads.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

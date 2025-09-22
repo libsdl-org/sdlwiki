@@ -18,6 +18,10 @@ void SDL_CloseGamepad(SDL_Gamepad *gamepad);
 | ---------------------------- | ----------- | --------------------------------------------------------------------------------- |
 | [SDL_Gamepad](SDL_Gamepad) * | **gamepad** | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)(). |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

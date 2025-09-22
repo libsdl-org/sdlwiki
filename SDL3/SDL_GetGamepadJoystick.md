@@ -36,6 +36,10 @@ The pointer returned is owned by the [SDL_Gamepad](SDL_Gamepad). You should
 not call [SDL_CloseJoystick](SDL_CloseJoystick)() on it, for example, since
 doing so will likely cause SDL to crash.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

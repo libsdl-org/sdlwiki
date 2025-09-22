@@ -33,6 +33,10 @@ reported here are best estimates based on what that hardware reports. It's
 not uncommon for older batteries to lose stored power much faster than it
 reports, or completely drain when reporting it has 20 percent left, etc.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

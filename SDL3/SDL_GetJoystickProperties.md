@@ -39,6 +39,10 @@ The following read-only properties are provided by SDL:
 - [`SDL_PROP_JOYSTICK_CAP_TRIGGER_RUMBLE_BOOLEAN`](SDL_PROP_JOYSTICK_CAP_TRIGGER_RUMBLE_BOOLEAN):
   true if this joystick has simple trigger rumble
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

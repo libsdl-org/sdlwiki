@@ -24,6 +24,10 @@ const char * SDL_GetGamepadAppleSFSymbolsNameForButton(SDL_Gamepad *gamepad, SDL
 (const char *) Returns the sfSymbolsName or NULL if the name can't be
 found.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -25,6 +25,10 @@ SDL_GamepadButtonLabel SDL_GetGamepadButtonLabel(SDL_Gamepad *gamepad, SDL_Gamep
 [SDL_GamepadButtonLabel](SDL_GamepadButtonLabel) enum corresponding to the
 button label.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

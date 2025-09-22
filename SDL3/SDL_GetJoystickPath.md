@@ -24,6 +24,10 @@ const char * SDL_GetJoystickPath(SDL_Joystick *joystick);
 found, this function returns NULL; call [SDL_GetError](SDL_GetError)() for
 more information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

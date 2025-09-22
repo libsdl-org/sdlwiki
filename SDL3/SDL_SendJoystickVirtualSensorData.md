@@ -37,6 +37,10 @@ including, but not limited to the following:
 [SDL_WaitEventTimeout](SDL_WaitEventTimeout),
 [SDL_WaitEvent](SDL_WaitEvent).
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -22,6 +22,10 @@ If gamepad events are disabled, you must call
 [SDL_UpdateGamepads](SDL_UpdateGamepads)() yourself and check the state of
 the gamepad when you want gamepad information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

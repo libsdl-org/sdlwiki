@@ -34,6 +34,10 @@ it with 0 intensity stops any rumbling.
 This function requires you to process SDL events or call
 [SDL_UpdateJoysticks](SDL_UpdateJoysticks)() to update rumble state.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

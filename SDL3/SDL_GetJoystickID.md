@@ -24,6 +24,10 @@ SDL_JoystickID SDL_GetJoystickID(SDL_Joystick *joystick);
 joystick on success or 0 on failure; call [SDL_GetError](SDL_GetError)()
 for more information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

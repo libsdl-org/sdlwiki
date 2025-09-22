@@ -39,6 +39,10 @@ Note that when sending trigger axes, you should scale the value to the full
 range of [Sint16](Sint16). For example, a trigger at rest would have the
 value of [`SDL_JOYSTICK_AXIS_MIN`](SDL_JOYSTICK_AXIS_MIN).
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -38,6 +38,10 @@ Note specially that "righttrigger" and "lefttrigger" map to
 [`SDL_GAMEPAD_AXIS_LEFT_TRIGGER`](SDL_GAMEPAD_AXIS_LEFT_TRIGGER),
 respectively.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

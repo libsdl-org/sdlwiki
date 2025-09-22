@@ -30,6 +30,10 @@ The state is a value ranging from -32768 to 32767.
 
 The axis indices start at index 0.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

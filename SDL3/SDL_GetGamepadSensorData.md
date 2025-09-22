@@ -31,6 +31,10 @@ bool SDL_GetGamepadSensorData(SDL_Gamepad *gamepad, SDL_SensorType type, float *
 The number of values and interpretation of the data is sensor dependent.
 See [SDL_sensor](SDL_sensor).h for the details for each type of sensor.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

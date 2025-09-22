@@ -29,6 +29,10 @@ Often, the directional pad on a game controller will either look like 4
 separate buttons or a POV hat, and not axes, but all of this is up to the
 device and platform.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

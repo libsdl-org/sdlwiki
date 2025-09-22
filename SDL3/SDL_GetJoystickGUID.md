@@ -28,6 +28,10 @@ an invalid index, this function returns a zero GUID; call
 
 This function requires an open joystick.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

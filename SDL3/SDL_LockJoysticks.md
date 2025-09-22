@@ -18,6 +18,10 @@ The SDL joystick functions are thread-safe, however you can lock the
 joysticks while processing to guarantee that the joystick list won't change
 and joystick and gamepad events will not be delivered.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

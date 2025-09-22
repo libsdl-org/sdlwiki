@@ -22,6 +22,10 @@ void SDL_GetJoystickGUIDInfo(SDL_GUID guid, Uint16 *vendor, Uint16 *product, Uin
 | [Uint16](Uint16) *   | **version** | a pointer filled in with the device version, or 0 if not available.                                                 |
 | [Uint16](Uint16) *   | **crc16**   | a pointer filled in with a CRC used to distinguish different products with the same VID/PID, or 0 if not available. |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

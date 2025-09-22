@@ -23,6 +23,10 @@ SDL_Gamepad * SDL_GetGamepadFromPlayerIndex(int player_index);
 ([SDL_Gamepad](SDL_Gamepad) *) Returns the [SDL_Gamepad](SDL_Gamepad)
 associated with a player index.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -23,6 +23,10 @@ bool SDL_GamepadHasSensor(SDL_Gamepad *gamepad, SDL_SensorType type);
 
 (bool) Returns true if the sensor exists, false otherwise.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

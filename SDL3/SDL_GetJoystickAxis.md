@@ -38,6 +38,10 @@ signed integer (-32768 to 32767) representing the current position of the
 axis. It may be necessary to impose certain tolerances on these values to
 account for jitter.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

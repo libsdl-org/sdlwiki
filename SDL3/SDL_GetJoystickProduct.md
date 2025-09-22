@@ -27,6 +27,10 @@ Uint16 SDL_GetJoystickProduct(SDL_Joystick *joystick);
 
 If the product ID isn't available this function returns 0.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

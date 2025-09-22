@@ -18,6 +18,10 @@ This function is called automatically by the event loop if events are
 enabled. Under such circumstances, it will not be necessary to call this
 function.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

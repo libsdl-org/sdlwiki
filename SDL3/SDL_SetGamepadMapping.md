@@ -29,6 +29,10 @@ bool SDL_SetGamepadMapping(SDL_JoystickID instance_id, const char *mapping);
 Details about mappings are discussed with
 [SDL_AddGamepadMapping](SDL_AddGamepadMapping)().
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

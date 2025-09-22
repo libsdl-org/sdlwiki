@@ -38,6 +38,10 @@ Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick, int hat);
 
 The returned value will be one of the `SDL_HAT_*` values.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

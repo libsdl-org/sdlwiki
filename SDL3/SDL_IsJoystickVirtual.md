@@ -22,6 +22,10 @@ bool SDL_IsJoystickVirtual(SDL_JoystickID instance_id);
 
 (bool) Returns true if the joystick is virtual, false otherwise.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

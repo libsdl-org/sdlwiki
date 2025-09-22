@@ -33,6 +33,10 @@ mapping strings for the underlying joystick device into the consistent
 function unless you are parsing [SDL_Gamepad](SDL_Gamepad) mappings in your
 own code.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

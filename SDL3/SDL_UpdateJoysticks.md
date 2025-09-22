@@ -17,6 +17,10 @@ void SDL_UpdateJoysticks(void);
 This is called automatically by the event loop if any joystick events are
 enabled.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

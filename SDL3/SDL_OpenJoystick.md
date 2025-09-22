@@ -28,6 +28,10 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 The joystick subsystem must be initialized before a joystick can be opened
 for use.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

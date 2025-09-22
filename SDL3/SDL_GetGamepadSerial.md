@@ -26,6 +26,10 @@ const char * SDL_GetGamepadSerial(SDL_Gamepad *gamepad);
 
 Returns the serial number of the gamepad, or NULL if it is not available.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

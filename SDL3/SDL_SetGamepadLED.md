@@ -34,6 +34,10 @@ DualShock 4 controller.
 For gamepads with a single color LED, the maximum of the RGB values will be
 used as the LED brightness.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

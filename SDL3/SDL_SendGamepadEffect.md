@@ -25,6 +25,10 @@ bool SDL_SendGamepadEffect(SDL_Gamepad *gamepad, const void *data, int size);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.
