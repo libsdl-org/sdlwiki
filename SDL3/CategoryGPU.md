@@ -219,6 +219,15 @@ Requires Vulkan 1.0 with the following extensions and device features:
 - `drawIndirectFirstInstance`
 - `sampleRateShading`
 
+You can remove some of these requirements to increase compatibility with
+Android devices by using these properties when creating the GPU device with
+[SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)():
+
+- [SDL_PROP_GPU_DEVICE_CREATE_FEATURE_CLIP_DISTANCE_BOOLEAN](SDL_PROP_GPU_DEVICE_CREATE_FEATURE_CLIP_DISTANCE_BOOLEAN)
+- [SDL_PROP_GPU_DEVICE_CREATE_FEATURE_DEPTH_CLAMPING_BOOLEAN](SDL_PROP_GPU_DEVICE_CREATE_FEATURE_DEPTH_CLAMPING_BOOLEAN)
+- [SDL_PROP_GPU_DEVICE_CREATE_FEATURE_INDIRECT_DRAW_FIRST_INSTANCE_BOOLEAN](SDL_PROP_GPU_DEVICE_CREATE_FEATURE_INDIRECT_DRAW_FIRST_INSTANCE_BOOLEAN)
+- [SDL_PROP_GPU_DEVICE_CREATE_FEATURE_ANISOTROPY_BOOLEAN](SDL_PROP_GPU_DEVICE_CREATE_FEATURE_ANISOTROPY_BOOLEAN)
+
 ### D3D12
 
 SDL driver name: "direct3d12"
@@ -226,6 +235,13 @@ SDL driver name: "direct3d12"
 Supported on Windows 10 or newer, Xbox One (GDK), and Xbox Series X|S
 (GDK). Requires a GPU that supports DirectX 12 Feature Level 11_0 and
 Resource Binding Tier 2 or above.
+
+You can remove the Tier 2 resource binding requirement to support Intel
+Haswell and Broadwell GPUs by using this property when creating the GPU
+device with
+[SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)():
+
+- [SDL_PROP_GPU_DEVICE_CREATE_D3D12_ALLOW_FEWER_RESOURCE_SLOTS_BOOLEAN](SDL_PROP_GPU_DEVICE_CREATE_D3D12_ALLOW_FEWER_RESOURCE_SLOTS_BOOLEAN)
 
 ### Metal
 
