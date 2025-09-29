@@ -45,6 +45,10 @@ These are the supported properties:
   the width of the texture in pixels, required
 - [`SDL_PROP_TEXTURE_CREATE_HEIGHT_NUMBER`](SDL_PROP_TEXTURE_CREATE_HEIGHT_NUMBER):
   the height of the texture in pixels, required
+- [`SDL_PROP_TEXTURE_CREATE_PALETTE_POINTER`](SDL_PROP_TEXTURE_CREATE_PALETTE_POINTER):
+  an [SDL_Palette](SDL_Palette) to use with palettized texture formats.
+  This can be set later with
+  [SDL_SetTexturePalette](SDL_SetTexturePalette)()
 - [`SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT`](SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT):
   for HDR10 and floating point textures, this defines the value of 100%
   diffuse white, with higher values being displayed in the High Dynamic

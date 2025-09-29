@@ -26,6 +26,9 @@ bool SDL_SetSurfacePalette(SDL_Surface *surface, SDL_Palette *palette);
 
 ## Remarks
 
+Setting the palette keeps an internal reference to the palette, which can
+be safely destroyed afterwards.
+
 A single palette can be shared with many surfaces.
 
 ## Thread Safety
