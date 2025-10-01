@@ -111,6 +111,15 @@ With the gpu renderer:
 
 - [`SDL_PROP_TEXTURE_GPU_TEXTURE_POINTER`](SDL_PROP_TEXTURE_GPU_TEXTURE_POINTER):
   the [SDL_GPUTexture](SDL_GPUTexture) associated with the texture
+- [`SDL_PROP_TEXTURE_GPU_TEXTURE_UV_POINTER`](SDL_PROP_TEXTURE_GPU_TEXTURE_UV_POINTER):
+  the [SDL_GPUTexture](SDL_GPUTexture) associated with the UV plane of an
+  NV12 texture
+- [`SDL_PROP_TEXTURE_GPU_TEXTURE_U_POINTER`](SDL_PROP_TEXTURE_GPU_TEXTURE_U_POINTER):
+  the [SDL_GPUTexture](SDL_GPUTexture) associated with the U plane of a YUV
+  texture
+- [`SDL_PROP_TEXTURE_GPU_TEXTURE_V_POINTER`](SDL_PROP_TEXTURE_GPU_TEXTURE_V_POINTER):
+  the [SDL_GPUTexture](SDL_GPUTexture) associated with the V plane of a YUV
+  texture
 
 ## Thread Safety
 
