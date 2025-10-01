@@ -17,9 +17,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 The variable can be set to the following values:
 
 - "1": Enable fast parameter error checking, e.g. quick NULL checks, etc.
-  (default)
 - "2": Enable full parameter error checking, e.g. validating objects are
-  the correct type, etc.
+  the correct type, etc. (default)
 
 This hint can be set anytime.
 
