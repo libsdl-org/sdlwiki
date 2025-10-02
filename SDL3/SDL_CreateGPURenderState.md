@@ -36,7 +36,7 @@ This function is available since SDL 3.4.0.
 ## See Also
 
 - [SDL_SetGPURenderStateFragmentUniforms](SDL_SetGPURenderStateFragmentUniforms)
-- [SDL_SetRenderGPUState](SDL_SetRenderGPUState)
+- [SDL_SetGPURenderState](SDL_SetGPURenderState)
 - [SDL_DestroyGPURenderState](SDL_DestroyGPURenderState)
 
 ----

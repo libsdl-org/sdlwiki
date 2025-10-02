@@ -1,6 +1,6 @@
 # SDL_CreateGPURenderer
 
-Create a 2D GPU rendering context for a window, with support for the specified shader format.
+Create a 2D GPU rendering context.
 
 ## Header File
 
@@ -9,16 +9,15 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Renderer * SDL_CreateGPURenderer(SDL_Window *window, SDL_GPUShaderFormat format_flags, SDL_GPUDevice **device);
+SDL_Renderer * SDL_CreateGPURenderer(SDL_GPUDevice *device, SDL_Window *window);
 ```
 
 ## Function Parameters
 
-|                                            |                  |                                                                       |
-| ------------------------------------------ | ---------------- | --------------------------------------------------------------------- |
-| [SDL_Window](SDL_Window) *                 | **window**       | the window where rendering is displayed.                              |
-| [SDL_GPUShaderFormat](SDL_GPUShaderFormat) | **format_flags** | a bitflag indicating which shader formats the app is able to provide. |
-| [SDL_GPUDevice](SDL_GPUDevice) **          | **device**       | a pointer filled with the associated GPU device, or NULL on error.    |
+|                                  |            |                                                                                   |
+| -------------------------------- | ---------- | --------------------------------------------------------------------------------- |
+| [SDL_GPUDevice](SDL_GPUDevice) * | **device** | the GPU device to use with the renderer, or NULL to create a device.              |
+| [SDL_Window](SDL_Window) *       | **window** | the window where rendering is displayed, or NULL to create an offscreen renderer. |
 
 ## Return Value
 
@@ -28,17 +27,21 @@ information.
 
 ## Remarks
 
-This is a convenience function to create a SDL GPU backed renderer,
-intended to be used with [SDL_GPURenderState](SDL_GPURenderState). The
-resulting renderer will support shaders in one of the specified shader
-formats.
+The GPU device to use is passed in as a parameter. If this is NULL, then a
+device will be created normally and can be retrieved using
+[SDL_GetGPURendererDevice](SDL_GetGPURendererDevice)().
 
-If no available GPU driver supports any of the specified shader formats,
-this function will fail.
+The window to use is passed in as a parameter. If this is NULL, then this
+will become an offscreen renderer. In that case, you should call
+[SDL_SetRenderTarget](SDL_SetRenderTarget)() to setup rendering to a
+texture, and then call [SDL_RenderPresent](SDL_RenderPresent)() normally to
+complete drawing a frame.
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+If this function is called with a valid GPU device, it should be called on
+the thread that created the device. If this function is called with a valid
+window, it should be called on the thread that created the window.
 
 ## Version
 
@@ -47,10 +50,10 @@ This function is available since SDL 3.4.0.
 ## See Also
 
 - [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
-- [SDL_GetGPUShaderFormats](SDL_GetGPUShaderFormats)
+- [SDL_GetGPURendererDevice](SDL_GetGPURendererDevice)
 - [SDL_CreateGPUShader](SDL_CreateGPUShader)
 - [SDL_CreateGPURenderState](SDL_CreateGPURenderState)
-- [SDL_SetRenderGPUState](SDL_SetRenderGPUState)
+- [SDL_SetGPURenderState](SDL_SetGPURenderState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

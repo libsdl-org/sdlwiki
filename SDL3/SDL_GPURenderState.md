@@ -20,7 +20,7 @@ This struct is available since SDL 3.4.0.
 
 - [SDL_CreateGPURenderState](SDL_CreateGPURenderState)
 - [SDL_SetGPURenderStateFragmentUniforms](SDL_SetGPURenderStateFragmentUniforms)
-- [SDL_SetRenderGPUState](SDL_SetRenderGPUState)
+- [SDL_SetGPURenderState](SDL_SetGPURenderState)
 - [SDL_DestroyGPURenderState](SDL_DestroyGPURenderState)
 
 ----

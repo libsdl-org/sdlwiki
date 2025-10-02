@@ -35,7 +35,7 @@ _also_ create a software renderer, but they are intended to be used with an
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

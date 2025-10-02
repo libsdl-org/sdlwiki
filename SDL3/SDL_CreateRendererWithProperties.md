@@ -53,6 +53,8 @@ These are the supported properties:
 
 With the SDL GPU renderer (since SDL 3.4.0):
 
+- [`SDL_PROP_RENDERER_CREATE_GPU_DEVICE_POINTER`](SDL_PROP_RENDERER_CREATE_GPU_DEVICE_POINTER):
+  the device to use with the renderer, optional.
 - [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_SPIRV_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_SPIRV_BOOLEAN):
   the app is able to provide SPIR-V shaders to
   [SDL_GPURenderState](SDL_GPURenderState), optional.
