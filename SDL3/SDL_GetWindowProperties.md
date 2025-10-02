@@ -150,6 +150,9 @@ On Emscripten:
 
 - [`SDL_PROP_WINDOW_EMSCRIPTEN_CANVAS_ID_STRING`](SDL_PROP_WINDOW_EMSCRIPTEN_CANVAS_ID_STRING):
   the id the canvas element will have
+- [`SDL_PROP_WINDOW_EMSCRIPTEN_FILL_DOCUMENT_BOOLEAN`](SDL_PROP_WINDOW_EMSCRIPTEN_FILL_DOCUMENT_BOOLEAN):
+  true if the canvas is set to consume the entire browser window, bypassing
+  some SDL window functionality.
 - [`SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING`](SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING):
   the keyboard element that associates keyboard events to this window
 

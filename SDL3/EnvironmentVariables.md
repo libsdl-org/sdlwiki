@@ -45,6 +45,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_EGL_LIBRARY](SDL_HINT_EGL_LIBRARY): Specify the EGL library to load.
 - [SDL_EMSCRIPTEN_ASYNCIFY](SDL_HINT_EMSCRIPTEN_ASYNCIFY): Disable giving back control to the browser automatically when running with asyncify.
 - [SDL_EMSCRIPTEN_CANVAS_SELECTOR](SDL_HINT_EMSCRIPTEN_CANVAS_SELECTOR): Specify the CSS selector used for the "default" window/canvas.
+- [SDL_EMSCRIPTEN_FILL_DOCUMENT](SDL_HINT_EMSCRIPTEN_FILL_DOCUMENT): Dictate that newly-created windows will fill the whole browser window.
 - [SDL_EMSCRIPTEN_KEYBOARD_ELEMENT](SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT): Override the binding element for keyboard inputs for Emscripten builds.
 - [SDL_ENABLE_SCREEN_KEYBOARD](SDL_HINT_ENABLE_SCREEN_KEYBOARD): A variable that controls whether the on-screen keyboard should be shown when text input is active.
 - [SDL_EVDEV_DEVICES](SDL_HINT_EVDEV_DEVICES): A variable containing a list of evdev devices to use if udev is not available.
