@@ -23,6 +23,10 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 This macro is available since SDL 3.2.0.
 
+## See Also
+
+- [SDL_GetWindowPosition](SDL_GetWindowPosition)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)
 
