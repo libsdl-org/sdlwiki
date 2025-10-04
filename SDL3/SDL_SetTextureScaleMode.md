@@ -30,8 +30,6 @@ The default texture scale mode is
 [SDL_SCALEMODE_LINEAR](SDL_SCALEMODE_LINEAR).
 
 If the scale mode is not supported, the closest supported mode is chosen.
-Palettized textures will always use
-[SDL_SCALEMODE_NEAREST](SDL_SCALEMODE_NEAREST).
 
 ## Thread Safety
 
