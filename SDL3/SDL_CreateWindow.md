@@ -1,196 +1,69 @@
 # SDL_CreateWindow
 
-Create a window with the specified dimensions and flags.
+أنشئ نافذة بالأبعاد والعلامات المحددة.
 
-## Header File
+## ملف الرأس
 
-Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_video.h)
+مُعرّف في [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_video.h)
 
-## Syntax
+## بناء الجملة
 
 ```c
 SDL_Window * SDL_CreateWindow(const char *title, int w, int h, SDL_WindowFlags flags);
 ```
 
-## Function Parameters
+## معلمات الدالة
 
-|                                    |           |                                                                     |
+| | | |
 | ---------------------------------- | --------- | ------------------------------------------------------------------- |
-| const char *                       | **title** | the title of the window, in UTF-8 encoding.                         |
-| int                                | **w**     | the width of the window.                                            |
-| int                                | **h**     | the height of the window.                                           |
-| [SDL_WindowFlags](SDL_WindowFlags) | **flags** | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together. |
+| const char * | **title** | عنوان النافذة، بترميز UTF-8. |
+| int | **w** | عرض النافذة. |
+| int | **h** | ارتفاع النافذة. |
+| [SDL_WindowFlags](SDL_WindowFlags) | **flags** | 0، أو واحد أو أكثر من [SDL_WindowFlags](SDL_WindowFlags) معًا باستخدام OR. |
 
-## Return Value
+## قيمة الإرجاع
 
-([SDL_Window](SDL_Window) *) Returns the window that was created or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+([SDL_Window](SDL_Window) *) تُرجع النافذة التي تم إنشاؤها أو قيمة NULL عند الفشل؛ استدعي [SDL_GetError](SDL_GetError)() لمزيد من المعلومات.
 
-## Remarks
+## ملاحظات
 
-The window size is a request and may be different than expected based on
-the desktop layout and window manager policies. Your application should be
-prepared to handle a window of any size.
+حجم النافذة هو طلب، وقد يختلف عن المتوقع بناءً على تخطيط سطح المكتب وسياسات إدارة النوافذ. يجب أن يكون تطبيقك جاهزًا للتعامل مع أي حجم نافذة.
 
-`flags` may be any of the following OR'd together:
+يمكن استخدام `flags` كأيٍّ من القيم التالية معًا (أو):
 
-- [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN): fullscreen window at
-  desktop resolution
-- [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL): window usable with an OpenGL
-  context
-- [`SDL_WINDOW_HIDDEN`](SDL_WINDOW_HIDDEN): window is not visible
-- [`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS): no window decoration
-- [`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE): window can be resized
-- [`SDL_WINDOW_MINIMIZED`](SDL_WINDOW_MINIMIZED): window is minimized
-- [`SDL_WINDOW_MAXIMIZED`](SDL_WINDOW_MAXIMIZED): window is maximized
-- [`SDL_WINDOW_MOUSE_GRABBED`](SDL_WINDOW_MOUSE_GRABBED): window has
-  grabbed mouse focus
-- [`SDL_WINDOW_INPUT_FOCUS`](SDL_WINDOW_INPUT_FOCUS): window has input
-  focus
-- [`SDL_WINDOW_MOUSE_FOCUS`](SDL_WINDOW_MOUSE_FOCUS): window has mouse
-  focus
-- [`SDL_WINDOW_EXTERNAL`](SDL_WINDOW_EXTERNAL): window not created by SDL
-- [`SDL_WINDOW_MODAL`](SDL_WINDOW_MODAL): window is modal
-- [`SDL_WINDOW_HIGH_PIXEL_DENSITY`](SDL_WINDOW_HIGH_PIXEL_DENSITY): window
-  uses high pixel density back buffer if possible
-- [`SDL_WINDOW_MOUSE_CAPTURE`](SDL_WINDOW_MOUSE_CAPTURE): window has mouse
-  captured (unrelated to MOUSE_GRABBED)
-- [`SDL_WINDOW_ALWAYS_ON_TOP`](SDL_WINDOW_ALWAYS_ON_TOP): window should
-  always be above others
-- [`SDL_WINDOW_UTILITY`](SDL_WINDOW_UTILITY): window should be treated as a
-  utility window, not showing in the task bar and window list
-- [`SDL_WINDOW_TOOLTIP`](SDL_WINDOW_TOOLTIP): window should be treated as a
-  tooltip and does not get mouse or keyboard focus, requires a parent
-  window
-- [`SDL_WINDOW_POPUP_MENU`](SDL_WINDOW_POPUP_MENU): window should be
-  treated as a popup menu, requires a parent window
-- [`SDL_WINDOW_KEYBOARD_GRABBED`](SDL_WINDOW_KEYBOARD_GRABBED): window has
-  grabbed keyboard input
-- [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN): window usable with a Vulkan
-  instance
-- [`SDL_WINDOW_METAL`](SDL_WINDOW_METAL): window usable with a Metal
-  instance
-- [`SDL_WINDOW_TRANSPARENT`](SDL_WINDOW_TRANSPARENT): window with
-  transparent buffer
-- [`SDL_WINDOW_NOT_FOCUSABLE`](SDL_WINDOW_NOT_FOCUSABLE): window should not
-  be focusable
+- [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN): نافذة بملء الشاشة بدقة سطح المكتب
+- [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL): نافذة قابلة للاستخدام مع سياق OpenGL
+- [`SDL_WINDOW_HIDDEN`](SDL_WINDOW_HIDDEN): النافذة غير مرئية
+- [`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS): لا توجد زخرفة للنافذة
+- [`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE): يمكن تغيير حجم النافذة
+- [`SDL_WINDOW_MINIMIZED`](SDL_WINDOW_MINIMIZED): النافذة مصغّرة
+- [`SDL_WINDOW_MAXIMIZED`](SDL_WINDOW_MAXIMIZED): النافذة مُكبَّرة
+- [`SDL_WINDOW_MOUSE_GRABBED`](SDL_WINDOW_MOUSE_GRABBED): النافذة
+تلتقط تركيز الماوس
+- [`SDL_WINDOW_INPUT_FOCUS`](SDL_WINDOW_INPUT_FOCUS): النافذة
+تتمركز
+- [`SDL_WINDOW_MOUSE_FOCUS`](SDL_WINDOW_MOUSE_FOCUS): النافذة
+تتركز
+- [`SDL_WINDOW_EXTERNAL`](SDL_WINDOW_EXTERNAL): النافذة لم تُنشأ بواسطة SDL
+- [`SDL_WINDOW_MODAL`](SDL_WINDOW_MODAL): النافذة نافذة نموذجية
+- [`SDL_WINDOW_HIGH_PIXEL_DENSITY`](SDL_WINDOW_HIGH_PIXEL_DENSITY): تستخدم النافذة مخزنًا احتياطيًا عالي الكثافة للبكسل إن أمكن.
+- [`SDL_WINDOW_MOUSE_CAPTURE`](SDL_WINDOW_MOUSE_CAPTURE): تم التقاط حركة الماوس في النافذة (غير مرتبط بـ MOUSE_GRABBED)
+- [`SDL_WINDOW_ALWAYS_ON_TOP`](SDL_WINDOW_ALWAYS_ON_TOP): يجب أن تكون النافذة دائمًا أعلى من النوافذ الأخرى.
+- [`SDL_WINDOW_UTILITY`](SDL_WINDOW_UTILITY): يجب أن تُعامل النافذة كنافذة أداة، ولا تظهر في شريط المهام وقائمة النوافذ.
+- [`SDL_WINDOW_TOOLTIP`](SDL_WINDOW_TOOLTIP): يجب أن تُعامل النافذة كنافذة تلميح، ولا يتم التركيز عليها باستخدام الماوس أو لوحة المفاتيح، وتتطلب نافذة رئيسية
+- [`SDL_WINDOW_POPUP_MENU`](SDL_WINDOW_POPUP_MENU): يجب التعامل مع النافذة كقائمة منبثقة، وتتطلب نافذة رئيسية.
+- [`SDL_WINDOW_KEYBOARD_GRABBED`](SDL_WINDOW_KEYBOARD_GRABBED): تم التقاط مدخلات لوحة المفاتيح في النافذة.
+- [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN): نافذة قابلة للاستخدام مع نسخة Vulkan.
+- [`SDL_WINDOW_METAL`](SDL_WINDOW_METAL): نافذة قابلة للاستخدام مع نسخة Metal.
+- [`SDL_WINDOW_TRANSPARENT`](SDL_WINDOW_TRANSPARENT): نافذة ذات مخزن مؤقت شفاف.
+- [`SDL_WINDOW_NOT_FOCUSABLE`](SDL_WINDOW_NOT_FOCUSABLE): يجب أن تكون النافذة غير قابلة للتركيز
 
-The [SDL_Window](SDL_Window) will be shown if
-[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN) is not set. If hidden at creation
-time, [SDL_ShowWindow](SDL_ShowWindow)() can be used to show it later.
+سيتم عرض [SDL_Window](SDL_Window) إذا لم يتم ضبط [SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN). إذا كانت مخفية عند الإنشاء، فيمكن استخدام [SDL_ShowWindow](SDL_ShowWindow)() لعرضها لاحقًا.
 
-On Apple's macOS, you **must** set the NSHighResolutionCapable Info.plist
-property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
+في نظام macOS من Apple، **يجب** ضبط الخاصية NSHighResolutionCapable Info.plist على YES، وإلا فلن تحصل على لوحة OpenGL عالية الدقة.
 
-The window pixel size may differ from its window coordinate size if the
-window is on a high pixel density display. Use
-[SDL_GetWindowSize](SDL_GetWindowSize)() to query the client area's size in
-window coordinates, and
-[SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() or
-[SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)() to query the drawable
-size in pixels. Note that the drawable size can vary after the window is
-created and should be queried again if you get an
-[SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED)
-event.
+قد يختلف حجم بكسل النافذة عن حجم إحداثياتها إذا كانت النافذة على شاشة عالية الكثافة. استخدم الدالة [SDL_GetWindowSize](SDL_GetWindowSize)() للاستعلام عن حجم منطقة العميل بإحداثيات النافذة، و[SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() أو [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)() للاستعلام عن حجم العناصر القابلة للرسم بالبكسل. يُرجى ملاحظة أن حجم العناصر القابلة للرسم قد يتغير بعد إنشاء النافذة، ويجب الاستعلام عنه مرة أخرى في حال ظهور حدث [SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED)
 
-If the window is created with any of the
-[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL) or
-[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) flags, then the corresponding
-LoadLibrary function ([SDL_GL_LoadLibrary](SDL_GL_LoadLibrary) or
-[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)) is called and the
-corresponding UnloadLibrary function is called by
-[SDL_DestroyWindow](SDL_DestroyWindow)().
+إذا تم إنشاء النافذة باستخدام أيٍّ من علامتي [SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL) أو [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)، فسيتم استدعاء دالة LoadLibrary المقابلة ([SDL_GL_LoadLibrary](SDL_GL_LoadLibrary) أو [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary))، وسيتم استدعاء دالة UnloadLibrary المقابلة بواسطة [SDL_DestroyWindow](SDL_DestroyWindow)().
 
-If [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) is specified and there isn't a
-working Vulkan driver, [SDL_CreateWindow](SDL_CreateWindow)() will fail,
-because [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() will fail.
-
-If [SDL_WINDOW_METAL](SDL_WINDOW_METAL) is specified on an OS that does not
-support Metal, [SDL_CreateWindow](SDL_CreateWindow)() will fail.
-
-If you intend to use this window with an [SDL_Renderer](SDL_Renderer), you
-should use [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)()
-instead of this function, to avoid window flicker.
-
-On non-Apple devices, SDL requires you to either not link to the Vulkan
-loader or link to a dynamic library version. This limitation may be removed
-in a future version of SDL.
-
-## Thread Safety
-
-This function should only be called on the main thread.
-
-## Version
-
-This function is available since SDL 3.2.0.
-
-## Code Examples
-
-```c
-// Example program:
-// Using SDL3 to create an application window
-
-#include <SDL3/SDL.h>
-#include <SDL3/SDL_main.h>
-
-int main(int argc, char* argv[]) {
-
-    SDL_Window *window;                    // Declare a pointer
-    bool done = false;
-
-    SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL3
-
-    // Create an application window with the following settings:
-    window = SDL_CreateWindow(
-        "An SDL3 window",                  // window title
-        640,                               // width, in pixels
-        480,                               // height, in pixels
-        SDL_WINDOW_OPENGL                  // flags - see below
-    );
-
-    // Check that the window was successfully created
-    if (window == NULL) {
-        // In the case that the window could not be made...
-        SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Could not create window: %s\n", SDL_GetError());
-        return 1;
-    }
-
-    while (!done) {
-        SDL_Event event;
-
-        while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_EVENT_QUIT) {
-                done = true;
-            }
-        }
-
-        // Do game logic, present a frame, etc.
-    }
-
-    // Close and destroy the window
-    SDL_DestroyWindow(window);
-
-    // Clean up
-    SDL_Quit();
-    return 0;
-}
-
-```
-SDL_CreateWindow
-
-إنشاء نافذة بالتفاصيل والأعلام المحددة.
-
-ملف التضمين (Header File)
-
-مُعرّفة في
-<SDL3/SDL_video.h>
-## See Also
-
-- [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
-- [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
-- [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
-- [SDL_DestroyWindow](SDL_DestroyWindow)
-
-----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+إذا تم تحديد [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) ولم يكن هناك برنامج تشغيل Vulkan عامل، فسوف تفشل [SDL_CreateWindow](SDL_CreateWindow)()،
