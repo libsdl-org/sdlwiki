@@ -1,6 +1,6 @@
-# SDL_SaveBMP
+# SDL_SavePNG
 
-Save a surface to a file in BMP format.
+Save a surface to a file in PNG format.
 
 ## Header File
 
@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-bool SDL_SaveBMP(SDL_Surface *surface, const char *file);
+bool SDL_SavePNG(SDL_Surface *surface, const char *file);
 ```
 
 ## Function Parameters
@@ -24,14 +24,6 @@ bool SDL_SaveBMP(SDL_Surface *surface, const char *file);
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the
-BMP directly. Other RGB formats with 8-bit or higher get converted to a
-24-bit surface or, if they have an alpha mask or a colorkey, to a 32-bit
-surface before they are saved. YUV and paletted 1-bit and 4-bit formats are
-not supported.
-
 ## Thread Safety
 
 This function is not thread safe.
@@ -42,8 +34,8 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_LoadBMP](SDL_LoadBMP)
-- [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
+- [SDL_LoadPNG](SDL_LoadPNG)
+- [SDL_SavePNG_IO](SDL_SavePNG_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
