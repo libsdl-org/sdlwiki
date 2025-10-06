@@ -176,7 +176,14 @@ int main(int argc, char* argv[]) {
 }
 
 ```
+SDL_CreateWindow
 
+إنشاء نافذة بالتفاصيل والأعلام المحددة.
+
+ملف التضمين (Header File)
+
+مُعرّفة في
+<SDL3/SDL_video.h>
 ## See Also
 
 - [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
