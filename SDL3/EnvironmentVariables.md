@@ -214,7 +214,8 @@ This list matches the latest in SDL3's revision control.
 - [SDL_VIDEO_FORCE_EGL](SDL_HINT_VIDEO_FORCE_EGL): A variable controlling whether the OpenGL context should be created with EGL.
 - [SDL_VIDEO_MAC_FULLSCREEN_MENU_VISIBILITY](SDL_HINT_VIDEO_MAC_FULLSCREEN_MENU_VISIBILITY): A variable that specifies the menu visibility when a window is fullscreen in Spaces on macOS.
 - [SDL_VIDEO_MAC_FULLSCREEN_SPACES](SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES): A variable that specifies the policy for fullscreen Spaces on macOS.
-- [SDL_VIDEO_MATCH_EXCLUSIVE_MODE_ON_MOVE](SDL_HINT_VIDEO_MATCH_EXCLUSIVE_MODE_ON_MOVE): A variable indicating whether the metal layer drawable size should be updated for the SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED event on macOS.
+- [SDL_VIDEO_MATCH_EXCLUSIVE_MODE_ON_MOVE](SDL_HINT_VIDEO_MATCH_EXCLUSIVE_MODE_ON_MOVE): A variable controlling whether SDL will attempt to automatically set the destination display to a mode most closely matching that of the previous display if an exclusive fullscreen window is moved onto it.
+- [SDL_VIDEO_METAL_AUTO_RESIZE_DRAWABLE](SDL_HINT_VIDEO_METAL_AUTO_RESIZE_DRAWABLE): A variable indicating whether the metal layer drawable size should be updated for the SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED event on macOS.
 - [SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS](SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS): A variable controlling whether fullscreen windows are minimized when they lose focus.
 - [SDL_VIDEO_OFFSCREEN_SAVE_FRAMES](SDL_HINT_VIDEO_OFFSCREEN_SAVE_FRAMES): A variable controlling whether the offscreen video driver saves output frames.
 - [SDL_VIDEO_SYNC_WINDOW_OPERATIONS](SDL_HINT_VIDEO_SYNC_WINDOW_OPERATIONS): A variable controlling whether all window operations will block until complete.

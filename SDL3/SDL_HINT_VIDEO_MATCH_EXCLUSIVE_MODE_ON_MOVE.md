@@ -1,6 +1,6 @@
 # SDL_HINT_VIDEO_MATCH_EXCLUSIVE_MODE_ON_MOVE
 
-A variable indicating whether the metal layer drawable size should be updated for the [SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED) event on macOS.
+A variable controlling whether SDL will attempt to automatically set the destination display to a mode most closely matching that of the previous display if an exclusive fullscreen window is moved onto it.
 
 ## Header File
 
@@ -16,15 +16,14 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 The variable can be set to the following values:
 
-- "0": the metal layer drawable size will not be updated on the
-  [SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED)
-  event.
-- "1": the metal layer drawable size will be updated on the
-  [SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED)
-  event. (default)
+- "0": SDL will not attempt to automatically set a matching mode on the
+  destination display. If an exclusive fullscreen window is moved to a new
+  display, the window will become fullscreen desktop.
+- "1": SDL will attempt to automatically set a mode on the destination
+  display that most closely matches the mode of the display that the
+  exclusive fullscreen window was previously on. (default)
 
-This hint should be set before [SDL_Metal_CreateView](SDL_Metal_CreateView)
-called.
+This hint can be set anytime.
 
 ## Version
 
