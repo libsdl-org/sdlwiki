@@ -54,6 +54,13 @@ while (game_is_still_running) {
 }
 ```
 
+Note that Windows (and possibly other platforms) has a quirk about how it
+handles events while dragging/resizing a window, which can cause this
+function to block for significant amounts of time. Technical explanations
+and solutions are discussed on the wiki:
+
+https://wiki.libsdl.org/SDL3/AppFreezeDuringDrag
+
 ## Thread Safety
 
 This function should only be called on the main thread.
