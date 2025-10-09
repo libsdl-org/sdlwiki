@@ -8,7 +8,7 @@ SDL provides two ways to get called during these blocking operations.
   - [The callbacks from `SDL_main.h`](README-main-functions#main-callbacks-in-sdl3)
     - Using this, [`SDL_AppEvent`](SDL_AppEvent) and [`SDL_AppIterate`](SDL_AppIterate) should be called for you, even when being resized or moved.
   - [SDL_AddEventWatch](SDL_AddEventWatch)
-    - Using this, you'll need to watch for the `SDL_EVENT_WINDOW_EXPOSED` event. That event will tell you you're blocked and to do whatever you need to do to keep your process healthy, including re-rendering the Window so it doesn't stretch or look overly unnatural.
+    - Using this, you'll need to watch for the `SDL_EVENT_WINDOW_EXPOSED` event. This event tells you that you should redraw your window from within the callback so it doesn't stretch or look overly unnatural.
 
 For further context, even when blocked the OS gives your application time slices during these operations, but they do so through callbacks themselves, not by returning back to user code. So the only solution is for SDL or similar to give you a callback as well.
 
