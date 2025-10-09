@@ -16,9 +16,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 The variable can be set to the following values:
 
-- "0": GameInput is not used for raw keyboard and mouse events.
+- "0": GameInput is not used for raw keyboard and mouse events. (default)
 - "1": GameInput is used for raw keyboard and mouse events, if available.
-  (default)
 
 This hint should be set before SDL is initialized.
 
