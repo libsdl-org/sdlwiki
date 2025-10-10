@@ -1,6 +1,6 @@
 # SDL_HINT_IOS_HIDE_HOME_INDICATOR
 
-A variable controlling whether the home indicator bar on iPhone X should be hidden.
+A variable controlling whether the home indicator bar on iPhone X and later should be hidden.
 
 ## Header File
 
