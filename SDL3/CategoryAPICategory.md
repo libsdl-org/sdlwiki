@@ -18,6 +18,7 @@ A more human-friendly version is over in [APIByCategory](APIByCategory), if you 
 - [CategoryClipboard](CategoryClipboard)
 - [CategoryCPUInfo](CategoryCPUInfo)
 - [CategoryDialog](CategoryDialog)
+- [CategoryDlopenNotes](CategoryDlopenNotes)
 - [CategoryEndian](CategoryEndian)
 - [CategoryError](CategoryError)
 - [CategoryEvents](CategoryEvents)
