@@ -36,6 +36,7 @@ SDL_Surface * IMG_Load_IO(SDL_IOStream *src, bool closeio);                     
 SDL_Texture * IMG_LoadTexture(SDL_Renderer *renderer, const char *file);                                           // Load an image from a filesystem path into a GPU texture.
 SDL_Texture * IMG_LoadTexture_IO(SDL_Renderer *renderer, SDL_IOStream *src, bool closeio);                         // Load an image from an SDL data source into a GPU texture.
 SDL_Texture * IMG_LoadTextureTyped_IO(SDL_Renderer *renderer, SDL_IOStream *src, bool closeio, const char *type);  // Load an image from an SDL data source into a GPU texture.
+SDL_Surface * IMG_GetClipboardImage(void);                                                                         // Get the image currently in the clipboard.
 bool IMG_isAVIF(SDL_IOStream *src);                                                                                // Detect AVIF image data on a readable/seekable SDL_IOStream.
 bool IMG_isICO(SDL_IOStream *src);                                                                                 // Detect ICO image data on a readable/seekable SDL_IOStream.
 bool IMG_isCUR(SDL_IOStream *src);                                                                                 // Detect CUR image data on a readable/seekable SDL_IOStream.
