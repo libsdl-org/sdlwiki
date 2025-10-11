@@ -626,6 +626,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_GetSurfaceImages](SDL_GetSurfaceImages)
 - [SDL_GetSurfacePalette](SDL_GetSurfacePalette)
 - [SDL_GetSurfaceProperties](SDL_GetSurfaceProperties)
+- [SDL_GetSystemPageSize](SDL_GetSystemPageSize)
 - [SDL_GetSystemRAM](SDL_GetSystemRAM)
 - [SDL_GetSystemTheme](SDL_GetSystemTheme)
 - [SDL_GetTextInputArea](SDL_GetTextInputArea)

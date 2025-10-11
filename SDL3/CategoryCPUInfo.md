@@ -21,6 +21,7 @@ simply return false in these cases).
 - [SDL_GetCPUCacheLineSize](SDL_GetCPUCacheLineSize)
 - [SDL_GetNumLogicalCPUCores](SDL_GetNumLogicalCPUCores)
 - [SDL_GetSIMDAlignment](SDL_GetSIMDAlignment)
+- [SDL_GetSystemPageSize](SDL_GetSystemPageSize)
 - [SDL_GetSystemRAM](SDL_GetSystemRAM)
 - [SDL_HasAltiVec](SDL_HasAltiVec)
 - [SDL_HasARMSIMD](SDL_HasARMSIMD)
