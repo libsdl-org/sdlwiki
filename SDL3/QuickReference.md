@@ -1471,6 +1471,7 @@ bool SDL_HasLSX(void);                // Determine whether the CPU has LSX (LOON
 bool SDL_HasLASX(void);               // Determine whether the CPU has LASX (LOONGARCH SIMD) features.
 int SDL_GetSystemRAM(void);           // Get the amount of RAM configured in the system.
 size_t SDL_GetSIMDAlignment(void);    // Report the alignment this system needs for SIMD allocations.
+int SDL_GetSystemPageSize(void);      // Report the size of a page of memory.
 
 // ██╗ ███╗   ██╗ ████████╗ ██████╗  ██╗ ███╗   ██╗  ██████╗ ██╗  ██████╗  ██████╗
 // ██║ ████╗  ██║ ╚══██╔══╝ ██╔══██╗ ██║ ████╗  ██║ ██╔════╝ ██║ ██╔════╝ ██╔════╝
