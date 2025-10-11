@@ -35,6 +35,10 @@ Fullscreen windows automatically match the size of the display mode, and
 you should use [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)() to
 change their size.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 2.0.0.
