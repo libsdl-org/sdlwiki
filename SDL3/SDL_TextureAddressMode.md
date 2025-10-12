@@ -22,6 +22,11 @@ typedef enum SDL_TextureAddressMode
 
 This affects how texture coordinates are interpreted outside of [0, 1]
 
+Texture wrapping is always supported for power of two texture sizes, and is
+supported for other texture sizes if
+[SDL_PROP_RENDERER_TEXTURE_WRAPPING_BOOLEAN](SDL_PROP_RENDERER_TEXTURE_WRAPPING_BOOLEAN)
+is set to true.
+
 ## Version
 
 This enum is available since SDL 3.4.0.
