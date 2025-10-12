@@ -51,19 +51,23 @@ SDL_Renderer *renderer;
 SDL_Surface *surface = SDL_CreateSurface(640, 480, SDL_PIXELFORMAT_RGBA8888);
 
 if (surface == NULL) {
-    fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
+    SDL_Log("CreateRGBSurface failed: %s", SDL_GetError());
     exit(1);
 }
 
 SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
 
 if (texture == NULL) {
-    fprintf(stderr, "CreateTextureFromSurface failed: %s\n", SDL_GetError());
+    SDL_Log("CreateTextureFromSurface failed: %s", SDL_GetError());
     exit(1);
 }
 
 SDL_DestroySurface(surface);
 surface = NULL;
+
+// Use the texture in rendering, then destroy it when you're done using it.
+
+SDL_DestroyTexture(texture);
 ```
 
 ## See Also
