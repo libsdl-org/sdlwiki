@@ -98,6 +98,7 @@ system.
 - [SDL_PenMotionEvent](SDL_PenMotionEvent)
 - [SDL_PenProximityEvent](SDL_PenProximityEvent)
 - [SDL_PenTouchEvent](SDL_PenTouchEvent)
+- [SDL_PinchFingerEvent](SDL_PinchFingerEvent)
 - [SDL_QuitEvent](SDL_QuitEvent)
 - [SDL_RenderEvent](SDL_RenderEvent)
 - [SDL_SensorEvent](SDL_SensorEvent)
