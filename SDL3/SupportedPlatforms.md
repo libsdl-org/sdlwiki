@@ -24,6 +24,7 @@ SDL3 has been known to work on the following platforms at some point, in no spec
 - Nintendo Switch (separate NDA-only fork)
 - Sony PlayStation 4 (separate NDA-only fork)
 - Sony PlayStation 5 (separate NDA-only fork)
+- N-Gage
 
 Note that the SDL maintainers do not test on all these platforms; if a less-common system breaks, [please let us know](https://github.com/libsdl-org/SDL/issues/new) and send patches if you can.
 
@@ -34,7 +35,6 @@ If you'd like to port SDL to a new platform, feel free to get in touch! [A guide
 The following platforms were supported in SDL2, but were removed for SDL3:
 
 - OS/2
-- N-Gage
 - Google Stadia
 - Windows UWP
 - Older macOS releases (everything before 10.14 Mojave)
