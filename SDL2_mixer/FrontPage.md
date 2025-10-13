@@ -1,21 +1,20 @@
-= SDL_mixer 2.0 =
+# SDL_mixer 2.0
 
-The latest version of this library is available from [https://github.com/libsdl-org/SDL_mixer/releases GitHub].
+The latest version of this library is available from [GitHub](https://github.com/libsdl-org/SDL_mixer/releases).
 
 Due to popular demand, here is a simple multi-channel audio mixer.
 
 It supports 8 channels of 16 bit stereo audio, plus a single channel of music. It can load FLAC, MP3, Ogg, VOC, and WAV format audio. It can also load MIDI, MOD, and Opus audio, depending on build options (see the note below for details.)
 
-Refer to [[CategoryAPI]] for a list of functions, and the examples [https://github.com/libsdl-org/SDL_mixer/blob/SDL2/playwave.c playwave.c] and [https://github.com/libsdl-org/SDL_mixer/blob/SDL2/playmus.c playmus.c] for documentation on this mixer library.
+Refer to [CategoryAPI](CategoryAPI) for a list of functions, and the examples [playwave.c](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/playwave.c) and [playmus.c](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/playmus.c) for documentation on this mixer library.
 
 The process of mixing MIDI files to wave output is very CPU intensive, so if playing regular WAVE files sound great, but playing MIDI files sound choppy, try using 8-bit audio, mono audio, or lower frequencies.
 
 If you have built with FluidSynth support, you'll need to set the SDL_SOUNDFONTS environment variable to a Sound Font 2 (.sf2) file containing the musical instruments you want to use for MIDI playback. (On some Linux distributions you can install the fluid-soundfont-gm package)
 
-To play MIDI files using Timidity, you'll need to get a complete set of GUS patches from:
-[https://www.libsdl.org/projects/mixer/timidity/timidity.tar.gz timidity.tar.gz] and unpack them in /usr/local/lib under UNIX, and C:\ under Win32.
+To play MIDI files using Timidity, you'll need to get a complete set of GUS patches from [timidity.tar.gz](https://www.libsdl.org/projects/mixer/timidity/timidity.tar.gz) and unpack them in /usr/local/lib under UNIX, and C:\ under Win32.
 
-This library is under the zlib license, see the file [https://github.com/libsdl-org/SDL_mixer/blob/main/LICENSE.txt LICENSE.txt] for details.
+This library is under the zlib license, see the file [LICENSE.txt](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/LICENSE.txt) for details.
 
 Note:
 
