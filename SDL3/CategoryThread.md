@@ -13,12 +13,12 @@ pthreads), these functions still exist, but things like
 anything.
 
 If you're going to work with threads, you almost certainly need to have a
-good understanding of [CategoryMutex](CategoryMutex) as well.
+good understanding of thread safety measures: locking and synchronization
+mechanisms are handled by the functions in SDL_mutex.h.
 
 <!-- END CATEGORY DOCUMENTATION -->
 
 You can read about the SDL_mutex.h pieces on the wiki in [CategoryMutex](CategoryMutex).
-
 
 ## Functions
 
