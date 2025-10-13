@@ -29,8 +29,8 @@ information.
 The OpenGL context will be created with the current states set through
 [SDL_GL_SetAttribute](SDL_GL_SetAttribute)().
 
-The SDL_Window specified must have been created with the SDL_WINDOW_OPENGL
-flag, or context creation will fail.
+The [SDL_Window](SDL_Window) specified must have been created with the
+[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL) flag, or context creation will fail.
 
 Windows users new to OpenGL should note that, for historical reasons, GL
 functions added after OpenGL version 1.1 are not available by default.
