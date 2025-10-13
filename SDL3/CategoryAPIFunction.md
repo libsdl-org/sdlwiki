@@ -471,6 +471,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 - [SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)
 - [SDL_GetPathInfo](SDL_GetPathInfo)
+- [SDL_GetPenDeviceType](SDL_GetPenDeviceType)
 - [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 - [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
 - [SDL_GetPixelFormatDetails](SDL_GetPixelFormatDetails)
