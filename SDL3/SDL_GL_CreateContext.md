@@ -26,6 +26,9 @@ information.
 
 ## Remarks
 
+The OpenGL context will be created with the current states set through
+[SDL_GL_SetAttribute](SDL_GL_SetAttribute)().
+
 Windows users new to OpenGL should note that, for historical reasons, GL
 functions added after OpenGL version 1.1 are not available by default.
 Those functions must be loaded at run-time, either with an OpenGL

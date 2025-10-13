@@ -14,10 +14,10 @@ bool SDL_GL_SetAttribute(SDL_GLAttr attr, int value);
 
 ## Function Parameters
 
-|                          |           |                                                                                |
-| ------------------------ | --------- | ------------------------------------------------------------------------------ |
-| [SDL_GLAttr](SDL_GLAttr) | **attr**  | an [SDL_GLAttr](SDL_GLAttr) enum value specifying the OpenGL attribute to set. |
-| int                      | **value** | the desired value for the attribute.                                           |
+|                          |           |                                                       |
+| ------------------------ | --------- | ----------------------------------------------------- |
+| [SDL_GLAttr](SDL_GLAttr) | **attr**  | an enum value specifying the OpenGL attribute to set. |
+| int                      | **value** | the desired value for the attribute.                  |
 
 ## Return Value
 
@@ -74,6 +74,7 @@ printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 
 ## See Also
 
+- [SDL_GL_CreateContext](SDL_GL_CreateContext)
 - [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 - [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
