@@ -19,6 +19,9 @@ This datatype is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GL_CreateContext](SDL_GL_CreateContext)
+- [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
+- [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+- [SDL_GL_DestroyContext](SDL_GL_DestroyContext)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
