@@ -31,6 +31,21 @@ Note that while this talks about audio streams, this is an OS-level
 concept, so it applies to a physical audio device in this case, and not an
 [SDL_AudioStream](SDL_AudioStream), nor an SDL logical audio device.
 
+For Windows WASAPI audio, the following roles are supported, and map to
+`AUDIO_STREAM_CATEGORY`:
+
+- "Other" (default)
+- "Communications" - Real-time communications, such as VOIP or chat
+- "Game" - Game audio
+- "GameChat" - Game chat audio, similar to "Communications" except that
+  this will not attenuate other audio streams
+- "Movie" - Music or sound with dialog
+- "Media" - Music or sound without dialog
+
+If your application applies its own echo cancellation, gain control, and
+noise reduction it should also set
+[SDL_HINT_AUDIO_DEVICE_RAW_STREAM](SDL_HINT_AUDIO_DEVICE_RAW_STREAM).
+
 This hint should be set before an audio device is opened.
 
 ## Version

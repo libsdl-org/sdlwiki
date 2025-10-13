@@ -24,6 +24,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_AUDIO_CATEGORY](SDL_HINT_AUDIO_CATEGORY): A variable controlling the audio category on iOS and macOS.
 - [SDL_AUDIO_CHANNELS](SDL_HINT_AUDIO_CHANNELS): A variable controlling the default audio channel count.
 - [SDL_AUDIO_DEVICE_APP_ICON_NAME](SDL_HINT_AUDIO_DEVICE_APP_ICON_NAME): Specify an application icon name for an audio device.
+- [SDL_AUDIO_DEVICE_RAW_STREAM](SDL_HINT_AUDIO_DEVICE_RAW_STREAM): Specify whether this audio device should do audio processing.
 - [SDL_AUDIO_DEVICE_SAMPLE_FRAMES](SDL_HINT_AUDIO_DEVICE_SAMPLE_FRAMES): A variable controlling device buffer size.
 - [SDL_AUDIO_DEVICE_STREAM_NAME](SDL_HINT_AUDIO_DEVICE_STREAM_NAME): Specify an audio stream name for an audio device.
 - [SDL_AUDIO_DEVICE_STREAM_ROLE](SDL_HINT_AUDIO_DEVICE_STREAM_ROLE): Specify an application role for an audio device.
