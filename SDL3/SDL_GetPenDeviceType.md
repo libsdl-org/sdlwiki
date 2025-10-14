@@ -24,6 +24,12 @@ SDL_PenDeviceType SDL_GetPenDeviceType(SDL_PenID instance_id);
 given pen, or [SDL_PEN_DEVICE_TYPE_INVALID](SDL_PEN_DEVICE_TYPE_INVALID) on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Many platforms do not supply this information, so an app must always be
+prepared to get an
+[SDL_PEN_DEVICE_TYPE_UNKNOWN](SDL_PEN_DEVICE_TYPE_UNKNOWN) result.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
