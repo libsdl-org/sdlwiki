@@ -310,29 +310,30 @@ bool SDL_ScreenKeyboardShown(SDL_Window *window);                               
 // XX  XX  XX  XX    XX  XX    XX       XX  XX
 // XX      XX   XXXXXX    XXXXXX   XXXXXX   XXXXXXX
 
-bool SDL_HasMouse(void);                                                                                  // Return whether a mouse is currently connected.
-SDL_MouseID * SDL_GetMice(int *count);                                                                    // Get a list of currently connected mice.
-const char * SDL_GetMouseNameForID(SDL_MouseID instance_id);                                              // Get the name of a mouse.
-SDL_Window * SDL_GetMouseFocus(void);                                                                     // Get the window which currently has mouse focus.
-SDL_MouseButtonFlags SDL_GetMouseState(float *x, float *y);                                               // Query SDL's cache for the synchronous mouse button state and the window-relative SDL-cursor position.
-SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);                                         // Query the platform for the asynchronous mouse button state and the desktop-relative platform-cursor position.
-SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);                                       // Query SDL's cache for the synchronous mouse button state and accumulated mouse delta since last call.
-void SDL_WarpMouseInWindow(SDL_Window *window, float x, float y);                                         // Move the mouse cursor to the given position within the window.
-bool SDL_WarpMouseGlobal(float x, float y);                                                               // Move the mouse to the given position in global screen space.
-bool SDL_SetRelativeMouseTransform(SDL_MouseMotionTransformCallback callback, void *userdata);            // Set a user-defined function by which to transform relative mouse inputs.
-bool SDL_SetWindowRelativeMouseMode(SDL_Window *window, bool enabled);                                    // Set relative mouse mode for a window.
-bool SDL_GetWindowRelativeMouseMode(SDL_Window *window);                                                  // Query whether relative mouse mode is enabled for a window.
-bool SDL_CaptureMouse(bool enabled);                                                                      // Capture the mouse and to track input outside an SDL window.
-SDL_Cursor * SDL_CreateCursor(const Uint8 *data, const Uint8 *mask, int w, int h, int hot_x, int hot_y);  // Create a cursor using the specified bitmap data and mask (in MSB format).
-SDL_Cursor * SDL_CreateColorCursor(SDL_Surface *surface, int hot_x, int hot_y);                           // Create a color cursor.
-SDL_Cursor * SDL_CreateSystemCursor(SDL_SystemCursor id);                                                 // Create a system cursor.
-bool SDL_SetCursor(SDL_Cursor *cursor);                                                                   // Set the active cursor.
-SDL_Cursor * SDL_GetCursor(void);                                                                         // Get the active cursor.
-SDL_Cursor * SDL_GetDefaultCursor(void);                                                                  // Get the default cursor.
-void SDL_DestroyCursor(SDL_Cursor *cursor);                                                               // Free a previously-created cursor.
-bool SDL_ShowCursor(void);                                                                                // Show the cursor.
-bool SDL_HideCursor(void);                                                                                // Hide the cursor.
-bool SDL_CursorVisible(void);                                                                             // Return whether the cursor is currently being shown.
+bool SDL_HasMouse(void);                                                                                    // Return whether a mouse is currently connected.
+SDL_MouseID * SDL_GetMice(int *count);                                                                      // Get a list of currently connected mice.
+const char * SDL_GetMouseNameForID(SDL_MouseID instance_id);                                                // Get the name of a mouse.
+SDL_Window * SDL_GetMouseFocus(void);                                                                       // Get the window which currently has mouse focus.
+SDL_MouseButtonFlags SDL_GetMouseState(float *x, float *y);                                                 // Query SDL's cache for the synchronous mouse button state and the window-relative SDL-cursor position.
+SDL_MouseButtonFlags SDL_GetGlobalMouseState(float *x, float *y);                                           // Query the platform for the asynchronous mouse button state and the desktop-relative platform-cursor position.
+SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);                                         // Query SDL's cache for the synchronous mouse button state and accumulated mouse delta since last call.
+void SDL_WarpMouseInWindow(SDL_Window *window, float x, float y);                                           // Move the mouse cursor to the given position within the window.
+bool SDL_WarpMouseGlobal(float x, float y);                                                                 // Move the mouse to the given position in global screen space.
+bool SDL_SetRelativeMouseTransform(SDL_MouseMotionTransformCallback callback, void *userdata);              // Set a user-defined function by which to transform relative mouse inputs.
+bool SDL_SetWindowRelativeMouseMode(SDL_Window *window, bool enabled);                                      // Set relative mouse mode for a window.
+bool SDL_GetWindowRelativeMouseMode(SDL_Window *window);                                                    // Query whether relative mouse mode is enabled for a window.
+bool SDL_CaptureMouse(bool enabled);                                                                        // Capture the mouse and to track input outside an SDL window.
+SDL_Cursor * SDL_CreateCursor(const Uint8 *data, const Uint8 *mask, int w, int h, int hot_x, int hot_y);    // Create a cursor using the specified bitmap data and mask (in MSB format).
+SDL_Cursor * SDL_CreateColorCursor(SDL_Surface *surface, int hot_x, int hot_y);                             // Create a color cursor.
+SDL_Cursor * SDL_CreateAnimatedCursor(SDL_CursorFrameInfo *frames, int frame_count, int hot_x, int hot_y);  // Create an animated color cursor.
+SDL_Cursor * SDL_CreateSystemCursor(SDL_SystemCursor id);                                                   // Create a system cursor.
+bool SDL_SetCursor(SDL_Cursor *cursor);                                                                     // Set the active cursor.
+SDL_Cursor * SDL_GetCursor(void);                                                                           // Get the active cursor.
+SDL_Cursor * SDL_GetDefaultCursor(void);                                                                    // Get the default cursor.
+void SDL_DestroyCursor(SDL_Cursor *cursor);                                                                 // Free a previously-created cursor.
+bool SDL_ShowCursor(void);                                                                                  // Show the cursor.
+bool SDL_HideCursor(void);                                                                                  // Hide the cursor.
+bool SDL_CursorVisible(void);                                                                               // Return whether the cursor is currently being shown.
 
 // XXXXXXXX   XXXXXX   XX    XX   XXXXXX  XX   XX
 //    XX     XX    XX  XX    XX  XX       XX   XX

@@ -35,6 +35,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_CreateAnimatedCursor](SDL_CreateAnimatedCursor)
 - [SDL_CreateColorCursor](SDL_CreateColorCursor)
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)

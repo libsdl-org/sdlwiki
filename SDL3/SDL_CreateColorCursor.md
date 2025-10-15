@@ -117,6 +117,7 @@ exit:
 ## See Also
 
 - [SDL_AddSurfaceAlternateImage](SDL_AddSurfaceAlternateImage)
+- [SDL_CreateAnimatedCursor](SDL_CreateAnimatedCursor)
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 - [SDL_DestroyCursor](SDL_DestroyCursor)
