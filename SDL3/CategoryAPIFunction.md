@@ -119,6 +119,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_cosf](SDL_cosf)
 - [SDL_crc16](SDL_crc16)
 - [SDL_crc32](SDL_crc32)
+- [SDL_CreateAnimatedCursor](SDL_CreateAnimatedCursor)
 - [SDL_CreateAsyncIOQueue](SDL_CreateAsyncIOQueue)
 - [SDL_CreateAudioStream](SDL_CreateAudioStream)
 - [SDL_CreateColorCursor](SDL_CreateColorCursor)

@@ -20,6 +20,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_ClipboardEvent](SDL_ClipboardEvent)
 - [SDL_Color](SDL_Color)
 - [SDL_CommonEvent](SDL_CommonEvent)
+- [SDL_CursorFrameInfo](SDL_CursorFrameInfo)
 - [SDL_DateTime](SDL_DateTime)
 - [SDL_DialogFileFilter](SDL_DialogFileFilter)
 - [SDL_DisplayEvent](SDL_DisplayEvent)
