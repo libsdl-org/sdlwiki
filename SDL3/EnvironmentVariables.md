@@ -144,6 +144,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_WHEEL_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_WHEEL_DEVICES_EXCLUDED): A variable containing a list of devices that are not wheel style controllers.
 - [SDL_JOYSTICK_ZERO_CENTERED_DEVICES](SDL_HINT_JOYSTICK_ZERO_CENTERED_DEVICES): A variable containing a list of devices known to have all axes centered at zero.
 - [SDL_KEYCODE_OPTIONS](SDL_HINT_KEYCODE_OPTIONS): A variable that controls keycode representation in keyboard events.
+- [SDL_KMSDRM_ATOMIC](SDL_HINT_KMSDRM_ATOMIC): A variable that controls whether KMSDRM will use "atomic" functionality.
 - [SDL_KMSDRM_DEVICE_INDEX](SDL_HINT_KMSDRM_DEVICE_INDEX): A variable that controls what KMSDRM device to use.
 - [SDL_KMSDRM_REQUIRE_DRM_MASTER](SDL_HINT_KMSDRM_REQUIRE_DRM_MASTER): A variable that controls whether SDL requires DRM master access in order to initialize the KMSDRM video backend.
 - [SDL_LOGGING](SDL_HINT_LOGGING): A variable controlling the default SDL log levels.
