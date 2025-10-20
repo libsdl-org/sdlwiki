@@ -21,7 +21,7 @@ bool IMG_isICO(SDL_IOStream *src);
 
 ## Return Value
 
-(bool) Returns non-zero if this is ICO data, zero otherwise.
+(bool) Returns true if this is ICO data, false otherwise.
 
 ## Remarks
 
@@ -46,6 +46,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
+- [IMG_isANI](IMG_isANI)
 - [IMG_isAVIF](IMG_isAVIF)
 - [IMG_isCUR](IMG_isCUR)
 - [IMG_isBMP](IMG_isBMP)

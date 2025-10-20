@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
-# IMG_isBMP
+# IMG_isANI
 
-Detect BMP image data on a readable/seekable SDL_IOStream.
+Detect ANI animated cursor data on a readable/seekable SDL_IOStream.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-bool IMG_isBMP(SDL_IOStream *src);
+bool IMG_isANI(SDL_IOStream *src);
 ```
 
 ## Function Parameters
@@ -21,7 +21,7 @@ bool IMG_isBMP(SDL_IOStream *src);
 
 ## Return Value
 
-(bool) Returns true if this is BMP data, false otherwise.
+(bool) Returns true if this is ANI animated cursor data, false otherwise.
 
 ## Remarks
 
@@ -46,10 +46,10 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-- [IMG_isANI](IMG_isANI)
 - [IMG_isAVIF](IMG_isAVIF)
 - [IMG_isICO](IMG_isICO)
 - [IMG_isCUR](IMG_isCUR)
+- [IMG_isBMP](IMG_isBMP)
 - [IMG_isGIF](IMG_isGIF)
 - [IMG_isJPG](IMG_isJPG)
 - [IMG_isJXL](IMG_isJXL)

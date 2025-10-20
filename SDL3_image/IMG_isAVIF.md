@@ -21,7 +21,7 @@ bool IMG_isAVIF(SDL_IOStream *src);
 
 ## Return Value
 
-(bool) Returns non-zero if this is AVIF data, zero otherwise.
+(bool) Returns true if this is AVIF data, false otherwise.
 
 ## Remarks
 
@@ -46,7 +46,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-- [IMG_isAVIF](IMG_isAVIF)
+- [IMG_isANI](IMG_isANI)
 - [IMG_isICO](IMG_isICO)
 - [IMG_isCUR](IMG_isCUR)
 - [IMG_isBMP](IMG_isBMP)

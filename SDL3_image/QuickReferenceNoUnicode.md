@@ -37,6 +37,7 @@ SDL_Texture * IMG_LoadTexture(SDL_Renderer *renderer, const char *file);        
 SDL_Texture * IMG_LoadTexture_IO(SDL_Renderer *renderer, SDL_IOStream *src, bool closeio);                         // Load an image from an SDL data source into a GPU texture.
 SDL_Texture * IMG_LoadTextureTyped_IO(SDL_Renderer *renderer, SDL_IOStream *src, bool closeio, const char *type);  // Load an image from an SDL data source into a GPU texture.
 SDL_Surface * IMG_GetClipboardImage(void);                                                                         // Get the image currently in the clipboard.
+bool IMG_isANI(SDL_IOStream *src);                                                                                 // Detect ANI animated cursor data on a readable/seekable SDL_IOStream.
 bool IMG_isAVIF(SDL_IOStream *src);                                                                                // Detect AVIF image data on a readable/seekable SDL_IOStream.
 bool IMG_isICO(SDL_IOStream *src);                                                                                 // Detect ICO image data on a readable/seekable SDL_IOStream.
 bool IMG_isCUR(SDL_IOStream *src);                                                                                 // Detect CUR image data on a readable/seekable SDL_IOStream.
@@ -97,10 +98,12 @@ IMG_Animation * IMG_LoadAnimation(const char *file);                            
 IMG_Animation * IMG_LoadAnimation_IO(SDL_IOStream *src, bool closeio);                                             // Load an animation from an SDL_IOStream.
 IMG_Animation * IMG_LoadAnimationTyped_IO(SDL_IOStream *src, bool closeio, const char *type);                      // Load an animation from an SDL datasource
 void IMG_FreeAnimation(IMG_Animation *anim);                                                                       // Dispose of an IMG_Animation and free its resources.
+IMG_Animation * IMG_LoadANIAnimation_IO(SDL_IOStream *src);                                                        // Load an ANI animation directly from an SDL_IOStream.
 IMG_Animation * IMG_LoadAPNGAnimation_IO(SDL_IOStream *src);                                                       // Load an APNG animation directly from an SDL_IOStream.
 IMG_Animation * IMG_LoadAVIFAnimation_IO(SDL_IOStream *src);                                                       // Load an AVIF animation directly from an SDL_IOStream.
 IMG_Animation * IMG_LoadGIFAnimation_IO(SDL_IOStream *src);                                                        // Load a GIF animation directly.
 IMG_Animation * IMG_LoadWEBPAnimation_IO(SDL_IOStream *src);                                                       // Load a WEBP animation directly.
+SDL_Cursor * IMG_CreateAnimatedCursor(IMG_Animation *anim, int hot_x, int hot_y);                                  // Create an animated cursor from an animation.
 IMG_AnimationEncoder * IMG_CreateAnimationEncoder(const char *file);                                               // Create an encoder to save a series of images to a file.
 IMG_AnimationEncoder * IMG_CreateAnimationEncoder_IO(SDL_IOStream *dst, bool closeio, const char *type);           // Create an encoder to save a series of images to an IOStream.
 IMG_AnimationEncoder * IMG_CreateAnimationEncoderWithProperties(SDL_PropertiesID props);                           // Create an animation encoder with the specified properties.

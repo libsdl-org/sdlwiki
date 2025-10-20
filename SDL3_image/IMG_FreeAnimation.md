@@ -32,6 +32,7 @@ This function is available since SDL_image 3.0.0.
 - [IMG_LoadAnimation](IMG_LoadAnimation)
 - [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
 - [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
+- [IMG_LoadANIAnimation_IO](IMG_LoadANIAnimation_IO)
 - [IMG_LoadAPNGAnimation_IO](IMG_LoadAPNGAnimation_IO)
 - [IMG_LoadAVIFAnimation_IO](IMG_LoadAVIFAnimation_IO)
 - [IMG_LoadGIFAnimation_IO](IMG_LoadGIFAnimation_IO)

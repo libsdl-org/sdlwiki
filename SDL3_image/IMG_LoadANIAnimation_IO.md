@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
-# IMG_LoadAVIFAnimation_IO
+# IMG_LoadANIAnimation_IO
 
-Load an AVIF animation directly from an SDL_IOStream.
+Load an ANI animation directly from an SDL_IOStream.
 
 ## Header File
 
@@ -10,14 +10,14 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-IMG_Animation* IMG_LoadAVIFAnimation_IO(SDL_IOStream *src);
+IMG_Animation* IMG_LoadANIAnimation_IO(SDL_IOStream *src);
 ```
 
 ## Function Parameters
 
-|                |         |                                              |
-| -------------- | ------- | -------------------------------------------- |
-| SDL_IOStream * | **src** | an SDL_IOStream that data will be read from. |
+|                |         |                                               |
+| -------------- | ------- | --------------------------------------------- |
+| SDL_IOStream * | **src** | an SDL_IOStream from which data will be read. |
 
 ## Return Value
 
@@ -26,10 +26,10 @@ IMG_Animation* IMG_LoadAVIFAnimation_IO(SDL_IOStream *src);
 
 ## Remarks
 
-If you know you definitely have an AVIF animation, you can call this
-function, which will skip SDL_image's file format detection routines.
-Generally it's better to use the abstract interfaces; also, there is only
-an SDL_IOStream interface available here.
+If you know you definitely have an ANI image, you can call this function,
+which will skip SDL_image's file format detection routines. Generally, it's
+better to use the abstract interfaces; also, there is only an SDL_IOStream
+interface available here.
 
 When done with the returned animation, the app should dispose of it with a
 call to [IMG_FreeAnimation](IMG_FreeAnimation)().
@@ -40,12 +40,12 @@ This function is available since SDL_image 3.4.0.
 
 ## See Also
 
-- [IMG_isAVIF](IMG_isAVIF)
+- [IMG_isANI](IMG_isANI)
 - [IMG_LoadAnimation](IMG_LoadAnimation)
 - [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
 - [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
-- [IMG_LoadANIAnimation_IO](IMG_LoadANIAnimation_IO)
 - [IMG_LoadAPNGAnimation_IO](IMG_LoadAPNGAnimation_IO)
+- [IMG_LoadAVIFAnimation_IO](IMG_LoadAVIFAnimation_IO)
 - [IMG_LoadGIFAnimation_IO](IMG_LoadGIFAnimation_IO)
 - [IMG_LoadWEBPAnimation_IO](IMG_LoadWEBPAnimation_IO)
 - [IMG_FreeAnimation](IMG_FreeAnimation)
