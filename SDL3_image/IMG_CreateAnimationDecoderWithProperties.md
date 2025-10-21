@@ -35,6 +35,14 @@ SDL_GetError() for more information.
 
 ## Remarks
 
+These animation types are currently supported:
+
+- ANI
+- APNG
+- AVIFS
+- GIF
+- WEBP
+
 These are the supported properties:
 
 - [`IMG_PROP_ANIMATION_DECODER_CREATE_FILENAME_STRING`](IMG_PROP_ANIMATION_DECODER_CREATE_FILENAME_STRING):

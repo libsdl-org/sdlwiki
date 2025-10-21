@@ -27,6 +27,14 @@ SDL_GetError() for more information.
 
 ## Remarks
 
+These animation types are currently supported:
+
+- ANI
+- APNG
+- AVIFS
+- GIF
+- WEBP
+
 The file type is determined from the file extension, e.g. "file.webp" will
 be encoded using WEBP.
 

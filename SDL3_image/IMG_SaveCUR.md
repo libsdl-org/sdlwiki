@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
-# IMG_SaveBMP
+# IMG_SaveCUR
 
-Save an SDL_Surface into a BMP image file.
+Save an SDL_Surface into a CUR image file.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-bool IMG_SaveBMP(SDL_Surface *surface, const char *file);
+bool IMG_SaveCUR(SDL_Surface *surface, const char *file);
 ```
 
 ## Function Parameters
@@ -35,7 +35,7 @@ This function is available since SDL_image 3.4.0.
 
 ## See Also
 
-- [IMG_SaveBMP_IO](IMG_SaveBMP_IO)
+- [IMG_SaveCUR_IO](IMG_SaveCUR_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)

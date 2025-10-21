@@ -84,8 +84,12 @@ bool IMG_SaveAVIF(SDL_Surface *surface, const char *file, int quality);         
 bool IMG_SaveAVIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                          // Save an SDL_Surface into AVIF image data, via an SDL_IOStream.
 bool IMG_SaveBMP(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a BMP image file.
 bool IMG_SaveBMP_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into BMP image data, via an SDL_IOStream.
+bool IMG_SaveCUR(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a CUR image file.
+bool IMG_SaveCUR_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into CUR image data, via an SDL_IOStream.
 bool IMG_SaveGIF(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a GIF image file.
 bool IMG_SaveGIF_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into GIF image data, via an SDL_IOStream.
+bool IMG_SaveICO(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a ICO image file.
+bool IMG_SaveICO_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);                                        // Save an SDL_Surface into ICO image data, via an SDL_IOStream.
 bool IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);                                             // Save an SDL_Surface into a JPEG image file.
 bool IMG_SaveJPG_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio, int quality);                           // Save an SDL_Surface into JPEG image data, via an SDL_IOStream.
 bool IMG_SavePNG(SDL_Surface *surface, const char *file);                                                          // Save an SDL_Surface into a PNG image file.

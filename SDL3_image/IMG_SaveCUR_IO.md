@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
-# IMG_SaveBMP_IO
+# IMG_SaveCUR_IO
 
-Save an SDL_Surface into BMP image data, via an SDL_IOStream.
+Save an SDL_Surface into CUR image data, via an SDL_IOStream.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-bool IMG_SaveBMP_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);
+bool IMG_SaveCUR_IO(SDL_Surface *surface, SDL_IOStream *dst, bool closeio);
 ```
 
 ## Function Parameters
@@ -29,7 +29,7 @@ more information.
 ## Remarks
 
 If you just want to save to a filename, you can use
-[IMG_SaveBMP](IMG_SaveBMP)() instead.
+[IMG_SaveCUR](IMG_SaveCUR)() instead.
 
 If `closeio` is true, `dst` will be closed before returning, whether this
 function succeeds or not.
@@ -40,7 +40,7 @@ This function is available since SDL_image 3.4.0.
 
 ## See Also
 
-- [IMG_SaveBMP](IMG_SaveBMP)
+- [IMG_SaveCUR](IMG_SaveCUR)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)

@@ -29,6 +29,14 @@ SDL_GetError() for more information.
 
 ## Remarks
 
+These animation types are currently supported:
+
+- ANI
+- APNG
+- AVIFS
+- GIF
+- WEBP
+
 If `closeio` is true, `dst` will be closed before returning if this
 function fails, or when the animation encoder is closed if this function
 succeeds.
