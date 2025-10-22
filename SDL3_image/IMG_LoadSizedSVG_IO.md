@@ -40,6 +40,10 @@ call to SDL_DestroySurface().
 
 This function is available since SDL_image 3.0.0.
 
+## See Also
+
+- [IMG_LoadSVG_IO](IMG_LoadSVG_IO)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLImage](CategorySDLImage)
 

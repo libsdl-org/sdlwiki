@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_LoadAnimationTyped_IO
 
-Load an animation from an SDL datasource
+Load an animation from an SDL_IOStream.
 
 ## Header File
 
