@@ -50,6 +50,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_RenderTexture](SDL_RenderTexture)
+- [SDL_RenderTexture9GridTiled](SDL_RenderTexture9GridTiled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

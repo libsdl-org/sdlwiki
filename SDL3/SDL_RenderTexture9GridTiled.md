@@ -51,6 +51,7 @@ This function is available since SDL 3.4.0.
 ## See Also
 
 - [SDL_RenderTexture](SDL_RenderTexture)
+- [SDL_RenderTexture9Grid](SDL_RenderTexture9Grid)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

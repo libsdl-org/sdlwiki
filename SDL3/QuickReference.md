@@ -12,7 +12,7 @@ the fancy Unicode section headers, try using
 // https://libsdl.org/
 //
 // The latest version of this document can be found at https://wiki.libsdl.org/SDL3/QuickReference
-// Based on SDL version 3.3.0
+// Based on SDL version 3.3.2
 //
 // This can be useful in an IDE with search and syntax highlighting.
 //
@@ -279,7 +279,7 @@ void SDL_SetEventEnabled(Uint32 type, bool enabled);                            
 bool SDL_EventEnabled(Uint32 type);                                                                            // Query the state of processing events by type.
 Uint32 SDL_RegisterEvents(int numevents);                                                                      // Allocate a set of user-defined events, and return the beginning event number for that set of events.
 SDL_Window * SDL_GetWindowFromEvent(const SDL_Event *event);                                                   // Get window associated with an event.
-int SDL_GetEventDescription(const SDL_Event *event, char *buf, int buflen);                                    // Generate a human-readable description of an event.
+int SDL_GetEventDescription(const SDL_Event *event, char *buf, int buflen);                                    // Generate an English description of an event.
 
 // ██╗  ██╗ ███████╗ ██╗   ██╗ ██████╗   ██████╗   █████╗  ██████╗  ██████╗
 // ██║ ██╔╝ ██╔════╝ ╚██╗ ██╔╝ ██╔══██╗ ██╔═══██╗ ██╔══██╗ ██╔══██╗ ██╔══██╗

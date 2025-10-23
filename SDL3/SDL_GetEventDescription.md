@@ -1,6 +1,6 @@
 # SDL_GetEventDescription
 
-Generate a human-readable description of an event.
+Generate an English description of an event.
 
 ## Header File
 
