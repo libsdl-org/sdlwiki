@@ -13,7 +13,7 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
     do { \
         while ( !(condition) ) { \
             static struct SDL_AssertData sdl_assert_data = { false, 0, #condition, NULL, 0, NULL, NULL }; \
-            const SDL_AssertState sdl_assert_state = SDL_ReportAssertion(&sdl_assert_data, SDL_FUNCTION, SDL_FILE, SDL_LINE); \
+            const SDL_AssertState sdl_assert_state = SDL_ReportAssertion(&sdl_assert_data, SDL_FUNCTION, SDL_ASSERT_FILE, SDL_LINE); \
             if (sdl_assert_state == SDL_ASSERTION_RETRY) { \
                 continue; /* go again. */ \
             } else if (sdl_assert_state == SDL_ASSERTION_BREAK) { \
