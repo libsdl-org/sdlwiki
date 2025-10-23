@@ -952,6 +952,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_ResumeAudioStreamDevice](SDL_ResumeAudioStreamDevice)
 - [SDL_ResumeHaptic](SDL_ResumeHaptic)
+- [SDL_RotateSurface](SDL_RotateSurface)
 - [SDL_round](SDL_round)
 - [SDL_roundf](SDL_roundf)
 - [SDL_RumbleGamepad](SDL_RumbleGamepad)

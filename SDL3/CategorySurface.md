@@ -65,6 +65,7 @@ https://github.com/libsdl-org/SDL_image
 - [SDL_ReadSurfacePixel](SDL_ReadSurfacePixel)
 - [SDL_ReadSurfacePixelFloat](SDL_ReadSurfacePixelFloat)
 - [SDL_RemoveSurfaceAlternateImages](SDL_RemoveSurfaceAlternateImages)
+- [SDL_RotateSurface](SDL_RotateSurface)
 - [SDL_SaveBMP](SDL_SaveBMP)
 - [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
 - [SDL_SavePNG](SDL_SavePNG)
