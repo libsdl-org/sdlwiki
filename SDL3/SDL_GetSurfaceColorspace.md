@@ -34,7 +34,7 @@ formats, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for 10-bit formats,
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

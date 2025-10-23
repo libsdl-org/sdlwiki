@@ -37,8 +37,9 @@ format of the surface will not change.
 
 ## Thread Safety
 
-This function is not thread safe. The locking referred to by this function
-is making the pixels available for direct access, not thread-safe locking.
+This function can be called on different threads with different surfaces.
+The locking referred to by this function is making the pixels available for
+direct access, not thread-safe locking.
 
 ## Version
 

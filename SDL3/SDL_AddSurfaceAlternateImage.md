@@ -36,7 +36,7 @@ This function adds a reference to the alternate version, so you should call
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

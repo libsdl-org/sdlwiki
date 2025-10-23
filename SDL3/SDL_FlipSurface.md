@@ -26,7 +26,7 @@ bool SDL_FlipSurface(SDL_Surface *surface, SDL_FlipMode flip);
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

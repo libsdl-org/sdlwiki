@@ -28,7 +28,7 @@ bool SDL_GetSurfaceColorMod(SDL_Surface *surface, Uint8 *r, Uint8 *g, Uint8 *b);
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

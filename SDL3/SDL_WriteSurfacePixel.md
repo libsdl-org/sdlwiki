@@ -40,7 +40,7 @@ RGB component.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

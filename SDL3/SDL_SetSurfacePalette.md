@@ -33,7 +33,7 @@ A single palette can be shared with many surfaces.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

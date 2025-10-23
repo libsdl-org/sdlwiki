@@ -33,7 +33,7 @@ value is modulated by this alpha value according to the following formula:
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

@@ -34,7 +34,7 @@ if available, or RGBA 255/255/255/0 if not.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

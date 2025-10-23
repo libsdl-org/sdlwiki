@@ -31,7 +31,7 @@ the surface must be locked before directly accessing the pixels.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

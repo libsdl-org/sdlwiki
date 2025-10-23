@@ -26,7 +26,7 @@ bool SDL_SavePNG(SDL_Surface *surface, const char *file);
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

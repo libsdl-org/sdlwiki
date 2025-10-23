@@ -44,7 +44,7 @@ similarly a Uint8 for an 8-bpp format).
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

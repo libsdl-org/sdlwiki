@@ -30,7 +30,7 @@ This is safe to use with src == dst, but not for other overlapping areas.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

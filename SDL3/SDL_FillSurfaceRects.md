@@ -39,7 +39,7 @@ will fill based on the intersection of the clip rectangle and `rect`.
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 

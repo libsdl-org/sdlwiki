@@ -33,7 +33,7 @@ The returned surface should be freed with
 
 ## Thread Safety
 
-This function is not thread safe.
+This function can be called on different threads with different surfaces.
 
 ## Version
 
