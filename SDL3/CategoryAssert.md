@@ -81,6 +81,7 @@ your code!
 <!-- BEGIN CATEGORY LIST: CategoryAssert, CategoryAPIMacro -->
 - [SDL_assert](SDL_assert)
 - [SDL_assert_always](SDL_assert_always)
+- [SDL_ASSERT_FILE](SDL_ASSERT_FILE)
 - [SDL_ASSERT_LEVEL](SDL_ASSERT_LEVEL)
 - [SDL_assert_paranoid](SDL_assert_paranoid)
 - [SDL_assert_release](SDL_assert_release)

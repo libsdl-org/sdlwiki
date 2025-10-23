@@ -1765,6 +1765,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_assert](SDL_assert)
 - [SDL_assert_always](SDL_assert_always)
 - [SDL_ASSERT_CAPABILITY](SDL_ASSERT_CAPABILITY)
+- [SDL_ASSERT_FILE](SDL_ASSERT_FILE)
 - [SDL_ASSERT_LEVEL](SDL_ASSERT_LEVEL)
 - [SDL_assert_paranoid](SDL_assert_paranoid)
 - [SDL_assert_release](SDL_assert_release)
