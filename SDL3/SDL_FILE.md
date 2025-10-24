@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_FILE    __FILE__
+#define SDL_FILE    __FILE_NAME__
 ```
 
 ## Remarks
@@ -17,9 +17,7 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 This macro is only defined if it isn't already defined, so to override it
 (perhaps with something that doesn't provide path information at all, so
 build machine information doesn't leak into public binaries), apps can
-define this macro before including [SDL_assert](SDL_assert).h. For example,
-Clang and GCC can define this to `FILE_NAME` to get just the source
-filename instead of the full path.
+define this macro before including SDL.h or [SDL_assert](SDL_assert).h.
 
 ## Version
 
