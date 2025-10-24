@@ -754,6 +754,7 @@
 - [SDL_WinRTGetDeviceFamily](SDL_WinRTGetDeviceFamily)
 - [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
 - [SDL_WinRTGetFSPathUTF8](SDL_WinRTGetFSPathUTF8)
+- [SDL_WinRTGetProtocolActivationURI](SDL_WinRTGetProtocolActivationURI)
 - [SDL_WinRTRunApp](SDL_WinRTRunApp)
 - [SDL_WriteBE16](SDL_WriteBE16)
 - [SDL_WriteBE32](SDL_WriteBE32)

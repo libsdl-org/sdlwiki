@@ -37,6 +37,7 @@ Include file for platform specific SDL API functions
 - [SDL_WinRTGetDeviceFamily](SDL_WinRTGetDeviceFamily)
 - [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
 - [SDL_WinRTGetFSPathUTF8](SDL_WinRTGetFSPathUTF8)
+- [SDL_WinRTGetProtocolActivationURI](SDL_WinRTGetProtocolActivationURI)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
