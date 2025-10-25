@@ -287,6 +287,7 @@ etc. It also offers a few better options, like
 - [SDL_SINT64_C](SDL_SINT64_C)
 - [SDL_SIZE_MAX](SDL_SIZE_MAX)
 - [SDL_stack_alloc](SDL_stack_alloc)
+- [SDL_stack_free](SDL_stack_free)
 - [SDL_static_cast](SDL_static_cast)
 - [SDL_STRINGIFY_ARG](SDL_STRINGIFY_ARG)
 - [SDL_UINT64_C](SDL_UINT64_C)
