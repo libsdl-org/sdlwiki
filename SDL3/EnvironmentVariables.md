@@ -256,6 +256,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_WINDOWS_INTRESOURCE_ICON](SDL_HINT_WINDOWS_INTRESOURCE_ICON): A variable to specify custom icon resource id from RC file on Windows platform.
 - [SDL_WINDOWS_INTRESOURCE_ICON_SMALL](SDL_HINT_WINDOWS_INTRESOURCE_ICON_SMALL): A variable to specify custom icon resource id from RC file on Windows platform.
 - [SDL_WINDOWS_RAW_KEYBOARD](SDL_HINT_WINDOWS_RAW_KEYBOARD): A variable controlling whether raw keyboard events are used on Windows.
+- [SDL_WINDOWS_RAW_KEYBOARD_EXCLUDE_HOTKEYS](SDL_HINT_WINDOWS_RAW_KEYBOARD_EXCLUDE_HOTKEYS): A variable controlling whether or not the RIDEV_NOHOTKEYS flag is set when enabling Windows raw keyboard events.
 - [SDL_WINDOWS_USE_D3D9EX](SDL_HINT_WINDOWS_USE_D3D9EX): A variable controlling whether SDL uses the D3D9Ex API introduced in Windows Vista, instead of normal D3D9.
 - [SDL_WINDOW_ACTIVATE_WHEN_RAISED](SDL_HINT_WINDOW_ACTIVATE_WHEN_RAISED): A variable controlling whether the window is activated when the SDL_RaiseWindow function is called.
 - [SDL_WINDOW_ACTIVATE_WHEN_SHOWN](SDL_HINT_WINDOW_ACTIVATE_WHEN_SHOWN): A variable controlling whether the window is activated when the SDL_ShowWindow function is called.
