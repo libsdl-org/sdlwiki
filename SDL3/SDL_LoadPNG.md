@@ -26,6 +26,10 @@ SDL_Surface * SDL_LoadPNG(const char *file);
 
 ## Remarks
 
+This is intended as a convenience function for loading images from trusted
+sources. If you want to load arbitrary images you should use libpng or
+another image loading library designed with security in mind.
+
 The new surface should be freed with
 [SDL_DestroySurface](SDL_DestroySurface)(). Not doing so will result in a
 memory leak.
