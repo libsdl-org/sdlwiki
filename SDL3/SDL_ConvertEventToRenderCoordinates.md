@@ -21,8 +21,9 @@ bool SDL_ConvertEventToRenderCoordinates(SDL_Renderer *renderer, SDL_Event *even
 
 ## Return Value
 
-(bool) Returns true on success or false on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(bool) Returns true if the event is converted or doesn't need conversion,
+or false on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 
