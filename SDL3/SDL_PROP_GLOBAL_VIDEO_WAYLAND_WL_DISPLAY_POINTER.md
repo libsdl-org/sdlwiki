@@ -23,6 +23,10 @@ uninitialized will either return the user provided value, if one was set
 prior to initialization, or NULL. See docs/README-wayland.md for more
 information.
 
+## Version
+
+This macro is available since SDL 3.2.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVideo](CategoryVideo)
 
