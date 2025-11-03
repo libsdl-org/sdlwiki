@@ -28,7 +28,7 @@ packets were currently available.
 ## Remarks
 
 The returned packets contain the source address and the channel they
-arrived on. If they did not arrive on a bound channel, the the channel will
+arrived on. If they did not arrive on a bound channel, then the channel will
 be set to -1.
 
 The channels are checked in highest to lowest order, so if an address is
