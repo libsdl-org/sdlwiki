@@ -77,7 +77,7 @@ These are the current shader format properties:
 - [`SDL_PROP_GPU_DEVICE_CREATE_SHADERS_METALLIB_BOOLEAN`](SDL_PROP_GPU_DEVICE_CREATE_SHADERS_METALLIB_BOOLEAN):
   The app is able to provide Metal shader libraries if applicable.
 
-With the D3D12 renderer:
+With the D3D12 backend:
 
 - [`SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING`](SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING):
   the prefix to use for all vertex semantics, default is "TEXCOORD".
@@ -90,13 +90,14 @@ With the D3D12 renderer:
   either supports Tier 2 Resource Binding or does not support D3D12 in any
   capacity. Defaults to false.
 
-With the Vulkan renderer: -
-[`SDL_PROP_GPU_DEVICE_CREATE_VULKAN_REQUIRE_HARDWARE_ACCELERATION`](SDL_PROP_GPU_DEVICE_CREATE_VULKAN_REQUIRE_HARDWARE_ACCELERATION):
-By default, Vulkan device enumeration includes drivers of all types,
-including software renderers (for example, the Lavapipe Mesa driver). This
-can be useful if your application _requires_ [SDL_GPU](SDL_GPU), but if you
-can provide your own fallback renderer (for example, an OpenGL renderer)
-this property can be set to true. Defaults to false.
+With the Vulkan backend:
+
+- [`SDL_PROP_GPU_DEVICE_CREATE_VULKAN_REQUIRE_HARDWARE_ACCELERATION_BOOLEAN`](SDL_PROP_GPU_DEVICE_CREATE_VULKAN_REQUIRE_HARDWARE_ACCELERATION_BOOLEAN):
+  By default, Vulkan device enumeration includes drivers of all types,
+  including software renderers (for example, the Lavapipe Mesa driver).
+  This can be useful if your application _requires_ [SDL_GPU](SDL_GPU), but
+  if you can provide your own fallback renderer (for example, an OpenGL
+  renderer) this property can be set to true. Defaults to false.
 
 ## Version
 
