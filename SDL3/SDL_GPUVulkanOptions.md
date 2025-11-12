@@ -32,9 +32,7 @@ feature_list is scanned for feature structures introduced in Vulkan 1.1.
 When requesting Vulkan 1.2 or higher, the feature_list is additionally
 scanned for compound feature structs such as
 VkPhysicalDeviceVulkan11Features. The device and instance extension lists,
-as well as vulkan_10_physical_device_features, are always processed. The
-pointers inside this structure are NOT deep-copied. Make sure they are
-valid during window creation.
+as well as vulkan_10_physical_device_features, are always processed.
 
 ## Version
 

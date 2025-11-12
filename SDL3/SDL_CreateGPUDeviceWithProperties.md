@@ -99,12 +99,10 @@ With the Vulkan backend:
   if you can provide your own fallback renderer (for example, an OpenGL
   renderer) this property can be set to true. Defaults to false.
 - [`SDL_PROP_GPU_DEVICE_CREATE_VULKAN_OPTIONS_POINTER`](SDL_PROP_GPU_DEVICE_CREATE_VULKAN_OPTIONS_POINTER):
-  pointer to an [SDL_GPUVulkanOptions](SDL_GPUVulkanOptions) structure to
+  a pointer to an [SDL_GPUVulkanOptions](SDL_GPUVulkanOptions) structure to
   be processed during device creation. This allows configuring a variety of
   Vulkan-specific options such as increasing the API version and opting
-  into extensions aside from the minimal set SDL requires. The structure is
-  NOT deep-copied. Make sure that the pointer valid memory during window
-  creation.
+  into extensions aside from the minimal set SDL requires.
 
 ## Version
 
