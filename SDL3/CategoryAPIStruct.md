@@ -74,6 +74,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 - [SDL_GPUViewport](SDL_GPUViewport)
+- [SDL_GPUVulkanOptions](SDL_GPUVulkanOptions)
 - [SDL_GUID](SDL_GUID)
 - [SDL_HapticCondition](SDL_HapticCondition)
 - [SDL_HapticConstant](SDL_HapticConstant)

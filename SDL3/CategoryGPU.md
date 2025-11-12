@@ -546,6 +546,7 @@ you fix the majority of such problems.
 - [SDL_GPUVertexBufferDescription](SDL_GPUVertexBufferDescription)
 - [SDL_GPUVertexInputState](SDL_GPUVertexInputState)
 - [SDL_GPUViewport](SDL_GPUViewport)
+- [SDL_GPUVulkanOptions](SDL_GPUVulkanOptions)
 <!-- END CATEGORY LIST -->
 
 ## Enums
