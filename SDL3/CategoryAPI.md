@@ -828,6 +828,8 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_LoadObject](SDL_LoadObject)
 - [SDL_LoadPNG](SDL_LoadPNG)
 - [SDL_LoadPNG_IO](SDL_LoadPNG_IO)
+- [SDL_LoadSurface](SDL_LoadSurface)
+- [SDL_LoadSurface_IO](SDL_LoadSurface_IO)
 - [SDL_LoadWAV](SDL_LoadWAV)
 - [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
 - [SDL_LockAudioStream](SDL_LockAudioStream)

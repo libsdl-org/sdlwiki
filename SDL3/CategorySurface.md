@@ -60,6 +60,8 @@ surface from two threads simultaneously.
 - [SDL_LoadBMP_IO](SDL_LoadBMP_IO)
 - [SDL_LoadPNG](SDL_LoadPNG)
 - [SDL_LoadPNG_IO](SDL_LoadPNG_IO)
+- [SDL_LoadSurface](SDL_LoadSurface)
+- [SDL_LoadSurface_IO](SDL_LoadSurface_IO)
 - [SDL_LockSurface](SDL_LockSurface)
 - [SDL_MapSurfaceRGB](SDL_MapSurfaceRGB)
 - [SDL_MapSurfaceRGBA](SDL_MapSurfaceRGBA)
