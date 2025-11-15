@@ -23,7 +23,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Return Value
 
-Returns true if the format is 10-bit, false otherwise.
+Returns true if the format is a floating point, false otherwise.
 
 ## Remarks
 
