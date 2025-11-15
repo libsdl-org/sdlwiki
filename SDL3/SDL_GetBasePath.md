@@ -42,6 +42,9 @@ Supported values for the
 - `parent`: the containing directory of the bundle. For example:
   `/Applications/SDLApp/`
 
+**Android Specific Functionality**: This function returns "./", which
+allows filesystem operations to use internal storage and the asset system.
+
 **Nintendo 3DS Specific Functionality**: This function returns "romfs"
 directory of the application as it is uncommon to store resources outside
 the executable. As such it is not a writable directory.
