@@ -78,6 +78,9 @@
 |[[CategoryMouse|Mouse Support]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_mouse.h SDL_mouse.h]
 |-
+|[[CategoryTouch|Touch Support]]
+|[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_touch.h SDL_touch.h]
+|-
 |[[CategoryJoystick|Joystick Support]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_joystick.h SDL_joystick.h]
 |-
