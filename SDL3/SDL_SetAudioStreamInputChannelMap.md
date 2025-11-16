@@ -72,7 +72,7 @@ mapping, but previously-added data will still have the prior mapping.
 
 It is safe to call this function from any thread, as it holds a
 stream-specific mutex while running. Don't change the stream's format to
-have a different number of channels from a a different thread at the same
+have a different number of channels from a different thread at the same
 time, though!
 
 ## Version
