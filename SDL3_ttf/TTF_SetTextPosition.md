@@ -21,6 +21,11 @@ bool TTF_SetTextPosition(TTF_Text *text, int x, int y);
 | int                    | **x**    | the x offset of the upper left corner of this text in pixels. |
 | int                    | **y**    | the y offset of the upper left corner of this text in pixels. |
 
+## Return Value
+
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
+
 ## Remarks
 
 This can be used to position multiple text objects within a single wrapping

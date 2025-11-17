@@ -15,9 +15,10 @@ bool TTF_SetFontCharSpacing(TTF_Font *font, int spacing);
 
 ## Function Parameters
 
-|                        |          |                                      |
-| ---------------------- | -------- | ------------------------------------ |
-| [TTF_Font](TTF_Font) * | **font** | the font to specify a direction for. |
+|                        |             |                                                |
+| ---------------------- | ----------- | ---------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**    | the font to specify a direction for.           |
+| int                    | **spacing** | the new additional glyph spacing for the font. |
 
 ## Return Value
 

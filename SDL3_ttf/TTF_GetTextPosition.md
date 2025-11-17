@@ -21,6 +21,11 @@ bool TTF_GetTextPosition(TTF_Text *text, int *x, int *y);
 | int *                  | **x**    | a pointer filled in with the x offset of the upper left corner of this text in pixels, may be NULL. |
 | int *                  | **y**    | a pointer filled in with the y offset of the upper left corner of this text in pixels, may be NULL. |
 
+## Return Value
+
+(bool) Returns true on success or false on failure; call SDL_GetError() for
+more information.
+
 ## Thread Safety
 
 This function should be called on the thread that created the text.
