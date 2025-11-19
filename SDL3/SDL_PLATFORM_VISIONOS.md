@@ -1,6 +1,6 @@
 # SDL_PLATFORM_VISIONOS
 
-A preprocessor macro that is only defined if compiling for VisionOS.
+A preprocessor macro that is only defined if compiling for visionOS.
 
 ## Header File
 

@@ -1,6 +1,6 @@
 # SDL_PLATFORM_IOS
 
-A preprocessor macro that is only defined if compiling for iOS.
+A preprocessor macro that is only defined if compiling for iOS or visionOS.
 
 ## Header File
 

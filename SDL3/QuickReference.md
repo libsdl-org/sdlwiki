@@ -1337,8 +1337,8 @@ void * SDL_Metal_GetLayer(SDL_MetalView view);           // Get a pointer to the
 #define SDL_PLATFORM_UNIX        // A preprocessor macro that is only defined if compiling for a Unix-like system.
 #define SDL_PLATFORM_APPLE       // A preprocessor macro that is only defined if compiling for Apple platforms.
 #define SDL_PLATFORM_TVOS        // A preprocessor macro that is only defined if compiling for tvOS.
-#define SDL_PLATFORM_VISIONOS    // A preprocessor macro that is only defined if compiling for VisionOS.
-#define SDL_PLATFORM_IOS         // A preprocessor macro that is only defined if compiling for iOS.
+#define SDL_PLATFORM_VISIONOS    // A preprocessor macro that is only defined if compiling for visionOS.
+#define SDL_PLATFORM_IOS         // A preprocessor macro that is only defined if compiling for iOS or visionOS.
 #define SDL_PLATFORM_MACOS       // A preprocessor macro that is only defined if compiling for macOS.
 #define SDL_PLATFORM_EMSCRIPTEN  // A preprocessor macro that is only defined if compiling for Emscripten.
 #define SDL_PLATFORM_NETBSD      // A preprocessor macro that is only defined if compiling for NetBSD.
