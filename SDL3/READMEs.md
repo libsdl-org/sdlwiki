@@ -1,5 +1,11 @@
 # All READMEs available here
 
+- [INTRO-androidstudio](INTRO-androidstudio)
+- [INTRO-cmake](INTRO-cmake)
+- [INTRO-emscripten](INTRO-emscripten)
+- [INTRO-mingw](INTRO-mingw)
+- [INTRO-visualstudio](INTRO-visualstudio)
+- [INTRO-xcode](INTRO-xcode)
 - [README-android](README-android)
 - [README-bsd](README-bsd)
 - [README-cmake](README-cmake)
