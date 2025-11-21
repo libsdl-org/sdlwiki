@@ -46,6 +46,11 @@ On Wayland:
 - [`SDL_PROP_DISPLAY_WAYLAND_WL_OUTPUT_POINTER`](SDL_PROP_DISPLAY_WAYLAND_WL_OUTPUT_POINTER):
   the wl_output associated with the display
 
+On Windows:
+
+- [`SDL_PROP_DISPLAY_WINDOWS_HMONITOR_POINTER`](SDL_PROP_DISPLAY_WINDOWS_HMONITOR_POINTER):
+  the monitor handle (HMONITOR) associated with the display
+
 ## Thread Safety
 
 This function should only be called on the main thread.
