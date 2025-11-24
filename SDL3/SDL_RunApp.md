@@ -34,6 +34,9 @@ using [SDL_main](SDL_main) (like when using
 [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED)). When using this, you do *not* need
 [SDL_SetMainReady](SDL_SetMainReady)().
 
+If `argv` is NULL, SDL will provide command line arguments, either by
+querying the OS for them if possible, or supplying a filler array if not.
+
 ## Thread Safety
 
 Generally this is called once, near startup, from the process's initial
