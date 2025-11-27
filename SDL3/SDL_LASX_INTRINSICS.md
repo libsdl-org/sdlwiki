@@ -1,6 +1,6 @@
 # SDL_LASX_INTRINSICS
 
-Defined if (and only if) the compiler supports Loongarch LASX intrinsics.
+Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
 
 ## Header File
 
