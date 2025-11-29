@@ -16,7 +16,7 @@ typedef void (SDLCALL *SDL_AudioIterationCallback)(void *userdata, SDL_AudioDevi
 
 |              |                                                                                                                    |
 | ------------ | ------------------------------------------------------------------------------------------------------------------ |
-| **userdata** | a pointer provided by the app through [SDL_SetAudioPostmixCallback](SDL_SetAudioPostmixCallback), for its own use. |
+| **userdata** | a pointer provided by the app through [SDL_SetAudioIterationCallbacks](SDL_SetAudioIterationCallbacks), for its own use. |
 | **devid**    | the audio device this callback is running for.                                                                     |
 | **start**    | true if this is the start of the iteration, false if the end.                                                      |
 
