@@ -33,7 +33,6 @@ This list matches the latest in SDL3's revision control.
 - [SDL_AUDIO_DISK_TIMESCALE](SDL_HINT_AUDIO_DISK_TIMESCALE): A variable controlling the audio rate when using the disk audio driver.
 - [SDL_AUDIO_DRIVER](SDL_HINT_AUDIO_DRIVER): A variable that specifies an audio backend to use.
 - [SDL_AUDIO_DUMMY_TIMESCALE](SDL_HINT_AUDIO_DUMMY_TIMESCALE): A variable controlling the audio rate when using the dummy audio driver.
-- [SDL_AUDIO_ENFORCE_MINIMUM_SPEC](SDL_HINT_AUDIO_ENFORCE_MINIMUM_SPEC): A variable controlling whether SDL enforces a minimum audio device spec.
 - [SDL_AUDIO_FORMAT](SDL_HINT_AUDIO_FORMAT): A variable controlling the default audio format.
 - [SDL_AUDIO_FREQUENCY](SDL_HINT_AUDIO_FREQUENCY): A variable controlling the default audio frequency.
 - [SDL_AUDIO_INCLUDE_MONITORS](SDL_HINT_AUDIO_INCLUDE_MONITORS): A variable that causes SDL to not ignore audio "monitors".
