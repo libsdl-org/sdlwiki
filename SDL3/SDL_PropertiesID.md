@@ -1,6 +1,6 @@
 # SDL_PropertiesID
 
-An ID that represents a properties group.
+An ID that represents a properties set.
 
 ## Header File
 
