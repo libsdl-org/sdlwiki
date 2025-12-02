@@ -27,7 +27,6 @@ these pieces.
 - [SDL_GetTrayMenuParentTray](SDL_GetTrayMenuParentTray)
 - [SDL_GetTraySubmenu](SDL_GetTraySubmenu)
 - [SDL_InsertTrayEntryAt](SDL_InsertTrayEntryAt)
-- [SDL_IsTraySupported](SDL_IsTraySupported)
 - [SDL_RemoveTrayEntry](SDL_RemoveTrayEntry)
 - [SDL_SetTrayEntryCallback](SDL_SetTrayEntryCallback)
 - [SDL_SetTrayEntryChecked](SDL_SetTrayEntryChecked)
