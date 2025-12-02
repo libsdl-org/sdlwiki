@@ -37,7 +37,7 @@ This macro is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_zero](SDL_zero)
-- [SDL_zeroa](SDL_zeroa)
+- [SDL_zerop](SDL_zerop)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
