@@ -83,3 +83,9 @@ SDL_net works with SDL3 and we have some more polish work to do for a 3.0 releas
 A library for translating shaders to different formats. Intended for use with the [GPU API](CategoryGPU).
 
 - [Git Repository](https://github.com/libsdl-org/SDL_shadercross)
+
+## ControllerImage
+
+A library that provides resolution-independent images for game controller inputs, so games can show the correct visual markers for the gamepad in the user's hand.
+
+- [Git Repository](https://github.com/icculus/ControllerImage)
