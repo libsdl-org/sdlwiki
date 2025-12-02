@@ -152,6 +152,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK](SDL_HINT_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK): A variable that determines whether Ctrl+Click should generate a right-click event on macOS.
 - [SDL_MAC_OPENGL_ASYNC_DISPATCH](SDL_HINT_MAC_OPENGL_ASYNC_DISPATCH): A variable controlling whether dispatching OpenGL context updates should block the dispatching thread until the main thread finishes processing on macOS.
 - [SDL_MAC_OPTION_AS_ALT](SDL_HINT_MAC_OPTION_AS_ALT): A variable controlling whether the Option key on macOS should be remapped to act as the Alt key.
+- [SDL_MAC_PRESS_AND_HOLD](SDL_HINT_MAC_PRESS_AND_HOLD): A variable controlling whether holding down a key will repeat the pressed key or open the accents menu on macOS.
 - [SDL_MAC_SCROLL_MOMENTUM](SDL_HINT_MAC_SCROLL_MOMENTUM): A variable controlling whether SDL_EVENT_MOUSE_WHEEL event values will have momentum on macOS.
 - [SDL_MAIN_CALLBACK_RATE](SDL_HINT_MAIN_CALLBACK_RATE): Request SDL_AppIterate() be called at a specific rate.
 - [SDL_MOUSE_AUTO_CAPTURE](SDL_HINT_MOUSE_AUTO_CAPTURE): A variable controlling whether the mouse is captured while mouse buttons are pressed.
