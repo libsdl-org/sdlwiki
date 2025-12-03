@@ -29,6 +29,12 @@ callstream in a graphics debugging tool.
 Each call to [SDL_PushGPUDebugGroup](SDL_PushGPUDebugGroup) must have a
 corresponding call to [SDL_PopGPUDebugGroup](SDL_PopGPUDebugGroup).
 
+On Direct3D 12, using
+[SDL_PushGPUDebugGroup](SDL_PushGPUDebugGroup) will cause validation errors
+unless you have WinPixEventRuntime.dll in your PATH. See
+[here](https://devblogs.microsoft.com/pix/winpixeventruntime/)
+for instructions on how to obtain it.
+
 On some backends (e.g. Metal), pushing a debug group during a
 render/blit/compute pass will create a group that is scoped to the native
 pass rather than the command buffer. For best results, if you push a debug

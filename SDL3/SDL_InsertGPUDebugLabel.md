@@ -25,6 +25,12 @@ void SDL_InsertGPUDebugLabel(
 
 Useful for debugging.
 
+On Direct3D 12, using
+[SDL_InsertGPUDebugLabel](SDL_InsertGPUDebugLabel) will cause validation errors
+unless you have WinPixEventRuntime.dll in your PATH. See
+[here](https://devblogs.microsoft.com/pix/winpixeventruntime/)
+for instructions on how to obtain it.
+
 ## Version
 
 This function is available since SDL 3.2.0.
