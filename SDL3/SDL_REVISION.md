@@ -22,6 +22,9 @@ It might also be user-defined at build time, so it's best to treat it as a
 clue in debugging forensics and not something the app will parse in any
 way.
 
+[SDL_revision](SDL_revision).h must be included in your program explicitly
+if you want access to the [SDL_REVISION](SDL_REVISION) constant.
+
 ## Version
 
 This macro is available since SDL 3.2.0.

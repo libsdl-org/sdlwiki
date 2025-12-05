@@ -21,7 +21,8 @@ revision of the SDL library in use.
 
 This value is the revision of the code you are linking against and may be
 different from the code you are compiling with, which is found in the
-constant [SDL_REVISION](SDL_REVISION).
+constant [SDL_REVISION](SDL_REVISION) if you explicitly include
+[SDL_revision](SDL_revision).h
 
 The revision is an arbitrary string (a hash value) uniquely identifying the
 exact revision of the SDL library in use, and is only useful in comparing
