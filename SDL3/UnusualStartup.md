@@ -40,10 +40,7 @@ int SDLCALL my_runapp_callback(int argc, char *argv[])
 }
 ```
 
-Note that `my_runapp_callback` is intended to return when the application is terminating (in the same way that returning from main() would),
-and that SDL_RunApp will return after that. Therefore, SDL_RunApp blocks for the lifetime of the app.
-
-If you also want to use SDL's main callbacks system, the callback that you pass to `SDL_RunApp()` should in turn call `SDL_EnterAppMainCallbacks()`, passing in your application's init, iterate, event and quit callbacks.
+If you also want to use SDL's main callbacks system, the callback that you pass to `SDL_RunApp()` should in turn call [`SDL_EnterAppMainCallbacks`](SDL_EnterAppMainCallbacks)(), passing in your application's init, iterate, event and quit callbacks.
 
 ```c
 #define SDL_MAIN_HANDLED
@@ -78,6 +75,12 @@ Any callback functions passed to `SDL_RunApp()`/`SDL_EnterAppMainCallbacks()` mu
 If you don't let SDL redefine main, and you don't use `SDL_RunApp()`, SDL will not initialize any platform-specific details, and your app might not work correctly on certain platforms. In this case, you will need to perform all platform initialization yourself, and then inform SDL that the initialization work is done by calling `SDL_SetMainReady()` before initializing any SDL subsystems. While many platforms need only minor (or no) initialization through SDL_RunApp, this can be a complicated process on some targets, so it can be desirable for SDL to handle it for you.
 
 Be aware that some platforms, for example Android, may have additional requirements beyond just calling `SDL_RunApp()`. When in doubt, the best advice is to carefully read and try to understand the parts of SDL's source code that deal with application entry points and replicate them to the best of your ability in the language of your choosing.
+
+## SDL_RunApp blocks
+
+Note that `my_runapp_callback`, in those examples, is intended to return when the application is terminating (in the same way that returning from main() would), and that SDL_RunApp() will return after that. Therefore, SDL_RunApp() blocks for the lifetime of the app.
+
+If you have a platform that can't tolerate this at all, things can get tricky. You might need to provide an SDL_RunApp callback that uses an equivalent of longjmp() or throws an exception to return control to the caller once SDL has initialized (Emscripten does something like this, in fact), or avoid using SDL_RunApp at all and deal with platform quirks directly.
 
 ## Using SDL as an external module
 
