@@ -30,8 +30,8 @@ Each call to [SDL_PushGPUDebugGroup](SDL_PushGPUDebugGroup) must have a
 corresponding call to [SDL_PopGPUDebugGroup](SDL_PopGPUDebugGroup).
 
 On Direct3D 12, using
-[SDL_PushGPUDebugGroup](SDL_PushGPUDebugGroup) will cause validation errors
-unless you have WinPixEventRuntime.dll in your PATH. See
+[SDL_PushGPUDebugGroup](SDL_PushGPUDebugGroup) requires WinPixEventRuntime.dll
+to be in your PATH or in the same directory as your executable. See
 [here](https://devblogs.microsoft.com/pix/winpixeventruntime/)
 for instructions on how to obtain it.
 

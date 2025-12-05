@@ -22,8 +22,8 @@ void SDL_PopGPUDebugGroup(
 ## Remarks
 
 On Direct3D 12, using
-[SDL_PopGPUDebugGroup](SDL_PopGPUDebugGroup) will cause validation errors
-unless you have WinPixEventRuntime.dll in your PATH. See
+[SDL_PopGPUDebugGroup](SDL_PopGPUDebugGroup) requires WinPixEventRuntime.dll
+to be in your PATH or in the same directory as your executable. See
 [here](https://devblogs.microsoft.com/pix/winpixeventruntime/)
 for instructions on how to obtain it.
 
