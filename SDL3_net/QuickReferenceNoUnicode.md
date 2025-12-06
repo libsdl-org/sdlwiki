@@ -26,7 +26,7 @@ fancy Unicode section headers, try using
 //      XX  XX   XX  XX       XX  XX XX  XX          XX
 // XXXXXX   XXXXXX   XXXXXXX  XX   XXXX  XXXXXXX     XX
 
-#define SDL_NET_MAJOR_VERSION                                                                                     // The current major version of SDL_net headers.
+#define SDL_NET_MAJOR_VERSION                                                                                     // The current major version of the SDL_net headers.
 #define SDL_NET_MINOR_VERSION                                                                                     // The current minor version of the SDL_net headers.
 #define SDL_NET_MICRO_VERSION                                                                                     // The current micro (or patchlevel) version of the SDL_net headers.
 #define SDL_NET_VERSION                                                                                           // This is the version number macro for the current SDL_net version.

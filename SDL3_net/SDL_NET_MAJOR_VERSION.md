@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_net, a separate library from SDL.)
 # SDL_NET_MAJOR_VERSION
 
-The current major version of SDL_net headers.
+The current major version of the SDL_net headers.
 
 ## Header File
 
