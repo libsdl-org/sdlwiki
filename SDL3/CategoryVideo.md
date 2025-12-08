@@ -116,6 +116,7 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 - [SDL_SetWindowAlwaysOnTop](SDL_SetWindowAlwaysOnTop)
 - [SDL_SetWindowAspectRatio](SDL_SetWindowAspectRatio)
 - [SDL_SetWindowBordered](SDL_SetWindowBordered)
+- [SDL_SetWindowFillDocument](SDL_SetWindowFillDocument)
 - [SDL_SetWindowFocusable](SDL_SetWindowFocusable)
 - [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
