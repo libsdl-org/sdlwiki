@@ -23,6 +23,19 @@ const char * SDL_GetAudioDeviceName(SDL_AudioDeviceID devid);
 (const char *) Returns the name of the audio device, or NULL on failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+**WARNING**: this function will work with
+[SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK](SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK) and
+[SDL_AUDIO_DEVICE_DEFAULT_RECORDING](SDL_AUDIO_DEVICE_DEFAULT_RECORDING),
+returning the current default physical devices' names. However, as the
+default device may change at any time, it is likely better to show a
+generic name to the user, like "System default audio device" or perhaps
+"default [currently %s]". Do not store this name to disk to reidentify the
+device in a later run of the program, as the default might change in
+general, and the string will be the name of a specific device and not the
+abstract system default.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
