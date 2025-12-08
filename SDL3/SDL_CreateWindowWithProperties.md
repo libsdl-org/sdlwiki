@@ -147,15 +147,6 @@ These are additional supported properties with Emscripten:
 
 - [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID_STRING`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_CANVAS_ID_STRING):
   the id given to the canvas element. This should start with a '#' sign
-- [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_FILL_DOCUMENT_BOOLEAN`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_FILL_DOCUMENT_BOOLEAN):
-  true to make the canvas element fill the entire document. Resize events
-  will be generated as the browser window is resized, as that will adjust
-  the canvas size as well. The canvas will cover anything else on the page,
-  including any controls provided by Emscripten in its generated HTML file.
-  Often times this is desirable for a browser-based game, but it means
-  several things that we expect of an SDL window on other platforms might
-  not work as expected, such as minimum window sizes and aspect ratios.
-  Default false.
 - [`SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING`](SDL_PROP_WINDOW_CREATE_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING):
   override the binding element for keyboard inputs for this canvas. The
   variable can be one of:
