@@ -59,7 +59,7 @@ This function is available since SDL 3.2.0.
 #include <SDL3/SDL_main.h>
 
 /* Very simple thread - counts 0 to 9 delaying 50ms between increments */
-static int TestThread(void *ptr)
+static int SDLCALL TestThread(void *ptr)
 {
     int cnt;
 
