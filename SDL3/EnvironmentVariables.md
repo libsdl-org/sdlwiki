@@ -158,6 +158,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_MOUSE_DEFAULT_SYSTEM_CURSOR](SDL_HINT_MOUSE_DEFAULT_SYSTEM_CURSOR): A variable setting which system cursor to use as the default cursor.
 - [SDL_MOUSE_DOUBLE_CLICK_RADIUS](SDL_HINT_MOUSE_DOUBLE_CLICK_RADIUS): A variable setting the double click radius, in pixels.
 - [SDL_MOUSE_DOUBLE_CLICK_TIME](SDL_HINT_MOUSE_DOUBLE_CLICK_TIME): A variable setting the double click time, in milliseconds.
+- [SDL_MOUSE_DPI_SCALE_CURSORS](SDL_HINT_MOUSE_DPI_SCALE_CURSORS): A variable setting whether we should scale cursors by the current display scale.
 - [SDL_MOUSE_EMULATE_WARP_WITH_RELATIVE](SDL_HINT_MOUSE_EMULATE_WARP_WITH_RELATIVE): A variable controlling whether warping a hidden mouse cursor will activate relative mouse mode.
 - [SDL_MOUSE_FOCUS_CLICKTHROUGH](SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH): Allow mouse click events when clicking to focus an SDL window.
 - [SDL_MOUSE_NORMAL_SPEED_SCALE](SDL_HINT_MOUSE_NORMAL_SPEED_SCALE): A variable setting the speed scale for mouse motion, in floating point, when the mouse is not in relative mode.
