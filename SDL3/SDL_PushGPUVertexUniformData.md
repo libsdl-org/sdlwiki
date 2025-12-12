@@ -27,7 +27,7 @@ void SDL_PushGPUVertexUniformData(
 
 ## Remarks
 
-Subsequent draw calls will use this uniform data.
+Subsequent draw calls in this command buffer will use this uniform data.
 
 The data being pushed must respect std140 layout conventions. In practical
 terms this means you must ensure that vec3 and vec4 fields are 16-byte
