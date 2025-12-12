@@ -27,7 +27,7 @@ void SDL_PushGPUComputeUniformData(
 
 ## Remarks
 
-Subsequent draw calls in the same command buffer will reuse this uniform data.
+Subsequent draw calls in this command buffer will use this uniform data.
 
 The data being pushed must respect std140 layout conventions. In practical
 terms this means you must ensure that vec3 and vec4 fields are 16-byte
@@ -39,4 +39,3 @@ This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
-
