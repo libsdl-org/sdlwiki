@@ -30,8 +30,7 @@ void SDL_BindGPUComputeStorageTextures(
 These textures must have been created with
 [SDL_GPU_TEXTUREUSAGE_COMPUTE_STORAGE_READ](SDL_GPU_TEXTUREUSAGE_COMPUTE_STORAGE_READ).
 
-Be sure your shader is set up according to the requirements documented in
-[SDL_CreateGPUShader](SDL_CreateGPUShader)().
+Be sure your shader is set up according to the requirements documented in [SDL_CreateGPUComputePipeline](SDL_CreateGPUComputePipeline#remarks)().
 
 ## Version
 
@@ -39,7 +38,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_CreateGPUShader](SDL_CreateGPUShader)
+- [SDL_CreateGPUComputePipeline](SDL_CreateGPUComputePipeline)()
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
