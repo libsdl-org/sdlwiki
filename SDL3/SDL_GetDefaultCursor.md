@@ -15,7 +15,7 @@ SDL_Cursor * SDL_GetDefaultCursor(void);
 ## Return Value
 
 ([SDL_Cursor](SDL_Cursor) *) Returns the default cursor on success or NULL
-on failuree; call [SDL_GetError](SDL_GetError)() for more information.
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

@@ -32,7 +32,7 @@ bool SDL_ClearSurface(SDL_Surface *surface, float r, float g, float b, float a);
 This function handles all surface formats, and ignores any clip rectangle.
 
 If the surface is YUV, the color is assumed to be in the sRGB colorspace,
-otherwise the color is assumed to be in the colorspace of the suface.
+otherwise the color is assumed to be in the colorspace of the surface.
 
 ## Thread Safety
 
