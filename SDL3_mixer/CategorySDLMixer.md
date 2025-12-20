@@ -174,6 +174,7 @@ consider a proper 3D library like OpenAL.
 - [MIX_SetTrackGain](MIX_SetTrackGain)
 - [MIX_SetTrackGroup](MIX_SetTrackGroup)
 - [MIX_SetTrackIOStream](MIX_SetTrackIOStream)
+- [MIX_SetTrackLoops](MIX_SetTrackLoops)
 - [MIX_SetTrackOutputChannelMap](MIX_SetTrackOutputChannelMap)
 - [MIX_SetTrackPlaybackPosition](MIX_SetTrackPlaybackPosition)
 - [MIX_SetTrackRawCallback](MIX_SetTrackRawCallback)
