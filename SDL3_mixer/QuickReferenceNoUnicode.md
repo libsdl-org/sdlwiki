@@ -64,6 +64,7 @@ bool MIX_TagTrack(MIX_Track *track, const char *tag);                           
 void MIX_UntagTrack(MIX_Track *track, const char *tag);                                                                                  // Remove an arbitrary tag from a track.
 bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Sint64 frames);                                                                      // Seek a playing track to a new position in its input.
 Sint64 MIX_GetTrackPlaybackPosition(MIX_Track *track);                                                                                   // Get the current input position of a playing track.
+Sint64 MIX_GetTrackFadeFrames(MIX_Track *track);                                                                                         // Query whether a given track is fading.
 bool MIX_TrackLooping(MIX_Track *track);                                                                                                 // Query whether a given track is looping.
 bool MIX_SetTrackLoops(MIX_Track *track, int num_loops);                                                                                 // Change the number of times a currently-playing track will loop.
 MIX_Audio * MIX_GetTrackAudio(MIX_Track *track);                                                                                         // Query the MIX_Audio assigned to a track.
