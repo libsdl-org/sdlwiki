@@ -34,6 +34,7 @@
 - [MIX_GetTrack3DPosition](MIX_GetTrack3DPosition)
 - [MIX_GetTrackAudio](MIX_GetTrackAudio)
 - [MIX_GetTrackAudioStream](MIX_GetTrackAudioStream)
+- [MIX_GetTrackFadeFrames](MIX_GetTrackFadeFrames)
 - [MIX_GetTrackFrequencyRatio](MIX_GetTrackFrequencyRatio)
 - [MIX_GetTrackGain](MIX_GetTrackGain)
 - [MIX_GetTrackMixer](MIX_GetTrackMixer)
