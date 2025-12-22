@@ -36,6 +36,10 @@ file-specific settings, such as where to find SoundFonts for a MIDI file,
 etc. In most cases, the caller should pass a zero to specify no extra
 properties.
 
+SDL_PropertiesID are discussed in
+[SDL's documentation](https://wiki.libsdl.org/SDL3/CategoryProperties)
+.
+
 When done with the audio decoder, it can be destroyed with
 [MIX_DestroyAudioDecoder](MIX_DestroyAudioDecoder)().
 

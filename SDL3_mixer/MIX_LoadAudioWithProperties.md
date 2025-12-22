@@ -32,6 +32,10 @@ the various LoadAudio functions do. This function uses properties to
 dictate how it operates, and exposes functionality the other functions
 don't provide.
 
+SDL_PropertiesID are discussed in
+[SDL's documentation](https://wiki.libsdl.org/SDL3/CategoryProperties)
+.
+
 These are the supported properties:
 
 - [`MIX_PROP_AUDIO_LOAD_IOSTREAM_POINTER`](MIX_PROP_AUDIO_LOAD_IOSTREAM_POINTER):

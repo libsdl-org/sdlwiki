@@ -41,6 +41,10 @@ are specified with an SDL_PropertiesID. The parameters have reasonable
 defaults, and specifying a 0 for `options` will choose defaults for
 everything.
 
+SDL_PropertiesID are discussed in
+[SDL's documentation](https://wiki.libsdl.org/SDL3/CategoryProperties)
+.
+
 These are the supported properties:
 
 - [`MIX_PROP_PLAY_LOOPS_NUMBER`](MIX_PROP_PLAY_LOOPS_NUMBER): The number of
