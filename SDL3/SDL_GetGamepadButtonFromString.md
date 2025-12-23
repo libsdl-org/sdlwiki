@@ -16,7 +16,7 @@ SDL_GamepadButton SDL_GetGamepadButtonFromString(const char *str);
 
 |              |         |                                                        |
 | ------------ | ------- | ------------------------------------------------------ |
-| const char * | **str** | string representing a [SDL_Gamepad](SDL_Gamepad) axis. |
+| const char * | **str** | string representing a [SDL_Gamepad](SDL_Gamepad) button. |
 
 ## Return Value
 
