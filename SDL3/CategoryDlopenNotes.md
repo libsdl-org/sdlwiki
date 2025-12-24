@@ -18,7 +18,7 @@ check_c_source_compiles([==[
     "Support for video through SDL",
     SDL_ELF_NOTE_DLOPEN_PRIORITY_SUGGESTED,
     "libSDL-1.2.so.0", "libSDL-2.0.so.0", "libSDL3.so.0"
-  );
+  )
   int main(int argc, char *argv[]) {
     return argc + argv[0][1];
   }
