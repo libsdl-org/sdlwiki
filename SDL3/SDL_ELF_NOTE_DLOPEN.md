@@ -1,6 +1,6 @@
 # SDL_ELF_NOTE_DLOPEN
 
-Note that your application has dynamic shared library dependencies.
+Add a note that your application has dynamic shared library dependencies.
 
 ## Header File
 
@@ -14,8 +14,8 @@ Defined in [<SDL3/SDL_dlopennote.h>](https://github.com/libsdl-org/SDL/blob/main
         "[{\"feature\":\"" feature                               \
         "\",\"description\":\"" description                      \
         "\",\"priority\":\"" priority                            \
-        "\",\"soname\":" SDL_SONAME_ARRAY(__VA_ARGS__) "}]",     \
-        SDL_ELF_NOTE_UNIQUE_NAME)
+        "\",\"soname\":" SDL_DLNOTE_JSON_ARRAY(__VA_ARGS__) "}]",   \
+        SDL_DLNOTE_UNIQUE_NAME)
 ```
 
 ## Remarks
@@ -42,6 +42,9 @@ SDL_ELF_NOTE_DLOPEN(
     "libSDL-1.2.so.0", "libSDL2-2.0.so.0", "libSDL3.so.0"
 );
 ```
+
+This macro is not available for compilers that do not support variadic
+macro's.
 
 ## Version
 

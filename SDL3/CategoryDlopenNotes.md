@@ -9,21 +9,23 @@ disable this feature by defining
 CMake snippet to check for support:
 
 ```cmake
- set(CHECK_ELF_DLNOTES_SRC [==[
- #ifndef __ELF__
-   ELF DL notes is only supported on ELF platforms
- #endif
- __attribute__ ((used,aligned(4),section(".note.dlopen"))) static const struct {
-   struct { int a; int b; int c; } hdr; char name[4]; __attribute__((aligned(4))) char json[24];
- } dlnote = { { 4, 0x407c0c0aU, 16 }, "FDO", "[\\"a\\":{\\"a\\":\\"1\\",\\"b\\":\\"2\\"}]" };
- int main(int argc, char *argv[]) {
-   return argc + dlnote.hdr.a;
- }
- ]==])
- check_c_source_compiles("${CHECK_ELF_DLNOTES_SRC}" COMPILER_SUPPORTS_ELFNOTES)
- if(NOT COMPILER_SUPPORTS_ELFNOTES)
-   set(SDL_DISABLE_DLOPEN_NOTES TRUE)
- endif()
+include(CheckCSourceCompiles)
+find_package(SDL3 REQUIRED CONFIG COMPONENTS Headers)
+list(APPEND CMAKE_REQUIRED_LIBRARIES SDL3::Headers)
+check_c_source_compiles([==[
+  #include <SDL3/SDL_dlopennote.h>
+  SDL_ELF_NOTE_DLOPEN("sdl-video",
+    "Support for video through SDL",
+    SDL_ELF_NOTE_DLOPEN_PRIORITY_SUGGESTED,
+    "libSDL-1.2.so.0", "libSDL-2.0.so.0", "libSDL3.so.0"
+  );
+  int main(int argc, char *argv[]) {
+    return argc + argv[0][1];
+  }
+]==] COMPILER_SUPPORTS_SDL_ELF_NOTE_DLOPEN)
+if(NOT COMPILER_SUPPORTS_SDL_ELF_NOTE_DLOPEN)
+  add_compile_definitions(-DSDL_DISABLE_DLOPEN_NOTE)
+endif()
 ```
 
 <!-- END CATEGORY DOCUMENTATION -->
