@@ -15,10 +15,10 @@ void MIX_UntagTrack(MIX_Track *track, const char *tag);
 
 ## Function Parameters
 
-|                          |           |                                       |
-| ------------------------ | --------- | ------------------------------------- |
-| [MIX_Track](MIX_Track) * | **track** | the track from which to remove a tag. |
-| const char *             | **tag**   | the tag to remove.                    |
+|                          |           |                                                        |
+| ------------------------ | --------- | ------------------------------------------------------ |
+| [MIX_Track](MIX_Track) * | **track** | the track from which to remove a tag.                  |
+| const char *             | **tag**   | the tag to remove, or NULL to remove all current tags. |
 
 ## Remarks
 
@@ -30,6 +30,8 @@ and menu sound effects running.
 
 It's legal to remove a tag that the track doesn't have; this function
 doesn't report errors, so this simply does nothing.
+
+Specifying a NULL tag will remove all tags on a track.
 
 ## Thread Safety
 
