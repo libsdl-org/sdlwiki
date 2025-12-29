@@ -62,6 +62,7 @@ bool MIX_SetTrackIOStream(MIX_Track *track, SDL_IOStream *io, bool closeio);    
 bool MIX_SetTrackRawIOStream(MIX_Track *track, SDL_IOStream *io, const SDL_AudioSpec *spec, bool closeio);                               // Set a MIX_Track's input to an SDL_IOStream providing raw PCM data.
 bool MIX_TagTrack(MIX_Track *track, const char *tag);                                                                                    // Assign an arbitrary tag to a track.
 void MIX_UntagTrack(MIX_Track *track, const char *tag);                                                                                  // Remove an arbitrary tag from a track.
+char ** MIX_GetTrackTags(MIX_Track *track, int *count);                                                                                  // Get the tags currently associated with a track.
 bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Sint64 frames);                                                                      // Seek a playing track to a new position in its input.
 Sint64 MIX_GetTrackPlaybackPosition(MIX_Track *track);                                                                                   // Get the current input position of a playing track.
 Sint64 MIX_GetTrackFadeFrames(MIX_Track *track);                                                                                         // Query whether a given track is fading.
