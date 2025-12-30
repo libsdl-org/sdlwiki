@@ -35,6 +35,7 @@
 - [MIX_GetMixerFormat](MIX_GetMixerFormat)
 - [MIX_GetMixerProperties](MIX_GetMixerProperties)
 - [MIX_GetNumAudioDecoders](MIX_GetNumAudioDecoders)
+- [MIX_GetTaggedTracks](MIX_GetTaggedTracks)
 - [MIX_GetTrack3DPosition](MIX_GetTrack3DPosition)
 - [MIX_GetTrackAudio](MIX_GetTrackAudio)
 - [MIX_GetTrackAudioStream](MIX_GetTrackAudioStream)
