@@ -67,6 +67,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_HIDAPI_ENUMERATE_ONLY_CONTROLLERS](SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS): A variable to control whether SDL_hid_enumerate() enumerates all HID devices or only controllers.
 - [SDL_HIDAPI_IGNORE_DEVICES](SDL_HINT_HIDAPI_IGNORE_DEVICES): A variable containing a list of devices to ignore in SDL_hid_enumerate().
 - [SDL_HIDAPI_LIBUSB](SDL_HINT_HIDAPI_LIBUSB): A variable to control whether HIDAPI uses libusb for device access.
+- [SDL_HIDAPI_LIBUSB_GAMECUBE](SDL_HINT_HIDAPI_LIBUSB_GAMECUBE): A variable to control whether HIDAPI uses libusb for GameCube adapters.
 - [SDL_HIDAPI_LIBUSB_WHITELIST](SDL_HINT_HIDAPI_LIBUSB_WHITELIST): A variable to control whether HIDAPI uses libusb only for whitelisted devices.
 - [SDL_HIDAPI_UDEV](SDL_HINT_HIDAPI_UDEV): A variable to control whether HIDAPI uses udev for device detection.
 - [SDL_IME_IMPLEMENTED_UI](SDL_HINT_IME_IMPLEMENTED_UI): A variable describing what IME UI elements the application can display.
