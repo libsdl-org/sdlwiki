@@ -45,6 +45,7 @@
 - [MIX_GetTrackPlaybackPosition](MIX_GetTrackPlaybackPosition)
 - [MIX_GetTrackProperties](MIX_GetTrackProperties)
 - [MIX_GetTrackRemaining](MIX_GetTrackRemaining)
+- [MIX_GetTrackTags](MIX_GetTrackTags)
 - [MIX_Group](MIX_Group)
 - [MIX_GroupMixCallback](MIX_GroupMixCallback)
 - [MIX_Init](MIX_Init)
