@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-#define SDL_MINOR_VERSION   3
+#define SDL_MINOR_VERSION   4
 ```
 
 ## Remarks
