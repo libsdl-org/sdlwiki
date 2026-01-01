@@ -26,6 +26,7 @@ typedef void(SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const 
 This is called an initial time during
 [SDL_AddHintCallback](SDL_AddHintCallback) with the hint's current value,
 and then again each time the hint's value changes.
+In the initial call, the current value is in both `oldValue` and `newValue`.
 
 ## Thread Safety
 
