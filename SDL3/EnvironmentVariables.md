@@ -179,10 +179,10 @@ This list matches the latest in SDL3's revision control.
 - [SDL_PEN_TOUCH_EVENTS](SDL_HINT_PEN_TOUCH_EVENTS): A variable controlling whether pen events should generate synthetic touch events.
 - [SDL_POLL_SENTINEL](SDL_HINT_POLL_SENTINEL): A variable controlling the use of a sentinel event when polling the event queue.
 - [SDL_PREFERRED_LOCALES](SDL_HINT_PREFERRED_LOCALES): Override for SDL_GetPreferredLocales().
-- [SDL_PS2_GS_HEIGHT](SDL_HINT_PS2_GS_HEIGHT): Variable controlling the height of the PS2's framebuffer in pixels
-- [SDL_PS2_GS_MODE](SDL_HINT_PS2_GS_MODE): Variable controlling the video mode of the console
-- [SDL_PS2_GS_PROGRESSIVE](SDL_HINT_PS2_GS_PROGRESSIVE): Variable controlling whether the signal is interlaced or progressive
-- [SDL_PS2_GS_WIDTH](SDL_HINT_PS2_GS_WIDTH): Variable controlling the width of the PS2's framebuffer in pixels
+- [SDL_PS2_GS_HEIGHT](SDL_HINT_PS2_GS_HEIGHT): A variable controlling the height of the PS2's framebuffer in pixels.
+- [SDL_PS2_GS_MODE](SDL_HINT_PS2_GS_MODE): A variable controlling the video mode of the console.
+- [SDL_PS2_GS_PROGRESSIVE](SDL_HINT_PS2_GS_PROGRESSIVE): A variable controlling whether the signal is interlaced or progressive.
+- [SDL_PS2_GS_WIDTH](SDL_HINT_PS2_GS_WIDTH): A variable controlling the width of the PS2's framebuffer in pixels.
 - [SDL_QUIT_ON_LAST_WINDOW_CLOSE](SDL_HINT_QUIT_ON_LAST_WINDOW_CLOSE): A variable that decides whether to send SDL_EVENT_QUIT when closing the last window.
 - [SDL_RENDER_DIRECT3D11_DEBUG](SDL_HINT_RENDER_DIRECT3D11_DEBUG): A variable controlling whether to enable Direct3D 11+'s Debug Layer.
 - [SDL_RENDER_DIRECT3D11_WARP](SDL_HINT_RENDER_DIRECT3D11_WARP): A variable controlling whether to use the Direct3D 11 WARP software rasterizer.

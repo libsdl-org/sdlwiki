@@ -1,6 +1,6 @@
 # SDL_HINT_PS2_GS_MODE
 
-Variable controlling the video mode of the console
+A variable controlling the video mode of the console.
 
 ## Header File
 
@@ -14,9 +14,15 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ## Remarks
 
+The variable can be set to the following values:
+
 - "": Console-native. (default)
-- "NTSC": 60hz region
-- "PAL": 50hz region
+- "NTSC": 60hz region.
+- "PAL": 50hz region.
+
+## Version
+
+This hint is available since SDL 3.4.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
