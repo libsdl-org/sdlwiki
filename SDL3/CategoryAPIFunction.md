@@ -1059,7 +1059,6 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 - [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 - [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
-- [SDL_SetRenderGPUState](SDL_SetRenderGPUState)
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 - [SDL_SetRenderScale](SDL_SetRenderScale)
 - [SDL_SetRenderTarget](SDL_SetRenderTarget)

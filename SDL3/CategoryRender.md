@@ -115,7 +115,6 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 - [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 - [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
-- [SDL_SetRenderGPUState](SDL_SetRenderGPUState)
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 - [SDL_SetRenderScale](SDL_SetRenderScale)
 - [SDL_SetRenderTarget](SDL_SetRenderTarget)
