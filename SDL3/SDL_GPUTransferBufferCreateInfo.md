@@ -22,6 +22,10 @@ typedef struct SDL_GPUTransferBufferCreateInfo
 
 This struct is available since SDL 3.2.0.
 
+## Enums
+
+- [SDL_GPUTransferBufferUsage](SDL_GPUTransferBufferUsage)
+
 ## See Also
 
 - [SDL_CreateGPUTransferBuffer](SDL_CreateGPUTransferBuffer)
