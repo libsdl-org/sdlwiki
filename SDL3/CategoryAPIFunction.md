@@ -987,7 +987,6 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_SetAtomicPointer](SDL_SetAtomicPointer)
 - [SDL_SetAtomicU32](SDL_SetAtomicU32)
 - [SDL_SetAudioDeviceGain](SDL_SetAudioDeviceGain)
-- [SDL_SetAudioIterationCallbacks](SDL_SetAudioIterationCallbacks)
 - [SDL_SetAudioPostmixCallback](SDL_SetAudioPostmixCallback)
 - [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
 - [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
