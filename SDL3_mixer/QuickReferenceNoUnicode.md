@@ -47,7 +47,7 @@ MIX_Audio * MIX_LoadAudioWithProperties(SDL_PropertiesID props);                
 MIX_Audio * MIX_LoadRawAudio_IO(MIX_Mixer *mixer, SDL_IOStream *io, const SDL_AudioSpec *spec, bool closeio);                            // Load raw PCM data from an SDL_IOStream.
 MIX_Audio * MIX_LoadRawAudio(MIX_Mixer *mixer, const void *data, size_t datalen, const SDL_AudioSpec *spec);                             // Load raw PCM data from a memory buffer.
 MIX_Audio * MIX_LoadRawAudioNoCopy(MIX_Mixer *mixer, const void *data, size_t datalen, const SDL_AudioSpec *spec, bool free_when_done);  // Load raw PCM data from a memory buffer without making a copy.
-MIX_Audio * MIX_CreateSineWaveAudio(MIX_Mixer *mixer, int hz, float amplitude);                                                          // Create a MIX_Audio that generates a sinewave.
+MIX_Audio * MIX_CreateSineWaveAudio(MIX_Mixer *mixer, int hz, float amplitude, Sint64 ms);                                               // Create a MIX_Audio that generates a sinewave.
 SDL_PropertiesID MIX_GetAudioProperties(MIX_Audio *audio);                                                                               // Get the properties associated with a MIX_Audio.
 Sint64 MIX_GetAudioDuration(MIX_Audio *audio);                                                                                           // Get the length of a MIX_Audio's playback in sample frames.
 bool MIX_GetAudioFormat(MIX_Audio *audio, SDL_AudioSpec *spec);                                                                          // Query the initial audio format of a MIX_Audio.
