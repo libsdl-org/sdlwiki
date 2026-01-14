@@ -67,7 +67,7 @@ MIX_Track ** MIX_GetTaggedTracks(MIX_Mixer *mixer, const char *tag, int *count);
 bool MIX_SetTrackPlaybackPosition(MIX_Track *track, Sint64 frames);                                                                      // Seek a playing track to a new position in its input.
 Sint64 MIX_GetTrackPlaybackPosition(MIX_Track *track);                                                                                   // Get the current input position of a playing track.
 Sint64 MIX_GetTrackFadeFrames(MIX_Track *track);                                                                                         // Query whether a given track is fading.
-bool MIX_TrackLooping(MIX_Track *track);                                                                                                 // Query whether a given track is looping.
+int MIX_GetTrackLoops(MIX_Track *track);                                                                                                 // Query how many loops remain for a given track.
 bool MIX_SetTrackLoops(MIX_Track *track, int num_loops);                                                                                 // Change the number of times a currently-playing track will loop.
 MIX_Audio * MIX_GetTrackAudio(MIX_Track *track);                                                                                         // Query the MIX_Audio assigned to a track.
 SDL_AudioStream * MIX_GetTrackAudioStream(MIX_Track *track);                                                                             // Query the SDL_AudioStream assigned to a track.

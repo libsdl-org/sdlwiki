@@ -52,7 +52,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-- [MIX_TrackLooping](MIX_TrackLooping)
+- [MIX_GetTrackLoops](MIX_GetTrackLoops)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
