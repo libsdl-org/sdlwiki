@@ -18,7 +18,7 @@ MIX_Mixer * MIX_CreateMixerDevice(SDL_AudioDeviceID devid, const SDL_AudioSpec *
 |                       |           |                                                                                        |
 | --------------------- | --------- | -------------------------------------------------------------------------------------- |
 | SDL_AudioDeviceID     | **devid** | the device to open for playback, or SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK for the default. |
-| const SDL_AudioSpec * | **spec**  | the audio format request from the device. May be NULL.                                 |
+| const SDL_AudioSpec * | **spec**  | the audio format to request from the device. May be NULL.                              |
 
 ## Return Value
 
