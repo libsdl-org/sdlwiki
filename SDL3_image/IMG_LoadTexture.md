@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_LoadTexture
 
-Load an image from a filesystem path into a GPU texture.
+Load an image from a filesystem path into a texture.
 
 ## Header File
 
@@ -15,10 +15,10 @@ SDL_Texture * IMG_LoadTexture(SDL_Renderer *renderer, const char *file);
 
 ## Function Parameters
 
-|                |              |                                                    |
-| -------------- | ------------ | -------------------------------------------------- |
-| SDL_Renderer * | **renderer** | the SDL_Renderer to use to create the GPU texture. |
-| const char *   | **file**     | a path on the filesystem to load an image from.    |
+|                |              |                                                 |
+| -------------- | ------------ | ----------------------------------------------- |
+| SDL_Renderer * | **renderer** | the SDL_Renderer to use to create the texture.  |
+| const char *   | **file**     | a path on the filesystem to load an image from. |
 
 ## Return Value
 

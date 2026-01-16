@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_LoadTextureTyped_IO
 
-Load an image from an SDL data source into a GPU texture.
+Load an image from an SDL data source into a texture.
 
 ## Header File
 
@@ -17,7 +17,7 @@ SDL_Texture * IMG_LoadTextureTyped_IO(SDL_Renderer *renderer, SDL_IOStream *src,
 
 |                |              |                                                                               |
 | -------------- | ------------ | ----------------------------------------------------------------------------- |
-| SDL_Renderer * | **renderer** | the SDL_Renderer to use to create the GPU texture.                            |
+| SDL_Renderer * | **renderer** | the SDL_Renderer to use to create the texture.                                |
 | SDL_IOStream * | **src**      | an SDL_IOStream that data will be read from.                                  |
 | bool           | **closeio**  | true to close/free the SDL_IOStream before returning, false to leave it open. |
 | const char *   | **type**     | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).     |
