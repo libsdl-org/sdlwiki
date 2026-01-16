@@ -93,13 +93,13 @@ bool MIX_ResumeAllTracks(MIX_Mixer *mixer);                                     
 bool MIX_ResumeTag(MIX_Mixer *mixer, const char *tag);                                                                                   // Resume all tracks with a specific tag.
 bool MIX_TrackPlaying(MIX_Track *track);                                                                                                 // Query if a track is currently playing.
 bool MIX_TrackPaused(MIX_Track *track);                                                                                                  // Query if a track is currently paused.
-bool MIX_SetMasterGain(MIX_Mixer *mixer, float gain);                                                                                    // Set a mixer's master gain control.
-float MIX_GetMasterGain(MIX_Mixer *mixer);                                                                                               // Get a mixer's master gain control.
+bool MIX_SetMixerGain(MIX_Mixer *mixer, float gain);                                                                                     // Set a mixer's master gain control.
+float MIX_GetMixerGain(MIX_Mixer *mixer);                                                                                                // Get a mixer's master gain control.
 bool MIX_SetTrackGain(MIX_Track *track, float gain);                                                                                     // Set a track's gain control.
 float MIX_GetTrackGain(MIX_Track *track);                                                                                                // Get a track's gain control.
 bool MIX_SetTagGain(MIX_Mixer *mixer, const char *tag, float gain);                                                                      // Set the gain control of all tracks with a specific tag.
-bool MIX_SetMasterFrequencyRatio(MIX_Mixer *mixer, float ratio);                                                                         // Set a mixer's master frequency ratio.
-float MIX_GetMasterFrequencyRatio(MIX_Mixer *mixer);                                                                                     // Get a mixer's master frequency ratio.
+bool MIX_SetMixerFrequencyRatio(MIX_Mixer *mixer, float ratio);                                                                          // Set a mixer's master frequency ratio.
+float MIX_GetMixerFrequencyRatio(MIX_Mixer *mixer);                                                                                      // Get a mixer's master frequency ratio.
 bool MIX_SetTrackFrequencyRatio(MIX_Track *track, float ratio);                                                                          // Change the frequency ratio of a track.
 float MIX_GetTrackFrequencyRatio(MIX_Track *track);                                                                                      // Query the frequency ratio of a track.
 bool MIX_SetTrackOutputChannelMap(MIX_Track *track, const int *chmap, int count);                                                        // Set the current output channel map of a track.

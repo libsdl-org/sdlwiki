@@ -57,7 +57,7 @@ This function is available since SDL_mixer 3.0.0.
 
 - [MIX_GetTrackGain](MIX_GetTrackGain)
 - [MIX_SetTrackGain](MIX_SetTrackGain)
-- [MIX_SetMasterGain](MIX_SetMasterGain)
+- [MIX_SetMixerGain](MIX_SetMixerGain)
 - [MIX_TagTrack](MIX_TagTrack)
 
 ----

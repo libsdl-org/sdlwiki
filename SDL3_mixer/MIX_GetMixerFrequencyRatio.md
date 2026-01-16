@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_mixer, a separate library from SDL.)
-# MIX_GetTrackGain
+# MIX_GetMixerFrequencyRatio
 
-Get a track's gain control.
+Get a mixer's master frequency ratio.
 
 ## Header File
 
@@ -10,24 +10,24 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-float MIX_GetTrackGain(MIX_Track *track);
+float MIX_GetMixerFrequencyRatio(MIX_Mixer *mixer);
 ```
 
 ## Function Parameters
 
 |                          |           |                     |
 | ------------------------ | --------- | ------------------- |
-| [MIX_Track](MIX_Track) * | **track** | the track to query. |
+| [MIX_Mixer](MIX_Mixer) * | **mixer** | the mixer to query. |
 
 ## Return Value
 
-(float) Returns the track's current gain.
+(float) Returns the mixer's current master frequency ratio.
 
 ## Remarks
 
 This returns the last value set through
-[MIX_SetTrackGain](MIX_SetTrackGain)(), or 1.0f if no value has ever been
-explicitly set.
+[MIX_SetMixerFrequencyRatio](MIX_SetMixerFrequencyRatio)(), or 1.0f if no
+value has ever been explicitly set.
 
 ## Thread Safety
 
@@ -39,8 +39,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-- [MIX_SetTrackGain](MIX_SetTrackGain)
-- [MIX_GetMixerGain](MIX_GetMixerGain)
+- [MIX_SetMixerFrequencyRatio](MIX_SetMixerFrequencyRatio)
+- [MIX_GetTrackFrequencyRatio](MIX_GetTrackFrequencyRatio)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)

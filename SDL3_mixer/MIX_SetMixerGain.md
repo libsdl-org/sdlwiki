@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_mixer, a separate library from SDL.)
-# MIX_SetTrackGain
+# MIX_SetMixerGain
 
-Set a track's gain control.
+Set a mixer's master gain control.
 
 ## Header File
 
@@ -10,14 +10,14 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-bool MIX_SetTrackGain(MIX_Track *track, float gain);
+bool MIX_SetMixerGain(MIX_Mixer *mixer, float gain);
 ```
 
 ## Function Parameters
 
 |                          |           |                      |
 | ------------------------ | --------- | -------------------- |
-| [MIX_Track](MIX_Track) * | **track** | the track to adjust. |
+| [MIX_Mixer](MIX_Mixer) * | **mixer** | the mixer to adjust. |
 | float                    | **gain**  | the new gain value.  |
 
 ## Return Value
@@ -27,14 +27,14 @@ more information.
 
 ## Remarks
 
-Each track has its own gain, to adjust its overall volume. Each sample from
-this track is modulated by this gain value. A gain of zero will generate
-silence, 1.0f will not change the mixed volume, and larger than 1.0f will
-increase the volume. Negative values are illegal. There is no maximum gain
-specified, but this can quickly get extremely loud, so please be careful
-with this setting.
+Each mixer has a master gain, to adjust the volume of the entire mix. Each
+sample passing through the pipeline is modulated by this gain value. A gain
+of zero will generate silence, 1.0f will not change the mixed volume, and
+larger than 1.0f will increase the volume. Negative values are illegal.
+There is no maximum gain specified, but this can quickly get extremely
+loud, so please be careful with this setting.
 
-A track's gain defaults to 1.0f.
+A mixer's master gain defaults to 1.0f.
 
 This value can be changed at any time to adjust the future mix.
 
@@ -48,8 +48,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-- [MIX_GetTrackGain](MIX_GetTrackGain)
-- [MIX_SetMixerGain](MIX_SetMixerGain)
+- [MIX_GetMixerGain](MIX_GetMixerGain)
+- [MIX_SetTrackGain](MIX_SetTrackGain)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)

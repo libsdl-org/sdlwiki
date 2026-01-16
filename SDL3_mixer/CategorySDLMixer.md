@@ -68,10 +68,10 @@ many file formats.
 
 This library offers several features on top of mixing sounds together: a
 track can have its own gain, to adjust its volume, in addition to a master
-gain applied as well. One can set the "frequency ratio" of a track, to
-speed it up or slow it down, which also adjusts its pitch. A channel map
-can also be applied per-track, to change what speaker a given channel of
-audio is output to.
+gain applied as well. One can set the "frequency ratio" of a track or the
+final mixed output, to speed it up or slow it down, which also adjusts its
+pitch. A channel map can also be applied per-track, to change what speaker
+a given channel of audio is output to.
 
 Almost all timing in SDL_mixer is in _sample frames_. Stereo PCM audio data
 in Sint16 format takes 4 bytes per sample frame (2 bytes per sample times 2
