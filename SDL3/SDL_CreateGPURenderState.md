@@ -9,15 +9,15 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_GPURenderState * SDL_CreateGPURenderState(SDL_Renderer *renderer, SDL_GPURenderStateCreateInfo *createinfo);
+SDL_GPURenderState * SDL_CreateGPURenderState(SDL_Renderer *renderer, const SDL_GPURenderStateCreateInfo *createinfo);
 ```
 
 ## Function Parameters
 
-|                                                                |                |                                                     |
-| -------------------------------------------------------------- | -------------- | --------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) *                                 | **renderer**   | the renderer to use.                                |
-| [SDL_GPURenderStateCreateInfo](SDL_GPURenderStateCreateInfo) * | **createinfo** | a struct describing the GPU render state to create. |
+|                                                                      |                |                                                     |
+| -------------------------------------------------------------------- | -------------- | --------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) *                                       | **renderer**   | the renderer to use.                                |
+| const [SDL_GPURenderStateCreateInfo](SDL_GPURenderStateCreateInfo) * | **createinfo** | a struct describing the GPU render state to create. |
 
 ## Return Value
 
