@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-#define SDL_MIXER_MICRO_VERSION   0
+#define SDL_MIXER_MICRO_VERSION   2
 ```
 
 ## Remarks
