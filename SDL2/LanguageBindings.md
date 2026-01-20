@@ -1,7 +1,5 @@
 # SDL2 Language Bindings
 
-(SDL3 language bindings are listed [here](/SDL3/LanguageBindings).)
-
 The Simple DirectMedia Layer library has bindings to many different programming languages.  While SDL is written in C, it works well with C++ and many people like to use it with various scripting languages and special purpose programming languages.
 
 ## Ada
