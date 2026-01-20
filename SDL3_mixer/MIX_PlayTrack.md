@@ -99,6 +99,10 @@ These are the supported properties:
   property, but the value is specified in milliseconds instead of sample
   frames. If both properties are specified, the sample frames value is
   favored. Default 0.
+- [`MIX_PROP_PLAY_FADE_IN_START_GAIN_FLOAT`](MIX_PROP_PLAY_FADE_IN_START_GAIN_FLOAT):
+  If fading in, start fading from this volume level. 0.0f is silence and
+  1.0f is full volume, every in between is a linear change in gain. The
+  specified value will be clamped between 0.0f and 1.0f. Default 0.0f.
 - [`MIX_PROP_PLAY_APPEND_SILENCE_FRAMES_NUMBER`](MIX_PROP_PLAY_APPEND_SILENCE_FRAMES_NUMBER):
   At the end of mixing this track, after all loops are complete, append
   this many sample frames of silence as if it were part of the audio file.
