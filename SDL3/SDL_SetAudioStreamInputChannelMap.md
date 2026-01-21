@@ -81,7 +81,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_SetAudioStreamInputChannelMap](SDL_SetAudioStreamInputChannelMap)
+- [SDL_SetAudioStreamOutputChannelMap](SDL_SetAudioStreamOutputChannelMap)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
