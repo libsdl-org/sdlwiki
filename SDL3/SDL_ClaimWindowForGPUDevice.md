@@ -19,7 +19,7 @@ bool SDL_ClaimWindowForGPUDevice(
 |                                  |            |                              |
 | -------------------------------- | ---------- | ---------------------------- |
 | [SDL_GPUDevice](SDL_GPUDevice) * | **device** | a GPU context.               |
-| [SDL_Window](SDL_Window) *       | **window** | an [SDL_Window](SDL_Window). |
+| [SDL_Window](SDL_Window) *       | **window** | a [SDL_Window](SDL_Window). |
 
 ## Return Value
 
