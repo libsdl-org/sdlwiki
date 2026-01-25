@@ -33,7 +33,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
-- [SDL_GetRectIntersection](SDL_GetRectIntersection)
+- [SDL_GetRectIntersectionFloat](SDL_GetRectIntersectionFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)
