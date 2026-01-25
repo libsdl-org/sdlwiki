@@ -17,7 +17,7 @@ bool SDL_RemoveStoragePath(SDL_Storage *storage, const char *path);
 |                              |             |                                         |
 | ---------------------------- | ----------- | --------------------------------------- |
 | [SDL_Storage](SDL_Storage) * | **storage** | a storage container.                    |
-| const char *                 | **path**    | the path of the directory to enumerate. |
+| const char *                 | **path**    | the path to remove from the filesystem. |
 
 ## Return Value
 
