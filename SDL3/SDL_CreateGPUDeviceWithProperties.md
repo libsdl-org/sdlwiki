@@ -105,7 +105,7 @@ With the Vulkan backend:
   into extensions aside from the minimal set SDL requires.
 
 With the Metal backend: -
-[`SDL_PROP_GPU_DEVICE_CREATE_METAL_ALLOW_MACFAMILY1`](SDL_PROP_GPU_DEVICE_CREATE_METAL_ALLOW_MACFAMILY1):
+[`SDL_PROP_GPU_DEVICE_CREATE_METAL_ALLOW_MACFAMILY1_BOOLEAN`](SDL_PROP_GPU_DEVICE_CREATE_METAL_ALLOW_MACFAMILY1_BOOLEAN):
 By default, macOS support requires what Apple calls "MTLGPUFamilyMac2"
 hardware or newer. However, an application can set this property to true to
 enable support for "MTLGPUFamilyMac1" hardware, if (and only if) the
