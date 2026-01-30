@@ -49,6 +49,10 @@ returned XrSwapchain if they need to get the exact size of the array.
 - [SDL_GetGPUXRSwapchainFormats](SDL_GetGPUXRSwapchainFormats)
 - [SDL_DestroyGPUXRSwapchain](SDL_DestroyGPUXRSwapchain)
 
+## Version
+
+This function is available since SDL 3.6.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
 

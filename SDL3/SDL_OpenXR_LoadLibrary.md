@@ -39,6 +39,10 @@ This function is not thread safe.
 
 - [SDL_HINT_OPENXR_LIBRARY](SDL_HINT_OPENXR_LIBRARY)
 
+## Version
+
+This function is available since SDL 3.6.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
 

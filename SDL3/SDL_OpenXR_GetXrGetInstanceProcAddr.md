@@ -29,6 +29,10 @@ PFN_xrGetInstanceProcAddr, but that isn't always available. You should
 include the OpenXR headers before this header, or cast the return value of
 this function to the correct type.
 
+## Version
+
+This function is available since SDL 3.6.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
 
