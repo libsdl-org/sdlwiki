@@ -1270,6 +1270,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_toupper](SDL_toupper)
 - [SDL_trunc](SDL_trunc)
 - [SDL_truncf](SDL_truncf)
+- [SDL_TryLockJoysticks](SDL_TryLockJoysticks)
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
 - [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)

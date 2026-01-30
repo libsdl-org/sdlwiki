@@ -100,6 +100,7 @@ recording/playback of game inputs, etc.
 - [SDL_SetJoystickVirtualButton](SDL_SetJoystickVirtualButton)
 - [SDL_SetJoystickVirtualHat](SDL_SetJoystickVirtualHat)
 - [SDL_SetJoystickVirtualTouchpad](SDL_SetJoystickVirtualTouchpad)
+- [SDL_TryLockJoysticks](SDL_TryLockJoysticks)
 - [SDL_UnlockJoysticks](SDL_UnlockJoysticks)
 - [SDL_UpdateJoysticks](SDL_UpdateJoysticks)
 <!-- END CATEGORY LIST -->

@@ -1199,6 +1199,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_toupper](SDL_toupper)
 - [SDL_trunc](SDL_trunc)
 - [SDL_truncf](SDL_truncf)
+- [SDL_TryLockJoysticks](SDL_TryLockJoysticks)
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
 - [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
