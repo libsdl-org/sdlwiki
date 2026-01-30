@@ -174,6 +174,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_OPENGL_ES_DRIVER](SDL_HINT_OPENGL_ES_DRIVER): A variable controlling what driver to use for OpenGL ES contexts.
 - [SDL_OPENGL_LIBRARY](SDL_HINT_OPENGL_LIBRARY): Specify the OpenGL library to load.
 - [SDL_OPENVR_LIBRARY](SDL_HINT_OPENVR_LIBRARY): Mechanism to specify openvr_api library location
+- [SDL_OPENXR_LIBRARY](SDL_HINT_OPENXR_LIBRARY): A variable that specifies the library name to use when loading the OpenXR loader.
 - [SDL_ORIENTATIONS](SDL_HINT_ORIENTATIONS): A variable controlling which orientations are allowed on iOS/Android.
 - [SDL_PEN_MOUSE_EVENTS](SDL_HINT_PEN_MOUSE_EVENTS): A variable controlling whether pen events should generate synthetic mouse events.
 - [SDL_PEN_TOUCH_EVENTS](SDL_HINT_PEN_TOUCH_EVENTS): A variable controlling whether pen events should generate synthetic touch events.
