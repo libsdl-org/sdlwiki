@@ -32,13 +32,13 @@ with [SDL_free](SDL_free)() when it is no longer needed.
 The returned pointer should be allocated with [SDL_malloc](SDL_malloc)()
 and will be passed to [SDL_free](SDL_free)().
 
-## See Also
-
-- [SDL_CreateGPUXRSwapchain](SDL_CreateGPUXRSwapchain)
-
 ## Version
 
 This function is available since SDL 3.6.0.
+
+## See Also
+
+- [SDL_CreateGPUXRSwapchain](SDL_CreateGPUXRSwapchain)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)

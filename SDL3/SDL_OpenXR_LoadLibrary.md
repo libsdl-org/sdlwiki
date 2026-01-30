@@ -35,13 +35,13 @@ This function will use the platform default OpenXR loader name, unless the
 
 This function is not thread safe.
 
-## See Also
-
-- [SDL_HINT_OPENXR_LIBRARY](SDL_HINT_OPENXR_LIBRARY)
-
 ## Version
 
 This function is available since SDL 3.6.0.
+
+## See Also
+
+- [SDL_HINT_OPENXR_LIBRARY](SDL_HINT_OPENXR_LIBRARY)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)

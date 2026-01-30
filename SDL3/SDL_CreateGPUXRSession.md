@@ -28,13 +28,13 @@ XrResult SDL_CreateGPUXRSession(SDL_GPUDevice *device, const XrSessionCreateInfo
 
 The OpenXR system ID is pulled from the passed GPU context.
 
-## See Also
-
-- [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
-
 ## Version
 
 This function is available since SDL 3.6.0.
+
+## See Also
+
+- [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)

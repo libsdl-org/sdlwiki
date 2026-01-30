@@ -24,15 +24,15 @@ XrResult SDL_DestroyGPUXRSwapchain(SDL_GPUDevice *device, XrSwapchain swapchain,
 
 (XrResult) Returns the result of the call.
 
+## Version
+
+This function is available since SDL 3.6.0.
+
 ## See Also
 
 - [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
 - [SDL_CreateGPUXRSession](SDL_CreateGPUXRSession)
 - [SDL_CreateGPUXRSwapchain](SDL_CreateGPUXRSwapchain)
-
-## Version
-
-This function is available since SDL 3.6.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)

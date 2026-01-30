@@ -30,6 +30,7 @@
 - [README-ps4](README-ps4)
 - [README-ps5](README-ps5)
 - [README-psp](README-psp)
+- [README-qnx](README-qnx)
 - [README-riscos](README-riscos)
 - [README-steamos](README-steamos)
 - [README-strings](README-strings)

@@ -42,16 +42,16 @@ values returned from `xrAcquireSwapchainImage`.
 Applications are still allowed to call `xrEnumerateSwapchainImages` on the
 returned XrSwapchain if they need to get the exact size of the array.
 
+## Version
+
+This function is available since SDL 3.6.0.
+
 ## See Also
 
 - [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
 - [SDL_CreateGPUXRSession](SDL_CreateGPUXRSession)
 - [SDL_GetGPUXRSwapchainFormats](SDL_GetGPUXRSwapchainFormats)
 - [SDL_DestroyGPUXRSwapchain](SDL_DestroyGPUXRSwapchain)
-
-## Version
-
-This function is available since SDL 3.6.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
