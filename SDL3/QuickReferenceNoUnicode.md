@@ -434,6 +434,7 @@ const char * SDL_GetGamepadAppleSFSymbolsNameForAxis(SDL_Gamepad *gamepad, SDL_G
 //  XXXXX    XXXXXX      XX     XXXXXX      XX     XX   XXXXXX  XX   XX
 
 void SDL_LockJoysticks(void);                                                                                                                     // Locking for atomic access to the joystick API.
+bool SDL_TryLockJoysticks(void);                                                                                                                  // Locking for atomic access to the joystick API.
 void SDL_UnlockJoysticks(void);                                                                                                                   // Unlocking for atomic access to the joystick API.
 bool SDL_HasJoystick(void);                                                                                                                       // Return whether a joystick is currently connected.
 SDL_JoystickID * SDL_GetJoysticks(int *count);                                                                                                    // Get a list of currently connected joysticks.
