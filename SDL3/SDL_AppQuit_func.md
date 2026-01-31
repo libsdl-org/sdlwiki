@@ -24,7 +24,7 @@ typedef void (SDLCALL *SDL_AppQuit_func)(void *appstate, SDL_AppResult result);
 These are used by [SDL_EnterAppMainCallbacks](SDL_EnterAppMainCallbacks).
 This mechanism operates behind the scenes for apps using the optional main
 callbacks. Apps that want to use this should just implement
-[SDL_AppQuit](SDL_AppQuit) directly.
+[SDL_AppEvent](SDL_AppEvent) directly.
 
 ## Version
 
