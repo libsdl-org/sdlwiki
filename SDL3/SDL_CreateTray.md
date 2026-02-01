@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
     // Create a context menu for the tray.
     menu = SDL_CreateTrayMenu(tray);
 
-    // Create a button in the comtext menu.
+    // Create a button in the context menu.
     entry = SDL_InsertTrayEntryAt(menu, -1, "Quit", SDL_TRAYENTRY_BUTTON);
 
     // Set the callback for the button
