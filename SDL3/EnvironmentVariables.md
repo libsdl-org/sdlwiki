@@ -93,6 +93,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_HIDAPI_FLYDIGI](SDL_HINT_JOYSTICK_HIDAPI_FLYDIGI): A variable controlling whether the HIDAPI driver for Flydigi controllers should be used.
 - [SDL_JOYSTICK_HIDAPI_GAMECUBE](SDL_HINT_JOYSTICK_HIDAPI_GAMECUBE): A variable controlling whether the HIDAPI driver for Nintendo GameCube controllers should be used.
 - [SDL_JOYSTICK_HIDAPI_GAMECUBE_RUMBLE_BRAKE](SDL_HINT_JOYSTICK_HIDAPI_GAMECUBE_RUMBLE_BRAKE): A variable controlling whether rumble is used to implement the GameCube controller's 3 rumble modes, Stop(0), Rumble(1), and StopHard(2).
+- [SDL_JOYSTICK_HIDAPI_GAMESIR](SDL_HINT_JOYSTICK_HIDAPI_GAMESIR): A variable controlling whether the HIDAPI driver for GameSir controllers should be used.
 - [SDL_JOYSTICK_HIDAPI_GIP](SDL_HINT_JOYSTICK_HIDAPI_GIP): A variable controlling whether the new HIDAPI driver for wired Xbox One (GIP) controllers should be used.
 - [SDL_JOYSTICK_HIDAPI_GIP_RESET_FOR_METADATA](SDL_HINT_JOYSTICK_HIDAPI_GIP_RESET_FOR_METADATA): A variable controlling whether the new HIDAPI driver for wired Xbox One (GIP) controllers should reset the controller if it can't get the metadata from the controller.
 - [SDL_JOYSTICK_HIDAPI_JOYCON_HOME_LED](SDL_HINT_JOYSTICK_HIDAPI_JOYCON_HOME_LED): A variable controlling whether the Home button LED should be turned on when a Nintendo Switch Joy-Con controller is opened.
