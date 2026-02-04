@@ -127,6 +127,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_TouchID](SDL_TouchID)
 - [SDL_Tray](SDL_Tray)
 - [SDL_TrayCallback](SDL_TrayCallback)
+- [SDL_TrayClickCallback](SDL_TrayClickCallback)
 - [SDL_TrayEntry](SDL_TrayEntry)
 - [SDL_TrayEntryFlags](SDL_TrayEntryFlags)
 - [SDL_TrayMenu](SDL_TrayMenu)

@@ -16,6 +16,7 @@ these pieces.
 - [SDL_CreateTray](SDL_CreateTray)
 - [SDL_CreateTrayMenu](SDL_CreateTrayMenu)
 - [SDL_CreateTraySubmenu](SDL_CreateTraySubmenu)
+- [SDL_CreateTrayWithProperties](SDL_CreateTrayWithProperties)
 - [SDL_DestroyTray](SDL_DestroyTray)
 - [SDL_GetTrayEntries](SDL_GetTrayEntries)
 - [SDL_GetTrayEntryChecked](SDL_GetTrayEntryChecked)
@@ -43,6 +44,7 @@ these pieces.
 <!-- BEGIN CATEGORY LIST: CategoryTray, CategoryAPIDatatype -->
 - [SDL_Tray](SDL_Tray)
 - [SDL_TrayCallback](SDL_TrayCallback)
+- [SDL_TrayClickCallback](SDL_TrayClickCallback)
 - [SDL_TrayEntry](SDL_TrayEntry)
 - [SDL_TrayEntryFlags](SDL_TrayEntryFlags)
 - [SDL_TrayMenu](SDL_TrayMenu)

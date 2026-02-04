@@ -165,6 +165,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_CreateTray](SDL_CreateTray)
 - [SDL_CreateTrayMenu](SDL_CreateTrayMenu)
 - [SDL_CreateTraySubmenu](SDL_CreateTraySubmenu)
+- [SDL_CreateTrayWithProperties](SDL_CreateTrayWithProperties)
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
