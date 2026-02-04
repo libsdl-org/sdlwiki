@@ -96,6 +96,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
+- [SDL_CreateTrayWithProperties](SDL_CreateTrayWithProperties)
 - [SDL_CreateTrayMenu](SDL_CreateTrayMenu)
 - [SDL_GetTrayMenu](SDL_GetTrayMenu)
 - [SDL_DestroyTray](SDL_DestroyTray)
