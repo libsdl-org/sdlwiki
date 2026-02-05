@@ -53,9 +53,6 @@ These are the supported properties:
 - [`SDL_PROP_TRAY_CREATE_MIDDLECLICK_CALLBACK_POINTER`](SDL_PROP_TRAY_CREATE_MIDDLECLICK_CALLBACK_POINTER):
   an [SDL_TrayClickCallback](SDL_TrayClickCallback) to be invoked when the
   tray icon is middle-clicked. Not supported on all platforms. May be NULL.
-- [`SDL_PROP_TRAY_CREATE_DOUBLECLICK_CALLBACK_POINTER`](SDL_PROP_TRAY_CREATE_DOUBLECLICK_CALLBACK_POINTER):
-  an [SDL_TrayClickCallback](SDL_TrayClickCallback) to be invoked when the
-  tray icon is double-clicked. Not supported on all platforms. May be NULL.
 
 ## Thread Safety
 
