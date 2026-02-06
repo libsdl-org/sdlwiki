@@ -24,9 +24,9 @@ called with the [SDL_INIT_JOYSTICK](SDL_INIT_JOYSTICK) flag. This causes
 SDL to scan the system for joysticks, and load appropriate drivers.
 
 If you would like to receive joystick updates while the application is in
-the background, you should set the following hint before calling
-[SDL_Init](SDL_Init)():
+the background, you should set the
 [SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS](SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS)
+hint.
 
 SDL can provide virtual joysticks as well: the app defines an imaginary
 controller with [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)(),
