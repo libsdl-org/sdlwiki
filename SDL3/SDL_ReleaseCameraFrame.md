@@ -21,7 +21,7 @@ void SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
 
 ## Remarks
 
-Let the back-end re-use the internal buffer for camera.
+Let the back-end reuse the internal buffer for camera.
 
 This function _must_ be called only on surface objects returned by
 [SDL_AcquireCameraFrame](SDL_AcquireCameraFrame)(). This function should be
