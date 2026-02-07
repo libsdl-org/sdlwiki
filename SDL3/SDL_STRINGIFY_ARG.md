@@ -23,7 +23,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 For example:
 
 ```c
-#define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(__FUNCTION__) ": " X "\n")`
+#define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(SDL_FUNCTION) ": " X "\n")`
 ```
 
 ## Version
