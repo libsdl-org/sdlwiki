@@ -1,6 +1,6 @@
 # SDL_FUNCTION
 
-A macro that reports the current function being compiled.
+A constant that contains the current function being compiled.
 
 ## Header File
 

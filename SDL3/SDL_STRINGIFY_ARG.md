@@ -18,14 +18,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 | ------- | --------------------------------------- |
 | **arg** | the text to turn into a string literal. |
 
-## Remarks
-
-For example:
-
-```c
-#define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(SDL_FUNCTION) ": " X "\n")`
-```
-
 ## Version
 
 This macro is available since SDL 3.2.0.
