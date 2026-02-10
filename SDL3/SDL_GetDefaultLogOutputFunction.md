@@ -1,6 +1,7 @@
 # SDL_GetDefaultLogOutputFunction
 
-Get the default log output function.
+Get the default log output function. It should be called with NULL for the
+userdata argument.
 
 ## Header File
 
