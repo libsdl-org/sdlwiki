@@ -1,7 +1,6 @@
 # SDL_GetDefaultLogOutputFunction
 
-Get the default log output function. It should be called with NULL for the
-userdata argument.
+Get the default log output function.
 
 ## Header File
 
@@ -16,7 +15,7 @@ SDL_LogOutputFunction SDL_GetDefaultLogOutputFunction(void);
 ## Return Value
 
 ([SDL_LogOutputFunction](SDL_LogOutputFunction)) Returns the default log
-output callback.
+output callback. It should be called with NULL for the userdata argument.
 
 ## Thread Safety
 
@@ -33,4 +32,3 @@ This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
-
