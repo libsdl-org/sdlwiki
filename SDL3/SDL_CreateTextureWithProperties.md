@@ -113,9 +113,6 @@ With the opengles2 renderer:
 - [`SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER):
   the GLuint texture associated with the texture, if you want to wrap an
   existing texture.
-- [`SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER):
-  the GLuint texture associated with the texture, if you want to wrap an
-  existing texture.
 - [`SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_UV_NUMBER`](SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_UV_NUMBER):
   the GLuint texture associated with the UV plane of an NV12 texture, if
   you want to wrap an existing texture.
