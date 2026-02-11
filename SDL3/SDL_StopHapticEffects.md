@@ -30,7 +30,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_RunHapticEffect](SDL_RunHapticEffect)
-- [SDL_StopHapticEffects](SDL_StopHapticEffects)
+- [SDL_StopHapticEffect](SDL_StopHapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
