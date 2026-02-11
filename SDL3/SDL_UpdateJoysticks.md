@@ -15,7 +15,9 @@ void SDL_UpdateJoysticks(void);
 ## Remarks
 
 This is called automatically by the event loop if any joystick events are
-enabled.
+enabled and
+[SDL_HINT_AUTO_UPDATE_JOYSTICKS](SDL_HINT_AUTO_UPDATE_JOYSTICKS) hasn't
+been set to "0".
 
 ## Thread Safety
 
