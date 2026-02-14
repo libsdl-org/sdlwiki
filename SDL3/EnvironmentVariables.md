@@ -173,7 +173,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_MUTE_CONSOLE_KEYBOARD](SDL_HINT_MUTE_CONSOLE_KEYBOARD): A variable controlling whether the keyboard should be muted on the console.
 - [SDL_NO_SIGNAL_HANDLERS](SDL_HINT_NO_SIGNAL_HANDLERS): Tell SDL not to catch the SIGINT or SIGTERM signals on POSIX platforms.
 - [SDL_OPENGL_ES_DRIVER](SDL_HINT_OPENGL_ES_DRIVER): A variable controlling what driver to use for OpenGL ES contexts.
-- [SDL_OPENGL_FORCE_SRGB_CAPABLE](SDL_HINT_OPENGL_FORCE_SRGB_CAPABLE): A variable controlling whether to force an sRGB-capable OpenGL context.
+- [SDL_OPENGL_FORCE_SRGB_FRAMEBUFFER](SDL_HINT_OPENGL_FORCE_SRGB_FRAMEBUFFER): A variable controlling whether to force an sRGB-capable OpenGL context.
 - [SDL_OPENGL_LIBRARY](SDL_HINT_OPENGL_LIBRARY): Specify the OpenGL library to load.
 - [SDL_OPENVR_LIBRARY](SDL_HINT_OPENVR_LIBRARY): Mechanism to specify openvr_api library location
 - [SDL_OPENXR_LIBRARY](SDL_HINT_OPENXR_LIBRARY): A variable that specifies the library name to use when loading the OpenXR loader.
