@@ -29,6 +29,10 @@ Note that some platforms will not let you alter the priority (or at least,
 promote the thread to a higher priority) at all, and some require you to be
 an administrator account. Be prepared for this to fail.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -25,6 +25,10 @@ value will always be zero.
 This function also returns a valid thread ID when called from the main
 thread.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

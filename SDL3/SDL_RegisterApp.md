@@ -39,6 +39,10 @@ will call it when initializing the video subsystem.
 If `name` is NULL, SDL currently uses `(CS_BYTEALIGNCLIENT | CS_OWNDC)` for
 the style, regardless of what is specified here.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

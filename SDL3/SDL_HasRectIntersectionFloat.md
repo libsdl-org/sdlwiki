@@ -27,6 +27,10 @@ bool SDL_HasRectIntersectionFloat(const SDL_FRect *A, const SDL_FRect *B);
 
 If either pointer is NULL the function will return false.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

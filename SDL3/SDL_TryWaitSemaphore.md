@@ -29,6 +29,10 @@ positive value and atomically decrements the semaphore value if it does. If
 the semaphore doesn't have a positive value, the function immediately
 returns false.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

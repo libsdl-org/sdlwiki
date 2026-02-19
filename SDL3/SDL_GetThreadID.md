@@ -29,6 +29,10 @@ This thread identifier is as reported by the underlying operating system.
 If SDL is running on a platform that does not support threads the return
 value will always be zero.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

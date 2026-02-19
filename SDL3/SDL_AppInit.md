@@ -58,6 +58,10 @@ and terminates with an exit code that reports success to the platform.
 
 This function is called by SDL on the main thread.
 
+## Thread Safety
+
+This function is called once by SDL, at startup, on a single thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

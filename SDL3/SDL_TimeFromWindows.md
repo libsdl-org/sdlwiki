@@ -28,6 +28,10 @@ SDL_Time SDL_TimeFromWindows(Uint32 dwLowDateTime, Uint32 dwHighDateTime);
 This function takes the two 32-bit values of the FILETIME structure as
 parameters.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

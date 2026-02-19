@@ -27,6 +27,10 @@ bool SDL_InitSubSystem(SDL_InitFlags flags);
 
 This function and [SDL_Init](SDL_Init)() are interchangeable.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

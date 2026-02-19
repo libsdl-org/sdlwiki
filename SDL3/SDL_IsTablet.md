@@ -20,6 +20,10 @@ bool SDL_IsTablet(void);
 
 If SDL can't determine this, it will return false.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

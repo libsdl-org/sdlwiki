@@ -48,6 +48,10 @@ This call is _not_ asynchronous; it will open the file before returning,
 under the assumption that doing so is generally a fast operation. Future
 reads and writes to the opened file will be async, however.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

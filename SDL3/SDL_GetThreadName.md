@@ -23,6 +23,10 @@ const char * SDL_GetThreadName(SDL_Thread *thread);
 (const char *) Returns a pointer to a UTF-8 string that names the specified
 thread, or NULL if it doesn't have a name.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

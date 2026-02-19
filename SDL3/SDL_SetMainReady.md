@@ -19,6 +19,10 @@ preprocessor rule to redefine main() as [SDL_main](SDL_main)(). Thus to
 ensure that your main() function will not be changed it is necessary to
 define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED) before including SDL.h.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -48,6 +48,10 @@ headers will need to deal with this.
 Usually, apps should just call this function the same way on every platform
 and let the macros hide the details.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

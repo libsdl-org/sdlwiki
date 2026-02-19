@@ -29,6 +29,10 @@ This function suspends the calling thread until either the semaphore
 pointed to by `sem` has a positive value or the specified time has elapsed.
 If the call is successful it will atomically decrement the semaphore value.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

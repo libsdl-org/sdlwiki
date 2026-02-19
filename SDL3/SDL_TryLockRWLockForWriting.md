@@ -41,6 +41,10 @@ read-only lock before requesting a write lock.
 
 This function returns true if passed a NULL rwlock.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

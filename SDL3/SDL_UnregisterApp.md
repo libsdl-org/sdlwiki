@@ -26,6 +26,10 @@ class will only be deregistered when the registration counter in
 [SDL_RegisterApp](SDL_RegisterApp) decrements to zero through calls to this
 function.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

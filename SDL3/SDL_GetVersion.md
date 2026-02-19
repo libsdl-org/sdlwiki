@@ -26,6 +26,10 @@ the version you compiled with.
 This function may be called safely at any time, even before
 [SDL_Init](SDL_Init)().
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

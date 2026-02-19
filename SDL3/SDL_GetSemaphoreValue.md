@@ -22,6 +22,10 @@ Uint32 SDL_GetSemaphoreValue(SDL_Semaphore *sem);
 
 ([Uint32](Uint32)) Returns the current value of the semaphore.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

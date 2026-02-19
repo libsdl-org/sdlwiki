@@ -22,6 +22,10 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 1002003 becomes 1.
 
+## Thread Safety
+
+It is safe to call this macro from any thread.
+
 ## Version
 
 This macro is available since SDL 3.2.0.

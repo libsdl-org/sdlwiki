@@ -34,6 +34,10 @@ will return an empty string.
 You shouldn't use this function for anything but logging it for debugging
 purposes. The string is not intended to be reliable in any way.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

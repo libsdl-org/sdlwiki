@@ -41,6 +41,11 @@ It is safe to pass a NULL thread to this function; it is a no-op.
 Note that the thread pointer is freed by this function and is not valid
 afterward.
 
+## Thread Safety
+
+It is safe to call this function from any thread, but only a single thread
+can wait any specific thread to finish.
+
 ## Version
 
 This function is available since SDL 3.2.0.

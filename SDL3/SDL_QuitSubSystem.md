@@ -23,6 +23,10 @@ void SDL_QuitSubSystem(SDL_InitFlags flags);
 You still need to call [SDL_Quit](SDL_Quit)() even if you close all open
 subsystems with [SDL_QuitSubSystem](SDL_QuitSubSystem)().
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

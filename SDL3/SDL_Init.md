@@ -70,6 +70,10 @@ calling [SDL_Init](SDL_Init), using either
 [SDL_SetAppMetadata](SDL_SetAppMetadata)() or
 [SDL_SetAppMetadataProperty](SDL_SetAppMetadataProperty)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

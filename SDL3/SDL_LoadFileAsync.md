@@ -43,6 +43,10 @@ deallocated by calling [SDL_free](SDL_free)() on
 An [SDL_AsyncIOQueue](SDL_AsyncIOQueue) must be specified. The
 newly-created task will be added to it when it completes its work.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

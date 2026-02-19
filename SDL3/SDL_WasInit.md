@@ -24,6 +24,10 @@ SDL_InitFlags SDL_WasInit(SDL_InitFlags flags);
 subsystems if `flags` is 0, otherwise it returns the initialization status
 of the specified subsystems.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

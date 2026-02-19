@@ -31,6 +31,10 @@ rwlock").
 It is illegal to unlock a rwlock that has not been locked by the current
 thread, and doing so results in undefined behavior.
 
+## Thread Safety
+
+This call must be paired with a previous locking call on the same thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

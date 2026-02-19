@@ -31,6 +31,10 @@ decrement the semaphore value and potentially block if the semaphore value
 is 0. Each post operation will atomically increment the semaphore value and
 wake waiting threads and allow them to retry the wait operation.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -23,6 +23,10 @@ SDL_ThreadState SDL_GetThreadState(SDL_Thread *thread);
 ([SDL_ThreadState](SDL_ThreadState)) Returns the current state of a thread,
 or [SDL_THREAD_UNKNOWN](SDL_THREAD_UNKNOWN) if the thread isn't valid.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

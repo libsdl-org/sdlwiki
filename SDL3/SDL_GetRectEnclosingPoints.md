@@ -31,6 +31,10 @@ were outside of the clipping rectangle.
 If `clip` is not NULL then only points inside of the clipping rectangle are
 considered.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

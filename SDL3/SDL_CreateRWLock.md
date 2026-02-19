@@ -47,6 +47,10 @@ guaranteed to favor writers. You may not lock a rwlock for both read-only
 and write access at the same time from the same thread (so you can't
 promote your read-only lock to a write lock without unlocking first).
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

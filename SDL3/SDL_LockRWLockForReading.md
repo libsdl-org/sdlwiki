@@ -44,6 +44,10 @@ This function does not fail; if rwlock is NULL, it will return immediately
 having locked nothing. If the rwlock is valid, this function will always
 block until it can lock the mutex, and return with it locked.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

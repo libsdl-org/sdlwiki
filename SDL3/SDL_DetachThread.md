@@ -48,6 +48,10 @@ behavior is undefined.
 
 It is safe to pass NULL to this function; it is a no-op.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

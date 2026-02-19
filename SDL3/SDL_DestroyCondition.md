@@ -18,6 +18,10 @@ void SDL_DestroyCondition(SDL_Condition *cond);
 | -------------------------------- | -------- | ---------------------------------- |
 | [SDL_Condition](SDL_Condition) * | **cond** | the condition variable to destroy. |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

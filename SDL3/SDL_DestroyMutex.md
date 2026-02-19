@@ -26,6 +26,10 @@ it is safe to destroy a mutex that is _unlocked_, it is not safe to attempt
 to destroy a locked mutex, and may result in undefined behavior depending
 on the platform.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

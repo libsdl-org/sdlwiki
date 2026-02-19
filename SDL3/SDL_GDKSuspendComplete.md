@@ -17,6 +17,10 @@ void SDL_GDKSuspendComplete(void);
 This function is only needed for Xbox GDK support; all other platforms will
 do nothing and set an "unsupported" error message.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -27,6 +27,10 @@ Here are the names returned for some (but not all) supported platforms:
 - "iOS"
 - "Android"
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

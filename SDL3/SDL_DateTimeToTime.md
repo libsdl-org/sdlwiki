@@ -29,6 +29,10 @@ bool SDL_DateTimeToTime(const SDL_DateTime *dt, SDL_Time *ticks);
 This function ignores the day_of_week member of the
 [SDL_DateTime](SDL_DateTime) struct, so it may remain unset.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

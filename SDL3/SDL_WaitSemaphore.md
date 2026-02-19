@@ -28,6 +28,10 @@ This function is the equivalent of calling
 [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)() with a time length
 of -1.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

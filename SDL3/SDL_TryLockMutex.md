@@ -32,6 +32,10 @@ don't want to wait for it, and will return to it to try again later.
 
 This function returns true if passed a NULL mutex.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

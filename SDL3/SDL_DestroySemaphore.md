@@ -23,6 +23,10 @@ void SDL_DestroySemaphore(SDL_Semaphore *sem);
 It is not safe to destroy a semaphore if there are threads currently
 waiting on it.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -25,6 +25,10 @@ int SDL_GetDayOfYear(int year, int month, int day);
 (int) Returns the day of year [0-365] if the date is valid or -1 on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

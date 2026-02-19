@@ -36,6 +36,10 @@ holding read-only locks, as this won't prevent access.
 
 This function returns true if passed a NULL rwlock.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

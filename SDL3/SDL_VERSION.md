@@ -13,6 +13,10 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
     SDL_VERSIONNUM(SDL_MAJOR_VERSION, SDL_MINOR_VERSION, SDL_MICRO_VERSION)
 ```
 
+## Thread Safety
+
+It is safe to call this macro from any thread.
+
 ## Version
 
 This macro is available since SDL 3.2.0.

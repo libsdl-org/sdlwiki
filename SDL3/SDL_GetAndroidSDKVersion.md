@@ -45,6 +45,10 @@ int SDL_GetAndroidSDKVersion(void);
 - API level 11: Android 3.0 (HONEYCOMB)
 - API level 10: Android 2.3.3 (GINGERBREAD_MR1)
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

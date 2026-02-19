@@ -31,6 +31,10 @@ best to ask for this once and save the results. However, the preferred
 formats can change, usually because the user has changed a system
 preference outside of your program.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

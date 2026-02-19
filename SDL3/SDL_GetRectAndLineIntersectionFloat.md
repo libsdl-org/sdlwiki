@@ -34,6 +34,10 @@ remain unchanged. A line segment that crosses the rectangle at either or
 both ends will be clipped to the boundary of the rectangle and the new
 coordinates saved in `X1`, `Y1`, `X2`, and/or `Y2` as necessary.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.
