@@ -26,6 +26,10 @@ SDL_iconv_t SDL_iconv_open(const char *tocode,
 [SDL_iconv_close](SDL_iconv_close), or [SDL_ICONV_ERROR](SDL_ICONV_ERROR)
 on failure.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

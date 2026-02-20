@@ -24,6 +24,10 @@ This should be called before [SDL_DestroyWindow](SDL_DestroyWindow), if
 [SDL_Metal_CreateView](SDL_Metal_CreateView) was called after
 [SDL_CreateWindow](SDL_CreateWindow).
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

@@ -24,6 +24,10 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 The callback may modify the message, and should return true if the message
 should continue to be processed, or false to prevent further processing.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

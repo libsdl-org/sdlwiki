@@ -30,6 +30,10 @@ its own. It is up to user code to do that.
 The returned handle can be casted directly to a NSView or UIView. To access
 the backing CAMetalLayer, call [SDL_Metal_GetLayer](SDL_Metal_GetLayer)().
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

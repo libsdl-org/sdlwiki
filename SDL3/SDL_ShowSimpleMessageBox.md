@@ -55,6 +55,10 @@ available video target, this function is likely to fail for the same
 reasons. If this is a concern, check the return value from this function
 and fall back to writing to stderr if you can.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

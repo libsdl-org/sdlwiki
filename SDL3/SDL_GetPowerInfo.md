@@ -44,6 +44,10 @@ On some platforms, retrieving power supply details might be expensive. If
 you want to display continuous status you could call this function every
 minute or so.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

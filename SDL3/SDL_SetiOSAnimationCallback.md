@@ -50,6 +50,10 @@ Details on main callbacks are here:
 
 https://wiki.libsdl.org/SDL3/README-main-functions
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

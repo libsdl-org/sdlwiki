@@ -57,6 +57,10 @@ your program; SDL will send an
 possible, and you can call this function again to get an updated copy of
 preferred locales.
 
+## Thread Safety
+
+This function is not thread safe.
+
 ## Version
 
 This function is available since SDL 3.2.0.

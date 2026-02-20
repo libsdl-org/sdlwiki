@@ -28,6 +28,10 @@ bool SDL_SetLinuxThreadPriority(Sint64 threadID, int priority);
 
 This uses setpriority() if possible, and RealtimeKit if available.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

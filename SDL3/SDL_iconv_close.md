@@ -22,6 +22,10 @@ int SDL_iconv_close(SDL_iconv_t cd);
 
 (int) Returns 0 on success, or -1 on failure.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

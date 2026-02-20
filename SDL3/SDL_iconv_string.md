@@ -40,6 +40,10 @@ character anywhere in the buffer.
 The returned string is owned by the caller, and should be passed to
 [SDL_free](SDL_free) when no longer needed.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.

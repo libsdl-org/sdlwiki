@@ -55,6 +55,10 @@ On exit:
 - outbytesleft will be set to the number of bytes left in the output
   buffer.
 
+## Thread Safety
+
+Do not use the same [SDL_iconv_t](SDL_iconv_t) from two threads at once.
+
 ## Version
 
 This function is available since SDL 3.2.0.

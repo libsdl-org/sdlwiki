@@ -44,6 +44,10 @@ that we launched _something_ to handle it (or at least believe we did).
 All this to say: this function can be useful, but you should definitely
 test it on every platform you target.
 
+## Thread Safety
+
+This function should only be called on the main thread.
+
 ## Version
 
 This function is available since SDL 3.2.0.
