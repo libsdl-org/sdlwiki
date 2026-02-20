@@ -24,6 +24,12 @@ bool SDL_GetPathInfo(const char *path, SDL_PathInfo *info);
 (bool) Returns true on success or false if the file doesn't exist, or
 another failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Symlinks, on filesystems that support them, are always followed, so you
+will always get information on what the symlink eventually points to, and
+not the symlink itself.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.

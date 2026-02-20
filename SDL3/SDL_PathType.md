@@ -20,8 +20,8 @@ typedef enum SDL_PathType
 
 ## Remarks
 
-Note that there may be other sorts of items on a filesystem: devices,
-symlinks, named pipes, etc. They are currently reported as
+Note that there may be other sorts of items on a filesystem: devices, named
+pipes, etc. They are currently reported as
 [SDL_PATHTYPE_OTHER](SDL_PATHTYPE_OTHER).
 
 ## Version
