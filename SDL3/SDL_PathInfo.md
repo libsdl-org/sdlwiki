@@ -25,6 +25,7 @@ This datatype is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_PathType](SDL_PathType)
 - [SDL_GetPathInfo](SDL_GetPathInfo)
 - [SDL_GetStoragePathInfo](SDL_GetStoragePathInfo)
 
