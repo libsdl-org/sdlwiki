@@ -25,6 +25,8 @@ can't be found.
 
 ## Remarks
 
+The name of the variable is case sensitive on all platforms.
+
 This function uses SDL's cached copy of the environment and is thread-safe.
 
 ## Thread Safety
