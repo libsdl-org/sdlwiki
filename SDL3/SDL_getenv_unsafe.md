@@ -28,6 +28,8 @@ can't be found.
 This function bypasses SDL's cached copy of the environment and is not
 thread-safe.
 
+On some platforms, this may make case-insensitive matches, while other platforms are case-sensitive. It is best to be precise with strings used for queries through this interface. [SDL_getenv](SDL_getenv) is always case-sensitive, however.
+
 ## Thread Safety
 
 This function is not thread safe, consider using [SDL_getenv](SDL_getenv)()
