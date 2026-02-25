@@ -14,8 +14,10 @@ void SDL_GDKSuspendComplete(void);
 
 ## Remarks
 
-When using [SDL_Render](SDL_Render) or [SDL_GPU](SDL_GPU), this function
-should be called _after_ creating the [`SDL_Renderer`](SDL_Renderer) or
+This should be called from an event watch in response to an `SDL_EVENT_DID_ENTER_BACKGROUND` event.
+
+When using [SDL_Render](SDL_Render) or [SDL_GPU](SDL_GPU), your event watch
+should be added _after_ creating the [`SDL_Renderer`](SDL_Renderer) or
 [`SDL_GPUDevice`](SDL_GPUDevice); this allows the timing of the D3D12
 command queue suspension to execute in the correct order.
 
@@ -32,6 +34,10 @@ This function is not thread safe.
 ## Version
 
 This function is available since SDL 3.2.0.
+
+## See Also
+
+- [SDL_AddEventWatch](SDL_AddEventWatch)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
