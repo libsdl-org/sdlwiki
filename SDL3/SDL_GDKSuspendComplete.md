@@ -14,11 +14,13 @@ void SDL_GDKSuspendComplete(void);
 
 ## Remarks
 
-This should be called from an event watch in response to an `SDL_EVENT_DID_ENTER_BACKGROUND` event.
+This should be called from an event watch in response to an
+[`SDL_EVENT_DID_ENTER_BACKGROUND`](SDL_EVENT_DID_ENTER_BACKGROUND) event.
 
-When using [SDL_Render](SDL_Render), your event watch should be added _after_ creating the [`SDL_Renderer`](SDL_Renderer); this allows the timing of the D3D12 command queue suspension to execute in the correct order.
-
-When using [SDL_GPU](SDL_GPU), this should be called after calling [SDL_GDKSuspendGPU](SDL_GDKSuspendGPU).
+When using [SDL_Render](SDL_Render) or [SDL_GPU](SDL_GPU), your event watch
+should be added _after_ creating the [`SDL_Renderer`](SDL_Renderer) or
+[`SDL_GPUDevice`](SDL_GPUDevice); this allows the timing of the D3D12
+command queue suspension to execute in the correct order.
 
 If you're writing your own D3D12 renderer, this should be called after
 calling `ID3D12CommandQueue::SuspendX`.
