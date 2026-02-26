@@ -116,7 +116,7 @@ bool MIX_SetTrackRawCallback(MIX_Track *track, MIX_TrackMixCallback cb, void *us
 bool MIX_SetTrackCookedCallback(MIX_Track *track, MIX_TrackMixCallback cb, void *userdata);                                              // Set a callback that fires when the mixer has transformed a track's audio.
 bool MIX_SetGroupPostMixCallback(MIX_Group *group, MIX_GroupMixCallback cb, void *userdata);                                             // Set a callback that fires when a mixer group has completed mixing.
 bool MIX_SetPostMixCallback(MIX_Mixer *mixer, MIX_PostMixCallback cb, void *userdata);                                                   // Set a callback that fires when all mixing has completed.
-bool MIX_Generate(MIX_Mixer *mixer, void *buffer, int buflen);                                                                           // Generate mixer output when not driving an audio device.
+int MIX_Generate(MIX_Mixer *mixer, void *buffer, int buflen);                                                                            // Generate mixer output when not driving an audio device.
 MIX_AudioDecoder * MIX_CreateAudioDecoder(const char *path, SDL_PropertiesID props);                                                     // Create a MIX_AudioDecoder from a path on the filesystem.
 MIX_AudioDecoder * MIX_CreateAudioDecoder_IO(SDL_IOStream *io, bool closeio, SDL_PropertiesID props);                                    // Create a MIX_AudioDecoder from an SDL_IOStream.
 void MIX_DestroyAudioDecoder(MIX_AudioDecoder *audiodecoder);                                                                            // Destroy the specified audio decoder.

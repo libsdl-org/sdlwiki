@@ -10,7 +10,7 @@ Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/bl
 ## Syntax
 
 ```c
-bool MIX_Generate(MIX_Mixer *mixer, void *buffer, int buflen);
+int MIX_Generate(MIX_Mixer *mixer, void *buffer, int buflen);
 ```
 
 ## Function Parameters
@@ -23,8 +23,9 @@ bool MIX_Generate(MIX_Mixer *mixer, void *buffer, int buflen);
 
 ## Return Value
 
-(bool) Returns true on success or false on failure; call SDL_GetError() for
-more information.
+(int) Returns The number of bytes of mixed audio, discounting appended
+silence, on success, or -1 on failure; call SDL_GetError() for more
+information.
 
 ## Remarks
 
@@ -57,6 +58,15 @@ more audio to play.
 This function can not be used with mixers from
 [MIX_CreateMixerDevice](MIX_CreateMixerDevice)(); those generate audio as
 needed internally.
+
+This function returns the number of _bytes_ of real audio mixed, which
+might be less than `buflen`. While all `buflen` bytes of `buffer` will be
+initialized, if available tracks to mix run out, the end of the buffer will
+be initialized with silence; this silence will not be counted in the return
+value, so the caller has the option to identify how much of the buffer has
+legimitate contents vs appended silence. As such, any value >= 0 signifies
+success. A return value of -1 means failure (out of memory, invalid
+parameters, etc).
 
 ## Thread Safety
 
