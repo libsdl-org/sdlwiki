@@ -30,7 +30,7 @@ A track provides a single source of audio. All currently-playing tracks
 will be processed and mixed together to form the final output from the
 mixer.
 
-There are no limits to the number of tracks on may create, beyond running
+There are no limits to the number of tracks one may create, beyond running
 out of memory, but in normal practice there are a small number of tracks
 that are reused between all loaded audio as appropriate.
 
