@@ -39,10 +39,10 @@ respond to a system dialog. If permission has already been granted for a
 specific entitlement, the callback will still fire, probably on the current
 thread and before this function returns.
 
-If the request submission fails, this function returns false and the callback
-will NOT be called, but this should only happen in catastrophic conditions,
-like memory running out. Normally there will be a yes or no to the request
-through the callback.
+If the request submission fails, this function returns false and the
+callback will NOT be called, but this should only happen in catastrophic
+conditions, like memory running out. Normally there will be a yes or no to
+the request through the callback.
 
 For the `permission` parameter, choose a value from here:
 
