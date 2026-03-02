@@ -37,7 +37,7 @@ This function should be called on the thread that created the renderer.
 
 ## Version
 
-This function is available since SDL 3.4.x.
+This function is available since SDL 3.6.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
