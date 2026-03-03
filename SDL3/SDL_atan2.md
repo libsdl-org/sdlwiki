@@ -21,8 +21,8 @@ double SDL_atan2(double y, double x);
 
 ## Return Value
 
-(double) Returns arc tangent of `y / x` in radians, or, if `x = 0`,
-either `-Pi/2`, `0`, or `Pi/2`, depending on the value of `y`.
+(double) Returns arc tangent of `y / x` in radians, or, if `x = 0`, either
+`-Pi/2`, `0`, or `Pi/2`, depending on the value of `y`.
 
 ## Remarks
 
