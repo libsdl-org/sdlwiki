@@ -21,7 +21,7 @@ float SDL_atan2f(float y, float x);
 
 ## Return Value
 
-(float) Returns arc tangent of of `y / x` in radians, or, if `x = 0`,
+(float) Returns arc tangent of `y / x` in radians, or, if `x = 0`,
 either `-Pi/2`, `0`, or `Pi/2`, depending on the value of `y`.
 
 ## Remarks
@@ -31,7 +31,7 @@ of z is determined based on the signs of x and y.
 
 Domain: `-INF <= x <= INF`, `-INF <= y <= INF`
 
-Range: `-Pi <= y <= Pi`
+Range: `-Pi <= z <= Pi`
 
 This function operates on single-precision floating point values, use
 [SDL_atan2](SDL_atan2) for double-precision floats.
