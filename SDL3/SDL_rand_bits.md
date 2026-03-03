@@ -19,7 +19,7 @@ Uint32 SDL_rand_bits(void);
 
 ## Remarks
 
-You likely want to use [SDL_rand](SDL_rand)() to get a psuedo-random number
+You likely want to use [SDL_rand](SDL_rand)() to get a pseudo-random number
 instead.
 
 There are no guarantees as to the quality of the random sequence produced,

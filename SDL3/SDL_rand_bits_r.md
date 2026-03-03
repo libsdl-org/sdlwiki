@@ -25,7 +25,7 @@ Uint32 SDL_rand_bits_r(Uint64 *state);
 
 ## Remarks
 
-You likely want to use [SDL_rand_r](SDL_rand_r)() to get a psuedo-random
+You likely want to use [SDL_rand_r](SDL_rand_r)() to get a pseudo-random
 number instead.
 
 There are no guarantees as to the quality of the random sequence produced,
