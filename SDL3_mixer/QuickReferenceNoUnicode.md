@@ -43,6 +43,7 @@ SDL_PropertiesID MIX_GetMixerProperties(MIX_Mixer *mixer);                      
 bool MIX_GetMixerFormat(MIX_Mixer *mixer, SDL_AudioSpec *spec);                                                                          // Get the audio format a mixer is generating.
 MIX_Audio * MIX_LoadAudio_IO(MIX_Mixer *mixer, SDL_IOStream *io, bool predecode, bool closeio);                                          // Load audio for playback from an SDL_IOStream.
 MIX_Audio * MIX_LoadAudio(MIX_Mixer *mixer, const char *path, bool predecode);                                                           // Load audio for playback from a file.
+MIX_Audio * MIX_LoadAudioNoCopy(MIX_Mixer *mixer, const void *data, size_t datalen, bool free_when_done);                                // Load audio for playback from a memory buffer without making a copy.
 MIX_Audio * MIX_LoadAudioWithProperties(SDL_PropertiesID props);                                                                         // Load audio for playback through a collection of properties.
 MIX_Audio * MIX_LoadRawAudio_IO(MIX_Mixer *mixer, SDL_IOStream *io, const SDL_AudioSpec *spec, bool closeio);                            // Load raw PCM data from an SDL_IOStream.
 MIX_Audio * MIX_LoadRawAudio(MIX_Mixer *mixer, const void *data, size_t datalen, const SDL_AudioSpec *spec);                             // Load raw PCM data from a memory buffer.
