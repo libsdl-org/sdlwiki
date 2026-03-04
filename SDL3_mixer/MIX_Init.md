@@ -29,7 +29,7 @@ matching number of times. Extra attempts to init report success.
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+This function is not thread safe.
 
 ## Version
 

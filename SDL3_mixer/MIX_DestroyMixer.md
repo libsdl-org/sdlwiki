@@ -33,7 +33,11 @@ destroyed during [MIX_Quit](MIX_Quit)()).
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+If this is used with a [MIX_Mixer](MIX_Mixer) from
+[MIX_CreateMixerDevice](MIX_CreateMixerDevice), then this function should
+only be called on the main thread. If this is used with a
+[MIX_Mixer](MIX_Mixer) from [MIX_CreateMixer](MIX_CreateMixer), then it is
+safe to call this function from any thread.
 
 ## Version
 

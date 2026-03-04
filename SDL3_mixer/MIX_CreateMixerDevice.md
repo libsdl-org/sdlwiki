@@ -62,7 +62,7 @@ When done with the mixer, it can be destroyed with
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+This function should only be called on the main thread.
 
 ## Version
 

@@ -42,7 +42,7 @@ this function as a safety net against memory leaks.
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+This function is not thread safe.
 
 ## Version
 
