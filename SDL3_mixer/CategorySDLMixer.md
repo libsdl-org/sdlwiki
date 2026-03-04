@@ -152,6 +152,7 @@ consider a proper 3D library like OpenAL.
 - [MIX_Init](MIX_Init)
 - [MIX_LoadAudio](MIX_LoadAudio)
 - [MIX_LoadAudio_IO](MIX_LoadAudio_IO)
+- [MIX_LoadAudioNoCopy](MIX_LoadAudioNoCopy)
 - [MIX_LoadAudioWithProperties](MIX_LoadAudioWithProperties)
 - [MIX_LoadRawAudio](MIX_LoadRawAudio)
 - [MIX_LoadRawAudio_IO](MIX_LoadRawAudio_IO)
