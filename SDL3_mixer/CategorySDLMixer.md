@@ -157,6 +157,7 @@ consider a proper 3D library like OpenAL.
 - [MIX_LoadRawAudio](MIX_LoadRawAudio)
 - [MIX_LoadRawAudio_IO](MIX_LoadRawAudio_IO)
 - [MIX_LoadRawAudioNoCopy](MIX_LoadRawAudioNoCopy)
+- [MIX_LockMixer](MIX_LockMixer)
 - [MIX_MSToFrames](MIX_MSToFrames)
 - [MIX_PauseAllTracks](MIX_PauseAllTracks)
 - [MIX_PauseTag](MIX_PauseTag)
@@ -196,6 +197,7 @@ consider a proper 3D library like OpenAL.
 - [MIX_TrackMSToFrames](MIX_TrackMSToFrames)
 - [MIX_TrackPaused](MIX_TrackPaused)
 - [MIX_TrackPlaying](MIX_TrackPlaying)
+- [MIX_UnlockMixer](MIX_UnlockMixer)
 - [MIX_UntagTrack](MIX_UntagTrack)
 - [MIX_Version](MIX_Version)
 <!-- END CATEGORY LIST -->
