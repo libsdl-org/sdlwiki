@@ -33,7 +33,8 @@ Unlocking a NULL mixer is a safe no-op.
 
 ## Thread Safety
 
-It is safe to call this function from any thread.
+This call must be paired with a previous [MIX_LockMixer](MIX_LockMixer)
+call on the same thread.
 
 ## Version
 
