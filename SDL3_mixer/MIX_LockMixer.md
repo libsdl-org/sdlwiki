@@ -44,6 +44,11 @@ however:
   mixer, call [MIX_PlayTrack](MIX_PlayTrack) multiple times, and then
   unlock again; all the tracks will start mixing on the same sample frame.
 
+Each call to this function must be paired with a call to
+[MIX_UnlockMixer](MIX_UnlockMixer) from the same thread. It is safe to lock
+a mixer multiple times; it remains locked until the final matching unlock
+call.
+
 Do not lock the mixer for significant amounts of time, or it can cause
 audio dropouts. Just do simply things quickly and unlock again.
 
@@ -56,6 +61,10 @@ It is safe to call this function from any thread.
 ## Version
 
 This function is available since SDL_mixer 3.0.0.
+
+## See Also
+
+- [MIX_UnlockMixer](MIX_UnlockMixer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)

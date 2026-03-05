@@ -39,6 +39,10 @@ It is safe to call this function from any thread.
 
 This function is available since SDL_mixer 3.0.0.
 
+## See Also
+
+- [MIX_LockMixer](MIX_LockMixer)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLMixer](CategorySDLMixer)
 
