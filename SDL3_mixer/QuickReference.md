@@ -42,6 +42,8 @@ MIX_Mixer * MIX_CreateMixer(const SDL_AudioSpec *spec);                         
 void MIX_DestroyMixer(MIX_Mixer *mixer);                                                                                                 // Free a mixer.
 SDL_PropertiesID MIX_GetMixerProperties(MIX_Mixer *mixer);                                                                               // Get the properties associated with a mixer.
 bool MIX_GetMixerFormat(MIX_Mixer *mixer, SDL_AudioSpec *spec);                                                                          // Get the audio format a mixer is generating.
+void MIX_LockMixer(MIX_Mixer *mixer);                                                                                                    // Lock a mixer by obtaining its internal mutex.
+void MIX_UnlockMixer(MIX_Mixer *mixer);                                                                                                  // Unlock a mixer previously locked by a call to MIX_LockMixer().
 MIX_Audio * MIX_LoadAudio_IO(MIX_Mixer *mixer, SDL_IOStream *io, bool predecode, bool closeio);                                          // Load audio for playback from an SDL_IOStream.
 MIX_Audio * MIX_LoadAudio(MIX_Mixer *mixer, const char *path, bool predecode);                                                           // Load audio for playback from a file.
 MIX_Audio * MIX_LoadAudioNoCopy(MIX_Mixer *mixer, const void *data, size_t datalen, bool free_when_done);                                // Load audio for playback from a memory buffer without making a copy.
