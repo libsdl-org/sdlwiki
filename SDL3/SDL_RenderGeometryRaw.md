@@ -2,8 +2,6 @@
 
 Render a list of triangles, optionally using a texture and indices into the vertex arrays.
 
-Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
-
 ## Header File
 
 Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
