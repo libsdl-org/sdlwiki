@@ -1,6 +1,6 @@
 # SDL_RenderGeometry
 
-Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
+Render a list of triangles, optionally using a texture and indices into the vertex array.
 
 ## Header File
 
@@ -30,6 +30,12 @@ bool SDL_RenderGeometry(SDL_Renderer *renderer,
 
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+Color and alpha modulation is done per vertex
+([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and
+[SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
 
 ## Thread Safety
 

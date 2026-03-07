@@ -40,6 +40,12 @@ bool SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Color and alpha modulation is done per vertex
+([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and
+[SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
+
 ## Thread Safety
 
 This function should only be called on the main thread.
