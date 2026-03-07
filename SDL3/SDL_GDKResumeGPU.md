@@ -1,6 +1,6 @@
 # SDL_GDKResumeGPU
 
-Call this to resume GPU operation on Xbox when you receive the [SDL_EVENT_WILL_ENTER_FOREGROUND](SDL_EVENT_WILL_ENTER_FOREGROUND) event.
+Call this to resume GPU operation on Xbox after receiving the [SDL_EVENT_WILL_ENTER_FOREGROUND](SDL_EVENT_WILL_ENTER_FOREGROUND) event.
 
 ## Header File
 
@@ -22,6 +22,8 @@ void SDL_GDKResumeGPU(SDL_GPUDevice *device);
 
 When resuming, this function MUST be called before calling any other
 [SDL_GPU](SDL_GPU) functions.
+
+This function MUST be called from the application's render thread.
 
 ## Version
 
