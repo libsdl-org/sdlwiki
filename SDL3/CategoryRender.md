@@ -45,6 +45,8 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 - [SDL_DestroyTexture](SDL_DestroyTexture)
 - [SDL_FlushRenderer](SDL_FlushRenderer)
+- [SDL_GDKResumeRenderer](SDL_GDKResumeRenderer)
+- [SDL_GDKSuspendRenderer](SDL_GDKSuspendRenderer)
 - [SDL_GetCurrentRenderOutputSize](SDL_GetCurrentRenderOutputSize)
 - [SDL_GetDefaultTextureScaleMode](SDL_GetDefaultTextureScaleMode)
 - [SDL_GetGPURendererDevice](SDL_GetGPURendererDevice)
