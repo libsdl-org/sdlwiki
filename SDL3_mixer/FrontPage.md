@@ -1,6 +1,6 @@
 # SDL_mixer 3.0
 
-This is the SDL3 wiki. SDL2 is [over here](/SDL2_mixer)!
+This is the SDL3_mixer wiki. SDL2_mixer is [over here](/SDL2_mixer)!
 
 ## What is it?
 
