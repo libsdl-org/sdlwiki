@@ -50,7 +50,7 @@ a mixer multiple times; it remains locked until the final matching unlock
 call.
 
 Do not lock the mixer for significant amounts of time, or it can cause
-audio dropouts. Just do simply things quickly and unlock again.
+audio dropouts. Just do simple things quickly and unlock again.
 
 Locking a NULL mixer is a safe no-op.
 
