@@ -18,6 +18,7 @@ This library is distributed under the [zlib license](https://www.libsdl.org/lice
 
 ## API Documentation
 
+- [API overview](CategorySDLMixer)
 - [API quick reference](QuickReference)
 - [Complete API index](CategoryAPI)
 - [Hello World](https://github.com/libsdl-org/SDL_mixer/blob/main/docs/hello.c) example, with build instructions for your development environment in the [installation instructions](https://github.com/libsdl-org/SDL_mixer/blob/main/INSTALL.md)
