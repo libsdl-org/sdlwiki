@@ -24,7 +24,7 @@ This library is distributed under the [zlib license](https://www.libsdl.org/lice
 
 ## Other sources of information
 
-- [SDL 2.0 Migration Guide](https://github.com/libsdl-org/SDL_mixer/blob/main/docs/README-migration.md)
+- [SDL_mixer 2.0 Migration Guide](README-migration)
 - [Forums/mailing lists](https://discourse.libsdl.org/) and of course [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
 
