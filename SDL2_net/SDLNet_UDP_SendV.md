@@ -28,7 +28,7 @@ int SDLNet_UDP_SendV(UDPsocket sock, UDPpacket **packets, int npackets);
 ## Remarks
 
 If the channel specified in the packet is -1, the packet will be sent to
-the address in the `src` member of the packet.
+the address in the `address` member of the packet.
 
 Each packet will be updated with the status of the packet after it has been
 sent, -1 if the packet send failed.
