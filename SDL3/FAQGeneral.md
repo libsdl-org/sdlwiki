@@ -18,7 +18,7 @@ The latest stable version is SDL3. You can always get the very latest bleeding e
 
 ## What uses SDL?
 
-The main [SDL website](https://www.libsdl.org) refreshes with different games made with SDL, and this was turned into a [full list](https://joyrider3774.xyz/made_with_sdl/made_with_sdl.php) by a community member. You can also see a list of games on [itch.io](https://itch.io/games/made-with-sdl), [PCGamingWiki](https://www.pcgamingwiki.com/wiki/Glossary:SDL), and [SteamDB](https://steamdb.info/tech/SDK/SDL/). GitHub has a set of topics to easily search for repositories using [SDL1](https://github.com/topics/sdl), [SDL2](https://github.com/topics/sdl2), and [SDL3](https://github.com/topics/sdl3).
+The main [SDL website](https://www.libsdl.org) refreshes with different games made with SDL, and this was turned into a [full list](https://joyrider3774.xyz/made_with_sdl/made_with_sdl.php) by a community member. You can also see a list of games on [itch.io](https://itch.io/games/made-with-sdl), [PCGamingWiki](https://www.pcgamingwiki.com/wiki/Simple_DirectMedia_Layer), and [SteamDB](https://steamdb.info/tech/SDK/SDL/). GitHub has a set of topics to easily search for repositories using [SDL1](https://github.com/topics/sdl), [SDL2](https://github.com/topics/sdl2), and [SDL3](https://github.com/topics/sdl3).
 
 ## Where do I send questions / feedback?
 
