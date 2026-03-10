@@ -22,7 +22,7 @@ size_t SDL_utf8strnlen(const char *str, size_t bytes);
 ## Return Value
 
 (size_t) Returns The length (in codepoints, excluding the null terminator)
-of `src` but never more than `maxlen`.
+of `src` but never more than `bytes`.
 
 ## Remarks
 
