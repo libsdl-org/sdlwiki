@@ -25,7 +25,7 @@ char * SDL_strupr(char *str);
 ## Remarks
 
 **WARNING**: Regardless of system locale, this will only convert ASCII
-values 'A' through 'Z' to uppercase.
+values 'a' through 'z' to uppercase.
 
 This function operates on a null-terminated string of bytes--even if it is
 malformed UTF-8!--and converts ASCII characters 'a' through 'z' to their
