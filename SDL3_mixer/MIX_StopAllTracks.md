@@ -40,7 +40,8 @@ than the audio remaining.
 Once a track has completed any fadeout and come to a stop, it will call its
 [MIX_TrackStoppedCallback](MIX_TrackStoppedCallback), if any. It is legal
 to assign the track a new input and/or restart it during this callback.
-This function does not prevent new play requests from being made.
+
+This function does not prevent new play requests from being made; it’s legal to use this function to begin fading all playing tracks but then start other tracks playing normally while those fade-outs are still in progress.
 
 ## Thread Safety
 
