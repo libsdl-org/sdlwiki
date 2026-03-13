@@ -10,11 +10,14 @@ It offers audio file decoding for several popular formats, such as WAV, MP3, and
 
 This library is distributed under the [zlib license](https://www.libsdl.org/license.php). This license allows you to use it freely in any software.
 
-## Getting and installing SDL_mixer
+## Getting Started
 
-- The latest release is available on [GitHub](https://github.com/libsdl-org/SDL_mixer/releases).
-- [Installation](https://github.com/libsdl-org/SDL_mixer/blob/main/INSTALL.md): How to install SDL_mixer on your platform of choice
-  and link your program against it.
+|                                                 |                                             |
+| ------------------------------------------------| --------------------------------------------|
+| [Source Code](https://github.com/libsdl-org/SDL_mixer/releases) | The latest release is available on GitHub.     |
+| [Installation](https://github.com/libsdl-org/SDL_mixer/blob/main/INSTALL.md) | How to install SDL_mixer on your platform of choice and link your program against it. |
+| [API overview](CategorySDLMixer)                | Reference documentation for SDL_mixer can be found here. |
+| [Examples](https://examples.libsdl.org/SDL3_mixer/) | Small programs that each demonstrate a feature of the library. |
 
 ## API Documentation
 
