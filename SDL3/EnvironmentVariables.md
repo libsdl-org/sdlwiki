@@ -80,12 +80,14 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_BLACKLIST_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_BLACKLIST_DEVICES_EXCLUDED): A variable containing a list of devices that should be considered joysticks.
 - [SDL_JOYSTICK_DEVICE](SDL_HINT_JOYSTICK_DEVICE): A variable containing a comma separated list of devices to open as joysticks.
 - [SDL_JOYSTICK_DIRECTINPUT](SDL_HINT_JOYSTICK_DIRECTINPUT): A variable controlling whether DirectInput should be used for controllers.
+- [SDL_JOYSTICK_DRUM_DEVICES](SDL_HINT_JOYSTICK_DRUM_DEVICES): A variable containing a list of drum style controllers.
 - [SDL_JOYSTICK_ENHANCED_REPORTS](SDL_HINT_JOYSTICK_ENHANCED_REPORTS): A variable controlling whether enhanced reports should be used for controllers when using the HIDAPI driver.
 - [SDL_JOYSTICK_FLIGHTSTICK_DEVICES](SDL_HINT_JOYSTICK_FLIGHTSTICK_DEVICES): A variable containing a list of flightstick style controllers.
 - [SDL_JOYSTICK_FLIGHTSTICK_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_FLIGHTSTICK_DEVICES_EXCLUDED): A variable containing a list of devices that are not flightstick style controllers.
 - [SDL_JOYSTICK_GAMECUBE_DEVICES](SDL_HINT_JOYSTICK_GAMECUBE_DEVICES): A variable containing a list of devices known to have a GameCube form factor.
 - [SDL_JOYSTICK_GAMECUBE_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_GAMECUBE_DEVICES_EXCLUDED): A variable containing a list of devices known not to have a GameCube form factor.
 - [SDL_JOYSTICK_GAMEINPUT](SDL_HINT_JOYSTICK_GAMEINPUT): A variable controlling whether GameInput should be used for controller handling on Windows.
+- [SDL_JOYSTICK_GUITAR_DEVICES](SDL_HINT_JOYSTICK_GUITAR_DEVICES): A variable containing a list of guitar style controllers.
 - [SDL_JOYSTICK_HAPTIC_AXES](SDL_HINT_JOYSTICK_HAPTIC_AXES): A variable containing a list of devices and their desired number of haptic (force feedback) enabled axis.
 - [SDL_JOYSTICK_HIDAPI](SDL_HINT_JOYSTICK_HIDAPI): A variable controlling whether the HIDAPI joystick drivers should be used.
 - [SDL_JOYSTICK_HIDAPI_8BITDO](SDL_HINT_JOYSTICK_HIDAPI_8BITDO): A variable controlling whether the HIDAPI driver for 8BitDo controllers should be used.
