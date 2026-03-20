@@ -24,9 +24,6 @@ float SDL_randf_r(Uint64 *state);
 
 ## Remarks
 
-If you want reproducible output, be sure to initialize with
-[SDL_srand](SDL_srand)() first.
-
 There are no guarantees as to the quality of the random sequence produced,
 and this should not be used for security (cryptography, passwords) or where
 money is on the line (loot-boxes, casinos). There are many random number
