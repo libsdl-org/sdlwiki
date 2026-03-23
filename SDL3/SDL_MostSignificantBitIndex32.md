@@ -25,8 +25,8 @@ SDL_FORCE_INLINE int SDL_MostSignificantBitIndex32(Uint32 x);
 
 ## Remarks
 
-Result is undefined when called with 0. This operation can also be stated
-as "count leading zeroes" and "log base 2".
+This operation can also be stated as "count leading zeroes" and "log base
+2".
 
 Note that this is a forced-inline function in a header, and not a public
 API function available in the SDL library (which is to say, the code is
