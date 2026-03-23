@@ -20,12 +20,10 @@ If you're dealing with a rendering bug, it's useful to report that you're using 
 
 ## Reporting memory leaks
 
-Memory leaks happen, and we are happy to fix leaks in SDL. However, almost all leaks reported to our bug tracker are either leaks in other libraries that SDL uses, or buggy GPU drivers.
+Memory leaks happen, and we are happy to fix leaks in SDL. However, almost all leaks reported to our bug tracker are either leaks in other libraries that SDL uses, or intentional one-time allocations made by GPU drivers.
 
 If you're using a memory leak tool, like AddressSanitizer or Valgrind, before reporting:
 
-- Are you _sure_ this is an SDL leak? If the last thing in the callstack is not SDL, it's very likely it's a system library that SDL doesn't control that is leaking. It's possible SDL is misusing the library, but almost always, this has not been the case. Please report these leaks to the library's maintainer instead of SDL, since we do not have the power to fix their leaks.
-- Run a build with debug symbols, so we can see the source file and line number where the leak happened.
-- If the leak is a one-time allocation of a few bytes--so you only noticed because the leak detection tool reported something--please send a PR to fix it, instead of a bug report.
-- If the problem is an SDL program that uses OpenGL is leaking memory, or allocating terabytes of data for simple programs, _this is almost never SDL's fault_, but something going wrong in the graphic driver or OpenGL implementation. Please report it to the correct project, where they will hopefully take it seriously and fix the problem.
-
+- Are you _sure_ this is an SDL leak? If the last thing in the callstack is not SDL, it's very likely it's a leak in a system library or graphics driver that SDL doesn't control. It's possible SDL is misusing a library, but almost always this either a bug or an intentional one-time allocation by that library. In particular D-Bus, Mesa, and NVIDIA drivers are known to have these. Please report these leaks to that library's maintainer instead of SDL, since we do not have the power to fix their leaks.
+- If the leak is in SDL, it's often easy to identify where it's leaking and where it should be cleaned up. Please submit a PR with a fix if possible. Not only will this make it easy for us to confirm and accept your change, often in the process you may discover you're just not calling the code that cleans up the memory.
+- If you're not able to tell where the leak should be cleaned up, please include symbols in your leak stack traces so we can see clearly what is happening.
