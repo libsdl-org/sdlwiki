@@ -28,6 +28,7 @@ polish to an app, or solving problems that only affect one target.
 - [SDL_GetSandbox](SDL_GetSandbox)
 - [SDL_IsChromebook](SDL_IsChromebook)
 - [SDL_IsDeXMode](SDL_IsDeXMode)
+- [SDL_IsPhone](SDL_IsPhone)
 - [SDL_IsTablet](SDL_IsTablet)
 - [SDL_IsTV](SDL_IsTV)
 - [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)

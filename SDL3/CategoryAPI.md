@@ -813,6 +813,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_IsMouseHaptic](SDL_IsMouseHaptic)
 - [SDL_isnan](SDL_isnan)
 - [SDL_isnanf](SDL_isnanf)
+- [SDL_IsPhone](SDL_IsPhone)
 - [SDL_isprint](SDL_isprint)
 - [SDL_ispunct](SDL_ispunct)
 - [SDL_isspace](SDL_isspace)
