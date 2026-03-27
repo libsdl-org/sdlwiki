@@ -1494,6 +1494,7 @@ const char * SDL_GetAndroidCachePath(void);                                     
 bool SDL_RequestAndroidPermission(const char *permission, SDL_RequestAndroidPermissionCallback cb, void *userdata);          // Request permissions at runtime, asynchronously.
 bool SDL_ShowAndroidToast(const char *message, int duration, int gravity, int xoffset, int yoffset);                         // Shows an Android toast notification.
 bool SDL_SendAndroidMessage(Uint32 command, int param);                                                                      // Send a user command to SDLActivity.
+bool SDL_IsPhone(void);                                                                                                      // Query if the current device is a phone.
 bool SDL_IsTablet(void);                                                                                                     // Query if the current device is a tablet.
 bool SDL_IsTV(void);                                                                                                         // Query if the current device is a TV.
 SDL_Sandbox SDL_GetSandbox(void);                                                                                            // Get the application sandbox environment, if any.
