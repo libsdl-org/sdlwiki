@@ -87,6 +87,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_GAMECUBE_DEVICES](SDL_HINT_JOYSTICK_GAMECUBE_DEVICES): A variable containing a list of devices known to have a GameCube form factor.
 - [SDL_JOYSTICK_GAMECUBE_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_GAMECUBE_DEVICES_EXCLUDED): A variable containing a list of devices known not to have a GameCube form factor.
 - [SDL_JOYSTICK_GAMEINPUT](SDL_HINT_JOYSTICK_GAMEINPUT): A variable controlling whether GameInput should be used for controller handling on Windows.
+- [SDL_JOYSTICK_GAMEINPUT_RAW](SDL_HINT_JOYSTICK_GAMEINPUT_RAW): A variable controlling whether GameInput should be used for handling GIP devices that require raw report processing, but aren't supported by HIDRAW, such as Xbox One Guitars.
 - [SDL_JOYSTICK_GUITAR_DEVICES](SDL_HINT_JOYSTICK_GUITAR_DEVICES): A variable containing a list of guitar style controllers.
 - [SDL_JOYSTICK_HAPTIC_AXES](SDL_HINT_JOYSTICK_HAPTIC_AXES): A variable containing a list of devices and their desired number of haptic (force feedback) enabled axis.
 - [SDL_JOYSTICK_HIDAPI](SDL_HINT_JOYSTICK_HIDAPI): A variable controlling whether the HIDAPI joystick drivers should be used.
