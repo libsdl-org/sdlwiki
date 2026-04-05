@@ -22,7 +22,7 @@ void TTF_SetFontLineSkip(TTF_Font *font, int lineskip);
 
 ## Version
 
-This function is available since SDL_ttf 2.22.0.
+This function is available since SDL_ttf 2.24.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
