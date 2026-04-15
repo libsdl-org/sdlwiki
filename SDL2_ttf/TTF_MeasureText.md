@@ -34,6 +34,8 @@ This reports the number of characters that can be rendered before reaching
 
 This does not need to render the string to do this calculation.
 
+`measure_width` should be non-zero.
+
 You almost certainly want [TTF_MeasureUTF8](TTF_MeasureUTF8)() unless
 you're sure you have a 1-byte Latin1 encoding. US ASCII characters will
 work with either function, but most other Unicode characters packed into a
