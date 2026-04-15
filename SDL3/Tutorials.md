@@ -51,6 +51,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 
 ## Non-English tutorials
 
-- (to be added.)
+- [دروس برمجة الرسوميات باستخدام SDL3 باللغة العربية.](https://almhajer.github.io/GraphicsProgrammingAtlas)
+
 
 If you come across good tutorials, please click [edit](https://wiki.libsdl.org/SDL3/Tutorials/edit) and add them!
