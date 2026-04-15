@@ -49,9 +49,13 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [Mike Shah's SDL3 Tutorial Video Playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-RZSmGbLkZvkgec6lJ0BfX): Covers setup of SDL3 and programming tutorials demonstrating the SDL3 API.
 - [DarkCybernetics](https://darkcybernetics.com ): creates comprehensive 2D/3D game tutorials using SDL2 and SDL3 also advanced Computer Science courses.
 
-## Non-English tutorials
+## باللغة العربية SDL3 شرح مكتبة
 
 - [دروس برمجة الرسوميات باستخدام SDL3 باللغة العربية.](https://almhajer.github.io/GraphicsProgrammingAtlas)
-
+- [SDL3 شرح مكتبة.](https://almhajer.github.io/GraphicsProgrammingAtlas/#sdl3-package/core)
+- [SDL3_image مكتبة](https://almhajer.github.io/GraphicsProgrammingAtlas/#sdl3-package/image)
+- [SDL3_audio مكتبة](https://almhajer.github.io/GraphicsProgrammingAtlas/#sdl3-package/audio)
+- [SDL3_mixer مكتبة](https://almhajer.github.io/GraphicsProgrammingAtlas/#sdl3-package/mixer)
+- [SDL3_ttf مكتبة](https://almhajer.github.io/GraphicsProgrammingAtlas/#sdl3-package/ttf)
 
 If you come across good tutorials, please click [edit](https://wiki.libsdl.org/SDL3/Tutorials/edit) and add them!
