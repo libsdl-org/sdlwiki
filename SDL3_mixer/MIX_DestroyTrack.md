@@ -27,7 +27,10 @@ any fadeout. If there is a callback set through
 be called.
 
 If the mixer is currently mixing in another thread, this will block until
-it finishes.
+it finishes. Destroying a track from the mixer thread itself (during a
+callback) will cause it to be destroyed as soon as this iteration of the
+mixer thread is not using it; in this scenario, destroying a track and then
+making futher changes to it is considered undefined behavior.
 
 Destroying a NULL [MIX_Track](MIX_Track) is a legal no-op.
 
