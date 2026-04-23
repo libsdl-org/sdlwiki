@@ -42,6 +42,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_CAMERA_DRIVER](SDL_HINT_CAMERA_DRIVER): A variable that decides what camera backend to use.
 - [SDL_CPU_FEATURE_MASK](SDL_HINT_CPU_FEATURE_MASK): A variable that limits what CPU features are available.
 - [SDL_DISPLAY_USABLE_BOUNDS](SDL_HINT_DISPLAY_USABLE_BOUNDS): Override for SDL_GetDisplayUsableBounds().
+- [SDL_DOS_ALLOW_DIRECT_FRAMEBUFFER](SDL_HINT_DOS_ALLOW_DIRECT_FRAMEBUFFER): A variable that enables a fast framebuffer path on DOS.
 - [SDL_EGL_LIBRARY](SDL_HINT_EGL_LIBRARY): Specify the EGL library to load.
 - [SDL_EMSCRIPTEN_ASYNCIFY](SDL_HINT_EMSCRIPTEN_ASYNCIFY): Disable giving back control to the browser automatically when running with asyncify.
 - [SDL_EMSCRIPTEN_CANVAS_SELECTOR](SDL_HINT_EMSCRIPTEN_CANVAS_SELECTOR): Specify the CSS selector used for the "default" window/canvas.

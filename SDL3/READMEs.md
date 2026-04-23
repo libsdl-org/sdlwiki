@@ -11,6 +11,7 @@
 - [README-cmake](README-cmake)
 - [README-contributing](README-contributing)
 - [README-documentation-rules](README-documentation-rules)
+- [README-dos](README-dos)
 - [README-dynapi](README-dynapi)
 - [README-emscripten](README-emscripten)
 - [README-gdk](README-gdk)
