@@ -5,6 +5,7 @@
 SDL3 has been known to work on the following platforms at some point:
 
 - [Android](README-android.md)
+- [DOS](README-dos.md)
 - [Emscripten](README-emscripten.md) (Web browsers)
 - [FreeBSD](README-bsd.md)
 - [Haiku OS](README-haiku.md)
