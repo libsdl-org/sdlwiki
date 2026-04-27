@@ -35,5 +35,5 @@ This function is available since SDL 3.6.0.
 - [SDL_CreateGPUXRSwapchain](SDL_CreateGPUXRSwapchain)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenXR](CategoryOpenXR)
 

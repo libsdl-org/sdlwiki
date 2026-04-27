@@ -44,5 +44,5 @@ This function is available since SDL 3.6.0.
 - [SDL_HINT_OPENXR_LIBRARY](SDL_HINT_OPENXR_LIBRARY)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenXR](CategoryOpenXR)
 

@@ -34,5 +34,5 @@ this function to the correct type.
 This function is available since SDL 3.6.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenxr](CategoryOpenxr)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryOpenXR](CategoryOpenXR)
 
