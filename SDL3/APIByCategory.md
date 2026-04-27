@@ -26,8 +26,9 @@
 | [Surface Creation and Simple Drawing](CategorySurface)  | [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)     |
 | [Clipboard Handling](CategoryClipboard)                 | [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h) |
 | [Vulkan Support](CategoryVulkan)                        | [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h)       |
-| [Metal Support](CategoryMetal)                          | [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_metal.h)              |
-| [Camera Support](CategoryCamera)                        | [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h)            |
+| [Metal Support](CategoryMetal)                          | [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_metal.h)         |
+| [OpenXR Support](CategoryOpenXR)                        | [SDL_openxr.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_openxr.h)       |
+| [Camera Support](CategoryCamera)                        | [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h)       |
 
 
 ## Input Events
@@ -101,7 +102,7 @@
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | [Platform Detection](CategoryPlatform)              | [SDL_platform.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_platform.h) |
 | [CPU Feature Detection](CategoryCPUInfo)            | [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h)   |
-| [Compiler Intrinsics Detection](CategoryIntrinsics) | [SDL_intrin.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_intrin.h)   |
+| [Compiler Intrinsics Detection](CategoryIntrinsics) | [SDL_intrin.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_intrin.h)     |
 | [Byte Order and Byte Swapping](CategoryEndian)      | [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)     |
 | [Bit Manipulation](CategoryBits)                    | [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h)         |
 
@@ -115,7 +116,7 @@
 | [Power Management Status](CategoryPower)             | [SDL_power.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h)           |
 | [Message Boxes](CategoryMessagebox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h) |
 | [File Dialogs](CategoryDialog)                       | [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)         |
-| [System Tray](CategoryTray)                          | [SDL_tray.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_tray.h)         |
+| [System Tray](CategoryTray)                          | [SDL_tray.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_tray.h)             |
 | [Locale Info](CategoryLocale)                        | [SDL_locale.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_locale.h)         |
 | [Platform-specific Functionality](CategorySystem)    | [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)         |
 | [Standard Library Functionality](CategoryStdinc)     | [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)         |
