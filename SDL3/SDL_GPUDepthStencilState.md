@@ -32,6 +32,7 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GPUGraphicsPipelineCreateInfo](SDL_GPUGraphicsPipelineCreateInfo)
+- [SDL_GPUStencilOpState](SDL_GPUStencilOpState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
