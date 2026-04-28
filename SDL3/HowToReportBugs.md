@@ -18,6 +18,19 @@ SDL runs on a lot of platforms, and people often forget to mention which one the
 
 If you're dealing with a rendering bug, it's useful to report that you're using a specific 2D render backend (OpenGL, Direct3D 9, etc) or GPU API target (Vulkan, Metal, etc).
 
+## Try the example programs
+
+If you're using a programming language other than C/C++/ObjC, using SDL through a language-specific binding, please try one of our test programs before reporting a bug. Often the problem is not SDL, but the binding!
+
+The "test" directory has lots of programs to exercise various parts of SDL. If you build SDL with CMake, the `SDL_TESTS=On` option will build all of these tests alongside SDL itself.
+
+Even smaller test code is in the "examples" directory, and each can be built as a single C file that just needs to link against SDL (CMake option: `SDL_EXAMPLES=On`). If you don't want to get into CMake, a simple compiler command line similar to this might work:
+
+```bash
+cd SDL
+cc -o clear examples/renderer/01-clear/clear.c -Iinclude -lSDL3
+```
+
 ## Reporting memory leaks
 
 Memory leaks happen, and we are happy to fix leaks in SDL. However, almost all leaks reported to our bug tracker are either leaks in other libraries that SDL uses, or intentional one-time allocations made by GPU drivers.
