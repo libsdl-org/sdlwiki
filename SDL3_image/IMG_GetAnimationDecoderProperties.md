@@ -10,7 +10,7 @@ Defined in [<SDL3_image/SDL_image.h>](https://github.com/libsdl-org/SDL_image/bl
 ## Syntax
 
 ```c
-SDL_PropertiesID IMG_GetAnimationDecoderProperties(IMG_AnimationDecoder* decoder);
+SDL_PropertiesID IMG_GetAnimationDecoderProperties(IMG_AnimationDecoder *decoder);
 
 
 #define IMG_PROP_METADATA_IGNORE_PROPS_BOOLEAN                 "SDL_image.metadata.ignore_props"
@@ -39,6 +39,10 @@ if there are no properties; call SDL_GetError() for more information.
 This function returns the properties of the animation decoder, which holds
 information about the underlying image such as description, copyright text
 and loop count.
+
+[`IMG_PROP_METADATA_LOOP_COUNT_NUMBER`](IMG_PROP_METADATA_LOOP_COUNT_NUMBER),
+if present, specifies the number of times to play the animation, with 0
+meaning loop continuously.
 
 ## Version
 
