@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_arraysize(array) (sizeof(array)/sizeof(array[0]))
+#define SDL_arraysize(array) (sizeof(array)/sizeof(array[0]))  /* or `_Countof(array)` on recent gcc and clang */
 ```
 
 ## Remarks
