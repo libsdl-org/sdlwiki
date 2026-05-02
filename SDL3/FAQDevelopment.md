@@ -24,7 +24,6 @@ Check these out if your questions aren't directly about using the library as a d
   - [Can SDL_GPU run on OpenGL?](#gpu_on_gl)
   - [Can SDL_GPU run on Android? ](#gpu_on_android)
   - [What should I do for shaders for SDL_GPU or SDL_Renderer with the GPU backend?](#shader_choices)
-  - [I'm trying to use SDL_shadercross as an online (runtime) compiler.](#shadercross_runtime)
   - [I'm on Linux and trying to run my SDL_GPU application under RenderDoc and don't get a Device, what's going on?](#renderdoc)
 
 
