@@ -49,7 +49,7 @@ Here's an example of how you might index into this array to implement the forwar
 /* returns 1 if moving forward with this keypress, -1 if moving backward, 0 if not moving. */
 int direction_user_should_move()
 {
-    const bool *key_states = SDL_GetKeyboardState();
+    const bool *key_states = SDL_GetKeyboardState(NULL);
     int direction = 0;
 
     /* (We're writing our code such that it sees both keys are pressed and cancels each other out!) */
