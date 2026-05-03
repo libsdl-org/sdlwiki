@@ -301,7 +301,7 @@ can discuss it!
 - MIX_MINOR_VERSION => SDL_MIXER_MAJOR_VERSION
 - MIX_PATCHLEVEL => SDL_MIXER_MICRO_VERSION
 - MIX_VERSION => SDL_MIXER_VERSION
-- MIX_Linked_Version => MIX_Version
+- Mix_Linked_Version => MIX_Version
 - Mix_Version => MIX_Version
 - SDL_MIXER_COMPILEDVERSION => SDL_MIXER_VERSION
 - MIX_InitFlags => not needed in SDL3_mixer.
@@ -412,4 +412,3 @@ can discuss it!
 - Mix_CloseAudio => MIX_DestroyMixer
 - Mix_GetError => SDL_GetError
 - Mix_SetError => SDL_SetError
-
