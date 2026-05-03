@@ -276,7 +276,7 @@ MIX_PauseTrack() and MIX_ResumeTrack().
 ## Music state
 
 Mix_MusicDuration() became MIX_GetAudioDuration() and Mix_GetMusicPosition() became
-MIX_GetTrackPlaybackPosition(). MIX_SetMusicPosition() is now
+MIX_GetTrackPlaybackPosition(). Mix_SetMusicPosition() is now
 MIX_SetTrackPlaybackPosition().
 
 
