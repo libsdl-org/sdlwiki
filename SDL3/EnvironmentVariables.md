@@ -235,6 +235,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_VIDEO_WAYLAND_PREFER_LIBDECOR](SDL_HINT_VIDEO_WAYLAND_PREFER_LIBDECOR): A variable controlling whether the libdecor Wayland backend is preferred over native decorations.
 - [SDL_VIDEO_WAYLAND_SCALE_TO_DISPLAY](SDL_HINT_VIDEO_WAYLAND_SCALE_TO_DISPLAY): A variable forcing non-DPI-aware Wayland windows to output at 1:1 scaling.
 - [SDL_VIDEO_WIN_D3DCOMPILER](SDL_HINT_VIDEO_WIN_D3DCOMPILER): A variable specifying which shader compiler to preload when using the Chrome ANGLE binaries.
+- [SDL_VIDEO_X11_ENABLE_XSYNC_EXT](SDL_HINT_VIDEO_X11_ENABLE_XSYNC_EXT): A variable controlling whether the X Synchronization Extension is enabled.
 - [SDL_VIDEO_X11_EXTERNAL_WINDOW_INPUT](SDL_HINT_VIDEO_X11_EXTERNAL_WINDOW_INPUT): A variable controlling whether SDL should call XSelectInput() to enable input events on X11 windows wrapped by SDL windows.
 - [SDL_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR](SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR): A variable controlling whether the X11 _NET_WM_BYPASS_COMPOSITOR hint should be used.
 - [SDL_VIDEO_X11_NET_WM_PING](SDL_HINT_VIDEO_X11_NET_WM_PING): A variable controlling whether the X11 _NET_WM_PING protocol should be supported.
