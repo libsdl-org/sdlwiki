@@ -254,7 +254,7 @@ e.g.
             */
             return false;
         case SDL_EVENT_LOW_MEMORY:
-            /* You will get this when your app is paused and iOS wants more memory.
+            /* You will get this when your app is paused and Android wants more memory.
                Release as much memory as possible.
             */
             return false;
