@@ -160,6 +160,14 @@ On Emscripten:
 - [`SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING`](SDL_PROP_WINDOW_EMSCRIPTEN_KEYBOARD_ELEMENT_STRING):
   the keyboard element that associates keyboard events to this window
 
+On visionOS:
+
+- [`SDL_PROP_WINDOW_CURVATURE_FLOAT`](SDL_PROP_WINDOW_CURVATURE_FLOAT): the
+  curvature of the window in curved mode on visionOS. This value is updated
+  dynamically when changed via the screen ornaments. This can be 0 (no
+  curve), or a specific curvature radius in millimeters. A common value for
+  a gaming monitor is 1000.
+
 ## Thread Safety
 
 This function should only be called on the main thread.

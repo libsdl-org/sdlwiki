@@ -160,6 +160,15 @@ These are additional supported properties with Emscripten:
   popup windows and have the behaviors and guidelines outlined in
   [SDL_CreatePopupWindow](SDL_CreatePopupWindow)().
 
+These are additional supported properties with visionOS:
+
+- [`SDL_PROP_WINDOW_CREATE_CURVATURE_FLOAT`](SDL_PROP_WINDOW_CREATE_CURVATURE_FLOAT):
+  the curvature of the window on visionOS. Curved windows have square
+  corners and additional controls for more immersive gaming. This can be -1
+  (disabled), which is the default, 0 (no curve), or set to a specific
+  curvature radius in millimeters. A common value for a gaming monitor is
+  1000.
+
 If this window is being created to be used with an
 [SDL_Renderer](SDL_Renderer), you should not add a graphics API specific
 property
