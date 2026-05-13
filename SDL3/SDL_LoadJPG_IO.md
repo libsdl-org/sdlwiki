@@ -1,6 +1,6 @@
-# SDL_LoadSurface_IO
+# SDL_LoadJPG_IO
 
-Load a BMP, PNG or JPEG image from a seekable SDL data stream.
+Load a JPEG image from a seekable SDL data stream.
 
 ## Header File
 
@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-SDL_Surface * SDL_LoadSurface_IO(SDL_IOStream *src, bool closeio);
+SDL_Surface * SDL_LoadJPG_IO(SDL_IOStream *src, bool closeio);
 ```
 
 ## Function Parameters
@@ -27,6 +27,10 @@ SDL_Surface * SDL_LoadSurface_IO(SDL_IOStream *src, bool closeio);
 
 ## Remarks
 
+This is intended as a convenience function for loading images from trusted
+sources. If you want to load arbitrary images you should use libjpeg or
+another image loading library designed with security in mind.
+
 The new surface should be freed with
 [SDL_DestroySurface](SDL_DestroySurface)(). Not doing so will result in a
 memory leak.
@@ -37,12 +41,12 @@ It is safe to call this function from any thread.
 
 ## Version
 
-This function is available since SDL 3.4.0.
+This function is available since SDL 3.6.0.
 
 ## See Also
 
 - [SDL_DestroySurface](SDL_DestroySurface)
-- [SDL_LoadSurface](SDL_LoadSurface)
+- [SDL_LoadJPG](SDL_LoadJPG)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
