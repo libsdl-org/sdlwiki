@@ -9,6 +9,7 @@ This list matches the latest in SDL3's revision control.
 ## Environment Variable List
 
 - [SDL_ALLOW_ALT_TAB_WHILE_GRABBED](SDL_HINT_ALLOW_ALT_TAB_WHILE_GRABBED): Specify the behavior of Alt+Tab while the keyboard is grabbed.
+- [SDL_ANDROID_ALLOW_PERSISTENT_FOLDER_ACCESS](SDL_HINT_ANDROID_ALLOW_PERSISTENT_FOLDER_ACCESS): A variable to control whether we allow persistent folder access on Android when using the SDL select folder dialog.
 - [SDL_ANDROID_ALLOW_RECREATE_ACTIVITY](SDL_HINT_ANDROID_ALLOW_RECREATE_ACTIVITY): A variable to control whether the SDL activity is allowed to be re-created.
 - [SDL_ANDROID_BLOCK_ON_PAUSE](SDL_HINT_ANDROID_BLOCK_ON_PAUSE): A variable to control whether the event loop will block itself when the app is paused.
 - [SDL_ANDROID_LOW_LATENCY_AUDIO](SDL_HINT_ANDROID_LOW_LATENCY_AUDIO): A variable to control whether low latency audio should be enabled.
