@@ -58,6 +58,8 @@ surface from two threads simultaneously.
 - [SDL_GetSurfaceProperties](SDL_GetSurfaceProperties)
 - [SDL_LoadBMP](SDL_LoadBMP)
 - [SDL_LoadBMP_IO](SDL_LoadBMP_IO)
+- [SDL_LoadJPG](SDL_LoadJPG)
+- [SDL_LoadJPG_IO](SDL_LoadJPG_IO)
 - [SDL_LoadPNG](SDL_LoadPNG)
 - [SDL_LoadPNG_IO](SDL_LoadPNG_IO)
 - [SDL_LoadSurface](SDL_LoadSurface)

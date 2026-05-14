@@ -761,6 +761,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_LoadFile_IO](SDL_LoadFile_IO)
 - [SDL_LoadFileAsync](SDL_LoadFileAsync)
 - [SDL_LoadFunction](SDL_LoadFunction)
+- [SDL_LoadJPG](SDL_LoadJPG)
+- [SDL_LoadJPG_IO](SDL_LoadJPG_IO)
 - [SDL_LoadObject](SDL_LoadObject)
 - [SDL_LoadPNG](SDL_LoadPNG)
 - [SDL_LoadPNG_IO](SDL_LoadPNG_IO)
