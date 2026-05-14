@@ -1482,6 +1482,7 @@ bool SDL_HasAVX2(void);               // Determine whether the CPU has AVX2 feat
 bool SDL_HasAVX512F(void);            // Determine whether the CPU has AVX-512F (foundation) features.
 bool SDL_HasARMSIMD(void);            // Determine whether the CPU has ARM SIMD (ARMv6) features.
 bool SDL_HasNEON(void);               // Determine whether the CPU has NEON (ARM SIMD) features.
+bool SDL_HasSVE2(void);               // Determine whether the CPU has SVE2 (Scalable Vector Extension 2).
 bool SDL_HasLSX(void);                // Determine whether the CPU has LSX (LOONGARCH SIMD) features.
 bool SDL_HasLASX(void);               // Determine whether the CPU has LASX (LOONGARCH SIMD) features.
 int SDL_GetSystemRAM(void);           // Get the amount of RAM configured in the system.
@@ -1498,6 +1499,7 @@ int SDL_GetSystemPageSize(void);      // Report the size of a page of memory.
 #define SDL_LSX_INTRINSICS      // Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
 #define SDL_LASX_INTRINSICS     // Defined if (and only if) the compiler supports Loongarch LSX intrinsics.
 #define SDL_NEON_INTRINSICS     // Defined if (and only if) the compiler supports ARM NEON intrinsics.
+#define SDL_SVE2_INTRINSICS     // Defined if (and only if) the compiler supports ARM SVE2 intrinsics.
 #define SDL_ALTIVEC_INTRINSICS  // Defined if (and only if) the compiler supports PowerPC Altivec intrinsics.
 #define SDL_MMX_INTRINSICS      // Defined if (and only if) the compiler supports Intel MMX intrinsics.
 #define SDL_SSE_INTRINSICS      // Defined if (and only if) the compiler supports Intel SSE intrinsics.
