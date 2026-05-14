@@ -682,6 +682,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_HasSSE3](SDL_HasSSE3)
 - [SDL_HasSSE41](SDL_HasSSE41)
 - [SDL_HasSSE42](SDL_HasSSE42)
+- [SDL_HasSVE2](SDL_HasSVE2)
 - [SDL_hid_ble_scan](SDL_hid_ble_scan)
 - [SDL_hid_close](SDL_hid_close)
 - [SDL_hid_device_change_count](SDL_hid_device_change_count)

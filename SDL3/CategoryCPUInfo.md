@@ -37,6 +37,7 @@ simply return false in these cases).
 - [SDL_HasSSE3](SDL_HasSSE3)
 - [SDL_HasSSE41](SDL_HasSSE41)
 - [SDL_HasSSE42](SDL_HasSSE42)
+- [SDL_HasSVE2](SDL_HasSVE2)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
