@@ -10,15 +10,20 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-NET_DatagramSocket * NET_CreateDatagramSocket(NET_Address *addr, Uint16 port);
+NET_DatagramSocket * NET_CreateDatagramSocket(NET_Address *addr, Uint16 port, SDL_PropertiesID props);
+
+
+#define NET_PROP_DATAGRAM_SOCKET_REUSEADDR_BOOLEAN         "NET.datagram_socket.reuseaddr"
+#define NET_PROP_DATAGRAM_SOCKET_ALLOW_BROADCAST_BOOLEAN   "NET.datagram_socket.allow_broadcast"
 ```
 
 ## Function Parameters
 
-|                              |          |                                                                                                     |
-| ---------------------------- | -------- | --------------------------------------------------------------------------------------------------- |
-| [NET_Address](NET_Address) * | **addr** | the local address to listen for connections on, or NULL to listen on all available local addresses. |
-| Uint16                       | **port** | the port on the local address to listen for connections on, or zero for the system to decide.       |
+|                              |           |                                                                                                     |
+| ---------------------------- | --------- | --------------------------------------------------------------------------------------------------- |
+| [NET_Address](NET_Address) * | **addr**  | the local address to listen for connections on, or NULL to listen on all available local addresses. |
+| Uint16                       | **port**  | the port on the local address to listen for connections on, or zero for the system to decide.       |
+| SDL_PropertiesID             | **props** | properties of the new socket. Specify zero for defaults.                                            |
 
 ## Return Value
 
@@ -69,6 +74,34 @@ implement that yourself on top of the stream socket.
 Unlike BSD sockets or WinSock, you specify the port as a normal integer;
 you do not have to byteswap it into "network order," as the library will
 handle that for you.
+
+The caller may supply properties to customize behavior. This is optional,
+and a value of zero for `props` will request defaults for all properties.
+
+These are the supported properties:
+
+- [`NET_PROP_DATAGRAM_SOCKET_REUSEADDR_BOOLEAN`](NET_PROP_DATAGRAM_SOCKET_REUSEADDR_BOOLEAN):
+  true if the socket should be created even if a previous socket has
+  recently used this address. For various reasons, networks prefer that
+  there be some delay between apps reusing the same address, but this can
+  be problematic when iterating quickly, for software development purposes
+  or just restarting a crashed service. This property defaults to true
+  (although it should be noted that, at the operating system level, this
+  defaults to false!). If this property is false and the OS feels that not
+  enough time has elapsed, socket creation will fail and this function will
+  report an error.
+- [`NET_PROP_DATAGRAM_SOCKET_ALLOW_BROADCAST_BOOLEAN`](NET_PROP_DATAGRAM_SOCKET_ALLOW_BROADCAST_BOOLEAN):
+  true if the socket should allow broadcasting. At the lower level, this
+  will set `SO_BROADCAST` for IPv4 sockets, to allow sending to the
+  subnet's broadcast address at the OS level. For IPv6, it'll join the
+  all-nodes link-local multicast group, ff02::1, allowing sending and
+  receiving there, more or less simulating the usual IPv4 broadcast
+  semantics. Other protocols take similar approaches. If you do not intend
+  to send or receive broadcast packets on this socket, set this property to
+  false, or omit it, as it defaults to false. Note: IPv4 will still be able
+  to receive broadcast packets without this option, but IPv6 will not. Also
+  see notes about sending to a broadcast address in
+  [NET_SendDatagram](NET_SendDatagram)().
 
 ## Thread Safety
 

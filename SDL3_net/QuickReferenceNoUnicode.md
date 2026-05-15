@@ -44,9 +44,9 @@ void NET_SimulateAddressResolutionLoss(int percent_loss);                       
 int NET_CompareAddresses(const NET_Address *a, const NET_Address *b);                                             // Compare two NET_Address objects.
 NET_Address ** NET_GetLocalAddresses(int *num_addresses);                                                         // Obtain a list of local addresses on the system.
 void NET_FreeLocalAddresses(NET_Address **addresses);                                                             // Free the results from NET_GetLocalAddresses.
-NET_StreamSocket * NET_CreateClient(NET_Address *address, Uint16 port);                                           // Begin connecting a socket as a client to a remote server.
+NET_StreamSocket * NET_CreateClient(NET_Address *address, Uint16 port, SDL_PropertiesID props);                   // Begin connecting a socket as a client to a remote server.
 NET_Status NET_WaitUntilConnected(NET_StreamSocket *sock, Sint32 timeout);                                        // Block until a stream socket has connected to a server.
-NET_Server * NET_CreateServer(NET_Address *addr, Uint16 port);                                                    // Create a server, which listens for connections to accept.
+NET_Server * NET_CreateServer(NET_Address *addr, Uint16 port, SDL_PropertiesID props);                            // Create a server, which listens for connections to accept.
 bool NET_AcceptClient(NET_Server *server, NET_StreamSocket **client_stream);                                      // Create a stream socket for the next pending client connection.
 void NET_DestroyServer(NET_Server *server);                                                                       // Dispose of a previously-created server.
 NET_Address * NET_GetStreamSocketAddress(NET_StreamSocket *sock);                                                 // Get the remote address of a stream socket.
@@ -57,7 +57,7 @@ int NET_WaitUntilStreamSocketDrained(NET_StreamSocket *sock, Sint32 timeout);   
 int NET_ReadFromStreamSocket(NET_StreamSocket *sock, void *buf, int buflen);                                      // Receive bytes that a remote system sent to a stream socket.
 void NET_SimulateStreamPacketLoss(NET_StreamSocket *sock, int percent_loss);                                      // Enable simulated stream socket failures.
 void NET_DestroyStreamSocket(NET_StreamSocket *sock);                                                             // Dispose of a previously-created stream socket.
-NET_DatagramSocket * NET_CreateDatagramSocket(NET_Address *addr, Uint16 port);                                    // Create and bind a new datagram socket.
+NET_DatagramSocket * NET_CreateDatagramSocket(NET_Address *addr, Uint16 port, SDL_PropertiesID props);            // Create and bind a new datagram socket.
 bool NET_SendDatagram(NET_DatagramSocket *sock, NET_Address *address, Uint16 port, const void *buf, int buflen);  // Send a new packet over a datagram socket to a remote system.
 bool NET_ReceiveDatagram(NET_DatagramSocket *sock, NET_Datagram **dgram);                                         // Receive a new packet that a remote system sent to a datagram socket.
 void NET_DestroyDatagram(NET_Datagram *dgram);                                                                    // Dispose of a datagram packet previously received.

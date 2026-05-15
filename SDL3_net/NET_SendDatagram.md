@@ -15,13 +15,13 @@ bool NET_SendDatagram(NET_DatagramSocket *sock, NET_Address *address, Uint16 por
 
 ## Function Parameters
 
-|                                            |             |                                                   |
-| ------------------------------------------ | ----------- | ------------------------------------------------- |
-| [NET_DatagramSocket](NET_DatagramSocket) * | **sock**    | the datagram socket to send data through.         |
-| [NET_Address](NET_Address) *               | **address** | the [NET_Address](NET_Address) object address.    |
-| Uint16                                     | **port**    | the address port.                                 |
-| const void *                               | **buf**     | a pointer to the data to send as a single packet. |
-| int                                        | **buflen**  | the size of the data to send, in bytes.           |
+|                                            |             |                                                                          |
+| ------------------------------------------ | ----------- | ------------------------------------------------------------------------ |
+| [NET_DatagramSocket](NET_DatagramSocket) * | **sock**    | the datagram socket to send data through.                                |
+| [NET_Address](NET_Address) *               | **address** | the [NET_Address](NET_Address) object address. May be NULL to broadcast. |
+| Uint16                                     | **port**    | the address port.                                                        |
+| const void *                               | **buf**     | a pointer to the data to send as a single packet.                        |
+| int                                        | **buflen**  | the size of the data to send, in bytes.                                  |
 
 ## Return Value
 
@@ -61,6 +61,35 @@ generally won't report failures, because there is no state like a
 unrecoverable system-level conditions; once a datagram socket fails, you
 should assume it is no longer usable and should destroy it with
 SDL_DestroyDatagramSocket().
+
+Sending to a NULL address is treated as a request to broadcast a packet.
+Note that this will report failure immediately if the socket was not
+created with broadcast permission. Broadcast packets are (more or less)
+sent to every machine on the LAN, unconditionally.
+
+**WARNING**: It is possible to build a game where everyone is playing on
+the same LAN, and every player is simply broadcasting packets. This is
+absolutely the wrong thing to do, however. Broadcast packets go to every
+device on the LAN, whether they want them or not. The game DOOM, in its
+heyday, was capable of
+[bringing entire networks to their knees](https://doomwiki.org/wiki/Doom_in_workplaces)
+, as many players on the same network would all be broadcasting
+relentlessly.
+
+In practice, broadcasting sparingly can be useful for certain
+functionality: a LAN-only client broadcasting a few packets to ask for
+available servers, and running servers replying directly to that client
+without broadcasting at all, is reasonable and safe. Once clients and
+servers have found each other, they can communicate directly without any
+broadcasting at all. For peer-to-peer games, once connection is
+established, it's better to either send unique packets to each known
+player, or use a multicasting (which works like broadcast, but only routes
+packets to devices that are explicitly listening for it).
+
+With IPv6, which doesn't support broadcasts, broadcasting is faked with
+multicast to the all-nodes link-local multicast group, ff02::1, either on a
+specific interface or letting the OS choose the default. Other protocols
+might fake broadcast operations in similar ways in the future.
 
 ## Thread Safety
 

@@ -10,15 +10,16 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-NET_StreamSocket * NET_CreateClient(NET_Address *address, Uint16 port);
+NET_StreamSocket * NET_CreateClient(NET_Address *address, Uint16 port, SDL_PropertiesID props);
 ```
 
 ## Function Parameters
 
-|                              |             |                                                 |
-| ---------------------------- | ----------- | ----------------------------------------------- |
-| [NET_Address](NET_Address) * | **address** | the address of the remote server to connect to. |
-| Uint16                       | **port**    | the port on the remote server to connect to.    |
+|                              |             |                                                          |
+| ---------------------------- | ----------- | -------------------------------------------------------- |
+| [NET_Address](NET_Address) * | **address** | the address of the remote server to connect to.          |
+| Uint16                       | **port**    | the port on the remote server to connect to.             |
+| SDL_PropertiesID             | **props**   | properties of the new client. Specify zero for defaults. |
 
 ## Return Value
 
@@ -64,6 +65,10 @@ not), you must dispose of it with
 Unlike BSD sockets or WinSock, you specify the port as a normal integer;
 you do not have to byteswap it into "network order," as the library will
 handle that for you.
+
+There are currently no extra properties for creating a client, so `props`
+should be zero. A future revision of SDL_net may add additional (optional)
+properties.
 
 ## Thread Safety
 

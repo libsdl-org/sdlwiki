@@ -10,15 +10,19 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-NET_Server * NET_CreateServer(NET_Address *addr, Uint16 port);
+NET_Server * NET_CreateServer(NET_Address *addr, Uint16 port, SDL_PropertiesID props);
+
+
+#define NET_PROP_SERVER_REUSEADDR_BOOLEAN     "NET.server.reuseaddr"
 ```
 
 ## Function Parameters
 
-|                              |          |                                                             |
-| ---------------------------- | -------- | ----------------------------------------------------------- |
-| [NET_Address](NET_Address) * | **addr** | the _local_ address to listen for connections on, or NULL.  |
-| Uint16                       | **port** | the port on the local address to listen for connections on. |
+|                              |           |                                                             |
+| ---------------------------- | --------- | ----------------------------------------------------------- |
+| [NET_Address](NET_Address) * | **addr**  | the _local_ address to listen for connections on, or NULL.  |
+| Uint16                       | **port**  | the port on the local address to listen for connections on. |
+| SDL_PropertiesID             | **props** | properties of the new server. Specify zero for defaults.    |
 
 ## Return Value
 
@@ -57,6 +61,22 @@ you'll have to implement that yourself on top of the stream socket.
 Unlike BSD sockets or WinSock, you specify the port as a normal integer;
 you do not have to byteswap it into "network order," as the library will
 handle that for you.
+
+The caller may supply properties to customize behavior. This is optional,
+and a value of zero for `props` will request defaults for all properties.
+
+These are the supported properties:
+
+- [`NET_PROP_SERVER_REUSEADDR_BOOLEAN`](NET_PROP_SERVER_REUSEADDR_BOOLEAN):
+  true if the server should be created even if a previous server has
+  recently used this address. For various reasons, networks prefer that
+  there be some delay between apps reusing the same address, but this can
+  be problematic when iterating quickly, for software development purposes
+  or just restarting a crashed service. This property defaults to true
+  (although it should be noted that, at the operating system level, this
+  defaults to false!). If this property is false and the OS feels that not
+  enough time has elapsed, server creation will fail and this function will
+  report an error.
 
 ## Thread Safety
 
