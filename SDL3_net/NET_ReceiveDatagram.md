@@ -30,7 +30,7 @@ failure; call SDL_GetError() for details.
 Datagram sockets send packets of data. They either arrive as complete
 packets or they don't arrive at all, so you'll never receive half a packet.
 
-This call never blocks; if no new data isn't available at the time of the
+This call never blocks; if no new data is available at the time of the
 call, it returns true immediately. The caller can try again later.
 
 On a successful call to this function, it returns true, even if no new

@@ -37,7 +37,9 @@ stream of data.
 
 Datagram packets might arrive in a different order than you sent them, or
 they may just be lost while travelling across the network. You have to plan
-for this.
+for this. As an added confusion, since SDL_net might send the same packet
+on multiple interfaces, you might get duplicate packets, possibly from
+different network addresses. You have to plan for this, too.
 
 You can send to any address and port on the network, but there has to be a
 datagram socket waiting for the data on the other side for the packet not
