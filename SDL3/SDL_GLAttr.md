@@ -44,9 +44,9 @@ typedef enum SDL_GLAttr
 
 ## Remarks
 
-While you can set most OpenGL attributes normally, the attributes listed
-above must be known before SDL creates the window that will be used with
-the OpenGL context. These attributes are set and read with
+While you can set most OpenGL attributes normally, they must be known
+before SDL creates the window that will be used with the OpenGL context.
+These attributes are set and read with
 [SDL_GL_SetAttribute](SDL_GL_SetAttribute)() and
 [SDL_GL_GetAttribute](SDL_GL_GetAttribute)().
 
