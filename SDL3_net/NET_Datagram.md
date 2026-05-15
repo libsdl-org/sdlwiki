@@ -12,8 +12,8 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ```c
 typedef struct NET_Datagram
 {
-    NET_Address *addr;  /**< this is unref'd by NET_DestroyDatagram. You only need to ref it if you want to keep it. */
-    Uint16 port;  /**< these do not have to come from the same port the receiver is bound to. These are in host byte order, don't byteswap them! */
+    NET_Address *addr;  /**< Sender's address. This is unref'd by NET_DestroyDatagram. You only need to ref it if you want to keep it. */
+    Uint16 port;  /**< Sender's port. These do not have to come from the same port the receiver is bound to. These are in host byte order, don't byteswap them! */
     Uint8 *buf;  /**< the payload of this datagram. */
     int buflen;  /**< the number of bytes available at `buf`. */
 } NET_Datagram;
