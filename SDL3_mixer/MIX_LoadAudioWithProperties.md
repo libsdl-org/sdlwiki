@@ -34,9 +34,7 @@ don't provide.
 
 SDL_PropertiesID are discussed in
 [SDL's documentation](https://wiki.libsdl.org/SDL3/CategoryProperties)
-.
-
-These are the supported properties:
+. These are the supported properties:
 
 - [`MIX_PROP_AUDIO_LOAD_IOSTREAM_POINTER`](MIX_PROP_AUDIO_LOAD_IOSTREAM_POINTER):
   a pointer to an SDL_IOStream to be used to load audio data. Required.
@@ -56,6 +54,12 @@ These are the supported properties:
   used to speed up loading _if the data definitely doesn't have these
   tags_. Some decoders will fail if these tags are present when this
   property is true.
+- [`MIX_PROP_AUDIO_LOAD_IGNORE_LOOPS_BOOLEAN`](MIX_PROP_AUDIO_LOAD_IGNORE_LOOPS_BOOLEAN):
+  true to ignore metadata in the audio data specifying loop points. This
+  will make a file decode from start to finish without looping, even if the
+  file specified it should have. This audio can still be looped at playback
+  time via [MIX_Track](MIX_Track) loop settings, regardless of this
+  setting. Default false.
 - [`MIX_PROP_AUDIO_DECODER_STRING`](MIX_PROP_AUDIO_DECODER_STRING): the
   name of the decoder to use for this data. Optional. If not specified,
   SDL_mixer will examine the data and choose the best decoder. These names
