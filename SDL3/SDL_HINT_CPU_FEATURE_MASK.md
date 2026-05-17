@@ -35,6 +35,7 @@ items:
 - "avx512f"
 - "arm-simd"
 - "neon"
+- "sve2"
 - "lsx"
 - "lasx"
 
