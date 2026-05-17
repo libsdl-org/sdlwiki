@@ -16,9 +16,9 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 The variable can be set to the following values:
 
+- "playback": Use the AVAudioSessionCategoryPlayback category. (default)
 - "ambient": Use the AVAudioSessionCategoryAmbient audio category, will be
-  muted by the phone mute switch (default)
-- "playback": Use the AVAudioSessionCategoryPlayback category.
+  muted by the phone mute switch.
 
 For more information, see Apple's documentation:
 https://developer.apple.com/library/content/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html

@@ -33,6 +33,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_AUDIO_DISK_OUTPUT_FILE](SDL_HINT_AUDIO_DISK_OUTPUT_FILE): Specify the output file when playing audio using the disk audio driver.
 - [SDL_AUDIO_DISK_TIMESCALE](SDL_HINT_AUDIO_DISK_TIMESCALE): A variable controlling the audio rate when using the disk audio driver.
 - [SDL_AUDIO_DRIVER](SDL_HINT_AUDIO_DRIVER): A variable that specifies an audio backend to use.
+- [SDL_AUDIO_DUCK_OTHERS](SDL_HINT_AUDIO_DUCK_OTHERS): Specify whether this audio stream should duck other audio.
 - [SDL_AUDIO_DUMMY_TIMESCALE](SDL_HINT_AUDIO_DUMMY_TIMESCALE): A variable controlling the audio rate when using the dummy audio driver.
 - [SDL_AUDIO_FORMAT](SDL_HINT_AUDIO_FORMAT): A variable controlling the default audio format.
 - [SDL_AUDIO_FREQUENCY](SDL_HINT_AUDIO_FREQUENCY): A variable controlling the default audio frequency.
