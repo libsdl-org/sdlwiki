@@ -419,6 +419,8 @@ bool SDL_SetGamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type, bool
 bool SDL_GamepadSensorEnabled(SDL_Gamepad *gamepad, SDL_SensorType type);                                                            // Query whether sensor data reporting is enabled for a gamepad.
 float SDL_GetGamepadSensorDataRate(SDL_Gamepad *gamepad, SDL_SensorType type);                                                       // Get the data rate (number of events per second) of a gamepad sensor.
 bool SDL_GetGamepadSensorData(SDL_Gamepad *gamepad, SDL_SensorType type, float *data, int num_values);                               // Get the current state of a gamepad sensor.
+bool SDL_GamepadHasCapSense(SDL_Gamepad *gamepad, SDL_GamepadCapSenseType type);                                                     // Return whether a gamepad has a particular capsense.
+bool SDL_GetGamepadCapSense(SDL_Gamepad *gamepad, SDL_GamepadCapSenseType type);                                                     // Get the current state of a capsense on a gamepad.
 bool SDL_RumbleGamepad(SDL_Gamepad *gamepad, Uint16 low_frequency_rumble, Uint16 high_frequency_rumble, Uint32 duration_ms);         // Start a rumble effect on a gamepad.
 bool SDL_RumbleGamepadTriggers(SDL_Gamepad *gamepad, Uint16 left_rumble, Uint16 right_rumble, Uint32 duration_ms);                   // Start a rumble effect in the gamepad's triggers.
 bool SDL_SetGamepadLED(SDL_Gamepad *gamepad, Uint8 red, Uint8 green, Uint8 blue);                                                    // Update a gamepad's LED color.

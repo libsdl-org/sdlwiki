@@ -35,6 +35,7 @@ typedef union SDL_Event
     SDL_GamepadButtonEvent gbutton;         /**< Gamepad button event data */
     SDL_GamepadTouchpadEvent gtouchpad;     /**< Gamepad touchpad event data */
     SDL_GamepadSensorEvent gsensor;         /**< Gamepad sensor event data */
+    SDL_GamepadCapSenseEvent gcapsense;     /**< Gamepad capsense event data */
     SDL_AudioDeviceEvent adevice;           /**< Audio device event data */
     SDL_CameraDeviceEvent cdevice;          /**< Camera device event data */
     SDL_SensorEvent sensor;                 /**< Sensor event data */

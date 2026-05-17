@@ -1,0 +1,40 @@
+# SDL_GamepadHasCapSense
+
+Return whether a gamepad has a particular capsense.
+
+## Header File
+
+Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamepad.h)
+
+## Syntax
+
+```c
+bool SDL_GamepadHasCapSense(SDL_Gamepad *gamepad, SDL_GamepadCapSenseType type);
+```
+
+## Function Parameters
+
+|                                                    |             |                                |
+| -------------------------------------------------- | ----------- | ------------------------------ |
+| [SDL_Gamepad](SDL_Gamepad) *                       | **gamepad** | the gamepad to query.          |
+| [SDL_GamepadCapSenseType](SDL_GamepadCapSenseType) | **type**    | the type of capsense to query. |
+
+## Return Value
+
+(bool) Returns true if the capsense exists, false otherwise.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
+
+## Version
+
+This function is available since SDL 3.6.0.
+
+## See Also
+
+- [SDL_GetGamepadCapSense](SDL_GetGamepadCapSense)
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGamepad](CategoryGamepad)
+
