@@ -162,11 +162,11 @@ On Emscripten:
 
 On visionOS:
 
-- [`SDL_PROP_WINDOW_CURVATURE_FLOAT`](SDL_PROP_WINDOW_CURVATURE_FLOAT): the
-  curvature of the window in curved mode on visionOS. This value is updated
-  dynamically when changed via the screen ornaments. This can be 0 (no
-  curve), or a specific curvature radius in millimeters. A common value for
-  a gaming monitor is 1000.
+- [`SDL_PROP_WINDOW_VISIONOS_SETTINGS_STRING`](SDL_PROP_WINDOW_VISIONOS_SETTINGS_STRING):
+  the current settings of the window in JSON format, or NULL if the window
+  has standard UIKit behavior.
+  [SDL_EVENT_WINDOW_SETTINGS_CHANGED](SDL_EVENT_WINDOW_SETTINGS_CHANGED) is
+  sent when this value changes.
 
 ## Thread Safety
 
