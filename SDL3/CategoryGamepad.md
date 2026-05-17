@@ -68,6 +68,7 @@ come in at some point after you've started processing events.
 - [SDL_GamepadEventsEnabled](SDL_GamepadEventsEnabled)
 - [SDL_GamepadHasAxis](SDL_GamepadHasAxis)
 - [SDL_GamepadHasButton](SDL_GamepadHasButton)
+- [SDL_GamepadHasCapSense](SDL_GamepadHasCapSense)
 - [SDL_GamepadHasSensor](SDL_GamepadHasSensor)
 - [SDL_GamepadSensorEnabled](SDL_GamepadSensorEnabled)
 - [SDL_GetGamepadAppleSFSymbolsNameForAxis](SDL_GetGamepadAppleSFSymbolsNameForAxis)
@@ -79,6 +80,7 @@ come in at some point after you've started processing events.
 - [SDL_GetGamepadButtonFromString](SDL_GetGamepadButtonFromString)
 - [SDL_GetGamepadButtonLabel](SDL_GetGamepadButtonLabel)
 - [SDL_GetGamepadButtonLabelForType](SDL_GetGamepadButtonLabelForType)
+- [SDL_GetGamepadCapSense](SDL_GetGamepadCapSense)
 - [SDL_GetGamepadConnectionState](SDL_GetGamepadConnectionState)
 - [SDL_GetGamepadFirmwareVersion](SDL_GetGamepadFirmwareVersion)
 - [SDL_GetGamepadFromID](SDL_GetGamepadFromID)
@@ -157,6 +159,7 @@ come in at some point after you've started processing events.
 - [SDL_GamepadBindingType](SDL_GamepadBindingType)
 - [SDL_GamepadButton](SDL_GamepadButton)
 - [SDL_GamepadButtonLabel](SDL_GamepadButtonLabel)
+- [SDL_GamepadCapSenseType](SDL_GamepadCapSenseType)
 - [SDL_GamepadType](SDL_GamepadType)
 <!-- END CATEGORY LIST -->
 

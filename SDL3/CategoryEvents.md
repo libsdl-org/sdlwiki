@@ -78,6 +78,7 @@ system.
 - [SDL_Event](SDL_Event)
 - [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)
 - [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)
+- [SDL_GamepadCapSenseEvent](SDL_GamepadCapSenseEvent)
 - [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_GamepadSensorEvent](SDL_GamepadSensorEvent)
 - [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)

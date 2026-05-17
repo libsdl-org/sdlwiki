@@ -34,6 +34,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)
 - [SDL_GamepadBinding](SDL_GamepadBinding)
 - [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)
+- [SDL_GamepadCapSenseEvent](SDL_GamepadCapSenseEvent)
 - [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_GamepadSensorEvent](SDL_GamepadSensorEvent)
 - [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)
