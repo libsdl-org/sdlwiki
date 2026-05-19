@@ -10,7 +10,7 @@ Defined in [<SDL3_net/SDL_net.h>](https://github.com/libsdl-org/SDL_net/blob/mai
 ## Syntax
 
 ```c
-#define SDL_NET_MICRO_VERSION   0
+#define SDL_NET_MICRO_VERSION   1
 ```
 
 ## Remarks
