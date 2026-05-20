@@ -35,12 +35,9 @@ BMP, GIF, JPEG, LBM, PCX, PNG, PNM, QOI, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and
 
 ## SDL_mixer
 
-SDL_mixer is a sample multi-channel audio mixer library. It supports any number
-of simultaneously playing channels of 16 bit stereo audio, plus a single
-channel of music, mixed by the popular FLAC, MikMod MOD, Timidity MIDI, Ogg
-Vorbis, and SMPEG MP3 libraries.
-
-SDL_mixer works with SDL3 but we intend to update the API significantly for a 3.0 release.
+SDL_mixer offers audio file decoding for several popular formats, such as WAV, MP3,
+and Ogg Vorbis, and provides sample-perfect mixing of multiple sources of audio, 
+with various effects, and other advanced features.
 
 - [Git Repository](https://github.com/libsdl-org/SDL_mixer)
 - [Wiki](https://wiki.libsdl.org/SDL3_mixer)
