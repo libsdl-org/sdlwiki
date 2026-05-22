@@ -38,6 +38,7 @@ NET_Address * NET_ResolveHostname(const char *host);                            
 NET_Status NET_WaitUntilResolved(NET_Address *address, Sint32 timeout);                                           // Block until an address is resolved.
 NET_Status NET_GetAddressStatus(NET_Address *address);                                                            // Check if an address is resolved, without blocking.
 const char * NET_GetAddressString(NET_Address *address);                                                          // Get a human-readable string from a resolved address.
+const void * NET_GetAddressBytes(NET_Address *address, int *num_bytes);                                           // Get the protocol-level bytes of a network address from a resolved address.
 NET_Address * NET_RefAddress(NET_Address *address);                                                               // Add a reference to an NET_Address.
 void NET_UnrefAddress(NET_Address *address);                                                                      // Drop a reference to an NET_Address.
 void NET_SimulateAddressResolutionLoss(int percent_loss);                                                         // Enable simulated address resolution failures.
