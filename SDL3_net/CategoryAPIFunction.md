@@ -14,6 +14,7 @@
 - [NET_DestroyServer](NET_DestroyServer)
 - [NET_DestroyStreamSocket](NET_DestroyStreamSocket)
 - [NET_FreeLocalAddresses](NET_FreeLocalAddresses)
+- [NET_GetAddressBytes](NET_GetAddressBytes)
 - [NET_GetAddressStatus](NET_GetAddressStatus)
 - [NET_GetAddressString](NET_GetAddressString)
 - [NET_GetConnectionStatus](NET_GetConnectionStatus)

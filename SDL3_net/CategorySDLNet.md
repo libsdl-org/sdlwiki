@@ -107,6 +107,7 @@ even if it's running wired directly to a gigabit fiber line. The functions:
 - [NET_DestroyServer](NET_DestroyServer)
 - [NET_DestroyStreamSocket](NET_DestroyStreamSocket)
 - [NET_FreeLocalAddresses](NET_FreeLocalAddresses)
+- [NET_GetAddressBytes](NET_GetAddressBytes)
 - [NET_GetAddressStatus](NET_GetAddressStatus)
 - [NET_GetAddressString](NET_GetAddressString)
 - [NET_GetConnectionStatus](NET_GetConnectionStatus)
