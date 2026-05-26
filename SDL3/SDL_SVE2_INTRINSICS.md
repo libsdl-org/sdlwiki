@@ -14,8 +14,12 @@ Defined in [<SDL3/SDL_intrin.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Remarks
 
-If this macro is defined, SDL will have already included `<arm_sve.h>` as
-appropriate.
+If this macro is defined, `<arm_sve.h>` (providing SVE intrinsics) will
+only be included if the target architecture supports SVE
+(`__ARM_FEATURE_SVE` feature macro). Some toolchains do not support
+`SDL_TARGETING("arch=armv8-a+sve2")`, so for best portability you need to
+write all SVE code in a separate translation unit and add appropriate
+compile flags.
 
 ## Version
 
