@@ -21,7 +21,8 @@ typedef struct SDL_AudioStream SDL_AudioStream;
 - It can handle incoming data in any variable size.
 - It can handle input/output format changes on the fly.
 - It can remap audio channels between inputs and outputs.
-- You push data as you have it, and pull it when you need it
+- You push data as you have it, and pull it when you need it; the stream
+  will buffer data as needed.
 - It can also function as a basic audio data queue even if you just have
   sound that needs to pass from one place to another.
 - You can hook callbacks up to them when more data is added or requested,

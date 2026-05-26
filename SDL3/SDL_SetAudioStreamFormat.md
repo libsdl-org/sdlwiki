@@ -46,6 +46,9 @@ dst_spec for playback devices). Attempts to make a change to this side will
 be ignored, but this will not report an error. The other side's format can
 be changed.
 
+`src_spec` and `dst_spec` may each be NULL; a NULL spec signals not to
+change the current format for that side of the stream.
+
 ## Thread Safety
 
 It is safe to call this function from any thread, as it holds a
