@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_net, a separate library from SDL.)
 # SDLNet_UDP_SendV
 
-Send a vector of packets to the the channels specified within the packet.
+Send a vector of packets to the channels specified within the packet.
 
 ## Header File
 

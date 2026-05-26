@@ -33,7 +33,7 @@ but SDL_net's UDP sockets also "bind" to a "channel" on top of that, with
 
 If `channel` is -1, then the first unbound channel that has not yet been
 bound to the maximum number of addresses will be bound with the given
-address as it's primary address.
+address as its primary address.
 
 If the channel is already bound, this new address will be added to the list
 of valid source addresses for packets arriving on the channel. If the

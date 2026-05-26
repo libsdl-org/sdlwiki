@@ -22,9 +22,10 @@ void SDLNet_UDP_Unbind(UDPsocket sock, int channel);
 
 ## Remarks
 
-Note that UDP sockets at the platform layer "bind" to a nework port number,
-but SDL_net's UDP sockets also "bind" to a "channel" on top of that, with
-[SDLNet_UDP_Bind](SDLNet_UDP_Bind)(). But the term is used for both.
+Note that UDP sockets at the platform layer "bind" to a network port
+number, but SDL_net's UDP sockets also "bind" to a "channel" on top of
+that, with [SDLNet_UDP_Bind](SDLNet_UDP_Bind)(). But the term is used for
+both.
 
 ## Version
 
