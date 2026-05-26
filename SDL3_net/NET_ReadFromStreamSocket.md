@@ -48,7 +48,7 @@ remote side. This function may return less data than requested, depending
 on what is available at the time, and also the app isn't required to read
 all available data at once.
 
-This call never blocks; if no new data isn't available at the time of the
+This call never blocks; if no new data is available at the time of the
 call, it returns 0 immediately. The caller can try again later.
 
 If the connection has failed (remote side dropped us, or one of a million
