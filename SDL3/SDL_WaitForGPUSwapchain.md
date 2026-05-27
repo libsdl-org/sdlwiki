@@ -1,6 +1,6 @@
 # SDL_WaitForGPUSwapchain
 
-Blocks the thread until a swapchain texture is available to be acquired.
+Blocks the thread until all presenting command buffers are finished executing.
 
 ## Header File
 
