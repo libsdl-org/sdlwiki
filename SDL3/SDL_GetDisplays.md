@@ -33,34 +33,6 @@ This function should only be called on the main thread.
 
 This function is available since SDL 3.2.0.
 
-## Code Examples
-
-```c
-// Example program
-// Use SDL3 to check how many displays there are
-
-#include <SDL3/SDL_log.h>
-#include <SDL3/SDL_main.h>
-#include <SDL3/SDL_video.h>
-
-int
-main(int argc, char** argv)
-{
-  if (!SDL_Init(SDL_INIT_VIDEO)) {
-    SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
-    return 0;
-  }
-
-  int num_displays;
-  SDL_DisplayID *displays = SDL_GetDisplays(&num_displays);
-  SDL_Log("Found %d display(s)", num_displays);
-
-  SDL_free(displays);
-
-  return 0;
-}
-```
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
