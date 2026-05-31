@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_stack_free(data)
+#define SDL_stack_free(data) ((void)(data))
 ```
 
 ## Macro Parameters
@@ -20,7 +20,8 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ## Remarks
 
-If SDL used alloca() to allocate this memory, this macro does nothing and
+If SDL used alloca() to allocate this memory, this macro does nothing
+(other than insert `((void)(data)` so the compiler sees an expression) and
 the allocated memory will be automatically released when the function that
 called [SDL_stack_alloc](SDL_stack_alloc)() returns. If SDL used
 [SDL_malloc](SDL_malloc)(), it will [SDL_free](SDL_free) the memory
