@@ -6,7 +6,7 @@ This is the SDL2 wiki. SDL3 is [[/SDL3|over here]]!
 
 While we will accept GitHub pull requests and may release critical fixes, we have no further planned releases of SDL 2.0.
 
-For new development, we recommend starting with [https://wiki.libsdl.org/SDL3/README-documentation-rules SDL 3.0]. For projects that need to continue using SDL 2.0, we recommend [https://github.com/libsdl-org/sdl2-compat sdl2-compat] which is both ABI (binary drop in) and API compatible.
+For new development, we recommend starting with [https://github.com/libsdl-org/SDL SDL 3.0]. For projects that need to continue using SDL 2.0, we recommend [https://github.com/libsdl-org/sdl2-compat sdl2-compat] which is both ABI (binary drop in) and API compatible.
 
 Many issues in SDL 2.0 have been resolved in sdl2-compat, and if you're still seeing an issue once you switch, please [https://github.com/libsdl-org/sdl2-compat/issues report it]! 
 
