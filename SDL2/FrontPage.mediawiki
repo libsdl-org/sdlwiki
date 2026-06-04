@@ -2,6 +2,14 @@
 
 This is the SDL2 wiki. SDL3 is [[/SDL3|over here]]!
 
+== Future Support ==
+
+While we will accept GitHub pull requests and may release critical fixes, we have no further planned releases of SDL 2.0.
+
+For new development, we recommend starting with [https://wiki.libsdl.org/SDL3/README-documentation-rules SDL 3.0]. For projects that need to continue using SDL 2.0, we recommend [https://github.com/libsdl-org/sdl2-compat sdl2-compat] which is both ABI (binary drop in) and API compatible.
+
+Many issues in SDL 2.0 have been resolved in sdl2-compat, and if you're still seeing an issue once you switch, please [https://github.com/libsdl-org/sdl2-compat/issues report it]! 
+
 == What is it? ==
 Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL/Direct3D/Metal/Vulkan. It is used by video playback software, emulators, and popular games including [http://valvesoftware.com Valve]'s award winning catalog and many [https://www.humblebundle.com Humble Bundle] games.
 
