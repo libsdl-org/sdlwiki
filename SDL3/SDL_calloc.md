@@ -33,7 +33,9 @@ If either of `nmemb` or `size` is 0, they will both be set to 1.
 
 If the allocation is successful, the returned pointer is guaranteed to be
 aligned to either the *fundamental alignment* (`alignof(max_align_t)` in
-C11 and later) or `2 * sizeof(void *)`, whichever is smaller.
+C11 and later) or `2 * sizeof(void *)`, whichever is smaller. Use
+[SDL_aligned_alloc_zero](SDL_aligned_alloc_zero)() if you need to allocate
+memory aligned to an alignment greater than this guarantee.
 
 ## Thread Safety
 

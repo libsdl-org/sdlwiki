@@ -1603,6 +1603,7 @@ void SDL_GetOriginalMemoryFunctions(SDL_malloc_func *malloc_func, SDL_calloc_fun
 void SDL_GetMemoryFunctions(SDL_malloc_func *malloc_func, SDL_calloc_func *calloc_func, SDL_realloc_func *realloc_func, SDL_free_func *free_func);          // Get the current set of SDL memory functions.
 bool SDL_SetMemoryFunctions(SDL_malloc_func malloc_func, SDL_calloc_func calloc_func, SDL_realloc_func realloc_func, SDL_free_func free_func);              // Replace SDL's memory allocation functions with a custom set.
 void * SDL_aligned_alloc(size_t alignment, size_t size);                                                                                                    // Allocate memory aligned to a specific alignment.
+void * SDL_aligned_alloc_zero(size_t alignment, size_t size);                                                                                               // Allocate zero-initialized memory aligned to a specific alignment.
 void SDL_aligned_free(void *mem);                                                                                                                           // Free memory allocated by SDL_aligned_alloc().
 int SDL_GetNumAllocations(void);                                                                                                                            // Get the number of outstanding (unfreed) allocations.
 SDL_Environment * SDL_GetEnvironment(void);                                                                                                                 // Get the process environment.
