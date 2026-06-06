@@ -27,6 +27,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_AddTimerNS](SDL_AddTimerNS)
 - [SDL_AddVulkanRenderSemaphores](SDL_AddVulkanRenderSemaphores)
 - [SDL_aligned_alloc](SDL_aligned_alloc)
+- [SDL_aligned_alloc_zero](SDL_aligned_alloc_zero)
 - [SDL_aligned_free](SDL_aligned_free)
 - [SDL_AppEvent](SDL_AppEvent)
 - [SDL_AppInit](SDL_AppInit)

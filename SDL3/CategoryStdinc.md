@@ -32,6 +32,7 @@ etc. It also offers a few better options, like
 - [SDL_acos](SDL_acos)
 - [SDL_acosf](SDL_acosf)
 - [SDL_aligned_alloc](SDL_aligned_alloc)
+- [SDL_aligned_alloc_zero](SDL_aligned_alloc_zero)
 - [SDL_aligned_free](SDL_aligned_free)
 - [SDL_asin](SDL_asin)
 - [SDL_asinf](SDL_asinf)
