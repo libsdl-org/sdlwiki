@@ -197,6 +197,9 @@ etc. It also offers a few better options, like
 - [SDL_wcsnstr](SDL_wcsnstr)
 - [SDL_wcsstr](SDL_wcsstr)
 - [SDL_wcstol](SDL_wcstol)
+- [SDL_wcstoll](SDL_wcstoll)
+- [SDL_wcstoul](SDL_wcstoul)
+- [SDL_wcstoull](SDL_wcstoull)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
