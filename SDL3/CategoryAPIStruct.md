@@ -104,6 +104,8 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_MouseDeviceEvent](SDL_MouseDeviceEvent)
 - [SDL_MouseMotionEvent](SDL_MouseMotionEvent)
 - [SDL_MouseWheelEvent](SDL_MouseWheelEvent)
+- [SDL_NotificationAction](SDL_NotificationAction)
+- [SDL_NotificationEvent](SDL_NotificationEvent)
 - [SDL_Palette](SDL_Palette)
 - [SDL_PathInfo](SDL_PathInfo)
 - [SDL_PenAxisEvent](SDL_PenAxisEvent)
