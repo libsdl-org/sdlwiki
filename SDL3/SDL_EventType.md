@@ -190,6 +190,9 @@ typedef enum SDL_EventType
     SDL_EVENT_CAMERA_DEVICE_APPROVED,        /**< A camera device has been approved for use by the user. */
     SDL_EVENT_CAMERA_DEVICE_DENIED,          /**< A camera device has been denied for use by the user. */
 
+    /* Notification events */
+    SDL_EVENT_NOTIFICATION_ACTION_INVOKED = 0x1500, /**< A user response to a system notification was received. */
+
     /* Render events */
     SDL_EVENT_RENDER_TARGETS_RESET = 0x2000, /**< The render targets have been reset and their contents need to be updated */
     SDL_EVENT_RENDER_DEVICE_RESET, /**< The device has been reset and all textures need to be recreated */

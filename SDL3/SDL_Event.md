@@ -51,6 +51,7 @@ typedef union SDL_Event
     SDL_RenderEvent render;                 /**< Render event data */
     SDL_DropEvent drop;                     /**< Drag and drop event data */
     SDL_ClipboardEvent clipboard;           /**< Clipboard event data */
+    SDL_NotificationEvent notification;     /**< Notification event data */
 
     /* This is necessary for ABI compatibility between Visual C++ and GCC.
        Visual C++ will respect the push pack pragma and use 52 bytes (size of
