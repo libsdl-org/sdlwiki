@@ -25,7 +25,7 @@ reflect any user settings to allow or deny notifications.
 
 ## Version
 
-This function is available since SDL 3.6.0
+This function is available since SDL 3.6.0.
 
 ## See Also
 
