@@ -12,9 +12,9 @@ Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/mai
 ```c
 typedef struct TTF_GPUAtlasDrawSequence
 {
-    SDL_GPUTexture *atlas_texture;          /**< Texture atlas that stores the glyphs */
+    SDL_GPUTexture *atlas_texture;          /**< Texture atlas that stores the glyphs, or NULL for solid fill */
     SDL_FPoint *xy;                         /**< An array of vertex positions */
-    SDL_FPoint *uv;                         /**< An array of normalized texture coordinates for each vertex */
+    SDL_FPoint *uv;                         /**< An array of normalized texture coordinates for each vertex, or NULL for solid fill */
     int num_vertices;                       /**< Number of vertices */
     int *indices;                           /**< An array of indices into the 'vertices' arrays */
     int num_indices;                        /**< Number of indices */
