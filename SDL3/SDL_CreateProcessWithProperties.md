@@ -71,7 +71,10 @@ These are the supported properties:
   true if the process should run in the background. In this case the
   default input and output is
   [`SDL_PROCESS_STDIO_NULL`](SDL_PROCESS_STDIO_NULL) and the exitcode of
-  the process is not available, and will always be 0.
+  the process is not available, and will always be 0. This is not required
+  to launch a program asynchronously, this is for detaching a child process
+  from its parent completely (a so-called "double fork" on Unix). Created
+  processes run asynchronously by default, regardless of this property.
 - [`SDL_PROP_PROCESS_CREATE_CMDLINE_STRING`](SDL_PROP_PROCESS_CREATE_CMDLINE_STRING):
   a string containing the program to run and any parameters. This string is
   passed directly to `CreateProcess` on Windows, and does nothing on other
