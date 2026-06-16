@@ -20,7 +20,10 @@ const char * SDL_GetGPUDriver(int index);
 
 ## Return Value
 
-(const char *) Returns the name of the GPU driver with the given **index**.
+(const char *) Returns the name of the GPU driver with the given **index** or
+NULL when the index is out of bounds; call
+[SDL_GetError](SDL_GetError)() for more information.
+
 
 ## Remarks
 
