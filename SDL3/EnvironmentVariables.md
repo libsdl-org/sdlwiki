@@ -50,6 +50,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_EMSCRIPTEN_CANVAS_SELECTOR](SDL_HINT_EMSCRIPTEN_CANVAS_SELECTOR): Specify the CSS selector used for the "default" window/canvas.
 - [SDL_EMSCRIPTEN_KEYBOARD_ELEMENT](SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT): Override the binding element for keyboard inputs for Emscripten builds.
 - [SDL_ENABLE_SCREEN_KEYBOARD](SDL_HINT_ENABLE_SCREEN_KEYBOARD): A variable that controls whether the on-screen keyboard should be shown when text input is active.
+- [SDL_ENABLE_STEAM_SCREEN_KEYBOARD](SDL_HINT_ENABLE_STEAM_SCREEN_KEYBOARD): A variable that controls whether the Steam on-screen keyboard should be shown when text input is active.
 - [SDL_EVDEV_DEVICES](SDL_HINT_EVDEV_DEVICES): A variable containing a list of evdev devices to use if udev is not available.
 - [SDL_EVENT_LOGGING](SDL_HINT_EVENT_LOGGING): A variable controlling verbosity of the logging of SDL events pushed onto the internal queue.
 - [SDL_FILE_DIALOG_DRIVER](SDL_HINT_FILE_DIALOG_DRIVER): A variable that specifies a dialog backend to use.
