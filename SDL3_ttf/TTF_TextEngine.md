@@ -19,7 +19,7 @@ This is a public interface that can be used by applications and libraries
 to perform customize rendering with text objects. See
 <SDL3_ttf/SDL_textengine.h> for details.
 
-There are three text engines provided with the library:
+There are four text engines provided with the library:
 
 - Drawing to an SDL_Surface, created with
   [TTF_CreateSurfaceTextEngine](TTF_CreateSurfaceTextEngine)()
@@ -27,6 +27,8 @@ There are three text engines provided with the library:
   [TTF_CreateRendererTextEngine](TTF_CreateRendererTextEngine)()
 - Drawing with the SDL GPU API, created with
   [TTF_CreateGPUTextEngine](TTF_CreateGPUTextEngine)()
+- Drawing with OpenGL, created with
+  [TTF_CreateGLTextEngine](TTF_CreateGLTextEngine)()
 
 ## Version
 
