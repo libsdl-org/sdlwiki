@@ -6,6 +6,7 @@
 <!-- BEGIN CATEGORY LIST -->
 - [TTF_CopyOperationFlags](TTF_CopyOperationFlags)
 - [TTF_Direction](TTF_Direction)
+- [TTF_GLTextEngineWinding](TTF_GLTextEngineWinding)
 - [TTF_GPUTextEngineWinding](TTF_GPUTextEngineWinding)
 - [TTF_HintingFlags](TTF_HintingFlags)
 - [TTF_HorizontalAlignment](TTF_HorizontalAlignment)
