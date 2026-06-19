@@ -22,7 +22,12 @@ revision of SDL.
 There are other strings that have special meaning. If set to "waitevent",
 [SDL_AppIterate](SDL_AppIterate) will not be called until new event(s) have
 arrived (and been processed by [SDL_AppEvent](SDL_AppEvent)). This can be
-useful for apps that are completely idle except in response to input.
+useful for apps that are completely idle except in response to input. As of
+SDL 3.6.0, SDL will allow a single call to [SDL_AppIterate](SDL_AppIterate)
+to proceed without an event immediately after this hint is set to
+"waitevent", so apps can have a minimum of activity, perhaps to render an
+initial image to a window before the user has otherwise interacted with the
+app.
 
 On some platforms, or if you are using [SDL_main](SDL_main) instead of
 [SDL_AppIterate](SDL_AppIterate), this hint is ignored. When the hint can
