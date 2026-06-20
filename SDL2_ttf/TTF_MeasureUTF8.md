@@ -34,6 +34,8 @@ This reports the number of characters that can be rendered before reaching
 
 This does not need to render the string to do this calculation.
 
+`measure_width` should be non-zero.
+
 ## Version
 
 This function is available since SDL_ttf 2.0.18.
