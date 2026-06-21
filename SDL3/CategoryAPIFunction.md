@@ -754,6 +754,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_isspace](SDL_isspace)
 - [SDL_IsTablet](SDL_IsTablet)
 - [SDL_IsTV](SDL_IsTV)
+- [SDL_IsUbuntuTouch](SDL_IsUbuntuTouch)
 - [SDL_isupper](SDL_isupper)
 - [SDL_isxdigit](SDL_isxdigit)
 - [SDL_itoa](SDL_itoa)

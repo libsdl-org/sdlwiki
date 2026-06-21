@@ -33,6 +33,7 @@ polish to an app, or solving problems that only affect one target.
 - [SDL_IsPhone](SDL_IsPhone)
 - [SDL_IsTablet](SDL_IsTablet)
 - [SDL_IsTV](SDL_IsTV)
+- [SDL_IsUbuntuTouch](SDL_IsUbuntuTouch)
 - [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)
 - [SDL_OnApplicationDidEnterBackground](SDL_OnApplicationDidEnterBackground)
 - [SDL_OnApplicationDidEnterForeground](SDL_OnApplicationDidEnterForeground)
@@ -83,6 +84,9 @@ polish to an app, or solving problems that only affect one target.
 <!-- BEGIN CATEGORY LIST: CategorySystem, CategoryAPIMacro -->
 - [SDL_ANDROID_EXTERNAL_STORAGE_READ](SDL_ANDROID_EXTERNAL_STORAGE_READ)
 - [SDL_ANDROID_EXTERNAL_STORAGE_WRITE](SDL_ANDROID_EXTERNAL_STORAGE_WRITE)
+- [SDL_PROP_GLOBAL_SYSTEM_UBUNTU_TOUCH_APP_VERSION_STRING](SDL_PROP_GLOBAL_SYSTEM_UBUNTU_TOUCH_APP_VERSION_STRING)
+- [SDL_PROP_GLOBAL_SYSTEM_UBUNTU_TOUCH_APPID_STRING](SDL_PROP_GLOBAL_SYSTEM_UBUNTU_TOUCH_APPID_STRING)
+- [SDL_PROP_GLOBAL_SYSTEM_UBUNTU_TOUCH_HOOK_STRING](SDL_PROP_GLOBAL_SYSTEM_UBUNTU_TOUCH_HOOK_STRING)
 <!-- END CATEGORY LIST -->
 
 
