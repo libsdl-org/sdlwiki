@@ -322,6 +322,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetDefaultLogOutputFunction](SDL_GetDefaultLogOutputFunction)
 - [SDL_GetDefaultTextureScaleMode](SDL_GetDefaultTextureScaleMode)
 - [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
+- [SDL_GetDeviceFormFactor](SDL_GetDeviceFormFactor)
+- [SDL_GetDeviceFormFactorName](SDL_GetDeviceFormFactorName)
 - [SDL_GetDirect3D9AdapterIndex](SDL_GetDirect3D9AdapterIndex)
 - [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
 - [SDL_GetDisplayContentScale](SDL_GetDisplayContentScale)

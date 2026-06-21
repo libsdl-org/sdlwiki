@@ -35,6 +35,7 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_FlipMode](SDL_FlipMode)
 - [SDL_Folder](SDL_Folder)
+- [SDL_FormFactor](SDL_FormFactor)
 - [SDL_GamepadAxis](SDL_GamepadAxis)
 - [SDL_GamepadBindingType](SDL_GamepadBindingType)
 - [SDL_GamepadButton](SDL_GamepadButton)
