@@ -1516,6 +1516,7 @@ void SDL_OnApplicationDidEnterForeground(void);                                 
 void SDL_OnApplicationDidChangeStatusBarOrientation(void);                                                                   // Let iOS apps with external event handling report onApplicationDidChangeStatusBarOrientation.
 bool SDL_GetGDKTaskQueue(XTaskQueueHandle *outTaskQueue);                                                                    // Gets a reference to the global async task queue handle for GDK, initializing if needed.
 bool SDL_GetGDKDefaultUser(XUserHandle *outUserHandle);                                                                      // Gets a reference to the default user handle for GDK.
+bool SDL_IsUbuntuTouch(void);                                                                                                // Detect whether the current platform is Ubuntu Touch.
 
 // XXX    XXX  XX   XXXXXX   XXXXXX
 // XXXX  XXXX  XX  XX       XX
