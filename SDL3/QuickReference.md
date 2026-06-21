@@ -1553,6 +1553,8 @@ bool SDL_SendAndroidMessage(Uint32 command, int param);                         
 bool SDL_IsPhone(void);                                                                                                      // Query if the current device is a phone.
 bool SDL_IsTablet(void);                                                                                                     // Query if the current device is a tablet.
 bool SDL_IsTV(void);                                                                                                         // Query if the current device is a TV.
+SDL_FormFactor SDL_GetDeviceFormFactor(void);                                                                                // Get the form factor of the current device.
+const char * SDL_GetDeviceFormFactorName(SDL_FormFactor form_factor);                                                        // Get a short name for the current device.
 SDL_Sandbox SDL_GetSandbox(void);                                                                                            // Get the application sandbox environment, if any.
 void SDL_OnApplicationWillTerminate(void);                                                                                   // Let iOS apps with external event handling report onApplicationWillTerminate.
 void SDL_OnApplicationDidReceiveMemoryWarning(void);                                                                         // Let iOS apps with external event handling report onApplicationDidReceiveMemoryWarning.
