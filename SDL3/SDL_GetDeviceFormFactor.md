@@ -30,7 +30,7 @@ and tablets.
 
 ## Version
 
-This function is available since SDL 3.4.0.
+This function is available since SDL 3.6.0.
 
 ## See Also
 
