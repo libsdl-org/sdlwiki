@@ -28,6 +28,10 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.6.0.
 
+## See Also
+
+- [SDL_IsTablet](SDL_IsTablet)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 
