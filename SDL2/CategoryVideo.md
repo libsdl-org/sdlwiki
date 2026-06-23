@@ -132,8 +132,6 @@ Header file for SDL video functions.
 - [SDL_DisplayOrientation](SDL_DisplayOrientation)
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_GLattr](SDL_GLattr)
-- [SDL_GLcontextFlag](SDL_GLcontextFlag)
-- [SDL_GLprofile](SDL_GLprofile)
 - [SDL_HitTestResult](SDL_HitTestResult)
 - [SDL_WindowEventID](SDL_WindowEventID)
 - [SDL_WindowFlags](SDL_WindowFlags)

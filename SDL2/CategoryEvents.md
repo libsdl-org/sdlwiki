@@ -49,7 +49,6 @@ Include file for SDL event handling.
 - [SDL_DollarGestureEvent](SDL_DollarGestureEvent)
 - [SDL_DropEvent](SDL_DropEvent)
 - [SDL_Event](SDL_Event)
-- [SDL_Finger](SDL_Finger)
 - [SDL_JoyAxisEvent](SDL_JoyAxisEvent)
 - [SDL_JoyBallEvent](SDL_JoyBallEvent)
 - [SDL_JoyBatteryEvent](SDL_JoyBatteryEvent)

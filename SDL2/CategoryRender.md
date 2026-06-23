@@ -128,7 +128,6 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_RendererInfo](SDL_RendererInfo)
 - [SDL_Texture](SDL_Texture)
 - [SDL_Vertex](SDL_Vertex)
-- [SDL_VertexSolid](SDL_VertexSolid)
 <!-- END CATEGORY LIST -->
 
 ## Enums
