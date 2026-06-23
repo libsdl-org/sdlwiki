@@ -25,7 +25,7 @@ code (so Canada would be "CA").
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This struct is available since SDL 2.0.14.
 
 ## See Also
 
