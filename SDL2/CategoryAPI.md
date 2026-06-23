@@ -888,7 +888,6 @@
 - [SDL_BlendFactor](SDL_BlendFactor)
 - [SDL_BlendMode](SDL_BlendMode)
 - [SDL_BlendOperation](SDL_BlendOperation)
-- [SDL_bool](SDL_bool)
 - [SDL_DisplayEventID](SDL_DisplayEventID)
 - [SDL_DisplayOrientation](SDL_DisplayOrientation)
 - [SDL_EventType](SDL_EventType)
