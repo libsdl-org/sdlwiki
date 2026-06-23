@@ -1,0 +1,81 @@
+# FAQ: Using SDL
+
+
+## How do I choose a specific video driver?
+
+You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver you want to use. The drivers available depend on the platform and SDL compile-time options. Here is a partial list for some platforms:
+
+### Linux
+
+| _Name_   | _Description_                                            | _1.2_ | _2.0_ |
+| -------- | -------------------------------------------------------- | ----- | ----- |
+| x11      | (default) Use the X11 windowing system                   | yes   | yes   |
+| dga      | Use XFree86 DGA 2.0 for fullscreen hardware acceleration | yes   | no    |
+| fbcon    | Use the framebuffer console                              | yes   | no    |
+| directfb | Use the DirectFB API                                     | yes   | yes   |
+| svgalib  | Use the SVGAlib API                                      | yes   | no    |
+| ggi      | Use the General Graphics Interface API                   | yes   | no    |
+| aalib    | Use the Ascii Art library                                | yes   | no    |
+| wayland  | Use Wayland protocol for hardware acceleration           | no    | yes   |
+| kmsdrm   | Use Direct Rendering Manager / Kernel Mode Setting       | no    | yes   |
+
+### Win32
+
+| _Name_   | _Description_                                            | _1.2_ | _2.0_ |
+| -------- | -------------------------------------------------------- | ----- | ----- |
+| directx  | (default) Use the DirectDraw API                         | yes   | no    |
+| windib   | Use the standard Win32 GDI                               | yes   | no    |
+| windows  | Use SDL Windows video driver                             | no    | yes   |
+
+
+## How do I choose a specific audio driver?
+
+You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver you want to use. The drivers available depend on the platform and SDL compile-time options. Here is a partial list for some platforms:
+
+### Linux
+
+| _Name_     | _Description_                                            | _1.2_ | _2.0_ |
+| ---------- | -------------------------------------------------------- | ----- | ----- |
+| pulseaudio | (default) Use PulseAudio                                 | no    | yes   |
+| alsa       | Use ALSA PCM audio                                       | yes   | yes   |
+| artsc      | Connect to the ARTS audio daemon                         | yes   | no    |
+| arts       | Use Analog RealTime Synthesizer                          | yes   | yes   |
+| esd        | Connect to the ESound audio daemon                       | yes   | yes   |
+| jack       | Use Jack Audio Connection Kit                            | no    | yes   |
+| pipewire   | Use PipeWire                                             | no    | yes   |
+| disk       | Write audio output to sdlaudio.raw file                  | yes   | yes   |
+| dsp        | Use the OSS API by opening /dev/dsp                      | yes   | yes   |
+| dma        | Use the OSS API to perform DMA access on /dev/dsp        | yes   | no    |
+
+
+### Win32
+| _Name_      | _Description_                                            | _1.2_ | _2.0_ |
+| ----------- | -------------------------------------------------------- | ----- | ----- |
+| dsound      | (default) Use the DirectSound API                        | yes   | no    |
+| waveout     | Use the Win32 MultiMedia API                             | yes   | no    |
+| directsound | Use DirectSound                                          | no    | yes   |
+| winmm       | Use Windows Waveform Audio                               | no    | yes   |
+
+## What environment variables are used by SDL?
+
+A complete list is available in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h).
+These can be set programmatically with SDL_SetHint, or specified as enviroment
+variables by the end-user.
+
+
+## Why does SDL disable my screensaver by default?
+
+Many applications using SDL are games or screensavers or media players where the user is either watching something for an extended period of time or using joystick input which generally does not prevent the screensaver from kicking on.
+
+You can disable this behavior by setting the environment variable:
+
+```bash
+SDL_VIDEO_ALLOW_SCREENSAVER=1
+```
+
+This can be set globally for the user or on a per-application basis in code.
+
+In SDL 2.0.2 this can also be changed by setting the hint [SDL_HINT_VIDEO_ALLOW_SCREENSAVER](SDL_HINT_VIDEO_ALLOW_SCREENSAVER).
+
+Additionally, SDL 2.0 provides the function [SDL_EnableScreenSaver](SDL_EnableScreenSaver)().
+
