@@ -30,6 +30,7 @@ A lot of things you're already using in SDL2 are easier, more consistent, and ju
 - [Customizable virtual keyboards](SDL_StartTextInputWithProperties) on iOS and Android.
 - [Unicode-friendly case-insensitive string comparison](SDL_strcasecmp).
 - HiDPI support is dramatically improved over SDL2.
+- [Notification API](CategoryNotification): Send popup notices to the system with app-specific info.
 - [System Tray API](CategoryTray): Create custom system tray/notification area icons and menus.
 - [App metadata API](SDL_SetAppMetadata) for letting SDL report things about your app correctly (like in the About dialog on macOS, etc).
 - [Read/write thread locks](SDL_CreateRWLock), to let multiple threads access rarely-changing data in parallel.
