@@ -1,4 +1,4 @@
-# CategoryNotifications
+# CategoryNotification
 
 Notifications are temporary popup dialogs that passively present
 information to the user, or prompt user action. They are managed and

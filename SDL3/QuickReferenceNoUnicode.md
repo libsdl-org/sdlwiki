@@ -1096,6 +1096,15 @@ SDL_Surface * SDL_AcquireCameraFrame(SDL_Camera *camera, Uint64 *timestampNS);  
 void SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);                    // Release a frame of video acquired from a camera.
 void SDL_CloseCamera(SDL_Camera *camera);                                               // Use this function to shut down camera processing and close the camera device.
 
+// XXX    XXX  XXXXXXX   XXXXXX   XXXXXX   XXXXX    XXXXXX   XXXXXXX  XXXXXX    XXXXXX   XX   XX
+// XXXX  XXXX  XX       XX       XX       XX   XX  XX        XX       XX   XX  XX    XX   XX XX
+// XX XXXX XX  XXXXX    XXXXXXX  XXXXXXX  XXXXXXX  XX   XXX  XXXXX    XXXXXX   XX    XX    XXX
+// XX  XX  XX  XX            XX       XX  XX   XX  XX    XX  XX       XX   XX  XX    XX   XX XX
+// XX      XX  XXXXXXX  XXXXXX   XXXXXX   XX   XX   XXXXXX   XXXXXXX  XXXXXX    XXXXXX   XX   XX
+
+bool SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);                                      // Create a modal message box.
+bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const char *message, SDL_Window *window);  // Display a simple modal message box.
+
 //  XXXXXX  XX       XX  XXXXXX   XXXXXX    XXXXXX    XXXXX   XXXXXX   XXXXXX
 // XX       XX       XX  XX   XX  XX   XX  XX    XX  XX   XX  XX   XX  XX   XX
 // XX       XX       XX  XXXXXX   XXXXXX   XX    XX  XXXXXXX  XXXXXX   XX   XX
@@ -1156,14 +1165,16 @@ SDL_TrayEntry * SDL_GetTrayMenuParentEntry(SDL_TrayMenu *menu);                 
 SDL_Tray * SDL_GetTrayMenuParentTray(SDL_TrayMenu *menu);                                                         // Gets the tray for which this menu is the first-level menu, if the current menu isn't a submenu.
 void SDL_UpdateTrays(void);                                                                                       // Update the trays.
 
-// XXX    XXX  XXXXXXX   XXXXXX   XXXXXX   XXXXX    XXXXXX   XXXXXXX  XXXXXX    XXXXXX   XX   XX
-// XXXX  XXXX  XX       XX       XX       XX   XX  XX        XX       XX   XX  XX    XX   XX XX
-// XX XXXX XX  XXXXX    XXXXXXX  XXXXXXX  XXXXXXX  XX   XXX  XXXXX    XXXXXX   XX    XX    XXX
-// XX  XX  XX  XX            XX       XX  XX   XX  XX    XX  XX       XX   XX  XX    XX   XX XX
-// XX      XX  XXXXXXX  XXXXXX   XXXXXX   XX   XX   XXXXXX   XXXXXXX  XXXXXX    XXXXXX   XX   XX
+// XXX    XX   XXXXXX   XXXXXXXX  XX  XXXXXXX  XX   XXXXXX   XXXXX   XXXXXXXX  XX   XXXXXX   XXX    XX
+// XXXX   XX  XX    XX     XX     XX  XX       XX  XX       XX   XX     XX     XX  XX    XX  XXXX   XX
+// XX XX  XX  XX    XX     XX     XX  XXXXX    XX  XX       XXXXXXX     XX     XX  XX    XX  XX XX  XX
+// XX  XX XX  XX    XX     XX     XX  XX       XX  XX       XX   XX     XX     XX  XX    XX  XX  XX XX
+// XX   XXXX   XXXXXX      XX     XX  XX       XX   XXXXXX  XX   XX     XX     XX   XXXXXX   XX   XXXX
 
-bool SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);                                      // Create a modal message box.
-bool SDL_ShowSimpleMessageBox(SDL_MessageBoxFlags flags, const char *title, const char *message, SDL_Window *window);  // Display a simple modal message box.
+bool SDL_RequestNotificationPermission(void);                                                                                                           // Requests permission from the system to display notifications.
+SDL_NotificationID SDL_ShowNotificationWithProperties(SDL_PropertiesID props);                                                                          // Show a system notification.
+SDL_NotificationID SDL_ShowNotification(const char *title, const char *message, SDL_Surface *image, SDL_NotificationAction *actions, int num_actions);  // Show a system notification with normal priority.
+bool SDL_RemoveNotification(SDL_NotificationID notification);                                                                                           // Remove a notification.
 
 //  XXXXXX   XXXXXX   XX    XX
 // XX        XX   XX  XX    XX
