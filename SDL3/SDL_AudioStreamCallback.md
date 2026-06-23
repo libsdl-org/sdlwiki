@@ -42,6 +42,9 @@ adding/reading data on demand, and the app will often put/get data as
 appropriate, but the system goes on with the data currently available to it
 if this callback does nothing.
 
+Do not call [SDL_DestroyAudioStream](SDL_DestroyAudioStream)() on `stream`
+during this callback.
+
 ## Thread Safety
 
 This callbacks may run from any thread, so if you need to protect shared
