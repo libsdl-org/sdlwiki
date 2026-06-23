@@ -40,3 +40,20 @@ If you're using a memory leak tool, like AddressSanitizer or Valgrind, before re
 - Are you _sure_ this is an SDL leak? If the last thing in the callstack is not SDL, it's very likely it's a leak in a system library or graphics driver that SDL doesn't control. It's possible SDL is misusing a library, but almost always this is either a bug or an intentional one-time allocation by that library. In particular D-Bus, Mesa, and NVIDIA drivers are known to have these. Please report these leaks to that library's maintainer instead of SDL, since we do not have the power to fix their leaks.
 - If the leak is in SDL, it's often easy to identify where it's leaking and where it should be cleaned up. Please submit a PR with a fix if possible. Not only will this make it easy for us to confirm and accept your change, often in the process you may discover you're just not calling the code that cleans up the memory.
 - If you're not able to tell where the leak should be cleaned up, please include symbols in your leak stack traces so we can see clearly what is happening.
+
+## Please add a feature to the GPU API!
+
+Before raising an issue to request a feature, please make sure it hasn't been requested already. 
+
+Here are some commonly requested features that we have chosen not to support at this time.
+
+Bindless:
+Supporting bindless rendering would require large modifications to all GPU backends and shader tooling, and supporting bindless in a way that wouldn't cause a confusing mess across the rest of the GPU API would be a significant challenge and time investment. The only technique that absolutely requires bindless is hardware raytracing, which is also unlikely to be supported by the GPU API any time soon. Furthermore, the tooling for debugging bindless renderers is quite immature at this time.
+
+Binding resources to make them available to the shader was the only way to write renderers for 20+ years and even today only a minority of shipped games use this feature. 
+
+It is far more likely that we will just design SDL4 around bindless rather than graft it onto the SDL3 version of the API.
+
+Tessellation Shaders:
+Tessellation shaders are currently being made obsolete by mesh shaders. They are known to cause performance issues on specific platforms. Once a large majority of hardware supports
+mesh shaders, we will just add support for those instead. 
