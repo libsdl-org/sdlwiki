@@ -67,6 +67,7 @@
 - [Mix_OpenAudio](Mix_OpenAudio)
 - [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
 - [Mix_Pause](Mix_Pause)
+- [Mix_PauseAudio](Mix_PauseAudio)
 - [Mix_Paused](Mix_Paused)
 - [Mix_PausedMusic](Mix_PausedMusic)
 - [Mix_PauseMusic](Mix_PauseMusic)
