@@ -23,9 +23,9 @@ best compatability.
 On *nix platforms, this can also be the name of a system icon, as specified
 by the Icon Naming Specification.
 
-Can be set before calling [SDL_ShowNotification](SDL_ShowNotification)() or
-[SDL_ShowSimpleNotification](SDL_ShowSimpleNotification)() for the first
-time.
+Can be set before calling
+[SDL_ShowNotificationWithProperties](SDL_ShowNotificationWithProperties)()
+or [SDL_ShowNotification](SDL_ShowNotification)() for the first time.
 
 ## Version
 
