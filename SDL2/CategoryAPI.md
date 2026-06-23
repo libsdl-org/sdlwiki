@@ -894,6 +894,7 @@
 - [SDL_EventType](SDL_EventType)
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_GameControllerAxis](SDL_GameControllerAxis)
+- [SDL_GameControllerBindType](SDL_GameControllerBindType)
 - [SDL_GameControllerButton](SDL_GameControllerButton)
 - [SDL_GLattr](SDL_GLattr)
 - [SDL_GLcontextFlag](SDL_GLcontextFlag)
