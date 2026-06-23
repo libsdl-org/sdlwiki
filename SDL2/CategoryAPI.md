@@ -843,7 +843,6 @@
 - [SDL_JoyHatEvent](SDL_JoyHatEvent)
 - [SDL_KeyboardEvent](SDL_KeyboardEvent)
 - [SDL_Keysym](SDL_Keysym)
-- [SDL_Locale](SDL_Locale)
 - [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData)
 - [SDL_MessageBoxColor](SDL_MessageBoxColor)
 - [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)
