@@ -109,17 +109,18 @@
 
 ## Additional Functionality
 
-| **View information and functions related to...**     | **View the header**                                                                           |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [Shared Object/DLL Management](CategorySharedObject) | [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h)         |
-| [Process Control](CategoryProcess)                   | [SDL_process.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_process.h)       |
-| [Power Management Status](CategoryPower)             | [SDL_power.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h)           |
-| [Message Boxes](CategoryMessagebox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h) |
-| [File Dialogs](CategoryDialog)                       | [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)         |
-| [System Tray](CategoryTray)                          | [SDL_tray.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_tray.h)             |
-| [Locale Info](CategoryLocale)                        | [SDL_locale.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_locale.h)         |
-| [Platform-specific Functionality](CategorySystem)    | [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)         |
-| [Standard Library Functionality](CategoryStdinc)     | [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)         |
-| [GUIDs](CategoryGUID)                                | [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)             |
-| [Miscellaneous](CategoryMisc)                        | [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_misc.h)             |
+| **View information and functions related to...**     | **View the header**                                                                               |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Shared Object/DLL Management](CategorySharedObject) | [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h)             |
+| [Process Control](CategoryProcess)                   | [SDL_process.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_process.h)           |
+| [Power Management Status](CategoryPower)             | [SDL_power.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h)               |
+| [Message Boxes](CategoryMessagebox)                  | [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h)     |
+| [File Dialogs](CategoryDialog)                       | [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)             |
+| [System Tray](CategoryTray)                          | [SDL_tray.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_tray.h)                 |
+| [Notifications](CategoryNotification)                | [SDL_notification.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_notification.h) |
+| [Locale Info](CategoryLocale)                        | [SDL_locale.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_locale.h)             |
+| [Platform-specific Functionality](CategorySystem)    | [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)             |
+| [Standard Library Functionality](CategoryStdinc)     | [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)             |
+| [GUIDs](CategoryGUID)                                | [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)                 |
+| [Miscellaneous](CategoryMisc)                        | [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_misc.h)                 |
 
