@@ -1,5 +1,10 @@
 # SDL 1.2 to 2.0 Migration Guide
 
+## Are you sure you still want to migrate to SDL2?
+
+It might be worthwhile to move directly to SDL3 at this point, in which case
+you can look at [the SDL 1.2 to SDL3 migration guide](/SDL3/SDL12MigrationGuide)
+instead.
 
 ## Translations
 

@@ -1,13 +1,5 @@
 # SDL 1.2 to 3.0 Migration Guide
 
-## Out of date
-
-Please note that this document was written before SDL3's API was completely
-finalized, and is a little bit out of date. Until we update this information,
-it'll still get you most of the way there, but don't be surprised if some of
-the functions mentioned aren't exactly accurate.
-
-
 ## Introduction
 
 SDL3 is finally here! If you hesitated to migrate your SDL 1.2 app to SDL2, now is the time to give SDL3 a try instead!
@@ -73,13 +65,17 @@ The setup looks like this.
 
 `SDL_SetVideoMode()` becomes [SDL_CreateWindow](SDL_CreateWindow)(), as we discussed before. But what do we put for the resolution? If your game was hardcoded to 640x480, for example, you probably were running into monitors that couldn't do that fullscreen resolution at this point, and in windowed mode, your game probably looked like an animated postage stamp on really high-end monitors. There's a better solution in SDL3.
 
-We don't call `SDL_ListModes()` anymore. There's an equivalent in SDL3 (call [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)), but instead we're going to use a new feature called "fullscreen desktop," which tells SDL "give me the whole screen and don't change the resolution." For our hypothetical 640x480 game, it might look like this:
+We don't call `SDL_ListModes()` anymore. There's an equivalent in SDL3 (call [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)), but instead we're going to make a fullscreen window at whatever resolution the desktop is currently using. This is less traumatic: other windows won't resize, desktop icons won't shuffle around, and you don't have to worry about restoring the screen resolution if the program crashes. Also, there's a good chance that the desktop was already set to an ideal mode for the display, so we might as well use it.
+
+The only real reasons _not_ to use the desktop display are that the resolution would be more pixels than the game intends to draw, and that we want a lower resolution to make those less pixels take up the whole display. But we're about to solve both those problems without changing the physical display resolution.
 
 ```c
-SDL_Window *sdlWindow = SDL_CreateWindow(title, 0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP);
+SDL_Window *sdlWindow = SDL_CreateWindow(title, 0, 0, SDL_WINDOW_FULLSCREEN);
 ```
 
-Notice how we didn't specify 640 or 480? Fullscreen desktop gives you the whole display and ignores any dimensions you specify. The game window should come up immediately, without waiting for the monitor to click into a new resolution, and we'll be using the GPU to scale to the desktop size, which tends to be faster and cleaner-looking than if an LCD is faking a lower resolution. Added bonus: none of your background windows are resizing themselves right now.
+Notice how we didn't specify 640 or 480? Fullscreen windows gives you the whole display at the current resolution and ignores any dimensions you specify. The game window should come up immediately, without waiting for the monitor to click into a new resolution, and we'll be using the GPU to scale to the desktop size, which tends to be faster and cleaner-looking than if an LCD is faking a lower resolution. Added bonus: none of your background windows are resizing themselves right now.
+
+Note that if you _really_ want to force the monitor to a lower resolution, you can, with [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)(). But consider carefully if this is actually a desirable action in modern times, even for low-res fullscreen games.
 
 Now we need a rendering context.
 
@@ -87,14 +83,14 @@ Now we need a rendering context.
 SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, NULL);
 ```
 
-A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, Metal, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can call `SDL_SetRenderVSync` after creating the renderer. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer)() decides it wants to use OpenGL, it'll update the window appropriately for you.
+A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, Metal, Vulkan, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can call [`SDL_SetRenderVSync(renderer, 1)`](SDL_SetRenderVSync) after creating the renderer. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer)() decides it wants to use OpenGL, it'll update the window appropriately for you.
 
 Now that you understand how this works, you can also do this all in one step with [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)(), if you don't want anything fancy:
 
 ```c
 SDL_Window *sdlWindow;
 SDL_Renderer *sdlRenderer;
-SDL_CreateWindowAndRenderer(title, 0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, &sdlWindow, &sdlRenderer);
+SDL_CreateWindowAndRenderer(title, 0, 0, SDL_WINDOW_FULLSCREEN, &sdlWindow, &sdlRenderer);
 ```
 
 Assuming these functions didn't fail (always check for NULLs!), you are ready to start drawing to the screen. Let's get started by clearing the screen to black.
@@ -107,17 +103,17 @@ SDL_RenderPresent(sdlRenderer);
 
 This works like you might think; draw in black (r,g,b all zero, alpha full), clear the whole window, put the cleared window on the screen. That's right, if you've been using `SDL_UpdateRect()` or `SDL_Flip()` to get your bits to the screen, the render API uses [SDL_RenderPresent](SDL_RenderPresent)().
 
-One more general thing to set up here. Since we're using `SDL_WINDOW_FULLSCREEN_DESKTOP`, we don't actually _know_ how much screen we've got to draw to. Fortunately, we don't have to know. One of the nice things about 1.2 is that you could say "I want a 640x480 window and I don't care how you get it done," even if getting it done meant centering the window in a larger resolution on behalf of your application.
+One more general thing to set up here. Since we're using `SDL_WINDOW_FULLSCREEN`, we don't actually _know_ how much screen we've got to draw to. Fortunately, we don't have to know. One of the nice things about 1.2 is that you could say "I want a 640x480 window and I don't care how you get it done," even if getting it done meant centering the window in a larger resolution on behalf of your application.
 
 For SDL3, the render API lets you do this...
 
 ```c
-SDL_SetRenderLogicalPresentation(sdlRenderer, 640, 480, SDL_LOGICAL_PRESENTATION_LETTERBOX, SDL_SCALEMODE_LINEAR);
+SDL_SetRenderLogicalPresentation(sdlRenderer, 640, 480, SDL_LOGICAL_PRESENTATION_LETTERBOX);
 ```
 
-...and it will do the right thing for you. Instead of trying to make the system work with your rendering size, we can now make your rendering size work with the system. On my 1920x1200 monitor, this app thinks it's talking to a 640x480 resolution now, but SDL is using the GPU to scale it up to use all those pixels. Note that 640x480 and 1920x1200 aren't the same aspect ratio: SDL takes care of that, too, scaling as much as possible and letterboxing the difference.
+...and it will do the right thing for you. Instead of trying to make the system work with your rendering size, we can now make your rendering size work with the system. On my 1920x1200 monitor, this app thinks it's talking to a 640x480 resolution now, but SDL is using the GPU to scale it up to use all those pixels. Note that 640x480 and 1920x1200 aren't the same aspect ratio: SDL takes care of that, too, scaling as much as possible and letterboxing the difference. This is already better than SDL 1.2, which might have given you a square in the middle of the closest display mode. Now you might have letterboxing, but it'll use the whole screen.
 
-Using `SDL_SCALEMODE_LINEAR` makes the scaling look smoother, but depending on the app, this might make it look _blurry_. You can also try SDL_SCALEMODE_NEAREST, which will make it look sharp but pixelated, but that might be exactly the effect you're going for anyhow.
+Added benefit, since your game thinks it's working with a 640x480 window no matter what, you can add `SDL_WINDOW_RESIZABLE` to your window creation flags and let the user resize non-fullscreen windows at will...the rendering will still do the right thing, filling the window as appropriate.
 
 Now we're ready to start drawing for real.
 
@@ -126,7 +122,7 @@ Now we're ready to start drawing for real.
 
 A special case for old school software rendered games: the application wants to draw every pixel itself and get that final set of pixels to the screen efficiently in one big blit. An example of a game like this is _Doom_, or _Duke Nukem 3D_, or many others.
 
-For this, you're going to want a single SDL_Texture that will represent the screen. Let's create one now for our 640x480 game:
+For this, you're going to want a single [SDL_Texture](SDL_Texture) that will represent the screen. Let's create one now for our 640x480 game:
 
 ```c
 sdlTexture = SDL_CreateTexture(sdlRenderer,
@@ -137,7 +133,15 @@ sdlTexture = SDL_CreateTexture(sdlRenderer,
 
 This represents a texture on the GPU. The gameplan is to finish each frame by uploading pixels to this texture, drawing the texture to the window, and flipping this drawing onto the screen. `SDL_TEXTUREACCESS_STREAMING` tells SDL that this texture's contents are going to change frequently.
 
-Before you probably had an [SDL_Surface](SDL_Surface) for the screen that your app drew into, then called `SDL_Flip()` to put to the screen. Now you can create an [SDL_Surface](SDL_Surface) that is always in RAM instead of using the one you would have gotten from `SDL_SetVideoMode()`, or just malloc() a block of pixels to write into. Ideally you write to a buffer of RGBA pixels, but if you need to do a conversion, that's okay too.
+You might want to decide how that texture should scale up to fill the window. If you want the pixels to stay sharp and blocky, you'll want "nearest neighbor" scaling mode. If you want them to be smoother (which might also end up looking blurry), you'll want "linear" scaling mode. Which one is right depends on your game. Try both out!
+
+Call this once after creating the texture to choose how this should work for your game:
+
+```c
+SDL_SetTextureScaleMode(sdlTexture, SDL_SCALEMODE_NEAREST);  /* (or SDL_SCALEMODE_LINEAR) */
+```
+
+Now for drawing. Before you probably had an [SDL_Surface](SDL_Surface) for the screen that your app drew into, then called `SDL_Flip()` to put to the screen. Now you can create an [SDL_Surface](SDL_Surface) that is always in RAM instead of using the one you would have gotten from `SDL_SetVideoMode()`, or just malloc() a block of pixels to write into. Ideally you write to a buffer of RGBA pixels, but if you need to do a conversion, that's okay too.
 
 ```c
 extern Uint32 *myPixels;  // maybe this is a surface->pixels, or a malloc()'d buffer, or whatever.
@@ -154,19 +158,18 @@ This will upload your pixels to GPU memory. That NULL can be a subregion if you 
 Now get that texture to the screen:
 
 ```c
-SDL_RenderClear(sdlRenderer);
 SDL_RenderTexture(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
 ```
 
-That's all. [SDL_RenderClear](SDL_RenderClear)() wipes out the existing video framebuffer (in case, say, the Steam Overlay wrote over it last frame), [SDL_RenderTexture](SDL_RenderTexture)() moves the texture's contents to the video framebuffer (and thanks to [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)(), it will be scaled/centered as if the monitor was 640x480), and [SDL_RenderPresent](SDL_RenderPresent)() puts it on the screen.
+That's all. [SDL_RenderTexture](SDL_RenderTexture)() moves the texture's contents to the video framebuffer (and thanks to [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)(), it will be scaled/centered/letterboxed as if the monitor was 640x480), and [SDL_RenderPresent](SDL_RenderPresent)() puts it on the screen. There's no need to call [SDL_RenderClear](SDL_RenderClear)() here because we are writing to every pixel of the window, and SDL will redraw the letterboxing pixels every frame for the pieces we didn't write over.
 
 
 #### If your game wants to blit surfaces to the screen
 
 This scenario has your SDL 1.2 game loading a bunch of graphics from disk into a bunch of [SDL_Surfaces](SDL_Surface), possibly trying to get them into video RAM with `SDL_HWSURFACE`. You load these once, and you blit them over and over to the framebuffer as necessary, but otherwise they never change. A simple 2D platformer might do this. If you tend to think of your surfaces as "sprites," and not buffers of pixels, then this is probably you.
 
-You can build individual textures (surfaces that live in GPU memory) like we did for that one big texture:
+You can build individual textures (surfaces that live in GPU memory), like we did for that one big texture in the previous example...
 
 ```c
 sdlTexture = SDL_CreateTexture(sdlRenderer,
@@ -175,15 +178,17 @@ sdlTexture = SDL_CreateTexture(sdlRenderer,
                                myWidth, myHeight);
 ```
 
-Which does what you'd expect. We use `SDL_TEXTUREACCESS_STATIC`, because we're going to upload our pixels once instead of over and over. But a more convenient solution might be:
+...which does what you'd expect. We use `SDL_TEXTUREACCESS_STATIC`, because we're going to upload our pixels once instead of over and over. But a more convenient solution might be:
 
 ```c
 sdlTexture = SDL_CreateTextureFromSurface(sdlRenderer, mySurface);
 ```
 
-Use this, and you load your [SDL_Surface](SDL_Surface) as usual, but then at the end you make a texture out of it. Once you have an [SDL_Texture](SDL_Texture), you can free the original surface.
+Use this, and you load your [SDL_Surface](SDL_Surface) as usual, but then at the end you make a texture out of it. Once you have an [SDL_Texture](SDL_Texture), you can free the original surface with [SDL_DestroySurface](SDL_DestroySurface).
 
 At this point, your 1.2 game had a bunch of [SDL_Surfaces](SDL_Surface), which it would [SDL_BlitSurface](SDL_BlitSurface)() to the screen surface to compose the final framebuffer, and eventually `SDL_Flip()` to the screen. For SDL3, you have a bunch of [SDL_Textures](SDL_Texture), that you will [SDL_RenderTexture](SDL_RenderTexture)() to your Renderer to compose the final framebuffer, and eventually [SDL_RenderPresent](SDL_RenderPresent)() to the screen. It's that simple. If these textures never need modification, you might find your framerate has just gone through the roof, too.
+
+Note that, again, no matter what size your window is, you are always blitting to a 640x480 window, as far as you are concerned, since we've turned on Logical Presentation. The previous example said "draw this one texture to the entire window," but if you are composing a scene from several textures, it will place and scale them appropriately if you give it coordinates within that logical 640x480 resolution. If you aren't scaling, feel free to use the entire window's dimensions!
 
 
 #### If your game wants to do both
@@ -209,8 +214,8 @@ SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
 ...and continue blitting things around and tweaking pixels as before, composing your final framebuffer into your [SDL_Surface](SDL_Surface). Once you're ready to get those pixels on the screen, you do this just like in our first scenario:
 
 ```c
+/* You might want to do an SDL_ConvertSurface() here if you were working in a pixel format that's not ARGB8888 */
 SDL_UpdateTexture(sdlTexture, NULL, screen->pixels, screen->pitch);
-SDL_RenderClear(sdlRenderer);
 SDL_RenderTexture(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
 ```
@@ -234,20 +239,21 @@ If you were already using OpenGL directly, your migration is pretty simple. Chan
 
 If you had used [SDL_GL_SetAttribute](SDL_GL_SetAttribute)(SDL_GL_SWAP_CONTROL, x), this has changed. There is now an [SDL_GL_SetSwapInterval](SDL_GL_SetSwapInterval)(x) call, so you can change this on an existing GL context.
 
-Note that SDL3 can toggle windowed/fullscreen and back with OpenGL windows without losing the GL context (hooray!). Use [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)() for this.
+Note that SDL3 can toggle windowed/fullscreen and back with OpenGL windows without losing the GL context (hooray!). Use [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)() for this. Resizing an existing window will also not throw away the GL context (as SDL_SetVideoMode() did on _some_ platforms in SDL 1.2).
 
 
 ### Input
 
-The good news is that SDL3 has made Unicode input usable. The bad news is that it will take some minor changes to your application.
+The good news is that SDL3 has made Unicode input usable. The bad news is that it may take some minor changes to your application.
 
 In 1.2, many applications that only cared about US English still called `SDL_EnableUNICODE(1)`, because it was useful to get the character that was associated with a keypress. This didn't work well once you got outside of English, and it really didn't work _at all_ once you got to Asian languages.
 
-It turns out, i18n is hard.
+It turns out, i18n is hard. (But keep reading.)
 
-SDL changed this. `SDL_EnableUNICODE()` is gone, and so is [SDL_Keysym](SDL_Keysym)'s `unicode` field. You no longer get character input from `SDL_KEYDOWN` events. Use SDL3's [SDL_EVENT_KEY_DOWN](SDL_EventType) event to treat the keyboard like a 101-button joystick now. Text input comes from somewhere else.
+SDL changed this. `SDL_EnableUNICODE()` is gone, and so is [SDL_Keysym](SDL_Keysym)'s `unicode` field. You no longer get direct character input from `SDL_KEYDOWN` events. We have [a document on best keyboard practices](BestKeyboardPractices) which explains all the nuances, but here's the fastest migration path for existing 1.2 code.
 
-The new event is [SDL_EVENT_TEXT_INPUT](SDL_EventType). This is triggered whenever there's new text entered by the user. Note that this text might be coming from keypresses, or it might be coming from some sort of IME (which is a fancy way of entering complicated, multi-character text). This event returns entire strings, which might be one char long, or several codepoints of multi-character data. This string is always in UTF-8 encoding.
+
+If you want actual text the user entered, the new event is [SDL_EVENT_TEXT_INPUT](SDL_EventType). This is triggered whenever there's new text entered by the user. Note that this text might be coming from keypresses, or it might be coming from some sort of IME (which is a fancy way of entering complicated, multi-character text). This event returns entire strings, which might be one char long, or several codepoints of multi-character data. This string is always in UTF-8 encoding. If you need to map this to keypresses, you don't want this. But this is useful if you want real Unicode text for chat boxes, etc. There is no equivalent in SDL 1.2.
 
 If all you care about is whether the user pressed a certain key, that's still [SDL_EVENT_KEY_DOWN](SDL_EventType), but we've split this system into two pieces since 1.2: [keycodes](SDL_Keycode) and [scancodes](SDL_Scancode).
 
@@ -262,6 +268,21 @@ Note that both keycodes and scancodes are now 32 bits, and use a wide range of n
 `SDLMod` is now [SDL_Keymod](SDL_Keymod) and its "META" keys (the "Windows" keys) are now called the "GUI" keys.
 
 `SDL_GetKeyState()` has been renamed to [SDL_GetKeyboardState](SDL_GetKeyboardState)(). The returned array should now be indexed by `SDL_SCANCODE_*` values (see [SDL_Scancode](SDL_Scancode)) instead of [SDL_Keysym](SDL_Keysym) values.
+
+But wait, if you _really_ need that `unicode` key event field, you can still generate a best-guess as to what character a keypress would generate (which, to be fair, is all SDL 1.2 was giving you: a best guess).
+
+```c
+SDL_event e = get_an_event();
+if (e.type == SDL_EVENT_KEY_DOWN) {
+    /* Was the pressed key '$', possibly generated by Shift+4 on a US keyboard or the '$' key on the French keyboard? */
+    SDL_Keycode keycode = SDL_GetKeyFromScancode(e.key.scancode, e.key.mod, false);
+    if (keycode == '$') {
+        /* Show me the money! */
+    }
+}
+```
+
+That `keycode` value is, more or less, the same as the `unicode` field. Conveniently, low-ASCII characters in SDL_Keycode map directly, so you can just cast to `char` for values below 128.
 
 Now, for mouse input.
 
@@ -367,7 +388,7 @@ If you need to use `SDL_LockAudio()` to temporarily block off the audio callback
 
 `SDL_ConvertAudio` and `SDL_BuildAudioCVT` are gone. If you want to convert and/or resample a discrete block of audio, it's done in a single call now: [SDL_ConvertAudioSamples](SDL_ConvertAudioSamples). Note that if you want to resample audio that you'll be providing in chunks, this never worked well in SDL 1.2, and you shouldn't use this function unless you have the complete audio data to resample in a single operation. If you need to resample or convert in chunks, you can create an [SDL_AudioStream](SDL_AudioStream) and feed it data with [SDL_PutAudioStreamData](SDL_PutAudioStreamData), and get the converted audio out the other side of it with [SDL_GetAudioStreamData](SDL_GetAudioStreamData). If you were only converting data to hand it off in your audio callback, you're already using an audio stream! Just remove this code and make sure the audio stream is set to the format you expect it to be.
 
-`SDL_MixAudio` is gone, as it only mixed in the format of the opened audio device. [SDL_MixAudioFormat](SDL_MixAudioFormat) is the same thing but you specify the format per-call.
+`SDL_MixAudio` is gone, as it only mixed in the format of the opened audio device. In SDL3, [SDL_MixAudio](SDL_MixAudio) is the same thing but you specify the format as a parameter, and the mixing volume is a float (0.0f is silent, 1.0f is full volume, or what was called `SDL_MIX_MAXVOLUME` in 1.2).
 
 `SDL_FreeWAV` is gone; just use the generic [SDL_free](SDL_free) now.
 
@@ -381,9 +402,9 @@ To get an SDL_JoystickID for your opened SDL_Joystick*, call:
 SDL_JoystickID myID = SDL_GetJoystickInstanceID(myOpenedStick);
 ```
 
-And compare the joystick events' `which` field against `myID`. If you aren't using the event queue for joysticks, [SDL_GetJoystickAxis](SDL_GetJoystickAxis)() and friends work just like SDL 1.2.
+And compare the joystick events' `which` field against `myID`. If you aren't using the event queue for joysticks, [SDL_GetJoystickAxis](SDL_GetJoystickAxis)() and friends work just like SDL 1.2, with slightly different names.
 
-You should also check out the new [Gamepad API](CategoryGamepad) too, because it's cool, and maybe you did a lot of tap dancing with the 1.2 API that this new code would solve more cleanly. You can find it in SDL_gamepad.h. The Game Controller API integrates really nicely with Steam Big Picture Mode: you get automatic configuration of most controllers, and a nice UI if you have to manually configure it. In either case, Steam passes this configuration on to your SDL application.
+You should also check out the new [Gamepad API](CategoryGamepad) too, because it's cool, and maybe you did a lot of tap dancing with the 1.2 API that this new code would solve more cleanly. You can find it in SDL_gamepad.h.
 
 
 ### Threads
@@ -446,14 +467,14 @@ If you wrote your own `SDL_RWops` implementation, the function signatures have c
 
 There is also a '''size''' method in [SDL_IOStream](SDL_IOStream), now. It is called `SDL_SizeIO`(). This lets an IOStream report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
 
-The entire interface your IOStream needs to implement is detailed in (SDL_IOStreamInterface](SDL_IOStreamInterface). You provide this to [SDL_OpenIO](SDL_OpenIO) to generate an [SDL_IOStream](SDL_IOStream) that the app can use roughly like a 1.2 SDL_RWops. Please note that the function pointers are hidden in the final object, so you can't override them once created.
+The entire interface your IOStream needs to implement is detailed in [SDL_IOStreamInterface](SDL_IOStreamInterface). You provide this to [SDL_OpenIO](SDL_OpenIO) to generate an [SDL_IOStream](SDL_IOStream) that the app can use roughly like a 1.2 SDL_RWops. Please note that the function pointers are hidden in the final object, so you can't override them once created.
 
 
 ### Add-on libraries
 
-The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL3: SDL3_image, SDL3_ttf, SDL3_mixer and SDL3_net. You may need to download them from their [GitHub repositories](https://github.com/orgs/libsdl-org/repositories) for the latest fixes. Subsequently, of course, you will have to link e.g. SDL3_image, not SDL_image, to compile your program.
+The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL3: [SDL3_image](/SDL3_image), [SDL3_ttf](/SDL3_ttf), [SDL3_mixer](/SDL3_mixer) and [SDL3_net](/SDL3_net). You may need to download them from their [GitHub repositories](https://github.com/orgs/libsdl-org/repositories) for the latest fixes. Subsequently, of course, you will have to link e.g. SDL3_image, not SDL_image, to compile your program.
 
-These libraries do not support 1.2 any more, and any compatibility with 1.2 is likely to vanish at some point from newer versions, if it hasn't already.
+These libraries do not support 1.2 any more, and source/binary compatibility with 1.2 is gone in their SDL3 versions. Please refer to their documentation for migration guides, and file bug reports if migration issues arise.
 
 
 ### Other stuff
