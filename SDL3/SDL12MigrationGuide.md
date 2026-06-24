@@ -1,5 +1,13 @@
 # SDL 1.2 to 3.0 Migration Guide
 
+## Out of date
+
+Please note that this document was written before SDL3's API was completely
+finalized, and is a little bit out of date. Until we update this information,
+it'll still get you most of the way there, but don't be surprised if some of
+the functions mentioned aren't exactly accurate.
+
+
 ## Introduction
 
 SDL3 is finally here! If you hesitated to migrate your SDL 1.2 app to SDL2, now is the time to give SDL3 a try instead!
