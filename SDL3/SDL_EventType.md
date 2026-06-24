@@ -223,6 +223,144 @@ typedef enum SDL_EventType
 } SDL_EventType;
 ```
 
+## Mapping SDL event types to structs
+
+All events are delivered through the [SDL_Event](SDL_Event) union. One uses
+this union by choosing the correct struct based on the union's `type` field.
+So if you get an SDL_EVENT_KEY_DOWN type, you would want SDL_Event's `key`
+field (like `event->key`), which is an [SDL_KeyboardEvent](SDL_KeyboardEvent)
+struct.
+
+For convenience, here's a mapping of all event types to their place in
+SDL_Event. Some event types have no extra data than the event itself, like
+SDL_EVENT_TERMINATING, etc. In those cases, the event field/struct is listed
+as [SDL_CommonEvent](SDL_CommonEvent), which mostly just provides timestamps
+for the event.
+
+There are `_FIRST` and `_LAST` fields for each subsection of events, like
+`SDL_EVENT_DISPLAY_FIRST` and `SDL_EVENT_DISPLAY_LAST`. These are not listed
+in this table, as they are never sent as events and are only used to provide
+logical groupings.
+
+This is listed in alphabetical order by event type name, not enum value order.
+
+| Type                                    | SDL_Event field | Event struct                                                     |
+| --------------------------------------- | --------------- | ---------------------------------------------------------------- |
+| SDL_EVENT_TERMINATING                   | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_LOW_MEMORY                    | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_WILL_ENTER_BACKGROUND         | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_DID_ENTER_BACKGROUND          | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_WILL_ENTER_FOREGROUND         | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_DID_ENTER_FOREGROUND          | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_LOCALE_CHANGED                | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_SYSTEM_THEME_CHANGED          | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_DISPLAY_ORIENTATION           | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_ADDED                 | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_REMOVED               | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_MOVED                 | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_DESKTOP_MODE_CHANGED  | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_CURRENT_MODE_CHANGED  | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_CONTENT_SCALE_CHANGED | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_DISPLAY_USABLE_BOUNDS_CHANGED | display         | [SDL_DisplayEvent](SDL_DisplayEvent)                             |
+| SDL_EVENT_WINDOW_SHOWN                  | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_HIDDEN                 | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_EXPOSED                | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_MOVED                  | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_RESIZED                | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED     | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_METAL_VIEW_RESIZED     | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_MINIMIZED              | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_MAXIMIZED              | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_RESTORED               | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_MOUSE_ENTER            | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_MOUSE_LEAVE            | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_FOCUS_GAINED           | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_FOCUS_LOST             | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_CLOSE_REQUESTED        | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_HIT_TEST               | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_ICCPROF_CHANGED        | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_DISPLAY_CHANGED        | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_DISPLAY_SCALE_CHANGED  | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_SAFE_AREA_CHANGED      | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_OCCLUDED               | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_ENTER_FULLSCREEN       | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_LEAVE_FULLSCREEN       | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_DESTROYED              | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_HDR_STATE_CHANGED      | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_WINDOW_SETTINGS_CHANGED       | window          | [SDL_WindowEvent](SDL_WindowEvent)                               |
+| SDL_EVENT_KEY_DOWN                      | key             | [SDL_KeyboardEvent](SDL_KeyboardEvent)                           |
+| SDL_EVENT_KEY_UP                        | key             | [SDL_KeyboardEvent](SDL_KeyboardEvent)                           |
+| SDL_EVENT_TEXT_EDITING                  | edit            | [SDL_TextEditingEvent](SDL_TextEditingEvent)                     |
+| SDL_EVENT_TEXT_INPUT                    | input           | [SDL_TextInputEvent](SDL_TextInputEvent)                         |
+| SDL_EVENT_KEYMAP_CHANGED                | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_KEYBOARD_ADDED                | kdevice         | [SDL_KeyboardDeviceEvent](SDL_KeyboardDeviceEvent)               |
+| SDL_EVENT_KEYBOARD_REMOVED              | kdevice         | [SDL_KeyboardDeviceEvent](SDL_KeyboardDeviceEvent)               |
+| SDL_EVENT_TEXT_EDITING_CANDIDATES       | edit_candidates | [SDL_TextEditingCandidatesEvent](SDL_TextEditingCandidatesEvent) |
+| SDL_EVENT_SCREEN_KEYBOARD_SHOWN         | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_SCREEN_KEYBOARD_HIDDEN        | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
+| SDL_EVENT_MOUSE_MOTION                  | motion          | [SDL_MouseMotionEvent](SDL_MouseMotionEvent)                     |
+| SDL_EVENT_MOUSE_BUTTON_DOWN             | button          | [SDL_MouseButtonEvent](SDL_MouseButtonEvent)                     |
+| SDL_EVENT_MOUSE_BUTTON_UP               | button          | [SDL_MouseButtonEvent](SDL_MouseButtonEvent)                     |
+| SDL_EVENT_MOUSE_WHEEL                   | wheel           | [SDL_MouseWheelEvent](SDL_MouseWheelEvent)                       |
+| SDL_EVENT_MOUSE_ADDED                   | mdevice         | [SDL_MouseDeviceEvent](SDL_MouseDeviceEvent)                     |
+| SDL_EVENT_MOUSE_REMOVED                 | mdevice         | [SDL_MouseDeviceEvent](SDL_MouseDeviceEvent)                     |
+| SDL_EVENT_JOYSTICK_AXIS_MOTION          | jaxis           | [SDL_JoyAxisEvent](SDL_JoyAxisEvent)                             |
+| SDL_EVENT_JOYSTICK_BALL_MOTION          | jball           | [SDL_JoyBallEvent](SDL_JoyBallEvent)                             |
+| SDL_EVENT_JOYSTICK_HAT_MOTION           | jhat            | [SDL_JoyHatEvent](SDL_JoyHatEvent)                               |
+| SDL_EVENT_JOYSTICK_BUTTON_DOWN          | jbutton         | [SDL_JoyButtonEvent](SDL_JoyButtonEvent)                         |
+| SDL_EVENT_JOYSTICK_BUTTON_UP            | jbutton         | [SDL_JoyButtonEvent](SDL_JoyButtonEvent)                         |
+| SDL_EVENT_JOYSTICK_ADDED                | jdevice         | [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)                         |
+| SDL_EVENT_JOYSTICK_REMOVED              | jdevice         | [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)                         |
+| SDL_EVENT_JOYSTICK_BATTERY_UPDATED      | jbattery        | [SDL_JoyBatteryEvent](SDL_JoyBatteryEvent)                       |
+| SDL_EVENT_JOYSTICK_UPDATE_COMPLETE      | jdevice         | [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)                         |
+| SDL_EVENT_GAMEPAD_AXIS_MOTION           | gaxis           | [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)                     |
+| SDL_EVENT_GAMEPAD_BUTTON_DOWN           | gbutton         | [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)                 |
+| SDL_EVENT_GAMEPAD_BUTTON_UP             | gbutton         | [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)                 |
+| SDL_EVENT_GAMEPAD_ADDED                 | gdevice         | [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)                 |
+| SDL_EVENT_GAMEPAD_REMOVED               | gdevice         | [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)                 |
+| SDL_EVENT_GAMEPAD_REMAPPED              | gdevice         | [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)                 |
+| SDL_EVENT_GAMEPAD_TOUCHPAD_DOWN         | gtouchpad       | [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)             |
+| SDL_EVENT_GAMEPAD_TOUCHPAD_MOTION       | gtouchpad       | [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)             |
+| SDL_EVENT_GAMEPAD_TOUCHPAD_UP           | gtouchpad       | [SDL_GamepadTouchpadEvent](SDL_GamepadTouchpadEvent)             |
+| SDL_EVENT_GAMEPAD_SENSOR_UPDATE         | gsensor         | [SDL_GamepadSensorEvent](SDL_GamepadSensorEvent)                 |
+| SDL_EVENT_GAMEPAD_UPDATE_COMPLETE       | gdevice         | [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)                 |
+| SDL_EVENT_GAMEPAD_STEAM_HANDLE_UPDATED  | gdevice         | [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)                 |
+| SDL_EVENT_GAMEPAD_CAPSENSE_TOUCH        | gcapsense       | [SDL_GamepadCapSenseEvent](SDL_GamepadCapSenseEvent)             |
+| SDL_EVENT_GAMEPAD_CAPSENSE_RELEASE      | gcapsense       | [SDL_GamepadCapSenseEvent](SDL_GamepadCapSenseEvent)             |
+| SDL_EVENT_FINGER_DOWN                   | tfinger         | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)                     |
+| SDL_EVENT_FINGER_UP                     | tfinger         | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)                     |
+| SDL_EVENT_FINGER_MOTION                 | tfinger         | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)                     |
+| SDL_EVENT_FINGER_CANCELED               | tfinger         | [SDL_TouchFingerEvent](SDL_TouchFingerEvent)                     |
+| SDL_EVENT_PINCH_BEGIN                   | pinch           | [SDL_PinchFingerEvent](SDL_PinchFingerEvent)                     |
+| SDL_EVENT_PINCH_UPDATE                  | pinch           | [SDL_PinchFingerEvent](SDL_PinchFingerEvent)                     |
+| SDL_EVENT_PINCH_END                     | pinch           | [SDL_PinchFingerEvent](SDL_PinchFingerEvent)                     |
+| SDL_EVENT_CLIPBOARD_UPDATE              | clipboard       | [SDL_ClipboardEvent](SDL_ClipboardEvent)                         |
+| SDL_EVENT_DROP_FILE                     | drop            | [SDL_DropEvent](SDL_DropEvent)                                   |
+| SDL_EVENT_DROP_TEXT                     | drop            | [SDL_DropEvent](SDL_DropEvent)                                   |
+| SDL_EVENT_DROP_BEGIN                    | drop            | [SDL_DropEvent](SDL_DropEvent)                                   |
+| SDL_EVENT_DROP_COMPLETE                 | drop            | [SDL_DropEvent](SDL_DropEvent)                                   |
+| SDL_EVENT_DROP_POSITION                 | drop            | [SDL_DropEvent](SDL_DropEvent)                                   |
+| SDL_EVENT_AUDIO_DEVICE_ADDED            | adevice         | [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)                     |
+| SDL_EVENT_AUDIO_DEVICE_REMOVED          | adevice         | [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)                     |
+| SDL_EVENT_AUDIO_DEVICE_FORMAT_CHANGED   | adevice         | [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)                     |
+| SDL_EVENT_SENSOR_UPDATE                 | sensor          | [SDL_SensorEvent](SDL_SensorEvent)                               |
+| SDL_EVENT_PEN_PROXIMITY_IN              | pproximity      | [SDL_PenProximityEvent](SDL_PenProximityEvent)                   |
+| SDL_EVENT_PEN_PROXIMITY_OUT             | pproximity      | [SDL_PenProximityEvent](SDL_PenProximityEvent)                   |
+| SDL_EVENT_PEN_DOWN                      | ptouch          | [SDL_PenTouchEvent](SDL_PenTouchEvent)                           |
+| SDL_EVENT_PEN_UP                        | ptouch          | [SDL_PenTouchEvent](SDL_PenTouchEvent)                           |
+| SDL_EVENT_PEN_BUTTON_DOWN               | pbutton         | [SDL_PenButtonEvent](SDL_PenButtonEvent)                         |
+| SDL_EVENT_PEN_BUTTON_UP                 | pbutton         | [SDL_PenButtonEvent](SDL_PenButtonEvent)                         |
+| SDL_EVENT_PEN_MOTION                    | pmotion         | [SDL_PenMotionEvent](SDL_PenMotionEvent)                         |
+| SDL_EVENT_PEN_AXIS                      | paxis           | [SDL_PenAxisEvent](SDL_PenAxisEvent)                             |
+| SDL_EVENT_CAMERA_DEVICE_ADDED           | cdevice         | [SDL_CameraDeviceEvent](SDL_CameraDeviceEvent)                   |
+| SDL_EVENT_CAMERA_DEVICE_REMOVED         | cdevice         | [SDL_CameraDeviceEvent](SDL_CameraDeviceEvent)                   |
+| SDL_EVENT_CAMERA_DEVICE_APPROVED        | cdevice         | [SDL_CameraDeviceEvent](SDL_CameraDeviceEvent)                   |
+| SDL_EVENT_CAMERA_DEVICE_DENIED          | cdevice         | [SDL_CameraDeviceEvent](SDL_CameraDeviceEvent)                   |
+| SDL_EVENT_NOTIFICATION_ACTION_INVOKED   | notification    | [SDL_NotificationEvent](SDL_NotificationEvent)                   |
+| SDL_EVENT_RENDER_TARGETS_RESET          | render          | [SDL_RenderEvent](SDL_RenderEvent)                               |
+| SDL_EVENT_RENDER_DEVICE_RESET           | render          | [SDL_RenderEvent](SDL_RenderEvent)                               |
+| SDL_EVENT_RENDER_DEVICE_LOST            | render          | [SDL_RenderEvent](SDL_RenderEvent)                               |
+
 ## Version
 
 This enum is available since SDL 3.2.0.
