@@ -223,6 +223,10 @@ typedef enum SDL_EventType
 } SDL_EventType;
 ```
 
+## Version
+
+This enum is available since SDL 3.2.0.
+
 ## Mapping SDL event types to structs
 
 All events are delivered through the [SDL_Event](SDL_Event) union. One uses
@@ -360,10 +364,6 @@ This is listed in alphabetical order by event type name, not enum value order.
 | SDL_EVENT_RENDER_TARGETS_RESET          | render          | [SDL_RenderEvent](SDL_RenderEvent)                               |
 | SDL_EVENT_RENDER_DEVICE_RESET           | render          | [SDL_RenderEvent](SDL_RenderEvent)                               |
 | SDL_EVENT_RENDER_DEVICE_LOST            | render          | [SDL_RenderEvent](SDL_RenderEvent)                               |
-
-## Version
-
-This enum is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEvents](CategoryEvents)
