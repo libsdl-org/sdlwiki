@@ -1,6 +1,6 @@
 # SDL_CommonEvent
 
-Fields shared by every event
+Fields shared by every event (event.common.*)
 
 ## Header File
 
@@ -16,6 +16,15 @@ typedef struct SDL_CommonEvent
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
 } SDL_CommonEvent;
 ```
+
+## Remarks
+
+All the individual structs that comprise the [SDL_Event](SDL_Event) union
+start with these same fields, so you can access them from any struct
+directly.
+
+Event types that don't have further data in a specific struct will still
+have valid CommonEvent data, accessible via the event.common field.
 
 ## Version
 
