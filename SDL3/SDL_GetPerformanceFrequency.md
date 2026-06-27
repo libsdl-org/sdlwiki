@@ -14,7 +14,7 @@ Uint64 SDL_GetPerformanceFrequency(void);
 
 ## Return Value
 
-([Uint64](Uint64)) Returns a platform-specific count per second.
+([Uint64](Uint64)) Returns the frequency at which the result from SDL_GetPerformanceCounter is adjusted, measured in counts per second. This value is platform-dependent.
 
 ## Thread Safety
 
