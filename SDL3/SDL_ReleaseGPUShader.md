@@ -25,6 +25,9 @@ void SDL_ReleaseGPUShader(
 
 You must not reference the shader after calling this function.
 
+It is safe to pass NULL for `shader`, in that case this function is a
+no-op.
+
 ## Version
 
 This function is available since SDL 3.2.0.

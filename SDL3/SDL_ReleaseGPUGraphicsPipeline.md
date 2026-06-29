@@ -25,6 +25,9 @@ void SDL_ReleaseGPUGraphicsPipeline(
 
 You must not reference the graphics pipeline after calling this function.
 
+It is safe to pass NULL for `graphics_pipeline`, in that case this function
+is a no-op.
+
 ## Version
 
 This function is available since SDL 3.2.0.

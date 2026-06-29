@@ -25,6 +25,9 @@ void SDL_ReleaseGPUBuffer(
 
 You must not reference the buffer after calling this function.
 
+It is safe to pass NULL for `buffer`, in that case this function is a
+no-op.
+
 ## Version
 
 This function is available since SDL 3.2.0.

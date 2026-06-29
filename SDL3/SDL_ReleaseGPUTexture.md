@@ -25,6 +25,9 @@ void SDL_ReleaseGPUTexture(
 
 You must not reference the texture after calling this function.
 
+It is safe to pass NULL for `texture`, in that case this function is a
+no-op.
+
 ## Version
 
 This function is available since SDL 3.2.0.

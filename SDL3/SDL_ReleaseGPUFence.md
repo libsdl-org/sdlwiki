@@ -25,6 +25,8 @@ void SDL_ReleaseGPUFence(
 
 You must not reference the fence after calling this function.
 
+It is safe to pass NULL for `fence`, in that case this function is a no-op.
+
 ## Version
 
 This function is available since SDL 3.2.0.
