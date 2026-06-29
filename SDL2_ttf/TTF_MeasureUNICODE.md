@@ -34,6 +34,8 @@ This reports the number of characters that can be rendered before reaching
 
 This does not need to render the string to do this calculation.
 
+`measure_width` should be non-zero.
+
 Please note that this function is named "Unicode" but currently expects
 UCS-2 encoding (16 bits per codepoint). This does not give you access to
 large Unicode values, such as emoji glyphs. These codepoints are accessible
