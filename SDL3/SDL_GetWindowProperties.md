@@ -133,6 +133,12 @@ queried each time it is shown.
   the wp_viewport associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_EGL_WINDOW_POINTER`](SDL_PROP_WINDOW_WAYLAND_EGL_WINDOW_POINTER):
   the wl_egl_window associated with the window
+- [`SDL_PROP_WINDOW_WAYLAND_WINDOW_ID_STRING`](SDL_PROP_WINDOW_WAYLAND_WINDOW_ID_STRING):
+  the window identification string, initially set with
+  [SDL_PROP_WINDOW_CREATE_WAYLAND_WINDOW_ID_STRING](SDL_PROP_WINDOW_CREATE_WAYLAND_WINDOW_ID_STRING),
+  and used as an identifier for session management. Setting this to null or
+  an empty string ("") before hiding or destroying the window will cause
+  any session information associated with the window to be removed
 - [`SDL_PROP_WINDOW_WAYLAND_XDG_SURFACE_POINTER`](SDL_PROP_WINDOW_WAYLAND_XDG_SURFACE_POINTER):
   the xdg_surface associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_XDG_TOPLEVEL_POINTER`](SDL_PROP_WINDOW_WAYLAND_XDG_TOPLEVEL_POINTER):

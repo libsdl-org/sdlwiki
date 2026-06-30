@@ -121,6 +121,11 @@ These are additional supported properties on Wayland:
   - true if the application wants an associated `wl_egl_window` object to
   be created and attached to the window, even if the window does not have
   the OpenGL property or [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL) flag set.
+- [`SDL_PROP_WINDOW_CREATE_WAYLAND_WINDOW_ID_STRING`](SDL_PROP_WINDOW_CREATE_WAYLAND_WINDOW_ID_STRING)
+  - a string used as a stable identifier for toplevel windows for the
+  purpose of allowing the compositor to save/restore their state between
+  runs. This should be human readable, but not translated, and must be
+  unique for each individual window.
 - [`SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER`](SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER)
   - the wl_surface associated with the window, if you want to wrap an
   existing window. See [README-wayland](README-wayland) for more
