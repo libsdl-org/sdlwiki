@@ -10,9 +10,9 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 bool SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
-                                SDL_calloc_func calloc_func,
-                                SDL_realloc_func realloc_func,
-                                SDL_free_func free_func);
+                            SDL_calloc_func calloc_func,
+                            SDL_realloc_func realloc_func,
+                            SDL_free_func free_func);
 ```
 
 ## Function Parameters
@@ -26,8 +26,10 @@ bool SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
 
 ## Return Value
 
-(bool) Returns true on success or false on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+(bool) Returns true on success or false on failure. This only fails if
+there is a mix of NULL and non-NULL parameters. Failure will not set an
+error message (which allocates memory) so do _not_ call
+[SDL_GetError](SDL_GetError)() in response to a failure here.
 
 ## Remarks
 
@@ -37,6 +39,10 @@ they came from an [SDL_malloc](SDL_malloc) made with the old one!
 
 If used, usually this needs to be the first call made into the SDL library,
 if not the very first thing done at program startup time.
+
+It is legal to call this with all 4 parameters set to NULL, which will
+restore the original memory functions without having to query them with
+[SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)() first.
 
 ## Thread Safety
 
