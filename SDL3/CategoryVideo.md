@@ -32,6 +32,7 @@ events, so start with [SDL_CreateWindow](SDL_CreateWindow)() and
 <!-- BEGIN CATEGORY LIST: CategoryVideo, CategoryAPIFunction -->
 - [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 - [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
 - [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 - [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
