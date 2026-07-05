@@ -32,7 +32,7 @@ SDL_GetError() for more information.
 
 This function decodes the next frame in the animation decoder, returning it
 as an SDL_Surface. The returned surface should be freed with
-SDL_DestroySurface() when no longer needed.
+SDL_FreeSurface() when no longer needed.
 
 If the animation decoder has no more frames or an error occurred while
 decoding the frame, this function returns false. In that case, please call
