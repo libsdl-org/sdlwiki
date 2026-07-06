@@ -247,6 +247,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_VIDEO_X11_VISUALID](SDL_HINT_VIDEO_X11_VISUALID): A variable forcing the visual ID used for X11 display modes.
 - [SDL_VIDEO_X11_WINDOW_VISUALID](SDL_HINT_VIDEO_X11_WINDOW_VISUALID): A variable forcing the visual ID chosen for new X11 windows.
 - [SDL_VIDEO_X11_XRANDR](SDL_HINT_VIDEO_X11_XRANDR): A variable controlling whether the X11 XRandR extension should be used.
+- [SDL_VISIONOS_HDR_HEADROOM_UI](SDL_HINT_VISIONOS_HDR_HEADROOM_UI): A variable controlling whether the HDR headroom slider should be shown in the visionOS window settings.
 - [SDL_VITA_ENABLE_BACK_TOUCH](SDL_HINT_VITA_ENABLE_BACK_TOUCH): A variable controlling whether touch should be enabled on the back panel of the PlayStation Vita.
 - [SDL_VITA_ENABLE_FRONT_TOUCH](SDL_HINT_VITA_ENABLE_FRONT_TOUCH): A variable controlling whether touch should be enabled on the front panel of the PlayStation Vita.
 - [SDL_VITA_MODULE_PATH](SDL_HINT_VITA_MODULE_PATH): A variable controlling the module path on the PlayStation Vita.
