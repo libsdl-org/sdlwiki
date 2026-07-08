@@ -19,6 +19,10 @@ mouse motion while relative mode is enabled. This improves performance when
 players are using high DPI mice, but should be disabled while showing
 custom assert dialogs in your application code.
 
+Caution: Windows will not see mouse button releases in relative mode with
+this active. This means you should not enable relative mode while a mouse
+button is currently pressed.
+
 - "0": Windows mouse events will be generated while relative motion is
   enabled. (default)
 - "1": Windows mouse events will not be generated while relative motion is
