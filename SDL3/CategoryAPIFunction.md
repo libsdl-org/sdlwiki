@@ -480,6 +480,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetNumJoystickButtons](SDL_GetNumJoystickButtons)
 - [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
 - [SDL_GetNumLogicalCPUCores](SDL_GetNumLogicalCPUCores)
+- [SDL_GetNumProperties](SDL_GetNumProperties)
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 - [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 - [SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)

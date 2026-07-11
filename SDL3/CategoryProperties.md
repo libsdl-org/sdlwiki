@@ -44,6 +44,7 @@ Properties can be removed from a group by using
 - [SDL_GetFloatProperty](SDL_GetFloatProperty)
 - [SDL_GetGlobalProperties](SDL_GetGlobalProperties)
 - [SDL_GetNumberProperty](SDL_GetNumberProperty)
+- [SDL_GetNumProperties](SDL_GetNumProperties)
 - [SDL_GetPointerProperty](SDL_GetPointerProperty)
 - [SDL_GetPropertyType](SDL_GetPropertyType)
 - [SDL_GetStringProperty](SDL_GetStringProperty)
