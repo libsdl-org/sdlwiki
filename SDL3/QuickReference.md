@@ -103,6 +103,7 @@ Sint64 SDL_GetNumberProperty(SDL_PropertiesID props, const char *name, Sint64 de
 float SDL_GetFloatProperty(SDL_PropertiesID props, const char *name, float default_value);                                                           // Get a floating point property from a group of properties.
 bool SDL_GetBooleanProperty(SDL_PropertiesID props, const char *name, bool default_value);                                                           // Get a boolean property from a group of properties.
 bool SDL_ClearProperty(SDL_PropertiesID props, const char *name);                                                                                    // Clear a property from a group of properties.
+int SDL_GetNumProperties(SDL_PropertiesID props);                                                                                                    // Get the current number of items in a group of properties.
 bool SDL_EnumerateProperties(SDL_PropertiesID props, SDL_EnumeratePropertiesCallback callback, void *userdata);                                      // Enumerate the properties contained in a group of properties.
 void SDL_DestroyProperties(SDL_PropertiesID props);                                                                                                  // Destroy a group of properties.
 
