@@ -81,6 +81,12 @@ jobs:
         repository: libsdl-org/SDL_rtf
         ref: SDL2
         path: external/SDL2_rtf
+    - name: Checkout SDL3_shadercross
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_shadercross
+        ref: main
+        path: external/SDL3_shadercross
     - name: Setup dependencies
       run: |
         sudo apt-get update
