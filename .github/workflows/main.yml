@@ -74,7 +74,7 @@ jobs:
       with:
         repository: libsdl-org/SDL_rtf
         ref: main
-        path: external/SDL2_rtf
+        path: external/SDL3_rtf
     - name: Checkout SDL2_rtf
       uses: actions/checkout@v4
       with:
