@@ -1,5 +1,11 @@
 # SDL_rtf 2.0
 
+## Abandoned
+
+This library still builds with SDL3, but development on it has stopped, so we have left this as SDL_rtf 2.0. The original info remains, below.
+
+## SDL_rtf
+
 This library allows you to display simple Rich Text Format (RTF) files in SDL applications.
 
 The RTF format specification is available at [windows.net](https://interoperability.blob.core.windows.net/files/Archive_References/%5bMSFT-RTF%5d.pdf).
