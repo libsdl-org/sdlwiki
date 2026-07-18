@@ -100,6 +100,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_MouseID](SDL_MouseID)
 - [SDL_MouseMotionTransformCallback](SDL_MouseMotionTransformCallback)
 - [SDL_Mutex](SDL_Mutex)
+- [SDL_NotificationID](SDL_NotificationID)
 - [SDL_NSTimerCallback](SDL_NSTimerCallback)
 - [SDL_PenID](SDL_PenID)
 - [SDL_PenInputFlags](SDL_PenInputFlags)
