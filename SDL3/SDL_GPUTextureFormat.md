@@ -215,13 +215,6 @@ supported:
 Unless D16_UNORM is sufficient for your purposes, always check which of
 D24/D32 is supported before creating a depth-stencil texture!
 
-For SIMULTANEOUS_READ_WRITE usage, the following formats are universally
-supported:
-
-- R32_FLOAT
-- R32_UINT
-- R32_INT
-
 ## Version
 
 This enum is available since SDL 3.2.0.
