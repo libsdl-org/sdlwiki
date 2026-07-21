@@ -37,29 +37,19 @@ display, they can only be repositioned programmatically via
 
 On some windowing systems this request is asynchronous and the new
 coordinates may not have have been applied immediately upon the return of
-this function. If an immediate change is required, call
+this function. If an immediate change is required, call 
 [SDL_SyncWindow](SDL_SyncWindow)() to block until the changes have taken
 effect.
 
 When the window position changes, an
 [SDL_EVENT_WINDOW_MOVED](SDL_EVENT_WINDOW_MOVED) event will be emitted with
-the window's new coordinates. 
+the window's new coordinates.  
 
-Note that the new coordinates may not match the exact ones requested, 
-as some windowing systems can restrict the position of the window in certain 
-scenarios (e.g. constraining the position so the window is always within 
-desktop bounds or apply offsets due to window decorations). Additionally, 
+Note that the new coordinates may not match the exact ones requested,
+as some windowing systems can restrict the position of the window in certain
+scenarios (e.g. constraining the position so the window is always within
+desktop bounds or applying offsets due to window decorations). Additionally,
 as this operation is a request, it may be denied by the windowing system.
-
-
-To verify the actual new coordinates received by your application, run the 
-'testautomation' suite with:
-
-```bash
-./testautomation --filter video_getSetWindowPosition
-```
-
-and verify that the test cases pass.
 
 ## Thread Safety
 
@@ -76,4 +66,3 @@ This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
