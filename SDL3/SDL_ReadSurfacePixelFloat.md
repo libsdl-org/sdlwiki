@@ -1,6 +1,6 @@
 # SDL_ReadSurfacePixelFloat
 
-Retrieves a single pixel from a surface.
+Retrieves a single pixel from a surface as RGBA in the sRGB colorspace.
 
 ## Header File
 
