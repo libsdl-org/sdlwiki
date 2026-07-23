@@ -16,6 +16,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [How to use SDL3 from Java](https://mccue.dev/pages/12-26-24-sdl3-java): Covers setting up a basic Java project with SDL3.
 - [Vulkan HPP RAII + SDL3 Made Easy – A Live Guide for Beginners!](https://www.youtube.com/live/43sDPSSG0-U)
 - [SDL 3 programming with the D programming Language by Mike Shah](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-5hY-sFyttTjfuUxG5c7OA)
+- [How to Make a 2D Game in C++ and SDL3 from Scratch](https://www.youtube.com/watch?v=Wu2g-N5Z78Y)
 
 ## SDL Camera
 
