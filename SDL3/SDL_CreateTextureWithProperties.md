@@ -92,6 +92,21 @@ With the metal renderer:
 - [`SDL_PROP_TEXTURE_CREATE_METAL_PIXELBUFFER_POINTER`](SDL_PROP_TEXTURE_CREATE_METAL_PIXELBUFFER_POINTER):
   the CVPixelBufferRef associated with the texture, if you want to create a
   texture from an existing pixel buffer.
+- [`SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_POINTER`](SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_POINTER):
+  the MTLTexture associated with the texture, if you want to wrap an
+  existing texture.
+- [`SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_UV_POINTER`](SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_UV_POINTER):
+  the MTLTexture associated with the UV plane of an NV12 texture, if you
+  want to wrap an existing texture.
+- [`SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_U_POINTER`](SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_U_POINTER):
+  the MTLTexture associated with the U plane of a YUV texture, if you want
+  to wrap an existing texture.
+- [`SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_V_POINTER`](SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_V_POINTER):
+  the MTLTexture associated with the V plane of a YUV texture, if you want
+  to wrap an existing texture.
+- [`SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_USAGE_NUMBER`](SDL_PROP_TEXTURE_CREATE_METAL_TEXTURE_USAGE_NUMBER):
+  any additional MTLTextureUsage that this texture should have, defaults to
+  0.
 
 With the opengl renderer:
 

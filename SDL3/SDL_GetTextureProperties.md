@@ -70,6 +70,17 @@ With the direct3d12 renderer:
 - [`SDL_PROP_TEXTURE_D3D12_TEXTURE_V_POINTER`](SDL_PROP_TEXTURE_D3D12_TEXTURE_V_POINTER):
   the ID3D12Resource associated with the V plane of a YUV texture
 
+With the metal renderer:
+
+- [`SDL_PROP_TEXTURE_METAL_TEXTURE_POINTER`](SDL_PROP_TEXTURE_METAL_TEXTURE_POINTER):
+  the MTLTexture associated with the texture
+- [`SDL_PROP_TEXTURE_METAL_TEXTURE_UV_POINTER`](SDL_PROP_TEXTURE_METAL_TEXTURE_UV_POINTER):
+  the MTLTexture associated with the UV plane of an NV12 texture
+- [`SDL_PROP_TEXTURE_METAL_TEXTURE_U_POINTER`](SDL_PROP_TEXTURE_METAL_TEXTURE_U_POINTER):
+  the MTLTexture associated with the U plane of a YUV texture style texture
+- [`SDL_PROP_TEXTURE_METAL_TEXTURE_V_POINTER`](SDL_PROP_TEXTURE_METAL_TEXTURE_V_POINTER):
+  the MTLTexture associated with the V plane of a YUV texture
+
 With the vulkan renderer:
 
 - [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER):

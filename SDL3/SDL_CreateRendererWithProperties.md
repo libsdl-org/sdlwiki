@@ -65,6 +65,15 @@ With the SDL GPU renderer (since SDL 3.4.0):
   the app is able to provide MSL shaders to
   [SDL_GPURenderState](SDL_GPURenderState), optional.
 
+With the metal renderer:
+
+- [`SDL_PROP_RENDERER_CREATE_METAL_DEVICE_POINTER`](SDL_PROP_RENDERER_CREATE_METAL_DEVICE_POINTER):
+  the MTLDevice to use with the renderer, optional.
+- [`SDL_PROP_RENDERER_CREATE_METAL_COMMAND_QUEUE_POINTER`](SDL_PROP_RENDERER_CREATE_METAL_COMMAND_QUEUE_POINTER):
+  the MTLCommandQueue to use with the renderer, optional. If you set this
+  property it will implicitly set (and override)
+  [`SDL_PROP_RENDERER_CREATE_METAL_DEVICE_POINTER`](SDL_PROP_RENDERER_CREATE_METAL_DEVICE_POINTER).
+
 With the vulkan renderer:
 
 - [`SDL_PROP_RENDERER_CREATE_VULKAN_INSTANCE_POINTER`](SDL_PROP_RENDERER_CREATE_VULKAN_INSTANCE_POINTER):

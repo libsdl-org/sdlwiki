@@ -94,6 +94,16 @@ With the direct3d12 renderer:
 - [`SDL_PROP_RENDERER_D3D12_COMMAND_QUEUE_POINTER`](SDL_PROP_RENDERER_D3D12_COMMAND_QUEUE_POINTER):
   the ID3D12CommandQueue associated with the renderer
 
+With the metal renderer:
+
+- [`SDL_PROP_RENDERER_METAL_DEVICE_POINTER`](SDL_PROP_RENDERER_METAL_DEVICE_POINTER):
+  the MTLDevice associated with the renderer
+- [`SDL_PROP_RENDERER_METAL_COMMAND_QUEUE_POINTER`](SDL_PROP_RENDERER_METAL_COMMAND_QUEUE_POINTER):
+  the MTLCommandQueue associated with the renderer. Work submitted on this
+  queue will be ordered relative to other rendering.
+  [SDL_FlushRenderer](SDL_FlushRenderer)() can be used to guarantee the
+  current rendering has been submitted.
+
 With the vulkan renderer:
 
 - [`SDL_PROP_RENDERER_VULKAN_INSTANCE_POINTER`](SDL_PROP_RENDERER_VULKAN_INSTANCE_POINTER):
