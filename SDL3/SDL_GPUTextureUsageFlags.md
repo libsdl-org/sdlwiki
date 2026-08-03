@@ -22,8 +22,8 @@ typedef Uint32 SDL_GPUTextureUsageFlags;
 
 ## Remarks
 
-A texture must have at least one usage flag. Note that some usage flag
-combinations are invalid.
+A texture must have at least one usage flag. Note that combining SAMPLER
+with STORAGE_READ flags is invalid.
 
 With regards to compute storage usage, READ | WRITE means that you can have
 shader A that only writes into the texture and shader B that only reads
