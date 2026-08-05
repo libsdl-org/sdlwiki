@@ -22,8 +22,7 @@ SDL_DisplayOrientation SDL_GetCurrentDisplayOrientation(SDL_DisplayID displayID)
 
 ([SDL_DisplayOrientation](SDL_DisplayOrientation)) Returns the
 [SDL_DisplayOrientation](SDL_DisplayOrientation) enum value of the display,
-or [`SDL_ORIENTATION_UNKNOWN`](SDL_ORIENTATION_UNKNOWN) if it isn't
-available.
+or [`SDL_ORIENTATION_UNKNOWN`](SDL_ORIENTATION_UNKNOWN) if `displayID` is invalid.
 
 ## Thread Safety
 
