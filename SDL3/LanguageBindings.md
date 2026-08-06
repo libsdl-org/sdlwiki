@@ -39,6 +39,11 @@ go-sdl3 - https://github.com/Zyko0/go-sdl3
 LWJGL - https://github.com/LWJGL/lwjgl3
 
 
+## Lean
+
+SDL3 for Lean - https://github.com/philnguyen/lean-sdl3
+
+
 ## Nim
 
 SDL3 for Nim - https://github.com/transmutrix/nim-sdl3
