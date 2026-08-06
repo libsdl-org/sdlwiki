@@ -26,6 +26,8 @@ bool SDL_SetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode blendMode);
 
 ## Remarks
 
+This blend mode is used for any drawing that involves this texture.
+
 If the blend mode is not supported, the closest supported mode is chosen
 and this function returns false.
 
@@ -40,6 +42,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
+- [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

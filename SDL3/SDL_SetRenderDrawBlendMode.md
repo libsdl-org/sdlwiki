@@ -1,6 +1,6 @@
 # SDL_SetRenderDrawBlendMode
 
-Set the blend mode used for drawing operations (Fill and Line).
+Set the blend mode used for drawing operations.
 
 ## Header File
 
@@ -26,6 +26,8 @@ bool SDL_SetRenderDrawBlendMode(SDL_Renderer *renderer, SDL_BlendMode blendMode)
 
 ## Remarks
 
+This blend mode is used for any drawing that doesn't involve textures.
+
 If the blend mode is not supported, the closest supported mode is chosen.
 
 ## Thread Safety
@@ -39,6 +41,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
+- [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
