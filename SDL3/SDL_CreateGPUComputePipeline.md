@@ -29,7 +29,8 @@ pipeline object on success, or NULL on failure; call
 
 ## Remarks
 
-Shader resource bindings must be authored to follow a particular convention depending on the shader format. See below for details.
+Shader resource bindings must be authored to follow a particular convention
+depending on the shader format. See below for details.
 
 ---
 
@@ -37,25 +38,37 @@ Shader resource bindings must be authored to follow a particular convention depe
 
 For compute shaders, use:
 
-- Set 0 for samplers, read-only storage textures, and read-only storage buffers
+- Set 0 for samplers, read-only storage textures, and read-only storage
+  buffers
 - Set 1 for read-write storage textures and read-write storage buffers
 - Set 2 for uniform data
 
-The first resource in a given set must have a `binding` of 0. Additional resources must appear at consecutive bindings (1, 2, etc), leaving no gaps in the set.
+The first resource in a given set must have a `binding` of 0. Additional
+resources must appear at consecutive bindings (1, 2, etc), leaving no gaps
+in the set.
 
-All samplers must come first in the binding order of Set 0, in order of how they are bound via `SDL_BindGPUComputeSamplers()`.
+All samplers must come first in the binding order of Set 0, in order of how
+they are bound via `SDL_BindGPUComputeSamplers()`.
 
-All read-only storage textures must come after all samplers in the binding order, in order of how they are bound via `SDL_BindGPUComputeStorageTextures()`.
+All read-only storage textures must come after all samplers in the binding
+order, in order of how they are bound via
+`SDL_BindGPUComputeStorageTextures()`.
 
-All read-only storage buffers must come after all read-only storage textures in the binding order, in order of how they are bound via `SDL_BindGPUComputeStorageBuffers()`.
+All read-only storage buffers must come after all read-only storage
+textures in the binding order, in order of how they are bound via
+`SDL_BindGPUComputeStorageBuffers()`.
 
-All read-write storage textures must come first in the binding order of Set 1, in order of how they are bound via `SDL_BeginGPUComputePass()`.
+All read-write storage textures must come first in the binding order of Set
+1, in order of how they are bound via `SDL_BeginGPUComputePass()`.
 
-All read-write storage buffers must come after all read-write storage textures in the binding order, in order of how they are bound via `SDL_BeginGPUComputePass()`.
+All read-write storage buffers must come after all read-write storage
+textures in the binding order, in order of how they are bound via
+`SDL_BeginGPUComputePass()`.
 
 **Example**
 
-If a compute shader binds 2 of each resource type, its binding layout should look like this:
+If a compute shader binds 2 of each resource type, its binding layout
+should look like this:
 
 ```glsl
 // Any samplers come first in Set 0, in SDL bind slot order
@@ -83,28 +96,43 @@ layout(set = 2, binding = 1) uniform UniformDataBoundToSlot1 {};
 **DXBC / DXIL (HLSL)**
 
 For compute shaders, use:
-- `(t[n], space0)` for sampled textures, read-only storage textures, and read-only storage buffers
+
+- `(t[n], space0)` for sampled textures, read-only storage textures, and
+  read-only storage buffers
 - `(s[n], space0)` for samplers
-- `(u[n], space1)` for read-write storage textures and read-write storage buffers
+- `(u[n], space1)` for read-write storage textures and read-write storage
+  buffers
 - `(b[n], space2)` for uniform data
 
-The first resource in a given register set must have a register index of `0`. Additional resources must appear at consecutive indices (1, 2, etc), leaving no gaps in the register set.
+The first resource in a given register set must have a register index of
+`0`. Additional resources must appear at consecutive indices (1, 2, etc),
+leaving no gaps in the register set.
 
-All sampled textures must come first in the `t` register set, in order of how they are bound via `SDL_BindGPUComputeSamplers()`.
+All sampled textures must come first in the `t` register set, in order of
+how they are bound via `SDL_BindGPUComputeSamplers()`.
 
-All sampler objects must be in the `s` register set, in the same order as the textures above.
+All sampler objects must be in the `s` register set, in the same order as
+the textures above.
 
-All read-only storage textures must come after all samplers in the `t` register set, in order of how they are bound via `SDL_BindComputeStorageTextures()`.
+All read-only storage textures must come after all samplers in the `t`
+register set, in order of how they are bound via
+`SDL_BindComputeStorageTextures()`.
 
-All read-only storage buffers must come after all storage textures in the `t` register set, in order of how they are bound via `SDL_BindComputeStorageBuffers()`.
+All read-only storage buffers must come after all storage textures in the
+`t` register set, in order of how they are bound via
+`SDL_BindComputeStorageBuffers()`.
 
-All read-write storage textures must come first in the `u` register set in `space1`, in order of how they are bound via `SDL_BeginGPUComputePass()`.
+All read-write storage textures must come first in the `u` register set in
+`space1`, in order of how they are bound via `SDL_BeginGPUComputePass()`.
 
-All read-write storage buffers must come after all read-write storage textures in the `u` register set in `space1`, in order of how they are bound via `SDL_BeginGPUComputePass()`.
+All read-write storage buffers must come after all read-write storage
+textures in the `u` register set in `space1`, in order of how they are
+bound via `SDL_BeginGPUComputePass()`.
 
 **Example**
 
-If a compute shader binds 2 of each resource type, the layout should look like this:
+If a compute shader binds 2 of each resource type, the layout should look
+like this:
 
 ```c
 // Any samplers and sampled textures come first in their respective register sets, in SDL bind slot order
@@ -133,25 +161,39 @@ cbuffer UniformDataBoundToSlot1 : register( b1, space2 ) { ... };
 
 **MSL / Metallib (Metal Shading Language)**
 
-The first resource in a given argument table must have an index of `0`. Additional resources must appear at consecutive indices (1, 2, etc), leaving no gaps in the table.
+The first resource in a given argument table must have an index of `0`.
+Additional resources must appear at consecutive indices (1, 2, etc),
+leaving no gaps in the table.
 
-All sampled textures must come first in the `[[texture]]` argument table, in order of how they are bound via `SDL_BindGPUComputeSamplers()`.
+All sampled textures must come first in the `[[texture]]` argument table,
+in order of how they are bound via `SDL_BindGPUComputeSamplers()`.
 
-All sampler objects must be in the `[[sampler]]` argument table, in the same order as the textures above.
+All sampler objects must be in the `[[sampler]]` argument table, in the
+same order as the textures above.
 
-All read-only storage textures must come after all sampled textures in the `[[texture]]` argument table, in order of how they are bound via `SDL_BindGPUComputeStorageTextures()`.
+All read-only storage textures must come after all sampled textures in the
+`[[texture]]` argument table, in order of how they are bound via
+`SDL_BindGPUComputeStorageTextures()`.
 
-All read-write storage textures must come after all read-only storage textures in the `[[texture]]` argument table, in order of how they are bound via `SDL_BeginGPUComputePass()`.
+All read-write storage textures must come after all read-only storage
+textures in the `[[texture]]` argument table, in order of how they are
+bound via `SDL_BeginGPUComputePass()`.
 
-All uniform buffers must come first in the `[[buffer]]` argument table, in order of their slots in `SDL_PushGPUComputeUniformData()`.
+All uniform buffers must come first in the `[[buffer]]` argument table, in
+order of their slots in `SDL_PushGPUComputeUniformData()`.
 
-All read-only storage buffers must come after all uniform buffers in the `[[buffer]]` argument table, in order of how they are bound via `SDL_BindGPUComputeStorageBuffers()`.
+All read-only storage buffers must come after all uniform buffers in the
+`[[buffer]]` argument table, in order of how they are bound via
+`SDL_BindGPUComputeStorageBuffers()`.
 
-All read-write storage buffers must come after all read-only storage buffers in the `[[buffer]]` argument table, in order of how they are bound via `SDL_BeginGPUComputePass()`.
+All read-write storage buffers must come after all read-only storage
+buffers in the `[[buffer]]` argument table, in order of how they are bound
+via `SDL_BeginGPUComputePass()`.
 
 **Example**
 
-For a compute shader binding 2 of each resource type, the main function signature should look like this:
+For a compute shader binding 2 of each resource type, the main function
+signature should look like this:
 
 ```c++
 kernel void ExampleComputeShader(
