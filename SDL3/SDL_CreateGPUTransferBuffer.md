@@ -44,6 +44,8 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_MapGPUTransferBuffer](SDL_MapGPUTransferBuffer)
+- [SDL_UnmapGPUTransferBuffer](SDL_UnmapGPUTransferBuffer)
 - [SDL_UploadToGPUBuffer](SDL_UploadToGPUBuffer)
 - [SDL_DownloadFromGPUBuffer](SDL_DownloadFromGPUBuffer)
 - [SDL_UploadToGPUTexture](SDL_UploadToGPUTexture)
