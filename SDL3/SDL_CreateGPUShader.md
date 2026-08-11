@@ -28,37 +28,31 @@ NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
-Shader resource bindings must be authored to follow a particular convention
-depending on the shader format. See below for details.
+Shader resource bindings must be authored to follow a particular convention depending on the shader format. See below for details.
 
 ---
 
 **SPIR-V**
 
-For vertex shaders, use: - Set 0 for samplers, storage textures, and
-storage buffers - Set 1 for uniform data
+For vertex shaders, use:
+- Set 0 for samplers, storage textures, and storage buffers
+- Set 1 for uniform data
 
-For fragment shaders, use: - Set 2 for samplers, storage textures, and
-storage buffers - Set 3 for uniform data
+For fragment shaders, use:
+- Set 2 for samplers, storage textures, and storage buffers
+- Set 3 for uniform data
 
-The first resource in a given set must have a `binding` of 0. Additional
-resources must appear at consecutive bindings (1, 2, etc), leaving no gaps
-in the set.
+The first resource in a given set must have a `binding` of 0. Additional resources must appear at consecutive bindings (1, 2, etc), leaving no gaps in the set.
 
-All samplers must come first in the binding order, in order of how they are
-bound via `SDL_BindGPU*Samplers()`.
+All samplers must come first in the binding order, in order of how they are bound via `SDL_BindGPU*Samplers()`.
 
-All storage textures must come after all samplers in the binding order, in
-order of how they are bound via `SDL_Bind*StorageTextures()`.
+All storage textures must come after all samplers in the binding order, in order of how they are bound via `SDL_Bind*StorageTextures()`.
 
-All storage buffers must come after all storage textures in the binding
-order, in order of how they are bound via `SDL_Bind*StorageBuffers()`.
+All storage buffers must come after all storage textures in the binding order, in order of how they are bound via `SDL_Bind*StorageBuffers()`.
 
 **Example**
 
-If a vertex shader binds 2 samplers, 2 storage textures, 2 storage buffers,
-and 2 uniform buffers, its binding layout should look like this:
-
+If a vertex shader binds 2 samplers, 2 storage textures, 2 storage buffers, and 2 uniform buffers, its binding layout should look like this:
 ```glsl
 // Any samplers come first in the set, in SDL bind slot order
 layout(set = 0, binding = 0) sampler2d samplerBoundToSlot0;
@@ -78,36 +72,29 @@ layout(set = 1, binding = 1) uniform UniformDataBoundToSlot1 {};
 
 **DXBC / DXIL (HLSL)**
 
-For vertex shaders, use: - `(t[n], space0)` for sampled textures, storage
-textures, and storage buffers - `(s[n], space0)` for samplers - `(b[n],
-space1)` for uniform data
+For vertex shaders, use:
+- `(t[n], space0)` for sampled textures, storage textures, and storage buffers
+- `(s[n], space0)` for samplers
+- `(b[n], space1)` for uniform data
 
-For fragment (aka "pixel") shaders, use: - `(t[n], space2)` for sampled
-textures, storage textures, and storage buffers - `(s[n], space2)` for
-samplers - `(b[n], space3)` for uniform data
+For fragment (aka "pixel") shaders, use:
+- `(t[n], space2)` for sampled textures, storage textures, and storage buffers
+- `(s[n], space2)` for samplers
+- `(b[n], space3)` for uniform data
 
-The first resource in a given register set must have a register index of
-`0`. Additional resources must appear at consecutive indices (1, 2, etc),
-leaving no gaps in the register set.
+The first resource in a given register set must have a register index of `0`. Additional resources must appear at consecutive indices (1, 2, etc), leaving no gaps in the register set.
 
-All sampled textures must come first in the `t` register set, in order of
-how they are bound via `SDL_BindGPU*Samplers()`.
+All sampled textures must come first in the `t` register set, in order of how they are bound via `SDL_BindGPU*Samplers()`.
 
-All sampler objects must be in the `s` register set, in the same order as
-the textures above.
+All sampler objects must be in the `s` register set, in the same order as the textures above.
 
-All storage textures must come after all samplers in the `t` register set,
-in order of how they are bound via `SDL_Bind*StorageTextures()`.
+All storage textures must come after all samplers in the `t` register set, in order of how they are bound via `SDL_Bind*StorageTextures()`.
 
-All storage buffers must come after all storage textures in the `t`
-register set, in order of how they are bound via
-`SDL_Bind*StorageBuffers()`.
+All storage buffers must come after all storage textures in the `t` register set, in order of how they are bound via `SDL_Bind*StorageBuffers()`.
 
 **Example**
 
-If a pixel shader binds 2 samplers, 2 storage textures, 2 storage buffers,
-and 2 uniform buffers, its binding layout should look like this:
-
+If a pixel shader binds 2 samplers, 2 storage textures, 2 storage buffers, and 2 uniform buffers, its binding layout should look like this:
 ```c
 // Any samplers and sampled textures come first in their respective register sets, in SDL bind slot order
 SamplerState SamplerBoundToSlot0 : register( s0, space2 );
@@ -129,42 +116,23 @@ cbuffer UniformDataBoundToSlot1 : register( b1, space4 ) { ... };
 
 **MSL / Metallib (Metal Shading Language)**
 
-The first resource in a given argument table must have an index of `0`.
-Additional resources must appear at consecutive indices (1, 2, etc),
-leaving no gaps in the table. (_Except_ in the case of vertex buffers,
-which are mentioned below.)
+The first resource in a given argument table must have an index of `0`. Additional resources must appear at consecutive indices (1, 2, etc), leaving no gaps in the table. (_Except_ in the case of vertex buffers, which are mentioned below.)
 
-All sampled textures must come first in the `[[texture]]` argument table,
-in order of how they are bound via `SDL_BindGPU*Samplers()`.
+All sampled textures must come first in the `[[texture]]` argument table, in order of how they are bound via `SDL_BindGPU*Samplers()`.
 
-All sampler objects must be in the `[[sampler]]` argument table, in the
-same order as the textures above.
+All sampler objects must be in the `[[sampler]]` argument table, in the same order as the textures above.
 
-All storage textures must come after all sampled textures in the
-`[[texture]]` argument table, in order of how they are bound via
-`SDL_BindGPU*StorageTextures()`.
+All storage textures must come after all sampled textures in the `[[texture]]` argument table, in order of how they are bound via `SDL_BindGPU*StorageTextures()`.
 
-All uniform buffers must come first in the `[[buffer]]` argument table, in
-order of their slots in `SDL_PushGPU*UniformData()`.
+All uniform buffers must come first in the `[[buffer]]` argument table, in order of their slots in `SDL_PushGPU*UniformData()`.
 
-All storage buffers must come after all uniform buffers in the `[[buffer]]`
-argument table, in order of how they are bound via
-`SDL_BindGPU*StorageBuffers()`.
+All storage buffers must come after all uniform buffers in the `[[buffer]]` argument table, in order of how they are bound via `SDL_BindGPU*StorageBuffers()`.
 
-In Metal, vertex buffers are also included in the `[[buffer]]` argument
-table. To work around this, SDL forces the vertex buffer bound to slot 0 to
-be bound at `[[buffer(14)]]`. The vertex buffer in slot 1 will be bound to
-`[[buffer(15)]]`, and so on. Rather than manually authoring vertex buffer
-indices, use the `[[stage_in]]` attribute which will automatically use the
-vertex input information from the
-[SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline).
+In Metal, vertex buffers are also included in the `[[buffer]]` argument table. To work around this, SDL forces the vertex buffer bound to slot 0 to be bound at `[[buffer(14)]]`. The vertex buffer in slot 1 will be bound to `[[buffer(15)]]`, and so on. Rather than manually authoring vertex buffer indices, use the `[[stage_in]]` attribute which will automatically use the vertex input information from the [SDL_GPUGraphicsPipeline](SDL_GPUGraphicsPipeline).
 
 **Example**
 
-For a vertex shader with 1 vertex buffer, 2 samplers, 2 storage textures, 2
-storage buffers, and 2 uniform buffers, the main function signature should
-look something like this:
-
+For a vertex shader with 1 vertex buffer, 2 samplers, 2 storage textures, 2 storage buffers, and 2 uniform buffers, the main function signature should look something like this:
 ```c++
 vertex VertexOutput ExampleVertexShader(
     // Vertex buffers are their own special thing...
@@ -189,17 +157,9 @@ vertex VertexOutput ExampleVertexShader(
 
 ---
 
-Shader semantics other than system-value semantics do not matter in D3D12.
-For ease of use, the SDL implementation assumes that non system-value
-semantics will all be `TEXCOORD`. If you are using HLSL as the shader
-source language, your vertex semantics should start at `TEXCOORD0` and
-increment like so: `TEXCOORD1`, `TEXCOORD2`, etc.
+Shader semantics other than system-value semantics do not matter in D3D12. For ease of use, the SDL implementation assumes that non system-value semantics will all be `TEXCOORD`. If you are using HLSL as the shader source language, your vertex semantics should start at `TEXCOORD0` and increment like so: `TEXCOORD1`, `TEXCOORD2`, etc.
 
-If you wish to change the semantic prefix to something other than
-`TEXCOORD` you can use
-[SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING](SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING)
-with
-[SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)().
+If you wish to change the semantic prefix to something other than `TEXCOORD` you can use [SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING](SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING) with [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)().
 
 There are optional properties that can be provided through `props`. These
 are the supported properties:
