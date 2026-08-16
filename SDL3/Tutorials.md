@@ -51,7 +51,7 @@ And, of course, all of the examples are included in SDL's source tree, in the [e
 - [Mike Shah's SDL3 Tutorial Video Playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-RZSmGbLkZvkgec6lJ0BfX): Covers setup of SDL3 and programming tutorials demonstrating the SDL3 API.
 - [DarkCybernetics](https://darkcybernetics.com ): creates comprehensive 2D/3D game tutorials using SDL2 and SDL3 also advanced Computer Science courses.
 - [Minesweeper / Prato Fiorito - C and SDL3 :  Programming Rainbow](https://youtube.com/playlist?list=PLO02jwa2ZaiDSS3FAbapE5oT3JhtaDwaK&si=boem8je4mOdZitb2) : A Tutorial Series for how to create Minesweeper / Prato Fiorito, with 8 themes, 5 sizes, and 4 difficulty levels. Written in C and SDL3.
-- [Beginners Guide to SDL3 in C : Programming Rainbow](https://youtube.com/playlist?list=PLO02jwa2ZaiBaZ2t-sU4i8JttexCRixsn&si=CL1UrVUvKusmEMM1) : An in-depth guide to getting started with SDL3 in the C Language.
+- [Beginners Guide to SDL3 in C : Programming Rainbow](https://youtube.com/playlist?list=PLO02jwa2ZaiBaZ2t-sU4i8JttexCRixsn&si=CL1UrVUvKusmEMM1) : An in-depth guide to getting started with SDL3 in the C Language
 
 ## باللغة العربية SDL3 شرح مكتبة
 
