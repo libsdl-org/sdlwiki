@@ -18,7 +18,7 @@ Please follow the licenses of any fonts you include in your application, as many
 
 ## Getting and installing SDL_ttf
 
-- The latest preview release is available on [GitHub](https://github.com/libsdl-org/SDL_ttf/releases/preview-3.1.0).
+- The latest preview release is available on [GitHub](https://github.com/libsdl-org/SDL_ttf/releases).
 - [Installation](https://github.com/libsdl-org/SDL_ttf/blob/main/INSTALL.md): How to install SDL_ttf on your platform of choice
   and link your program against it.
 
