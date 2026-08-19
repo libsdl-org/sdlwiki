@@ -33,7 +33,7 @@ depending on the shader format. See below for details.
 
 ---
 
-**SPIR-V**
+**SPIR-V (GLSL)**
 
 For vertex shaders, use: - Set 0 for samplers, storage textures, and
 storage buffers - Set 1 for uniform data
@@ -61,17 +61,17 @@ and 2 uniform buffers, its binding layout should look like this:
 
 ```glsl
 // Any samplers come first in the set, in SDL bind slot order
-layout(set = 0, binding = 0) sampler2d samplerBoundToSlot0;
-layout(set = 0, binding = 1) sampler2d samplerBoundToSlot1;
+layout(set = 0, binding = 0) uniform sampler2D samplerBoundToSlot0;
+layout(set = 0, binding = 1) uniform sampler2D samplerBoundToSlot1;
 // Any storage textures come next in the set, in SDL bind slot order
-layout(set = 0, binding = 2) image2d storageTextureBoundToSlot0;
-layout(set = 0, binding = 3) image2d storageTextureBoundToSlot1;
+layout(set = 0, binding = 2) uniform image2D storageTextureBoundToSlot0;
+layout(set = 0, binding = 3) uniform image2D storageTextureBoundToSlot1;
 // Any storage buffers come next in the set, in SDL bind slot order
-layout(set = 0, binding = 4) buffer storageBufferBoundToSlot0;
-layout(set = 0, binding = 5) buffer storageBufferBoundToSlot1;
+layout(set = 0, binding = 4) buffer storageBufferBoundToSlot0 { ... };
+layout(set = 0, binding = 5) buffer storageBufferBoundToSlot1 { ... };
 // Any uniform buffers are in their own set, in SDL slot order
-layout(set = 1, binding = 0) uniform UniformDataBoundToSlot0 {};
-layout(set = 1, binding = 1) uniform UniformDataBoundToSlot1 {};
+layout(set = 1, binding = 0) uniform UniformDataBoundToSlot0 { ... };
+layout(set = 1, binding = 1) uniform UniformDataBoundToSlot1 { ... };
 ```
 
 ---
@@ -218,4 +218,3 @@ This function is available since SDL 3.2.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGPU](CategoryGPU)
-
