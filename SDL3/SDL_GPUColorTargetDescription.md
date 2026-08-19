@@ -23,6 +23,8 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GPUGraphicsPipelineTargetInfo](SDL_GPUGraphicsPipelineTargetInfo)
+- [SDL_GPUTextureFormat](SDL_GPUTextureFormat)
+- [SDL_GPUColorTargetBlendState](SDL_GPUColorTargetBlendState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
