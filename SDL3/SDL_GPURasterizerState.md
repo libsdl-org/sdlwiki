@@ -42,6 +42,9 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GPUGraphicsPipelineCreateInfo](SDL_GPUGraphicsPipelineCreateInfo)
+- [SDL_GPUFillMode](SDL_GPUFillMode)
+- [SDL_GPUCullMode](SDL_GPUCullMode)
+- [SDL_GPUFrontFace](SDL_GPUFrontFace)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
