@@ -1,1 +1,1 @@
-vcpkg install sdl3
+vcpkg install sdl2
