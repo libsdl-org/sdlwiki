@@ -64,8 +64,8 @@ and 2 uniform buffers, its binding layout should look like this:
 layout(set = 0, binding = 0) sampler2d samplerBoundToSlot0;
 layout(set = 0, binding = 1) sampler2d samplerBoundToSlot1;
 // Any storage textures come next in the set, in SDL bind slot order
-layout(set = 0, binding = 2) texture2d storageTextureBoundToSlot0;
-layout(set = 0, binding = 3) texture2d storageTextureBoundToSlot1;
+layout(set = 0, binding = 2) image2d storageTextureBoundToSlot0;
+layout(set = 0, binding = 3) image2d storageTextureBoundToSlot1;
 // Any storage buffers come next in the set, in SDL bind slot order
 layout(set = 0, binding = 4) buffer storageBufferBoundToSlot0;
 layout(set = 0, binding = 5) buffer storageBufferBoundToSlot1;
@@ -121,8 +121,8 @@ Texture2D StorageTextureBoundToSlot1 : register( t3, space2 );
 ByteAddressBuffer StorageBufferBoundToSlot0 : register( t4, space2 );
 ByteAddressBuffer StorageBufferBoundToSlot1 : register( t5, space2 );
 // Any uniform buffers are in the `b` register set *and* in their own space, in SDL slot order
-cbuffer UniformDataBoundToSlot0 : register( b0, space4 ) { ... };
-cbuffer UniformDataBoundToSlot1 : register( b1, space4 ) { ... };
+cbuffer UniformDataBoundToSlot0 : register( b0, space3 ) { ... };
+cbuffer UniformDataBoundToSlot1 : register( b1, space3 ) { ... };
 ```
 
 ---
