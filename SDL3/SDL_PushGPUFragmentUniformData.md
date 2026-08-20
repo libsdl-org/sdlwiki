@@ -33,6 +33,8 @@ The data being pushed must respect std140 layout conventions. In practical
 terms this means you must ensure that vec3 and vec4 fields are 16-byte
 aligned.
 
+For information on Uniform data bindings please read the docs for [SDL_CreateGPUShader](https://wiki.libsdl.org/SDL3/SDL_CreateGPUShader#remarks).
+
 ## Version
 
 This function is available since SDL 3.2.0.
