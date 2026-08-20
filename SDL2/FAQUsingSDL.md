@@ -5,7 +5,7 @@
 
 You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver you want to use. The drivers available depend on the platform and SDL compile-time options. Here is a partial list for some platforms:
 
-### Linux
+**Linux**
 
 | _Name_   | _Description_                                            | _1.2_ | _2.0_ |
 | -------- | -------------------------------------------------------- | ----- | ----- |
@@ -19,7 +19,7 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 | wayland  | Use Wayland protocol for hardware acceleration           | no    | yes   |
 | kmsdrm   | Use Direct Rendering Manager / Kernel Mode Setting       | no    | yes   |
 
-### Win32
+**Win32**
 
 | _Name_   | _Description_                                            | _1.2_ | _2.0_ |
 | -------- | -------------------------------------------------------- | ----- | ----- |
@@ -32,7 +32,7 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 
 You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver you want to use. The drivers available depend on the platform and SDL compile-time options. Here is a partial list for some platforms:
 
-### Linux
+**Linux**
 
 | _Name_     | _Description_                                            | _1.2_ | _2.0_ |
 | ---------- | -------------------------------------------------------- | ----- | ----- |
@@ -48,7 +48,8 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 | dma        | Use the OSS API to perform DMA access on /dev/dsp        | yes   | no    |
 
 
-### Win32
+**Win32**
+
 | _Name_      | _Description_                                            | _1.2_ | _2.0_ |
 | ----------- | -------------------------------------------------------- | ----- | ----- |
 | dsound      | (default) Use the DirectSound API                        | yes   | no    |
