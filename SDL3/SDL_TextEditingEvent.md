@@ -23,9 +23,9 @@ typedef struct SDL_TextEditingEvent
 
 ## Remarks
 
-The start cursor is the position, in UTF-8 characters, where new typing
-will be inserted into the editing text. The length is the number of UTF-8
-characters that will be replaced by new typing.
+The start cursor is the position, in Unicode code points (**not bytes**), where new typing
+will be inserted into the editing text. The length is the number of Unicode code points (**not bytes**)
+that will be replaced by new typing.
 
 ## Version
 
