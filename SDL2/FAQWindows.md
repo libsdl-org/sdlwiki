@@ -46,7 +46,7 @@ You need to pass the SDL_INIT_NOPARACHUTE flag to your calls to SDL_Init() to ma
 The DirectX drivers have a system lock while you have video surfaces locked. To avoid this, you can set the video driver to GDI by setting the SDL_VIDEODRIVER environment variable to: windib.
 Since this changes video and mouse/keyboard input drivers, you'll see a difference in performance and features available, but you'll be able to debug your application more easily.
 
-#### My application shows no terminal with debug messages
+#### My Visual C++ application shows no terminal with debug messages
 
 Link your application with the Console subystem instead: `/SUBSYSTEM:CONSOLE`.
 
@@ -91,7 +91,7 @@ There are also step by step instructions at: http://docs.deninet.com/sdl_on_dev_
 Choose "gui application" instead of "console application" when compiling for Vista.
 
 ### MinGW
-#### My application shows no terminal with debug messages
+#### My MinGW application shows no terminal with debug messages
 
 When using pkg-config, or certain SDL2 CMake configuration scripts, `-mwindows` is always added as a link option.
 This option instructs the Windows loader to start your application though `WinMain` and don't show a console window.
