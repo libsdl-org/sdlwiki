@@ -14,7 +14,7 @@ https://learn.microsoft.com/en-us/windows/win32/dxtecharts/lockless-programming
 
 There's also lots of good information here:
 
-- https://www.1024cores.net/home/lock-free-algorithms
+- https://web.archive.org/web/20251113104356/https://1024cores.net/home/lock-free-algorithms
 - https://preshing.com/
 
 These operations may or may not actually be implemented using processor
