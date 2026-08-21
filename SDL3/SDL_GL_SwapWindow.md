@@ -49,7 +49,7 @@ SDL_Window* window = SDL_CreateWindow("SDL3/OpenGL Demo", 640, 480, SDL_WINDOW_O
 /* Create an OpenGL context associated with the window. */
 SDL_GLContext glcontext = SDL_GL_CreateContext(window);
 
-/* This makes our buffer swap syncronized with the monitor's vertical refresh */
+/* This makes our buffer swap synchronized with the monitor's vertical refresh */
 SDL_GL_SetSwapInterval(1);
 
 /* Clear context */
