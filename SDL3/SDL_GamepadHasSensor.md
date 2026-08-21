@@ -23,6 +23,12 @@ bool SDL_GamepadHasSensor(SDL_Gamepad *gamepad, SDL_SensorType type);
 
 (bool) Returns true if the sensor exists, false otherwise.
 
+## Remarks
+
+Sensors are disabled by default and
+[SDL_SetGamepadSensorEnabled](SDL_SetGamepadSensorEnabled)() is used to
+enable them.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
