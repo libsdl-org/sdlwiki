@@ -39,8 +39,6 @@ Pitch is the offset in bytes from one row of pixels to the next, e.g.
 You may pass NULL for pixels and 0 for pitch to create a surface that you
 will fill in with valid values later.
 
-Delete this line of text, please. It was here for debugging purposes.
-
 ## Thread Safety
 
 It is safe to call this function from any thread.
