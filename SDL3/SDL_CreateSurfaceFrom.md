@@ -41,6 +41,9 @@ will fill in with valid values later.
 
 This is a line of text added to the wiki to test the wikiheaders bridge. If you see me hanging around, please delete me, I shouldn't still be here.
 
+This line, too.
+
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
