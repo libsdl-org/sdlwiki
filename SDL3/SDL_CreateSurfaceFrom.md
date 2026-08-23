@@ -44,8 +44,6 @@ you see me hanging around, please delete me, I shouldn't still be here.
 
 Delete this line, too.
 
-And this one.
-
 ## Thread Safety
 
 It is safe to call this function from any thread.
