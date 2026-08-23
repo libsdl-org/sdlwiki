@@ -46,6 +46,8 @@ Delete this line, too.
 
 And this one.
 
+Me too.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
