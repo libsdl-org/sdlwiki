@@ -114,14 +114,15 @@ works this way, there is a detailed
 [blog post](https://moonside.games/posts/layers-all-the-way-down/)
 explaining this situation.
 
-Shader binaries can be compiled using standard Vulkan, Direct3D or Metal tooling,
-but SDL provides a separate project,
-[SDL_shadercross](https://github.com/libsdl-org/SDL_shadercross), as a convenient
-command-line wrapper for cross-compiling shaders from HLSL or SPIR-V to
-any backend format (SPIR-V, DXBC, DXIL, MSL).
+Shader binaries can be compiled using standard Vulkan, Direct3D or Metal
+tooling, but SDL provides a separate project,
+[SDL_shadercross](https://github.com/libsdl-org/SDL_shadercross)
+, as a convenient command-line wrapper for cross-compiling shaders from
+HLSL or SPIR-V to any backend format (SPIR-V, DXBC, DXIL, MSL).
 
-While offline ahead-of-time compilation is preferred, SDL_shadercross is also
-able to operate as a runtime library for advanced usecases.
+While offline ahead-of-time compilation is preferred,
+[SDL_shadercross](SDL_shadercross) is also able to operate as a runtime
+library for advanced usecases.
 
 This is an extremely quick overview that leaves out several important
 details. Already, though, one can see that GPU programming can be quite
