@@ -30,6 +30,11 @@ This struct is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_BlitGPUTexture](SDL_BlitGPUTexture)
+- [SDL_GPUBlitRegion](SDL_GPUBlitRegion)
+- [SDL_GPULoadOp](SDL_GPULoadOp)
+- [SDL_FColor](SDL_FColor)
+- [SDL_FlipMode](SDL_FlipMode)
+- [SDL_GPUFilter](SDL_GPUFilter)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)

@@ -31,6 +31,7 @@ This struct is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_SetGPUBlendConstants](SDL_SetGPUBlendConstants)
 - [SDL_GPUColorTargetDescription](SDL_GPUColorTargetDescription)
 - [SDL_GPUBlendFactor](SDL_GPUBlendFactor)
 - [SDL_GPUBlendOp](SDL_GPUBlendOp)
