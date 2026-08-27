@@ -1,0 +1,45 @@
+# SDL_GetJoystickSensorData
+
+Get the current state of a joystick sensor.
+
+## Header File
+
+Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
+
+## Syntax
+
+```c
+bool SDL_GetJoystickSensorData(SDL_Joystick *joystick, SDL_SensorType type, float *data, int num_values);
+```
+
+## Function Parameters
+
+|                                  |                |                                                 |
+| -------------------------------- | -------------- | ----------------------------------------------- |
+| [SDL_Joystick](SDL_Joystick) *   | **joystick**   | the joystick to query.                          |
+| [SDL_SensorType](SDL_SensorType) | **type**       | the type of sensor to query.                    |
+| float *                          | **data**       | a pointer filled with the current sensor state. |
+| int                              | **num_values** | the number of values to write to data.          |
+
+## Return Value
+
+(bool) Returns true on success or false on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+The number of values and interpretation of the data is sensor dependent.
+See the remarks in [SDL_SensorType](SDL_SensorType) for details for each
+type of sensor.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
+
+## Version
+
+This function is available since SDL 3.2.0.
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
+

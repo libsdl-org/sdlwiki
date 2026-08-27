@@ -501,6 +501,11 @@ bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick, int axis, Sint16 *s
 bool SDL_GetJoystickBall(SDL_Joystick *joystick, int ball, int *dx, int *dy);                                                                     // Get the ball axis change since the last poll.
 Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick, int hat);                                                                                        // Get the current state of a POV hat on a joystick.
 bool SDL_GetJoystickButton(SDL_Joystick *joystick, int button);                                                                                   // Get the current state of a button on a joystick.
+bool SDL_JoystickHasSensor(SDL_Joystick *joystick, SDL_SensorType type);                                                                          // Return whether a joystick has a particular sensor.
+bool SDL_SetJoystickSensorEnabled(SDL_Joystick *joystick, SDL_SensorType type, bool enabled);                                                     // Set whether data reporting for a joystick sensor is enabled.
+bool SDL_JoystickSensorEnabled(SDL_Joystick *joystick, SDL_SensorType type);                                                                      // Query whether sensor data reporting is enabled for a joystick.
+float SDL_GetJoystickSensorDataRate(SDL_Joystick *joystick, SDL_SensorType type);                                                                 // Get the data rate (number of events per second) of a joystick sensor.
+bool SDL_GetJoystickSensorData(SDL_Joystick *joystick, SDL_SensorType type, float *data, int num_values);                                         // Get the current state of a joystick sensor.
 bool SDL_RumbleJoystick(SDL_Joystick *joystick, Uint16 low_frequency_rumble, Uint16 high_frequency_rumble, Uint32 duration_ms);                   // Start a rumble effect.
 bool SDL_RumbleJoystickTriggers(SDL_Joystick *joystick, Uint16 left_rumble, Uint16 right_rumble, Uint32 duration_ms);                             // Start a rumble effect in the joystick's triggers.
 bool SDL_SetJoystickLED(SDL_Joystick *joystick, Uint8 red, Uint8 green, Uint8 blue);                                                              // Update a joystick's LED color.
