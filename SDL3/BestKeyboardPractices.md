@@ -21,7 +21,7 @@ Specifically, they assume a US English QWERTY keyboard layout, no matter what th
 
 ### Events vs States
 
-When dealing with the buttons of joysticks, mice, and keyboards, it's common that people reach first for events. This document is mostly concerned with them as well as they apply to all of the approaches we'll cover. That said it's important to understand the differences here, as you may run into undesirable if you don't choose wisely. 
+When dealing with the buttons of joysticks, mice, and keyboards, it's common that people reach first for events. This document is mostly concerned with them as well as they apply to all of the approaches we'll cover. That said it's important to understand the differences here, as you may run into undesirable consequences if you don't choose wisely. 
 
 Conceptually, Events are a way for the OS or SDL to inform you something has happened. You don't necessarily _always_ want to react to this information immediately. Consider when the player is moving forward, moving the character is, in most games, going to require per-frame work. So frame to frame, you'll need to know the user is pressing the button. Button events, regardless if they're Keyboard/Mouse/Gamepad/Joystick, don't get sent every frame, although they do get repeated, which we'll discuss down below. This can make it appear as though a character is continuously moving, but it will be jerky and there will be a big delay towards the beginning.
 
