@@ -1,6 +1,6 @@
 # SDL_SetTextureBlendMode
 
-Set the blend mode for a texture, used by [SDL_RenderTexture](SDL_RenderTexture)().
+Set the blend mode for a texture.
 
 ## Header File
 
