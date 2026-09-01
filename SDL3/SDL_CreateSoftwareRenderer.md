@@ -26,7 +26,7 @@ information.
 
 ## Remarks
 
-Two other API which can be used to create [SDL_Renderer](SDL_Renderer):
+Two other APIs which can be used to create [SDL_Renderer](SDL_Renderer):
 [SDL_CreateRenderer](SDL_CreateRenderer)() and
 [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)(). These can
 _also_ create a software renderer, but they are intended to be used with an
