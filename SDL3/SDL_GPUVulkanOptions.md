@@ -38,6 +38,10 @@ as well as vulkan_10_physical_device_features, are always processed.
 
 This struct is available since SDL 3.4.0.
 
+## See Also
+
+- [SDL_CreateGPUDeviceWithProperties](SDL_CreateGPUDeviceWithProperties)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGPU](CategoryGPU)
 
