@@ -16,7 +16,7 @@ Uint16 SDL_GameControllerGetFirmwareVersion(SDL_GameController *gamecontroller);
 
 |                                            |                    |                                      |
 | ------------------------------------------ | ------------------ | ------------------------------------ |
-| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to query. |
+| [SDL_GameController](SDL_GameController) * | **gamecontroller** | the game controller object to head. |
 
 ## Return Value
 
