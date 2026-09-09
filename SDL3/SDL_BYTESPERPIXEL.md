@@ -15,7 +15,8 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
           ((format) == SDL_PIXELFORMAT_UYVY) || \
           ((format) == SDL_PIXELFORMAT_YVYU) || \
           ((format) == SDL_PIXELFORMAT_P010) || \
-          ((format) == SDL_PIXELFORMAT_P416)) ? 2 : 1) : (((format) >> 0) & 0xFF))
+          ((format) == SDL_PIXELFORMAT_I0FL) || \
+          ((format) == SDL_PIXELFORMAT_I4FL)) ? 2 : 1) : (((format) >> 0) & 0xFF))
 ```
 
 ## Macro Parameters
