@@ -163,6 +163,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_MAC_OPTION_AS_ALT](SDL_HINT_MAC_OPTION_AS_ALT): A variable controlling whether the Option key on macOS should be remapped to act as the Alt key.
 - [SDL_MAC_PRESS_AND_HOLD](SDL_HINT_MAC_PRESS_AND_HOLD): A variable controlling whether holding down a key will repeat the pressed key or open the accents menu on macOS.
 - [SDL_MAC_SCROLL_MOMENTUM](SDL_HINT_MAC_SCROLL_MOMENTUM): A variable controlling whether SDL_EVENT_MOUSE_WHEEL event values will have momentum on macOS.
+- [SDL_MAC_USE_GCMOUSE](SDL_HINT_MAC_USE_GCMOUSE): A variable controlling whether the GCMouse API will be used on macOS.
 - [SDL_MAIN_CALLBACK_RATE](SDL_HINT_MAIN_CALLBACK_RATE): Request SDL_AppIterate() be called at a specific rate.
 - [SDL_MOUSE_AUTO_CAPTURE](SDL_HINT_MOUSE_AUTO_CAPTURE): A variable controlling whether the mouse is captured while mouse buttons are pressed.
 - [SDL_MOUSE_DEFAULT_SYSTEM_CURSOR](SDL_HINT_MOUSE_DEFAULT_SYSTEM_CURSOR): A variable setting which system cursor to use as the default cursor.
