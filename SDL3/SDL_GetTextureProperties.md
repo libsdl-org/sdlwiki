@@ -84,7 +84,13 @@ With the metal renderer:
 With the vulkan renderer:
 
 - [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER):
-  the VkImage associated with the texture
+  the VkImage associated with the texture. For NV12 style textures this is
+  the single two plane VkImage holding both the Y and UV planes, and for
+  YUV style textures it is the VkImage holding the Y plane.
+- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_U_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_U_NUMBER):
+  the VkImage associated with the U plane of a YUV texture
+- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_V_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_V_NUMBER):
+  the VkImage associated with the V plane of a YUV texture
 
 With the opengl renderer:
 

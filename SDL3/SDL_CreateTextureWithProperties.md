@@ -142,10 +142,21 @@ With the vulkan renderer:
 
 - [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER):
   the VkImage associated with the texture, if you want to wrap an existing
-  texture.
+  texture. For NV12 style textures this is the single two plane VkImage
+  holding both the Y and UV planes, and for YUV style textures it is the
+  VkImage holding the Y plane.
+- [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_U_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_U_NUMBER):
+  the VkImage associated with the U plane of a YUV texture, if you want to
+  wrap an existing texture.
+- [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_V_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_V_NUMBER):
+  the VkImage associated with the V plane of a YUV texture, if you want to
+  wrap an existing texture.
 - [`SDL_PROP_TEXTURE_CREATE_VULKAN_LAYOUT_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_LAYOUT_NUMBER):
   the VkImageLayout for the VkImage, defaults to
   VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL.
+- [`SDL_PROP_TEXTURE_CREATE_VULKAN_USAGE_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_USAGE_NUMBER):
+  additional VK_IMAGE_USAGE bits that should be used when creating the
+  texture. VkImage, defaults to VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL.
 - [`SDL_PROP_TEXTURE_CREATE_VULKAN_ANDROID_HARDWARE_BUFFER_POINTER`](SDL_PROP_TEXTURE_CREATE_VULKAN_ANDROID_HARDWARE_BUFFER_POINTER):
   the AHardwareBuffer to sample from, if you want to use an existing
   Android hardware buffer as the texture. You must use
