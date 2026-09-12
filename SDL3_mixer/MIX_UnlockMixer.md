@@ -25,7 +25,7 @@ While locked, the mixer will not be able to mix more audio or change its
 internal state another thread. Those other threads will block until the
 mixer is unlocked again.
 
-Under the hood, this function calls SDL_LockMutex(), so all the same rules
+Under the hood, this function calls SDL_UnlockMutex(), so all the same rules
 apply: the lock can be recursive, it must be unlocked the same number of
 times from the same thread that locked it, etc.
 
