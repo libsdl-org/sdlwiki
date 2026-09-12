@@ -146,6 +146,15 @@ With the vulkan renderer:
 - [`SDL_PROP_TEXTURE_CREATE_VULKAN_LAYOUT_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_LAYOUT_NUMBER):
   the VkImageLayout for the VkImage, defaults to
   VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL.
+- [`SDL_PROP_TEXTURE_CREATE_VULKAN_ANDROID_HARDWARE_BUFFER_POINTER`](SDL_PROP_TEXTURE_CREATE_VULKAN_ANDROID_HARDWARE_BUFFER_POINTER):
+  the AHardwareBuffer to sample from, if you want to use an existing
+  Android hardware buffer as the texture. You must use
+  [SDL_PIXELFORMAT_EXTERNAL_OES](SDL_PIXELFORMAT_EXTERNAL_OES) for the
+  texture format. You can't directly update the texture or use it as a
+  render target. If the Android buffer contents change, you must recreate
+  the texture to pick up the changes. The texture holds a reference to the
+  buffer, so you can release your own reference once the texture has been
+  created.
 
 With the GPU renderer:
 
