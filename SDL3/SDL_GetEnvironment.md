@@ -28,6 +28,12 @@ to modify this environment, or [SDL_setenv_unsafe](SDL_setenv_unsafe)() or
 [SDL_unsetenv_unsafe](SDL_unsetenv_unsafe)() if you want changes to persist
 in the C runtime environment after [SDL_Quit](SDL_Quit)().
 
+Note that on Windows, the variable names pulled in from the system at
+startup have their ASCII values uppercased, to match what most platforms
+expect even though the Windows system environment table is
+case-insensitive. Once those uppercased variable names are in an
+[SDL_Environment](SDL_Environment), SDL treats them as case-sensitive.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.

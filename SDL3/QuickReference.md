@@ -1628,7 +1628,7 @@ void * SDL_aligned_alloc_zero(size_t alignment, size_t size);                   
 void SDL_aligned_free(void *mem);                                                                                                                           // Free memory allocated by SDL_aligned_alloc().
 int SDL_GetNumAllocations(void);                                                                                                                            // Get the number of outstanding (unfreed) allocations.
 SDL_Environment * SDL_GetEnvironment(void);                                                                                                                 // Get the process environment.
-SDL_Environment * SDL_CreateEnvironment(bool populated);                                                                                                    // Create a set of environment variables
+SDL_Environment * SDL_CreateEnvironment(bool populated);                                                                                                    // Create a set of environment variables.
 const char * SDL_GetEnvironmentVariable(SDL_Environment *env, const char *name);                                                                            // Get the value of a variable in the environment.
 char ** SDL_GetEnvironmentVariables(SDL_Environment *env);                                                                                                  // Get all variables in the environment.
 bool SDL_SetEnvironmentVariable(SDL_Environment *env, const char *name, const char *value, bool overwrite);                                                 // Set the value of a variable in the environment.
