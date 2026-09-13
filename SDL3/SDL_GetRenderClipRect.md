@@ -39,6 +39,7 @@ This function is available since SDL 3.2.0.
 
 ## See Also
 
+- [SDL_GetRenderClipRectFloat](SDL_GetRenderClipRectFloat)
 - [SDL_RenderClipEnabled](SDL_RenderClipEnabled)
 - [SDL_SetRenderClipRect](SDL_SetRenderClipRect)
 

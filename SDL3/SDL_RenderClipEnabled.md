@@ -39,7 +39,9 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetRenderClipRect](SDL_GetRenderClipRect)
+- [SDL_GetRenderClipRectFloat](SDL_GetRenderClipRectFloat)
 - [SDL_SetRenderClipRect](SDL_SetRenderClipRect)
+- [SDL_SetRenderClipRectFloat](SDL_SetRenderClipRectFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

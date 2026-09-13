@@ -1,4 +1,4 @@
-# SDL_SetRenderViewport
+# SDL_SetRenderViewportFloat
 
 Set the drawing area for rendering on the current target.
 
@@ -9,15 +9,15 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-bool SDL_SetRenderViewport(SDL_Renderer *renderer, const SDL_Rect *rect);
+bool SDL_SetRenderViewportFloat(SDL_Renderer *renderer, const SDL_FRect *rect);
 ```
 
 ## Function Parameters
 
-|                                |              |                                                                                                                     |
-| ------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                              |
-| const [SDL_Rect](SDL_Rect) *   | **rect**     | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target. |
+|                                |              |                                                                                                                       |
+| ------------------------------ | ------------ | --------------------------------------------------------------------------------------------------------------------- |
+| [SDL_Renderer](SDL_Renderer) * | **renderer** | the rendering context.                                                                                                |
+| const [SDL_FRect](SDL_FRect) * | **rect**     | the [SDL_FRect](SDL_FRect) structure representing the drawing area, or NULL to set the viewport to the entire target. |
 
 ## Return Value
 
@@ -41,13 +41,12 @@ This function should only be called on the main thread.
 
 ## Version
 
-This function is available since SDL 3.2.0.
+This function is available since SDL 3.6.0.
 
 ## See Also
 
-- [SDL_GetRenderViewport](SDL_GetRenderViewport)
+- [SDL_GetRenderViewportFloat](SDL_GetRenderViewportFloat)
 - [SDL_RenderViewportSet](SDL_RenderViewportSet)
-- [SDL_SetRenderViewportFloat](SDL_SetRenderViewportFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

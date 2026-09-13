@@ -42,7 +42,9 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_GetRenderViewport](SDL_GetRenderViewport)
+- [SDL_GetRenderViewportFloat](SDL_GetRenderViewportFloat)
 - [SDL_SetRenderViewport](SDL_SetRenderViewport)
+- [SDL_SetRenderViewportFloat](SDL_SetRenderViewportFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
