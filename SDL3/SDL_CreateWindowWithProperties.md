@@ -139,6 +139,8 @@ These are additional supported properties on Windows:
 - [`SDL_PROP_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER`](SDL_PROP_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER):
   optional, another window to share pixel format with, useful for OpenGL
   windows
+- [`SDL_PROP_WINDOW_CREATE_WIN32_STYLE_EX_NUMBER`](SDL_PROP_WINDOW_CREATE_WIN32_STYLE_EX_NUMBER):
+  the window style (WS_EX_*) flags to use instead of the defaults.
 
 These are additional supported properties with X11:
 
