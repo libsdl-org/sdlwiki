@@ -30,6 +30,9 @@ void SDL_BindGPUVertexSamplers(
 The textures must have been created with
 [SDL_GPU_TEXTUREUSAGE_SAMPLER](SDL_GPU_TEXTUREUSAGE_SAMPLER).
 
+The textures being bound must have a matching type declared in the shader
+(2D, 3D, etc.). Multisample textures are not allowed.
+
 Be sure your shader is set up according to the requirements documented in
 [SDL_CreateGPUShader](SDL_CreateGPUShader)().
 

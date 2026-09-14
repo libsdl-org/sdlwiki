@@ -30,6 +30,9 @@ void SDL_BindGPUVertexStorageTextures(
 These textures must have been created with
 [SDL_GPU_TEXTUREUSAGE_GRAPHICS_STORAGE_READ](SDL_GPU_TEXTUREUSAGE_GRAPHICS_STORAGE_READ).
 
+The textures being bound must have a matching type declared in the shader
+(2D, 3D, 2DMS, etc.)
+
 Be sure your shader is set up according to the requirements documented in
 [SDL_CreateGPUShader](SDL_CreateGPUShader)().
 
