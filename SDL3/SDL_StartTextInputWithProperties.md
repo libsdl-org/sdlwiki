@@ -75,6 +75,13 @@ On Android you can directly specify the input type:
   documented at
   https://developer.android.com/reference/android/text/InputType
 
+On HarmonyOS/OpenHarmony you can directly specify the input type:
+
+- [`SDL_PROP_TEXTINPUT_OPENHARMONY_INPUTTYPE_NUMBER`](SDL_PROP_TEXTINPUT_OPENHARMONY_INPUTTYPE_NUMBER)
+  - the text input type to use, overriding other properties. This is
+  documented at
+  https://developer.android.com/reference/android/text/InputType
+
 ## Thread Safety
 
 This function should only be called on the main thread.

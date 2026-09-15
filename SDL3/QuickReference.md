@@ -1360,42 +1360,43 @@ void * SDL_Metal_GetLayer(SDL_MetalView view);           // Get a pointer to the
 // ██║      ███████╗ ██║  ██║    ██║    ██║      ╚██████╔╝ ██║  ██║ ██║ ╚═╝ ██║
 // ╚═╝      ╚══════╝ ╚═╝  ╚═╝    ╚═╝    ╚═╝       ╚═════╝  ╚═╝  ╚═╝ ╚═╝     ╚═╝
 
-#define SDL_PLATFORM_AIX         // A preprocessor macro that is only defined if compiling for AIX.
-#define SDL_PLATFORM_HAIKU       // A preprocessor macro that is only defined if compiling for Haiku OS.
-#define SDL_PLATFORM_BSDI        // A preprocessor macro that is only defined if compiling for BSDi
-#define SDL_PLATFORM_FREEBSD     // A preprocessor macro that is only defined if compiling for FreeBSD.
-#define SDL_PLATFORM_HPUX        // A preprocessor macro that is only defined if compiling for HP-UX.
-#define SDL_PLATFORM_IRIX        // A preprocessor macro that is only defined if compiling for IRIX.
-#define SDL_PLATFORM_LINUX       // A preprocessor macro that is only defined if compiling for Linux.
-#define SDL_PLATFORM_ANDROID     // A preprocessor macro that is only defined if compiling for Android.
-#define SDL_PLATFORM_UNIX        // A preprocessor macro that is only defined if compiling for a Unix-like system.
-#define SDL_PLATFORM_APPLE       // A preprocessor macro that is only defined if compiling for Apple platforms.
-#define SDL_PLATFORM_TVOS        // A preprocessor macro that is only defined if compiling for tvOS.
-#define SDL_PLATFORM_VISIONOS    // A preprocessor macro that is only defined if compiling for visionOS.
-#define SDL_PLATFORM_IOS         // A preprocessor macro that is only defined if compiling for iOS or visionOS.
-#define SDL_PLATFORM_MACOS       // A preprocessor macro that is only defined if compiling for macOS.
-#define SDL_PLATFORM_EMSCRIPTEN  // A preprocessor macro that is only defined if compiling for Emscripten.
-#define SDL_PLATFORM_NETBSD      // A preprocessor macro that is only defined if compiling for NetBSD.
-#define SDL_PLATFORM_OPENBSD     // A preprocessor macro that is only defined if compiling for OpenBSD.
-#define SDL_PLATFORM_OS2         // A preprocessor macro that is only defined if compiling for OS/2.
-#define SDL_PLATFORM_OSF         // A preprocessor macro that is only defined if compiling for Tru64 (OSF/1).
-#define SDL_PLATFORM_QNXNTO      // A preprocessor macro that is only defined if compiling for QNX Neutrino.
-#define SDL_PLATFORM_RISCOS      // A preprocessor macro that is only defined if compiling for RISC OS.
-#define SDL_PLATFORM_SOLARIS     // A preprocessor macro that is only defined if compiling for SunOS/Solaris.
-#define SDL_PLATFORM_CYGWIN      // A preprocessor macro that is only defined if compiling for Cygwin.
-#define SDL_PLATFORM_WINDOWS     // A preprocessor macro that is only defined if compiling for Windows.
-#define SDL_PLATFORM_WINGDK      // A preprocessor macro that is only defined if compiling for Microsoft GDK for Windows.
-#define SDL_PLATFORM_XBOXONE     // A preprocessor macro that is only defined if compiling for Xbox One.
-#define SDL_PLATFORM_XBOXSERIES  // A preprocessor macro that is only defined if compiling for Xbox Series.
-#define SDL_PLATFORM_WIN32       // A preprocessor macro that is only defined if compiling for desktop Windows.
-#define SDL_PLATFORM_GDK         // A preprocessor macro that is only defined if compiling for Microsoft GDK on any platform.
-#define SDL_PLATFORM_PSP         // A preprocessor macro that is only defined if compiling for Sony PSP.
-#define SDL_PLATFORM_PS2         // A preprocessor macro that is only defined if compiling for Sony PlayStation 2.
-#define SDL_PLATFORM_VITA        // A preprocessor macro that is only defined if compiling for Sony Vita.
-#define SDL_PLATFORM_3DS         // A preprocessor macro that is only defined if compiling for Nintendo 3DS.
-#define SDL_PLATFORM_NGAGE       // A preprocessor macro that is only defined if compiling for the Nokia N-Gage.
-#define SDL_PLATFORM_DOS         // A preprocessor macro that is only defined if compiling for MS-DOS.
-#define SDL_PLATFORM_HURD        // A preprocessor macro that is only defined if compiling for GNU/Hurd.
+#define SDL_PLATFORM_AIX          // A preprocessor macro that is only defined if compiling for AIX.
+#define SDL_PLATFORM_HAIKU        // A preprocessor macro that is only defined if compiling for Haiku OS.
+#define SDL_PLATFORM_BSDI         // A preprocessor macro that is only defined if compiling for BSDi
+#define SDL_PLATFORM_FREEBSD      // A preprocessor macro that is only defined if compiling for FreeBSD.
+#define SDL_PLATFORM_HPUX         // A preprocessor macro that is only defined if compiling for HP-UX.
+#define SDL_PLATFORM_IRIX         // A preprocessor macro that is only defined if compiling for IRIX.
+#define SDL_PLATFORM_LINUX        // A preprocessor macro that is only defined if compiling for Linux.
+#define SDL_PLATFORM_ANDROID      // A preprocessor macro that is only defined if compiling for Android.
+#define SDL_PLATFORM_OPENHARMONY  // A preprocessor macro that is only defined if compiling for OpenHarmony/HarmonyOS.
+#define SDL_PLATFORM_UNIX         // A preprocessor macro that is only defined if compiling for a Unix-like system.
+#define SDL_PLATFORM_APPLE        // A preprocessor macro that is only defined if compiling for Apple platforms.
+#define SDL_PLATFORM_TVOS         // A preprocessor macro that is only defined if compiling for tvOS.
+#define SDL_PLATFORM_VISIONOS     // A preprocessor macro that is only defined if compiling for visionOS.
+#define SDL_PLATFORM_IOS          // A preprocessor macro that is only defined if compiling for iOS or visionOS.
+#define SDL_PLATFORM_MACOS        // A preprocessor macro that is only defined if compiling for macOS.
+#define SDL_PLATFORM_EMSCRIPTEN   // A preprocessor macro that is only defined if compiling for Emscripten.
+#define SDL_PLATFORM_NETBSD       // A preprocessor macro that is only defined if compiling for NetBSD.
+#define SDL_PLATFORM_OPENBSD      // A preprocessor macro that is only defined if compiling for OpenBSD.
+#define SDL_PLATFORM_OS2          // A preprocessor macro that is only defined if compiling for OS/2.
+#define SDL_PLATFORM_OSF          // A preprocessor macro that is only defined if compiling for Tru64 (OSF/1).
+#define SDL_PLATFORM_QNXNTO       // A preprocessor macro that is only defined if compiling for QNX Neutrino.
+#define SDL_PLATFORM_RISCOS       // A preprocessor macro that is only defined if compiling for RISC OS.
+#define SDL_PLATFORM_SOLARIS      // A preprocessor macro that is only defined if compiling for SunOS/Solaris.
+#define SDL_PLATFORM_CYGWIN       // A preprocessor macro that is only defined if compiling for Cygwin.
+#define SDL_PLATFORM_WINDOWS      // A preprocessor macro that is only defined if compiling for Windows.
+#define SDL_PLATFORM_WINGDK       // A preprocessor macro that is only defined if compiling for Microsoft GDK for Windows.
+#define SDL_PLATFORM_XBOXONE      // A preprocessor macro that is only defined if compiling for Xbox One.
+#define SDL_PLATFORM_XBOXSERIES   // A preprocessor macro that is only defined if compiling for Xbox Series.
+#define SDL_PLATFORM_WIN32        // A preprocessor macro that is only defined if compiling for desktop Windows.
+#define SDL_PLATFORM_GDK          // A preprocessor macro that is only defined if compiling for Microsoft GDK on any platform.
+#define SDL_PLATFORM_PSP          // A preprocessor macro that is only defined if compiling for Sony PSP.
+#define SDL_PLATFORM_PS2          // A preprocessor macro that is only defined if compiling for Sony PlayStation 2.
+#define SDL_PLATFORM_VITA         // A preprocessor macro that is only defined if compiling for Sony Vita.
+#define SDL_PLATFORM_3DS          // A preprocessor macro that is only defined if compiling for Nintendo 3DS.
+#define SDL_PLATFORM_NGAGE        // A preprocessor macro that is only defined if compiling for the Nokia N-Gage.
+#define SDL_PLATFORM_DOS          // A preprocessor macro that is only defined if compiling for MS-DOS.
+#define SDL_PLATFORM_HURD         // A preprocessor macro that is only defined if compiling for GNU/Hurd.
 
 // ██████╗   ██████╗  ██╗    ██╗ ███████╗ ██████╗
 // ██╔══██╗ ██╔═══██╗ ██║    ██║ ██╔════╝ ██╔══██╗
@@ -1572,6 +1573,9 @@ const char * SDL_GetAndroidCachePath(void);                                     
 bool SDL_RequestAndroidPermission(const char *permission, SDL_RequestAndroidPermissionCallback cb, void *userdata);          // Request permissions at runtime, asynchronously.
 bool SDL_ShowAndroidToast(const char *message, int duration, int gravity, int xoffset, int yoffset);                         // Shows an Android toast notification.
 bool SDL_SendAndroidMessage(Uint32 command, int param);                                                                      // Send a user command to SDLActivity.
+int SDL_GetOpenHarmonySDKVersion(void);                                                                                      // Query OpenHarmony API level of the current device.
+const char * SDL_GetOpenHarmonyInternalStoragePath(void);                                                                    // Get the path used for internal storage for this OpenHarmony application.
+bool SDL_RequestOpenHarmonyPermission(const char *permission, SDL_RequestOpenHarmonyPermissionCallback cb, void *userdata);  // Request permissions at runtime, asynchronously.
 bool SDL_IsPhone(void);                                                                                                      // Query if the current device is a phone.
 bool SDL_IsTablet(void);                                                                                                     // Query if the current device is a tablet.
 bool SDL_IsTV(void);                                                                                                         // Query if the current device is a TV.

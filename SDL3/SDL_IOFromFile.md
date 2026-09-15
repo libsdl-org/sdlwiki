@@ -96,6 +96,11 @@ The following properties may be set at creation time by SDL:
   [SDL_IOStream](SDL_IOStream) is using to access the filesystem. If SDL
   used some other method to access the filesystem, this property will not
   be set.
+- [`SDL_PROP_IOSTREAM_OPENHARMONY_RAWFILE64_POINTER`](SDL_PROP_IOSTREAM_OPENHARMONY_RAWFILE64_POINTER):
+  a pointer, that can be cast to an OpenHarmony/HarmonyOS `RawFile64 *`,
+  that this [SDL_IOStream](SDL_IOStream) is using to access the filesystem.
+  If SDL used some other method to access the filesystem, this property
+  will not be set.
 
 ## Thread Safety
 

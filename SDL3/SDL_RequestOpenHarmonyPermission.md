@@ -1,0 +1,63 @@
+# SDL_RequestOpenHarmonyPermission
+
+Request permissions at runtime, asynchronously.
+
+## Header File
+
+Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)
+
+## Syntax
+
+```c
+bool SDL_RequestOpenHarmonyPermission(const char *permission, SDL_RequestOpenHarmonyPermissionCallback cb, void *userdata);
+```
+
+## Function Parameters
+
+|                                                                                      |                |                                                           |
+| ------------------------------------------------------------------------------------ | -------------- | --------------------------------------------------------- |
+| const char *                                                                         | **permission** | the permission to request.                                |
+| [SDL_RequestOpenHarmonyPermissionCallback](SDL_RequestOpenHarmonyPermissionCallback) | **cb**         | the callback to trigger when the request has a response.  |
+| void *                                                                               | **userdata**   | an app-controlled pointer that is passed to the callback. |
+
+## Return Value
+
+(bool) Returns true if the request was submitted, false if there was an
+error submitting. The result of the request is only ever reported through
+the callback, not this return value.
+
+## Remarks
+
+You do not need to call this for built-in functionality of SDL; recording
+from a microphone or reading images from a camera, using standard SDL APIs,
+will manage permission requests for you.
+
+This function never blocks. Instead, the app-supplied callback will be
+called when a decision has been made. This callback may happen on a
+different thread, and possibly much later, as it might wait on a user to
+respond to a system dialog. If permission has already been granted for a
+specific entitlement, the callback will still fire, probably on the current
+thread and before this function returns.
+
+If the request submission fails, this function returns false and the
+callback will NOT be called, but this should only happen in catastrophic
+conditions, like memory running out. Normally there will be a yes or no to
+the request through the callback.
+
+For the `permission` parameter, choose a value from here:
+
+https://developer.huawei.com/consumer/en/doc/harmonyos-guides/app-permissions
+
+Strings should be in the form of "ohos.permission.PERMISSION_NAME".
+
+## Thread Safety
+
+It is safe to call this function from any thread.
+
+## Version
+
+This function is available since SDL 3.6.0.
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
+

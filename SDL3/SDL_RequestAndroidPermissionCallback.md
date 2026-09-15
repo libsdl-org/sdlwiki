@@ -1,6 +1,6 @@
 # SDL_RequestAndroidPermissionCallback
 
-Callback that presents a response from a [SDL_RequestAndroidPermission](SDL_RequestAndroidPermission) call.
+Callback that presents [SDL_RequestAndroidPermission](SDL_RequestAndroidPermission)() results.
 
 ## Header File
 

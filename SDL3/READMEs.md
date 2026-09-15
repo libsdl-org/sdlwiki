@@ -16,6 +16,7 @@
 - [README-emscripten](README-emscripten)
 - [README-gdk](README-gdk)
 - [README-haiku](README-haiku)
+- [README-harmonyos](README-harmonyos)
 - [README-highdpi](README-highdpi)
 - [README-ios](README-ios)
 - [README-kmsbsd](README-kmsbsd)
