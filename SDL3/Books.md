@@ -1,5 +1,3 @@
 # Books Related to SDL3
 
-We're waiting for SDL3 books to be written! Please update this page, by clicking the
-`[edit]` link below, if you see any!
-
+* **[SDL3: The Complete Reference](https://leanpub.com/sdl3thecompletereference)** (2026) — A full guide to game development with SDL3. Covers the basics, the new audio architecture, the GPU API, and migrating from SDL2. Includes compilable code examples.

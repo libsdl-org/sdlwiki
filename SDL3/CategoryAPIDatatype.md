@@ -109,6 +109,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_realloc_func](SDL_realloc_func)
 - [SDL_Renderer](SDL_Renderer)
 - [SDL_RequestAndroidPermissionCallback](SDL_RequestAndroidPermissionCallback)
+- [SDL_RequestOpenHarmonyPermissionCallback](SDL_RequestOpenHarmonyPermissionCallback)
 - [SDL_RWLock](SDL_RWLock)
 - [SDL_Semaphore](SDL_Semaphore)
 - [SDL_Sensor](SDL_Sensor)
