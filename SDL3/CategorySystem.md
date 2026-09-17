@@ -27,6 +27,8 @@ polish to an app, or solving problems that only affect one target.
 - [SDL_GetDXGIOutputInfo](SDL_GetDXGIOutputInfo)
 - [SDL_GetGDKDefaultUser](SDL_GetGDKDefaultUser)
 - [SDL_GetGDKTaskQueue](SDL_GetGDKTaskQueue)
+- [SDL_GetOpenHarmonyInternalStoragePath](SDL_GetOpenHarmonyInternalStoragePath)
+- [SDL_GetOpenHarmonySDKVersion](SDL_GetOpenHarmonySDKVersion)
 - [SDL_GetSandbox](SDL_GetSandbox)
 - [SDL_IsChromebook](SDL_IsChromebook)
 - [SDL_IsDeXMode](SDL_IsDeXMode)
@@ -42,6 +44,7 @@ polish to an app, or solving problems that only affect one target.
 - [SDL_OnApplicationWillEnterForeground](SDL_OnApplicationWillEnterForeground)
 - [SDL_OnApplicationWillTerminate](SDL_OnApplicationWillTerminate)
 - [SDL_RequestAndroidPermission](SDL_RequestAndroidPermission)
+- [SDL_RequestOpenHarmonyPermission](SDL_RequestOpenHarmonyPermission)
 - [SDL_SendAndroidBackButton](SDL_SendAndroidBackButton)
 - [SDL_SendAndroidMessage](SDL_SendAndroidMessage)
 - [SDL_SetiOSAnimationCallback](SDL_SetiOSAnimationCallback)
@@ -59,6 +62,7 @@ polish to an app, or solving problems that only affect one target.
 <!-- BEGIN CATEGORY LIST: CategorySystem, CategoryAPIDatatype -->
 - [SDL_iOSAnimationCallback](SDL_iOSAnimationCallback)
 - [SDL_RequestAndroidPermissionCallback](SDL_RequestAndroidPermissionCallback)
+- [SDL_RequestOpenHarmonyPermissionCallback](SDL_RequestOpenHarmonyPermissionCallback)
 - [SDL_WindowsMessageHook](SDL_WindowsMessageHook)
 - [SDL_X11EventHook](SDL_X11EventHook)
 <!-- END CATEGORY LIST -->
