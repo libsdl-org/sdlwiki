@@ -30,6 +30,7 @@ Neslib.Sdl3 - https://github.com/neslib/Neslib.Sdl3
 
 SDL3 for Pascal - https://github.com/PascalGameDevelopment/SDL3-for-Pascal
 
+
 ## ElfScript
 
 SDL3 for ElfScript - https://github.com/ohmtal/ElfScript/tree/main/ElfScript/addons/SDL3
@@ -37,6 +38,11 @@ SDL3 for ElfScript - https://github.com/ohmtal/ElfScript/tree/main/ElfScript/add
 ## Go
 
 go-sdl3 - https://github.com/Zyko0/go-sdl3
+
+
+## Hare
+
+hare-sdl3 - https://git.sr.ht/~sircmpwn/hare-sdl3
 
 
 ## Java
