@@ -26,6 +26,9 @@ memory); call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
+If `ncolors` is larger than the palette's size - `firstcolor`, it is
+truncated to the amount that will fit.
+
 The palette entries are initialized to white.
 
 ## Thread Safety
