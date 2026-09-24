@@ -130,6 +130,9 @@ These are additional supported properties on Wayland:
   - the wl_surface associated with the window, if you want to wrap an
   existing window. See [README-wayland](README-wayland) for more
   information.
+- [`SDL_PROP_WINDOW_CREATE_WAYLAND_ENABLE_INSETS_BOOLEAN`](SDL_PROP_WINDOW_CREATE_WAYLAND_ENABLE_INSETS_BOOLEAN)
+  - true if the application wants to enable custom border inset window
+  properties. See [README-wayland](README-wayland) for more information.
 
 These are additional supported properties on Windows:
 

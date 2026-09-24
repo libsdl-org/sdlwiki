@@ -134,6 +134,10 @@ Note: The `xdg_*` window objects do not internally persist across window
 show/hide calls. They will be null if the window is hidden and must be
 queried each time it is shown.
 
+Note: The `border_inset_*` properties can be set by the application when
+client-side decorations such as shadows or invisible resize borders extend
+beyond the visible frame (see docs/README-wayland.md for details).
+
 - [`SDL_PROP_WINDOW_WAYLAND_DISPLAY_POINTER`](SDL_PROP_WINDOW_WAYLAND_DISPLAY_POINTER):
   the wl_display associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_SURFACE_POINTER`](SDL_PROP_WINDOW_WAYLAND_SURFACE_POINTER):
@@ -158,6 +162,14 @@ queried each time it is shown.
   the xdg_popup role associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_XDG_POSITIONER_POINTER`](SDL_PROP_WINDOW_WAYLAND_XDG_POSITIONER_POINTER):
   the xdg_positioner associated with the window, in popup mode
+- [`SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_LEFT_NUMBER`](SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_LEFT_NUMBER):
+  the left border inset of the visible window
+- [`SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_TOP_NUMBER`](SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_TOP_NUMBER):
+  the top border inset of the visible window
+- [`SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_RIGHT_NUMBER`](SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_RIGHT_NUMBER):
+  the right border inset of the visible window
+- [`SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_BOTTOM_NUMBER`](SDL_PROP_WINDOW_WAYLAND_BORDER_INSET_BOTTOM_NUMBER):
+  the bottom border inset of the visible window
 
 On X11:
 
