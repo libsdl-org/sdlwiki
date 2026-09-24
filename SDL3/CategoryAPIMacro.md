@@ -1209,6 +1209,7 @@ to look at the Macros section [in a specific category](APIByCategory) instead.
 - [SDLK_F8](SDLK_F8)
 - [SDLK_F9](SDLK_F9)
 - [SDLK_FIND](SDLK_FIND)
+- [SDLK_FRONT](SDLK_FRONT)
 - [SDLK_G](SDLK_G)
 - [SDLK_GRAVE](SDLK_GRAVE)
 - [SDLK_GREATER](SDLK_GREATER)
