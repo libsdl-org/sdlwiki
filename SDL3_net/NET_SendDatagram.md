@@ -60,7 +60,7 @@ generally won't report failures, because there is no state like a
 "connection" to fail at this level, but may report failure for
 unrecoverable system-level conditions; once a datagram socket fails, you
 should assume it is no longer usable and should destroy it with
-SDL_DestroyDatagramSocket().
+[NET_DestroyDatagramSocket](NET_DestroyDatagramSocket)().
 
 Sending to a NULL address is treated as a request to broadcast a packet.
 Note that this will report failure immediately if the socket was not
