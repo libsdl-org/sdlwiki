@@ -59,7 +59,7 @@ until you get a non-zero result.
 
 You should not operate on the same socket from multiple threads at the same
 time without supplying a serialization mechanism. However, different
-threads may access different socket at the same time without problems.
+threads may access different sockets at the same time without problems.
 
 ## Version
 
