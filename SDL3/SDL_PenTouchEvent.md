@@ -21,6 +21,7 @@ typedef struct SDL_PenTouchEvent
     float y;                /**< Y coordinate, relative to window */
     bool eraser;        /**< true if eraser end is used (not all pens support this). */
     bool down;          /**< true if the pen is touching or false if the pen is lifted off */
+    SDL_PenDeviceType device_type; /**< the device type of the pen, if known (added in 3.4.18). */
 } SDL_PenTouchEvent;
 ```
 

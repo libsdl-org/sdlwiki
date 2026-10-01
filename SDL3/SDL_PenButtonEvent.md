@@ -21,6 +21,7 @@ typedef struct SDL_PenButtonEvent
     float y;                /**< Y coordinate, relative to window */
     Uint8 button;       /**< The pen button index (first button is 1). */
     bool down;      /**< true if the button is pressed */
+    SDL_PenDeviceType device_type; /**< the device type of the pen, if known (added in 3.4.18). */
 } SDL_PenButtonEvent;
 ```
 

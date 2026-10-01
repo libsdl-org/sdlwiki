@@ -17,6 +17,7 @@ typedef struct SDL_PenProximityEvent
     SDL_WindowID windowID; /**< The window with pen focus, if any */
     SDL_PenID which;        /**< The pen instance id */
     SDL_PenInputFlags pen_state;   /**< Complete pen input state at time of event (added in 3.4.16). */
+    SDL_PenDeviceType device_type; /**< the device type of the pen, if known (added in 3.4.18). */
 } SDL_PenProximityEvent;
 ```
 

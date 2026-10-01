@@ -21,6 +21,7 @@ typedef struct SDL_PenAxisEvent
     float y;                /**< Y coordinate, relative to window */
     SDL_PenAxis axis;       /**< Axis that has changed */
     float value;            /**< New value of axis */
+    SDL_PenDeviceType device_type; /**< the device type of the pen, if known (added in 3.4.18). */
 } SDL_PenAxisEvent;
 ```
 

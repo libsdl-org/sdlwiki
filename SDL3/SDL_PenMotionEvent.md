@@ -19,6 +19,7 @@ typedef struct SDL_PenMotionEvent
     SDL_PenInputFlags pen_state;   /**< Complete pen input state at time of event */
     float x;                /**< X coordinate, relative to window */
     float y;                /**< Y coordinate, relative to window */
+    SDL_PenDeviceType device_type; /**< the device type of the pen, if known (added in 3.4.18). */
 } SDL_PenMotionEvent;
 ```
 
