@@ -191,6 +191,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_PEN_TOUCH_EVENTS](SDL_HINT_PEN_TOUCH_EVENTS): A variable controlling whether pen events should generate synthetic touch events.
 - [SDL_POLL_SENTINEL](SDL_HINT_POLL_SENTINEL): A variable controlling the use of a sentinel event when polling the event queue.
 - [SDL_PREFERRED_LOCALES](SDL_HINT_PREFERRED_LOCALES): Override for SDL_GetPreferredLocales().
+- [SDL_PS2_GS_COLOR_DEPTH](SDL_HINT_PS2_GS_COLOR_DEPTH): A variable controlling the pixel storage mode of the PS2's framebuffer.
 - [SDL_PS2_GS_HEIGHT](SDL_HINT_PS2_GS_HEIGHT): A variable controlling the height of the PS2's framebuffer in pixels.
 - [SDL_PS2_GS_MODE](SDL_HINT_PS2_GS_MODE): A variable controlling the video mode of the console.
 - [SDL_PS2_GS_PROGRESSIVE](SDL_HINT_PS2_GS_PROGRESSIVE): A variable controlling whether the signal is interlaced or progressive.
