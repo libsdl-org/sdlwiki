@@ -40,6 +40,16 @@ As this is just a wrapper over [SDL_LockMutex](SDL_LockMutex) for an
 internal lock; it has all the same attributes (recursive locks are allowed,
 etc).
 
+Note that when the stream's callback runs, SDL is holding both an internal
+mutex for the audio device and the stream's lock, in that order. Which is
+to say: while this function can protect arbitrary data, calling into some
+SDL audio functions while holding this lock may cause a deadlock--the app
+holds this lock, and then calls into something that wants to obtain the
+device lock, in the opposite order that SDL's audio thread obtained them.
+Therefore, best practice is to use this function to protect simple app data
+against the audio callback, and be careful about what SDL functions one
+calls while locked outside of the callback.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
