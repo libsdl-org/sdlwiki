@@ -87,6 +87,9 @@ With the vulkan renderer:
   the VkImage associated with the texture. For NV12 style textures this is
   the single two plane VkImage holding both the Y and UV planes, and for
   YUV style textures it is the VkImage holding the Y plane.
+- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_UV_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_UV_NUMBER):
+  the VkImage associated with the UV plane of an NV12 texture, if it was
+  created with separate planes.
 - [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_U_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_U_NUMBER):
   the VkImage associated with the U plane of a YUV texture
 - [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_V_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_V_NUMBER):

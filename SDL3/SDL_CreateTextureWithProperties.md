@@ -142,9 +142,12 @@ With the vulkan renderer:
 
 - [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER):
   the VkImage associated with the texture, if you want to wrap an existing
-  texture. For NV12 style textures this is the single two plane VkImage
+  texture. For NV12 style textures this can be a single two plane VkImage
   holding both the Y and UV planes, and for YUV style textures it is the
   VkImage holding the Y plane.
+- [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_UV_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_UV_NUMBER):
+  the VkImage associated with the UV plane of an NV12 texture, if you want
+  to wrap an existing texture.
 - [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_U_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_U_NUMBER):
   the VkImage associated with the U plane of a YUV texture, if you want to
   wrap an existing texture.
