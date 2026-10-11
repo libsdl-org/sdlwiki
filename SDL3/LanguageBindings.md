@@ -23,6 +23,10 @@ CSDL3 - https://github.com/Atompapst/CSDL3
 
 BindBC-SDL - https://github.com/BindBC/bindbc-sdl
 
+## Daslang
+
+dasSDL3 - https://github.com/spiiin/dasSDL3/
+
 
 ## Delphi / Pascal
 
