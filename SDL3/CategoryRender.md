@@ -130,6 +130,8 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_SetRenderViewport](SDL_SetRenderViewport)
 - [SDL_SetRenderViewportFloat](SDL_SetRenderViewportFloat)
 - [SDL_SetRenderVSync](SDL_SetRenderVSync)
+- [SDL_SetSoftwareRendererSurface](SDL_SetSoftwareRendererSurface)
+- [SDL_SetSoftwareRendererWindow](SDL_SetSoftwareRendererWindow)
 - [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
 - [SDL_SetTextureAlphaModFloat](SDL_SetTextureAlphaModFloat)
 - [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
