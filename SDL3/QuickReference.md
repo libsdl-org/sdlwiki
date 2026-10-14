@@ -1603,7 +1603,8 @@ bool SDL_IsUbuntuTouch(void);                                                   
 // ██║ ╚═╝ ██║ ██║ ██████╔╝ ╚██████╗
 // ╚═╝     ╚═╝ ╚═╝ ╚═════╝   ╚═════╝
 
-bool SDL_OpenURL(const char *url);  // Open a URL/URI in the browser or other appropriate external application.
+bool SDL_OpenURL(const char *url);                                   // Open a URL/URI in the browser or other appropriate external application.
+char * SDL_EncodeURL(const char *str, const char *no_encode_chars);  // Encode a string for use in a URL.
 
 //  ██████╗  ██╗   ██╗ ██╗ ██████╗
 // ██╔════╝  ██║   ██║ ██║ ██╔══██╗
