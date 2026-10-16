@@ -53,24 +53,24 @@ The following read-only properties are provided by SDL:
   [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB).
 - [`SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN`](SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN):
   true if the output colorspace is
-  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) and the renderer
-  is showing on a display with HDR enabled. This property can change
-  dynamically when
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) or
+  [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) and the renderer has HDR
+  headroom. This property can change dynamically when
   [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
-  is sent.
+  is sent or the HDR headroom is adjusted with
+  [SDL_SetRenderHDRHeadroom](SDL_SetRenderHDRHeadroom)().
 - [`SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT`](SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT):
-  the value of SDR white in the
-  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) colorspace. When
-  HDR is enabled, this value is automatically multiplied into the color
-  scale. This property can change dynamically when
+  the scale factor being applied to color values so that 1.0 is displayed
+  as SDR white. This property can change dynamically when
   [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
   is sent.
 - [`SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT`](SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT):
-  the additional high dynamic range that can be displayed, in terms of the
-  SDR white point. When HDR is not enabled, this will be 1.0. This property
-  can change dynamically when
+  the maximum brightness that can be displayed, as a multiple of SDR white.
+  When HDR is not enabled or there is no additional headroom, this will be
+  1.0. This property can change dynamically when
   [SDL_EVENT_WINDOW_HDR_STATE_CHANGED](SDL_EVENT_WINDOW_HDR_STATE_CHANGED)
-  is sent.
+  is sent or the value is set with
+  [SDL_SetRenderHDRHeadroom](SDL_SetRenderHDRHeadroom)().
 
 With the direct3d renderer:
 
