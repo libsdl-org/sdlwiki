@@ -61,7 +61,7 @@ SDL3 for Lean - https://github.com/philnguyen/lean-sdl3
 
 ## Nim
 
-SDL3 for Nim - https://github.com/transmutrix/nim-sdl3
+SDL3 for Nim - https://github.com/nim-lang/sdl3
 
 
 ## Odin
