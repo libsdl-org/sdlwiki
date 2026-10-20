@@ -91,3 +91,9 @@ A library that provides resolution-independent images for game controller inputs
 A single-header library that provides a 2D immediate-mode renderer using `SDL_gpu.h` and supports custom shaders and pipelines.
 
 - [Git Repository](https://github.com/n67094/SDL_gp)
+
+## Boxer
+
+A lightweight 2D game library in C built on SDL3. It handles game assets, audio, input, 2D drawing and entity management, behind a simple API.
+
+- [Git Repository](https://github.com/n67094/boxer)
