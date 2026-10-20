@@ -10,7 +10,6 @@ Dear ImGui is a bloat-free graphical user interface library for C++. It outputs 
 
 - [Dear ImGui website](https://github.com/ocornut/imgui)
 
-
 ## RmlUI:
 
 RmlUi is the C++ user interface package based on the HTML and CSS standards, designed as a complete solution for any project's interface needs. It is a fork of the libRocket project, introducing new features, bug fixes, and performance improvements.
@@ -36,7 +35,7 @@ BMP, GIF, JPEG, LBM, PCX, PNG, PNM, QOI, SVG, TGA, TIFF, WEBP, XCF, XPM, XV (and
 ## SDL_mixer
 
 SDL_mixer offers audio file decoding for several popular formats, such as WAV, MP3,
-and Ogg Vorbis, and provides sample-perfect mixing of multiple sources of audio, 
+and Ogg Vorbis, and provides sample-perfect mixing of multiple sources of audio,
 with various effects, and other advanced features.
 
 - [Git Repository](https://github.com/libsdl-org/SDL_mixer)
@@ -86,3 +85,9 @@ A library for translating shaders to different formats. Intended for use with th
 A library that provides resolution-independent images for game controller inputs, so games can show the correct visual markers for the gamepad in the user's hand.
 
 - [Git Repository](https://github.com/icculus/ControllerImage)
+
+## SDL_gp
+
+A single-header library that provides a 2D immediate-mode renderer using `SDL_gpu.h` and supports custom shaders and pipelines.
+
+- [Git Repository](https://github.com/n67094/SDL_gp)
