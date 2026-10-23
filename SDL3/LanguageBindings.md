@@ -61,6 +61,8 @@ SDL3 for Lean - https://github.com/philnguyen/lean-sdl3
 
 ## Nim
 
+Official bindings: https://github.com/nim-lang/sdl3
+
 SDL3 for Nim - https://github.com/transmutrix/nim-sdl3
 
 
