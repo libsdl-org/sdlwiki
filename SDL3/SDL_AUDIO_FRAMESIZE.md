@@ -9,7 +9,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-#define SDL_AUDIO_FRAMESIZE(x) (SDL_AUDIO_BYTESIZE((x).format) * (x).channels)
+#define SDL_AUDIO_FRAMESIZE(x) (((unsigned int)SDL_AUDIO_BYTESIZE((x).format)) * ((unsigned int)((x).channels)))
 ```
 
 ## Macro Parameters
@@ -26,6 +26,8 @@ Returns the number of bytes used per sample frame.
 
 This reports on the size of an audio sample frame: stereo [Sint16](Sint16)
 data (2 channels of 2 bytes each) would be 4 bytes per frame, for example.
+
+This casts the value to unsigned int to avoid implicit sign conversion.
 
 ## Thread Safety
 
