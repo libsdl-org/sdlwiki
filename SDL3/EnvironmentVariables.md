@@ -142,13 +142,10 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_LINUX_DIGITAL_HATS](SDL_HINT_JOYSTICK_LINUX_DIGITAL_HATS): A variable controlling whether joysticks on Linux will always treat 'hat' axis inputs (ABS_HAT0X - ABS_HAT3Y) as 8-way digital hats without checking whether they may be analog.
 - [SDL_JOYSTICK_LINUX_HAT_DEADZONES](SDL_HINT_JOYSTICK_LINUX_HAT_DEADZONES): A variable controlling whether digital hats on Linux will apply deadzones to their underlying input axes or use unfiltered values.
 - [SDL_JOYSTICK_MFI](SDL_HINT_JOYSTICK_MFI): A variable controlling whether GCController should be used for controller handling.
-- [SDL_JOYSTICK_RAWINPUT](SDL_HINT_JOYSTICK_RAWINPUT): A variable controlling whether the RAWINPUT joystick drivers should be used for better handling XInput-capable devices.
-- [SDL_JOYSTICK_RAWINPUT_CORRELATE_XINPUT](SDL_HINT_JOYSTICK_RAWINPUT_CORRELATE_XINPUT): A variable controlling whether the RAWINPUT driver should pull correlated data from XInput.
 - [SDL_JOYSTICK_ROG_CHAKRAM](SDL_HINT_JOYSTICK_ROG_CHAKRAM): A variable controlling whether the ROG Chakram mice should show up as joysticks.
-- [SDL_JOYSTICK_THREAD](SDL_HINT_JOYSTICK_THREAD): A variable controlling whether a separate thread should be used for handling joystick detection and raw input messages on Windows.
+- [SDL_JOYSTICK_THREAD](SDL_HINT_JOYSTICK_THREAD): A variable controlling whether a separate thread should be used for handling joystick detection on Windows.
 - [SDL_JOYSTICK_THROTTLE_DEVICES](SDL_HINT_JOYSTICK_THROTTLE_DEVICES): A variable containing a list of throttle style controllers.
 - [SDL_JOYSTICK_THROTTLE_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_THROTTLE_DEVICES_EXCLUDED): A variable containing a list of devices that are not throttle style controllers.
-- [SDL_JOYSTICK_WGI](SDL_HINT_JOYSTICK_WGI): A variable controlling whether Windows.Gaming.Input should be used for controller handling.
 - [SDL_JOYSTICK_WHEEL_DEVICES](SDL_HINT_JOYSTICK_WHEEL_DEVICES): A variable containing a list of wheel style controllers.
 - [SDL_JOYSTICK_WHEEL_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_WHEEL_DEVICES_EXCLUDED): A variable containing a list of devices that are not wheel style controllers.
 - [SDL_JOYSTICK_ZERO_CENTERED_DEVICES](SDL_HINT_JOYSTICK_ZERO_CENTERED_DEVICES): A variable containing a list of devices known to have all axes centered at zero.
