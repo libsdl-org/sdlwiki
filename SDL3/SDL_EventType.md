@@ -323,7 +323,7 @@ This is listed in alphabetical order by event type name, not enum value order.
 | SDL_EVENT_KEY_DOWN                      | key             | [SDL_KeyboardEvent](SDL_KeyboardEvent)                           |
 | SDL_EVENT_KEY_UP                        | key             | [SDL_KeyboardEvent](SDL_KeyboardEvent)                           |
 | SDL_EVENT_TEXT_EDITING                  | edit            | [SDL_TextEditingEvent](SDL_TextEditingEvent)                     |
-| SDL_EVENT_TEXT_INPUT                    | input           | [SDL_TextInputEvent](SDL_TextInputEvent)                         |
+| SDL_EVENT_TEXT_INPUT                    | text            | [SDL_TextInputEvent](SDL_TextInputEvent)                         |
 | SDL_EVENT_KEYMAP_CHANGED                | common          | [SDL_CommonEvent](SDL_CommonEvent)                               |
 | SDL_EVENT_KEYBOARD_ADDED                | kdevice         | [SDL_KeyboardDeviceEvent](SDL_KeyboardDeviceEvent)               |
 | SDL_EVENT_KEYBOARD_REMOVED              | kdevice         | [SDL_KeyboardDeviceEvent](SDL_KeyboardDeviceEvent)               |
