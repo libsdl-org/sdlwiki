@@ -143,7 +143,6 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_LINUX_HAT_DEADZONES](SDL_HINT_JOYSTICK_LINUX_HAT_DEADZONES): A variable controlling whether digital hats on Linux will apply deadzones to their underlying input axes or use unfiltered values.
 - [SDL_JOYSTICK_MFI](SDL_HINT_JOYSTICK_MFI): A variable controlling whether GCController should be used for controller handling.
 - [SDL_JOYSTICK_ROG_CHAKRAM](SDL_HINT_JOYSTICK_ROG_CHAKRAM): A variable controlling whether the ROG Chakram mice should show up as joysticks.
-- [SDL_JOYSTICK_THREAD](SDL_HINT_JOYSTICK_THREAD): A variable controlling whether a separate thread should be used for handling joystick detection on Windows.
 - [SDL_JOYSTICK_THROTTLE_DEVICES](SDL_HINT_JOYSTICK_THROTTLE_DEVICES): A variable containing a list of throttle style controllers.
 - [SDL_JOYSTICK_THROTTLE_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_THROTTLE_DEVICES_EXCLUDED): A variable containing a list of devices that are not throttle style controllers.
 - [SDL_JOYSTICK_WHEEL_DEVICES](SDL_HINT_JOYSTICK_WHEEL_DEVICES): A variable containing a list of wheel style controllers.
