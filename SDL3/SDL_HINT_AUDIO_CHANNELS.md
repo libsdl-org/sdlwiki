@@ -16,7 +16,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 If the application doesn't specify the audio channel count when opening the
 device, this hint can be used to specify a default channel count that will
-be used. This defaults to "1" for recording and "2" for playback devices.
+be used. If the application didn't specify and this hint isn't set, SDL
+will choose a reasonable value.
 
 This hint should be set before an audio device is opened.
 

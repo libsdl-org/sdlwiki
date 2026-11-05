@@ -16,7 +16,8 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 If the application doesn't specify the audio format when opening the
 device, this hint can be used to specify a default format that will be
-used.
+used. If the application didn't specify and this hint isn't set, SDL will
+choose a reasonable value.
 
 The variable can be set to the following values:
 
