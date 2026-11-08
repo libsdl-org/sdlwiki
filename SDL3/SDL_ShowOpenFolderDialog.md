@@ -19,7 +19,7 @@ void SDL_ShowOpenFolderDialog(SDL_DialogFileCallback callback, void *userdata, S
 | [SDL_DialogFileCallback](SDL_DialogFileCallback) | **callback**         | a function pointer to be invoked when the user selects a file and accepts, or cancels the dialog, or an error occurs. |
 | void *                                           | **userdata**         | an optional pointer to pass extra data to the callback when it will be invoked.                                       |
 | [SDL_Window](SDL_Window) *                       | **window**           | the window that the dialog should be modal for, may be NULL. Not all platforms support this option.                   |
-| const char *                                     | **default_location** | the default folder or file to start the dialog at, may be NULL. Not all platforms support this option.                |
+| const char *                                     | **default_location** | the default folder to start the dialog at, may be NULL. Not all platforms support this option.                        |
 | bool                                             | **allow_many**       | if non-zero, the user will be allowed to select multiple entries. Not all platforms support this option.              |
 
 ## Remarks
