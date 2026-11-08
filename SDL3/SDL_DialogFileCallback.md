@@ -38,8 +38,8 @@ The filelist argument should not be freed; it will automatically be freed
 when the callback returns.
 
 The filter argument is the index of the filter that was selected, or -1 if
-no filter was selected or if the platform or method doesn't support
-fetching the selected filter.
+no filter was selected, the dialog was canceled, or if the platform or
+method doesn't support fetching the selected filter.
 
 In Android, the `filelist` are `content://` URIs. They should be opened
 using [SDL_IOFromFile](SDL_IOFromFile)() with appropriate modes. This
