@@ -30,6 +30,11 @@ These properties are shared with the underlying joystick object.
 
 The following read-only properties are provided by SDL:
 
+- [`SDL_PROP_GAMEPAD_CONTAINER_ID_STRING`](SDL_PROP_GAMEPAD_CONTAINER_ID_STRING):
+  a string identifying the container for this gamepad, if available. This
+  can be compared with
+  [SDL_PROP_AUDIO_DEVICE_CONTAINER_ID_STRING](SDL_PROP_AUDIO_DEVICE_CONTAINER_ID_STRING)
+  to find associated audio devices.
 - [`SDL_PROP_GAMEPAD_CAP_MONO_LED_BOOLEAN`](SDL_PROP_GAMEPAD_CAP_MONO_LED_BOOLEAN):
   true if this gamepad has an LED that has adjustable brightness
 - [`SDL_PROP_GAMEPAD_CAP_RGB_LED_BOOLEAN`](SDL_PROP_GAMEPAD_CAP_RGB_LED_BOOLEAN):

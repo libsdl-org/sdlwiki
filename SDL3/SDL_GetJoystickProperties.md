@@ -28,6 +28,8 @@ information.
 
 The following read-only properties are provided by SDL:
 
+- [`SDL_PROP_JOYSTICK_CONTAINER_ID_STRING`](SDL_PROP_JOYSTICK_CONTAINER_ID_STRING):
+  a string identifying the container for this joystick, if available.
 - [`SDL_PROP_JOYSTICK_CAP_MONO_LED_BOOLEAN`](SDL_PROP_JOYSTICK_CAP_MONO_LED_BOOLEAN):
   true if this joystick has an LED that has adjustable brightness
 - [`SDL_PROP_JOYSTICK_CAP_RGB_LED_BOOLEAN`](SDL_PROP_JOYSTICK_CAP_RGB_LED_BOOLEAN):
