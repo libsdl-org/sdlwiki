@@ -35,7 +35,9 @@ These are the supported properties:
 - [`SDL_PROP_FILE_DIALOG_WINDOW_POINTER`](SDL_PROP_FILE_DIALOG_WINDOW_POINTER):
   the window that the dialog should be modal for.
 - [`SDL_PROP_FILE_DIALOG_LOCATION_STRING`](SDL_PROP_FILE_DIALOG_LOCATION_STRING):
-  the default folder or file to start the dialog at. For
+  the default folder or file to start the dialog at. A location ending in a
+  path separator is a folder; otherwise the dialog starts in the folder
+  before the last separator, with the rest as the default file name. For
   [SDL_FILEDIALOG_OPENFOLDER](SDL_FILEDIALOG_OPENFOLDER), the location is
   always a folder.
 - [`SDL_PROP_FILE_DIALOG_MANY_BOOLEAN`](SDL_PROP_FILE_DIALOG_MANY_BOOLEAN):
