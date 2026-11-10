@@ -81,6 +81,8 @@ This list matches the latest in SDL3's revision control.
 - [SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS](SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS): A variable that lets you enable joystick (and gamecontroller) events even when your app is in the background.
 - [SDL_JOYSTICK_ARCADESTICK_DEVICES](SDL_HINT_JOYSTICK_ARCADESTICK_DEVICES): A variable containing a list of arcade stick style controllers.
 - [SDL_JOYSTICK_ARCADESTICK_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_ARCADESTICK_DEVICES_EXCLUDED): A variable containing a list of devices that are not arcade stick style controllers.
+- [SDL_JOYSTICK_ASYNC](SDL_HINT_JOYSTICK_ASYNC): A variable controlling whether a separate thread should be used for joystick detection and updates.
+- [SDL_JOYSTICK_ASYNC_UPDATE_INTERVAL](SDL_HINT_JOYSTICK_ASYNC_UPDATE_INTERVAL): A variable controlling the polling interval for asynchronous joystick updates.
 - [SDL_JOYSTICK_BLACKLIST_DEVICES](SDL_HINT_JOYSTICK_BLACKLIST_DEVICES): A variable containing a list of devices that should not be considered joysticks.
 - [SDL_JOYSTICK_BLACKLIST_DEVICES_EXCLUDED](SDL_HINT_JOYSTICK_BLACKLIST_DEVICES_EXCLUDED): A variable containing a list of devices that should be considered joysticks.
 - [SDL_JOYSTICK_DEVICE](SDL_HINT_JOYSTICK_DEVICE): A variable containing a comma separated list of devices to open as joysticks.
