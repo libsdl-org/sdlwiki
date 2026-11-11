@@ -94,6 +94,6 @@ A single-header library that provides a 2D immediate-mode renderer using `SDL_gp
 
 ## Boxer
 
-A lightweight 2D game library in C built on SDL3. It handles game assets, audio, input, 2D drawing and entity management, behind a simple API.
+Boxer is a lightweight 2D game framework built on top of SDL3 for rapid development of simple games.
 
 - [Git Repository](https://github.com/n67094/boxer)
