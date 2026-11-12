@@ -29,6 +29,7 @@ You can read about the SDL_mutex.h pieces on the wiki in [CategoryMutex](Categor
 - [SDL_CreateThreadWithProperties](SDL_CreateThreadWithProperties)
 - [SDL_DetachThread](SDL_DetachThread)
 - [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
+- [SDL_GetCurrentThreadName](SDL_GetCurrentThreadName)
 - [SDL_GetThreadID](SDL_GetThreadID)
 - [SDL_GetThreadName](SDL_GetThreadName)
 - [SDL_GetThreadState](SDL_GetThreadState)

@@ -312,6 +312,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetCurrentDisplayOrientation](SDL_GetCurrentDisplayOrientation)
 - [SDL_GetCurrentRenderOutputSize](SDL_GetCurrentRenderOutputSize)
 - [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
+- [SDL_GetCurrentThreadName](SDL_GetCurrentThreadName)
 - [SDL_GetCurrentTime](SDL_GetCurrentTime)
 - [SDL_GetCurrentVideoDriver](SDL_GetCurrentVideoDriver)
 - [SDL_GetCursor](SDL_GetCursor)
