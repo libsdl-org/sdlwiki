@@ -799,6 +799,7 @@ void SDL_UnloadObject(SDL_SharedObject *handle);                                
 SDL_Thread * SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);       // Create a new thread with a default stack size.
 SDL_Thread * SDL_CreateThreadWithProperties(SDL_PropertiesID props);                      // Create a new thread with with the specified properties.
 const char * SDL_GetThreadName(SDL_Thread *thread);                                       // Get the thread name as it was specified in SDL_CreateThread().
+const char * SDL_GetCurrentThreadName(void);                                              // Get the thread name for the current thread.
 SDL_ThreadID SDL_GetCurrentThreadID(void);                                                // Get the thread identifier for the current thread.
 SDL_ThreadID SDL_GetThreadID(SDL_Thread *thread);                                         // Get the thread identifier for the specified thread.
 bool SDL_SetCurrentThreadPriority(SDL_ThreadPriority priority);                           // Set the priority for the current thread.
