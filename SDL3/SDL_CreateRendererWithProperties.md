@@ -58,11 +58,20 @@ With the SDL GPU renderer (since SDL 3.4.0):
 - [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_SPIRV_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_SPIRV_BOOLEAN):
   the app is able to provide SPIR-V shaders to
   [SDL_GPURenderState](SDL_GPURenderState), optional.
+- [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_DXBC_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_DXBC_BOOLEAN):
+  the app is able to provide DXBC shaders to
+  [SDL_GPURenderState](SDL_GPURenderState), optional.
 - [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_DXIL_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_DXIL_BOOLEAN):
   the app is able to provide DXIL shaders to
   [SDL_GPURenderState](SDL_GPURenderState), optional.
 - [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_MSL_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_MSL_BOOLEAN):
   the app is able to provide MSL shaders to
+  [SDL_GPURenderState](SDL_GPURenderState), optional.
+- [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_METALLIB_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_METALLIB_BOOLEAN):
+  the app is able to provide metallib shaders to
+  [SDL_GPURenderState](SDL_GPURenderState), optional.
+- [`SDL_PROP_RENDERER_CREATE_GPU_SHADERS_PRIVATE_BOOLEAN`](SDL_PROP_RENDERER_CREATE_GPU_SHADERS_PRIVATE_BOOLEAN):
+  the app is able to provide shaders for an NDA'd platform to
   [SDL_GPURenderState](SDL_GPURenderState), optional.
 
 With the metal renderer:
