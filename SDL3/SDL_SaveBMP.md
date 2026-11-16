@@ -26,11 +26,11 @@ bool SDL_SaveBMP(SDL_Surface *surface, const char *file);
 
 ## Remarks
 
-Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the
-BMP directly. Other RGB formats with 8-bit or higher get converted to a
-24-bit surface or, if they have an alpha mask or a colorkey, to a 32-bit
-surface before they are saved. YUV and paletted 1-bit and 4-bit formats are
-not supported.
+Surfaces with a 24-bit, 32-bit, paletted formats get saved in the BMP
+directly. Other RGB formats with 8-bit or higher get converted to a 24-bit
+surface or, if they have an alpha mask or a colorkey, to a 32-bit surface
+before they are saved. YUV and LSB paletted 1-bit and 4-bit formats are not
+supported.
 
 ## Thread Safety
 
