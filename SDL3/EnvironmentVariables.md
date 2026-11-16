@@ -17,6 +17,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_ANDROID_TRAP_BACK_BUTTON](SDL_HINT_ANDROID_TRAP_BACK_BUTTON): A variable to control whether we trap the Android back button to handle it manually.
 - [SDL_APPLE_TV_CONTROLLER_UI_EVENTS](SDL_HINT_APPLE_TV_CONTROLLER_UI_EVENTS): A variable controlling whether controllers used with the Apple TV generate UI events.
 - [SDL_APPLE_TV_REMOTE_ALLOW_ROTATION](SDL_HINT_APPLE_TV_REMOTE_ALLOW_ROTATION): A variable controlling whether the Apple TV remote's joystick axes will automatically match the rotation of the remote.
+- [SDL_APPLE_TV_REMOTE_SWIPE_GESTURES](SDL_HINT_APPLE_TV_REMOTE_SWIPE_GESTURES): A variable controlling whether the Apple TV remote's touchpad swipe gesture recognizers are installed.
 - [SDL_APP_ID](SDL_HINT_APP_ID): A variable setting the app ID string.
 - [SDL_APP_NAME](SDL_HINT_APP_NAME): A variable setting the application name.
 - [SDL_ASSERT](SDL_HINT_ASSERT): A variable controlling response to SDL_assert failures.
