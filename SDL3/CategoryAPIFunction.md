@@ -788,6 +788,8 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_LoadPNG_IO](SDL_LoadPNG_IO)
 - [SDL_LoadSurface](SDL_LoadSurface)
 - [SDL_LoadSurface_IO](SDL_LoadSurface_IO)
+- [SDL_LoadTexture](SDL_LoadTexture)
+- [SDL_LoadTexture_IO](SDL_LoadTexture_IO)
 - [SDL_LoadWAV](SDL_LoadWAV)
 - [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
 - [SDL_LockAudioStream](SDL_LockAudioStream)
