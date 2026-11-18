@@ -21,7 +21,7 @@ typedef struct SDL_GPUIndexedIndirectDrawCommand
 
 ## Remarks
 
-Note that the `first_vertex` and `first_instance` parameters are NOT
+Note that the `first_offset` and `first_instance` parameters are NOT
 compatible with built-in vertex/instance ID variables in shaders (for
 example, SV_VertexID); GPU APIs and shader languages do not define these
 built-in variables consistently, so if your shader depends on them, the

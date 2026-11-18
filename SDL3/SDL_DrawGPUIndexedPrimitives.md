@@ -33,7 +33,7 @@ void SDL_DrawGPUIndexedPrimitives(
 
 You must not call this function before binding a graphics pipeline.
 
-Note that the `first_vertex` and `first_instance` parameters are NOT
+Note that the `first_offset` and `first_instance` parameters are NOT
 compatible with built-in vertex/instance ID variables in shaders (for
 example, SV_VertexID); GPU APIs and shader languages do not define these
 built-in variables consistently, so if your shader depends on them, the
