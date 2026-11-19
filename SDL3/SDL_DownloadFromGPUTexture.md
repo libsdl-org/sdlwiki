@@ -28,6 +28,13 @@ void SDL_DownloadFromGPUTexture(
 This data is not guaranteed to be copied until the command buffer fence is
 signaled.
 
+**WARNING**: On some older/integrated hardware, Direct3D 12 requires
+texture data row pitch to be 256 byte aligned, and offsets to be aligned to
+512 bytes. If they are not, SDL will make a temporary copy of the data that
+is properly aligned, but this adds overhead to the transfer process. Apps
+can avoid this by aligning their data appropriately, or using a different
+GPU backend than Direct3D 12.
+
 ## Version
 
 This function is available since SDL 3.2.0.
