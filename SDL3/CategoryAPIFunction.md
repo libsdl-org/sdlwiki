@@ -291,6 +291,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
 - [SDL_GetBasePath](SDL_GetBasePath)
 - [SDL_GetBooleanProperty](SDL_GetBooleanProperty)
+- [SDL_GetCachePath](SDL_GetCachePath)
 - [SDL_GetCameraDriver](SDL_GetCameraDriver)
 - [SDL_GetCameraFormat](SDL_GetCameraFormat)
 - [SDL_GetCameraID](SDL_GetCameraID)

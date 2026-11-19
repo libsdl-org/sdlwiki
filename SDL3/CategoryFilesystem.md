@@ -33,6 +33,7 @@ removing, copying files.
 - [SDL_CreateDirectory](SDL_CreateDirectory)
 - [SDL_EnumerateDirectory](SDL_EnumerateDirectory)
 - [SDL_GetBasePath](SDL_GetBasePath)
+- [SDL_GetCachePath](SDL_GetCachePath)
 - [SDL_GetCurrentDirectory](SDL_GetCurrentDirectory)
 - [SDL_GetPathInfo](SDL_GetPathInfo)
 - [SDL_GetPrefPath](SDL_GetPrefPath)
