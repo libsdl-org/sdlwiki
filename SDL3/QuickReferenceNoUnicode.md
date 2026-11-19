@@ -860,6 +860,7 @@ void * SDL_GetAtomicPointer(void **a);                                          
 
 const char * SDL_GetBasePath(void);                                                                      // Get the directory where the application was run from.
 char * SDL_GetPrefPath(const char *org, const char *app);                                                // Get the user-and-app-specific path where files can be written.
+char * SDL_GetCachePath(const char *org, const char *app);                                               // Get the user-and-app-specific path where cache files can be written.
 const char * SDL_GetUserFolder(SDL_Folder folder);                                                       // Finds the most suitable user folder for a specific purpose.
 bool SDL_CreateDirectory(const char *path);                                                              // Create a directory, and any missing parent directories.
 bool SDL_EnumerateDirectory(const char *path, SDL_EnumerateDirectoryCallback callback, void *userdata);  // Enumerate a directory through a callback function.
