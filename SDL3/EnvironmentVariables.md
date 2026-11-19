@@ -226,6 +226,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_VIDEO_DRIVER](SDL_HINT_VIDEO_DRIVER): A variable that specifies a video backend to use.
 - [SDL_VIDEO_DUMMY_SAVE_FRAMES](SDL_HINT_VIDEO_DUMMY_SAVE_FRAMES): A variable controlling whether the dummy video driver saves output frames.
 - [SDL_VIDEO_EGL_ALLOW_GETDISPLAY_FALLBACK](SDL_HINT_VIDEO_EGL_ALLOW_GETDISPLAY_FALLBACK): If eglGetPlatformDisplay fails, fall back to calling eglGetDisplay.
+- [SDL_VIDEO_EGL_SWAP_TEARING_HINT](SDL_HINT_VIDEO_EGL_SWAP_TEARING_HINT): Let EGL use more specific swapinterval hints.
 - [SDL_VIDEO_FORCE_EGL](SDL_HINT_VIDEO_FORCE_EGL): A variable controlling whether the OpenGL context should be created with EGL.
 - [SDL_VIDEO_MAC_FULLSCREEN_MENU_VISIBILITY](SDL_HINT_VIDEO_MAC_FULLSCREEN_MENU_VISIBILITY): A variable that specifies the menu visibility when a window is fullscreen in Spaces on macOS.
 - [SDL_VIDEO_MAC_FULLSCREEN_SPACES](SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES): A variable that specifies the policy for fullscreen Spaces on macOS.
