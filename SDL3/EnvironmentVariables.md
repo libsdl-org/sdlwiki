@@ -214,6 +214,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_SHUTDOWN_DBUS_ON_QUIT](SDL_HINT_SHUTDOWN_DBUS_ON_QUIT): A variable controlling whether SDL calls dbus_shutdown() on quit.
 - [SDL_STORAGE_TITLE_DRIVER](SDL_HINT_STORAGE_TITLE_DRIVER): A variable that specifies a backend to use for title storage.
 - [SDL_STORAGE_USER_DRIVER](SDL_HINT_STORAGE_USER_DRIVER): A variable that specifies a backend to use for user storage.
+- [SDL_TEXTINPUT_KEYBOARD_MARGIN](SDL_HINT_TEXTINPUT_KEYBOARD_MARGIN): A variable controlling the spacing between the on-screen keyboard and text input areas.
 - [SDL_THREAD_FORCE_REALTIME_TIME_CRITICAL](SDL_HINT_THREAD_FORCE_REALTIME_TIME_CRITICAL): Specifies whether SDL_THREAD_PRIORITY_TIME_CRITICAL should be treated as realtime.
 - [SDL_THREAD_PRIORITY_POLICY](SDL_HINT_THREAD_PRIORITY_POLICY): A string specifying additional information to use with SDL_SetCurrentThreadPriority.
 - [SDL_TIMER_RESOLUTION](SDL_HINT_TIMER_RESOLUTION): A variable that controls the timer resolution, in milliseconds.
