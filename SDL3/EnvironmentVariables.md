@@ -45,6 +45,7 @@ This list matches the latest in SDL3's revision control.
 - [SDL_BMP_SAVE_LEGACY_FORMAT](SDL_HINT_BMP_SAVE_LEGACY_FORMAT): Prevent SDL from using version 4 of the bitmap header when saving BMPs.
 - [SDL_CAMERA_DRIVER](SDL_HINT_CAMERA_DRIVER): A variable that decides what camera backend to use.
 - [SDL_CPU_FEATURE_MASK](SDL_HINT_CPU_FEATURE_MASK): A variable that limits what CPU features are available.
+- [SDL_DBUS_PREFER_PORTALS](SDL_HINT_DBUS_PREFER_PORTALS): A variable that controls whether D-Bus portal interfaces are preferred over non-portal interfaces.
 - [SDL_DISPLAY_USABLE_BOUNDS](SDL_HINT_DISPLAY_USABLE_BOUNDS): Override for SDL_GetDisplayUsableBounds().
 - [SDL_DOS_ALLOW_DIRECT_FRAMEBUFFER](SDL_HINT_DOS_ALLOW_DIRECT_FRAMEBUFFER): A variable that enables a fast framebuffer path on DOS.
 - [SDL_EGL_LIBRARY](SDL_HINT_EGL_LIBRARY): Specify the EGL library to load.
