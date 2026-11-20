@@ -1175,6 +1175,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
 - [SDL_SetRenderHDRHeadroom](SDL_SetRenderHDRHeadroom)
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
+- [SDL_SetRenderLogicalPresentationRect](SDL_SetRenderLogicalPresentationRect)
 - [SDL_SetRenderScale](SDL_SetRenderScale)
 - [SDL_SetRenderTarget](SDL_SetRenderTarget)
 - [SDL_SetRenderTextureAddressMode](SDL_SetRenderTextureAddressMode)
