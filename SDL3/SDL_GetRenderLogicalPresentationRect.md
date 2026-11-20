@@ -26,10 +26,12 @@ bool SDL_GetRenderLogicalPresentationRect(SDL_Renderer *renderer, SDL_FRect *rec
 
 ## Remarks
 
-This function returns the calculated rectangle used for logical
-presentation, based on the presentation mode and output size. If logical
-presentation is disabled, it will fill the rectangle with the output size,
-in pixels.
+This function returns the rectangle used for logical presentation. For
+custom presentation this will return the rectangle set with
+[SDL_SetRenderLogicalPresentationRect](SDL_SetRenderLogicalPresentationRect)(),
+otherwise it will return a rectangle based on the presentation mode and
+output size. If logical presentation is disabled, it will fill the
+rectangle with the output size, in pixels.
 
 Each render target has its own logical presentation state. This function
 gets the rectangle for the current render target.
@@ -45,6 +47,7 @@ This function is available since SDL 3.2.0.
 ## See Also
 
 - [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
+- [SDL_SetRenderLogicalPresentationRect](SDL_SetRenderLogicalPresentationRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

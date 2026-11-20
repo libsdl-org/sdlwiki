@@ -53,6 +53,13 @@ perhaps most of the rendering is done to specific dimensions but to make
 fonts look sharp, the app turns off logical presentation while drawing
 text, for example.
 
+If you set the mode to
+[SDL_LOGICAL_PRESENTATION_CUSTOM](SDL_LOGICAL_PRESENTATION_CUSTOM), you
+should also set the rectangle with
+[SDL_SetRenderLogicalPresentationRect](SDL_SetRenderLogicalPresentationRect)().
+Setting this mode without setting a rectangle is equivalent to
+[SDL_LOGICAL_PRESENTATION_STRETCH](SDL_LOGICAL_PRESENTATION_STRETCH).
+
 You can convert coordinates in an event into rendering coordinates using
 [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)().
 
@@ -69,6 +76,7 @@ This function is available since SDL 3.2.0.
 - [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
 - [SDL_GetRenderLogicalPresentationRect](SDL_GetRenderLogicalPresentationRect)
+- [SDL_SetRenderLogicalPresentationRect](SDL_SetRenderLogicalPresentationRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
