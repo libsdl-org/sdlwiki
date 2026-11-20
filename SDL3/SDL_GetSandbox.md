@@ -18,6 +18,12 @@ SDL_Sandbox SDL_GetSandbox(void);
 [SDL_SANDBOX_NONE](SDL_SANDBOX_NONE) if the application is not running in a
 sandbox environment.
 
+## Remarks
+
+Note that a sandbox type of
+[`SDL_SANDBOX_UNKNOWN_CONTAINER`](SDL_SANDBOX_UNKNOWN_CONTAINER) does not
+necessarily imply that the container acts a security boundry.
+
 ## Version
 
 This function is available since SDL 3.2.0.
