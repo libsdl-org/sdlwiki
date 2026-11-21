@@ -23,9 +23,13 @@ SDL_EGLSurface SDL_EGL_GetWindowSurface(SDL_Window *window);
 ([SDL_EGLSurface](SDL_EGLSurface)) Returns the EGLSurface pointer
 associated with the window, or NULL on failure.
 
+## Remarks
+
+This operates on the current GL context for the calling thread.
+
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

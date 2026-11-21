@@ -14,19 +14,25 @@ bool SDL_GL_GetAttribute(SDL_GLAttr attr, int *value);
 
 ## Function Parameters
 
-|                          |           |                                                                                |
-| ------------------------ | --------- | ------------------------------------------------------------------------------ |
-| [SDL_GLAttr](SDL_GLAttr) | **attr**  | an [SDL_GLAttr](SDL_GLAttr) enum value specifying the OpenGL attribute to get. |
-| int *                    | **value** | a pointer filled in with the current value of `attr`.                          |
+|                          |           |                                                       |
+| ------------------------ | --------- | ----------------------------------------------------- |
+| [SDL_GLAttr](SDL_GLAttr) | **attr**  | the OpenGL attribute to query.                        |
+| int *                    | **value** | a pointer filled in with the current value of `attr`. |
 
 ## Return Value
 
 (bool) Returns true on success or false on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+SDL's GL attributes are global state, and while you can use related
+functions from any thread, you should only use them to prepare a single GL
+context at a time.
+
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

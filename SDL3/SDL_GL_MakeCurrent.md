@@ -1,6 +1,6 @@
 # SDL_GL_MakeCurrent
 
-Set up an OpenGL context for rendering into an OpenGL window.
+Set the currently-active OpenGL context.
 
 ## Header File
 
@@ -26,11 +26,19 @@ bool SDL_GL_MakeCurrent(SDL_Window *window, SDL_GLContext context);
 
 ## Remarks
 
+This function makes a GL context "current," in all the ways that term
+implies in OpenGL.
+
+This is a per-thread state that specifies what context future calls into
+OpenGL will operate on. Beyond context creation work, you must have a
+current context for the thread before attempting to use OpenGL in any way.
+
 The context must have been created with a compatible window.
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread (as long as a unique GL
+context was created for that thread).
 
 ## Version
 

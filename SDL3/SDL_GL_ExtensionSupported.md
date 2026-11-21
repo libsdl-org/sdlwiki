@@ -37,7 +37,8 @@ every time you need to know.
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread (as long as a unique GL
+context was made current for that thread).
 
 ## Version
 

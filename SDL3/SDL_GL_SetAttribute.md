@@ -1,6 +1,6 @@
 # SDL_GL_SetAttribute
 
-Set an OpenGL window attribute before window creation.
+Set an OpenGL window attribute before context creation.
 
 ## Header File
 
@@ -27,14 +27,18 @@ bool SDL_GL_SetAttribute(SDL_GLAttr attr, int value);
 ## Remarks
 
 This function sets the OpenGL attribute `attr` to `value`. The requested
-attributes should be set before creating an OpenGL window. You should use
+attributes should be set before creating an OpenGL context. You should use
 [SDL_GL_GetAttribute](SDL_GL_GetAttribute)() to check the values after
 creating the OpenGL context, since the values obtained can differ from the
 requested ones.
 
+SDL's GL attributes are global state, and while you can use related
+functions from any thread, you should only use them to prepare a single GL
+context at a time.
+
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

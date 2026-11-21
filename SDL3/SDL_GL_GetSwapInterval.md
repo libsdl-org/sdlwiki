@@ -30,7 +30,8 @@ current context, this function will set *interval to 0 as a safe default.
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread (as long as a unique GL
+context was made current for that thread).
 
 ## Version
 

@@ -12,9 +12,15 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 void SDL_GL_ResetAttributes(void);
 ```
 
+## Remarks
+
+SDL's GL attributes are global state, and while you can use related
+functions from any thread, you should only use them to prepare a single GL
+context at a time.
+
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

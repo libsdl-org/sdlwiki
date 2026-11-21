@@ -25,7 +25,7 @@ bool SDL_GL_DestroyContext(SDL_GLContext context);
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

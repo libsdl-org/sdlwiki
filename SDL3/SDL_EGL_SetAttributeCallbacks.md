@@ -30,9 +30,13 @@ Callbacks that aren't needed can be set to NULL.
 NOTE: These callback pointers will be reset after
 [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes).
 
+Note that this is global state, and while you can use related functions
+from any thread, you should only use them to prepare a single GL context at
+a time.
+
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 

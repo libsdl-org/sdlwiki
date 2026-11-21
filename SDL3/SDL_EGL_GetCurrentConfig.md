@@ -19,7 +19,7 @@ NULL on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Thread Safety
 
-This function should only be called on the main thread.
+It is safe to call this function from any thread.
 
 ## Version
 
