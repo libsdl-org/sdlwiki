@@ -43,7 +43,6 @@ This function is available since SDL_ttf 3.0.0.
 ## See Also
 
 - [TTF_GetFontSize](TTF_GetFontSize)
-- [TTF_GetFontSizeDPI](TTF_GetFontSizeDPI)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySDLTTF](CategorySDLTTF)
