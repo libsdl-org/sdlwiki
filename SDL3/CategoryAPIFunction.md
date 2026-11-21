@@ -750,6 +750,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_IsDeXMode](SDL_IsDeXMode)
 - [SDL_isdigit](SDL_isdigit)
 - [SDL_IsGamepad](SDL_IsGamepad)
+- [SDL_IsGooglePlayOnPC](SDL_IsGooglePlayOnPC)
 - [SDL_isgraph](SDL_isgraph)
 - [SDL_isinf](SDL_isinf)
 - [SDL_isinff](SDL_isinff)
