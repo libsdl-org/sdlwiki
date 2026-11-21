@@ -1525,6 +1525,7 @@ void * SDL_GetAndroidActivity(void);                                            
 int SDL_GetAndroidSDKVersion(void);                                                                                          // Query Android API level of the current device.
 bool SDL_IsChromebook(void);                                                                                                 // Query if the application is running on a Chromebook.
 bool SDL_IsDeXMode(void);                                                                                                    // Query if the application is running on a Samsung DeX docking station.
+bool SDL_IsGooglePlayOnPC(void);                                                                                             // Query if the application is running on Google Play Games on PC
 void SDL_SendAndroidBackButton(void);                                                                                        // Trigger the Android system back button behavior.
 const char * SDL_GetAndroidInternalStoragePath(void);                                                                        // Get the path used for internal storage for this Android application.
 Uint32 SDL_GetAndroidExternalStorageState(void);                                                                             // Get the current state of external storage for this Android application.
