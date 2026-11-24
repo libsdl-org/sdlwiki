@@ -93,6 +93,6 @@ sdl3 - https://github.com/vlang/sdl/tree/3.2.0
 
 ## Vala
 
-sdl3-vapi - https://codeberg.org/edwood-grant/sdl3-vapi
+sdl3-vapi - https://codeberg.org/italo-capasso/sdl3-vapi
 
 
