@@ -40,6 +40,18 @@ the texture as streaming and use the locking functions referenced below.
 While this function will work with streaming textures, for optimization
 reasons you may not get the pixels back if you lock the texture afterward.
 
+*Note on SDL_LockTexture vs SDL_UpdateTexture:*
+On the software renderer, you can write directly to the final destination
+with SDL_LockTexture, whereas SDL_UpdateTexture will need to make a copy
+from your buffer to SDL's.
+On the other renderers, it's probably the same (the GLES2 renderer, for
+example, literally just calls SDL_UpdateTexture for its SDL_UnlockTexture
+implementation)... but if you ever need a software renderer, this is the
+thing that would benefit most from texture locking.
+But in real life, with actual GPUs, it doesn't really matter a whole lot.
+
+
+
 ## Thread Safety
 
 This function should only be called on the main thread.
