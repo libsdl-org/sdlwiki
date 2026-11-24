@@ -1153,6 +1153,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
 - [SDL_SetWindowModal](SDL_SetWindowModal)
 - [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
+- [SDL_SetWindowMousePassthrough](SDL_SetWindowMousePassthrough)
 - [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
 - [SDL_SetWindowOpacity](SDL_SetWindowOpacity)
 - [SDL_SetWindowParent](SDL_SetWindowParent)
