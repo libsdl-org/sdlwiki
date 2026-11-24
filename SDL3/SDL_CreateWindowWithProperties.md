@@ -64,6 +64,8 @@ These are the supported properties:
   true if the window is modal to its parent
 - [`SDL_PROP_WINDOW_CREATE_MOUSE_GRABBED_BOOLEAN`](SDL_PROP_WINDOW_CREATE_MOUSE_GRABBED_BOOLEAN):
   true if the window starts with grabbed mouse focus
+- [`SDL_PROP_WINDOW_CREATE_MOUSE_PASSTHROUGH_BOOLEAN`](SDL_PROP_WINDOW_CREATE_MOUSE_PASSTHROUGH_BOOLEAN):
+  true if the window should be transparent to mouse input
 - [`SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN`](SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN):
   true if the window will be used with OpenGL rendering
 - [`SDL_PROP_WINDOW_CREATE_PARENT_POINTER`](SDL_PROP_WINDOW_CREATE_PARENT_POINTER):

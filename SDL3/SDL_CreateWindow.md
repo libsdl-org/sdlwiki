@@ -55,6 +55,8 @@ prepared to handle a window of any size.
   uses high pixel density back buffer if possible
 - [`SDL_WINDOW_MOUSE_CAPTURE`](SDL_WINDOW_MOUSE_CAPTURE): window has mouse
   captured (unrelated to MOUSE_GRABBED)
+- [`SDL_WINDOW_MOUSE_PASSTHROUGH`](SDL_WINDOW_MOUSE_PASSTHROUGH): window is
+  transparent to mouse input
 - [`SDL_WINDOW_ALWAYS_ON_TOP`](SDL_WINDOW_ALWAYS_ON_TOP): window should
   always be above others
 - [`SDL_WINDOW_UTILITY`](SDL_WINDOW_UTILITY): window should be treated as a
