@@ -20,9 +20,11 @@ If you're dealing with a rendering bug, it's useful to report that you're using 
 
 ## Try the example programs
 
-If you're using a programming language other than C/C++/ObjC, using SDL through a language-specific binding, please try one of our test programs before reporting a bug. Often the problem is not SDL, but the binding!
+Sometimes, the bug is not in SDL but in the program that uses SDL. It can be helpful to try our test programs, which exercise small pieces of various parts of SDL, and can be helpful to see if your bug still reproduces.
 
-The "test" directory has lots of programs to exercise various parts of SDL. If you build SDL with CMake, the `SDL_TESTS=On` option will build all of these tests alongside SDL itself.
+The "test" directory has lots of these programs. If you build SDL with CMake, the `SDL_TESTS=On` option will build all of these tests alongside SDL itself.
+
+If you're using a programming language other than C/C++/ObjC, using SDL through a language-specific binding, please try one of our test programs before reporting a bug. Often the problem is not SDL, but the binding!
 
 Even smaller test code is in the "examples" directory, and each can be built as a single C file that just needs to link against SDL (CMake option: `SDL_EXAMPLES=On`). If you don't want to get into CMake, a simple compiler command line similar to this might work:
 
@@ -30,6 +32,9 @@ Even smaller test code is in the "examples" directory, and each can be built as 
 cd SDL
 cc -o clear examples/renderer/01-clear/clear.c -Iinclude -lSDL3
 ```
+
+If you tried a test program, it's helpful to mention it in your bug report.
+
 
 ## Reporting memory leaks
 
