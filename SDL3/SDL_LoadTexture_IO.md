@@ -28,6 +28,11 @@ SDL_Texture * SDL_LoadTexture_IO(SDL_Renderer *renderer, SDL_IOStream *src, bool
 
 ## Remarks
 
+This is designed as a convenience function for loading images from trusted
+sources. Crashes or other issues with invalid content should not be
+considered security issues. If you want to load arbitrary images you should
+use an image loading library designed with security in mind.
+
 The new texture should be freed with
 [SDL_DestroyTexture](SDL_DestroyTexture)(). Not doing so will result in a
 memory leak.

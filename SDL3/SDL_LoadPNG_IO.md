@@ -27,9 +27,10 @@ SDL_Surface * SDL_LoadPNG_IO(SDL_IOStream *src, bool closeio);
 
 ## Remarks
 
-This is intended as a convenience function for loading images from trusted
-sources. If you want to load arbitrary images you should use libpng or
-another image loading library designed with security in mind.
+This is designed as a convenience function for loading images from trusted
+sources. Crashes or other issues with invalid content should not be
+considered security issues. If you want to load arbitrary images you should
+use libpng or another image loading library designed with security in mind.
 
 The new surface should be freed with
 [SDL_DestroySurface](SDL_DestroySurface)(). Not doing so will result in a

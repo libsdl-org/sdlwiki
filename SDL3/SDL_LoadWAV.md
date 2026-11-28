@@ -36,6 +36,11 @@ should call [SDL_free](SDL_free)() to dispose of it.
 
 ## Remarks
 
+This is designed as a convenience function for loading audio from trusted
+sources. Crashes or other issues with invalid content should not be
+considered security issues. If you want to load arbitrary audio you should
+use an audio loading library designed with security in mind.
+
 This is a convenience function that is effectively the same as:
 
 ```c
