@@ -55,6 +55,11 @@ Supported formats are RIFF WAVE files with the formats PCM (8, 16, 24, and
 A-law and mu-law (8 bits). Other formats are currently unsupported and
 cause an error.
 
+This is designed as a convenience function for loading audio from trusted
+sources. Crashes or other issues with invalid content should not be
+considered security issues. If you want to load arbitrary audio you should
+use an audio loading library designed with security in mind.
+
 If this function succeeds, the pointer returned by it is equal to `spec`
 and the pointer to the audio data allocated by the function is written to
 `audio_buf` and its length in bytes to `audio_len`. The

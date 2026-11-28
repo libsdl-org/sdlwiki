@@ -15,7 +15,10 @@ Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-Compatibility convenience function.
+This is designed as a convenience function for loading audio from trusted
+sources. Crashes or other issues with invalid content should not be
+considered security issues. If you want to load arbitrary audio you should
+use an audio loading library designed with security in mind.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAudio](CategoryAudio)
